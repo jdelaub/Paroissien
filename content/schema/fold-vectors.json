@@ -1,0 +1,264 @@
+{
+  "spec": "fold-v1",
+  "steps": [
+    "0. Retirer U+00AD (trait d'union conditionnel), U+200B (espace sans chasse) et U+2060 (gluon).",
+    "1. NFKC.",
+    "2. Minuscules : str.lower() en Python, String.lowercase(Locale.ROOT) en Kotlin sur la chaîne entière ; PAS casefold, PAS la locale par défaut, PAS Char.lowercaseChar() caractère par caractère.",
+    "3. NFD, puis suppression des caractères de catégorie générale Mn (Character.NON_SPACING_MARK).",
+    "4. Table : œ→oe, æ→ae, ĳ→ij (ĳ est en pratique déjà décomposé par NFKC à l'étape 1).",
+    "5. j→i, v→u, sur tous les textes, quelle que soit leur langue.",
+    "6. Tout le reste, ponctuation et espaces compris, est conservé. La sortie n'est pas recomposée en NFC."
+  ],
+  "vectors": [
+    {
+      "in": "Cœur",
+      "out": "coeur",
+      "note": "œ→oe (étape 4)."
+    },
+    {
+      "in": "l’Église",
+      "out": "l’eglise",
+      "note": "L'apostrophe U+2019 est conservée ; É→e (étape 3)."
+    },
+    {
+      "in": "Dóminus",
+      "out": "dominus",
+      "note": "Accent aigu latin retiré (étape 3)."
+    },
+    {
+      "in": "Dó\u00admi\u00adnus",
+      "out": "dominus",
+      "note": "U+00AD retiré à l'étape 0 (revue 15, M3) : sinon unicode61 couperait le mot en trois jetons."
+    },
+    {
+      "in": "Jésus",
+      "out": "iesus",
+      "note": "é→e puis j→i."
+    },
+    {
+      "in": "prǽdica",
+      "out": "praedica",
+      "note": "ǽ (U+01FD) → æ + U+0301 à l'étape 3, puis æ→ae à l'étape 4."
+    },
+    {
+      "in": "ﬁdèle",
+      "out": "fidele",
+      "note": "Ligature U+FB01 décomposée par NFKC."
+    },
+    {
+      "in": "vivere",
+      "out": "uiuere",
+      "note": "v→u (étape 5)."
+    },
+    {
+      "in": "ÆTERNUS",
+      "out": "aeternus",
+      "note": "Æ→æ (étape 2) puis æ→ae."
+    },
+    {
+      "in": "Cælum",
+      "out": "caelum",
+      "note": "æ→ae."
+    },
+    {
+      "in": "cœlum",
+      "out": "coelum",
+      "note": "La graphie cœlum reste distincte de cælum (coelum ≠ caelum) : aucune équivalence orthographique n'est faite."
+    },
+    {
+      "in": "ŒUVRE",
+      "out": "oeuure",
+      "note": "Œ→œ→oe, puis v→u : « oeuure »."
+    },
+    {
+      "in": "Do\u200bmi\u2060nus",
+      "out": "dominus",
+      "note": "U+200B et U+2060 retirés à l'étape 0."
+    },
+    {
+      "in": "\u00ad",
+      "out": "",
+      "note": "Un U+00AD isolé disparaît entièrement."
+    },
+    {
+      "in": "Notre\u00a0Père",
+      "out": "notre pere",
+      "note": "NFKC transforme U+00A0 (espace insécable, décomposition <noBreak> 0020) en U+0020."
+    },
+    {
+      "in": "Amen\u202f!",
+      "out": "amen !",
+      "note": "NFKC transforme U+202F (espace fine insécable, décomposition <noBreak> 0020) en U+0020 ordinaire."
+    },
+    {
+      "in": "Pater\tnoster\n",
+      "out": "pater\tnoster\n",
+      "note": "Tabulation et saut de ligne sont conservés tels quels."
+    },
+    {
+      "in": "«\u00a0Fiat\u00a0»",
+      "out": "« fiat »",
+      "note": "Les guillemets « » (U+00AB, U+00BB) n'ont pas de décomposition et sont conservés ; les U+00A0 deviennent U+0020."
+    },
+    {
+      "in": "l'Église",
+      "out": "l'eglise",
+      "note": "L'apostrophe ASCII est conservée et NE devient PAS U+2019 : les chaînes pliées diffèrent, mais unicode61 traite les deux apostrophes comme séparateurs."
+    },
+    {
+      "in": "aujourd\u02bchui",
+      "out": "auiourd\u02bchui",
+      "note": "U+02BC (apostrophe modificative) est une lettre (Lm) conservée : unicode61 en fait UN seul jeton. À normaliser en U+2019 dans typo.py, pas dans fold."
+    },
+    {
+      "in": "℣. Adjutórium nostrum in nómine Dómini. ℟. Qui fecit cælum et terram.",
+      "out": "℣. adiutorium nostrum in nomine domini. ℟. qui fecit caelum et terram.",
+      "note": "℣ (U+2123) et ℟ (U+211F) sont des symboles (So) sans décomposition : NFKC et lower les laissent intacts."
+    },
+    {
+      "in": "✠ In nómine Patris",
+      "out": "✠ in nomine patris",
+      "note": "✠ (U+2720) est conservé."
+    },
+    {
+      "in": "1ᵉʳ dimanche",
+      "out": "1er dimanche",
+      "note": "ᵉ (U+1D49) et ʳ (U+02B3) → e et r par NFKC."
+    },
+    {
+      "in": "XIIᵉ siècle",
+      "out": "xiie siecle",
+      "note": "L'exposant se colle au nombre romain : « xiie »."
+    },
+    {
+      "in": "Mᵍʳ",
+      "out": "mgr",
+      "note": "ᵍ (U+1D4D) et ʳ → g et r par NFKC."
+    },
+    {
+      "in": "Dóminus²",
+      "out": "dominus2",
+      "note": "² → 2 par NFKC et se colle au mot : les appels de note ne doivent pas figurer dans le texte indexé."
+    },
+    {
+      "in": "ﬂeur",
+      "out": "fleur",
+      "note": "Ligature U+FB02 décomposée par NFKC."
+    },
+    {
+      "in": "1962",
+      "out": "1962",
+      "note": "Chiffres ASCII inchangés."
+    },
+    {
+      "in": "１９６２",
+      "out": "1962",
+      "note": "Chiffres pleine chasse ramenés à l'ASCII par NFKC."
+    },
+    {
+      "in": "Ps 22 (23)",
+      "out": "ps 22 (23)",
+      "note": "Double numérotation : parenthèses et chiffres conservés."
+    },
+    {
+      "in": "",
+      "out": "",
+      "note": "Chaîne vide."
+    },
+    {
+      "in": "Straße",
+      "out": "straße",
+      "note": "ß est conservé : lower() n'est pas casefold() (qui donnerait « strasse »)."
+    },
+    {
+      "in": "STRAẞE",
+      "out": "straße",
+      "note": "ẞ (U+1E9E) → ß par lower() ; Java/Kotlin : Character.toLowerCase(U+1E9E) = U+00DF."
+    },
+    {
+      "in": "İSTANBUL",
+      "out": "istanbul",
+      "note": "Python lower('İ') = 'i' + U+0307 (mappage inconditionnel de SpecialCasing). Java/Kotlin lowercase(Locale.ROOT) applique le même mappage (JDK : ConditionalSpecialCasing ; Android : CaseMapper délègue à ICU), alors que Char.lowercaseChar() donne 'i' directement. L'étape 3 supprime U+0307, donc toutes ces voies aboutissent à « istanbul » : pas de divergence sur la sortie. Comportement Java déduit des sources du JDK et d'Android, non exécuté ici (pas de JDK sur la machine) : le test JUnit le confirmera."
+    },
+    {
+      "in": "JESUS",
+      "out": "iesus",
+      "note": "Avec Locale.ROOT, I→i. Avec la locale turque (ou azérie), I→ı et le pliage serait faux : ne jamais utiliser la locale par défaut."
+    },
+    {
+      "in": "ı",
+      "out": "ı",
+      "note": "Le ı sans point (U+0131) n'a ni décomposition ni majuscule propre à lower : il est conservé et ne se plie PAS en i."
+    },
+    {
+      "in": "ΙΧΘΥΣ",
+      "out": "ιχθυς",
+      "note": "Sigma final contextuel : lower() donne ς en fin de mot, comme String.toLowerCase en Java et sur Android. Un pliage Kotlin caractère par caractère donnerait σ."
+    },
+    {
+      "in": "Kýrie, eléison",
+      "out": "kyrie, eleison",
+      "note": "ý→y, é→e."
+    },
+    {
+      "in": "L'HAŸ-LES-ROSES",
+      "out": "l'hay-les-roses",
+      "note": "Ÿ (U+0178) → ÿ → y ; traits d'union conservés."
+    },
+    {
+      "in": "Ĳzer ĳs",
+      "out": "iizer iis",
+      "note": "Ĳ/ĳ (U+0132/U+0133) ont une décomposition de compatibilité : NFKC donne déjà « IJ »/« ij » à l'étape 1, puis j→i. L'entrée ĳ→ij de la table n'est jamais atteinte."
+    },
+    {
+      "in": "ſanctus",
+      "out": "sanctus",
+      "note": "s long (U+017F) → s par NFKC."
+    },
+    {
+      "in": "Ecclesię",
+      "out": "ecclesie",
+      "note": "e caudata (U+0119) → e (l'ogonek est Mn), et NON « ae » : à traiter par l'adaptateur de source si l'on veut « ecclesiae »."
+    },
+    {
+      "in": "Je\u0301sus",
+      "out": "iesus",
+      "note": "Entrée décomposée (e + U+0301) : même résultat que la forme précomposée."
+    },
+    {
+      "in": "Ainsi soit-il…",
+      "out": "ainsi soit-il...",
+      "note": "… (U+2026) devient trois points ASCII par NFKC."
+    },
+    {
+      "in": "porte\u2011parole",
+      "out": "porte\u2010parole",
+      "note": "U+2011 (trait d'union insécable) devient U+2010 (trait d'union), et non le tiret ASCII U+002D."
+    },
+    {
+      "in": "Livre IV, chap. XVII",
+      "out": "liure iu, chap. xuii",
+      "note": "v→u touche aussi les chiffres romains et le français (choix « universel », décision D5)."
+    },
+    {
+      "in": "Ⅳ",
+      "out": "iu",
+      "note": "Le chiffre romain U+2163 devient « IV » par NFKC, donc le même pliage que les lettres ASCII."
+    },
+    {
+      "in": "Jean-Baptiste",
+      "out": "iean-baptiste",
+      "note": "Trait d'union ASCII conservé ; j→i aussi en français."
+    },
+    {
+      "in": "Notre Père, qui êtes aux cieux, que votre nom soit sanctifié\u202f; que votre règne arrive.",
+      "out": "notre pere, qui etes aux cieux, que uotre nom soit sanctifie ; que uotre regne arriue.",
+      "note": "Phrase française : accents retirés, U+202F devant le point-virgule devenu U+0020, v→u."
+    },
+    {
+      "in": "Ave María, grátia plena, Dóminus tecum : benedícta tu in muliéribus, et benedíctus fructus ventris tui, Jesus.",
+      "out": "aue maria, gratia plena, dominus tecum : benedicta tu in mulieribus, et benedictus fructus uentris tui, iesus.",
+      "note": "Phrase latine accentuée : accents retirés, v→u, j→i."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ADR 008 (API 31+) : rien ne part dans le nuage ; le transfert d'un téléphone à l'autre garde
+     user.db (rubans, positions) et les réglages. Paquets, caches, journal et intentions restent sur place. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" path="." />
+        <exclude domain="file" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="external" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="user.db" />
+        <include domain="database" path="user.db-wal" />
+        <include domain="file" path="datastore/" />
+    </device-transfer>
+</data-extraction-rules>
