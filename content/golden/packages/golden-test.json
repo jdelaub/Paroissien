@@ -1,0 +1,8 @@
+{
+  "packageId": "golden-test",
+  "packageVersion": 2026101101,
+  "rights": "domaine-public",
+  "publications": ["golden.test"],
+  "title": {"fr": "Paquet golden"},
+  "minAppFormat": "1.0"
+}

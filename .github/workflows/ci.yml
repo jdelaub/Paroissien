@@ -24,6 +24,12 @@ jobs:
         run: python3 -I run_tests.py
       - name: Tests du contrôle des droits
         run: python3 -I tools/test_check_pack_rights.py
+      - name: Données canoniques valides et identifiants publiés intacts (ADR 004)
+        run: |
+          python3 -I content/pqt.py validate
+          python3 -I content/pqt.py registry check
+      - name: Paquet golden identique octet pour octet (ADR 003)
+        run: python3 -I content/pqt.py golden check
       - name: Droits des paquets embarqués (saveur publique)
         run: python3 -I tools/check-pack-rights.py android/app/src/main/assets/packs android/app/src/domainePublic/assets/packs
       - name: Aucun contenu de la saveur personnelle dans le dépôt
@@ -49,12 +55,14 @@ jobs:
       - name: Tests JVM, captures et lint
         run: >
           ./gradlew --console=plain
-          :core:model:test :core:liturgy:test :core:reading:testDebugUnitTest
+          :core:model:test :core:liturgy:test :core:content:test :core:reading:testDebugUnitTest
           :core:designsystem:verifyRoborazziDebug
           :app:verifyRoborazziDomainePublicDebug
           :app:lintDomainePublicDebug
       - name: APK debug et release (non signé)
         run: ./gradlew --console=plain :app:assembleDomainePublicDebug :app:assembleDomainePublicRelease
+      - name: Droits des paquets générés (saveur publique)
+        run: python3 -I ../tools/check-pack-rights.py app/build/generated/content-packs/packs
       - name: Budget de taille de l'APK release (30 Mo au plus)
         run: |
           apk=$(ls app/build/outputs/apk/domainePublic/release/*.apk)

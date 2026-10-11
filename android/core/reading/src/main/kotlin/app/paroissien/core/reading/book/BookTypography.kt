@@ -10,12 +10,16 @@ import androidx.compose.ui.text.style.Hyphens
 import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextIndent
+import androidx.compose.ui.text.style.BaselineShift
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import app.paroissien.core.designsystem.BookFonts
 import app.paroissien.core.designsystem.PaperColors
+import app.paroissien.core.model.text.Inline
 import app.paroissien.core.model.text.LiangHyphenator
+import app.paroissien.core.model.text.Mark
+import app.paroissien.core.model.text.RichText
 
 /** Styles du livre pour une police, un papier et un corps donnés ([scale] = 1 pour 18 sp). */
 @Immutable
@@ -56,34 +60,58 @@ class BookTypography(val fonts: BookFonts, val paper: PaperColors, val scale: Fl
         // La locale « la » active le « locl » latin d'EB Garamond (u dessiné en v) : coupé ; la césure latine
         // vient de nos motifs (ADR 007).
         return when (lang) {
-            BlockLang.LA -> base.copy(localeList = LocaleList("la"), fontFeatureSettings = "onum, liga, kern, 'locl' 0")
+            BlockLang.LA -> base.copy(localeList = LocaleList("la"), fontFeatureSettings = LATIN_FEATURES)
             BlockLang.FR -> base.copy(localeList = LocaleList("fr"))
         }
     }
 
     fun versicle(lang: BlockLang) = paragraph(lang, TextRole.BODY).copy(textIndent = TextIndent(restLine = 1.1.em))
 
-    /** _…_ en italique, ℣ ℟ ✠ ✝ en rouge ; césure liturgique insérée pour le latin (jamais stockée, ADR 004). */
-    fun inline(text: String, lang: BlockLang): AnnotatedString {
-        val source = if (lang == BlockLang.LA) LiangHyphenator.latinLiturgical.insertSoftHyphens(text) else text
-        val italic = SpanStyle(fontFamily = fonts.italic)
-        val red = SpanStyle(color = paper.rubric)
-        return buildAnnotatedString {
-            var inItalic = false
-            for (c in source) {
-                when {
-                    c == '_' -> inItalic = !inItalic
-                    c in LITURGICAL_MARKS -> withStyle(red) { append(c) }
-                    inItalic -> withStyle(italic) { append(c) }
-                    else -> append(c)
+    /**
+     * Inlines → texte affiché : marques (italique, gras, petites capitales, rouge, exposant, espacé), symboles
+     * liturgiques en rouge, numéros de versets en petit rouge. Le latin reçoit la césure liturgique à l'affichage
+     * (jamais stockée, ADR 004). Les numéros sont annotés [NON_CANONICAL] : ils ne comptent pas dans les ancres.
+     */
+    fun render(text: RichText, lang: BlockLang): AnnotatedString = buildAnnotatedString { append(text, lang) }
+
+    private fun AnnotatedString.Builder.append(text: RichText, lang: BlockLang) {
+        for (node in text) when (node) {
+            is Inline.Text -> append(if (lang == BlockLang.LA) LiangHyphenator.latinLiturgical.insertSoftHyphens(node.value) else node.value)
+            is Inline.Marked -> withStyle(node.marks.fold(SpanStyle()) { style, mark -> style.merge(spanFor(mark)) }) { append(node.children, lang) }
+            is Inline.Lang -> {
+                val inner = BlockLang.of(node.lang)
+                withStyle(SpanStyle(localeList = LocaleList(inner.tag), fontFeatureSettings = if (inner == BlockLang.LA) LATIN_FEATURES else null)) {
+                    append(node.children, inner)
                 }
             }
+            is Inline.Link -> append(node.children, lang)
+            is Inline.Sym -> withStyle(SpanStyle(color = paper.rubric)) { append(node.symbol.char) }
+            is Inline.Num -> {
+                pushStringAnnotation(NON_CANONICAL, node.value)
+                withStyle(SpanStyle(color = paper.rubric, fontSize = 0.72.em, fontFeatureSettings = "lnum")) { append(node.value) }
+                append('\u2002')
+                pop()
+            }
+            Inline.Break -> append('\n')
+            is Inline.NoteRef -> Unit // les notes s'afficheront avec leur panneau (plus tard)
         }
+    }
+
+    private fun spanFor(mark: Mark): SpanStyle = when (mark) {
+        Mark.ITALIC -> SpanStyle(fontFamily = fonts.italic)
+        Mark.BOLD -> SpanStyle(fontFamily = fonts.medium)
+        Mark.SMALL_CAPS -> SpanStyle(fontFeatureSettings = "smcp, c2sc, onum")
+        Mark.RED -> SpanStyle(color = paper.rubric)
+        Mark.SUP -> SpanStyle(baselineShift = BaselineShift.Superscript, fontSize = 0.7.em)
+        Mark.SUB -> SpanStyle(baselineShift = BaselineShift.Subscript, fontSize = 0.7.em)
+        Mark.SPACED -> SpanStyle(letterSpacing = 0.12.em)
     }
 
     fun withScale(newScale: Float) = BookTypography(fonts, paper, newScale)
 
-    private companion object {
-        val LITURGICAL_MARKS = setOf('℣', '℟', '✠', '✝')
+    companion object {
+        /** Annotation des caractères affichés hors du texte canonique (numéros de versets). */
+        const val NON_CANONICAL = "nc"
+        private const val LATIN_FEATURES = "onum, liga, kern, 'locl' 0"
     }
 }

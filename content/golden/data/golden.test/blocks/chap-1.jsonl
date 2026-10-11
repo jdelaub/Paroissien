@@ -1,0 +1,7 @@
+{"id":"chap-1.titre","type":"heading","level":1,"label":"Chapitre I","t":{"fr":["Chapitre premier"],"la":["Caput primum"]}}
+{"id":"chap-1.r1","type":"rubric","t":{"fr":["Le prêtre, au bas de l’autel, fait le signe de la croix :"]}}
+{"id":"chap-1.p1","type":"para","dropCap":true,"t":{"fr":[{"m":["i"],"c":["Celui qui me suit"]},", dit le Seigneur, ne marche point dans les ténèbres.",{"note":"n1","l":"1"}],"la":[{"m":["i"],"c":["Qui sequitur me"]}," non ambulat in tenebris, dicit Dominus."]}}
+{"id":"chap-1.v1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," Introíbo ad altáre Dei."],"fr":[{"sym":"V"}," Je m’approcherai de l’autel de Dieu."]}}
+{"id":"chap-1.v2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," Ad Deum, qui lætíficat juventútem meam."],"fr":[{"sym":"R"}," Du Dieu qui réjouit ma jeunesse."]}}
+{"id":"chap-1.p2","type":"para","t":{"fr":["Au nom du Père ",{"sym":"cross"}," et du Fils, et du Saint-Esprit. Ainsi soit-il."],"la":["In nómine Patris, ",{"sym":"cross"}," et Fílii, et Spíritus Sancti. Amen."]}}
+{"id":"chap-1.sep","type":"separator","kind":"fleuron"}

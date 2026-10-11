@@ -1,4 +1,2 @@
 .cache/
-dist/
-__pycache__/
-.venv/
+/dist/

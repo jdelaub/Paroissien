@@ -13,10 +13,11 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "paroissien"
-// Un module naît d'un besoin (rapport 10) : content, today et reader arrivent avec leurs phases.
+// Un module naît d'un besoin (rapport 10) : today et reader arrivent avec leurs phases.
 include(":app")
 include(":core:model")
 include(":core:liturgy")
 include(":core:data")
 include(":core:designsystem")
 include(":core:reading")
+include(":core:content")

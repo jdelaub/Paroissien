@@ -81,7 +81,7 @@ class LiangHyphenator(patterns: Sequence<String>, private val leftMin: Int = 2, 
     private fun isMark(c: Char) = Character.getType(c) == Character.NON_SPACING_MARK.toInt()
 
     companion object {
-        const val SOFT_HYPHEN = '­'
+        const val SOFT_HYPHEN = '\u00AD'
 
         /** Latin liturgique (Solesmes, Beccari, Roux ; MIT), minima 2/2. */
         val latinLiturgical: LiangHyphenator by lazy {

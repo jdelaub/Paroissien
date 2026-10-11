@@ -21,6 +21,7 @@ dependencies {
     api(platform(libs.compose.bom))
     api(libs.compose.ui)
     api(libs.compose.animation.core)
+    api(project(":core:content"))
     implementation(project(":core:model"))
     implementation(libs.compose.foundation)
 

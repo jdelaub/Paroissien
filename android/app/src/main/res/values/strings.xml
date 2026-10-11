@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Paroissien</string>
+    <string name="spike_library">Bibliothèque</string>
+    <string name="spike_library_loading">Installation des livres…</string>
+    <string name="spike_close">Fermer</string>
+    <string name="spike_demo_book">Livre de démonstration</string>
+    <plurals name="spike_units">
+        <item quantity="one">%1$d partie</item>
+        <item quantity="other">%1$d parties</item>
+    </plurals>
+    <string name="spike_language">Langue : %1$s</string>
     <string name="spike_theme">Thème : %1$s</string>
     <string name="spike_theme_clair">clair</string>
     <string name="spike_theme_sepia">sépia</string>

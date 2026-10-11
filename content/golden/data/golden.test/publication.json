@@ -1,0 +1,18 @@
+{
+  "id": "golden.test",
+  "revision": 1,
+  "kind": "test",
+  "title": {"fr": "Paquet golden", "la": "Fasciculus probationis"},
+  "languages": ["fr", "la"],
+  "primaryLanguage": "fr",
+  "aligned": true,
+  "source": {"name": "Rédigé pour les tests de Paroissien"},
+  "license": {"spdx": "CC0-1.0", "attribution": "Paroissien"},
+  "divisions": [
+    {"id": "partie-1", "kind": "part", "toc": "Première partie", "children": [
+      {"id": "chap-1", "kind": "chapter", "toc": "Chapitre I", "unit": true},
+      {"id": "chap-2", "kind": "chapter", "toc": "Chapitre II", "unit": true}
+    ]},
+    {"id": "notes", "kind": "section", "toc": "Notes", "unit": true}
+  ]
+}

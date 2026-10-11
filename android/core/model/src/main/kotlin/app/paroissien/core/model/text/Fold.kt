@@ -12,7 +12,7 @@ object Fold {
     const val SPEC = "fold-v1"
 
     // Césure conditionnelle, espace sans chasse, gluon : invisibles, ils ne doivent pas couper les mots.
-    private val invisible = setOf('­', '​', '⁠')
+    private val invisible = setOf('\u00AD', '\u200B', '\u2060')
 
     fun fold(text: String): String {
         val visible = text.filterNot { it in invisible }

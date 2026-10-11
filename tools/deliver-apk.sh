@@ -4,7 +4,7 @@
 # Monter versionCode et versionName dans android/app/build.gradle.kts avant chaque livraison.
 #
 # Saveur « personnel » par défaut (le téléphone de l'utilisateur, scénario A). Variables facultatives :
-#   PACKS=/chemin/paquets   paquets privés de la saveur personnelle (ADR 001)
+#   PACKS=/chemin/assets    dossier contenant packs-private/ (paquets privés de la saveur personnelle, ADR 001)
 #   FLAVOR=domainePublic    autre saveur (suffixe -domainePublic dans le nom)
 #   DEST=/autre/dossier     autre destination
 set -euo pipefail
@@ -33,6 +33,15 @@ for f in "$debug_name" "$release_name"; do
         exit 1
     fi
 done
+
+# Saveur personnelle : paquets privés construits depuis le dépôt voisin paroissien-content, s'il est là.
+private="$root/../paroissien-content"
+if [ -z "${PACKS:-}" ] && [ "$flavor" = personnel ] && [ -d "$private/packages" ]; then
+    PACKS="$private/dist/assets"
+    rm -rf "$PACKS/packs-private"
+    python3 -I "$root/content/pqt.py" --data "$private/data" --packages "$private/packages" --registry "$private/registry" \
+        build --sign-key "$root/content/schema/keys/test-p256.pem" --out "$PACKS/packs-private"
+fi
 
 packs_arg=()
 [ -z "${PACKS:-}" ] || packs_arg=("-Pparoissien.personnelPacksDir=$PACKS")

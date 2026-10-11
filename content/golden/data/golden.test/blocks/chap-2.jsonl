@@ -1,0 +1,7 @@
+{"id":"chap-2.titre","type":"heading","level":1,"label":"Chapitre II","t":{"fr":["Chapitre ",{"m":["sc"],"c":["second"]}]}}
+{"id":"jhn.1.1","type":"verse","n":"1","p":true,"t":{"fr":[{"num":"1"},"Au commencement était le Verbe."],"la":[{"num":"1"},"In princípio erat Verbum."]}}
+{"id":"jhn.1.2","type":"verse","n":"2","t":{"fr":[{"num":"2"},"Il était au commencement en Dieu."],"la":[{"num":"2"},"Hoc erat in princípio apud Deum."]}}
+{"id":"chap-2.stance","type":"stanza","kind":"psalm","t":{"la":["Dixit Dóminus Dómino meo",{"sym":"star"},{"br":1},"Sede a dextris meis."]}}
+{"id":"chap-2.citation","type":"quote","attribution":"Eccl., I, 2","t":{"fr":["Vanité des vanités, et tout n’est que vanité",{"sym":"dagger"}]}}
+{"id":"chap-2.item","type":"item","marker":"1er point","t":{"fr":["Cœur, œuvre, Æternus, sǽcula, ",{"m":["b","red"],"c":["gras rouge"]}," et x",{"m":["sup"],"c":["2"]},"."]}}
+{"id":"chap-2.renvoi","type":"para","style":"centered","t":{"fr":["Voir ",{"link":"bible:JHN.1.1","c":["Jn 1, 1"]},", puis ",{"lang":"la","c":["Kýrie, eléison"]},"."]}}
