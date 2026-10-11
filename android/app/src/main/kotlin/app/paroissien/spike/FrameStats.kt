@@ -33,7 +33,7 @@ import java.util.Locale
  * Toucher le bandeau remet les compteurs à zéro.
  */
 @Composable
-fun FrameStatsHud(modifier: Modifier = Modifier) {
+fun FrameStatsHud(extra: String = "", modifier: Modifier = Modifier) {
     val view = LocalView.current
     val collector = remember { FrameCollector(capacity = 600) }
     var summary by remember { mutableStateOf("Mesure en cours…") }
@@ -50,7 +50,7 @@ fun FrameStatsHud(modifier: Modifier = Modifier) {
         }
     }
     Text(
-        summary,
+        if (extra.isEmpty()) summary else "$summary\n$extra",
         color = Color.White,
         fontSize = 12.sp,
         modifier = modifier

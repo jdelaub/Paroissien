@@ -9,7 +9,15 @@
     <string name="spike_font">Police : %1$s</string>
     <string name="spike_font_garamond">EB Garamond</string>
     <string name="spike_font_literata">Literata</string>
-    <string name="spike_turn">Page : %1$s</string>
+    <string name="spike_smaller">A−</string>
+    <string name="spike_larger">A+</string>
+    <string name="spike_spread">Pages : %1$s</string>
+    <string name="spike_spread_auto">auto</string>
+    <string name="spike_spread_single">une</string>
+    <string name="spike_spread_double">deux</string>
+    <string name="spike_edges_on">Bords protégés : oui</string>
+    <string name="spike_edges_off">Bords protégés : non</string>
+    <string name="spike_turn">Feuille : %1$s</string>
     <string name="spike_turn_paper">papier</string>
     <string name="spike_turn_slide">glissement</string>
     <string name="spike_turn_none">sans animation</string>
