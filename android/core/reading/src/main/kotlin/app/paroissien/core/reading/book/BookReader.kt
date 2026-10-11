@@ -6,6 +6,9 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
+import androidx.compose.foundation.layout.calculateEndPadding
+import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.layout.displayCutout
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -14,7 +17,6 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.systemGestureExclusion
 import androidx.compose.foundation.text.BasicText
 import androidx.compose.runtime.Composable
@@ -36,6 +38,7 @@ import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.ui.graphics.drawscope.translate
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.text
 import androidx.compose.ui.text.AnnotatedString
@@ -45,6 +48,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.max
 import app.paroissien.core.designsystem.PaperColors
 import app.paroissien.core.designsystem.paperBackground
 import app.paroissien.core.reading.turn.MekuriConfiguration
@@ -88,16 +92,24 @@ fun BookReader(
 ) {
     val paper = typography.paper
     Box(modifier.fillMaxSize().background(paper.background)) {
-        BoxWithConstraints(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.displayCutout)) {
+        BoxWithConstraints(Modifier.fillMaxSize()) {
             val density = LocalDensity.current
             val double = when (spreadMode) {
                 SpreadMode.SINGLE -> false
                 SpreadMode.DOUBLE -> true
                 SpreadMode.AUTO -> maxWidth > maxHeight && maxWidth / 2 >= MinimumSpreadPageWidth
             }
+            // Le papier court jusqu'au bord de l'écran, sous la caméra ; seul le texte s'en écarte.
+            val cutout = WindowInsets.displayCutout.asPaddingValues()
+            val direction = LocalLayoutDirection.current
+            val margins = PageMargins(
+                top = PageTop + cutout.calculateTopPadding(),
+                bottom = PageBottom + cutout.calculateBottomPadding(),
+                horizontal = PageHorizontal + max(cutout.calculateStartPadding(direction), cutout.calculateEndPadding(direction)),
+            )
             val pageWidth = if (double) maxWidth / 2 else maxWidth
-            val contentWidth = pageWidth - PageHorizontal * 2
-            val contentHeight = maxHeight - PageTop - Header - Footer - PageBottom
+            val contentWidth = pageWidth - margins.horizontal * 2
+            val contentHeight = maxHeight - margins.top - Header - Footer - margins.bottom
             val widthPx = with(density) { contentWidth.roundToPx() }
             val heightPx = with(density) { contentHeight.roundToPx() }
 
@@ -133,7 +145,7 @@ fun BookReader(
                 pageAspectRatio = pageWidth.value / maxHeight.value,
                 slide = slide,
             ) { index ->
-                PageView(paged.pages[index], index, sideOf(index, double), paged.pages.size, typography, contentWidth, contentHeight)
+                PageView(paged.pages[index], index, sideOf(index, double), paged.pages.size, typography, margins, contentWidth, contentHeight)
             }
 
             // Variante de l'ADR 006 : les coins bas protégés du geste « retour » (200 dp au plus par bord).
@@ -146,6 +158,8 @@ fun BookReader(
 }
 
 private enum class PageSide { SINGLE, LEFT, RIGHT }
+
+private class PageMargins(val top: Dp, val bottom: Dp, val horizontal: Dp)
 
 /** Couverture seule à droite, puis paires (1, 2), (3, 4)… : les pages impaires sont à gauche. */
 private fun sideOf(index: Int, double: Boolean) = when {
@@ -168,11 +182,12 @@ private fun PageView(
     side: PageSide,
     pageCount: Int,
     t: BookTypography,
+    margins: PageMargins,
     contentWidth: Dp,
     contentHeight: Dp,
 ) {
     Box(Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper)) {
-        Column(Modifier.fillMaxSize().padding(start = PageHorizontal, end = PageHorizontal, top = PageTop, bottom = PageBottom)) {
+        Column(Modifier.fillMaxSize().padding(start = margins.horizontal, end = margins.horizontal, top = margins.top, bottom = margins.bottom)) {
             BasicText(
                 if (number > 0) page.runningHead else "",
                 style = t.runningHead,
