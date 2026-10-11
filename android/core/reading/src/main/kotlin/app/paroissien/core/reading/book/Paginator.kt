@@ -1,0 +1,279 @@
+package app.paroissien.core.reading.book
+
+import androidx.compose.runtime.Immutable
+import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.TextLayoutResult
+import androidx.compose.ui.text.TextMeasurer
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.unit.Constraints
+import androidx.compose.ui.unit.Density
+import androidx.compose.ui.unit.dp
+
+/** Ce qu'une page dessine, en pixels dans sa zone de texte. */
+sealed interface PageItem {
+    val y: Float
+
+    /** Les lignes [fromLine, toLine[ d'une mise en page, posées en (x, y) ; [charStart] est l'ancre de la première. */
+    class Lines(
+        val layout: TextLayoutResult,
+        val fromLine: Int,
+        val toLine: Int,
+        val x: Float,
+        override val y: Float,
+        val blockId: String,
+        val charStart: Int,
+    ) : PageItem {
+        val top: Float get() = layout.getLineTop(fromLine)
+        val height: Float get() = layout.getLineBottom(toLine - 1) - top
+
+        /** Texte lu par TalkBack, sans les césures conditionnelles. */
+        fun text(): String = layout.layoutInput.text.text
+            .substring(layout.getLineStart(fromLine), layout.getLineEnd(toLine - 1))
+            .replace(SOFT_HYPHEN, "")
+    }
+
+    /** Un décor posé tel quel : la lettrine. */
+    class Glyph(val layout: TextLayoutResult, val x: Float, override val y: Float) : PageItem
+}
+
+@Immutable
+class LaidOutPage(val items: List<PageItem>, val runningHead: String, val anchor: Anchor)
+
+/** Le livre mis en page pour une taille de zone de texte. Les pages se retrouvent par ancre, jamais par numéro. */
+@Immutable
+class PagedBook(val pages: List<LaidOutPage>, private val blockOrder: Map<String, Int>, val elapsedMillis: Long) {
+
+    /** La page qui contient [anchor] : la dernière dont l'ancre de début la précède ou l'égale. */
+    fun pageOf(anchor: Anchor): Int {
+        val target = key(anchor) ?: return 0
+        var low = 0
+        var high = pages.lastIndex
+        while (low < high) {
+            val mid = (low + high + 1) / 2
+            if (compareKeys(key(pages[mid].anchor) ?: (0 to 0), target) <= 0) low = mid else high = mid - 1
+        }
+        return low
+    }
+
+    private fun key(anchor: Anchor): Pair<Int, Int>? = blockOrder[anchor.blockId]?.let { it to anchor.charOffset }
+
+    private fun compareKeys(a: Pair<Int, Int>, b: Pair<Int, Int>) =
+        if (a.first != b.first) a.first.compareTo(b.first) else a.second.compareTo(b.second)
+}
+
+/**
+ * Répartit [blocks] en pages de [width] × [height] px. Règles du livre imprimé : un paragraphe ne laisse pas une
+ * ligne seule en bas ni en haut de page, un titre reste avec les deux premières lignes qui le suivent, une lettrine
+ * reste avec ses lignes. Appelable hors du fil principal.
+ */
+fun paginate(
+    blocks: List<ReadingBlock>,
+    measurer: TextMeasurer,
+    typography: BookTypography,
+    density: Density,
+    width: Int,
+    height: Int,
+): PagedBook {
+    val started = System.nanoTime()
+    val measure = BlockMeasure(measurer, typography, density, width)
+    val pages = ArrayList<LaidOutPage>()
+    var items = ArrayList<PageItem>()
+    var y = 0f
+    var runningHead = ""
+    var pageHead: String? = null
+    var pageAnchor: Anchor? = null
+    val cache = HashMap<Int, Measured>()
+    fun measured(i: Int) = cache.getOrPut(i) { measure(blocks[i]) }
+
+    fun closePage() {
+        if (items.isEmpty()) return
+        pages += LaidOutPage(items, pageHead ?: runningHead, pageAnchor ?: Anchor(blocks.first().id, 0))
+        items = ArrayList()
+        y = 0f
+        pageHead = null
+        pageAnchor = null
+    }
+
+    for (index in blocks.indices) {
+        val block = blocks[index]
+        if (block is ReadingBlock.PageBreak) {
+            closePage()
+            continue
+        }
+        if (block is ReadingBlock.Heading && block.runningHead != null) runningHead = block.runningHead
+        val m = measured(index)
+        if (m.units.isEmpty()) continue
+        val next = (index + 1 until blocks.size).firstOrNull { blocks[it] !is ReadingBlock.PageBreak }
+        val keepHeight = if (m.keepWithNext && next != null) m.height + measured(next).let { it.gapBefore + it.minStart } else 0f
+
+        if (y > 0f && y + m.gapBefore + maxOf(m.minStart, keepHeight) > height) closePage()
+        if (y > 0f) y += m.gapBefore
+
+        var u = 0
+        while (u < m.units.size) {
+            val origin = y - m.units[u].top
+            var fit = 0
+            while (u + fit < m.units.size && origin + m.units[u + fit].bottom <= height + 0.5f) fit++
+            val remaining = m.units.size - u
+            if (fit < remaining) {
+                val minFirst = minOf(remaining, if (u == 0) maxOf(2, m.keepTogether) else 2)
+                if (fit < minFirst && y > 0f) {
+                    closePage()
+                    continue
+                }
+                if (remaining - fit == 1 && fit - 1 >= minFirst) fit-- // pas de veuve en haut de la page suivante
+                if (fit == 0) fit = 1 // ligne plus haute que la page : on la pose quand même
+            }
+            if (pageHead == null) pageHead = runningHead
+            if (u == 0) m.decorations.forEach { items += PageItem.Glyph(it.layout, it.x, origin + it.y) }
+            var first = u
+            while (first < u + fit) {
+                val part = m.units[first].part
+                var last = first
+                while (last + 1 < u + fit && m.units[last + 1].part === part) last++
+                val line = m.units[first].line
+                val lines = PageItem.Lines(
+                    layout = part.layout, fromLine = line, toLine = m.units[last].line + 1, x = part.x,
+                    y = origin + m.units[first].top, blockId = m.blockId,
+                    charStart = part.charBase + visibleOffset(part.layout.layoutInput.text.text, part.layout.getLineStart(line)),
+                )
+                if (pageAnchor == null) pageAnchor = Anchor(lines.blockId, lines.charStart)
+                items += lines
+                first = last + 1
+            }
+            y = origin + m.units[u + fit - 1].bottom
+            u += fit
+            if (u < m.units.size) closePage()
+        }
+    }
+    closePage()
+    val order = blocks.withIndex().associate { (i, b) -> b.id to i }
+    return PagedBook(pages, order, (System.nanoTime() - started) / 1_000_000)
+}
+
+private const val SOFT_HYPHEN = "­"
+
+/** Décalage dans le texte affiché sans césures conditionnelles : l'ancre ne dépend pas de la césure (ADR 004). */
+private fun visibleOffset(text: String, index: Int): Int {
+    var hyphens = 0
+    for (i in 0 until index) if (text[i] == '­') hyphens++
+    return index - hyphens
+}
+
+private class Part(val layout: TextLayoutResult, val x: Float, val charBase: Int)
+
+private class LineUnit(val part: Part, val line: Int, val top: Float, val bottom: Float)
+
+private class Decoration(val layout: TextLayoutResult, val x: Float, val y: Float)
+
+private class Measured(
+    val blockId: String,
+    val units: List<LineUnit>,
+    val decorations: List<Decoration> = emptyList(),
+    val gapBefore: Float,
+    val keepWithNext: Boolean = false,
+    /** Lignes de tête qui ne se séparent pas (lettrine, titre). */
+    val keepTogether: Int = 0,
+) {
+    val height: Float get() = units.lastOrNull()?.bottom ?: 0f
+
+    /** Hauteur minimale à poser ensemble au début du bloc. */
+    val minStart: Float get() = units.getOrNull(minOf(units.size, maxOf(2, keepTogether)) - 1)?.bottom ?: 0f
+}
+
+private class BlockMeasure(
+    private val measurer: TextMeasurer,
+    private val t: BookTypography,
+    private val density: Density,
+    private val width: Int,
+) {
+    private val blockGap = with(density) { 8.dp.toPx() }
+    private val headingGap = with(density) { 20.dp.toPx() }
+    private val capGap = with(density) { 6.dp.toPx() }
+
+    operator fun invoke(block: ReadingBlock): Measured = when (block) {
+        is ReadingBlock.Title -> {
+            val title = layout(AnnotatedString(block.text), t.title)
+            val parts = mutableListOf(stack(title, 0f))
+            // Le sous-titre prolonge le titre dans les ancres : ses positions suivent celles du titre.
+            block.subtitle?.let { parts += stack(layout(AnnotatedString(it), t.subtitle), title.size.height + blockGap, charBase = block.text.length) }
+            val units = parts.flatten()
+            Measured(block.id, units, gapBefore = headingGap, keepTogether = units.size)
+        }
+        is ReadingBlock.Heading -> {
+            val units = stack(layout(AnnotatedString(block.text), if (block.minor) t.minorHeading else t.heading), 0f)
+            Measured(block.id, units, gapBefore = headingGap, keepWithNext = true, keepTogether = units.size)
+        }
+        is ReadingBlock.Rubric -> Measured(block.id, stack(layout(AnnotatedString(block.text), t.rubric), 0f), gapBefore = blockGap)
+        is ReadingBlock.Versicle -> {
+            val text = buildAnnotatedString {
+                withStyle(SpanStyle(color = t.paper.rubric)) { append(block.mark) }
+                append(' ')
+                append(t.inline(block.text, block.lang))
+            }
+            Measured(block.id, stack(layout(text, t.versicle(block.lang)), 0f), gapBefore = blockGap)
+        }
+        is ReadingBlock.Ornament -> Measured(block.id, stack(layout(AnnotatedString("❦"), t.ornament), 0f), gapBefore = headingGap)
+        is ReadingBlock.Paragraph -> paragraph(block)
+        is ReadingBlock.PageBreak -> Measured(block.id, emptyList(), gapBefore = 0f)
+    }
+
+    private fun paragraph(block: ReadingBlock.Paragraph): Measured {
+        val style = t.paragraph(block.lang, block.role)
+        val inline = t.inline(block.text, block.lang)
+        if (block.dropCap && inline.text.firstOrNull()?.isLetter() == true) dropCap(block, inline, style)?.let { return it }
+        val text = if (block.verse != null) {
+            buildAnnotatedString {
+                withStyle(SpanStyle(color = t.paper.rubric, fontSize = style.fontSize * 0.75f)) { append(block.verse.toString()) }
+                append(' ')
+                append(inline)
+            }
+        } else inline
+        return Measured(block.id, stack(layout(text, style), 0f), gapBefore = blockGap)
+    }
+
+    /**
+     * Lettrine sur deux lignes : la capitale rouge, puis le début du texte composé en retrait sur deux lignes, puis
+     * la suite à pleine largeur. La capitale s'aligne sur la ligne de base de la deuxième ligne.
+     */
+    private fun dropCap(block: ReadingBlock.Paragraph, inline: AnnotatedString, style: TextStyle): Measured? {
+        val lines = 2
+        val bodyPx = with(density) { style.fontSize.toPx() }
+        val lineHeightPx = with(density) { style.lineHeight.toPx() }
+        val capHeightRatio = 0.66f
+        val capSize = with(density) { (((lines - 1) * lineHeightPx + capHeightRatio * bodyPx) / capHeightRatio).toSp() }
+        // La capitale garde sa largeur naturelle : c'est elle qui fixe le retrait des deux premières lignes.
+        val cap = measurer.measure(AnnotatedString(inline.text.substring(0, 1)), t.dropCap.copy(fontSize = capSize), density = density)
+        val capWidth = cap.size.width + capGap
+        if (capWidth > width / 3f) return null
+        val rest = inline.subSequence(1, inline.length)
+        val head = layout(rest, style, (width - capWidth).toInt())
+        val headLines = minOf(lines, head.lineCount)
+        val headEnd = head.getLineEnd(headLines - 1)
+        val units = ArrayList<LineUnit>()
+        val headPart = Part(head, capWidth, charBase = 1)
+        for (i in 0 until headLines) units += LineUnit(headPart, i, head.getLineTop(i), head.getLineBottom(i))
+        if (headEnd < rest.length) {
+            val tail = layout(rest.subSequence(headEnd, rest.length), style)
+            val offset = head.getLineBottom(headLines - 1)
+            val tailPart = Part(tail, 0f, charBase = 1 + visibleOffset(rest.text, headEnd))
+            for (i in 0 until tail.lineCount) units += LineUnit(tailPart, i, offset + tail.getLineTop(i), offset + tail.getLineBottom(i))
+        }
+        val capY = head.getLineBaseline(headLines - 1) - cap.firstBaseline
+        return Measured(block.id, units, listOf(Decoration(cap, 0f, capY)), gapBefore = blockGap, keepTogether = headLines)
+    }
+
+    // Largeur imposée : sans largeur minimale, TextMeasurer réduit un texte court à sa largeur naturelle et le
+    // centrage des titres n'a plus d'effet.
+    private fun layout(text: AnnotatedString, style: TextStyle, maxWidth: Int = width): TextLayoutResult =
+        measurer.measure(text, style, constraints = Constraints.fixedWidth(maxWidth), density = density)
+
+    private fun stack(layout: TextLayoutResult, offset: Float, charBase: Int = 0): List<LineUnit> {
+        val part = Part(layout, 0f, charBase)
+        return (0 until layout.lineCount).map { LineUnit(part, it, offset + layout.getLineTop(it), offset + layout.getLineBottom(it)) }
+    }
+}
+

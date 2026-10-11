@@ -44,6 +44,18 @@ L'expérience de livre (page qui tourne, typographie de missel, double page) est
 - (−) À 120 Hz, il reste 8,3 ms par image pour trois passes de shader sur 2,85 Mpx. Trois calques de 2640 × 1080 × 4 octets occupent déjà environ 34 Mo sur les 40 permis.
 - (−) Un repli sur Readium coûterait le pli et une partie du travail de 1b.
 
+## Constats du spike 1b (11/10/2026)
+- **Paginateur natif** (`core:reading/book`). Chaque bloc est mesuré par `TextMeasurer` à la largeur de la page, puis ses lignes sont réparties. Une page dessine des tranches de lignes, sans nouvelle mise en page. Règles appliquées et testées :
+  - aucune ligne isolée en bas ou en haut de page pour un paragraphe d'au moins 4 lignes ;
+  - un titre reste avec la suite ;
+  - une lettrine reste sur ses deux lignes.
+- **Ancrage.** Chaque page connaît son ancre ; on rouvre par `pageOf(ancre)`. L'ancre ne change que si la page affichée (ou la double page) ne la contient plus, ce qui exclut toute dérive par rotations successives.
+- **Mesures.** Sous Robolectric, le Livre I complet de l'Imitation (680 blocs) tient en 78 pages pour le Flip6 en portrait, paginées en 0,9 s. **À mesurer sur le téléphone**, sur le bandeau « Mesures ».
+- **Double page.** Le format de page par défaut de Mekuri (2/3) donnerait sur le Flip6 en paysage des pages de 256 dp, sous son propre seuil : une seule page très large s'afficherait. Le lecteur décide donc lui-même. En Auto, il passe en double page si chaque moitié d'écran garde au moins 300 dp, et chaque page occupe alors une moitié.
+- **Pièges** :
+  - sans largeur minimale, `TextMeasurer` ramène un texte court à sa largeur naturelle, et le centrage disparaît : les blocs sont mesurés en `Constraints.fixedWidth`, sauf la lettrine ;
+  - les qualificateurs Robolectric veulent `land` avant la densité.
+
 ## Points ouverts
 - Nom exact de l'API Compose qui demande la fréquence haute pendant un tour (`preferredFrameRate` ou `requestedFrameRate`).
 - Mesures sur le second appareil, avant B.
