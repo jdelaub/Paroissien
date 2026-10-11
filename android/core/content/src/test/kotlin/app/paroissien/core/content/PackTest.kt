@@ -95,3 +95,40 @@ class PackTest {
 
     private fun sha256(bytes: ByteArray) = MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
 }
+
+class SearchTest {
+
+    private val golden = File(System.getProperty("golden.dir"), "golden-test.sqlite")
+
+    @Test
+    fun queryIsFoldedQuotedAndPrefixed() {
+        assertEquals("\"coeur\" \"oeu\"*", SearchQuery.match("Cœur, Œu"))
+        assertEquals("\"iuuentutem\"*", SearchQuery.match("juventútem"))
+        assertEquals(null, SearchQuery.match(" « ; » "))
+        assertEquals("pas d'injection de syntaxe FTS5", "\"near\" \"or\" \"x\"*", SearchQuery.match("NEAR(OR) x"))
+    }
+
+    @Test
+    fun searchFindsAccentedLatinAndLigaturesAndHighlightsOriginalWords() {
+        PackReader.open(golden).use { reader ->
+            val latin = reader.search("juventutem")
+            assertEquals("chap-1.v2", latin.single().blockId)
+            val hit = reader.search("coeur oeuv").single()
+            assertEquals("chap-2.item", hit.blockId)
+            assertEquals(listOf("Cœur", "œuvre"), hit.highlights.map { hit.text.substring(it.first, it.last + 1) })
+            assertTrue("un titre est trouvé et signalé", reader.search("chapitre").any { it.heading })
+            assertTrue(reader.search("introi").any { it.blockId == "chap-1.v1" && it.lang == "la" })
+        }
+    }
+
+    @Test
+    fun tocListsUnitsThenTheirHeadings() {
+        PackReader.open(golden).use { reader ->
+            val toc = reader.toc("golden.test", "fr")
+            assertEquals(listOf("chap-1", "chap-1", "chap-2", "chap-2", "notes"), toc.map { it.unit })
+            assertEquals("Chapitre premier", toc[1].title)
+            assertEquals("Caput primum", reader.toc("golden.test", "la")[1].title)
+            assertEquals("Chapitre second", toc[3].title)
+        }
+    }
+}

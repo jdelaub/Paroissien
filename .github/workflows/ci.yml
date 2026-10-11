@@ -55,7 +55,7 @@ jobs:
       - name: Tests JVM, captures et lint
         run: >
           ./gradlew --console=plain
-          :core:model:test :core:liturgy:test :core:content:test :core:reading:testDebugUnitTest
+          :core:model:test :core:liturgy:test :core:content:test :core:reading:testDebugUnitTest :core:data:testDebugUnitTest
           :core:designsystem:verifyRoborazziDebug
           :app:verifyRoborazziDomainePublicDebug
           :app:lintDomainePublicDebug

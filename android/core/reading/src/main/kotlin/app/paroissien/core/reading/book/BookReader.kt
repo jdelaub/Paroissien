@@ -1,6 +1,16 @@
 package app.paroissien.core.reading.book
 
 import androidx.compose.foundation.Canvas
+import app.paroissien.core.designsystem.drawRibbon
+import app.paroissien.core.designsystem.RibbonStyle
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.layout.systemGestures
+import androidx.compose.foundation.layout.only
+import androidx.compose.foundation.layout.WindowInsetsSides
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -64,6 +74,12 @@ import kotlin.math.roundToInt
 /** Page simple ou double page (rapport 07, D7 ; rapport 08) : en Auto, deux pages si chacune garde 300 dp de large. */
 enum class SpreadMode { AUTO, SINGLE, DOUBLE }
 
+/**
+ * Un ruban du livre (rapport 09). [anchor] le situe dans l'unité ouverte ; sinon [elsewhere] dit s'il marque une
+ * unité précédente (-1) ou suivante (+1), pour que sa queue pende du bon côté.
+ */
+data class RibbonMark(val slot: Int, val anchor: Anchor?, val elsewhere: Int = 0)
+
 private val PageHorizontal = 28.dp
 private val PageTop = 18.dp
 private val PageBottom = 14.dp
@@ -89,6 +105,11 @@ fun BookReader(
     onCenterTap: (() -> Unit)? = null,
     onPaginated: (PagedBook) -> Unit = {},
     paginationContext: CoroutineContext = Dispatchers.Default,
+    ribbons: List<RibbonMark> = emptyList(),
+    onRibbonTap: (Int) -> Unit = {},
+    onTurnPastEnd: (() -> Unit)? = null,
+    onTurnPastStart: (() -> Unit)? = null,
+    initialAtEnd: Boolean = false,
 ) {
     val paper = typography.paper
     Box(modifier.fillMaxSize().background(paper.background)) {
@@ -127,12 +148,23 @@ fun BookReader(
             val currentAnchor by rememberUpdatedState(anchor)
             val anchorChanged by rememberUpdatedState(onAnchorChange)
             LaunchedEffect(paged, double, state) {
-                currentAnchor?.let { state.scrollToPage(paged.pageOf(it)) }
+                val held = currentAnchor
+                when {
+                    held != null -> state.scrollToPage(paged.pageOf(held))
+                    initialAtEnd -> state.scrollToPage(paged.pages.lastIndex)
+                }
                 snapshotFlow { state.currentPage }.collect { page ->
                     val shown = visiblePages(page, double, paged.pages.size)
                     val held = currentAnchor?.let(paged::pageOf)
                     if (held == null || held !in shown) paged.pages.getOrNull(page)?.let { anchorChanged(it.anchor) }
                 }
+            }
+
+            // Saut demandé de l'extérieur (sommaire, ruban, recherche) : on ouvre la page de l'ancre si elle n'est pas
+            // déjà sous les yeux ; un tour de page ordinaire ne déclenche donc rien.
+            LaunchedEffect(paged, anchor) {
+                val target = anchor?.let(paged::pageOf) ?: return@LaunchedEffect
+                if (target !in visiblePages(state.currentPage, double, paged.pages.size)) state.scrollToPage(target)
             }
 
             MekuriPager(
@@ -144,9 +176,20 @@ fun BookReader(
                 coverStandsAlone = true,
                 pageAspectRatio = pageWidth.value / maxHeight.value,
                 slide = slide,
+                onBlockedTurn = { forward -> if (forward) onTurnPastEnd?.invoke() else onTurnPastStart?.invoke() },
             ) { index ->
-                PageView(paged.pages[index], index, sideOf(index, double), paged.pages.size, typography, margins, contentWidth, contentHeight)
+                val here = remember(ribbons, paged, index) { ribbons.filter { it.anchor != null && paged.pageOf(it.anchor) == index }.map { it.slot } }
+                PageView(paged.pages[index], index, sideOf(index, double), paged.pages.size, typography, margins, contentWidth, contentHeight, here)
             }
+
+            // Queues des rubans qui marquent une autre page : à gauche ce qui précède, à droite ce qui suit.
+            val shown = visiblePages(state.currentPage, double, paged.pages.size)
+            val tails = ribbons.mapNotNull { r ->
+                val side = r.anchor?.let { a -> paged.pageOf(a).let { p -> if (p in shown) 0 else if (p < shown.min()) -1 else 1 } } ?: r.elsewhere
+                if (side == 0) null else r.slot to side
+            }
+            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal))
+            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal))
 
             // Variante de l'ADR 006 : les coins bas protégés du geste « retour » (200 dp au plus par bord).
             if (protectEdges) {
@@ -185,8 +228,9 @@ private fun PageView(
     margins: PageMargins,
     contentWidth: Dp,
     contentHeight: Dp,
+    ribbonSlots: List<Int>,
 ) {
-    Box(Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper)) {
+    Box(Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper).lyingRibbons(ribbonSlots, side, t.paper.isDark)) {
         Column(Modifier.fillMaxSize().padding(start = margins.horizontal, end = margins.horizontal, top = margins.top, bottom = margins.bottom)) {
             BasicText(
                 if (number > 0) page.runningHead else "",
@@ -266,5 +310,34 @@ private fun Modifier.bookEdges(side: PageSide, number: Int, pageCount: Int, pape
     while (x < x0 + band) {
         drawLine(paper.surface.copy(alpha = 0.9f), Offset(x, 0f), Offset(x, size.height), strokeWidth = 0.5.dp.toPx())
         x += step
+    }
+}
+
+/** Les rubans qui marquent cette page sont couchés dans le petit fond, côté reliure, du haut au bas de la page. */
+private fun Modifier.lyingRibbons(slots: List<Int>, side: PageSide, dark: Boolean): Modifier = if (slots.isEmpty()) this else drawWithContent {
+    drawContent()
+    val width = 9.dp.toPx()
+    val gap = 4.dp.toPx()
+    slots.forEachIndexed { i, slot ->
+        val inset = 10.dp.toPx() + i * (width + gap)
+        val x = if (side == PageSide.LEFT) size.width - inset - width else inset
+        drawRibbon(RibbonStyle.of(slot), dark, Offset(x, 0f), Size(width, size.height + 2.dp.toPx()))
+    }
+}
+
+/** Queues de rubans qui pendent sous la page ; un toucher ouvre la page marquée. */
+@Composable
+private fun RibbonTails(slots: List<Int>, dark: Boolean, onTap: (Int) -> Unit, modifier: Modifier) {
+    if (slots.isEmpty()) return
+    Row(modifier.windowInsetsPadding(WindowInsets.systemGestures.only(WindowInsetsSides.Bottom)), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+        slots.forEach { slot ->
+            val style = RibbonStyle.of(slot)
+            Canvas(
+                Modifier
+                    .size(width = 14.dp, height = 40.dp)
+                    .clickable(onClickLabel = "Ouvrir au ruban ${style.label}") { onTap(slot) }
+                    .semantics { contentDescription = "Ruban ${style.label}" },
+            ) { drawRibbon(style, dark, Offset.Zero, size) }
+        }
     }
 }

@@ -89,7 +89,7 @@ object Inlines {
                 c == '_' -> {
                     flush()
                     if (italic == null) italic = ArrayList() else {
-                        out.add(Inline.Marked(setOf(Mark.ITALIC), italic!!))
+                        out.add(Inline.Marked(setOf(Mark.ITALIC), italic))
                         italic = null
                     }
                 }

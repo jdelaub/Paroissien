@@ -1,4 +1,4 @@
-package app.paroissien.spike
+package app.paroissien.ui
 
 import app.paroissien.core.model.text.Inlines
 import app.paroissien.core.model.text.LiangHyphenator

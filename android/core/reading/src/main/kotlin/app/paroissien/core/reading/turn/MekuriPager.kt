@@ -51,6 +51,7 @@ import androidx.compose.ui.semantics.stateDescription
  *   a drag crosses the point where releasing completes the turn, and a thump as
  *   the page lands. Follows the system touch-feedback setting.
  * @param slide (Paroissien) the leaf slides instead of folding; always true below API 33.
+ * @param onBlockedTurn (Paroissien) a turn asked past the last page (true) or before the first (false).
  * @param content builds the page at an index.
  */
 @Composable
@@ -65,12 +66,14 @@ public fun MekuriPager(
     pageAspectRatio: Float = DEFAULT_PAGE_ASPECT_RATIO,
     haptics: Boolean = true,
     slide: Boolean = false,
+    onBlockedTurn: (forward: Boolean) -> Unit = {},
     content: @Composable (Int) -> Unit,
 ) {
     val scope = rememberCoroutineScope()
     val controller = remember(state, scope) { MekuriPagerController(state, scope) }
     controller.configuration = configuration
     controller.reducesMotion = rememberMekuriReducesMotion(configuration.reducedMotionOverride)
+    controller.onBlockedTurn = { turn -> onBlockedTurn(turn == MekuriTurn.Forward) }
     val view = LocalView.current
     controller.onHaptic = if (haptics) {
         { haptic -> view.performHapticFeedback(haptic.feedbackConstant) }
