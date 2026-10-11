@@ -1,0 +1,251 @@
+{"id":"lam.titre","type":"heading","level":1,"t":{"la":["Lamentationes Jeremiæ"]}}
+{"id":"lam.prologus","type":"heading","level":3,"x-osis":"x-IS","t":{"la":["Prologus"]}}
+{"id":"lam.prologus.p1","type":"para","t":{"la":["Et factum est, postquam in captivitatem redactus est Israël, et Jerusalem deserta est, sedit Jeremias propheta flens, et planxit lamentatione hac in Jerusalem : et amaro animo suspirans et ejulans, dixit :"]}}
+{"id":"lam.1","type":"heading","level":2,"label":"Caput 1","t":{"la":["Caput 1"]}}
+{"id":"lam.1.h1","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Aleph"]}}
+{"id":"lam.1.1","type":"verse","n":"1","p":true,"dropCap":true,"t":{"la":[{"num":"1"},"Quomodo sedet sola",{"br":1},"civitas plena populo !",{"br":1},"Facta est quasi vidua",{"br":1},"domina gentium ;",{"br":1},"princeps provinciarum",{"br":1},"facta est sub tributo."]}}
+{"id":"lam.1.h2","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Beth"]}}
+{"id":"lam.1.2","type":"verse","n":"2","p":true,"t":{"la":[{"num":"2"},"Plorans ploravit in nocte,",{"br":1},"et lacrimæ ejus in maxillis ejus :",{"br":1},"non est qui consoletur eam",{"br":1},"ex omnibus caris ejus ;",{"br":1},"omnes amici ejus spreverunt eam,",{"br":1},"et facti sunt ei inimici."]}}
+{"id":"lam.1.h3","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Ghimel"]}}
+{"id":"lam.1.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Migravit Judas propter afflictionem,",{"br":1},"et multitudinem servitutis ;",{"br":1},"habitavit inter gentes,",{"br":1},"nec invenit requiem :",{"br":1},"omnes persecutores ejus apprehenderunt eam",{"br":1},"inter angustias."]}}
+{"id":"lam.1.h4","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Daleth"]}}
+{"id":"lam.1.4","type":"verse","n":"4","p":true,"t":{"la":[{"num":"4"},"Viæ Sion lugent, eo quod non sint",{"br":1},"qui veniant ad solemnitatem :",{"br":1},"omnes portæ ejus destructæ,",{"br":1},"sacerdotes ejus gementes ;",{"br":1},"virgines ejus squalidæ,",{"br":1},"et ipsa oppressa amaritudine."]}}
+{"id":"lam.1.h5","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["He"]}}
+{"id":"lam.1.5","type":"verse","n":"5","p":true,"t":{"la":[{"num":"5"},"Facti sunt hostes ejus in capite ;",{"br":1},"inimici ejus locupletati sunt :",{"br":1},"quia Dominus locutus est super eam",{"br":1},"propter multitudinem iniquitatum ejus.",{"br":1},"Parvuli ejus ducti sunt in captivitatem",{"br":1},"ante faciem tribulantis."]}}
+{"id":"lam.1.h6","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Vau"]}}
+{"id":"lam.1.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Et egressus est a filia Sion",{"br":1},"omnis decor ejus ;",{"br":1},"facti sunt principes ejus velut arietes",{"br":1},"non invenientes pascua,",{"br":1},"et abierunt absque fortitudine",{"br":1},"ante faciem subsequentis."]}}
+{"id":"lam.1.h7","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Zain"]}}
+{"id":"lam.1.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Recordata est Jerusalem dierum afflictionis suæ,",{"br":1},"et prævaricationis,",{"br":1},"omnium desiderabilium suorum,",{"br":1},"quæ habuerat a diebus antiquis,",{"br":1},"cum caderet populus ejus in manu hostili,",{"br":1},"et non esset auxiliator :",{"br":1},"viderunt eam hostes,",{"br":1},"et deriserunt sabbata ejus."]}}
+{"id":"lam.1.h8","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Heth"]}}
+{"id":"lam.1.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"Peccatum peccavit Jerusalem,",{"br":1},"propterea instabilis facta est ;",{"br":1},"omnes qui glorificabant eam spreverunt illam,",{"br":1},"quia viderunt ignominiam ejus :",{"br":1},"ipsa autem gemens",{"br":1},"conversa est retrorsum."]}}
+{"id":"lam.1.h9","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Teth"]}}
+{"id":"lam.1.9","type":"verse","n":"9","p":true,"t":{"la":[{"num":"9"},"Sordes ejus in pedibus ejus,",{"br":1},"nec recordata est finis sui ;",{"br":1},"deposita est vehementer,",{"br":1},"non habens consolatorem.",{"br":1},"Vide, Domine, afflictionem meam,",{"br":1},"quoniam erectus est inimicus."]}}
+{"id":"lam.1.h10","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Jod"]}}
+{"id":"lam.1.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Manum suam misit hostis",{"br":1},"ad omnia desiderabilia ejus,",{"br":1},"quia vidit gentes",{"br":1},"ingressas sanctuarium suum,",{"br":1},"de quibus præceperas",{"br":1},"ne intrarent in ecclesiam tuam."]}}
+{"id":"lam.1.h11","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Caph"]}}
+{"id":"lam.1.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Omnis populus ejus gemens,",{"br":1},"et quærens panem ;",{"br":1},"dederunt pretiosa quæque pro cibo",{"br":1},"ad refocillandam animam.",{"br":1},"Vide, Domine, et considera",{"br":1},"quoniam facta sum vilis !"]}}
+{"id":"lam.1.h12","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Lamed"]}}
+{"id":"lam.1.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"O vos omnes qui transitis per viam,",{"br":1},"attendite, et videte",{"br":1},"si est dolor sicut dolor meus !",{"br":1},"quoniam vindemiavit me,",{"br":1},"ut locutus est Dominus,",{"br":1},"in die iræ furoris sui."]}}
+{"id":"lam.1.h13","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Mem"]}}
+{"id":"lam.1.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"De excelso misit ignem in ossibus meis,",{"br":1},"et erudivit me :",{"br":1},"expandit rete pedibus meis,",{"br":1},"convertit me retrorsum ;",{"br":1},"posuit me desolatam,",{"br":1},"tota die mœrore confectam."]}}
+{"id":"lam.1.h14","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Nun"]}}
+{"id":"lam.1.14","type":"verse","n":"14","p":true,"t":{"la":[{"num":"14"},"Vigilavit jugum iniquitatum mearum ;",{"br":1},"in manu ejus convolutæ sunt,",{"br":1},"et impositæ collo meo.",{"br":1},"Infirmata est virtus mea :",{"br":1},"dedit me Dominus in manu",{"br":1},"de qua non potero surgere."]}}
+{"id":"lam.1.h15","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Samech"]}}
+{"id":"lam.1.15","type":"verse","n":"15","p":true,"t":{"la":[{"num":"15"},"Abstulit omnes magnificos meos Dominus",{"br":1},"de medio mei ;",{"br":1},"vocavit adversum me tempus",{"br":1},"ut contereret electos meos.",{"br":1},"Torcular calcavit Dominus",{"br":1},"virgini filiæ Juda."]}}
+{"id":"lam.1.h16","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Ain"]}}
+{"id":"lam.1.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Idcirco ego plorans,",{"br":1},"et oculus meus deducens aquas,",{"br":1},"quia longe factus est a me consolator,",{"br":1},"convertens animam meam.",{"br":1},"Facti sunt filii mei perditi,",{"br":1},"quoniam invaluit inimicus."]}}
+{"id":"lam.1.h17","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Phe"]}}
+{"id":"lam.1.17","type":"verse","n":"17","p":true,"t":{"la":[{"num":"17"},"Expandit Sion manus suas ;",{"br":1},"non est qui consoletur eam.",{"br":1},"Mandavit Dominus adversum Jacob",{"br":1},"in circuitu ejus hostes ejus ;",{"br":1},"facta est Jerusalem",{"br":1},"quasi polluta menstruis inter eos."]}}
+{"id":"lam.1.h18","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Sade"]}}
+{"id":"lam.1.18","type":"verse","n":"18","p":true,"t":{"la":[{"num":"18"},"Justus est Dominus,",{"br":1},"quia os ejus ad iracundiam provocavi.",{"br":1},"Audite, obsecro, universi populi,",{"br":1},"et videte dolorem meum :",{"br":1},"virgines meæ et juvenes mei abierunt",{"br":1},"in captivitatem."]}}
+{"id":"lam.1.h19","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Coph"]}}
+{"id":"lam.1.19","type":"verse","n":"19","p":true,"t":{"la":[{"num":"19"},"Vocavi amicos meos,",{"br":1},"et ipsi deceperunt me ;",{"br":1},"sacerdotes mei et senes mei",{"br":1},"in urbe consumpti sunt,",{"br":1},"quia quæsierunt cibum sibi",{"br":1},"ut refocillarent animam suam."]}}
+{"id":"lam.1.h20","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Res"]}}
+{"id":"lam.1.20","type":"verse","n":"20","p":true,"t":{"la":[{"num":"20"},"Vide, Domine, quoniam tribulor :",{"br":1},"conturbatus est venter meus,",{"br":1},"subversum est cor meum in memetipsa,",{"br":1},"quoniam amaritudine plena sum.",{"br":1},"Foris interfecit gladius,",{"br":1},"et domi mors similis est."]}}
+{"id":"lam.1.h21","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Sin"]}}
+{"id":"lam.1.21","type":"verse","n":"21","p":true,"t":{"la":[{"num":"21"},"Audierunt quia ingemisco ego,",{"br":1},"et non est qui consoletur me ;",{"br":1},"omnes inimici mei audierunt malum meum,",{"br":1},"lætati sunt quoniam tu fecisti :",{"br":1},"adduxisti diem consolationis,",{"br":1},"et fient similes mei."]}}
+{"id":"lam.1.h22","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Thau"]}}
+{"id":"lam.1.22","type":"verse","n":"22","p":true,"t":{"la":[{"num":"22"},"Ingrediatur omne malum eorum coram te :",{"br":1},"et vindemia eos, sicut vindemiasti me",{"br":1},"propter omnes iniquitates meas :",{"br":1},"multi enim gemitus mei,",{"br":1},"et cor meum mœrens."]}}
+{"id":"lam.2","type":"heading","level":2,"label":"Caput 2","t":{"la":["Caput 2"]}}
+{"id":"lam.2.h1","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Aleph"]}}
+{"id":"lam.2.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Quomodo obtexit caligine in furore suo",{"br":1},"Dominus filiam Sion ;",{"br":1},"projecit de cælo in terram",{"br":1},"inclytam Israël,",{"br":1},"et non est recordatus scabelli pedum suorum",{"br":1},"in die furoris sui !"]}}
+{"id":"lam.2.h2","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Beth"]}}
+{"id":"lam.2.2","type":"verse","n":"2","p":true,"t":{"la":[{"num":"2"},"Præcipitavit Dominus, nec pepercit",{"br":1},"omnia speciosa Jacob :",{"br":1},"destruxit in furore suo",{"br":1},"munitiones virginis Juda,",{"br":1},"et dejecit in terram ;",{"br":1},"polluit regnum et principes ejus."]}}
+{"id":"lam.2.h3","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Ghimel"]}}
+{"id":"lam.2.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Confregit in ira furoris sui",{"br":1},"omne cornu Israël ;",{"br":1},"avertit retrorsum dexteram suam",{"br":1},"a facie inimici,",{"br":1},"et succendit in Jacob quasi ignem",{"br":1},"flammæ devorantis in gyro."]}}
+{"id":"lam.2.h4","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Daleth"]}}
+{"id":"lam.2.4","type":"verse","n":"4","p":true,"t":{"la":[{"num":"4"},"Tetendit arcum suum quasi inimicus,",{"br":1},"firmavit dexteram suam quasi hostis,",{"br":1},"et occidit omne quod pulchrum erat visu",{"br":1},"in tabernaculo filiæ Sion ;",{"br":1},"effudit quasi ignem",{"br":1},"indignationem suam."]}}
+{"id":"lam.2.h5","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["He"]}}
+{"id":"lam.2.5","type":"verse","n":"5","p":true,"t":{"la":[{"num":"5"},"Factus est Dominus velut inimicus,",{"br":1},"præcipitavit Israël :",{"br":1},"præcipitavit omnia mœnia ejus,",{"br":1},"dissipavit munitiones ejus,",{"br":1},"et replevit in filia Juda",{"br":1},"humiliatum et humiliatam."]}}
+{"id":"lam.2.h6","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Vau"]}}
+{"id":"lam.2.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Et dissipavit quasi hortum tentorium suum ;",{"br":1},"demolitus est tabernaculum suum.",{"br":1},"Oblivioni tradidit Dominus in Sion",{"br":1},"festivitatem et sabbatum ;",{"br":1},"et in opprobrium, et in indignationem furoris sui,",{"br":1},"regem et sacerdotem."]}}
+{"id":"lam.2.h7","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Zain"]}}
+{"id":"lam.2.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Repulit Dominus altare suum ;",{"br":1},"maledixit sanctificationi suæ :",{"br":1},"tradidit in manu inimici",{"br":1},"muros turrium ejus.",{"br":1},"Vocem dederunt in domo Domini",{"br":1},"sicut in die solemni."]}}
+{"id":"lam.2.h8","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Heth"]}}
+{"id":"lam.2.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"Cogitavit Dominus dissipare",{"br":1},"murum filiæ Sion ;",{"br":1},"tetendit funiculum suum,",{"br":1},"et non avertit manum suam a perditione :",{"br":1},"luxitque antemurale,",{"br":1},"et murus pariter dissipatus est."]}}
+{"id":"lam.2.h9","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Teth"]}}
+{"id":"lam.2.9","type":"verse","n":"9","p":true,"t":{"la":[{"num":"9"},"Defixæ sunt in terra portæ ejus,",{"br":1},"perdidit et contrivit vectes ejus ;",{"br":1},"regem ejus et principes ejus in gentibus :",{"br":1},"non est lex,",{"br":1},"et prophetæ ejus non invenerunt",{"br":1},"visionem a Domino."]}}
+{"id":"lam.2.h10","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Jod"]}}
+{"id":"lam.2.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Sederunt in terra, conticuerunt",{"br":1},"senes filiæ Sion ;",{"br":1},"consperserunt cinere capita sua,",{"br":1},"accincti sunt ciliciis :",{"br":1},"abjecerunt in terram capita sua",{"br":1},"virgines Jerusalem."]}}
+{"id":"lam.2.h11","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Caph"]}}
+{"id":"lam.2.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Defecerunt præ lacrimis oculi mei,",{"br":1},"conturbata sunt viscera mea ;",{"br":1},"effusum est in terra jecur meum",{"br":1},"super contritione filiæ populi mei,",{"br":1},"cum deficeret parvulus et lactens",{"br":1},"in plateis oppidi."]}}
+{"id":"lam.2.h12","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Lamed"]}}
+{"id":"lam.2.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Matribus suis dixerunt :",{"br":1},"Ubi est triticum et vinum ?",{"br":1},"cum deficerent quasi vulnerati",{"br":1},"in plateis civitatis,",{"br":1},"cum exhalarent animas suas",{"br":1},"in sinu matrum suarum."]}}
+{"id":"lam.2.h13","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Mem"]}}
+{"id":"lam.2.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Cui comparabo te, vel cui assimilabo te,",{"br":1},"filia Jerusalem ?",{"br":1},"cui exæquabo te, et consolabor te,",{"br":1},"virgo, filia Sion ?",{"br":1},"magna est enim velut mare contritio tua :",{"br":1},"quis medebitur tui ?"]}}
+{"id":"lam.2.h14","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Nun"]}}
+{"id":"lam.2.14","type":"verse","n":"14","p":true,"t":{"la":[{"num":"14"},"Prophetæ tui viderunt tibi",{"br":1},"falsa et stulta ;",{"br":1},"nec aperiebant iniquitatem tuam,",{"br":1},"ut te ad pœnitentiam provocarent ;",{"br":1},"viderunt autem tibi assumptiones falsas,",{"br":1},"et ejectiones."]}}
+{"id":"lam.2.h15","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Samech"]}}
+{"id":"lam.2.15","type":"verse","n":"15","p":true,"t":{"la":[{"num":"15"},"Plauserunt super te manibus",{"br":1},"omnes transeuntes per viam ;",{"br":1},"sibilaverunt et moverunt caput suum",{"br":1},"super filiam Jerusalem :",{"br":1},"Hæccine est urbs, dicentes, perfecti decoris,",{"br":1},"gaudium universæ terræ ?"]}}
+{"id":"lam.2.h16","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Phe"]}}
+{"id":"lam.2.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Aperuerunt super te os suum",{"br":1},"omnes inimici tui :",{"br":1},"sibilaverunt, et fremuerunt dentibus,",{"br":1},"et dixerunt : Devorabimus :",{"br":1},"en ista est dies quam exspectabamus ;",{"br":1},"invenimus, vidimus."]}}
+{"id":"lam.2.h17","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Ain"]}}
+{"id":"lam.2.17","type":"verse","n":"17","p":true,"t":{"la":[{"num":"17"},"Fecit Dominus quæ cogitavit ;",{"br":1},"complevit sermonem suum,",{"br":1},"quem præceperat a diebus antiquis :",{"br":1},"destruxit, et non pepercit,",{"br":1},"et lætificavit super te inimicum,",{"br":1},"et exaltavit cornu hostium tuorum."]}}
+{"id":"lam.2.h18","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Sade"]}}
+{"id":"lam.2.18","type":"verse","n":"18","p":true,"t":{"la":[{"num":"18"},"Clamavit cor eorum ad Dominum",{"br":1},"super muros filiæ Sion :",{"br":1},"Deduc quasi torrentem lacrimas",{"br":1},"per diem et noctem ;",{"br":1},"non des requiem tibi,",{"br":1},"neque taceat pupilla oculi tui."]}}
+{"id":"lam.2.h19","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Coph"]}}
+{"id":"lam.2.19","type":"verse","n":"19","p":true,"t":{"la":[{"num":"19"},"Consurge, lauda in nocte,",{"br":1},"in principio vigiliarum ;",{"br":1},"effunde sicut aquam cor tuum",{"br":1},"ante conspectum Domini :",{"br":1},"leva ad eum manus tuas",{"br":1},"pro anima parvulorum tuorum,",{"br":1},"qui defecerunt in fame",{"br":1},"in capite omnium compitorum."]}}
+{"id":"lam.2.h20","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Res"]}}
+{"id":"lam.2.20","type":"verse","n":"20","p":true,"t":{"la":[{"num":"20"},"Vide, Domine, et considera",{"br":1},"quem vindemiaveris ita.",{"br":1},"Ergone comedent mulieres fructum suum,",{"br":1},"parvulos ad mensuram palmæ ?",{"br":1},"si occiditur in sanctuario Domini",{"br":1},"sacerdos et propheta ?"]}}
+{"id":"lam.2.h21","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Sin"]}}
+{"id":"lam.2.21","type":"verse","n":"21","p":true,"t":{"la":[{"num":"21"},"Jacuerunt in terra foris",{"br":1},"puer et senex ;",{"br":1},"virgines meæ et juvenes mei",{"br":1},"ceciderunt in gladio :",{"br":1},"interfecisti in die furoris tui,",{"br":1},"percussisti, nec misertus es."]}}
+{"id":"lam.2.h22","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Thau"]}}
+{"id":"lam.2.22","type":"verse","n":"22","p":true,"t":{"la":[{"num":"22"},"Vocasti quasi ad diem solemnem,",{"br":1},"qui terrerent me de circuitu ;",{"br":1},"et non fuit in die furoris Domini qui effugeret,",{"br":1},"et relinqueretur :",{"br":1},"quos educavi et enutrivi,",{"br":1},"inimicus meus consumpsit eos."]}}
+{"id":"lam.3","type":"heading","level":2,"label":"Caput 3","t":{"la":["Caput 3"]}}
+{"id":"lam.3.h1","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Aleph"]}}
+{"id":"lam.3.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Ego vir videns paupertatem meam",{"br":1},"in virga indignationis ejus.",{"br":1}]}}
+{"id":"lam.3.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Me minavit, et adduxit in tenebras,",{"br":1},"et non in lucem.",{"br":1}]}}
+{"id":"lam.3.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Tantum in me vertit et convertit",{"br":1},"manum suam tota die."]}}
+{"id":"lam.3.h2","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Beth"]}}
+{"id":"lam.3.4","type":"verse","n":"4","p":true,"t":{"la":[{"num":"4"},"Vetustam fecit pellem meam et carnem meam ;",{"br":1},"contrivit ossa mea.",{"br":1}]}}
+{"id":"lam.3.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Ædificavit in gyro meo, et circumdedit me",{"br":1},"felle et labore.",{"br":1}]}}
+{"id":"lam.3.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"In tenebrosis collocavit me,",{"br":1},"quasi mortuos sempiternos."]}}
+{"id":"lam.3.h3","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Ghimel"]}}
+{"id":"lam.3.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Circumædificavit adversum me, ut non egrediar ;",{"br":1},"aggravavit compedem meum.",{"br":1}]}}
+{"id":"lam.3.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Sed et cum clamavero, et rogavero,",{"br":1},"exclusit orationem meam.",{"br":1}]}}
+{"id":"lam.3.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Conclusit vias meas lapidibus quadris ;",{"br":1},"semitas meas subvertit."]}}
+{"id":"lam.3.h4","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Daleth"]}}
+{"id":"lam.3.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Ursus insidians factus est mihi,",{"br":1},"leo in absconditis.",{"br":1}]}}
+{"id":"lam.3.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Semitas meas subvertit, et confregit me ;",{"br":1},"posuit me desolatam.",{"br":1}]}}
+{"id":"lam.3.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Tetendit arcum suum, et posuit me",{"br":1},"quasi signum ad sagittam."]}}
+{"id":"lam.3.h5","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["He"]}}
+{"id":"lam.3.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Misit in renibus meis",{"br":1},"filias pharetræ suæ.",{"br":1}]}}
+{"id":"lam.3.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Factus sum in derisum omni populo meo,",{"br":1},"canticum eorum tota die.",{"br":1}]}}
+{"id":"lam.3.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Replevit me amaritudinibus ;",{"br":1},"inebriavit me absinthio."]}}
+{"id":"lam.3.h6","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Vau"]}}
+{"id":"lam.3.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Et fregit ad numerum dentes meos ;",{"br":1},"cibavit me cinere.",{"br":1}]}}
+{"id":"lam.3.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Et repulsa est a pace anima mea ;",{"br":1},"oblitus sum bonorum.",{"br":1}]}}
+{"id":"lam.3.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Et dixi : Periit finis meus,",{"br":1},"et spes mea a Domino."]}}
+{"id":"lam.3.h7","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Zain"]}}
+{"id":"lam.3.19","type":"verse","n":"19","p":true,"t":{"la":[{"num":"19"},"Recordare paupertatis, et transgressionis meæ,",{"br":1},"absinthii et fellis.",{"br":1}]}}
+{"id":"lam.3.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Memoria memor ero, et tabescet",{"br":1},"in me anima mea.",{"br":1}]}}
+{"id":"lam.3.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Hæc recolens in corde meo,",{"br":1},"ideo sperabo."]}}
+{"id":"lam.3.h8","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Heth"]}}
+{"id":"lam.3.22","type":"verse","n":"22","p":true,"t":{"la":[{"num":"22"},"Misericordiæ Domini, quia non sumus consumpti ;",{"br":1},"quia non defecerunt miserationes ejus.",{"br":1}]}}
+{"id":"lam.3.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Novi diluculo,",{"br":1},"multa est fides tua.",{"br":1}]}}
+{"id":"lam.3.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Pars mea Dominus, dixit anima mea ;",{"br":1},"propterea exspectabo eum."]}}
+{"id":"lam.3.h9","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Teth"]}}
+{"id":"lam.3.25","type":"verse","n":"25","p":true,"t":{"la":[{"num":"25"},"Bonus est Dominus sperantibus in eum,",{"br":1},"animæ quærenti illum.",{"br":1}]}}
+{"id":"lam.3.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Bonum est præstolari cum silentio",{"br":1},"salutare Dei.",{"br":1}]}}
+{"id":"lam.3.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Bonum est viro cum portaverit jugum",{"br":1},"ab adolescentia sua."]}}
+{"id":"lam.3.h10","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Jod"]}}
+{"id":"lam.3.28","type":"verse","n":"28","p":true,"t":{"la":[{"num":"28"},"Sedebit solitarius, et tacebit,",{"br":1},"quia levavit super se.",{"br":1}]}}
+{"id":"lam.3.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Ponet in pulvere os suum,",{"br":1},"si forte sit spes.",{"br":1}]}}
+{"id":"lam.3.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Dabit percutienti se maxillam :",{"br":1},"saturabitur opprobriis."]}}
+{"id":"lam.3.h11","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Caph"]}}
+{"id":"lam.3.31","type":"verse","n":"31","p":true,"t":{"la":[{"num":"31"},"Quia non repellet",{"br":1},"in sempiternum Dominus.",{"br":1}]}}
+{"id":"lam.3.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Quia si abjecit, et miserebitur,",{"br":1},"secundum multitudinem misericordiarum suarum.",{"br":1}]}}
+{"id":"lam.3.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"Non enim humiliavit ex corde suo",{"br":1},"et abjecit filios hominum."]}}
+{"id":"lam.3.h12","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Lamed"]}}
+{"id":"lam.3.34","type":"verse","n":"34","p":true,"t":{"la":[{"num":"34"},"Ut conteret sub pedibus suis",{"br":1},"omnes vinctos terræ.",{"br":1}]}}
+{"id":"lam.3.35","type":"verse","n":"35","t":{"la":[{"num":"35"},"Ut declinaret judicium viri",{"br":1},"in conspectu vultus Altissimi.",{"br":1}]}}
+{"id":"lam.3.36","type":"verse","n":"36","t":{"la":[{"num":"36"},"Ut perverteret hominem in judicio suo ;",{"br":1},"Dominus ignoravit."]}}
+{"id":"lam.3.h13","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Mem"]}}
+{"id":"lam.3.37","type":"verse","n":"37","p":true,"t":{"la":[{"num":"37"},"Quis est iste qui dixit ut fieret,",{"br":1},"Domino non jubente ?",{"br":1}]}}
+{"id":"lam.3.38","type":"verse","n":"38","t":{"la":[{"num":"38"},"Ex ore Altissimi non egredientur",{"br":1},"nec mala nec bona ?",{"br":1}]}}
+{"id":"lam.3.39","type":"verse","n":"39","t":{"la":[{"num":"39"},"Quid murmuravit homo vivens,",{"br":1},"vir pro peccatis suis ?"]}}
+{"id":"lam.3.h14","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Nun"]}}
+{"id":"lam.3.40","type":"verse","n":"40","p":true,"t":{"la":[{"num":"40"},"Scrutemur vias nostras, et quæramus,",{"br":1},"et revertamur ad Dominum.",{"br":1}]}}
+{"id":"lam.3.41","type":"verse","n":"41","t":{"la":[{"num":"41"},"Levemus corda nostra cum manibus",{"br":1},"ad Dominum in cælos.",{"br":1}]}}
+{"id":"lam.3.42","type":"verse","n":"42","t":{"la":[{"num":"42"},"Nos inique egimus, et ad iracundiam provocavimus ;",{"br":1},"idcirco tu inexorabilis es."]}}
+{"id":"lam.3.h15","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Samech"]}}
+{"id":"lam.3.43","type":"verse","n":"43","p":true,"t":{"la":[{"num":"43"},"Operuisti in furore, et percussisti nos ;",{"br":1},"occidisti, nec pepercisti.",{"br":1}]}}
+{"id":"lam.3.44","type":"verse","n":"44","t":{"la":[{"num":"44"},"Opposuisti nubem tibi,",{"br":1},"ne transeat oratio.",{"br":1}]}}
+{"id":"lam.3.45","type":"verse","n":"45","t":{"la":[{"num":"45"},"Eradicationem et abjectionem posuisti me",{"br":1},"in medio populorum."]}}
+{"id":"lam.3.h16","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Phe"]}}
+{"id":"lam.3.46","type":"verse","n":"46","p":true,"t":{"la":[{"num":"46"},"Aperuerunt super nos os suum",{"br":1},"omnes inimici.",{"br":1}]}}
+{"id":"lam.3.47","type":"verse","n":"47","t":{"la":[{"num":"47"},"Formido et laqueus facta est nobis",{"br":1},"vaticinatio, et contritio.",{"br":1}]}}
+{"id":"lam.3.48","type":"verse","n":"48","t":{"la":[{"num":"48"},"Divisiones aquarum deduxit oculus meus,",{"br":1},"in contritione filiæ populi mei."]}}
+{"id":"lam.3.h17","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Ain"]}}
+{"id":"lam.3.49","type":"verse","n":"49","p":true,"t":{"la":[{"num":"49"},"Oculus meus afflictus est, nec tacuit,",{"br":1},"eo quod non esset requies.",{"br":1}]}}
+{"id":"lam.3.50","type":"verse","n":"50","t":{"la":[{"num":"50"},"Donec respiceret et videret",{"br":1},"Dominus de cælis.",{"br":1}]}}
+{"id":"lam.3.51","type":"verse","n":"51","t":{"la":[{"num":"51"},"Oculus meus deprædatus est animam meam",{"br":1},"in cunctis filiabus urbis meæ."]}}
+{"id":"lam.3.h18","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Sade"]}}
+{"id":"lam.3.52","type":"verse","n":"52","p":true,"t":{"la":[{"num":"52"},"Venatione ceperunt me quasi avem",{"br":1},"inimici mei gratis.",{"br":1}]}}
+{"id":"lam.3.53","type":"verse","n":"53","t":{"la":[{"num":"53"},"Lapsa est in lacum vita mea,",{"br":1},"et posuerunt lapidem super me.",{"br":1}]}}
+{"id":"lam.3.54","type":"verse","n":"54","t":{"la":[{"num":"54"},"Inundaverunt aquæ super caput meum ;",{"br":1},"dixi : Perii."]}}
+{"id":"lam.3.h19","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Coph"]}}
+{"id":"lam.3.55","type":"verse","n":"55","p":true,"t":{"la":[{"num":"55"},"Invocavi nomen tuum, Domine,",{"br":1},"de lacu novissimo.",{"br":1}]}}
+{"id":"lam.3.56","type":"verse","n":"56","t":{"la":[{"num":"56"},"Vocem meam audisti ; ne avertas aurem tuam",{"br":1},"a singultu meo et clamoribus.",{"br":1}]}}
+{"id":"lam.3.57","type":"verse","n":"57","t":{"la":[{"num":"57"},"Appropinquasti in die quando invocavi te ;",{"br":1},"dixisti : Ne timeas."]}}
+{"id":"lam.3.h20","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Res"]}}
+{"id":"lam.3.58","type":"verse","n":"58","p":true,"t":{"la":[{"num":"58"},"Judicasti, Domine, causam animæ meæ,",{"br":1},"redemptor vitæ meæ.",{"br":1}]}}
+{"id":"lam.3.59","type":"verse","n":"59","t":{"la":[{"num":"59"},"Vidisti, Domine, iniquitatem illorum adversum me :",{"br":1},"judica judicium meum.",{"br":1}]}}
+{"id":"lam.3.60","type":"verse","n":"60","t":{"la":[{"num":"60"},"Vidisti omnem furorem,",{"br":1},"universas cogitationes eorum adversum me."]}}
+{"id":"lam.3.h21","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Sin"]}}
+{"id":"lam.3.61","type":"verse","n":"61","p":true,"t":{"la":[{"num":"61"},"Audisti opprobrium eorum, Domine,",{"br":1},"omnes cogitationes eorum adversum me.",{"br":1}]}}
+{"id":"lam.3.62","type":"verse","n":"62","t":{"la":[{"num":"62"},"Labia insurgentium mihi, et meditationes eorum",{"br":1},"adversum me tota die.",{"br":1}]}}
+{"id":"lam.3.63","type":"verse","n":"63","t":{"la":[{"num":"63"},"Sessionem eorum et resurrectionem eorum vide ;",{"br":1},"ego sum psalmus eorum."]}}
+{"id":"lam.3.h22","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Thau"]}}
+{"id":"lam.3.64","type":"verse","n":"64","p":true,"t":{"la":[{"num":"64"},"Reddes eis vicem, Domine,",{"br":1},"juxta opera manuum suarum.",{"br":1}]}}
+{"id":"lam.3.65","type":"verse","n":"65","t":{"la":[{"num":"65"},"Dabis eis scutum cordis,",{"br":1},"laborem tuum.",{"br":1}]}}
+{"id":"lam.3.66","type":"verse","n":"66","t":{"la":[{"num":"66"},"Persequeris in furore, et conteres eos",{"br":1},"sub cælis, Domine."]}}
+{"id":"lam.4","type":"heading","level":2,"label":"Caput 4","t":{"la":["Caput 4"]}}
+{"id":"lam.4.h1","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Aleph"]}}
+{"id":"lam.4.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Quomodo obscuratum est aurum,",{"br":1},"mutatus est color optimus !",{"br":1},"dispersi sunt lapides sanctuarii",{"br":1},"in capite omnium platearum !"]}}
+{"id":"lam.4.h2","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Beth"]}}
+{"id":"lam.4.2","type":"verse","n":"2","p":true,"t":{"la":[{"num":"2"},"Filii Sion inclyti,",{"br":1},"et amicti auro primo :",{"br":1},"quomodo reputati sunt in vasa testea,",{"br":1},"opus manuum figuli !"]}}
+{"id":"lam.4.h3","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Ghimel"]}}
+{"id":"lam.4.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Sed et lamiæ nudaverunt mammam,",{"br":1},"lactaverunt catulos suos :",{"br":1},"filia populi mei crudelis",{"br":1},"quasi struthio in deserto."]}}
+{"id":"lam.4.h4","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Daleth"]}}
+{"id":"lam.4.4","type":"verse","n":"4","p":true,"t":{"la":[{"num":"4"},"Adhæsit lingua lactentis",{"br":1},"ad palatum ejus in siti ;",{"br":1},"parvuli petierunt panem,",{"br":1},"et non erat qui frangeret eis."]}}
+{"id":"lam.4.h5","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["He"]}}
+{"id":"lam.4.5","type":"verse","n":"5","p":true,"t":{"la":[{"num":"5"},"Qui vescebantur voluptuose,",{"br":1},"interierunt in viis ;",{"br":1},"qui nutriebantur in croceis,",{"br":1},"amplexati sunt stercora."]}}
+{"id":"lam.4.h6","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Vau"]}}
+{"id":"lam.4.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Et major effecta est iniquitas filiæ populi mei",{"br":1},"peccato Sodomorum,",{"br":1},"quæ subversa est in momento,",{"br":1},"et non ceperunt in ea manus."]}}
+{"id":"lam.4.h7","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Zain"]}}
+{"id":"lam.4.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Candidiores Nazaræi ejus nive,",{"br":1},"nitidiores lacte,",{"br":1},"rubicundiores ebore antiquo,",{"br":1},"sapphiro pulchriores."]}}
+{"id":"lam.4.h8","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Heth"]}}
+{"id":"lam.4.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"Denigrata est super carbones facies eorum",{"br":1},"et non sunt cogniti in plateis ;",{"br":1},"adhæsit cutis eorum ossibus :",{"br":1},"aruit, et facta est quasi lignum."]}}
+{"id":"lam.4.h9","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Teth"]}}
+{"id":"lam.4.9","type":"verse","n":"9","p":true,"t":{"la":[{"num":"9"},"Melius fuit occisis gladio",{"br":1},"quam interfectis fame,",{"br":1},"quoniam isti extabuerunt consumpti",{"br":1},"a sterilitate terræ."]}}
+{"id":"lam.4.h10","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Jod"]}}
+{"id":"lam.4.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Manus mulierum misericordium",{"br":1},"coxerunt filios suos ;",{"br":1},"facti sunt cibus earum",{"br":1},"in contritione filiæ populi mei."]}}
+{"id":"lam.4.h11","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Caph"]}}
+{"id":"lam.4.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Complevit Dominus furorem suum,",{"br":1},"effudit iram indignationis suæ :",{"br":1},"et succendit ignem in Sion,",{"br":1},"et devoravit fundamenta ejus."]}}
+{"id":"lam.4.h12","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Lamed"]}}
+{"id":"lam.4.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Non crediderunt reges terræ,",{"br":1},"et universi habitatores orbis,",{"br":1},"quoniam ingrederetur hostis et inimicus",{"br":1},"per portas Jerusalem."]}}
+{"id":"lam.4.h13","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Mem"]}}
+{"id":"lam.4.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Propter peccata prophetarum ejus,",{"br":1},"et iniquitates sacerdotum ejus,",{"br":1},"qui effuderunt in medio ejus",{"br":1},"sanguinem justorum."]}}
+{"id":"lam.4.h14","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Nun"]}}
+{"id":"lam.4.14","type":"verse","n":"14","p":true,"t":{"la":[{"num":"14"},"Erraverunt cæci in plateis,",{"br":1},"polluti sunt in sanguine ;",{"br":1},"cumque non possent,",{"br":1},"tenuerunt lacinias suas."]}}
+{"id":"lam.4.h15","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Samech"]}}
+{"id":"lam.4.15","type":"verse","n":"15","p":true,"t":{"la":[{"num":"15"},"Recedite polluti, clamaverunt eis ;",{"br":1},"recedite, abite, nolite tangere :",{"br":1},"jurgati quippe sunt, et commoti dixerunt inter gentes :",{"br":1},"Non addet ultra ut habitet in eis."]}}
+{"id":"lam.4.h16","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Phe"]}}
+{"id":"lam.4.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Facies Domini divisit eos,",{"br":1},"non addet ut respiciat eos ;",{"br":1},"facies sacerdotum non erubuerunt,",{"br":1},"neque senum miserti sunt."]}}
+{"id":"lam.4.h17","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Ain"]}}
+{"id":"lam.4.17","type":"verse","n":"17","p":true,"t":{"la":[{"num":"17"},"Cum adhuc subsisteremus, defecerunt oculi nostri",{"br":1},"ad auxilium nostrum vanum ;",{"br":1},"cum respiceremus attenti ad gentem",{"br":1},"quæ salvare non poterat."]}}
+{"id":"lam.4.h18","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Sade"]}}
+{"id":"lam.4.18","type":"verse","n":"18","p":true,"t":{"la":[{"num":"18"},"Lubricaverunt vestigia nostra",{"br":1},"in itinere platearum nostrarum ;",{"br":1},"appropinquavit finis noster, completi sunt dies nostri,",{"br":1},"quia venit finis noster."]}}
+{"id":"lam.4.h19","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Coph"]}}
+{"id":"lam.4.19","type":"verse","n":"19","p":true,"t":{"la":[{"num":"19"},"Velociores fuerunt persecutores nostri",{"br":1},"aquilis cæli ;",{"br":1},"super montes persecuti sunt nos,",{"br":1},"in deserto insidiati sunt nobis."]}}
+{"id":"lam.4.h20","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Res"]}}
+{"id":"lam.4.20","type":"verse","n":"20","p":true,"t":{"la":[{"num":"20"},"Spiritus oris nostri, christus Dominus,",{"br":1},"captus est in peccatis nostris,",{"br":1},"cui diximus : In umbra tua",{"br":1},"vivemus in gentibus."]}}
+{"id":"lam.4.h21","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Sin"]}}
+{"id":"lam.4.21","type":"verse","n":"21","p":true,"t":{"la":[{"num":"21"},"Gaude et lætare, filia Edom,",{"br":1},"quæ habitas in terra Hus !",{"br":1},"ad te quoque perveniet calix : inebriaberis,",{"br":1},"atque nudaberis."]}}
+{"id":"lam.4.h22","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Thau"]}}
+{"id":"lam.4.22","type":"verse","n":"22","p":true,"t":{"la":[{"num":"22"},"Completa est iniquitas tua, filia Sion :",{"br":1},"non addet ultra ut transmigret te.",{"br":1},"Visitavit iniquitatem tuam, filia Edom ;",{"br":1},"discooperuit peccata tua."]}}
+{"id":"lam.5","type":"heading","level":2,"label":"Caput 5","t":{"la":["Caput 5"]}}
+{"id":"lam.5.h1","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Oratio Jeremiæ prophetæ"]}}
+{"id":"lam.5.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Recordare, Domine, quid acciderit nobis ;",{"br":1},"intuere et respice opprobrium nostrum.",{"br":1}]}}
+{"id":"lam.5.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Hæreditas nostra versa est ad alienos,",{"br":1},"domus nostræ ad extraneos.",{"br":1}]}}
+{"id":"lam.5.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Pupilli facti sumus absque patre,",{"br":1},"matres nostræ quasi viduæ.",{"br":1}]}}
+{"id":"lam.5.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Aquam nostram pecunia bibimus ;",{"br":1},"ligna nostra pretio comparavimus.",{"br":1}]}}
+{"id":"lam.5.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Cervicibus nostris minabamur,",{"br":1},"lassis non dabatur requies.",{"br":1}]}}
+{"id":"lam.5.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Ægypto dedimus manum et Assyriis,",{"br":1},"ut saturaremur pane.",{"br":1}]}}
+{"id":"lam.5.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Patres nostri peccaverunt, et non sunt :",{"br":1},"et nos iniquitates eorum portavimus.",{"br":1}]}}
+{"id":"lam.5.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Servi dominati sunt nostri :",{"br":1},"non fuit qui redimeret de manu eorum.",{"br":1}]}}
+{"id":"lam.5.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"In animabus nostris afferebamus panem nobis,",{"br":1},"a facie gladii in deserto.",{"br":1}]}}
+{"id":"lam.5.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Pellis nostra quasi clibanus exusta est,",{"br":1},"a facie tempestatum famis.",{"br":1}]}}
+{"id":"lam.5.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Mulieres in Sion humiliaverunt,",{"br":1},"et virgines in civitatibus Juda.",{"br":1}]}}
+{"id":"lam.5.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Principes manu suspensi sunt ;",{"br":1},"facies senum non erubuerunt.",{"br":1}]}}
+{"id":"lam.5.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Adolescentibus impudice abusi sunt,",{"br":1},"et pueri in ligno corruerunt.",{"br":1}]}}
+{"id":"lam.5.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Senes defecerunt de portis,",{"br":1},"juvenes de choro psallentium.",{"br":1}]}}
+{"id":"lam.5.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Defecit gaudium cordis nostri ;",{"br":1},"versus est in luctum chorus noster.",{"br":1}]}}
+{"id":"lam.5.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Cecidit corona capitis nostri :",{"br":1},"væ nobis, quia peccavimus !",{"br":1}]}}
+{"id":"lam.5.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Propterea mœstum factum est cor nostrum ;",{"br":1},"ideo contenebrati sunt oculi nostri,",{"br":1}]}}
+{"id":"lam.5.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"propter montem Sion quia disperiit ;",{"br":1},"vulpes ambulaverunt in eo.",{"br":1}]}}
+{"id":"lam.5.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Tu autem, Domine, in æternum permanebis,",{"br":1},"solium tuum in generationem et generationem.",{"br":1}]}}
+{"id":"lam.5.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Quare in perpetuum oblivisceris nostri,",{"br":1},"derelinques nos in longitudine dierum ?",{"br":1}]}}
+{"id":"lam.5.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Converte nos, Domine, ad te, et convertemur ;",{"br":1},"innova dies nostros, sicut a principio.",{"br":1}]}}
+{"id":"lam.5.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Sed projiciens repulisti nos :",{"br":1},"iratus es contra nos vehementer."]}}

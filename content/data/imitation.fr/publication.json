@@ -1,0 +1,65 @@
+{
+  "id": "imitation.fr",
+  "revision": 1,
+  "kind": "book",
+  "title": {
+    "fr": "Imitation de Jésus-Christ"
+  },
+  "subtitle": {
+    "fr": "Traduction de F. de Lamennais"
+  },
+  "languages": [
+    "fr"
+  ],
+  "primaryLanguage": "fr",
+  "aligned": false,
+  "contributors": [
+    {
+      "name": "Thomas a Kempis",
+      "role": "author"
+    },
+    {
+      "name": "Félicité de Lamennais",
+      "role": "translator"
+    }
+  ],
+  "issued": "1824",
+  "source": {
+    "name": "Projet Gutenberg n° 57824",
+    "url": "https://www.gutenberg.org/ebooks/57824",
+    "file": "https://www.gutenberg.org/cache/epub/57824/pg57824.txt",
+    "edition": "L’Imitation de Jésus-Christ, traduction nouvelle avec des réflexions à la fin de chaque chapitre, par M. l’abbé F. de Lamennais, 43e édition, Paris, Ambroise Bray, 1859 ; numérisation Google Books, transcription de Laurent Vogel et de l’équipe Distributed Proofreaders (pgdp.net), 2018",
+    "retrieved": "2026-10-11",
+    "rawSha256": "15f1adfd44a82f5392e33de20caf4c8262a031fe4753cfc0ed26b0c5375cc98a"
+  },
+  "license": {
+    "spdx": "LicenseRef-PublicDomain",
+    "attribution": "Traduction de F. de Lamennais (1824), domaine public. Texte établi d’après le Projet Gutenberg n° 57824 (transcription Distributed Proofreaders), sans l’en-tête ni la licence du Projet Gutenberg ; préface, messe et vêpres de l’édition de 1859 non reprises."
+  },
+  "divisions": [
+    {
+      "id": "l1",
+      "kind": "book",
+      "toc": "Livre premier",
+      "unit": true
+    },
+    {
+      "id": "l2",
+      "kind": "book",
+      "toc": "Livre deuxième",
+      "unit": true
+    },
+    {
+      "id": "l3",
+      "kind": "book",
+      "toc": "Livre troisième",
+      "unit": true
+    },
+    {
+      "id": "l4",
+      "kind": "book",
+      "toc": "Livre quatrième",
+      "unit": true
+    }
+  ]
+}

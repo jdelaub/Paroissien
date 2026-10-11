@@ -1,0 +1,8 @@
+{
+  "packageId": "imitation-la",
+  "packageVersion": 2026101101,
+  "rights": "domaine-public",
+  "publications": ["imitation.la"],
+  "title": {"fr": "Imitation de Jésus-Christ (latin)", "la": "De imitatione Christi"},
+  "minAppFormat": "1.0"
+}

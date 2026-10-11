@@ -1,0 +1,472 @@
+{
+ "id": "exercices.fr",
+ "revision": 1,
+ "kind": "book",
+ "title": {
+  "fr": "Exercices spirituels"
+ },
+ "subtitle": {
+  "fr": "de saint Ignace de Loyola, traduits par le P. Pierre Jennesseaux sj"
+ },
+ "languages": [
+  "fr"
+ ],
+ "primaryLanguage": "fr",
+ "aligned": false,
+ "contributors": [
+  {
+   "name": "Ignace de Loyola",
+   "role": "author"
+  },
+  {
+   "name": "Pierre Jennesseaux",
+   "role": "translator"
+  },
+  {
+   "name": "Frère Jérôme",
+   "role": "transcriber"
+  }
+ ],
+ "issued": "1913",
+ "citation": {
+  "prefix": "ES",
+  "key": "ex.<n>",
+  "range": [
+   1,
+   370
+  ]
+ },
+ "source": {
+  "name": "livres-mystiques.com",
+  "url": "http://livres-mystiques.com/partieTEXTES/Exercices_Ignace/exercices.html",
+  "edition": "Traduction du texte espagnol par le P. Pierre Jennesseaux sj, numérisation de l’édition de 1913 par le Frère Jérôme, Namur, 2005",
+  "retrieved": "2026-10-11",
+  "rawSha256": "b5032642d39903e89461c2464205fa16f04fcf6694612b81a26451ed57c2d489"
+ },
+ "license": {
+  "spdx": "LicenseRef-PublicDomain",
+  "attribution": "Trad. P. Pierre Jennesseaux sj (éd. 1913), numérisation Frère Jérôme, Namur 2005 — livres-mystiques.com. Mention de la source : « Édition libre de tout droit »"
+ },
+ "x-modifications2005": [
+  {
+   "n": "1",
+   "general": true,
+   "text": "Numérotation ajoutée.",
+   "at": [
+    "ex.1"
+   ]
+  },
+  {
+   "n": "2",
+   "general": true,
+   "text": "« point » modifié.",
+   "at": [
+    "ex.9"
+   ]
+  },
+  {
+   "n": "3",
+   "general": true,
+   "text": "« la puisse » modifié.",
+   "at": [
+    "ex.9"
+   ]
+  },
+  {
+   "n": "4",
+   "general": true,
+   "text": "« très-difficile » modifié.",
+   "at": [
+    "ex.13"
+   ]
+  },
+  {
+   "n": "5",
+   "general": true,
+   "text": "« à vêpres » modifié.",
+   "at": [
+    "ex.20"
+   ]
+  },
+  {
+   "n": "6",
+   "general": false,
+   "text": "« et quotidien » ajouté.",
+   "at": [
+    "ex.h.examen-particulier"
+   ]
+  },
+  {
+   "n": "7",
+   "general": false,
+   "text": "« renferme » modifié.",
+   "at": [
+    "ex.h.examen-particulier.st"
+   ]
+  },
+  {
+   "n": "8",
+   "general": false,
+   "text": "Référence de page retirée.",
+   "at": [
+    "ex.25"
+   ]
+  },
+  {
+   "n": "9",
+   "general": true,
+   "text": "Ponctuation retirée.",
+   "at": [
+    "ex.27"
+   ]
+  },
+  {
+   "n": "10",
+   "general": true,
+   "text": "Numérotation retirée.",
+   "at": [
+    "ex.h.examen-general.pensee"
+   ]
+  },
+  {
+   "n": "11",
+   "general": true,
+   "text": "« Oraison dominicale » modifié.",
+   "at": [
+    "ex.43"
+   ]
+  },
+  {
+   "n": "12",
+   "general": true,
+   "text": "« Salutation angélique » modifié.",
+   "at": [
+    "ex.63"
+   ]
+  },
+  {
+   "n": "13",
+   "general": true,
+   "text": "« Âme de Jésus-Christ » modifié.",
+   "at": [
+    "ex.63.2"
+   ]
+  },
+  {
+   "n": "14",
+   "general": true,
+   "text": "« Ave Maria » modifié.",
+   "at": [
+    "ex.73"
+   ]
+  },
+  {
+   "n": "15",
+   "general": true,
+   "text": "« De » ajouté.",
+   "at": [
+    "ex.h.s2.roi.st"
+   ]
+  },
+  {
+   "n": "16",
+   "general": true,
+   "text": "Style oral ajouté.",
+   "at": [
+    "ex.93"
+   ]
+  },
+  {
+   "n": "17",
+   "general": true,
+   "text": "Référence de page retirée.",
+   "at": [
+    "ex.102"
+   ]
+  },
+  {
+   "n": "18",
+   "general": false,
+   "text": "« de Notre-Seigneur » retiré.",
+   "at": [
+    "ex.h.s2.jour-1.contemplation-2.st"
+   ]
+  },
+  {
+   "n": "19",
+   "general": true,
+   "text": "« d’hommes » ajouté.",
+   "at": [
+    "ex.148"
+   ]
+  },
+  {
+   "n": "20",
+   "general": false,
+   "text": "« classe » modifié.",
+   "at": [
+    "ex.153"
+   ]
+  },
+  {
+   "n": "21",
+   "general": false,
+   "text": "« second » modifié.",
+   "at": [
+    "ex.154"
+   ]
+  },
+  {
+   "n": "22",
+   "general": false,
+   "text": "« Visitation » modifié.",
+   "at": [
+    "ex.162"
+   ]
+  },
+  {
+   "n": "23",
+   "general": false,
+   "text": "« Circoncision » modifié.",
+   "at": [
+    "ex.162"
+   ]
+  },
+  {
+   "n": "24",
+   "general": false,
+   "text": "« juste » ajouté.",
+   "at": [
+    "ex.213"
+   ]
+  },
+  {
+   "n": "25",
+   "general": false,
+   "text": "« le manger » modifié.",
+   "at": [
+    "ex.213"
+   ]
+  },
+  {
+   "n": "26",
+   "general": false,
+   "text": "« le boire » modifié.",
+   "at": [
+    "ex.213"
+   ]
+  },
+  {
+   "n": "27",
+   "general": false,
+   "text": "« Pour obtenir l’amour divin » modifié.",
+   "at": [
+    "ex.h.s4.amour.st"
+   ]
+  },
+  {
+   "n": "28",
+   "general": false,
+   "text": "Titre ajouté.",
+   "at": [
+    "ex.h.oraisons"
+   ]
+  },
+  {
+   "n": "29",
+   "general": false,
+   "text": "« de prier » ajouté.",
+   "at": [
+    "ex.h.priere-1"
+   ]
+  },
+  {
+   "n": "30",
+   "general": true,
+   "text": "« Pater » modifié.",
+   "at": [
+    "ex.241"
+   ]
+  },
+  {
+   "n": "31",
+   "general": false,
+   "text": "« Symbole » modifié.",
+   "at": [
+    "ex.253"
+   ]
+  },
+  {
+   "n": "32",
+   "general": false,
+   "text": "« parenthèses » modifié.",
+   "at": [
+    "ex.261"
+   ]
+  },
+  {
+   "n": "33",
+   "general": true,
+   "text": "Référence biblique corrigée.",
+   "at": [
+    "ex.262"
+   ]
+  },
+  {
+   "n": "34",
+   "general": true,
+   "text": "Traduction latine retirée.",
+   "at": [
+    "ex.262.2"
+   ]
+  },
+  {
+   "n": "35",
+   "general": false,
+   "text": "« Naissance » modifié.",
+   "at": [
+    "ex.h.m.nativite"
+   ]
+  },
+  {
+   "n": "36",
+   "general": false,
+   "text": "« Adoration des pasteurs » modifié.",
+   "at": [
+    "ex.h.m.bergers"
+   ]
+  },
+  {
+   "n": "37",
+   "general": false,
+   "text": "« rois » retiré.",
+   "at": [
+    "ex.h.m.mages"
+   ]
+  },
+  {
+   "n": "38",
+   "general": false,
+   "text": "« soufflet » modifié.",
+   "at": [
+    "ex.291.4"
+   ]
+  },
+  {
+   "n": "39",
+   "general": false,
+   "text": "« faix » modifié.",
+   "at": [
+    "ex.296.3"
+   ]
+  }
+ ],
+ "divisions": [
+  {
+   "id": "annotations",
+   "kind": "annotations",
+   "toc": "Annotations",
+   "unit": true,
+   "range": [
+    "ex.1",
+    "ex.20"
+   ]
+  },
+  {
+   "id": "fondement",
+   "kind": "section",
+   "toc": "Présupposé, principe et fondement",
+   "unit": true,
+   "range": [
+    "ex.21",
+    "ex.23"
+   ],
+   "week": 1
+  },
+  {
+   "id": "examen",
+   "kind": "examen",
+   "toc": "Examens et confession générale",
+   "unit": true,
+   "range": [
+    "ex.24",
+    "ex.44"
+   ],
+   "week": 1
+  },
+  {
+   "id": "semaine-1",
+   "kind": "week",
+   "toc": "Première semaine",
+   "unit": true,
+   "range": [
+    "ex.45",
+    "ex.90"
+   ],
+   "week": 1
+  },
+  {
+   "id": "semaine-2",
+   "kind": "week",
+   "toc": "Seconde semaine",
+   "unit": true,
+   "range": [
+    "ex.91",
+    "ex.189"
+   ],
+   "week": 2
+  },
+  {
+   "id": "semaine-3",
+   "kind": "week",
+   "toc": "Troisième semaine",
+   "unit": true,
+   "range": [
+    "ex.190",
+    "ex.217"
+   ],
+   "week": 3
+  },
+  {
+   "id": "semaine-4",
+   "kind": "week",
+   "toc": "Quatrième semaine",
+   "unit": true,
+   "range": [
+    "ex.218",
+    "ex.237"
+   ],
+   "week": 4
+  },
+  {
+   "id": "manieres-de-prier",
+   "kind": "methods_of_prayer",
+   "toc": "Trois manières de prier",
+   "unit": true,
+   "range": [
+    "ex.238",
+    "ex.260"
+   ]
+  },
+  {
+   "id": "mysteres",
+   "kind": "mysteries",
+   "toc": "Mystères de la vie de Jésus-Christ notre Seigneur",
+   "unit": true,
+   "range": [
+    "ex.261",
+    "ex.312"
+   ]
+  },
+  {
+   "id": "regles",
+   "kind": "rules",
+   "toc": "Règles : discernement des esprits, aumônes, scrupules, Église",
+   "unit": true,
+   "range": [
+    "ex.313",
+    "ex.370"
+   ]
+  }
+ ]
+}

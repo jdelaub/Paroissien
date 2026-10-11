@@ -1,0 +1,305 @@
+{"id":"lam.titre","type":"heading","level":1,"t":{"fr":["Lamentations"]}}
+{"id":"lam.1","type":"heading","level":2,"label":"Chapitre 1","t":{"fr":["Chapitre 1"]}}
+{"id":"lam.1.h1","type":"heading","level":3,"x-usfm":"ms1","t":{"fr":["PREMIÈRE LAMENTATION. [I, 1-22.] MALHEUR DE JÉRUSALEM, SES APPELS."]}}
+{"id":"lam.1.h2","type":"heading","level":3,"x-usfm":"s2","t":{"fr":["Solitude et deuil (i, 1,2) ; exil (i, 3-5) ; gloire perdue (i, 6, 7) ; châtiment du péché (i, 8-10). Appels de Jérusalem : c’est Yahweh qui la frappe pour ses faute (i, 11-14), qui la livre à l’ennemi sans soutien (i, 15-17). Confession de ses péchés (i,18-20) Que ses ennemis aient leur tour (i, 21, 22) !"]}}
+{"id":"lam.1.h3","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["ALEPH."]}}
+{"id":"lam.1.1","type":"verse","n":"1","p":true,"dropCap":true,"t":{"fr":[{"num":"1"},"Comment est-elle assise solitaire,",{"br":1},"la cité populeuse !",{"br":1},"Elle est devenue comme une veuve,",{"br":1},"celle qui était grande parmi les nations.",{"br":1},"Celle qui était reine parmi les provinces",{"br":1},"a été soumise au tribut.",{"note":"lam.1.1.n1","l":"1"}]}}
+{"id":"lam.1.h4","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["BETH."]}}
+{"id":"lam.1.2","type":"verse","n":"2","p":true,"t":{"fr":[{"num":"2"},"Elle pleure amèrement durant la nuit,",{"br":1},"et les larmes couvrent ses joues ;",{"br":1},"pas un ne la console,",{"br":1},"de tous ses amants ;",{"br":1},"tous ses compagnons l’ont trahie,",{"br":1},"ils sont devenus ses ennemis."]}}
+{"id":"lam.1.h5","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["GHIMEL."]}}
+{"id":"lam.1.3","type":"verse","n":"3","p":true,"t":{"fr":[{"num":"3"},"Juda s’en est allé en exil, misérable,",{"br":1},"et condamné à un rude travail ;",{"note":"lam.1.3.n1","l":"2"},{"br":1},"il habite chez les nations,",{"br":1},"sans trouver le repos ;",{"br":1},"ses persécuteurs l’ont atteint,",{"br":1},"dans d’étroits défilés."]}}
+{"id":"lam.1.h6","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["DALETH."]}}
+{"id":"lam.1.4","type":"verse","n":"4","p":true,"t":{"fr":[{"num":"4"},"Les chemins de Sion sont dans le deuil,",{"br":1},"parce que nul ne vient plus à ses fêtes ;",{"br":1},"toutes ses portes sont en ruines,",{"br":1},"ses prêtres gémissent,",{"br":1},"ses vierges se désolent,",{"br":1},"et elle-même est dans l’amertume."]}}
+{"id":"lam.1.h7","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["HÉ."]}}
+{"id":"lam.1.5","type":"verse","n":"5","p":true,"t":{"fr":[{"num":"5"},"Ses oppresseurs ont le dessus,",{"br":1},"ses ennemis prospèrent ;",{"br":1},"car Yahweh l’a affligée,",{"br":1},"à cause de la multitude de ses offenses ;",{"br":1},"ses petits enfants s’en sont allés captifs,",{"br":1},"devant l’oppresseur."]}}
+{"id":"lam.1.h8","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["VAV."]}}
+{"id":"lam.1.6","type":"verse","n":"6","p":true,"t":{"fr":[{"num":"6"},"Et la fille de Sion a perdu",{"br":1},"toute sa gloire ;",{"br":1},"ses princes sont comme des cerfs,",{"br":1},"qui ne trouvent pas de pâture,",{"br":1},"et qui s’en vont sans force",{"br":1},"devant celui qui les poursuit."]}}
+{"id":"lam.1.h9","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["ZAÏN."]}}
+{"id":"lam.1.7","type":"verse","n":"7","p":true,"t":{"fr":[{"num":"7"},"Jérusalem se souvient,",{"br":1},"aux jours de son affliction et de sa vie errante,",{"br":1},"de tous ses biens précieux qu’elle possédait,",{"br":1},"dès les jours anciens.",{"br":1},"Maintenant que son peuple est tombé sous la main de l’oppresseur,",{"br":1},"et que personne ne vient a son aide,",{"br":1},"ses ennemis la voient, et ils rient",{"br":1},"de son chômage."]}}
+{"id":"lam.1.h10","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["HETH."]}}
+{"id":"lam.1.8","type":"verse","n":"8","p":true,"t":{"fr":[{"num":"8"},"Jérusalem a multiplié ses péchés ;",{"br":1},"c’est pourquoi elle est devenue une chose souillée ;",{"br":1},"tous ceux qui l’honoraient la méprisent,",{"br":1},"car ils ont vu sa nudité ;",{"br":1},"elle-même pousse des gémissements,",{"br":1},"et détourne la face."]}}
+{"id":"lam.1.h11","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["TETH."]}}
+{"id":"lam.1.9","type":"verse","n":"9","p":true,"t":{"fr":[{"num":"9"},"Sa souillure apparaît sous les pans de sa robe ;",{"br":1},"elle ne songeait pas à sa fin.",{"br":1},"Et elle est tombée d’une manière étrange,",{"br":1},"et personne ne la console !",{"br":1},"« Vois, Yahweh, ma misère,",{"br":1},"car l’ennemi triomphe ! »"]}}
+{"id":"lam.1.h12","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["JOD."]}}
+{"id":"lam.1.10","type":"verse","n":"10","p":true,"t":{"fr":[{"num":"10"},"L’oppresseur a étendu la main",{"br":1},"sur tous ses trésors ;",{"br":1},"car elle a vu les nations",{"br":1},"entrer dans son sanctuaire,",{"br":1},{"m":["i"],"c":["les nations"]}," au sujet desquelles tu avais donné cet ordre :",{"br":1},"« Elles n’entreront pas dans ton assemblée. »"]}}
+{"id":"lam.1.h13","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["CAPH."]}}
+{"id":"lam.1.11","type":"verse","n":"11","p":true,"t":{"fr":[{"num":"11"},"Tout son peuple gémit,",{"br":1},"cherchant du pain ;",{"br":1},"ils donnent leurs joyaux pour des aliments,",{"br":1},"qui leur rendent la vie.",{"br":1},"« Vois Yahweh et considère",{"br":1},"l’abjection où je suis tombée ! »"]}}
+{"id":"lam.1.h14","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["LAMED."]}}
+{"id":"lam.1.12","type":"verse","n":"12","p":true,"t":{"fr":[{"num":"12"},"« Ô vous tous, qui passez par le chemin,",{"br":1},"regardez et voyez",{"br":1},"s’il y a une douleur pareille à la douleur",{"br":1},"qui pèse sur moi,",{"br":1},"moi que Yahweh a frappée,",{"br":1},"au jour de son ardente colère !"]}}
+{"id":"lam.1.h15","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["MEM."]}}
+{"id":"lam.1.13","type":"verse","n":"13","p":true,"t":{"fr":[{"num":"13"},"« D’en haut il a lancé dans mes os",{"br":1},"un feu qui les dévore ;",{"br":1},"il a étendu un filet devant mes pieds,",{"br":1},"il m’a fait reculer ;",{"br":1},"il m’a jeté dans la désolation,",{"br":1},"je languis tout le jour."]}}
+{"id":"lam.1.h16","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["NUN."]}}
+{"id":"lam.1.14","type":"verse","n":"14","p":true,"t":{"fr":[{"num":"14"},"« Le joug de mes iniquités",{"note":"lam.1.14.n1","l":"3"}," a été lié",{"br":1},"dans sa main ;",{"br":1},"unies en faisceau, elles pèsent sur mon cou ;",{"br":1},"il a fait chanceler ma force.",{"br":1},"Le Seigneur m’a livré à des mains",{"br":1},"auxquelles je ne puis résister."]}}
+{"id":"lam.1.h17","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["SAMECH."]}}
+{"id":"lam.1.15","type":"verse","n":"15","p":true,"t":{"fr":[{"num":"15"},"« Le Seigneur a enlevé tous les guerriers",{"br":1},"qui étaient au milieu de moi ;",{"br":1},"il a appelé contre moi une armée,",{"br":1},"pour écraser mes jeunes hommes ;",{"br":1},"le Seigneur a foulé au pressoir",{"br":1},"la vierge, fille de Juda."]}}
+{"id":"lam.1.h18","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["AÏN."]}}
+{"id":"lam.1.16","type":"verse","n":"16","p":true,"t":{"fr":[{"num":"16"},"« C’est pour cela que je pleure,",{"br":1},"que mon œil, mon œil se fond en larmes ;",{"br":1},"car il n’y a près de moi personne qui me console,",{"br":1},"qui me rende la vie ;",{"br":1},"mes fils sont dans la désolation,",{"br":1},"car l’ennemi l’emporte. »"]}}
+{"id":"lam.1.h19","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["PHÉ."]}}
+{"id":"lam.1.17","type":"verse","n":"17","p":true,"t":{"fr":[{"num":"17"},"Sion a tendu les mains…",{"br":1},"Personne qui la console !",{"br":1},"Yahweh a mandé contre Jacob",{"br":1},"ses ennemis qui l’enveloppent ;",{"note":"lam.1.17.n1","l":"4"},{"br":1},"Jérusalem est devenue au milieu d’eux",{"br":1},"comme une chose souillée."]}}
+{"id":"lam.1.h20","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["TSADÉ."]}}
+{"id":"lam.1.18","type":"verse","n":"18","p":true,"t":{"fr":[{"num":"18"},"« Yahweh est vraiment juste,",{"br":1},"car j’ai été rebelle à ses ordres.",{"br":1},"Oh ! écoutez tous, peuples,",{"br":1},"et voyez ma douleur :",{"br":1},"mes vierges et mes jeunes gens",{"br":1},"sont allés en exil !"]}}
+{"id":"lam.1.h21","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["QOPH."]}}
+{"id":"lam.1.19","type":"verse","n":"19","p":true,"t":{"fr":[{"num":"19"},"J’ai appelé mes amants,",{"br":1},"ils m’ont trompée ;",{"br":1},"mes prêtres et mes anciens",{"br":1},"ont péri dans la ville,",{"br":1},"en cherchant de la nourriture,",{"br":1},"pour ranimer leur vie."]}}
+{"id":"lam.1.h22","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["RESCH."]}}
+{"id":"lam.1.20","type":"verse","n":"20","p":true,"t":{"fr":[{"num":"20"},"« Regarde, Yahweh, quelle est mon angoisse !",{"br":1},"Mes entrailles sont émues ;",{"br":1},"mon cœur est bouleversé au dedans de moi,",{"br":1},"parce que j’ai été bien rebelle.",{"br":1},"Au dehors l’épée tue mes enfants ;",{"br":1},"au dedans, c’est la mort !"]}}
+{"id":"lam.1.h23","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["SIN."]}}
+{"id":"lam.1.21","type":"verse","n":"21","p":true,"t":{"fr":[{"num":"21"},"« On entend mes gémissements ;",{"br":1},"personne qui me console !",{"br":1},"Tous mes ennemis, en apprenant mon malheur,",{"br":1},"se réjouissent de ce que tu as agi.",{"br":1},"Tu feras venir",{"note":"lam.1.21.n1","l":"5"}," le jour que tu as annoncé,",{"br":1},"et ils deviendront tels que moi !"]}}
+{"id":"lam.1.h24","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["THAV."]}}
+{"id":"lam.1.22","type":"verse","n":"22","p":true,"t":{"fr":[{"num":"22"},"“Que toute leur méchanceté soit présente devant toi,",{"br":1},"pour que tu les traites",{"br":1},"comme tu m’as traitée moi-même,",{"br":1},"à cause de toutes mes offenses !",{"br":1},"Car mes gémissements sont nombreux,",{"br":1},"et mon cœur est malade !”"]}}
+{"id":"lam.1.1.n1","type":"note","placement":"foot","label":"1","t":{"fr":["1. Jérusalem est représentée comme une princesse devenue pauvre et veuve, assise dans un endroit retiré pour se livrer à son deuil."]}}
+{"id":"lam.1.3.n1","type":"note","placement":"foot","label":"2","t":{"fr":["3. ",{"m":["i"],"c":["Misérable et condamné à un rude travail"]}," ; m. à m., ",{"m":["i"],"c":["de (latin ex) la misère et de la grandeur du travail"]},". Le sens pourrait être que, déjà malheureux, il a quitté cet état pour un autre plus lamentable encore."]}}
+{"id":"lam.1.14.n1","type":"note","placement":"foot","label":"3","t":{"fr":["14. ",{"m":["i"],"c":["Les iniquités "]},"de Jérusalem, liées en un faisceau par la main du Seigneur, sont un joug accablant sur son cou, comp. ",{"link":"bible:ISA.5.18","c":["Is. v, 18"]},"."]}}
+{"id":"lam.1.17.n1","type":"note","placement":"foot","label":"4","t":{"fr":["17. ",{"m":["i"],"c":["Les ennemis qui l’enveloppent"]}," ; à m., ",{"m":["i"],"c":["autour de lui ses ennemis"]},"."]}}
+{"id":"lam.1.21.n1","type":"note","placement":"foot","label":"5","t":{"fr":["21. ",{"m":["i"],"c":["Tu feras venir"]},", ou encore ",{"m":["i"],"c":["fais donc venir"]},". En hébreu, on a le parfait (",{"m":["i"],"c":["tu as fait venir"]},"), sans doute le parfait prophétique."]}}
+{"id":"lam.2","type":"heading","level":2,"label":"Chapitre 2","t":{"fr":["Chapitre 2"]}}
+{"id":"lam.2.h1","type":"heading","level":3,"x-usfm":"ms1","t":{"fr":["DEUXIÈME LAMENTATION. [II, 1-22.] LA RUINE DE JÉRUSALEM."]}}
+{"id":"lam.2.h2","type":"heading","level":3,"x-usfm":"s2","t":{"fr":["Yahweh a détruit Jérusalem, ses murs, ses palais (ii, 1-5) ; il n’a pas épargné son sanctuaire (ii, 6-8). Ruine, deuil universel, détresse sans exemple (ii, 9-13). Jérusalem victime des faux prophètes (ii, 14) ; joie de ses ennemis (ii, 14-16) ; Yahweh a réalisé ses menaces (ii, 17) : que Jérusalem fasse monter vers lui sa plainte (ii, 18-22) !"]}}
+{"id":"lam.2.h3","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["ALEPH."]}}
+{"id":"lam.2.1","type":"verse","n":"1","p":true,"t":{"fr":[{"num":"1"},"Comment le Seigneur, dans sa colère, a-t-il couvert d’un nuage",{"br":1},"la fille de Sion ?",{"br":1},"Il a précipité du ciel sur la terre",{"br":1},"la magnificence d’Israël ;",{"br":1},"il ne s’est plus souvenu de l’escabeau de ses pieds,",{"note":"lam.2.1.n1","l":"1"},{"br":1},"au jour de sa colère."]}}
+{"id":"lam.2.h4","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["BETH."]}}
+{"id":"lam.2.2","type":"verse","n":"2","p":true,"t":{"fr":[{"num":"2"},"Le Seigneur a détruit sans pitié",{"br":1},"toutes les demeures de Jacob ;",{"br":1},"il a renversé dans sa fureur",{"br":1},"les forteresses de la fille de Juda ;",{"br":1},"il les a jetées par terre ;",{"br":1},"il a profané la royauté et ses princes."]}}
+{"id":"lam.2.h5","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["GHIMEL."]}}
+{"id":"lam.2.3","type":"verse","n":"3","p":true,"t":{"fr":[{"num":"3"},"Dans l’ardeur de sa colère, il a brisé",{"br":1},"toute force d’Israël ;",{"br":1},"il a ramené sa droite en arrière,",{"br":1},"devant l’ennemi ;",{"br":1},"il a allumé dans Jacob comme un feu ardent",{"br":1},"qui dévore de tous côtés."]}}
+{"id":"lam.2.h6","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["DALETH."]}}
+{"id":"lam.2.4","type":"verse","n":"4","p":true,"t":{"fr":[{"num":"4"},"Il a bandé son arc comme fait un ennemi ;",{"br":1},"sa droite s’est levée comme celle d’un assaillant ;",{"br":1},"et il a égorgé tout ce qui charmait les yeux ;",{"br":1},"dans la tente de la fille de Sion,",{"br":1},"il a versé son courroux comme un feu."]}}
+{"id":"lam.2.h7","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["HÉ."]}}
+{"id":"lam.2.5","type":"verse","n":"5","p":true,"t":{"fr":[{"num":"5"},"Le Seigneur a été comme un ennemi,",{"br":1},"il a détruit Israël ;",{"br":1},"il a détruit tous ses palais,",{"br":1},"abattu ses citadelles ;",{"br":1},"il a amoncelé sur la fille de Sion",{"br":1},"douleur sur douleur."]}}
+{"id":"lam.2.h8","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["VAV."]}}
+{"id":"lam.2.6","type":"verse","n":"6","p":true,"t":{"fr":[{"num":"6"},"Il a forcé son enclos, comme un jardin ;",{"br":1},"il a détruit son sanctuaire.",{"br":1},"Yahweh a fait cesser dans Sion",{"br":1},"solennités et sabbats ;",{"br":1},"dans l’ardeur de sa colère, il a rejeté avec dédain",{"br":1},"roi et prêtre."]}}
+{"id":"lam.2.h9","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["ZAÏN."]}}
+{"id":"lam.2.7","type":"verse","n":"7","p":true,"t":{"fr":[{"num":"7"},"Le Seigneur a pris en dégoût son autel,",{"br":1},"en abomination son sanctuaire ;",{"br":1},"il a livré aux mains de l’ennemi",{"br":1},"les murs de ses citadelles ;",{"br":1},"on a poussé des cris dans la maison de Yahweh,",{"br":1},"comme en un jour de fête."]}}
+{"id":"lam.2.h10","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["HETH."]}}
+{"id":"lam.2.8","type":"verse","n":"8","p":true,"t":{"fr":[{"num":"8"},"Yahweh a médité de renverser",{"br":1},"les murs de la fille de Sion ;",{"br":1},"il a étendu le cordeau, il n’a pas retiré",{"br":1},"sa main qu’il ne ",{"m":["i"],"c":["les"]}," eût détruits ;",{"br":1},"il a mis en deuil le mur et l’avant-mur ;",{"br":1},"ils ",{"m":["i"],"c":["gisent"]}," tristement ensemble."]}}
+{"id":"lam.2.h11","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["TETH."]}}
+{"id":"lam.2.9","type":"verse","n":"9","p":true,"t":{"fr":[{"num":"9"},"Ses portes sont enfoncées en terre,",{"br":1},"il en a rompu, brisé les barres ;",{"br":1},"son roi et ses princes sont parmi les nations,",{"br":1},"il n’y a plus de loi ;",{"br":1},"même ses prophètes ne reçoivent plus",{"br":1},"de vision de Yahweh."]}}
+{"id":"lam.2.h12","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["JOD."]}}
+{"id":"lam.2.10","type":"verse","n":"10","p":true,"t":{"fr":[{"num":"10"},"Ils sont assis par terre,",{"br":1},"en silence, les anciens de la fille de Sion ;",{"br":1},"ils ont jeté de la poussière sur leur tête,",{"br":1},"ils sont vêtus de sacs ;",{"br":1},"elles inclinent leur tête vers la terre,",{"br":1},"les vierges de Jérusalem."]}}
+{"id":"lam.2.h13","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["CAPH."]}}
+{"id":"lam.2.11","type":"verse","n":"11","p":true,"t":{"fr":[{"num":"11"},"Mes yeux se consument dans les larmes,",{"br":1},"mes entrailles sont émues ;",{"br":1},"mon foie",{"note":"lam.2.11.n1","l":"2"}," se répand sur la terre,",{"br":1},"à cause de la blessure de la fille de mon peuple,",{"br":1},"lorsque enfants et nourrissons tombent en défaillance,",{"br":1},"sur les places de la ville."]}}
+{"id":"lam.2.h14","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["LAMED."]}}
+{"id":"lam.2.12","type":"verse","n":"12","p":true,"t":{"fr":[{"num":"12"},"Ils disent à leurs mères :",{"br":1},"« Où y a-t-il du pain et du vin ?",{"br":1},"« et ils tombent comme frappés du glaive,",{"br":1},"sur les places de la ville ;",{"br":1},"et leur âme expire",{"note":"lam.2.12.n1","l":"3"},",",{"br":1},"sur le sein de leurs mères."]}}
+{"id":"lam.2.h15","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["MEM."]}}
+{"id":"lam.2.13","type":"verse","n":"13","p":true,"t":{"fr":[{"num":"13"},"Que puis-je te dire ?",{"br":1},"Qui trouver de semblable à toi,",{"br":1},"fille de Jérusalem ?",{"br":1},"À qui te comparer pour te consoler,",{"br":1},"vierge, fille de Sion ?",{"br":1},"Car ta plaie est grande comme la mer :",{"br":1},"qui te guérirait ?"]}}
+{"id":"lam.2.h16","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["NUN."]}}
+{"id":"lam.2.14","type":"verse","n":"14","p":true,"t":{"fr":[{"num":"14"},"Tes prophètes ont eu pour toi,",{"br":1},"de vaines et folles visions ;",{"note":"lam.2.14.n1","l":"4"},{"br":1},"ils ne t’ont pas dévoilé ton iniquité,",{"br":1},"afin de détourner de toi l’exil ;",{"br":1},"mais ils t’ont donné pour visions des oracles",{"br":1},"de mensonge et de séduction."]}}
+{"id":"lam.2.h17","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["SAMECH."]}}
+{"id":"lam.2.15","type":"verse","n":"15","p":true,"t":{"fr":[{"num":"15"},"Ils battent des mains à ton sujet,",{"br":1},"tous ceux qui passent sur le chemin ;",{"br":1},"ils sifflent, ils branlent la tête",{"br":1},"sur la fille de Jérusalem ;",{"br":1},"« Est-ce là cette ville qu’on appelait la parfaite en beauté",{"br":1},"la joie de toute la terre ? »"]}}
+{"id":"lam.2.h18","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["PHÉ."]}}
+{"id":"lam.2.16","type":"verse","n":"16","p":true,"t":{"fr":[{"num":"16"},"Ils ouvrent la bouche contre toi,",{"br":1},"tous tes ennemis ;",{"br":1},"ils sifflent, ils grincent des dents,",{"br":1},"ils disent : « Nous ",{"m":["i"],"c":["l’"]},"avons engloutie !",{"br":1},"C’est là le jour que nous attendions,",{"br":1},"nous y sommes arrivés, nous le voyons ! »",{"note":"lam.2.16.n1","l":"5"}]}}
+{"id":"lam.2.h19","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["AÏN."]}}
+{"id":"lam.2.17","type":"verse","n":"17","p":true,"t":{"fr":[{"num":"17"},"Yahweh a exécuté ce qu’il avait résolu ;",{"br":1},"il a accompli sa parole,",{"br":1},"qu’il avait prononcée dès les jours anciens ;",{"br":1},"il a détruit sans pitié ;",{"br":1},"il a réjoui l’ennemi à ton sujet,",{"br":1},"il a élevé la corne de tes oppresseurs."]}}
+{"id":"lam.2.h20","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["TSADÉ."]}}
+{"id":"lam.2.18","type":"verse","n":"18","p":true,"t":{"fr":[{"num":"18"},"Leur cœur crie vers le Seigneur !",{"br":1},"Ô muraille de la fille de Sion,",{"note":"lam.2.18.n1","l":"6"},{"br":1},"laisse couler, comme un torrent, tes larmes,",{"br":1},"le jour et la nuit ;",{"br":1},"ne te donne aucune relâche,",{"br":1},"que ta prunelle n’ait point de repos !"]}}
+{"id":"lam.2.h21","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["QOPH."]}}
+{"id":"lam.2.19","type":"verse","n":"19","p":true,"t":{"fr":[{"num":"19"},"Lève-toi, pousse des cris pendant la nuit,",{"br":1},"au commencement des veilles ;",{"br":1},"épanche ton cœur comme de l’eau,",{"br":1},"devant la face du Seigneur !",{"br":1},"Lève tes mains vers lui",{"br":1},"pour la vie de tes petits enfants,",{"br":1},"qui tombent en défaillance à cause de la faim,",{"br":1},"aux coins de toutes les rues !"]}}
+{"id":"lam.2.h22","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["RESCH."]}}
+{"id":"lam.2.20","type":"verse","n":"20","p":true,"t":{"fr":[{"num":"20"},"« Vois, Yahweh et considère :",{"br":1},"qui as-tu jamais traité ainsi ?",{"br":1},"Quoi ! des femmes mangent le fruit de leurs ",{"m":["i"],"c":["entrailles"]},",",{"note":"lam.2.20.n1","l":"7"},{"br":1},"les petits enfants qu’elles chérissent ?",{"br":1},"Quoi ! Ils sont égorgés dans le sanctuaire du Seigneur,",{"br":1},"le prêtre et le prophète !"]}}
+{"id":"lam.2.h23","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["SIN."]}}
+{"id":"lam.2.21","type":"verse","n":"21","p":true,"t":{"fr":[{"num":"21"},"« Ils sont couchés par terre dans les rues,",{"br":1},"l’enfant et le vieillard ;",{"br":1},"mes vierges et mes jeunes hommes",{"br":1},"sont tombés par l’épée ;",{"br":1},"tu as égorgé au jour de ta colère,",{"br":1},"tu as immolé sans pitié."]}}
+{"id":"lam.2.h24","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["THAV."]}}
+{"id":"lam.2.22","type":"verse","n":"22","p":true,"t":{"fr":[{"num":"22"},"« Tu as convoqué, comme à un jour de fête,",{"br":1},"mes terreurs de toutes parts ;",{"br":1},"au jour de la colère de Yahweh, il n’y a eu",{"br":1},"ni échappé ni fugitif :",{"br":1},"ceux que j’avais chéris et élevés,",{"br":1},"mon ennemi les a exterminés !”"]}}
+{"id":"lam.2.1.n1","type":"note","placement":"foot","label":"1","t":{"fr":["II, 1. ",{"m":["i"],"c":["L’escabeau de ses pieds"]},", l’arche d’alliance (I Par. xxviii, 2 ; ",{"link":"bible:PSA.99.5","c":["Ps. xcix, 5"]},")."]}}
+{"id":"lam.2.11.n1","type":"note","placement":"foot","label":"2","t":{"fr":["11. ",{"m":["i"],"c":["Mon foie"]},", siège et organe des émotions violentes."]}}
+{"id":"lam.2.12.n1","type":"note","placement":"foot","label":"3","t":{"fr":["12. ",{"m":["i"],"c":["Expire"]}," ; litt., ",{"m":["i"],"c":["se répand"]},"."]}}
+{"id":"lam.2.14.n1","type":"note","placement":"foot","label":"4","t":{"fr":["14. ",{"m":["i"],"c":["De vaines et folles visions, "]},"m. à m. ",{"m":["i"],"c":["vanité et plâtre"]}," (Comp. ",{"link":"bible:EZK.13.10","c":["Ezéch. xiii, 10"]},")."]}}
+{"id":"lam.2.16.n1","type":"note","placement":"foot","label":"5","t":{"fr":["16, 17. Contrairement à l’ordre des lettres dans l’alphabet hébreu, la strophe Phé précédé ici la strophe Aïn. Il en est de même dans plusieurs autres compositions alphabétiques, notamment dans ",{"link":"bible:LAM.3.1","c":["Lam. iii, iv"]},"."]}}
+{"id":"lam.2.18.n1","type":"note","placement":"foot","label":"6","t":{"fr":["18. ",{"m":["i"],"c":["Ô muraille de la fille de Sion"]},". Texte douteux, diversement interprété par les versions. Vulg. ",{"m":["i"],"c":["au sujet des murs de la fille de Sion"]},"."]}}
+{"id":"lam.2.20.n1","type":"note","placement":"foot","label":"7","t":{"fr":["20. ",{"m":["i"],"c":["Les petits enfants qu’elles portent dans leurs bras"]}," ; Vulg., ",{"m":["i"],"c":["qui ne mesurent encore qu’un palme"]},"."]}}
+{"id":"lam.3","type":"heading","level":2,"label":"Chapitre 3","t":{"fr":["Chapitre 3"]}}
+{"id":"lam.3.h1","type":"heading","level":3,"x-usfm":"ms1","t":{"fr":["TROISIÈME LAMENTATION. [III, 1-66.] PLAINTE, ESPOIR, CONSOLATION."]}}
+{"id":"lam.3.h2","type":"heading","level":3,"x-usfm":"s2","t":{"fr":["Plaintes (iii, 1-18). Espoir et résignation (iii, 19-39). Confession des fautes qui ont été la cause de tant de maux (iii, 40-54). Prière en vue de la délivrance (iii, 55-66)."]}}
+{"id":"lam.3.h3","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["ALEPH."]}}
+{"id":"lam.3.1","type":"verse","n":"1","p":true,"t":{"fr":[{"num":"1"},"Je suis l’homme qui a vu l’affliction,",{"br":1},"sous la verge de sa fureur.",{"note":"lam.3.1.n1","l":"1"},{"br":1}]}}
+{"id":"lam.3.2","type":"verse","n":"2","t":{"fr":[{"num":"2"},"Il m’a conduit et m’a fait marcher",{"br":1},"dans les ténèbres et non dans la lumière ;",{"br":1}]}}
+{"id":"lam.3.3","type":"verse","n":"3","t":{"fr":[{"num":"3"},"contre moi seul il tourne et retourne",{"br":1},"sa main tout le jour."]}}
+{"id":"lam.3.h4","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["BETH."]}}
+{"id":"lam.3.4","type":"verse","n":"4","p":true,"t":{"fr":[{"num":"4"},"Il a usé ma chair et ma peau,",{"br":1},"il a brisé mes os ;",{"br":1}]}}
+{"id":"lam.3.5","type":"verse","n":"5","t":{"fr":[{"num":"5"},"Il a bâti contre moi, il m’a environné",{"br":1},"d’amertume et d’ennui.",{"br":1}]}}
+{"id":"lam.3.6","type":"verse","n":"6","t":{"fr":[{"num":"6"},"Il m’a fait habiter dans les ténèbres,",{"br":1},"comme ceux qui sont morts depuis longtemps."]}}
+{"id":"lam.3.h5","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["GHIMEL."]}}
+{"id":"lam.3.7","type":"verse","n":"7","p":true,"t":{"fr":[{"num":"7"},"Il m’a entouré d’un mur pour que je ne puisse sortir,",{"br":1},"il a rendu lourdes mes chaînes.",{"br":1}]}}
+{"id":"lam.3.8","type":"verse","n":"8","t":{"fr":[{"num":"8"},"Lors même que je crie et que j’implore,",{"br":1},"il ferme tout accès à ma prière.",{"br":1}]}}
+{"id":"lam.3.9","type":"verse","n":"9","t":{"fr":[{"num":"9"},"Il a muré mes chemins avec des pierres de taille,",{"br":1},"il a bouleversé mes sentiers."]}}
+{"id":"lam.3.h6","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["DALETH."]}}
+{"id":"lam.3.10","type":"verse","n":"10","p":true,"t":{"fr":[{"num":"10"},"Il a été pour moi comme un ours aux aguets,",{"br":1},"comme un lion dans les embuscades ;",{"br":1}]}}
+{"id":"lam.3.11","type":"verse","n":"11","t":{"fr":[{"num":"11"},"il a détourné mes voies et m’a mis en pièces,",{"br":1},"il m’a réduit à l’abandon ;",{"br":1}]}}
+{"id":"lam.3.12","type":"verse","n":"12","t":{"fr":[{"num":"12"},"il a bandé son arc et m’a placé",{"br":1},"comme but à ses flèches."]}}
+{"id":"lam.3.h7","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["HÉ."]}}
+{"id":"lam.3.13","type":"verse","n":"13","p":true,"t":{"fr":[{"num":"13"},"Il a fait pénétrer dans mes reins",{"br":1},"les fils de son carquois ;",{"note":"lam.3.13.n1","l":"2"},{"br":1}]}}
+{"id":"lam.3.14","type":"verse","n":"14","t":{"fr":[{"num":"14"},"je suis la risée de tout mon peuple,",{"note":"lam.3.14.n1","l":"3"},{"br":1},"leur chanson tout le jour ;",{"br":1}]}}
+{"id":"lam.3.15","type":"verse","n":"15","t":{"fr":[{"num":"15"},"il m’a rassasié d’amertume,",{"br":1},"il m’a abreuvé d’absinthe."]}}
+{"id":"lam.3.h8","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["VAV."]}}
+{"id":"lam.3.16","type":"verse","n":"16","p":true,"t":{"fr":[{"num":"16"},"Et il a fait broyer du gravier à mes dents,",{"note":"lam.3.16.n1","l":"4"},{"br":1},"il m’a enfoncé dans la cendre ;",{"br":1}]}}
+{"id":"lam.3.17","type":"verse","n":"17","t":{"fr":[{"num":"17"},"et mon âme est ",{"m":["i"],"c":["violemment"]}," écartée",{"note":"lam.3.17.n1","l":"5"}," de la sécurité ;",{"br":1},"j’ai oublié le bonheur ;",{"br":1}]}}
+{"id":"lam.3.18","type":"verse","n":"18","t":{"fr":[{"num":"18"},"et j’ai dit : « Ma force est perdue,",{"br":1},"ainsi que mon espérance en Yahweh ! »"]}}
+{"id":"lam.3.h9","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["ZAÏN."]}}
+{"id":"lam.3.19","type":"verse","n":"19","p":true,"t":{"fr":[{"num":"19"},"Souviens-toi de mon affliction et de ma souffrance,",{"br":1},"de l’absinthe et de l’amertume !",{"br":1}]}}
+{"id":"lam.3.20","type":"verse","n":"20","t":{"fr":[{"num":"20"},"Mon âme s’en souvient",{"note":"lam.3.20.n1","l":"6"}," sans cesse,",{"br":1},"et elle est abattue en moi.",{"br":1}]}}
+{"id":"lam.3.21","type":"verse","n":"21","t":{"fr":[{"num":"21"},"Voici ce que je me rappellerai en mon cœur,",{"note":"lam.3.21.n1","l":"7"},{"br":1},"et ce pourquoi j’espérerai :"]}}
+{"id":"lam.3.h10","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["HETH."]}}
+{"id":"lam.3.22","type":"verse","n":"22","p":true,"t":{"fr":[{"num":"22"},"C’est une grâce de Yahweh que nous ne soyons pas anéantis,",{"br":1},"car ses miséricordes ne sont pas épuisées !",{"br":1}]}}
+{"id":"lam.3.23","type":"verse","n":"23","t":{"fr":[{"num":"23"},"Elles se renouvellent chaque matin ;",{"br":1},"grande est ta fidélité !",{"br":1}]}}
+{"id":"lam.3.24","type":"verse","n":"24","t":{"fr":[{"num":"24"},"« Yahweh est mon partage, a dit mon âme ;",{"br":1},"c’est pourquoi j’espérerai en lui. »"]}}
+{"id":"lam.3.h11","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["TETH."]}}
+{"id":"lam.3.25","type":"verse","n":"25","p":true,"t":{"fr":[{"num":"25"},"Yahweh est bon pour qui espère en lui,",{"br":1},"pour l’âme qui le cherche.",{"br":1}]}}
+{"id":"lam.3.26","type":"verse","n":"26","t":{"fr":[{"num":"26"},"Il est bon d’attendre en silence",{"br":1},"la délivrance de Yahweh.",{"br":1}]}}
+{"id":"lam.3.27","type":"verse","n":"27","t":{"fr":[{"num":"27"},"Il est bon à l’homme de porter",{"br":1},"le joug dès sa jeunesse."]}}
+{"id":"lam.3.h12","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["JOD."]}}
+{"id":"lam.3.28","type":"verse","n":"28","p":true,"t":{"fr":[{"num":"28"},"Qu’il s’asseye à l’écart, en silence,",{"br":1},"si Dieu le lui impose !",{"br":1}]}}
+{"id":"lam.3.29","type":"verse","n":"29","t":{"fr":[{"num":"29"},"Qu’il mette sa bouche dans la poussière :",{"note":"lam.3.29.n1","l":"8"},{"br":1},"peut-être y a-t-il de l’espérance !",{"br":1}]}}
+{"id":"lam.3.30","type":"verse","n":"30","t":{"fr":[{"num":"30"},"Qu’il tende la joue à celui qui le frappe ;",{"br":1},"qu’il se rassasie d’opprobre !",{"note":"lam.3.30.n1","l":"9"}]}}
+{"id":"lam.3.h13","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["CAPH."]}}
+{"id":"lam.3.31","type":"verse","n":"31","p":true,"t":{"fr":[{"num":"31"},"Car le Seigneur ne rejette pas",{"br":1},"à toujours ;",{"br":1}]}}
+{"id":"lam.3.32","type":"verse","n":"32","t":{"fr":[{"num":"32"},"mais, s’il afflige, il a compassion,",{"br":1},"selon sa grande miséricorde ;",{"br":1}]}}
+{"id":"lam.3.33","type":"verse","n":"33","t":{"fr":[{"num":"33"},"car ce n’est pas de ",{"m":["i"],"c":["bon"]}," cœur qu’il humilie,",{"br":1},"et qu’il afflige les enfants des hommes."]}}
+{"id":"lam.3.h14","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["LAMED."]}}
+{"id":"lam.3.34","type":"verse","n":"34","p":true,"t":{"fr":[{"num":"34"},"Quand on foule aux pieds",{"br":1},"tous les captifs du pays,",{"br":1}]}}
+{"id":"lam.3.35","type":"verse","n":"35","t":{"fr":[{"num":"35"},"quand on fait fléchir le droit d’un homme,",{"br":1},"à la face du Très-Haut,",{"br":1}]}}
+{"id":"lam.3.36","type":"verse","n":"36","t":{"fr":[{"num":"36"},"quand on fait tort à quelqu’un dans sa cause,",{"br":1},"le Seigneur ne le verrait donc pas !"]}}
+{"id":"lam.3.h15","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["MEM."]}}
+{"id":"lam.3.37","type":"verse","n":"37","p":true,"t":{"fr":[{"num":"37"},"Qui a parlé, et la chose s’est faite,",{"br":1},"sans que le Seigneur l’ait commandé ?",{"br":1}]}}
+{"id":"lam.3.38","type":"verse","n":"38","t":{"fr":[{"num":"38"},"N’est-ce pas de la bouche du Très-Haut que procèdent",{"br":1},"les maux et les biens ?",{"br":1}]}}
+{"id":"lam.3.39","type":"verse","n":"39","t":{"fr":[{"num":"39"},"Pourquoi l’homme se plaindrait-il tant qu’il vit ?",{"br":1},"Que chacun ",{"m":["i"],"c":["se plaigne"]}," de ses péchés !",{"note":"lam.3.39.n1","l":"10"}]}}
+{"id":"lam.3.h16","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["NUN."]}}
+{"id":"lam.3.40","type":"verse","n":"40","p":true,"t":{"fr":[{"num":"40"},"Examinons nos voies et scrutons-les,",{"br":1},"et retournons à Yahweh.",{"br":1}]}}
+{"id":"lam.3.41","type":"verse","n":"41","t":{"fr":[{"num":"41"},"Élevons nos cœurs, avec nos mains,",{"br":1},"vers Dieu dans les cieux :",{"note":"lam.3.41.n1","l":"11"},{"br":1}]}}
+{"id":"lam.3.42","type":"verse","n":"42","t":{"fr":[{"num":"42"},"« Nous, nous avons péché, nous avons été rebelles ;",{"br":1},"toi, tu n’as pas pardonné. »"]}}
+{"id":"lam.3.h17","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["SAMECH."]}}
+{"id":"lam.3.43","type":"verse","n":"43","p":true,"t":{"fr":[{"num":"43"},"« Tu t’es enveloppé dans ta colère, et tu nous as poursuivis ;",{"br":1},"tu as tué sans épargner ;",{"br":1}]}}
+{"id":"lam.3.44","type":"verse","n":"44","t":{"fr":[{"num":"44"},"Tu t’es couvert d’une nuée,",{"br":1},"afin que la prière ne passe point ;",{"br":1}]}}
+{"id":"lam.3.45","type":"verse","n":"45","t":{"fr":[{"num":"45"},"tu as fait de nous des balayures et un rebut,",{"br":1},"au milieu des peuples. »"]}}
+{"id":"lam.3.h18","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["PHÉ."]}}
+{"id":"lam.3.46","type":"verse","n":"46","p":true,"t":{"fr":[{"num":"46"},"Ils ouvrent la bouche contre nous,",{"br":1},"tous nos ennemis.",{"note":"lam.3.46.n1","l":"12"},{"br":1}]}}
+{"id":"lam.3.47","type":"verse","n":"47","t":{"fr":[{"num":"47"},"La frayeur et la fosse ont été notre part,",{"note":"lam.3.47.n1","l":"13"},{"br":1},{"m":["i"],"c":["ainsi que"]}," la dévastation et la ruine.",{"br":1}]}}
+{"id":"lam.3.48","type":"verse","n":"48","t":{"fr":[{"num":"48"},"Mon œil se fond en un ruisseau de larmes,",{"br":1},"à cause de la ruine de la fille de mon peuple."]}}
+{"id":"lam.3.h19","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["AÏN."]}}
+{"id":"lam.3.49","type":"verse","n":"49","p":true,"t":{"fr":[{"num":"49"},"Mon œil pleure et ne cesse point,",{"br":1},"parce qu’il n’y a pas de répit,",{"br":1}]}}
+{"id":"lam.3.50","type":"verse","n":"50","t":{"fr":[{"num":"50"},"jusqu’à ce qu’il regarde et voie,",{"br":1},"Yahweh, ",{"m":["i"],"c":["du haut"]}," des cieux.",{"note":"lam.3.50.n1","l":"14"},{"br":1}]}}
+{"id":"lam.3.51","type":"verse","n":"51","t":{"fr":[{"num":"51"},"Mon œil fait mal à mon âme,",{"note":"lam.3.51.n1","l":"15"},{"br":1},"à cause de toutes les filles de ma ville."]}}
+{"id":"lam.3.h20","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["TSADÉ."]}}
+{"id":"lam.3.52","type":"verse","n":"52","p":true,"t":{"fr":[{"num":"52"},"Ils m’ont donné la chasse comme a un passereau,",{"br":1},"ceux qui me haïssent sans cause.",{"br":1}]}}
+{"id":"lam.3.53","type":"verse","n":"53","t":{"fr":[{"num":"53"},"Ils ont ",{"m":["i"],"c":["voulu"]}," anéantir ma vie dans la fosse,",{"br":1},"et ils ont jeté une pierre sur moi.",{"note":"lam.3.53.n1","l":"16"},{"br":1}]}}
+{"id":"lam.3.54","type":"verse","n":"54","t":{"fr":[{"num":"54"},"Les eaux montaient au-dessus de ma tête ;",{"br":1},"je disais : « Je suis perdu ! »"]}}
+{"id":"lam.3.h21","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["QOPH."]}}
+{"id":"lam.3.55","type":"verse","n":"55","p":true,"t":{"fr":[{"num":"55"},"J’ai invoqué ton nom, Yahweh,",{"br":1},"de la fosse profonde ;",{"br":1}]}}
+{"id":"lam.3.56","type":"verse","n":"56","t":{"fr":[{"num":"56"},"tu as entendu ma voix : « Ne ferme point ton oreille",{"br":1},"à mes soupirs, à mes cris ! »",{"br":1}]}}
+{"id":"lam.3.57","type":"verse","n":"57","t":{"fr":[{"num":"57"},"Tu t’es approché, au jour où je t’ai invoqué,",{"br":1},"et tu as dit : « Ne crains point ! »"]}}
+{"id":"lam.3.h22","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["RESCH."]}}
+{"id":"lam.3.58","type":"verse","n":"58","p":true,"t":{"fr":[{"num":"58"},"Seigneur tu as pris en main ma cause,",{"note":"lam.3.58.n1","l":"17"},{"br":1},"tu m’as sauvé la vie.",{"br":1}]}}
+{"id":"lam.3.59","type":"verse","n":"59","t":{"fr":[{"num":"59"},"Tu as vu, Yahweh, la violence qu’ils me font ;",{"br":1},"fais-moi justice !",{"br":1}]}}
+{"id":"lam.3.60","type":"verse","n":"60","t":{"fr":[{"num":"60"},"Tu as vu toute leur rancune,",{"br":1},"tous leurs complots contre moi."]}}
+{"id":"lam.3.h23","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["SIN."]}}
+{"id":"lam.3.61","type":"verse","n":"61","p":true,"t":{"fr":[{"num":"61"},"Tu as entendu leurs outrages, Yahweh,",{"br":1},"tous leurs complots contre moi,",{"br":1}]}}
+{"id":"lam.3.62","type":"verse","n":"62","t":{"fr":[{"num":"62"},"les propos de mes adversaires et ce qu’ils méditent",{"br":1},", contre moi tout le jour.",{"br":1}]}}
+{"id":"lam.3.63","type":"verse","n":"63","t":{"fr":[{"num":"63"},"Quand ils s’asseyent ou qu’ils se lèvent, regarde :",{"br":1},"je suis ",{"m":["i"],"c":["l’objet"]}," de leurs chansons."]}}
+{"id":"lam.3.h24","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["THAV."]}}
+{"id":"lam.3.64","type":"verse","n":"64","p":true,"t":{"fr":[{"num":"64"},"Tu leur rendras, Yahweh, ce qu’ils méritent,",{"br":1},"selon l’œuvre de leurs mains ;",{"br":1}]}}
+{"id":"lam.3.65","type":"verse","n":"65","t":{"fr":[{"num":"65"},"Tu leur donneras l’aveuglement",{"note":"lam.3.65.n1","l":"18"}," du cœur ;",{"br":1},"ta malédiction ",{"m":["i"],"c":["sera"]}," pour eux.",{"br":1}]}}
+{"id":"lam.3.66","type":"verse","n":"66","t":{"fr":[{"num":"66"},"Tu les poursuivras avec colère et tu les extermineras,",{"br":1},"de dessous les cieux de Yahweh !"]}}
+{"id":"lam.3.1.n1","type":"note","placement":"foot","label":"1","t":{"fr":["III, 1. Dans cette troisième élégie, c’est le prophète qui parle au nom des pieux Israélites. Au point vue de la composition, il faut noter que dans chaque strophe, les trois distiques commencent par la même lettre de l’alphabet."]}}
+{"id":"lam.3.13.n1","type":"note","placement":"foot","label":"2","t":{"fr":["13. ",{"m":["i"],"c":["Le fils de son carquois"]},", ses flèches."]}}
+{"id":"lam.3.14.n1","type":"note","placement":"foot","label":"3","t":{"fr":["14. ",{"m":["i"],"c":["La risée de mon peuple"]},", hébr. ’ammi, ou bien, d’après une autre leçon avec le syriaque, ’ammim, de la masse du peuple incrédule (",{"link":"bible:JER.20.7","c":["Jér. xx, 7"]},")."]}}
+{"id":"lam.3.16.n1","type":"note","placement":"foot","label":"4","t":{"fr":["16. ",{"m":["i"],"c":["Il a fait broyer du gravier à mes dents"]},". Traduction incertaine d’un texte difficile."]}}
+{"id":"lam.3.17.n1","type":"note","placement":"foot","label":"5","t":{"fr":["17. ",{"m":["i"],"c":["Et mon âme est écartée"]},". On pourrait aussi traduire et tu écartes mon âme."]}}
+{"id":"lam.3.20.n1","type":"note","placement":"foot","label":"6","t":{"fr":["20. ",{"m":["i"],"c":["Mon âme s’en souvient"]},". On pourrait aussi traduire : ",{"m":["i"],"c":["Souviens-toi de grâce que mon âme est abattue en moi"]},"."]}}
+{"id":"lam.3.21.n1","type":"note","placement":"foot","label":"7","t":{"fr":["21. ",{"m":["i"],"c":["Ce que je me rappellerai en mon cœur"]},", litt. ’ce que je ramènerai à mon cœur",{"m":["i"],"c":["."]}]}}
+{"id":"lam.3.29.n1","type":"note","placement":"foot","label":"8","t":{"fr":["29. ",{"m":["i"],"c":["Qu’il mette sa bouche "]},"etc. : qu’il s’humilie profondément devant Dieu, comme on le fait en Orient devant un supérieur."]}}
+{"id":"lam.3.30.n1","type":"note","placement":"foot","label":"9","t":{"fr":["30. L’homme soumis à Dieu accepte l’épreuve avec une sorte de satisfaction ; il tend la joue à Dieu qui le frappe."]}}
+{"id":"lam.3.39.n1","type":"note","placement":"foot","label":"10","t":{"fr":["39. D’autres : ",{"m":["i"],"c":["Pourquoi un homme se plaindrait-il, tant qu’il vit, chacun au sujet du châtiment de ses péchés"]},"."]}}
+{"id":"lam.3.41.n1","type":"note","placement":"foot","label":"11","t":{"fr":["41. ",{"m":["i"],"c":["Avec nos mains"]},", litt. ",{"m":["i"],"c":["vers nos mains"]}," : que nos sentiments suivent nos gestes extérieurs !"]}}
+{"id":"lam.3.46.n1","type":"note","placement":"foot","label":"12","t":{"fr":["46-48. Même remarque que pour ",{"link":"bible:LAM.2.16","c":["Lam. ii, 16"]},"."]}}
+{"id":"lam.3.47.n1","type":"note","placement":"foot","label":"13","t":{"fr":["47. ",{"m":["i"],"c":["Notre part"]},", litt. ",{"m":["i"],"c":["pour nous"]},"."]}}
+{"id":"lam.3.50.n1","type":"note","placement":"foot","label":"14","t":{"fr":["50. C’est Yahweh qui est sujet de ce membre de phrase."]}}
+{"id":"lam.3.51.n1","type":"note","placement":"foot","label":"15","t":{"fr":["51. ",{"m":["i"],"c":["Fait mal à mon âme"]},", me fait mal."]}}
+{"id":"lam.3.53.n1","type":"note","placement":"foot","label":"16","t":{"fr":["53. ",{"m":["i"],"c":["Une pierre sur moi"]},", pour termer l’ouverture de la fosse."]}}
+{"id":"lam.3.58.n1","type":"note","placement":"foot","label":"17","t":{"fr":["58. ",{"m":["i"],"c":["Tu as pris en main ma cause"]}," ; m. à m., ",{"m":["i"],"c":["tu as plaidé les procès de mon âme"]},"."]}}
+{"id":"lam.3.65.n1","type":"note","placement":"foot","label":"18","t":{"fr":["65. ",{"m":["i"],"c":["L’aveuglement"]},", litt. ",{"m":["i"],"c":["le recouvrement comme par un voile épais qui empêche de voir"]},"."]}}
+{"id":"lam.4","type":"heading","level":2,"label":"Chapitre 4","t":{"fr":["Chapitre 4"]}}
+{"id":"lam.4.h1","type":"heading","level":3,"x-usfm":"ms1","t":{"fr":["QUATRIÈME LAMENTATION. [IV, 1-22.] CALAMITÉS DES DERNIERS JOURS DU SIÈGE."]}}
+{"id":"lam.4.h2","type":"heading","level":3,"x-usfm":"s2","t":{"fr":["La misère extrême (iv, 1-10). Colère de Yahweh : responsabilité des prêtres et des prophètes (iv, 11-16) Pas de secours humain (iv, 17-20). Joie d’Édom ; il aura son tour (iv, 21, 22)."]}}
+{"id":"lam.4.h3","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["ALEPH."]}}
+{"id":"lam.4.1","type":"verse","n":"1","p":true,"t":{"fr":[{"num":"1"},"Comment l’or s’est-il terni,",{"br":1},"l’or pur s’est-il altéré,",{"br":1},"les pierres sacrées ont-elles été dispersées,",{"br":1},"au coin de toutes les rues ?",{"note":"lam.4.1.n1","l":"1"}]}}
+{"id":"lam.4.h4","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["BETH."]}}
+{"id":"lam.4.2","type":"verse","n":"2","p":true,"t":{"fr":[{"num":"2"},"Les plus nobles fils de Sion,",{"br":1},"estimés au ",{"m":["i"],"c":["poids"]}," de l’or fin,",{"br":1},"comment ont-ils été comptés pour des vases de terre,",{"br":1},"ouvrage des mains d’un potier ?"]}}
+{"id":"lam.4.h5","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["GHIMEL."]}}
+{"id":"lam.4.3","type":"verse","n":"3","p":true,"t":{"fr":[{"num":"3"},"Même les chacals présentent les mamelles,",{"br":1},"et allaitent leurs petits ;",{"br":1},"la fille de mon peuple est devenue cruelle,",{"note":"lam.4.3.n1","l":"2"},{"br":1},"comme les autruches dans le désert."]}}
+{"id":"lam.4.h6","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["DALETH."]}}
+{"id":"lam.4.4","type":"verse","n":"4","p":true,"t":{"fr":[{"num":"4"},"La langue du nourrisson s’attache",{"br":1},"à son palais, à cause de la soif ;",{"br":1},"les petits enfants demandent du pain,",{"br":1},"et personne ne leur en donne."]}}
+{"id":"lam.4.h7","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["HÉ."]}}
+{"id":"lam.4.5","type":"verse","n":"5","p":true,"t":{"fr":[{"num":"5"},"Ceux qui se nourrissaient de mets délicats",{"br":1},"tombent d’inanition dans les rues ;",{"br":1},"ceux qu’on portait sur la pourpre",{"br":1},"embrassent le fumier."]}}
+{"id":"lam.4.h8","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["VAV."]}}
+{"id":"lam.4.6","type":"verse","n":"6","p":true,"t":{"fr":[{"num":"6"},"Et l’iniquité de la fille de mon peuple a été plus grande",{"br":1},"que le péché de Sodome,",{"br":1},"qui fut renversée en un instant,",{"br":1},"sans que des mains se levassent contre elle."]}}
+{"id":"lam.4.h9","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["ZAÏN."]}}
+{"id":"lam.4.7","type":"verse","n":"7","p":true,"t":{"fr":[{"num":"7"},"Ses princes",{"note":"lam.4.7.n1","l":"3"}," surpassaient la neige en éclat,",{"br":1},"le lait en blancheur ;",{"br":1},{"m":["i"],"c":["leur"]}," corps était plus vermeil que le corail,",{"br":1},"leur figure était un saphir."]}}
+{"id":"lam.4.h10","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["HETH."]}}
+{"id":"lam.4.8","type":"verse","n":"8","p":true,"t":{"fr":[{"num":"8"},"Leur aspect est plus sombre que le noir même ;",{"br":1},"on ne les reconnaît plus dans les rues ;",{"br":1},"leur peau est collée à leurs os,",{"br":1},"elle est sèche comme du bois."]}}
+{"id":"lam.4.h11","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["TETH."]}}
+{"id":"lam.4.9","type":"verse","n":"9","p":true,"t":{"fr":[{"num":"9"},"Plus heureuses sont les victimes de l’épée",{"br":1},"que les victimes de la faim,",{"br":1},"qui s’épuisent lentement, blessées,",{"br":1},"faute des produits des champs !"]}}
+{"id":"lam.4.h12","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["JOD."]}}
+{"id":"lam.4.10","type":"verse","n":"10","p":true,"t":{"fr":[{"num":"10"},"Des femmes compatissantes",{"note":"lam.4.10.n1","l":"4"}," ont de leurs mains",{"br":1},"fait cuire leurs enfants ;",{"br":1},"ils leur ont servi de nourriture,",{"br":1},"dans le désastre de la fille de mon peuple."]}}
+{"id":"lam.4.h13","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["CAPH."]}}
+{"id":"lam.4.11","type":"verse","n":"11","p":true,"t":{"fr":[{"num":"11"},"Yahweh a épuisé sa fureur ;",{"br":1},"il a répandu l’ardeur de sa colère,",{"br":1},"et a allumé dans Sion un feu",{"br":1},"qui en a dévoré les fondements."]}}
+{"id":"lam.4.h14","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["LAMED."]}}
+{"id":"lam.4.12","type":"verse","n":"12","p":true,"t":{"fr":[{"num":"12"},"Ils ne croyaient pas, les rois de la terre,",{"br":1},"ni tous les habitants du monde,",{"br":1},"que l’adversaire, l’ennemi entrerait",{"br":1},"dans les portes de Jérusalem."]}}
+{"id":"lam.4.h15","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["MEM."]}}
+{"id":"lam.4.13","type":"verse","n":"13","p":true,"t":{"fr":[{"num":"13"},"C’est à cause des péchés de ses prophètes,",{"br":1},"des iniquités de ses prêtres,",{"br":1},"qui répandaient dans son enceinte",{"br":1},"le sang des justes."]}}
+{"id":"lam.4.h16","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["NUN."]}}
+{"id":"lam.4.14","type":"verse","n":"14","p":true,"t":{"fr":[{"num":"14"},"Ils erraient",{"note":"lam.4.14.n1","l":"5"}," ",{"m":["i"],"c":["comme"]}," des aveugles dans les rues,",{"br":1},"souillés de sang,",{"br":1},"de sorte qu’on ne pouvait toucher",{"br":1},"leurs vêtements."]}}
+{"id":"lam.4.h17","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["SAMECH."]}}
+{"id":"lam.4.15","type":"verse","n":"15","p":true,"t":{"fr":[{"num":"15"},"« Écartez-vous !",{"note":"lam.4.15.n1","l":"6"}," Un impur ! » leur criait-on. « Écartez-vous !",{"br":1},"Écartez-vous ! Ne le touchez pas ! »",{"br":1},"Ils erraient, et l’on disait parmi les nations :",{"br":1},"« Qu’ils ne séjournent point ",{"m":["i"],"c":["ici"]}," ! »"]}}
+{"id":"lam.4.h18","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["PHÉ."]}}
+{"id":"lam.4.16","type":"verse","n":"16","p":true,"t":{"fr":[{"num":"16"},"La face ",{"m":["i"],"c":["irritée"]}," de Yahweh les a dispersés ;",{"br":1},"il ne les regarde plus.",{"br":1},{"m":["i"],"c":["L’ennemi"]}," n’a eu ni respect pour les prêtres,",{"br":1},"ni pitié pour les vieillards.",{"note":"lam.4.16.n1","l":"7"}]}}
+{"id":"lam.4.h19","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["AÏN."]}}
+{"id":"lam.4.17","type":"verse","n":"17","p":true,"t":{"fr":[{"num":"17"},"Et nous, nos yeux se consumaient encore",{"br":1},"à ",{"m":["i"],"c":["attendre"]}," un vain secours ;",{"note":"lam.4.17.n1","l":"8"},{"br":1},"du haut de nos tours, nous regardions",{"br":1},"vers une nation qui ne peut sauver."]}}
+{"id":"lam.4.h20","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["TSADÉ."]}}
+{"id":"lam.4.18","type":"verse","n":"18","p":true,"t":{"fr":[{"num":"18"},"Ils",{"note":"lam.4.18.n1","l":"9"}," épiaient nos pas,",{"br":1},{"m":["i"],"c":["nous empêchant"]}," de marcher dans nos places.",{"br":1},"Notre fin approche, nos jours sont accomplis ;",{"br":1},"oui, notre fin est arrivée !"]}}
+{"id":"lam.4.h21","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["QOPH."]}}
+{"id":"lam.4.19","type":"verse","n":"19","p":true,"t":{"fr":[{"num":"19"},"Ceux qui nous poursuivaient ont été plus légers",{"br":1},"que les aigles du ciel ;",{"br":1},"ils nous ont pourchassés sur les montagnes ;",{"br":1},"ils nous ont dressé des embûches dans le désert.",{"note":"lam.4.19.n1","l":"10"}]}}
+{"id":"lam.4.h22","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["RESCH."]}}
+{"id":"lam.4.20","type":"verse","n":"20","p":true,"t":{"fr":[{"num":"20"},"Le souffle de nos narines,",{"note":"lam.4.20.n1","l":"11"}," l’oint de Yahweh,",{"br":1},"a été pris dans leurs fosses,",{"br":1},"lui dont nous disions : « À son ombre",{"br":1},"nous vivrons parmi les nations. »"]}}
+{"id":"lam.4.h23","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["SIN."]}}
+{"id":"lam.4.21","type":"verse","n":"21","p":true,"t":{"fr":[{"num":"21"},"Réjouis-toi et sois dans l’allégresse, fille d’Édom,",{"br":1},"qui habite au pays de Hus !",{"br":1},"À toi aussi passera la coupe ;",{"br":1},"tu t’enivreras et tu te mettras à nu."]}}
+{"id":"lam.4.h24","type":"heading","level":3,"x-usfm":"qa","t":{"fr":["THAV."]}}
+{"id":"lam.4.22","type":"verse","n":"22","p":true,"t":{"fr":[{"num":"22"},"Ton iniquité a pris fin, fille de Sion,",{"br":1},"il ne t’enverra",{"note":"lam.4.22.n1","l":"12"}," plus en exil.",{"br":1},"Il visite ton iniquité, fille d’Édom ;",{"br":1},"il met à découvert tes péchés."]}}
+{"id":"lam.4.1.n1","type":"note","placement":"foot","label":"1","t":{"fr":["IV. Tandis que les trois premières lamentations se composaient de strophes de trois distiques chacune, la quatrième est faite de strophes de deux distiques seulement."]}}
+{"id":"lam.4.3.n1","type":"note","placement":"foot","label":"2","t":{"fr":["3. ",{"m":["i"],"c":["Cruelle"]}," : les femmes juives, pendant le siège, ne pouvaient plus nourrir leurs enfants."]}}
+{"id":"lam.4.7.n1","type":"note","placement":"foot","label":"3","t":{"fr":["7. ",{"m":["i"],"c":["Ses princes "]},"(hébr., nazir, couronné, séparé). Les princes et les nobles, et, par suite aussi, les prêtres. — ",{"m":["i"],"c":["Leur corps"]},", litt ",{"m":["i"],"c":["os"]},", la partie pour le tout. — ",{"m":["i"],"c":["Leur figure"]}," ; le sens du mot hébreu est douteux et imprécis."]}}
+{"id":"lam.4.10.n1","type":"note","placement":"foot","label":"4","t":{"fr":["10. ",{"m":["i"],"c":["Des femmes compatissantes"]},", ordinairement pleines de tendresse ; cette épithète a pour but de faire ressortir l’horreur de cette situation. Comp ii, 20."]}}
+{"id":"lam.4.14.n1","type":"note","placement":"foot","label":"5","t":{"fr":["14. ",{"m":["i"],"c":["Ils erraient"]},", dans les derniers temps du siège et après la prise de la ville, les faux prophètes et les prêtres, pris de remords, maudits du peuple et rejetés de Dieu."]}}
+{"id":"lam.4.15.n1","type":"note","placement":"foot","label":"6","t":{"fr":["15. ",{"m":["i"],"c":["Écartez-vous"]}," : en voyant s’avancer un de ces prêtres ou de ces prophètes prévaricateurs, les passants se criaient les uns aux autres : ",{"m":["i"],"c":["Écartez-vous, c’est un impur !"]}," — ",{"m":["i"],"c":["Parmi les nations"]}," : les païens eux-mêmes ne pouvaient souffrir parmi eux le séjour de ces hommes néfastes."]}}
+{"id":"lam.4.16.n1","type":"note","placement":"foot","label":"7","t":{"fr":["16. Ici encore la strophe Phé précède la strophe Aïn. Comp. ",{"link":"bible:LAM.2.16","c":["Lam. ii, 16"]}," ; iii, 46-48. — ",{"m":["i"],"c":["Pour les vieillards"]},". LXX, ",{"m":["i"],"c":["pour les prophètes"]},"."]}}
+{"id":"lam.4.17.n1","type":"note","placement":"foot","label":"8","t":{"fr":["17. ",{"m":["i"],"c":["Un vain secours"]},", particulièrement celui de l’Égypte (Jér. xxxvii, 5)."]}}
+{"id":"lam.4.18.n1","type":"note","placement":"foot","label":"9","t":{"fr":["18. ",{"m":["i"],"c":["Ils"]}," : les Chaldéens, qui avaient élevé des terrasses assez rapprochées de la ville pour pouvoir lancer des flèches et des pierres jusque dans les rues et les places."]}}
+{"id":"lam.4.19.n1","type":"note","placement":"foot","label":"10","t":{"fr":["19. Ceux même qui avaient pu s’échapper de la ville sont tombés entre les mains des Chaldéens. Ainsi Sédécias, dans le désert de Jéricho, Voy. ",{"link":"bible:JER.39.5","c":["Jér. xxxix, 5"]}," ; ",{"link":"bible:JER.52.8","c":["lii, 8"]}," ; ",{"link":"bible:2KI.25.5","c":["II Rois, xxv, 5"]},". Comp. ",{"link":"bible:DEU.28.49","c":["Deut. xxviii, 49"]},"."]}}
+{"id":"lam.4.20.n1","type":"note","placement":"foot","label":"11","t":{"fr":["20. Le souffle de nos narines, le roi Sédécias, descendant de David, celui dont dépendait l’existence même de la nation, qui était comme le souffle de sa vie."]}}
+{"id":"lam.4.22.n1","type":"note","placement":"foot","label":"12","t":{"fr":["22. ",{"m":["i"],"c":["Il ne t’enverra plus"]},". Il s’agit de Yahweh."]}}
+{"id":"lam.5","type":"heading","level":2,"label":"Chapitre 5","t":{"fr":["Chapitre 5"]}}
+{"id":"lam.5.h1","type":"heading","level":3,"x-usfm":"ms1","t":{"fr":["CINQUIÈME LAMENTATION. [V, 1-22.] PRIÈRE DE JÉRÉMIE, LE PROPHÈTE."]}}
+{"id":"lam.5.h2","type":"heading","level":3,"x-usfm":"s2","t":{"fr":["Que Yahweh regarde son peuple malheureux (v, 1), soumis aux étrangers (v, 2-6), las de porter le péché des pères (v, 7-10) ! Tant de maux ont fait cesser toute joie, mais surtout la violation du Temple (v, 11-18). Que Yahweh prenne pitié de son peuple (v, 19-22) !"]}}
+{"id":"lam.5.1","type":"verse","n":"1","p":true,"t":{"fr":[{"num":"1"},"Souviens-toi,",{"note":"lam.5.1.n1","l":"1"}," Yahweh, de ce qui nous est arrivé,",{"br":1},"regarde et vois notre opprobre."]}}
+{"id":"lam.5.2","type":"verse","n":"2","p":true,"t":{"fr":[{"num":"2"},"Notre héritage a passé à des étrangers,",{"br":1},"nos maisons à des inconnus.",{"br":1}]}}
+{"id":"lam.5.3","type":"verse","n":"3","t":{"fr":[{"num":"3"},"Nous sommes orphelins, sans père ;",{"br":1},"nos mères sont comme des veuves.",{"br":1}]}}
+{"id":"lam.5.4","type":"verse","n":"4","t":{"fr":[{"num":"4"},"Nous buvons notre eau à prix d’argent,",{"br":1},"le bois ne nous vient que pour un salaire."]}}
+{"id":"lam.5.5","type":"verse","n":"5","t":{"fr":[{"num":"5"},"Nos persécuteurs",{"note":"lam.5.5.n1","l":"2"}," nous pressent par derrière ;",{"br":1},"nous sommes épuisés ; plus de repos pour nous.",{"br":1}]}}
+{"id":"lam.5.6","type":"verse","n":"6","t":{"fr":[{"num":"6"},"Nous tendons la main vers l’Égypte,",{"br":1},"et vers l’Assyrie, pour nous rassasier de pain."]}}
+{"id":"lam.5.7","type":"verse","n":"7","p":true,"t":{"fr":[{"num":"7"},"Nos pères ont péché, ils ne sont plus ;",{"br":1},"et nous, nous portons leurs iniquités !",{"note":"lam.5.7.n1","l":"3"},{"br":1}]}}
+{"id":"lam.5.8","type":"verse","n":"8","t":{"fr":[{"num":"8"},"Des esclaves dominent sur nous ;",{"br":1},"personne ne ",{"m":["i"],"c":["nous"]}," délivre de leurs mains.",{"br":1}]}}
+{"id":"lam.5.9","type":"verse","n":"9","t":{"fr":[{"num":"9"},"Nous acquérons notre pain au ",{"m":["i"],"c":["péril de"]}," notre vie ;",{"br":1},"devant l’épée du désert.",{"note":"lam.5.9.n1","l":"4"},{"br":1}]}}
+{"id":"lam.5.10","type":"verse","n":"10","t":{"fr":[{"num":"10"},"Notre peau est brûlante comme un four,",{"br":1},"par suite des ardeurs de la faim.",{"note":"lam.5.10.n1","l":"5"}]}}
+{"id":"lam.5.11","type":"verse","n":"11","p":true,"t":{"fr":[{"num":"11"},"Ils ont déshonoré les femmes dans Sion,",{"br":1},"les vierges dans les villes de Juda.",{"br":1}]}}
+{"id":"lam.5.12","type":"verse","n":"12","t":{"fr":[{"num":"12"},"Des chefs ont été pendus par leurs mains ;",{"br":1},"la face des vieillards n’a pas été respectée.",{"br":1}]}}
+{"id":"lam.5.13","type":"verse","n":"13","t":{"fr":[{"num":"13"},"Des adolescents ont porté la meule ;",{"br":1},"des enfants ont chancelé, chargés de bois.",{"br":1}]}}
+{"id":"lam.5.14","type":"verse","n":"14","t":{"fr":[{"num":"14"},"Les vieillards ont cessé ",{"m":["i"],"c":["d’aller à"]}," la porte ;",{"br":1},"les jeunes gens, de ",{"m":["i"],"c":["jouer"]}," de leur lyre."]}}
+{"id":"lam.5.15","type":"verse","n":"15","p":true,"t":{"fr":[{"num":"15"},"La joie de nos cœurs a cessé,",{"br":1},"nos danses sont changées en deuil.",{"br":1}]}}
+{"id":"lam.5.16","type":"verse","n":"16","t":{"fr":[{"num":"16"},"La couronne de notre tête est tombée ;",{"br":1},"oui, malheur à nous, car nous avons péché !",{"br":1}]}}
+{"id":"lam.5.17","type":"verse","n":"17","t":{"fr":[{"num":"17"},"Voici pourquoi notre cœur est malade,",{"br":1},"pourquoi nos yeux sont obscurcis :",{"br":1}]}}
+{"id":"lam.5.18","type":"verse","n":"18","t":{"fr":[{"num":"18"},"c’est parce que la montagne de Sion est désolée,",{"br":1},"et que les chacals s’y promènent."]}}
+{"id":"lam.5.19","type":"verse","n":"19","p":true,"t":{"fr":[{"num":"19"},"Toi, Yahweh, tu sièges éternellement ;",{"br":1},"ton trône ",{"m":["i"],"c":["subsiste"]}," d’âge en âge !",{"br":1}]}}
+{"id":"lam.5.20","type":"verse","n":"20","t":{"fr":[{"num":"20"},"Pourquoi nous oublierais-tu à jamais,",{"br":1},"nous abandonnerais-tu pour de ",{"m":["i"],"c":["si"]}," longs jours ?",{"br":1}]}}
+{"id":"lam.5.21","type":"verse","n":"21","t":{"fr":[{"num":"21"},"Fais-nous revenir à toi, Yahweh, et nous reviendrons ;",{"br":1},"renouvelle nos jours comme autrefois.",{"br":1}]}}
+{"id":"lam.5.22","type":"verse","n":"22","t":{"fr":[{"num":"22"},"Car nous aurais-tu entièrement rejetés,",{"br":1},"serais-tu irrité contre nous sans mesure ?"]}}
+{"id":"lam.5.1.n1","type":"note","placement":"foot","label":"1","t":{"fr":["V. La Vulgate présente, au début du cinquième poème, un titre. ",{"m":["i"],"c":["Prière de Jérémie le prophète "]},"qui n’existe pas en hébreu ni dans les LXX. — Ce poème, bien qu’il ne soit pas alphabétique comme les précédents, compte autant de distiques qu’il y a de lettres dans l’alphabet."]}}
+{"id":"lam.5.5.n1","type":"note","placement":"foot","label":"2","t":{"fr":["5. ((Nos persécuteurs nous pressent par derrière",{"m":["i"],"c":[". M. à m."]},"sur nos cous, nous sommes poursuivis",{"m":["i"],"c":[". Peut-être : Le joug sur le cou, etc."]}]}}
+{"id":"lam.5.7.n1","type":"note","placement":"foot","label":"3","t":{"fr":["7. ",{"m":["i"],"c":["Leurs iniquités"]},", la peine de leurs fautes."]}}
+{"id":"lam.5.9.n1","type":"note","placement":"foot","label":"4","t":{"fr":["9. ",{"m":["i"],"c":["L’épée du désert"]},", les Arabes pillards, les Bédouins, qui habitent le désert et qui sont toujours prêts à faire des incursions dans le pays dévasté."]}}
+{"id":"lam.5.10.n1","type":"note","placement":"foot","label":"5","t":{"fr":["10. ",{"m":["i"],"c":["Notre peau "]},"etc. : une fièvre causée par la faim nous consume."]}}

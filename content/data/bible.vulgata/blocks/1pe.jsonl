@@ -1,0 +1,111 @@
+{"id":"1pe.titre","type":"heading","level":1,"t":{"la":["Epistola B. Petri Apostoli prima"]}}
+{"id":"1pe.1","type":"heading","level":2,"label":"Caput 1","t":{"la":["Caput 1"]}}
+{"id":"1pe.1.1","type":"verse","n":"1","p":true,"dropCap":true,"t":{"la":[{"num":"1"},"Petrus Apostolus Jesu Christi, electis advenis dispersionis Ponti, Galatiæ, Cappadociæ, Asiæ, et Bithyniæ,"]}}
+{"id":"1pe.1.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"secundum præscientiam Dei Patris, in sanctificationem Spiritus, in obedientiam, et aspersionem sanguinis Jesu Christi. Gratia vobis, et pax multiplicetur."]}}
+{"id":"1pe.1.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Benedictus Deus et Pater Domini nostri Jesu Christi, qui secundum misericordiam suam magnam regeneravit nos in spem vivam, per resurrectionem Jesu Christi ex mortuis,"]}}
+{"id":"1pe.1.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"in hæreditatem incorruptibilem, et incontaminatam, et immarcescibilem, conservatam in cælis in vobis,"]}}
+{"id":"1pe.1.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"qui in virtute Dei custodimini per fidem in salutem, paratam revelari in tempore novissimo."]}}
+{"id":"1pe.1.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"In quo exsultabis, modicum nunc si oportet contristari in variis tentationibus :"]}}
+{"id":"1pe.1.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"ut probatio vestræ fidei multo pretiosior auro (quod per ignem probatur) inveniatur in laudem, et gloriam, et honorem in revelatione Jesu Christi :"]}}
+{"id":"1pe.1.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"quem cum non videritis, diligitis : in quem nunc quoque non videntes creditis : credentes autem exsultabitis lætitia inenarrabili, et glorificata :"]}}
+{"id":"1pe.1.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"reportantes finem fidei vestræ, salutem animarum."]}}
+{"id":"1pe.1.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"De qua salute exquisierunt, atque scrutati sunt prophetæ, qui de futura in vobis gratia prophetaverunt :"]}}
+{"id":"1pe.1.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"scrutantes in quod vel quale tempus significaret in eis Spiritus Christi : prænuntians eas quæ in Christo sunt passiones, et posteriores glorias :"]}}
+{"id":"1pe.1.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"quibus revelatum est quia non sibimetipsis, vobis autem ministrabant ea quæ nunc nuntiata sunt vobis per eos qui evangelizaverunt vobis, Spiritu Sancto misso de cælo, in quem desiderant angeli prospicere."]}}
+{"id":"1pe.1.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Propter quod succincti lumbos mentis vestræ, sobrii, perfecte sperate in eam, quæ offertur vobis, gratiam, in revelationem Jesu Christi :"]}}
+{"id":"1pe.1.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"quasi filii obedientiæ, non configurati prioribus ignorantiæ vestræ desideriis :"]}}
+{"id":"1pe.1.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"sed secundum eum qui vocavit vos, Sanctum : et ipsi in omni conversatione sancti sitis :"]}}
+{"id":"1pe.1.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"quoniam scriptum est : Sancti eritis, quoniam ego sanctus sum."]}}
+{"id":"1pe.1.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Et si patrem invocatis eum, qui sine acceptione personarum judicat secundum uniuscujusque opus, in timore incolatus vestri tempore conversamini."]}}
+{"id":"1pe.1.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Scientes quod non corruptibilibus, auro vel argento, redempti estis de vana vestra conversatione paternæ traditionis :"]}}
+{"id":"1pe.1.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"sed pretioso sanguine quasi agni immaculati Christi, et incontaminati :"]}}
+{"id":"1pe.1.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"præcogniti quidem ante mundi constitutionem, manifestati autem novissimis temporibus propter vos,"]}}
+{"id":"1pe.1.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"qui per ipsum fideles estis in Deo, qui suscitavit eum a mortuis, et dedit ei gloriam, ut fides vestra et spes esset in Deo :"]}}
+{"id":"1pe.1.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"animas vestras castificantes in obedientia caritatis, in fraternitatis amore, simplici ex corde invicem diligite attentius :"]}}
+{"id":"1pe.1.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"renati non ex semine corruptibili, sed incorruptibili per verbum Dei vivi, et permanentis in æternum :"]}}
+{"id":"1pe.1.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"quia omnis caro ut fœnum : et omnis gloria ejus tamquam flos fœni : exaruit fœnum, et flos ejus decidit."]}}
+{"id":"1pe.1.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Verbum autem Domini manet in æternum : hoc est autem verbum, quod evangelizatum est in vos."]}}
+{"id":"1pe.2","type":"heading","level":2,"label":"Caput 2","t":{"la":["Caput 2"]}}
+{"id":"1pe.2.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Deponentes igitur omnem malitiam, et omnem dolum, et simulationes, et invidias, et omnes detractiones,"]}}
+{"id":"1pe.2.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"sicut modo geniti infantes, rationabile, sine dolo lac concupiscite : ut in eo crescatis in salutem :"]}}
+{"id":"1pe.2.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"si tamen gustastis quoniam dulcis est Dominus."]}}
+{"id":"1pe.2.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Ad quem accedentes lapidem vivum, ab hominibus quidem reprobatum, a Deo autem electum, et honorificatum :"]}}
+{"id":"1pe.2.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"et ipsi tamquam lapides vivi superædificamini, domus spiritualis, sacerdotium sanctum, offerre spirituales hostias, acceptabiles Deo per Jesum Christum."]}}
+{"id":"1pe.2.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Propter quod continet Scriptura : Ecce pono in Sion lapidem summum angularem, electum, pretiosum : et qui crediderit in eum, non confundetur."]}}
+{"id":"1pe.2.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Vobis igitur honor credentibus : non credentibus autem lapis, quem reprobaverunt ædificantes : hic factus est in caput anguli,"]}}
+{"id":"1pe.2.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"et lapis offensionis, et petra scandali, his qui offendunt verbo, nec credunt in quo et positi sunt."]}}
+{"id":"1pe.2.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Vos autem genus electum, regale sacerdotium, gens sancta, populus acquisitionis : ut virtutes annuntietis ejus qui de tenebris vos vocavit in admirabile lumen suum."]}}
+{"id":"1pe.2.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Qui aliquando non populus, nunc autem populus Dei : qui non consecuti misericordiam, nunc autem misericordiam consecuti."]}}
+{"id":"1pe.2.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Carissimi, obsecro vos tamquam advenas et peregrinos abstinere vos a carnalibus desideriis, quæ militant adversus animam,"]}}
+{"id":"1pe.2.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"conversationem vestram inter gentes habentes bonam : ut in eo quod detrectant de vobis tamquam de malefactoribus, ex bonis operibus vos considerantes, glorificent Deum in die visitationis."]}}
+{"id":"1pe.2.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Subjecti igitur estote omni humanæ creaturæ propter Deum : sive regi quasi præcellenti :"]}}
+{"id":"1pe.2.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"sive ducibus tamquam ab eo missis ad vindictam malefactorum, laudem vero bonorum :"]}}
+{"id":"1pe.2.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"quia sic est voluntas Dei, ut benefacientes obmutescere faciatis imprudentium hominum ignorantiam :"]}}
+{"id":"1pe.2.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"quasi liberi, et non quasi velamen habentes malitiæ libertatem, sed sicut servi Dei."]}}
+{"id":"1pe.2.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Omnes honorate : fraternitatem diligite : Deum timete : regem honorificate."]}}
+{"id":"1pe.2.18","type":"verse","n":"18","p":true,"t":{"la":[{"num":"18"},"Servi, subditi estote in omni timore dominis, non tantum bonis et modestis, sed etiam dyscolis."]}}
+{"id":"1pe.2.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Hæc est enim gratia, si propter Dei conscientiam sustinet quis tristitias, patiens injuste."]}}
+{"id":"1pe.2.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Quæ enim est gloria, si peccantes, et colaphizati suffertis ? sed si bene facientes patienter sustinetis, hæc est gratia apud Deum."]}}
+{"id":"1pe.2.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"In hoc enim vocati estis : quia et Christus passus est pro nobis, vobis relinquens exemplum ut sequamini vestigia ejus :"]}}
+{"id":"1pe.2.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"qui peccatum non fecit, nec inventus est dolus in ore ejus :"]}}
+{"id":"1pe.2.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"qui cum malediceretur, non maledicebat : cum pateretur, non comminabatur : tradebat autem judicanti se injuste :"]}}
+{"id":"1pe.2.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"qui peccata nostra ipse pertulit in corpore suo super lignum ; ut peccatis mortui, justitiæ vivamus : cujus livore sanati estis."]}}
+{"id":"1pe.2.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Eratis enim sicut oves errantes, sed conversi estis nunc ad pastorem, et episcopum animarum vestrarum."]}}
+{"id":"1pe.3","type":"heading","level":2,"label":"Caput 3","t":{"la":["Caput 3"]}}
+{"id":"1pe.3.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Similiter et mulieres subditæ sint viris suis : ut etsi qui non credunt verbo, per mulierum conversationem sine verbo lucrifiant :"]}}
+{"id":"1pe.3.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"considerantes in timore castam conversationem vestram."]}}
+{"id":"1pe.3.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Quarum non sit extrinsecus capillatura, aut circumdatio auri, aut indumenti vestimentorum cultus :"]}}
+{"id":"1pe.3.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"sed qui absconditus est cordis homo, in incorruptibilitate quieti, et modesti spiritus, qui est in conspectu Dei locuples."]}}
+{"id":"1pe.3.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Sic enim aliquando et sanctæ mulieres, sperantes in Deo, ornabant se, subjectæ propriis viris."]}}
+{"id":"1pe.3.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Sicut Sara obediebat Abrahæ, dominum eum vocans : cujus estis filiæ benefacientes, et non pertimentes ullam perturbationem."]}}
+{"id":"1pe.3.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Viri similiter cohabitantes secundum scientiam, quasi infirmiori vasculo muliebri impartientes honorem, tamquam et cohæredibus gratiæ vitæ : ut non impediantur orationes vestræ."]}}
+{"id":"1pe.3.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"In fine autem omnes unanimes, compatientes fraternitatis amatores, misericordes, modesti, humiles :"]}}
+{"id":"1pe.3.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"non reddentes malum pro malo, nec maledictum pro maledicto, sed e contrario benedicentes : quia in hoc vocati estis, ut benedictionem hæreditate possideatis."]}}
+{"id":"1pe.3.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Qui enim vult vitam diligere, et dies videre bonos, coërceat linguam suam a malo, et labia ejus ne loquantur dolum."]}}
+{"id":"1pe.3.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Declinet a malo, et faciat bonum : inquirat pacem, et sequatur eam :"]}}
+{"id":"1pe.3.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"quia oculi Domini super justos, et aures ejus in preces eorum : vultus autem Domini super facientes mala."]}}
+{"id":"1pe.3.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Et quis est qui vobis noceat, si boni æmulatores fueritis ?"]}}
+{"id":"1pe.3.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Sed et si quid patimini propter justitiam, beati. Timorem autem eorum ne timueritis, et non conturbemini."]}}
+{"id":"1pe.3.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Dominum autem Christum sanctificate in cordibus vestris, parati semper ad satisfactionem omni poscenti vos rationem de ea, quæ in vobis est, spe."]}}
+{"id":"1pe.3.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Sed cum modestia, et timore, conscientiam habentes bonam : ut in eo, quod detrahunt vobis, confundantur, qui calumniantur vestram bonam in Christo conversationem."]}}
+{"id":"1pe.3.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Melius est enim benefacientes (si voluntas Dei velit) pati, quam malefacientes."]}}
+{"id":"1pe.3.18","type":"verse","n":"18","p":true,"t":{"la":[{"num":"18"},"Quia et Christus semel pro peccatis nostris mortuus est, justus pro injustis, ut nos offerret Deo, mortificatus quidem carne, vivificatus autem spiritu."]}}
+{"id":"1pe.3.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"In quo et his, qui in carcere erant, spiritibus veniens prædicavit :"]}}
+{"id":"1pe.3.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"qui increduli fuerant aliquando, quando exspectabant Dei patientiam in diebus Noë, cum fabricaretur arca : in qua pauci, id est octo animæ, salvæ factæ sunt per aquam."]}}
+{"id":"1pe.3.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Quod et vos nunc similis formæ salvos fecit baptisma : non carnis depositio sordium, sed conscientiæ bonæ interrogatio in Deum per resurrectionem Jesu Christi."]}}
+{"id":"1pe.3.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Qui est in dextera Dei, deglutiens mortem ut vitæ æternæ hæredes efficeremur : profectus in cælum subjectis sibi angelis, et potestatibus, et virtutibus."]}}
+{"id":"1pe.4","type":"heading","level":2,"label":"Caput 4","t":{"la":["Caput 4"]}}
+{"id":"1pe.4.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Christo igitur passo in carne, et vos eadem cogitatione armamini : quia qui passus est in carne, desiit a peccatis :"]}}
+{"id":"1pe.4.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"ut jam non desideriis hominum, sed voluntati Dei, quod reliquum est in carne vivat temporis."]}}
+{"id":"1pe.4.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Sufficit enim præteritum tempus ad voluntatem gentium consummandam his qui ambulaverunt in luxuriis, desideriis, vinolentiis, comessationibus, potationibus, et illicitis idolorum cultibus."]}}
+{"id":"1pe.4.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"In quo admirantur non concurrentibus vobis in eamdem luxuriæ confusionem, blasphemantes."]}}
+{"id":"1pe.4.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Qui reddent rationem ei qui paratus est judicare vivos et mortuos."]}}
+{"id":"1pe.4.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Propter hoc enim et mortuis evangelizatum est : ut judicentur quidem secundum homines in carne, vivant autem secundum Deum in spiritu."]}}
+{"id":"1pe.4.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Omnium autem finis appropinquavit. Estote itaque prudentes, et vigilate in orationibus."]}}
+{"id":"1pe.4.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Ante omnia autem, mutuam in vobismetipsis caritatem continuam habentes : quia caritas operit multitudinem peccatorum."]}}
+{"id":"1pe.4.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Hospitales invicem sine murmuratione."]}}
+{"id":"1pe.4.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Unusquisque, sicut accepit gratiam, in alterutrum illam administrantes, sicut boni dispensatores multiformis gratiæ Dei."]}}
+{"id":"1pe.4.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Si quis loquitur, quasi sermones Dei : si quis ministrat, tamquam ex virtute, quam administrat Deus : ut in omnibus honorificetur Deus per Jesum Christum : cui est gloria et imperium in sæcula sæculorum. Amen."]}}
+{"id":"1pe.4.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Carissimi, nolite peregrinari in fervore, qui ad tentationem vobis fit, quasi novi aliquid vobis contingat :"]}}
+{"id":"1pe.4.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"sed communicantes Christi passionibus gaudete, ut et in revelatione gloriæ ejus gaudeatis exsultantes."]}}
+{"id":"1pe.4.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Si exprobramini in nomine Christi, beati eritis : quoniam quod est honoris, gloriæ, et virtutis Dei, et qui est ejus Spiritus, super vos requiescit."]}}
+{"id":"1pe.4.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Nemo autem vestrum patiatur ut homicida, aut fur, aut maledicus, aut alienorum appetitor."]}}
+{"id":"1pe.4.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Si autem ut christianus, non erubescat : glorificet autem Deum in isto nomine :"]}}
+{"id":"1pe.4.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"quoniam tempus est ut incipiat judicium a domo Dei. Si autem primum a nobis, quis finis eorum, qui non credunt Dei Evangelio ?"]}}
+{"id":"1pe.4.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"et si justus vix salvabitur, impius et peccator ubi parebunt ?"]}}
+{"id":"1pe.4.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Itaque et hi, qui patiuntur secundum voluntatem Dei, fideli Creatori commendent animas suas in benefactis."]}}
+{"id":"1pe.5","type":"heading","level":2,"label":"Caput 5","t":{"la":["Caput 5"]}}
+{"id":"1pe.5.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Seniores ergo, qui in vobis sunt, obsecro, consenior et testis Christi passionum : qui et ejus, quæ in futuro revelanda est, gloriæ communicator :"]}}
+{"id":"1pe.5.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"pascite qui in vobis est gregem Dei, providentes non coacte, sed spontanee secundum Deum : neque turpis lucri gratia, sed voluntarie :"]}}
+{"id":"1pe.5.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"neque ut dominantes in cleris, sed forma facti gregis ex animo."]}}
+{"id":"1pe.5.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Et cum apparuerit princeps pastorum, percipietis immarcescibilem gloriæ coronam."]}}
+{"id":"1pe.5.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Similiter adolescentes subditi estote senioribus.",{"br":1},"Omnes autem invicem humilitatem insinuate, quia Deus superbis resistit, humilibus autem dat gratiam."]}}
+{"id":"1pe.5.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Humiliamini igitur sub potenti manu Dei, ut vos exaltet in tempore visitationis :"]}}
+{"id":"1pe.5.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"omnem sollicitudinem vestram projicientes in eum, quoniam ipsi cura est de vobis."]}}
+{"id":"1pe.5.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Sobrii estote, et vigilate : quia adversarius vester diabolus tamquam leo rugiens circuit, quærens quem devoret :"]}}
+{"id":"1pe.5.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"cui resistite fortes in fide : scientes eamdem passionem ei quæ in mundo est vestræ fraternitati fieri."]}}
+{"id":"1pe.5.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Deus autem omnis gratiæ, qui vocavit nos in æternam suam gloriam in Christo Jesu, modicum passos ipse perficiet, confirmabit, solidabitque."]}}
+{"id":"1pe.5.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Ipsi gloria, et imperium in sæcula sæculorum. Amen."]}}
+{"id":"1pe.5.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Per Silvanum fidelem fratrem vobis, ut arbitror, breviter scripsi : obsecrans et contestans, hanc esse veram gratiam Dei, in qua statis."]}}
+{"id":"1pe.5.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Salutat vos ecclesia quæ est in Babylone coëlecta, et Marcus filius meus."]}}
+{"id":"1pe.5.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Salutate invicem in osculo sancto. Gratia vobis omnibus qui estis in Christo Jesu. Amen."]}}

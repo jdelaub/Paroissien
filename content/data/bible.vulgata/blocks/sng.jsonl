@@ -1,0 +1,162 @@
+{"id":"sng.titre","type":"heading","level":1,"t":{"la":["Canticum Canticorum"]}}
+{"id":"sng.1","type":"heading","level":2,"label":"Caput 1","t":{"la":["Caput 1"]}}
+{"id":"sng.1.h1","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.1.1","type":"verse","n":"1","p":true,"dropCap":true,"t":{"la":[{"num":"1"},"Osculetur me osculo oris sui ;",{"br":1},"quia meliora sunt ubera tua vino,",{"br":1}]}}
+{"id":"sng.1.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"fragrantia unguentis optimis.",{"br":1},"Oleum effusum nomen tuum ;",{"br":1},"ideo adolescentulæ dilexerunt te."]}}
+{"id":"sng.1.h2","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Chorus Adolescentularum"]}}
+{"id":"sng.1.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Trahe me, post te curremus",{"br":1},"in odorem unguentorum tuorum.",{"br":1},"Introduxit me rex in cellaria sua ;",{"br":1},"exsultabimus et lætabimur in te,",{"br":1},"memores uberum tuorum super vinum.",{"br":1},"Recti diligunt te."]}}
+{"id":"sng.1.h3","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.1.4","type":"verse","n":"4","p":true,"t":{"la":[{"num":"4"},"Nigra sum, sed formosa, filiæ Jerusalem,",{"br":1},"sicut tabernacula Cedar, sicut pelles Salomonis.",{"br":1}]}}
+{"id":"sng.1.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Nolite me considerare quod fusca sim,",{"br":1},"quia decoloravit me sol.",{"br":1},"Filii matris meæ pugnaverunt contra me ;",{"br":1},"posuerunt me custodem in vineis :",{"br":1},"vineam meam non custodivi.",{"br":1}]}}
+{"id":"sng.1.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Indica mihi, quem diligit anima mea, ubi pascas,",{"br":1},"ubi cubes in meridie,",{"br":1},"ne vagari incipiam post greges sodalium tuorum."]}}
+{"id":"sng.1.h4","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.1.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Si ignoras te, o pulcherrima inter mulieres,",{"br":1},"egredere, et abi post vestigia gregum,",{"br":1},"et pasce hædos tuos juxta tabernacula pastorum.",{"br":1}]}}
+{"id":"sng.1.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Equitatui meo in curribus Pharaonis",{"br":1},"assimilavi te, amica mea.",{"br":1}]}}
+{"id":"sng.1.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Pulchræ sunt genæ tuæ sicut turturis ;",{"br":1},"collum tuum sicut monilia.",{"br":1}]}}
+{"id":"sng.1.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Murenulas aureas faciemus tibi,",{"br":1},"vermiculatas argento."]}}
+{"id":"sng.1.h5","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.1.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Dum esset rex in accubitu suo,",{"br":1},"nardus mea dedit odorem suum.",{"br":1}]}}
+{"id":"sng.1.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Fasciculus myrrhæ dilectus meus mihi ;",{"br":1},"inter ubera mea commorabitur.",{"br":1}]}}
+{"id":"sng.1.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Botrus cypri dilectus meus mihi",{"br":1},"in vineis Engaddi."]}}
+{"id":"sng.1.h6","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.1.14","type":"verse","n":"14","p":true,"t":{"la":[{"num":"14"},"Ecce tu pulchra es, amica mea ! ecce tu pulchra es !",{"br":1},"Oculi tui columbarum."]}}
+{"id":"sng.1.h7","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.1.15","type":"verse","n":"15","p":true,"t":{"la":[{"num":"15"},"Ecce tu pulcher es, dilecte mi, et decorus !",{"br":1},"Lectulus noster floridus.",{"br":1}]}}
+{"id":"sng.1.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Tigna domorum nostrarum cedrina,",{"br":1},"laquearia nostra cypressina."]}}
+{"id":"sng.2","type":"heading","level":2,"label":"Caput 2","t":{"la":["Caput 2"]}}
+{"id":"sng.2.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Ego flos campi,",{"br":1},"et lilium convallium."]}}
+{"id":"sng.2.h1","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.2.2","type":"verse","n":"2","p":true,"t":{"la":[{"num":"2"},"Sicut lilium inter spinas,",{"br":1},"sic amica mea inter filias."]}}
+{"id":"sng.2.h2","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.2.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Sicut malus inter ligna silvarum,",{"br":1},"sic dilectus meus inter filios.",{"br":1},"Sub umbra illius quem desideraveram sedi,",{"br":1},"et fructus ejus dulcis gutturi meo.",{"br":1}]}}
+{"id":"sng.2.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Introduxit me in cellam vinariam ;",{"br":1},"ordinavit in me caritatem.",{"br":1}]}}
+{"id":"sng.2.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Fulcite me floribus,",{"br":1},"stipate me malis,",{"br":1},"quia amore langueo.",{"br":1}]}}
+{"id":"sng.2.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Læva ejus sub capite meo,",{"br":1},"et dextera illius amplexabitur me."]}}
+{"id":"sng.2.h3","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.2.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Adjuro vos, filiæ Jerusalem,",{"br":1},"per capreas cervosque camporum,",{"br":1},"ne suscitetis, neque evigilare faciatis dilectam,",{"br":1},"quoadusque ipsa velit."]}}
+{"id":"sng.2.h4","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.2.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"Vox dilecti mei ; ecce iste venit,",{"br":1},"saliens in montibus, transiliens colles.",{"br":1}]}}
+{"id":"sng.2.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Similis est dilectus meus capreæ,",{"br":1},"hinnuloque cervorum.",{"br":1},"En ipse stat post parietem nostrum,",{"br":1},"respiciens per fenestras,",{"br":1},"prospiciens per cancellos.",{"br":1}]}}
+{"id":"sng.2.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"En dilectus meus loquitur mihi.",{"br":1},"<Sponsus>Surge, propera, amica mea,",{"br":1},"columba mea, formosa mea, et veni :",{"br":1}]}}
+{"id":"sng.2.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"jam enim hiems transiit ;",{"br":1},"imber abiit, et recessit.",{"br":1}]}}
+{"id":"sng.2.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Flores apparuerunt in terra nostra ;",{"br":1},"tempus putationis advenit :",{"br":1},"vox turturis audita est in terra nostra ;",{"br":1}]}}
+{"id":"sng.2.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"ficus protulit grossos suos ;",{"br":1},"vineæ florentes dederunt odorem suum.",{"br":1},"Surge, amica mea, speciosa mea, et veni :",{"br":1}]}}
+{"id":"sng.2.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"columba mea, in foraminibus petræ, in caverna maceriæ,",{"br":1},"ostende mihi faciem tuam,",{"br":1},"sonet vox tua in auribus meis :",{"br":1},"vox enim tua dulcis, et facies tua decora."]}}
+{"id":"sng.2.h5","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.2.15","type":"verse","n":"15","p":true,"t":{"la":[{"num":"15"},"Capite nobis vulpes parvulas",{"br":1},"quæ demoliuntur vineas :",{"br":1},"nam vinea nostra floruit.",{"br":1}]}}
+{"id":"sng.2.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Dilectus meus mihi, et ego illi,",{"br":1},"qui pascitur inter lilia,",{"br":1}]}}
+{"id":"sng.2.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"donec aspiret dies, et inclinentur umbræ.",{"br":1},"Revertere ; similis esto, dilecte mi, capreæ,",{"br":1},"hinnuloque cervorum super montes Bether."]}}
+{"id":"sng.3","type":"heading","level":2,"label":"Caput 3","t":{"la":["Caput 3"]}}
+{"id":"sng.3.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"In lectulo meo, per noctes,",{"br":1},"quæsivi quem diligit anima mea :",{"br":1},"quæsivi illum, et non inveni.",{"br":1}]}}
+{"id":"sng.3.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Surgam, et circuibo civitatem :",{"br":1},"per vicos et plateas",{"br":1},"quæram quem diligit anima mea :",{"br":1},"quæsivi illum, et non inveni.",{"br":1}]}}
+{"id":"sng.3.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Invenerunt me vigiles qui custodiunt civitatem :",{"br":1},"Num quem diligit anima mea vidistis ?",{"br":1}]}}
+{"id":"sng.3.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Paululum cum pertransissem eos,",{"br":1},"inveni quem diligit anima mea :",{"br":1},"tenui eum, nec dimittam,",{"br":1},"donec introducam illum in domum matris meæ,",{"br":1},"et in cubiculum genetricis meæ."]}}
+{"id":"sng.3.h1","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.3.5","type":"verse","n":"5","p":true,"t":{"la":[{"num":"5"},"Adjuro vos, filiæ Jerusalem,",{"br":1},"per capreas cervosque camporum,",{"br":1},"ne suscitetis, neque evigilare faciatis dilectam,",{"br":1},"donec ipsa velit."]}}
+{"id":"sng.3.h2","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Chorus"]}}
+{"id":"sng.3.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Quæ est ista quæ ascendit per desertum",{"br":1},"sicut virgula fumi ex aromatibus myrrhæ,",{"br":1},"et thuris, et universi pulveris pigmentarii ?",{"br":1}]}}
+{"id":"sng.3.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"En lectulum Salomonis sexaginta fortes ambiunt",{"br":1},"ex fortissimis Israël,",{"br":1}]}}
+{"id":"sng.3.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"omnes tenentes gladios, et ad bella doctissimi :",{"br":1},"uniuscujusque ensis super femur suum",{"br":1},"propter timores nocturnos.",{"br":1}]}}
+{"id":"sng.3.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Ferculum fecit sibi rex Salomon",{"br":1},"de lignis Libani ;",{"br":1}]}}
+{"id":"sng.3.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"columnas ejus fecit argenteas,",{"br":1},"reclinatorium aureum, ascensum purpureum ;",{"br":1},"media caritate constravit,",{"br":1},"propter filias Jerusalem.",{"br":1}]}}
+{"id":"sng.3.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Egredimini et videte, filiæ Sion,",{"br":1},"regem Salomonem in diademate quo coronavit illum mater sua",{"br":1},"in die desponsationis illius,",{"br":1},"et in die lætitiæ cordis ejus."]}}
+{"id":"sng.4","type":"heading","level":2,"label":"Caput 4","t":{"la":["Caput 4"]}}
+{"id":"sng.4.h1","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.4.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Quam pulchra es, amica mea ! quam pulchra es !",{"br":1},"Oculi tui columbarum,",{"br":1},"absque eo quod intrinsecus latet.",{"br":1},"Capilli tui sicut greges caprarum",{"br":1},"quæ ascenderunt de monte Galaad.",{"br":1}]}}
+{"id":"sng.4.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Dentes tui sicut greges tonsarum",{"br":1},"quæ ascenderunt de lavacro ;",{"br":1},"omnes gemellis fœtibus,",{"br":1},"et sterilis non est inter eas.",{"br":1}]}}
+{"id":"sng.4.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Sicut vitta coccinea labia tua,",{"br":1},"et eloquium tuum dulce.",{"br":1},"Sicut fragmen mali punici, ita genæ tuæ,",{"br":1},"absque eo quod intrinsecus latet.",{"br":1}]}}
+{"id":"sng.4.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Sicut turris David collum tuum,",{"br":1},"quæ ædificata est cum propugnaculis ;",{"br":1},"mille clypei pendent ex ea,",{"br":1},"omnis armatura fortium.",{"br":1}]}}
+{"id":"sng.4.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Duo ubera tua sicut duo hinnuli,",{"br":1},"capreæ gemelli, qui pascuntur in liliis.",{"br":1}]}}
+{"id":"sng.4.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Donec aspiret dies, et inclinentur umbræ,",{"br":1},"vadam ad montem myrrhæ, et ad collem thuris.",{"br":1}]}}
+{"id":"sng.4.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Tota pulchra es, amica mea,",{"br":1},"et macula non est in te.",{"br":1}]}}
+{"id":"sng.4.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Veni de Libano, sponsa mea :",{"br":1},"veni de Libano, veni, coronaberis :",{"br":1},"de capite Amana, de vertice Sanir et Hermon,",{"br":1},"de cubilibus leonum, de montibus pardorum.",{"br":1}]}}
+{"id":"sng.4.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Vulnerasti cor meum, soror mea, sponsa ;",{"br":1},"vulnerasti cor meum in uno oculorum tuorum,",{"br":1},"et in uno crine colli tui.",{"br":1}]}}
+{"id":"sng.4.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Quam pulchræ sunt mammæ tuæ, soror mea sponsa !",{"br":1},"pulchriora sunt ubera tua vino,",{"br":1},"et odor unguentorum tuorum super omnia aromata.",{"br":1}]}}
+{"id":"sng.4.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Favus distillans labia tua, sponsa ;",{"br":1},"mel et lac sub lingua tua :",{"br":1},"et odor vestimentorum tuorum sicut odor thuris.",{"br":1}]}}
+{"id":"sng.4.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Hortus conclusus soror mea, sponsa,",{"br":1},"hortus conclusus, fons signatus.",{"br":1}]}}
+{"id":"sng.4.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Emissiones tuæ paradisus malorum punicorum,",{"br":1},"cum pomorum fructibus, cypri cum nardo.",{"br":1}]}}
+{"id":"sng.4.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Nardus et crocus, fistula et cinnamomum,",{"br":1},"cum universis lignis Libani ;",{"br":1},"myrrha et aloë, cum omnibus primis unguentis.",{"br":1}]}}
+{"id":"sng.4.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Fons hortorum, puteus aquarum viventium,",{"br":1},"quæ fluunt impetu de Libano."]}}
+{"id":"sng.4.h2","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.4.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Surge, aquilo, et veni, auster :",{"br":1},"perfla hortum meum, et fluant aromata illius."]}}
+{"id":"sng.5","type":"heading","level":2,"label":"Caput 5","t":{"la":["Caput 5"]}}
+{"id":"sng.5.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Veniat dilectus meus in hortum suum,",{"br":1},"et comedat fructum pomorum suorum.",{"br":1},"<Sponsus>Veni in hortum meum, soror mea, sponsa ;",{"br":1},"messui myrrham meam cum aromatibus meis ;",{"br":1},"comedi favum cum melle meo ;",{"br":1},"bibi vinum meum cum lacte meo ;",{"br":1},"comedite, amici, et bibite,",{"br":1},"et inebriamini, carissimi."]}}
+{"id":"sng.5.h1","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.5.2","type":"verse","n":"2","p":true,"t":{"la":[{"num":"2"},"Ego dormio, et cor meum vigilat.",{"br":1},"Vox dilecti mei pulsantis :",{"br":1},"<Sponsus>Aperi mihi, soror mea, amica mea,",{"br":1},"columba mea, immaculata mea,",{"br":1},"quia caput meum plenum est rore,",{"br":1},"et cincinni mei guttis noctium."]}}
+{"id":"sng.5.h2","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.5.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Expoliavi me tunica mea : quomodo induar illa ?",{"br":1},"lavi pedes meos : quomodo inquinabo illos ?",{"br":1}]}}
+{"id":"sng.5.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Dilectus meus misit manum suam per foramen,",{"br":1},"et venter meus intremuit ad tactum ejus.",{"br":1}]}}
+{"id":"sng.5.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Surrexi ut aperirem dilecto meo ;",{"br":1},"manus meæ stillaverunt myrrham,",{"br":1},"et digiti mei pleni myrrha probatissima.",{"br":1}]}}
+{"id":"sng.5.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Pessulum ostii mei aperui dilecto meo,",{"br":1},"at ille declinaverat, atque transierat.",{"br":1},"Anima mea liquefacta est, ut locutus est ;",{"br":1},"quæsivi, et non inveni illum ;",{"br":1},"vocavi, et non respondit mihi.",{"br":1}]}}
+{"id":"sng.5.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Invenerunt me custodes qui circumeunt civitatem ;",{"br":1},"percusserunt me, et vulneraverunt me.",{"br":1},"Tulerunt pallium meum mihi custodes murorum.",{"br":1}]}}
+{"id":"sng.5.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Adjuro vos, filiæ Jerusalem,",{"br":1},"si inveneritis dilectum meum,",{"br":1},"ut nuntietis ei quia amore langueo."]}}
+{"id":"sng.5.h3","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Chorus"]}}
+{"id":"sng.5.9","type":"verse","n":"9","p":true,"t":{"la":[{"num":"9"},"Qualis est dilectus tuus ex dilecto, o pulcherrima mulierum ?",{"br":1},"qualis est dilectus tuus ex dilecto, quia sic adjurasti nos ?"]}}
+{"id":"sng.5.h4","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.5.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Dilectus meus candidus et rubicundus ;",{"br":1},"electus ex millibus.",{"br":1}]}}
+{"id":"sng.5.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Caput ejus aurum optimum ;",{"br":1},"comæ ejus sicut elatæ palmarum, nigræ quasi corvus.",{"br":1}]}}
+{"id":"sng.5.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Oculi ejus sicut columbæ super rivulos aquarum,",{"br":1},"quæ lacte sunt lotæ, et resident juxta fluenta plenissima.",{"br":1}]}}
+{"id":"sng.5.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Genæ illius sicut areolæ aromatum,",{"br":1},"consitæ a pigmentariis.",{"br":1},"Labia ejus lilia,",{"br":1},"distillantia myrrham primam.",{"br":1}]}}
+{"id":"sng.5.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Manus illius tornatiles, aureæ,",{"br":1},"plenæ hyacinthis.",{"br":1},"Venter ejus eburneus,",{"br":1},"distinctus sapphiris.",{"br":1}]}}
+{"id":"sng.5.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Crura illius columnæ marmoreæ",{"br":1},"quæ fundatæ sunt super bases aureas.",{"br":1},"Species ejus ut Libani,",{"br":1},"electus ut cedri.",{"br":1}]}}
+{"id":"sng.5.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Guttur illius suavissimum,",{"br":1},"et totus desiderabilis.",{"br":1},"Talis est dilectus meus,",{"br":1},"et ipse est amicus meus, filiæ Jerusalem."]}}
+{"id":"sng.5.h5","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Chorus"]}}
+{"id":"sng.5.17","type":"verse","n":"17","p":true,"t":{"la":[{"num":"17"},"Quo abiit dilectus tuus, o pulcherrima mulierum ?",{"br":1},"quo declinavit dilectus tuus ?",{"br":1},"et quæremus eum tecum."]}}
+{"id":"sng.6","type":"heading","level":2,"label":"Caput 6","t":{"la":["Caput 6"]}}
+{"id":"sng.6.h1","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.6.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Dilectus meus descendit in hortum suum ad areolam aromatum,",{"br":1},"ut pascatur in hortis, et lilia colligat.",{"br":1}]}}
+{"id":"sng.6.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Ego dilecto meo, et dilectus meus mihi,",{"br":1},"qui pascitur inter lilia."]}}
+{"id":"sng.6.h2","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.6.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Pulchra es, amica mea ;",{"br":1},"suavis, et decora sicut Jerusalem ;",{"br":1},"terribilis ut castrorum acies ordinata.",{"br":1}]}}
+{"id":"sng.6.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Averte oculos tuos a me,",{"br":1},"quia ipsi me avolare fecerunt.",{"br":1},"Capilli tui sicut grex caprarum",{"br":1},"quæ apparuerunt de Galaad.",{"br":1}]}}
+{"id":"sng.6.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Dentes tui sicut grex ovium",{"br":1},"quæ ascenderunt de lavacro :",{"br":1},"omnes gemellis fœtibus,",{"br":1},"et sterilis non est in eis.",{"br":1}]}}
+{"id":"sng.6.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Sicut cortex mali punici, sic genæ tuæ,",{"br":1},"absque occultis tuis.",{"br":1}]}}
+{"id":"sng.6.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Sexaginta sunt reginæ, et octoginta concubinæ,",{"br":1},"et adolescentularum non est numerus.",{"br":1}]}}
+{"id":"sng.6.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Una est columba mea, perfecta mea,",{"br":1},"una est matris suæ, electa genetrici suæ.",{"br":1},"Viderunt eam filiæ, et beatissimam prædicaverunt ;",{"br":1},"reginæ et concubinæ, et laudaverunt eam.",{"br":1}]}}
+{"id":"sng.6.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Quæ est ista quæ progreditur quasi aurora consurgens,",{"br":1},"pulchra ut luna, electa ut sol,",{"br":1},"terribilis ut castrorum acies ordinata ?"]}}
+{"id":"sng.6.h3","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.6.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Descendi in hortum nucum,",{"br":1},"ut viderem poma convallium,",{"br":1},"et inspicerem si floruisset vinea,",{"br":1},"et germinassent mala punica.",{"br":1}]}}
+{"id":"sng.6.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Nescivi : anima mea conturbavit me,",{"br":1},"propter quadrigas Aminadab."]}}
+{"id":"sng.6.h4","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Chorus"]}}
+{"id":"sng.6.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Revertere, revertere, Sulamitis !",{"br":1},"revertere, revertere ut intueamur te."]}}
+{"id":"sng.7","type":"heading","level":2,"label":"Caput 7","t":{"la":["Caput 7"]}}
+{"id":"sng.7.h1","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.7.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Quid videbis in Sulamite, nisi choros castrorum ?",{"br":1},"<Chorus>Quam pulchri sunt gressus tui in calceamentis, filia principis !",{"br":1},"Juncturæ femorum tuorum sicut monilia",{"br":1},"quæ fabricata sunt manu artificis.",{"br":1}]}}
+{"id":"sng.7.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Umbilicus tuus crater tornatilis,",{"br":1},"numquam indigens poculis.",{"br":1},"Venter tuus sicut acervus tritici vallatus liliis.",{"br":1}]}}
+{"id":"sng.7.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Duo ubera tua sicut duo hinnuli,",{"br":1},"gemelli capreæ.",{"br":1}]}}
+{"id":"sng.7.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Collum tuum sicut turris eburnea ;",{"br":1},"oculi tui sicut piscinæ in Hesebon",{"br":1},"quæ sunt in porta filiæ multitudinis.",{"br":1},"Nasus tuus sicut turris Libani,",{"br":1},"quæ respicit contra Damascum.",{"br":1}]}}
+{"id":"sng.7.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Caput tuum ut Carmelus ;",{"br":1},"et comæ capitis tui sicut purpura regis",{"br":1},"vincta canalibus."]}}
+{"id":"sng.7.h2","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.7.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Quam pulchra es, et quam decora,",{"br":1},"carissima, in deliciis !",{"br":1}]}}
+{"id":"sng.7.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Statura tua assimilata est palmæ,",{"br":1},"et ubera tua botris.",{"br":1}]}}
+{"id":"sng.7.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Dixi : Ascendam in palmam,",{"br":1},"et apprehendam fructus ejus ;",{"br":1},"et erunt ubera tua sicut botri vineæ,",{"br":1},"et odor oris tui sicut malorum.",{"br":1}]}}
+{"id":"sng.7.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Guttur tuum sicut vinum optimum,",{"br":1},"dignum dilecto meo ad potandum,",{"br":1},"labiisque et dentibus illius ad ruminandum."]}}
+{"id":"sng.7.h3","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.7.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Ego dilecto meo,",{"br":1},"et ad me conversio ejus.",{"br":1}]}}
+{"id":"sng.7.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Veni, dilecte mi, egrediamur in agrum,",{"br":1},"commoremur in villis.",{"br":1}]}}
+{"id":"sng.7.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Mane surgamus ad vineas :",{"br":1},"videamus si floruit vinea,",{"br":1},"si flores fructus parturiunt,",{"br":1},"si floruerunt mala punica ;",{"br":1},"ibi dabo tibi ubera mea.",{"br":1}]}}
+{"id":"sng.7.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Mandragoræ dederunt odorem",{"br":1},"in portis nostris omnia poma :",{"br":1},"nova et vetera, dilecte mi, servavi tibi."]}}
+{"id":"sng.8","type":"heading","level":2,"label":"Caput 8","t":{"la":["Caput 8"]}}
+{"id":"sng.8.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Quis mihi det te fratrem meum,",{"br":1},"sugentem ubera matris meæ,",{"br":1},"ut inveniam te foris, et deosculer te,",{"br":1},"et jam me nemo despiciat ?",{"br":1}]}}
+{"id":"sng.8.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Apprehendam te, et ducam in domum matris meæ :",{"br":1},"ibi me docebis,",{"br":1},"et dabo tibi poculum ex vino condito,",{"br":1},"et mustum malorum granatorum meorum.",{"br":1}]}}
+{"id":"sng.8.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Læva ejus sub capite meo,",{"br":1},"et dextera illius amplexabitur me."]}}
+{"id":"sng.8.h1","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.8.4","type":"verse","n":"4","p":true,"t":{"la":[{"num":"4"},"Adjuro vos, filiæ Jerusalem,",{"br":1},"ne suscitetis, neque evigilare faciatis dilectam,",{"br":1},"donec ipsa velit."]}}
+{"id":"sng.8.h2","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Chorus"]}}
+{"id":"sng.8.5","type":"verse","n":"5","p":true,"t":{"la":[{"num":"5"},"Quæ est ista quæ ascendit de deserto, deliciis affluens,",{"br":1},"innixa super dilectum suum ?",{"br":1},"<Sponsus>Sub arbore malo suscitavi te ;",{"br":1},"ibi corrupta est mater tua,",{"br":1},"ibi violata est genitrix tua."]}}
+{"id":"sng.8.h3","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.8.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Pone me ut signaculum super cor tuum,",{"br":1},"ut signaculum super brachium tuum,",{"br":1},"quia fortis est ut mors dilectio,",{"br":1},"dura sicut infernus æmulatio :",{"br":1},"lampades ejus lampades ignis atque flammarum.",{"br":1}]}}
+{"id":"sng.8.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Aquæ multæ non potuerunt extinguere caritatem,",{"br":1},"nec flumina obruent illam.",{"br":1},"Si dederit homo omnem substantiam domus suæ pro dilectione,",{"br":1},"quasi nihil despiciet eam."]}}
+{"id":"sng.8.h4","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Chorus Fratrum"]}}
+{"id":"sng.8.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"Soror nostra parva,",{"br":1},"et ubera non habet ;",{"br":1},"quid faciemus sorori nostræ",{"br":1},"in die quando alloquenda est ?",{"br":1}]}}
+{"id":"sng.8.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Si murus est,",{"br":1},"ædificemus super eum propugnacula argentea ;",{"br":1},"si ostium est, compingamus illud tabulis cedrinis."]}}
+{"id":"sng.8.h5","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.8.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Ego murus, et ubera mea sicut turris,",{"br":1},"ex quo facta sum coram eo, quasi pacem reperiens."]}}
+{"id":"sng.8.h6","type":"heading","level":3,"x-osis":"acrostic","t":{"la":["Chorus Fratrum"]}}
+{"id":"sng.8.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Vinea fuit pacifico in ea quæ habet populos :",{"br":1},"tradidit eam custodibus ;",{"br":1},"vir affert pro fructu ejus mille argenteos."]}}
+{"id":"sng.8.h7","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.8.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Vinea mea coram me est.",{"br":1},"Mille tui pacifici,",{"br":1},"et ducenti his qui custodiunt fructus ejus."]}}
+{"id":"sng.8.h8","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsus"]}}
+{"id":"sng.8.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Quæ habitas in hortis, amici auscultant ;",{"br":1},"fac me audire vocem tuam."]}}
+{"id":"sng.8.h9","type":"heading","level":3,"x-osis":"speaker","t":{"la":["Sponsa"]}}
+{"id":"sng.8.14","type":"verse","n":"14","p":true,"t":{"la":[{"num":"14"},"Fuge, dilecte mi, et assimilare capreæ,",{"br":1},"hinnuloque cervorum super montes aromatum."]}}

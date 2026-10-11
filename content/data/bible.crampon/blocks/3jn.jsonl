@@ -1,0 +1,21 @@
+{"id":"3jn.titre","type":"heading","level":1,"t":{"fr":["III",{"m":["sup"],"c":["e"]}," épître de Saint Jean"]}}
+{"id":"3jn.1","type":"heading","level":2,"label":"Chapitre 1","t":{"fr":["Chapitre 1"]}}
+{"id":"3jn.1.h1","type":"heading","level":3,"x-usfm":"s2","t":{"fr":["Adresse (1). — Exhortation à persévérer dans la bonne voie (2-8). Il blâme la conduite de Diotréphès (9-11) et loue celle de Démétrius (12). — Conclusion (13-14)."]}}
+{"id":"3jn.1.1","type":"verse","n":"1","p":true,"dropCap":true,"t":{"fr":[{"num":"1"},"Moi l’Ancien, à Gaïus, le bien-aimé que j’aime dans la vérité."]}}
+{"id":"3jn.1.2","type":"verse","n":"2","t":{"fr":[{"num":"2"},"Bien-aimé, sur toutes choses je souhaite que l’état de tes affaires et de ta santé soit aussi prospère que celui de ton âme."]}}
+{"id":"3jn.1.3","type":"verse","n":"3","t":{"fr":[{"num":"3"},"J’ai eu bien de la joie, lorsque des frères sont arrivés et ont rendu témoignage de ta vérité, ",{"m":["i"],"c":["je veux dire"]}," de la manière dont tu marches dans la vérité."]}}
+{"id":"3jn.1.4","type":"verse","n":"4","t":{"fr":[{"num":"4"},"Je n’ai pas de plus grande joie que d’apprendre que mes enfants marchent dans la vérité."]}}
+{"id":"3jn.1.5","type":"verse","n":"5","p":true,"t":{"fr":[{"num":"5"},"Bien-aimé, tu agis fidèlement dans tout ce que tu fais pour les frères, et particulièrement pour des ",{"m":["i"],"c":["frères"]}," étrangers ;"]}}
+{"id":"3jn.1.6","type":"verse","n":"6","t":{"fr":[{"num":"6"},"aussi ont-ils rendu témoignage de ta charité en présence de l’Église. Tu feras bien de pourvoir à leur voyage d’une manière digne de Dieu ;"]}}
+{"id":"3jn.1.7","type":"verse","n":"7","t":{"fr":[{"num":"7"},"car c’est pour son nom qu’ils sont partis, sans rien recevoir des païens."]}}
+{"id":"3jn.1.8","type":"verse","n":"8","t":{"fr":[{"num":"8"},"Nous devons soutenir de tels hommes, afin de travailler avec eux pour la vérité."]}}
+{"id":"3jn.1.9","type":"verse","n":"9","p":true,"t":{"fr":[{"num":"9"},"J’ai écrit à l’Église ; mais Diotréphès, qui aime à primer parmi eux, ne nous reçoit pas.",{"note":"3jn.1.9.n1","l":"1"}]}}
+{"id":"3jn.1.10","type":"verse","n":"10","t":{"fr":[{"num":"10"},"C’est pourquoi, quand je viendrai, je lui mettrai devant les yeux les actes qu’il fait, et les méchants propos qu’il tient contre nous. Et non content de cela, il refuse lui-même d’accueillir les frères, et il empêche ceux qui voudraient les recevoir et les chasse de l’église."]}}
+{"id":"3jn.1.11","type":"verse","n":"11","p":true,"t":{"fr":[{"num":"11"},"Bien-aimé, n’imite pas le mal, mais imite le bien. Celui qui fait le bien est de Dieu ; celui qui fait le mal n’a point vu Dieu.",{"note":"3jn.1.11.n1","l":"2"}]}}
+{"id":"3jn.1.12","type":"verse","n":"12","p":true,"t":{"fr":[{"num":"12"},"Tout le monde, et la vérité elle-même, rendent un bon témoignage à Démétrius ; nous le lui rendons aussi, et tu sais que notre témoignage est vrai.",{"note":"3jn.1.12.n1","l":"3"}]}}
+{"id":"3jn.1.13","type":"verse","n":"13","p":true,"t":{"fr":[{"num":"13"},"J’aurais beaucoup de choses à t’écrire, mais je ne veux pas le faire avec l’encre et la plume :"]}}
+{"id":"3jn.1.14","type":"verse","n":"14","p":true,"t":{"fr":[{"num":"14"},"j’espère te voir bientôt, et nous nous entretiendrons de vive voix."]}}
+{"id":"3jn.1.15","type":"verse","n":"15","t":{"fr":[{"num":"15"},"La paix soit avec toi !",{"br":1},"Nos amis te saluent. Salue nos amis, chacun en particulier."]}}
+{"id":"3jn.1.9.n1","type":"note","placement":"foot","label":"1","t":{"fr":[{"m":["i"],"c":["J’ai écrit"]},", (dans le sens du présent). Quelques manuscrits ajoutent τι, c’est-à-dire, ",{"m":["i"],"c":["quelques mots"]}," ; d’autres lisent, ",{"m":["i"],"c":["j’aurais écrit"]},"."]}}
+{"id":"3jn.1.11.n1","type":"note","placement":"foot","label":"2","t":{"fr":["Comp. ",{"link":"bible:1JN.3.6","c":["I Jean, iii, 6"]}," ; ",{"link":"bible:1JN.5.7","c":["v, 7, 8"]},"."]}}
+{"id":"3jn.1.12.n1","type":"note","placement":"foot","label":"3","t":{"fr":[{"m":["i"],"c":["Tout le monde"]},", tous les fidèles de l’Église dont faisait partie ",{"m":["i"],"c":["Démétrius"]},", probablement le porteur de l’épître."]}}
