@@ -54,7 +54,10 @@ val buildContentPacks = tasks.register<BuildContentPacks>("buildContentPacks") {
     outputDir.set(layout.buildDirectory.dir("generated/content-packs"))
 }
 
-/** Images pieuses CC0 (rapport 09, §3.2.3) : copiées telles quelles de content/data/images vers assets/images/. */
+/**
+ * Bibliothèque d'images pieuses choisie par l'utilisateur, si content/data/images existe : copiée telle quelle vers
+ * assets/images/. Sans elle, la boîte ne contient que les images numérisées dans l'app.
+ */
 abstract class CopyPiousImages : DefaultTask() {
     @get:InputDirectory
     @get:Optional
@@ -69,9 +72,14 @@ abstract class CopyPiousImages : DefaultTask() {
 
     @TaskAction
     fun copy() {
+        val images = outputDir.dir("images").get().asFile
+        if (!source.isPresent) {
+            images.deleteRecursively()
+            return
+        }
         fs.sync {
             from(source) { include("catalog.json", "*.webp", "thumbs/*.webp") }
-            into(outputDir.dir("images"))
+            into(images)
         }
     }
 }
@@ -101,8 +109,8 @@ android {
         applicationId = "app.paroissien" // figé (ADR 002) : ne plus changer après la première installation
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 8
-        versionName = "0.5.1"
+        versionCode = 9
+        versionName = "0.5.2"
     }
 
     // ADR 001 : seule « domainePublic » est construite par la CI publique ; « personnel » peut embarquer
@@ -181,6 +189,7 @@ dependencies {
     implementation(project(":core:liturgy"))
     implementation(project(":core:data"))
     implementation(project(":core:model"))
+    implementation(project(":core:imaging"))
     implementation(project(":core:reading"))
     implementation(libs.compose.foundation)
     implementation(libs.compose.material.icons.core)

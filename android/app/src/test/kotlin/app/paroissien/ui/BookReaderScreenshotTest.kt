@@ -14,6 +14,7 @@ import app.paroissien.core.designsystem.rememberBookFonts
 import app.paroissien.core.reading.book.Anchor
 import app.paroissien.core.reading.book.BookReader
 import app.paroissien.core.reading.book.BookTypography
+import app.paroissien.core.reading.book.RibbonMark
 import com.github.takahirom.roborazzi.captureRoboImage
 import org.junit.Rule
 import org.junit.Test
@@ -46,7 +47,15 @@ class BookReaderScreenshotTest {
     @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
     fun gloriaLiterataSombre() = capture(Anchor("ord.2", 0), BookFace.LITERATA, PaperTheme.SOMBRE)
 
-    private fun capture(anchor: Anchor, face: BookFace, theme: PaperTheme) {
+    /** Rubans : l'un couché sur la page, les autres pendant dans la bande réservée sous le texte. */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun rubansDansLaBande() = capture(
+        Anchor("lat.1", 0), BookFace.GARAMOND, PaperTheme.CLAIR,
+        ribbons = listOf(RibbonMark(0, Anchor("lat.1", 0)), RibbonMark(1, null, elsewhere = -1), RibbonMark(2, null, elsewhere = 1), RibbonMark(3, null, elsewhere = 1)),
+    )
+
+    private fun capture(anchor: Anchor, face: BookFace, theme: PaperTheme, ribbons: List<RibbonMark> = emptyList()) {
         var ready by mutableStateOf(false)
         compose.setContent {
             ParoissienTheme(theme) {
@@ -59,6 +68,7 @@ class BookReaderScreenshotTest {
                     onAnchorChange = {},
                     onPaginated = { ready = true },
                     paginationContext = EmptyCoroutineContext,
+                    ribbons = ribbons,
                 )
             }
         }

@@ -9,6 +9,11 @@
 
     <string name="library_loading">Installation des livres…</string>
     <string name="library_resume">Reprendre : %1$s</string>
+    <string name="library_gospels">Les quatre Évangiles</string>
+    <string name="gospel_matthew">Évangile selon saint Matthieu</string>
+    <string name="gospel_mark">Évangile selon saint Marc</string>
+    <string name="gospel_luke">Évangile selon saint Luc</string>
+    <string name="gospel_john">Évangile selon saint Jean</string>
     <string name="series_clairval">Lettres de l\'abbaye de Clairval</string>
     <string name="demo_book">Livre de démonstration</string>
     <string name="demo_book_detail">Ordinaire, latin et lettrines : le banc d\'essai du lecteur</string>
@@ -177,4 +182,37 @@
     <string name="card_open_page">Ouvrir à cette page</string>
     <string name="card_to_box">Remettre dans la boîte</string>
     <string name="card_slip_into">Glisser dans « %1$s »</string>
+    <string name="card_scan_back">Numériser le verso</string>
+    <string name="card_rename">Renommer</string>
+    <string name="card_delete">Supprimer</string>
+    <string name="card_delete_confirm">Supprimer « %1$s » ? L\'image disparaît de la boîte et du livre où elle était glissée.</string>
+    <string name="card_ok">Valider</string>
+    <string name="card_cancel">Annuler</string>
+    <string name="images_scan">Numériser une image</string>
+    <string name="images_scan_short">Numériser</string>
+    <string name="images_empty">La boîte est vide. Numérisez vos images pieuses : la photo est recadrée, redressée et réglée, puis rangée ici.</string>
+    <string name="images_box_empty">Vide : numérisez vos images</string>
+
+    <!-- Numérisation (rapport 09, §3.3) -->
+    <string name="scan_title">Numériser une image</string>
+    <string name="scan_title_back">Numériser le verso</string>
+    <string name="scan_hint">Posez la carte à plat sur un fond uni et contrasté, bien éclairée, sans reflet. Les bords sont détectés ensuite ; vous pourrez les ajuster.</string>
+    <string name="scan_camera">Photographier</string>
+    <string name="scan_gallery">Choisir une photo</string>
+    <string name="scan_working">Analyse de la photo…</string>
+    <string name="scan_unreadable">Cette image n\'a pas pu être lue.</string>
+    <string name="scan_no_camera">Aucun appareil photo disponible.</string>
+    <string name="scan_not_found">Les bords n\'ont pas été trouvés : placez les quatre coins sur ceux de la carte.</string>
+    <string name="scan_corners_hint">Ajustez les quatre coins sur ceux de la carte, puis touchez Suivant.</string>
+    <string name="scan_whole">Toute l\'image</string>
+    <string name="scan_detected">Bords détectés</string>
+    <string name="scan_next">Suivant</string>
+    <string name="scan_exposure">Exposition</string>
+    <string name="scan_contrast">Contraste</string>
+    <string name="scan_auto">Automatique</string>
+    <string name="scan_rotate">Pivoter</string>
+    <string name="scan_name">Nom de l\'image</string>
+    <string name="scan_default_title">Image du %1$s</string>
+    <string name="scan_untitled">Image pieuse</string>
+    <string name="scan_save">Enregistrer</string>
 </resources>

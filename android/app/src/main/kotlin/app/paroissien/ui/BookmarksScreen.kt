@@ -44,6 +44,7 @@ fun BookmarksScreen(graph: AppGraph, open: (NavKey) -> Unit) {
     val library by graph.library.collectAsState()
     val ribbons by remember { graph.database.ribbons().observeAll() }.collectAsState(initial = emptyList())
     val positions by remember { graph.database.positions().observeAll() }.collectAsState(initial = emptyList())
+    val images by graph.images.all.collectAsState()
     var message by remember { mutableStateOf<String?>(null) }
     val exported = stringResource(R.string.bookmarks_exported)
     val failed = stringResource(R.string.bookmarks_failed)
@@ -76,7 +77,10 @@ fun BookmarksScreen(graph: AppGraph, open: (NavKey) -> Unit) {
 
     Screen(stringResource(R.string.tab_bookmarks)) {
         val lib = library
-        if (graph.images.all.isNotEmpty()) item(key = "images") { BookRow(stringResource(R.string.images_box), pluralStringResource(R.plurals.images_box_detail, graph.images.all.size, graph.images.all.size)) { open(ImageBoxKey) } }
+        item(key = "images") {
+            val count = images.size
+            BookRow(stringResource(R.string.images_box), if (count == 0) stringResource(R.string.images_box_empty) else pluralStringResource(R.plurals.images_box_detail, count, count)) { open(ImageBoxKey) }
+        }
         if (ribbons.isEmpty() && positions.isEmpty()) item { Note(stringResource(R.string.bookmarks_empty)) }
 
         ribbons.groupBy { it.publication }.forEach { (publication, placed) ->

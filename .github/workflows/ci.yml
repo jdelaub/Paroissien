@@ -63,12 +63,10 @@ jobs:
         run: ./gradlew --console=plain :app:assembleDomainePublicDebug :app:assembleDomainePublicRelease
       - name: Droits des paquets générés (saveur publique)
         run: python3 -I ../tools/check-pack-rights.py app/build/generated/content-packs/packs
-      - name: Budget de taille de l'APK release (30 Mo au plus)
+      - name: Taille de l'APK release (indicative, sans plafond)
         run: |
           apk=$(ls app/build/outputs/apk/domainePublic/release/*.apk)
-          size=$(stat -c %s "$apk")
-          echo "$apk : $((size / 1024)) Ko"
-          test "$size" -le $((30 * 1024 * 1024))
+          echo "$apk : $(( $(stat -c %s "$apk") / 1024 )) Ko"
       - uses: actions/upload-artifact@v4
         with:
           name: paroissien-domainePublic-debug

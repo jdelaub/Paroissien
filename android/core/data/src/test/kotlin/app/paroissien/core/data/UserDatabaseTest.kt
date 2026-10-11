@@ -72,6 +72,20 @@ class UserDatabaseTest {
         migrated.close()
     }
 
+    /** La base de la 0.5 (schéma 3) garde ses images placées et gagne les images personnelles. */
+    @Test
+    fun migratesFromVersionThree() = runBlocking {
+        val file = createAt(3, "migration3.db")
+        SQLiteDatabase.openDatabase(file.path, null, SQLiteDatabase.OPEN_READWRITE).use { db ->
+            db.execSQL("INSERT INTO card_placement (card, publication, unit, block, charOffset, blockRev, updatedAt) VALUES ('perso_1', 'imitation.fr', 'l1', 'l1.c2', 0, NULL, 7)")
+        }
+        val migrated = UserDatabase.open(context, "migration3.db", AndroidSQLiteDriver())
+        assertEquals("perso_1", migrated.cards().all().single().card)
+        migrated.personalCards().save(PersonalCard("perso_1", "Souvenir de première communion", hasBack = false, createdAt = 8))
+        assertEquals(1, migrated.personalCards().observeAll().first().size)
+        migrated.close()
+    }
+
     @Test
     fun aCardIsInOneBookAtATime() = runBlocking {
         val db = UserDatabase.open(context, "cards.db", AndroidSQLiteDriver())

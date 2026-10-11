@@ -98,6 +98,7 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
     val scope = rememberCoroutineScope()
     val library by graph.library.collectAsState()
     val positions by remember { graph.database.positions().observeAll() }.collectAsState(initial = emptyList())
+    val images by graph.images.all.collectAsState()
     // Méditation du jour : un chapitre de l'Imitation après l'autre, le même toute la journée.
     val meditation by produceState<TocEntry?>(null, library, day) {
         val entry = library?.entry(MEDITATION_BOOK) ?: return@produceState
@@ -139,7 +140,7 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
                     }
                 }
 
-                graph.images.forDay(d)?.let { image ->
+                images.takeIf { it.isNotEmpty() }?.let { graph.images.forDay(d) }?.let { image ->
                     item(key = "image") {
                         Section(stringResource(R.string.today_image))
                         Row(

@@ -58,6 +58,18 @@ data class CardPlacement(
     val updatedAt: Long,
 )
 
+/**
+ * Une image pieuse numérisée par l'utilisateur (rapport 09, §3.3). Les images elles-mêmes sont des fichiers WebP dans
+ * `files/cards/` (recto, verso facultatif, vignette) ; la base n'en garde que la description.
+ */
+@Entity(tableName = "personal_card")
+data class PersonalCard(
+    @PrimaryKey val id: String,
+    val title: String,
+    val hasBack: Boolean,
+    val createdAt: Long,
+)
+
 @Dao
 interface PositionDao {
     @Query("SELECT * FROM book_position WHERE publication = :publication")
@@ -109,19 +121,33 @@ interface CardDao {
     suspend fun remove(card: String)
 }
 
+@Dao
+interface PersonalCardDao {
+    @Query("SELECT * FROM personal_card ORDER BY createdAt DESC")
+    fun observeAll(): Flow<List<PersonalCard>>
+
+    @Upsert
+    suspend fun save(card: PersonalCard)
+
+    @Query("DELETE FROM personal_card WHERE id = :id")
+    suspend fun delete(id: String)
+}
+
 @Database(
-    entities = [BookPosition::class, Ribbon::class, CardPlacement::class],
-    version = 3,
+    entities = [BookPosition::class, Ribbon::class, CardPlacement::class, PersonalCard::class],
+    version = 4,
     exportSchema = true,
     autoMigrations = [
         AutoMigration(from = 1, to = 2, spec = UserDatabase.V1ToV2::class),
         AutoMigration(from = 2, to = 3),
+        AutoMigration(from = 3, to = 4),
     ],
 )
 abstract class UserDatabase : RoomDatabase() {
     abstract fun positions(): PositionDao
     abstract fun ribbons(): RibbonDao
     abstract fun cards(): CardDao
+    abstract fun personalCards(): PersonalCardDao
 
     /** La version 1 n'avait qu'une table d'essai, jamais remplie : elle disparaît. */
     @DeleteTable(tableName = "reading_position")

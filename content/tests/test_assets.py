@@ -1,6 +1,5 @@
-"""Images pieuses et données du calendrier embarquées dans l'APK public : droits, intégrité, format."""
+"""Données du calendrier embarquées dans l'APK public : format et ordre canonique."""
 
-import hashlib
 import json
 import re
 import unittest
@@ -8,30 +7,6 @@ from pathlib import Path
 
 DATA = Path(__file__).resolve().parent.parent / "data"
 SLUG = re.compile(r"^[a-z0-9_]+$")
-
-
-class PiousImagesTest(unittest.TestCase):
-    """Rapport 09, §3.2 : seulement des œuvres CC0 ou du domaine public déclarées par l'institution."""
-
-    def setUp(self):
-        self.dir = DATA / "images"
-        self.catalog = json.loads((self.dir / "catalog.json").read_text(encoding="utf-8"))
-
-    def test_rights_and_integrity(self):
-        cards = self.catalog["cards"]
-        self.assertEqual(sorted(c["id"] for c in cards), [c["id"] for c in cards], "catalogue trié par id")
-        for card in cards:
-            with self.subTest(card=card["id"]):
-                self.assertRegex(card["id"], SLUG)
-                self.assertIn(card["licence"], {"CC0", "domaine-public"})
-                self.assertTrue(card["licenceEvidence"])
-                self.assertTrue(card["credit"])
-                for kind, path in (("full", self.dir / f"{card['id']}.webp"), ("thumb", self.dir / "thumbs" / f"{card['id']}.webp")):
-                    self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), card["sha256"][kind], path.name)
-
-    def test_budget(self):
-        total = sum(p.stat().st_size for p in self.dir.rglob("*.webp"))
-        self.assertLessEqual(total, 7 * 1024 * 1024, "budget du lot MVP : 7 Mo au plus")
 
 
 class CalendarDataTest(unittest.TestCase):

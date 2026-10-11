@@ -1,0 +1,203 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "ce2b489b2ce4995bd4f3f41423d3047d",
+    "entities": [
+      {
+        "tableName": "book_position",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`publication` TEXT NOT NULL, `unit` TEXT NOT NULL, `block` TEXT NOT NULL, `charOffset` INTEGER NOT NULL, `blockRev` TEXT, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`publication`))",
+        "fields": [
+          {
+            "fieldPath": "publication",
+            "columnName": "publication",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unit",
+            "columnName": "unit",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "block",
+            "columnName": "block",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "charOffset",
+            "columnName": "charOffset",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "blockRev",
+            "columnName": "blockRev",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updatedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "publication"
+          ]
+        }
+      },
+      {
+        "tableName": "ribbon",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`publication` TEXT NOT NULL, `slot` INTEGER NOT NULL, `unit` TEXT NOT NULL, `block` TEXT NOT NULL, `charOffset` INTEGER NOT NULL, `blockRev` TEXT, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`publication`, `slot`))",
+        "fields": [
+          {
+            "fieldPath": "publication",
+            "columnName": "publication",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "slot",
+            "columnName": "slot",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unit",
+            "columnName": "unit",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "block",
+            "columnName": "block",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "charOffset",
+            "columnName": "charOffset",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "blockRev",
+            "columnName": "blockRev",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updatedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "publication",
+            "slot"
+          ]
+        }
+      },
+      {
+        "tableName": "card_placement",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`card` TEXT NOT NULL, `publication` TEXT NOT NULL, `unit` TEXT NOT NULL, `block` TEXT NOT NULL, `charOffset` INTEGER NOT NULL, `blockRev` TEXT, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`card`))",
+        "fields": [
+          {
+            "fieldPath": "card",
+            "columnName": "card",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "publication",
+            "columnName": "publication",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unit",
+            "columnName": "unit",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "block",
+            "columnName": "block",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "charOffset",
+            "columnName": "charOffset",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "blockRev",
+            "columnName": "blockRev",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updatedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "card"
+          ]
+        }
+      },
+      {
+        "tableName": "personal_card",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `hasBack` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasBack",
+            "columnName": "hasBack",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ce2b489b2ce4995bd4f3f41423d3047d')"
+    ]
+  }
+}

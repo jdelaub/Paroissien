@@ -85,6 +85,10 @@ private val PageTop = 18.dp
 private val PageBottom = 14.dp
 private val Header = 30.dp
 private val Footer = 26.dp
+/** Bande réservée sous le folio, où pendent les queues des rubans : jamais de texte dessous. */
+private val RibbonBand = 46.dp
+private val TailWidth = 22.dp
+private val TailHeight = 40.dp
 private val MinimumSpreadPageWidth = 300.dp
 
 /**
@@ -127,7 +131,7 @@ fun BookReader(
             val direction = LocalLayoutDirection.current
             val margins = PageMargins(
                 top = PageTop + cutout.calculateTopPadding(),
-                bottom = PageBottom + cutout.calculateBottomPadding(),
+                bottom = PageBottom + RibbonBand + cutout.calculateBottomPadding(),
                 horizontal = PageHorizontal + max(cutout.calculateStartPadding(direction), cutout.calculateEndPadding(direction)),
             )
             val pageWidth = if (double) maxWidth / 2 else maxWidth
@@ -190,8 +194,10 @@ fun BookReader(
                 val side = r.anchor?.let { a -> paged.pageOf(a).let { p -> if (p in shown) 0 else if (p < shown.min()) -1 else 1 } } ?: r.elsewhere
                 if (side == 0) null else r.slot to side
             }
-            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal))
-            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal))
+            // Elles pendent dans la bande réservée, juste sous le folio.
+            val tailBottom = margins.bottom - RibbonBand + (RibbonBand - TailHeight) / 2
+            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
 
             // Images pieuses : celles de la page ouverte au milieu de la tête, les autres à gauche ou à droite.
             val placed = cards.map { c -> c to (c.anchor?.let { a -> paged.pageOf(a).let { p -> if (p in shown) 0 else if (p < shown.min()) -1 else 1 } } ?: c.elsewhere) }
@@ -238,7 +244,7 @@ private fun PageView(
     contentHeight: Dp,
     ribbonSlots: List<Int>,
 ) {
-    Box(Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper).lyingRibbons(ribbonSlots, side, t.paper.isDark)) {
+    Box(Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper).lyingRibbons(ribbonSlots, side, t.paper.isDark, margins.horizontal)) {
         Column(Modifier.fillMaxSize().padding(start = margins.horizontal, end = margins.horizontal, top = margins.top, bottom = margins.bottom)) {
             BasicText(
                 if (number > 0) page.runningHead else "",
@@ -321,31 +327,39 @@ private fun Modifier.bookEdges(side: PageSide, number: Int, pageCount: Int, pape
     }
 }
 
-/** Les rubans qui marquent cette page sont couchés dans le petit fond, côté reliure, du haut au bas de la page. */
-private fun Modifier.lyingRibbons(slots: List<Int>, side: PageSide, dark: Boolean): Modifier = if (slots.isEmpty()) this else drawWithContent {
+/**
+ * Les rubans qui marquent cette page sont couchés dans le petit fond, côté reliure, du haut au bas de la page,
+ * sans jamais mordre sur le texte : au-delà de ce que la marge contient, on ne dessine pas.
+ */
+private fun Modifier.lyingRibbons(slots: List<Int>, side: PageSide, dark: Boolean, margin: Dp): Modifier = if (slots.isEmpty()) this else drawWithContent {
     drawContent()
-    val width = 9.dp.toPx()
-    val gap = 4.dp.toPx()
-    slots.forEachIndexed { i, slot ->
-        val inset = 10.dp.toPx() + i * (width + gap)
+    val width = 10.dp.toPx()
+    val gap = 2.dp.toPx()
+    val start = 4.dp.toPx()
+    val room = ((margin.toPx() - start - 2.dp.toPx() + gap) / (width + gap)).toInt().coerceAtLeast(1)
+    slots.take(room).forEachIndexed { i, slot ->
+        val inset = start + i * (width + gap)
         val x = if (side == PageSide.LEFT) size.width - inset - width else inset
         drawRibbon(RibbonStyle.of(slot), dark, Offset(x, 0f), Size(width, size.height + 2.dp.toPx()))
     }
 }
 
-/** Queues de rubans qui pendent sous la page ; un toucher ouvre la page marquée. */
+/** Queues de rubans qui pendent sous la page ; un toucher ouvre la page marquée (cible de 48 dp de large au moins). */
 @Composable
 private fun RibbonTails(slots: List<Int>, dark: Boolean, onTap: (Int) -> Unit, modifier: Modifier) {
     if (slots.isEmpty()) return
-    Row(modifier.windowInsetsPadding(WindowInsets.systemGestures.only(WindowInsetsSides.Bottom)), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+    Row(modifier, horizontalArrangement = Arrangement.spacedBy(2.dp)) {
         slots.forEach { slot ->
             val style = RibbonStyle.of(slot)
-            Canvas(
+            Box(
                 Modifier
-                    .size(width = 14.dp, height = 40.dp)
+                    .size(width = 48.dp, height = TailHeight)
                     .clickable(onClickLabel = "Ouvrir au ruban ${style.label}") { onTap(slot) }
                     .semantics { contentDescription = "Ruban ${style.label}" },
-            ) { drawRibbon(style, dark, Offset.Zero, size) }
+                contentAlignment = Alignment.TopCenter,
+            ) {
+                Canvas(Modifier.size(width = TailWidth, height = TailHeight)) { drawRibbon(style, dark, Offset.Zero, size) }
+            }
         }
     }
 }

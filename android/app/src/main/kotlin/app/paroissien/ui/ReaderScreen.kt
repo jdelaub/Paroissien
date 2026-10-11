@@ -53,6 +53,11 @@ import app.paroissien.core.reading.book.BookTypography
 import app.paroissien.core.reading.book.ReadingBlock
 import app.paroissien.core.reading.book.RibbonMark
 import androidx.compose.foundation.Image
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.aspectRatio
@@ -62,6 +67,9 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.navigation3.runtime.NavKey
 import app.paroissien.core.data.CardPlacement
 import app.paroissien.core.reading.book.CardMark
+import app.paroissien.library.PiousImage
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.ui.text.style.TextAlign
 import app.paroissien.core.reading.book.packToReadingBlocks
 import app.paroissien.core.reading.turn.MekuriConfiguration
 import app.paroissien.library.LibraryEntry
@@ -132,9 +140,10 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     }
     val cardFlow = remember(publication) { if (isDemo) flowOf(emptyList()) else graph.database.cards().observe(publication) }
     val cards by cardFlow.collectAsState(initial = emptyList())
+    val images by graph.images.all.collectAsState()
     val cardMarks = cards.mapNotNull { c ->
         val index = units.indexOfFirst { it.id == c.unit }
-        val image = graph.images[c.card] ?: return@mapNotNull null
+        val image = images.firstOrNull { it.id == c.card } ?: return@mapNotNull null
         when {
             index < 0 -> null
             c.unit == unitId -> CardMark(c.card, Anchor(c.block, c.charOffset), image = graph.images.thumbnail(c.card), label = image.title.fr)
@@ -194,12 +203,12 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 onBack = onBack,
                 onToc = { panel = Panel.TOC }.takeIf { entry != null },
                 onRibbons = { panel = Panel.RIBBONS }.takeIf { !isDemo && entry != null },
-                onImages = { panel = Panel.IMAGES }.takeIf { !isDemo && entry != null && graph.images.all.isNotEmpty() },
+                onImages = { panel = Panel.IMAGES }.takeIf { !isDemo && entry != null },
                 onPray = { open(PrayerKey(publication.takeIf { !isDemo }, unitId, anchorBlock)) },
                 onSettings = { panel = Panel.SETTINGS },
                 modifier = Modifier.align(Alignment.TopCenter),
             )
-            Panel.TOC -> if (entry != null) TocPanel(graph, entry, language, onClose = { panel = null }) { e -> openAt(e.unit, e.blockId, 0); panel = null }
+            Panel.TOC -> if (entry != null) TocPanel(graph, entry, language, unitId, onClose = { panel = null }) { e -> openAt(e.unit, e.blockId, 0); panel = null }
             Panel.RIBBONS -> RibbonPanel(
                 ribbons = ribbons,
                 unitTitle = { entry?.unitTitle(it) ?: "" },
@@ -216,6 +225,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
             )
             Panel.IMAGES -> ImagePanel(
                 graph = graph,
+                images = images,
+                onScan = { panel = null; open(ScanKey()) },
                 placedHere = cards.map { it.card }.toSet(),
                 onPlace = { card ->
                     val here = unitId
@@ -259,16 +270,101 @@ private fun Chrome(title: String, onBack: () -> Unit, onToc: (() -> Unit)?, onRi
     }
 }
 
+/** Une unité du sommaire et ce qu'elle contient (titres de niveau 1 et 2). */
+private class TocGroup(val unit: TocEntry, val children: List<TocEntry>) {
+    /** « Chapitre 12 » → 12 : la Bible montre ses chapitres en grille de numéros plutôt qu'en longue liste. */
+    val chapterNumbers: List<Pair<String, TocEntry>>? = children.map { c -> CHAPTER.matchEntire(c.title)?.groupValues?.get(1)?.let { it to c } }
+        .takeIf { it.isNotEmpty() && it.all { p -> p != null } }?.filterNotNull()
+
+    private companion object { val CHAPTER = Regex("""Chapitre\s+(\d+)""") }
+}
+
+/**
+ * Sommaire repliable : chaque unité (livre de la Bible, livre de l'Imitation…) se déplie d'un toucher ; celle qu'on lit
+ * est ouverte d'emblée. Une unité sans subdivision s'ouvre directement.
+ */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun TocPanel(graph: AppGraph, entry: LibraryEntry, language: String, onClose: () -> Unit, onOpen: (TocEntry) -> Unit) {
+private fun TocPanel(graph: AppGraph, entry: LibraryEntry, language: String, current: String?, onClose: () -> Unit, onOpen: (TocEntry) -> Unit) {
     val toc by produceState<List<TocEntry>?>(null, entry, language) { value = withContext(Dispatchers.IO) { graph.packs.toc(entry, language) } }
-    Screen(stringResource(R.string.reader_toc_of, entry.title), onBack = onClose) {
-        items(toc.orEmpty(), key = { "${it.unit}/${it.blockId}" }) { e ->
-            Text(
-                e.title,
-                style = if (e.level == 0) MaterialTheme.typography.titleMedium else MaterialTheme.typography.bodyLarge,
-                modifier = Modifier.fillMaxWidth().clickable { onOpen(e) }.padding(start = (20 + 16 * e.level).dp, end = 20.dp, top = 10.dp, bottom = 10.dp),
-            )
+    val groups = remember(toc) {
+        val out = mutableListOf<TocGroup>()
+        toc.orEmpty().forEach { e ->
+            if (e.level == 0) out += TocGroup(e, emptyList())
+            else out.lastOrNull()?.let { g ->
+                // Le titre du livre, répété en tête de l'unité (« Genèse »), n'apporte rien.
+                if (e.title.trim() != g.unit.title.trim()) out[out.lastIndex] = TocGroup(g.unit, g.children + e)
+            }
+        }
+        out.toList()
+    }
+    var expandedRaw by rememberSaveable { mutableStateOf(current.orEmpty()) }
+    val expanded = expandedRaw.split('\n').filter { it.isNotEmpty() }.toSet()
+    fun toggle(unit: String) { expandedRaw = (if (unit in expanded) expanded - unit else expanded + unit).joinToString("\n") }
+    val single = groups.size == 1
+    val listState = rememberLazyListState()
+    LaunchedEffect(groups) {
+        val i = groups.indexOfFirst { it.unit.unit == current }
+        if (i > 0) listState.scrollToItem(i)
+    }
+    val paper = LocalPaperColors.current
+
+    Surface(Modifier.fillMaxSize(), color = paper.background) {
+        Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
+            Row(Modifier.fillMaxWidth().padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
+                TextButton(onClick = onClose) { Text("‹") }
+                Text(stringResource(R.string.reader_toc_of, entry.title), style = MaterialTheme.typography.headlineSmall, maxLines = 1, overflow = TextOverflow.Ellipsis)
+            }
+            LazyColumn(Modifier.fillMaxSize(), state = listState) {
+                groups.forEach { g ->
+                    val open = single || g.unit.unit in expanded
+                    item(key = "u:${g.unit.unit}") {
+                        Row(
+                            Modifier.fillMaxWidth()
+                                .clickable { if (g.children.isEmpty() || single) onOpen(g.unit) else toggle(g.unit.unit) }
+                                .padding(horizontal = 12.dp, vertical = 12.dp),
+                            verticalAlignment = Alignment.CenterVertically,
+                        ) {
+                            Text(
+                                if (g.children.isEmpty() || single) " " else if (open) "▾" else "▸",
+                                color = paper.inkSecondary,
+                                modifier = Modifier.width(24.dp),
+                            )
+                            Text(
+                                g.unit.title,
+                                style = MaterialTheme.typography.titleMedium,
+                                color = if (g.unit.unit == current) paper.rubric else paper.inkPrimary,
+                                modifier = Modifier.weight(1f),
+                            )
+                        }
+                    }
+                    if (!open) return@forEach
+                    val numbers = g.chapterNumbers
+                    if (numbers != null) {
+                        item(key = "n:${g.unit.unit}") {
+                            FlowRow(Modifier.fillMaxWidth().padding(start = 36.dp, end = 12.dp, bottom = 8.dp)) {
+                                numbers.forEach { (n, e) ->
+                                    Box(
+                                        Modifier.size(48.dp).clickable { onOpen(e) },
+                                        contentAlignment = Alignment.Center,
+                                    ) { Text(n, style = MaterialTheme.typography.bodyLarge) }
+                                }
+                            }
+                        }
+                    } else {
+                        items(g.children, key = { "c:${it.unit}/${it.blockId}" }) { e ->
+                            Text(
+                                e.title,
+                                style = if (e.level == 1) MaterialTheme.typography.bodyLarge else MaterialTheme.typography.bodyMedium,
+                                color = if (e.level == 1) paper.inkPrimary else paper.inkSecondary,
+                                modifier = Modifier.fillMaxWidth().clickable { onOpen(e) }
+                                    .padding(start = (36 + 16 * (e.level - 1)).dp, end = 20.dp, top = 10.dp, bottom = 10.dp),
+                            )
+                        }
+                    }
+                    item(key = "d:${g.unit.unit}") { HorizontalDivider(color = paper.hairline) }
+                }
+            }
         }
     }
 }
@@ -313,12 +409,15 @@ private fun RibbonPanel(
 /** La boîte à images, ouverte dans le livre : toucher glisse la carte à la page ; appui long la remet dans la boîte. */
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-private fun ImagePanel(graph: AppGraph, placedHere: Set<String>, onPlace: (String) -> Unit, onRemove: (String) -> Unit, onClose: () -> Unit, modifier: Modifier) {
+private fun ImagePanel(graph: AppGraph, images: List<PiousImage>, onScan: () -> Unit, placedHere: Set<String>, onPlace: (String) -> Unit, onRemove: (String) -> Unit, onClose: () -> Unit, modifier: Modifier) {
     Surface(modifier.fillMaxWidth().windowInsetsPadding(WindowInsets.safeDrawing), shadowElevation = 6.dp) {
         Column(Modifier.padding(vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Text(stringResource(R.string.images_hint), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary, modifier = Modifier.padding(horizontal = 16.dp))
             LazyRow(contentPadding = PaddingValues(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                items(graph.images.all, key = { it.id }) { image ->
+                item(key = "scan") {
+                    OutlinedButton(onClick = onScan, modifier = Modifier.width(96.dp).aspectRatio(0.62f)) { Text(stringResource(R.string.images_scan_short), textAlign = TextAlign.Center) }
+                }
+                items(images, key = { it.id }) { image ->
                     Column(
                         Modifier.width(64.dp).combinedClickable(onClick = { onPlace(image.id); onClose() }, onLongClick = { onRemove(image.id) }),
                         horizontalAlignment = Alignment.CenterHorizontally,

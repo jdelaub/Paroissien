@@ -57,6 +57,19 @@ fun LibraryScreen(graph: AppGraph, open: (NavKey) -> Unit) {
                     ?: pluralStringResource(R.plurals.units, entry.units.size, entry.units.size),
             ) { open(ReaderKey(entry.publication.id)) }
         }
+        // Les quatre Évangiles : une vue de la Bible (PLAN §3.1), ouverte au livre, ou là où l'on s'y est arrêté.
+        lib.entry(GOSPEL_BIBLE)?.let { bible ->
+            val gospels = GOSPELS.filter { (unit, _) -> bible.unit(unit) != null }
+            if (gospels.isNotEmpty()) item(key = "gospels") { Heading(stringResource(R.string.library_gospels)) }
+            gospels.forEach { (unit, title) ->
+                item(key = "gospel:$unit") {
+                    val here = resume[GOSPEL_BIBLE]?.takeIf { it.unit == unit }
+                    BookRow(stringResource(title), here?.let { stringResource(R.string.library_resume, bible.unitTitle(it.unit)) } ?: bible.title) {
+                        open(ReaderKey(GOSPEL_BIBLE, unit, here?.block, here?.charOffset ?: 0))
+                    }
+                }
+            }
+        }
         series.groupBy { it.series!! }.forEach { (id, letters) ->
             item(key = id) {
                 val title = stringResource(R.string.series_clairval)
@@ -65,6 +78,19 @@ fun LibraryScreen(graph: AppGraph, open: (NavKey) -> Unit) {
         }
         item(key = DEMO) { BookRow(stringResource(R.string.demo_book), stringResource(R.string.demo_book_detail)) { open(ReaderKey(DEMO)) } }
     }
+}
+
+private const val GOSPEL_BIBLE = "bible.crampon"
+private val GOSPELS = listOf(
+    "mat" to R.string.gospel_matthew,
+    "mrk" to R.string.gospel_mark,
+    "luk" to R.string.gospel_luke,
+    "jhn" to R.string.gospel_john,
+)
+
+@Composable
+private fun Heading(text: String) {
+    Text(text, style = MaterialTheme.typography.titleSmall, color = LocalPaperColors.current.rubric, modifier = Modifier.padding(start = 20.dp, end = 20.dp, top = 16.dp, bottom = 4.dp))
 }
 
 /** Les publications d'une série, de la plus récente à la plus ancienne. */

@@ -32,7 +32,7 @@ class AppGraph(context: Context) {
     val settings = ReaderSettingsStore(context)
     val transfer: UserDataTransfer by lazy { UserDataTransfer(database) }
     val calendar: LiturgicalCalendars by lazy { LiturgicalCalendars.load() }
-    val images: PiousImages by lazy { PiousImages.load(context) }
+    val images: PiousImages by lazy { PiousImages.load(context, database, scope) }
 
     private val libraryState = MutableStateFlow<Library?>(null)
     val library: StateFlow<Library?> = libraryState
