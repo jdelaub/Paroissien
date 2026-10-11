@@ -1,0 +1,1365 @@
+# Litanies, dans leur état ancien (avant les ajouts de 2018, 2020 et 2021 : voir README).
+# Saint Nom, sainte Vierge, Saints : Mame 1869, latin et français en regard ; les réponses abrégées
+# (« ayez. », « mis. », « ora. ») sont celles du paroissien.
+# Sacré-Cœur et saint Joseph : Paroissien de poche, 1914, en français seulement ; l'astérisque renvoie à la
+# réponse donnée en bas de page, reprise ici en rubrique.
+
+== litanies-saint-nom
+title.fr: Litanies du saint Nom de Jésus
+src: paroissienromai00churgoog | la fr | 8-13 | 18-23
+
+para
+la: Kyrie, eleison.
+fr: Seigneur, ayez pitié de nous.
+
+para
+la: Christe, eleison.
+fr: Jésus-Christ, ayez pitié.
+
+para
+la: Kyrie, eleison.
+fr: Seigneur, ayez pitié.
+
+para
+la: Jesu, audi nos.
+fr: Jésus, écoutez-nous.
+
+para
+la: Jesu, exaudi nos.
+fr: Jésus, exaucez-nous.
+
+para
+la: Pater de cœlis Deus, miserere nobis.
+fr: Père céleste qui êtes Dieu, ayez pitié de nous.
+
+para
+la: Fili redemptor mundi Deus, miserere.
+fr: Fils rédempteur du monde qui êtes Dieu, ayez.
+
+para
+la: Spiritus sancte Deus, miserere nobis.
+fr: Esprit-Saint qui êtes Dieu, ayez.
+
+para
+la: Sancta Trinitas unus Deus, miserere.
+fr: Trinité sainte qui êtes un seul Dieu, ayez.
+
+para
+la: Jesu Fili Dei vivi, miserere nobis.
+fr: Jésus Fils du Dieu vivant, ayez.
+
+para
+la: Jesu splendor Patris, miserere nobis.
+fr: Jésus splendeur du Père, ayez pitié de nous.
+
+para
+la: Jesu candor lucis æternæ, miserere.
+fr: Jésus l'éclat de la lumière éternelle, ayez.
+
+para
+la: Jesu rex gloriæ, mis.
+fr: Jésus roi de gloire, ayez.
+
+para
+la: Jesu sol justitiæ, miserere nobis.
+fr: Jésus soleil de justice, ayez pitié de nous.
+
+para
+la: Jesu fili Mariæ Virginis, miserere.
+fr: Jésus fils de la Vierge Marie, ayez.
+
+para
+la: Jesu amabilis, mis.
+fr: Jésus aimable, ayez.
+
+para
+la: Jesu admirabilis, mis.
+fr: Jésus admirable, ayez.
+
+para
+la: Jesu Deus fortis, mis.
+fr: Jésus Dieu fort, ayez.
+
+para
+la: Jesu Pater futuri sæculi, miserere.
+fr: Jésus Père du siècle à venir, ayez.
+
+para
+la: Jesu magni consilii Angele, miserere.
+fr: Jésus Ange du conseil céleste, ayez.
+
+para
+la: Jesu potentissime, miserere nobis.
+fr: Jésus très-puissant, ayez pitié de nous.
+
+para
+la: Jesu patientissime, miserere nobis.
+fr: Jésus très-patient, ayez pitié de nous.
+
+para
+la: Jesu obedientissime, miserere nobis.
+fr: Jésus très-obéissant, ayez pitié de nous.
+
+para
+la: Jesu mitis et humilis corde, miserere.
+fr: Jésus doux et humble de cœur, ayez.
+
+para
+la: Jesu amator castitatis, miserere nobis.
+fr: Jésus qui aimez la chasteté, ayez.
+
+para
+la: Jesu amator noster, miserere nobis.
+fr: Jésus qui nous avez tant aimés, ayez.
+
+para
+la: Jesu Deus pacis, mis.
+fr: Jésus Dieu de paix, ayez.
+
+para
+la: Jesu auctor vitæ, miserere nobis.
+fr: Jésus auteur de la vie, ayez pitié de nous.
+
+para
+la: Jesu exemplar virtutum, miserere.
+fr: Jésus modèle des vertus, ayez pitié de nous.
+
+para
+la: Jesu zelator animarum, miserere.
+fr: Jésus zélateur des âmes, ayez pitié de nous.
+
+para
+la: Jesu Deus noster, mis.
+fr: Jésus notre Dieu, ayez.
+
+para
+la: Jesu refugium nostrum, miserere.
+fr: Jésus notre refuge, ayez pitié de nous.
+
+para
+la: Jesu pater pauperum, miserere nobis.
+fr: Jésus père des pauvres, ayez pitié de nous.
+
+para
+la: Jesu thesaurus fidelium, miserere.
+fr: Jésus trésor des fidèles, ayez pitié de nous.
+
+para
+la: Jesu bone Pastor, mis.
+fr: Jésus bon Pasteur, ayez.
+
+para
+la: Jesu lux vera, mis.
+fr: Jésus vraie lumière, ayez.
+
+para
+la: Jesu sapientia æterna, miserere nobis.
+fr: Jésus sagesse éternelle, ayez pitié de nous.
+
+para
+la: Jesu bonitas infinita, miserere nobis.
+fr: Jésus bonté infinie, ayez pitié de nous.
+
+para
+la: Jesu via et vita nostra, miserere.
+fr: Jésus notre voie et notre vie, ayez.
+
+para
+la: Jesu gaudium Angelorum, miserere.
+fr: Jésus joie des Anges, ayez pitié de nous.
+
+para
+la: Jesu rex Patriarcharum, miserere.
+fr: Jésus roi des Patriarches, ayez pitié de nous.
+
+para
+la: Jesu magister Apostolorum, miserere.
+fr: Jésus maître des Apôtres, ayez.
+
+para
+la: Jesu doctor Evangelistarum, miserere.
+fr: Jésus docteur des Évangélistes, ayez.
+
+para
+la: Jesu fortitudo Martyrum, miserere.
+fr: Jésus force des Martyrs, ayez pitié de nous.
+
+para
+la: Jesu lumen Confessorum, miserere.
+fr: Jésus lumière des Confesseurs, ayez.
+
+para
+la: Jesu puritas Virginum, miserere.
+fr: Jésus pureté des Vierges, ayez pitié de nous.
+
+para
+la: Jesu corona Sanctorum omnium, mis.
+fr: Jésus couronne de tous les Saints, ayez.
+
+para
+la: Propitius esto, parce nobis, Jesu.
+fr: Soyez-nous propice, pardonnez-nous, Jésus.
+
+para
+la: Propitius esto, exaudi nos, Jesu.
+fr: Soyez-nous propice, exaucez-nous, Jésus.
+
+para
+la: Ab omni malo, libera nos, Jesu.
+fr: De tout mal, délivrez-nous, Jésus.
+
+para
+la: Ab omni peccato, libera nos, Jesu.
+fr: De tout péché, délivrez-nous, Jésus.
+
+para
+la: Ab ira tua, libera nos, Jesu.
+fr: De votre colère, délivrez-nous, Jésus.
+
+para
+la: Ab insidiis diaboli, libera nos, Jesu.
+fr: Des embûches du démon, délivrez-nous, Jésus.
+
+para
+la: A spiritu fornicationis, libera nos, Jesu.
+fr: De l'esprit impur, délivrez-nous, Jésus.
+
+para
+la: A morte perpetua, libera nos, Jesu.
+fr: De la mort éternelle, délivrez-nous, Jésus.
+
+para
+la: A neglectu inspirationum tuarum, libera nos, Jesu.
+fr: Du mépris de vos divines inspirations, délivrez-nous, Jésus.
+
+para
+la: Per mysterium sanctæ Incarnationis tuæ, libera nos.
+fr: Par le mystère de votre sainte Incarnation, délivrez-nous, Jésus.
+
+para
+la: Per Nativitatem tuam, libera nos.
+fr: Par votre Naissance, délivrez-nous, Jésus.
+
+para
+la: Per Infantiam tuam, libera nos, Jesu.
+fr: Par votre Enfance, délivrez-nous, Jésus.
+
+para
+la: Per divinissimam vitam tuam, libera.
+fr: Par votre vie toute divine, délivrez-nous.
+
+para
+la: Per labores tuos, libera nos, Jesu.
+fr: Par vos travaux, délivrez-nous, Jésus.
+
+para
+la: Per agoniam et Passionem tuam, libera nos, Jesu.
+fr: Par votre agonie et votre Passion, délivrez-nous, Jésus.
+
+para
+la: Per Crucem et derelictionem tuam, libera nos, Jesu.
+fr: Par votre Croix et votre abandon, délivrez-nous, Jésus.
+
+para
+la: Per languores tuos, libera nos, Jesu.
+fr: Par vos langueurs, délivrez-nous, Jésus.
+
+para
+la: Per mortem et sepulturam tuam, libera.
+fr: Par votre mort et votre sépulture, délivrez.
+
+para
+la: Per Resurrectionem tuam, libera nos.
+fr: Par votre Résurrection, délivrez-nous, Jésus.
+
+para
+la: Per Ascensionem tuam, libera nos.
+fr: Par votre Ascension, délivrez-nous, Jésus.
+
+para
+la: Per gaudia tua, libera nos, Jesu.
+fr: Par vos saintes joies, délivrez-nous, Jésus.
+
+para
+la: Per gloriam tuam, libera nos, Jesu.
+fr: Par votre gloire, délivrez-nous, Jésus.
+
+para
+la: Agnus Dei, qui tollis peccata mundi, parce nobis, Jesu.
+fr: Agneau de Dieu, qui effacez les péchés du monde, pardonnez-nous, Jésus.
+
+para
+la: Agnus Dei, qui tollis peccata mundi, exaudi nos, Jesu.
+fr: Agneau de Dieu, qui effacez les péchés du monde, exaucez-nous, Jésus.
+
+para
+la: Agnus Dei, qui tollis peccata mundi, miserere nobis, Jesu.
+fr: Agneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous, Jésus.
+
+para
+la: Jesu, audi nos.
+fr: Jésus, écoutez-nous.
+
+para
+la: Jesu, exaudi nos.
+fr: Jésus, exaucez-nous.
+
+para
+fr: _Oraison._ Seigneur Jésus-Christ, qui avez dit : Demandez, et vous recevrez ; cherchez, et vous trouverez ; frappez, et on vous ouvrira ; faites-nous, s'il vous plaît, la grâce d'être embrasés de votre amour tout divin, afin que nous vous aimions de tout notre cœur, en vous confessant de bouche et par nos actions, et que jamais nous ne cessions de vous louer.
+
+para
+fr: Donnez-nous pour toujours, ô Seigneur, la crainte et l'amour de votre saint Nom, parce que vous ne cessez de gouverner ceux que vous établissez dans la solidité de votre affection. Par N.-S. J.-C.
+
+== litanies-lorette
+title.fr: Litanies de la sainte Vierge
+src: paroissienromai00churgoog | la fr | 19-22 | 29-32
+
+para
+la: Kyrie, eleison.
+fr: Seigneur, ayez pitié de nous.
+
+para
+la: Christe, eleison.
+fr: Jésus-Christ, ayez pitié.
+
+para
+la: Kyrie, eleison.
+fr: Seigneur, ayez pitié.
+
+para
+la: Christe, audi nos.
+fr: Jésus-Christ, écoutez-nous.
+
+para
+la: Christe, exaudi nos.
+fr: Jésus-Christ, exaucez-nous.
+
+para
+la: Pater de cœlis Deus, miserere nobis.
+fr: Père céleste qui êtes Dieu, ayez pitié de nous.
+
+para
+la: Fili redemptor mundi Deus, miserere nobis.
+fr: Fils rédempteur du monde qui êtes Dieu, ayez pitié de nous.
+
+para
+la: Spiritus sancte Deus, miserere nobis.
+fr: Esprit-Saint qui êtes Dieu, ayez pitié de n.
+
+para
+la: Sancta Trinitas unus Deus, miserere nobis.
+fr: Trinité sainte qui êtes un seul Dieu, ayez pitié de nous.
+
+para
+la: Sancta Maria, ora pro nobis.
+fr: Sainte Marie, priez pour nous.
+
+para
+la: Sancta Dei Genitrix, ora pro nobis.
+fr: Sainte Mère de Dieu, priez pour nous.
+
+para
+la: Sancta Virgo virginum, ora pro nobis.
+fr: Sainte Vierge des vierges, priez pour nous.
+
+para
+la: Mater Christi, ora.
+fr: Mère du Christ, priez.
+
+para
+la: Mater divinæ gratiæ, ora pro nobis.
+fr: Mère de l'auteur de la grâce, priez pour nous.
+
+para
+la: Mater purissima, ora.
+fr: Mère très-pure, priez.
+
+para
+la: Mater castissima, ora.
+fr: Mère très-chaste, priez.
+
+para
+la: Mater inviolata, ora pro nobis.
+fr: Mère toujours vierge, priez pour nous.
+
+para
+la: Mater intemerata, ora.
+fr: Mère sans tache, priez.
+
+para
+la: Mater amabilis, ora.
+fr: Mère aimable, priez.
+
+para
+la: Mater admirabilis, or.
+fr: Mère admirable, priez.
+
+para
+la: Mater Creatoris, ora.
+fr: Mère du Créateur, priez.
+
+para
+la: Mater Salvatoris, ora.
+fr: Mère du Sauveur, priez.
+
+para
+la: Virgo prudentissima, ora pro nobis.
+fr: Vierge très-prudente, priez pour nous.
+
+para
+la: Virgo veneranda, ora.
+fr: Vierge vénérable, priez.
+
+para
+la: Virgo prædicanda ora pro nobis.
+fr: Vierge digne de louange, priez pour nous.
+
+para
+la: Virgo potens, ora.
+fr: Vierge puissante, priez.
+
+para
+la: Virgo clemens, ora.
+fr: Vierge clémente, priez.
+
+para
+la: Virgo fidelis, ora.
+fr: Vierge fidèle, priez.
+
+para
+la: Speculum justitiæ, or.
+fr: Miroir de justice, priez.
+
+para
+la: Sedes sapientiæ, ora pro nobis.
+fr: Trône de la sagesse, priez pour nous.
+
+para
+la: Causa nostræ lætitiæ, ora pro nobis.
+fr: Cause de notre joie, priez pour nous.
+
+para
+la: Vas spirituale, ora pro nobis.
+fr: Vase rempli des dons du Saint-Esprit, priez.
+
+para
+la: Vas honorabile, ora.
+fr: Vase d'honneur, priez.
+
+para
+la: Vas insigne devotionis, ora.
+fr: Vase insigne de la vraie dévotion, priez.
+
+para
+la: Rosa mystica, ora.
+fr: Rose mystérieuse, priez.
+
+para
+la: Turris Davidica, ora.
+fr: Tour de David, priez.
+
+para
+la: Turris eburnea, ora.
+fr: Tour d'ivoire, priez.
+
+para
+la: Domus aurea, ora.
+fr: Maison d'or, priez.
+
+para
+la: Fœderis arca, ora.
+fr: Arche d'alliance, priez.
+
+para
+la: Janua cœli, ora.
+fr: Porte du ciel, priez.
+
+para
+la: Stella matutina, ora.
+fr: Étoile du matin, priez.
+
+para
+la: Salus infirmorum, ora pro nobis.
+fr: Santé des infirmes, priez pour nous.
+
+para
+la: Refugium peccatorum, ora pro nobis.
+fr: Refuge des pécheurs, priez pour nous.
+
+para
+la: Consolatrix afflictorum, ora pro nobis.
+fr: Consolatrice des affligés, priez pour nous.
+
+para
+la: Auxilium christianorum, ora pro nobis.
+fr: Secours des chrétiens, priez pour nous.
+
+para
+la: Regina Angelorum, ora pro nobis.
+fr: Reine des Anges, priez pour nous.
+
+para
+la: Regina Patriarcharum, ora pro nobis.
+fr: Reine des Patriarches, priez pour nous.
+
+para
+la: Regina Prophetarum, ora pro nobis.
+fr: Reine des Prophètes, priez pour nous.
+
+para
+la: Regina Apostolorum, ora pro nobis.
+fr: Reine des Apôtres, priez pour nous.
+
+para
+la: Regina Martyrum, ora pro nobis.
+fr: Reine des Martyrs, priez pour nous.
+
+para
+la: Regina Confessorum, ora pro nobis.
+fr: Reine des Confesseurs, priez pour nous.
+
+para
+la: Regina Virginum, ora pro nobis.
+fr: Reine des Vierges, priez pour nous.
+
+para
+la: Regina Sanctorum omnium, ora.
+fr: Reine de tous les Saints, priez pour nous.
+
+para
+la: Regina sine labe concepta, ora.
+fr: Reine conçue sans péché, priez pour nous.
+
+para
+la: Agnus Dei, qui tollis peccata mundi, parce nobis, Domine.
+fr: Agneau de Dieu, qui effacez les péchés du monde, pardonnez-nous, Seigneur.
+
+para
+la: Agnus Dei, qui tollis peccata mundi, exaudi nos, Domine.
+fr: Agneau de Dieu, qui effacez les péchés du monde, exaucez-nous, Seigneur.
+
+para
+la: Agnus Dei, qui tollis peccata mundi, miserere nobis.
+fr: Agneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous.
+
+para
+la: Christe, audi nos.
+fr: Jésus-Christ, écoutez-nous.
+
+para
+la: Christe, exaudi nos.
+fr: Jésus-Christ, exaucez-nous.
+
+versicle V
+la: ℣. Ora pro nobis, sancta Dei Genitrix.
+fr: ℣. Priez pour nous, sainte Mère de Dieu.
+
+versicle R
+la: ℟. Ut digni efficiamur promissionibus Christi.
+fr: ℟. Afin que nous devenions dignes des promesses de Jésus-Christ.
+
+rubric
+fr: Oraison Nous vous supplions, des Complies du Dimanche.
+
+== litanies-saints
+title.fr: Litanies des Saints
+src: paroissienromai00churgoog | la fr | 61-69 | 71-79
+# Les oraisons qui suivent (p. 69-71, avec renvois à d'autres pages) ne sont pas reprises.
+
+para
+la: Kyrie, eleison.
+fr: Seigneur, ayez pitié de nous.
+
+para
+la: Christe, eleison.
+fr: Jésus-Christ, ayez pitié.
+
+para
+la: Kyrie, eleison.
+fr: Seigneur, ayez pitié.
+
+para
+la: Christe, audi nos.
+fr: Jésus-Christ, écoutez-n.
+
+para
+la: Christe, exaudi nos,
+fr: Jésus-Christ, exaucez-n.
+
+para
+la: Pater de cœlis Deus, miserere nobis.
+fr: Père céleste qui êtes Dieu, ayez pitié de nous.
+
+para
+la: Fili redemptor mundi Deus, miserere nobis.
+fr: Fils rédempteur du monde qui êtes Dieu, ayez pitié de nous.
+
+para
+la: Spiritus sancte Deus, miserere nobis.
+fr: Esprit-Saint qui êtes Dieu, ayez pitié de nous.
+
+para
+la: Sancta Trinitas unus Deus, miserere.
+fr: Trinité sainte qui êtes un seul Dieu, ayez.
+
+para
+la: Sancta Maria, ora pro nobis.
+fr: Sainte Marie, priez pour nous.
+
+para
+la: Sancta Dei Genitrix, ora pro nobis.
+fr: Sainte Mère de Dieu, priez pour nous.
+
+para
+la: Sancta Virgo virginum, ora pro nobis.
+fr: Sainte Vierge des vierges, priez pour nous.
+
+para
+la: Sancte Michael, ora.
+fr: Saint Michel, priez.
+
+para
+la: Sancte Gabriel, ora.
+fr: Saint Gabriel, priez
+
+para
+la: Sancte Raphael, ora.
+fr: Saint Raphaël, priez.
+
+para
+la: Omnes sancti Angeli et Archangeli, orate.
+fr: Saints Anges et Archanges, priez tous.
+
+para
+la: Omnes sancti beatorum Spirituum ordines, orate.
+fr: Saints ordres des Esprits bienheureux, priez tous pour nous.
+
+para
+la: Sancte Joannes Baptista, ora pro nobis.
+fr: Saint Jean-Baptiste, priez pour nous.
+
+para
+la: Sancte Joseph, ora.
+fr: Saint Joseph, priez.
+
+para
+la: Omnes sancti Patriarchæ et Prophetæ, orate pro nobis.
+fr: Saints Patriarches et Prophètes, priez tous pour nous.
+
+para
+la: Sancte Petre, ora.
+fr: Saint Pierre, priez.
+
+para
+la: Sancte Paule, ora.
+fr: Saint Paul, priez.
+
+para
+la: Sancte Andrea, ora.
+fr: Saint André, priez.
+
+para
+la: Sancte Jacobe, ora.
+fr: Saint Jacques, priez.
+
+para
+la: Sancte Joannes, ora.
+fr: Saint Jean, priez.
+
+para
+la: Sancte Thoma, ora.
+fr: Saint Thomas, priez.
+
+para
+la: Sancte Jacobe, ora.
+fr: Saint Jacques, priez.
+
+para
+la: Sancte Philippe, ora.
+fr: Saint Philippe, priez.
+
+para
+la: Sancte Bartholomæe, ora pro nobis.
+fr: Saint Barthélemi, priez pour nous.
+
+para
+la: Sancte Matthæe, ora.
+fr: Saint Matthieu, priez.
+
+para
+la: Sancte Simon, ora.
+fr: Saint Simon, priez.
+
+para
+la: Sancte Thaddæe, ora.
+fr: Saint Thaddée, priez.
+
+para
+la: Sancte Mathia, ora.
+fr: Saint Mathias, priez.
+
+para
+la: Sancte Barnaba, ora.
+fr: Saint Barnabé, priez.
+
+para
+la: Sancte Luca, ora.
+fr: Saint Luc, priez.
+
+para
+la: Sancte Marce, ora.
+fr: Saint Marc, priez.
+
+para
+la: Omnes sancti Apostoli et Evangelistæ, orate pro nobis.
+fr: Saints Apôtres et Evangélistes, priez tous pour nous.
+
+para
+la: Omnes sancti Discipuli Domini, orate.
+fr: Saints Disciples du Seigneur, priez tous.
+
+para
+la: Omnes sancti Innocentes, orate.
+fr: Saints Innocents, priez tous pour nous.
+
+para
+la: Sancte Stephane, ora.
+fr: Saint Étienne, priez.
+
+para
+la: Sancte Laurenti, ora.
+fr: Saint Laurent, priez.
+
+para
+la: Sancte Vincenti, ora pro nobis.
+fr: Saint Vincent, priez pour nous.
+
+para
+la: Sancti Fabiane et Sebastiane, orate.
+fr: Saints Fabien et Sébastien, priez pour nous.
+
+para
+la: Sancti Joannes et Paule, orate.
+fr: Saints Jean et Paul, priez pour nous.
+
+para
+la: Sancti Cosma et Damiane, orate.
+fr: Saints Côme et Damien, priez pour nous.
+
+para
+la: Sancti Gervasi et Protasi, orate.
+fr: Saints Gervais et Protais, priez pour nous.
+
+para
+la: Omnes sancti Martyres, orate.
+fr: Saints Martyrs, priez tous pour nous.
+
+para
+la: Sancte Silvester, ora pro nobis.
+fr: Saint Silvestre, priez pour nous.
+
+para
+la: Sancte Gregori, ora.
+fr: Saint Grégoire, priez.
+
+para
+la: Sancte Ambrosi, ora.
+fr: Saint Ambroise, priez.
+
+para
+la: Sancte Augustine, ora pro nobis.
+fr: Saint Augustin, priez pour nous.
+
+para
+la: Sancte Hieronyme, ora pro nobis.
+fr: Saint Jérôme, priez pour nous.
+
+para
+la: Sancte Martine, ora.
+fr: Saint Martin, priez.
+
+para
+la: Sancte Nicolae, ora.
+fr: Saint Nicolas, priez.
+
+para
+la: Omnes sancti Pontifices et Confessores, orate.
+fr: Saints Pontifes et Confesseurs, priez tous pour nous.
+
+para
+la: Omnes sancti Doctores, orate.
+fr: Saints Docteurs, priez tous pour nous.
+
+para
+la: Sancte Antoni, ora.
+fr: Saint Antoine, priez.
+
+para
+la: Sancte Benedicte, ora.
+fr: Saint Benoît, priez.
+
+para
+la: Sancte Bernarde, ora.
+fr: Saint Bernard, priez.
+
+para
+la: Sancte Dominice, ora.
+fr: Saint Dominique, priez.
+
+para
+la: Sancte Francisce, ora.
+fr: Saint François, priez.
+
+para
+la: Omnes sancti Sacerdotes et Levitæ, orate pro nobis.
+fr: Saints Prêtres et Lévites, priez tous pour nous.
+
+para
+la: Omnes sancti Monachi et Eremitæ, orate pro nobis.
+fr: Saints Moines et Solitaires, priez tous pour nous.
+
+para
+la: Sancta Maria Magdalena, ora pro nobis.
+fr: Sainte Marie-Madeleine, priez pour nous.
+
+para
+la: Sancta Agatha, ora.
+fr: Sainte Agathe, priez.
+
+para
+la: Sancta Lucia, ora.
+fr: Sainte Lucie, priez.
+
+para
+la: Sancta Agnes, ora.
+fr: Sainte Agnès, priez.
+
+para
+la: Sancta Cæcilia, ora.
+fr: Sainte Cécile, priez.
+
+para
+la: Sancta Catharina, ora.
+fr: Sainte Catherine, priez.
+
+para
+la: Sancta Anastasia, ora.
+fr: Sainte Anastasie, priez.
+
+para
+la: Omnes sanctæ Virgines et Viduæ, orate.
+fr: Saintes Vierges et Veuves, priez toutes.
+
+para
+la: Omnes Sancti et Sanctæ Dei, intercedite pro nobis.
+fr: Saints et Saintes de Dieu, intercédez tous pour nous.
+
+para
+la: Propitius esto, parce nobis, Domine.
+fr: Soyez-nous propice, pardonnez-nous, Seigneur.
+
+para
+la: Propitius esto, exaudi nos, Domine.
+fr: Soyez-nous propice, exaucez-nous, Seigneur.
+
+para
+la: Ab omni malo, libera nos, Domine.
+fr: De tout mal, délivrez-nous, Seigneur.
+
+para
+la: Ab omni peccato, libera nos, Domine.
+fr: De tout péché, délivrez-nous, Seigneur.
+
+para
+la: Ab ira tua, libera nos, Domine.
+fr: De votre colère, délivrez-nous, Seigneur.
+
+para
+la: A subitanea et improvisa morte, libera nos, Domine.
+fr: De la mort subite et imprévue, délivrez-nous, Seigneur.
+
+para
+la: Ab insidiis diaboli, libera nos, Domine.
+fr: Des embûches du démon, délivrez-nous, Seigneur.
+
+para
+la: Ab ira, et odio, et omni mala voluntate, libera nos.
+fr: De la colère, de la haine, et de toute mauvaise volonté, délivrez-nous.
+
+para
+la: A spiritu fornicationis, libera nos.
+fr: De l'esprit impur, délivrez-nous, Seigneur.
+
+para
+la: A fulgure et tempestate, libera nos.
+fr: De la foudre et des tempêtes, délivrez-nous.
+
+para
+la: A flagello terræmotus, libera nos.
+fr: Du châtiment des tremblements de terre, dél.
+
+para
+la: A peste, fame et bello, libera nos.
+fr: De la peste, de la famine et de la guerre, déliv.
+
+para
+la: A morte perpetua, libera nos.
+fr: De la mort éternelle, délivrez-nous, Seigneur.
+
+para
+la: Per mysterium sanctæ Incarnationis tuæ, libera nos.
+fr: Par le mystère de votre sainte Incarnation, délivrez-nous, Seigneur.
+
+para
+la: Per Adventum tuum, libera nos, Domine.
+fr: Par votre Avénement, délivrez-nous.
+
+para
+la: Per Nativitatem tuam, libera nos.
+fr: Par votre Naissance, délivrez-nous, Seigneur.
+
+para
+la: Per Baptismum et sanctum Jejunium tuum, libera nos.
+fr: Par votre Baptême et votre saint Jeûne, délivrez-nous, Seigneur.
+
+para
+la: Per Crucem et Passionem tuam, libera nos, Domine.
+fr: Par votre Croix et votre Passion, délivrez-nous, Seigneur.
+
+para
+la: Per Mortem et Sepulturam tuam, libera nos, Domine.
+fr: Par votre Mort et votre Sépulture, délivrez-nous, Seigneur.
+
+para
+la: Per sanctam Resurrectionem tuam, libera nos, Domine.
+fr: Par votre sainte Résurrection, délivrez-nous, Seigneur.
+
+para
+la: Per admirabilem Ascensionem tuam, libera nos, Domine.
+fr: Par votre admirable Ascension, délivrez-nous, Seigneur.
+
+para
+la: Per Adventum Spiritus sancti Paracliti, libera nos, Domine.
+fr: Par l'Avénement du Saint-Esprit consolateur, délivrez-nous.
+
+para
+la: In die Judicii, libera nos, Domine.
+fr: Au jour du Jugement, délivrez-nous.
+
+para
+la: Peccatores, te rogamus, audi nos.
+fr: Pécheurs, nous vous en supplions, exaucez-n.
+
+para
+la: Ut nobis parcas, te rogamus, audi nos.
+fr: Daignez nous pardonner, nous vous en supplions.
+
+para
+la: Ut nobis indulgeas, te rogamus, audi nos.
+fr: Daignez nous faire grâce, nous vous en supplions.
+
+para
+la: Ut ad veram pœnitentiam nos perducere digneris, te rogamus, audi nos.
+fr: Daignez nous conduire à une véritable pénitence, nous vous en supplions, exaucez-nous.
+
+para
+la: Ut Ecclesiam tuam sanctam regere et conservare digneris, te rogamus.
+fr: Daignez gouverner et conserver votre Église sainte, nous vous en supplions.
+
+para
+la: Ut Domnum Apostolicum et omnes ecclesiasticos ordines in sancta religione conservare digneris, te rogamus, audi nos.
+fr: Daignez maintenir dans votre sainte religion le Souverain Pontife et tous les ordres de la hiérarchie ecclésiastique, nous vous en supplions, exaucez-nous.
+
+para
+la: Ut inimicos sanctæ Ecclesiæ humiliare digneris, te rogamus, audi nos.
+fr: Daignez humilier les ennemis de la sainte Eglise, nous vous en supplions, exaucez-n.
+
+para
+la: Ut Imperatorem nostrum custodire digneris, te rogamus.
+fr: Daignez conserver notre Empereur, nous vous en supplions, exaucez.
+
+para
+la: Ut regibus et principibus christianis pacem et veram concordiam donare digneris, te rogamus.
+fr: Daignez établir une paix et une concorde véritable entre les rois et les princes chrétiens, nous vous en supplions.
+
+para
+la: Ut cuncto populo christiano pacem et unitatem largiri digneris, te rogamus.
+fr: Daignez accorder à toutes les nations chrétiennes la paix et l'unité, nous vous en supplions.
+
+para
+la: Ut nosmetipsos in tuo sancto servitio confortare et conservare digneris, te rogamus, audi nos.
+fr: Daignez nous conserver et nous fortifier dans l'observance de nos devoirs religieux, nous vous en supplions.
+
+para
+la: Ut mentes nostras ad cœlestia desideria erigas, te rogamus, audi nos.
+fr: Daignez élever nos esprits et les désirs de notre cœur vers les biens célestes, nous vous en supplions, exaucez-n.
+
+para
+la: Ut omnibus benefactoribus nostris sempiterna bona retribuas, te rogamus, audi nos.
+fr: Daignez récompenser tous nos bienfaiteurs en leur donnant le bonheur éternel, nous vous en supplions.
+
+para
+la: Ut animas nostras, fratrum, propinquorum, et benefactorum nostrorum, ab æterna damnatione eripias, te rogamus, audi nos.
+fr: Daignez délivrer de la damnation éternelle nos âmes, celles de nos frères, de nos parents et de nos bienfaiteurs, nous vous en supplions, exaucez-nous.
+
+para
+la: Ut fructus terræ dare et conservare digneris, te rogamus, audi nos.
+fr: Daignez nous donner les fruits de la terre, et les conserver, nous vous en supplions.
+
+para
+la: Ut omnibus fidelibus defunctis requiem æternam donare digneris, te rogamus, audi nos.
+fr: Daignez accorder le repos éternel à tous les fidèles défunts, nous vous en supplions, exaucez-nous.
+
+para
+la: Ut nos exaudire digneris, te rogamus, audi nos.
+fr: Daignez écouter nos vœux, nous vous en supplions.
+
+para
+la: Fili Dei, te rogamus, audi nos.
+fr: Fils de Dieu, nous vous en supplions, exaucez-nous.
+
+para
+la: Agnus Dei, qui tollis peccata mundi, parce nobis, Domine.
+fr: Agneau de Dieu, qui effacez les péchés du monde, pardonnez-nous, Seigneur.
+
+para
+la: Agnus Dei, qui tollis peccata mundi, exaudi nos, Domine.
+fr: Agneau de Dieu, qui effacez les péchés du monde, exaucez-nous, Seigneur.
+
+para
+la: Agnus Dei, qui tollis peccata mundi, miserere nobis.
+fr: Agneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous.
+
+para
+la: Christe, audi nos.
+fr: Jésus-Christ, écoutez-nous.
+
+para
+la: Christe, exaudi nos.
+fr: Jésus-Christ, exaucez-nous.
+
+para
+la: Kyrie, eleison.
+fr: Seigneur, ayez pitié de nous.
+
+para
+la: Christe, eleison.
+fr: Jésus-Christ, ayez pitié.
+
+para
+la: Kyrie, eleison.
+fr: Seigneur, ayez pitié.
+
+rubric
+la: Pater noster, etc., _à voix basse._
+fr: Notre Père, etc., _à voix basse._
+
+versicle V
+la: ℣. Et ne nos inducas in tentationem.
+fr: ℣. Et ne nous laissez pas succomber à la tentation.
+
+versicle R
+la: ℟. Sed libera nos a malo.
+fr: ℟. Mais délivrez-nous du mal.
+
+versicle V
+la: ℣. Domine, exaudi orationem meam.
+fr: ℣. Seigneur, écoutez ma prière.
+
+versicle R
+la: ℟. Et clamor meus ad te veniat.
+fr: ℟. Et que mes cris s'élèvent jusqu'à vous.
+
+== litanies-sacre-coeur
+title.fr: Litanies du Sacré Cœur de Jésus
+src: cihm_80314 | fr | 224-228 | 231-235
+removed: (300 jours d'indulgences.)
+# L'astérisque renvoie à la réponse imprimée en bas de chaque page : « * ayez pitié de nous. »
+# Coquilles du livre corrigées : « dans le sein de de la Vierge » (de redoublé), « D'eu » (Dieu, lettre cassée).
+
+rubric
+fr: * ayez pitié de nous.
+
+para
+fr: Seigneur, ayez pitié de nous.
+
+para
+fr: Jésus-Christ, ayez pitié de nous.
+
+para
+fr: Seigneur, ayez pitié de nous.
+
+para
+fr: Jésus-Christ, écoutez-nous.
+
+para
+fr: Jésus-Christ, exaucez-nous.
+
+para
+fr: Père céleste, qui êtes Dieu, ayez pitié de nous.
+
+para
+fr: Fils, Rédempteur du monde, qui êtes Dieu, *
+
+para
+fr: Esprit-Saint, qui êtes Dieu,
+
+para
+fr: Trinité Sainte, qui êtes un seul Dieu,
+
+para
+fr: Cœur de Jésus, Fils du Père éternel,
+
+para
+fr: Cœur de Jésus, formé par le Saint-Esprit dans le sein de la Vierge Marie,
+
+para
+fr: Cœur de Jésus, uni substantiellement au verbe de Dieu, ayez pitié de nous.
+
+para
+fr: Cœur de Jésus, d'une souveraine majesté, *
+
+para
+fr: Cœur de Jésus, temple saint de Dieu,
+
+para
+fr: Cœur de Jésus, tabernacle du Très-Haut,
+
+para
+fr: Cœur de Jésus, maison de Dieu et porte du ciel,
+
+para
+fr: Cœur de Jésus, fournaise ardente de charité,
+
+para
+fr: Cœur de Jésus, sanctuaire de justice et d'amour,
+
+para
+fr: Cœur de Jésus, plein de bonté et d'amour,
+
+para
+fr: Cœur de Jésus, abîme de toutes les vertus,
+
+para
+fr: Cœur de Jésus, très digne de toutes louanges,
+
+para
+fr: Cœur de Jésus, Roi et centre de tous les cœurs,
+
+para
+fr: Cœur de Jésus, dans lequel sont tous les trésors de la sagesse et de la science,
+
+para
+fr: Cœur de Jésus, dans lequel réside toute la plénitude de la Divinité, ayez pitié de nous.
+
+para
+fr: Cœur de Jésus, en qui le Père trouve sa complaisance, *
+
+para
+fr: Cœur de Jésus, dont la plénitude se répand sur nous tous,
+
+para
+fr: Cœur de Jésus, désiré des collines éternelles,
+
+para
+fr: Cœur de Jésus, patient et très miséricordieux,
+
+para
+fr: Cœur de Jésus, libéral pour tous ceux qui vous invoquent,
+
+para
+fr: Cœur de Jésus, source de vie et de sainteté,
+
+para
+fr: Cœur de Jésus, propitiation pour nos péchés,
+
+para
+fr: Cœur de Jésus, rassasié d'opprobres,
+
+para
+fr: Cœur de Jésus, broyé à cause de nos péchés,
+
+para
+fr: Cœur de Jésus, obéissant jusqu'à la mort,
+
+para
+fr: Cœur de Jésus percé par la lance,
+
+para
+fr: Cœur de Jésus, source de toute consolation,
+
+para
+fr: Cœur de Jésus, notre vie et notre résurrection,
+
+para
+fr: Cœur de Jésus, notre paix et notre réconciliation,
+
+para
+fr: Cœur de Jésus, victime des pécheurs, ayez pitié de nous.
+
+para
+fr: Cœur de Jésus, salut de ceux qui espèrent en vous, *
+
+para
+fr: Cœur de Jésus, espérance de ceux qui meurent en vous,
+
+para
+fr: Cœur de Jésus, délices de tous les Saints,
+
+para
+fr: Agneau de Dieu, qui effacez les péchés du monde, pardonnez-nous, Seigneur.
+
+para
+fr: Agneau de Dieu, qui effacez les péchés du monde, exaucez-nous, Seigneur.
+
+para
+fr: Agneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous.
+
+versicle V
+fr: ℣. Jesus, doux et humble de Cœur.
+
+versicle R
+fr: ℟. Rendez notre cœur semblable au vôtre.
+
+heading 2
+fr: Prions
+
+para
+fr: Dieu tout-puissant et éternel, regardez le Cœur de votre Fils bien-aimé ; soyez attentif aux louanges et aux satisfactions qu'il vous rend au nom des pécheurs. Apaisé par ces divins hommages, accordez à ceux qui implorent votre miséricorde, le pardon au nom de ce même Jésus-Christ, votre Fils, qui vit et règne avec vous en l'unité du Saint-Esprit dans les siècles des siècles. Ainsi soit-il.
+
+== litanies-saint-joseph
+title.fr: Litanies de saint Joseph
+src: cihm_80314 | fr | 231-233 | 238-240
+removed: (300 jours d'indulg., une fois le jour.
+# État de 1909 (approbation de saint Pie X), sans les sept invocations ajoutées le 1er mai 2021 : voir README.
+# Coquille corrigée : « qui êtez un seul Dieu ».
+
+rubric
+fr: * priez pour nous.
+
+para
+fr: Seigneur, ayez pitié de nous.
+
+para
+fr: Christ, ayez pitié de nous.
+
+para
+fr: Seigneur, ayez pitié de nous.
+
+para
+fr: Christ, écoutez-nous.
+
+para
+fr: Christ, exaucez-nous.
+
+para
+fr: Père céleste, qui êtes Dieu, ayez pitié de nous.
+
+para
+fr: Fils Rédempteur du monde, qui êtes Dieu, ayez pitié de nous.
+
+para
+fr: Esprit-Saint, qui êtes Dieu, ayez pitié de nous.
+
+para
+fr: Trinité sainte, qui êtes un seul Dieu, ayez pitié de nous.
+
+para
+fr: Sainte Marie, priez pour nous.
+
+para
+fr: Saint Joseph, *
+
+para
+fr: Illustre descendant de David,
+
+para
+fr: Lumière des Patriarches,
+
+para
+fr: Époux de la Mère de Dieu,
+
+para
+fr: Chaste gardien de la Vierge, priez pour nous.
+
+para
+fr: Nourricier du Fils de Dieu, *
+
+para
+fr: Zélé défenseur de Jésus,
+
+para
+fr: Chef de la sainte Famille,
+
+para
+fr: Joseph très juste,
+
+para
+fr: Joseph très chaste,
+
+para
+fr: Joseph très prudent,
+
+para
+fr: Joseph très courageux,
+
+para
+fr: Joseph très obéissant,
+
+para
+fr: Joseph très fidèle,
+
+para
+fr: Miroir de patience,
+
+para
+fr: Amant de la pauvreté,
+
+para
+fr: Modèle des travailleurs,
+
+para
+fr: Gloire de la vie de famille,
+
+para
+fr: Gardien des vierges,
+
+para
+fr: Soutien des familles,
+
+para
+fr: Consolation des malheureux,
+
+para
+fr: Espérance des malades,
+
+para
+fr: Patron des mourants,
+
+para
+fr: Terreur des démons,
+
+para
+fr: Protecteur de la Sainte Église,
+
+para
+fr: Agneau de Dieu, qui effacez les péchés du monde, pardonnez-nous, Seigneur.
+
+para
+fr: Agneau de Dieu, qui effacez les péchés du monde, exaucez-nous, Seigneur.
+
+para
+fr: Agneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous.
+
+versicle V
+fr: ℣. Il l'a établi maître de sa maison.
+
+versicle R
+fr: ℟. Et prince sur tous ses biens.
+
+heading 2
+fr: Prions
+
+para
+fr: O Dieu, qui dans votre providence ineffable, avez daigné choisir le bienheureux Joseph pour être l'Epoux de votre très sainte Mère, faites, nous vous en prions, que le vénérant ici-bas comme protecteur, nous méritions de l'avoir pour intercesseur dans le ciel : Qui...
+review: dernier mot abrégé, lettres cassées sur le scan (« Qu·… ») : lecture « Qui… » probable

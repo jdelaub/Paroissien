@@ -1,0 +1,171 @@
+# Prières du matin et du soir — Paroissien romain, Mame, Tours, 1890 (paroissienromain00tour).
+# Transcription relue sur le fac-similé. Format : voir normalize.py.
+# Le paroissien imprime le Pater, l'Ave, le Credo et le Confiteor en latin seulement dans la prière
+# du matin, en français seulement dans la prière du soir : on garde cette disposition.
+
+== priere-du-matin
+title.fr: Prière du matin
+src: paroissienromain00tour | fr la | 7-11 | 20-24
+
+para centered
+fr: Au nom du Père, et du Fils, et du Saint-Esprit. Ainsi soit-il.
+
+rubric
+fr: Mettons-nous en la présence de Dieu, et adorons-le.
+
+para
+fr: Très sainte et très auguste Trinité, Dieu seul en trois personnes, je crois que vous êtes ici présent. Je vous adore avec les sentiments de l'humilité la plus profonde, et je vous rends de tout mon cœur les hommages qui sont dus à votre souveraine Majesté.
+
+rubric
+fr: Remercions Dieu des grâces qu'il nous a faites, et offrons-nous à lui.
+
+para
+fr: Mon Dieu, je vous remercie très humblement de toutes les grâces que vous m'avez faites jusqu'ici. C'est encore par un effet de votre bonté que je vois ce jour ; je veux aussi l'employer uniquement à vous servir. Je vous en consacre toutes les pensées, les paroles, les actions et les peines. Bénissez-les, afin qu'il n'y en ait aucune qui ne soit animée de votre amour, et qui ne tende à votre plus grande gloire.
+
+rubric
+fr: Formons la résolution d'éviter le péché et de pratiquer la vertu.
+
+para
+fr: Adorable Jésus, divin modèle de la perfection à laquelle nous devons aspirer, je vais m'appliquer autant que je le pourrai à me rendre semblable à vous : doux, humble, chaste, zélé, patient, charitable et résigné comme vous, et je ferai particulièrement tous mes efforts pour ne pas retomber aujourd'hui dans les fautes que je commets si souvent, et dont je souhaite sincèrement de me corriger.
+
+rubric
+fr: Demandons à Dieu les grâces qui nous sont nécessaires.
+
+para
+fr: Mon Dieu, vous connaissez ma faiblesse. Je ne puis rien sans le secours de votre grâce. Ne me la refusez pas, ô mon Dieu : proportionnez-la à mes besoins ; donnez-moi assez de force pour éviter tout le mal que vous défendez, pour pratiquer tout le bien que vous attendez de moi, et pour souffrir patiemment toutes les peines qu'il vous plaira de m'envoyer.
+
+heading 2
+fr: L'Oraison dominicale
+
+para
+la: Pater noster, qui es in cœlis, sanctificetur nomen tuum : adveniat regnum tuum : fiat voluntas tua, sicut in cœlo et in terra : panem nostrum quotidianum da nobis hodie : et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris : et ne nos inducas in tentationem, sed libera nos a malo. Amen.
+
+heading 2
+fr: La Salutation angélique
+
+para
+la: Ave, Maria, gratia plena ; Dominus tecum : benedicta tu in mulieribus, et benedictus fructus ventris tui, Jesus.
+
+para
+la: Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc et in hora mortis nostræ. Amen.
+
+heading 2
+fr: Le Symbole des Apôtres
+
+para
+la: Credo in Deum, Patrem omnipotentem, Creatorem cœli et terræ : et in Jesum Christum, Filium ejus unicum, Dominum nostrum, qui conceptus est de Spiritu sancto, natus ex Maria Virgine, passus sub Pontio Pilato, crucifixus, mortuus, et sepultus : descendit ad inferos, tertia die resurrexit a mortuis : ascendit ad cœlos, sedet ad dexteram Dei Patris omnipotentis, inde venturus est judicare vivos et mortuos.
+
+para
+la: Credo in Spiritum sanctum, sanctam Ecclesiam catholicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam æternam. Amen.
+
+heading 2
+fr: La Confession des péchés
+
+para
+la: Confiteor Deo omnipotenti, beatæ Mariæ semper virgini, beato Michaeli Archangelo, beato Joanni Baptistæ, sanctis Apostolis Petro et Paulo, omnibus Sanctis (et tibi, Pater), quia peccavi nimis cogitatione, verbo et opere : mea culpa, mea culpa, mea maxima culpa. Ideo precor beatam Mariam semper virginem, beatum Michaelem Archangelum, beatum Joannem Baptistam, sanctos Apostolos Petrum et Paulum, omnes Sanctos (et te, Pater), orare pro me ad Dominum Deum nostrum.
+
+para
+la: Misereatur nostri omnipotens Deus, et, dimissis peccatis nostris, perducat nos ad vitam æternam. Amen.
+
+para
+la: Indulgentiam, absolutionem et remissionem peccatorum nostrorum tribuat nobis omnipotens et misericors Dominus. Amen.
+
+rubric
+fr: Invoquons la sainte Vierge, notre bon Ange et notre saint Patron.
+
+para
+fr: Sainte Vierge, Mère de Dieu, ma mère et ma patronne, je me mets sous votre protection, et je me jette avec confiance dans le sein de votre miséricorde. Soyez, ô Mère de bonté, mon refuge dans mes besoins, ma consolation dans mes peines, et mon avocate auprès de votre adorable Fils, aujourd'hui, tous les jours de ma vie, et particulièrement à l'heure de ma mort.
+
+para
+fr: Ange du ciel, mon fidèle et charitable guide, obtenez-moi d'être si docile à vos inspirations et de régler si bien mes pas, que je ne m'écarte en rien de la voie des commandements de mon Dieu.
+
+para
+fr: Grand saint, dont j'ai l'honneur de porter le nom, protégez-moi, priez pour moi, afin que je puisse servir Dieu comme vous sur la terre, et le glorifier éternellement avec vous dans le ciel. Ainsi soit-il.
+
+== priere-du-soir
+title.fr: Prière du soir
+src: paroissienromain00tour | fr | 18-23 | 31-36
+
+para centered
+fr: Au nom du Père, et du Fils, et du Saint-Esprit. Ainsi soit-il.
+
+rubric
+fr: Mettons-nous en la présence de Dieu, et adorons-le.
+
+para
+fr: Je vous adore, ô mon Dieu, avec la soumission que m'inspire la présence de votre souveraine grandeur. Je crois en vous, parce que vous êtes la vérité même. J'espère en vous, parce que vous êtes infiniment bon. Je vous aime de tout mon cœur, parce que vous êtes souverainement aimable, et j'aime le prochain comme moi-même pour l'amour de vous.
+
+rubric
+fr: Remercions Dieu des grâces qu'il nous a faites.
+
+para
+fr: Quelles actions de grâces vous rendrai-je ô mon Dieu, pour tous les biens que j'ai reçus de vous ? Vous avez songé à moi de toute éternité, vous m'avez tiré du néant, vous avez donné votre vie pour me racheter, et vous me comblez encore tous les jours d'une infinité de faveurs. Hélas ! Seigneur, que puis-je faire en reconnaissance de tant de bontés ? Joignez-vous à moi, esprits bienheureux, pour louer le Dieu des miséricordes, qui ne cesse de faire du bien à la plus indigne et à la plus ingrate de ses créatures.
+
+rubric
+fr: Demandons à Dieu la grâce de connaître nos péchés.
+
+para
+fr: Source éternelle de lumière, Esprit-Saint, dissipez les ténèbres qui me cachent la laideur et la malice du péché. Faites-m'en concevoir une si grande horreur, ô mon Dieu, que je le haïsse, s'il se peut, autant que vous le haïssez vous-même, et que je ne craigne rien tant que de le commettre à l'avenir.
+
+rubric
+fr: Examiner sa conscience sur tous ses péchés ; rappeler dans son esprit les occasions dangereuses où l'on a été... les personnes avec qui l'on a conversé... les affaires et les emplois qui ont occupé... les mauvaises pensées... les désirs criminels... les sentiments d'envie, de colère, de haine... la négligence et les omissions des devoirs de son état, et la lâcheté dans les bonnes œuvres.
+
+para
+fr: Me voici, Seigneur, tout couvert de confusion et pénétré de douleur à la vue de mes fautes. Je viens les détester devant vous, avec un vrai déplaisir d'avoir offensé un Dieu si bon, si aimable et si digne d'être aimé. Etait-ce donc là, ô mon Dieu, ce que vous deviez attendre de ma reconnaissance, après m'avoir aimé jusqu'à répandre votre sang pour moi ? Oui, Seigneur, j'ai poussé trop loin ma malice et mon ingratitude. Je vous en demande très humblement pardon, et je vous conjure, ô mon Dieu, par cette même bonté dont j'ai ressenti tant de fois les effets, de m'accorder la grâce d'en faire dès aujourd'hui, et jusqu'à la mort, une sincère pénitence.
+
+rubric
+fr: Faisons un ferme propos de ne plus pécher.
+
+para
+fr: Que je souhaiterais, ô mon Dieu, de ne vous avoir jamais offensé ! mais puisque j'ai été assez malheureux pour vous déplaire, je vais vous témoigner la douleur que j'en ai par une conduite tout opposée à celle que j'ai gardée jusqu'ici. Je renonce dès à présent au péché et à l'occasion du péché, surtout de celui où j'ai la faiblesse de retomber si souvent. Et si vous daignez m'accorder votre grâce, ainsi que je la demande et que je l'espère, je tâcherai de remplir fidèlement mes devoirs, et rien ne sera capable de m'arrêter quand il s'agira de vous servir.
+
+heading 2
+fr: L'Oraison dominicale
+
+para
+fr: Notre Père, qui êtes aux cieux, que votre nom soit sanctifié, que votre règne arrive, que votre volonté soit faite sur la terre comme au ciel : donnez-nous aujourd'hui notre pain quotidien ; et pardonnez-nous nos offenses, comme nous pardonnons à ceux qui nous ont offensés ; et ne nous laissez pas succomber à la tentation, mais délivrez-nous du mal. Ainsi soit-il.
+
+heading 2
+fr: La Salutation angélique
+
+para
+fr: Je vous salue, Marie, pleine de grâces ; le Seigneur est avec vous ; vous êtes bénie entre toutes les femmes, et Jésus, le fruit de vos entrailles, est béni.
+
+para
+fr: Sainte Marie, Mère de Dieu, priez pour nous, pauvres pécheurs, maintenant et à l'heure de notre mort. Ainsi soit-il.
+
+heading 2
+fr: Le Symbole des Apôtres
+
+para
+fr: Je crois en Dieu, le Père tout-puissant, Créateur du ciel et de la terre : et en Jésus-Christ, son Fils unique, notre Seigneur, qui a été conçu du Saint-Esprit, est né de la Vierge Marie, a souffert sous Ponce Pilate, a été crucifié, est mort et a été enseveli, est descendu aux enfers, le troisième jour est ressuscité d'entre les morts ; est monté aux cieux, est assis à la droite de Dieu le Père tout-puissant, d'où il viendra juger les vivants et les morts.
+
+para
+fr: Je crois au Saint-Esprit, la sainte Eglise catholique, la communion des saints, la rémission des péchés, la résurrection de la chair, la vie éternelle. Ainsi soit-il.
+
+heading 2
+fr: La Confession des péchés
+
+para
+fr: Je confesse à Dieu tout-puissant, à la bienheureuse Marie toujours vierge, à saint Michel Archange, à saint Jean-Baptiste, aux Apôtres saint Pierre et saint Paul, à tous les Saints (et à vous, mon Père), que j'ai beaucoup péché par pensées, par paroles et par actions : c'est ma faute, c'est ma faute, c'est ma très grande faute. C'est pourquoi je prie la bienheureuse Marie toujours vierge, saint Michel Archange, saint Jean-Baptiste, les Apôtres saint Pierre et saint Paul, tous les Saints (et vous, mon Père), de prier pour moi le Seigneur notre Dieu.
+
+para
+fr: Que le Dieu tout-puissant nous fasse miséricorde, et qu'après nous avoir pardonné nos péchés, il nous conduise à la vie éternelle. Ainsi soit-il.
+
+para
+fr: Que le Seigneur tout-puissant et miséricordieux nous accorde le pardon, l'absolution et la rémission de nos péchés. Ainsi soit-il.
+
+rubric
+fr: Recommandons-nous à Dieu, à la sainte Vierge et aux Saints.
+
+para
+fr: Bénissez, ô mon Dieu, le repos que je vais prendre pour réparer mes forces afin de vous mieux servir. Vierge sainte, Mère de mon Dieu, et après lui mon unique espérance ; mon bon Ange, mon saint Patron, intercédez pour moi, protégez-moi pendant cette nuit, tout le temps de ma vie, et à l'heure de ma mort. Ainsi soit-il.
+
+rubric
+fr: Prions pour les vivants et pour les défunts.
+
+para
+fr: Répandez, Seigneur, vos bénédictions sur mes parents, mes bienfaiteurs, mes amis et mes ennemis. Protégez tous ceux que vous m'avez donnés pour maîtres, tant spirituels que temporels. Secourez les pauvres, les prisonniers, les affligés, les voyageurs, les malades et les agonisants. Convertissez les hérétiques, et éclairez les infidèles.
+
+para
+fr: Dieu de bonté et de miséricorde, ayez aussi pitié des âmes des fidèles qui sont dans le purgatoire. Mettez fin à leurs peines, et donnez à celles pour lesquelles je suis obligé de prier le repos et la lumière éternelle. Ainsi soit-il.

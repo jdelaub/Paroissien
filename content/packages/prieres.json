@@ -1,0 +1,8 @@
+{
+  "packageId": "prieres",
+  "packageVersion": 2026101101,
+  "rights": "domaine-public",
+  "publications": ["prieres.classiques"],
+  "title": {"fr": "Prières classiques"},
+  "minAppFormat": "1.0"
+}

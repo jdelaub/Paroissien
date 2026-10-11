@@ -1,0 +1,104 @@
+# Prières au Saint-Esprit — Paroissien romain, Mame, 1869 (paroissienromai00churgoog), latin et français en regard.
+# Le signe ¶ devant la doxologie est celui du paroissien.
+
+== veni-creator
+title.fr: Hymne au Saint-Esprit
+title.la: Veni, Creator Spiritus
+src: paroissienromai00churgoog | la fr | 75-77 | 85-87
+# Note (1) du titre retirée (variantes « dans les diocèses qui ne suivent pas l'Office réformé ») : voir README.
+
+stanza hymn
+la: Veni, Creator Spiritus, / Mentes tuorum visita, / Imple superna gratia / Quæ tu creasti pectora.
+fr: Venez, Esprit créateur, visiter les âmes de ceux qui sont à vous, et remplissez de votre grâce céleste les cœurs que vous avez créés.
+
+stanza hymn
+la: Qui diceris Paraclitus, / Altissimi donum Dei, / Fons vivus, ignis, charitas, / Et spiritalis unctio.
+fr: Vous êtes notre consolateur, le don du Dieu très-haut, la fontaine de vie, le feu sacré de la charité et l'onction spirituelle de nos âmes.
+
+stanza hymn
+la: Tu septiformis munere, / Digitus paternæ dexteræ, / Tu rite promissum Patris, / Sermone ditans guttura.
+fr: C'est vous qui répandez sur nous vos sept dons ; vous êtes le doigt de Dieu, l'objet par excellence de la promesse du Père ; vous mettez sa parole sur nos lèvres.
+
+stanza hymn
+la: Accende lumen sensibus, / Infunde amorem cordibus, / Infirma nostri corporis / Virtute firmans perpeti.
+fr: Faites briller votre lumière dans nos âmes, versez votre amour dans nos cœurs, et fortifiez à tous les instants notre chair infirme et défaillante.
+
+stanza hymn
+la: Hostem repellas longius, / Pacemque dones protinus ; / Ductore sic te prævio, / Vitemus omne noxium.
+fr: Éloignez de nous l'esprit tentateur, accordez-nous une paix durable, et que, sous votre conduite, nous évitions tout ce qui serait nuisible à notre salut.
+
+stanza hymn
+la: Per te sciamus da Patrem, / Noscamus atque Filium, / Teque utriusque Spiritum / Credamus omni tempore.
+fr: Apprenez-nous à connaître le Père, apprenez-nous à connaître le Fils : et vous, Esprit du Père et du Fils, soyez à jamais l'objet de notre foi.
+
+stanza hymn
+la: ¶ Deo Patri sit gloria, / Et Filio, qui a mortuis / Surrexit, ac Paraclito, / In sæculorum sæcula. / Amen.
+fr: ¶ Gloire dans tous les siècles à Dieu le Père, et au Fils ressuscité d'entre les morts, et au Saint-Esprit. / Ainsi soit-il.
+
+versicle V
+la: ℣. Emitte Spiritum tuum, et creabuntur.
+fr: ℣. Envoyez votre Esprit-Saint, et tout sera créé.
+
+versicle R
+la: ℟. Et renovabis faciem terræ.
+fr: ℟. Et vous renouvellerez la face de la terre.
+
+heading 2
+fr: Oraison
+
+para
+la: Deus, qui corda fidelium sancti Spiritus illustratione docuisti, da nobis in eodem Spiritu recta sapere, et de ejus semper consolatione gaudere. Per Christum Dominum nostrum.
+fr: O Dieu, qui avez instruit les cœurs de vos fidèles par la lumière du Saint-Esprit, donnez-nous, par ce même Esprit, la connaissance et l'amour de la justice, et faites qu'il nous remplisse toujours de ses divines consolations. Par J.-C. N.-S.
+
+versicle R
+la: ℟. Amen.
+fr: ℟. Ainsi soit-il.
+
+== veni-sancte-spiritus
+title.fr: Veni, sancte Spiritus
+title.la: Veni, sancte Spiritus
+src: paroissienromai00churgoog | la fr | 394-395 | 404-405
+# Prose de la messe du saint jour de la Pentecôte.
+
+rubric
+fr: Prose.
+
+stanza hymn
+la: Veni, sancte Spiritus, / Et emitte cœlitus / Lucis tuæ radium.
+fr: Venez, Esprit-Saint, et faites descendre du haut du ciel un rayon de votre lumière.
+
+stanza hymn
+la: Veni, pater pauperum ; / Veni, dator munerum ; / Veni, lumen cordium.
+fr: Venez, père des pauvres ; venez, source des grâces ; venez, lumière des cœurs.
+
+stanza hymn
+la: Consolator optime, / Dulcis hospes animæ, / Dulce refrigerium.
+fr: Vous êtes le parfait consolateur, l'hôte bienfaisant de l'âme, son rafraîchissement le plus doux.
+
+stanza hymn
+la: In labore requies, / In æstu temperies, / In fletu solatium.
+fr: Dans le travail notre repos, dans les épreuves notre soulagement, dans les larmes notre consolation.
+
+stanza hymn
+la: O lux beatissima, / Reple cordis intima / Tuorum fidelium.
+fr: O bienheureuse lumière, pénétrez et remplissez les cœurs de vos fidèles.
+
+stanza hymn
+la: Sine tuo numine, / Nihil est in homine, / Nihil est innoxium.
+fr: Sans l'assistance de votre grâce, rien dans l'homme, rien n'est innocent.
+
+stanza hymn
+la: Lava quod est sordidum, / Riga quod est aridum, / Sana quod est saucium.
+fr: Purifiez en nous ce qui est souillé, arrosez ce qui est aride, guérissez ce qui est malade.
+
+stanza hymn
+la: Flecte quod est rigidum, / Fove quod est frigidum, / Rege quod est devium.
+fr: Faites fléchir notre roideur, échauffez notre tiédeur, redressez nos voies égarées.
+
+stanza hymn
+la: Da tuis fidelibus / In te confidentibus / Sacrum septenarium.
+fr: Accordez vos dons sacrés à vos fidèles qui mettent en vous leur confiance.
+
+stanza hymn
+la: Da virtutis meritum, / Da salutis exitum, / Da perenne gaudium. / Amen. Alleluia.
+fr: Donnez-leur le mérite pendant la vie, conduisez-les au port du salut, et faites-les jouir du bonheur éternel. Ainsi soit-il. All.

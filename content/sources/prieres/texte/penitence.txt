@@ -1,0 +1,167 @@
+# Psaumes de la pénitence (numérotation de la Vulgate, comme dans le paroissien).
+# Miserere : Mame 1869 (psaumes de la pénitence, latin et français en regard ; Mame 1890 ne les donne qu'en français).
+# De profundis : Mame 1890, « Prière pour les défunts ».
+
+== miserere
+title.fr: Psaume 50
+title.la: Miserere
+src: paroissienromai00churgoog | la fr | 51-54 | 61-64
+
+stanza psalm
+la: Miserere mei, Deus, * secundum magnam misericordiam tuam ;
+fr: Ayez pitié de moi, ô mon Dieu, selon votre grande miséricorde ;
+
+stanza psalm
+la: Et secundum multitudinem miserationum tuarum * dele iniquitatem meam.
+fr: Et effacez mon iniquité, selon la multitude de vos bontés.
+
+stanza psalm
+la: Amplius lava me ab iniquitate mea, * et a peccato meo munda me.
+fr: Lavez-moi de plus en plus de mes souillures, et purifiez-moi de mon péché.
+
+stanza psalm
+la: Quoniam iniquitatem meam ego cognosco, * et peccatum meum contra me est semper.
+fr: Car je connais mon injustice, et mon crime s'élève sans cesse contre moi.
+
+stanza psalm
+la: Tibi soli peccavi, et malum coram te feci : * ut justificeris in sermonibus tuis, et vincas cum judicaris.
+fr: J'ai péché contre vous seul, et j'ai fait le mal devant vous : vous l'avez permis, afin d'être reconnu fidèle dans vos promesses, et irréprochable dans vos jugements.
+
+stanza psalm
+la: Ecce enim in iniquitatibus conceptus sum, * et in peccatis concepit me mater mea.
+fr: J'ai été conçu dans l'iniquité, et ma mère m'a engendré dans le péché.
+
+stanza psalm
+la: Ecce enim veritatem dilexisti ; * incerta et occulta sapientiæ tuæ manifestasti mihi.
+fr: Mais vous, Seigneur, vous aimez la vérité, et vous m'avez manifesté les mystères cachés de votre sagesse.
+
+stanza psalm
+la: Asperges me hyssopo, et mundabor : lavabis me, et super nivem dealbabor.
+fr: Vous m'arroserez avec l'hysope, et je serai purifié : vous me laverez, et je deviendrai plus blanc que la neige.
+
+stanza psalm
+la: Auditui meo dabis gaudium et lætitiam ; * et exsultabunt ossa humiliata.
+fr: Vous ferez entendre à mon oreille des paroles de consolation et de joie, et mes os brisés tressailliront d'allégresse.
+
+stanza psalm
+la: Averte faciem tuam a peccatis meis ; * et omnes iniquitates meas dele.
+fr: Détournez vos regards de mes offenses, et effacez toutes mes iniquités.
+
+stanza psalm
+la: Cor mundum crea in me, Deus ; * et spiritum rectum innova in visceribus meis.
+fr: Créez en moi un cœur pur, ô mon Dieu, et renouvelez dans mon âme l'esprit de droiture.
+
+stanza psalm
+la: Ne projicias me a facie tua ; * et Spiritum sanctum tuum ne auferas a me.
+fr: Ne me rejetez pas de votre présence, et ne retirez pas de moi votre Esprit-Saint.
+
+stanza psalm
+la: Redde mihi lætitiam salutaris tui ; * et spiritu principali confirma me.
+fr: Rendez-moi la joie de votre assistance salutaire, et fortifiez-moi par la grâce puissante de votre esprit.
+
+stanza psalm
+la: Docebo iniquos vias tuas ; * et impii ad te convertentur.
+fr: Alors j'enseignerai vos voies aux méchants, et les impies se convertiront à vous.
+
+stanza psalm
+la: Libera me de sanguinibus, Deus, Deus salutis meæ ; * et exsultabit lingua mea justitiam tuam.
+fr: O Dieu, Dieu sauveur, délivrez-moi du sang que j'ai versé, et ma langue célèbrera votre justice.
+
+stanza psalm
+la: Domine, labia mea aperies ; * et os meum annuntiabit laudem tuam.
+fr: Seigneur, vous ouvrirez mes lèvres, et ma bouche chantera vos louanges.
+
+stanza psalm
+la: Quoniam si voluisses sacrificium, dedissem utique ; * holocaustis non delectaberis.
+fr: Si vous aviez voulu des sacrifices, je vous en aurais offert ; mais les holocaustes ne vous sont point agréables.
+review: tache d'encre sur « , je » (p. 53) ; lecture probable
+
+stanza psalm
+la: Sacrificium Deo spiritus contribulatus ; * cor contritum et humiliatum, Deus, non despicies.
+fr: Le sacrifice qui plaît à Dieu est une âme brisée de douleur : vous ne mépriserez pas, ô mon Dieu, un cœur contrit et humilié.
+
+stanza psalm
+la: Benigne fac, Domine, in bona voluntate tua Sion, * ut ædificentur muri Jerusalem.
+fr: Soyez, Seigneur, dans votre bonté, propice à Sion, et que Jérusalem voie rebâtir ses murs.
+
+stanza psalm
+la: Tunc acceptabis sacrificium justitiæ, oblationes et holocausta ; * tunc imponent super altare tuum vitulos.
+fr: Vous agréerez alors les sacrifices de justice, les offrandes et les holocaustes ; alors on immolera sur votre autel des victimes d'actions de grâces.
+
+== de-profundis
+title.fr: Prière pour les défunts
+title.la: De profundis
+src: paroissienromain00tour | la fr | 26-27 | 39-40
+
+heading 2
+fr: Psaume 129
+
+stanza psalm
+la: De profundis clamavi ad te, Domine : * Domine, exaudi vocem meam.
+fr: Du fond de l'abîme j'ai crié vers vous, Seigneur : Seigneur, écoutez ma voix.
+
+stanza psalm
+la: Fiant aures tuæ intendentes * in vocem deprecationis meæ.
+fr: Que vos oreilles soient attentives à la voix de ma prière.
+
+stanza psalm
+la: Si iniquitates observaveris, Domine : * Domine, quis sustinebit ?
+fr: Si vous exigez, Seigneur, un compte sévère de nos iniquités, qui pourra subsister devant vous, ô mon Dieu ?
+
+stanza psalm
+la: Quia apud te propitiatio est, * et propter legem tuam sustinui te, Domine.
+fr: Mais vous aimez à pardonner ; aussi, appuyé sur votre loi, j'attends, Seigneur, votre secours.
+
+stanza psalm
+la: Sustinuit anima mea in verbo ejus : * speravit anima mea in Domino.
+fr: Mon âme l'attend, fondée sur vos promesses ; mon âme se confie dans le Seigneur.
+
+stanza psalm
+la: A custodia matutina usque ad noctem, * speret Israel in Domino.
+fr: Depuis le matin jusqu'au soir, qu'Israël espère dans le Seigneur.
+
+stanza psalm
+la: Quia apud Dominum misericordia, * et copiosa apud eum redemptio.
+fr: Car le Seigneur est plein de miséricorde, et l'on trouve en lui une abondante rédemption.
+
+stanza psalm
+la: Et ipse redimet Israel * ex omnibus iniquitatibus ejus.
+fr: C'est lui qui rachètera Israël de toutes ses iniquités.
+
+versicle V
+la: ℣. Requiem æternam dona eis, Domine.
+fr: ℣. Donnez-leur, Seigneur, le repos éternel.
+
+versicle R
+la: ℟. Et lux perpetua luceat eis.
+fr: ℟. Et que la lumière éternelle les éclaire.
+
+versicle V
+la: ℣. Requiescant in pace.
+fr: ℣. Qu'ils reposent en paix.
+
+versicle R
+la: ℟. Amen.
+fr: ℟. Ainsi soit-il.
+
+versicle V
+la: ℣. Domine, exaudi orationem meam.
+fr: ℣. Seigneur, écoutez ma prière.
+
+versicle R
+la: ℟. Et clamor meus ad te veniat.
+fr: ℟. Et que mes cris s'élèvent jusqu'à vous.
+
+heading 2
+fr: Oraison
+
+para
+fr: O Dieu, le créateur et le rédempteur de tous les fidèles, accordez aux âmes de vos serviteurs et de vos servantes la rémission de tous leurs péchés, afin qu'elles obtiennent par nos très humbles prières le pardon qu'elles ont toujours attendu de votre miséricorde. Vous qui, étant Dieu, vivez et régnez avec Dieu le Père en l'unité du Saint-Esprit, dans tous les siècles des siècles. Ainsi soit-il.
+
+versicle V
+la: ℣. Requiescant in pace.
+fr: ℣. Qu'ils reposent en paix.
+
+versicle R
+la: ℟. Amen.
+fr: ℟. Ainsi soit-il.

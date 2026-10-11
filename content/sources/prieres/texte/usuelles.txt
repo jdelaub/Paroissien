@@ -1,0 +1,95 @@
+# Prières usuelles. Latin : prière du matin ; français : prière du soir (Mame 1890), sauf mention.
+# Transcription relue sur le fac-similé. Format : voir normalize.py.
+
+== pater
+title.fr: L'Oraison dominicale
+src: paroissienromain00tour | la | 9 | 22
+src: paroissienromain00tour | fr | 20 | 33
+
+para
+la: Pater noster, qui es in cœlis, sanctificetur nomen tuum : adveniat regnum tuum : fiat voluntas tua, sicut in cœlo et in terra : panem nostrum quotidianum da nobis hodie : et dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris : et ne nos inducas in tentationem, sed libera nos a malo. Amen.
+fr: Notre Père, qui êtes aux cieux, que votre nom soit sanctifié, que votre règne arrive, que votre volonté soit faite sur la terre comme au ciel : donnez-nous aujourd'hui notre pain quotidien ; et pardonnez-nous nos offenses, comme nous pardonnons à ceux qui nous ont offensés ; et ne nous laissez pas succomber à la tentation, mais délivrez-nous du mal. Ainsi soit-il.
+
+== ave
+title.fr: La Salutation angélique
+src: paroissienromain00tour | la | 9 | 22
+src: paroissienromain00tour | fr | 20-21 | 33-34
+
+para
+la: Ave, Maria, gratia plena ; Dominus tecum : benedicta tu in mulieribus, et benedictus fructus ventris tui, Jesus.
+fr: Je vous salue, Marie, pleine de grâces ; le Seigneur est avec vous ; vous êtes bénie entre toutes les femmes, et Jésus, le fruit de vos entrailles, est béni.
+
+para
+la: Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc et in hora mortis nostræ. Amen.
+fr: Sainte Marie, Mère de Dieu, priez pour nous, pauvres pécheurs, maintenant et à l'heure de notre mort. Ainsi soit-il.
+
+== gloria-patri
+title.fr: Gloria Patri
+title.la: Gloria Patri
+src: paroissienromain00tour | la fr | 111 | 124
+# Extrait de l'ouverture des Vêpres du dimanche (« Deus, in adjutorium… ») ; l'« Alleluia » qui suit
+# dans le paroissien appartient aux Vêpres et n'est pas repris.
+
+para
+la: Gloria Patri, et Filio, et Spiritui sancto : Sicut erat in principio, et nunc, et semper, et in sæcula sæculorum. Amen.
+fr: Gloire au Père, et au Fils, et au Saint-Esprit : Maintenant et toujours, comme dès le commencement, et dans les siècles des siècles. Ainsi soit-il.
+
+== credo-apostres
+title.fr: Le Symbole des Apôtres
+src: paroissienromain00tour | la | 9-10 | 22-23
+src: paroissienromain00tour | fr | 21 | 34
+
+para
+la: Credo in Deum, Patrem omnipotentem, Creatorem cœli et terræ : et in Jesum Christum, Filium ejus unicum, Dominum nostrum, qui conceptus est de Spiritu sancto, natus ex Maria Virgine, passus sub Pontio Pilato, crucifixus, mortuus, et sepultus : descendit ad inferos, tertia die resurrexit a mortuis : ascendit ad cœlos, sedet ad dexteram Dei Patris omnipotentis, inde venturus est judicare vivos et mortuos.
+fr: Je crois en Dieu, le Père tout-puissant, Créateur du ciel et de la terre : et en Jésus-Christ, son Fils unique, notre Seigneur, qui a été conçu du Saint-Esprit, est né de la Vierge Marie, a souffert sous Ponce Pilate, a été crucifié, est mort et a été enseveli, est descendu aux enfers, le troisième jour est ressuscité d'entre les morts ; est monté aux cieux, est assis à la droite de Dieu le Père tout-puissant, d'où il viendra juger les vivants et les morts.
+
+para
+la: Credo in Spiritum sanctum, sanctam Ecclesiam catholicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam æternam. Amen.
+fr: Je crois au Saint-Esprit, la sainte Eglise catholique, la communion des saints, la rémission des péchés, la résurrection de la chair, la vie éternelle. Ainsi soit-il.
+
+== confiteor
+title.fr: La Confession des péchés
+src: paroissienromain00tour | la | 10 | 23
+src: paroissienromain00tour | fr | 21-22 | 34-35
+
+para
+la: Confiteor Deo omnipotenti, beatæ Mariæ semper virgini, beato Michaeli Archangelo, beato Joanni Baptistæ, sanctis Apostolis Petro et Paulo, omnibus Sanctis (et tibi, Pater), quia peccavi nimis cogitatione, verbo et opere : mea culpa, mea culpa, mea maxima culpa. Ideo precor beatam Mariam semper virginem, beatum Michaelem Archangelum, beatum Joannem Baptistam, sanctos Apostolos Petrum et Paulum, omnes Sanctos (et te, Pater), orare pro me ad Dominum Deum nostrum.
+fr: Je confesse à Dieu tout-puissant, à la bienheureuse Marie toujours vierge, à saint Michel Archange, à saint Jean-Baptiste, aux Apôtres saint Pierre et saint Paul, à tous les Saints (et à vous, mon Père), que j'ai beaucoup péché par pensées, par paroles et par actions : c'est ma faute, c'est ma faute, c'est ma très grande faute. C'est pourquoi je prie la bienheureuse Marie toujours vierge, saint Michel Archange, saint Jean-Baptiste, les Apôtres saint Pierre et saint Paul, tous les Saints (et vous, mon Père), de prier pour moi le Seigneur notre Dieu.
+
+para
+la: Misereatur nostri omnipotens Deus, et, dimissis peccatis nostris, perducat nos ad vitam æternam. Amen.
+fr: Que le Dieu tout-puissant nous fasse miséricorde, et qu'après nous avoir pardonné nos péchés, il nous conduise à la vie éternelle. Ainsi soit-il.
+
+para
+la: Indulgentiam, absolutionem et remissionem peccatorum nostrorum tribuat nobis omnipotens et misericors Dominus. Amen.
+fr: Que le Seigneur tout-puissant et miséricordieux nous accorde le pardon, l'absolution et la rémission de nos péchés. Ainsi soit-il.
+
+== acte-de-foi
+title.fr: Acte de foi
+src: paroissienromain00tour | fr | 11 | 24
+
+para
+fr: Mon Dieu, je crois fermement tout ce que croit et enseigne votre sainte Église catholique, parce que c'est vous qui le lui avez révélé, et que vous ne pouvez ni vous tromper ni nous tromper.
+
+== acte-d-esperance
+title.fr: Acte d'espérance
+src: paroissienromain00tour | fr | 11 | 24
+
+para
+fr: J'espère, ô mon Dieu, que vous me donnerez la vie éternelle et les grâces pour y arriver, par Notre-Seigneur Jésus-Christ, parce que vous l'avez promis, et que vous êtes infiniment bon, et fidèle à tenir vos promesses.
+
+== acte-de-charite
+title.fr: Acte de charité
+src: paroissienromain00tour | fr | 12 | 25
+
+para
+fr: Oui, mon Dieu, je vous aime de tout mon cœur, de toute mon âme, de tout mon esprit, de toutes mes forces ; je vous promets d'aimer mon prochain comme moi-même pour l'amour de vous.
+
+== acte-de-contrition
+title.fr: Acte de contrition
+src: cihm_990278 | fr | 25 | 28
+# Le Paroissien de poche de 1914 (cihm_80314, p. 25-26) donne le même texte, mais la fin y est
+# masquée par une tache d'encre sur l'exemplaire numérisé.
+
+para
+fr: Mon Dieu, je me repens de tout mon cœur d'avoir offensé votre souveraine majesté et votre bonté infinie. Je déteste tous mes péchés pour l'amour de vous ; je me propose fermement de les confesser et de m'en corriger : et j'aimerais mieux mourir que de vous offenser encore.

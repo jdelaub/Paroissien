@@ -1,0 +1,223 @@
+#!/usr/bin/env python3
+"""Transcriptions relues (texte/*.txt) → content/data/prieres.classiques/ (format canonique v1).
+
+Bibliothèque standard seulement ; à lancer avec python3 -I depuis n'importe où :
+
+    python3 -I content/sources/prieres/normalize.py
+
+Format des transcriptions (une unité de lecture par fichier, dans l'ordre de UNITS) :
+
+    # commentaire
+    == clé                          une prière : bloc heading d'identifiant « clé »
+    title.fr: Titre imprimé         titre (title.la facultatif)
+    src: ident | langues | pages | images     source archive.org (plusieurs lignes possibles)
+    removed: texte retiré           mention retirée (indulgence en jours…), listée dans le README
+
+    type [attributs]                un bloc ; types : para [style], rubric, versicle V|R,
+    la: texte latin                 stanza hymn|psalm|poem, heading 2
+    fr: texte français
+    review: raison                  → "x-review": "à vérifier : raison"
+
+Conventions dans le texte : ℣ ℟ ✠ † → symboles ; « * » isolé → astérisque de psalmodie ; « / » isolé →
+saut de ligne ; _texte_ → italique. La typographie française (apostrophe ’, espace fine insécable avant
+; : ! ? et dans « ») est appliquée ici, pas dans les transcriptions.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+import sys
+import unicodedata
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+CONTENT = HERE.parents[1]
+OUT = CONTENT / "data" / "prieres.classiques"
+NNBSP = " "
+
+UNITS = [
+    ("usuelles", "Prières usuelles"),
+    ("matin-soir", "Prières du matin et du soir"),
+    ("mariales", "Prières à la sainte Vierge"),
+    ("esprit-saint", "Prières au Saint-Esprit"),
+    ("louange", "Hymnes et cantiques"),
+    ("penitence", "Psaumes de la pénitence"),
+    ("devotion", "Prières de dévotion"),
+    ("litanies", "Litanies"),
+]
+
+EDITIONS = {
+    "paroissienromain00tour": "Paroissien romain, Tours, A. Mame et fils, 1890 (approuvé par Mgr Meignan)",
+    "paroissienromai00churgoog": "Paroissien romain, Tours, Alfred Mame et fils, 1869",
+    "bub_gb_PcH1G0A8jZUC": "Grand paroissien romain très-complet, Lecoffre, 1860",
+    "leparoissienroma00unse": "Le paroissien romain, Limoges, Marc Barbou et Cie, [1895]",
+    "paroissienromain00cath": "Paroissien romain, Braine-le-Comte, Zech, 1901",
+    "cihm_80314": "Paroissien de poche, Québec, I.-P. Déry, 1914 (imprimatur Malines, 10 mai 1914)",
+    "cihm_990278": "Nouveau paroissien romain, Saint-Hyacinthe (Québec), É. Solis, 1913 (imprimatur Malines, 31 décembre 1913)",
+}
+
+SYM = {"℣": "V", "℟": "R", "✠": "cross", "†": "dagger"}
+
+
+def typo(text: str) -> str:
+    text = unicodedata.normalize("NFC", text)
+    text = text.replace("'", "’")
+    text = re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+([,.)])", r"\1", text)
+    text = re.sub(r"\(\s+", "(", text)
+    text = re.sub(r"\s*([;:!?])", NNBSP + r"\1", text)
+    text = re.sub(r"«\s*", "«" + NNBSP, text)
+    text = re.sub(r"\s*»", NNBSP + "»", text)
+    return text
+
+
+def inlines(text: str) -> list:
+    """Texte de transcription → liste d'inlines (symboles, astérisque, saut de ligne, italique)."""
+    parts = re.split(r"(℣\.?|℟\.?|✠|†|(?<= )\*(?= |$)|(?<=^)\*(?= )|(?<= )/(?= )|_[^_]+_)", typo(text))
+    out: list = []
+    for i, part in enumerate(parts):
+        if i % 2 == 0:
+            if part:
+                out.append(part)
+        elif part.startswith("_"):
+            out.append({"m": ["i"], "c": [part[1:-1]]})
+        elif part == "*":
+            out.append({"sym": "star"})
+        elif part == "/":
+            if out and isinstance(out[-1], str):
+                out[-1] = out[-1].rstrip()
+            out.append({"br": 1})
+            if i + 1 < len(parts):
+                parts[i + 1] = parts[i + 1].lstrip()
+        else:
+            out.append({"sym": SYM[part[0]]})
+    return [n for n in out if n != ""]
+
+
+def parse(path: Path) -> list[dict]:
+    """Renvoie les prières d'un fichier : {key, title, src, removed, blocks:[{type, attrs, t, review}]}."""
+    prayers: list[dict] = []
+    block: dict | None = None
+    for lineno, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        line = raw.rstrip()
+        if not line or line.startswith("#"):
+            block = None if not line else block
+            continue
+        where = f"{path.name}:{lineno}"
+        if line.startswith("== "):
+            prayers.append({"key": line[3:].strip(), "title": {}, "src": [], "removed": [], "blocks": [], "where": where})
+            block = None
+            continue
+        cur = prayers[-1]
+        m = re.match(r"^(title\.(la|fr)|src|removed|la|fr|review):\s?(.*)$", line)
+        if m:
+            key, value = m.group(1), m.group(3)
+            if key.startswith("title."):
+                cur["title"][m.group(2)] = value
+            elif key == "src":
+                ident, langs, pages, images = [p.strip() for p in value.split("|")]
+                cur["src"].append({"archive": ident, "lang": langs.split(), "pages": pages, "images": images})
+            elif key == "removed":
+                cur["removed"].append(value)
+            elif key == "review":
+                if block is None:
+                    raise SystemExit(f"{where} : review hors d'un bloc")
+                block["review"] = value
+            else:
+                if block is None:
+                    raise SystemExit(f"{where} : texte hors d'un bloc")
+                block["t"][key] = (block["t"].get(key, "") + " " + value).strip()
+            continue
+        words = line.split()
+        btype, args = words[0], words[1:]
+        if btype not in {"para", "rubric", "versicle", "stanza", "heading", "item"}:
+            raise SystemExit(f"{where} : type de bloc inconnu {btype!r}")
+        attrs: dict = {}
+        if btype == "para" and args:
+            attrs["style"] = args[0]
+        elif btype == "versicle":
+            attrs["role"] = args[0]
+        elif btype == "stanza":
+            attrs["kind"] = args[0] if args else "hymn"
+        elif btype == "heading":
+            attrs["level"] = int(args[0]) if args else 2
+        block = {"type": btype, "attrs": attrs, "t": {}, "review": None, "where": where}
+        cur["blocks"].append(block)
+    return prayers
+
+
+def source_attr(src: list[dict]) -> list[dict]:
+    out = []
+    for s in src:
+        first = s["images"].split("-")[0]
+        out.append({
+            "archive": s["archive"],
+            "edition": EDITIONS[s["archive"]],
+            "lang": s["lang"],
+            "pages": s["pages"],
+            "images": s["images"],
+            "url": f"https://archive.org/details/{s['archive']}/page/n{first}",
+        })
+    return out
+
+
+def build() -> dict:
+    report = {"prayers": [], "reviews": [], "removed": []}
+    blocks_by_unit: dict[str, list[dict]] = {}
+    for unit, _toc in UNITS:
+        path = HERE / "texte" / f"{unit}.txt"
+        if not path.exists():
+            print(f"(unité {unit} absente : ignorée)")
+            continue
+        rows: list[dict] = []
+        for p in parse(path):
+            heading = {"id": p["key"], "type": "heading", "level": 1, "x-source": source_attr(p["src"]),
+                       "t": {lang: inlines(title) for lang, title in sorted(p["title"].items())}}
+            rows.append(heading)
+            langs = set()
+            for n, b in enumerate(p["blocks"], 1):
+                row = {"id": f"{p['key']}.{n}", "type": b["type"], **b["attrs"]}
+                if b["review"]:
+                    row["x-review"] = "à vérifier : " + b["review"]
+                    report["reviews"].append((row["id"], b["review"]))
+                row["t"] = {lang: inlines(text) for lang, text in sorted(b["t"].items())}
+                langs |= set(row["t"])
+                rows.append(row)
+            report["prayers"].append((unit, p["key"], p["title"].get("fr", ""), sorted(langs), p["src"]))
+            report["removed"] += [(p["key"], r) for r in p["removed"]]
+        blocks_by_unit[unit] = rows
+    return {"blocks": blocks_by_unit, "report": report}
+
+
+def write(result: dict) -> None:
+    (OUT / "blocks").mkdir(parents=True, exist_ok=True)
+    meta = json.loads((HERE / "publication.base.json").read_text(encoding="utf-8"))
+    meta["divisions"] = [{"id": unit, "kind": "section", "toc": toc, "unit": True}
+                         for unit, toc in UNITS if unit in result["blocks"]]
+    (OUT / "publication.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    for unit, rows in result["blocks"].items():
+        text = "".join(json.dumps(r, ensure_ascii=False, separators=(",", ":")) + "\n" for r in rows)
+        (OUT / "blocks" / f"{unit}.jsonl").write_text(text, encoding="utf-8")
+
+
+def main() -> int:
+    result = build()
+    write(result)
+    rep = result["report"]
+    la = sum(1 for *_x, langs, _s in rep["prayers"] if "la" in langs)
+    fr = sum(1 for *_x, langs, _s in rep["prayers"] if "fr" in langs)
+    print(f"{len(rep['prayers'])} prières (fr : {fr}, la : {la}) ; {len(rep['reviews'])} blocs à vérifier ;"
+          f" {len(rep['removed'])} mentions retirées → {OUT.relative_to(CONTENT)}")
+    if "-v" in sys.argv:
+        for unit, key, title, langs, src in rep["prayers"]:
+            print(f"  {unit:12} {key:28} {'+'.join(langs):6} {title}")
+        for bid, why in rep["reviews"]:
+            print(f"  à vérifier {bid} : {why}")
+        for key, text in rep["removed"]:
+            print(f"  retiré {key} : {text}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
