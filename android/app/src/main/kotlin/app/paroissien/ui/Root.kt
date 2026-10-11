@@ -95,8 +95,8 @@ fun ParoissienRoot(graph: AppGraph) {
                                 onBack = { backStack.removeLastOrNull() },
                             )
                         }
-                        entry<LibraryKey> { LibraryScreen(graph, open) }
-                        entry<SeriesKey> { key -> SeriesScreen(graph, key, open, onBack = { backStack.removeLastOrNull() }) }
+                        entry<LibraryKey> { LibraryScreen(graph, settings, open) }
+                        entry<SeriesKey> { key -> SeriesScreen(graph, settings, key, open, onBack = { backStack.removeLastOrNull() }) }
                         entry<BookmarksKey> { BookmarksScreen(graph, open) }
                         entry<SearchKey> { SearchScreen(graph, open) }
                         entry<ReaderKey> { key -> ReaderScreen(graph, key, settings, open, onBack = { backStack.removeLastOrNull() }) }

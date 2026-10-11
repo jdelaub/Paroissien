@@ -222,6 +222,7 @@ Les mesures se font sur le téléphone de référence, avec un APK *release* con
 - **Avant la phase 4** (tranché le 11/10/2026, ADR 009) : Ordo de référence d'un monastère (Le Barroux ou Fontgombault) ramené au romain de 1962 ; solennités extérieures activées par défaut ; droit en vigueur, plus la discipline traditionnelle en option ; 1962 tel qu'imprimé.
 - **Après la phase 4** (tranché le 11/10/2026) :
   - **pas de plafond de taille** pour l'APK : le budget de 30 Mo d'IzzyOnDroid ne vaut que pour une diffusion publique, non prévue ; la CI affiche la taille sans l'imposer ;
+  - **identité des livres** : chaque livre a sa reliure (cuir, dorure ou fer à froid, motif, nerfs), son papier (teinte, encre, grammage : fin pour un gros livre, épais pour un livret), sa tranche et ses rubans ; la couverture est la page d'avant la première ; un réglage « Livres : tous pareils » uniformise ;
   - **images pieuses** : aucune image fournie par défaut. L'utilisateur choisira lui-même une bibliothèque, et chacun peut numériser ses propres images (bords détectés, perspective, contraste, exposition, compression).
 - **Avant la phase 5** : mode de messe par défaut (« assemblée » recommandé) ; versions rubricales (1960 seulement au MVP).
 - **À la porte A** : police par défaut (EB Garamond pour les livres liturgiques, Literata en option de lecture) ; seuil de double page sur téléphone.

@@ -67,6 +67,14 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.navigation3.runtime.NavKey
 import app.paroissien.core.data.CardPlacement
 import app.paroissien.core.reading.book.CardMark
+import app.paroissien.library.subtitle
+import app.paroissien.library.BookIdentities
+import app.paroissien.core.reading.book.BookLook
+import app.paroissien.core.designsystem.bookThickness
+import app.paroissien.core.designsystem.PaperWeight
+import app.paroissien.core.designsystem.PaperTheme
+import app.paroissien.core.designsystem.BookCover
+import androidx.compose.runtime.CompositionLocalProvider
 import app.paroissien.library.PiousImage
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.ui.text.style.TextAlign
@@ -162,14 +170,34 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     BackHandler(enabled = panel != null) { panel = null }
 
     val fonts = rememberBookFonts(settings.bookFace())
-    val paper = LocalPaperColors.current
+    // L'identité du livre : son papier en thème clair (les autres thèmes, choisis pour le confort, l'emportent), sa
+    // tranche, sa couverture, ses rubans ; un papier fin plie plus volontiers qu'un papier épais.
+    val identity = remember(publication, entry, settings.bookIdentity) { BookIdentities.of(publication, entry, uniform = !settings.bookIdentity || isDemo) }
+    val themePaper = LocalPaperColors.current
+    val ownPaper = settings.bookIdentity && !isDemo && settings.paperTheme() == PaperTheme.CLAIR
+    val paper = remember(identity, themePaper, ownPaper) { if (ownPaper) identity.paper.colors(themePaper) else themePaper }
     val typography = remember(fonts, paper, settings.scaleIndex) { BookTypography(fonts, paper, SCALES[settings.scaleIndex.coerceIn(0, SCALES.lastIndex)]) }
     val turn = settings.turnStyle()
-    val configuration = remember(turn) { MekuriConfiguration(reducedMotionOverride = if (turn == TurnStyle.AUCUN) true else null) }
+    val configuration = remember(turn, identity.paper.weight) {
+        MekuriConfiguration(foldRadius = identity.paper.weight.foldRadius, reducedMotionOverride = if (turn == TurnStyle.AUCUN) true else null)
+    }
+    val totalBlocks = units.sumOf { it.blockCount }.coerceAtLeast(1)
+    val before = units.take(unitIndex.coerceAtLeast(0)).sumOf { it.blockCount }
+    val look = BookLook(
+        edges = identity.edges,
+        weight = identity.paper.weight,
+        showThrough = ownPaper && identity.paper.weight == PaperWeight.BIBLE,
+        progress = (before / totalBlocks.toFloat())..((before + (unit?.blockCount ?: 0)) / totalBlocks.toFloat()),
+        thickness = (bookThickness(identity.pages) * 80).dp,
+        cover = if (unitIndex == 0 && entry != null) {
+            { BookCover(identity, entry.title, entry.subtitle(), Modifier.fillMaxSize(), flat = true) }
+        } else null,
+    )
 
     Box(Modifier.fillMaxSize().background(paper.background)) {
         blocks?.let { book ->
             key(unitId, language) {
+                CompositionLocalProvider(LocalPaperColors provides paper) {
                 BookReader(
                     blocks = book,
                     typography = typography,
@@ -193,7 +221,9 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                     onTurnPastEnd = units.getOrNull(unitIndex + 1)?.let { next -> { openAt(next.id, null, 0) } },
                     onTurnPastStart = units.getOrNull(unitIndex - 1)?.let { previous -> { openAt(previous.id, null, 0, end = true) } },
                     initialAtEnd = atEnd,
+                    look = look,
                 )
+                }
             }
         }
 
@@ -211,6 +241,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
             Panel.TOC -> if (entry != null) TocPanel(graph, entry, language, unitId, onClose = { panel = null }) { e -> openAt(e.unit, e.blockId, 0); panel = null }
             Panel.RIBBONS -> RibbonPanel(
                 ribbons = ribbons,
+                // Les rubans cousus dans ce livre, plus ceux qu'on y aurait posés en mode « tous pareils ».
+                slots = (identity.ribbons + ribbons.map { it.slot }).distinct().sorted(),
                 unitTitle = { entry?.unitTitle(it) ?: "" },
                 onPlace = { slot ->
                     val here = unitId
@@ -373,6 +405,7 @@ private fun TocPanel(graph: AppGraph, entry: LibraryEntry, language: String, cur
 @Composable
 private fun RibbonPanel(
     ribbons: List<Ribbon>,
+    slots: List<Int>,
     unitTitle: (String) -> String,
     onPlace: (Int) -> Unit,
     onRemove: (Int) -> Unit,
@@ -383,7 +416,7 @@ private fun RibbonPanel(
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Text(stringResource(R.string.ribbons_hint), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary)
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                RibbonStyle.slots.indices.forEach { slot ->
+                slots.forEach { slot ->
                     val placed = ribbons.firstOrNull { it.slot == slot }
                     Column(
                         Modifier.combinedClickable(onClick = { onPlace(slot); onClose() }, onLongClick = { onRemove(slot) }).padding(4.dp),

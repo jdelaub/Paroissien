@@ -47,6 +47,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.ui.graphics.drawscope.translate
+import androidx.compose.ui.graphics.drawscope.withTransform
+import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.semantics.semantics
@@ -59,7 +61,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.max
+import app.paroissien.core.designsystem.EdgeFinish
 import app.paroissien.core.designsystem.PaperColors
+import app.paroissien.core.designsystem.PaperWeight
 import app.paroissien.core.designsystem.paperBackground
 import app.paroissien.core.reading.turn.MekuriConfiguration
 import app.paroissien.core.reading.turn.MekuriPager
@@ -79,6 +83,20 @@ enum class SpreadMode { AUTO, SINGLE, DOUBLE }
  * unité précédente (-1) ou suivante (+1), pour que sa queue pende du bon côté.
  */
 data class RibbonMark(val slot: Int, val anchor: Anchor?, val elsewhere: Int = 0)
+
+/**
+ * L'apparence matérielle du livre ouvert : sa tranche (dorée, rouge, naturelle), son papier (plus il est fin, plus
+ * les pages de la tranche sont serrées, et le papier bible laisse deviner le verso), sa place dans l'ouvrage
+ * ([progress], de 0 à 1, pour l'épaisseur de la tranche de chaque côté) et sa couverture, page d'avant la première.
+ */
+class BookLook(
+    val edges: EdgeFinish = EdgeFinish.PLAIN,
+    val weight: PaperWeight = PaperWeight.REGULAR,
+    val showThrough: Boolean = false,
+    val progress: ClosedFloatingPointRange<Float> = 0f..1f,
+    val thickness: Dp = 6.dp,
+    val cover: (@Composable () -> Unit)? = null,
+)
 
 private val PageHorizontal = 28.dp
 private val PageTop = 18.dp
@@ -116,6 +134,7 @@ fun BookReader(
     onTurnPastEnd: (() -> Unit)? = null,
     onTurnPastStart: (() -> Unit)? = null,
     initialAtEnd: Boolean = false,
+    look: BookLook = BookLook(),
 ) {
     val paper = typography.paper
     Box(modifier.fillMaxSize().background(paper.background)) {
@@ -149,28 +168,32 @@ fun BookReader(
                 paginated(result)
             }
             val paged = book ?: return@BoxWithConstraints
+            // Avec une couverture, elle est la page 0 du pager : le texte commence à 1.
+            val offset = if (look.cover != null) 1 else 0
+            val count = paged.pages.size + offset
 
-            val state = rememberMekuriPagerState(pageCount = paged.pages.size, initialPage = anchor?.let(paged::pageOf) ?: 0)
+            val state = rememberMekuriPagerState(pageCount = count, initialPage = anchor?.let { paged.pageOf(it) + offset } ?: 0)
             val currentAnchor by rememberUpdatedState(anchor)
             val anchorChanged by rememberUpdatedState(onAnchorChange)
             LaunchedEffect(paged, double, state) {
                 val held = currentAnchor
                 when {
-                    held != null -> state.scrollToPage(paged.pageOf(held))
-                    initialAtEnd -> state.scrollToPage(paged.pages.lastIndex)
+                    held != null -> state.scrollToPage(paged.pageOf(held) + offset)
+                    initialAtEnd -> state.scrollToPage(count - 1)
                 }
                 snapshotFlow { state.currentPage }.collect { page ->
-                    val shown = visiblePages(page, double, paged.pages.size)
-                    val held = currentAnchor?.let(paged::pageOf)
-                    if (held == null || held !in shown) paged.pages.getOrNull(page)?.let { anchorChanged(it.anchor) }
+                    val shown = visiblePages(page, double, count)
+                    val held = currentAnchor?.let { paged.pageOf(it) + offset }
+                    // Sur la couverture, rien ne change : la position reste celle du texte.
+                    if (held == null || held !in shown) paged.pages.getOrNull(page - offset)?.let { anchorChanged(it.anchor) }
                 }
             }
 
             // Saut demandé de l'extérieur (sommaire, ruban, recherche) : on ouvre la page de l'ancre si elle n'est pas
             // déjà sous les yeux ; un tour de page ordinaire ne déclenche donc rien.
             LaunchedEffect(paged, anchor) {
-                val target = anchor?.let(paged::pageOf) ?: return@LaunchedEffect
-                if (target !in visiblePages(state.currentPage, double, paged.pages.size)) state.scrollToPage(target)
+                val target = anchor?.let { paged.pageOf(it) + offset } ?: return@LaunchedEffect
+                if (target !in visiblePages(state.currentPage, double, count)) state.scrollToPage(target)
             }
 
             MekuriPager(
@@ -184,14 +207,23 @@ fun BookReader(
                 slide = slide,
                 onBlockedTurn = { forward -> if (forward) onTurnPastEnd?.invoke() else onTurnPastStart?.invoke() },
             ) { index ->
-                val here = remember(ribbons, paged, index) { ribbons.filter { it.anchor != null && paged.pageOf(it.anchor) == index }.map { it.slot } }
-                PageView(paged.pages[index], index, sideOf(index, double), paged.pages.size, typography, margins, contentWidth, contentHeight, here)
+                if (index < offset) {
+                    look.cover?.invoke()
+                } else {
+                    val i = index - offset
+                    val side = sideOf(index, double)
+                    val here = remember(ribbons, paged, i) { ribbons.filter { it.anchor != null && paged.pageOf(it.anchor) == i }.map { it.slot } }
+                    // Le verso d'une page de droite est la suivante ; celui d'une page de gauche, la précédente.
+                    val verso = if (look.showThrough) paged.pages.getOrNull(if (side == PageSide.LEFT) i - 1 else i + 1) else null
+                    PageView(paged.pages[i], i, side, paged.pages.size, typography, margins, contentWidth, contentHeight, here, look, verso)
+                }
             }
 
             // Queues des rubans qui marquent une autre page : à gauche ce qui précède, à droite ce qui suit.
-            val shown = visiblePages(state.currentPage, double, paged.pages.size)
+            val shown = visiblePages(state.currentPage, double, count).map { it - offset }.filter { it >= 0 }.toSet()
+            fun sideOfPage(p: Int) = if (shown.isEmpty()) 1 else if (p in shown) 0 else if (p < shown.min()) -1 else 1
             val tails = ribbons.mapNotNull { r ->
-                val side = r.anchor?.let { a -> paged.pageOf(a).let { p -> if (p in shown) 0 else if (p < shown.min()) -1 else 1 } } ?: r.elsewhere
+                val side = r.anchor?.let { a -> sideOfPage(paged.pageOf(a)) } ?: r.elsewhere
                 if (side == 0) null else r.slot to side
             }
             // Elles pendent dans la bande réservée, juste sous le folio.
@@ -200,7 +232,7 @@ fun BookReader(
             RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
 
             // Images pieuses : celles de la page ouverte au milieu de la tête, les autres à gauche ou à droite.
-            val placed = cards.map { c -> c to (c.anchor?.let { a -> paged.pageOf(a).let { p -> if (p in shown) 0 else if (p < shown.min()) -1 else 1 } } ?: c.elsewhere) }
+            val placed = cards.map { c -> c to (c.anchor?.let { a -> sideOfPage(paged.pageOf(a)) } ?: c.elsewhere) }
             CardTops(placed.filter { it.second == 0 }.map { it.first }, paper, wide = true, onCardTap, Modifier.align(Alignment.TopCenter))
             CardTops(placed.filter { it.second < 0 }.map { it.first }, paper, wide = false, onCardTap, Modifier.align(Alignment.TopStart).padding(start = margins.horizontal))
             CardTops(placed.filter { it.second > 0 }.map { it.first }, paper, wide = false, onCardTap, Modifier.align(Alignment.TopEnd).padding(end = margins.horizontal))
@@ -243,8 +275,10 @@ private fun PageView(
     contentWidth: Dp,
     contentHeight: Dp,
     ribbonSlots: List<Int>,
+    look: BookLook,
+    verso: LaidOutPage?,
 ) {
-    Box(Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper).lyingRibbons(ribbonSlots, side, t.paper.isDark, margins.horizontal)) {
+    Box(Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper, look).lyingRibbons(ribbonSlots, side, t.paper.isDark, margins.horizontal)) {
         Column(Modifier.fillMaxSize().padding(start = margins.horizontal, end = margins.horizontal, top = margins.top, bottom = margins.bottom)) {
             BasicText(
                 if (number > 0) page.runningHead else "",
@@ -253,7 +287,7 @@ private fun PageView(
                 overflow = TextOverflow.Ellipsis,
                 modifier = Modifier.fillMaxWidth().height(Header),
             )
-            PageContent(page, Modifier.size(contentWidth, contentHeight))
+            PageContent(page, verso, Modifier.size(contentWidth, contentHeight))
             BasicText(
                 if (number > 0) number.toString() else "",
                 style = t.folio,
@@ -264,10 +298,21 @@ private fun PageView(
 }
 
 @Composable
-private fun PageContent(page: LaidOutPage, modifier: Modifier) {
+private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, modifier: Modifier) {
     val density = LocalDensity.current
     Box(modifier) {
         Canvas(Modifier.fillMaxSize()) {
+            // Papier bible : le texte du verso transparaît à peine, en miroir.
+            verso?.let { back ->
+                withTransform({ scale(-1f, 1f, pivot = Offset(size.width / 2, size.height / 2)) }) {
+                    back.items.forEach { item ->
+                        when (item) {
+                            is PageItem.Lines -> drawLines(item, alpha = SHOW_THROUGH)
+                            is PageItem.Glyph -> translate(item.x, item.y) { drawText(item.layout, alpha = SHOW_THROUGH) }
+                        }
+                    }
+                }
+            }
             page.items.forEach { item ->
                 when (item) {
                     is PageItem.Lines -> drawLines(item)
@@ -288,15 +333,21 @@ private fun PageContent(page: LaidOutPage, modifier: Modifier) {
     }
 }
 
-private fun DrawScope.drawLines(item: PageItem.Lines) {
+/** Opacité du verso qui transparaît sur un papier bible. */
+private const val SHOW_THROUGH = 0.055f
+
+private fun DrawScope.drawLines(item: PageItem.Lines, alpha: Float = 1f) {
     // Un peu de marge latérale pour l'italique qui déborde ; rien au-dessus ni au-dessous des lignes retenues.
     clipRect(left = -size.width, top = item.y, right = size.width * 2, bottom = item.y + item.height) {
-        translate(item.x, item.y - item.top) { drawText(item.layout) }
+        translate(item.x, item.y - item.top) { drawText(item.layout, alpha = alpha) }
     }
 }
 
-/** Ombre de la reliure côté dos, et tranche du côté libre, d'autant plus épaisse qu'il reste de pages (rapport 07). */
-private fun Modifier.bookEdges(side: PageSide, number: Int, pageCount: Int, paper: PaperColors): Modifier = drawWithContent {
+/**
+ * Ombre de la reliure côté dos, et tranche du côté libre : d'autant plus épaisse qu'il reste de pages dans tout
+ * l'ouvrage (ou qu'on en a lu, pour une page de gauche) ; dorée, rouge ou naturelle ; lignes serrées sur papier fin.
+ */
+private fun Modifier.bookEdges(side: PageSide, number: Int, pageCount: Int, paper: PaperColors, look: BookLook): Modifier = drawWithContent {
     drawContent()
     val shade = Color.Black.copy(alpha = if (paper.isDark) 0.35f else 0.10f)
     val gutter = 26.dp.toPx()
@@ -314,15 +365,22 @@ private fun Modifier.bookEdges(side: PageSide, number: Int, pageCount: Int, pape
         alpha = gutterAlpha,
     )
     val last = (pageCount - 1).coerceAtLeast(1)
-    val fraction = if (side == PageSide.LEFT) number / last.toFloat() else (last - number) / last.toFloat()
-    val band = (1.dp + 5.dp * fraction.coerceIn(0f, 1f)).toPx()
+    val read = look.progress.start + (look.progress.endInclusive - look.progress.start) * (number / last.toFloat())
+    val fraction = (if (side == PageSide.LEFT) read else 1f - read).coerceIn(0f, 1f)
+    val band = (1.dp + look.thickness * fraction).toPx()
     val freeAtRight = side != PageSide.LEFT
     val x0 = if (freeAtRight) size.width - band else 0f
-    drawRect(paper.hairline.copy(alpha = 0.7f), topLeft = Offset(x0, 0f), size = Size(band, size.height))
-    val step = 1.5.dp.toPx()
+    val edge: Brush = when (look.edges) {
+        EdgeFinish.GILT -> Brush.verticalGradient(listOf(Color(0xFF8A6A1C), Color(0xFFF0DB94), Color(0xFFC9A44C), Color(0xFF8A6A1C)))
+        EdgeFinish.RED -> Brush.verticalGradient(listOf(Color(0xFF7E1A16), Color(0xFFB0332B), Color(0xFF8A201B)))
+        EdgeFinish.PLAIN -> SolidColor(paper.hairline.copy(alpha = 0.7f))
+    }
+    drawRect(edge, topLeft = Offset(x0, 0f), size = Size(band, size.height))
+    val step = look.weight.stepDp.dp.toPx()
+    val line = if (look.edges == EdgeFinish.PLAIN) paper.surface.copy(alpha = 0.9f) else Color.Black.copy(alpha = 0.12f)
     var x = x0 + step / 2
     while (x < x0 + band) {
-        drawLine(paper.surface.copy(alpha = 0.9f), Offset(x, 0f), Offset(x, size.height), strokeWidth = 0.5.dp.toPx())
+        drawLine(line, Offset(x, 0f), Offset(x, size.height), strokeWidth = 0.5.dp.toPx())
         x += step
     }
 }

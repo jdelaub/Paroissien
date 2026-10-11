@@ -39,6 +39,7 @@ fun ReaderSettingsRow(settings: ReaderSettings, change: ((ReaderSettings) -> Rea
         Setting(stringResource(R.string.setting_turn, stringResource(turnLabel(settings.turnStyle())))) { change { it.copy(turn = settings.turnStyle().next().name) } }
         Setting(stringResource(R.string.setting_language, settings.language)) { change { it.copy(language = if (it.language == "fr") "la" else "fr") } }
         Setting(stringResource(if (settings.protectEdges) R.string.setting_edges_on else R.string.setting_edges_off)) { change { it.copy(protectEdges = !it.protectEdges) } }
+        Setting(stringResource(if (settings.bookIdentity) R.string.setting_identity_on else R.string.setting_identity_off)) { change { it.copy(bookIdentity = !it.bookIdentity) } }
         Setting(stringResource(if (settings.showMeasures) R.string.setting_measures_on else R.string.setting_measures_off)) { change { it.copy(showMeasures = !it.showMeasures) } }
     }
 }

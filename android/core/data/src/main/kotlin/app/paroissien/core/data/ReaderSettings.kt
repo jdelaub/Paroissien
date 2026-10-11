@@ -24,6 +24,8 @@ data class ReaderSettings(
     val protectEdges: Boolean = false,
     val showMeasures: Boolean = false,
     val language: String = "fr",
+    /** Chaque livre a sa reliure, son papier, sa tranche et ses signets ; sinon, tous pareils. */
+    val bookIdentity: Boolean = true,
     /** Rite du calendrier : "1962" ou "1969". */
     val rite: String = "1962",
     val externalSolemnities: Boolean = true,
@@ -54,6 +56,7 @@ class ReaderSettingsStore(context: Context) {
             p[EDGES] = next.protectEdges
             p[MEASURES] = next.showMeasures
             p[LANGUAGE] = next.language
+            p[IDENTITY] = next.bookIdentity
             p[RITE] = next.rite
             p[EXTERNAL] = next.externalSolemnities
             p[TRADITIONAL] = next.traditionalPenance
@@ -76,6 +79,7 @@ class ReaderSettingsStore(context: Context) {
             protectEdges = p[EDGES] ?: d.protectEdges,
             showMeasures = p[MEASURES] ?: d.showMeasures,
             language = p[LANGUAGE] ?: d.language,
+            bookIdentity = p[IDENTITY] ?: d.bookIdentity,
             rite = p[RITE] ?: d.rite,
             externalSolemnities = p[EXTERNAL] ?: d.externalSolemnities,
             traditionalPenance = p[TRADITIONAL] ?: d.traditionalPenance,
@@ -96,6 +100,7 @@ class ReaderSettingsStore(context: Context) {
         val EDGES = booleanPreferencesKey("bords_proteges")
         val MEASURES = booleanPreferencesKey("mesures")
         val LANGUAGE = stringPreferencesKey("langue")
+        val IDENTITY = booleanPreferencesKey("identite_des_livres")
         val RITE = stringPreferencesKey("rite")
         val EXTERNAL = booleanPreferencesKey("solennites_exterieures")
         val TRADITIONAL = booleanPreferencesKey("penitence_traditionnelle")

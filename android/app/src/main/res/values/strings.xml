@@ -59,6 +59,8 @@
     <string name="setting_language">Langue : %1$s</string>
     <string name="setting_edges_on">Bords protégés : oui</string>
     <string name="setting_edges_off">Bords protégés : non</string>
+    <string name="setting_identity_on">Livres : chacun sa reliure</string>
+    <string name="setting_identity_off">Livres : tous pareils</string>
     <string name="setting_measures_on">Mesures : oui</string>
     <string name="setting_measures_off">Mesures : non</string>
 
