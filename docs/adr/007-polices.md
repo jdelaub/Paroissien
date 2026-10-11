@@ -36,9 +36,12 @@ Les livres liturgiques demandent ℣ ℟ ✠ et les voyelles accentuées du lati
 - (−) Les signes de secours (✠, U+202F) n'ont pas exactement le dessin d'EB Garamond.
 - (−) Le texte passe par une `Typeface` Android plutôt que par les familles de polices de Compose : graisse, italique et variations sont à valider.
 
+## Constats du spike 1a (11/10/2026)
+- La chaîne `CustomFallbackBuilder` fonctionne avec Compose pour la mesure, la justification et la césure. Le texte est rendu sous Robolectric comme sur l'appareil, et la page de contrôle n'a aucun glyphe manquant (`app/src/test/screenshots`). Une famille Compose bâtie sur un seul Typeface ne choisit pas l'italique d'elle-même : on construit une famille par style (`BookFonts.regular`, `italic`, `medium`), et le moteur choisit explicitement.
+- **Piège** : la locale `la` active le `locl` latin d'EB Garamond, qui dessine *u* en *v* comme sur les inscriptions antiques. Le texte latin porte donc `'locl' 0` ; la césure latine vient de nos motifs (`LiangHyphenator`), pas de la locale.
+- Junicode 2.226 est épinglée. Son sous-ensemble (`junicode_symbols.ttf`, 20 Ko) couvre ✠ ✝ ⁂ ℣ ℟ ❦ ❧ ☙ ǣ ſ et U+202F. EB Garamond et Literata sont réduites aux plages latines, soit environ 2 Mo pour les cinq fichiers.
+
 ## Points ouverts
-- Spike 1a : vérifier que Compose respecte la chaîne `CustomFallbackBuilder` pour la mesure, la césure, la justification, la graisse et l'italique. Repli : le moteur pose `SpanStyle(fontFamily = junicode)` sur les caractères garantis absents de la police de lecture.
-- Version de Junicode à épingler (v2.226 du 20/06/2026) ; la couverture est à revérifier sur le fichier téléchargé.
 - Police et corps par défaut : porte A.
 
 ## Références

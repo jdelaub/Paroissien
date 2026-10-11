@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Paroissien</string>
-    <string name="skeleton_subtitle">Phase 0 — squelette</string>
-    <string name="skeleton_distribution">Distribution : %1$s</string>
-    <string name="skeleton_easter">Pâques %1$d : %2$s</string>
-    <string name="skeleton_sample_title">Thème %1$s</string>
-    <string name="skeleton_next_theme">Thème suivant</string>
+    <string name="spike_theme">Thème : %1$s</string>
+    <string name="spike_theme_clair">clair</string>
+    <string name="spike_theme_sepia">sépia</string>
+    <string name="spike_theme_sombre">sombre</string>
+    <string name="spike_theme_nuit">nuit</string>
+    <string name="spike_font">Police : %1$s</string>
+    <string name="spike_font_garamond">EB Garamond</string>
+    <string name="spike_font_literata">Literata</string>
+    <string name="spike_turn">Page : %1$s</string>
+    <string name="spike_turn_paper">papier</string>
+    <string name="spike_turn_slide">glissement</string>
+    <string name="spike_turn_none">sans animation</string>
+    <string name="spike_hud_on">Mesures : oui</string>
+    <string name="spike_hud_off">Mesures : non</string>
+    <string name="spike_agsl_yes">Pli AGSL (API %1$d)</string>
+    <string name="spike_agsl_no">Glissement imposé (API %1$d)</string>
 </resources>
