@@ -1,0 +1,75 @@
+# CI publique : ne construit QUE la saveur « domainePublic » (ADR 001). Sur un dépôt public, tout compte
+# GitHub peut télécharger les artefacts : aucun contenu protégé ne doit jamais passer par ici.
+name: ci
+
+on:
+  push:
+    branches: [main, "phase-*"]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tests de la chaîne de contenu
+        working-directory: content
+        run: python3 -I run_tests.py
+      - name: Tests du contrôle des droits
+        run: python3 -I tools/test_check_pack_rights.py
+      - name: Droits des paquets embarqués (saveur publique)
+        run: python3 -I tools/check-pack-rights.py android/app/src/main/assets/packs android/app/src/domainePublic/assets/packs
+      - name: Aucun contenu de la saveur personnelle dans le dépôt
+        run: test ! -e android/app/src/personnel/assets
+
+  android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: android
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Réglages Gradle du runner (4 vCPU, 16 Go)
+        run: |
+          mkdir -p ~/.gradle
+          printf 'org.gradle.jvmargs=-Xmx6g -XX:MaxMetaspaceSize=1g -Dfile.encoding=UTF-8\norg.gradle.workers.max=4\n' >> ~/.gradle/gradle.properties
+      - name: Tests JVM, captures et lint
+        run: >
+          ./gradlew --console=plain
+          :core:model:test :core:liturgy:test
+          :core:designsystem:verifyRoborazziDebug
+          :app:lintDomainePublicDebug
+      - name: APK debug et release (non signé)
+        run: ./gradlew --console=plain :app:assembleDomainePublicDebug :app:assembleDomainePublicRelease
+      - name: Budget de taille de l'APK release (30 Mo au plus)
+        run: |
+          apk=$(ls app/build/outputs/apk/domainePublic/release/*.apk)
+          size=$(stat -c %s "$apk")
+          echo "$apk : $((size / 1024)) Ko"
+          test "$size" -le $((30 * 1024 * 1024))
+      - uses: actions/upload-artifact@v4
+        with:
+          name: paroissien-domainePublic-debug
+          path: android/app/build/outputs/apk/domainePublic/debug/*.apk
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: rapports
+          path: |
+            android/**/build/reports/
+            android/**/build/outputs/roborazzi/
+          retention-days: 7

@@ -1,0 +1,43 @@
+# MODÈLE à copier dans le dépôt PRIVÉ `paroissien-content` sous .github/workflows/personnel.yml.
+# Il ne s'exécute pas ici : le dossier tools/ n'est pas lu par GitHub Actions.
+#
+# Construit la saveur « personnel », qui embarque des paquets réservés à l'usage privé (Clairval, Barroux, AELF).
+# Les artefacts d'un dépôt privé ne sont visibles que de ses membres ; on les garde un jour seulement et on
+# ne les attache jamais à une Release (ADR 001).
+name: personnel
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branche ou tag du dépôt public Paroissien"
+        default: main
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Code de l'application (dépôt public)
+        uses: actions/checkout@v4
+        with:
+          repository: OWNER/Paroissien # à remplacer par le propriétaire réel
+          ref: ${{ inputs.ref }}
+          path: app
+      - name: Contenus privés (ce dépôt)
+        uses: actions/checkout@v4
+        with:
+          path: content
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: APK debug personnel (paquets lus hors du dépôt public, ADR 001)
+        working-directory: app/android
+        run: ./gradlew --console=plain -Pparoissien.personnelPacksDir=$GITHUB_WORKSPACE/content/dist/packs :app:assemblePersonnelDebug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: paroissien-personnel-debug
+          path: app/android/app/build/outputs/apk/personnel/debug/*.apk
+          retention-days: 1

@@ -9,3 +9,11 @@ local.properties
 *.apk
 *.aab
 *.keystore
+# Clé de débogage partagée (non secrète) : même signature en local et en CI (ADR 002)
+!android/keystore/debug.keystore
+.kotlin/
+__pycache__/
+.venv/
+content/.cache/
+# Paquets de la saveur « personnel » : fournis par le dépôt privé, jamais commités ici (ADR 001)
+android/app/src/personnel/assets/

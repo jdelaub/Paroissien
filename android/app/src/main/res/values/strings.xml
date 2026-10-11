@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paroissien</string>
+    <string name="skeleton_subtitle">Phase 0 — squelette</string>
+    <string name="skeleton_distribution">Distribution : %1$s</string>
+    <string name="skeleton_easter">Pâques %1$d : %2$s</string>
+    <string name="skeleton_sample_title">Thème %1$s</string>
+    <string name="skeleton_next_theme">Thème suivant</string>
+</resources>
