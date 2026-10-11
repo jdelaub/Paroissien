@@ -1,0 +1,486 @@
+id	avant	après	n	motif
+l1.c1.v2	Chrisi	Christi	1	lettre omise ; ws, 1840, 1867, 1888
+l1.c1.v3	fervire	servire	1	s long lu f ; ws, 1840, 1888
+l1.c1.v5	invisiblia	invisibilia	1	lettre omise ; 1840, 1888
+l1.c2.v1	confiderat	considerat	1	s long lu f ; ws, 1888
+l1.c2.v1	juavert	juvaret	1	mot mal lu ; ws, 1840, 1888
+l1.c2.v1	fervit	servit	1	s long lu f ; 1888
+l1.c2.v3	nesci	nescis	1	lettre omise ; ws, 1840
+l1.c2.v4	exstimare	æstimare	1	æ lu « ex » ; 1840, 1888
+l1.c2.v4	ipius	ipsius	1	lettre omise ; 1840, 1888
+l1.c3.v1	opinion	opinio	1	lettre en trop ; ws, 1867, 1888
+l1.c3.v1	argueur	arguemur	1	lettre omise ; ws, 1840, 1867
+l1.c3.v2	Cuit	Cui	1	lettre en trop ; ws, 1840, 1888
+l1.c3.v2	t	et	1	lettre omise ; ws, 1840
+l1.c3.v2	toum	totum	1	lettre omise ; ws
+l1.c3.v2	omnia unam sunt	omnia unum sunt	1	« u » lu « a » ; 1840, 1888
+l1.c3.v4	confiderata	considerata	1	s long lu f ; ws, 1888
+l1.c3.v4	eet	et	1	lettre en trop ; ws, 1888
+l1.c3.v5	e	die	1	mot mal lu ; ws, 1840, 1888
+l1.c3.v5	visimus	viximus	1	« x » lu « s » ; ws, 1840
+l1.c3.v5	inferendas	inserendas	1	s long lu f ; 1840, 1888
+l1.c3.v6	fervitio	servitio	1	s long lu f ; ws
+l1.c3.v6	cognitationibus	cogitationibus	1	lettre en trop ; 1840, 1888
+l1.c4.v1	fecundum	secundum	1	s long lu f ; ws, 1867
+l1.c4.v1	enarrant	enarranti	1	lettre omise ; ws, 1840, 1888
+l1.c4.v1	fatis	satis	1	s long lu f
+l1.c5.v2	cause	causa	1	« a » lu « e » ; ws, 1888
+l1.c6.v2	profecutus	prosecutus	1	s long lu f ; ws, 1840
+l1.c9.v3	bonum fit	bonum sit	1	s long lu f ; 1840, 1888
+l1.c10.v1	fæcularium	sæcularium	1	s long lu f ; ws, 1840
+l1.c11.v1	die	diu	1	« u » lu « e » ; ws
+l1.c11.v1	intrinsecur	intrinsecus	1	« s » lu « r »
+l1.c11.v3	dijicimur	dejicimur	1	« e » lu « i » ; ws
+l1.c11.v3	occurit	occurrit	1	lettre omise
+l1.c11.v4	Dominii	Domini	1	lettre en trop
+l1.c11.v5	prosessionis	professionis	1	f lu s long ; ws, 1840, 1888
+l1.c11.v6	inclinatini	inclinationi	1	lettre omise ; ws, 1840, 1888
+l1.c11.v6	defere	desere	1	s long lu f ; ws
+l1.c13.v3	recedene	recedente	1	lettre omise ; ws, 1840, 1888
+l1.c13.v3	hositbus	hostibus	1	lettres interverties ; ws, 1840, 1888
+l1.c13.v5	finitur	sinitur	1	s long lu f ; 1840, 1888
+l1.c13.v5	pricipio	principio	1	lettre omise
+l1.c13.v6	fatis	satis	1	s long lu f
+l1.c13.v7	exultabit	exaltabit	1	« a » lu « u » ; ws
+l1.c13.v8	devotus fit	devotus sit	1	s long lu f ; 1840, 1888
+l1.c14.v2	etaim	etiam	1	lettres interverties ; ws, 1888
+l1.c14.v2	diffensiones	dissensiones	1	s long lu f ; ws, 1840, 1888
+l1.c14.v3	trade	tarde	1	lettres interverties ; ws
+l1.c14.v3	subjicii	subjici	1	lettre en trop
+l1.c15.v2	fervit	servit	1	s long lu f
+l1.c17.v1	visit	vixit	1	« x » lu « s » ; ws
+l1.c17.v2	passionem	passionum	1	« u » lu « e » ; ws, 1888
+l1.c18.v1	fatigatine	fatigatione	1	lettre omise ; ws
+l1.c18.v2	Virginies	Virgines	1	lettre en trop ; ws, 1840, 1888
+l1.c18.v4	dispecti	despecti	1	« e » lu « i » ; ws, 1888
+l1.c19.v1	fervitio	servitio	1	s long lu f ; ws, 1840, 1888
+l1.c19.v2	defertio	desertio	1	s long lu f ; ws, 1840, 1888
+l1.c19.v4	inclinatinem	inclinationem	1	lettre omise ; ws, 1888
+l1.c19.v4	offendisti ex proximum	offendisti et proximum	1	« t » lu « x »
+l1.c20.v1	remoribus	rumoribus	1	« u » lu « e »
+l1.c20.v2	conscienitæ	conscientiæ	1	lettres interverties ; ws
+l1.c20.v8	quod die potest	quod diu potest	1	« u » lu « e »
+l1.c21.v2	nosrorum	nostrorum	1	lettre omise ; ws, 1840, 1888
+l1.c21.v2	senstimus	sentimus	1	lettre en trop ; ws, 1888
+l1.c21.v2	quandomerito	quando merito	1	mots soudés ; ws
+l1.c21.v2	homies	homines	1	lettre omise ; ws, 1840, 1888
+l1.c21.v3	secudum	secundum	1	lettre omise ; ws, 1840, 1888
+l1.c21.v4	cælistia	cælestia	1	« e » lu « i » ; ws, 1888
+l1.c21.v5	vitæ tua cogitares	vitæ tuæ cogitares	1	accord (lettre omise) ; ws
+l1.c21.v5	Pergatorii	Purgatorii	1	« u » lu « e » ; ws
+l1.c21.v5	sivi	sive	1	« e » lu « i »
+l1.c22.v2	præfens	præsens	1	s long lu f ; ws, 1840, 1888
+l1.c22.v3	ocrporalibus	corporalibus	1	lettres interverties ; ws, 1840, 1888
+l1.c22.v4	ætena	æterna	1	lettre omise ; ws, 1840, 1888
+l1.c22.v5	venia	venias	1	lettre omise ; ws
+l1.c22.v5	abforbeatur	absorbeatur	1	s long lu f ; ws, 1840, 1888
+l1.c22.v7	futurea	futura	1	lettre en trop ; ws
+l1.c23.v1	fugure	fugere	1	« e » lu « u »
+l1.c23.v3	inveniant	inveniat	1	lettre en trop ; ws
+l1.c23.v6	moris	mortis	1	lettre omise ; ws, 1840, 1867, 1888
+l1.c24.v1	escusationes	excusationes	1	« x » lu « s » ; ws, 1840, 1888
+l1.c24.v1	omniamala	omnia mala	1	mots soudés ; ws, 1888
+l1.c24.v1	sisi	sibi	1	« b » lu « s » ; ws
+l1.c24.v1	acceptabilies	acceptabilis	1	lettre en trop ; ws, 1840, 1888
+l1.c24.v3	purgentur	pungentur	1	« n » lu « r » ; 1867, 1888
+l1.c24.v4	humlis	humilis	1	lettre omise ; ws
+l1.c24.v5	merebit	mærebit	1	ligature perdue ; ws
+l1.c24.v5	religiosus	irreligiosus	1	mot mal lu ; ws, 1840, 1888
+l1.c24.v6	fervato	servato	1	s long lu f ; ws, 1840, 1888
+l1.c24.v6	sancta sancta opera	sancta opera	1	dittographie ; ws
+l1.c24.v6	ardus poenitntia	ardua poenitentia	1	mot mal lu ; ws
+l1.c24.v6	es	et	1	« t » lu « s » ; ws, 1840, 1888
+l1.c24.v6	facietur	faciet	1	lettres en trop ; 1840, 1888
+l1.c24.v7	foli	soli	1	s long lu f ; ws, 1840, 1888
+l1.c24.v7	judcium	judicium	1	lettre omise ; ws
+l1.c24.v7	gehenæ	gehennæ	1	lettre omise ; ws
+l1.c25.v1	fervitio	servitio	1	s long lu f ; ws
+l1.c25.v2	perserveratus	perseveraturus	1	lettres interverties ; 1840, 1888 ; ws
+l1.c25.v5	confideraveris	consideraveris	1	s long lu f ; ws, 1840, 1888
+l1.c25.v5	confiderat	considerat	1	s long lu f ; ws, 1840, 1888
+l1.c25.v5	disciiplinatos	disciplinatos	1	lettre en trop ; ws
+l1.c25.v5	comissia	commissa	1	lettres mal placées ; 1840, 1888 ; ws
+l1.c25.v8	execunt	exeunt	1	lettre en trop ; ws
+l1.c25.v9	tot	toto	1	lettre omise ; ws, 1840, 1888
+l1.c25.v10	parit	perit	1	« e » lu « a » ; ws, 1840, 1888
+l2.c1	conversationes	conversatione	1	lettre en trop
+l2.c1.v1	consolatinem	consolationem	1	lettre omise ; ws, 1840, 1888
+l2.c1.v2	sparare	sperare	1	« e » lu « a » ; ws, 1840, 1888
+l2.c1.v2	ut non fit opus	ut non sit opus	1	s long lu f ; 1840, 1888
+l2.c1.v3	Nonhabes	Non habes	1	mots soudés ; ws, 1840, 1888
+l2.c1.v3	utilis fit	utilis sit	1	s long lu f ; 1840, 1888
+l2.c1.v4	requietonis	requietionis	1	lettre omise ; ws
+l2.c1.v5	patentia	patientia	1	lettre omise ; ws, 1840, 1888
+l2.c1.v5	regare	regnare	1	lettre omise
+l2.c1.v7	reqirit	requirit	1	lettre omise ; ws, 1840, 1888
+l2.c1.v8	recte tibi esses	recte tibi esset	1	« t » lu « s » ; 1840, 1888
+l2.c2.v1	sci	scis	1	lettre omise ; ws, 1840
+l2.c2.v1	idea	ideo	1	« o » lu « a » ; ws, 1867, 1888
+l2.c2.v1	contra te fit	contra te sit	1	s long lu f ; 1840, 1888
+l2.c3.v2	nuli	nulli	1	lettre omise ; ws, 1840, 1888
+l2.c3.v2	indignarei	indignari	1	lettre en trop ; ws, 1888
+l2.c3.v3	fui	sui	1	s long lu f ; ws, 1840, 1888
+l2.c5.v3	seriatum	feriatum	1	f lu s long ; ws, 1840, 1888
+l2.c5.v3	exstima	existima	1	lettre omise ; 1840, 1888
+l2.c6.v3	confiderat	considerat	1	s long lu f
+l2.c7.v1	propeter	propter	1	lettre en trop ; ws, 1840, 1888
+l2.c7.v2	fedelitati	fidelitati	1	« i » lu « e » ; ws, 1840, 1888
+l2.c7.v2	potestte	potest te	1	mots soudés ; ws
+l2.c8.v1	totum durum est.	totum durum est. Quando Jesus intus non loquitur, consolatio vilis est.	1	phrase omise (saut du même au même) ; ws
+l2.c8.v1	autuem	autem	1	lettre en trop ; ws, 1840, 1888
+l2.c8.v1	surreit	surrexit	1	lettre omise ; ws, 1840, 1888
+l2.c8.v1	adet	adest	1	lettre omise ; ws, 1840
+l2.c8.v5	nectem	noctem	1	« o » lu « e »
+l2.c9.v1	hilaris si,	hilaris sis,	1	lettre omise ; ws
+l2.c9.v2	Sixtem	Sixtum	1	« u » lu « e » ; ws, 1840, 1888
+l2.c9.v4	suit	fuit	1	f lu s long ; ws, 1840
+l2.c9.v5	iluculo	diluculo	1	lettre omise ; ws, 1840, 1888
+l2.c9.v5	deprocabor	deprecabor	1	« e » lu « o »
+l2.c9.v6	defertus	desertus	1	s long lu f
+l2.c10	progratia	pro gratia	1	mots soudés
+l2.c10.v1	consoltionem	consolationem	1	lettre omise ; ws
+l2.c10.v1	spiritualiem	spiritualem	1	lettre en trop ; ws, 1840, 1888
+l2.c10.v1	divnis	divinis	1	lettre omise ; ws, 1840, 1888
+l2.c10.v2	consolatinis	consolationis	1	lettre omise ; ws
+l2.c10.v2	salsa	falsa	1	f lu s long ; 1840, 1888
+l2.c11.v1	as	ad	1	« d » lu « s » ; ws, 1888
+l2.c11.v3	propio	proprio	1	lettre omise
+l2.c11.v5	extimari	æstimari	1	æ lu « ex » ; d'après l'usage de l'édition
+l2.c11.v5	fervum	servum	1	s long lu f ; ws, 1840
+l2.c12.v1	Abnego	Abnega	1	« a » lu « o »
+l2.c12.v2	pœ	pœnæ	1	mot mal lu ; ws, 1888
+l2.c12.v4	necese	necesse	1	lettre omise ; ws
+l2.c12.v6	Opertebat	Oportebat	1	« o » lu « e »
+l2.c12.v7	reqiuem	requiem	1	lettres interverties ; ws, 1840, 1867, 1888
+l2.c12.v7	gravioes	graviores	1	lettre omise ; ws
+l2.c12.v8	lavamine	levamine	1	« e » lu « a » ; ws, 1840, 1867, 1888
+l2.c12.v9	quæquæ	quæque	1	« e » lu « æ »
+l2.c12.v10	tribulatones	tribulationes	1	lettre omise
+l2.c12.v11	exstima	æstima	1	æ lu « ex » ; ws, 1840
+l2.c12.v13	aliqud	aliquid	1	lettre omise
+l3.titre	consolatine	consolatione	1	lettre omise
+l3.c1	consolatine	consolatione	1	lettre omise
+l3.c2.v1	popheta	propheta	1	lettre omise ; ws, 1840, 1888
+l3.c2.v1	otius	potius	1	lettre omise ; ws
+l3.c2.v1	humiliter ad disideranter	humiliter ac desideranter	1	« c » lu « d », « e » lu « i » ; 1840, 1888
+l3.c2.v1	servus suus	servus tuus	1	« t » lu « s » ; 1840, 1888
+l3.c2.v2	accedunt	accendunt	1	lettre omise ; 1840, 1888
+l3.c3.v1	sunsu	sensu	1	« e » lu « u » ; ws, 1888
+l3.c3.v1	scientam	scientiam	1	lettre omise
+l3.c3.v3	dix	dixi	1	lettre omise ; ws, 1840, 1867, 1888
+l3.c3.v3	confitentem	confidentem	1	« d » lu « t » ; 1840, 1888
+l3.c3.v4	vittia	vitia	1	lettre en trop ; ws, 1840, 1867, 1888
+l3.c3.h1	imporandum	implorandum	1	lettre omise ; ws
+l3.c3.v5	ceum	meum	1	« m » lu « c » ; ws
+l3.c3.v6	noli consolationem tuam prolongare, noli consolationem tuam abstrahere	noli consolationem tuam abstrahere	1	dittographie ; ws
+l3.c4.v1	at	et	1	« e » lu « a » ; ws
+l3.c4.v2	nuquam	nunquam	1	lettre omise ; ws, 1840
+l3.c4.v3	curiositte	curiositate	1	lettre omise ; ws, 1840, 1867, 1888
+l3.c4.v3	arrogania	arrogantia	1	lettre omise ; ws, 1840, 1867, 1888
+l3.c4.v3	temeas	timeas	1	« i » lu « e »
+l3.c4.v4	sempe	semper	1	lettre omise ; ws, 1840, 1867, 1888
+l3.c5.v2	impefectus	imperfectus	1	lettre omise
+l3.c6.v4	vade	valde	1	lettre omise ; ws, 1840, 1888
+l3.c6.v4	stabilis	stabis	1	mot mal lu ; ws, 1840, 1888
+l3.c6.v5	cecitatem	cæcitatem	1	« æ » lu « e » ; ws, 1840, 1888
+l3.c7.v3	osses	posses	1	lettre omise ; ws, 1840, 1888
+l3.c7.v3	magi	magni	1	lettre omise ; 1840, 1888
+l3.c7.v5	recognita	recogita	1	lettre en trop ; ws
+l3.c7.v5	posses	posse	1	lettre en trop ; ws, 1840, 1888
+l3.c7.v5	extimanda	æstimanda	1	æ lu « ex » ; 1888
+l3.c8	exstimatione	æstimatione	1	æ lu « ex » ; 1840, 1888
+l3.c8.v1	at	ad	1	« d » lu « t » ; ws, 1840
+l3.c8.v1	exstimatio	æstimatio	1	æ lu « ex » ; 1888
+l3.c8.v1	spulverizavero	pulverizavero	1	lettre en trop
+l3.c8.v1	Se mihi	Si mihi	1	« i » lu « e » ; 1840, 1888
+l3.c8.v2	ver	vere	1	lettre omise ; ws, 1840, 1888
+l3.c9.v3	neqe	neque	1	lettre omise ; ws, 1888
+l3.c10.v1	cum no essem	cum non essem	1	lettre omise
+l3.c10.v3	ispum	ipsum	1	lettres interverties ; ws, 1840, 1888
+l3.c11.v2	incurra	incurras	1	lettre omise
+l3.c11.v3	fatagere	satagere	1	s long lu f ; ws
+l3.c11.v3	inonveniens	inconveniens	1	lettre omise ; ws, 1888
+l3.c12.v1	extimare	æstimare	1	æ lu « ex » ; d'après l'usage de l'édition
+l3.c12.v3	sumus	fumus	1	f lu s long ; ws, 1840, 1888
+l3.c13.v2	dice	disce	1	lettre omise ; ws, 1840, 1888
+l3.c13.v2	quando eo Omnipotens	quando ego Omnipotens	1	lettre omise ; 1840, 1888
+l3.c14.v1	epercisti	pepercisti	1	lettre omise ; ws, 1840, 1888
+l3.c14.v1	opra	opera	1	lettre omise ; ws, 1888
+l3.c14.v3	instransnatabile	intransnatabile	1	lettre en trop ; ws, 1840, 1867, 1888
+l3.c14.v4	omni	omnis	1	lettre omise ; ws, 1840, 1867, 1888
+l3.c16.v1	durare no possent	durare non possent	1	lettre omise
+l3.c18.v2	consolatioria	consolatoria	1	lettre en trop ; ws
+l3.c18.v3	cinctis	cunctis	1	« u » lu « i » ; ws, 1840, 1888
+l3.c18.v3	patietiam	patientiam	1	lettre omise ; ws, 1840, 1888
+l3.c18.v3	retrocenderent	retrocederent	1	lettre en trop ; ws
+l3.c19.v2	dica	dicas	1	lettre omise ; ws
+l3.c19.v5	impossibiel	impossibile	1	lettres interverties ; ws, 1840, 1888
+l3.c20.v1	Præpono	Propono	1	mot mal lu ; 1888
+l3.c20.v2	infectatio	insectatio	1	s long lu f ; ws, 1840, 1888
+l3.c20.v2	irrunt	irruunt	1	lettre omise ; ws, 1840, 1888
+l3.c20.v4	tædiunt	tædium	1	mot mal lu (sens)
+l3.c20.v5	qutem	autem	1	« a » lu « q » ; ws, 1840, 1867, 1888
+l3.c21.v5	nihi	mihi	1	« m » lu « n » ; ws
+l3.c21.v7	ma	mea	1	lettre omise ; ws, 1840, 1867, 1888
+l3.c22.v2	cunta	cuncta	1	lettre omise ; ws, 1840, 1888
+l3.c22.v2	esistimat	existimat	1	« x » lu « s » ; ws
+l3.c22.v3	aud	apud	1	lettre omise ; ws, 1840, 1888
+l3.c22.v4	contemelias	contumelias	1	« u » lu « e »
+l3.c23	4.or.	quatuor	1	abréviation « 4.or. » développée ; 1840, 1888
+l3.c23.v1	decebo	docebo	1	« o » lu « e » ; ws, 1840, 1888
+l3.c23.v4	origi	oriri	1	« r » lu « g » ; ws
+l3.c23.v4	amjorem	majorem	1	lettres interverties ; ws, 1840, 1867, 1888
+l3.c23.v4	posim	possim	1	lettre omise ; ws, 1840, 1867
+l3.c23.v8	lumnis	luminis	1	lettre omise ; ws
+l3.c25.v2	perfictio	perfectio	1	« e » lu « i » ; ws, 1840, 1888
+l3.c25.v2	exstimes	æstimes	1	æ lu « ex » ; 1840, 1888
+l3.c25.v2	congnoscitur	cognoscitur	1	lettre en trop
+l3.c25.v3	peveneris	perveneris	1	lettre omise ; ws, 1888
+l3.c26.v1	adhærando	adhærendo	1	« e » lu « a »
+l3.c26.v3	snaguis	sanguis	1	lettres interverties ; ws
+l3.c26.v3	suplantet	supplantet	1	lettre omise ; ws, 1840, 1888
+l3.c26.v3	amoe	amore	1	lettre omise ; ws, 1840, 1888
+l3.c26.v4	pertenentia	pertinentia	1	« i » lu « e » ; ws, 1840, 1888
+l3.c26.v4	serventi	ferventi	1	f lu s long ; ws, 1840, 1888
+l3.c26.v4	auem	autem	1	lettre omise ; ws, 1840, 1888
+l3.c29.v2	omniotens	omnipotens	1	lettre omise ; ws, 1840, 1888
+l3.c29.v2	difficuliu	difficilius	1	lettres mal lues ; 1840, 1888 ; ws
+l3.c30.v1	tribulatoinis	tribulationis	1	lettres interverties ; ws
+l3.c30.v1	fueris	fuerit	1	« t » lu « s » ; ws
+l3.c30.v1	restaruem	restaurem	1	lettres interverties ; ws
+l3.c30.v3	exstimas	æstimas	2	æ lu « ex » ; d'après l'usage de l'édition
+l3.c30.v6	dilexet	dilexit	1	« i » lu « e » ; ws, 1840, 1867
+l3.c31.v1	indegeo	indigeo	1	« i » lu « e » ; ws
+l3.c31.v4	satim	statim	1	lettre omise ; ws, 1888
+l3.c31.v4	corruperate	corruperat	1	lettre en trop ; ws, 1840
+l3.c32.v1	intelligis	intelliges	1	« e » lu « i » ; ws
+l3.c32.v1	quod non es ex Deo	quod non est ex Deo	1	lettre omise ; 1840, 1888
+l3.c32.v2	conclluditur	concluditur	1	lettre en trop ; ws
+l3.c32.v2	Religioforum	Religiosorum	1	s long lu f ; ws
+l3.c32.v3	conculacantem	conculcantem	1	lettre en trop ; ws
+l3.c33.v2	Sed multis caligat	Sed in multis caligat	1	mot omis ; ws
+l3.c33.v2	oculos	oculus	1	« u » lu « o » ; ws, 1840, 1888
+l3.c34.v1	faci	facis	1	lettre omise ; ws, 1840, 1867, 1888
+l3.c34.v2	dissimlis	dissimilis	1	lettre omise ; ws, 1840, 1888
+l3.c35.v2	a	ad	1	lettre omise ; ws, 1840, 1888
+l3.c36.v1	omibus	omnibus	1	lettre omise ; ws
+l3.c36.v2	cogitatantiam	cogitantium	1	mot mal lu ; ws, 1867
+l3.c36.v3	querolosis	querulosis	1	« u » lu « o » ; ws, 1840, 1867
+l3.c36.v3	succumbi	succumbere	1	lettres omises ; 1867
+l3.c37.v1	File,	Fili,	1	« i » lu « e » ; ws
+l3.c37.v3	agi	agis	1	lettre omise ; ws, 1840, 1888
+l3.c37.v5	niihil	nihil	1	lettre en trop ; ws, 1888
+l3.c38.v1	in fortem ac	in sortem ac	1	s long lu f ; 1840, 1888
+l3.c38.v2	oratiois	orationis	1	lettre omise ; ws, 1840, 1888
+l3.c39.v4	hosti	hostis	1	lettre omise ; ws, 1840, 1888
+l3.c40.v1	aud quid	aut quid	1	« t » lu « d »
+l3.c40.v5	infirmatibus	infirmitatibus	1	lettres omises
+l3.c40.v6	vertus	virtus	1	« i » lu « e » ; ws, 1888
+l3.c42.v1	verba	vera	1	lettre en trop ; ws
+l3.c42.v2	evacurare	evacuare	1	lettre en trop ; ws, 1840
+l3.c42.v2	Creatoriem	Creatorem	1	lettre en trop ; ws, 1888
+l3.c43.v1	cordo	corda	1	« a » lu « o » ; 1840, 1888
+l3.c43.v4	cognitationum	cogitationum	1	lettre en trop ; ws, 1888
+l3.c45.v1	libi	ibi	1	lettre en trop ; ws, 1840, 1888
+l3.c45.v3	mesero	misero	1	« i » lu « e » ; ws, 1840, 1888
+l3.c45.v3	multus	multis	1	« i » lu « u » ; ws, 1840, 1888
+l3.c45.v3	quænon	quæ non	1	mots soudés ; ws
+l3.c45.v4	omnimodo	omnimode	1	« e » lu « o » ; ws, 1840
+l3.c45.v4	calidam	callidam	1	lettre omise ; 1840, 1888
+l3.c45.v4	incideam	incidam	1	lettre en trop
+l3.c45.v5	emendtionem	emendationem	1	lettre omise ; ws, 1840
+l3.c45.v5	servorem	fervorem	1	f lu s long ; ws
+l3.c46.v2	malitionsissime	malitiosissime	1	lettre en trop ; ws
+l3.c46.v2	etrahere	extrahere	1	lettre omise ; ws
+l3.c46.v3	ocuis	oculis	1	lettre omise ; ws
+l3.c46.v4	salit	fallit	1	mot mal lu ; ws, 1840, 1888
+l3.c47.v4	et fine fine	et sine fine	1	f pour s long ; ws, 1867
+l3.c48.v1	Supernæ civitatis	O, supernæ civitatis	1	lettrine « O » perdue ; ws
+l3.c48.v1	peregrinanatibus	peregrinantibus	1	lettre en trop ; ws, 1840, 1888
+l3.c48.v3	qundo	quando	1	lettre omise ; ws
+l3.c48.v3	præparasit	præparasti	1	lettres interverties ; ws, 1840, 1888
+l3.c48.v5	safittas	sagittas	1	« g » lu « f » ; ws, 1840
+l3.c48.v5	meo	meos	1	lettre omise ; ws, 1888
+l3.c48.v5	occurit	occurrit	1	lettre omise
+l3.c49.v1	serventi	ferventi	1	f lu s long ; ws
+l3.c49.v3	temus	tempus	1	lettre omise ; ws
+l3.c49.v3	robatinis	probationis	1	mot mal lu ; ws, 1840, 1888
+l3.c49.v4	Patent	Petent	1	« e » lu « a » ; ws, 1840, 1888
+l3.c49.v6	fuctus	fructus	1	lettre omise
+l3.c49.v6	pœitentiæ	pœnitentiæ	1	lettre omise
+l3.c49.v7	humliter	humiliter	1	lettre omise ; ws
+l3.c49.v7	quia	quis	1	« s » lu « a » ; ws, 1840, 1888
+l3.c49.v7	ve	vel	1	lettre omise ; ws, 1840, 1888
+l3.c49.v7	au	aut	1	lettre omise ; ws
+l3.c50	defolatus	desolatus	1	s long lu f
+l3.c50.v2	agudium	gaudium	1	lettres interverties
+l3.c50.v4	to	tuo	1	lettre omise ; ws
+l3.c50.v4	elatines	elationes	1	lettre omise ; ws, 1840, 1888
+l3.c50.v4	michi	mihi	1	mot mal lu ; 1840, 1888
+l3.c50.v5	quæsub	quæ sub	1	mots soudés ; ws, 1888
+l3.c50.v7	secundam visionem	secundum visionem	1	« u » lu « a » ; 1840, 1888
+l3.c51.v1	serventiori	ferventiori	1	f lu s long ; ws, 1840, 1888
+l3.c51.v1	guod	quod	1	« q » lu « g » ; ws, 1840
+l3.c51.v1	indefinenter	indesinenter	1	s long lu f ; ws, 1888
+l3.c51.v2	incipas	incipias	1	lettre omise ; ws, 1840
+l3.c51.v2	emorum	meorum	1	lettres interverties ; ws, 1840, 1888
+l3.c51.v2	condignaæ	condignæ	1	lettre en trop
+l3.c51.v2	temproris	temporis	1	lettre en trop
+l3.c52.v2	commarari	commorari	1	« o » lu « a » ; ws, 1888
+l3.c52.v4	incesum	incensum	1	lettre omise ; ws, 1888
+l3.c52.v4	volusti	voluisti	1	lettre omise ; ws, 1840, 1888
+l3.c53.v1	confabulatinem	confabulationem	1	lettre omise ; ws, 1840, 1888
+l3.c53.v1	exstima	æstima	1	æ lu « ex » ; 1840
+l3.c53.v3	occultam in inordinatam	occultam et inordinatam	1	mot mal lu ; ws, 1888
+l3.c53.v3	inordinatam inclinationem ad te ipsum et ad omne privatum inclinationem ad te ipsum et ad omne privatum	inordinatam inclinationem ad te ipsum et ad omne privatum	1	dittographie ; ws
+l3.c54.v1	saluntur	falluntur	1	mot mal lu ; ws
+l3.c54.v2	decinat	declinat	1	lettre omise ; ws, 1840, 1888
+l3.c54.v3	subesee	subesse	1	« s » lu « e » ; ws
+l3.c54.v5	honoem	honorem	1	lettre omise ; ws, 1840, 1888
+l3.c54.v6	Grata autem	Gratia autem	1	lettre omise
+l3.c54.v8	Natural	Natura	1	lettre en trop
+l3.c54.v12	visiblia	visibilia	1	lettre omise ; ws, 1840, 1888
+l3.c54.v13	otest	potest	1	lettre omise ; ws, 1840, 1888
+l3.c54.v13	speart	sperat	1	lettres interverties ; ws, 1840, 1888
+l3.c54.v13	affecutionem	assecutionem	1	s long lu f ; ws, 1840, 1888
+l3.c54.v17	corruptonis	corruptionis	1	lettre omise ; ws, 1840, 1867
+l3.c54.v18	formatur	reformatur	1	mot mal lu ; ws
+l3.c55.v1	mhi	mihi	1	lettre omise ; ws
+l3.c55.v2	pœ	pœna	1	mot mal lu ; ws, 1840, 1888
+l3.c55.v2	affectionem suarum	affectionum suarum	1	« u » lu « e »
+l3.c55.v3	Hin	Hinc	1	lettre omise ; ws, 1840, 1867, 1888
+l3.c55.v4	igneium	ingenium	1	mot mal lu ; ws, 1840
+l3.c55.v4	habenter	habentur	1	« u » lu « e » ; ws, 1840, 1888
+l3.c55.v4	naturaæ	naturæ	2	lettre en trop (2 fois)
+l3.c55.v5	desiert	desiderat	1	mot mal lu ; ws, 1840, 1888
+l3.c55.v5	axilium	auxilium	1	lettre omise ; ws, 1840, 1888
+l3.c55.v6	præbenitat	præveniat	1	mot mal lu ; ws
+l3.c56.v1	maseris	manseris	1	lettre omise ; ws
+l3.c56.v1	vitram	vitam	1	lettre en trop ; ws, 1840
+l3.c56.v2	crecem	crucem	1	« u » lu « e » ; ws, 1840, 1888
+l3.c56.v3	discipuus	discipulus	1	lettre omise ; ws, 1840
+l3.c56.v5	perfeveremus	perseveremus	1	s long lu f ; ws, 1840, 1888
+l3.c57.v1	ultmum	ultimum	1	lettre omise ; ws
+l3.c57.v2	diue	diu	1	lettre en trop ; ws, 1840, 1888
+l3.c57.v3	provoco	proveho	1	mot mal lu ; 1840, 1888
+l3.c58.v1	intellectua	intellectu	1	lettre en trop ; ws
+l3.c58.v2	præfferre	præferre	1	lettre en trop ; ws, 1840, 1888
+l3.c58.v2	consisit	consistit	1	lettre omise ; ws
+l3.c58.v3	miscericordiam	misericordiam	1	lettre en trop
+l3.c58.v5	differere	disserere	1	s long lu f (2 fois) ; 1840, 1888
+l3.c58.v6	cognitant	cogitant	1	lettre en trop (douteux)
+l3.c58.v7	humliaret	humiliaret	1	lettre omise ; ws
+l3.c58.v7	implicare	implorare	1	mot mal lu ; 1840, 1888
+l3.c59.v1	peregrainari	peregrinari	1	lettre en trop ; ws, 1840, 1867
+l3.c59.v1	considere	confidere	1	f lu s long
+l3.c59.v3	infirumum	infirmum	1	lettre en trop
+l4.exhortation.p1	meam sanguinem	meum sanguinem	1	« u » lu « a » ; 1840, 1888
+l4.exhortation.p1	locutus sum nobis	locutus sum vobis	1	« v » lu « n » ; 1840, 1888
+l4.c1.v1	grantater	gratanter	1	mot mal lu ; ws
+l4.c1.v1	dulcendinis	dulcedinis	1	lettre en trop ; ws, 1840, 1867, 1888
+l4.c1.v1	suspicio	suscipio	1	lettres interverties ; 1840, 1888
+l4.c1.v1	inferantur	inserantur	1	s long lu f ; 1888
+l4.c1.v2	onerasti	onerati	1	lettre en trop
+l4.c1.v4	fabricatorent	fabricatorem	1	mot mal lu ; ws, 1840, 1888
+l4.c1.v4	tuam	tam	1	lettre en trop ; ws, 1840, 1888
+l4.c1.v4	templukm	templum	1	lettre en trop ; ws, 1888
+l4.c1.v4	fæderis	fœderis	1	« œ » lu « æ »
+l4.c1.v5	abo	ab	1	lettre en trop ; ws, 1840, 1888
+l4.c1.v7	quandoilli	quando illi	1	mots soudés ; ws, 1888
+l4.c1.v8	institui	instituit	1	lettre omise ; ws, 1888
+l4.c1.v8	veribus	viribus	1	« i » lu « e »
+l4.c1.v9	since	sine	1	lettre en trop ; ws, 1840, 1867, 1888
+l4.c1.v9	quotescumque	quotiescumque	1	lettre omise
+l4.c1.v12	Sancrotum	Sanctorum	1	lettres interverties ; ws
+l4.c1.v13	divinia	divina	1	lettre en trop
+l4.c1.v14	esti	estis	1	lettre omise ; ws, 1840, 1867, 1888
+l4.c2.v1	disolatus	desolatus	1	« e » lu « i » ; ws, 1840, 1888
+l4.c2.v1	coni	boni	1	« b » lu « c » ; ws, 1888
+l4.c2.v3	vonvivium	convivium	1	« c » lu « v » ; ws
+l4.c2.v3	daer	dare	1	lettres interverties ; ws, 1840, 1888
+l4.c2.v4	sauve	suave	1	lettres interverties ; ws
+l4.c2.v4	factum es quod	factum est quod	1	lettre omise ; 1840, 1888
+l4.c3.v1	test	est	1	lettre en trop ; ws, 1840, 1867, 1888
+l4.c3.v1	exmunere	ex munere	1	mots soudés
+l4.c3.v2	name	nam	1	lettre en trop ; ws, 1840, 1888
+l4.c3.v2	et in remedium salutis meæ recipere, et in remedium salutis meæ recipere	et in remedium salutis meæ recipere	1	dittographie ; ws
+l4.c3.v2	hæes	hæres	1	lettre omise ; ws
+l4.c3.v2	dificiant	deficiant	1	« e » lu « i »
+l4.c3.v3	adlescentia	adolescentia	1	lettre omise ; ws, 1840, 1888
+l4.c3.v4	susceptone	susceptione	1	lettre omise ; ws, 1888
+l4.c4.v1	plenaire	plenarie	1	lettres interverties ; ws, 1840
+l4.c4.v1	sauvitatem	suavitatem	1	lettres interverties
+l4.c4.v2	firm	firma	1	lettre omise ; ws
+l4.c4.v3	tribulatones	tribulationes	1	lettre omise ; ws
+l4.c4.v3	illustra	illustras	1	lettre omise ; ws
+l4.c4.v3	serventes	ferventes	1	f lu s long ; ws
+l4.c4.v4	cælesti	cælestis	1	lettre omise ; ws, 1888
+l4.c4.v4	præparae	præparare	1	lettre omise ; ws
+l4.c4.v4	esti	estis	1	lettre omise ; ws, 1840, 1867, 1888
+l4.c4.v5	devotinis	devotionis	1	lettre omise ; ws
+l4.c5.v1	myterium	mysterium	1	lettre omise ; ws, 1840, 1867, 1888
+l4.c5.v2	sacrificum	sacrificium	1	lettre omise
+l4.c6.v1	ingesserio	ingessero	1	lettre en trop ; ws, 1840, 1888
+l4.c7.v1	e	et	1	lettre omise ; ws
+l4.c7.v1	remodeat	remordeat	1	lettre omise ; ws
+l4.c7.v1	nuda et clarifica	munda et clarifica	1	lettre omise ; 1840, 1888
+l4.c7.v1	patiturum	patitur	1	lettres en trop
+l4.c7.v2	pervolvendis	persolvendis	1	« s » lu « v » ; ws, 1840, 1867, 1888
+l4.c7.v2	vene	bene	1	« b » lu « v » ; ws
+l4.c7.v3	holocastum peretuum	holocaustum perpetuum	1	mot mal lu ; ws, 1888
+l4.c7.v3	commitendo	committendo	1	lettre omise
+l4.c7.v4	satisfacio	satisfactio	1	lettre omise
+l4.c8.v1	uram	puram	1	lettre omise ; ws, 1840, 1888
+l4.c8.v1	offere	offerre	1	lettre omise
+l4.c9.v1	spontatneam	spontaneam	1	lettre en trop ; ws, 1888
+l4.c9.v2	ut te pariter	ut tu pariter	1	mot mal lu ; ws
+l4.c9.v3	bontiatem	bonitatem	1	lettres interverties ; ws, 1888
+l4.c9.v5	parentem	parentum	1	« u » lu « e » ; ws, 1840, 1888
+l4.c9.v5	foroum	sororum	1	mot mal lu ; ws, 1888
+l4.c9.v5	suique	suisque	1	lettre omise ; ws
+l4.c10	reliquenda	relinquenda	1	lettre omise
+l4.c10.v1	misericordiaæ	misericordiæ	1	lettre en trop
+l4.c10.v2	omnittenda	omittenda	1	lettre en trop ; ws, 1840, 1888
+l4.c10.v3	conteri	confiteri	1	mot mal lu ; ws, 1840, 1888
+l4.c10.v4	Communinem	Communionem	1	lettre omise ; ws, 1888
+l4.c10.v4	fositan	forsitan	1	lettre omise ; ws
+l4.c10.v4	impediti	impediri	1	« r » lu « t » ; ws, 1840, 1888
+l4.c10.v4	induceret	inducere	1	lettre en trop ; ws, 1840
+l4.c10.v5	illle	ille	1	lettre en trop ; ws, 1840
+l4.c10.v6	certes	certis	1	« i » lu « e » ; ws, 1840, 1888
+l4.c10.v6	Redemntoris	Redemtoris	1	lettre en trop ; ws, 1840
+l4.c10.v6	affectuoso	affectuosa	1	« a » lu « o » ; ws, 1840, 1888
+l4.c10.v7	devotini	devotioni	1	lettre omise ; ws, 1840, 1888
+l4.c11.v1	desiderabilies	desiderabilis	1	lettre en trop ; ws
+l4.c11.v3	sit	fit	1	f lu s long ; ws, 1840, 1888
+l4.c11.v3	Haeo	Habeo	1	lettre omise ; ws
+l4.c11.v4	lux est animæ,	lux est animæ meæ,	1	mot omis ; ws
+l4.c11.v4	miserabilis vitia	miserabilis vita	1	lettre en trop ; 1840, 1888
+l4.c11.v5	cœ nam	cœnam	1	espace parasite ; ws, 1840
+l4.c11.v5	læ tificans	lætificans	1	espace parasite ; ws, 1840, 1888
+l4.c11.v6	Q	O	1	« O » lu « Q » ; ws
+l4.c11.v6	mangum	magnum	1	lettres interverties ; ws
+l4.c11.v6	cæ teris	cæteris	1	espace parasite ; ws
+l4.c11.v6	sæ pe	sæpe	1	espace parasite ; ws, 1840
+l4.c11.v7	cæ lum	cælum	1	espace parasite ; ws, 1888
+l4.c11.v7	cæ li	cæli	1	espace parasite ; ws, 1888
+l4.c12.v1	cognioscitur	cognoscitur	1	lettre en trop ; ws, 1888
+l4.c12.v2	consuetundine	consuetudine	1	lettre en trop ; ws, 1840, 1888
+l4.c12.v2	retribuendem	retribuendum	1	« u » lu « e »
+l4.c12.v3	qui	quia	1	lettre omise ; ws, 1840, 1888
+l4.c13.v2	appropinquante	appropinquantes	1	lettre omise ; ws, 1840
+l4.c13.v3	exultabant	exultabunt	1	« u » lu « a » ; 1840, 1888
+l4.c14.v1	<i>Quam magna	O, <i>quam magna	1	lettrine « O » perdue ; ws
+l4.c14.v1	accendentium	accedentium	1	lettre en trop
+l4.c14.v3	inflamati	inflammati	1	lettre omise
+l4.c15	abnegatine	abnegatione	1	lettre omise
+l4.c15.v2	tolitur	tollitur	1	lettre omise
+l4.c15.v3	enit	venit	1	lettre omise ; ws, 1840, 1888
+l4.c16.v1	Dulcissime atque	O, dulcissime atque	1	lettrine « O » perdue ; ws
+l4.c16.v3	accends	accendas	1	lettre omise ; ws, 1840, 1867, 1888
+l4.c17.v2	suscepti	suscepit	1	lettres interverties ; ws
+l4.c17.v2	servore	fervore	1	f lu s long
+l4.c17.v3	cælica	cælicas	1	lettre omise ; ws, 1888
+l4.c17.v4	quætibi	quæ tibi	1	mots soudés ; ws, 1840, 1888
+l4.c18.v1	studentis	studens	1	mot mal lu ; 1840, 1888
+l4.c18.v3	ultum	multum	1	lettre omise ; ws

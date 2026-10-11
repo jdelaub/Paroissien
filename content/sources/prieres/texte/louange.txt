@@ -1,0 +1,259 @@
+# Hymnes et cantiques. Te Deum, Magnificat, Nunc dimittis : Mame 1890 ; Benedictus : Lecoffre 1860.
+# Les cantiques sont donnés sans antienne ni Gloria Patri, comme ils sont imprimés dans l'office.
+
+== te-deum
+title.fr: Cantique d'action de grâces
+title.la: Te Deum
+src: paroissienromain00tour | la fr | 106-110 | 119-123
+
+para
+la: Te Deum laudamus, te Dominum confitemur.
+fr: Nous vous louons, ô Dieu, nous vous reconnaissons pour le souverain Seigneur.
+
+para
+la: Te æternum Patrem omnis terra veneratur.
+fr: Père éternel, la terre entière vous révère.
+
+para
+la: Tibi omnes Angeli, tibi Cœli, et universæ Potestates,
+fr: Tous les Anges, les Cieux et toutes les Puissances célestes,
+
+para
+la: Tibi Cherubim et Seraphim incessabili voce proclamant :
+fr: Les Chérubins et les Séraphins redisent éternellement :
+
+para
+la: Sanctus, Sanctus, Sanctus, Dominus Deus sabaoth.
+fr: Saint, Saint, Saint, le Seigneur Dieu des armées.
+
+para
+la: Pleni sunt cœli et terra majestatis gloriæ tuæ.
+fr: Les cieux et la terre sont remplis de la majesté de votre gloire.
+
+para
+la: Te gloriosus Apostolorum chorus,
+fr: Le chœur glorieux des Apôtres,
+
+para
+la: Te Prophetarum laudabilis numerus,
+fr: La troupe vénérable des Prophètes,
+
+para
+la: Te Martyrum candidatus laudat exercitus.
+fr: L'éclatante armée des Martyrs chantent vos louanges.
+
+para
+la: Te per orbem terrarum sancta confitetur Ecclesia,
+fr: Dans toute l'étendue de l'univers, l'Église vous adore,
+
+para
+la: Patrem immensæ majestatis,
+fr: O Père dont la majesté est infinie,
+
+para
+la: Venerandum tuum verum et unicum Filium,
+fr: Et votre Fils unique et véritable,
+
+para
+la: Sanctum quoque Paraclitum Spiritum.
+fr: Et le Saint-Esprit consolateur.
+
+para
+la: Tu Rex gloriæ, Christe.
+fr: O Christ, vous êtes le Roi de gloire.
+
+para
+la: Tu Patris sempiternus es Filius.
+fr: Vous êtes le Fils éternel du Père.
+
+para
+la: Tu ad liberandum suscepturus hominem, non horruisti Virginis uterum.
+fr: Fait homme pour sauver l'homme, vous n'avez pas dédaigné de descendre dans le sein d'une Vierge.
+
+para
+la: Tu, devicto mortis aculeo, aperuisti credentibus regna cœlorum.
+fr: Brisant l'aiguillon de la mort, vous avez ouvert à ceux qui croient le royaume des cieux.
+
+para
+la: Tu ad dexteram Dei sedes in gloria Patris.
+fr: Vous êtes assis à la droite de Dieu, dans la gloire du Père.
+
+para
+la: Judex crederis esse venturus.
+fr: Nous croyons que vous viendrez un jour juger l'univers.
+
+para
+la: Te ergo quæsumus, tuis famulis subveni, quos pretioso sanguine redemisti.
+fr: Secourez donc, nous vous en conjurons, vos serviteurs, rachetés par votre sang précieux.
+
+para
+la: Æterna fac cum Sanctis tuis in gloria numerari.
+fr: Faites qu'ils soient comptés parmi vos Saints dans la gloire éternelle.
+
+para
+la: Salvum fac populum tuum, Domine, et benedic hæreditati tuæ.
+fr: Sauvez votre peuple, Seigneur, et bénissez votre héritage.
+
+para
+la: Et rege eos, et extolle illos usque in æternum.
+fr: Conduisez vos enfants, et élevez-les jusqu'à la gloire de l'éternité.
+
+para
+la: Per singulos dies benedicimus te ;
+fr: Chaque jour nous vous bénissons ;
+
+para
+la: Et laudamus nomen tuum in sæculum, et in sæculum sæculi.
+fr: Nous louons votre nom maintenant, et dans tous les siècles des siècles.
+
+para
+la: Dignare, Domine, die isto sine peccato nos custodire.
+fr: Daignez, Seigneur, pendant ce jour, nous préserver de tout péché.
+
+para
+la: Miserere nostri, Domine, miserere nostri.
+fr: Ayez pitié de nous, Seigneur, ayez pitié de nous.
+
+para
+la: Fiat misericordia tua, Domine, super nos, quemadmodum speravimus in te.
+fr: Répandez sur nous votre miséricorde, Seigneur, selon que nous avons espéré en vous.
+
+para
+la: In te, Domine, speravi, non confundar in æternum.
+fr: J'ai espéré en vous, Seigneur, je ne serai pas confondu à jamais.
+
+versicle V
+la: ℣. Benedicamus Patrem, et Filium, cum sancto Spiritu.
+fr: ℣. Bénissons le Père, et le Fils, et le Saint-Esprit.
+
+versicle R
+la: ℟. Laudemus et superexaltemus eum in sæcula.
+fr: ℟. Louons-le et exaltons-le par-dessus toutes choses dans tous les siècles.
+
+heading 2
+fr: Oraison
+
+para
+fr: Seigneur, dont la miséricorde est infinie et la bonté inépuisable, nous rendons grâces à votre divine Majesté pour les biens que nous en avons reçus, et nous conjurons votre clémence de ne point abandonner ceux dont vous exaucez ici-bas les prières, mais de les préparer à recevoir les récompenses éternelles. Par N.-S. J.-C.
+
+== magnificat
+title.fr: Cantique de la sainte Vierge
+title.la: Magnificat
+src: paroissienromain00tour | la fr | 124-126 | 137-139
+# Vêpres du dimanche.
+
+stanza psalm
+la: Magnificat * anima mea Dominum,
+fr: Mon âme glorifie le Seigneur.
+
+stanza psalm
+la: Et exsultavit spiritus meus * in Deo salutari meo.
+fr: Et mon esprit est ravi de joie en Dieu mon Sauveur.
+
+stanza psalm
+la: Quia respexit humilitatem ancillæ suæ, * ecce enim ex hoc beatam me dicent omnes generationes.
+fr: Parce qu'il a regardé la bassesse de sa servante, désormais toutes les générations m'appelleront bienheureuse.
+
+stanza psalm
+la: Quia fecit mihi magna qui potens est, * et sanctum nomen ejus.
+fr: Car le Tout-Puissant a fait en moi de grandes choses, et son nom est saint.
+
+stanza psalm
+la: Et misericordia ejus a progenie in progenies * timentibus eum.
+fr: Sa miséricorde se répand d'âge en âge sur ceux qui le craignent.
+
+stanza psalm
+la: Fecit potentiam in brachio suo : * dispersit superbos mente cordis sui.
+fr: Il a déployé la force de son bras, et confondu les pensées des superbes.
+
+stanza psalm
+la: Deposuit potentes de sede, * et exaltavit humiles.
+fr: Il a renversé de leurs trônes les puissants, et il a élevé les humbles.
+
+stanza psalm
+la: Esurientes implevit bonis, * et divites dimisit inanes.
+fr: Il a comblé de biens ceux qui étaient affamés, et renvoyé les mains vides ceux qui étaient dans l'abondance.
+
+stanza psalm
+la: Suscepit Israel puerum suum, * recordatus misericordiæ suæ.
+fr: Il a pris sous sa garde Israël son serviteur, se souvenant de sa miséricorde.
+
+stanza psalm
+la: Sicut locutus est ad patres nostros, * Abraham, et semini ejus in sæcula.
+fr: Comme il l'avait promis à nos pères, à Abraham et à sa postérité dans tous les siècles.
+
+== benedictus
+title.fr: Cantique de Zacharie
+title.la: Benedictus
+src: bub_gb_PcH1G0A8jZUC | la fr | 89-90 | 108-109
+# Laudes du dimanche. Coquilles du paroissien corrigées (voir README) : errexit, Sanveur, présnce, da la, peccatorem.
+
+stanza psalm
+la: Benedictus Dominus, Deus Israël, * quia visitavit et fecit redemptionem plebis suæ ;
+fr: Béni soit le Seigneur, le Dieu d'Israël, de ce qu'il a visité et racheté son peuple ;
+
+stanza psalm
+la: Et erexit cornu salutis nobis, * in domo David pueri sui,
+fr: De ce qu'il nous a suscité un puissant Sauveur dans la maison de David son serviteur,
+
+stanza psalm
+la: Sic locutus est per os sanctorum, * qui à sæculo sunt, prophetarum ejus.
+fr: Selon la promesse qu'il avait faite par la bouche de ses saints prophètes, qui ont été dans les siècles passés.
+
+stanza psalm
+la: Salutem ex inimicis nostris, * et de manu omnium qui oderunt nos.
+fr: De nous délivrer des mains de nos ennemis, et de tous ceux qui nous haïssent.
+
+stanza psalm
+la: Ad faciendam misericordiam cum patribus nostris, * et memorari testamenti sui sancti.
+fr: En usant de miséricorde envers nos pères, et en se souvenant de son alliance sainte.
+
+stanza psalm
+la: Jusjurandum quod juravit ad Abraham patrem nostrum, * daturum se nobis.
+fr: Et du serment par lequel il a promis à Abraham notre père, qu'il nous ferait cette grâce.
+
+stanza psalm
+la: Ut sinè timore, de manu inimicorum nostrorum liberati, * serviamus illi.
+fr: Qu'étant délivrés de la puissance de nos ennemis, nous le servions sans crainte.
+
+stanza psalm
+la: In sanctitate et justitiâ coram ipso, * omnibus diebus nostris.
+fr: Marchant en sa présence dans la sainteté et dans la justice tous les jours de notre vie.
+
+stanza psalm
+la: Et tu, puer, propheta Altissimi vocaberis ; * præibis enim ante faciem Domini parare vias ejus.
+fr: Et vous, petit enfant, vous serez appelé le prophète du Très-Haut, car vous irez devant le Seigneur pour lui préparer les voies.
+
+stanza psalm
+la: Ad dandam scientiam salutis plebi ejus, in remissionem peccatorum eorum.
+fr: Pour donner à son peuple la connaissance du salut, afin qu'ils obtiennent la rémission de leurs péchés.
+
+stanza psalm
+la: Per viscera misericordiæ Dei nostri, * in quibus visitavit nos oriens ex alto.
+fr: Par les entrailles de la miséricorde de notre Dieu, par lesquelles ce soleil levant est venu d'en haut nous visiter :
+
+stanza psalm
+la: Illuminare his qui in tenebris et in umbrâ mortis sedent, * ad dirigendos pedes nostros in viam pacis.
+fr: Pour éclairer ceux qui habitent dans les ténèbres et dans l'ombre de la mort, et pour conduire nos pas dans le chemin de la paix.
+
+== nunc-dimittis
+title.fr: Cantique de Siméon
+title.la: Nunc dimittis
+src: paroissienromain00tour | la fr | 135 | 148
+# Complies du dimanche ; l'antienne « Salva nos » qui suit n'est pas reprise.
+
+stanza psalm
+la: Nunc dimittis servum tuum, Domine, * secundum verbum tuum, in pace ;
+fr: C'est maintenant, Seigneur, que vous laisserez aller en paix votre serviteur, selon votre parole ;
+
+stanza psalm
+la: Quia viderunt oculi mei * salutare tuum,
+fr: Puisque mes yeux ont vu le Sauveur que vous nous donnez,
+
+stanza psalm
+la: Quod parasti * ante faciem omnium populorum,
+fr: Et que vous avez destiné pour être manifesté à tous les peuples,
+
+stanza psalm
+la: Lumen ad revelationem gentium, * et gloriam plebis tuæ Israel.
+fr: Comme la lumière qui éclairera les nations, et la gloire d'Israël votre peuple.

@@ -1,0 +1,500 @@
+{
+  "id": "bible.crampon",
+  "revision": 1,
+  "kind": "bible",
+  "title": {
+    "fr": "La Sainte Bible"
+  },
+  "subtitle": {
+    "fr": "Traduction du chanoine A. Crampon, édition révisée de 1923"
+  },
+  "languages": [
+    "fr"
+  ],
+  "primaryLanguage": "fr",
+  "aligned": false,
+  "versification": "crampon",
+  "contributors": [
+    {
+      "name": "Augustin Crampon",
+      "role": "translator"
+    },
+    {
+      "name": "Pères de la Compagnie de Jésus, avec des professeurs de Saint-Sulpice",
+      "role": "reviser"
+    },
+    {
+      "name": "Société de Saint-Jean-l’Évangéliste, Desclée et Cie",
+      "role": "publisher"
+    }
+  ],
+  "issued": "1923",
+  "source": {
+    "name": "CrossWire Bible Society, dépôt « crampon » (USFM)",
+    "url": "https://gitlab.com/crosswire-bible-society/crampon",
+    "file": "https://gitlab.com/api/v4/projects/14219928/repository/archive.tar.gz?sha=8dbc427f853798132620ccff958fdb25459d2c0a",
+    "edition": "La Sainte Bible, traduction d’après les textes originaux par le chanoine A. Crampon, édition révisée par des Pères de la Compagnie de Jésus avec la collaboration de professeurs de Saint-Sulpice, Paris, Tournai, Rome, Desclée et Cie, 1923 ; transcription fr.wikisource « Bible Crampon 1923 » (BnF bpt6k318720w), extraite en USFM par CrossWire",
+    "commit": "8dbc427f853798132620ccff958fdb25459d2c0a",
+    "retrieved": "2026-10-11",
+    "rawSha256": "0743c8e8db570b55dae4d36b94abb7281b38a31fc42c26e666c9c1caa7961675"
+  },
+  "license": {
+    "spdx": "LicenseRef-PublicDomain",
+    "status": "Œuvre collective publiée en 1923 sans nom de réviseur (initiative et nom de l’éditeur, CPI L113-2 al. 3) : domaine public en France depuis le 1er janvier 1994 (L123-3), aux États-Unis par la date de publication. Risque faible selon la revue critique (docs/planning/15-revue-critique.md) ; repli : Glaire 1905.",
+    "attribution": "Numérisation : CrossWire Bible Society, dépôt gitlab.com/crosswire-bible-society/crampon (module FreCrampon, DistributionLicense=Public Domain ; OCR de Jean-Marie Weber), d’après la transcription relue de fr.wikisource. Retouches de Paroissien : content/sources/bible/README.md."
+  },
+  "divisions": [
+    {
+      "id": "at",
+      "kind": "testament",
+      "toc": "Ancien Testament",
+      "children": [
+        {
+          "id": "gen",
+          "kind": "book",
+          "toc": "Genèse",
+          "unit": true
+        },
+        {
+          "id": "exo",
+          "kind": "book",
+          "toc": "Exode",
+          "unit": true
+        },
+        {
+          "id": "lev",
+          "kind": "book",
+          "toc": "Lévitique",
+          "unit": true
+        },
+        {
+          "id": "num",
+          "kind": "book",
+          "toc": "Nombres",
+          "unit": true
+        },
+        {
+          "id": "deu",
+          "kind": "book",
+          "toc": "Deutéronome",
+          "unit": true
+        },
+        {
+          "id": "jos",
+          "kind": "book",
+          "toc": "Josué",
+          "unit": true
+        },
+        {
+          "id": "jdg",
+          "kind": "book",
+          "toc": "Juges",
+          "unit": true
+        },
+        {
+          "id": "rut",
+          "kind": "book",
+          "toc": "Ruth",
+          "unit": true
+        },
+        {
+          "id": "1sa",
+          "kind": "book",
+          "toc": "1 Samuel",
+          "unit": true
+        },
+        {
+          "id": "2sa",
+          "kind": "book",
+          "toc": "2 Samuel",
+          "unit": true
+        },
+        {
+          "id": "1ki",
+          "kind": "book",
+          "toc": "1 Rois",
+          "unit": true
+        },
+        {
+          "id": "2ki",
+          "kind": "book",
+          "toc": "2 Rois",
+          "unit": true
+        },
+        {
+          "id": "1ch",
+          "kind": "book",
+          "toc": "1 Chroniques",
+          "unit": true
+        },
+        {
+          "id": "2ch",
+          "kind": "book",
+          "toc": "2 Chroniques",
+          "unit": true
+        },
+        {
+          "id": "ezr",
+          "kind": "book",
+          "toc": "Esdras",
+          "unit": true
+        },
+        {
+          "id": "neh",
+          "kind": "book",
+          "toc": "Néhémie",
+          "unit": true
+        },
+        {
+          "id": "tob",
+          "kind": "book",
+          "toc": "Tobie",
+          "unit": true
+        },
+        {
+          "id": "jdt",
+          "kind": "book",
+          "toc": "Judith",
+          "unit": true
+        },
+        {
+          "id": "est",
+          "kind": "book",
+          "toc": "Esther",
+          "unit": true
+        },
+        {
+          "id": "1ma",
+          "kind": "book",
+          "toc": "1 Machabées",
+          "unit": true
+        },
+        {
+          "id": "2ma",
+          "kind": "book",
+          "toc": "2 Machabées",
+          "unit": true
+        },
+        {
+          "id": "job",
+          "kind": "book",
+          "toc": "Job",
+          "unit": true
+        },
+        {
+          "id": "psa",
+          "kind": "book",
+          "toc": "Psaumes",
+          "unit": true
+        },
+        {
+          "id": "pro",
+          "kind": "book",
+          "toc": "Proverbes",
+          "unit": true
+        },
+        {
+          "id": "ecc",
+          "kind": "book",
+          "toc": "Ecclésiaste",
+          "unit": true
+        },
+        {
+          "id": "sng",
+          "kind": "book",
+          "toc": "Cantique",
+          "unit": true
+        },
+        {
+          "id": "wis",
+          "kind": "book",
+          "toc": "Sagesse",
+          "unit": true
+        },
+        {
+          "id": "sir",
+          "kind": "book",
+          "toc": "Ecclésiastique",
+          "unit": true
+        },
+        {
+          "id": "isa",
+          "kind": "book",
+          "toc": "Isaïe",
+          "unit": true
+        },
+        {
+          "id": "jer",
+          "kind": "book",
+          "toc": "Jérémie",
+          "unit": true
+        },
+        {
+          "id": "lam",
+          "kind": "book",
+          "toc": "Lamentations",
+          "unit": true
+        },
+        {
+          "id": "bar",
+          "kind": "book",
+          "toc": "Baruch",
+          "unit": true
+        },
+        {
+          "id": "ezk",
+          "kind": "book",
+          "toc": "Ézéchiel",
+          "unit": true
+        },
+        {
+          "id": "dan",
+          "kind": "book",
+          "toc": "Daniel",
+          "unit": true
+        },
+        {
+          "id": "hos",
+          "kind": "book",
+          "toc": "Osée",
+          "unit": true
+        },
+        {
+          "id": "jol",
+          "kind": "book",
+          "toc": "Joël",
+          "unit": true
+        },
+        {
+          "id": "amo",
+          "kind": "book",
+          "toc": "Amos",
+          "unit": true
+        },
+        {
+          "id": "oba",
+          "kind": "book",
+          "toc": "Abdias",
+          "unit": true
+        },
+        {
+          "id": "jon",
+          "kind": "book",
+          "toc": "Jonas",
+          "unit": true
+        },
+        {
+          "id": "mic",
+          "kind": "book",
+          "toc": "Michée",
+          "unit": true
+        },
+        {
+          "id": "nam",
+          "kind": "book",
+          "toc": "Nahum",
+          "unit": true
+        },
+        {
+          "id": "hab",
+          "kind": "book",
+          "toc": "Habacuc",
+          "unit": true
+        },
+        {
+          "id": "zep",
+          "kind": "book",
+          "toc": "Sophonie",
+          "unit": true
+        },
+        {
+          "id": "hag",
+          "kind": "book",
+          "toc": "Aggée",
+          "unit": true
+        },
+        {
+          "id": "zec",
+          "kind": "book",
+          "toc": "Zacharie",
+          "unit": true
+        },
+        {
+          "id": "mal",
+          "kind": "book",
+          "toc": "Malachie",
+          "unit": true
+        }
+      ]
+    },
+    {
+      "id": "nt",
+      "kind": "testament",
+      "toc": "Nouveau Testament",
+      "children": [
+        {
+          "id": "mat",
+          "kind": "book",
+          "toc": "Évangile selon Saint Matthieu",
+          "unit": true
+        },
+        {
+          "id": "mrk",
+          "kind": "book",
+          "toc": "Évangile selon Saint Marc",
+          "unit": true
+        },
+        {
+          "id": "luk",
+          "kind": "book",
+          "toc": "Évangile selon Saint Luc",
+          "unit": true
+        },
+        {
+          "id": "jhn",
+          "kind": "book",
+          "toc": "Évangile selon Saint Jean",
+          "unit": true
+        },
+        {
+          "id": "act",
+          "kind": "book",
+          "toc": "Actes des Apôtres",
+          "unit": true
+        },
+        {
+          "id": "rom",
+          "kind": "book",
+          "toc": "Épître aux Romains",
+          "unit": true
+        },
+        {
+          "id": "1co",
+          "kind": "book",
+          "toc": "Iʳᵉ épître aux Corinthiens",
+          "unit": true
+        },
+        {
+          "id": "2co",
+          "kind": "book",
+          "toc": "IIᵉ épître aux Corinthiens",
+          "unit": true
+        },
+        {
+          "id": "gal",
+          "kind": "book",
+          "toc": "Épître aux Galates",
+          "unit": true
+        },
+        {
+          "id": "eph",
+          "kind": "book",
+          "toc": "Épître aux Éphésiens",
+          "unit": true
+        },
+        {
+          "id": "php",
+          "kind": "book",
+          "toc": "Épître aux Philippiens",
+          "unit": true
+        },
+        {
+          "id": "col",
+          "kind": "book",
+          "toc": "Épître aux Colossiens",
+          "unit": true
+        },
+        {
+          "id": "1th",
+          "kind": "book",
+          "toc": "Iʳᵉ épître aux Thessaloniciens",
+          "unit": true
+        },
+        {
+          "id": "2th",
+          "kind": "book",
+          "toc": "IIᵉ épître aux Thessaloniciens",
+          "unit": true
+        },
+        {
+          "id": "1ti",
+          "kind": "book",
+          "toc": "Iʳᵉ épître à Timothée",
+          "unit": true
+        },
+        {
+          "id": "2ti",
+          "kind": "book",
+          "toc": "IIᵉ épître à Timothée",
+          "unit": true
+        },
+        {
+          "id": "tit",
+          "kind": "book",
+          "toc": "Épître à Tite",
+          "unit": true
+        },
+        {
+          "id": "phm",
+          "kind": "book",
+          "toc": "Épître à Philémon",
+          "unit": true
+        },
+        {
+          "id": "heb",
+          "kind": "book",
+          "toc": "Épître aux Hébreux",
+          "unit": true
+        },
+        {
+          "id": "jas",
+          "kind": "book",
+          "toc": "Épître de Saint Jacques",
+          "unit": true
+        },
+        {
+          "id": "1pe",
+          "kind": "book",
+          "toc": "Iʳᵉ épître de Saint Pierre",
+          "unit": true
+        },
+        {
+          "id": "2pe",
+          "kind": "book",
+          "toc": "IIᵉ épître de Saint Pierre",
+          "unit": true
+        },
+        {
+          "id": "1jn",
+          "kind": "book",
+          "toc": "Iʳᵉ épître de Saint Jean",
+          "unit": true
+        },
+        {
+          "id": "2jn",
+          "kind": "book",
+          "toc": "IIᵉ épître de Saint Jean",
+          "unit": true
+        },
+        {
+          "id": "3jn",
+          "kind": "book",
+          "toc": "IIIᵉ épître de Saint Jean",
+          "unit": true
+        },
+        {
+          "id": "jud",
+          "kind": "book",
+          "toc": "Épître de Saint Jude",
+          "unit": true
+        },
+        {
+          "id": "rev",
+          "kind": "book",
+          "toc": "Apocalypse de Saint Jean",
+          "unit": true
+        }
+      ]
+    }
+  ]
+}

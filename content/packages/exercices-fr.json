@@ -1,0 +1,8 @@
+{
+  "packageId": "exercices-fr",
+  "packageVersion": 2026101101,
+  "rights": "domaine-public",
+  "publications": ["exercices.fr"],
+  "title": {"fr": "Exercices spirituels de saint Ignace"},
+  "minAppFormat": "1.0"
+}

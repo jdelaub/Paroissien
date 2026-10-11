@@ -1,0 +1,111 @@
+{"id":"1jn.titre","type":"heading","level":1,"t":{"la":["Epistola B. Joannis Apostoli prima"]}}
+{"id":"1jn.1","type":"heading","level":2,"label":"Caput 1","t":{"la":["Caput 1"]}}
+{"id":"1jn.1.1","type":"verse","n":"1","p":true,"dropCap":true,"t":{"la":[{"num":"1"},"Quod fuit ab initio, quod audivimus, quod vidimus oculis nostris, quod perspeximus, et manus nostræ contrectaverunt de verbo vitæ :"]}}
+{"id":"1jn.1.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"et vita manifestata est, et vidimus, et testamur, et annuntiamus vobis vitam æternam, quæ erat apud Patrem, et apparuit nobis :"]}}
+{"id":"1jn.1.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"quod vidimus et audivimus, annuntiamus vobis, ut et vos societatem habeatis nobiscum, et societas nostra sit cum Patre, et cum Filio ejus Jesu Christo."]}}
+{"id":"1jn.1.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Et hæc scribimus vobis ut gaudeatis, et gaudium vestrum sit plenum."]}}
+{"id":"1jn.1.5","type":"verse","n":"5","p":true,"t":{"la":[{"num":"5"},"Et hæc est annuntiatio, quam audivimus ab eo, et annuntiamus vobis : quoniam Deus lux est, et tenebræ in eo non sunt ullæ."]}}
+{"id":"1jn.1.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Si dixerimus quoniam societatem habemus cum eo, et in tenebris ambulamus, mentimur, et veritatem non facimus."]}}
+{"id":"1jn.1.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Si autem in luce ambulamus sicut et ipse est in luce, societatem habemus ad invicem, et sanguis Jesu Christi, Filii ejus, emundat nos ab omni peccato."]}}
+{"id":"1jn.1.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Si dixerimus quoniam peccatum non habemus, ipsi nos seducimus, et veritas in nobis non est."]}}
+{"id":"1jn.1.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Si confiteamur peccata nostra : fidelis est, et justus, ut remittat nobis peccata nostra, et emundet nos ab omni iniquitate."]}}
+{"id":"1jn.1.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Si dixerimus quoniam non peccavimus, mendacem facimus eum, et verbum ejus non est in nobis."]}}
+{"id":"1jn.2","type":"heading","level":2,"label":"Caput 2","t":{"la":["Caput 2"]}}
+{"id":"1jn.2.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Filioli mei, hæc scribo vobis, ut non peccetis. Sed et si quis peccaverit, advocatum habemus apud Patrem, Jesum Christum justum :"]}}
+{"id":"1jn.2.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"et ipse est propitiatio pro peccatis nostris : non pro nostris autem tantum, sed etiam pro totius mundi."]}}
+{"id":"1jn.2.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Et in hoc scimus quoniam cognovimus eum, si mandata ejus observemus."]}}
+{"id":"1jn.2.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Qui dicit se nosse eum, et mandata ejus non custodit, mendax est, et in hoc veritas non est."]}}
+{"id":"1jn.2.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Qui autem servat verbum ejus, vere in hoc caritas Dei perfecta est : et in hoc scimus quoniam in ipso sumus."]}}
+{"id":"1jn.2.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Qui dicit se in ipso manere, debet, sicut ille ambulavit, et ipse ambulare."]}}
+{"id":"1jn.2.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Carissimi, non mandatum novum scribo vobis, sed mandatum vetus, quod habuistis ab initio. Mandatum vetus est verbum, quod audistis."]}}
+{"id":"1jn.2.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Iterum mandatum novum scribo vobis, quod verum est et in ipso, et in vobis : quia tenebræ transierunt, et verum lumen jam lucet."]}}
+{"id":"1jn.2.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Qui dicit se in luce esse, et fratrem suum odit, in tenebris est usque adhuc."]}}
+{"id":"1jn.2.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Qui diligit fratrem suum, in lumine manet, et scandalum in eo non est."]}}
+{"id":"1jn.2.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Qui autem odit fratrem suum, in tenebris est, et in tenebris ambulat, et nescit quo eat : quia tenebræ obcæcaverunt oculos ejus."]}}
+{"id":"1jn.2.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Scribo vobis, filioli, quoniam remittuntur vobis peccata propter nomen ejus."]}}
+{"id":"1jn.2.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Scribo vobis, patres, quoniam cognovistis eum, qui ab initio est. Scribo vobis, adolescentes, quoniam vicistis malignum."]}}
+{"id":"1jn.2.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Scribo vobis, infantes, quoniam cognovistis patrem. Scribo vobis juvenes, quoniam fortes estis, et verbum Dei manet in vobis, et vicistis malignum."]}}
+{"id":"1jn.2.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Nolite diligere mundum, neque ea quæ in mundo sunt. Si quis diligit mundum, non est caritas Patris in eo :"]}}
+{"id":"1jn.2.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"quoniam omne quod est in mundo, concupiscentia carnis est, et concupiscentia oculorum, et superbia vitæ : quæ non est ex Patre, sed ex mundo est."]}}
+{"id":"1jn.2.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Et mundus transit, et concupiscentia ejus : qui autem facit voluntatem Dei manet in æternum."]}}
+{"id":"1jn.2.18","type":"verse","n":"18","p":true,"t":{"la":[{"num":"18"},"Filioli, novissima hora est : et sicut audistis quia antichristus venit, et nunc antichristi multi facti sunt ; unde scimus, quia novissima hora est."]}}
+{"id":"1jn.2.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Ex nobis prodierunt, sed non erant ex nobis, nam, si fuissent ex nobis, permansissent utique nobiscum : sed ut manifesti sint quoniam non sunt omnes ex nobis."]}}
+{"id":"1jn.2.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Sed vos unctionem habetis a Sancto, et nostis omnia."]}}
+{"id":"1jn.2.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Non scripsi vobis quasi ignorantibus veritatem, sed quasi scientibus eam : et quoniam omne mendacium ex veritate non est."]}}
+{"id":"1jn.2.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Quis est mendax, nisi is qui negat quoniam Jesus est Christus ? Hic est antichristus, qui negat Patrem, et Filium."]}}
+{"id":"1jn.2.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Omnis qui negat Filium, nec Patrem habet : qui confitetur Filium, et Patrem habet."]}}
+{"id":"1jn.2.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Vos quod audistis ab initio, in vobis permaneat : si in vobis permanserit quod audistis ab initio, et vos in Filio et Patre manebitis."]}}
+{"id":"1jn.2.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Et hæc est repromissio, quam ipse pollicitus est nobis, vitam æternam."]}}
+{"id":"1jn.2.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Hæc scripsi vobis de his, qui seducant vos."]}}
+{"id":"1jn.2.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Et vos unctionem, quam accepistis ab eo, maneat in vobis. Et non necesse habetis ut aliquis doceat vos : sed sicut unctio ejus docet vos de omnibus, et verum est, et non est mendacium. Et sicut docuit vos : manete in eo."]}}
+{"id":"1jn.2.28","type":"verse","n":"28","p":true,"t":{"la":[{"num":"28"},"Et nunc, filioli, manete in eo : ut cum apparuerit, habeamus fiduciam, et non confundamur ab eo in adventu ejus."]}}
+{"id":"1jn.2.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Si scitis quoniam justus est, scitote quoniam et omnis, qui facit justitiam, ex ipso natus est."]}}
+{"id":"1jn.3","type":"heading","level":2,"label":"Caput 3","t":{"la":["Caput 3"]}}
+{"id":"1jn.3.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Videte qualem caritatem dedit nobis Pater, ut filii Dei nominemur et simus. Propter hoc mundus non novit nos : quia non novit eum."]}}
+{"id":"1jn.3.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Carissimi, nunc filii Dei sumus : et nondum apparuit quid erimus. Scimus quoniam cum apparuerit, similes ei erimus : quoniam videbimus eum sicuti est."]}}
+{"id":"1jn.3.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Et omnis qui habet hanc spem in eo, sanctificat se, sicut et ille sanctus est."]}}
+{"id":"1jn.3.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Omnis qui facit peccatum, et iniquitatem facit : et peccatum est iniquitas."]}}
+{"id":"1jn.3.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Et scitis quia ille apparuit ut peccata nostra tolleret : et peccatum in eo non est."]}}
+{"id":"1jn.3.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Omnis qui in eo manet, non peccat : et omnis qui peccat, non vidit eum, nec cognovit eum."]}}
+{"id":"1jn.3.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Filioli, nemo vos seducat. Qui facit justitiam, justus est, sicut et ille justus est."]}}
+{"id":"1jn.3.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Qui facit peccatum, ex diabolo est : quoniam ab initio diabolus peccat. In hoc apparuit Filius Dei, ut dissolvat opera diaboli."]}}
+{"id":"1jn.3.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Omnis qui natus est ex Deo, peccatum non facit : quoniam semen ipsius in eo manet, et non potest peccare, quoniam ex Deo natus est."]}}
+{"id":"1jn.3.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"In hoc manifesti sunt filii Dei, et filii diaboli. Omnis qui non est justus, non est ex Deo, et qui non diligit fratrem suum :"]}}
+{"id":"1jn.3.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"quoniam hæc est annuntiatio, quam audistis ab initio, ut diligatis alterutrum."]}}
+{"id":"1jn.3.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Non sicut Cain, qui ex maligno erat, et occidit fratrem suum. Et propter quid occidit eum ? Quoniam opera ejus maligna erant : fratris autem ejus, justa."]}}
+{"id":"1jn.3.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Nolite mirari, fratres, si odit vos mundus."]}}
+{"id":"1jn.3.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Nos scimus quoniam translati sumus de morte ad vitam, quoniam diligimus fratres. Qui non diligit, manet in morte :"]}}
+{"id":"1jn.3.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"omnis qui odit fratrem suum, homicida est. Et scitis quoniam omnis homicida non habet vitam æternam in semetipso manentem."]}}
+{"id":"1jn.3.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"In hoc cognovimus caritatem Dei, quoniam ille animam suam pro nobis posuit : et nos debemus pro fratribus animas ponere."]}}
+{"id":"1jn.3.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Qui habuerit substantiam hujus mundi, et viderit fratrem suum necessitatem habere, et clauserit viscera sua ab eo : quomodo caritas Dei manet in eo ?"]}}
+{"id":"1jn.3.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Filioli mei, non diligamus verbo neque lingua, sed opere et veritate :"]}}
+{"id":"1jn.3.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"in hoc cognoscimus quoniam ex veritate sumus : et in conspectu ejus suadebimus corda nostra."]}}
+{"id":"1jn.3.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Quoniam si reprehenderit nos cor nostrum : major est Deus corde nostro, et novit omnia."]}}
+{"id":"1jn.3.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Carissimi, si cor nostrum non reprehenderit nos, fiduciam habemus ad Deum :"]}}
+{"id":"1jn.3.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"et quidquid petierimus, accipiemus ab eo : quoniam mandata ejus custodimus, et ea, quæ sunt placita coram eo, facimus."]}}
+{"id":"1jn.3.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Et hoc est mandatum ejus : ut credamus in nomine Filii ejus Jesu Christi : et diligamus alterutrum, sicut dedit mandatum nobis."]}}
+{"id":"1jn.3.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Et qui servat mandata ejus, in illo manet, et ipse in eo : et in hoc scimus quoniam manet in nobis, de Spiritu quem dedit nobis."]}}
+{"id":"1jn.4","type":"heading","level":2,"label":"Caput 4","t":{"la":["Caput 4"]}}
+{"id":"1jn.4.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Carissimi, nolite omni spiritui credere, sed probate spiritus si ex Deo sint : quoniam multi pseudoprophetæ exierunt in mundum."]}}
+{"id":"1jn.4.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"In hoc cognoscitur Spiritus Dei : omnis spiritus qui confitetur Jesum Christum in carne venisse, ex Deo est :"]}}
+{"id":"1jn.4.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"et omnis spiritus qui solvit Jesum, ex Deo non est, et hic est antichristus, de quo audistis quoniam venit, et nunc jam in mundo est."]}}
+{"id":"1jn.4.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Vos ex Deo estis filioli, et vicistis eum, quoniam major est qui in vobis est, quam qui in mundo."]}}
+{"id":"1jn.4.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Ipsi de mundo sunt : ideo de mundo loquuntur, et mundus eos audit."]}}
+{"id":"1jn.4.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Nos ex Deo sumus. Qui novit Deum, audit nos ; qui non est ex Deo, non audit nos : in hoc cognoscimus Spiritum veritatis, et spiritum erroris."]}}
+{"id":"1jn.4.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Carissimi, diligamus nos invicem : quia caritas ex Deo est. Et omnis qui diligit, ex Deo natus est, et cognoscit Deum."]}}
+{"id":"1jn.4.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Qui non diligit, non novit Deum : quoniam Deus caritas est."]}}
+{"id":"1jn.4.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"In hoc apparuit caritas Dei in nobis, quoniam Filium suum unigenitum misit Deus in mundum, ut vivamus per eum."]}}
+{"id":"1jn.4.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"In hoc est caritas : non quasi nos dilexerimus Deum, sed quoniam ipse prior dilexit nos, et misit Filium suum propitiationem pro peccatis nostris."]}}
+{"id":"1jn.4.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Carissimi, si sic Deus dilexit nos : et nos debemus alterutrum diligere."]}}
+{"id":"1jn.4.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Deum nemo vidit umquam. Si diligamus invicem, Deus in nobis manet, et caritas ejus in nobis perfecta est."]}}
+{"id":"1jn.4.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"In hoc cognoscimus quoniam in eo manemus, et ipse in nobis : quoniam de Spiritu suo dedit nobis."]}}
+{"id":"1jn.4.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Et nos vidimus, et testificamur quoniam Pater misit Filium suum Salvatorem mundi."]}}
+{"id":"1jn.4.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Quisquis confessus fuerit quoniam Jesus est Filius Dei, Deus in eo manet, et ipse in Deo."]}}
+{"id":"1jn.4.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Et nos cognovimus, et credidimus caritati, quam habet Deus in nobis. Deus caritas est : et qui manet in caritate, in Deo manet, et Deus in eo."]}}
+{"id":"1jn.4.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"In hoc perfecta est caritas Dei nobiscum, ut fiduciam habeamus in die judicii : quia sicut ille est, et nos sumus in hoc mundo."]}}
+{"id":"1jn.4.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Timor non est in caritate : sed perfecta caritas foras mittit timorem, quoniam timor pœnam habet : qui autem timet, non est perfectus in caritate."]}}
+{"id":"1jn.4.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Nos ergo diligamus Deum, quoniam Deus prior dilexit nos."]}}
+{"id":"1jn.4.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Si quis dixerit : Quoniam diligo Deum, et fratrem suum oderit, mendax est. Qui enim non diligit fratrem suum quem vidit, Deum, quem non vidit, quomodo potest diligere ?"]}}
+{"id":"1jn.4.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Et hoc mandatum habemus a Deo : ut qui diligit Deum, diligat et fratrem suum."]}}
+{"id":"1jn.5","type":"heading","level":2,"label":"Caput 5","t":{"la":["Caput 5"]}}
+{"id":"1jn.5.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Omnis qui credit quoniam Jesus est Christus, ex Deo natus est. Et omnis qui diligit eum qui genuit, diligit et eum qui natus est ex eo."]}}
+{"id":"1jn.5.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"In hoc cognoscimus quoniam diligimus natos Dei, cum Deum diligamus, et mandata ejus faciamus."]}}
+{"id":"1jn.5.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Hæc est enim caritas Dei, ut mandata ejus custodiamus : et mandata ejus gravia non sunt."]}}
+{"id":"1jn.5.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Quoniam omne quod natum est ex Deo, vincit mundum : et hæc est victoria, quæ vincit mundum, fides nostra."]}}
+{"id":"1jn.5.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Quis est, qui vincit mundum, nisi qui credit quoniam Jesus est Filius Dei ?"]}}
+{"id":"1jn.5.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Hic est, qui venit per aquam et sanguinem, Jesus Christus : non in aqua solum, sed in aqua et sanguine. Et Spiritus est, qui testificatur quoniam Christus est veritas."]}}
+{"id":"1jn.5.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Quoniam tres sunt, qui testimonium dant in cælo : Pater, Verbum, et Spiritus Sanctus : et hi tres unum sunt."]}}
+{"id":"1jn.5.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Et tres sunt, qui testimonium dant in terra : spiritus, et aqua, et sanguis : et hi tres unum sunt."]}}
+{"id":"1jn.5.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Si testimonium hominum accipimus, testimonium Dei majus est : quoniam hoc est testimonium Dei, quod majus est, quoniam testificatus est de Filio suo."]}}
+{"id":"1jn.5.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Qui credit in Filium Dei, habet testimonium Dei in se. Qui non credit Filio, mendacem facit eum : quia non credit in testimonium quod testificatus est Deus de Filio suo."]}}
+{"id":"1jn.5.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Et hoc est testimonium, quoniam vitam æternam dedit nobis Deus : et hæc vita in Filio ejus est."]}}
+{"id":"1jn.5.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Qui habet Filium, habet vitam : qui non habet Filium, vitam non habet."]}}
+{"id":"1jn.5.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Hæc scribo vobis ut sciatis quoniam vitam habetis æternam, qui creditis in nomine Filii Dei."]}}
+{"id":"1jn.5.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Et hæc est fiducia, quam habemus ad eum : quia quodcumque petierimus, secundum voluntatem ejus, audit nos."]}}
+{"id":"1jn.5.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Et scimus quia audit nos quidquid petierimus : scimus quoniam habemus petitiones quas postulamus ab eo."]}}
+{"id":"1jn.5.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Qui scit fratrem suum peccare peccatum non ad mortem, petat, et dabitur ei vita peccanti non ad mortem. Est peccatum ad mortem : non pro illo dico ut roget quis."]}}
+{"id":"1jn.5.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Omnis iniquitas, peccatum est : et est peccatum ad mortem."]}}
+{"id":"1jn.5.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Scimus quia omnis qui natus est ex Deo, non peccat : sed generatio Dei conservat eum, et malignus non tangit eum."]}}
+{"id":"1jn.5.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Scimus quoniam ex Deo sumus : et mundus totus in maligno positus est."]}}
+{"id":"1jn.5.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Et scimus quoniam Filius Dei venit, et dedit nobis sensum ut cognoscamus verum Deum, et simus in vero Filio ejus. Hic est verus Deus, et vita æterna."]}}
+{"id":"1jn.5.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Filioli, custodite vos a simulacris. Amen."]}}

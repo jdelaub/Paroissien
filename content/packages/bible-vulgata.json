@@ -1,0 +1,8 @@
+{
+  "packageId": "bible-vulgata",
+  "packageVersion": 2026101101,
+  "rights": "domaine-public",
+  "publications": ["bible.vulgata"],
+  "title": {"la": "Biblia Sacra Vulgatæ editionis", "fr": "Vulgate clémentine"},
+  "minAppFormat": "1.0"
+}

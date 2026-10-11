@@ -1,0 +1,8 @@
+{
+  "packageId": "bible-crampon",
+  "packageVersion": 2026101101,
+  "rights": "domaine-public",
+  "publications": ["bible.crampon"],
+  "title": {"fr": "La Sainte Bible, traduction Crampon (1923)"},
+  "minAppFormat": "1.0"
+}

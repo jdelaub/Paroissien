@@ -1,0 +1,37 @@
+# Prières de dévotion.
+# Aucune des éditions consultées ne donne l'Anima Christi en latin, le Suscipe de saint Ignace sous sa forme
+# propre, la prière à saint Michel en latin, ni l'Angele Dei : voir README.
+
+== anima-christi
+title.fr: Prière à Jésus-Christ
+src: bub_gb_PcH1G0A8jZUC | fr | 45 | 64
+# Prières durant la sainte Messe, après la communion. Traduction de l'Anima Christi.
+
+para
+fr: Ame de Jésus-Christ, sanctifiez-moi ; corps de Jésus-Christ, sauvez-moi ; sang de Jésus-Christ, enivrez-moi ; eau du côté de Jésus-Christ, lavez-moi ; passion de Jésus-Christ, fortifiez-moi. O bon Jésus, exaucez-moi ; cachez-moi dans vos blessures ; ne permettez pas que je me sépare de vous ; défendez-moi de la malignité de mon ennemi, à l'heure de ma mort appelez-moi, et ordonnez que j'aille à vous, pour vous louer avec tous vos Saints pendant les siècles des siècles. Ainsi soit-il.
+
+== acte-d-offrande
+title.fr: Acte d'Offrande
+src: bub_gb_PcH1G0A8jZUC | fr | 45 | 64
+# Même page ; reprend, dans sa seconde moitié, l'offrande du Suscipe de saint Ignace.
+
+para
+fr: Votre serviteur et le fils de votre servante, ô Jésus ! je renonce à Satan, à toutes ses œuvres et à toutes ses pompes, vous seul êtes le Dieu de mon cœur, mon partage pour l'éternité. Recevez seul aussi tout mon être, recevez ma mémoire, mon entendement, ma volonté ; tout ce que j'ai, tout ce que je possède, c'est vous qui me l'avez donné, je vous le rends, je l'abandonne entièrement au bon plaisir de votre volonté. Avec votre amitié, donnez-moi de vous aimer vous seul, et je suis assez riche, et je ne vous demande plus rien.
+
+== saint-michel
+title.fr: Prières après la sainte Messe
+src: paroissienromain00tour | fr | 83 | 96
+removed: (Décret du 6 janvier 1884, les enrichissant de 300 jours d'indulgence.)
+# Prières prescrites par Léon XIII après les messes basses ; la prière à saint Michel en est la dernière.
+
+rubric
+fr: Ave, Maria (3 fois.) Salve, Regina.
+
+heading 2
+fr: Prions
+
+para
+fr: O Dieu, notre refuge et notre force, regardez favorablement le peuple qui crie vers vous ; et par l'intercession de la glorieuse et immaculée Vierge Marie, Mère de Dieu, du bienheureux Joseph son Epoux, de vos bienheureux Apôtres Pierre et Paul et de tous les Saints, exaucez dans votre miséricorde et votre bonté les prières que nous répandons à vos pieds pour la conversion des pécheurs, pour la liberté et l'exaltation de la sainte Eglise notre Mère. Par le Christ notre Seigneur. ℟. Ainsi soit-il.
+
+para
+fr: Saint Michel Archange, défendez-nous dans le combat, soyez notre soutien contre la perfidie et les embûches du démon. Que Dieu le domine, telle est notre humble prière ; et vous, Prince de la milice céleste, par la vertu divine rejetez en enfer Satan et les autres esprits malins qui vaguent dans le monde pour la perdition des âmes. ℟. Ainsi soit-il.

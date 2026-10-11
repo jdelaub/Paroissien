@@ -1,12 +1,65 @@
+import javax.inject.Inject
+import org.gradle.process.ExecOperations
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.roborazzi)
 }
 
+/**
+ * Paquets publics construits par la chaîne de contenu (content/pqt.py, ADR 003) au moment du build : jamais de binaire
+ * commité. Seuls les droits « domaine-public » et « licence-libre » passent (--public-only). Le catalogue est signé avec
+ * la clé de test ; les paquets privés de la saveur « personnel » arrivent à part, dans packs-private/ (ADR 001).
+ */
+abstract class BuildContentPacks : DefaultTask() {
+    @get:InputFiles
+    @get:PathSensitive(PathSensitivity.RELATIVE)
+    abstract val sources: ConfigurableFileCollection
+
+    @get:Internal
+    abstract val pqt: RegularFileProperty
+
+    @get:InputFile
+    @get:PathSensitive(PathSensitivity.NONE)
+    abstract val signKey: RegularFileProperty
+
+    @get:OutputDirectory
+    abstract val outputDir: DirectoryProperty
+
+    @get:Inject
+    abstract val exec: ExecOperations
+
+    @TaskAction
+    fun build() {
+        val packs = outputDir.get().dir("packs").asFile
+        packs.deleteRecursively()
+        packs.mkdirs()
+        exec.exec {
+            commandLine("python3", "-I", pqt.get().asFile.absolutePath, "build", "--public-only",
+                "--sign-key", signKey.get().asFile.absolutePath, "--out", packs.absolutePath)
+        }
+    }
+}
+
+val content = rootProject.layout.projectDirectory.dir("../content")
+val buildContentPacks = tasks.register<BuildContentPacks>("buildContentPacks") {
+    sources.from(fileTree(content) {
+        include("data/**", "packages/**", "pipeline/**", "schema/**", "pqt.py")
+        exclude("**/__pycache__/**")
+    })
+    pqt.set(content.file("pqt.py"))
+    signKey.set(content.file("schema/keys/test-p256.pem"))
+    outputDir.set(layout.buildDirectory.dir("generated/content-packs"))
+}
+
+androidComponents {
+    onVariants { variant -> variant.sources.assets?.addGeneratedSourceDirectory(buildContentPacks, BuildContentPacks::outputDir) }
+}
+
 // Clé de publication hors du dépôt, comme pour les autres projets (~/.gradle/gradle.properties). Absente : APK release non signé.
 val releaseKeystore = providers.gradleProperty("PAROISSIEN_KEYSTORE").orNull
-// Paquets privés de la saveur « personnel » : lus depuis un dossier hors du dépôt public (ADR 001).
+// Paquets privés de la saveur « personnel » (assets packs-private/) : lus hors du dépôt public (ADR 001).
 val personnelPacksDir = providers.gradleProperty("paroissien.personnelPacksDir").orNull
 
 android {
@@ -17,8 +70,8 @@ android {
         applicationId = "app.paroissien" // figé (ADR 002) : ne plus changer après la première installation
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 3
-        versionName = "0.2.0"
+        versionCode = 5
+        versionName = "0.3.1"
     }
 
     // ADR 001 : seule « domainePublic » est construite par la CI publique ; « personnel » peut embarquer

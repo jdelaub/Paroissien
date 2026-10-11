@@ -1,0 +1,496 @@
+{
+  "id": "bible.vulgata",
+  "revision": 1,
+  "kind": "bible",
+  "title": {
+    "la": "Biblia Sacra Vulgatæ editionis"
+  },
+  "subtitle": {
+    "la": "Vulgata Clementina"
+  },
+  "languages": [
+    "la"
+  ],
+  "primaryLanguage": "la",
+  "aligned": false,
+  "versification": "vulgata",
+  "contributors": [
+    {
+      "name": "Alberto Colunga et Laurentio Turrado",
+      "role": "editor"
+    },
+    {
+      "name": "Michael Tweedale (Clementine Text Project)",
+      "role": "transcriber"
+    }
+  ],
+  "issued": "1592",
+  "source": {
+    "name": "CrossWire Bible Society, dépôt « vulgclementine » (OSIS)",
+    "url": "https://gitlab.com/crosswire-bible-society/vulgclementine",
+    "file": "https://gitlab.com/api/v4/projects/39534063/repository/archive.tar.gz?sha=be6ca9c13addb83ea6faa056e78971fd408e8bb4",
+    "edition": "Biblia Sacra juxta Vulgatam Clementinam, éd. A. Colunga et L. Turrado, Madrid, BAC, 1946, transcrite par le Clementine Text Project (M. Tweedale) ; module CrossWire VulgClementine 2.1.0 (2022-09-19)",
+    "commit": "be6ca9c13addb83ea6faa056e78971fd408e8bb4",
+    "retrieved": "2026-10-11",
+    "rawSha256": "425abbeb781d61a87ebfba7a33bab85c4ce97d5fee7cb5edaa90c303057e56b3"
+  },
+  "license": {
+    "spdx": "LicenseRef-PublicDomain",
+    "status": "Vulgate clémentine (1592-1598), domaine public ; texte numérique placé dans le domaine public par le Clementine Text Project.",
+    "attribution": "Clementine Text Project (M. Tweedale), d’après l’édition Colunga-Turrado (BAC, 1946) ; module CrossWire VulgClementine (DistributionLicense=Public Domain), dépôt gitlab.com/crosswire-bible-society/vulgclementine. Titres des livres ajoutés par Paroissien."
+  },
+  "divisions": [
+    {
+      "id": "at",
+      "kind": "testament",
+      "toc": "Vetus Testamentum",
+      "children": [
+        {
+          "id": "gen",
+          "kind": "book",
+          "toc": "Liber Genesis",
+          "unit": true
+        },
+        {
+          "id": "exo",
+          "kind": "book",
+          "toc": "Liber Exodus",
+          "unit": true
+        },
+        {
+          "id": "lev",
+          "kind": "book",
+          "toc": "Liber Leviticus",
+          "unit": true
+        },
+        {
+          "id": "num",
+          "kind": "book",
+          "toc": "Liber Numeri",
+          "unit": true
+        },
+        {
+          "id": "deu",
+          "kind": "book",
+          "toc": "Liber Deuteronomii",
+          "unit": true
+        },
+        {
+          "id": "jos",
+          "kind": "book",
+          "toc": "Liber Josue",
+          "unit": true
+        },
+        {
+          "id": "jdg",
+          "kind": "book",
+          "toc": "Liber Judicum",
+          "unit": true
+        },
+        {
+          "id": "rut",
+          "kind": "book",
+          "toc": "Liber Ruth",
+          "unit": true
+        },
+        {
+          "id": "1sa",
+          "kind": "book",
+          "toc": "Liber I Regum",
+          "unit": true
+        },
+        {
+          "id": "2sa",
+          "kind": "book",
+          "toc": "Liber II Regum",
+          "unit": true
+        },
+        {
+          "id": "1ki",
+          "kind": "book",
+          "toc": "Liber III Regum",
+          "unit": true
+        },
+        {
+          "id": "2ki",
+          "kind": "book",
+          "toc": "Liber IV Regum",
+          "unit": true
+        },
+        {
+          "id": "1ch",
+          "kind": "book",
+          "toc": "Liber I Paralipomenon",
+          "unit": true
+        },
+        {
+          "id": "2ch",
+          "kind": "book",
+          "toc": "Liber II Paralipomenon",
+          "unit": true
+        },
+        {
+          "id": "ezr",
+          "kind": "book",
+          "toc": "Liber I Esdræ",
+          "unit": true
+        },
+        {
+          "id": "neh",
+          "kind": "book",
+          "toc": "Liber Nehemiæ, qui et Esdræ secundus dicitur",
+          "unit": true
+        },
+        {
+          "id": "tob",
+          "kind": "book",
+          "toc": "Liber Tobiæ",
+          "unit": true
+        },
+        {
+          "id": "jdt",
+          "kind": "book",
+          "toc": "Liber Judith",
+          "unit": true
+        },
+        {
+          "id": "est",
+          "kind": "book",
+          "toc": "Liber Esther",
+          "unit": true
+        },
+        {
+          "id": "job",
+          "kind": "book",
+          "toc": "Liber Job",
+          "unit": true
+        },
+        {
+          "id": "psa",
+          "kind": "book",
+          "toc": "Liber Psalmorum",
+          "unit": true
+        },
+        {
+          "id": "pro",
+          "kind": "book",
+          "toc": "Liber Proverbiorum",
+          "unit": true
+        },
+        {
+          "id": "ecc",
+          "kind": "book",
+          "toc": "Liber Ecclesiastes",
+          "unit": true
+        },
+        {
+          "id": "sng",
+          "kind": "book",
+          "toc": "Canticum Canticorum",
+          "unit": true
+        },
+        {
+          "id": "wis",
+          "kind": "book",
+          "toc": "Liber Sapientiæ",
+          "unit": true
+        },
+        {
+          "id": "sir",
+          "kind": "book",
+          "toc": "Liber Ecclesiasticus",
+          "unit": true
+        },
+        {
+          "id": "isa",
+          "kind": "book",
+          "toc": "Prophetia Isaiæ",
+          "unit": true
+        },
+        {
+          "id": "jer",
+          "kind": "book",
+          "toc": "Prophetia Jeremiæ",
+          "unit": true
+        },
+        {
+          "id": "lam",
+          "kind": "book",
+          "toc": "Lamentationes Jeremiæ",
+          "unit": true
+        },
+        {
+          "id": "bar",
+          "kind": "book",
+          "toc": "Prophetia Baruch",
+          "unit": true
+        },
+        {
+          "id": "ezk",
+          "kind": "book",
+          "toc": "Prophetia Ezechielis",
+          "unit": true
+        },
+        {
+          "id": "dan",
+          "kind": "book",
+          "toc": "Prophetia Danielis",
+          "unit": true
+        },
+        {
+          "id": "hos",
+          "kind": "book",
+          "toc": "Prophetia Osee",
+          "unit": true
+        },
+        {
+          "id": "jol",
+          "kind": "book",
+          "toc": "Prophetia Joel",
+          "unit": true
+        },
+        {
+          "id": "amo",
+          "kind": "book",
+          "toc": "Prophetia Amos",
+          "unit": true
+        },
+        {
+          "id": "oba",
+          "kind": "book",
+          "toc": "Prophetia Abdiæ",
+          "unit": true
+        },
+        {
+          "id": "jon",
+          "kind": "book",
+          "toc": "Prophetia Jonæ",
+          "unit": true
+        },
+        {
+          "id": "mic",
+          "kind": "book",
+          "toc": "Prophetia Michææ",
+          "unit": true
+        },
+        {
+          "id": "nam",
+          "kind": "book",
+          "toc": "Prophetia Nahum",
+          "unit": true
+        },
+        {
+          "id": "hab",
+          "kind": "book",
+          "toc": "Prophetia Habacuc",
+          "unit": true
+        },
+        {
+          "id": "zep",
+          "kind": "book",
+          "toc": "Prophetia Sophoniæ",
+          "unit": true
+        },
+        {
+          "id": "hag",
+          "kind": "book",
+          "toc": "Prophetia Aggæi",
+          "unit": true
+        },
+        {
+          "id": "zec",
+          "kind": "book",
+          "toc": "Prophetia Zachariæ",
+          "unit": true
+        },
+        {
+          "id": "mal",
+          "kind": "book",
+          "toc": "Prophetia Malachiæ",
+          "unit": true
+        },
+        {
+          "id": "1ma",
+          "kind": "book",
+          "toc": "Liber I Machabæorum",
+          "unit": true
+        },
+        {
+          "id": "2ma",
+          "kind": "book",
+          "toc": "Liber II Machabæorum",
+          "unit": true
+        }
+      ]
+    },
+    {
+      "id": "nt",
+      "kind": "testament",
+      "toc": "Novum Testamentum",
+      "children": [
+        {
+          "id": "mat",
+          "kind": "book",
+          "toc": "Evangelium secundum Matthæum",
+          "unit": true
+        },
+        {
+          "id": "mrk",
+          "kind": "book",
+          "toc": "Evangelium secundum Marcum",
+          "unit": true
+        },
+        {
+          "id": "luk",
+          "kind": "book",
+          "toc": "Evangelium secundum Lucam",
+          "unit": true
+        },
+        {
+          "id": "jhn",
+          "kind": "book",
+          "toc": "Evangelium secundum Joannem",
+          "unit": true
+        },
+        {
+          "id": "act",
+          "kind": "book",
+          "toc": "Actus Apostolorum",
+          "unit": true
+        },
+        {
+          "id": "rom",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Romanos",
+          "unit": true
+        },
+        {
+          "id": "1co",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Corinthios prima",
+          "unit": true
+        },
+        {
+          "id": "2co",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Corinthios secunda",
+          "unit": true
+        },
+        {
+          "id": "gal",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Galatas",
+          "unit": true
+        },
+        {
+          "id": "eph",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Ephesios",
+          "unit": true
+        },
+        {
+          "id": "php",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Philippenses",
+          "unit": true
+        },
+        {
+          "id": "col",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Colossenses",
+          "unit": true
+        },
+        {
+          "id": "1th",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Thessalonicenses prima",
+          "unit": true
+        },
+        {
+          "id": "2th",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Thessalonicenses secunda",
+          "unit": true
+        },
+        {
+          "id": "1ti",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Timotheum prima",
+          "unit": true
+        },
+        {
+          "id": "2ti",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Timotheum secunda",
+          "unit": true
+        },
+        {
+          "id": "tit",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Titum",
+          "unit": true
+        },
+        {
+          "id": "phm",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Philemonem",
+          "unit": true
+        },
+        {
+          "id": "heb",
+          "kind": "book",
+          "toc": "Epistola B. Pauli Apostoli ad Hebræos",
+          "unit": true
+        },
+        {
+          "id": "jas",
+          "kind": "book",
+          "toc": "Epistola Catholica B. Jacobi Apostoli",
+          "unit": true
+        },
+        {
+          "id": "1pe",
+          "kind": "book",
+          "toc": "Epistola B. Petri Apostoli prima",
+          "unit": true
+        },
+        {
+          "id": "2pe",
+          "kind": "book",
+          "toc": "Epistola B. Petri Apostoli secunda",
+          "unit": true
+        },
+        {
+          "id": "1jn",
+          "kind": "book",
+          "toc": "Epistola B. Joannis Apostoli prima",
+          "unit": true
+        },
+        {
+          "id": "2jn",
+          "kind": "book",
+          "toc": "Epistola B. Joannis Apostoli secunda",
+          "unit": true
+        },
+        {
+          "id": "3jn",
+          "kind": "book",
+          "toc": "Epistola B. Joannis Apostoli tertia",
+          "unit": true
+        },
+        {
+          "id": "jud",
+          "kind": "book",
+          "toc": "Epistola Catholica B. Judæ Apostoli",
+          "unit": true
+        },
+        {
+          "id": "rev",
+          "kind": "book",
+          "toc": "Apocalypsis B. Joannis Apostoli",
+          "unit": true
+        }
+      ]
+    }
+  ]
+}

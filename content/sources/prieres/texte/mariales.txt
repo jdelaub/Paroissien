@@ -1,0 +1,185 @@
+# Prières à la sainte Vierge.
+# Antiennes : Paroissien romain, Mame, 1869 (paroissienromai00churgoog), p. 158-161, latin et français en regard.
+# Les titres des antiennes reprennent l'incipit latin, comme le paroissien les nomme lui-même (« l'Ant. Regina cœli »).
+# Renvois de page du paroissien (« p. 18 ») retirés : ils ne valent que pour le livre imprimé.
+
+== alma-redemptoris
+title.fr: Alma Redemptoris Mater
+title.la: Alma Redemptoris Mater
+src: paroissienromai00churgoog | la fr | 158-159 | 168-169
+
+rubric
+fr: Pendant l'Avent.
+
+stanza hymn
+la: Alma Redemptoris Mater, quæ pervia cœli / Porta manes, et stella maris, succurre cadenti, / Surgere qui curat, populo : tu quæ genuisti, / Natura mirante, tuum sanctum Genitorem : / Virgo prius ac posterius, Gabrielis ab ore / Sumens illud Ave, peccatorum miserere.
+fr: Mère auguste du Rédempteur, porte du ciel toujours ouverte, étoile de la mer, venez au secours d'un peuple qui veut se relever de ses chutes. Vous qui, par un prodige dont s'étonne la nature, avez enfanté votre Créateur sans cesser d'être vierge ; vous qui avez reçu cette glorieuse salutation de l'Ange Gabriel, ayez pitié des pécheurs.
+
+versicle V
+la: ℣. Angelus Domini nuntiavit Mariæ.
+fr: ℣. L'Ange du Seigneur a annoncé à Marie.
+
+versicle R
+la: ℟. Et concepit de Spiritu sancto.
+fr: ℟. Et elle a conçu par l'opération du Saint-Esprit.
+
+rubric
+fr: Oraison de l'Angelus, Daignez, Seigneur.
+
+rubric
+fr: De l'Avent à la Purification inclusivement.
+review: scan flou ; on lit « De l'Avent », alors que Mame 1890, p. 137, porte « Depuis la Nativité de N.-S. jusqu'à la Purification inclusivement » ; le renvoi « Alma Redemptoris Mater, p. 14[5 ?] » qui suit est retiré
+
+versicle V
+la: ℣. Post partum, Virgo, inviolata permansisti.
+fr: ℣. Vous êtes demeurée sans tache après votre enfantement, ô Vierge sainte.
+
+versicle R
+la: ℟. Dei Genitrix, intercede pro nobis.
+fr: ℟. Mère de Dieu, intercédez pour nous.
+
+rubric
+fr: Oraison, O Dieu qui.
+
+== ave-regina-caelorum
+title.fr: Ave, Regina cœlorum
+title.la: Ave, Regina cœlorum
+src: paroissienromai00churgoog | la fr | 159-160 | 169-170
+
+rubric
+fr: Depuis la Purification jusqu'au Jeudi saint.
+
+stanza hymn
+la: Ave, Regina cœlorum ; / Ave, Domina Angelorum : / Salve, radix, salve porta, / Ex qua mundo lux est orta.
+fr: Je vous salue, Reine du ciel ; je vous salue, Reine des Anges : tige sacrée, porte sainte d'où est sortie la lumière du monde.
+
+stanza hymn
+la: Gaude, Virgo gloriosa, / Super omnes speciosa : / Vale, o valde decora : / Et pro nobis Christum exora.
+fr: Réjouissez-vous, Vierge glorieuse, belle par-dessus tout et vraiment ravissante ! Je vous salue, et priez pour nous Jésus-Christ.
+
+versicle V
+la: ℣. Dignare me laudare te, Virgo sacrata.
+fr: ℣. Rendez-moi digne de vous louer, Vierge sainte.
+
+versicle R
+la: ℟. Da mihi virtutem contra hostes tuos.
+fr: ℟. Donnez-moi la force de triompher de vos ennemis.
+
+para
+fr: _Oraison._ Dieu de bonté, accordez à notre faiblesse le secours de votre grâce, et comme nous honorons la mémoire de la sainte Mère de Dieu, faites que, par le secours de son intercession, nous puissions nous relever de nos iniquités. Par le même N.-S. J.-C.
+
+== regina-caeli
+title.fr: Regina cœli
+title.la: Regina cœli
+src: paroissienromai00churgoog | la fr | 160 | 170
+
+rubric
+fr: Pendant le Temps pascal.
+
+stanza hymn
+la: Regina cœli, lætare, alleluia, / Quia quem meruisti portare, alleluia, / Resurrexit sicut dixit, alleluia. / Ora pro nobis Deum, alleluia.
+fr: Reine du ciel, réjouissez-vous, alleluia, puisque celui que vous avez mérité de porter dans votre sein, alleluia, est ressuscité comme il l'a dit, alleluia. Priez Dieu pour nous, alleluia.
+
+versicle V
+la: ℣. Gaude et lætare, Virgo Maria, alleluia.
+fr: ℣. Réjouissez-vous et tressaillez de joie, ô Vierge Marie, alleluia.
+
+versicle R
+la: ℟. Quia surrexit Dominus vere, alleluia.
+fr: ℟. Parce que le Seigneur est véritablement ressuscité, alleluia.
+
+para
+fr: _Oraison._ O Dieu, qui, par la Résurrection de votre Fils Notre-Seigneur Jésus-Christ, avez daigné réjouir le monde, faites, nous vous en prions, que, par sa sainte Mère la Vierge Marie, nous participions aux joies de la vie éternelle. Nous vous le demandons par le même N.-S. J.-C.
+
+== salve-regina
+title.fr: Salve, Regina
+title.la: Salve, Regina
+src: paroissienromai00churgoog | la fr | 160-161 | 170-171
+
+rubric
+fr: Depuis la Trinité jusqu'à l'Avent.
+
+para
+la: Salve, Regina, Mater misericordiæ ; vita, dulcedo et spes nostra, salve. Ad te clamamus, exsules filii Hevæ ; ad te suspiramus, gementes et flentes in hac lacrymarum valle. Eia ergo, advocata nostra, illos tuos misericordes oculos ad nos converte. Et Jesum, benedictum fructum ventris tui, nobis post hoc exsilium ostende, o clemens, o pia, o dulcis Virgo Maria !
+fr: Salut, ô Reine, Mère de miséricorde ; notre vie, notre douceur et notre espérance, salut. Enfants d'Ève, malheureux exilés, nous élevons nos cris vers vous ; nous soupirons vers vous, gémissants et pleurants dans cette vallée de larmes. Oh ! de grâce, notre avocate, tournez donc vers nous vos regards miséricordieux, et, après cet exil, montrez-nous Jésus, le fruit béni de vos entrailles, ô clémente, ô charitable, ô douce Vierge Marie !
+review: ponctuation après « entrailles » : virgule ou point-virgule (tache sur le scan, p. 161)
+
+versicle V
+la: ℣. Ora pro nobis, sancta Dei Genitrix.
+fr: ℣. Priez pour nous, sainte Mère de Dieu.
+
+versicle R
+la: ℟. Ut digni efficiamur promissionibus Christi.
+fr: ℟. Afin que nous devenions dignes des promesses de Jésus-Christ.
+
+para
+fr: _Oraison._ Dieu tout-puissant et éternel, qui, par la coopération du Saint-Esprit, avez préparé le corps et l'âme de la glorieuse Vierge Marie pour en faire une demeure digne de votre Fils, accordez-nous d'être délivrés des maux présents et de la mort éternelle par l'intercession de celle dont nous célébrons la mémoire avec joie. Nous vous en supplions par le même J.-C. N.-S.
+
+== angelus
+title.fr: Angélus
+src: paroissienromain00tour | la fr | 16-17 | 29-30
+# Titre : table du paroissien (« Angélus, 16 ») ; la page elle-même n'imprime que la rubrique.
+
+rubric
+fr: Prière qu'on récite trois fois par jour au son de la cloche.
+
+para
+la: Angelus Domini nuntiavit Mariæ, et concepit de Spiritu sancto.
+fr: L'Ange du Seigneur a annoncé à Marie, et elle a conçu par l'opération du Saint-Esprit.
+
+para
+la: Ave, Maria, etc.
+fr: Je vous salue, Marie, etc.
+
+para
+la: Ecce ancilla Domini, fiat mihi secundum verbum tuum.
+fr: Voici la servante du Seigneur, qu'il me soit fait selon votre parole.
+
+para
+la: Ave, Maria, etc.
+fr: Je vous salue, Marie, etc.
+
+para
+la: Et Verbum caro factum est, et habitavit in nobis.
+fr: Et le Verbe s'est fait chair, et il a habité parmi nous.
+
+para
+la: Ave, Maria, etc.
+fr: Je vous salue, Marie, etc.
+
+versicle V
+la: ℣. Ora pro nobis, sancta Dei Genitrix.
+fr: ℣. Priez pour nous, sainte Mère de Dieu.
+
+versicle R
+la: ℟. Ut digni efficiamur promissionibus Christi.
+fr: ℟. Afin que nous devenions dignes des promesses de Jésus-Christ.
+
+heading 2
+fr: Oraison
+
+para
+fr: Daignez, Seigneur, répandre votre grâce dans nos âmes, afin qu'ayant connu par le ministère de l'Ange l'Incarnation de Jésus-Christ votre Fils, nous puissions, par les mérites de sa Passion et de sa Croix, parvenir à la gloire de sa Résurrection. Par le même Jésus-Christ Notre-Seigneur. ℟. Ainsi soit-il.
+
+rubric
+fr: Pendant le Temps pascal, au lieu de l'Angelus, on récite debout l'Ant. Regina cœli, avec le Verset et l'Oraison. On les trouvera après les Complies du Dimanche.
+
+== souvenez-vous
+title.fr: Prière de saint Bernard
+src: bub_gb_PcH1G0A8jZUC | la fr | 15 | 34
+
+para
+la: Memorare, ô piissima Virgo Maria, non esse auditum à sæculo quemquam ad tua currentem præsidia, tua implorantem auxilia, tua petentem suffragia, esse derelictum : ego tali animatus confidentia, ad te, Virgo Virginum mater, curro, ad te venio, coram te gemens peccator assisto ; noli, Mater Verbi, verba mea despicere, sed audi propitia et exaudi. Amen.
+fr: Souvenez-vous, ô très-miséricordieuse Vierge Marie, que l'on n'a jamais ouï dire qu'aucun de ceux qui ont eu recours à votre protection, imploré votre assistance et demandé votre intercession, ait été abandonné : animé donc d'une pareille confiance, je recours à vous, ô Vierge mère des Vierges, je me jette à vos pieds en gémissant. Ne dédaignez pas mes prières, ô Mère du Verbe, mais écoutez-les favorablement, et daignez les exaucer. Ainsi soit-il.
+
+== sub-tuum
+title.fr: Sub tuum præsidium
+title.la: Sub tuum præsidium
+src: paroissienromai00churgoog | la fr | 773 | 783
+
+rubric
+fr: Antienne.
+
+para
+la: Sub tuum præsidium confugimus, sancta Dei Genitrix : nostras deprecationes ne despicias in necessitatibus ; sed a periculis cunctis libera nos semper, Virgo gloriosa et benedicta.
+fr: Nous avons recours à votre protection, sainte Mère de Dieu : ne rejetez pas les prières que nous vous adressons dans nos pressants besoins ; mais délivrez-nous toujours de tous les dangers auxquels nous sommes exposés, ô Vierge comblée de gloire et de bénédictions.

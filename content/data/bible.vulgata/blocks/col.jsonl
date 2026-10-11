@@ -1,0 +1,100 @@
+{"id":"col.titre","type":"heading","level":1,"t":{"la":["Epistola B. Pauli Apostoli ad Colossenses"]}}
+{"id":"col.1","type":"heading","level":2,"label":"Caput 1","t":{"la":["Caput 1"]}}
+{"id":"col.1.1","type":"verse","n":"1","p":true,"dropCap":true,"t":{"la":[{"num":"1"},"Paulus Apostolus Jesu Christi per voluntatem Dei, et Timotheus frater :"]}}
+{"id":"col.1.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"eis, qui sunt Colossis, sanctis, et fidelibus fratribus in Christo Jesu."]}}
+{"id":"col.1.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Gratia vobis, et pax a Deo Patre nostro, et Domino Jesu Christo.",{"br":1},"Gratias agimus Deo, et Patri Domini nostri Jesu Christi semper pro vobis orantes :"]}}
+{"id":"col.1.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"audientes fidem vestram in Christo Jesu, et dilectionem quam habetis in sanctos omnes"]}}
+{"id":"col.1.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"propter spem, quæ reposita est vobis in cælis : quam audistis in verbo veritatis Evangelii :"]}}
+{"id":"col.1.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"quod pervenit ad vos, sicut et in universo mundo est, et fructificat, et crescit sicut in vobis, ex ea die, qua audistis, et cognovistis gratiam Dei in veritate,"]}}
+{"id":"col.1.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"sicut didicistis ab Epaphra carissimo conservo nostro, qui est fidelis pro vobis minister Christi Jesu,"]}}
+{"id":"col.1.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"qui etiam manifestavit nobis dilectionem vestram in spiritu."]}}
+{"id":"col.1.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Ideo et nos ex qua die audivimus, non cessamus pro vobis orantes, et postulantes ut impleamini agnitione voluntatis ejus, in omni sapientia et intellectu spiritali :"]}}
+{"id":"col.1.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"ut ambuletis digne Deo per omnia placentes : in omni opere bono fructificantes, et crescentes in scientia Dei :"]}}
+{"id":"col.1.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"in omni virtute confortati secundum potentiam claritatis ejus, in omni patientia et longanimitate cum gaudio,"]}}
+{"id":"col.1.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"gratias agentes Deo Patri, qui dignos nos fecit in partem sortis sanctorum in lumine :"]}}
+{"id":"col.1.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"qui eripuit nos de potestate tenebrarum, et transtulit in regnum filii dilectionis suæ,"]}}
+{"id":"col.1.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"in quo habemus redemptionem per sanguinem ejus, remissionem peccatorum :"]}}
+{"id":"col.1.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"qui est imago Dei invisibilis, primogenitus omnis creaturæ :"]}}
+{"id":"col.1.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"quoniam in ipso condita sunt universa in cælis, et in terra, visibilia, et invisibilia, sive throni, sive dominationes, sive principatus, sive potestates : omnia per ipsum et in ipso creata sunt :"]}}
+{"id":"col.1.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"et ipse est ante omnes, et omnia in ipso constant."]}}
+{"id":"col.1.18","type":"verse","n":"18","p":true,"t":{"la":[{"num":"18"},"Et ipse est caput corporis Ecclesiæ, qui est principium, primogenitus ex mortuis : ut sit in omnibus ipse primatum tenens :"]}}
+{"id":"col.1.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"quia in ipso complacuit, omnem plenitudinem inhabitare :"]}}
+{"id":"col.1.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"et per eum reconciliare omnia in ipsum, pacificans per sanguinem crucis ejus, sive quæ in terris, sive quæ in cælis sunt."]}}
+{"id":"col.1.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Et vos cum essetis aliquando alienati, et inimici sensu in operibus malis :"]}}
+{"id":"col.1.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"nunc autem reconciliavit in corpore carnis ejus per mortem, exhibere vos sanctos, et immaculatos, et irreprehensibiles coram ipso :"]}}
+{"id":"col.1.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"si tamen permanetis in fide fundati, et stabiles, et immobiles a spe Evangelii, quod audistis, quod prædicatum est in universa creatura, quæ sub cælo est, cujus factus sum ego Paulus minister."]}}
+{"id":"col.1.24","type":"verse","n":"24","p":true,"t":{"la":[{"num":"24"},"Qui nunc gaudeo in passionibus pro vobis, et adimpleo ea quæ desunt passionum Christi, in carne mea pro corpore ejus, quod est Ecclesia :"]}}
+{"id":"col.1.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"cujus factus sum ego minister secundum dispensationem Dei, quæ data est mihi in vos, ut impleam verbum Dei :"]}}
+{"id":"col.1.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"mysterium, quod absconditum fuit a sæculis, et generationibus, nunc autem manifestatum est sanctis ejus,"]}}
+{"id":"col.1.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"quibus voluit Deus notas facere divitias gloriæ sacramenti hujus in gentibus, quod est Christus, in vobis spes gloriæ,"]}}
+{"id":"col.1.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"quem nos annuntiamus, corripientes omnem hominem, et docentes omnem hominem, in omni sapientia, ut exhibeamus omnem hominem perfectum in Christo Jesu :"]}}
+{"id":"col.1.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"in quo et laboro, certando secundum operationem ejus, quam operatur in me in virtute."]}}
+{"id":"col.2","type":"heading","level":2,"label":"Caput 2","t":{"la":["Caput 2"]}}
+{"id":"col.2.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Volo enim vos scire qualem sollicitudinem habeam pro vobis, et pro iis qui sunt Laodiciæ, et quicumque non viderunt faciem meam in carne :"]}}
+{"id":"col.2.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"ut consolentur corda ipsorum, instructi in caritate, et in omnes divitias plenitudinis intellectus, in agnitionem mysterii Dei Patris et Christi Jesu :"]}}
+{"id":"col.2.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"in quo sunt omnes thesauri sapientiæ et scientiæ absconditi."]}}
+{"id":"col.2.4","type":"verse","n":"4","p":true,"t":{"la":[{"num":"4"},"Hoc autem dico, ut nemo vos decipiat in sublimitate sermonum."]}}
+{"id":"col.2.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Nam etsi corpore absens sum, sed spiritu vobiscum sum : gaudens, et videns ordinem vestrum, et firmamentum ejus, quæ in Christo est, fidei vestræ."]}}
+{"id":"col.2.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Sicut ergo accepistis Jesum Christum Dominum, in ipso ambulate,"]}}
+{"id":"col.2.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"radicati, et superædificati in ipso, et confirmati fide, sicut et didicistis, abundantes in illo in gratiarum actione."]}}
+{"id":"col.2.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Videte ne quis vos decipiat per philosophiam, et inanem fallaciam secundum traditionem hominum, secundum elementa mundi, et non secundum Christum :"]}}
+{"id":"col.2.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"quia in ipso inhabitat omnis plenitudo divinitatis corporaliter :"]}}
+{"id":"col.2.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"et estis in illo repleti, qui est caput omnis principatus et potestatis :"]}}
+{"id":"col.2.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"in quo et circumcisi estis circumcisione non manu facta in expoliatione corporis carnis, sed in circumcisione Christi :"]}}
+{"id":"col.2.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"consepulti ei in baptismo, in quo et resurrexistis per fidem operationis Dei, qui suscitavit illum a mortuis."]}}
+{"id":"col.2.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Et vos cum mortui essetis in delictis, et præputio carnis vestræ, convivificavit cum illo, donans vobis omnia delicta :"]}}
+{"id":"col.2.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"delens quod adversus nos erat chirographum decreti, quod erat contrarium nobis, et ipsum tulit de medio, affigens illud cruci :"]}}
+{"id":"col.2.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"et expolians principatus, et potestates traduxit confidenter, palam triumphans illos in semetipso."]}}
+{"id":"col.2.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Nemo ergo vos judicet in cibo, aut in potu, aut in parte diei festi, aut neomeniæ, aut sabbatorum :"]}}
+{"id":"col.2.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"quæ sunt umbra futurorum : corpus autem Christi."]}}
+{"id":"col.2.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Nemo vos seducat, volens in humilitate, et religione angelorum, quæ non vidit ambulans, frustra inflatus sensu carnis suæ,"]}}
+{"id":"col.2.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"et non tenens caput, ex quo totum corpus per nexus, et conjunctiones subministratum, et constructum crescit in augmentum Dei."]}}
+{"id":"col.2.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Si ergo mortui estis cum Christo ab elementis hujus mundi : quid adhuc tamquam viventes in mundo decernitis ?"]}}
+{"id":"col.2.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Ne tetigeritis, neque gustaveritis, neque contrectaveritis :"]}}
+{"id":"col.2.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"quæ sunt omnia in interitum ipso usu, secundum præcepta et doctrinas hominum :"]}}
+{"id":"col.2.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"quæ sunt rationem quidem habentia sapientiæ in superstitione, et humilitate, et non ad parcendum corpori, non in honore aliquo ad saturitatem carnis."]}}
+{"id":"col.3","type":"heading","level":2,"label":"Caput 3","t":{"la":["Caput 3"]}}
+{"id":"col.3.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Igitur, si consurrexistis cum Christo : quæ sursum sunt quærite, ubi Christus est in dextera Dei sedens :"]}}
+{"id":"col.3.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"quæ sursum sunt sapite, non quæ super terram."]}}
+{"id":"col.3.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Mortui enim estis, et vita vestra est abscondita cum Christo in Deo."]}}
+{"id":"col.3.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Cum Christus apparuerit, vita vestra : tunc et vos apparebitis cum ipso in gloria."]}}
+{"id":"col.3.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Mortificate ergo membra vestra, quæ sunt super terram : fornicationem, immunditiam, libidinem, concupiscentiam malam, et avaritiam, quæ est simulacrorum servitus :"]}}
+{"id":"col.3.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"propter quæ venit ira Dei super filios incredulitatis :"]}}
+{"id":"col.3.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"in quibus et vos ambulastis aliquando, cum viveretis in illis."]}}
+{"id":"col.3.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Nunc autem deponite et vos omnia : iram, indignationem, malitiam, blasphemiam, turpem sermonem de ore vestro."]}}
+{"id":"col.3.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Nolite mentiri invicem, expoliantes vos veterem hominem cum actibus suis,"]}}
+{"id":"col.3.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"et induentes novum eum, qui renovatur in agnitionem secundum imaginem ejus qui creavit illum :"]}}
+{"id":"col.3.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"ubi non est gentilis et Judæus, circumcisio et præputium, Barbarus et Scytha, servus et liber : sed omnia, et in omnibus Christus."]}}
+{"id":"col.3.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Induite vos ergo, sicut electi Dei, sancti, et dilecti, viscera misericordiæ, benignitatem, humilitatem, modestiam, patientiam :"]}}
+{"id":"col.3.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"supportantes invicem, et donantes vobismetipsis si quis adversus aliquem habet querelam : sicut et Dominus donavit vobis, ita et vos."]}}
+{"id":"col.3.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Super omnia autem hæc, caritatem habete, quod est vinculum perfectionis :"]}}
+{"id":"col.3.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"et pax Christi exsultet in cordibus vestris, in qua et vocati estis in uno corpore : et grati estote."]}}
+{"id":"col.3.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Verbum Christi habitet in vobis abundanter, in omni sapientia, docentes, et commonentes vosmetipsos, psalmis, hymnis, et canticis spiritualibus, in gratia cantantes in cordibus vestris Deo."]}}
+{"id":"col.3.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Omne, quodcumque facitis in verbo aut in opere, omnia in nomine Domini Jesu Christi, gratias agentes Deo et Patri per ipsum."]}}
+{"id":"col.3.18","type":"verse","n":"18","p":true,"t":{"la":[{"num":"18"},"Mulieres, subditæ estote viris, sicut oportet, in Domino."]}}
+{"id":"col.3.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Viri, diligite uxores vestras, et nolite amari esse ad illas."]}}
+{"id":"col.3.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Filii, obedite parentibus per omnia : hoc enim placitum est in Domino."]}}
+{"id":"col.3.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Patres, nolite ad indignationem provocare filios vestros, ut non pusillo animo fiant."]}}
+{"id":"col.3.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Servi, obedite per omnia dominis carnalibus, non ad oculum servientes, quasi hominibus placentes, sed in simplicitate cordis, timentes Deum."]}}
+{"id":"col.3.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Quodcumque facitis, ex animo operamini sicut Domino, et non hominibus :"]}}
+{"id":"col.3.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"scientes quod a Domino accipietis retributionem hæreditatis. Domino Christo servite."]}}
+{"id":"col.3.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Qui enim injuriam facit, recipiet id quod inique gessit : et non est personarum acceptio apud Deum."]}}
+{"id":"col.4","type":"heading","level":2,"label":"Caput 4","t":{"la":["Caput 4"]}}
+{"id":"col.4.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Domini, quod justum est et æquum, servis præstate : scientes quod et vos Dominum habetis in cælo."]}}
+{"id":"col.4.2","type":"verse","n":"2","p":true,"t":{"la":[{"num":"2"},"Orationi instate, vigilantes in ea in gratiarum actione :"]}}
+{"id":"col.4.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"orantes simul et pro nobis, ut Deus aperiat nobis ostium sermonis ad loquendum mysterium Christi (propter quod etiam vinctus sum),"]}}
+{"id":"col.4.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"ut manifestem illud ita ut oportet me loqui."]}}
+{"id":"col.4.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"In sapientia ambulate ad eos, qui foris sunt : tempus redimentes."]}}
+{"id":"col.4.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Sermo vester semper in gratia sale sit conditus, ut sciatis quomodo oporteat vos unicuique respondere."]}}
+{"id":"col.4.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Quæ circa me sunt, omnia vobis nota faciet Tychicus, carissimus frater, et fidelis minister, et conservus in Domino :"]}}
+{"id":"col.4.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"quem misi ad vos ad hoc ipsum, ut cognoscat quæ circa vos sunt, et consoletur corda vestra,"]}}
+{"id":"col.4.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"cum Onesimo carissimo, et fideli fratre, qui ex vobis est. Omnia, quæ hic aguntur, nota facient vobis."]}}
+{"id":"col.4.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Salutat vos Aristarchus concaptivus meus, et Marcus consobrinus Barnabæ, de quo accepistis mandata : si venerit ad vos, excipite illum :"]}}
+{"id":"col.4.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"et Jesus, qui dicitur Justus : qui sunt ex circumcisione : hi soli sunt adjutores mei in regno Dei, qui mihi fuerunt solatio."]}}
+{"id":"col.4.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Salutat vos Epaphras, qui ex vobis est, servus Christi Jesu, semper sollicitus pro vobis in orationibus, ut stetis perfecti, et pleni in omni voluntate Dei."]}}
+{"id":"col.4.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Testimonium enim illi perhibeo quod habet multum laborem pro vobis, et pro iis qui sunt Laodiciæ, et qui Hierapoli."]}}
+{"id":"col.4.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Salutat vos Lucas, medicus carissimus, et Demas."]}}
+{"id":"col.4.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Salutate fratres, qui sunt Laodiciæ, et Nympham, et quæ in domo ejus est, ecclesiam."]}}
+{"id":"col.4.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Et cum lecta fuerit apud vos epistola hæc, facite ut et in Laodicensium ecclesia legatur : et eam, quæ Laodicensium est, vos legatis."]}}
+{"id":"col.4.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Et dicite Archippo : Vide ministerium, quod accepisti in Domino, ut illud impleas."]}}
+{"id":"col.4.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Salutatio, mea manu Pauli. Memores estote vinculorum meorum. Gratia vobiscum. Amen."]}}

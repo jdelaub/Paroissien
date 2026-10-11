@@ -8,6 +8,8 @@ import app.paroissien.core.designsystem.BookFace
 import app.paroissien.core.designsystem.PaperTheme
 import app.paroissien.core.designsystem.loadBookFonts
 import app.paroissien.core.designsystem.paperColors
+import app.paroissien.core.model.text.Inline
+import app.paroissien.core.model.text.Inlines
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -28,23 +30,26 @@ class PaginatorTest {
     private val typography = BookTypography(loadBookFonts(context, BookFace.GARAMOND), paperColors(PaperTheme.CLAIR))
 
     private val blocks: List<ReadingBlock> = buildList {
-        val french = "Que vous sert de raisonner profondément sur la Trinité, si vous n’êtes pas humbles, et que par là vous déplaisiez à la Trinité ? "
+        val french = "Que vous sert de raisonner profondément sur la Trinité, si vous n’êtes pas humbles, et que par là vous déplaisiez à la Trinité\u202F? "
         val latin = "Vanitas vanitatum et omnia vanitas, præter amáre Deum et illi soli servíre. Ista est summa sapiéntia, per contémptum mundi téndere ad regna cæléstia. "
-        add(ReadingBlock.Title("titre", "Livre d’essai", "pour le paginateur"))
+        add(ReadingBlock.Title("titre", rt("Livre d’essai"), rt("pour le paginateur")))
         add(ReadingBlock.PageBreak("titre.fin"))
         for (c in 1..12) {
-            add(ReadingBlock.Heading("c$c", "Chapitre $c", runningHead = "Chapitre $c"))
-            add(ReadingBlock.Rubric("c$c.r", "Rubrique du chapitre $c, en rouge et en italique."))
+            add(ReadingBlock.Heading("c$c", rt("Chapitre $c"), runningHead = "Chapitre $c"))
+            add(ReadingBlock.Rubric("c$c.r", rt("Rubrique du chapitre $c, en rouge et en italique.")))
             for (p in 0..5) {
                 val lang = if (p % 3 == 2) BlockLang.LA else BlockLang.FR
                 val base = if (lang == BlockLang.LA) latin else french
-                add(ReadingBlock.Paragraph("c$c.p$p", base.repeat(1 + (c + p) % 5).trim(), lang, dropCap = p == 0, verse = if (p > 0) p + 1 else null))
+                val number = if (p > 0) listOf(Inline.Num("${p + 1}")) else emptyList()
+                add(ReadingBlock.Paragraph("c$c.p$p", number + rt(base.repeat(1 + (c + p) % 5).trim()), lang, dropCap = p == 0))
             }
-            add(ReadingBlock.Versicle("c$c.v", '℣', "Introíbo ad altáre Dei."))
-            add(ReadingBlock.Heading("c$c.refl", "Réflexion", minor = true))
-            add(ReadingBlock.Paragraph("c$c.refl.p", french.repeat(3).trim(), BlockLang.FR, role = TextRole.SMALL))
+            add(ReadingBlock.Versicle("c$c.v", rt("℣ Introíbo ad altáre Dei.")))
+            add(ReadingBlock.Heading("c$c.refl", rt("Réflexion"), minor = true))
+            add(ReadingBlock.Paragraph("c$c.refl.p", rt(french.repeat(3).trim()), BlockLang.FR, role = TextRole.SMALL))
         }
     }
+
+    private fun rt(text: String) = Inlines.fromMarkup(text)
 
     private fun paginate(widthDp: Float, heightDp: Float): PagedBook =
         paginate(blocks, measurer, typography, density, (widthDp * density.density).toInt(), (heightDp * density.density).toInt())
@@ -89,7 +94,7 @@ class PaginatorTest {
                 } else {
                     assertEquals("$block : la suite commence en tête", 0, b.fromLine)
                 }
-                assertEquals("$block : ancres contiguës", a.charStart + a.text().length, b.charStart)
+                assertEquals("$block : ancres contiguës", a.charStart + canonicalOffset(a.layout.layoutInput.text, a.layout.getLineEnd(a.toLine - 1)) - canonicalOffset(a.layout.layoutInput.text, a.layout.getLineStart(a.fromLine)), b.charStart)
             }
             assertEquals("$block : la dernière ligne est posée", items.last().layout.lineCount, items.last().toLine)
         }

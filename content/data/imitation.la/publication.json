@@ -1,0 +1,78 @@
+{
+  "id": "imitation.la",
+  "revision": 1,
+  "kind": "book",
+  "title": {
+    "la": "De imitatione Christi"
+  },
+  "subtitle": {
+    "la": "Libri quatuor"
+  },
+  "languages": [
+    "la"
+  ],
+  "primaryLanguage": "la",
+  "aligned": false,
+  "contributors": [
+    {
+      "name": "Thomas a Kempis",
+      "role": "author"
+    }
+  ],
+  "issued": "c. 1427",
+  "source": {
+    "name": "The Latin Library",
+    "url": "https://www.thelatinlibrary.com/kempis.html",
+    "files": [
+      {
+        "url": "https://www.thelatinlibrary.com/kempis/kempis1.shtml",
+        "sha256": "e4da572b105b7aa6eaccc18ea674334fd802ed5802de3c0426ffa27fe276bc4d"
+      },
+      {
+        "url": "https://www.thelatinlibrary.com/kempis/kempis2.shtml",
+        "sha256": "27d6b0177224318632552c2a0781bf39ad3b73e9e2cf12dad5c98ed31053c53e"
+      },
+      {
+        "url": "https://www.thelatinlibrary.com/kempis/kempis3.shtml",
+        "sha256": "fa64e07898bf222746c118b1dd2766407b2c9680bf76fb50df6ca4809aa6ddec"
+      },
+      {
+        "url": "https://www.thelatinlibrary.com/kempis/kempis4.shtml",
+        "sha256": "f8a9d5626b03e6f2f671342aacd383e3d63510a012e42a8c2d79de03a0d17bfe"
+      }
+    ],
+    "edition": "Édition imprimée non indiquée par la source (impression ancienne à s long, d’après les erreurs de lecture) ; OCR corrigé d’après la.wikisource et des éditions de 1840, 1867 et 1888 (archive.org), voir content/sources/imitation/README.md",
+    "retrieved": "2026-10-11",
+    "rawSha256": "ccb82fc66e98ebf778cef80e26b325f8077c424712dfb504c5d6667156ffc387"
+  },
+  "license": {
+    "spdx": "LicenseRef-PublicDomain",
+    "attribution": "Texte latin du domaine public, d’après The Latin Library (thelatinlibrary.com), avec 485 corrections d’OCR consignées."
+  },
+  "divisions": [
+    {
+      "id": "l1",
+      "kind": "book",
+      "toc": "Liber primus",
+      "unit": true
+    },
+    {
+      "id": "l2",
+      "kind": "book",
+      "toc": "Liber secundus",
+      "unit": true
+    },
+    {
+      "id": "l3",
+      "kind": "book",
+      "toc": "Liber tertius",
+      "unit": true
+    },
+    {
+      "id": "l4",
+      "kind": "book",
+      "toc": "Liber quartus",
+      "unit": true
+    }
+  ]
+}

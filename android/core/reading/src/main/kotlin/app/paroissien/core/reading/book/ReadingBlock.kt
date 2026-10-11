@@ -1,11 +1,19 @@
 package app.paroissien.core.reading.book
 
+import app.paroissien.core.model.text.RichText
+
 /**
- * Blocs lus par le moteur de livre. Modèle provisoire du spike 1b, à aligner sur le paquet v1 (ADR 003, phase 2).
- * Chaque bloc porte un identifiant stable : les ancres (ADR 004) le désignent, jamais un numéro de page.
- * Dans le texte, _…_ marque l'italique ; ℣ ℟ ✠ ✝ sont dessinés en rouge.
+ * Blocs lus par le moteur de livre, issus des paquets (ADR 003) ou écrits à la main. Chaque bloc porte l'identifiant
+ * stable du paquet : les ancres (ADR 004) le désignent, jamais un numéro de page. Le texte est enrichi (inlines) ;
+ * ℣ ℟ ✠ et les numéros de versets en font partie.
  */
-enum class BlockLang(val tag: String) { FR("fr"), LA("la") }
+enum class BlockLang(val tag: String) {
+    FR("fr"), LA("la");
+
+    companion object {
+        fun of(tag: String) = entries.firstOrNull { it.tag == tag } ?: FR
+    }
+}
 
 enum class TextRole { BODY, SMALL, CENTERED }
 
@@ -13,23 +21,31 @@ sealed interface ReadingBlock {
     val id: String
 
     /** Titre de livre ou de page de titre, centré. */
-    data class Title(override val id: String, val text: String, val subtitle: String? = null) : ReadingBlock
+    data class Title(override val id: String, val text: RichText, val subtitle: RichText? = null) : ReadingBlock
 
     /** Titre de section en petites capitales. [runningHead] non nul remplace le titre courant des pages suivantes. */
-    data class Heading(override val id: String, val text: String, val runningHead: String? = null, val minor: Boolean = false) : ReadingBlock
-
-    data class Paragraph(
+    data class Heading(
         override val id: String,
-        val text: String,
-        val lang: BlockLang,
-        val dropCap: Boolean = false,
-        val verse: Int? = null,
-        val role: TextRole = TextRole.BODY,
+        val text: RichText,
+        val runningHead: String? = null,
+        val minor: Boolean = false,
+        val lang: BlockLang = BlockLang.FR,
     ) : ReadingBlock
 
-    data class Rubric(override val id: String, val text: String) : ReadingBlock
+    /** Paragraphe ; [tight] colle le bloc au précédent (versets d'un même paragraphe biblique). */
+    data class Paragraph(
+        override val id: String,
+        val text: RichText,
+        val lang: BlockLang,
+        val dropCap: Boolean = false,
+        val role: TextRole = TextRole.BODY,
+        val tight: Boolean = false,
+    ) : ReadingBlock
 
-    data class Versicle(override val id: String, val mark: Char, val text: String, val lang: BlockLang = BlockLang.LA) : ReadingBlock
+    data class Rubric(override val id: String, val text: RichText) : ReadingBlock
+
+    /** ℣ / ℟ : le symbole fait partie du texte ; la suite des lignes est en retrait. */
+    data class Versicle(override val id: String, val text: RichText, val lang: BlockLang = BlockLang.LA) : ReadingBlock
 
     data class Ornament(override val id: String) : ReadingBlock
 
@@ -37,5 +53,5 @@ sealed interface ReadingBlock {
     data class PageBreak(override val id: String) : ReadingBlock
 }
 
-/** Position de lecture ancrée sur le contenu (ADR 004) : bloc et décalage dans son texte affiché sans césures. */
+/** Position de lecture ancrée sur le contenu (ADR 004) : bloc et décalage en points de code du texte canonique. */
 data class Anchor(val blockId: String, val charOffset: Int)

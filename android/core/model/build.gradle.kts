@@ -12,11 +12,14 @@ dependencies {
     testImplementation(libs.junit)
 }
 
-// Vecteurs de pliage partagés avec content/pipeline (ADR 004) : la même table fait foi des deux côtés.
+// Contrats partagés avec content/ (ADR 004) : vecteurs de pliage et textes canoniques du paquet golden.
 val foldVectors = rootProject.layout.projectDirectory.file("../content/schema/fold-vectors.json")
+val goldenExpected = rootProject.layout.projectDirectory.file("../content/golden/dist/golden-test.expected.json")
 
 tasks.test {
     inputs.file(foldVectors).withPropertyName("foldVectors")
+    inputs.file(goldenExpected).withPropertyName("goldenExpected")
     systemProperty("fold.vectors", foldVectors.asFile.absolutePath)
+    systemProperty("golden.expected", goldenExpected.asFile.absolutePath)
     testLogging { events("passed", "failed"); exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL }
 }

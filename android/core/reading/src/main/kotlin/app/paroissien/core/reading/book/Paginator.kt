@@ -2,12 +2,9 @@ package app.paroissien.core.reading.book
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.text.AnnotatedString
-import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.TextMeasurer
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.buildAnnotatedString
-import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
@@ -138,7 +135,7 @@ fun paginate(
                 val lines = PageItem.Lines(
                     layout = part.layout, fromLine = line, toLine = m.units[last].line + 1, x = part.x,
                     y = origin + m.units[first].top, blockId = m.blockId,
-                    charStart = part.charBase + visibleOffset(part.layout.layoutInput.text.text, part.layout.getLineStart(line)),
+                    charStart = part.charBase + canonicalOffset(part.layout.layoutInput.text, part.layout.getLineStart(line)),
                 )
                 if (pageAnchor == null) pageAnchor = Anchor(lines.blockId, lines.charStart)
                 items += lines
@@ -154,13 +151,21 @@ fun paginate(
     return PagedBook(pages, order, (System.nanoTime() - started) / 1_000_000)
 }
 
-private const val SOFT_HYPHEN = "­"
+private const val SOFT_HYPHEN = "\u00AD"
 
-/** Décalage dans le texte affiché sans césures conditionnelles : l'ancre ne dépend pas de la césure (ADR 004). */
-private fun visibleOffset(text: String, index: Int): Int {
-    var hyphens = 0
-    for (i in 0 until index) if (text[i] == '­') hyphens++
-    return index - hyphens
+/**
+ * Décalage canonique (ADR 004) d'un index du texte affiché : en points de code, sans les césures insérées à
+ * l'affichage ni les caractères annotés hors canon (numéros de versets). L'ancre ne dépend donc pas de la mise en page.
+ */
+internal fun canonicalOffset(text: AnnotatedString, index: Int): Int {
+    val excluded = text.getStringAnnotations(BookTypography.NON_CANONICAL, 0, index)
+    var count = 0
+    for (i in 0 until index) {
+        val c = text[i]
+        if (c == '\u00AD' || Character.isLowSurrogate(c) || excluded.any { i >= it.start && i < it.end }) continue
+        count++
+    }
+    return count
 }
 
 private class Part(val layout: TextLayoutResult, val x: Float, val charBase: Int)
@@ -196,26 +201,19 @@ private class BlockMeasure(
 
     operator fun invoke(block: ReadingBlock): Measured = when (block) {
         is ReadingBlock.Title -> {
-            val title = layout(AnnotatedString(block.text), t.title)
+            val title = layout(t.render(block.text, BlockLang.FR), t.title)
             val parts = mutableListOf(stack(title, 0f))
             // Le sous-titre prolonge le titre dans les ancres : ses positions suivent celles du titre.
-            block.subtitle?.let { parts += stack(layout(AnnotatedString(it), t.subtitle), title.size.height + blockGap, charBase = block.text.length) }
+            block.subtitle?.let { parts += stack(layout(t.render(it, BlockLang.FR), t.subtitle), title.size.height + blockGap, charBase = canonicalOffset(title.layoutInput.text, title.layoutInput.text.length)) }
             val units = parts.flatten()
             Measured(block.id, units, gapBefore = headingGap, keepTogether = units.size)
         }
         is ReadingBlock.Heading -> {
-            val units = stack(layout(AnnotatedString(block.text), if (block.minor) t.minorHeading else t.heading), 0f)
+            val units = stack(layout(t.render(block.text, block.lang), if (block.minor) t.minorHeading else t.heading), 0f)
             Measured(block.id, units, gapBefore = headingGap, keepWithNext = true, keepTogether = units.size)
         }
-        is ReadingBlock.Rubric -> Measured(block.id, stack(layout(AnnotatedString(block.text), t.rubric), 0f), gapBefore = blockGap)
-        is ReadingBlock.Versicle -> {
-            val text = buildAnnotatedString {
-                withStyle(SpanStyle(color = t.paper.rubric)) { append(block.mark) }
-                append(' ')
-                append(t.inline(block.text, block.lang))
-            }
-            Measured(block.id, stack(layout(text, t.versicle(block.lang)), 0f), gapBefore = blockGap)
-        }
+        is ReadingBlock.Rubric -> Measured(block.id, stack(layout(t.render(block.text, BlockLang.FR), t.rubric), 0f), gapBefore = blockGap)
+        is ReadingBlock.Versicle -> Measured(block.id, stack(layout(t.render(block.text, block.lang), t.versicle(block.lang)), 0f), gapBefore = blockGap)
         is ReadingBlock.Ornament -> Measured(block.id, stack(layout(AnnotatedString("❦"), t.ornament), 0f), gapBefore = headingGap)
         is ReadingBlock.Paragraph -> paragraph(block)
         is ReadingBlock.PageBreak -> Measured(block.id, emptyList(), gapBefore = 0f)
@@ -223,23 +221,17 @@ private class BlockMeasure(
 
     private fun paragraph(block: ReadingBlock.Paragraph): Measured {
         val style = t.paragraph(block.lang, block.role)
-        val inline = t.inline(block.text, block.lang)
-        if (block.dropCap && inline.text.firstOrNull()?.isLetter() == true) dropCap(block, inline, style)?.let { return it }
-        val text = if (block.verse != null) {
-            buildAnnotatedString {
-                withStyle(SpanStyle(color = t.paper.rubric, fontSize = style.fontSize * 0.75f)) { append(block.verse.toString()) }
-                append(' ')
-                append(inline)
-            }
-        } else inline
-        return Measured(block.id, stack(layout(text, style), 0f), gapBefore = blockGap)
+        val text = t.render(block.text, block.lang)
+        val gap = if (block.tight) 0f else blockGap
+        if (block.dropCap && text.text.firstOrNull()?.isLetter() == true) dropCap(block, text, style, gap)?.let { return it }
+        return Measured(block.id, stack(layout(text, style), 0f), gapBefore = gap)
     }
 
     /**
      * Lettrine sur deux lignes : la capitale rouge, puis le début du texte composé en retrait sur deux lignes, puis
      * la suite à pleine largeur. La capitale s'aligne sur la ligne de base de la deuxième ligne.
      */
-    private fun dropCap(block: ReadingBlock.Paragraph, inline: AnnotatedString, style: TextStyle): Measured? {
+    private fun dropCap(block: ReadingBlock.Paragraph, inline: AnnotatedString, style: TextStyle, gap: Float): Measured? {
         val lines = 2
         val bodyPx = with(density) { style.fontSize.toPx() }
         val lineHeightPx = with(density) { style.lineHeight.toPx() }
@@ -259,11 +251,11 @@ private class BlockMeasure(
         if (headEnd < rest.length) {
             val tail = layout(rest.subSequence(headEnd, rest.length), style)
             val offset = head.getLineBottom(headLines - 1)
-            val tailPart = Part(tail, 0f, charBase = 1 + visibleOffset(rest.text, headEnd))
+            val tailPart = Part(tail, 0f, charBase = 1 + canonicalOffset(rest, headEnd))
             for (i in 0 until tail.lineCount) units += LineUnit(tailPart, i, offset + tail.getLineTop(i), offset + tail.getLineBottom(i))
         }
         val capY = head.getLineBaseline(headLines - 1) - cap.firstBaseline
-        return Measured(block.id, units, listOf(Decoration(cap, 0f, capY)), gapBefore = blockGap, keepTogether = headLines)
+        return Measured(block.id, units, listOf(Decoration(cap, 0f, capY)), gapBefore = gap, keepTogether = headLines)
     }
 
     // Largeur imposée : sans largeur minimale, TextMeasurer réduit un texte court à sa largeur naturelle et le

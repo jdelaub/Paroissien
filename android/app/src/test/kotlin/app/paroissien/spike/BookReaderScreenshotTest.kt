@@ -24,7 +24,7 @@ import org.robolectric.annotation.Config
 import org.robolectric.annotation.GraphicsMode
 import kotlin.coroutines.EmptyCoroutineContext
 
-/** Le lecteur sur le Galaxy Z Flip6 : chapitre I en portrait, double page en paysage, thème sombre. */
+/** Le lecteur sur le Galaxy Z Flip6 (livre de démonstration) : latin en portrait, Ordinaire en double page, thème sombre. */
 @RunWith(RobolectricTestRunner::class)
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 class BookReaderScreenshotTest {
@@ -32,15 +32,15 @@ class BookReaderScreenshotTest {
     @get:Rule
     val compose = createComposeRule()
 
-    private val book = loadSpikeBook(RuntimeEnvironment.getApplication())
+    private val book = demoBook()
 
     @Test
     @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
-    fun chapitrePremierPortrait() = capture(Anchor("imit.1.1", 0), BookFace.GARAMOND, PaperTheme.CLAIR)
+    fun latinLettrinePortrait() = capture(Anchor("lat.1", 0), BookFace.GARAMOND, PaperTheme.CLAIR)
 
     @Test
     @Config(sdk = [35], qualifiers = "w939dp-h384dp-land-xxhdpi")
-    fun doublePagePaysage() = capture(Anchor("imit.1.3.p2", 0), BookFace.GARAMOND, PaperTheme.SEPIA)
+    fun ordinaireDoublePagePaysage() = capture(Anchor("ord.1", 0), BookFace.GARAMOND, PaperTheme.SEPIA)
 
     @Test
     @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")

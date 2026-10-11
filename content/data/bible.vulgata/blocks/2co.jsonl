@@ -1,0 +1,269 @@
+{"id":"2co.titre","type":"heading","level":1,"t":{"la":["Epistola B. Pauli Apostoli ad Corinthios secunda"]}}
+{"id":"2co.1","type":"heading","level":2,"label":"Caput 1","t":{"la":["Caput 1"]}}
+{"id":"2co.1.1","type":"verse","n":"1","p":true,"dropCap":true,"t":{"la":[{"num":"1"},"Paulus, Apostolus Jesu Christi per voluntatem Dei, et Timotheus frater, ecclesiæ Dei, quæ est Corinthi cum omnibus sanctis, qui sunt in universa Achaia."]}}
+{"id":"2co.1.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Gratia vobis, et pax a Deo Patre nostro, et Domino Jesu Christo."]}}
+{"id":"2co.1.3","type":"verse","n":"3","p":true,"t":{"la":[{"num":"3"},"Benedictus Deus et Pater Domini nostri Jesu Christi, Pater misericordiarum, et Deus totius consolationis,"]}}
+{"id":"2co.1.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"qui consolatur nos in omni tribulatione nostra : ut possimus et ipsi consolari eos qui in omni pressura sunt, per exhortationem, qua exhortamur et ipsi a Deo."]}}
+{"id":"2co.1.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Quoniam sicut abundant passiones Christi in nobis : ita et per Christum abundat consolatio nostra."]}}
+{"id":"2co.1.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Sive autem tribulamur pro vestra exhortatione et salute, sive consolamur pro vestra consolatione, sive exhortamur pro vestra exhortatione et salute, quæ operatur tolerantiam earumdem passionum, quas et nos patimur :"]}}
+{"id":"2co.1.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"ut spes nostra firma sit pro vobis : scientes quod sicut socii passionum estis, sic eritis et consolationis."]}}
+{"id":"2co.1.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Non enim volumus ignorare vos, fratres, de tribulatione nostra, quæ facta est in Asia, quoniam supra modum gravati sumus supra virtutem, ita ut tæderet nos etiam vivere."]}}
+{"id":"2co.1.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Sed ipsi in nobismetipsis responsum mortis habuimus, ut non simus fidentes in nobis, sed in Deo, qui suscitat mortuos :"]}}
+{"id":"2co.1.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"qui de tantis periculis nos eripuit, et eruit : in quem speramus quoniam et adhuc eripiet,"]}}
+{"id":"2co.1.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"adjuvantibus et vobis in oratione pro nobis : ut ex multorum personis, ejus quæ in nobis est donationis, per multos gratiæ agantur pro nobis."]}}
+{"id":"2co.1.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Nam gloria nostra hæc est : testimonium conscientiæ nostræ, quod in simplicitate cordis et sinceritate Dei, et non in sapientia carnali, sed in gratia Dei, conversati sumus in hoc mundo : abundantius autem ad vos."]}}
+{"id":"2co.1.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Non enim alia scribimus vobis, quam quæ legistis, et cognovistis. Spero autem quod usque in finem cognoscetis,"]}}
+{"id":"2co.1.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"sicut et cognovistis nos ex parte, quod gloria vestra sumus, sicut et vos nostra, in die Domini nostri Jesu Christi."]}}
+{"id":"2co.1.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Et hac confidentia volui prius venire ad vos, ut secundam gratiam haberetis :"]}}
+{"id":"2co.1.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"et per vos transire in Macedoniam, et iterum a Macedonia venire ad vos, et a vobis deduci in Judæam."]}}
+{"id":"2co.1.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Cum ergo hoc voluissem, numquid levitate usus sum ? aut quæ cogito, secundum carnem cogito, ut sit apud me Est et Non ?"]}}
+{"id":"2co.1.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Fidelis autem Deus, quia sermo noster, qui fuit apud vos, non est in illo Est et Non."]}}
+{"id":"2co.1.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Dei enim Filius Jesus Christus, qui in vobis per nos prædicatus est, per me, et Silvanum, et Timotheum, non fuit Est et Non, sed Est in illo fuit."]}}
+{"id":"2co.1.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Quotquot enim promissiones Dei sunt, in illo Est : ideo et per ipsum Amen Deo ad gloriam nostram."]}}
+{"id":"2co.1.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Qui autem confirmat nos vobiscum in Christo, et qui unxit nos Deus :"]}}
+{"id":"2co.1.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"qui et signavit nos, et dedit pignus Spiritus in cordibus nostris."]}}
+{"id":"2co.1.23","type":"verse","n":"23","p":true,"t":{"la":[{"num":"23"},"Ego autem testem Deum invoco in animam meam, quod parcens vobis, non veni ultra Corinthum : non quia dominamur fidei vestræ, sed adjutores sumus gaudii vestri : nam fide statis."]}}
+{"id":"2co.2","type":"heading","level":2,"label":"Caput 2","t":{"la":["Caput 2"]}}
+{"id":"2co.2.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Statui autem hoc ipsum apud me, ne iterum in tristitia venirem ad vos."]}}
+{"id":"2co.2.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Si enim ego contristo vos : et quis est, qui me lætificet, nisi qui contristatur ex me ?"]}}
+{"id":"2co.2.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Et hoc ipsum scripsi vobis, ut non cum venero, tristitiam super tristitiam habeam, de quibus oportuerat me gaudere : confidens in omnibus vobis, quia meum gaudium, omnium vestrum est."]}}
+{"id":"2co.2.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Nam ex multa tribulatione et angustia cordis scripsi vobis per multas lacrimas : non ut contristemini, sed ut sciatis, quam caritatem habeam abundantius in vobis."]}}
+{"id":"2co.2.5","type":"verse","n":"5","p":true,"t":{"la":[{"num":"5"},"Si quis autem contristavit, non me contristavit : sed ex parte, ut non onerem omnes vos."]}}
+{"id":"2co.2.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Sufficit illi, qui ejusmodi est, objurgatio hæc, quæ fit a pluribus :"]}}
+{"id":"2co.2.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"ita ut e contrario magis donetis, et consolemini, ne forte abundantiori tristitia absorbeatur qui ejusmodi est."]}}
+{"id":"2co.2.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Propter quod obsecro vos, ut confirmetis in illum caritatem."]}}
+{"id":"2co.2.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Ideo enim et scripsi, ut cognoscam experimentum vestrum, an in omnibus obedientes sitis."]}}
+{"id":"2co.2.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Cui autem aliquid donastis, et ego : nam et ego quod donavi, si quid donavi, propter vos in persona Christi,"]}}
+{"id":"2co.2.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"ut non circumveniamur a Satana : non enim ignoramus cogitationes ejus."]}}
+{"id":"2co.2.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Cum venissem autem Troadem propter Evangelium Christi, et ostium mihi apertum esset in Domino,"]}}
+{"id":"2co.2.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"non habui requiem spiritui meo, eo quod non invenerim Titum fratrem meum, sed valefaciens eis, profectus sum in Macedoniam."]}}
+{"id":"2co.2.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Deo autem gratias, qui semper triumphat nos in Christo Jesu, et odorem notitiæ suæ manifestat per nos in omni loco :"]}}
+{"id":"2co.2.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"quia Christi bonus odor sumus Deo in iis qui salvi fiunt, et in iis qui pereunt :"]}}
+{"id":"2co.2.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"aliis quidem odor mortis in mortem : aliis autem odor vitæ in vitam. Et ad hæc quis tam idoneus ?"]}}
+{"id":"2co.2.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"non enim sumus sicut plurimi, adulterantes verbum Dei, sed ex sinceritate, sed sicut ex Deo, coram Deo, in Christo loquimur."]}}
+{"id":"2co.3","type":"heading","level":2,"label":"Caput 3","t":{"la":["Caput 3"]}}
+{"id":"2co.3.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Incipimus iterum nosmetipsos commendare ? aut numquid egemus (sicut quidam) commendatitiis epistolis ad vos, aut ex vobis ?"]}}
+{"id":"2co.3.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Epistola nostra vos estis, scripta in cordibus nostris, quæ scitur, et legitur ab omnibus hominibus :"]}}
+{"id":"2co.3.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"manifestati quod epistola estis Christi, ministrata a nobis, et scripta non atramento, sed Spiritu Dei vivi : non in tabulis lapideis, sed in tabulis cordis carnalibus."]}}
+{"id":"2co.3.4","type":"verse","n":"4","p":true,"t":{"la":[{"num":"4"},"Fiduciam autem talem habemus per Christum ad Deum :"]}}
+{"id":"2co.3.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"non quod sufficientes simus cogitare aliquid a nobis, quasi ex nobis : sed sufficientia nostra ex Deo est :"]}}
+{"id":"2co.3.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"qui et idoneos nos fecit ministros novi testamenti : non littera, sed Spiritu : littera enim occidit, Spiritus autem vivificat."]}}
+{"id":"2co.3.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Quod si ministratio mortis litteris deformata in lapidibus fuit in gloria, ita ut non possent intendere filii Israël in faciem Moysi propter gloriam vultus ejus, quæ evacuatur :"]}}
+{"id":"2co.3.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"quomodo non magis ministratio Spiritus erit in gloria ?"]}}
+{"id":"2co.3.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Nam si ministratio damnationis gloria est : multo magis abundat ministerium justitiæ in gloria."]}}
+{"id":"2co.3.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Nam nec glorificatum est, quod claruit in hac parte, propter excellentem gloriam."]}}
+{"id":"2co.3.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Si enim quod evacuatur, per gloriam est : multo magis quod manet, in gloria est."]}}
+{"id":"2co.3.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Habentes igitur talem spem, multa fiducia utimur :"]}}
+{"id":"2co.3.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"et non sicut Moyses ponebat velamen super faciem suam, ut non intenderent filii Israël in faciem ejus, quod evacuatur,"]}}
+{"id":"2co.3.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"sed obtusi sunt sensus eorum. Usque in hodiernum enim diem, idipsum velamen in lectione veteris testamenti manet non revelatum (quoniam in Christo evacuatur),"]}}
+{"id":"2co.3.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"sed usque in hodiernum diem, cum legitur Moyses, velamen positum est super cor eorum."]}}
+{"id":"2co.3.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Cum autem conversus fuerit ad Dominum, auferetur velamen."]}}
+{"id":"2co.3.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Dominus autem Spiritus est : ubi autem Spiritus Domini, ibi libertas."]}}
+{"id":"2co.3.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Nos vero omnes, revelata facie gloriam Domini speculantes, in eamdem imaginem transformamur a claritate in claritatem, tamquam a Domini Spiritu."]}}
+{"id":"2co.4","type":"heading","level":2,"label":"Caput 4","t":{"la":["Caput 4"]}}
+{"id":"2co.4.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Ideo habentes administrationem, juxta quod misericordiam consecuti sumus, non deficimus,"]}}
+{"id":"2co.4.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"sed abdicamus occulta dedecoris, non ambulantes in astutia, neque adulterantes verbum Dei, sed in manifestatione veritatis commendantes nosmetipsos ad omnem conscientiam hominum coram Deo."]}}
+{"id":"2co.4.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Quod si etiam opertum est Evangelium nostrum, in iis, qui pereunt, est opertum :"]}}
+{"id":"2co.4.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"in quibus Deus hujus sæculi excæcavit mentes infidelium, ut non fulgeat illis illuminatio Evangelii gloriæ Christi, qui est imago Dei."]}}
+{"id":"2co.4.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Non enim nosmetipsos prædicamus, sed Jesum Christum Dominum nostrum : nos autem servos vestros per Jesum :"]}}
+{"id":"2co.4.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"quoniam Deus, qui dixit de tenebris lucem splendescere, ipse illuxit in cordibus nostris ad illuminationem scientiæ claritatis Dei, in facie Christi Jesu."]}}
+{"id":"2co.4.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Habemus autem thesaurum istum in vasis fictilibus : ut sublimitas sit virtutis Dei, et non ex nobis."]}}
+{"id":"2co.4.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"In omnibus tribulationem patimur, sed non angustiamur : aporiamur, sed non destituimur :"]}}
+{"id":"2co.4.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"persecutionem patimur, sed non derelinquimur : dejicimur, sed non perimus :"]}}
+{"id":"2co.4.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"semper mortificationem Jesu in corpore nostro circumferentes, ut et vita Jesu manifestetur in corporibus nostris."]}}
+{"id":"2co.4.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Semper enim nos, qui vivimus, in mortem tradimur propter Jesum : ut et vita Jesu manifestetur in carne nostra mortali."]}}
+{"id":"2co.4.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Ergo mors in nobis operatur, vita autem in vobis."]}}
+{"id":"2co.4.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Habentes autem eumdem spiritum fidei, sicut scriptum est : Credidi, propter quod locutus sum : et nos credimus, propter quod et loquimur :"]}}
+{"id":"2co.4.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"scientes quoniam qui suscitavit Jesum, et nos cum Jesu suscitabit, et constituet vobiscum."]}}
+{"id":"2co.4.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Omnia enim propter vos : ut gratia abundans, per multos in gratiarum actione, abundet in gloriam Dei."]}}
+{"id":"2co.4.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Propter quod non deficimus : sed licet is, qui foris est, noster homo corrumpatur, tamen is, qui intus est, renovatur de die in diem."]}}
+{"id":"2co.4.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Id enim, quod in præsenti est momentaneum et leve tribulationis nostræ, supra modum in sublimitate æternum gloriæ pondus operatur in nobis,"]}}
+{"id":"2co.4.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"non contemplantibus nobis quæ videntur, sed quæ non videntur. Quæ enim videntur, temporalia sunt : quæ autem non videntur, æterna sunt."]}}
+{"id":"2co.5","type":"heading","level":2,"label":"Caput 5","t":{"la":["Caput 5"]}}
+{"id":"2co.5.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Scimus enim quoniam si terrestris domus nostra hujus habitationis dissolvatur, quod ædificationem ex Deo habemus, domum non manufactam, æternam in cælis."]}}
+{"id":"2co.5.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Nam et in hoc ingemiscimus, habitationem nostram, quæ de cælo est, superindui cupientes :"]}}
+{"id":"2co.5.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"si tamen vestiti, non nudi inveniamur."]}}
+{"id":"2co.5.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Nam et qui sumus in hoc tabernaculo, ingemiscimus gravati : eo quod nolumus expoliari, sed supervestiri, ut absorbeatur quod mortale est, a vita."]}}
+{"id":"2co.5.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Qui autem efficit nos in hoc ipsum, Deus, qui dedit nobis pignus Spiritus."]}}
+{"id":"2co.5.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Audentes igitur semper, scientes quoniam dum sumus in corpore, peregrinamur a Domino"]}}
+{"id":"2co.5.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"(per fidem enim ambulamus, et non per speciem) :"]}}
+{"id":"2co.5.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"audemus autem, et bonam voluntatem habemus magis peregrinari a corpore, et præsentes esse ad Dominum."]}}
+{"id":"2co.5.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Et ideo contendimus, sive absentes, sive præsentes, placere illi."]}}
+{"id":"2co.5.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Omnes enim nos manifestari oportet ante tribunal Christi, ut referat unusquisque propria corporis, prout gessit, sive bonum, sive malum."]}}
+{"id":"2co.5.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Scientes ergo timorem Domini, hominibus suademus, Deo autem manifesti sumus. Spero autem et in conscientiis vestris manifestos nos esse."]}}
+{"id":"2co.5.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Non iterum commendamus nos vobis, sed occasionem damus vobis gloriandi pro nobis : ut habeatis ad eos qui in facie gloriantur, et non in corde."]}}
+{"id":"2co.5.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Sive enim mente excedimus Deo : sive sobrii sumus, vobis."]}}
+{"id":"2co.5.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Caritas enim Christi urget nos : æstimantes hoc, quoniam si unus pro omnibus mortuus est, ergo omnes mortui sunt :"]}}
+{"id":"2co.5.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"et pro omnibus mortuus est Christus : ut, et qui vivunt, jam non sibi vivant, sed ei qui pro ipsis mortuus est et resurrexit."]}}
+{"id":"2co.5.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Itaque nos ex hoc neminem novimus secundum carnem. Et si cognovimus secundum carnem Christum, sed nunc jam non novimus."]}}
+{"id":"2co.5.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Si qua ergo in Christo nova creatura, vetera transierunt : ecce facta sunt omnia nova."]}}
+{"id":"2co.5.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Omnia autem ex Deo, qui nos reconciliavit sibi per Christum : et dedit nobis ministerium reconciliationis,"]}}
+{"id":"2co.5.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"quoniam quidem Deus erat in Christo mundum reconcilians sibi, non reputans illis delicta ipsorum, et posuit in nobis verbum reconciliationis."]}}
+{"id":"2co.5.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Pro Christo ergo legatione fungimur, tamquam Deo exhortante per nos. Obsecramus pro Christo, reconciliamini Deo."]}}
+{"id":"2co.5.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Eum, qui non noverat peccatum, pro nobis peccatum fecit, ut nos efficeremur justitia Dei in ipso."]}}
+{"id":"2co.6","type":"heading","level":2,"label":"Caput 6","t":{"la":["Caput 6"]}}
+{"id":"2co.6.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Adjuvantes autem exhortamur ne in vacuum gratiam Dei recipiatis."]}}
+{"id":"2co.6.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Ait enim : Tempore accepto exaudivi te, et in die salutis adjuvi te. Ecce nunc tempus acceptabile, ecce nunc dies salutis."]}}
+{"id":"2co.6.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Nemini dantes ullam offensionem, ut non vituperetur ministerium nostrum :"]}}
+{"id":"2co.6.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"sed in omnibus exhibeamus nosmetipsos sicut Dei ministros in multa patientia, in tribulationibus, in necessitatibus, in angustiis,"]}}
+{"id":"2co.6.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"in plagis, in carceribus, in seditionibus, in laboribus, in vigiliis, in jejuniis,"]}}
+{"id":"2co.6.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"in castitate, in scientia, in longanimitate, in suavitate, in Spiritu Sancto, in caritate non ficta,"]}}
+{"id":"2co.6.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"in verbo veritatis, in virtute Dei, per arma justitiæ a dextris et a sinistris,"]}}
+{"id":"2co.6.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"per gloriam, et ignobilitatem, per infamiam, et bonam famam : ut seductores, et veraces, sicut qui ignoti, et cogniti :"]}}
+{"id":"2co.6.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"quasi morientes, et ecce vivimus : ut castigati, et non mortificati :"]}}
+{"id":"2co.6.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"quasi tristes, semper autem gaudentes : sicut egentes, multos autem locupletantes : tamquam nihil habentes, et omnia possidentes."]}}
+{"id":"2co.6.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Os nostrum patet ad vos, o Corinthii ; cor nostrum dilatatum est."]}}
+{"id":"2co.6.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Non angustiamini in nobis : angustiamini autem in visceribus vestris :"]}}
+{"id":"2co.6.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"eamdem autem habentes remunerationem, tamquam filiis dico, dilatamini et vos."]}}
+{"id":"2co.6.14","type":"verse","n":"14","p":true,"t":{"la":[{"num":"14"},"Nolite jugum ducere cum infidelibus. Quæ enim participatio justitiæ cum iniquitate ? aut quæ societas luci ad tenebras ?"]}}
+{"id":"2co.6.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"quæ autem conventio Christi ad Belial ? aut quæ pars fideli cum infideli ?"]}}
+{"id":"2co.6.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"qui autem consensus templo Dei cum idolis ? vos enim estis templum Dei vivi, sicut dicit Deus : Quoniam inhabitabo in illis, et inambulabo inter eos,",{"br":1},"et ero illorum Deus, et ipsi erunt mihi populus.",{"br":1}]}}
+{"id":"2co.6.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Propter quod exite de medio eorum,",{"br":1},"et separamini, dicit Dominus,",{"br":1},"et immundum ne tetigeritis :",{"br":1}]}}
+{"id":"2co.6.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"et ego recipiam vos :",{"br":1},"et ero vobis in patrem,",{"br":1},"et vos eritis mihi in filios et filias,",{"br":1},"dicit Dominus omnipotens."]}}
+{"id":"2co.7","type":"heading","level":2,"label":"Caput 7","t":{"la":["Caput 7"]}}
+{"id":"2co.7.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Has ergo habentes promissiones, carissimi, mundemus nos ab omni inquinamento carnis et spiritus, perficientes sanctificationem in timore Dei."]}}
+{"id":"2co.7.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Capite nos. Neminem læsimus, neminem corrupimus, neminem circumvenimus."]}}
+{"id":"2co.7.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Non ad condemnationem vestram dico : prædiximus enim quod in cordibus nostris estis ad commoriendum et ad convivendum."]}}
+{"id":"2co.7.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Multa mihi fiducia est apud vos, multa mihi gloriatio pro vobis : repletus sum consolatione ; superabundo gaudio in omni tribulatione nostra."]}}
+{"id":"2co.7.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Nam et cum venissemus in Macedoniam, nullam requiem habuit caro nostra, sed omnem tribulationem passi sumus : foris pugnæ, intus timores."]}}
+{"id":"2co.7.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Sed qui consolatur humiles, consolatus est nos Deus in adventu Titi."]}}
+{"id":"2co.7.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Non solum autem in adventu ejus, sed etiam in consolatione, qua consolatus est in vobis, referens nobis vestrum desiderium, vestrum fletum, vestram æmulationem pro me, ita ut magis gauderem."]}}
+{"id":"2co.7.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"Quoniam etsi contristavi vos in epistola, non me pœnitet : etsi pœniteret, videns quod epistola illa (etsi ad horam) vos contristavit,"]}}
+{"id":"2co.7.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"nunc gaudeo : non quia contristati estis, sed quia contristati estis ad pœnitentiam. Contristati enim estis ad Deum, ut in nullo detrimentum patiamini ex nobis."]}}
+{"id":"2co.7.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Quæ enim secundum Deum tristitia est, pœnitentiam in salutem stabilem operatur : sæculi autem tristitia mortem operatur."]}}
+{"id":"2co.7.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Ecce enim hoc ipsum, secundum Deum contristari vos, quantam in vobis operatur sollicitudinem : sed defensionem, sed indignationem, sed timorem, sed desiderium, sed æmulationem, sed vindictam : in omnibus exhibuistis vos incontaminatos esse negotio."]}}
+{"id":"2co.7.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Igitur, etsi scripsi vobis, non propter eum qui fecit injuriam, nec propter eum qui passus est : sed ad manifestandam sollicitudinem nostram, quam habemus pro vobis"]}}
+{"id":"2co.7.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"coram Deo : ideo consolati sumus. In consolatione autem nostra, abundantius magis gavisi sumus super gaudio Titi, quia refectus est spiritus ejus ab omnibus vobis :"]}}
+{"id":"2co.7.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"et si quid apud illum de vobis gloriatus sum, non sum confusus : sed sicut omnia vobis in veritate locuti sumus, ita et gloriatio nostra, quæ fuit ad Titum, veritas facta est,"]}}
+{"id":"2co.7.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"et viscera ejus abundantius in vobis sunt, reminiscentis omnium vestrum obedientiam : quomodo cum timore et tremore excepistis illum."]}}
+{"id":"2co.7.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Gaudeo quod in omnibus confido in vobis."]}}
+{"id":"2co.8","type":"heading","level":2,"label":"Caput 8","t":{"la":["Caput 8"]}}
+{"id":"2co.8.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Notam autem facimus vobis, fratres, gratiam Dei, quæ data est in ecclesiis Macedoniæ :"]}}
+{"id":"2co.8.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"quod in multo experimento tribulationis abundantia gaudii ipsorum fuit, et altissima paupertas eorum, abundavit in divitias simplicitatis eorum :"]}}
+{"id":"2co.8.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"quia secundum virtutem testimonium illis reddo, et supra virtutem voluntarii fuerunt,"]}}
+{"id":"2co.8.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"cum multa exhortatione obsecrantes nos gratiam, et communicationem ministerii, quod fit in sanctos."]}}
+{"id":"2co.8.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Et non sicut speravimus, sed semetipsos dederunt primum Domino, deinde nobis per voluntatem Dei,"]}}
+{"id":"2co.8.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"ita ut rogaremus Titum, ut quemadmodum cœpit, ita et perficiat in vobis etiam gratiam istam."]}}
+{"id":"2co.8.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Sed sicut in omnibus abundatis fide, et sermone, et scientia, et omni sollicitudine, insuper et caritate vestra in nos, ut et in hac gratia abundetis."]}}
+{"id":"2co.8.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Non quasi imperans dico : sed per aliorum sollicitudinem, etiam vestræ caritatis ingenium bonum comprobans."]}}
+{"id":"2co.8.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Scitis enim gratiam Domini nostri Jesu Christi, quoniam propter vos egenus factus est, cum esset dives, ut illius inopia vos divites essetis."]}}
+{"id":"2co.8.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Et consilium in hoc do : hoc enim vobis utile est, qui non solum facere, sed et velle cœpistis ab anno priore :"]}}
+{"id":"2co.8.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"nunc vero et facto perficite : ut quemadmodum promptus est animus voluntatis, ita sit et perficiendi ex eo quod habetis."]}}
+{"id":"2co.8.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Si enim voluntas prompta est, secundum id quod habet, accepta est, non secundum id quod non habet."]}}
+{"id":"2co.8.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Non enim ut aliis sit remissio, vobis autem tribulatio, sed ex æqualitate."]}}
+{"id":"2co.8.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"In præsenti tempore vestra abundantia illorum inopiam suppleat : ut et illorum abundantia vestræ inopiæ sit supplementum, ut fiat æqualitas, sicut scriptum est :"]}}
+{"id":"2co.8.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Qui multum, non abundavit : et qui modicum, non minoravit."]}}
+{"id":"2co.8.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Gratias autem Deo, qui dedit eamdem sollicitudinem pro vobis in corde Titi,"]}}
+{"id":"2co.8.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"quoniam exhortationem quidem suscepit : sed cum sollicitior esset, sua voluntate profectus est ad vos."]}}
+{"id":"2co.8.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Misimus etiam cum illo fratrem, cujus laus est in Evangelio per omnes ecclesias :"]}}
+{"id":"2co.8.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"non solum autem, sed et ordinatus est ab ecclesiis comes peregrinationis nostræ in hanc gratiam, quæ ministratur a nobis ad Domini gloriam, et destinatam voluntatem nostram :"]}}
+{"id":"2co.8.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"devitantes hoc, ne quis nos vituperet in hac plenitudine, quæ ministratur a nobis."]}}
+{"id":"2co.8.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Providemus enim bona non solum coram Deo, sed etiam coram hominibus."]}}
+{"id":"2co.8.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Misimus autem cum illis et fratrem nostrum, quem probavimus in multis sæpe sollicitum esse : nunc autem multo sollicitiorem, confidentia multa in vos,"]}}
+{"id":"2co.8.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"sive pro Tito, qui est socius meus, et in vos adjutor, sive fratres nostri, Apostoli ecclesiarum, gloria Christi."]}}
+{"id":"2co.8.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Ostensionem ergo, quæ est caritatis vestræ, et nostræ gloriæ pro vobis, in illos ostendite in faciem ecclesiarum."]}}
+{"id":"2co.9","type":"heading","level":2,"label":"Caput 9","t":{"la":["Caput 9"]}}
+{"id":"2co.9.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Nam de ministerio, quod fit in sanctos ex abundanti est mihi scribere vobis."]}}
+{"id":"2co.9.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Scio enim promptum animum vestrum : pro quo de vobis glorior apud Macedones. Quoniam et Achaia parata est ab anno præterito, et vestra æmulatio provocavit plurimos."]}}
+{"id":"2co.9.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Misi autem fratres : ut ne quod gloriamur de vobis, evacuetur in hac parte, ut (quemadmodum dixi) parati sitis :"]}}
+{"id":"2co.9.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"ne cum venerint Macedones mecum, et invenerint vos imparatos, erubescamus nos (ut non dicamus vos) in hac substantia."]}}
+{"id":"2co.9.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Necessarium ergo existimavi rogare fratres, ut præveniant ad vos, et præparent repromissam benedictionem hanc paratam esse sic, quasi benedictionem, non tamquam avaritiam."]}}
+{"id":"2co.9.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Hoc autem dico : qui parce seminat, parce et metet : et qui seminat in benedictionibus, de benedictionibus et metet."]}}
+{"id":"2co.9.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Unusquisque, prout destinavit in corde suo, non ex tristitia, aut ex necessitate : hilarem enim datorem diligit Deus."]}}
+{"id":"2co.9.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Potens est autem Deus omnem gratiam abundare facere in vobis : ut in omnibus semper omnem sufficientiam habentes, abundetis in omne opus bonum,"]}}
+{"id":"2co.9.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"sicut scriptum est : Dispersit, dedit pauperibus : justitia ejus manet in sæculum sæculi."]}}
+{"id":"2co.9.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Qui autem administrat semen seminanti : et panem ad manducandum præstabit, et multiplicabit semen vestrum, et augebit incrementa frugum justitiæ vestræ :"]}}
+{"id":"2co.9.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"ut in omnibus locupletati abundetis in omnem simplicitatem, quæ operatur per nos gratiarum actionem Deo."]}}
+{"id":"2co.9.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Quoniam ministerium hujus officii non solum supplet ea quæ desunt sanctis, sed etiam abundat per multas gratiarum actiones in Domino,"]}}
+{"id":"2co.9.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"per probationem ministerii hujus, glorificantes Deum in obedientia confessionis vestræ, in Evangelium Christi, et simplicitate communicationis in illos, et in omnes,"]}}
+{"id":"2co.9.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"et in ipsorum obsecratione pro vobis, desiderantium vos propter eminentem gratiam Dei in vobis."]}}
+{"id":"2co.9.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Gratias Deo super inenarrabili dono ejus."]}}
+{"id":"2co.10","type":"heading","level":2,"label":"Caput 10","t":{"la":["Caput 10"]}}
+{"id":"2co.10.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Ipse autem ego Paulus obsecro vos per mansuetudinem et modestiam Christi, qui in facie quidem humilis sum inter vos, absens autem confido in vos."]}}
+{"id":"2co.10.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Rogo autem vos ne præsens audeam per eam confidentiam, qua existimor audere in quosdam, qui arbitrantur nos tamquam secundum carnem ambulemus."]}}
+{"id":"2co.10.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"In carne enim ambulantes, non secundum carnem militamus."]}}
+{"id":"2co.10.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Nam arma militiæ nostræ non carnalia sunt, sed potentia Deo ad destructionem munitionum, consilia destruentes,"]}}
+{"id":"2co.10.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"et omnem altitudinem extollentem se adversus scientiam Dei, et in captivitatem redigentes omnem intellectum in obsequium Christi,"]}}
+{"id":"2co.10.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"et in promptu habentes ulcisci omnem inobedientiam, cum impleta fuerit vestra obedientia."]}}
+{"id":"2co.10.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Quæ secundum faciem sunt, videte. Si quis confidit sibi Christi se esse, hoc cogitet iterum apud se : quia sicut ipse Christi est, ita et nos."]}}
+{"id":"2co.10.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Nam etsi amplius aliquid gloriatus fuero de potestate nostra, quam dedit nobis Dominus in ædificationem, et non in destructionem vestram, non erubescam."]}}
+{"id":"2co.10.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Ut autem non existimer tamquam terrere vos per epistolas :"]}}
+{"id":"2co.10.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"quoniam quidem epistolæ, inquiunt, graves sunt et fortes : præsentia autem corporis infirma, et sermo contemptibilis :"]}}
+{"id":"2co.10.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"hoc cogitet qui ejusmodi est, quia quales sumus verbo per epistolas absentes, tales et præsentes in facto."]}}
+{"id":"2co.10.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Non enim audemus inserere, aut comparare nos quibusdam, qui seipsos commendant : sed ipsi in nobis nosmetipsos metientes, et comparantes nosmetipsos nobis."]}}
+{"id":"2co.10.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Nos autem non in immensum gloriabimur, sed secundum mensuram regulæ, qua mensus est nobis Deus, mensuram pertingendi usque ad vos."]}}
+{"id":"2co.10.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Non enim quasi non pertingentes ad vos, superextendimus nos : usque ad vos enim pervenimus in Evangelio Christi."]}}
+{"id":"2co.10.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Non in immensum gloriantes in alienis laboribus : spem autem habentes crescentis fidei vestræ, in vobis magnificari secundum regulam nostram in abundantiam,"]}}
+{"id":"2co.10.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"etiam in illa, quæ ultra vos sunt, evangelizare, non in aliena regula in iis quæ præparata sunt gloriari."]}}
+{"id":"2co.10.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Qui autem gloriatur, in Domino glorietur."]}}
+{"id":"2co.10.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Non enim qui seipsum commendat, ille probatus est : sed quem Deus commendat."]}}
+{"id":"2co.11","type":"heading","level":2,"label":"Caput 11","t":{"la":["Caput 11"]}}
+{"id":"2co.11.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Utinam sustineretis modicum quid insipientiæ meæ, sed et supportare me :"]}}
+{"id":"2co.11.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"æmulor enim vos Dei æmulatione. Despondi enim vos uni viro, virginem castam exhibere Christo."]}}
+{"id":"2co.11.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Timeo autem ne sicut serpens Hevam seduxit astutia sua, ita corrumpantur sensus vestri, et excidant a simplicitate, quæ est in Christo."]}}
+{"id":"2co.11.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Nam si is qui venit, alium Christum prædicat, quem non prædicavimus, aut alium spiritum accipitis, quem non accepistis : aut aliud Evangelium, quod non recepistis : recte pateremini."]}}
+{"id":"2co.11.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Existimo enim nihil me minus fecisse a magnis Apostolis."]}}
+{"id":"2co.11.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Nam etsi imperitus sermone, sed non scientia, in omnibus autem manifestati sumus vobis."]}}
+{"id":"2co.11.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Aut numquid peccatum feci, meipsum humilians, ut vos exaltemini ? quoniam gratis Evangelium Dei evangelizavi vobis ?"]}}
+{"id":"2co.11.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Alias ecclesias expoliavi, accipiens stipendium ad ministerium vestrum."]}}
+{"id":"2co.11.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Et cum essem apud vos, et egerem, nulli onerosus fui : nam quod mihi deerat, suppleverunt fratres, qui venerunt a Macedonia : et in omnibus sine onere me vobis servavi, et servabo."]}}
+{"id":"2co.11.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Est veritas Christi in me, quoniam hæc gloriatio non infringetur in me in regionibus Achaiæ."]}}
+{"id":"2co.11.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Quare ? quia non diligo vos ? Deus scit."]}}
+{"id":"2co.11.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Quod autem facio, et faciam : ut amputem occasionem eorum qui volunt occasionem, ut in quo gloriantur, inveniantur sicut et nos."]}}
+{"id":"2co.11.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Nam ejusmodi pseudoapostoli sunt operarii subdoli, transfigurantes se in apostolos Christi."]}}
+{"id":"2co.11.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Et non mirum : ipse enim Satanas transfigurat se in angelum lucis."]}}
+{"id":"2co.11.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Non est ergo magnum, si ministri ejus transfigurentur velut ministri justitiæ : quorum finis erit secundum opera ipsorum."]}}
+{"id":"2co.11.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Iterum dico (ne quis me putet insipientem esse, alioquin velut insipientem accipite me, ut et ego modicum quid glorier),"]}}
+{"id":"2co.11.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"quod loquor, non loquor secundum Deum, sed quasi in insipientia, in hac substantia gloriæ."]}}
+{"id":"2co.11.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Quoniam multi gloriantur secundum carnem : et ego gloriabor."]}}
+{"id":"2co.11.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Libenter enim suffertis insipientes, cum sitis ipsi sapientes."]}}
+{"id":"2co.11.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Sustinetis enim si quis vos in servitutem redigit, si quis devorat, si quis accipit, si quis extollitur, si quis in faciem vos cædit."]}}
+{"id":"2co.11.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Secundum ignobilitatem dico, quasi nos infirmi fuerimus in hac parte. In quo quis audet (in insipientia dico) audeo et ego :"]}}
+{"id":"2co.11.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Hebræi sunt, et ego : Israëlitæ sunt, et ego : semen Abrahæ sunt, et ego."]}}
+{"id":"2co.11.23","type":"verse","n":"23","p":true,"t":{"la":[{"num":"23"},"Ministri Christi sunt (ut minus sapiens dico), plus ego : in laboribus plurimis, in carceribus abundantius, in plagis supra modum, in mortibus frequenter."]}}
+{"id":"2co.11.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"A Judæis quinquies, quadragenas, una minus, accepi."]}}
+{"id":"2co.11.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Ter virgis cæsus sum, semel lapidatus sum : ter naufragium feci, nocte et die in profundo maris fui,"]}}
+{"id":"2co.11.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"in itineribus sæpe, periculis fluminum, periculis latronum, periculis ex genere, periculis ex gentibus, periculis in civitate, periculis in solitudine, periculis in mari, periculis in falsis fratribus :"]}}
+{"id":"2co.11.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"in labore et ærumna, in vigiliis multis, in fame et siti, in jejuniis multis, in frigore et nuditate,"]}}
+{"id":"2co.11.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"præter illa quæ extrinsecus sunt, instantia mea quotidiana, sollicitudo omnium ecclesiarum."]}}
+{"id":"2co.11.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Quis infirmatur, et ego non infirmor ? quis scandalizatur, et ego non uror ?"]}}
+{"id":"2co.11.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Si gloriari oportet, quæ infirmitatis meæ sunt, gloriabor."]}}
+{"id":"2co.11.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Deus et Pater Domini nostri Jesu Christi, qui est benedictus in sæcula, scit quod non mentior."]}}
+{"id":"2co.11.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Damasci præpositus gentis Aretæ regis custodiebat civitatem Damascenorum ut me comprehenderet :"]}}
+{"id":"2co.11.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"et per fenestram in sporta dimissus sum per murum, et sic effugi manus ejus."]}}
+{"id":"2co.12","type":"heading","level":2,"label":"Caput 12","t":{"la":["Caput 12"]}}
+{"id":"2co.12.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Si gloriari oportet (non expedit quidem), veniam autem ad visiones et revelationes Domini."]}}
+{"id":"2co.12.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Scio hominem in Christo ante annos quatuordecim, sive in corpore nescio, sive extra corpus nescio, Deus scit, raptum hujusmodi usque ad tertium cælum."]}}
+{"id":"2co.12.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Et scio hujusmodi hominem sive in corpore, sive extra corpus nescio, Deus scit :"]}}
+{"id":"2co.12.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"quoniam raptus est in paradisum : et audivit arcana verba, quæ non licet homini loqui."]}}
+{"id":"2co.12.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Pro hujusmodi gloriabor : pro me autem nihil gloriabor nisi in infirmitatibus meis."]}}
+{"id":"2co.12.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Nam etsi voluero gloriari, non ero insipiens : veritatem enim dicam : parco autem, ne quis me existimet supra id quod videt in me, aut aliquid audit ex me."]}}
+{"id":"2co.12.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Et ne magnitudo revelationum extollat me, datus est mihi stimulus carnis meæ angelus Satanæ, qui me colaphizet."]}}
+{"id":"2co.12.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Propter quod ter Dominum rogavi ut discederet a me :"]}}
+{"id":"2co.12.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"et dixit mihi : Sufficit tibi gratia mea : nam virtus in infirmitate perficitur. Libenter igitur gloriabor in infirmitatibus meis, ut inhabitet in me virtus Christi."]}}
+{"id":"2co.12.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Propter quod placeo mihi in infirmitatibus meis, in contumeliis, in necessitatibus, in persecutionibus, in angustiis pro Christo : cum enim infirmor, tunc potens sum."]}}
+{"id":"2co.12.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Factus sum insipiens, vos me coëgistis. Ego enim a vobis debui commendari : nihil enim minus fui ab iis, qui sunt supra modum Apostoli : tametsi nihil sum :"]}}
+{"id":"2co.12.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"signa tamen apostolatus mei facta sunt super vos in omni patientia, in signis, et prodigiis, et virtutibus."]}}
+{"id":"2co.12.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Quid est enim, quod minus habuistis præ ceteris ecclesiis, nisi quod ego ipse non gravavi vos ? donate mihi hanc injuriam."]}}
+{"id":"2co.12.14","type":"verse","n":"14","p":true,"t":{"la":[{"num":"14"},"Ecce tertio hoc paratus sum venire ad vos : et non ero gravis vobis. Non enim quæro quæ vestra sunt, sed vos. Nec enim debent filii parentibus thesaurizare, sed parentes filiis."]}}
+{"id":"2co.12.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Ego autem libentissime impendam, et super impendar ipse pro animabus vestris : licet plus vos diligens, minus diligar."]}}
+{"id":"2co.12.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Sed esto : ego vos non gravavi : sed cum essem astutus, dolo vos cepi."]}}
+{"id":"2co.12.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Numquid per aliquem eorum, quos misi ad vos, circumveni vos ?"]}}
+{"id":"2co.12.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Rogavi Titum, et misi cum illo fratrem. Numquid Titus vos circumvenit ? nonne eodem spiritu ambulavimus ? nonne iisdem vestigiis ?"]}}
+{"id":"2co.12.19","type":"verse","n":"19","p":true,"t":{"la":[{"num":"19"},"Olim putatis quod excusemus nos apud vos ? coram Deo in Christo loquimur : omnia autem, carissimi, propter ædificationem vestram."]}}
+{"id":"2co.12.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Timeo enim ne forte cum venero, non quales volo, inveniam vos : et ego inveniar a vobis, qualem non vultis : ne forte contentiones, æmulationes, animositates, dissensiones, detractiones, susurrationes, inflationes, seditiones sint inter vos :"]}}
+{"id":"2co.12.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"ne iterum cum venero, humiliet me Deus apud vos, et lugeam multos ex iis qui ante peccaverunt, et non egerunt pœnitentiam super immunditia, et fornicatione, et impudicitia, quam gesserunt."]}}
+{"id":"2co.13","type":"heading","level":2,"label":"Caput 13","t":{"la":["Caput 13"]}}
+{"id":"2co.13.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Ecce tertio hoc venio ad vos : in ore duorum vel trium testium stabit omne verbum."]}}
+{"id":"2co.13.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Prædixi, et prædico, ut præsens, et nunc absens iis qui ante peccaverunt, et ceteris omnibus, quoniam si venero iterum, non parcam."]}}
+{"id":"2co.13.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"An experimentum quæritis ejus, qui in me loquitur Christus, qui in vobis non infirmatur, sed potens est in vobis ?"]}}
+{"id":"2co.13.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Nam etsi crucifixus est ex infirmitate : sed vivit ex virtute Dei. Nam et nos infirmi sumus in illo : sed vivemus cum eo ex virtute Dei in vobis."]}}
+{"id":"2co.13.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Vosmetipsos tentate si estis in fide : ipsi vos probate. An non cognoscitis vosmetipsos quia Christus Jesus in vobis est ? nisi forte reprobi estis."]}}
+{"id":"2co.13.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Spero autem quod cognoscetis, quia nos non sumus reprobi."]}}
+{"id":"2co.13.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Oramus autem Deum ut nihil mali faciatis, non ut nos probati appareamus, sed ut vos quod bonum est faciatis : nos autem ut reprobi simus."]}}
+{"id":"2co.13.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Non enim possumus aliquid adversus veritatem, sed pro veritate."]}}
+{"id":"2co.13.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Gaudemus enim, quoniam nos infirmi sumus, vos autem potentes estis. Hoc et oramus, vestram consummationem."]}}
+{"id":"2co.13.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Ideo hæc absens scribo, ut non præsens durius agam secundum potestatem, quam Dominus dedit mihi in ædificationem, et non in destructionem."]}}
+{"id":"2co.13.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"De cetero, fratres, gaudete, perfecti estote, exhortamini, idem sapite, pacem habete, et Deus pacis et dilectionis erit vobiscum."]}}
+{"id":"2co.13.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Salutate invicem in osculo sancto. Salutant vos omnes sancti."]}}
+{"id":"2co.13.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Gratia Domini nostri Jesu Christi, et caritas Dei, et communicatio Sancti Spiritus sit cum omnibus vobis. Amen."]}}

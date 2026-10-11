@@ -35,10 +35,10 @@ class FoldTest {
 
     @Test
     fun foldIsIdempotentAndDropsSoftHyphens() {
-        for (s in listOf("Dó­mi­nus", "Cœur de Jésus", "ÆTERNUS", "l’Église")) {
+        for (s in listOf("Dó\u00ADmi\u00ADnus", "Cœur de Jésus", "ÆTERNUS", "l’Église")) {
             val once = Fold.fold(s)
             assertEquals(once, Fold.fold(once))
-            assertFalse(once.contains('­'))
+            assertFalse(once.contains('\u00AD'))
         }
     }
 

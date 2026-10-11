@@ -1,0 +1,87 @@
+{
+ "id": "prieres.classiques",
+ "revision": 1,
+ "kind": "prayers",
+ "title": {
+  "fr": "Prières classiques"
+ },
+ "subtitle": {
+  "fr": "Latin et français traditionnel, d’après les paroissiens romains du XIXᵉ siècle"
+ },
+ "languages": [
+  "la",
+  "fr"
+ ],
+ "primaryLanguage": "fr",
+ "aligned": true,
+ "contributors": [
+  {
+   "name": "A. Mame et fils (Tours, 1890)",
+   "role": "publisher"
+  },
+  {
+   "name": "Alfred Mame et fils (Tours, 1869)",
+   "role": "publisher"
+  },
+  {
+   "name": "Lecoffre (1860)",
+   "role": "publisher"
+  },
+  {
+   "name": "I.-P. Déry (Québec, 1914)",
+   "role": "publisher"
+  },
+  {
+   "name": "É. Solis (Saint-Hyacinthe, 1913)",
+   "role": "publisher"
+  }
+ ],
+ "issued": "1860-1914",
+ "source": {
+  "name": "Paroissiens romains du domaine public numérisés sur archive.org",
+  "url": "https://archive.org/details/paroissienromain00tour",
+  "edition": "Référence : Paroissien romain, Tours, A. Mame, 1890 ; compléments bilingues : Mame 1869, Lecoffre 1860 ; litanies du Sacré-Cœur et de saint Joseph et acte de contrition : paroissiens de Québec (1913, 1914). Voir x-source sur chaque prière et content/sources/prieres/README.md",
+  "retrieved": "2026-10-11"
+ },
+ "license": {
+  "spdx": "LicenseRef-PublicDomain",
+  "attribution": "Textes tirés de paroissiens romains anonymes publiés entre 1860 et 1914 (Mame, Lecoffre, Déry, Solis), numérisés par Internet Archive, Google Books et Canadiana."
+ },
+ "x-editions": [
+  {
+   "archive": "paroissienromain00tour",
+   "title": "Paroissien romain",
+   "publisher": "Tours : A. Mame",
+   "date": "1890",
+   "ocrSha256": "310fe3e4493189c0"
+  },
+  {
+   "archive": "paroissienromai00churgoog",
+   "title": "Paroissien romain, en latin et français, traduction nouvelle",
+   "publisher": "Tours : Alfred Mame et fils",
+   "date": "1869",
+   "ocrSha256": "faf16f3c27944380"
+  },
+  {
+   "archive": "bub_gb_PcH1G0A8jZUC",
+   "title": "Grand paroissien romain",
+   "publisher": "Lecoffre",
+   "date": "1860",
+   "ocrSha256": "7273ab4fe915b6dc"
+  },
+  {
+   "archive": "cihm_80314",
+   "title": "Paroissien de poche",
+   "publisher": "Québec : I.P. Déry",
+   "date": "1914",
+   "ocrSha256": "152d686702dbbc88"
+  },
+  {
+   "archive": "cihm_990278",
+   "title": "Nouveau paroissien romain",
+   "publisher": "St-Hyacinthe, Québec : É. Solis",
+   "date": "1913",
+   "ocrSha256": "4b4c7b916c6611d2"
+  }
+ ]
+}

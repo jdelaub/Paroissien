@@ -1,0 +1,947 @@
+{"id":"pro.titre","type":"heading","level":1,"t":{"la":["Liber Proverbiorum"]}}
+{"id":"pro.1","type":"heading","level":2,"label":"Caput 1","t":{"la":["Caput 1"]}}
+{"id":"pro.1.1","type":"verse","n":"1","p":true,"dropCap":true,"t":{"la":[{"num":"1"},"Parabolæ Salomonis, filii David, regis Israël,"]}}
+{"id":"pro.1.2","type":"verse","n":"2","p":true,"t":{"la":[{"num":"2"},"ad sciendam sapientiam et disciplinam ;",{"br":1}]}}
+{"id":"pro.1.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"ad intelligenda verba prudentiæ,",{"br":1},"et suscipiendam eruditionem doctrinæ,",{"br":1},"justitiam, et judicium, et æquitatem :",{"br":1}]}}
+{"id":"pro.1.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"ut detur parvulis astutia,",{"br":1},"adolescenti scientia et intellectus.",{"br":1}]}}
+{"id":"pro.1.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Audiens sapiens, sapientior erit,",{"br":1},"et intelligens gubernacula possidebit.",{"br":1}]}}
+{"id":"pro.1.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Animadvertet parabolam et interpretationem,",{"br":1},"verba sapientum et ænigmata eorum.",{"br":1}]}}
+{"id":"pro.1.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Timor Domini principium sapientiæ ;",{"br":1},"sapientiam atque doctrinam stulti despiciunt."]}}
+{"id":"pro.1.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"Audi, fili mi, disciplinam patris tui,",{"br":1},"et ne dimittas legem matris tuæ :",{"br":1}]}}
+{"id":"pro.1.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"ut addatur gratia capiti tuo,",{"br":1},"et torques collo tuo.",{"br":1}]}}
+{"id":"pro.1.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Fili mi, si te lactaverint peccatores,",{"br":1},"ne acquiescas eis.",{"br":1}]}}
+{"id":"pro.1.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Si dixerint : Veni nobiscum, insidiemur sanguini ;",{"br":1},"abscondamus tendiculas contra insontem frustra ;",{"br":1}]}}
+{"id":"pro.1.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"deglutiamus eum sicut infernus viventem,",{"br":1},"et integrum quasi descendentem in lacum ;",{"br":1}]}}
+{"id":"pro.1.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"omnem pretiosam substantiam reperiemus ;",{"br":1},"implebimus domos nostras spoliis :",{"br":1}]}}
+{"id":"pro.1.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"sortem mitte nobiscum,",{"br":1},"marsupium unum sit omnium nostrum :",{"br":1}]}}
+{"id":"pro.1.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"fili mi, ne ambules cum eis ;",{"br":1},"prohibe pedem tuum a semitis eorum :",{"br":1}]}}
+{"id":"pro.1.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"pedes enim illorum ad malum currunt,",{"br":1},"et festinant ut effundant sanguinem.",{"br":1}]}}
+{"id":"pro.1.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Frustra autem jacitur rete",{"br":1},"ante oculos pennatorum.",{"br":1}]}}
+{"id":"pro.1.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Ipsi quoque contra sanguinem suum insidiantur,",{"br":1},"et moliuntur fraudes contra animas suas.",{"br":1}]}}
+{"id":"pro.1.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Sic semitæ omnis avari :",{"br":1},"animas possidentium rapiunt."]}}
+{"id":"pro.1.20","type":"verse","n":"20","p":true,"t":{"la":[{"num":"20"},"Sapientia foris prædicat ;",{"br":1},"in plateis dat vocem suam :",{"br":1}]}}
+{"id":"pro.1.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"in capite turbarum clamitat ;",{"br":1},"in foribus portarum urbis profert verba sua, dicens :",{"br":1}]}}
+{"id":"pro.1.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Usquequo, parvuli, diligitis infantiam,",{"br":1},"et stulti ea quæ sibi sunt noxia cupient,",{"br":1},"et imprudentes odibunt scientiam ?",{"br":1}]}}
+{"id":"pro.1.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"convertimini ad correptionem meam.",{"br":1},"En proferam vobis spiritum meum,",{"br":1},"et ostendam vobis verba mea.",{"br":1}]}}
+{"id":"pro.1.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Quia vocavi, et renuistis ;",{"br":1},"extendi manum meam, et non fuit qui aspiceret :",{"br":1}]}}
+{"id":"pro.1.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"despexistis omne consilium meum,",{"br":1},"et increpationes meas neglexistis.",{"br":1}]}}
+{"id":"pro.1.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Ego quoque in interitu vestro ridebo,",{"br":1},"et subsannabo cum vobis id quod timebatis advenerit.",{"br":1}]}}
+{"id":"pro.1.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Cum irruerit repentina calamitas,",{"br":1},"et interitus quasi tempestas ingruerit ;",{"br":1},"quando venerit super vos tribulatio et angustia :",{"br":1}]}}
+{"id":"pro.1.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"tunc invocabunt me, et non exaudiam ;",{"br":1},"mane consurgent, et non invenient me :",{"br":1}]}}
+{"id":"pro.1.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"eo quod exosam habuerint disciplinam,",{"br":1},"et timorem Domini non susceperint,",{"br":1}]}}
+{"id":"pro.1.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"nec acquieverint consilio meo,",{"br":1},"et detraxerint universæ correptioni meæ.",{"br":1}]}}
+{"id":"pro.1.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Comedent igitur fructus viæ suæ,",{"br":1},"suisque consiliis saturabuntur.",{"br":1}]}}
+{"id":"pro.1.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Aversio parvulorum interficiet eos,",{"br":1},"et prosperitas stultorum perdet illos.",{"br":1}]}}
+{"id":"pro.1.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"Qui autem me audierit, absque terrore requiescet,",{"br":1},"et abundantia perfruetur, timore malorum sublato."]}}
+{"id":"pro.2","type":"heading","level":2,"label":"Caput 2","t":{"la":["Caput 2"]}}
+{"id":"pro.2.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Fili mi, si susceperis sermones meos,",{"br":1},"et mandata mea absconderis penes te :",{"br":1}]}}
+{"id":"pro.2.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"ut audiat sapientiam auris tua,",{"br":1},"inclina cor tuum ad cognoscendam prudentiam.",{"br":1}]}}
+{"id":"pro.2.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Si enim sapientiam invocaveris,",{"br":1},"et inclinaveris cor tuum prudentiæ ;",{"br":1}]}}
+{"id":"pro.2.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"si quæsieris eam quasi pecuniam,",{"br":1},"et sicut thesauros effoderis illam :",{"br":1}]}}
+{"id":"pro.2.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"tunc intelliges timorem Domini,",{"br":1},"et scientiam Dei invenies,",{"br":1}]}}
+{"id":"pro.2.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"quia Dominus dat sapientiam,",{"br":1},"et ex ore ejus prudentia et scientia.",{"br":1}]}}
+{"id":"pro.2.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Custodiet rectorum salutem,",{"br":1},"et proteget gradientes simpliciter,",{"br":1}]}}
+{"id":"pro.2.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"servans semitas justitiæ,",{"br":1},"et vias sanctorum custodiens.",{"br":1}]}}
+{"id":"pro.2.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Tunc intelliges justitiam, et judicium,",{"br":1},"et æquitatem, et omnem semitam bonam."]}}
+{"id":"pro.2.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Si intraverit sapientia cor tuum,",{"br":1},"et scientia animæ tuæ placuerit,",{"br":1}]}}
+{"id":"pro.2.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"consilium custodiet te,",{"br":1},"et prudentia servabit te :",{"br":1}]}}
+{"id":"pro.2.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"ut eruaris a via mala,",{"br":1},"et ab homine qui perversa loquitur ;",{"br":1}]}}
+{"id":"pro.2.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"qui relinquunt iter rectum,",{"br":1},"et ambulant per vias tenebrosas ;",{"br":1}]}}
+{"id":"pro.2.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"qui lætantur cum malefecerint,",{"br":1},"et exsultant in rebus pessimis ;",{"br":1}]}}
+{"id":"pro.2.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"quorum viæ perversæ sunt,",{"br":1},"et infames gressus eorum.",{"br":1}]}}
+{"id":"pro.2.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Ut eruaris a muliere aliena,",{"br":1},"et ab extranea quæ mollit sermones suos,",{"br":1}]}}
+{"id":"pro.2.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"et relinquit ducem pubertatis suæ,",{"br":1}]}}
+{"id":"pro.2.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"et pacti Dei sui oblita est.",{"br":1},"Inclinata est enim ad mortem domus ejus,",{"br":1},"et ad inferos semitæ ipsius.",{"br":1}]}}
+{"id":"pro.2.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Omnes qui ingrediuntur ad eam non revertentur,",{"br":1},"nec apprehendent semitas vitæ.",{"br":1}]}}
+{"id":"pro.2.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Ut ambules in via bona,",{"br":1},"et calles justorum custodias :",{"br":1}]}}
+{"id":"pro.2.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"qui enim recti sunt habitabunt in terra,",{"br":1},"et simplices permanebunt in ea ;",{"br":1}]}}
+{"id":"pro.2.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"impii vero de terra perdentur,",{"br":1},"et qui inique agunt auferentur ex ea."]}}
+{"id":"pro.3","type":"heading","level":2,"label":"Caput 3","t":{"la":["Caput 3"]}}
+{"id":"pro.3.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Fili mi, ne obliviscaris legis meæ,",{"br":1},"et præcepta mea cor tuum custodiat :",{"br":1}]}}
+{"id":"pro.3.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"longitudinem enim dierum, et annos vitæ, et pacem,",{"br":1},"apponent tibi.",{"br":1}]}}
+{"id":"pro.3.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Misericordia et veritas te non deserant ;",{"br":1},"circumda eas gutturi tuo,",{"br":1},"et describe in tabulis cordis tui :",{"br":1}]}}
+{"id":"pro.3.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"et invenies gratiam, et disciplinam bonam,",{"br":1},"coram Deo et hominibus.",{"br":1}]}}
+{"id":"pro.3.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Habe fiduciam in Domino ex toto corde tuo,",{"br":1},"et ne innitaris prudentiæ tuæ.",{"br":1}]}}
+{"id":"pro.3.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"In omnibus viis tuis cogita illum,",{"br":1},"et ipse diriget gressus tuos.",{"br":1}]}}
+{"id":"pro.3.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Ne sis sapiens apud temetipsum ;",{"br":1},"time Deum, et recede a malo :",{"br":1}]}}
+{"id":"pro.3.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"sanitas quippe erit umbilico tuo,",{"br":1},"et irrigatio ossium tuorum.",{"br":1}]}}
+{"id":"pro.3.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Honora Dominum de tua substantia,",{"br":1},"et de primitiis omnium frugum tuarum da ei :",{"br":1}]}}
+{"id":"pro.3.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"et implebuntur horrea tua saturitate,",{"br":1},"et vino torcularia tua redundabunt."]}}
+{"id":"pro.3.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Disciplinam Domini, fili mi, ne abjicias,",{"br":1},"nec deficias cum ab eo corriperis :",{"br":1}]}}
+{"id":"pro.3.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"quem enim diligit Dominus, corripit,",{"br":1},"et quasi pater in filio complacet sibi.",{"br":1}]}}
+{"id":"pro.3.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Beatus homo qui invenit sapientiam,",{"br":1},"et qui affluit prudentia.",{"br":1}]}}
+{"id":"pro.3.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Melior est acquisitio ejus negotiatione argenti,",{"br":1},"et auri primi et purissimi fructus ejus.",{"br":1}]}}
+{"id":"pro.3.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Pretiosior est cunctis opibus,",{"br":1},"et omnia quæ desiderantur huic non valent comparari.",{"br":1}]}}
+{"id":"pro.3.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Longitudo dierum in dextera ejus,",{"br":1},"et in sinistra illius divitiæ et gloria.",{"br":1}]}}
+{"id":"pro.3.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Viæ ejus viæ pulchræ,",{"br":1},"et omnes semitæ illius pacificæ.",{"br":1}]}}
+{"id":"pro.3.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Lignum vitæ est his qui apprehenderint eam,",{"br":1},"et qui tenuerit eam beatus.",{"br":1}]}}
+{"id":"pro.3.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Dominus sapientia fundavit terram ;",{"br":1},"stabilivit cælos prudentia.",{"br":1}]}}
+{"id":"pro.3.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Sapientia illius eruperunt abyssi,",{"br":1},"et nubes rore concrescunt."]}}
+{"id":"pro.3.21","type":"verse","n":"21","p":true,"t":{"la":[{"num":"21"},"Fili mi, ne effluant hæc ab oculis tuis.",{"br":1},"Custodi legem atque consilium,",{"br":1}]}}
+{"id":"pro.3.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"et erit vita animæ tuæ,",{"br":1},"et gratia faucibus tuis.",{"br":1}]}}
+{"id":"pro.3.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Tunc ambulabis fiducialiter in via tua,",{"br":1},"et pes tuus non impinget.",{"br":1}]}}
+{"id":"pro.3.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Si dormieris, non timebis ;",{"br":1},"quiesces, et suavis erit somnus tuus.",{"br":1}]}}
+{"id":"pro.3.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Ne paveas repentino terrore,",{"br":1},"et irruentes tibi potentias impiorum.",{"br":1}]}}
+{"id":"pro.3.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Dominus enim erit in latere tuo,",{"br":1},"et custodiet pedem tuum, ne capiaris."]}}
+{"id":"pro.3.27","type":"verse","n":"27","p":true,"t":{"la":[{"num":"27"},"Noli prohibere benefacere eum qui potest :",{"br":1},"si vales, et ipse benefac.",{"br":1}]}}
+{"id":"pro.3.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Ne dicas amico tuo : Vade, et revertere : cras dabo tibi :",{"br":1},"cum statim possis dare.",{"br":1}]}}
+{"id":"pro.3.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Ne moliaris amico tuo malum,",{"br":1},"cum ille in te habeat fiduciam.",{"br":1}]}}
+{"id":"pro.3.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Ne contendas adversus hominem frustra,",{"br":1},"cum ipse tibi nihil mali fecerit.",{"br":1}]}}
+{"id":"pro.3.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Ne æmuleris hominem injustum,",{"br":1},"nec imiteris vias ejus :",{"br":1}]}}
+{"id":"pro.3.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"quia abominatio Domini est omnis illusor,",{"br":1},"et cum simplicibus sermocinatio ejus.",{"br":1}]}}
+{"id":"pro.3.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"Egestas a Domino in domo impii ;",{"br":1},"habitacula autem justorum benedicentur.",{"br":1}]}}
+{"id":"pro.3.34","type":"verse","n":"34","t":{"la":[{"num":"34"},"Ipse deludet illusores,",{"br":1},"et mansuetis dabit gratiam.",{"br":1}]}}
+{"id":"pro.3.35","type":"verse","n":"35","t":{"la":[{"num":"35"},"Gloriam sapientes possidebunt ;",{"br":1},"stultorum exaltatio ignominia."]}}
+{"id":"pro.4","type":"heading","level":2,"label":"Caput 4","t":{"la":["Caput 4"]}}
+{"id":"pro.4.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Audite, filii, disciplinam patris,",{"br":1},"et attendite ut sciatis prudentiam.",{"br":1}]}}
+{"id":"pro.4.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Donum bonum tribuam vobis :",{"br":1},"legem meam ne derelinquatis.",{"br":1}]}}
+{"id":"pro.4.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Nam et ego filius fui patris mei,",{"br":1},"tenellus et unigenitus coram matre mea.",{"br":1}]}}
+{"id":"pro.4.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Et docebat me, atque dicebat :",{"br":1},"Suscipiat verba mea cor tuum ;",{"br":1},"custodi præcepta mea, et vives.",{"br":1}]}}
+{"id":"pro.4.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Posside sapientiam, posside prudentiam :",{"br":1},"ne obliviscaris, neque declines a verbis oris mei.",{"br":1}]}}
+{"id":"pro.4.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Ne dimittas eam, et custodiet te :",{"br":1},"dilige eam, et conservabit te.",{"br":1}]}}
+{"id":"pro.4.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Principium sapientiæ : posside sapientiam,",{"br":1},"et in omni possessione tua acquire prudentiam.",{"br":1}]}}
+{"id":"pro.4.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Arripe illam, et exaltabit te ;",{"br":1},"glorificaberis ab ea cum eam fueris amplexatus.",{"br":1}]}}
+{"id":"pro.4.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Dabit capiti tuo augmenta gratiarum,",{"br":1},"et corona inclyta proteget te."]}}
+{"id":"pro.4.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Audi, fili mi, et suscipe verba mea,",{"br":1},"ut multiplicentur tibi anni vitæ.",{"br":1}]}}
+{"id":"pro.4.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Viam sapientiæ monstrabo tibi ;",{"br":1},"ducam te per semitas æquitatis :",{"br":1}]}}
+{"id":"pro.4.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"quas cum ingressus fueris, non arctabuntur gressus tui,",{"br":1},"et currens non habebis offendiculum.",{"br":1}]}}
+{"id":"pro.4.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Tene disciplinam, ne dimittas eam ;",{"br":1},"custodi illam, quia ipsa est vita tua.",{"br":1}]}}
+{"id":"pro.4.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Ne delecteris in semitis impiorum,",{"br":1},"nec tibi placeat malorum via.",{"br":1}]}}
+{"id":"pro.4.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Fuge ab ea, nec transeas per illam ;",{"br":1},"declina, et desere eam.",{"br":1}]}}
+{"id":"pro.4.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Non enim dormiunt nisi malefecerint,",{"br":1},"et rapitur somnus ab eis nisi supplantaverint.",{"br":1}]}}
+{"id":"pro.4.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Comedunt panem impietatis,",{"br":1},"et vinum iniquitatis bibunt.",{"br":1}]}}
+{"id":"pro.4.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Justorum autem semita quasi lux splendens procedit,",{"br":1},"et crescit usque ad perfectam diem.",{"br":1}]}}
+{"id":"pro.4.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Via impiorum tenebrosa ;",{"br":1},"nesciunt ubi corruant.",{"br":1}]}}
+{"id":"pro.4.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Fili mi, ausculta sermones meos,",{"br":1},"et ad eloquia mea inclina aurem tuam.",{"br":1}]}}
+{"id":"pro.4.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Ne recedant ab oculis tuis :",{"br":1},"custodi ea in medio cordis tui :",{"br":1}]}}
+{"id":"pro.4.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"vita enim sunt invenientibus ea,",{"br":1},"et universæ carni sanitas.",{"br":1}]}}
+{"id":"pro.4.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Omni custodia serva cor tuum,",{"br":1},"quia ex ipso vita procedit.",{"br":1}]}}
+{"id":"pro.4.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Remove a te os pravum,",{"br":1},"et detrahentia labia sint procul a te.",{"br":1}]}}
+{"id":"pro.4.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Oculi tui recta videant,",{"br":1},"et palpebræ tuæ præcedant gressus tuos.",{"br":1}]}}
+{"id":"pro.4.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Dirige semitam pedibus tuis,",{"br":1},"et omnes viæ tuæ stabilientur.",{"br":1}]}}
+{"id":"pro.4.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Ne declines ad dexteram neque ad sinistram ;",{"br":1},"averte pedem tuum a malo :",{"br":1},"vias enim quæ a dextris sunt novit Dominus :",{"br":1},"perversæ vero sunt quæ a sinistris sunt.",{"br":1},"Ipse autem rectos faciet cursus tuos,",{"br":1},"itinera autem tua in pace producet."]}}
+{"id":"pro.5","type":"heading","level":2,"label":"Caput 5","t":{"la":["Caput 5"]}}
+{"id":"pro.5.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Fili mi, attende ad sapientiam meam,",{"br":1},"et prudentiæ meæ inclina aurem tuam :",{"br":1}]}}
+{"id":"pro.5.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"ut custodias cogitationes, et disciplinam labia tua conservent.",{"br":1},"Ne attendas fallaciæ mulieris ;",{"br":1}]}}
+{"id":"pro.5.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"favus enim distillans labia meretricis,",{"br":1},"et nitidius oleo guttur ejus :",{"br":1}]}}
+{"id":"pro.5.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"novissima autem illius amara quasi absinthium,",{"br":1},"et acuta quasi gladius biceps.",{"br":1}]}}
+{"id":"pro.5.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Pedes ejus descendunt in mortem,",{"br":1},"et ad inferos gressus illius penetrant.",{"br":1}]}}
+{"id":"pro.5.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Per semitam vitæ non ambulant ;",{"br":1},"vagi sunt gressus ejus et investigabiles.",{"br":1}]}}
+{"id":"pro.5.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Nunc ergo fili mi, audi me,",{"br":1},"et ne recedas a verbis oris mei.",{"br":1}]}}
+{"id":"pro.5.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Longe fac ab ea viam tuam,",{"br":1},"et ne appropinques foribus domus ejus.",{"br":1}]}}
+{"id":"pro.5.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Ne des alienis honorem tuum,",{"br":1},"et annos tuos crudeli :",{"br":1}]}}
+{"id":"pro.5.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"ne forte impleantur extranei viribus tuis,",{"br":1},"et labores tui sint in domo aliena,",{"br":1}]}}
+{"id":"pro.5.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"et gemas in novissimis,",{"br":1},"quando consumpseris carnes tuas et corpus tuum,",{"br":1},"et dicas :"]}}
+{"id":"pro.5.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Cur detestatus sum disciplinam,",{"br":1},"et increpationibus non acquievit cor meum,",{"br":1}]}}
+{"id":"pro.5.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"nec audivi vocem docentium me,",{"br":1},"et magistris non inclinavi aurem meam ?",{"br":1}]}}
+{"id":"pro.5.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"pene fui in omni malo,",{"br":1},"in medio ecclesiæ et synagogæ.",{"br":1}]}}
+{"id":"pro.5.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Bibe aquam de cisterna tua,",{"br":1},"et fluenta putei tui ;",{"br":1}]}}
+{"id":"pro.5.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"deriventur fontes tui foras,",{"br":1},"et in plateis aquas tuas divide.",{"br":1}]}}
+{"id":"pro.5.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Habeto eas solus,",{"br":1},"nec sint alieni participes tui.",{"br":1}]}}
+{"id":"pro.5.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Sit vena tua benedicta,",{"br":1},"et lætare cum muliere adolescentiæ tuæ.",{"br":1}]}}
+{"id":"pro.5.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Cerva carissima, et gratissimus hinnulus :",{"br":1},"ubera ejus inebrient te in omni tempore ;",{"br":1},"in amore ejus delectare jugiter.",{"br":1}]}}
+{"id":"pro.5.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Quare seduceris, fili mi, ab aliena,",{"br":1},"et foveris in sinu alterius ?",{"br":1}]}}
+{"id":"pro.5.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Respicit Dominus vias hominis,",{"br":1},"et omnes gressus ejus considerat.",{"br":1}]}}
+{"id":"pro.5.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Iniquitates suas capiunt impium,",{"br":1},"et funibus peccatorum suorum constringitur.",{"br":1}]}}
+{"id":"pro.5.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Ipse morietur, quia non habuit disciplinam,",{"br":1},"et in multitudine stultitiæ suæ decipietur."]}}
+{"id":"pro.6","type":"heading","level":2,"label":"Caput 6","t":{"la":["Caput 6"]}}
+{"id":"pro.6.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Fili mi, si spoponderis pro amico tuo,",{"br":1},"defixisti apud extraneum manum tuam :",{"br":1}]}}
+{"id":"pro.6.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"illaqueatus es verbis oris tui,",{"br":1},"et captus propriis sermonibus.",{"br":1}]}}
+{"id":"pro.6.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Fac ergo quod dico, fili mi, et temetipsum libera,",{"br":1},"quia incidisti in manum proximi tui.",{"br":1},"Discurre, festina, suscita amicum tuum.",{"br":1}]}}
+{"id":"pro.6.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Ne dederis somnum oculis tuis,",{"br":1},"nec dormitent palpebræ tuæ.",{"br":1}]}}
+{"id":"pro.6.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Eruere quasi damula de manu,",{"br":1},"et quasi avis de manu aucupis."]}}
+{"id":"pro.6.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Vade ad formicam, o piger,",{"br":1},"et considera vias ejus, et disce sapientiam.",{"br":1}]}}
+{"id":"pro.6.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Quæ cum non habeat ducem,",{"br":1},"nec præceptorem, nec principem,",{"br":1}]}}
+{"id":"pro.6.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"parat in æstate cibum sibi,",{"br":1},"et congregat in messe quod comedat.",{"br":1}]}}
+{"id":"pro.6.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Usquequo, piger, dormies ?",{"br":1},"quando consurges e somno tuo ?",{"br":1}]}}
+{"id":"pro.6.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Paululum dormies, paululum dormitabis,",{"br":1},"paululum conseres manus ut dormias ;",{"br":1}]}}
+{"id":"pro.6.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"et veniet tibi quasi viator egestas,",{"br":1},"et pauperies quasi vir armatus.",{"br":1},"Si vero impiger fueris, veniet ut fons messis tua,",{"br":1},"et egestas longe fugiet a te."]}}
+{"id":"pro.6.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Homo apostata, vir inutilis, graditur ore perverso ;"]}}
+{"id":"pro.6.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"annuit oculis, terit pede, digito loquitur,",{"br":1}]}}
+{"id":"pro.6.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"pravo corde machinatur malum,",{"br":1},"et omni tempore jurgia seminat.",{"br":1}]}}
+{"id":"pro.6.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Huic extemplo veniet perditio sua,",{"br":1},"et subito conteretur, nec habebit ultra medicinam."]}}
+{"id":"pro.6.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Sex sunt quæ odit Dominus,",{"br":1},"et septimum detestatur anima ejus :",{"br":1}]}}
+{"id":"pro.6.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"oculos sublimes, linguam mendacem,",{"br":1},"manus effundentes innoxium sanguinem,",{"br":1}]}}
+{"id":"pro.6.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"cor machinans cogitationes pessimas,",{"br":1},"pedes veloces ad currendum in malum,",{"br":1}]}}
+{"id":"pro.6.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"proferentem mendacia testem fallacem,",{"br":1},"et eum qui seminat inter fratres discordias."]}}
+{"id":"pro.6.20","type":"verse","n":"20","p":true,"t":{"la":[{"num":"20"},"Conserva, fili mi, præcepta patris tui,",{"br":1},"et ne dimittas legem matris tuæ.",{"br":1}]}}
+{"id":"pro.6.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Liga ea in corde tuo jugiter,",{"br":1},"et circumda gutturi tuo.",{"br":1}]}}
+{"id":"pro.6.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Cum ambulaveris, gradiantur tecum ;",{"br":1},"cum dormieris, custodiant te :",{"br":1},"et evigilans loquere cum eis.",{"br":1}]}}
+{"id":"pro.6.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Quia mandatum lucerna est, et lex lux,",{"br":1},"et via vitæ increpatio disciplinæ :",{"br":1}]}}
+{"id":"pro.6.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"ut custodiant te a muliere mala,",{"br":1},"et a blanda lingua extraneæ.",{"br":1}]}}
+{"id":"pro.6.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Non concupiscat pulchritudinem ejus cor tuum,",{"br":1},"nec capiaris nutibus illius :",{"br":1}]}}
+{"id":"pro.6.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"pretium enim scorti vix est unius panis,",{"br":1},"mulier autem viri pretiosam animam capit.",{"br":1}]}}
+{"id":"pro.6.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Numquid potest homo abscondere ignem in sinu suo,",{"br":1},"ut vestimenta illius non ardeant ?",{"br":1}]}}
+{"id":"pro.6.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"aut ambulare super prunas,",{"br":1},"ut non comburantur plantæ ejus ?",{"br":1}]}}
+{"id":"pro.6.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"sic qui ingreditur ad mulierem proximi sui,",{"br":1},"non erit mundus cum tetigerit eam.",{"br":1}]}}
+{"id":"pro.6.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Non grandis est culpa cum quis furatus fuerit :",{"br":1},"furatur enim ut esurientem impleat animam ;",{"br":1}]}}
+{"id":"pro.6.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"deprehensus quoque reddet septuplum,",{"br":1},"et omnem substantiam domus suæ tradet.",{"br":1}]}}
+{"id":"pro.6.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Qui autem adulter est,",{"br":1},"propter cordis inopiam perdet animam suam ;",{"br":1}]}}
+{"id":"pro.6.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"turpitudinem et ignominiam congregat sibi,",{"br":1},"et opprobrium illius non delebitur :",{"br":1}]}}
+{"id":"pro.6.34","type":"verse","n":"34","t":{"la":[{"num":"34"},"quia zelus et furor viri",{"br":1},"non parcet in die vindictæ,",{"br":1}]}}
+{"id":"pro.6.35","type":"verse","n":"35","t":{"la":[{"num":"35"},"nec acquiescet cujusquam precibus,",{"br":1},"nec suscipiet pro redemptione dona plurima."]}}
+{"id":"pro.7","type":"heading","level":2,"label":"Caput 7","t":{"la":["Caput 7"]}}
+{"id":"pro.7.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Fili mi, custodi sermones meos,",{"br":1},"et præcepta mea reconde tibi.",{"br":1},"Fili,"]}}
+{"id":"pro.7.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"serva mandata mea, et vives ;",{"br":1},"et legem meam quasi pupillam oculi tui :",{"br":1}]}}
+{"id":"pro.7.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"liga eam in digitis tuis,",{"br":1},"scribe illam in tabulis cordis tui.",{"br":1}]}}
+{"id":"pro.7.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Dic sapientiæ : Soror mea es,",{"br":1},"et prudentiam voca amicam tuam :",{"br":1}]}}
+{"id":"pro.7.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"ut custodiant te a muliere extranea,",{"br":1},"et ab aliena quæ verba sua dulcia facit.",{"br":1}]}}
+{"id":"pro.7.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"De fenestra enim domus meæ",{"br":1},"per cancellos prospexi,",{"br":1}]}}
+{"id":"pro.7.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"et video parvulos ;",{"br":1},"considero vecordem juvenem,",{"br":1}]}}
+{"id":"pro.7.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"qui transit per plateam juxta angulum",{"br":1},"et prope viam domus illius graditur :",{"br":1}]}}
+{"id":"pro.7.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"in obscuro, advesperascente die,",{"br":1},"in noctis tenebris et caligine.",{"br":1}]}}
+{"id":"pro.7.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Et ecce occurrit illi mulier ornatu meretricio,",{"br":1},"præparata ad capiendas animas :",{"br":1},"garrula et vaga,",{"br":1}]}}
+{"id":"pro.7.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"quietis impatiens,",{"br":1},"nec valens in domo consistere pedibus suis ;",{"br":1}]}}
+{"id":"pro.7.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"nunc foris, nunc in plateis,",{"br":1},"nunc juxta angulos insidians.",{"br":1}]}}
+{"id":"pro.7.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Apprehensumque deosculatur juvenem,",{"br":1},"et procaci vultu blanditur, dicens :",{"br":1}]}}
+{"id":"pro.7.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Victimas pro salute vovi ;",{"br":1},"hodie reddidi vota mea :",{"br":1}]}}
+{"id":"pro.7.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"idcirco egressa sum in occursum tuum,",{"br":1},"desiderans te videre, et reperi.",{"br":1}]}}
+{"id":"pro.7.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Intexui funibus lectulum meum ;",{"br":1},"stravi tapetibus pictis ex Ægypto :",{"br":1}]}}
+{"id":"pro.7.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"aspersi cubile meum myrrha,",{"br":1},"et aloë, et cinnamomo.",{"br":1}]}}
+{"id":"pro.7.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Veni, inebriemur uberibus,",{"br":1},"et fruamur cupitis amplexibus donec illucescat dies.",{"br":1}]}}
+{"id":"pro.7.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Non est enim vir in domo sua :",{"br":1},"abiit via longissima :",{"br":1}]}}
+{"id":"pro.7.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"sacculum pecuniæ secum tulit ;",{"br":1},"in die plenæ lunæ reversurus est in domum suam.",{"br":1}]}}
+{"id":"pro.7.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Irretivit eum multis sermonibus,",{"br":1},"et blanditiis labiorum protraxit illum.",{"br":1}]}}
+{"id":"pro.7.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Statim eam sequitur quasi bos ductus ad victimam,",{"br":1},"et quasi agnus lasciviens,",{"br":1},"et ignorans quod ad vincula stultus trahatur :",{"br":1}]}}
+{"id":"pro.7.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"donec transfigat sagitta jecur ejus,",{"br":1},"velut si avis festinet ad laqueum,",{"br":1},"et nescit quod de periculo animæ illius agitur.",{"br":1}]}}
+{"id":"pro.7.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Nunc ergo, fili mi, audi me,",{"br":1},"et attende verbis oris mei.",{"br":1}]}}
+{"id":"pro.7.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Ne abstrahatur in viis illius mens tua,",{"br":1},"neque decipiaris semitis ejus ;",{"br":1}]}}
+{"id":"pro.7.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"multos enim vulneratos dejecit,",{"br":1},"et fortissimi quique interfecti sunt ab ea.",{"br":1}]}}
+{"id":"pro.7.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Viæ inferi domus ejus,",{"br":1},"penetrantes in interiora mortis."]}}
+{"id":"pro.8","type":"heading","level":2,"label":"Caput 8","t":{"la":["Caput 8"]}}
+{"id":"pro.8.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Numquid non sapientia clamitat,",{"br":1},"et prudentia dat vocem suam ?",{"br":1}]}}
+{"id":"pro.8.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"In summis excelsisque verticibus supra viam,",{"br":1},"in mediis semitis stans,",{"br":1}]}}
+{"id":"pro.8.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"juxta portas civitatis,",{"br":1},"in ipsis foribus loquitur, dicens :",{"br":1}]}}
+{"id":"pro.8.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"O viri, ad vos clamito,",{"br":1},"et vox mea ad filios hominum.",{"br":1}]}}
+{"id":"pro.8.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Intelligite, parvuli, astutiam,",{"br":1},"et insipientes, animadvertite.",{"br":1}]}}
+{"id":"pro.8.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Audite, quoniam de rebus magnis locutura sum,",{"br":1},"et aperientur labia mea ut recta prædicent.",{"br":1}]}}
+{"id":"pro.8.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Veritatem meditabitur guttur meum,",{"br":1},"et labia mea detestabuntur impium.",{"br":1}]}}
+{"id":"pro.8.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Justi sunt omnes sermones mei :",{"br":1},"non est in eis pravum quid, neque perversum ;",{"br":1}]}}
+{"id":"pro.8.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"recti sunt intelligentibus,",{"br":1},"et æqui invenientibus scientiam.",{"br":1}]}}
+{"id":"pro.8.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Accipite disciplinam meam, et non pecuniam ;",{"br":1},"doctrinam magis quam aurum eligite :",{"br":1}]}}
+{"id":"pro.8.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"melior est enim sapientia cunctis pretiosissimis,",{"br":1},"et omne desiderabile ei non potest comparari."]}}
+{"id":"pro.8.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Ego sapientia, habito in consilio,",{"br":1},"et eruditis intersum cogitationibus.",{"br":1}]}}
+{"id":"pro.8.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Timor Domini odit malum :",{"br":1},"arrogantiam, et superbiam,",{"br":1},"et viam pravam, et os bilingue, detestor.",{"br":1}]}}
+{"id":"pro.8.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Meum est consilium et æquitas ;",{"br":1},"mea est prudentia, mea est fortitudo.",{"br":1}]}}
+{"id":"pro.8.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Per me reges regnant,",{"br":1},"et legum conditores justa decernunt ;",{"br":1}]}}
+{"id":"pro.8.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"per me principes imperant,",{"br":1},"et potentes decernunt justitiam.",{"br":1}]}}
+{"id":"pro.8.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Ego diligentes me diligo,",{"br":1},"et qui mane vigilant ad me, invenient me.",{"br":1}]}}
+{"id":"pro.8.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Mecum sunt divitiæ et gloria,",{"br":1},"opes superbæ et justitia.",{"br":1}]}}
+{"id":"pro.8.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Melior est enim fructus meus auro et lapide pretioso,",{"br":1},"et genimina mea argento electo.",{"br":1}]}}
+{"id":"pro.8.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"In viis justitiæ ambulo,",{"br":1},"in medio semitarum judicii :",{"br":1}]}}
+{"id":"pro.8.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"ut ditem diligentes me,",{"br":1},"et thesauros eorum repleam."]}}
+{"id":"pro.8.22","type":"verse","n":"22","p":true,"t":{"la":[{"num":"22"},"Dominus possedit me in initio viarum suarum",{"br":1},"antequam quidquam faceret a principio.",{"br":1}]}}
+{"id":"pro.8.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Ab æterno ordinata sum,",{"br":1},"et ex antiquis antequam terra fieret.",{"br":1}]}}
+{"id":"pro.8.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Nondum erant abyssi, et ego jam concepta eram :",{"br":1},"necdum fontes aquarum eruperant,",{"br":1}]}}
+{"id":"pro.8.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"necdum montes gravi mole constiterant :",{"br":1},"ante colles ego parturiebar.",{"br":1}]}}
+{"id":"pro.8.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Adhuc terram non fecerat, et flumina,",{"br":1},"et cardines orbis terræ.",{"br":1}]}}
+{"id":"pro.8.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Quando præparabat cælos, aderam ;",{"br":1},"quando certa lege et gyro vallabat abyssos ;",{"br":1}]}}
+{"id":"pro.8.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"quando æthera firmabat sursum,",{"br":1},"et librabat fontes aquarum ;",{"br":1}]}}
+{"id":"pro.8.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"quando circumdabat mari terminum suum,",{"br":1},"et legem ponebat aquis, ne transirent fines suos ;",{"br":1},"quando appendebat fundamenta terræ :",{"br":1}]}}
+{"id":"pro.8.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"cum eo eram, cuncta componens.",{"br":1},"Et delectabar per singulos dies,",{"br":1},"ludens coram eo omni tempore,",{"br":1}]}}
+{"id":"pro.8.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"ludens in orbe terrarum ;",{"br":1},"et deliciæ meæ esse cum filiis hominum.",{"br":1}]}}
+{"id":"pro.8.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Nunc ergo, filii, audite me :",{"br":1},"beati qui custodiunt vias meas.",{"br":1}]}}
+{"id":"pro.8.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"Audite disciplinam, et estote sapientes,",{"br":1},"et nolite abjicere eam.",{"br":1}]}}
+{"id":"pro.8.34","type":"verse","n":"34","t":{"la":[{"num":"34"},"Beatus homo qui audit me,",{"br":1},"et qui vigilat ad fores meas quotidie,",{"br":1},"et observat ad postes ostii mei.",{"br":1}]}}
+{"id":"pro.8.35","type":"verse","n":"35","t":{"la":[{"num":"35"},"Qui me invenerit, inveniet vitam,",{"br":1},"et hauriet salutem a Domino.",{"br":1}]}}
+{"id":"pro.8.36","type":"verse","n":"36","t":{"la":[{"num":"36"},"Qui autem in me peccaverit, lædet animam suam ;",{"br":1},"omnes qui me oderunt diligunt mortem."]}}
+{"id":"pro.9","type":"heading","level":2,"label":"Caput 9","t":{"la":["Caput 9"]}}
+{"id":"pro.9.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Sapientia ædificavit sibi domum :",{"br":1},"excidit columnas septem.",{"br":1}]}}
+{"id":"pro.9.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Immolavit victimas suas, miscuit vinum,",{"br":1},"et proposuit mensam suam.",{"br":1}]}}
+{"id":"pro.9.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Misit ancillas suas ut vocarent",{"br":1},"ad arcem et ad mœnia civitatis.",{"br":1}]}}
+{"id":"pro.9.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Si quis est parvulus, veniat ad me.",{"br":1},"Et insipientibus locuta est :",{"br":1}]}}
+{"id":"pro.9.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Venite, comedite panem meum,",{"br":1},"et bibite vinum quod miscui vobis.",{"br":1}]}}
+{"id":"pro.9.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Relinquite infantiam, et vivite,",{"br":1},"et ambulate per vias prudentiæ."]}}
+{"id":"pro.9.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Qui erudit derisorem, ipse injuriam sibi facit,",{"br":1},"et qui arguit impium, sibi maculam generat.",{"br":1}]}}
+{"id":"pro.9.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Noli arguere derisorem, ne oderit te :",{"br":1},"argue sapientem, et diliget te.",{"br":1}]}}
+{"id":"pro.9.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Da sapienti occasionem, et addetur ei sapientia ;",{"br":1},"doce justum, et festinabit accipere.",{"br":1}]}}
+{"id":"pro.9.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Principium sapientiæ timor Domini,",{"br":1},"et scientia sanctorum prudentia.",{"br":1}]}}
+{"id":"pro.9.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Per me enim multiplicabuntur dies tui,",{"br":1},"et addentur tibi anni vitæ.",{"br":1}]}}
+{"id":"pro.9.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Si sapiens fueris, tibimetipsi eris ;",{"br":1},"si autem illusor, solus portabis malum."]}}
+{"id":"pro.9.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Mulier stulta et clamosa,",{"br":1},"plenaque illecebris, et nihil omnino sciens,",{"br":1}]}}
+{"id":"pro.9.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"sedit in foribus domus suæ,",{"br":1},"super sellam in excelso urbis loco,",{"br":1}]}}
+{"id":"pro.9.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"ut vocaret transeuntes per viam,",{"br":1},"et pergentes itinere suo :",{"br":1}]}}
+{"id":"pro.9.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Qui est parvulus declinet ad me.",{"br":1},"Et vecordi locuta est :",{"br":1}]}}
+{"id":"pro.9.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Aquæ furtivæ dulciores sunt,",{"br":1},"et panis absconditus suavior.",{"br":1}]}}
+{"id":"pro.9.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Et ignoravit quod ibi sint gigantes,",{"br":1},"et in profundis inferni convivæ ejus."]}}
+{"id":"pro.10","type":"heading","level":2,"label":"Caput 10","t":{"la":["Caput 10"]}}
+{"id":"pro.10.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Filius sapiens lætificat patrem,",{"br":1},"filius vero stultus mœstitia est matris suæ.",{"br":1}]}}
+{"id":"pro.10.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Nil proderunt thesauri impietatis,",{"br":1},"justitia vero liberabit a morte.",{"br":1}]}}
+{"id":"pro.10.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Non affliget Dominus fame animam justi,",{"br":1},"et insidias impiorum subvertet.",{"br":1}]}}
+{"id":"pro.10.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Egestatem operata est manus remissa ;",{"br":1},"manus autem fortium divitias parat.",{"br":1},"Qui nititur mendaciis, hic pascit ventos ;",{"br":1},"idem autem ipse sequitur aves volantes.",{"br":1}]}}
+{"id":"pro.10.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Qui congregat in messe, filius sapiens est ;",{"br":1},"qui autem stertit æstate, filius confusionis.",{"br":1}]}}
+{"id":"pro.10.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Benedictio Domini super caput justi ;",{"br":1},"os autem impiorum operit iniquitas.",{"br":1}]}}
+{"id":"pro.10.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Memoria justi cum laudibus,",{"br":1},"et nomen impiorum putrescet.",{"br":1}]}}
+{"id":"pro.10.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Sapiens corde præcepta suscipit ;",{"br":1},"stultus cæditur labiis.",{"br":1}]}}
+{"id":"pro.10.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Qui ambulat simpliciter ambulat confidenter ;",{"br":1},"qui autem depravat vias suas manifestus erit.",{"br":1}]}}
+{"id":"pro.10.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Qui annuit oculo dabit dolorem ;",{"br":1},"et stultus labiis verberabitur."]}}
+{"id":"pro.10.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Vena vitæ os justi,",{"br":1},"et os impiorum operit iniquitatem.",{"br":1}]}}
+{"id":"pro.10.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Odium suscitat rixas,",{"br":1},"et universa delicta operit caritas.",{"br":1}]}}
+{"id":"pro.10.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"In labiis sapientis invenitur sapientia,",{"br":1},"et virga in dorso ejus qui indiget corde.",{"br":1}]}}
+{"id":"pro.10.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Sapientes abscondunt scientiam ;",{"br":1},"os autem stulti confusioni proximum est.",{"br":1}]}}
+{"id":"pro.10.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Substantia divitis, urbs fortitudinis ejus ;",{"br":1},"pavor pauperum egestas eorum.",{"br":1}]}}
+{"id":"pro.10.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Opus justi ad vitam,",{"br":1},"fructus autem impii ad peccatum.",{"br":1}]}}
+{"id":"pro.10.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Via vitæ custodienti disciplinam ;",{"br":1},"qui autem increpationes relinquit, errat.",{"br":1}]}}
+{"id":"pro.10.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Abscondunt odium labia mendacia ;",{"br":1},"qui profert contumeliam, insipiens est.",{"br":1}]}}
+{"id":"pro.10.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"In multiloquio non deerit peccatum,",{"br":1},"qui autem moderatur labia sua prudentissimus est.",{"br":1}]}}
+{"id":"pro.10.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Argentum electum lingua justi ;",{"br":1},"cor autem impiorum pro nihilo.",{"br":1}]}}
+{"id":"pro.10.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Labia justi erudiunt plurimos ;",{"br":1},"qui autem indocti sunt in cordis egestate morientur."]}}
+{"id":"pro.10.22","type":"verse","n":"22","p":true,"t":{"la":[{"num":"22"},"Benedictio Domini divites facit,",{"br":1},"nec sociabitur eis afflictio.",{"br":1}]}}
+{"id":"pro.10.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Quasi per risum stultus operatur scelus,",{"br":1},"sapientia autem est viro prudentia.",{"br":1}]}}
+{"id":"pro.10.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Quod timet impius veniet super eum ;",{"br":1},"desiderium suum justis dabitur.",{"br":1}]}}
+{"id":"pro.10.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Quasi tempestas transiens non erit impius ;",{"br":1},"justus autem quasi fundamentum sempiternum.",{"br":1}]}}
+{"id":"pro.10.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Sicut acetum dentibus, et fumus oculis,",{"br":1},"sic piger his qui miserunt eum.",{"br":1}]}}
+{"id":"pro.10.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Timor Domini apponet dies,",{"br":1},"et anni impiorum breviabuntur.",{"br":1}]}}
+{"id":"pro.10.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Exspectatio justorum lætitia,",{"br":1},"spes autem impiorum peribit.",{"br":1}]}}
+{"id":"pro.10.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Fortitudo simplicis via Domini,",{"br":1},"et pavor his qui operantur malum.",{"br":1}]}}
+{"id":"pro.10.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Justus in æternum non commovebitur,",{"br":1},"impii autem non habitabunt super terram.",{"br":1}]}}
+{"id":"pro.10.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Os justi parturiet sapientiam ;",{"br":1},"lingua pravorum peribit.",{"br":1}]}}
+{"id":"pro.10.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Labia justi considerant placita,",{"br":1},"et os impiorum perversa."]}}
+{"id":"pro.11","type":"heading","level":2,"label":"Caput 11","t":{"la":["Caput 11"]}}
+{"id":"pro.11.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Statera dolosa abominatio est apud Dominum,",{"br":1},"et pondus æquum voluntas ejus.",{"br":1}]}}
+{"id":"pro.11.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Ubi fuerit superbia, ibi erit et contumelia ;",{"br":1},"ubi autem est humilitas, ibi et sapientia.",{"br":1}]}}
+{"id":"pro.11.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Simplicitas justorum diriget eos,",{"br":1},"et supplantatio perversorum vastabit illos.",{"br":1}]}}
+{"id":"pro.11.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Non proderunt divitiæ in die ultionis ;",{"br":1},"justitia autem liberabit a morte.",{"br":1}]}}
+{"id":"pro.11.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Justitia simplicis diriget viam ejus,",{"br":1},"et in impietate sua corruet impius.",{"br":1}]}}
+{"id":"pro.11.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Justitia rectorum liberabit eos,",{"br":1},"et in insidiis suis capientur iniqui.",{"br":1}]}}
+{"id":"pro.11.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Mortuo homine impio, nulla erit ultra spes,",{"br":1},"et exspectatio sollicitorum peribit.",{"br":1}]}}
+{"id":"pro.11.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Justus de angustia liberatus est,",{"br":1},"et tradetur impius pro eo."]}}
+{"id":"pro.11.9","type":"verse","n":"9","p":true,"t":{"la":[{"num":"9"},"Simulator ore decipit amicum suum ;",{"br":1},"justi autem liberabuntur scientia.",{"br":1}]}}
+{"id":"pro.11.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"In bonis justorum exsultabit civitas,",{"br":1},"et in perditione impiorum erit laudatio.",{"br":1}]}}
+{"id":"pro.11.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Benedictione justorum exaltabitur civitas,",{"br":1},"et ore impiorum subvertetur.",{"br":1}]}}
+{"id":"pro.11.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Qui despicit amicum suum indigens corde est ;",{"br":1},"vir autem prudens tacebit.",{"br":1}]}}
+{"id":"pro.11.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Qui ambulat fraudulenter, revelat arcana ;",{"br":1},"qui autem fidelis est animi, celat amici commissum.",{"br":1}]}}
+{"id":"pro.11.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Ubi non est gubernator, populus corruet ;",{"br":1},"salus autem, ubi multa consilia.",{"br":1}]}}
+{"id":"pro.11.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Affligetur malo qui fidem facit pro extraneo ;",{"br":1},"qui autem cavet laqueos securus erit.",{"br":1}]}}
+{"id":"pro.11.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Mulier gratiosa inveniet gloriam,",{"br":1},"et robusti habebunt divitias."]}}
+{"id":"pro.11.17","type":"verse","n":"17","p":true,"t":{"la":[{"num":"17"},"Benefacit animæ suæ vir misericors ;",{"br":1},"qui autem crudelis est, etiam propinquos abjicit.",{"br":1}]}}
+{"id":"pro.11.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Impius facit opus instabile,",{"br":1},"seminanti autem justitiam merces fidelis.",{"br":1}]}}
+{"id":"pro.11.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Clementia præparat vitam,",{"br":1},"et sectatio malorum mortem.",{"br":1}]}}
+{"id":"pro.11.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Abominabile Domino cor pravum,",{"br":1},"et voluntas ejus in iis qui simpliciter ambulant.",{"br":1}]}}
+{"id":"pro.11.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Manus in manu non erit innocens malus ;",{"br":1},"semen autem justorum salvabitur.",{"br":1}]}}
+{"id":"pro.11.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Circulus aureus in naribus suis,",{"br":1},"mulier pulchra et fatua.",{"br":1}]}}
+{"id":"pro.11.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Desiderium justorum omne bonum est ;",{"br":1},"præstolatio impiorum furor.",{"br":1}]}}
+{"id":"pro.11.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Alii dividunt propria, et ditiores fiunt ;",{"br":1},"alii rapiunt non sua, et semper in egestate sunt.",{"br":1}]}}
+{"id":"pro.11.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Anima quæ benedicit impinguabitur,",{"br":1},"et qui inebriat, ipse quoque inebriabitur.",{"br":1}]}}
+{"id":"pro.11.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Qui abscondit frumenta maledicetur in populis ;",{"br":1},"benedictio autem super caput vendentium.",{"br":1}]}}
+{"id":"pro.11.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Bene consurgit diluculo qui quærit bona ;",{"br":1},"qui autem investigator malorum est, opprimetur ab eis.",{"br":1}]}}
+{"id":"pro.11.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Qui confidit in divitiis suis corruet :",{"br":1},"justi autem quasi virens folium germinabunt.",{"br":1}]}}
+{"id":"pro.11.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Qui conturbat domum suam possidebit ventos,",{"br":1},"et qui stultus est serviet sapienti.",{"br":1}]}}
+{"id":"pro.11.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Fructus justi lignum vitæ,",{"br":1},"et qui suscipit animas sapiens est.",{"br":1}]}}
+{"id":"pro.11.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Si justus in terra recipit,",{"br":1},"quanto magis impius et peccator !"]}}
+{"id":"pro.12","type":"heading","level":2,"label":"Caput 12","t":{"la":["Caput 12"]}}
+{"id":"pro.12.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Qui diligit disciplinam diligit scientiam ;",{"br":1},"qui autem odit increpationes insipiens est.",{"br":1}]}}
+{"id":"pro.12.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Qui bonus est hauriet gratiam a Domino ;",{"br":1},"qui autem confidit in cogitationibus suis impie agit.",{"br":1}]}}
+{"id":"pro.12.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Non roborabitur homo ex impietate,",{"br":1},"et radix justorum non commovebitur.",{"br":1}]}}
+{"id":"pro.12.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Mulier diligens corona est viro suo ;",{"br":1},"et putredo in ossibus ejus, quæ confusione res dignas gerit.",{"br":1}]}}
+{"id":"pro.12.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Cogitationes justorum judicia,",{"br":1},"et consilia impiorum fraudulenta.",{"br":1}]}}
+{"id":"pro.12.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Verba impiorum insidiantur sanguini ;",{"br":1},"os justorum liberabit eos.",{"br":1}]}}
+{"id":"pro.12.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Verte impios, et non erunt ;",{"br":1},"domus autem justorum permanebit.",{"br":1}]}}
+{"id":"pro.12.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Doctrina sua noscetur vir ;",{"br":1},"qui autem vanus et excors est patebit contemptui.",{"br":1}]}}
+{"id":"pro.12.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Melior est pauper et sufficiens sibi",{"br":1},"quam gloriosus et indigens pane.",{"br":1}]}}
+{"id":"pro.12.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Novit justus jumentorum suorum animas ;",{"br":1},"viscera autem impiorum crudelia.",{"br":1}]}}
+{"id":"pro.12.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Qui operatur terram suam satiabitur panibus ;",{"br":1},"qui autem sectatur otium stultissimus est.",{"br":1},"Qui suavis est in vini demorationibus,",{"br":1},"in suis munitionibus relinquit contumeliam.",{"br":1}]}}
+{"id":"pro.12.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Desiderium impii munimentum est pessimorum ;",{"br":1},"radix autem justorum proficiet."]}}
+{"id":"pro.12.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Propter peccata labiorum ruina proximat malo ;",{"br":1},"effugiet autem justus de angustia.",{"br":1}]}}
+{"id":"pro.12.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"De fructu oris sui unusquisque replebitur bonis,",{"br":1},"et juxta opera manuum suarum retribuetur ei.",{"br":1}]}}
+{"id":"pro.12.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Via stulti recta in oculis ejus ;",{"br":1},"qui autem sapiens est audit consilia.",{"br":1}]}}
+{"id":"pro.12.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Fatuus statim indicat iram suam ;",{"br":1},"qui autem dissimulat injuriam callidus est.",{"br":1}]}}
+{"id":"pro.12.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Qui quod novit loquitur, index justitiæ est ;",{"br":1},"qui autem mentitur, testis est fraudulentus.",{"br":1}]}}
+{"id":"pro.12.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Est qui promittit, et quasi gladio pungitur conscientiæ :",{"br":1},"lingua autem sapientium sanitas est.",{"br":1}]}}
+{"id":"pro.12.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Labium veritatis firmum erit in perpetuum ;",{"br":1},"qui autem testis est repentinus, concinnat linguam mendacii.",{"br":1}]}}
+{"id":"pro.12.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Dolus in corde cogitantium mala ;",{"br":1},"qui autem pacis ineunt consilia, sequitur eos gaudium.",{"br":1}]}}
+{"id":"pro.12.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Non contristabit justum quidquid ei acciderit :",{"br":1},"impii autem replebuntur malo.",{"br":1}]}}
+{"id":"pro.12.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Abominatio est Domino labia mendacia ;",{"br":1},"qui autem fideliter agunt placent ei.",{"br":1}]}}
+{"id":"pro.12.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Homo versatus celat scientiam,",{"br":1},"et cor insipientium provocat stultitiam."]}}
+{"id":"pro.12.24","type":"verse","n":"24","p":true,"t":{"la":[{"num":"24"},"Manus fortium dominabitur ;",{"br":1},"quæ autem remissa est, tributis serviet.",{"br":1}]}}
+{"id":"pro.12.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Mœror in corde viri humiliabit illum,",{"br":1},"et sermone bono lætificabitur.",{"br":1}]}}
+{"id":"pro.12.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Qui negligit damnum propter amicum, justus est ;",{"br":1},"iter autem impiorum decipiet eos.",{"br":1}]}}
+{"id":"pro.12.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Non inveniet fraudulentus lucrum,",{"br":1},"et substantia hominis erit auri pretium.",{"br":1}]}}
+{"id":"pro.12.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"In semita justitiæ vita ;",{"br":1},"iter autem devium ducit ad mortem."]}}
+{"id":"pro.13","type":"heading","level":2,"label":"Caput 13","t":{"la":["Caput 13"]}}
+{"id":"pro.13.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Filius sapiens doctrina patris ;",{"br":1},"qui autem illusor est non audit cum arguitur.",{"br":1}]}}
+{"id":"pro.13.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"De fructu oris sui homo satiabitur bonis :",{"br":1},"anima autem prævaricatorum iniqua.",{"br":1}]}}
+{"id":"pro.13.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Qui custodit os suum custodit animam suam ;",{"br":1},"qui autem inconsideratus est ad loquendum, sentiet mala.",{"br":1}]}}
+{"id":"pro.13.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Vult et non vult piger ;",{"br":1},"anima autem operantium impinguabitur.",{"br":1}]}}
+{"id":"pro.13.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Verbum mendax justus detestabitur ;",{"br":1},"impius autem confundit, et confundetur.",{"br":1}]}}
+{"id":"pro.13.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Justitia custodit innocentis viam,",{"br":1},"impietas autem peccatorem supplantat."]}}
+{"id":"pro.13.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Est quasi dives, cum nihil habeat,",{"br":1},"et est quasi pauper, cum in multis divitiis sit.",{"br":1}]}}
+{"id":"pro.13.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Redemptio animæ viri divitiæ suæ ;",{"br":1},"qui autem pauper est, increpationem non sustinet.",{"br":1}]}}
+{"id":"pro.13.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Lux justorum lætificat :",{"br":1},"lucerna autem impiorum extinguetur.",{"br":1}]}}
+{"id":"pro.13.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Inter superbos semper jurgia sunt ;",{"br":1},"qui autem agunt omnia cum consilio, reguntur sapientia.",{"br":1}]}}
+{"id":"pro.13.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Substantia festinata minuetur ;",{"br":1},"quæ autem paulatim colligitur manu, multiplicabitur.",{"br":1}]}}
+{"id":"pro.13.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Spes quæ differtur affligit animam ;",{"br":1},"lignum vitæ desiderium veniens."]}}
+{"id":"pro.13.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Qui detrahit alicui rei, ipse se in futurum obligat ;",{"br":1},"qui autem timet præceptum, in pace versabitur.",{"br":1},"Animæ dolosæ errant in peccatis :",{"br":1},"justi autem misericordes sunt, et miserantur.",{"br":1}]}}
+{"id":"pro.13.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Lex sapientis fons vitæ,",{"br":1},"ut declinet a ruina mortis.",{"br":1}]}}
+{"id":"pro.13.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Doctrina bona dabit gratiam ;",{"br":1},"in itinere contemptorum vorago.",{"br":1}]}}
+{"id":"pro.13.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Astutus omnia agit cum consilio ;",{"br":1},"qui autem fatuus est aperit stultitiam.",{"br":1}]}}
+{"id":"pro.13.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Nuntius impii cadet in malum ;",{"br":1},"legatus autem fidelis, sanitas.",{"br":1}]}}
+{"id":"pro.13.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Egestas et ignominia ei qui deserit disciplinam ;",{"br":1},"qui autem acquiescit arguenti glorificabitur.",{"br":1}]}}
+{"id":"pro.13.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Desiderium si compleatur delectat animam ;",{"br":1},"detestantur stulti eos qui fugiunt mala.",{"br":1}]}}
+{"id":"pro.13.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Qui cum sapientibus graditur sapiens erit ;",{"br":1},"amicus stultorum similis efficietur."]}}
+{"id":"pro.13.21","type":"verse","n":"21","p":true,"t":{"la":[{"num":"21"},"Peccatores persequitur malum,",{"br":1},"et justis retribuentur bona.",{"br":1}]}}
+{"id":"pro.13.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Bonus reliquit hæredes filios et nepotes,",{"br":1},"et custoditur justo substantia peccatoris.",{"br":1}]}}
+{"id":"pro.13.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Multi cibi in novalibus patrum,",{"br":1},"et aliis congregantur absque judicio.",{"br":1}]}}
+{"id":"pro.13.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Qui parcit virgæ odit filium suum ;",{"br":1},"qui autem diligit illum instanter erudit.",{"br":1}]}}
+{"id":"pro.13.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Justus comedit et replet animam suam ;",{"br":1},"venter autem impiorum insaturabilis."]}}
+{"id":"pro.14","type":"heading","level":2,"label":"Caput 14","t":{"la":["Caput 14"]}}
+{"id":"pro.14.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Sapiens mulier ædificat domum suam ;",{"br":1},"insipiens exstructam quoque manibus destruet.",{"br":1}]}}
+{"id":"pro.14.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Ambulans recto itinere, et timens Deum,",{"br":1},"despicitur ab eo qui infami graditur via.",{"br":1}]}}
+{"id":"pro.14.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"In ore stulti virga superbiæ ;",{"br":1},"labia autem sapientium custodiunt eos.",{"br":1}]}}
+{"id":"pro.14.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Ubi non sunt boves, præsepe vacuum est ;",{"br":1},"ubi autem plurimæ segetes, ibi manifesta est fortitudo bovis.",{"br":1}]}}
+{"id":"pro.14.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Testis fidelis non mentitur ;",{"br":1},"profert autem mendacium dolosus testis.",{"br":1}]}}
+{"id":"pro.14.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Quærit derisor sapientiam, et non invenit ;",{"br":1},"doctrina prudentium facilis.",{"br":1}]}}
+{"id":"pro.14.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Vade contra virum stultum,",{"br":1},"et nescit labia prudentiæ.",{"br":1}]}}
+{"id":"pro.14.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Sapientia callidi est intelligere viam suam,",{"br":1},"et imprudentia stultorum errans.",{"br":1}]}}
+{"id":"pro.14.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Stultus illudet peccatum,",{"br":1},"et inter justos morabitur gratia.",{"br":1}]}}
+{"id":"pro.14.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Cor quod novit amaritudinem animæ suæ,",{"br":1},"in gaudio ejus non miscebitur extraneus.",{"br":1}]}}
+{"id":"pro.14.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Domus impiorum delebitur :",{"br":1},"tabernacula vero justorum germinabunt.",{"br":1}]}}
+{"id":"pro.14.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Est via quæ videtur homini justa,",{"br":1},"novissima autem ejus deducunt ad mortem.",{"br":1}]}}
+{"id":"pro.14.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Risus dolore miscebitur,",{"br":1},"et extrema gaudii luctus occupat.",{"br":1}]}}
+{"id":"pro.14.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Viis suis replebitur stultus,",{"br":1},"et super eum erit vir bonus."]}}
+{"id":"pro.14.15","type":"verse","n":"15","p":true,"t":{"la":[{"num":"15"},"Innocens credit omni verbo ;",{"br":1},"astutus considerat gressus suos.",{"br":1},"Filio doloso nihil erit boni ;",{"br":1},"servo autem sapienti prosperi erunt actus,",{"br":1},"et dirigetur via ejus.",{"br":1}]}}
+{"id":"pro.14.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Sapiens timet, et declinat a malo ;",{"br":1},"stultus transilit, et confidit.",{"br":1}]}}
+{"id":"pro.14.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Impatiens operabitur stultitiam,",{"br":1},"et vir versutus odiosus est.",{"br":1}]}}
+{"id":"pro.14.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Possidebunt parvuli stultitiam,",{"br":1},"et exspectabunt astuti scientiam.",{"br":1}]}}
+{"id":"pro.14.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Jacebunt mali ante bonos,",{"br":1},"et impii ante portas justorum.",{"br":1}]}}
+{"id":"pro.14.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Etiam proximo suo pauper odiosus erit :",{"br":1},"amici vero divitum multi.",{"br":1}]}}
+{"id":"pro.14.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Qui despicit proximum suum peccat ;",{"br":1},"qui autem miseretur pauperis beatus erit.",{"br":1},"Qui credit in Domino misericordiam diligit.",{"br":1}]}}
+{"id":"pro.14.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Errant qui operantur malum ;",{"br":1},"misericordia et veritas præparant bona.",{"br":1}]}}
+{"id":"pro.14.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"In omni opere erit abundantia ;",{"br":1},"ubi autem verba sunt plurima, ibi frequenter egestas.",{"br":1}]}}
+{"id":"pro.14.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Corona sapientium divitiæ eorum ;",{"br":1},"fatuitas stultorum imprudentia.",{"br":1}]}}
+{"id":"pro.14.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Liberat animas testis fidelis,",{"br":1},"et profert mendacia versipellis."]}}
+{"id":"pro.14.26","type":"verse","n":"26","p":true,"t":{"la":[{"num":"26"},"In timore Domini fiducia fortitudinis,",{"br":1},"et filiis ejus erit spes.",{"br":1}]}}
+{"id":"pro.14.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Timor Domini fons vitæ,",{"br":1},"ut declinent a ruina mortis.",{"br":1}]}}
+{"id":"pro.14.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"In multitudine populi dignitas regis,",{"br":1},"et in paucitate plebis ignominia principis.",{"br":1}]}}
+{"id":"pro.14.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Qui patiens est multa gubernatur prudentia ;",{"br":1},"qui autem impatiens est exaltat stultitiam suam.",{"br":1}]}}
+{"id":"pro.14.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Vita carnium sanitas cordis ;",{"br":1},"putredo ossium invidia.",{"br":1}]}}
+{"id":"pro.14.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Qui calumniatur egentem exprobrat factori ejus ;",{"br":1},"honorat autem eum qui miseretur pauperis.",{"br":1}]}}
+{"id":"pro.14.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"In malitia sua expelletur impius :",{"br":1},"sperat autem justus in morte sua.",{"br":1}]}}
+{"id":"pro.14.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"In corde prudentis requiescit sapientia,",{"br":1},"et indoctos quosque erudiet.",{"br":1}]}}
+{"id":"pro.14.34","type":"verse","n":"34","t":{"la":[{"num":"34"},"Justitia elevat gentem ;",{"br":1},"miseros autem facit populos peccatum.",{"br":1}]}}
+{"id":"pro.14.35","type":"verse","n":"35","t":{"la":[{"num":"35"},"Acceptus est regi minister intelligens ;",{"br":1},"iracundiam ejus inutilis sustinebit."]}}
+{"id":"pro.15","type":"heading","level":2,"label":"Caput 15","t":{"la":["Caput 15"]}}
+{"id":"pro.15.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Responsio mollis frangit iram ;",{"br":1},"sermo durus suscitat furorem.",{"br":1}]}}
+{"id":"pro.15.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Lingua sapientium ornat scientiam ;",{"br":1},"os fatuorum ebullit stultitiam.",{"br":1}]}}
+{"id":"pro.15.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"In omni loco, oculi Domini",{"br":1},"contemplantur bonos et malos.",{"br":1}]}}
+{"id":"pro.15.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Lingua placabilis lignum vitæ ;",{"br":1},"quæ autem immoderata est conteret spiritum.",{"br":1}]}}
+{"id":"pro.15.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Stultus irridet disciplinam patris sui ;",{"br":1},"qui autem custodit increpationes astutior fiet.",{"br":1},"In abundanti justitia virtus maxima est :",{"br":1},"cogitationes autem impiorum eradicabuntur.",{"br":1}]}}
+{"id":"pro.15.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Domus justi plurima fortitudo,",{"br":1},"et in fructibus impii conturbatio.",{"br":1}]}}
+{"id":"pro.15.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Labia sapientium disseminabunt scientiam ;",{"br":1},"cor stultorum dissimile erit.",{"br":1}]}}
+{"id":"pro.15.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Victimæ impiorum abominabiles Domino ;",{"br":1},"vota justorum placabilia.",{"br":1}]}}
+{"id":"pro.15.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Abominatio est Domino via impii ;",{"br":1},"qui sequitur justitiam diligitur ab eo.",{"br":1}]}}
+{"id":"pro.15.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Doctrina mala deserenti viam vitæ ;",{"br":1},"qui increpationes odit, morietur.",{"br":1}]}}
+{"id":"pro.15.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Infernus et perditio coram Domino ;",{"br":1},"quanto magis corda filiorum hominum !",{"br":1}]}}
+{"id":"pro.15.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Non amat pestilens eum qui se corripit,",{"br":1},"nec ad sapientes graditur."]}}
+{"id":"pro.15.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Cor gaudens exhilarat faciem ;",{"br":1},"in mœrore animi dejicitur spiritus.",{"br":1}]}}
+{"id":"pro.15.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Cor sapientis quærit doctrinam,",{"br":1},"et os stultorum pascitur imperitia.",{"br":1}]}}
+{"id":"pro.15.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Omnes dies pauperis, mali ;",{"br":1},"secura mens quasi juge convivium.",{"br":1}]}}
+{"id":"pro.15.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Melius est parum cum timore Domini,",{"br":1},"quam thesauri magni et insatiabiles.",{"br":1}]}}
+{"id":"pro.15.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Melius est vocari ad olera cum caritate,",{"br":1},"quam ad vitulum saginatum cum odio.",{"br":1}]}}
+{"id":"pro.15.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Vir iracundus provocat rixas ;",{"br":1},"qui patiens est mitigat suscitatas.",{"br":1}]}}
+{"id":"pro.15.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Iter pigrorum quasi sepes spinarum ;",{"br":1},"via justorum absque offendiculo.",{"br":1}]}}
+{"id":"pro.15.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Filius sapiens lætificat patrem,",{"br":1},"et stultus homo despicit matrem suam.",{"br":1}]}}
+{"id":"pro.15.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Stultitia gaudium stulto,",{"br":1},"et vir prudens dirigit gressus suos.",{"br":1}]}}
+{"id":"pro.15.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Dissipantur cogitationes ubi non est consilium ;",{"br":1},"ubi vero sunt plures consiliarii, confirmantur.",{"br":1}]}}
+{"id":"pro.15.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Lætatur homo in sententia oris sui,",{"br":1},"et sermo opportunus est optimus.",{"br":1}]}}
+{"id":"pro.15.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Semita vitæ super eruditum,",{"br":1},"ut declinet de inferno novissimo."]}}
+{"id":"pro.15.25","type":"verse","n":"25","p":true,"t":{"la":[{"num":"25"},"Domum superborum demolietur Dominus,",{"br":1},"et firmos faciet terminos viduæ.",{"br":1}]}}
+{"id":"pro.15.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Abominatio Domini cogitationes malæ,",{"br":1},"et purus sermo pulcherrimus firmabitur ab eo.",{"br":1}]}}
+{"id":"pro.15.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Conturbat domum suam qui sectatur avaritiam ;",{"br":1},"qui autem odit munera, vivet.",{"br":1},"Per misericordiam et fidem purgantur peccata :",{"br":1},"per timorem autem Domini declinat omnis a malo.",{"br":1}]}}
+{"id":"pro.15.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Mens justi meditatur obedientiam ;",{"br":1},"os impiorum redundat malis.",{"br":1}]}}
+{"id":"pro.15.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Longe est Dominus ab impiis,",{"br":1},"et orationes justorum exaudiet.",{"br":1}]}}
+{"id":"pro.15.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Lux oculorum lætificat animam ;",{"br":1},"fama bona impinguat ossa.",{"br":1}]}}
+{"id":"pro.15.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Auris quæ audit increpationes vitæ",{"br":1},"in medio sapientium commorabitur.",{"br":1}]}}
+{"id":"pro.15.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Qui abjicit disciplinam despicit animam suam ;",{"br":1},"qui autem acquiescit increpationibus possessor est cordis.",{"br":1}]}}
+{"id":"pro.15.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"Timor Domini disciplina sapientiæ,",{"br":1},"et gloriam præcedit humilitas."]}}
+{"id":"pro.16","type":"heading","level":2,"label":"Caput 16","t":{"la":["Caput 16"]}}
+{"id":"pro.16.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Hominis est animam præparare,",{"br":1},"et Domini gubernare linguam.",{"br":1}]}}
+{"id":"pro.16.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Omnes viæ hominis patent oculis ejus ;",{"br":1},"spirituum ponderator est Dominus.",{"br":1}]}}
+{"id":"pro.16.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Revela Domino opera tua,",{"br":1},"et dirigentur cogitationes tuæ.",{"br":1}]}}
+{"id":"pro.16.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Universa propter semetipsum operatus est Dominus ;",{"br":1},"impium quoque ad diem malum.",{"br":1}]}}
+{"id":"pro.16.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Abominatio Domini est omnis arrogans ;",{"br":1},"etiamsi manus ad manum fuerit, non est innocens.",{"br":1},"Initium viæ bonæ facere justitiam ;",{"br":1},"accepta est autem apud Deum magis quam immolare hostias.",{"br":1}]}}
+{"id":"pro.16.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Misericordia et veritate redimitur iniquitas,",{"br":1},"et in timore Domini declinatur a malo.",{"br":1}]}}
+{"id":"pro.16.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Cum placuerint Domino viæ hominis,",{"br":1},"inimicos quoque ejus convertet ad pacem.",{"br":1}]}}
+{"id":"pro.16.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Melius est parum cum justitia",{"br":1},"quam multi fructus cum iniquitate.",{"br":1}]}}
+{"id":"pro.16.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Cor hominis disponit viam suam,",{"br":1},"sed Domini est dirigere gressus ejus."]}}
+{"id":"pro.16.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Divinatio in labiis regis ;",{"br":1},"in judicio non errabit os ejus.",{"br":1}]}}
+{"id":"pro.16.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Pondus et statera judicia Domini sunt,",{"br":1},"et opera ejus omnes lapides sacculi.",{"br":1}]}}
+{"id":"pro.16.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Abominabiles regi qui agunt impie,",{"br":1},"quoniam justitia firmatur solium.",{"br":1}]}}
+{"id":"pro.16.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Voluntas regum labia justa ;",{"br":1},"qui recta loquitur diligetur.",{"br":1}]}}
+{"id":"pro.16.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Indignatio regis nuntii mortis,",{"br":1},"et vir sapiens placabit eam.",{"br":1}]}}
+{"id":"pro.16.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"In hilaritate vultus regis vita,",{"br":1},"et clementia ejus quasi imber serotinus."]}}
+{"id":"pro.16.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Posside sapientiam, quia auro melior est,",{"br":1},"et acquire prudentiam, quia pretiosior est argento.",{"br":1}]}}
+{"id":"pro.16.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Semita justorum declinat mala ;",{"br":1},"custos animæ suæ servat viam suam.",{"br":1}]}}
+{"id":"pro.16.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Contritionem præcedit superbia,",{"br":1},"et ante ruinam exaltatur spiritus.",{"br":1}]}}
+{"id":"pro.16.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Melius est humiliari cum mitibus",{"br":1},"quam dividere spolia cum superbis.",{"br":1}]}}
+{"id":"pro.16.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Eruditus in verbo reperiet bona,",{"br":1},"et qui sperat in Domino beatus est.",{"br":1}]}}
+{"id":"pro.16.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Qui sapiens est corde appellabitur prudens,",{"br":1},"et qui dulcis eloquio majora percipiet.",{"br":1}]}}
+{"id":"pro.16.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Fons vitæ eruditio possidentis ;",{"br":1},"doctrina stultorum fatuitas."]}}
+{"id":"pro.16.23","type":"verse","n":"23","p":true,"t":{"la":[{"num":"23"},"Cor sapientis erudiet os ejus,",{"br":1},"et labiis ejus addet gratiam.",{"br":1}]}}
+{"id":"pro.16.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Favus mellis composita verba ;",{"br":1},"dulcedo animæ sanitas ossium.",{"br":1}]}}
+{"id":"pro.16.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Est via quæ videtur homini recta,",{"br":1},"et novissima ejus ducunt ad mortem.",{"br":1}]}}
+{"id":"pro.16.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Anima laborantis laborat sibi,",{"br":1},"quia compulit eum os suum.",{"br":1}]}}
+{"id":"pro.16.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Vir impius fodit malum,",{"br":1},"et in labiis ejus ignis ardescit.",{"br":1}]}}
+{"id":"pro.16.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Homo perversus suscitat lites,",{"br":1},"et verbosus separat principes.",{"br":1}]}}
+{"id":"pro.16.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Vir iniquus lactat amicum suum,",{"br":1},"et ducit eum per viam non bonam.",{"br":1}]}}
+{"id":"pro.16.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Qui attonitis oculis cogitat prava,",{"br":1},"mordens labia sua perficit malum.",{"br":1}]}}
+{"id":"pro.16.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Corona dignitatis senectus,",{"br":1},"quæ in viis justitiæ reperietur.",{"br":1}]}}
+{"id":"pro.16.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Melior est patiens viro forti,",{"br":1},"et qui dominatur animo suo expugnatore urbium.",{"br":1}]}}
+{"id":"pro.16.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"Sortes mittuntur in sinum,",{"br":1},"sed a Domino temperantur."]}}
+{"id":"pro.17","type":"heading","level":2,"label":"Caput 17","t":{"la":["Caput 17"]}}
+{"id":"pro.17.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Melior est buccella sicca cum gaudio",{"br":1},"quam domus plena victimis cum jurgio.",{"br":1}]}}
+{"id":"pro.17.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Servus sapiens dominabitur filiis stultis,",{"br":1},"et inter fratres hæreditatem dividet.",{"br":1}]}}
+{"id":"pro.17.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Sicut igne probatur argentum et aurum camino,",{"br":1},"ita corda probat Dominus.",{"br":1}]}}
+{"id":"pro.17.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Malus obedit linguæ iniquæ,",{"br":1},"et fallax obtemperat labiis mendacibus.",{"br":1}]}}
+{"id":"pro.17.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Qui despicit pauperem exprobrat factori ejus,",{"br":1},"et qui ruina lætatur alterius non erit impunitus.",{"br":1}]}}
+{"id":"pro.17.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Corona senum filii filiorum,",{"br":1},"et gloria filiorum patres eorum.",{"br":1}]}}
+{"id":"pro.17.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Non decent stultum verba composita,",{"br":1},"nec principem labium mentiens.",{"br":1}]}}
+{"id":"pro.17.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Gemma gratissima exspectatio præstolantis ;",{"br":1},"quocumque se vertit, prudenter intelligit.",{"br":1}]}}
+{"id":"pro.17.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Qui celat delictum quærit amicitias ;",{"br":1},"qui altero sermone repetit, separat fœderatos.",{"br":1}]}}
+{"id":"pro.17.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Plus proficit correptio apud prudentem,",{"br":1},"quam centum plagæ apud stultum.",{"br":1}]}}
+{"id":"pro.17.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Semper jurgia quærit malus :",{"br":1},"angelus autem crudelis mittetur contra eum.",{"br":1}]}}
+{"id":"pro.17.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Expedit magis ursæ occurrere raptis fœtibus,",{"br":1},"quam fatuo confidenti in stultitia sua.",{"br":1}]}}
+{"id":"pro.17.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Qui reddit mala pro bonis,",{"br":1},"non recedet malum de domo ejus.",{"br":1}]}}
+{"id":"pro.17.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Qui dimittit aquam caput est jurgiorum,",{"br":1},"et antequam patiatur contumeliam judicium deserit."]}}
+{"id":"pro.17.15","type":"verse","n":"15","p":true,"t":{"la":[{"num":"15"},"Qui justificat impium, et qui condemnat justum,",{"br":1},"abominabilis est uterque apud Deum.",{"br":1}]}}
+{"id":"pro.17.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Quid prodest stulto habere divitias,",{"br":1},"cum sapientiam emere non possit ?",{"br":1},"Qui altum facit domum suam quærit ruinam,",{"br":1},"et qui evitat discere incidet in mala.",{"br":1}]}}
+{"id":"pro.17.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Omni tempore diligit qui amicus est,",{"br":1},"et frater in angustiis comprobatur.",{"br":1}]}}
+{"id":"pro.17.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Stultus homo plaudet manibus,",{"br":1},"cum spoponderit pro amico suo.",{"br":1}]}}
+{"id":"pro.17.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Qui meditatur discordias diligit rixas,",{"br":1},"et qui exaltat ostium quærit ruinam.",{"br":1}]}}
+{"id":"pro.17.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Qui perversi cordis est non inveniet bonum,",{"br":1},"et qui vertit linguam incidet in malum.",{"br":1}]}}
+{"id":"pro.17.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Natus est stultus in ignominiam suam ;",{"br":1},"sed nec pater in fatuo lætabitur.",{"br":1}]}}
+{"id":"pro.17.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Animus gaudens ætatem floridam facit ;",{"br":1},"spiritus tristis exsiccat ossa.",{"br":1}]}}
+{"id":"pro.17.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Munera de sinu impius accipit,",{"br":1},"ut pervertat semitas judicii.",{"br":1}]}}
+{"id":"pro.17.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"In facie prudentis lucet sapientia ;",{"br":1},"oculi stultorum in finibus terræ.",{"br":1}]}}
+{"id":"pro.17.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Ira patris filius stultus,",{"br":1},"et dolor matris quæ genuit eum.",{"br":1}]}}
+{"id":"pro.17.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Non est bonum damnum inferre justo,",{"br":1},"nec percutere principem qui recta judicat.",{"br":1}]}}
+{"id":"pro.17.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Qui moderatur sermones suos doctus et prudens est,",{"br":1},"et pretiosi spiritus vir eruditus.",{"br":1}]}}
+{"id":"pro.17.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Stultus quoque, si tacuerit, sapiens reputabitur,",{"br":1},"et si compresserit labia sua, intelligens."]}}
+{"id":"pro.18","type":"heading","level":2,"label":"Caput 18","t":{"la":["Caput 18"]}}
+{"id":"pro.18.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Occasiones quærit qui vult recedere ab amico :",{"br":1},"omni tempore erit exprobrabilis.",{"br":1}]}}
+{"id":"pro.18.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Non recipit stultus verba prudentiæ,",{"br":1},"nisi ea dixeris quæ versantur in corde ejus.",{"br":1}]}}
+{"id":"pro.18.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Impius, cum in profundum venerit peccatorum, contemnit ;",{"br":1},"sed sequitur eum ignominia et opprobrium.",{"br":1}]}}
+{"id":"pro.18.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Aqua profunda verba ex ore viri,",{"br":1},"et torrens redundans fons sapientiæ.",{"br":1}]}}
+{"id":"pro.18.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Accipere personam impii non est bonum,",{"br":1},"ut declines a veritate judicii."]}}
+{"id":"pro.18.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Labia stulti miscent se rixis,",{"br":1},"et os ejus jurgia provocat.",{"br":1}]}}
+{"id":"pro.18.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Os stulti contritio ejus,",{"br":1},"et labia ipsius ruina animæ ejus.",{"br":1}]}}
+{"id":"pro.18.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Verba bilinguis quasi simplicia,",{"br":1},"et ipsa perveniunt usque ad interiora ventris.",{"br":1},"Pigrum dejicit timor ;",{"br":1},"animæ autem effeminatorum esurient.",{"br":1}]}}
+{"id":"pro.18.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Qui mollis et dissolutus est in opere suo",{"br":1},"frater est sua opera dissipantis.",{"br":1}]}}
+{"id":"pro.18.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Turris fortissima nomen Domini ;",{"br":1},"ad ipsum currit justus, et exaltabitur.",{"br":1}]}}
+{"id":"pro.18.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Substantia divitis urbs roboris ejus,",{"br":1},"et quasi murus validus circumdans eum.",{"br":1}]}}
+{"id":"pro.18.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Antequam conteratur, exaltatur cor hominis,",{"br":1},"et antequam glorificetur, humiliatur.",{"br":1}]}}
+{"id":"pro.18.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Qui prius respondet quam audiat,",{"br":1},"stultum se esse demonstrat, et confusione dignum.",{"br":1}]}}
+{"id":"pro.18.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Spiritus viri sustentat imbecillitatem suam ;",{"br":1},"spiritum vero ad irascendum facilem quis poterit sustinere ?",{"br":1}]}}
+{"id":"pro.18.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Cor prudens possidebit scientiam,",{"br":1},"et auris sapientium quærit doctrinam."]}}
+{"id":"pro.18.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Donum hominis dilatat viam ejus,",{"br":1},"et ante principes spatium ei facit.",{"br":1}]}}
+{"id":"pro.18.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Justus prior est accusator sui :",{"br":1},"venit amicus ejus, et investigabit eum.",{"br":1}]}}
+{"id":"pro.18.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Contradictiones comprimit sors,",{"br":1},"et inter potentes quoque dijudicat.",{"br":1}]}}
+{"id":"pro.18.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Frater qui adjuvatur a fratre quasi civitas firma,",{"br":1},"et judicia quasi vectes urbium.",{"br":1}]}}
+{"id":"pro.18.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"De fructu oris viri replebitur venter ejus,",{"br":1},"et genimina labiorum ipsius saturabunt eum.",{"br":1}]}}
+{"id":"pro.18.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Mors et vita in manu linguæ ;",{"br":1},"qui diligunt eam comedent fructus ejus.",{"br":1}]}}
+{"id":"pro.18.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Qui invenit mulierem bonam invenit bonum,",{"br":1},"et hauriet jucunditatem a Domino.",{"br":1},"Qui expellit mulierem bonam expellit bonum ;",{"br":1},"qui autem tenet adulteram stultus est et impius.",{"br":1}]}}
+{"id":"pro.18.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Cum obsecrationibus loquetur pauper,",{"br":1},"et dives effabitur rigide.",{"br":1}]}}
+{"id":"pro.18.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Vir amabilis ad societatem",{"br":1},"magis amicus erit quam frater."]}}
+{"id":"pro.19","type":"heading","level":2,"label":"Caput 19","t":{"la":["Caput 19"]}}
+{"id":"pro.19.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Melior est pauper qui ambulat in simplicitate sua",{"br":1},"quam dives torquens labia sua, et insipiens.",{"br":1}]}}
+{"id":"pro.19.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Ubi non est scientia animæ, non est bonum,",{"br":1},"et qui festinus est pedibus offendet.",{"br":1}]}}
+{"id":"pro.19.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Stultitia hominis supplantat gressus ejus,",{"br":1},"et contra Deum fervet animo suo.",{"br":1}]}}
+{"id":"pro.19.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Divitiæ addunt amicos plurimos ;",{"br":1},"a paupere autem et hi quos habuit separantur.",{"br":1}]}}
+{"id":"pro.19.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Testis falsus non erit impunitus,",{"br":1},"et qui mendacia loquitur non effugiet.",{"br":1}]}}
+{"id":"pro.19.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Multi colunt personam potentis,",{"br":1},"et amici sunt dona tribuentis.",{"br":1}]}}
+{"id":"pro.19.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Fratres hominis pauperis oderunt eum ;",{"br":1},"insuper et amici procul recesserunt ab eo.",{"br":1},"Qui tantum verba sectatur nihil habebit ;"]}}
+{"id":"pro.19.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"qui autem possessor est mentis diligit animam suam,",{"br":1},"et custos prudentiæ inveniet bona.",{"br":1}]}}
+{"id":"pro.19.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Falsus testis non erit impunitus,",{"br":1},"et qui loquitur mendacia peribit.",{"br":1}]}}
+{"id":"pro.19.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Non decent stultum deliciæ,",{"br":1},"nec servum dominari principibus.",{"br":1}]}}
+{"id":"pro.19.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Doctrina viri per patientiam noscitur,",{"br":1},"et gloria ejus est iniqua prætergredi.",{"br":1}]}}
+{"id":"pro.19.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Sicut fremitus leonis, ita et regis ira,",{"br":1},"et sicut ros super herbam, ita et hilaritas ejus.",{"br":1}]}}
+{"id":"pro.19.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Dolor patris filius stultus,",{"br":1},"et tecta jugiter perstillantia litigiosa mulier.",{"br":1}]}}
+{"id":"pro.19.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Domus et divitiæ dantur a parentibus ;",{"br":1},"a Domino autem proprie uxor prudens.",{"br":1}]}}
+{"id":"pro.19.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Pigredo immittit soporem,",{"br":1},"et anima dissoluta esuriet.",{"br":1}]}}
+{"id":"pro.19.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Qui custodit mandatum custodit animam suam ;",{"br":1},"qui autem negligit viam suam mortificabitur.",{"br":1}]}}
+{"id":"pro.19.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Fœneratur Domino qui miseretur pauperis,",{"br":1},"et vicissitudinem suam reddet ei.",{"br":1}]}}
+{"id":"pro.19.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Erudi filium tuum ; ne desperes :",{"br":1},"ad interfectionem autem ejus ne ponas animam tuam.",{"br":1}]}}
+{"id":"pro.19.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Qui impatiens est sustinebit damnum,",{"br":1},"et cum rapuerit, aliud apponet.",{"br":1}]}}
+{"id":"pro.19.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Audi consilium, et suscipe disciplinam,",{"br":1},"ut sis sapiens in novissimis tuis.",{"br":1}]}}
+{"id":"pro.19.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Multæ cogitationes in corde viri ;",{"br":1},"voluntas autem Domini permanebit.",{"br":1}]}}
+{"id":"pro.19.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Homo indigens misericors est,",{"br":1},"et melior est pauper quam vir mendax.",{"br":1}]}}
+{"id":"pro.19.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Timor Domini ad vitam,",{"br":1},"et in plenitudine commorabitur absque visitatione pessima."]}}
+{"id":"pro.19.24","type":"verse","n":"24","p":true,"t":{"la":[{"num":"24"},"Abscondit piger manum suam sub ascella,",{"br":1},"nec ad os suum applicat eam.",{"br":1}]}}
+{"id":"pro.19.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Pestilente flagellato stultus sapientior erit ;",{"br":1},"si autem corripueris sapientem, intelliget disciplinam.",{"br":1}]}}
+{"id":"pro.19.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Qui affligit patrem, et fugat matrem,",{"br":1},"ignominiosus est et infelix.",{"br":1}]}}
+{"id":"pro.19.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Non cesses, fili, audire doctrinam,",{"br":1},"nec ignores sermones scientiæ.",{"br":1}]}}
+{"id":"pro.19.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Testis iniquus deridet judicium,",{"br":1},"et os impiorum devorat iniquitatem.",{"br":1}]}}
+{"id":"pro.19.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Parata sunt derisoribus judicia,",{"br":1},"et mallei percutientes stultorum corporibus."]}}
+{"id":"pro.20","type":"heading","level":2,"label":"Caput 20","t":{"la":["Caput 20"]}}
+{"id":"pro.20.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Luxuriosa res vinum, et tumultuosa ebrietas :",{"br":1},"quicumque his delectatur non erit sapiens.",{"br":1}]}}
+{"id":"pro.20.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Sicut rugitus leonis, ita et terror regis :",{"br":1},"qui provocat eum peccat in animam suam.",{"br":1}]}}
+{"id":"pro.20.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Honor est homini qui separat se a contentionibus ;",{"br":1},"omnes autem stulti miscentur contumeliis.",{"br":1}]}}
+{"id":"pro.20.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Propter frigus piger arare noluit ;",{"br":1},"mendicabit ergo æstate, et non dabitur illi.",{"br":1}]}}
+{"id":"pro.20.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Sicut aqua profunda, sic consilium in corde viri ;",{"br":1},"sed homo sapiens exhauriet illud.",{"br":1}]}}
+{"id":"pro.20.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Multi homines misericordes vocantur ;",{"br":1},"virum autem fidelem quis inveniet ?"]}}
+{"id":"pro.20.7","type":"verse","n":"7","p":true,"t":{"la":[{"num":"7"},"Justus qui ambulat in simplicitate sua",{"br":1},"beatos post se filios derelinquet.",{"br":1}]}}
+{"id":"pro.20.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Rex qui sedet in solio judicii",{"br":1},"dissipat omne malum intuitu suo.",{"br":1}]}}
+{"id":"pro.20.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Quis potest dicere : Mundum est cor meum ;",{"br":1},"purus sum a peccato ?",{"br":1}]}}
+{"id":"pro.20.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Pondus et pondus, mensura et mensura :",{"br":1},"utrumque abominabile est apud Deum.",{"br":1}]}}
+{"id":"pro.20.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Ex studiis suis intelligitur puer,",{"br":1},"si munda et recta sint opera ejus.",{"br":1}]}}
+{"id":"pro.20.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Aurem audientem, et oculum videntem :",{"br":1},"Dominus fecit utrumque.",{"br":1}]}}
+{"id":"pro.20.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Noli diligere somnum, ne te egestas opprimat :",{"br":1},"aperi oculos tuos, et saturare panibus.",{"br":1}]}}
+{"id":"pro.20.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Malum est, malum est, dicit omnis emptor ;",{"br":1},"et cum recesserit, tunc gloriabitur.",{"br":1}]}}
+{"id":"pro.20.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Est aurum et multitudo gemmarum,",{"br":1},"et vas pretiosum labia scientiæ."]}}
+{"id":"pro.20.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Tolle vestimentum ejus qui fidejussor extitit alieni,",{"br":1},"et pro extraneis aufer pignus ab eo.",{"br":1}]}}
+{"id":"pro.20.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Suavis est homini panis mendacii,",{"br":1},"et postea implebitur os ejus calculo.",{"br":1}]}}
+{"id":"pro.20.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Cogitationes consiliis roborantur,",{"br":1},"et gubernaculis tractanda sunt bella.",{"br":1}]}}
+{"id":"pro.20.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Ei qui revelat mysteria, et ambulat fraudulenter,",{"br":1},"et dilatat labia sua, ne commiscearis.",{"br":1}]}}
+{"id":"pro.20.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Qui maledicit patri suo et matri,",{"br":1},"extinguetur lucerna ejus in mediis tenebris :",{"br":1}]}}
+{"id":"pro.20.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"hæreditas ad quam festinatur in principio,",{"br":1},"in novissimo benedictione carebit.",{"br":1}]}}
+{"id":"pro.20.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Ne dicas : Reddam malum :",{"br":1},"exspecta Dominum, et liberabit te.",{"br":1}]}}
+{"id":"pro.20.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Abominatio est apud Dominum pondus et pondus ;",{"br":1},"statera dolosa non est bona.",{"br":1}]}}
+{"id":"pro.20.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"A Domino diriguntur gressus viri :",{"br":1},"quis autem hominum intelligere potest viam suam ?",{"br":1}]}}
+{"id":"pro.20.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Ruina est homini devorare sanctos,",{"br":1},"et post vota retractare."]}}
+{"id":"pro.20.26","type":"verse","n":"26","p":true,"t":{"la":[{"num":"26"},"Dissipat impios rex sapiens,",{"br":1},"et incurvat super eos fornicem.",{"br":1}]}}
+{"id":"pro.20.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Lucerna Domini spiraculum hominis,",{"br":1},"quæ investigat omnia secreta ventris.",{"br":1}]}}
+{"id":"pro.20.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Misericordia et veritas custodiunt regem,",{"br":1},"et roboratur clementia thronus ejus.",{"br":1}]}}
+{"id":"pro.20.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Exsultatio juvenum fortitudo eorum,",{"br":1},"et dignitas senum canities.",{"br":1}]}}
+{"id":"pro.20.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Livor vulneris absterget mala,",{"br":1},"et plagæ in secretioribus ventris."]}}
+{"id":"pro.21","type":"heading","level":2,"label":"Caput 21","t":{"la":["Caput 21"]}}
+{"id":"pro.21.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Sicut divisiones aquarum, ita cor regis in manu Domini :",{"br":1},"quocumque voluerit, inclinabit illud.",{"br":1}]}}
+{"id":"pro.21.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Omnis via viri recta sibi videtur :",{"br":1},"appendit autem corda Dominus.",{"br":1}]}}
+{"id":"pro.21.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Facere misericordiam et judicium",{"br":1},"magis placet Domino quam victimæ.",{"br":1}]}}
+{"id":"pro.21.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Exaltatio oculorum est dilatatio cordis ;",{"br":1},"lucerna impiorum peccatum.",{"br":1}]}}
+{"id":"pro.21.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Cogitationes robusti semper in abundantia ;",{"br":1},"omnis autem piger semper in egestate est."]}}
+{"id":"pro.21.6","type":"verse","n":"6","p":true,"t":{"la":[{"num":"6"},"Qui congregat thesauros lingua mendacii vanus et excors est,",{"br":1},"et impingetur ad laqueos mortis.",{"br":1}]}}
+{"id":"pro.21.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Rapinæ impiorum detrahent eos,",{"br":1},"quia noluerunt facere judicium.",{"br":1}]}}
+{"id":"pro.21.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Perversa via viri aliena est ;",{"br":1},"qui autem mundus est, rectum opus ejus.",{"br":1}]}}
+{"id":"pro.21.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Melius est sedere in angulo domatis,",{"br":1},"quam cum muliere litigiosa, et in domo communi.",{"br":1}]}}
+{"id":"pro.21.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Anima impii desiderat malum :",{"br":1},"non miserebitur proximo suo.",{"br":1}]}}
+{"id":"pro.21.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Mulctato pestilente, sapientior erit parvulus,",{"br":1},"et si sectetur sapientem, sumet scientiam.",{"br":1}]}}
+{"id":"pro.21.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Excogitat justus de domo impii,",{"br":1},"ut detrahat impios a malo."]}}
+{"id":"pro.21.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Qui obturat aurem suam ad clamorem pauperis,",{"br":1},"et ipse clamabit, et non exaudietur.",{"br":1}]}}
+{"id":"pro.21.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Munus absconditum extinguit iras,",{"br":1},"et donum in sinu indignationem maximam.",{"br":1}]}}
+{"id":"pro.21.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Gaudium justo est facere judicium,",{"br":1},"et pavor operantibus iniquitatem.",{"br":1}]}}
+{"id":"pro.21.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Vir qui erraverit a via doctrinæ",{"br":1},"in cœtu gigantum commorabitur.",{"br":1}]}}
+{"id":"pro.21.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Qui diligit epulas in egestate erit ;",{"br":1},"qui amat vinum et pinguia non ditabitur.",{"br":1}]}}
+{"id":"pro.21.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Pro justo datur impius,",{"br":1},"et pro rectis iniquus.",{"br":1}]}}
+{"id":"pro.21.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Melius est habitare in terra deserta",{"br":1},"quam cum muliere rixosa et iracunda.",{"br":1}]}}
+{"id":"pro.21.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Thesaurus desiderabilis, et oleum in habitaculo justi :",{"br":1},"et imprudens homo dissipabit illud.",{"br":1}]}}
+{"id":"pro.21.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Qui sequitur justitiam et misericordiam",{"br":1},"inveniet vitam, justitiam, et gloriam.",{"br":1}]}}
+{"id":"pro.21.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Civitatem fortium ascendit sapiens,",{"br":1},"et destruxit robur fiduciæ ejus.",{"br":1}]}}
+{"id":"pro.21.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Qui custodit os suum et linguam suam",{"br":1},"custodit ab angustiis animam suam.",{"br":1}]}}
+{"id":"pro.21.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Superbus et arrogans vocatur indoctus,",{"br":1},"qui in ira operatur superbiam.",{"br":1}]}}
+{"id":"pro.21.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Desideria occidunt pigrum :",{"br":1},"noluerunt enim quidquam manus ejus operari.",{"br":1}]}}
+{"id":"pro.21.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Tota die concupiscit et desiderat ;",{"br":1},"qui autem justus est, tribuet, et non cessabit.",{"br":1}]}}
+{"id":"pro.21.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Hostiæ impiorum abominabiles,",{"br":1},"quia offeruntur ex scelere.",{"br":1}]}}
+{"id":"pro.21.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Testis mendax peribit ;",{"br":1},"vir obediens loquetur victoriam.",{"br":1}]}}
+{"id":"pro.21.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Vir impius procaciter obfirmat vultum suum ;",{"br":1},"qui autem rectus est corrigit viam suam.",{"br":1}]}}
+{"id":"pro.21.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Non est sapientia, non est prudentia,",{"br":1},"non est consilium contra Dominum.",{"br":1}]}}
+{"id":"pro.21.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Equus paratur ad diem belli ;",{"br":1},"Dominus autem salutem tribuit."]}}
+{"id":"pro.22","type":"heading","level":2,"label":"Caput 22","t":{"la":["Caput 22"]}}
+{"id":"pro.22.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Melius est nomen bonum quam divitiæ multæ ;",{"br":1},"super argentum et aurum gratia bona.",{"br":1}]}}
+{"id":"pro.22.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Dives et pauper obviaverunt sibi :",{"br":1},"utriusque operator est Dominus.",{"br":1}]}}
+{"id":"pro.22.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Callidus vidit malum, et abscondit se ;",{"br":1},"innocens pertransiit, et afflictus est damno.",{"br":1}]}}
+{"id":"pro.22.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Finis modestiæ timor Domini,",{"br":1},"divitiæ, et gloria, et vita.",{"br":1}]}}
+{"id":"pro.22.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Arma et gladii in via perversi ;",{"br":1},"custos autem animæ suæ longe recedit ab eis.",{"br":1}]}}
+{"id":"pro.22.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Proverbium est : adolescens juxta viam suam ;",{"br":1},"etiam cum senuerit, non recedet ab ea.",{"br":1}]}}
+{"id":"pro.22.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Dives pauperibus imperat,",{"br":1},"et qui accipit mutuum servus est fœnerantis.",{"br":1}]}}
+{"id":"pro.22.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Qui seminat iniquitatem metet mala,",{"br":1},"et virga iræ suæ consummabitur.",{"br":1}]}}
+{"id":"pro.22.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Qui pronus est ad misericordiam benedicetur :",{"br":1},"de panibus enim suis dedit pauperi.",{"br":1},"Victoriam et honorem acquiret qui dat munera ;",{"br":1},"animam autem aufert accipientium.",{"br":1}]}}
+{"id":"pro.22.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Ejice derisorem, et exibit cum eo jurgium,",{"br":1},"cessabuntque causæ et contumeliæ.",{"br":1}]}}
+{"id":"pro.22.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Qui diligit cordis munditiam,",{"br":1},"propter gratiam labiorum suorum habebit amicum regem.",{"br":1}]}}
+{"id":"pro.22.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Oculi Domini custodiunt scientiam,",{"br":1},"et supplantantur verba iniqui.",{"br":1}]}}
+{"id":"pro.22.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Dicit piger : Leo est foris ;",{"br":1},"in medio platearum occidendus sum.",{"br":1}]}}
+{"id":"pro.22.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Fovea profunda os alienæ :",{"br":1},"cui iratus est Dominus, incidet in eam.",{"br":1}]}}
+{"id":"pro.22.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Stultitia colligata est in corde pueri,",{"br":1},"et virga disciplinæ fugabit eam.",{"br":1}]}}
+{"id":"pro.22.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Qui calumniatur pauperem ut augeat divitias suas,",{"br":1},"dabit ipse ditiori, et egebit."]}}
+{"id":"pro.22.17","type":"verse","n":"17","p":true,"t":{"la":[{"num":"17"},"Inclina aurem tuam, et audi verba sapientium :",{"br":1},"appone autem cor ad doctrinam meam,",{"br":1}]}}
+{"id":"pro.22.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"quæ pulchra erit tibi cum servaveris eam in ventre tuo,",{"br":1},"et redundabit in labiis tuis :",{"br":1}]}}
+{"id":"pro.22.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"ut sit in Domino fiducia tua,",{"br":1},"unde et ostendi eam tibi hodie.",{"br":1}]}}
+{"id":"pro.22.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Ecce descripsi eam tibi tripliciter,",{"br":1},"in cogitationibus et scientia :",{"br":1}]}}
+{"id":"pro.22.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"ut ostenderem tibi firmitatem et eloquia veritatis,",{"br":1},"respondere ex his illis qui miserunt te.",{"br":1}]}}
+{"id":"pro.22.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Non facias violentiam pauperi quia pauper est,",{"br":1},"neque conteras egenum in porta :",{"br":1}]}}
+{"id":"pro.22.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"quia judicabit Dominus causam ejus,",{"br":1},"et configet eos qui confixerunt animam ejus.",{"br":1}]}}
+{"id":"pro.22.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Noli esse amicus homini iracundo,",{"br":1},"neque ambules cum viro furioso :",{"br":1}]}}
+{"id":"pro.22.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"ne forte discas semitas ejus,",{"br":1},"et sumas scandalum animæ tuæ.",{"br":1}]}}
+{"id":"pro.22.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Noli esse cum his qui defigunt manus suas,",{"br":1},"et qui vades se offerunt pro debitis :",{"br":1}]}}
+{"id":"pro.22.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"si enim non habes unde restituas,",{"br":1},"quid causæ est ut tollat operimentum de cubili tuo ?",{"br":1}]}}
+{"id":"pro.22.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Ne transgrediaris terminos antiquos,",{"br":1},"quos posuerunt patres tui.",{"br":1}]}}
+{"id":"pro.22.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Vidisti virum velocem in opere suo ?",{"br":1},"coram regibus stabit, nec erit ante ignobiles."]}}
+{"id":"pro.23","type":"heading","level":2,"label":"Caput 23","t":{"la":["Caput 23"]}}
+{"id":"pro.23.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Quando sederis ut comedas cum principe,",{"br":1},"diligenter attende quæ apposita sunt ante faciem tuam.",{"br":1}]}}
+{"id":"pro.23.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Et statue cultrum in gutture tuo :",{"br":1},"si tamen habes in potestate animam tuam.",{"br":1}]}}
+{"id":"pro.23.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Ne desideres de cibis ejus,",{"br":1},"in quo est panis mendacii.",{"br":1}]}}
+{"id":"pro.23.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Noli laborare ut diteris,",{"br":1},"sed prudentiæ tuæ pone modum.",{"br":1}]}}
+{"id":"pro.23.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Ne erigas oculos tuos ad opes quas non potes habere,",{"br":1},"quia facient sibi pennas quasi aquilæ, et volabunt in cælum.",{"br":1}]}}
+{"id":"pro.23.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Ne comedas cum homine invido,",{"br":1},"et ne desideres cibos ejus :",{"br":1}]}}
+{"id":"pro.23.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"quoniam in similitudinem arioli et conjectoris",{"br":1},"æstimat quod ignorat.",{"br":1},"Comede et bibe, dicet tibi ;",{"br":1},"et mens ejus non est tecum.",{"br":1}]}}
+{"id":"pro.23.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Cibos quos comederas evomes,",{"br":1},"et perdes pulchros sermones tuos.",{"br":1}]}}
+{"id":"pro.23.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"In auribus insipientium ne loquaris,",{"br":1},"qui despicient doctrinam eloquii tui.",{"br":1}]}}
+{"id":"pro.23.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Ne attingas parvulorum terminos,",{"br":1},"et agrum pupillorum ne introëas :",{"br":1}]}}
+{"id":"pro.23.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"propinquus enim illorum fortis est,",{"br":1},"et ipse judicabit contra te causam illorum."]}}
+{"id":"pro.23.12","type":"verse","n":"12","p":true,"t":{"la":[{"num":"12"},"Ingrediatur ad doctrinam cor tuum,",{"br":1},"et aures tuæ ad verba scientiæ.",{"br":1}]}}
+{"id":"pro.23.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Noli subtrahere a puero disciplinam :",{"br":1},"si enim percusseris eum virga, non morietur.",{"br":1}]}}
+{"id":"pro.23.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Tu virga percuties eum,",{"br":1},"et animam ejus de inferno liberabis.",{"br":1}]}}
+{"id":"pro.23.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Fili mi, si sapiens fuerit animus tuus,",{"br":1},"gaudebit tecum cor meum :",{"br":1}]}}
+{"id":"pro.23.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"et exsultabunt renes mei,",{"br":1},"cum locuta fuerint rectum labia tua.",{"br":1}]}}
+{"id":"pro.23.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Non æmuletur cor tuum peccatores,",{"br":1},"sed in timore Domini esto tota die :",{"br":1}]}}
+{"id":"pro.23.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"quia habebis spem in novissimo,",{"br":1},"et præstolatio tua non auferetur.",{"br":1}]}}
+{"id":"pro.23.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Audi, fili mi, et esto sapiens,",{"br":1},"et dirige in via animum tuum.",{"br":1}]}}
+{"id":"pro.23.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Noli esse in conviviis potatorum,",{"br":1},"nec in comessationibus eorum qui carnes ad vescendum conferunt :",{"br":1}]}}
+{"id":"pro.23.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"quia vacantes potibus et dantes symbola consumentur,",{"br":1},"et vestietur pannis dormitatio.",{"br":1}]}}
+{"id":"pro.23.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Audi patrem tuum, qui genuit te,",{"br":1},"et ne contemnas cum senuerit mater tua.",{"br":1}]}}
+{"id":"pro.23.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Veritatem eme, et noli vendere sapientiam,",{"br":1},"et doctrinam, et intelligentiam.",{"br":1}]}}
+{"id":"pro.23.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Exsultat gaudio pater justi ;",{"br":1},"qui sapientem genuit, lætabitur in eo.",{"br":1}]}}
+{"id":"pro.23.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Gaudeat pater tuus et mater tua,",{"br":1},"et exsultet quæ genuit te.",{"br":1}]}}
+{"id":"pro.23.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Præbe, fili mi, cor tuum mihi,",{"br":1},"et oculi tui vias meas custodiant.",{"br":1}]}}
+{"id":"pro.23.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Fovea enim profunda est meretrix,",{"br":1},"et puteus angustus aliena.",{"br":1}]}}
+{"id":"pro.23.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Insidiatur in via quasi latro,",{"br":1},"et quos incautos viderit, interficiet."]}}
+{"id":"pro.23.29","type":"verse","n":"29","p":true,"t":{"la":[{"num":"29"},"Cui væ ? cujus patri væ ?",{"br":1},"cui rixæ ? cui foveæ ?",{"br":1},"cui sine causa vulnera ? cui suffusio oculorum ?",{"br":1}]}}
+{"id":"pro.23.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"nonne his qui commorantur in vino,",{"br":1},"et student calicibus epotandis ?",{"br":1}]}}
+{"id":"pro.23.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Ne intuearis vinum quando flavescit,",{"br":1},"cum splenduerit in vitro color ejus :",{"br":1},"ingreditur blande,",{"br":1}]}}
+{"id":"pro.23.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"sed in novissimo mordebit ut coluber,",{"br":1},"et sicut regulus venena diffundet.",{"br":1}]}}
+{"id":"pro.23.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"Oculi tui videbunt extraneas,",{"br":1},"et cor tuum loquetur perversa.",{"br":1}]}}
+{"id":"pro.23.34","type":"verse","n":"34","t":{"la":[{"num":"34"},"Et eris sicut dormiens in medio mari,",{"br":1},"et quasi sopitus gubernator, amisso clavo.",{"br":1}]}}
+{"id":"pro.23.35","type":"verse","n":"35","t":{"la":[{"num":"35"},"Et dices : Verberaverunt me, sed non dolui ;",{"br":1},"traxerunt me, et ego non sensi.",{"br":1},"Quando evigilabo, et rursus vina reperiam ?"]}}
+{"id":"pro.24","type":"heading","level":2,"label":"Caput 24","t":{"la":["Caput 24"]}}
+{"id":"pro.24.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Ne æmuleris viros malos,",{"br":1},"nec desideres esse cum eis :",{"br":1}]}}
+{"id":"pro.24.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"quia rapinas meditatur mens eorum,",{"br":1},"et fraudes labia eorum loquuntur.",{"br":1}]}}
+{"id":"pro.24.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Sapientia ædificabitur domus,",{"br":1},"et prudentia roborabitur.",{"br":1}]}}
+{"id":"pro.24.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"In doctrina replebuntur cellaria,",{"br":1},"universa substantia pretiosa et pulcherrima.",{"br":1}]}}
+{"id":"pro.24.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Vir sapiens fortis est,",{"br":1},"et vir doctus robustus et validus :",{"br":1}]}}
+{"id":"pro.24.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"quia cum dispositione initur bellum,",{"br":1},"et erit salus ubi multa consilia sunt.",{"br":1}]}}
+{"id":"pro.24.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Excelsa stulto sapientia ;",{"br":1},"in porta non aperiet os suum.",{"br":1}]}}
+{"id":"pro.24.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Qui cogitat mala facere stultus vocabitur :",{"br":1}]}}
+{"id":"pro.24.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"cogitatio stulti peccatum est,",{"br":1},"et abominatio hominum detractor.",{"br":1}]}}
+{"id":"pro.24.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Si desperaveris lassus in die angustiæ,",{"br":1},"imminuetur fortitudo tua."]}}
+{"id":"pro.24.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Erue eos qui ducuntur ad mortem,",{"br":1},"et qui trahuntur ad interitum, liberare ne cesses.",{"br":1}]}}
+{"id":"pro.24.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Si dixeris : Vires non suppetunt ;",{"br":1},"qui inspector est cordis ipse intelligit :",{"br":1},"et servatorem animæ tuæ nihil fallit,",{"br":1},"reddetque homini juxta opera sua.",{"br":1}]}}
+{"id":"pro.24.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Comede, fili mi, mel, quia bonum est,",{"br":1},"et favum dulcissimum gutturi tuo.",{"br":1}]}}
+{"id":"pro.24.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Sic et doctrina sapientiæ animæ tuæ :",{"br":1},"quam cum inveneris, habebis in novissimis spem,",{"br":1},"et spes tua non peribit.",{"br":1}]}}
+{"id":"pro.24.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Ne insidieris, et quæras impietatem in domo justi,",{"br":1},"neque vastes requiem ejus.",{"br":1}]}}
+{"id":"pro.24.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Septies enim cadet justus, et resurget :",{"br":1},"impii autem corruent in malum.",{"br":1}]}}
+{"id":"pro.24.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Cum ceciderit inimicus tuus ne gaudeas,",{"br":1},"et in ruina ejus ne exsultet cor tuum :",{"br":1}]}}
+{"id":"pro.24.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"ne forte videat Dominus, et displiceat ei,",{"br":1},"et auferat ab eo iram suam.",{"br":1}]}}
+{"id":"pro.24.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Ne contendas cum pessimis,",{"br":1},"nec æmuleris impios :",{"br":1}]}}
+{"id":"pro.24.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"quoniam non habent futurorum spem mali,",{"br":1},"et lucerna impiorum extinguetur.",{"br":1}]}}
+{"id":"pro.24.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Time Dominum, fili mi, et regem,",{"br":1},"et cum detractoribus non commiscearis :",{"br":1}]}}
+{"id":"pro.24.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"quoniam repente consurget perditio eorum,",{"br":1},"et ruinam utriusque quis novit ?"]}}
+{"id":"pro.24.23","type":"verse","n":"23","p":true,"t":{"la":[{"num":"23"},"Hæc quoque sapientibus. Cognoscere personam in judicio non est bonum."]}}
+{"id":"pro.24.24","type":"verse","n":"24","p":true,"t":{"la":[{"num":"24"},"Qui dicunt impio : Justus es : maledicent eis populi,",{"br":1},"et detestabuntur eos tribus.",{"br":1}]}}
+{"id":"pro.24.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Qui arguunt eum laudabuntur,",{"br":1},"et super ipsos veniet benedictio.",{"br":1}]}}
+{"id":"pro.24.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Labia deosculabitur",{"br":1},"qui recta verba respondet.",{"br":1}]}}
+{"id":"pro.24.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Præpara foris opus tuum,",{"br":1},"et diligenter exerce agrum tuum,",{"br":1},"ut postea ædifices domum tuam.",{"br":1}]}}
+{"id":"pro.24.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Ne sis testis frustra contra proximum tuum,",{"br":1},"nec lactes quemquam labiis tuis.",{"br":1}]}}
+{"id":"pro.24.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Ne dicas : Quomodo fecit mihi, sic faciam ei ;",{"br":1},"reddam unicuique secundum opus suum."]}}
+{"id":"pro.24.30","type":"verse","n":"30","p":true,"t":{"la":[{"num":"30"},"Per agrum hominis pigri transivi,",{"br":1},"et per vineam viri stulti :",{"br":1}]}}
+{"id":"pro.24.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"et ecce totum repleverant urticæ,",{"br":1},"et operuerant superficiem ejus spinæ,",{"br":1},"et maceria lapidum destructa erat.",{"br":1}]}}
+{"id":"pro.24.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Quod cum vidissem, posui in corde meo,",{"br":1},"et exemplo didici disciplinam.",{"br":1}]}}
+{"id":"pro.24.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"Parum, inquam, dormies, modicum dormitabis ;",{"br":1},"pauxillum manus conseres ut quiescas :",{"br":1}]}}
+{"id":"pro.24.34","type":"verse","n":"34","t":{"la":[{"num":"34"},"et veniet tibi quasi cursor egestas,",{"br":1},"et mendicitas quasi vir armatus."]}}
+{"id":"pro.25","type":"heading","level":2,"label":"Caput 25","t":{"la":["Caput 25"]}}
+{"id":"pro.25.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Hæ quoque parabolæ Salomonis, quas transtulerunt viri Ezechiæ regis Juda."]}}
+{"id":"pro.25.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Gloria Dei est celare verbum,",{"br":1},"et gloria regum investigare sermonem.",{"br":1}]}}
+{"id":"pro.25.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Cælum sursum, et terra deorsum,",{"br":1},"et cor regum inscrutabile.",{"br":1}]}}
+{"id":"pro.25.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Aufer rubiginem de argento,",{"br":1},"et egredietur vas purissimum.",{"br":1}]}}
+{"id":"pro.25.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Aufer impietatem de vultu regis,",{"br":1},"et firmabitur justitia thronus ejus.",{"br":1}]}}
+{"id":"pro.25.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Ne gloriosus appareas coram rege,",{"br":1},"et in loco magnorum ne steteris.",{"br":1}]}}
+{"id":"pro.25.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Melius est enim ut dicatur tibi : Ascende huc,",{"br":1},"quam ut humilieris coram principe."]}}
+{"id":"pro.25.8","type":"verse","n":"8","p":true,"t":{"la":[{"num":"8"},"Quæ viderunt oculi tui ne proferas in jurgio cito,",{"br":1},"ne postea emendare non possis,",{"br":1},"cum dehonestaveris amicum tuum.",{"br":1}]}}
+{"id":"pro.25.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Causam tuam tracta cum amico tuo,",{"br":1},"et secretum extraneo ne reveles :",{"br":1}]}}
+{"id":"pro.25.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"ne forte insultet tibi cum audierit,",{"br":1},"et exprobrare non cesset.",{"br":1},"Gratia et amicitia liberant :",{"br":1},"quas tibi serva, ne exprobrabilis fias.",{"br":1}]}}
+{"id":"pro.25.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Mala aurea in lectis argenteis,",{"br":1},"qui loquitur verbum in tempore suo.",{"br":1}]}}
+{"id":"pro.25.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Inauris aurea, et margaritum fulgens,",{"br":1},"qui arguit sapientem et aurem obedientem.",{"br":1}]}}
+{"id":"pro.25.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Sicut frigus nivis in die messis,",{"br":1},"ita legatus fidelis ei qui misit eum :",{"br":1},"animam ipsius requiescere facit.",{"br":1}]}}
+{"id":"pro.25.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Nubes, et ventus, et pluviæ non sequentes,",{"br":1},"vir gloriosus et promissa non complens.",{"br":1}]}}
+{"id":"pro.25.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Patientia lenietur princeps,",{"br":1},"et lingua mollis confringet duritiam."]}}
+{"id":"pro.25.16","type":"verse","n":"16","p":true,"t":{"la":[{"num":"16"},"Mel invenisti : comede quod sufficit tibi,",{"br":1},"ne forte satiatus evomas illud.",{"br":1}]}}
+{"id":"pro.25.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Subtrahe pedem tuum de domo proximi tui,",{"br":1},"nequando satiatus oderit te.",{"br":1}]}}
+{"id":"pro.25.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Jaculum, et gladius, et sagitta acuta,",{"br":1},"homo qui loquitur contra proximum suum falsum testimonium.",{"br":1}]}}
+{"id":"pro.25.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Dens putridus, et pes lassus,",{"br":1},"qui sperat super infideli in die angustiæ,",{"br":1}]}}
+{"id":"pro.25.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"et amittit pallium in die frigoris.",{"br":1},"Acetum in nitro,",{"br":1},"qui cantat carmina cordi pessimo.",{"br":1},"Sicut tinea vestimento, et vermis ligno,",{"br":1},"ita tristitia viri nocet cordi.",{"br":1}]}}
+{"id":"pro.25.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Si esurierit inimicus tuus, ciba illum ;",{"br":1},"si sitierit, da ei aquam bibere :",{"br":1}]}}
+{"id":"pro.25.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"prunas enim congregabis super caput ejus,",{"br":1},"et Dominus reddet tibi.",{"br":1}]}}
+{"id":"pro.25.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Ventus aquilo dissipat pluvias,",{"br":1},"et facies tristis linguam detrahentem.",{"br":1}]}}
+{"id":"pro.25.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Melius est sedere in angulo domatis",{"br":1},"quam cum muliere litigiosa et in domo communi.",{"br":1}]}}
+{"id":"pro.25.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Aqua frigida animæ sitienti,",{"br":1},"et nuntius bonus de terra longinqua.",{"br":1}]}}
+{"id":"pro.25.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Fons turbatus pede et vena corrupta,",{"br":1},"justus cadens coram impio.",{"br":1}]}}
+{"id":"pro.25.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Sicut qui mel multum comedit non est ei bonum,",{"br":1},"sic qui scrutator est majestatis opprimetur a gloria.",{"br":1}]}}
+{"id":"pro.25.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Sicut urbs patens et absque murorum ambitu,",{"br":1},"ita vir qui non potest in loquendo cohibere spiritum suum."]}}
+{"id":"pro.26","type":"heading","level":2,"label":"Caput 26","t":{"la":["Caput 26"]}}
+{"id":"pro.26.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Quomodo nix in æstate, et pluviæ in messe,",{"br":1},"sic indecens est stulto gloria.",{"br":1}]}}
+{"id":"pro.26.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Sicut avis ad alia transvolans, et passer quolibet vadens,",{"br":1},"sic maledictum frustra prolatum in quempiam superveniet.",{"br":1}]}}
+{"id":"pro.26.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Flagellum equo, et camus asino,",{"br":1},"et virga in dorso imprudentium.",{"br":1}]}}
+{"id":"pro.26.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Ne respondeas stulto juxta stultitiam suam,",{"br":1},"ne efficiaris ei similis.",{"br":1}]}}
+{"id":"pro.26.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Responde stulto juxta stultitiam suam,",{"br":1},"ne sibi sapiens esse videatur.",{"br":1}]}}
+{"id":"pro.26.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Claudus pedibus, et iniquitatem bibens,",{"br":1},"qui mittit verba per nuntium stultum.",{"br":1}]}}
+{"id":"pro.26.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Quomodo pulchras frustra habet claudus tibias,",{"br":1},"sic indecens est in ore stultorum parabola.",{"br":1}]}}
+{"id":"pro.26.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Sicut qui mittit lapidem in acervum Mercurii,",{"br":1},"ita qui tribuit insipienti honorem.",{"br":1}]}}
+{"id":"pro.26.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Quomodo si spina nascatur in manu temulenti,",{"br":1},"sic parabola in ore stultorum.",{"br":1}]}}
+{"id":"pro.26.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Judicium determinat causas,",{"br":1},"et qui imponit stulto silentium iras mitigat.",{"br":1}]}}
+{"id":"pro.26.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Sicut canis qui revertitur ad vomitum suum,",{"br":1},"sic imprudens qui iterat stultitiam suam.",{"br":1}]}}
+{"id":"pro.26.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Vidisti hominem sapientem sibi videri ?",{"br":1},"magis illo spem habebit insipiens."]}}
+{"id":"pro.26.13","type":"verse","n":"13","p":true,"t":{"la":[{"num":"13"},"Dicit piger : Leo est in via,",{"br":1},"et leæna in itineribus.",{"br":1}]}}
+{"id":"pro.26.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Sicut ostium vertitur in cardine suo,",{"br":1},"ita piger in lectulo suo.",{"br":1}]}}
+{"id":"pro.26.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Abscondit piger manum sub ascella sua,",{"br":1},"et laborat si ad os suum eam converterit.",{"br":1}]}}
+{"id":"pro.26.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Sapientior sibi piger videtur",{"br":1},"septem viris loquentibus sententias."]}}
+{"id":"pro.26.17","type":"verse","n":"17","p":true,"t":{"la":[{"num":"17"},"Sicut qui apprehendit auribus canem,",{"br":1},"sic qui transit impatiens et commiscetur rixæ alterius.",{"br":1}]}}
+{"id":"pro.26.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Sicut noxius est qui mittit sagittas et lanceas in mortem,",{"br":1}]}}
+{"id":"pro.26.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"ita vir fraudulenter nocet amico suo,",{"br":1},"et cum fuerit deprehensus dicit : Ludens feci.",{"br":1}]}}
+{"id":"pro.26.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Cum defecerint ligna extinguetur ignis,",{"br":1},"et susurrone subtracto, jurgia conquiescent.",{"br":1}]}}
+{"id":"pro.26.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Sicut carbones ad prunas, et ligna ad ignem,",{"br":1},"sic homo iracundus suscitat rixas.",{"br":1}]}}
+{"id":"pro.26.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Verba susurronis quasi simplicia,",{"br":1},"et ipsa perveniunt ad intima ventris.",{"br":1}]}}
+{"id":"pro.26.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Quomodo si argento sordido ornare velis vas fictile,",{"br":1},"sic labia tumentia cum pessimo corde sociata.",{"br":1}]}}
+{"id":"pro.26.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Labiis suis intelligitur inimicus,",{"br":1},"cum in corde tractaverit dolos.",{"br":1}]}}
+{"id":"pro.26.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Quando submiserit vocem suam, ne credideris ei,",{"br":1},"quoniam septem nequitiæ sunt in corde illius.",{"br":1}]}}
+{"id":"pro.26.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Qui operit odium fraudulenter,",{"br":1},"revelabitur malitia ejus in consilio.",{"br":1}]}}
+{"id":"pro.26.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Qui fodit foveam incidet in eam,",{"br":1},"et qui volvit lapidem revertetur ad eum.",{"br":1}]}}
+{"id":"pro.26.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Lingua fallax non amat veritatem,",{"br":1},"et os lubricum operatur ruinas."]}}
+{"id":"pro.27","type":"heading","level":2,"label":"Caput 27","t":{"la":["Caput 27"]}}
+{"id":"pro.27.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Ne glorieris in crastinum,",{"br":1},"ignorans quid superventura pariat dies.",{"br":1}]}}
+{"id":"pro.27.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Laudet te alienus, et non os tuum ;",{"br":1},"extraneus, et non labia tua.",{"br":1}]}}
+{"id":"pro.27.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Grave est saxum, et onerosa arena,",{"br":1},"sed ira stulti utroque gravior.",{"br":1}]}}
+{"id":"pro.27.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Ira non habet misericordiam nec erumpens furor,",{"br":1},"et impetum concitati ferre quis poterit ?",{"br":1}]}}
+{"id":"pro.27.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Melior est manifesta correptio",{"br":1},"quam amor absconditus.",{"br":1}]}}
+{"id":"pro.27.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Meliora sunt vulnera diligentis",{"br":1},"quam fraudulenta oscula odientis.",{"br":1}]}}
+{"id":"pro.27.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Anima saturata calcabit favum,",{"br":1},"et anima esuriens etiam amarum pro dulci sumet.",{"br":1}]}}
+{"id":"pro.27.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Sicut avis transmigrans de nido suo,",{"br":1},"sic vir qui derelinquit locum suum.",{"br":1}]}}
+{"id":"pro.27.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Unguento et variis odoribus delectatur cor,",{"br":1},"et bonis amici consiliis anima dulcoratur."]}}
+{"id":"pro.27.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Amicum tuum et amicum patris tui ne dimiseris,",{"br":1},"et domum fratris tui ne ingrediaris in die afflictionis tuæ.",{"br":1},"Melior est vicinus juxta",{"br":1},"quam frater procul.",{"br":1}]}}
+{"id":"pro.27.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Stude sapientiæ, fili mi, et lætifica cor meum,",{"br":1},"ut possis exprobranti respondere sermonem.",{"br":1}]}}
+{"id":"pro.27.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Astutus videns malum, absconditus est :",{"br":1},"parvuli transeuntes sustinuerunt dispendia.",{"br":1}]}}
+{"id":"pro.27.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Tolle vestimentum ejus qui spopondit pro extraneo,",{"br":1},"et pro alienis aufer ei pignus.",{"br":1}]}}
+{"id":"pro.27.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Qui benedicit proximo suo voce grandi,",{"br":1},"de nocte consurgens maledicenti similis erit.",{"br":1}]}}
+{"id":"pro.27.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Tecta perstillantia in die frigoris",{"br":1},"et litigiosa mulier comparantur.",{"br":1}]}}
+{"id":"pro.27.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Qui retinet eam quasi qui ventum teneat,",{"br":1},"et oleum dexteræ suæ vocabit.",{"br":1}]}}
+{"id":"pro.27.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Ferrum ferro exacuitur,",{"br":1},"et homo exacuit faciem amici sui.",{"br":1}]}}
+{"id":"pro.27.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Qui servat ficum comedet fructus ejus,",{"br":1},"et qui custos est domini sui glorificabitur.",{"br":1}]}}
+{"id":"pro.27.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Quomodo in aquis resplendent vultus prospicientium,",{"br":1},"sic corda hominum manifesta sunt prudentibus.",{"br":1}]}}
+{"id":"pro.27.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Infernus et perditio numquam implentur :",{"br":1},"similiter et oculi hominum insatiabiles.",{"br":1}]}}
+{"id":"pro.27.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Quomodo probatur in conflatorio argentum et in fornace aurum,",{"br":1},"sic probatur homo ore laudantis.",{"br":1},"Cor iniqui inquirit mala,",{"br":1},"cor autem rectum inquirit scientiam.",{"br":1}]}}
+{"id":"pro.27.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Si contuderis stultum in pila",{"br":1},"quasi ptisanas feriente desuper pilo,",{"br":1},"non auferetur ab eo stultitia ejus."]}}
+{"id":"pro.27.23","type":"verse","n":"23","p":true,"t":{"la":[{"num":"23"},"Diligenter agnosce vultum pecoris tui,",{"br":1},"tuosque greges considera :",{"br":1}]}}
+{"id":"pro.27.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"non enim habebis jugiter potestatem,",{"br":1},"sed corona tribuetur in generationem et generationem.",{"br":1}]}}
+{"id":"pro.27.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Aperta sunt prata, et apparuerunt herbæ virentes,",{"br":1},"et collecta sunt fœna de montibus.",{"br":1}]}}
+{"id":"pro.27.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Agni ad vestimentum tuum,",{"br":1},"et hædi ad agri pretium.",{"br":1}]}}
+{"id":"pro.27.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Sufficiat tibi lac caprarum in cibos tuos,",{"br":1},"et in necessaria domus tuæ, et ad victum ancillis tuis."]}}
+{"id":"pro.28","type":"heading","level":2,"label":"Caput 28","t":{"la":["Caput 28"]}}
+{"id":"pro.28.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Fugit impius nemine persequente ;",{"br":1},"justus autem, quasi leo confidens, absque terrore erit.",{"br":1}]}}
+{"id":"pro.28.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Propter peccata terræ multi principes ejus ;",{"br":1},"et propter hominis sapientiam, et horum scientiam quæ dicuntur,",{"br":1},"vita ducis longior erit.",{"br":1}]}}
+{"id":"pro.28.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Vir pauper calumnians pauperes",{"br":1},"similis est imbri vehementi in quo paratur fames."]}}
+{"id":"pro.28.4","type":"verse","n":"4","p":true,"t":{"la":[{"num":"4"},"Qui derelinquunt legem laudant impium ;",{"br":1},"qui custodiunt, succenduntur contra eum.",{"br":1}]}}
+{"id":"pro.28.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Viri mali non cogitant judicium ;",{"br":1},"qui autem inquirunt Dominum animadvertunt omnia.",{"br":1}]}}
+{"id":"pro.28.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Melior est pauper ambulans in simplicitate sua",{"br":1},"quam dives in pravis itineribus.",{"br":1}]}}
+{"id":"pro.28.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Qui custodit legem filius sapiens est ;",{"br":1},"qui autem comessatores pascit confundit patrem suum.",{"br":1}]}}
+{"id":"pro.28.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Qui coacervat divitias usuris et fœnore,",{"br":1},"liberali in pauperes congregat eas.",{"br":1}]}}
+{"id":"pro.28.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Qui declinat aures suas ne audiat legem,",{"br":1},"oratio ejus erit execrabilis.",{"br":1}]}}
+{"id":"pro.28.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Qui decipit justos in via mala, in interitu suo corruet,",{"br":1},"et simplices possidebunt bona ejus.",{"br":1}]}}
+{"id":"pro.28.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Sapiens sibi videtur vir dives ;",{"br":1},"pauper autem prudens scrutabitur eum.",{"br":1}]}}
+{"id":"pro.28.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"In exsultatione justorum multa gloria est ;",{"br":1},"regnantibus impiis, ruinæ hominum.",{"br":1}]}}
+{"id":"pro.28.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Qui abscondit scelera sua non dirigetur ;",{"br":1},"qui autem confessus fuerit et reliquerit ea, misericordiam consequetur.",{"br":1}]}}
+{"id":"pro.28.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Beatus homo qui semper est pavidus ;",{"br":1},"qui vero mentis est duræ corruet in malum.",{"br":1}]}}
+{"id":"pro.28.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Leo rugiens et ursus esuriens,",{"br":1},"princeps impius super populum pauperem.",{"br":1}]}}
+{"id":"pro.28.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Dux indigens prudentia multos opprimet per calumniam ;",{"br":1},"qui autem odit avaritiam, longi fient dies ejus.",{"br":1}]}}
+{"id":"pro.28.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Hominem qui calumniatur animæ sanguinem,",{"br":1},"si usque ad lacum fugerit, nemo sustinet.",{"br":1}]}}
+{"id":"pro.28.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Qui ambulat simpliciter salvus erit ;",{"br":1},"qui perversis graditur viis concidet semel.",{"br":1}]}}
+{"id":"pro.28.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Qui operatur terram suam satiabitur panibus ;",{"br":1},"qui autem sectatur otium replebitur egestate."]}}
+{"id":"pro.28.20","type":"verse","n":"20","p":true,"t":{"la":[{"num":"20"},"Vir fidelis multum laudabitur ;",{"br":1},"qui autem festinat ditari non erit innocens.",{"br":1}]}}
+{"id":"pro.28.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Qui cognoscit in judicio faciem non bene facit ;",{"br":1},"iste et pro buccella panis deserit veritatem.",{"br":1}]}}
+{"id":"pro.28.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Vir qui festinat ditari, et aliis invidet,",{"br":1},"ignorat quod egestas superveniet ei.",{"br":1}]}}
+{"id":"pro.28.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Qui corripit hominem gratiam postea inveniet apud eum,",{"br":1},"magis quam ille qui per linguæ blandimenta decipit.",{"br":1}]}}
+{"id":"pro.28.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Qui subtrahit aliquid a patre suo et a matre,",{"br":1},"et dicit hoc non esse peccatum,",{"br":1},"particeps homicidæ est.",{"br":1}]}}
+{"id":"pro.28.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Qui se jactat et dilatat, jurgia concitat ;",{"br":1},"qui vero sperat in Domino sanabitur.",{"br":1}]}}
+{"id":"pro.28.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Qui confidit in corde suo stultus est ;",{"br":1},"qui autem graditur sapienter, ipse salvabitur.",{"br":1}]}}
+{"id":"pro.28.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Qui dat pauperi non indigebit ;",{"br":1},"qui despicit deprecantem sustinebit penuriam.",{"br":1}]}}
+{"id":"pro.28.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Cum surrexerint impii, abscondentur homines ;",{"br":1},"cum illi perierint, multiplicabuntur justi."]}}
+{"id":"pro.29","type":"heading","level":2,"label":"Caput 29","t":{"la":["Caput 29"]}}
+{"id":"pro.29.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Viro qui corripientem dura cervice contemnit,",{"br":1},"repentinus ei superveniet interitus,",{"br":1},"et eum sanitas non sequetur.",{"br":1}]}}
+{"id":"pro.29.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"In multiplicatione justorum lætabitur vulgus ;",{"br":1},"cum impii sumpserint principatum, gemet populus.",{"br":1}]}}
+{"id":"pro.29.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Vir qui amat sapientiam lætificat patrem suum ;",{"br":1},"qui autem nutrit scorta perdet substantiam.",{"br":1}]}}
+{"id":"pro.29.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Rex justus erigit terram ;",{"br":1},"vir avarus destruet eam.",{"br":1}]}}
+{"id":"pro.29.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Homo qui blandis fictisque sermonibus loquitur amico suo",{"br":1},"rete expandit gressibus ejus.",{"br":1}]}}
+{"id":"pro.29.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Peccantem virum iniquum involvet laqueus,",{"br":1},"et justus laudabit atque gaudebit.",{"br":1}]}}
+{"id":"pro.29.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Novit justus causam pauperum ;",{"br":1},"impius ignorat scientiam.",{"br":1}]}}
+{"id":"pro.29.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Homines pestilentes dissipant civitatem ;",{"br":1},"sapientes vero avertunt furorem.",{"br":1}]}}
+{"id":"pro.29.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Vir sapiens si cum stulto contenderit,",{"br":1},"sive irascatur, sive rideat, non inveniet requiem.",{"br":1}]}}
+{"id":"pro.29.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Viri sanguinum oderunt simplicem ;",{"br":1},"justi autem quærunt animam ejus.",{"br":1}]}}
+{"id":"pro.29.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Totum spiritum suum profert stultus ;",{"br":1},"sapiens differt, et reservat in posterum.",{"br":1}]}}
+{"id":"pro.29.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Princeps qui libenter audit verba mendacii,",{"br":1},"omnes ministros habet impios.",{"br":1}]}}
+{"id":"pro.29.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Pauper et creditor obviaverunt sibi :",{"br":1},"utriusque illuminator est Dominus.",{"br":1}]}}
+{"id":"pro.29.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Rex qui judicat in veritate pauperes,",{"br":1},"thronus ejus in æternum firmabitur."]}}
+{"id":"pro.29.15","type":"verse","n":"15","p":true,"t":{"la":[{"num":"15"},"Virga atque correptio tribuit sapientiam ;",{"br":1},"puer autem qui dimittitur voluntati suæ confundit matrem suam.",{"br":1}]}}
+{"id":"pro.29.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"In multiplicatione impiorum multiplicabuntur scelera,",{"br":1},"et justi ruinas eorum videbunt.",{"br":1}]}}
+{"id":"pro.29.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Erudi filium tuum, et refrigerabit te,",{"br":1},"et dabit delicias animæ tuæ.",{"br":1}]}}
+{"id":"pro.29.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Cum prophetia defecerit, dissipabitur populus ;",{"br":1},"qui vero custodit legem beatus est.",{"br":1}]}}
+{"id":"pro.29.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Servus verbis non potest erudiri,",{"br":1},"quia quod dicis intelligit, et respondere contemnit.",{"br":1}]}}
+{"id":"pro.29.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Vidisti hominem velocem ad loquendum ?",{"br":1},"stultitia magis speranda est quam illius correptio.",{"br":1}]}}
+{"id":"pro.29.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Qui delicate a pueritia nutrit servum suum",{"br":1},"postea sentiet eum contumacem."]}}
+{"id":"pro.29.22","type":"verse","n":"22","p":true,"t":{"la":[{"num":"22"},"Vir iracundus provocat rixas,",{"br":1},"et qui ad indignandum facilis est erit ad peccandum proclivior.",{"br":1}]}}
+{"id":"pro.29.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Superbum sequitur humilitas,",{"br":1},"et humilem spiritu suscipiet gloria.",{"br":1}]}}
+{"id":"pro.29.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Qui cum fure participat odit animam suam ;",{"br":1},"adjurantem audit, et non indicat.",{"br":1}]}}
+{"id":"pro.29.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Qui timet hominem cito corruet ;",{"br":1},"qui sperat in Domino sublevabitur.",{"br":1}]}}
+{"id":"pro.29.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Multi requirunt faciem principis,",{"br":1},"et judicium a Domino egreditur singulorum.",{"br":1}]}}
+{"id":"pro.29.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Abominantur justi virum impium,",{"br":1},"et abominantur impii eos qui in recta sunt via.",{"br":1},"Verbum custodiens filius",{"br":1},"extra perditionem erit."]}}
+{"id":"pro.30","type":"heading","level":2,"label":"Caput 30","t":{"la":["Caput 30"]}}
+{"id":"pro.30.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Verba Congregantis, filii Vomentis. Visio quam locutus est vir cum quo est Deus, et qui Deo secum morante confortatus, ait :"]}}
+{"id":"pro.30.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Stultissimus sum virorum,",{"br":1},"et sapientia hominum non est mecum.",{"br":1}]}}
+{"id":"pro.30.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Non didici sapientiam,",{"br":1},"et non novi scientiam sanctorum.",{"br":1}]}}
+{"id":"pro.30.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Quis ascendit in cælum, atque descendit ?",{"br":1},"quis continuit spiritum in manibus suis ?",{"br":1},"quis colligavit aquas quasi in vestimento ?",{"br":1},"quis suscitavit omnes terminos terræ ?",{"br":1},"quod nomen est ejus, et quod nomen filii ejus, si nosti ?",{"br":1}]}}
+{"id":"pro.30.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"Omnis sermo Dei ignitus :",{"br":1},"clypeus est sperantibus in se.",{"br":1}]}}
+{"id":"pro.30.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Ne addas quidquam verbis illius,",{"br":1},"et arguaris, inveniarisque mendax.",{"br":1}]}}
+{"id":"pro.30.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Duo rogavi te :",{"br":1},"ne deneges mihi antequam moriar :",{"br":1}]}}
+{"id":"pro.30.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"vanitatem et verba mendacia longe fac a me ;",{"br":1},"mendicitatem et divitias ne dederis mihi :",{"br":1},"tribue tantum victui meo necessaria,",{"br":1}]}}
+{"id":"pro.30.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"ne forte satiatus illiciar ad negandum,",{"br":1},"et dicam : Quis est Dominus ?",{"br":1},"aut egestate compulsus, furer,",{"br":1},"et perjurem nomen Dei mei.",{"br":1}]}}
+{"id":"pro.30.10","type":"verse","n":"10","t":{"la":[{"num":"10"},"Ne accuses servum ad dominum suum,",{"br":1},"ne forte maledicat tibi, et corruas."]}}
+{"id":"pro.30.11","type":"verse","n":"11","p":true,"t":{"la":[{"num":"11"},"Generatio quæ patri suo maledicit,",{"br":1},"et quæ matri suæ non benedicit ;",{"br":1}]}}
+{"id":"pro.30.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"generatio quæ sibi munda videtur,",{"br":1},"et tamen non est lota a sordibus suis ;",{"br":1}]}}
+{"id":"pro.30.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"generatio cujus excelsi sunt oculi,",{"br":1},"et palpebræ ejus in alta surrectæ ;",{"br":1}]}}
+{"id":"pro.30.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"generatio quæ pro dentibus gladios habet,",{"br":1},"et commandit molaribus suis,",{"br":1},"ut comedat inopes de terra,",{"br":1},"et pauperes ex hominibus.",{"br":1}]}}
+{"id":"pro.30.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Sanguisugæ duæ sunt filiæ,",{"br":1},"dicentes : Affer, affer.",{"br":1},"Tria sunt insaturabilia,",{"br":1},"et quartum quod numquam dicit : Sufficit.",{"br":1}]}}
+{"id":"pro.30.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Infernus, et os vulvæ,",{"br":1},"et terra quæ non satiatur aqua :",{"br":1},"ignis vero numquam dicit : Sufficit.",{"br":1}]}}
+{"id":"pro.30.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Oculum qui subsannat patrem,",{"br":1},"et qui despicit partum matris suæ,",{"br":1},"effodiant eum corvi de torrentibus,",{"br":1},"et comedant eum filii aquilæ !"]}}
+{"id":"pro.30.18","type":"verse","n":"18","p":true,"t":{"la":[{"num":"18"},"Tria sunt difficilia mihi,",{"br":1},"et quartum penitus ignoro :",{"br":1}]}}
+{"id":"pro.30.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"viam aquilæ in cælo,",{"br":1},"viam colubri super petram,",{"br":1},"viam navis in medio mari,",{"br":1},"et viam viri in adolescentia.",{"br":1}]}}
+{"id":"pro.30.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Talis est et via mulieris adulteræ,",{"br":1},"quæ comedit, et tergens os suum",{"br":1},"dicit : Non sum operata malum.",{"br":1}]}}
+{"id":"pro.30.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Per tria movetur terra,",{"br":1},"et quartum non potest sustinere :",{"br":1}]}}
+{"id":"pro.30.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"per servum, cum regnaverit ;",{"br":1},"per stultum, cum saturatus fuerit cibo ;",{"br":1}]}}
+{"id":"pro.30.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"per odiosam mulierem, cum in matrimonio fuerit assumpta ;",{"br":1},"et per ancillam, cum fuerit hæres dominæ suæ."]}}
+{"id":"pro.30.24","type":"verse","n":"24","p":true,"t":{"la":[{"num":"24"},"Quatuor sunt minima terræ,",{"br":1},"et ipsa sunt sapientiora sapientibus :",{"br":1}]}}
+{"id":"pro.30.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"formicæ, populus infirmus,",{"br":1},"qui præparat in messe cibum sibi ;",{"br":1}]}}
+{"id":"pro.30.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"lepusculus, plebs invalida,",{"br":1},"qui collocat in petra cubile suum ;",{"br":1}]}}
+{"id":"pro.30.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"regem locusta non habet,",{"br":1},"et egreditur universa per turmas suas ;",{"br":1}]}}
+{"id":"pro.30.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"stellio manibus nititur,",{"br":1},"et moratur in ædibus regis.",{"br":1}]}}
+{"id":"pro.30.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Tria sunt quæ bene gradiuntur,",{"br":1},"et quartum quod incedit feliciter :",{"br":1}]}}
+{"id":"pro.30.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"leo, fortissimus bestiarum,",{"br":1},"ad nullius pavebit occursum ;",{"br":1}]}}
+{"id":"pro.30.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"gallus succinctus lumbos ;",{"br":1},"et aries ; nec est rex, qui resistat ei.",{"br":1}]}}
+{"id":"pro.30.32","type":"verse","n":"32","t":{"la":[{"num":"32"},"Est qui stultus apparuit postquam elevatus est in sublime ;",{"br":1},"si enim intellexisset, ori suo imposuisset manum.",{"br":1}]}}
+{"id":"pro.30.33","type":"verse","n":"33","t":{"la":[{"num":"33"},"Qui autem fortiter premit ubera ad eliciendum lac exprimit butyrum ;",{"br":1},"et qui vehementer emungit elicit sanguinem ;",{"br":1},"et qui provocat iras producit discordias."]}}
+{"id":"pro.31","type":"heading","level":2,"label":"Caput 31","t":{"la":["Caput 31"]}}
+{"id":"pro.31.1","type":"verse","n":"1","p":true,"t":{"la":[{"num":"1"},"Verba Lamuelis regis. Visio qua erudivit eum mater sua."]}}
+{"id":"pro.31.2","type":"verse","n":"2","t":{"la":[{"num":"2"},"Quid, dilecte mi ? quid, dilecte uteri mei ?",{"br":1},"quid, dilecte votorum meorum ?",{"br":1}]}}
+{"id":"pro.31.3","type":"verse","n":"3","t":{"la":[{"num":"3"},"Ne dederis mulieribus substantiam tuam,",{"br":1},"et divitias tuas ad delendos reges.",{"br":1}]}}
+{"id":"pro.31.4","type":"verse","n":"4","t":{"la":[{"num":"4"},"Noli regibus, o Lamuel, noli regibus dare vinum,",{"br":1},"quia nullum secretum est ubi regnat ebrietas ;",{"br":1}]}}
+{"id":"pro.31.5","type":"verse","n":"5","t":{"la":[{"num":"5"},"et ne forte bibant, et obliviscantur judiciorum,",{"br":1},"et mutent causam filiorum pauperis.",{"br":1}]}}
+{"id":"pro.31.6","type":"verse","n":"6","t":{"la":[{"num":"6"},"Date siceram mœrentibus,",{"br":1},"et vinum his qui amaro sunt animo.",{"br":1}]}}
+{"id":"pro.31.7","type":"verse","n":"7","t":{"la":[{"num":"7"},"Bibant, et obliviscantur egestatis suæ,",{"br":1},"et doloris sui non recordentur amplius.",{"br":1}]}}
+{"id":"pro.31.8","type":"verse","n":"8","t":{"la":[{"num":"8"},"Aperi os tuum muto,",{"br":1},"et causis omnium filiorum qui pertranseunt.",{"br":1}]}}
+{"id":"pro.31.9","type":"verse","n":"9","t":{"la":[{"num":"9"},"Aperi os tuum, decerne quod justum est,",{"br":1},"et judica inopem et pauperem."]}}
+{"id":"pro.31.10","type":"verse","n":"10","p":true,"t":{"la":[{"num":"10"},"Mulierem fortem quis inveniet ?",{"br":1},"procul et de ultimis finibus pretium ejus.",{"br":1}]}}
+{"id":"pro.31.11","type":"verse","n":"11","t":{"la":[{"num":"11"},"Confidit in ea cor viri sui,",{"br":1},"et spoliis non indigebit.",{"br":1}]}}
+{"id":"pro.31.12","type":"verse","n":"12","t":{"la":[{"num":"12"},"Reddet ei bonum, et non malum,",{"br":1},"omnibus diebus vitæ suæ.",{"br":1}]}}
+{"id":"pro.31.13","type":"verse","n":"13","t":{"la":[{"num":"13"},"Quæsivit lanam et linum,",{"br":1},"et operata est consilio manuum suarum.",{"br":1}]}}
+{"id":"pro.31.14","type":"verse","n":"14","t":{"la":[{"num":"14"},"Facta est quasi navis institoris,",{"br":1},"de longe portans panem suum.",{"br":1}]}}
+{"id":"pro.31.15","type":"verse","n":"15","t":{"la":[{"num":"15"},"Et de nocte surrexit,",{"br":1},"deditque prædam domesticis suis,",{"br":1},"et cibaria ancillis suis.",{"br":1}]}}
+{"id":"pro.31.16","type":"verse","n":"16","t":{"la":[{"num":"16"},"Consideravit agrum, et emit eum ;",{"br":1},"de fructu manuum suarum plantavit vineam.",{"br":1}]}}
+{"id":"pro.31.17","type":"verse","n":"17","t":{"la":[{"num":"17"},"Accinxit fortitudine lumbos suos,",{"br":1},"et roboravit brachium suum.",{"br":1}]}}
+{"id":"pro.31.18","type":"verse","n":"18","t":{"la":[{"num":"18"},"Gustavit, et vidit quia bona est negotiatio ejus ;",{"br":1},"non extinguetur in nocte lucerna ejus.",{"br":1}]}}
+{"id":"pro.31.19","type":"verse","n":"19","t":{"la":[{"num":"19"},"Manum suam misit ad fortia,",{"br":1},"et digiti ejus apprehenderunt fusum.",{"br":1}]}}
+{"id":"pro.31.20","type":"verse","n":"20","t":{"la":[{"num":"20"},"Manum suam aperuit inopi,",{"br":1},"et palmas suas extendit ad pauperem.",{"br":1}]}}
+{"id":"pro.31.21","type":"verse","n":"21","t":{"la":[{"num":"21"},"Non timebit domui suæ a frigoribus nivis ;",{"br":1},"omnes enim domestici ejus vestiti sunt duplicibus.",{"br":1}]}}
+{"id":"pro.31.22","type":"verse","n":"22","t":{"la":[{"num":"22"},"Stragulatam vestem fecit sibi ;",{"br":1},"byssus et purpura indumentum ejus.",{"br":1}]}}
+{"id":"pro.31.23","type":"verse","n":"23","t":{"la":[{"num":"23"},"Nobilis in portis vir ejus,",{"br":1},"quando sederit cum senatoribus terræ.",{"br":1}]}}
+{"id":"pro.31.24","type":"verse","n":"24","t":{"la":[{"num":"24"},"Sindonem fecit, et vendidit,",{"br":1},"et cingulum tradidit Chananæo.",{"br":1}]}}
+{"id":"pro.31.25","type":"verse","n":"25","t":{"la":[{"num":"25"},"Fortitudo et decor indumentum ejus,",{"br":1},"et ridebit in die novissimo.",{"br":1}]}}
+{"id":"pro.31.26","type":"verse","n":"26","t":{"la":[{"num":"26"},"Os suum aperuit sapientiæ,",{"br":1},"et lex clementiæ in lingua ejus.",{"br":1}]}}
+{"id":"pro.31.27","type":"verse","n":"27","t":{"la":[{"num":"27"},"Consideravit semitas domus suæ,",{"br":1},"et panem otiosa non comedit.",{"br":1}]}}
+{"id":"pro.31.28","type":"verse","n":"28","t":{"la":[{"num":"28"},"Surrexerunt filii ejus, et beatissimam prædicaverunt ;",{"br":1},"vir ejus, et laudavit eam.",{"br":1}]}}
+{"id":"pro.31.29","type":"verse","n":"29","t":{"la":[{"num":"29"},"Multæ filiæ congregaverunt divitias ;",{"br":1},"tu supergressa es universas.",{"br":1}]}}
+{"id":"pro.31.30","type":"verse","n":"30","t":{"la":[{"num":"30"},"Fallax gratia, et vana est pulchritudo :",{"br":1},"mulier timens Dominum, ipsa laudabitur.",{"br":1}]}}
+{"id":"pro.31.31","type":"verse","n":"31","t":{"la":[{"num":"31"},"Date ei de fructu manuum suarum,",{"br":1},"et laudent eam in portis opera ejus."]}}
