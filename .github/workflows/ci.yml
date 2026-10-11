@@ -49,8 +49,9 @@ jobs:
       - name: Tests JVM, captures et lint
         run: >
           ./gradlew --console=plain
-          :core:model:test :core:liturgy:test
+          :core:model:test :core:liturgy:test :core:reading:testDebugUnitTest
           :core:designsystem:verifyRoborazziDebug
+          :app:verifyRoborazziDomainePublicDebug
           :app:lintDomainePublicDebug
       - name: APK debug et release (non signé)
         run: ./gradlew --console=plain :app:assembleDomainePublicDebug :app:assembleDomainePublicRelease

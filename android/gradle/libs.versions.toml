@@ -15,6 +15,7 @@ room3 = "3.0.3"
 sqlite = "2.7.1"          # embarque SQLite 3.50.1 : la chaîne de contenu épingle APSW 3.50.1.x
 ksp = "2.3.12"
 roborazzi = "1.76.0"
+metricsPerformance = "1.0.0"
 # SDK (ADR 002)
 compileSdk = "37"
 targetSdk = "36"
@@ -31,6 +32,9 @@ compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview"
 compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
+compose-animation-core = { module = "androidx.compose.animation:animation-core" }
+androidx-metrics-performance = { module = "androidx.metrics:metrics-performance", version.ref = "metricsPerformance" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
 androidx-room3-runtime = { module = "androidx.room3:room3-runtime", version.ref = "room3" }

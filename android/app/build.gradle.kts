@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.roborazzi)
 }
 
 // Clé de publication hors du dépôt, comme pour les autres projets (~/.gradle/gradle.properties). Absente : APK release non signé.
@@ -16,8 +17,8 @@ android {
         applicationId = "app.paroissien" // figé (ADR 002) : ne plus changer après la première installation
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 1
-        versionName = "0.0.1"
+        versionCode = 2
+        versionName = "0.1.0"
     }
 
     // ADR 001 : seule « domainePublic » est construite par la CI publique ; « personnel » peut embarquer
@@ -59,6 +60,15 @@ android {
             signingConfig = signingConfigs.findByName("release")
             ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
         }
+        // ADR 002 et 005 : mesures de la porte A sur un build optimisé, sans la clé de release.
+        create("benchmark") {
+            initWith(getByName("release"))
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks += "release"
+            applicationIdSuffix = ".bench"
+            versionNameSuffix = "-bench"
+            isDebuggable = false
+        }
     }
 
     compileOptions {
@@ -70,14 +80,36 @@ android {
         compose = true
         buildConfig = true
     }
+
+    testOptions { unitTests.isIncludeAndroidResources = true }
+}
+
+// Pages du livre d'essai : références commitées, vérifiées en CI (verifyRoborazziDomainePublicDebug).
+roborazzi { outputDir.set(layout.projectDirectory.dir("src/test/screenshots")) }
+
+tasks.withType<Test>().configureEach {
+    maxParallelForks = 1
+    maxHeapSize = "1536m"
 }
 
 dependencies {
     implementation(project(":core:designsystem"))
     implementation(project(":core:liturgy"))
     implementation(project(":core:data"))
+    implementation(project(":core:model"))
+    implementation(project(":core:reading"))
+    implementation(libs.compose.foundation)
+    implementation(libs.androidx.metrics.performance)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
     debugImplementation(libs.compose.ui.tooling)
+
+    testImplementation(libs.junit)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.roborazzi)
+    testImplementation(libs.roborazzi.compose)
+    testImplementation(platform(libs.compose.bom))
+    testImplementation(libs.compose.ui.test.junit4)
+    debugImplementation(libs.compose.ui.test.manifest)
 }
