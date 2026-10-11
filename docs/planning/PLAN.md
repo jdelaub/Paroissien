@@ -219,10 +219,7 @@ Les mesures se font sur le téléphone de référence, avec un APK *release* con
 - **Avant la phase 2** :
   - nom divin dans le Crampon : « Yahweh » tel qu'imprimé, ou « le Seigneur » comme variante de texte construite par la chaîne avec ses propres ancres (04, 15) ;
   - affichage de la numérotation des psaumes (les identifiants suivent la versification propre à chaque édition).
-- **Avant la phase 4** :
-  - Ordo de référence pour 1962 : FSSP, FSSPX ou monastère ;
-  - solennités extérieures ;
-  - jeûne : droit en vigueur, plus la discipline traditionnelle en option (05).
+- **Avant la phase 4** (tranché le 11/10/2026, ADR 009) : Ordo de référence d'un monastère (Le Barroux ou Fontgombault) ramené au romain de 1962 ; solennités extérieures activées par défaut ; droit en vigueur, plus la discipline traditionnelle en option ; 1962 tel qu'imprimé.
 - **Avant la phase 5** : mode de messe par défaut (« assemblée » recommandé) ; versions rubricales (1960 seulement au MVP).
 - **À la porte A** : police par défaut (EB Garamond pour les livres liturgiques, Literata en option de lecture) ; seuil de double page sur téléphone.
 

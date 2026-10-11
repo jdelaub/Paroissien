@@ -107,6 +107,8 @@ fun BookReader(
     paginationContext: CoroutineContext = Dispatchers.Default,
     ribbons: List<RibbonMark> = emptyList(),
     onRibbonTap: (Int) -> Unit = {},
+    cards: List<CardMark> = emptyList(),
+    onCardTap: (String) -> Unit = {},
     onTurnPastEnd: (() -> Unit)? = null,
     onTurnPastStart: (() -> Unit)? = null,
     initialAtEnd: Boolean = false,
@@ -190,6 +192,12 @@ fun BookReader(
             }
             RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal))
             RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal))
+
+            // Images pieuses : celles de la page ouverte au milieu de la tête, les autres à gauche ou à droite.
+            val placed = cards.map { c -> c to (c.anchor?.let { a -> paged.pageOf(a).let { p -> if (p in shown) 0 else if (p < shown.min()) -1 else 1 } } ?: c.elsewhere) }
+            CardTops(placed.filter { it.second == 0 }.map { it.first }, paper, wide = true, onCardTap, Modifier.align(Alignment.TopCenter))
+            CardTops(placed.filter { it.second < 0 }.map { it.first }, paper, wide = false, onCardTap, Modifier.align(Alignment.TopStart).padding(start = margins.horizontal))
+            CardTops(placed.filter { it.second > 0 }.map { it.first }, paper, wide = false, onCardTap, Modifier.align(Alignment.TopEnd).padding(end = margins.horizontal))
 
             // Variante de l'ADR 006 : les coins bas protégés du geste « retour » (200 dp au plus par bord).
             if (protectEdges) {

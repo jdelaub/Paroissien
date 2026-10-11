@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.List
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -38,42 +39,70 @@ import app.paroissien.core.designsystem.ParoissienTheme
 import app.paroissien.core.designsystem.RibbonStyle
 import app.paroissien.core.designsystem.drawRibbon
 import kotlinx.serialization.Serializable
+import java.time.LocalDate
 
-/** Écrans de l'application (rapport 08) : trois entrées de premier niveau, le lecteur et la liste d'une série. */
+/**
+ * Écrans de l'application (rapport 08) : quatre entrées de premier niveau (Aujourd'hui, Bibliothèque, Signets,
+ * Recherche), puis le lecteur, l'Ordo, le temps de prière et les images pieuses.
+ */
+@Serializable data object TodayKey : NavKey
 @Serializable data object LibraryKey : NavKey
 @Serializable data object BookmarksKey : NavKey
 @Serializable data object SearchKey : NavKey
 @Serializable data class SeriesKey(val series: String, val title: String) : NavKey
 @Serializable data class ReaderKey(val publication: String, val unit: String? = null, val block: String? = null, val offset: Int = 0) : NavKey
+@Serializable data class DayKey(val date: String) : NavKey
+@Serializable data class OrdoKey(val year: Int, val month: Int) : NavKey
+@Serializable data class PrayerKey(val publication: String? = null, val unit: String? = null, val block: String? = null, val title: String? = null) : NavKey
+@Serializable data class CardKey(val id: String) : NavKey
+@Serializable data object ImageBoxKey : NavKey
 
-private val tabs = listOf<NavKey>(LibraryKey, BookmarksKey, SearchKey)
+private val tabs = listOf<NavKey>(TodayKey, LibraryKey, BookmarksKey, SearchKey)
 
 @Composable
 fun ParoissienRoot(graph: AppGraph) {
     val settings by graph.settings.settings.collectAsState(initial = ReaderSettings())
-    val backStack = rememberNavBackStack(LibraryKey)
+    val backStack = rememberNavBackStack(TodayKey)
     val top = backStack.lastOrNull()
     val open: (NavKey) -> Unit = { key -> backStack.add(key) }
     val selectTab: (NavKey) -> Unit = { key -> backStack.clear(); backStack.add(key) }
 
     ParoissienTheme(PaperTheme.entries.firstOrNull { it.name == settings.theme } ?: PaperTheme.CLAIR) {
-        Immersive(enabled = top is ReaderKey)
+        Immersive(enabled = top is ReaderKey || top is PrayerKey)
         Column(Modifier.fillMaxSize()) {
             Box(Modifier.weight(1f)) {
                 NavDisplay(
                     backStack = backStack,
                     onBack = { backStack.removeLastOrNull() },
                     entryProvider = entryProvider {
+                        entry<TodayKey> { TodayScreen(graph, settings, date = null, open = open) }
+                        entry<DayKey> { key -> TodayScreen(graph, settings, LocalDate.parse(key.date), open, onBack = { backStack.removeLastOrNull() }) }
+                        entry<OrdoKey> { key -> OrdoScreen(graph, settings, key, open, onBack = { backStack.removeLastOrNull() }) }
+                        entry<PrayerKey> { key ->
+                            PrayerScreen(
+                                graph, settings, key,
+                                onOpenText = { backStack.removeLastOrNull(); key.publication?.let { open(ReaderKey(it, key.unit, key.block)) } },
+                                onClose = { backStack.removeLastOrNull() },
+                            )
+                        }
+                        entry<CardKey> { key -> CardScreen(graph, key, open, onBack = { backStack.removeLastOrNull() }) }
+                        entry<ImageBoxKey> { ImageBoxScreen(graph, open, onBack = { backStack.removeLastOrNull() }) }
                         entry<LibraryKey> { LibraryScreen(graph, open) }
                         entry<SeriesKey> { key -> SeriesScreen(graph, key, open, onBack = { backStack.removeLastOrNull() }) }
                         entry<BookmarksKey> { BookmarksScreen(graph, open) }
                         entry<SearchKey> { SearchScreen(graph, open) }
-                        entry<ReaderKey> { key -> ReaderScreen(graph, key, settings, onBack = { backStack.removeLastOrNull() }) }
+                        entry<ReaderKey> { key -> ReaderScreen(graph, key, settings, open, onBack = { backStack.removeLastOrNull() }) }
                     },
                 )
             }
             if (top in tabs) {
                 NavigationBar(containerColor = LocalPaperColors.current.surface) {
+                    NavigationBarItem(
+                        selected = top == TodayKey,
+                        onClick = { selectTab(TodayKey) },
+                        icon = { Icon(Icons.Filled.Home, contentDescription = null) },
+                        label = { Text(stringResource(R.string.tab_today)) },
+                    )
                     NavigationBarItem(
                         selected = top == LibraryKey,
                         onClick = { selectTab(LibraryKey) },

@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
 /**
- * Export des données de l'utilisateur (ADR 008, rapport 09) : positions et rubans, en JSON versionné.
+ * Export des données de l'utilisateur (ADR 008, rapport 09) : positions, rubans et images pieuses, en JSON versionné.
  * Rien ne part dans le nuage ; l'utilisateur garde ce fichier où il veut. Les intentions et le journal viendront en V1.
  */
 @Serializable
@@ -13,6 +13,8 @@ data class UserDataExport(
     val exportedAt: Long,
     val positions: List<ExportedPosition>,
     val ribbons: List<ExportedRibbon>,
+    /** Ajouté en 0.5.0 : absent des fichiers plus anciens. */
+    val cards: List<ExportedCard> = emptyList(),
 ) {
     companion object {
         const val FORMAT_VERSION = 1
@@ -34,6 +36,9 @@ data class ExportedPosition(val publication: String, val unit: String, val block
 @Serializable
 data class ExportedRibbon(val publication: String, val slot: Int, val unit: String, val block: String, val charOffset: Int, val blockRev: String? = null, val updatedAt: Long)
 
+@Serializable
+data class ExportedCard(val card: String, val publication: String, val unit: String, val block: String, val charOffset: Int, val blockRev: String? = null, val updatedAt: Long)
+
 /** Exporte et réimporte ; à l'import, la donnée la plus récente l'emporte, et rien n'est jamais effacé. */
 class UserDataTransfer(private val db: UserDatabase) {
 
@@ -42,6 +47,7 @@ class UserDataTransfer(private val db: UserDatabase) {
             exportedAt = now,
             positions = db.positions().all().map { ExportedPosition(it.publication, it.unit, it.block, it.charOffset, it.blockRev, it.updatedAt) },
             ribbons = db.ribbons().all().map { ExportedRibbon(it.publication, it.slot, it.unit, it.block, it.charOffset, it.blockRev, it.updatedAt) },
+            cards = db.cards().all().map { ExportedCard(it.card, it.publication, it.unit, it.block, it.charOffset, it.blockRev, it.updatedAt) },
         ),
     )
 
@@ -50,6 +56,7 @@ class UserDataTransfer(private val db: UserDatabase) {
         val data = UserDataExport.decode(text)
         val positions = db.positions().all().associateBy { it.publication }
         val ribbons = db.ribbons().all().associateBy { it.publication to it.slot }
+        val cards = db.cards().all().associateBy { it.card }
         var taken = 0
         for (p in data.positions) {
             if ((positions[p.publication]?.updatedAt ?: Long.MIN_VALUE) < p.updatedAt) {
@@ -61,6 +68,12 @@ class UserDataTransfer(private val db: UserDatabase) {
             if (r.slot !in 0..5) continue
             if ((ribbons[r.publication to r.slot]?.updatedAt ?: Long.MIN_VALUE) < r.updatedAt) {
                 db.ribbons().place(Ribbon(r.publication, r.slot, r.unit, r.block, r.charOffset, r.blockRev, r.updatedAt))
+                taken++
+            }
+        }
+        for (c in data.cards) {
+            if ((cards[c.card]?.updatedAt ?: Long.MIN_VALUE) < c.updatedAt) {
+                db.cards().place(CardPlacement(c.card, c.publication, c.unit, c.block, c.charOffset, c.blockRev, c.updatedAt))
                 taken++
             }
         }

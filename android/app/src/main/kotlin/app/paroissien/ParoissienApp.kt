@@ -6,8 +6,10 @@ import app.paroissien.core.data.BookPosition
 import app.paroissien.core.data.ReaderSettingsStore
 import app.paroissien.core.data.UserDataTransfer
 import app.paroissien.core.data.UserDatabase
+import app.paroissien.core.liturgy.LiturgicalCalendars
 import app.paroissien.library.Library
 import app.paroissien.library.PackLibrary
+import app.paroissien.library.PiousImages
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -20,8 +22,8 @@ class ParoissienApp : Application() {
 }
 
 /**
- * Graphe de l'application, écrit à la main (rapport 10) : bibliothèque des paquets, base de l'utilisateur, réglages.
- * Les livres s'installent en tâche de fond dès le démarrage.
+ * Graphe de l'application, écrit à la main (rapport 10) : bibliothèque des paquets, base de l'utilisateur, réglages,
+ * calendrier liturgique et boîte à images. Les livres s'installent en tâche de fond dès le démarrage.
  */
 class AppGraph(context: Context) {
     val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
@@ -29,6 +31,8 @@ class AppGraph(context: Context) {
     val database: UserDatabase by lazy { UserDatabase.open(context) }
     val settings = ReaderSettingsStore(context)
     val transfer: UserDataTransfer by lazy { UserDataTransfer(database) }
+    val calendar: LiturgicalCalendars by lazy { LiturgicalCalendars.load() }
+    val images: PiousImages by lazy { PiousImages.load(context) }
 
     private val libraryState = MutableStateFlow<Library?>(null)
     val library: StateFlow<Library?> = libraryState

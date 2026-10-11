@@ -1,0 +1,57 @@
+{
+  "file": "1969-fr-romcal.jsonl",
+  "engine": "romcal",
+  "repository": "https://github.com/romcal/romcal",
+  "license": "MIT",
+  "branch": "dev",
+  "version": "3.0.0-dev.140",
+  "commit": "3cde69c21fcf3176b8728cf0a54d0ca8f3d97166",
+  "commitDate": "2026-10-09T20:50:18-05:00",
+  "node": "v22.23.3",
+  "calendar": "france (calendriers parents : europe, general_roman), locale fr",
+  "config": {
+    "scope": "gregorian",
+    "epiphanyOnSunday": true,
+    "ascensionOnSunday": false,
+    "corpusChristiOnSunday": true,
+    "easterCalculationType": "gregorian",
+    "elevatedMemorialIds": []
+  },
+  "years": [
+    2025,
+    2045
+  ],
+  "days": 7670,
+  "sha256": "d48cf51b7ef5ea305e513344fc88bee6a2eb0f804d9f524598b0e1974cbe8f8e",
+  "generated": "2026-10-11",
+  "commands": [
+    "git clone --branch dev https://github.com/romcal/romcal.git && cd romcal && git checkout 3cde69c21fcf3176b8728cf0a54d0ca8f3d97166",
+    "npm ci && npm run build",
+    "node content/sources/calendrier-1969/generate.mjs <romcal> content/.cache/raw/calendrier-1969 2025 2045",
+    "python3 -I content/sources/calendrier-1969/litcal.py <LiturgicalCalendarAPI> content/.cache/raw/calendrier-1969",
+    "python3 -I content/sources/calendrier-1969/convert.py content/.cache/raw/calendrier-1969"
+  ],
+  "fields": {
+    "id": "identifiant romcal de la première célébration du jour (la célébration principale)",
+    "rank": "rang romcal de cette célébration (SOLEMNITY, SUNDAY, FEAST, MEMORIAL, OPTIONAL_MEMORIAL, WEEKDAY)",
+    "colors": "couleurs romcal, PURPLE écrit VIOLET ; vide le Samedi saint (romcal n'en donne pas)",
+    "optional": "célébrations marquées isOptional par romcal : mémoires facultatives, mémoires obligatoires réduites en Carême, et la solennité facultative dedication_of_consecrated_churches (25 octobre)",
+    "sundayCycle, weekdayCycle, psalterWeek": "cycles romcal de la célébration principale"
+  },
+  "notes": [
+    "Précepte : non repris (drapeaux de romcal faux pour la France).",
+    "Newman (john_henry_newman_priest) figure aussi en 2025 : romcal ignore la date d'inscription (2026).",
+    "Jeudi saint : romcal donne holy_thursday puis thursday_of_the_lords_supper, toutes deux non facultatives ; seule la première est gardée (21 jours).",
+    "Autres jours à deux célébrations non facultatives (Cœur immaculé de Marie et une mémoire obligatoire, allowSimilarRankItems) ; seule la première est gardée : 2025-06-28 irenaeus_of_lyon_bishop, 2026-06-13 anthony_of_padua_priest, 2027-06-05 boniface_of_mainz_bishop, 2031-06-21 aloysius_gonzaga_religious, 2032-06-05 boniface_of_mainz_bishop, 2036-06-21 aloysius_gonzaga_religious, 2037-06-13 anthony_of_padua_priest.",
+    "Anomalie romcal : joseph_spouse_of_mary absente en 2035 (date nominale 2035-03-19).",
+    "Anomalie romcal : nativity_of_john_the_baptist absente en 2028 (date nominale 2028-06-24).",
+    "Anomalie romcal : nativity_of_john_the_baptist absente en 2033 (date nominale 2033-06-24).",
+    "Anomalie romcal : nativity_of_john_the_baptist absente en 2044 (date nominale 2044-06-24).",
+    "Anomalie romcal : peter_and_paul_apostles absente en 2030 (date nominale 2030-06-29).",
+    "Anomalie romcal : peter_and_paul_apostles absente en 2041 (date nominale 2041-06-29).",
+    "Anomalie romcal : le 2028-06-24, le Cœur immaculé de Marie (mémoire) évince nativity_of_john_the_baptist (SOLEMNITY).",
+    "Anomalie romcal : le 2030-06-29, le Cœur immaculé de Marie (mémoire) évince peter_and_paul_apostles (SOLEMNITY).",
+    "Anomalie romcal : le 2038-07-03, le Cœur immaculé de Marie (mémoire) évince thomas_apostle (FEAST).",
+    "Anomalie romcal : le 2041-06-29, le Cœur immaculé de Marie (mémoire) évince peter_and_paul_apostles (SOLEMNITY)."
+  ]
+}

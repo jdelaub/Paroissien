@@ -11,7 +11,10 @@ import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-/** Réglages de lecture, mémorisés sur l'appareil (DataStore). Les valeurs sont des noms d'énumérations du lecteur. */
+/**
+ * Réglages, mémorisés sur l'appareil (DataStore) : lecture (noms d'énumérations du lecteur), calendrier (ADR 009)
+ * et temps de prière (rapport 08, §2.10).
+ */
 data class ReaderSettings(
     val theme: String = "CLAIR",
     val face: String = "GARAMOND",
@@ -21,6 +24,16 @@ data class ReaderSettings(
     val protectEdges: Boolean = false,
     val showMeasures: Boolean = false,
     val language: String = "fr",
+    /** Rite du calendrier : "1962" ou "1969". */
+    val rite: String = "1962",
+    val externalSolemnities: Boolean = true,
+    val traditionalPenance: Boolean = false,
+    val prayerMinutes: Int = 15,
+    val prayerBells: Boolean = true,
+    val prayerDoNotDisturb: Boolean = true,
+    val prayerGrayscale: Boolean = false,
+    /** Identifiant de la règle « Ne pas déranger » créée pour le temps de prière. */
+    val zenRuleId: String? = null,
 )
 
 private val Context.settingsStore: DataStore<Preferences> by preferencesDataStore(name = "reglages")
@@ -41,6 +54,14 @@ class ReaderSettingsStore(context: Context) {
             p[EDGES] = next.protectEdges
             p[MEASURES] = next.showMeasures
             p[LANGUAGE] = next.language
+            p[RITE] = next.rite
+            p[EXTERNAL] = next.externalSolemnities
+            p[TRADITIONAL] = next.traditionalPenance
+            p[PRAYER_MINUTES] = next.prayerMinutes
+            p[PRAYER_BELLS] = next.prayerBells
+            p[PRAYER_DND] = next.prayerDoNotDisturb
+            p[PRAYER_GRAY] = next.prayerGrayscale
+            if (next.zenRuleId == null) p.remove(ZEN_RULE) else p[ZEN_RULE] = next.zenRuleId
         }
     }
 
@@ -55,6 +76,14 @@ class ReaderSettingsStore(context: Context) {
             protectEdges = p[EDGES] ?: d.protectEdges,
             showMeasures = p[MEASURES] ?: d.showMeasures,
             language = p[LANGUAGE] ?: d.language,
+            rite = p[RITE] ?: d.rite,
+            externalSolemnities = p[EXTERNAL] ?: d.externalSolemnities,
+            traditionalPenance = p[TRADITIONAL] ?: d.traditionalPenance,
+            prayerMinutes = p[PRAYER_MINUTES] ?: d.prayerMinutes,
+            prayerBells = p[PRAYER_BELLS] ?: d.prayerBells,
+            prayerDoNotDisturb = p[PRAYER_DND] ?: d.prayerDoNotDisturb,
+            prayerGrayscale = p[PRAYER_GRAY] ?: d.prayerGrayscale,
+            zenRuleId = p[ZEN_RULE],
         )
     }
 
@@ -67,5 +96,13 @@ class ReaderSettingsStore(context: Context) {
         val EDGES = booleanPreferencesKey("bords_proteges")
         val MEASURES = booleanPreferencesKey("mesures")
         val LANGUAGE = stringPreferencesKey("langue")
+        val RITE = stringPreferencesKey("rite")
+        val EXTERNAL = booleanPreferencesKey("solennites_exterieures")
+        val TRADITIONAL = booleanPreferencesKey("penitence_traditionnelle")
+        val PRAYER_MINUTES = intPreferencesKey("priere_minutes")
+        val PRAYER_BELLS = booleanPreferencesKey("priere_cloches")
+        val PRAYER_DND = booleanPreferencesKey("priere_npd")
+        val PRAYER_GRAY = booleanPreferencesKey("priere_gris")
+        val ZEN_RULE = stringPreferencesKey("regle_npd")
     }
 }

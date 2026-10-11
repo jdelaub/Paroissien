@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Aucune permission : pas d'INTERNET au MVP, tout le contenu est embarqué (PLAN §2, principe 6). -->
+<!-- Pas d'INTERNET au MVP : tout le contenu est embarqué (PLAN §2, principe 6). Deux permissions pour le temps de
+     prière : la règle « Ne pas déranger » de l'app (accordée à la main par l'utilisateur) et la vibration qui remplace
+     la cloche quand le volume est coupé. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- L'écran des réglages où l'on accorde l'accès « Ne pas déranger » : vérifié avant de l'ouvrir. -->
+    <queries>
+        <intent>
+            <action android:name="android.settings.NOTIFICATION_POLICY_ACCESS_SETTINGS" />
+        </intent>
+    </queries>
 
     <application
         android:name=".ParoissienApp"

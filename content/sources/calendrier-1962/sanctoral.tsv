@@ -1,0 +1,329 @@
+# Sanctoral de 1962 : identifiant et titre français de chaque clé de propre de Divinum Officium.
+# id : slug de romcal (général romain 1969, ou catalogue martyrologique) quand la célébration est la même,
+#      sinon nouveau slug du même style. fr : usage des missels français (titres courts, sans « mémoire »).
+# Lu par general.py ; une ligne par clé du Kalendarium de 1960 (célébrations et commémoraisons).
+key	id	fr
+Sancti/01-05cc	telesphorus_pope	Saint Télesphore, pape et martyr
+Sancti/01-11cc	hyginus_pope	Saint Hygin, pape et martyr
+Sancti/01-14	hilary_of_poitiers_bishop	Saint Hilaire, évêque, confesseur et docteur
+Sancti/01-14cc	felix_of_nola_priest	Saint Félix de Nole, prêtre et martyr
+Sancti/01-15	paul_the_first_hermit	Saint Paul, premier ermite, confesseur
+Sancti/01-15cc	maurus_of_glanfeuil_abbot	Saint Maur, abbé
+Sancti/01-16	marcellus_i_pope	Saint Marcel Ier, pape et martyr
+Sancti/01-17	anthony_of_egypt_abbot	Saint Antoine, abbé
+Sancti/01-18r	prisca_of_rome_virgin	Sainte Prisque, vierge et martyre
+Sancti/01-19	marius_martha_audifax_and_abachum_martyrs	Saints Marius, Marthe, Audifax et Abachum, martyrs
+Sancti/01-19o	canute_iv_of_denmark_martyr	Saint Canut, roi et martyr
+Sancti/01-20	fabian_i_pope_and_sebastian_of_milan_martyrs	Saints Fabien et Sébastien, martyrs
+Sancti/01-21	agnes_of_rome_virgin	Sainte Agnès, vierge et martyre
+Sancti/01-22	vincent_of_saragossa_and_anastasius_the_persian_martyrs	Saints Vincent et Anastase, martyrs
+Sancti/01-23	raymond_of_penyafort_priest	Saint Raymond de Peñafort, confesseur
+Sancti/01-23o	emerentiana_virgin	Sainte Émérentienne, vierge et martyre
+Sancti/01-24	timothy_of_ephesus_bishop	Saint Timothée, évêque et martyr
+Sancti/01-25r	conversion_of_saint_paul_the_apostle	Conversion de saint Paul, apôtre
+Sancti/01-26	polycarp_of_smyrna_bishop	Saint Polycarpe, évêque et martyr
+Sancti/01-27	john_chrysostom_bishop	Saint Jean Chrysostome, évêque, confesseur et docteur
+Sancti/01-28	peter_nolasco_religious	Saint Pierre Nolasque, confesseur
+Sancti/01-28t	agnes_of_rome_virgin_second_feast	Sainte Agnès, vierge et martyre (seconde fête)
+Sancti/01-29	francis_de_sales_bishop	Saint François de Sales, évêque, confesseur et docteur
+Sancti/01-30	martina_of_rome_virgin	Sainte Martine, vierge et martyre
+Sancti/01-31	john_bosco_priest	Saint Jean Bosco, confesseur
+Sancti/02-01	ignatius_of_antioch_bishop	Saint Ignace d’Antioche, évêque et martyr
+Sancti/02-02	presentation_of_the_lord	Purification de la bienheureuse Vierge Marie
+Sancti/02-03	blaise_of_sebaste_bishop	Saint Blaise, évêque et martyr
+Sancti/02-04	andrew_corsini_bishop	Saint André Corsini, évêque et confesseur
+Sancti/02-05	agatha_of_sicily_virgin	Sainte Agathe, vierge et martyre
+Sancti/02-06	titus_of_crete_bishop	Saint Tite, évêque et confesseur
+Sancti/02-06o	dorothy_of_caesarea_virgin	Sainte Dorothée, vierge et martyre
+Sancti/02-07	romuald_of_ravenna_abbot	Saint Romuald, abbé
+Sancti/02-08	john_of_matha_priest	Saint Jean de Matha, confesseur
+Sancti/02-09	cyril_of_alexandria_bishop	Saint Cyrille d’Alexandrie, évêque, confesseur et docteur
+Sancti/02-09o	apollonia_of_alexandria_virgin	Sainte Apolline, vierge et martyre
+Sancti/02-10	scholastica_of_nursia_virgin	Sainte Scholastique, vierge
+Sancti/02-11	our_lady_of_lourdes	Apparition de la bienheureuse Vierge Marie Immaculée
+Sancti/02-12	seven_holy_founders_of_the_servite_order	Les sept saints Fondateurs de l’ordre des Servites de Marie, confesseurs
+Sancti/02-14	valentine_of_rome_martyr	Saint Valentin, prêtre et martyr
+Sancti/02-15	faustinus_and_jovita_martyrs	Saints Faustin et Jovite, martyrs
+Sancti/02-18	simeon_of_jerusalem_bishop	Saint Siméon, évêque et martyr
+Sancti/02-22	chair_of_saint_peter_the_apostle	Chaire de saint Pierre, apôtre
+Sancti/02-23r	peter_damian_bishop	Saint Pierre Damien, évêque, confesseur et docteur
+Sancti/02-24	matthias_apostle	Saint Matthias, apôtre
+Sancti/02-27	gabriel_of_our_lady_of_sorrows_religious	Saint Gabriel de la Vierge des Douleurs, confesseur
+Sancti/03-04	casimir_of_poland	Saint Casimir, confesseur
+Sancti/03-04cc	lucius_i_pope	Saint Luce Ier, pape et martyr
+Sancti/03-06	perpetua_of_carthage_and_felicity_of_carthage_martyrs	Saintes Perpétue et Félicité, martyres
+Sancti/03-07	thomas_aquinas_priest	Saint Thomas d’Aquin, confesseur et docteur
+Sancti/03-08	john_of_god_duarte_cidade_religious	Saint Jean de Dieu, confesseur
+Sancti/03-09	frances_of_rome_religious	Sainte Françoise Romaine, veuve
+Sancti/03-10	forty_martyrs_of_sebaste	Les saints Quarante Martyrs
+Sancti/03-12	gregory_i_the_great_pope	Saint Grégoire le Grand, pape, confesseur et docteur
+Sancti/03-17	patrick_of_ireland_bishop	Saint Patrice, évêque et confesseur
+Sancti/03-18	cyril_of_jerusalem_bishop	Saint Cyrille de Jérusalem, évêque, confesseur et docteur
+Sancti/03-19	joseph_spouse_of_mary	Saint Joseph, époux de la bienheureuse Vierge Marie, confesseur, patron de l’Église universelle
+Sancti/03-21	benedict_of_nursia_abbot	Saint Benoît, abbé
+Sancti/03-24	gabriel_archangel	Saint Gabriel, archange
+Sancti/03-25	annunciation_of_the_lord	Annonciation de la bienheureuse Vierge Marie
+Sancti/03-27	john_damascene_priest	Saint Jean Damascène, confesseur et docteur
+Sancti/03-28	john_of_capistrano_priest	Saint Jean de Capistran, confesseur
+Sancti/04-02	francis_of_paola_hermit	Saint François de Paule, confesseur
+Sancti/04-04	isidore_of_seville_bishop	Saint Isidore, évêque, confesseur et docteur
+Sancti/04-05	vincent_ferrer_priest	Saint Vincent Ferrier, confesseur
+Sancti/04-11	leo_i_the_great_pope	Saint Léon le Grand, pape, confesseur et docteur
+Sancti/04-13	hermenegild_martyr	Saint Herménégilde, martyr
+Sancti/04-14	justin_martyr	Saint Justin, martyr
+Sancti/04-14t	tiburtius_valerian_and_maximus_martyrs	Saints Tiburce, Valérien et Maxime, martyrs
+Sancti/04-17	anicetus_pope	Saint Anicet, pape et martyr
+Sancti/04-21	anselm_of_canterbury_bishop	Saint Anselme, évêque, confesseur et docteur
+Sancti/04-22	soter_and_caius_popes	Saints Soter et Caïus, papes et martyrs
+Sancti/04-23	george_of_lydda_martyr	Saint Georges, martyr
+Sancti/04-24	fidelis_of_sigmaringen_priest	Saint Fidèle de Sigmaringen, martyr
+Sancti/04-25	mark_evangelist	Saint Marc, évangéliste
+Sancti/04-26	cletus_and_marcellinus_popes	Saints Clet et Marcellin, papes et martyrs
+Sancti/04-27	peter_canisius_priest	Saint Pierre Canisius, confesseur et docteur
+Sancti/04-28	paul_of_the_cross_priest	Saint Paul de la Croix, confesseur
+Sancti/04-29	peter_of_verona_priest	Saint Pierre de Vérone, martyr
+Sancti/04-30	catherine_of_siena_virgin	Sainte Catherine de Sienne, vierge
+Sancti/05-01r	joseph_the_worker	Saint Joseph artisan, époux de la bienheureuse Vierge Marie, confesseur
+Sancti/05-02	athanasius_of_alexandria_bishop	Saint Athanase, évêque, confesseur et docteur
+Sancti/05-03r	alexander_i_pope_eventius_theodulus_and_juvenal	Saints Alexandre Ier, pape, Événce et Théodule, martyrs, et saint Juvénal, évêque et confesseur
+Sancti/05-04	monica_of_hippo	Sainte Monique, veuve
+Sancti/05-05	pius_v_pope	Saint Pie V, pape et confesseur
+Sancti/05-07	stanislaus_of_szczepanow_bishop	Saint Stanislas, évêque et martyr
+Sancti/05-09	gregory_nazianzen_bishop	Saint Grégoire de Nazianze, évêque, confesseur et docteur
+Sancti/05-10	antoninus_of_florence_bishop	Saint Antonin, évêque et confesseur
+Sancti/05-10o	gordian_and_epimachus_martyrs	Saints Gordien et Épimaque, martyrs
+Sancti/05-11r	philip_and_james_apostles	Saints Philippe et Jacques, apôtres
+Sancti/05-12	nereus_achilleus_domitilla_and_pancras_martyrs	Saints Nérée, Achillée, Domitille, vierge, et Pancrace, martyrs
+Sancti/05-13	robert_bellarmine_bishop	Saint Robert Bellarmin, évêque, confesseur et docteur
+Sancti/05-14	boniface_of_tarsus_martyr	Saint Boniface, martyr
+Sancti/05-15	john_baptist_de_la_salle_priest	Saint Jean-Baptiste de La Salle, confesseur
+Sancti/05-16	ubaldus_of_gubbio_bishop	Saint Ubald, évêque et confesseur
+Sancti/05-17	paschal_baylon_religious	Saint Pascal Baylon, confesseur
+Sancti/05-18	venantius_of_camerino_martyr	Saint Venant, martyr
+Sancti/05-19	celestine_v_pope	Saint Pierre Célestin, pape et confesseur
+Sancti/05-19o	pudentiana_virgin	Sainte Pudentienne, vierge
+Sancti/05-20	bernardine_of_siena_priest	Saint Bernardin de Sienne, confesseur
+Sancti/05-25	gregory_vii_pope	Saint Grégoire VII, pape et confesseur
+Sancti/05-25o	urban_i_pope	Saint Urbain Ier, pape et martyr
+Sancti/05-26	philip_neri_priest	Saint Philippe Néri, confesseur
+Sancti/05-26o	eleutherius_pope	Saint Éleuthère, pape et martyr
+Sancti/05-27	bede_the_venerable_priest	Saint Bède le Vénérable, confesseur et docteur
+Sancti/05-27o	john_i_pope	Saint Jean Ier, pape et martyr
+Sancti/05-28	augustine_of_canterbury_bishop	Saint Augustin de Cantorbéry, évêque et confesseur
+Sancti/05-29	mary_magdalene_de_pazzi_virgin	Sainte Marie-Madeleine de Pazzi, vierge
+Sancti/05-30	felix_i_pope	Saint Félix Ier, pape et martyr
+Sancti/05-31	queenship_of_the_blessed_virgin_mary	La bienheureuse Vierge Marie, Reine
+Sancti/05-31o	petronilla_virgin	Sainte Pétronille, vierge
+Sancti/06-01	angela_merici_virgin	Sainte Angèle Merici, vierge
+Sancti/06-02	marcellinus_peter_and_erasmus_martyrs	Saints Marcellin, Pierre et Érasme, évêque, martyrs
+Sancti/06-04	francis_caracciolo_priest	Saint François Caracciolo, confesseur
+Sancti/06-05	boniface_of_mainz_bishop	Saint Boniface, évêque et martyr
+Sancti/06-06	norbert_of_xanten_bishop	Saint Norbert, évêque et confesseur
+Sancti/06-09	primus_and_felician_martyrs	Saints Prime et Félicien, martyrs
+Sancti/06-10	margaret_of_scotland	Sainte Marguerite, reine, veuve
+Sancti/06-11	barnabas_apostle	Saint Barnabé, apôtre
+Sancti/06-12	john_of_sahagun_priest	Saint Jean de Saint-Facond, confesseur
+Sancti/06-12o	basilides_cyrinus_nabor_and_nazarius_martyrs	Saints Basilide, Cyrin, Nabor et Nazaire, martyrs
+Sancti/06-13	anthony_of_padua_priest	Saint Antoine de Padoue, confesseur et docteur
+Sancti/06-14	basil_the_great_bishop	Saint Basile le Grand, évêque, confesseur et docteur
+Sancti/06-15	vitus_modestus_and_crescentia_martyrs	Saints Guy, Modeste et Crescence, martyrs
+Sancti/06-17r	gregory_barbarigo_bishop	Saint Grégoire Barbarigo, évêque et confesseur
+Sancti/06-18	ephrem_the_syrian_deacon	Saint Éphrem le Syrien, confesseur et docteur
+Sancti/06-18t	mark_and_marcellian_martyrs	Saints Marc et Marcellien, martyrs
+Sancti/06-19	juliana_falconieri_virgin	Sainte Julienne Falconieri, vierge
+Sancti/06-19o	gervase_and_protase_martyrs	Saints Gervais et Protais, martyrs
+Sancti/06-20	silverius_pope	Saint Silvère, pape et martyr
+Sancti/06-21	aloysius_gonzaga_religious	Saint Louis de Gonzague, confesseur
+Sancti/06-22	paulinus_of_nola_bishop	Saint Paulin, évêque et confesseur
+Sancti/06-23	vigil_of_the_nativity_of_john_the_baptist	Vigile de la Nativité de saint Jean-Baptiste
+Sancti/06-24	nativity_of_john_the_baptist	Nativité de saint Jean-Baptiste
+Sancti/06-25	william_of_vercelli_abbot	Saint Guillaume, abbé
+Sancti/06-26	john_and_paul_martyrs	Saints Jean et Paul, martyrs
+Sancti/06-28r	vigil_of_peter_and_paul_apostles	Vigile des saints Pierre et Paul, apôtres
+Sancti/06-29	peter_and_paul_apostles	Saints Pierre et Paul, apôtres
+Sancti/06-30	commemoration_of_saint_paul_the_apostle	Commémoraison de saint Paul, apôtre
+Sancti/07-01	most_precious_blood_of_our_lord_jesus_christ	Précieux Sang de Notre-Seigneur Jésus-Christ
+Sancti/07-02	visitation_of_mary	Visitation de la bienheureuse Vierge Marie
+Sancti/07-02cc	processus_and_martinian_martyrs	Saints Processe et Martinien, martyrs
+Sancti/07-03r	irenaeus_of_lyon_bishop	Saint Irénée, évêque et martyr
+Sancti/07-05	anthony_zaccaria_priest	Saint Antoine-Marie Zaccaria, confesseur
+Sancti/07-07	cyril_constantine_the_philosopher_monk_and_methodius_michael_of_thessaloniki_bishop	Saints Cyrille et Méthode, évêques et confesseurs
+Sancti/07-08	elizabeth_of_portugal	Sainte Élisabeth de Portugal, reine, veuve
+Sancti/07-10	seven_holy_brothers_and_rufina_and_secunda_martyrs	Les sept saints Frères, martyrs, et saintes Rufine et Seconde, vierges et martyres
+Sancti/07-11	pius_i_pope	Saint Pie Ier, pape et martyr
+Sancti/07-12	john_gualbert_abbot	Saint Jean Gualbert, abbé
+Sancti/07-12o	nabor_and_felix_martyrs	Saints Nabor et Félix, martyrs
+Sancti/07-14	bonaventure_of_bagnoregio_bishop	Saint Bonaventure, évêque, confesseur et docteur
+Sancti/07-15	henry_ii_emperor	Saint Henri, empereur, confesseur
+Sancti/07-16	our_lady_of_mount_carmel	Notre-Dame du Mont-Carmel
+Sancti/07-17	alexius_of_rome	Saint Alexis, confesseur
+Sancti/07-18	camillus_de_lellis_priest	Saint Camille de Lellis, confesseur
+Sancti/07-18o	symphorosa_and_her_seven_sons_martyrs	Sainte Symphorose et ses sept fils, martyrs
+Sancti/07-19	vincent_de_paul_priest	Saint Vincent de Paul, confesseur
+Sancti/07-20	jerome_emiliani	Saint Jérôme Émilien, confesseur
+Sancti/07-20o	margaret_of_antioch_virgin	Sainte Marguerite, vierge et martyre
+Sancti/07-21r	lawrence_of_brindisi_priest	Saint Laurent de Brindes, confesseur et docteur
+Sancti/07-21	praxedes_virgin	Sainte Praxède, vierge
+Sancti/07-22	mary_magdalene	Sainte Marie-Madeleine, pénitente
+Sancti/07-23	apollinaris_of_ravenna_bishop	Saint Apollinaire, évêque et martyr
+Sancti/07-23cc	liborius_of_le_mans_bishop	Saint Liboire, évêque et confesseur
+Sancti/07-24r	christina_of_bolsena_virgin	Sainte Christine, vierge et martyre
+Sancti/07-25	james_apostle	Saint Jacques le Majeur, apôtre
+Sancti/07-25cc	christopher_of_palestine_martyr	Saint Christophe, martyr
+Sancti/07-26	anne_mother_of_mary	Sainte Anne, mère de la bienheureuse Vierge Marie
+Sancti/07-27	pantaleon_of_nicomedia_martyr	Saint Pantaléon, martyr
+Sancti/07-28	nazarius_celsus_victor_i_and_innocent_i	Saints Nazaire et Celse, martyrs, Victor Ier, pape et martyr, et Innocent Ier, pape et confesseur
+Sancti/07-29	martha_of_bethany	Sainte Marthe, vierge
+Sancti/07-29cc	felix_simplicius_faustinus_and_beatrice_martyrs	Saints Félix, Simplice, Faustin et Béatrice, martyrs
+Sancti/07-30	abdon_and_sennen_martyrs	Saints Abdon et Sennen, martyrs
+Sancti/07-31	ignatius_of_loyola_priest	Saint Ignace de Loyola, confesseur
+Sancti/08-01r	holy_maccabees_martyrs	Les saints Maccabées, martyrs
+Sancti/08-02	alphonsus_mary_liguori_bishop	Saint Alphonse-Marie de Liguori, évêque, confesseur et docteur
+Sancti/08-02o	stephen_i_pope	Saint Étienne Ier, pape et martyr
+Sancti/08-04	dominic_de_guzman_priest	Saint Dominique, confesseur
+Sancti/08-05	dedication_of_the_basilica_of_saint_mary_major	Dédicace de Sainte-Marie-aux-Neiges
+Sancti/08-06	transfiguration_of_the_lord	Transfiguration de Notre-Seigneur Jésus-Christ
+Sancti/08-06cc	sixtus_ii_pope_and_companions_martyrs	Saints Sixte II, pape, Félicissime et Agapit, martyrs
+Sancti/08-07	cajetan_of_thiene_priest	Saint Gaétan, confesseur
+Sancti/08-07o	donatus_of_arezzo_bishop	Saint Donat, évêque et martyr
+Sancti/08-09	john_mary_vianney_priest	Saint Jean-Marie Vianney, confesseur
+Sancti/08-08	cyriacus_largus_and_smaragdus_martyrs	Saints Cyriaque, Large et Smaragde, martyrs
+Sancti/08-09t	vigil_of_saint_lawrence	Vigile de saint Laurent, martyr
+Sancti/08-09cc	romanus_ostiarius_martyr	Saint Romain, martyr
+Sancti/08-10	lawrence_of_rome_deacon	Saint Laurent, martyr
+Sancti/08-11	tiburtius_and_susanna_martyrs	Saints Tiburce et Suzanne, vierge, martyrs
+Sancti/08-12	clare_of_assisi_virgin	Sainte Claire, vierge
+Sancti/08-13	hippolytus_and_cassian_martyrs	Saints Hippolyte et Cassien, martyrs
+Sancti/08-14	vigil_of_the_assumption_of_the_blessed_virgin_mary	Vigile de l’Assomption de la bienheureuse Vierge Marie
+Sancti/08-14cc	eusebius_of_rome_priest	Saint Eusèbe, confesseur
+Sancti/08-15	assumption_of_the_blessed_virgin_mary	Assomption de la bienheureuse Vierge Marie
+Sancti/08-16	joachim_father_of_mary	Saint Joachim, père de la bienheureuse Vierge Marie, confesseur
+Sancti/08-17	hyacinth_of_poland_priest	Saint Hyacinthe, confesseur
+Sancti/08-18r	agapitus_of_palestrina_martyr	Saint Agapit, martyr
+Sancti/08-19	john_eudes_priest	Saint Jean Eudes, confesseur
+Sancti/08-20	bernard_of_clairvaux_abbot	Saint Bernard, abbé et docteur
+Sancti/08-21	jane_frances_de_chantal_religious	Sainte Jeanne-Françoise Frémiot de Chantal, veuve
+Sancti/08-22	immaculate_heart_of_mary	Cœur immaculé de la bienheureuse Vierge Marie
+Sancti/08-22cc	timothy_hippolytus_and_symphorian_martyrs	Saints Timothée, Hippolyte et Symphorien, martyrs
+Sancti/08-23	philip_benizi_priest	Saint Philippe Benizi, confesseur
+Sancti/08-24	bartholomew_apostle	Saint Barthélemy, apôtre
+Sancti/08-25	louis_ix_of_france	Saint Louis, roi de France, confesseur
+Sancti/08-26	zephyrinus_pope	Saint Zéphyrin, pape et martyr
+Sancti/08-27	joseph_of_calasanz_priest	Saint Joseph Calasanz, confesseur
+Sancti/08-28	augustine_of_hippo_bishop	Saint Augustin, évêque, confesseur et docteur
+Sancti/08-28cc	hermes_of_rome_martyr	Saint Hermès, martyr
+Sancti/08-29	passion_of_saint_john_the_baptist	Décollation de saint Jean-Baptiste
+Sancti/08-29cc	sabina_of_rome_martyr	Sainte Sabine, martyre
+Sancti/08-30	rose_of_lima_virgin	Sainte Rose de Lima, vierge
+Sancti/08-30o	felix_and_adauctus_martyrs	Saints Félix et Adaucte, martyrs
+Sancti/08-31	raymond_nonnatus_religious	Saint Raymond Nonnat, confesseur
+Sancti/09-01	giles_of_saint_gilles_abbot	Saint Gilles, abbé
+Sancti/09-01cc	twelve_holy_brothers_martyrs	Les douze saints Frères, martyrs
+Sancti/09-02	stephen_i_of_hungary	Saint Étienne, roi de Hongrie, confesseur
+Sancti/09-03	pius_x_pope	Saint Pie X, pape et confesseur
+Sancti/09-05	lawrence_justinian_bishop	Saint Laurent Justinien, évêque et confesseur
+Sancti/09-08	nativity_of_the_blessed_virgin_mary	Nativité de la bienheureuse Vierge Marie
+Sancti/09-08cc	adrian_of_nicomedia_martyr	Saint Adrien, martyr
+Sancti/09-09	gorgonius_martyr	Saint Gorgon, martyr
+Sancti/09-10	nicholas_of_tolentino_priest	Saint Nicolas de Tolentino, confesseur
+Sancti/09-11	protus_and_hyacinth_martyrs	Saints Prote et Hyacinthe, martyrs
+Sancti/09-12	most_holy_name_of_mary	Très Saint Nom de Marie
+Sancti/09-14	exaltation_of_the_holy_cross	Exaltation de la sainte Croix
+Sancti/09-15	our_lady_of_sorrows	Les Sept Douleurs de la bienheureuse Vierge Marie
+Sancti/09-15cc	nicomedes_martyr	Saint Nicomède, martyr
+Sancti/09-16	cornelius_i_pope_and_cyprian_of_carthage_bishop_martyrs	Saints Corneille, pape, et Cyprien, évêque, martyrs
+Sancti/09-16cc	euphemia_lucy_and_geminianus_martyrs	Saintes Euphémie et Lucie et saint Géminien, martyrs
+Sancti/09-17	stigmata_of_saint_francis	Impression des stigmates de saint François
+Sancti/09-18	joseph_of_cupertino_priest	Saint Joseph de Cupertino, confesseur
+Sancti/09-19	januarius_i_of_benevento_bishop	Saint Janvier, évêque, et ses compagnons, martyrs
+Sancti/09-20	eustace_and_companions_martyrs	Saint Eustache et ses compagnons, martyrs
+Sancti/09-21	matthew_apostle	Saint Matthieu, apôtre et évangéliste
+Sancti/09-22	thomas_of_villanova_bishop	Saint Thomas de Villeneuve, évêque et confesseur
+Sancti/09-22o	maurice_and_companions_martyrs	Saint Maurice et ses compagnons, martyrs
+Sancti/09-23	linus_pope	Saint Lin, pape et martyr
+Sancti/09-23cc	thecla_of_iconium_virgin	Sainte Thècle, vierge et martyre
+Sancti/09-24	our_lady_of_ransom	Notre-Dame de la Merci
+Sancti/09-26	cyprian_and_justina_martyrs	Saints Cyprien et Justine, vierge, martyrs
+Sancti/09-27	cosmas_of_cilicia_and_damian_of_cilicia_martyrs	Saints Côme et Damien, martyrs
+Sancti/09-28	wenceslaus_i_of_bohemia_martyr	Saint Venceslas, duc et martyr
+Sancti/09-29	dedication_of_saint_michael_the_archangel	Dédicace de saint Michel archange
+Sancti/09-30	jerome_of_stridon_priest	Saint Jérôme, prêtre, confesseur et docteur
+Sancti/10-01	remigius_of_reims_bishop	Saint Remi, évêque et confesseur
+Sancti/10-02	holy_guardian_angels	Les saints Anges gardiens
+Sancti/10-03	therese_of_the_child_jesus_and_the_holy_face_of_lisieux_virgin	Sainte Thérèse de l’Enfant-Jésus, vierge
+Sancti/10-04	francis_of_assisi	Saint François d’Assise, confesseur
+Sancti/10-05	placid_and_companions_martyrs	Saint Placide et ses compagnons, martyrs
+Sancti/10-06	bruno_of_cologne_priest	Saint Bruno, confesseur
+Sancti/10-07	our_lady_of_the_rosary	Notre-Dame du Rosaire
+Sancti/10-07t	mark_pope	Saint Marc, pape et confesseur
+Sancti/10-08	bridget_of_sweden_religious	Sainte Brigitte, veuve
+Sancti/10-07cc	sergius_bacchus_marcellus_and_apuleius_martyrs	Saints Serge, Bacchus, Marcel et Apulée, martyrs
+Sancti/10-09	john_leonardi_priest	Saint Jean Léonardi, confesseur
+Sancti/10-09t	denis_of_paris_bishop_and_companions_martyrs	Saints Denis, évêque, Rustique et Éleuthère, martyrs
+Sancti/10-10	francis_borgia_priest	Saint François de Borgia, confesseur
+Sancti/10-11	maternity_of_the_blessed_virgin_mary	Maternité de la bienheureuse Vierge Marie
+Sancti/10-13	edward_the_confessor	Saint Édouard, roi, confesseur
+Sancti/10-14	callistus_i_pope	Saint Calixte Ier, pape et martyr
+Sancti/10-15	teresa_of_jesus_of_avila_virgin	Sainte Thérèse d’Avila, vierge
+Sancti/10-16	hedwig_of_silesia_religious	Sainte Hedwige, veuve
+Sancti/10-17	margaret_mary_alacoque_virgin	Sainte Marguerite-Marie Alacoque, vierge
+Sancti/10-18	luke_evangelist	Saint Luc, évangéliste
+Sancti/10-19	peter_of_alcantara_priest	Saint Pierre d’Alcantara, confesseur
+Sancti/10-20	john_of_kanty_priest	Saint Jean de Kenty, confesseur
+Sancti/10-21	hilarion_abbot	Saint Hilarion, abbé
+Sancti/10-21cc	ursula_and_companions_martyrs	Sainte Ursule et ses compagnes, vierges et martyres
+Sancti/10-23r	anthony_mary_claret_bishop	Saint Antoine-Marie Claret, évêque et confesseur
+Sancti/10-24	raphael_archangel	Saint Raphaël, archange
+Sancti/10-25	chrysanthus_and_daria_martyrs	Saints Chrysanthe et Darie, martyrs
+Sancti/10-26	evaristus_pope	Saint Évariste, pape et martyr
+Sancti/10-28	simon_and_jude_apostles	Saints Simon et Jude, apôtres
+Sancti/11-01	all_saints	Toussaint
+Sancti/11-02	commemoration_of_all_the_faithful_departed	Commémoraison de tous les fidèles défunts
+Sancti/11-04	charles_borromeo_bishop	Saint Charles Borromée, évêque et confesseur
+Sancti/11-04cc	vitalis_and_agricola_martyrs	Saints Vital et Agricola, martyrs
+Sancti/11-08r	four_holy_crowned_martyrs	Les quatre saints Couronnés, martyrs
+Sancti/11-09	dedication_of_the_lateran_basilica	Dédicace de l’archibasilique du Très-Saint-Sauveur
+Sancti/11-09cc	theodore_of_amasea_martyr	Saint Théodore, martyr
+Sancti/11-10	andrew_avellino_priest	Saint André Avellin, confesseur
+Sancti/11-10o	tryphon_respicius_and_nympha_martyrs	Saints Tryphon, Respice et Nymphe, vierge, martyrs
+Sancti/11-11	martin_of_tours_bishop	Saint Martin, évêque et confesseur
+Sancti/11-11cc	menas_of_egypt_martyr	Saint Mennas, martyr
+Sancti/11-12	martin_i_pope	Saint Martin Ier, pape et martyr
+Sancti/11-13	didacus_of_alcala_religious	Saint Didace, confesseur
+Sancti/11-14	josaphat_kuntsevych_bishop	Saint Josaphat, évêque et martyr
+Sancti/11-15	albert_the_great_bishop	Saint Albert le Grand, évêque, confesseur et docteur
+Sancti/11-16	gertrude_the_great_virgin	Sainte Gertrude, vierge
+Sancti/11-17	gregory_thaumaturgus_bishop	Saint Grégoire le Thaumaturge, évêque et confesseur
+Sancti/11-18r	dedication_of_the_basilicas_of_saints_peter_and_paul_apostles	Dédicace des basiliques des saints Pierre et Paul, apôtres
+Sancti/11-19	elizabeth_of_hungary_religious	Sainte Élisabeth de Hongrie, veuve
+Sancti/11-19o	pontian_i_pope	Saint Pontien, pape et martyr
+Sancti/11-20	felix_of_valois_priest	Saint Félix de Valois, confesseur
+Sancti/11-21	presentation_of_the_blessed_virgin_mary	Présentation de la bienheureuse Vierge Marie
+Sancti/11-22	cecilia_of_rome_virgin	Sainte Cécile, vierge et martyre
+Sancti/11-23	clement_i_pope	Saint Clément Ier, pape et martyr
+Sancti/11-23cc	felicity_of_rome_martyr	Sainte Félicité, martyre
+Sancti/11-24	john_of_the_cross_priest	Saint Jean de la Croix, confesseur et docteur
+Sancti/11-24o	chrysogonus_martyr	Saint Chrysogone, martyr
+Sancti/11-25	catherine_of_alexandria_virgin	Sainte Catherine d’Alexandrie, vierge et martyre
+Sancti/11-26	sylvester_gozzolini_abbot	Saint Silvestre, abbé
+Sancti/11-26t	peter_of_alexandria_bishop	Saint Pierre d’Alexandrie, évêque et martyr
+Sancti/11-29r	saturninus_martyr	Saint Saturnin, martyr
+Sancti/11-30	andrew_apostle	Saint André, apôtre
+Sancti/12-02	bibiana_virgin	Sainte Bibiane, vierge et martyre
+Sancti/12-03	francis_xavier_priest	Saint François Xavier, confesseur
+Sancti/12-04	peter_chrysologus_bishop	Saint Pierre Chrysologue, évêque, confesseur et docteur
+Sancti/12-04o	barbara_of_heliopolis_virgin	Sainte Barbe, vierge et martyre
+Sancti/12-05	sabbas_abbot	Saint Sabas, abbé
+Sancti/12-06	nicholas_of_myra_bishop	Saint Nicolas, évêque et confesseur
+Sancti/12-07	ambrose_of_milan_bishop	Saint Ambroise, évêque, confesseur et docteur
+Sancti/12-08	immaculate_conception_of_the_blessed_virgin_mary	Immaculée Conception de la bienheureuse Vierge Marie
+Sancti/12-10o	miltiades_i_pope	Saint Melchiade, pape et martyr
+Sancti/12-11	damasus_i_pope	Saint Damase Ier, pape et confesseur
+Sancti/12-13r	lucy_of_syracuse_virgin	Sainte Lucie, vierge et martyre
+Sancti/12-16	eusebius_of_vercelli_bishop	Saint Eusèbe, évêque et martyr
+Sancti/12-21	thomas_apostle	Saint Thomas, apôtre
+Sancti/12-26	stephen_the_first_martyr	Saint Étienne, premier martyr
+Sancti/12-27	john_apostle	Saint Jean, apôtre et évangéliste
+Sancti/12-28r	holy_innocents_martyrs	Les saints Innocents, martyrs
+Sancti/12-29r	thomas_becket_bishop	Saint Thomas Becket, évêque et martyr
+Sancti/12-31r	sylvester_i_pope	Saint Silvestre Ier, pape et confesseur

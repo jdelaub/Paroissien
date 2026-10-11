@@ -43,6 +43,21 @@ data class Ribbon(
     val updatedAt: Long,
 )
 
+/**
+ * Une image pieuse glissée dans un livre (rapport 09, §3.2). Comme une vraie carte, elle n'est qu'à un endroit à la
+ * fois : la retirer du livre la remet dans la boîte (la ligne disparaît).
+ */
+@Entity(tableName = "card_placement")
+data class CardPlacement(
+    @PrimaryKey val card: String,
+    val publication: String,
+    val unit: String,
+    val block: String,
+    val charOffset: Int,
+    val blockRev: String?,
+    val updatedAt: Long,
+)
+
 @Dao
 interface PositionDao {
     @Query("SELECT * FROM book_position WHERE publication = :publication")
@@ -76,15 +91,37 @@ interface RibbonDao {
     suspend fun remove(publication: String, slot: Int)
 }
 
+@Dao
+interface CardDao {
+    @Query("SELECT * FROM card_placement WHERE publication = :publication")
+    fun observe(publication: String): Flow<List<CardPlacement>>
+
+    @Query("SELECT * FROM card_placement ORDER BY updatedAt DESC")
+    fun observeAll(): Flow<List<CardPlacement>>
+
+    @Query("SELECT * FROM card_placement")
+    suspend fun all(): List<CardPlacement>
+
+    @Upsert
+    suspend fun place(card: CardPlacement)
+
+    @Query("DELETE FROM card_placement WHERE card = :card")
+    suspend fun remove(card: String)
+}
+
 @Database(
-    entities = [BookPosition::class, Ribbon::class],
-    version = 2,
+    entities = [BookPosition::class, Ribbon::class, CardPlacement::class],
+    version = 3,
     exportSchema = true,
-    autoMigrations = [AutoMigration(from = 1, to = 2, spec = UserDatabase.V1ToV2::class)],
+    autoMigrations = [
+        AutoMigration(from = 1, to = 2, spec = UserDatabase.V1ToV2::class),
+        AutoMigration(from = 2, to = 3),
+    ],
 )
 abstract class UserDatabase : RoomDatabase() {
     abstract fun positions(): PositionDao
     abstract fun ribbons(): RibbonDao
+    abstract fun cards(): CardDao
 
     /** La version 1 n'avait qu'une table d'essai, jamais remplie : elle disparaît. */
     @DeleteTable(tableName = "reading_position")

@@ -1,0 +1,1579 @@
+{
+ "format": 1,
+ "ratio": 0.58,
+ "cards": [
+  {
+   "id": "bastien_lepage_jeanne_arc",
+   "title": {
+    "fr": "Sainte Jeanne d’Arc"
+   },
+   "work": "Jeanne d’Arc",
+   "originalTitle": "Joan of Arc",
+   "artist": "Jules Bastien-Lepage",
+   "date": "1879",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "435621",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/435621",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DP-14201-049.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/435621 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Jules Bastien-Lepage, Jeanne d’Arc, 1879 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.713,
+    "y": 0.56
+   },
+   "crop": {
+    "x": 2138,
+    "y": 796,
+    "w": 1429,
+    "h": 2464,
+    "sourceWidth": 4000,
+    "sourceHeight": 3622
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 116238,
+    "thumb": 9042
+   },
+   "sha256": {
+    "full": "ae044a621b39fe994d477410ae7776907d8597b647cb8a706dddd785e75ffb98",
+    "thumb": "0fa028fd49e4fc968805ad27e499999908e6a9726ed6d90bc2a63be66d5b97ac"
+   },
+   "themes": [
+    "saints"
+   ],
+   "seasons": [
+    "EASTER",
+    "ORDINARY"
+   ],
+   "feasts": [
+    "joan_of_arc_virgin"
+   ],
+   "prayer": "Prière à sainte Jeanne d’Arc"
+  },
+  {
+   "id": "belmonte_saint_michel",
+   "title": {
+    "fr": "Saint Michel archange"
+   },
+   "work": "Saint Michel",
+   "originalTitle": "Saint Michael",
+   "artist": "Maître de Belmonte",
+   "date": "1450-1500",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "471730",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/471730",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/cl/original/DP316433.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/471730 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Maître de Belmonte, Saint Michel, 1450-1500 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "crop": {
+    "x": 90,
+    "y": 12,
+    "w": 2075,
+    "h": 3577,
+    "sourceWidth": 2255,
+    "sourceHeight": 4000
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 164566,
+    "thumb": 15406
+   },
+   "sha256": {
+    "full": "057bb59d89509830500a8044db8f12aa9ff23f412c16fbb21bbfe26e8d32be95",
+    "thumb": "e794e4752b263fa90073815e07311554bed3ee75ee6a1be174f5d0187a4d01a3"
+   },
+   "themes": [
+    "saints",
+    "anges"
+   ],
+   "seasons": [
+    "ORDINARY"
+   ],
+   "feasts": [
+    "michael_gabriel_and_raphael_archangels"
+   ],
+   "prayer": "Prière à saint Michel"
+  },
+  {
+   "id": "botticelli_vierge_ange",
+   "title": {
+    "fr": "La Vierge et l’ange"
+   },
+   "work": "Vierge à l’Enfant avec un ange",
+   "originalTitle": "Virgin and Child with an Angel",
+   "artist": "Sandro Botticelli",
+   "date": "1475-1485",
+   "institution": "Art Institute of Chicago",
+   "objectId": "80530",
+   "sourceUrl": "https://www.artic.edu/artworks/80530",
+   "imageUrl": "https://www.artic.edu/iiif/2/b59cc3e9-a7c0-5aa1-1a22-bb472bb2e6d4/full/2064,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/80530 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Sandro Botticelli, Vierge à l’Enfant avec un ange, 1475-1485 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.42,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 1739,
+    "h": 2998,
+    "sourceWidth": 2064,
+    "sourceHeight": 2998
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 98720,
+    "thumb": 9574
+   },
+   "sha256": {
+    "full": "fec6eed12229cef4fb9fe9ae4848bb2711970353f18caefdf2c52842cd569f4f",
+    "thumb": "5023489b65da6165b31e518a18def9888a2c838f0393bb915013bfa97c2bd5b4"
+   },
+   "themes": [
+    "vierge",
+    "anges"
+   ],
+   "seasons": [
+    "CHRISTMAS",
+    "ORDINARY"
+   ],
+   "feasts": [],
+   "prayer": "Je vous salue, Marie"
+  },
+  {
+   "id": "canivet_sacre_coeur",
+   "title": {
+    "fr": "Sacré-Cœur de Jésus"
+   },
+   "work": "Canivet au Sacré-Cœur",
+   "originalTitle": "Canivet or Devotional with Sacred Heart",
+   "artist": "Anonyme flamand",
+   "date": "XVIIIᵉ siècle",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "775447",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/775447",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/dp/original/DP879620.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/775447 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Anonyme flamand, Canivet au Sacré-Cœur, XVIIIᵉ siècle · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 404,
+    "y": 167,
+    "w": 1420,
+    "h": 2448,
+    "sourceWidth": 2228,
+    "sourceHeight": 2782
+   },
+   "width": 752,
+   "height": 1296,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 172676,
+    "thumb": 24770
+   },
+   "sha256": {
+    "full": "317c4263850d1054283d75d9d98368082c0877908455d25a77650c546a13f5ec",
+    "thumb": "7a7f5b1fd0355580fa68cff0a8e85a2aa2b157fe075f8030a9f11c97601908f7"
+   },
+   "themes": [
+    "sacre_coeur"
+   ],
+   "seasons": [
+    "ORDINARY"
+   ],
+   "feasts": [
+    "most_sacred_heart_of_jesus"
+   ],
+   "prayer": "Acte de consécration au Sacré-Cœur"
+  },
+  {
+   "id": "christus_tete_du_christ",
+   "title": {
+    "fr": "Ecce Homo"
+   },
+   "work": "Tête du Christ (Ecce Homo)",
+   "originalTitle": "Head of Christ (Ecce Homo)",
+   "artist": "Petrus Christus",
+   "date": "v. 1445",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "435897",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/435897",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DT229079.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/435897 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Petrus Christus, Tête du Christ (Ecce Homo), v. 1445 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 432,
+    "y": 223,
+    "w": 1878,
+    "h": 3238,
+    "sourceWidth": 2743,
+    "sourceHeight": 3722
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 101644,
+    "thumb": 10254
+   },
+   "sha256": {
+    "full": "921bce0aaf1644b8ef80cdc2c36e6e3e521376a94ef228044060702613b92c74",
+    "thumb": "a8f3cf769ee3865497d3d168fa1b0228082966cb0ac58bef484302f417a09be0"
+   },
+   "themes": [
+    "passion",
+    "sainte_face"
+   ],
+   "seasons": [
+    "LENT",
+    "PASSIONTIDE"
+   ],
+   "feasts": [],
+   "prayer": "Anima Christi"
+  },
+  {
+   "id": "coter_vierge_couronnee",
+   "title": {
+    "fr": "Reine du ciel"
+   },
+   "work": "Vierge à l’Enfant couronnée par des anges",
+   "originalTitle": "Virgin and Child Crowned by Angels",
+   "artist": "Colijn de Coter",
+   "date": "v. 1490",
+   "institution": "Art Institute of Chicago",
+   "objectId": "16257",
+   "sourceUrl": "https://www.artic.edu/artworks/16257",
+   "imageUrl": "https://www.artic.edu/iiif/2/6fce7ae8-25e8-d7d9-7f36-0aee3703abea/full/1298,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/16257 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Colijn de Coter, Vierge à l’Enfant couronnée par des anges, v. 1490 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.5,
+    "y": 0.4
+   },
+   "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 1298,
+    "h": 2238,
+    "sourceWidth": 1298,
+    "sourceHeight": 2250
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 152616,
+    "thumb": 14808
+   },
+   "sha256": {
+    "full": "1e46086a44dd0dcff2279cff9c7a654936cbfa006a746cbc9ed439c9836771b7",
+    "thumb": "6f015bbda68ff6b770ae63116f931ecb15944f2e5ee7e54af91f5f7ff70735ef"
+   },
+   "themes": [
+    "vierge",
+    "anges"
+   ],
+   "seasons": [
+    "EASTER",
+    "ORDINARY"
+   ],
+   "feasts": [
+    "queenship_of_the_blessed_virgin_mary"
+   ],
+   "prayer": "Salve Regina"
+  },
+  {
+   "id": "cour_celeste_toussaint",
+   "title": {
+    "fr": "La Toussaint"
+   },
+   "work": "La Trinité et les saints au paradis (la Cour céleste)",
+   "originalTitle": "The Trinity and Saints in Paradise, or La Cour Céleste from a volume of \"La Cité de Dieu\" by St Augustine",
+   "artist": "Enlumineur parisien",
+   "date": "milieu du XVᵉ siècle",
+   "institution": "Art Institute of Chicago",
+   "objectId": "123643",
+   "sourceUrl": "https://www.artic.edu/artworks/123643",
+   "imageUrl": "https://www.artic.edu/iiif/2/d5e530dd-02d3-db01-0c34-f5f8d4da72d8/full/2391,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/123643 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Enlumineur parisien, La Trinité et les saints au paradis (la Cour céleste), milieu du XVᵉ siècle · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.53,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 415,
+    "y": 30,
+    "w": 1705,
+    "h": 2940,
+    "sourceWidth": 2391,
+    "sourceHeight": 3000
+   },
+   "width": 676,
+   "height": 1166,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 167974,
+    "thumb": 23882
+   },
+   "sha256": {
+    "full": "176a360759b3fe7b86e5d76f321cd1bda7db9caf077d7e7d5b92520cf7c52660",
+    "thumb": "bcc57d79cdad3368994860bc7d2442a9dcf9cb6b711058cf585842c20d5e62c6"
+   },
+   "themes": [
+    "saints",
+    "toussaint"
+   ],
+   "seasons": [
+    "ORDINARY"
+   ],
+   "feasts": [
+    "all_saints"
+   ],
+   "prayer": "Litanies des saints"
+  },
+  {
+   "id": "david_christ_roi",
+   "title": {
+    "fr": "Le Christ Roi"
+   },
+   "work": "La Sainte Face",
+   "originalTitle": "Holy Face",
+   "artist": "Gerard David",
+   "date": "v. 1485-1490",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "459253",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/459253",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/rl/original/DT3621.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/459253 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Gerard David, La Sainte Face, v. 1485-1490 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.48
+   },
+   "crop": {
+    "x": 146,
+    "y": 78,
+    "w": 2054,
+    "h": 3541,
+    "sourceWidth": 2346,
+    "sourceHeight": 3891
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 137536,
+    "thumb": 11136
+   },
+   "sha256": {
+    "full": "f4540be0cc7de60af94963daa3cddbd4de8be7b32075e793dfe22115a7660b14",
+    "thumb": "37fbd7844860e3200298e15646ca73c2549aec0a8f4d42e2105f0568ec542618"
+   },
+   "themes": [
+    "christ"
+   ],
+   "seasons": [
+    "ORDINARY"
+   ],
+   "feasts": [
+    "our_lord_jesus_christ_king_of_the_universe"
+   ],
+   "prayer": "Notre Père"
+  },
+  {
+   "id": "durer_homme_de_douleurs",
+   "title": {
+    "fr": "L’Homme de douleurs"
+   },
+   "work": "L’Homme de douleurs assis",
+   "originalTitle": "Man of Sorrows, Seated",
+   "artist": "Albrecht Dürer",
+   "date": "1515",
+   "institution": "Art Institute of Chicago",
+   "objectId": "79896",
+   "sourceUrl": "https://www.artic.edu/artworks/79896",
+   "imageUrl": "https://www.artic.edu/iiif/2/79d5ca0e-9e5b-1384-1e86-83c105960df9/full/1811,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/79896 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Albrecht Dürer, L’Homme de douleurs assis, 1515 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 67,
+    "y": 90,
+    "w": 1653,
+    "h": 2850,
+    "sourceWidth": 1811,
+    "sourceHeight": 3000
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 172140,
+    "thumb": 16960
+   },
+   "sha256": {
+    "full": "0e3ab71d4a56f3041ee1c4f044cbabf93af8be78c8af846611384e129cfa47b4",
+    "thumb": "b01bedbc3a47b730f975d9ec9992e4712d92b93880b1cc1b326881dd9e6cf346"
+   },
+   "themes": [
+    "passion"
+   ],
+   "seasons": [
+    "LENT",
+    "PASSIONTIDE"
+   ],
+   "feasts": [],
+   "prayer": "Miserere"
+  },
+  {
+   "id": "durer_resurrection",
+   "title": {
+    "fr": "La Résurrection"
+   },
+   "work": "La Résurrection (Passion gravée)",
+   "originalTitle": "Resurrection, from The Engraved Passion",
+   "artist": "Albrecht Dürer",
+   "date": "1512",
+   "institution": "Art Institute of Chicago",
+   "objectId": "68104",
+   "sourceUrl": "https://www.artic.edu/artworks/68104",
+   "imageUrl": "https://www.artic.edu/iiif/2/f8089406-c598-ae16-ff4e-9c6f8bf4753a/full/1899,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/68104 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Albrecht Dürer, La Résurrection (Passion gravée), 1512 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 80,
+    "y": 0,
+    "w": 1740,
+    "h": 3000,
+    "sourceWidth": 1899,
+    "sourceHeight": 3000
+   },
+   "width": 626,
+   "height": 1080,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 174148,
+    "thumb": 19586
+   },
+   "sha256": {
+    "full": "6346286a3ec3f49ed0d29ed45338d4eefe1cf0b1cce2d16771c3c40508abedf4",
+    "thumb": "f588fba1cf6af9ec2336406276be1b75358f3a7a36f54d3c126526741b14ef75"
+   },
+   "themes": [
+    "paques"
+   ],
+   "seasons": [
+    "EASTER"
+   ],
+   "feasts": [
+    "easter_sunday"
+   ],
+   "prayer": "Victimae paschali laudes"
+  },
+  {
+   "id": "flandes_apparition_mere",
+   "title": {
+    "fr": "Le Ressuscité et sa Mère"
+   },
+   "work": "Le Christ apparaissant à sa Mère",
+   "originalTitle": "Christ Appearing to His Mother",
+   "artist": "Juan de Flandes",
+   "date": "v. 1496",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "437489",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/437489",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DT2649.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/437489 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Juan de Flandes, Le Christ apparaissant à sa Mère, v. 1496 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.47,
+    "y": 0.6
+   },
+   "crop": {
+    "x": 306,
+    "y": 840,
+    "w": 1616,
+    "h": 2787,
+    "sourceWidth": 2371,
+    "sourceHeight": 3722
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 123366,
+    "thumb": 12868
+   },
+   "sha256": {
+    "full": "7b2eee55e00b61cadf48509c438d75f5e12f3523e73d9b4c74f117ad7cf9bf53",
+    "thumb": "a16f59570af3b094ca42c21286ed1751c32ccfdabc1b1d91e645392cd6add453"
+   },
+   "themes": [
+    "paques",
+    "vierge"
+   ],
+   "seasons": [
+    "EASTER"
+   ],
+   "feasts": [],
+   "prayer": "Regina caeli"
+  },
+  {
+   "id": "fra_bartolomeo_nativite",
+   "title": {
+    "fr": "La Nativité"
+   },
+   "work": "La Nativité",
+   "originalTitle": "The Nativity",
+   "artist": "Fra Bartolomeo",
+   "date": "1504-1507",
+   "institution": "Art Institute of Chicago",
+   "objectId": "184371",
+   "sourceUrl": "https://www.artic.edu/artworks/184371",
+   "imageUrl": "https://www.artic.edu/iiif/2/40fdb1d6-93fe-2916-78fb-f56a1ac261f1/full/2152,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/184371 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Fra Bartolomeo, La Nativité, 1504-1507 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.47,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 142,
+    "y": 0,
+    "w": 1739,
+    "h": 2998,
+    "sourceWidth": 2152,
+    "sourceHeight": 2998
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 109104,
+    "thumb": 10160
+   },
+   "sha256": {
+    "full": "13d53657fd680491390fe720a13919b30582f402fc0cb19af5cf2a72d5025172",
+    "thumb": "36178d0e9214302e45427e108c8b48133a92bb9e9dc2e27241ada7b356ab2cd3"
+   },
+   "themes": [
+    "noel",
+    "vierge"
+   ],
+   "seasons": [
+    "CHRISTMAS"
+   ],
+   "feasts": [
+    "nativity_of_the_lord"
+   ],
+   "prayer": "Adeste fideles"
+  },
+  {
+   "id": "goltzius_pieta",
+   "title": {
+    "fr": "Notre-Dame des Douleurs"
+   },
+   "work": "Pietà",
+   "originalTitle": "Pietá",
+   "artist": "Hendrick Goltzius",
+   "date": "1596",
+   "institution": "Art Institute of Chicago",
+   "objectId": "77854",
+   "sourceUrl": "https://www.artic.edu/artworks/77854",
+   "imageUrl": "https://www.artic.edu/iiif/2/6ec48824-1d9d-527b-bac5-eea8243373c9/full/1871,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/77854 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Hendrick Goltzius, Pietà, 1596 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "crop": {
+    "x": 153,
+    "y": 0,
+    "w": 1564,
+    "h": 2697,
+    "sourceWidth": 1871,
+    "sourceHeight": 2997
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 165922,
+    "thumb": 14204
+   },
+   "sha256": {
+    "full": "c39561ef3f5ed064ec7eacf5fc46f9d7974fa4018bf31815329b563002368356",
+    "thumb": "adf1ba0581607569c5df30ded0d33d308e7082fecaeb1912c6607cb0d719aa59"
+   },
+   "themes": [
+    "vierge",
+    "passion"
+   ],
+   "seasons": [
+    "PASSIONTIDE",
+    "ORDINARY"
+   ],
+   "feasts": [
+    "our_lady_of_sorrows"
+   ],
+   "prayer": "Stabat Mater"
+  },
+  {
+   "id": "gossart_portement_croix",
+   "title": {
+    "fr": "Le Portement de croix"
+   },
+   "work": "Le Christ portant sa croix",
+   "originalTitle": "Christ Carrying the Cross",
+   "artist": "Jan Gossart",
+   "date": "v. 1520-1525",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "439977",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/439977",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DP368972.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/439977 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Jan Gossart, Le Christ portant sa croix, v. 1520-1525 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 477,
+    "y": 116,
+    "w": 2101,
+    "h": 3623,
+    "sourceWidth": 3056,
+    "sourceHeight": 3875
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 85112,
+    "thumb": 7018
+   },
+   "sha256": {
+    "full": "453b01e188f3fd0a00a30fb6a857c2d18988ac5daaa4faa65842133b9fc3d874",
+    "thumb": "7d20ca7e384af76d8b56ccec9113f5739ff8ccf780f0b62b35189fff34fc6c71"
+   },
+   "themes": [
+    "passion"
+   ],
+   "seasons": [
+    "LENT",
+    "PASSIONTIDE"
+   ],
+   "feasts": [],
+   "prayer": "Chemin de croix"
+  },
+  {
+   "id": "greco_assomption",
+   "title": {
+    "fr": "L’Assomption"
+   },
+   "work": "L’Assomption de la Vierge",
+   "originalTitle": "The Assumption of the Virgin",
+   "artist": "Le Greco",
+   "date": "1577-1579",
+   "institution": "Art Institute of Chicago",
+   "objectId": "87479",
+   "sourceUrl": "https://www.artic.edu/artworks/87479",
+   "imageUrl": "https://www.artic.edu/iiif/2/47fd1564-93f5-f30b-7786-013421133b4a/full/1567,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/87479 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Le Greco, L’Assomption de la Vierge, 1577-1579 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 1567,
+    "h": 2702,
+    "sourceWidth": 1567,
+    "sourceHeight": 2997
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 102252,
+    "thumb": 13362
+   },
+   "sha256": {
+    "full": "b479171749fd551848f31a7a23a9b48b7586d376c351251d905cd724866a7843",
+    "thumb": "71cd9faa087f169377ebe47d133c4e8323ff75a7a3d601856b8871bc5735413d"
+   },
+   "themes": [
+    "vierge"
+   ],
+   "seasons": [
+    "ORDINARY"
+   ],
+   "feasts": [
+    "assumption_of_the_blessed_virgin_mary"
+   ],
+   "prayer": "Magnificat"
+  },
+  {
+   "id": "icone_cretoise_vierge",
+   "title": {
+    "fr": "Sainte Mère de Dieu"
+   },
+   "work": "Icône de la Vierge à l’Enfant",
+   "originalTitle": "Icon with the Virgin and Child",
+   "artist": "Peintre crétois",
+   "date": "v. 1500",
+   "institution": "Art Institute of Chicago",
+   "objectId": "82511",
+   "sourceUrl": "https://www.artic.edu/artworks/82511",
+   "imageUrl": "https://www.artic.edu/iiif/2/a8383044-2d0b-e592-efde-0b72bfe6e460/full/1695,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/82511 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Peintre crétois, Icône de la Vierge à l’Enfant, v. 1500 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.58,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 430,
+    "y": 106,
+    "w": 1106,
+    "h": 1906,
+    "sourceWidth": 1695,
+    "sourceHeight": 2118
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 148544,
+    "thumb": 12376
+   },
+   "sha256": {
+    "full": "8e5d22b131e717282fa25c33e9dfd949fc69b74d806d8525ce05ef38f281afcb",
+    "thumb": "526e1628dcf504898a722300f820f2b4e4ee952ff05fc268788c5e2280c962ed"
+   },
+   "themes": [
+    "vierge"
+   ],
+   "seasons": [
+    "CHRISTMAS"
+   ],
+   "feasts": [
+    "mary_mother_of_god"
+   ],
+   "prayer": "Sub tuum praesidium"
+  },
+  {
+   "id": "kulmbach_ascension",
+   "title": {
+    "fr": "L’Ascension"
+   },
+   "work": "L’Ascension du Christ",
+   "originalTitle": "The Ascension of Christ",
+   "artist": "Hans Süss von Kulmbach",
+   "date": "1513",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "436835",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/436835",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DP-17612-001.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/436835 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Hans Süss von Kulmbach, L’Ascension du Christ, 1513 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 145,
+    "y": 80,
+    "w": 2239,
+    "h": 3860,
+    "sourceWidth": 2528,
+    "sourceHeight": 4000
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 104106,
+    "thumb": 10104
+   },
+   "sha256": {
+    "full": "04d45ea773372f4c81d01bc13bbea97347c7fd4754ccdcfd5ba087248d9a2a84",
+    "thumb": "72b6c458560e6c9090d7bbb8fb9a2ddf18205bd7f09d5f6d853980adb9ad9190"
+   },
+   "themes": [
+    "paques"
+   ],
+   "seasons": [
+    "EASTER"
+   ],
+   "feasts": [
+    "ascension_of_the_lord"
+   ],
+   "prayer": "Symbole des apôtres"
+  },
+  {
+   "id": "maso_saint_antoine",
+   "title": {
+    "fr": "Saint Antoine de Padoue"
+   },
+   "work": "Saint Antoine de Padoue",
+   "originalTitle": "Saint Anthony of Padua",
+   "artist": "Maso di Banco",
+   "date": "v. 1340",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "436982",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/436982",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DP-26938-001.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/436982 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Maso di Banco, Saint Antoine de Padoue, v. 1340 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.47
+   },
+   "crop": {
+    "x": 179,
+    "y": 160,
+    "w": 1995,
+    "h": 3440,
+    "sourceWidth": 2354,
+    "sourceHeight": 4000
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 121782,
+    "thumb": 8742
+   },
+   "sha256": {
+    "full": "c357fca321f8354b3734decd59fd28bf0594cbb15bd696234ab0970b14efc080",
+    "thumb": "34355eaf279cad914d215335937b25f4bf151e454d0774178f9a4819327df1e3"
+   },
+   "themes": [
+    "saints"
+   ],
+   "seasons": [
+    "ORDINARY"
+   ],
+   "feasts": [
+    "anthony_of_padua_priest"
+   ],
+   "prayer": "Si quaeris (répons de saint Antoine)"
+  },
+  {
+   "id": "massys_adoration_mages",
+   "title": {
+    "fr": "L’Épiphanie"
+   },
+   "work": "L’Adoration des mages",
+   "originalTitle": "The Adoration of the Magi",
+   "artist": "Quentin Metsys",
+   "date": "1526",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "436984",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/436984",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DP-26501-001.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/436984 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Quentin Metsys, L’Adoration des mages, 1526 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.48,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 419,
+    "y": 80,
+    "w": 2227,
+    "h": 3840,
+    "sourceWidth": 3192,
+    "sourceHeight": 4000
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 128950,
+    "thumb": 12120
+   },
+   "sha256": {
+    "full": "204714012bf0f92e906e1f76b834478049bc89ccb1a192a4281ff9595397b1c8",
+    "thumb": "cfc185307ed5c3570d84818a854d757bf1df6b6c6c700340b7d01c71f55ff656"
+   },
+   "themes": [
+    "noel"
+   ],
+   "seasons": [
+    "CHRISTMAS"
+   ],
+   "feasts": [
+    "epiphany_of_the_lord"
+   ],
+   "prayer": "Oraison de l’Épiphanie"
+  },
+  {
+   "id": "mellan_sainte_face",
+   "title": {
+    "fr": "La Sainte Face"
+   },
+   "work": "La Sainte Face (le voile de Véronique)",
+   "originalTitle": "The Sudarium of Saint Veronica",
+   "artist": "Claude Mellan",
+   "date": "1649",
+   "institution": "Art Institute of Chicago",
+   "objectId": "47146",
+   "sourceUrl": "https://www.artic.edu/artworks/47146",
+   "imageUrl": "https://www.artic.edu/iiif/2/334417fe-d2b8-3d04-323e-ee638726a26c/full/2222,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/47146 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Claude Mellan, La Sainte Face (le voile de Véronique), 1649 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "crop": {
+    "x": 358,
+    "y": 0,
+    "w": 1505,
+    "h": 2595,
+    "sourceWidth": 2222,
+    "sourceHeight": 3000
+   },
+   "width": 626,
+   "height": 1080,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 227410,
+    "thumb": 9492
+   },
+   "sha256": {
+    "full": "decdf57b659f7d1d0f7f014df4aa0eff6cc5c36a6a0b55e3ad3d69e2dfe6b6b2",
+    "thumb": "d7343dde799448cde118ce75f5fa0012f3ea5b05115b851b856bab344309672d"
+   },
+   "themes": [
+    "passion",
+    "sainte_face"
+   ],
+   "seasons": [
+    "LENT"
+   ],
+   "feasts": [],
+   "prayer": "Prière à la Sainte Face"
+  },
+  {
+   "id": "memling_vierge",
+   "title": {
+    "fr": "Vierge à l’Enfant"
+   },
+   "work": "Vierge à l’Enfant",
+   "originalTitle": "Virgin and Child",
+   "artist": "Hans Memling",
+   "date": "v. 1485",
+   "institution": "Art Institute of Chicago",
+   "objectId": "16295",
+   "sourceUrl": "https://www.artic.edu/artworks/16295",
+   "imageUrl": "https://www.artic.edu/iiif/2/72083f93-6fe2-bfa8-b9a0-82e50c123015/full/2322,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/16295 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Hans Memling, Vierge à l’Enfant, v. 1485 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 292,
+    "y": 0,
+    "w": 1739,
+    "h": 2998,
+    "sourceWidth": 2322,
+    "sourceHeight": 2998
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 103850,
+    "thumb": 9182
+   },
+   "sha256": {
+    "full": "446a752155caebd8a87eb0030bcab1b062cd330f94c63abc9a63a76bc7d97137",
+    "thumb": "df42e4027ba985beb4945f04bcebc7cff2b53e593b9e7040384ae24636652e50"
+   },
+   "themes": [
+    "vierge"
+   ],
+   "seasons": [
+    "ADVENT",
+    "CHRISTMAS",
+    "ORDINARY"
+   ],
+   "feasts": [],
+   "prayer": "Souvenez-vous"
+  },
+  {
+   "id": "messe_saint_gregoire",
+   "title": {
+    "fr": "Le Saint-Sacrement"
+   },
+   "work": "La Messe de saint Grégoire",
+   "originalTitle": "The Mass of Saint Gregory",
+   "artist": "Peintre espagnol",
+   "date": "v. 1485-1495",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "437722",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/437722",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DT10252.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/437722 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Peintre espagnol, La Messe de saint Grégoire, v. 1485-1495 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.48,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 551,
+    "y": 260,
+    "w": 1770,
+    "h": 3051,
+    "sourceWidth": 2991,
+    "sourceHeight": 3721
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 173694,
+    "thumb": 18558
+   },
+   "sha256": {
+    "full": "3c03780a9208d4a5cda364d7d7a555e2fe63c5318c14bd1f1489b76ff25420ab",
+    "thumb": "ab478b1079d04383bfb8ef6791feddc16edb7ed4b3f6e304c8dc157d1adbc460"
+   },
+   "themes": [
+    "eucharistie"
+   ],
+   "seasons": [
+    "ORDINARY"
+   ],
+   "feasts": [
+    "most_holy_body_and_blood_of_christ",
+    "thursday_of_the_lords_supper"
+   ],
+   "prayer": "Adoro te devote"
+  },
+  {
+   "id": "murillo_saint_joseph",
+   "title": {
+    "fr": "Saint Joseph"
+   },
+   "work": "Saint Joseph et l’Enfant Jésus endormi",
+   "originalTitle": "Saint Joseph and the Sleeping Christ Child",
+   "artist": "Bartolomé Esteban Murillo",
+   "date": "1670-1675",
+   "institution": "Art Institute of Chicago",
+   "objectId": "148802",
+   "sourceUrl": "https://www.artic.edu/artworks/148802",
+   "imageUrl": "https://www.artic.edu/iiif/2/765d2792-45db-7bd9-1d9e-627b61375f62/full/1929,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/148802 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Bartolomé Esteban Murillo, Saint Joseph et l’Enfant Jésus endormi, 1670-1675 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.57,
+    "y": 0.47
+   },
+   "crop": {
+    "x": 568,
+    "y": 148,
+    "w": 1064,
+    "h": 1834,
+    "sourceWidth": 1929,
+    "sourceHeight": 2265
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 171494,
+    "thumb": 14802
+   },
+   "sha256": {
+    "full": "39c5f5baa5091de25cf4dc690833f6722ed45423b207840f02d80264e7517c9b",
+    "thumb": "3d323437eded9d47388db4665d1fc8a822c86d668dbfcb369a9e7be820eddeb0"
+   },
+   "themes": [
+    "saints"
+   ],
+   "seasons": [
+    "LENT",
+    "EASTER"
+   ],
+   "feasts": [
+    "joseph_spouse_of_mary",
+    "joseph_the_worker"
+   ],
+   "prayer": "À vous, bienheureux Joseph"
+  },
+  {
+   "id": "orley_pentecote",
+   "title": {
+    "fr": "La Pentecôte"
+   },
+   "work": "La Pentecôte",
+   "originalTitle": "Pentecost",
+   "artist": "Atelier de Bernard van Orley",
+   "date": "v. 1520",
+   "institution": "Art Institute of Chicago",
+   "objectId": "41217",
+   "sourceUrl": "https://www.artic.edu/artworks/41217",
+   "imageUrl": "https://www.artic.edu/iiif/2/3c7ee4ec-96a8-553a-1010-06b1619c01d2/full/1761,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/41217 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Atelier de Bernard van Orley, La Pentecôte, v. 1520 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.55,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 316,
+    "y": 0,
+    "w": 1305,
+    "h": 2250,
+    "sourceWidth": 1761,
+    "sourceHeight": 2250
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 109182,
+    "thumb": 10608
+   },
+   "sha256": {
+    "full": "58e478f6a2a2700e75f394dddd3b233295e8a95ecf8bf00c76283041fa945abc",
+    "thumb": "1e655f8648648e45780cd5c390068ce401d6257ac8d658ec1262eacbaa06f015"
+   },
+   "themes": [
+    "pentecote",
+    "vierge"
+   ],
+   "seasons": [
+    "PENTECOST"
+   ],
+   "feasts": [
+    "pentecost_sunday"
+   ],
+   "prayer": "Veni Creator"
+  },
+  {
+   "id": "perugin_saint_jean_baptiste",
+   "title": {
+    "fr": "Saint Jean-Baptiste"
+   },
+   "work": "Saint Jean-Baptiste",
+   "originalTitle": "Saint John the Baptist; Saint Lucy",
+   "artist": "Le Pérugin",
+   "date": null,
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "437273",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/437273",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DP-18296-029.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/437273 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Le Pérugin, Saint Jean-Baptiste · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.42
+   },
+   "crop": {
+    "x": 45,
+    "y": 244,
+    "w": 1665,
+    "h": 2871,
+    "sourceWidth": 1781,
+    "sourceHeight": 4000
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 47190,
+    "thumb": 5030
+   },
+   "sha256": {
+    "full": "f1d91d65ccfa12b4136473ad6a98f5324f6ac692f66452eafcf415b7fdc77359",
+    "thumb": "2475eb588b9582623d78e534b177c85582c01d29c49a4d7c79cdb5f25414f6f5"
+   },
+   "themes": [
+    "saints"
+   ],
+   "seasons": [
+    "ADVENT",
+    "ORDINARY"
+   ],
+   "feasts": [
+    "nativity_of_john_the_baptist"
+   ],
+   "prayer": "Benedictus"
+  },
+  {
+   "id": "reni_immaculee_conception",
+   "title": {
+    "fr": "L’Immaculée Conception"
+   },
+   "work": "L’Immaculée Conception",
+   "originalTitle": "The Immaculate Conception",
+   "artist": "Guido Reni",
+   "date": "1627",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "437423",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/437423",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DT1138.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/437423 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Guido Reni, L’Immaculée Conception, 1627 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 219,
+    "y": 0,
+    "w": 2159,
+    "h": 3722,
+    "sourceWidth": 2597,
+    "sourceHeight": 3722
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 61038,
+    "thumb": 8200
+   },
+   "sha256": {
+    "full": "e09edfcff3cb745e7e2b45fe23fb4e562d4c7eb57ab841834b64f8a0fcee1e5c",
+    "thumb": "32e2b249de7664a45b8b4477f92fc844727bea1f628fc21b96460710bfa72194"
+   },
+   "themes": [
+    "vierge"
+   ],
+   "seasons": [
+    "ADVENT"
+   ],
+   "feasts": [
+    "immaculate_conception_of_the_blessed_virgin_mary"
+   ],
+   "prayer": "Ô Marie conçue sans péché"
+  },
+  {
+   "id": "rubens_saint_francois",
+   "title": {
+    "fr": "Saint François d’Assise"
+   },
+   "work": "Saint François",
+   "originalTitle": "Saint Francis",
+   "artist": "Pierre Paul Rubens",
+   "date": "v. 1615",
+   "institution": "Art Institute of Chicago",
+   "objectId": "100342",
+   "sourceUrl": "https://www.artic.edu/artworks/100342",
+   "imageUrl": "https://www.artic.edu/iiif/2/fa4dd0f2-382c-076c-ff20-c59a2774400c/full/2150,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/100342 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Pierre Paul Rubens, Saint François, v. 1615 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.56,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 335,
+    "y": 0,
+    "w": 1739,
+    "h": 2998,
+    "sourceWidth": 2150,
+    "sourceHeight": 2998
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 42106,
+    "thumb": 4768
+   },
+   "sha256": {
+    "full": "e7d61679452c8b14dd86cba712fe06473099c8c2b0281c9ad2ce5c884a7c681e",
+    "thumb": "252dcddc042b1a4b7c1b6d61992667d54f75ece56ce2a7021ea98efe9c2a2f58"
+   },
+   "themes": [
+    "saints"
+   ],
+   "seasons": [
+    "ORDINARY"
+   ],
+   "feasts": [
+    "francis_of_assisi"
+   ],
+   "prayer": "Prière devant le crucifix de Saint-Damien"
+  },
+  {
+   "id": "sacre_coeur_ange",
+   "title": {
+    "fr": "Le Cœur de Jésus"
+   },
+   "work": "Le Sacré-Cœur sur un linge tenu par un ange",
+   "originalTitle": "The Sacred Heart on a Cloth Held by an Angel",
+   "artist": "Anonyme de Nuremberg",
+   "date": "v. 1480-1490",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "337750",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/337750",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/dp/original/DT247597.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/337750 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Anonyme de Nuremberg, Le Sacré-Cœur sur un linge tenu par un ange, v. 1480-1490 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 741,
+    "y": 584,
+    "w": 1496,
+    "h": 2579,
+    "sourceWidth": 2978,
+    "sourceHeight": 3722
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 157378,
+    "thumb": 17390
+   },
+   "sha256": {
+    "full": "a350d5f90f05fd8c565205a27dddff7bb9409ffe4cb773e931dbf77f5cdd16af",
+    "thumb": "c15caf6ae039b63fa1f5472e5bd0594b572d5aaaa28c1f2af681e7191ddc49d0"
+   },
+   "themes": [
+    "sacre_coeur",
+    "anges"
+   ],
+   "seasons": [
+    "ORDINARY"
+   ],
+   "feasts": [
+    "most_sacred_heart_of_jesus"
+   ],
+   "prayer": "Litanies du Sacré-Cœur"
+  },
+  {
+   "id": "sassetta_annonciation",
+   "title": {
+    "fr": "L’Annonciation"
+   },
+   "work": "L’Annonciation",
+   "originalTitle": "The Annunciation",
+   "artist": "Sassetta",
+   "date": "1437-1444",
+   "institution": "The Metropolitan Museum of Art",
+   "objectId": "458966",
+   "sourceUrl": "https://www.metmuseum.org/art/collection/search/458966",
+   "imageUrl": "https://images.metmuseum.org/CRDImages/rl/original/DP152118.jpg",
+   "licence": "CC0",
+   "licenceEvidence": "collectionapi.metmuseum.org/public/collection/v1/objects/458966 : isPublicDomain = true (Open Access, CC0)",
+   "licenceChecked": "2026-10-11",
+   "credit": "Sassetta, L’Annonciation, 1437-1444 · The Metropolitan Museum of Art · CC0",
+   "focal": {
+    "x": 0.5,
+    "y": 0.5
+   },
+   "crop": {
+    "x": 211,
+    "y": 0,
+    "w": 1921,
+    "h": 3313,
+    "sourceWidth": 2344,
+    "sourceHeight": 3722
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 164732,
+    "thumb": 11412
+   },
+   "sha256": {
+    "full": "fb27445fb1d45e93cbea44ed92125b324ed2df2434de4bc198adf1544f98151f",
+    "thumb": "5205e9158f48b61191bfd468ea5396afa6260068fce616d91641de290bf01c7e"
+   },
+   "themes": [
+    "vierge",
+    "anges"
+   ],
+   "seasons": [
+    "ADVENT",
+    "LENT"
+   ],
+   "feasts": [
+    "annunciation_of_the_lord"
+   ],
+   "prayer": "Angelus"
+  },
+  {
+   "id": "zurbaran_crucifixion",
+   "title": {
+    "fr": "Le Christ en croix"
+   },
+   "work": "La Crucifixion",
+   "originalTitle": "The Crucifixion",
+   "artist": "Francisco de Zurbarán",
+   "date": "1627",
+   "institution": "Art Institute of Chicago",
+   "objectId": "80084",
+   "sourceUrl": "https://www.artic.edu/artworks/80084",
+   "imageUrl": "https://www.artic.edu/iiif/2/c8ee825f-bc8c-c76b-1f05-5d692d9a6b47/full/1699,/0/default.jpg",
+   "licence": "domaine-public",
+   "licenceEvidence": "api.artic.edu/api/v1/artworks/80084 : is_public_domain = true, copyright_notice = null",
+   "licenceChecked": "2026-10-11",
+   "credit": "Francisco de Zurbarán, La Crucifixion, 1627 · Art Institute of Chicago · domaine public",
+   "focal": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 1699,
+    "h": 2929,
+    "sourceWidth": 1699,
+    "sourceHeight": 2997
+   },
+   "width": 835,
+   "height": 1440,
+   "thumbWidth": 209,
+   "thumbHeight": 360,
+   "bytes": {
+    "full": 17090,
+    "thumb": 2304
+   },
+   "sha256": {
+    "full": "2727a4ee786ffb468e7985bc0e8e1b4547262f9e3615b940bdc9a51de489e23b",
+    "thumb": "9dffb8ae4c071fdcf7dc142f986c00b6d2ed853a5693d3c14be1c6a2a5a732da"
+   },
+   "themes": [
+    "passion"
+   ],
+   "seasons": [
+    "PASSIONTIDE"
+   ],
+   "feasts": [
+    "friday_of_the_passion_of_the_lord",
+    "exaltation_of_the_holy_cross"
+   ],
+   "prayer": "Prière devant le crucifix (En ego)"
+  }
+ ]
+}

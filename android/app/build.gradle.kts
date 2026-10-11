@@ -54,8 +54,38 @@ val buildContentPacks = tasks.register<BuildContentPacks>("buildContentPacks") {
     outputDir.set(layout.buildDirectory.dir("generated/content-packs"))
 }
 
+/** Images pieuses CC0 (rapport 09, §3.2.3) : copiées telles quelles de content/data/images vers assets/images/. */
+abstract class CopyPiousImages : DefaultTask() {
+    @get:InputDirectory
+    @get:Optional
+    @get:PathSensitive(PathSensitivity.RELATIVE)
+    abstract val source: DirectoryProperty
+
+    @get:OutputDirectory
+    abstract val outputDir: DirectoryProperty
+
+    @get:Inject
+    abstract val fs: FileSystemOperations
+
+    @TaskAction
+    fun copy() {
+        fs.sync {
+            from(source) { include("catalog.json", "*.webp", "thumbs/*.webp") }
+            into(outputDir.dir("images"))
+        }
+    }
+}
+
+val copyPiousImages = tasks.register<CopyPiousImages>("copyPiousImages") {
+    source.set(content.dir("data/images").takeIf { it.asFile.isDirectory })
+    outputDir.set(layout.buildDirectory.dir("generated/pious-images"))
+}
+
 androidComponents {
-    onVariants { variant -> variant.sources.assets?.addGeneratedSourceDirectory(buildContentPacks, BuildContentPacks::outputDir) }
+    onVariants { variant ->
+        variant.sources.assets?.addGeneratedSourceDirectory(buildContentPacks, BuildContentPacks::outputDir)
+        variant.sources.assets?.addGeneratedSourceDirectory(copyPiousImages, CopyPiousImages::outputDir)
+    }
 }
 
 // Clé de publication hors du dépôt, comme pour les autres projets (~/.gradle/gradle.properties). Absente : APK release non signé.
@@ -71,8 +101,8 @@ android {
         applicationId = "app.paroissien" // figé (ADR 002) : ne plus changer après la première installation
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 6
-        versionName = "0.4.0"
+        versionCode = 7
+        versionName = "0.5.0"
     }
 
     // ADR 001 : seule « domainePublic » est construite par la CI publique ; « personnel » peut embarquer

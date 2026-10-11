@@ -23,6 +23,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalResources
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation3.runtime.NavKey
@@ -75,6 +76,7 @@ fun BookmarksScreen(graph: AppGraph, open: (NavKey) -> Unit) {
 
     Screen(stringResource(R.string.tab_bookmarks)) {
         val lib = library
+        if (graph.images.all.isNotEmpty()) item(key = "images") { BookRow(stringResource(R.string.images_box), pluralStringResource(R.plurals.images_box_detail, graph.images.all.size, graph.images.all.size)) { open(ImageBoxKey) } }
         if (ribbons.isEmpty() && positions.isEmpty()) item { Note(stringResource(R.string.bookmarks_empty)) }
 
         ribbons.groupBy { it.publication }.forEach { (publication, placed) ->

@@ -52,6 +52,16 @@ import app.paroissien.core.reading.book.BookReader
 import app.paroissien.core.reading.book.BookTypography
 import app.paroissien.core.reading.book.ReadingBlock
 import app.paroissien.core.reading.book.RibbonMark
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.ui.layout.ContentScale
+import androidx.navigation3.runtime.NavKey
+import app.paroissien.core.data.CardPlacement
+import app.paroissien.core.reading.book.CardMark
 import app.paroissien.core.reading.book.packToReadingBlocks
 import app.paroissien.core.reading.turn.MekuriConfiguration
 import app.paroissien.library.LibraryEntry
@@ -62,16 +72,16 @@ import kotlinx.coroutines.withContext
 import java.util.Locale
 import kotlin.math.sign
 
-private enum class Panel { CHROME, TOC, RIBBONS, SETTINGS }
+private enum class Panel { CHROME, TOC, RIBBONS, IMAGES, SETTINGS }
 
 private class Loaded(val unit: String?, val language: String, val blocks: List<ReadingBlock>)
 
 /**
  * Le lecteur : ouvre la publication à sa position enregistrée, la garde à jour à chaque page, enchaîne les unités en
- * tournant la page au bord du livre. Toucher le milieu ouvre la barre : sommaire, rubans, réglages.
+ * tournant la page au bord du livre. Toucher le milieu ouvre la barre : sommaire, rubans, images, prière, réglages.
  */
 @Composable
-fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, onBack: () -> Unit) {
+fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open: (NavKey) -> Unit, onBack: () -> Unit) {
     val library by graph.library.collectAsState()
     val isDemo = key.publication == DEMO
     val entry = library?.entry(key.publication)
@@ -120,6 +130,17 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, onBa
             else -> RibbonMark(r.slot, null, elsewhere = (index - unitIndex).sign)
         }
     }
+    val cardFlow = remember(publication) { if (isDemo) flowOf(emptyList()) else graph.database.cards().observe(publication) }
+    val cards by cardFlow.collectAsState(initial = emptyList())
+    val cardMarks = cards.mapNotNull { c ->
+        val index = units.indexOfFirst { it.id == c.unit }
+        val image = graph.images[c.card] ?: return@mapNotNull null
+        when {
+            index < 0 -> null
+            c.unit == unitId -> CardMark(c.card, Anchor(c.block, c.charOffset), image = graph.images.thumbnail(c.card), label = image.title.fr)
+            else -> CardMark(c.card, null, elsewhere = (index - unitIndex).sign, image = graph.images.thumbnail(c.card), label = image.title.fr)
+        }
+    }
 
     fun openAt(unit: String?, block: String?, offset: Int, end: Boolean = false) {
         // Le début de l'unité déjà ouverte : une ancre explicite, sinon le lecteur ne bougerait pas.
@@ -158,6 +179,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, onBa
                     onPaginated = { pagination = String.format(Locale.FRANCE, "%d pages · pagination %d ms", it.pages.size, it.elapsedMillis) },
                     ribbons = marks,
                     onRibbonTap = { slot -> ribbons.firstOrNull { it.slot == slot }?.let { openAt(it.unit, it.block, it.charOffset) } },
+                    cards = cardMarks,
+                    onCardTap = { id -> open(CardKey(id)) },
                     onTurnPastEnd = units.getOrNull(unitIndex + 1)?.let { next -> { openAt(next.id, null, 0) } },
                     onTurnPastStart = units.getOrNull(unitIndex - 1)?.let { previous -> { openAt(previous.id, null, 0, end = true) } },
                     initialAtEnd = atEnd,
@@ -171,6 +194,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, onBa
                 onBack = onBack,
                 onToc = { panel = Panel.TOC }.takeIf { entry != null },
                 onRibbons = { panel = Panel.RIBBONS }.takeIf { !isDemo && entry != null },
+                onImages = { panel = Panel.IMAGES }.takeIf { !isDemo && entry != null && graph.images.all.isNotEmpty() },
+                onPray = { open(PrayerKey(publication.takeIf { !isDemo }, unitId, anchorBlock)) },
                 onSettings = { panel = Panel.SETTINGS },
                 modifier = Modifier.align(Alignment.TopCenter),
             )
@@ -186,6 +211,20 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, onBa
                     }
                 },
                 onRemove = { slot -> graph.scope.launch(Dispatchers.IO) { graph.database.ribbons().remove(publication, slot) } },
+                onClose = { panel = null },
+                modifier = Modifier.align(Alignment.BottomCenter),
+            )
+            Panel.IMAGES -> ImagePanel(
+                graph = graph,
+                placedHere = cards.map { it.card }.toSet(),
+                onPlace = { card ->
+                    val here = unitId
+                    val block = anchorBlock ?: blocks?.firstOrNull()?.id
+                    if (here != null && block != null) graph.scope.launch(Dispatchers.IO) {
+                        graph.database.cards().place(CardPlacement(card, publication, here, block, anchorOffset, null, System.currentTimeMillis()))
+                    }
+                },
+                onRemove = { card -> graph.scope.launch(Dispatchers.IO) { graph.database.cards().remove(card) } },
                 onClose = { panel = null },
                 modifier = Modifier.align(Alignment.BottomCenter),
             )
@@ -206,13 +245,15 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, onBa
 }
 
 @Composable
-private fun Chrome(title: String, onBack: () -> Unit, onToc: (() -> Unit)?, onRibbons: (() -> Unit)?, onSettings: () -> Unit, modifier: Modifier) {
+private fun Chrome(title: String, onBack: () -> Unit, onToc: (() -> Unit)?, onRibbons: (() -> Unit)?, onImages: (() -> Unit)?, onPray: () -> Unit, onSettings: () -> Unit, modifier: Modifier) {
     Surface(modifier.fillMaxWidth().windowInsetsPadding(WindowInsets.safeDrawing), shadowElevation = 4.dp) {
         Row(Modifier.padding(horizontal = 4.dp, vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
             TextButton(onClick = onBack, modifier = Modifier.semantics { contentDescription = "Retour à la bibliothèque" }) { Text("‹") }
             Text(title, style = MaterialTheme.typography.titleSmall, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f))
             onToc?.let { TextButton(onClick = it) { Text(stringResource(R.string.reader_toc)) } }
             onRibbons?.let { TextButton(onClick = it) { Text(stringResource(R.string.reader_ribbons)) } }
+            onImages?.let { TextButton(onClick = it) { Text(stringResource(R.string.reader_images)) } }
+            TextButton(onClick = onPray) { Text(stringResource(R.string.reader_pray)) }
             TextButton(onClick = onSettings) { Text(stringResource(R.string.reader_settings)) }
         }
     }
@@ -262,6 +303,29 @@ private fun RibbonPanel(
                             overflow = TextOverflow.Ellipsis,
                             modifier = Modifier.size(width = 52.dp, height = 16.dp),
                         )
+                    }
+                }
+            }
+        }
+    }
+}
+
+/** La boîte à images, ouverte dans le livre : toucher glisse la carte à la page ; appui long la remet dans la boîte. */
+@OptIn(ExperimentalFoundationApi::class)
+@Composable
+private fun ImagePanel(graph: AppGraph, placedHere: Set<String>, onPlace: (String) -> Unit, onRemove: (String) -> Unit, onClose: () -> Unit, modifier: Modifier) {
+    Surface(modifier.fillMaxWidth().windowInsetsPadding(WindowInsets.safeDrawing), shadowElevation = 6.dp) {
+        Column(Modifier.padding(vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            Text(stringResource(R.string.images_hint), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary, modifier = Modifier.padding(horizontal = 16.dp))
+            LazyRow(contentPadding = PaddingValues(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                items(graph.images.all, key = { it.id }) { image ->
+                    Column(
+                        Modifier.width(64.dp).combinedClickable(onClick = { onPlace(image.id); onClose() }, onLongClick = { onRemove(image.id) }),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                    ) {
+                        graph.images.thumbnail(image.id)?.let {
+                            Image(it, contentDescription = image.title.fr, contentScale = ContentScale.Crop, modifier = Modifier.width(56.dp).aspectRatio(0.58f).border(if (image.id in placedHere) 2.dp else 0.dp, LocalPaperColors.current.rubric))
+                        }
                     }
                 }
             }

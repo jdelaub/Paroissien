@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Paroissien</string>
 
+    <string name="tab_today">Aujourd\'hui</string>
     <string name="tab_library">Bibliothèque</string>
     <string name="tab_bookmarks">Signets</string>
     <string name="tab_search">Recherche</string>
@@ -26,6 +27,9 @@
     <string name="reader_toc_of">Sommaire · %1$s</string>
     <string name="reader_ribbons">Rubans</string>
     <string name="reader_settings">Aa</string>
+    <string name="reader_images">Images</string>
+    <string name="reader_pray">Prier</string>
+    <string name="images_hint">Toucher une image la glisse à cette page ; un appui long la remet dans la boîte.</string>
     <string name="ribbons_hint">Toucher un ruban le place à cette page ; un appui long le retire.</string>
     <string name="ribbon_free">libre</string>
 
@@ -68,4 +72,109 @@
         <item quantity="many">%d éléments repris.</item>
         <item quantity="other">%d éléments repris.</item>
     </plurals>
+
+    <!-- Aujourd'hui et Ordo (rapport 05, §3.5 ; rapport 08, §2.3) -->
+    <string name="ordo_open">Ordo du mois</string>
+    <string name="ordo_title_1962">Ordo · 1962</string>
+    <string name="ordo_title_1969">Ordo · forme ordinaire</string>
+    <string name="rite_1962">1962</string>
+    <string name="rite_1969">Forme ordinaire</string>
+    <string name="today_resume">Reprendre</string>
+    <string name="today_image">Image du jour</string>
+    <string name="today_meditation">Méditation</string>
+    <string name="calendar_settings">Calendrier</string>
+    <string name="setting_external">Solennités extérieures (1962)</string>
+    <string name="setting_traditional">Discipline traditionnelle du jeûne (facultative)</string>
+    <string name="color_white">Blanc</string>
+    <string name="color_red">Rouge</string>
+    <string name="color_green">Vert</string>
+    <string name="color_violet">Violet</string>
+    <string name="color_rose">Rose</string>
+    <string name="color_black">Noir</string>
+    <string name="color_gold">Or</string>
+    <string name="color_or">" ou "</string>
+    <string name="season_advent">Temps de l\'Avent</string>
+    <string name="season_christmas">Temps de Noël</string>
+    <string name="season_lent">Carême</string>
+    <string name="season_triduum">Triduum pascal</string>
+    <string name="season_easter">Temps pascal</string>
+    <string name="season_ordinary">Temps ordinaire</string>
+    <string name="season_after_epiphany">Temps après l\'Épiphanie</string>
+    <string name="season_septuagesima">Temps de la Septuagésime</string>
+    <string name="season_passiontide">Temps de la Passion</string>
+    <string name="season_after_pentecost">Temps après la Pentecôte</string>
+    <string name="rank_solemnity">Solennité</string>
+    <string name="rank_feast">Fête</string>
+    <string name="rank_memorial">Mémoire</string>
+    <string name="rank_optional_memorial">Mémoire facultative</string>
+    <string name="rank_sunday">Dimanche</string>
+    <string name="rank_weekday">Férie</string>
+    <string name="rank_commemoration">Commémoraison</string>
+    <string name="class_1">Iʳᵉ classe</string>
+    <string name="class_2">IIᵉ classe</string>
+    <string name="class_3">IIIᵉ classe</string>
+    <string name="class_4">IVᵉ classe</string>
+    <string name="rank_sunday_class">Dimanche de %1$s</string>
+    <string name="rank_feria_class">Férie de %1$s</string>
+    <string name="rank_vigil_class">Vigile de %1$s</string>
+    <string name="rank_octave_class">Jour dans l\'octave, %1$s</string>
+    <string name="rank_feast_class">Fête de %1$s</string>
+    <string name="rank_external">Solennité extérieure</string>
+    <string name="cycles">Année %1$s · féries %2$s · psautier, semaine %3$d</string>
+    <string name="transferred_from">Transférée du %1$s</string>
+    <string name="external_solemnity_note">%1$s : messe votive de IIᵉ classe permise</string>
+    <string name="commemoration_of">Commémoraison : %1$s</string>
+    <string name="optional_memorials">Mémoires facultatives</string>
+    <string name="obligation">Précepte : %1$s</string>
+    <string name="penance_fast_abstinence">Jeûne et abstinence (c. 1251)</string>
+    <string name="penance_friday_substitutable">Vendredi : abstinence de viande, ou un autre acte de pénitence (c. 1251, CEF)</string>
+    <string name="penance_abstinence">Abstinence de viande (c. 1251)</string>
+    <string name="tradition_fast_abstinence">jeûne et abstinence</string>
+    <string name="tradition_fast">jeûne</string>
+    <string name="tradition_abstinence">abstinence</string>
+    <string name="tradition_line">Discipline traditionnelle (facultative) : %1$s · %2$s</string>
+    <string name="mark_obligation">fête d\'obligation</string>
+    <string name="mark_fast">jeûne</string>
+    <string name="mark_abstinence">abstinence</string>
+    <string name="mark_ember">Quatre-Temps</string>
+
+    <!-- Temps de prière (rapport 08, §2.10) -->
+    <string name="prayer_mode_name">Temps de prière</string>
+    <string name="prayer_mode_trigger">Pendant une séance de prière dans Paroissien</string>
+    <string name="prayer_title">Temps de prière</string>
+    <string name="prayer_start_short">Temps de prière · %1$d min</string>
+    <string name="prayer_duration">Durée</string>
+    <string name="minutes">%1$d min</string>
+    <string name="prayer_bells">Cloche au début et à la fin</string>
+    <string name="prayer_dnd">Ne pas déranger</string>
+    <string name="prayer_dnd_granted">Alarmes, contacts favoris et appels répétés passent ; le reste se tait jusqu\'à la fin.</string>
+    <string name="prayer_dnd_missing">Paroissien n\'a pas l\'accès « Ne pas déranger » : la séance aura lieu quand même.</string>
+    <string name="prayer_dnd_allow">Autoriser dans les réglages</string>
+    <string name="prayer_grayscale">Écran en niveaux de gris</string>
+    <string name="prayer_begin">Commencer</string>
+    <string name="prayer_end_confirm">Terminer le temps de prière ?</string>
+    <string name="prayer_end">Terminer</string>
+    <string name="prayer_continue">Continuer</string>
+    <string name="prayer_paused">En pause · %1$d min</string>
+    <string name="prayer_left">%1$d min</string>
+    <string name="prayer_pause">Pause</string>
+    <string name="prayer_resume">Reprendre</string>
+    <string name="prayer_more">+5 min</string>
+    <string name="prayer_time_toggle">Temps</string>
+    <string name="prayer_ended">Fin du temps de prière</string>
+    <string name="prayer_back_to_text">Revenir au texte</string>
+    <string name="prayer_close">Fermer</string>
+
+    <!-- Images pieuses (rapport 09, §3.2) -->
+    <string name="images_box">Boîte à images</string>
+    <plurals name="images_box_detail">
+        <item quantity="one">%d image pieuse</item>
+        <item quantity="many">%d images pieuses</item>
+        <item quantity="other">%d images pieuses</item>
+    </plurals>
+    <string name="card_flip_hint">Toucher la carte pour la retourner.</string>
+    <string name="card_placed_in">Dans « %1$s », %2$s</string>
+    <string name="card_open_page">Ouvrir à cette page</string>
+    <string name="card_to_box">Remettre dans la boîte</string>
+    <string name="card_slip_into">Glisser dans « %1$s »</string>
 </resources>
