@@ -34,6 +34,14 @@ cd android && JAVA_HOME=~/Android/jdk-21 ./gradlew :core:designsystem:recordRobo
 cd content && python3 -I run_tests.py
 ```
 
+Pour livrer un APK de test, montez d'abord `versionName` et `versionCode`. Le script dépose le debug et la release dans `~/VM-Exchange/APK/Paroissien/` :
+
+```bash
+tools/deliver-apk.sh
+```
+
+Autre possibilité, installer directement l'APK de la CI par adb :
+
 ```bash
 tools/install-ci-apk.sh
 ```
