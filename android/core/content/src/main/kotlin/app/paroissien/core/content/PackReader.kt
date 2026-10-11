@@ -71,6 +71,52 @@ class PackReader private constructor(private val connection: SQLiteConnection) :
         return out
     }
 
+    /**
+     * Sommaire d'une publication : chaque unité, puis ses titres de niveau 1 et 2, dans l'ordre de lecture.
+     * Le titre est pris dans [language] s'il existe, sinon dans la langue principale.
+     */
+    fun toc(publication: String, language: String): List<TocEntry> {
+        val pub = publications().firstOrNull { it.id == publication } ?: return emptyList()
+        val headings = query(
+            "SELECT d.id, b.id, b.attrs, t.lang, t.inlines FROM block b" +
+                " JOIN publication p ON b.pub = p.rowid JOIN division d ON b.unit = d.rowid" +
+                " JOIN block_text t ON t.block = b.rowid" +
+                " WHERE p.id = ? AND b.type = 'heading' ORDER BY b.seq",
+            publication,
+        ) { HeadingRow(it.getText(0), it.getText(1), if (it.isNull(2)) null else it.getText(2), it.getText(3), it.getText(4)) }
+            .groupBy { it.block }
+            .values.map { rows -> rows.firstOrNull { it.lang == language } ?: rows.firstOrNull { it.lang == pub.primaryLanguage } ?: rows.first() }
+        val byUnit = headings.groupBy { it.unit }
+        return units(publication).flatMap { unit ->
+            listOf(TocEntry(unit.id, null, 0, unit.title ?: unit.id)) +
+                byUnit[unit.id].orEmpty().mapNotNull { row ->
+                    val level = row.attrs?.let { json.parseToJsonElement(it).jsonObject["level"]?.jsonPrimitive?.content?.toIntOrNull() } ?: 1
+                    if (level > 2) null else TocEntry(unit.id, row.block, level, Inlines.plainText(Inlines.parse(row.inlines)))
+                }
+        }
+    }
+
+    /** Passages qui contiennent tous les mots de [input] (le dernier en préfixe), du plus pertinent au moins pertinent. */
+    fun search(input: String, limit: Int = 50): List<SearchHit> {
+        val match = SearchQuery.match(input) ?: return emptyList()
+        val hits = query(
+            "SELECT p.id, d.id, b.id, s.lang, b.type, t.inlines FROM search_fts f" +
+                " JOIN search_doc s ON s.rowid = f.rowid JOIN block b ON b.rowid = s.block" +
+                " JOIN publication p ON b.pub = p.rowid JOIN division d ON b.unit = d.rowid" +
+                " JOIN block_text t ON t.block = b.rowid AND t.lang = s.lang" +
+                " WHERE search_fts MATCH ? ORDER BY bm25(search_fts, 4.0, 1.0) LIMIT $limit",
+            match,
+        ) { Hit(it.getText(0), it.getText(1), it.getText(2), it.getText(3), it.getText(4), it.getText(5)) }
+        return hits.map { hit ->
+            val text = Inlines.plainText(Inlines.parse(hit.inlines))
+            SearchHit(hit.pub, hit.unit, hit.block, hit.lang, hit.type == "heading", text, SearchQuery.highlights(text, input))
+        }
+    }
+
+    private class HeadingRow(val unit: String, val block: String, val attrs: String?, val lang: String, val inlines: String)
+
+    private class Hit(val pub: String, val unit: String, val block: String, val lang: String, val type: String, val inlines: String)
+
     private class Row(val id: String, val type: String, val attrs: String?, val lang: String?, val inlines: String?)
 
     private fun <T> query(sql: String, vararg args: String, map: (SQLiteStatement) -> T): List<T> =

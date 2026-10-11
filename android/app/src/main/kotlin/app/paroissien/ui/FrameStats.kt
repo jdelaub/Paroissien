@@ -1,4 +1,4 @@
-package app.paroissien.spike
+package app.paroissien.ui
 
 import android.app.Activity
 import android.content.Context
@@ -33,7 +33,7 @@ import java.util.Locale
  * Toucher le bandeau remet les compteurs à zéro.
  */
 @Composable
-fun FrameStatsHud(extra: String = "", modifier: Modifier = Modifier) {
+fun FrameStatsHud(modifier: Modifier = Modifier, extra: String = "") {
     val view = LocalView.current
     val collector = remember { FrameCollector(capacity = 600) }
     var summary by remember { mutableStateOf("Mesure en cours…") }

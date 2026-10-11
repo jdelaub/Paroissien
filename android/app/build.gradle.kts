@@ -4,6 +4,7 @@ import org.gradle.process.ExecOperations
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.roborazzi)
 }
 
@@ -70,8 +71,8 @@ android {
         applicationId = "app.paroissien" // figé (ADR 002) : ne plus changer après la première installation
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 5
-        versionName = "0.3.1"
+        versionCode = 6
+        versionName = "0.4.0"
     }
 
     // ADR 001 : seule « domainePublic » est construite par la CI publique ; « personnel » peut embarquer
@@ -152,6 +153,10 @@ dependencies {
     implementation(project(":core:model"))
     implementation(project(":core:reading"))
     implementation(libs.compose.foundation)
+    implementation(libs.compose.material.icons.core)
+    implementation(libs.androidx.navigation3.runtime)
+    implementation(libs.androidx.navigation3.ui)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.metrics.performance)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)

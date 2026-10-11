@@ -40,6 +40,9 @@ internal class MekuriPagerController(
     /** Plays a cue; written by the pager each composition. */
     var onHaptic: (MekuriHaptic) -> Unit = {}
 
+    /** Paroissien : un tour demandé au-delà de la première ou de la dernière page (passage à l'unité voisine). */
+    var onBlockedTurn: (MekuriTurn) -> Unit = {}
+
     /** Presented progress of the turn in flight. */
     var progress: Float by mutableFloatStateOf(0f)
 
@@ -99,7 +102,7 @@ internal class MekuriPagerController(
     fun perform(turn: MekuriTurn, liftsFromBottom: Boolean = false, grabY: Float? = null) {
         if (this.turn != null) return
         val begun = this.begin(turn).copy(liftsFromBottom = liftsFromBottom, grabY = grabY, playsHaptics = true)
-        val target = begun.targetIndex ?: return
+        val target = begun.targetIndex ?: return this.onBlockedTurn(turn)
         if (this.reducesMotion) {
             this.state.currentPage = target
             this.onHaptic(MekuriHaptic.Land)
@@ -228,18 +231,19 @@ internal class MekuriPagerController(
         }
         val current = this.turn ?: return
         if (current.phase != MekuriTurnPhase.Dragging) return
+        val axis = MekuriDrag.axis(current.turn, this.direction)
+        val decision = MekuriTurnDecision.resolve(
+            progress = this.edgeTrack(current).releaseProgress(this.progress),
+            velocity = MekuriDrag.projectedVelocity(velocity, axis),
+            configuration = this.configuration,
+        )
         if (current.isBlocked) {
             this.settle(MekuriTurnDecision.Revert)
+            // Paroissien : un geste franc au bord du livre ouvre l'unité voisine.
+            if (decision == MekuriTurnDecision.Commit) this.onBlockedTurn(current.turn)
             return
         }
-        val axis = MekuriDrag.axis(current.turn, this.direction)
-        this.settle(
-            MekuriTurnDecision.resolve(
-                progress = this.edgeTrack(current).releaseProgress(this.progress),
-                velocity = MekuriDrag.projectedVelocity(velocity, axis),
-                configuration = this.configuration,
-            ),
-        )
+        this.settle(decision)
     }
 
     fun dragCancelled() {
@@ -249,7 +253,7 @@ internal class MekuriPagerController(
 
     private fun commitReducedMotionDrag(translation: Offset, velocity: Float, grabY: Float) {
         val turn = MekuriDrag.turn(translation, this.direction) ?: return
-        val target = this.arrangement.turnState(0, turn, this.settledPage).targetIndex ?: return
+        val target = this.arrangement.turnState(0, turn, this.settledPage).targetIndex ?: return this.onBlockedTurn(turn)
         val axis = MekuriDrag.axis(turn, this.direction)
         val track = this.arrangement.edgeTrack(
             turn = turn,

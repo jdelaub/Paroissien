@@ -1,4 +1,4 @@
-package app.paroissien.spike
+package app.paroissien.ui
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
