@@ -8,7 +8,7 @@
 {"id":"tempora-pasc0-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pasc0-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pasc0-6.introit.7","type":"para","t":{"la":["Edúxit Dóminus pópulum suum in exsultatióne, allelúja: et eléctos suos in lætítia, allelúja, allelúja."]}}
-{"id":"tempora-pasc0-6.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pasc0-6.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-pasc0-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-6.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pasc0-6.collecte.1","type":"para","t":{"la":["Concéde, quǽsumus, omnípotens Deus: ut, qui festa paschália venerándo égimus, per hæc contíngere ad gáudia ætérna mereámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc0-6.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-6.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -29,14 +29,14 @@
 {"id":"tempora-pasc0-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-pasc0-6.evangile.2","type":"rubric","t":{"la":["Joannes 20:1-9"],"fr":["Joannes 20:1-9"]}}
 {"id":"tempora-pasc0-6.evangile.3","type":"para","t":{"la":["In illo témpore: Una sábbati, María Magdaléne venit mane, cum adhuc ténebræ essent, ad monuméntum: et vidit lápidem sublátum a monuménto. Cucúrrit ergo, et venit ad Simónem Petrum, et ad álium discípulum, quem amábat Jesus, et dicit illis: Tulérunt Dóminum de monuménto, et nescímus, ubi posuérunt eum. Exiit ergo Petrus et ille álius discípulus, et venérunt ad monuméntum. Currébant autem duo simul, et ille álius discípulus præcucúrrit cítius Petro, et venit primus ad monuméntum. Et cum se inclinásset, vidit pósita linteámina, non tamen introívit. Venit ergo Simon Petrus sequens eum, et introívit in monuméntum, et vidit linteámina pósita, et sudárium, quod fúerat super caput ejus, non cum linteamínibus pósitum, sed separátim involútum in unum locum. Tunc ergo introívit et ille discípulus, qui vénerat primus ad monuméntum: et vidit et crédidit: nondum enim sciébant Scriptúram, quia oportébat eum a mórtuis resúrgere."]}}
-{"id":"tempora-pasc0-6.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-pasc0-6.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"tempora-pasc0-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-6.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pasc0-6.offertoire.1","type":"rubric","t":{"la":["Ps 7:26-27"],"fr":["Ps 7:26-27"]}}
 {"id":"tempora-pasc0-6.offertoire.2","type":"para","t":{"la":["Benedíctus, qui venit in nómine Dómini: benedíximus vobis de domo Dómini: Deus Dóminus, et illúxit nobis, allelúja, allelúja."]}}
 {"id":"tempora-pasc0-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-6.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pasc0-6.secrete.1","type":"para","t":{"la":["Concéde, quǽsumus, Dómine, semper nos per hæc mystéria paschália gratulári: ut contínua nostræ reparatiónis operátio perpétuæ nobis fiat causa lætítiæ. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc0-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pasc0-6.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
+{"id":"tempora-pasc0-6.preface.1","type":"rubric","preface":"pasch","communicantes":"c-pasc1962","hancIgitur":"h-pent","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
 {"id":"tempora-pasc0-6.preface.2","type":"rubric","t":{"fr":["Communicantes et Hanc igitur propres de Pâques (voir aux Préfaces)."]}}
 {"id":"tempora-pasc0-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-6.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pasc0-6.communion.1","type":"rubric","t":{"la":["Gal 3:27"],"fr":["Gal 3:27"]}}

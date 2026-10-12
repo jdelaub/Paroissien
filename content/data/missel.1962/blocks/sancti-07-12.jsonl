@@ -8,7 +8,7 @@
 {"id":"sancti-07-12.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-07-12.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-07-12.introit.7","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
-{"id":"sancti-07-12.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-12.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-07-12.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-07-12.collecte.1","type":"para","t":{"la":["Deus, qui nos beáti Joánnis Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, étiam actiónes imitémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-12.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/07-12o.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saints Nabor et Félix, martyrs"]}}
@@ -28,7 +28,7 @@
 {"id":"sancti-07-12.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-07-12.evangile.2","type":"rubric","t":{"la":["Matt 5:43-48"],"fr":["Matt 5:43-48"]}}
 {"id":"sancti-07-12.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Audístis, quia dictum est: Diliges próximum tuum, et ódio habébis inimícum tuum. Ego autem dico vobis: Dilígite inimícos vestros, ¶ benefácite his, qui odérunt vos, et oráte pro persequéntibus et calumniántibus vos, ut sitis fílii Patris vestri, qui in cœlis est: qui solem suum oriri facit super bonos et malos, et pluit super justos et injústos. Si enim dilígitis eos, qui vos díligunt, quam mercédem habébitis? nonne et publicáni hoc fáciunt? Et si salutavéritis fratres vestros tantum, quid ámplius fácitis? nonne et éthnici hoc fáciunt? Estóte ergo vos perfécti, sicut et Pater vester cœléstis perféctus est."]}}
-{"id":"sancti-07-12.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-12.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-07-12.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-07-12.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
 {"id":"sancti-07-12.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
@@ -37,7 +37,7 @@
 {"id":"sancti-07-12.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/07-12o.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saints Nabor et Félix, martyrs"]}}
 {"id":"sancti-07-12.secrete.c1.1","type":"para","t":{"la":["Múnera plebis tuæ, quǽsumus, Dómine, sanetórum Mártyrum tuórum Nabóris et Felícis fiant grata suffrágiis: et, quorum triúmphis tuo nómini offeruntur, ipsorum digna perficiantur et méritis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-12.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-07-12.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-07-12.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-07-12.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-12.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-07-12.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
 {"id":"sancti-07-12.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}

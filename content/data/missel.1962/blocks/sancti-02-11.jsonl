@@ -8,7 +8,7 @@
 {"id":"sancti-02-11.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-02-11.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-02-11.introit.7","type":"para","t":{"la":["Vidi civitátem sanctam, Jerúsalem novam, descendéntem de cœlo a Deo, parátam sicut sponsam ornátam viro suo."]}}
-{"id":"sancti-02-11.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-11.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-02-11.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-02-11.collecte.1","type":"para","t":{"la":["Deus, qui per immaculátam Vírginis Conceptiónem dignum Filio tuo habitáculum præparásti: súpplices a te quǽsumus; ut, ejúsdem Vírginis Apparitiónem celebrántes, salútem mentis et córporis consequámur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-11.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -27,14 +27,14 @@
 {"id":"sancti-02-11.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-02-11.evangile.2","type":"rubric","t":{"la":["Luc 1:26-31"],"fr":["Luc 1:26-31"]}}
 {"id":"sancti-02-11.evangile.3","type":"para","t":{"la":["In illo témpore: Missus est Angelus Gábriel a Deo in civitátem Galilææ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María. Et ingréssus Angelus ad eam dixit: Ave, grátia plena; Dóminus tecum: benedícta tu in muliéribus. Quæ cum audísset, turbáta est in sermóne ejus: et cogitábat, qualis esset ista salutátio. Et ait Angelus ei: Ne tímeas, María, invenísti enim grátiam apud Deum: ecce, concípies in útero et páries fílium, et vocábis nomen ejus Jesum."]}}
-{"id":"sancti-02-11.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-02-11.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-02-11.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-02-11.offertoire.1","type":"rubric","t":{"la":["Luc 1:28"],"fr":["Luc 1:28"]}}
 {"id":"sancti-02-11.offertoire.2","type":"para","t":{"la":["Ave, grátia plena; Dóminus tecum: benedícta tu in muliéribus."]}}
 {"id":"sancti-02-11.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-02-11.secrete.1","type":"para","t":{"la":["Hóstia laudis, quam tibi, Dómine, per mérita gloriósæ et immaculátæ Vírginis offérimus, sit tibi in odórem suavitátis, et nobis optátam cónferat córporis et ánimæ sanitátem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-11.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-02-11.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in apparitióne »)."]}}
+{"id":"sancti-02-11.preface.1","type":"rubric","preface":"maria","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in apparitióne »)."]}}
 {"id":"sancti-02-11.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-02-11.communion.1","type":"rubric","t":{"la":["Ps 64:10"],"fr":["Ps 64:10"]}}
 {"id":"sancti-02-11.communion.2","type":"para","t":{"la":["Visitásti terram et inebriásti eam, multiplicásti locupletáre eam."]}}

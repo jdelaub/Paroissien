@@ -6,7 +6,7 @@
 {"id":"tempora-quad5-2.introit.3","type":"rubric","t":{"la":["Ps 26:1"],"fr":["Ps 26:1"]}}
 {"id":"tempora-quad5-2.introit.4","type":"para","t":{"la":["Dóminus illuminátio mea et salus mea: quem timebo?"]}}
 {"id":"tempora-quad5-2.introit.5","type":"para","t":{"la":["Exspécta Dóminum, viríliter age: et confortétur cor tuum, et sústine Dóminum."]}}
-{"id":"tempora-quad5-2.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad5-2.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad5-2.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-2.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad5-2.collecte.1","type":"para","t":{"la":["Nostra tibi, Dómine, quǽsumus, sint accépta jejúnia: quæ nos et expiándo grátia tua dignos effíciant; et ad remédia perdúcant ætérna. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad5-2.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-2.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -21,14 +21,14 @@
 {"id":"tempora-quad5-2.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-quad5-2.evangile.2","type":"rubric","t":{"la":["Joann 7:1-13"],"fr":["Joann 7:1-13"]}}
 {"id":"tempora-quad5-2.evangile.3","type":"para","t":{"la":["In illo témpore: Ambulábat Jesus in Galilǽam, non enim volébat in Judǽam ambuláre, quia quærébant eum Judǽi interfícere. Erat autem in próximo dies festus Judæórum, Scenopégia. Dixérunt autem ad eum fratres ejus: Transi hinc, et vade in Judǽam, ut et discípuli tui vídeant ópera tua, quæ facis. Nemo quippe in occúlto quid facit, et quærit ipse in palam esse: si hæc facis, manifésta teipsum mundo. Neque enim fratres ejus credébant in eum. Dixit ergo eis Jesus: Tempus meum nondum advénit: tempus autem vestrum semper est parátum. Non potest mundus odísse vos: me autem odit: quia ego testimónium perhíbeo de illo, quod ópera ejus mala sunt. Vos ascéndite ad diem festum hunc, ego autem non ascéndo ad diem festum istum: quia meum tempus nondum implétum est. Hæc cum dixísset, ipse mansit in Galilǽa. Ut autem ascendérunt fratres ejus, tunc et ipse ascéndit ad diem festum non maniféste, sed quasi in occúlto. Judǽi ergo quærébant eum in die festo, et dicébant: Ubi est ille? Et murmur multum erat in turba de eo. Quidam enim dicébant: Quia bonus est. Alii autem dicébant: Non, sed sedúcit turbas. Nemo tamen palam loquebátur de illo, propter metum Judæórum."]}}
-{"id":"tempora-quad5-2.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad5-2.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad5-2.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad5-2.offertoire.1","type":"rubric","t":{"la":["Ps 9:11-12, 13"],"fr":["Ps 9:11-12, 13"]}}
 {"id":"tempora-quad5-2.offertoire.2","type":"para","t":{"la":["Sperent in te omnes, qui novérunt nomen tuum, Dómine: quóniam non derelínquis quæréntes te: psállite Dómino, qui hábitat in Sion: quóniam non est oblítus oratiónes páuperum."]}}
 {"id":"tempora-quad5-2.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-2.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad5-2.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, deférimus immolándas: quæ temporálem consolatiónem signíficent; ut promíssa non desperémus ætérna. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad5-2.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad5-2.preface.1","type":"rubric","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
+{"id":"tempora-quad5-2.preface.1","type":"rubric","preface":"quad5","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
 {"id":"tempora-quad5-2.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-2.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad5-2.communion.1","type":"rubric","t":{"la":["Ps 24:22"],"fr":["Ps 24:22"]}}
 {"id":"tempora-quad5-2.communion.2","type":"para","t":{"la":["Rédime me, Deus Israël, ex ómnibus angústiis meis."]}}

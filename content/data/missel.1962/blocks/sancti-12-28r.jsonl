@@ -8,7 +8,7 @@
 {"id":"sancti-12-28r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-12-28r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-12-28r.introit.7","type":"para","t":{"la":["Ex ore infántium, Deus, et lacténtium perfecísti laudem propter inimicos tuos."]}}
-{"id":"sancti-12-28r.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-12-28r.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-12-28r.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-28r.txt","section":"Oratio"},{"file":"missa/Latin/Sancti/12-28.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-12-28r.collecte.1","type":"para","t":{"la":["Deus, cujus hodierna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-12-28r.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/12-28r.txt","section":"Commemoratio Oratio"},{"file":"missa/Latin/Sancti/12-28.txt","section":"Commemoratio Oratio"},{"file":"missa/Latin/Sancti/12-26.txt","section":"Commemoratio Oratio"}],"t":{"fr":["Commémoraison : Octave de Noël"]}}
@@ -28,7 +28,7 @@
 {"id":"sancti-12-28r.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secundum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-12-28r.evangile.2","type":"rubric","t":{"la":["Matt 2:13-18"],"fr":["Matt 2:13-18"]}}
 {"id":"sancti-12-28r.evangile.3","type":"para","t":{"la":["In illo témpore: Angelus Dómini appáruit in somnis Joseph, dicens: Surge, et áccipe Púerum et Matrem ejus, et fuge in Ægýptum, et esto ibi, usque dum dicam tibi. Futúrum est enim, ut Heródes quærat Púerum ad perdéndum eum. Qui consúrgens accépit Púerum et Matrem ejus nocte, et secéssit in Ægýptum: et erat ibi usque ad óbitum Heródis: ut adimplerétur quod dictum est a Dómino per Prophétam dicéntem: Ex Ægýpto vocávi Fílium meum. Tunc Heródes videns, quóniam illúsus esset a Magis, irátus est valde, et mittens occídit omnes púeros, qui erant in Béthlehem et in ómnibus fínibus ejus, a bimátu et infra, secúndum tempus, quod exquisíerat a Magis. Tunc adimplétum est, quod dictum est per Jeremíam Prophetam dicéntem: Vox in Rama audíta est, plorátus et ululátus multus: Rachel plorans fílios suos, et nóluit consolári, quia non sunt."]}}
-{"id":"sancti-12-28r.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-12-28r.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-12-28r.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-28r.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/12-28.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/06-18t.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-12-28r.offertoire.1","type":"rubric","t":{"la":["Ps 123:7"],"fr":["Ps 123:7"]}}
 {"id":"sancti-12-28r.offertoire.2","type":"para","t":{"la":["Anima nostra, sicut passer, erépta est de láqueo venántium: láqueus contrítus est, et nos liberáti sumus."]}}
@@ -38,7 +38,8 @@
 {"id":"sancti-12-28r.secrete.c1.1","type":"rubric","t":{"la":["Pro Octava Nativitatis."]}}
 {"id":"sancti-12-28r.secrete.c1.2","type":"para","t":{"la":["Obláta, Dómine, múnera, nova Unigéniti tui Nativitáte sanctífica: nosque a peccatórum nostrórum máculis emúnda. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-12-28r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-12-28r.preface.1","type":"rubric","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"sancti-12-28r.preface.1","type":"rubric","preface":"nat","communicantes":"c-nat1962","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"sancti-12-28r.preface.2","type":"rubric","t":{"fr":["Communicantes propre de Noël (voir aux Préfaces)."]}}
 {"id":"sancti-12-28r.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-28r.txt","section":"Communio"},{"file":"missa/Latin/Sancti/12-28.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-12-28r.communion.1","type":"rubric","t":{"la":["Matt 2:18"],"fr":["Matt 2:18"]}}
 {"id":"sancti-12-28r.communion.2","type":"para","t":{"la":["Vox in Rama audíta est, plorátus, et ululátus: Rachel plorans fílios suos, et nóluit consolári, quia non sunt."]}}

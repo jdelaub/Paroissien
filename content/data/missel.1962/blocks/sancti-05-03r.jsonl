@@ -8,7 +8,7 @@
 {"id":"sancti-05-03r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-05-03r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-05-03r.introit.7","type":"para","t":{"la":["Sancti tui, Dómine, benedícent te: glóriam regni tui dicent, allelúja, allelúja."]}}
-{"id":"sancti-05-03r.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-05-03r.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-05-03r.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-03r.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-05-03r.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut, qui sanctórum tuórum Alexándri, Evéntii, Theodúli atque Juvenális natalítia cólimus; a cunctis malis imminéntibus, eórum intercessiónibus, liberémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-05-03r.epitre","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3p.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-05-03r.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-05-03r.evangile.2","type":"rubric","t":{"la":["Joannes 15:5-11"],"fr":["Joannes 15:5-11"]}}
 {"id":"sancti-05-03r.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis, petétis, et fiet vobis. In hoc clarificátus est Pater meus, ut fructum plúrimum afferátis, et efficiámini mei discípuli. Sicut diléxit me Pater, et ego diléxi vos. Manéte in dilectióne mea. Si præcépta mea servavéritis, manébitis in dilectióne mea, sicut et ego Patris mei præcépta servávi, et máneo in ejus dilectióne. Hæc locútus sum vobis, ut gáudium meum in vobis sit, et gáudium vestrum impleátur."]}}
-{"id":"sancti-05-03r.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-05-03r.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-05-03r.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3p.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-05-03r.offertoire.1","type":"rubric","t":{"la":["Ps 31:11"],"fr":["Ps 31:11"]}}
 {"id":"sancti-05-03r.offertoire.2","type":"para","t":{"la":["Lætámini in Dómino et exsultáte, justi: et gloriámini, omnes recti corde, allelúja, allelúja."]}}
 {"id":"sancti-05-03r.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-03r.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-05-03r.secrete.1","type":"para","t":{"la":["Super has hóstias, quǽsumus, Dómine, benedíctio copiósa descéndat: quæ et sanctificatiónem nobis cleménter operátur, et de Sanctórum nos sollemnitáte lætíficet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-05-03r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-05-03r.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques ; après l’Ascension : préface de l’Ascension."]}}
+{"id":"sancti-05-03r.preface.1","type":"rubric","preface":"pasch","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques ; après l’Ascension : préface de l’Ascension."]}}
 {"id":"sancti-05-03r.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3p.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-05-03r.communion.1","type":"rubric","t":{"la":["Ps 32:1"],"fr":["Ps 32:1"]}}
 {"id":"sancti-05-03r.communion.2","type":"para","t":{"la":["Gaudéte, justi, in Dómino, allelúja: rectos decet collaudátio, allelúja."]}}

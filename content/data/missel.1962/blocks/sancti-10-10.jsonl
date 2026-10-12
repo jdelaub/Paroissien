@@ -8,7 +8,7 @@
 {"id":"sancti-10-10.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-10-10.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-10-10.introit.7","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
-{"id":"sancti-10-10.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-10.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-10-10.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-10.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-10-10.collecte.1","type":"para","t":{"la":["Dómine Jesu Christe, veræ humilitátis et exémplar et prǽmium: quǽsumus; ut, sicut beátum Francíscum in terréni honóris contémptu imitatórem tui gloriósum effecísti, ita nos eiúsdem imitatiónis et glóriæ tríbuas esse consórtes: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-10.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-10-10.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-10-10.evangile.2","type":"rubric","t":{"la":["Matt 19:27-29"],"fr":["Matt 19:27-29"]}}
 {"id":"sancti-10-10.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Petrus ad Jesum: Ecce, nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen, dico vobis, quod vos, qui secúti estis me, in regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros, propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit."]}}
-{"id":"sancti-10-10.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-10-10.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-10-10.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-10-10.offertoire.1","type":"rubric","t":{"la":["Ps 20:3-4"],"fr":["Ps 20:3-4"]}}
 {"id":"sancti-10-10.offertoire.2","type":"para","t":{"la":["Desidérium ánimæ ejus tribuísti ei, Dómine, et voluntáte labiórum ejus non fraudásti eum: posuísti in cápite ejus corónam de lápide pretióso."]}}
 {"id":"sancti-10-10.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-10.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-10-10.secrete.1","type":"para","t":{"la":["Sacris altáribus, Dómine, hóstias superpósitas sanctus Francíscus, quǽsumus, in salútem nobis proveníre depóscat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-10.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-10-10.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-10-10.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-10-10.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-10-10.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
 {"id":"sancti-10-10.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}

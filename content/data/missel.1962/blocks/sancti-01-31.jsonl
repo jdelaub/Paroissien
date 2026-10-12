@@ -8,7 +8,7 @@
 {"id":"sancti-01-31.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-01-31.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-01-31.introit.7","type":"para","t":{"la":["Dedit illi Deus sapiéntiam, et prudéntiam multam nimis, et latitúdinem cordis, quasi arénam quæ est in líttore maris."]}}
-{"id":"sancti-01-31.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-01-31.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-01-31.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-31.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-01-31.collecte.1","type":"para","t":{"la":["Deus, qui sanctum Joánnem Confessórem tuum adolescentium patrem et magístrum excitásti, ac per eum, auxiliatríce Vírgine María, novas in Ecclésia tua famílias floréscere voluísti: concéde, quǽsumus; ut eódem caritátis igne succénsi, ánimas quærere, tibíque soli servíre valeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-01-31.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-31.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -30,14 +30,14 @@
 {"id":"sancti-01-31.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-01-31.evangile.2","type":"rubric","t":{"la":["Matt 18:1-5"],"fr":["Matt 18:1-5"]}}
 {"id":"sancti-01-31.evangile.3","type":"para","t":{"la":["In illo témpore: Accessérunt discípuli ad Jesum dicéntes: Quis, putas, major est in regno cælórum? Et ádvocans Jesus párvulum, státuit eum in médio eórum, et dixit: Amen dico vobis, nisi convérsi fueritis, et efficiámini sicut párvuli, non intrábitis in regnum cœlórum. Quicúmque ergo humiliáverit se sicut párvulus iste, hic est major in regno cœlórum. Et qui suscéperit unum párvulum talem in nómine meo, me súscipit."]}}
-{"id":"sancti-01-31.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-01-31.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-01-31.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-31.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-01-31.offertoire.1","type":"rubric","t":{"la":["Ps 33:12"],"fr":["Ps 33:12"]}}
 {"id":"sancti-01-31.offertoire.2","type":"para","t":{"la":["Veníte, fílii, audíte me: timórem Dómini docébo vos."]}}
 {"id":"sancti-01-31.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-31.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-01-31.secrete.1","type":"para","t":{"la":["Súscipe, Dómine, oblatiónem mundam salutáris Hóstiæ, et præsta: ut, te in ómnibus et super ómnia diligéntes, in glóriæ tuæ laudem vívere mereámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-01-31.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-01-31.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-01-31.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-01-31.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-31.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-01-31.communion.1","type":"rubric","t":{"la":["Rom 4:18"],"fr":["Rom 4:18"]}}
 {"id":"sancti-01-31.communion.2","type":"para","t":{"la":["Contra spem in spem crédidit, ut fíeret pater multárum géntium, secúndum quod dictum est ei."]}}

@@ -8,7 +8,7 @@
 {"id":"sancti-11-04.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-11-04.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-11-04.introit.7","type":"para","t":{"la":["In virtúte tua, Dómine, lætábitur justus: et super salutáre tuum exsultábit veheménter: desidérium ánimæ ejus tribuísti ei."]}}
-{"id":"sancti-11-04.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-11-04.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-11-04.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-04.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-11-04.collecte.1","type":"para","t":{"la":["Ecclésiam tuam, Dómine, sancti Caróli Confessóris tui atque Pontíficis contínua protectióne custódi: ut, sicut illum pastorális sollicitúdo gloriósum réddidit; ita nos ejus intercéssio in tuo semper fáciat amóre fervéntes. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-11-04.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/11-04cc.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saints Vital et Agricola, martyrs"]}}
@@ -23,7 +23,7 @@
 {"id":"sancti-11-04.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-11-04.evangile.2","type":"rubric","t":{"la":["Matt 25:14-23"],"fr":["Matt 25:14-23"]}}
 {"id":"sancti-11-04.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo péregre proficíscens vocávit servos suos, et trádidit illis bona sua. Et uni dedit quinque talénta, álii autem duo, álii vero unum, unicuíque secúndum própriam virtútem, et proféctus est statim. Abiit autem, qui quinque talénta accéperat, et operátus est in eis, et lucrátus est ália quinque. Simíliter et, qui duo accéperat, lucrátus est ália duo. Qui autem unum accéperat, ábiens fodit in terram, et abscóndit pecúniam dómini sui. Post multum vero témporis venit dóminus servórum illórum, et pósuit ratiónem cum eis. Et accédens qui quinque talénta accéperat, óbtulit ália quinque talénta, dicens: Dómine, quinque talénta tradidísti mihi, ecce, ália quinque superlucrátus sum. Ait illi dóminus ejus: Euge, serve bone et fidélis, quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui. Accéssit autem et qui duo talénta accéperat, et ait: Dómine, duo talénta tradidísti mihi, ecce, ália duo lucrátus sum. Ait illi dóminus ejus: Euge, serve bone et fidélis, quia super pauca fuísti fidélis, super multa te constítuam: intra in gáudium dómini tui."]}}
-{"id":"sancti-11-04.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-11-04.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-11-04.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-04.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-11-04.offertoire.1","type":"rubric","t":{"la":["Ps 88:21-22"],"fr":["Ps 88:21-22"]}}
 {"id":"sancti-11-04.offertoire.2","type":"para","t":{"la":["Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum."]}}
@@ -32,7 +32,7 @@
 {"id":"sancti-11-04.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/11-04cc.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C3a-1.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saints Vital et Agricola, martyrs"]}}
 {"id":"sancti-11-04.secrete.c1.1","type":"para","t":{"la":["Oblátis, quǽsumus, Dómine, placáre munéribus: et, intercedéntibus sanctis Martýribus tuis Vitále et Agrícola, a cunctis nos defénde perículis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-11-04.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-11-04.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-11-04.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-11-04.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-04.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-11-04.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
 {"id":"sancti-11-04.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}

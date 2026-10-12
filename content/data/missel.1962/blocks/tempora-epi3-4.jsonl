@@ -8,7 +8,7 @@
 {"id":"tempora-epi3-4.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-epi3-4.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-epi3-4.introit.7","type":"para","t":{"la":["Adoráte Deum, omnes Angeli ejus: audívit, et lætáta est Sion: et exsultavérunt fíliæ Judæ."]}}
-{"id":"tempora-epi3-4.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-epi3-4.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-epi3-4.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi3-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-epi3-4.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, infirmitatem nostram propítius réspice: atque, ad protegéndum nos, déxteram tuæ majestátis exténde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-epi3-4.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi3-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-epi3-4.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-epi3-4.evangile.2","type":"rubric","t":{"la":["Matt 8:1-13"],"fr":["Matt 8:1-13"]}}
 {"id":"tempora-epi3-4.evangile.3","type":"para","t":{"la":["In illo témpore: Cum descendísset Jesus de monte, secútæ sunt eum turbæ multæ: et ecce, leprósus véniens adorábat eum, dicens: Dómine, si vis, potes me mundáre. Et exténdens Jesus manum, tétigit eum, dicens: Volo. Mundáre. Et conféstim mundáta est lepra ejus. Et ait illi Jesus: Vide, némini díxeris: sed vade, osténde te sacerdóti, et offer munus, quod præcépit Móyses, in testimónium illis. Cum autem introísset Caphárnaum, accéssit ad eum centúrio, rogans eum et dicens: Dómine, puer meus jacet in domo paralýticus, et male torquetur. Et ait illi Jesus: Ego véniam, et curábo eum. Et respóndens centúrio, ait: Dómine, non sum dignus, ut intres sub tectum meum: sed tantum dic verbo, et sanábitur puer meus. Nam et ego homo sum sub potestáte constitútus, habens sub me mílites, et dico huic: Vade, et vadit; et alii: Veni, et venit; et servo meo: Fac hoc, et facit. Audiens autem Jesus, mirátus est, et sequéntibus se dixit: Amen, dico vobis, non inveni tantam fidem in Israël. Dico autem vobis, quod multi ab Oriénte et Occidénte vénient, et recúmbent cum Abraham et Isaac et Jacob in regno cœlórum: fílii autem regni ejiciéntur in ténebras exterióres: ibi erit fletus et stridor déntium. Et dixit Jesus centurióni: Vade et, sicut credidísti, fiat tibi. Et sanátus est puer in illa hora."]}}
-{"id":"tempora-epi3-4.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-epi3-4.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-epi3-4.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi3-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-epi3-4.offertoire.1","type":"rubric","t":{"la":["Ps 117:16; 117:17"],"fr":["Ps 117:16; 117:17"]}}
 {"id":"tempora-epi3-4.offertoire.2","type":"para","t":{"la":["Déxtera Dómini fecit virtutem, déxtera Dómini exaltávit me: non móriar, sed vivam, et narrábo ópera Dómini."]}}
 {"id":"tempora-epi3-4.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi3-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-epi3-4.secrete.1","type":"para","t":{"la":["Hæc hóstia, Dómine, quǽsumus, emúndet nostra delícta: et, ad sacrifícium celebrándum, subditórum tibi córpora mentésque sanctíficet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-epi3-4.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-epi3-4.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-epi3-4.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-epi3-4.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi3-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-epi3-4.communion.1","type":"rubric","t":{"la":["Luc 4:22"],"fr":["Luc 4:22"]}}
 {"id":"tempora-epi3-4.communion.2","type":"para","t":{"la":["Mirabántur omnes de his, quæ procedébant de ore Dei."]}}

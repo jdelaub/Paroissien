@@ -8,7 +8,7 @@
 {"id":"sancti-12-27.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-12-27.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-12-27.introit.7","type":"para","t":{"la":["In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ et intelléctus: stolam glóriæ índuit eum."]}}
-{"id":"sancti-12-27.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-12-27.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-12-27.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-12-27.collecte.1","type":"para","t":{"la":["Ecclésiam tuam, Dómine, benígnus illústra: ut, beáti Joánnis Apóstoli tui et Evangelístæ illumináta doctrínis, ad dona pervéniat sempitérna. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-12-27.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Commemoratio Oratio"},{"file":"missa/Latin/Sancti/12-26.txt","section":"Commemoratio Oratio"}],"t":{"fr":["Commémoraison : Octave de Noël"]}}
@@ -28,7 +28,7 @@
 {"id":"sancti-12-27.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secundum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-12-27.evangile.2","type":"rubric","t":{"la":["Joann 21:19-24"],"fr":["Joann 21:19-24"]}}
 {"id":"sancti-12-27.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus Petro: Séquere me. Convérsus Petrus vidit illum discípulum, quem diligébat Jesus, sequéntem, qui et recúbuit in cena super pectus ejus, et dixit: Dómine, quis est qui tradet te ? Hunc ergo cum vidísset Petrus, dixit Jesu: Dómine, hic autem quid? Dicit ei Jesus: Sic eum volo manére, donec véniam, quid ad te? tu me séquere. Exiit ergo sermo iste inter fratres, quia discípulus ille non móritur. Et non dixit ei Jesus: Non móritur; sed: Sic eum volo manére, donec véniam: quid ad te? Hic est discípulus ille, qui testimónium pérhibet de his, et scripsit hæc: et scimus, quia verum est testimónium ejus."]}}
-{"id":"sancti-12-27.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-12-27.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-12-27.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C4a.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-12-27.offertoire.1","type":"rubric","t":{"la":["Ps 91:13"],"fr":["Ps 91:13"]}}
 {"id":"sancti-12-27.offertoire.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus, quæ in Líbano est, multiplicábitur."]}}
@@ -38,7 +38,8 @@
 {"id":"sancti-12-27.secrete.c1.1","type":"rubric","t":{"la":["Pro Octava Nativitatis."]}}
 {"id":"sancti-12-27.secrete.c1.2","type":"para","t":{"la":["Obláta, Dómine, múnera, nova Unigéniti tui Nativitáte sanctífica: nosque a peccatórum nostrórum máculis emúnda. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-12-27.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-12-27.preface.1","type":"rubric","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"sancti-12-27.preface.1","type":"rubric","preface":"nat","communicantes":"c-nat1962","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"sancti-12-27.preface.2","type":"rubric","t":{"fr":["Communicantes propre de Noël (voir aux Préfaces)."]}}
 {"id":"sancti-12-27.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-12-27.communion.1","type":"rubric","t":{"la":["Joann 21:23"],"fr":["Joann 21:23"]}}
 {"id":"sancti-12-27.communion.2","type":"para","t":{"la":["Exiit sermo inter fratres, quod discípulus ille non móritur: et non dixit Jesus: Non móritur; sed: Sic eum volo manére, donec véniam."]}}

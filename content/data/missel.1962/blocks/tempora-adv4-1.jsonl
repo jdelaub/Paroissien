@@ -8,7 +8,7 @@
 {"id":"tempora-adv4-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-adv4-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-adv4-1.introit.7","type":"para","t":{"la":["Roráte, cœli, désuper, et nubes pluant justum: aperiátur terra, et gérminet Salvatórem"]}}
-{"id":"tempora-adv4-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-adv4-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-adv4-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv4-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-adv4-1.collecte.1","type":"para","t":{"la":["Excita, quǽsumus, Dómine, poténtiam tuam, et veni: et magna nobis virtúte succúrre; ut per auxílium grátiæ tuæ, quod nostra peccáta præpédiunt, indulgéntia tuæ propitiatiónis accéleret: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-adv4-1.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv4-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -23,14 +23,14 @@
 {"id":"tempora-adv4-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secundum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-adv4-1.evangile.2","type":"rubric","t":{"la":["Luc 3:1-6"],"fr":["Luc 3:1-6"]}}
 {"id":"tempora-adv4-1.evangile.3","type":"para","t":{"la":["Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam, tetrárcha autem Galilǽæ Heróde, Philíppo autem fratre ejus tetrárcha Iturǽæ et Trachonítidis regionis, et Lysánia Abilínæ tetrárcha, sub princípibus sacerdotum Anna et Cáipha: factum est verbum Domini super Joannem, Zacharíæ filium, in deserto. Et venit in omnem regiónem Jordánis, prǽdicans baptísmum pæniténtiæ in remissiónem peccatórum, sicut scriptum est in libro sermónum Isaíæ Prophétæ: Vox clamántis in desérto: Paráte viam Dómini: rectas fácite sémitas ejus: omnis vallis implébitur: et omnis mons et collis humiliábitur: et erunt prava in dirécta, et áspera in vias planas: et vidébit omnis caro salutáre Dei."]}}
-{"id":"tempora-adv4-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-adv4-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-adv4-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv4-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-adv4-1.offertoire.1","type":"rubric","t":{"la":["Luc 1:28"],"fr":["Luc 1:28"]}}
 {"id":"tempora-adv4-1.offertoire.2","type":"para","t":{"la":["Ave, María, gratia plena; Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui."]}}
 {"id":"tempora-adv4-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv4-0.txt","section":"Secreta"},{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-adv4-1.secrete.1","type":"para","t":{"la":["Sacrifíciis præséntibus, quǽsumus, Dómine, placátus inténde: ut et devotióni nostræ profíciant et salúti. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-adv4-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-adv4-1.preface.1","type":"rubric","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"tempora-adv4-1.preface.1","type":"rubric","preface":"adv","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
 {"id":"tempora-adv4-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv4-0.txt","section":"Communio"},{"file":"horas/Latin/Commune/C10a.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-adv4-1.communion.1","type":"rubric","t":{"la":["Is 7:14"],"fr":["Is 7:14"]}}
 {"id":"tempora-adv4-1.communion.2","type":"para","t":{"la":["Ecce, Virgo concípiet et páriet fílium: et vocábitur nomen ejus Emmánuel."]}}

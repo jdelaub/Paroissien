@@ -8,7 +8,7 @@
 {"id":"sancti-07-23.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-07-23.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-07-23.introit.7","type":"para","t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde."]}}
-{"id":"sancti-07-23.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-23.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-07-23.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-23.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-07-23.collecte.1","type":"para","t":{"la":["Deus, fidélium remunerátor animárum, qui hunc diem beáti Apollináris Sacerdótis tui martýrio consecrásti: tríbue nobis, quǽsumus, fámulis tuis; ut, cujus venerándam celebrámus festivitátem, précibus ejus indulgéntiam consequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-23.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/07-23cc.txt","section":"Oratio"},{"file":"horas/Latin/Commune/C4.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Liboire, évêque et confesseur"]}}
@@ -27,7 +27,7 @@
 {"id":"sancti-07-23.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-07-23.evangile.2","type":"rubric","t":{"la":["Luc 22:24-30"],"fr":["Luc 22:24-30"]}}
 {"id":"sancti-07-23.evangile.3","type":"para","t":{"la":["In illo témpore: Facta est conténtio inter discípulos, quis eórum viderétur esse major. Dixit autem eis Jesus: Reges géntium dominántur eórum; et qui potestátem habent super eos, benéfici vocántur. Vos autem non sic: sed qui major est in vobis, fiat sicut minor: et qui præcéssor est, sicut ministrátor. Nam quis major est, qui recúmbit, an qui mínistrat? nonne qui recúmbit? Ego autem in médio vestrum sum, sicut qui mínistrat. Vos autem estis, qui permansístis mecum in tentatiónibus meis: et ego dispóno vobis, sicut dispósuii mihi Pater meus regnum, ut edátis et bibátis super mensam meam in regno meo: et sedeátis super thronos, judicántes duódecim tribus Israël."]}}
-{"id":"sancti-07-23.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-23.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-07-23.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-23.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-07-23.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
 {"id":"sancti-07-23.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
@@ -36,7 +36,7 @@
 {"id":"sancti-07-23.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/07-23cc.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C4.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Liboire, évêque et confesseur"]}}
 {"id":"sancti-07-23.secrete.c1.1","type":"para","t":{"la":["Sancti tui, quǽsumus, Dómine, nos ubíque lætíficant: ut, dum eórum mérita recólimus, patrocínia sentiámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-23.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-07-23.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-07-23.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-07-23.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-23.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-07-23.communion.1","type":"rubric","t":{"la":["Matt 25:20; 20:21"],"fr":["Matt 25:20; 20:21"]}}
 {"id":"sancti-07-23.communion.2","type":"para","t":{"la":["Dómine, quinque talénta tradidísti mihi, ecce, ália quinque superlucrátus sum. Euge, serve bone et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gáudium Dómini tui."]}}

@@ -8,7 +8,7 @@
 {"id":"tempora-quad1-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad1-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad1-0.introit.7","type":"para","t":{"la":["Invocábit me, et ego exáudiam eum: erípiam eum, et glorificábo eum: longitúdine diérum adimplébo eum."]}}
-{"id":"tempora-quad1-0.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad1-0.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad1-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad1-0.collecte.1","type":"para","t":{"la":["Deus, qui Ecclésiam tuam ánnua quadragesimáli observatióne puríficas: præsta famíliæ tuæ; ut, quod a te obtinére abstinéndo nítitur, hoc bonis opéribus exsequátur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad1-0.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -38,14 +38,14 @@
 {"id":"tempora-quad1-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-quad1-0.evangile.2","type":"rubric","t":{"la":["Matt 4:1-11"],"fr":["Matt 4:1-11"]}}
 {"id":"tempora-quad1-0.evangile.3","type":"para","t":{"la":["In illo témpore: Ductus est Jesus in desértum a Spíritu, ut tentarétur a diábolo. Et cum jejunásset quadragínta diébus et quadragínta nóctibus, postea esúriit. Et accédens tentátor, dixit ei: Si Fílius Dei es, dic, ut lápides isti panes fiant. Qui respóndens, dixit: Scriptum est: Non in solo pane vivit homo, sed in omni verbo, quod procédit de ore Dei. Tunc assúmpsit eum diábolus in sanctam civitátem, et státuit eum super pinnáculum templi, et dixit ei: Si Fílius Dei es, mitte te deórsum. Scriptum est enim: Quia Angelis suis mandávit de te, et in mánibus tollent te, ne forte offéndas ad lápidem pedem tuum. Ait illi Jesus: Rursum scriptum est: Non tentábis Dóminum, Deum tuum. Iterum assúmpsit eum diábolus in montem excélsum valde: et ostendit ei ómnia regna mundi et glóriam eórum, et dixit ei: Hæc ómnia tibi dabo, si cadens adoráveris me. Tunc dicit ei Jesus: Vade, Sátana; scriptum est enim: Dóminum, Deum tuum, adorábis, et illi soli sérvies. Tunc relíquit eum diábolus: et ecce, Angeli accessérunt et ministrábant ei."]}}
-{"id":"tempora-quad1-0.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-quad1-0.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"tempora-quad1-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad1-0.offertoire.1","type":"rubric","t":{"la":["Ps 90:4-5"],"fr":["Ps 90:4-5"]}}
 {"id":"tempora-quad1-0.offertoire.2","type":"para","t":{"la":["Scápulis suis obumbrábit tibi Dóminus, et sub pennis ejus sperábis: scuto circúmdabit te véritas ejus."]}}
 {"id":"tempora-quad1-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad1-0.secrete.1","type":"para","t":{"la":["Sacrifícium quadragesimális inítii sollémniter immolámus, te, Dómine, deprecántes: ut, cum epulárum restrictióne carnálium, a noxiis quoque voluptátibus temperémus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad1-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad1-0.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad1-0.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad1-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad1-0.communion.1","type":"rubric","t":{"la":["Ps 90:4-5"],"fr":["Ps 90:4-5"]}}
 {"id":"tempora-quad1-0.communion.2","type":"para","t":{"la":["Scápulis suis obumbrábit tibi Dóminus, et sub pennis ejus sperábis: scuto circúmdabit te véritas ejus."]}}

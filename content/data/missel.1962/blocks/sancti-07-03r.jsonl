@@ -8,7 +8,7 @@
 {"id":"sancti-07-03r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-07-03r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-07-03r.introit.7","type":"para","t":{"la":["Lex veritátis fuit in ore ejus, et iníquitas non est invénta in lábiis ejus: in pace et in æquitáte ambulávit mecum, et multos avértit ab iniquitáte."]}}
-{"id":"sancti-07-03r.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-03r.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-07-03r.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-03r.txt","section":"Oratio"},{"file":"missa/Latin/Sancti/06-28.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-07-03r.collecte.1","type":"para","t":{"la":["Deus, qui beáto Irenǽo Mártyri tuo atque Pontífici tribuísti, ut et veritáte doctrínæ expugnáret hǽreses, et pacem Ecclésiæ felíciter confirmáret: da, quǽsumus, plebi tuæ in sancta religióne constántiam; et pacem tuam nostris concéde tempóribus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-03r.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-03r.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/06-28.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -26,14 +26,14 @@
 {"id":"sancti-07-03r.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-07-03r.evangile.2","type":"rubric","t":{"la":["Matt 10:28-33"],"fr":["Matt 10:28-33"]}}
 {"id":"sancti-07-03r.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere; sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam. ¶ Nonne duo pásseres asse véneunt: et unus ex illis non cadet super terram sine Patre vestro? Vestri autem capílli cápitis omnes numeráti sunt. Nolíte ergo timére: multis passéribus melióres estis vos. Omnis ergo, qui confitébitur me coram homínibus, confitébor et ego eum coram Patre meo, qui in cœlis est. Qui autem negáverit me coram homínibus, negábo et ego eum coram Patre meo, qui in cœlis est."]}}
-{"id":"sancti-07-03r.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-03r.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-07-03r.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-03r.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/06-28.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-07-03r.offertoire.1","type":"rubric","t":{"la":["Eccli 24:44"],"fr":["Eccli 24:44"]}}
 {"id":"sancti-07-03r.offertoire.2","type":"para","t":{"la":["Doctrínam quasi ante lucánum illúmino ómnibus, et enarrábo illam usque ad longínquum."]}}
 {"id":"sancti-07-03r.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-03r.txt","section":"Secreta"},{"file":"missa/Latin/Sancti/06-28.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-07-03r.secrete.1","type":"para","t":{"la":["Deus, qui credéntes in te pópulos nullis sinis cóncuti terróribus: dignáre preces et hóstias dicátæ tibi plebis suscípere; ut pax, a tua pietáte concéssa, christianórum fines ab omni hoste fáciat esse secúros. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-03r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-07-03r.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-07-03r.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-07-03r.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-03r.txt","section":"Communio"},{"file":"missa/Latin/Sancti/06-28.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-07-03r.communion.1","type":"rubric","t":{"la":["Eccli 24:47"],"fr":["Eccli 24:47"]}}
 {"id":"sancti-07-03r.communion.2","type":"para","t":{"la":["Vidéte, quóniam non soli mihi laborávi, sed ómnibus exquiréntibus veritátem."]}}

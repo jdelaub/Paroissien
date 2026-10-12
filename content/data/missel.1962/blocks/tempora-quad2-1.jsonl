@@ -8,7 +8,7 @@
 {"id":"tempora-quad2-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad2-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad2-1.introit.7","type":"para","t":{"la":["Rédime me, Dómine, et miserére mei: pes enim meus stetit in via recta: in ecclésiis benedícam Dóminum."]}}
-{"id":"tempora-quad2-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad2-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad2-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad2-1.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut família tua, quæ se, affligéndo carnem, ab aliméntis ábstinet: sectándo justítiam, a culpa jejúnet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad2-1.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-1.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -29,14 +29,14 @@
 {"id":"tempora-quad2-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-quad2-1.evangile.2","type":"rubric","t":{"la":["Joh 8:21-29"],"fr":["Joh 8:21-29"]}}
 {"id":"tempora-quad2-1.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus turbis Judæórum: Ego vado, et quærétis me, et in peccáto vestro moriémini. Quo ego vado, vos non potéstis veníre. Dicébant ergo Judǽi: Numquid interfíciet semetípsum, quia dixit: Quo ego vado, vos non potéstis veníre? Et dicébat eis: Vos de deórsum estis, ego de supérnis sum. Vos de mundo hoc estis, ego non sum de hoc mundo. Dixi ergo vobis, quia moriémini in peccátis vestris: si enim non credidéritis, quia ego sum, moriémini in peccáto vestro. Dicébant ergo ei: Tu quis es? Dixit eis Jesus: Princípium, qui et loquor vobis. Multa habeo de vobis loqui et judicáre. Sed qui me misit, verax est: et ego quæ audívi ab eo, hæc loquor in mundo. Et non cognovérunt, quia Patrem ejus dicébat Deum. Dixit ergo eis Jesus: Cum exaltavéritis Fílium hóminis, tunc cognoscétis quia ego sum, et a meípso fácio nihil: sed, sicut dócuit me Pater, hæc loquor: et qui me misit, mecum est, et non relíquit me solum: quia ego, quæ plácita sunt ei, fácio semper."]}}
-{"id":"tempora-quad2-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad2-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad2-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad2-1.offertoire.1","type":"rubric","t":{"la":["Ps 15:7; 15:8"],"fr":["Ps 15:7; 15:8"]}}
 {"id":"tempora-quad2-1.offertoire.2","type":"para","t":{"la":["Benedícam Dóminum, qui tríbuit mihi intelléctum: providébam Dóminum in conspéctu meo semper: quóniam a dextris est mihi, ne commóvear."]}}
 {"id":"tempora-quad2-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad2-1.secrete.1","type":"para","t":{"la":["Hæc hóstia, Dómine, placatiónis et laudis, tua nos protectióne dignos effíciat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad2-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad2-1.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad2-1.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad2-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad2-1.communion.1","type":"rubric","t":{"la":["Ps 8:2"],"fr":["Ps 8:2"]}}
 {"id":"tempora-quad2-1.communion.2","type":"para","t":{"la":["Dómine, Dóminus noster, quam admirábile est nomen tuum in univérsa terra!"]}}

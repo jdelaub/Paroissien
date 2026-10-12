@@ -8,7 +8,7 @@
 {"id":"tempora-quadp3-5.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quadp3-5.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quadp3-5.introit.7","type":"para","t":{"la":["Audívit Dóminus, et misértus est mihi: Dóminus factus est adjútor meus."]}}
-{"id":"tempora-quadp3-5.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quadp3-5.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quadp3-5.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-5.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quadp3-5.collecte.1","type":"para","t":{"la":["Inchoáta jejúnia, quǽsumus, Dómine, benígno favore proséquere: ut observántiam, quam corporáliter exhibémus, méntibus étiam sincéris exercére valeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quadp3-5.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-5.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -28,14 +28,14 @@
 {"id":"tempora-quadp3-5.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-quadp3-5.evangile.2","type":"rubric","t":{"la":["Matt 5:43-48; 6:1-4"],"fr":["Matt 5:43-48; 6:1-4"]}}
 {"id":"tempora-quadp3-5.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Audístis, quia dictum est: Diliges próximum tuum, et ódio habébis inimícum tuum. Ego autem dico vobis: Dilígite inimícos vestros, benefácite his, qui odérunt vos, et oráte pro persequéntibus et calumniántibus vos, ut sitis fílii Patris vestri, qui in cœlis est: qui solem suum oriri facit super bonos et malos, et pluit super justos et injústos. Si enim dilígitis eos, qui vos díligunt, quam mercédem habébitis? nonne et publicáni hoc fáciunt? Et si salutavéritis fratres vestros tantum, quid ámplius fácitis? nonne et éthnici hoc fáciunt? Estóte ergo vos perfécti, sicut et Pater vester cœléstis perféctus est. Atténdite, ne justítiam vestram faciátis coram homínibus, ut videámini ab eis: alióquin mercédem non habébitis apud Patrem vestrum, qui in cœlis est. Cum ergo facis eleemósynam, noli tuba cánere ante te, sicut hypócritæ fáciunt in synagógis et in vicis, ut honorificéntur ab homínibus. Amen, dico vobis, recepérunt mercédem suam. Te autem faciénte eleemósynam, nésciat sinístra tua, quid fáciat déxtera tua, ut sit eleemósyna tua in abscóndito, et Pater tuus, qui videt in abscóndito, reddet tibi."]}}
-{"id":"tempora-quadp3-5.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quadp3-5.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quadp3-5.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-5.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quadp3-5.offertoire.1","type":"rubric","t":{"la":["Ps 118:154; 118:125"],"fr":["Ps 118:154; 118:125"]}}
 {"id":"tempora-quadp3-5.offertoire.2","type":"para","t":{"la":["Dómine, vivífica me secúndum elóquium tuum: ut sciam testimónia tua."]}}
 {"id":"tempora-quadp3-5.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-5.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quadp3-5.secrete.1","type":"para","t":{"la":["Sacrifícium, Dómine, observántiæ quadragesimális, quod offérimus, præsta, quǽsumus: ut tibi et mentes nostras reddat accéptas, et continéntiæ promptióris nobis tríbuat facultátem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quadp3-5.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quadp3-5.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quadp3-5.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quadp3-5.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-5.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quadp3-5.communion.1","type":"rubric","t":{"la":["Ps 2:11-12"],"fr":["Ps 2:11-12"]}}
 {"id":"tempora-quadp3-5.communion.2","type":"para","t":{"la":["Servite Dómino in timóre, et exsultáte ei cum tremóre: apprehéndite disciplínam, ne pereátis de via justa."]}}

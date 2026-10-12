@@ -51,7 +51,7 @@
 {"id":"tempora-quadp3-3.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quadp3-3.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quadp3-3.introit.7","type":"para","t":{"la":["Miseréris ómnium, Dómine, et nihil odísti eórum quæ fecísti, dissímulans peccáta hóminum propter pæniténtiam et parcens illis: quia tu es Dóminus, Deus noster"]}}
-{"id":"tempora-quadp3-3.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quadp3-3.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quadp3-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quadp3-3.collecte.1","type":"para","t":{"la":["Præsta, Dómine, fidélibus tuis: ut jejuniórum veneránda sollémnia, et cóngrua pietáte suscípiant, et secúra devotióne percúrrant. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quadp3-3.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -72,14 +72,14 @@
 {"id":"tempora-quadp3-3.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-quadp3-3.evangile.2","type":"rubric","t":{"la":["Matt 6:16-21"],"fr":["Matt 6:16-21"]}}
 {"id":"tempora-quadp3-3.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Cum jejunátis, nolíte fíeri, sicut hypócritæ, tristes. Extérminant enim fácies suas, ut appáreant homínibus jejunántes. Amen, dico vobis, quia recepérunt mercédem suam. Tu autem, cum jejúnas, unge caput tuum, et fáciem tuam lava, ne videáris homínibus jejúnans, sed Patri tuo, qui est in abscóndito: et Pater tuus, qui videt in abscóndito, reddet tibi. Nolíte thesaurizáre vobis thesáuros in terra: ubi ærúgo et tínea demolítur: et ubi fures effódiunt et furántur. Thesaurizáte autem vobis thesáuros in coelo: ubi neque ærúgo neque tínea demolítur; et ubi fures non effódiunt nec furántur. Ubi enim est thesáurus tuus, ibi est et cor tuum."]}}
-{"id":"tempora-quadp3-3.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quadp3-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quadp3-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quadp3-3.offertoire.1","type":"rubric","t":{"la":["Ps 29:2-3"],"fr":["Ps 29:2-3"]}}
 {"id":"tempora-quadp3-3.offertoire.2","type":"para","t":{"la":["Exaltábo te, Dómine, quóniam suscepísti me, nec delectásti inimícos meos super me: Dómine, clamávi ad te, et sanásti me."]}}
 {"id":"tempora-quadp3-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quadp3-3.secrete.1","type":"para","t":{"la":["Fac nos, quǽsumus, Dómine, his munéribus offeréndis conveniénter aptári: quibus ipsíus venerábilis sacraménti celebrámus exórdium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quadp3-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quadp3-3.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quadp3-3.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quadp3-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quadp3-3.communion.1","type":"rubric","t":{"la":["Ps 1:2 et 3."],"fr":["Ps 1:2 et 3."]}}
 {"id":"tempora-quadp3-3.communion.2","type":"para","t":{"la":["Qui meditábitur in lege Dómini die ac nocte, dabit fructum suum in témpore suo."]}}

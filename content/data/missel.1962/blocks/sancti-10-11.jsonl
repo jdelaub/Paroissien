@@ -8,7 +8,7 @@
 {"id":"sancti-10-11.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-10-11.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-10-11.introit.7","type":"para","t":{"la":["Ecce Virgo concípiet, et páriet fílium, et vocábitur nomen ejus Emmánuel."]}}
-{"id":"sancti-10-11.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-11.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-10-11.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-11.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-10-11.collecte.1","type":"para","t":{"la":["Deus, qui de beátæ Maríæ Vírginis útero Verbum tuum, Angelo nuntiánte, carnem suscípere voluísti: præsta supplícibus tuis; ut, qui vere eam Genitrícem Dei crédimus, ejus apud te intercessiónibus adjuvémur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-11.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-11.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/07-16.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -24,14 +24,14 @@
 {"id":"sancti-10-11.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-10-11.evangile.2","type":"rubric","t":{"la":["Luc 2:43-51"],"fr":["Luc 2:43-51"]}}
 {"id":"sancti-10-11.evangile.3","type":"para","t":{"la":["In illo témpore: Cum redírent, remánsit puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus. Existimántes autem illum esse in comitátu, venérunt iter diei, et requirébant eum inter cognátos, et notos. Et non inveniéntes, regréssi sunt in Jerúsalem, requiréntes eum. Et factum est, post tríduum invenérunt illum in templo sedéntem in médio doctórum, audiéntem illos, et interrogántem eos. Stupébant autem omnes, qui eum audiébant, super prudéntia et respónsis ejus. Et vidéntes admiráti sunt. Et dixit mater ejus ad illum: Fili, quid fecísti nobis sic? ecce pater tuus, et ego doléntes quærebámus te. Et ait ad illos: Quid est quod me quærebátis? nesciebátis quia in his, quæ Patris mei sunt, opórtet me esse? Et ipsi non intellexérunt verbum, quod locútus est ad eos. Et descéndit cum eis, et venit Názareth: et erat súbditus illis."]}}
-{"id":"sancti-10-11.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-10-11.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-10-11.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-11.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-10-11.offertoire.1","type":"rubric","t":{"la":["Matt 1:18"],"fr":["Matt 1:18"]}}
 {"id":"sancti-10-11.offertoire.2","type":"para","t":{"la":["Cum esset desponsáta mater ejus María Joseph, invénta est in útero habens de Spíritu Sancto."]}}
 {"id":"sancti-10-11.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-11.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C10.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C11.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-10-11.secrete.1","type":"para","t":{"la":["Tua, Dómine, propitiatióne, et beátæ Maríæ semper Vírginis intercessióne, ad perpétuam atque præséntem hæc oblátio nobis profíciat prosperitátem et pacem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-11.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-10-11.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Festivitate »)."]}}
+{"id":"sancti-10-11.preface.1","type":"rubric","preface":"maria","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Festivitate »)."]}}
 {"id":"sancti-10-11.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-11.txt","section":"Communio"},{"file":"horas/Latin/Commune/C10.txt","section":"Communio"},{"file":"horas/Latin/Commune/C11.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-10-11.communion.1","type":"para","t":{"la":["Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium."]}}
 {"id":"sancti-10-11.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-11.txt","section":"Postcommunio"},{"file":"horas/Latin/Commune/C10b.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}

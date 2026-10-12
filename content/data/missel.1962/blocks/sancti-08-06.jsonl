@@ -8,7 +8,7 @@
 {"id":"sancti-08-06.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-08-06.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-08-06.introit.7","type":"para","t":{"la":["Illuxérunt coruscatiónes tuæ orbi terræ: commóta est et contrémuit terra."]}}
-{"id":"sancti-08-06.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-08-06.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-08-06.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-06.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-08-06.collecte.1","type":"para","t":{"la":["Deus, qui fídei sacraménta in Unigéniti tui gloriósa Transfiguratióne patrum testimónio roborásti, et adoptiónem filiórum perféctam, voce delápsa in nube lúcida, mirabíliter præsignásti: concéde propítius; ut ipsíus Regis glóriæ nos coherédes effícias, et ejúsdem glóriæ tríbuas esse consórtes. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-06.collecte.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saints Sixte II, pape, Félicissime et Agapit, martyrs"]}}
@@ -27,7 +27,7 @@
 {"id":"sancti-08-06.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-08-06.evangile.2","type":"rubric","t":{"la":["Matt 17:1-9"],"fr":["Matt 17:1-9"]}}
 {"id":"sancti-08-06.evangile.3","type":"para","t":{"la":["In illo témpore: Assúmpsit Jesus Petrum, et Jacóbum, et Joánnem fratrem ejus, et duxit illos in montem excélsum seórsum: et transfigurátus est ante eos. Et resplénduit fácies ejus sicut sol: vestiménta autem ejus facta sunt alba sicut nix. Et ecce, apparuérunt illis Moyses et Elías cum eo loquéntes. Respóndens autem Petrus, dixit ad Jesum: Dómine, bonum est nos hic esse: si vis, faciámus hic tria tabernácula, tibi unum, Móysi unum et Elíæ unum. Adhuc eo loquénte, ecce, nubes lúcida obumbrávit eos. Et ecce vox de nube, dicens: Hic est Fílius meus diléctus, in quo mihi bene complácui: ipsum audíte. Et audiéntes discípuli, cecidérunt in fáciem suam, et timuérunt valde. Et accéssit Jesus, et tétigit eos, dixítque eis: Surgite, et nolíte timére. Levántes autem óculos suos, néminem vidérunt nisi solum Jesum. Et descendéntibus illis de monte, præcépit eis Jesus, dicens: Némini dixéritis visiónem, donec Fílius hóminis a mórtuis resúrgat."]}}
-{"id":"sancti-08-06.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-08-06.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-08-06.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-06.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-08-06.offertoire.1","type":"rubric","t":{"la":["Ps 111:3"],"fr":["Ps 111:3"]}}
 {"id":"sancti-08-06.offertoire.2","type":"para","t":{"la":["Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi, allelúja."]}}
@@ -36,7 +36,7 @@
 {"id":"sancti-08-06.secrete.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saints Sixte II, pape, Félicissime et Agapit, martyrs"]}}
 {"id":"sancti-08-06.secrete.c1.1","type":"para","t":{"la":["Múnera tibi, Dómine, nostra devotiónis offérimus: quæ et pro tuórum tibi grata sint honóre Justórum, et nobis salutária, te miseránte, reddántur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-06.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-08-06.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-08-06.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-08-06.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-06.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-08-06.communion.1","type":"rubric","t":{"la":["Matt 17:9"],"fr":["Matt 17:9"]}}
 {"id":"sancti-08-06.communion.2","type":"para","t":{"la":["Visiónem, quam vidístis, némini dixéritis, donec a mórtuis resúrgat Fílius hóminis."]}}

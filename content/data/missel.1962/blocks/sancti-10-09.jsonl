@@ -8,7 +8,7 @@
 {"id":"sancti-10-09.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-10-09.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-10-09.introit.7","type":"para","t":{"la":["In sermónibus Dómini ópera ejus: sol illúminans per ómnia respéxit, et glória Dómini plenum est opus ejus."]}}
-{"id":"sancti-10-09.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-09.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-10-09.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-09.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-10-09.collecte.1","type":"para","t":{"la":["Deus, qui beátum Joánnem Confessórem tuum ad fidem in géntibus propagándam mirabíliter excitáre dignátus es, ac per eum in erudiéndis fidélibus novam in Ecclésia tua famíliam congregásti: da nobis fámulis tuis; ita ejus institútis profícere, ut prǽmia consequámur ætérna. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-09.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/10-09t.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saints Denis, évêque, Rustique et Éleuthère, martyrs"]}}
@@ -28,7 +28,7 @@
 {"id":"sancti-10-09.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-10-09.evangile.2","type":"rubric","t":{"la":["Luc 10:1-9"],"fr":["Luc 10:1-9"]}}
 {"id":"sancti-10-09.evangile.3","type":"para","t":{"la":["In illo témpore: Designávit Dóminus et álios septuagínta duos: et misit illos binos ante fáciem suam in omnem civitátem et locum, quo erat ipse ventúrus. ¶ Et dicebat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo Dóminum messis, ut mittat operários in messem suam. Ite: ecce, ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum neque peram neque calceaménta; et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei."]}}
-{"id":"sancti-10-09.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-10-09.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-10-09.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-09.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-10-09.offertoire.1","type":"rubric","t":{"la":["Col 1:25"],"fr":["Col 1:25"]}}
 {"id":"sancti-10-09.offertoire.2","type":"para","t":{"la":["Christi factus sum ego miníster secúndum dispensatiónem Dei, quæ data est mihi, ut ímpleam verbum Dómini."]}}
@@ -37,7 +37,7 @@
 {"id":"sancti-10-09.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/10-09t.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saints Denis, évêque, Rustique et Éleuthère, martyrs"]}}
 {"id":"sancti-10-09.secrete.c1.1","type":"para","t":{"la":["Obláta tibi, Dómine, múnera pópuli tui, pro tuórum honóre Sanctórum, súscipe propítius, quǽsumus: et eórum nos intercessióne sanctífica. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-09.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-10-09.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-10-09.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-10-09.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-09.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-10-09.communion.1","type":"rubric","t":{"la":["Phil 3:7"],"fr":["Phil 3:7"]}}
 {"id":"sancti-10-09.communion.2","type":"para","t":{"la":["Quæ mihi fuérunt lucra, hæc arbitrátus sum propter Christum detriménta."]}}

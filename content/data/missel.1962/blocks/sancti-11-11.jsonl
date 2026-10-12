@@ -8,7 +8,7 @@
 {"id":"sancti-11-11.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-11-11.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-11-11.introit.7","type":"para","t":{"la":["Státuit ei Dóminus testaméntum pacis, et príncipem fecit eum: ut sit illi sacerdótii dígnitas in ætérnum."]}}
-{"id":"sancti-11-11.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-11-11.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-11-11.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-11.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-11-11.collecte.1","type":"para","t":{"la":["Deus, qui cónspicis, quia ex nulla nostra virtúte subsístimus: concéde propítius; ut, intercessióne beáti Martíni Confessóris tui atque Pontíficis, contra ómnia advérsa muniámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-11-11.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/11-11cc.txt","section":"Oratio"},{"file":"horas/Latin/Commune/C2a.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Mennas, martyr"]}}
@@ -27,7 +27,7 @@
 {"id":"sancti-11-11.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-11-11.evangile.2","type":"rubric","t":{"la":["Luc 11:33-36"],"fr":["Luc 11:33-36"]}}
 {"id":"sancti-11-11.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nemo lucérnam accéndit, et in abscóndito ponit, neque sub módio: sed supra candelábrum, ut, qui ingrediúntur, lumen vídeant. Lucérna córporis tui est óculus tuus. Si óculus tuus fúerit simplex, totum corpus tuum lúcidum erit: si autem nequam fúerit, étiam corpus tuum tenebrósum erit. Vide ergo, ne lumen, quod in te est, ténebræ sint. Si ergo corpus tuum totum lúcidum fúerit, non habens áliquam partem tenebrárum, erit lúcidum totum, et sicut lucérna fulgóris illuminábit te."]}}
-{"id":"sancti-11-11.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-11-11.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-11-11.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-11.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-11-11.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
 {"id":"sancti-11-11.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
@@ -36,7 +36,7 @@
 {"id":"sancti-11-11.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/11-11cc.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C2a.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Mennas, martyr"]}}
 {"id":"sancti-11-11.secrete.c1.1","type":"para","t":{"la":["Munéribus nostris, quǽsumus, Dómine, precibúsque suscéptis: et cœléstibus nos munda mystériis, et cleménter exáudi. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-11-11.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-11-11.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-11-11.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-11-11.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-11.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-11-11.communion.1","type":"rubric","t":{"la":["Matt 24:46-47"],"fr":["Matt 24:46-47"]}}
 {"id":"sancti-11-11.communion.2","type":"para","t":{"la":["Beátus servus, quem, cum vénerit dóminus, invénerit vigilántem: amen, dico vobis, super ómnia bona sua constítuet eum."]}}

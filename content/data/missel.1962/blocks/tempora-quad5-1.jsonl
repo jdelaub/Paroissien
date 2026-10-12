@@ -6,7 +6,7 @@
 {"id":"tempora-quad5-1.introit.3","type":"rubric","t":{"la":["Ps 55:3"],"fr":["Ps 55:3"]}}
 {"id":"tempora-quad5-1.introit.4","type":"para","t":{"la":["Conculcavérunt me inimíci mei tota die: quóniam multi bellántes advérsum me."]}}
 {"id":"tempora-quad5-1.introit.5","type":"para","t":{"la":["Miserére mihi, Dómine, quóniam conculcávit me homo: tota die bellans tribulávit me."]}}
-{"id":"tempora-quad5-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad5-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad5-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad5-1.collecte.1","type":"para","t":{"la":["Sanctífica, quǽsumus, Dómine, nostra jejúnia: et cunctárum nobis indulgéntiam propítius largíre culpárum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad5-1.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-1.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -27,14 +27,14 @@
 {"id":"tempora-quad5-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-quad5-1.evangile.2","type":"rubric","t":{"la":["Joann 7:32-39"],"fr":["Joann 7:32-39"]}}
 {"id":"tempora-quad5-1.evangile.3","type":"para","t":{"la":["In illo témpore: Misérunt príncipes et pharisǽi minístros, ut apprehénderent Jesum. Dixit ergo eis Jesus: Adhuc módicum tempus vobíscum sum: et vado ad eum, qui me misit. Quærétis me, et non inveniétis: et ubi ego sum, vos non potéstis veníre. Dixérunt ergo Judǽi ad semetípsos: Quo hic itúrus est, quia non inveniémus eum? numquid in dispersiónem géntium itúrus est, et doctúrus gentes? Quis est hic sermo, quem dixit: Quærétis me, et non inveniétis: et ubi sum ego, vos non potéstis veníre? In novíssimo autem die magno festivitátis stabat Jesus, et clamábat, dicens: Si quis sitit, véniat ad me et bibat. Qui credit in me, sicut dicit Scriptúra, flúmina de ventre ejus fluent aquæ vivæ. Hoc autem dixit de Spíritu, quem acceptúri erant credéntes in eum."]}}
-{"id":"tempora-quad5-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad5-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad5-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad5-1.offertoire.1","type":"rubric","t":{"la":["Ps 6:5"],"fr":["Ps 6:5"]}}
 {"id":"tempora-quad5-1.offertoire.2","type":"para","t":{"la":["Dómine, convértere, et éripe ánimam meam: salvum me fac propter misericórdiam tuam."]}}
 {"id":"tempora-quad5-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad5-1.secrete.1","type":"para","t":{"la":["Concéde nobis, Dómine, Deus noster: ut hæc hóstia salutáris et nostrórum fiat purgátio delictórum, et tuæ propitiátio majestátis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad5-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad5-1.preface.1","type":"rubric","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
+{"id":"tempora-quad5-1.preface.1","type":"rubric","preface":"quad5","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
 {"id":"tempora-quad5-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad5-1.communion.1","type":"rubric","t":{"la":["Ps 23:10"],"fr":["Ps 23:10"]}}
 {"id":"tempora-quad5-1.communion.2","type":"para","t":{"la":["Dóminus virtútum ipse est Rex glóriæ."]}}

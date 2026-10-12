@@ -8,7 +8,7 @@
 {"id":"sancti-08-01r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-08-01r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-08-01r.introit.7","type":"para","t":{"la":["Clamavérunt justi, et Dóminus exaudívit eos; et ex ómnibus tribulatiónibus eórum liberávit eos."]}}
-{"id":"sancti-08-01r.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-08-01r.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-08-01r.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-01r.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-08-01r.collecte.1","type":"para","t":{"la":["Fratérna nos, Dómine, Mártyrum tuórum coróna lætíficet: quæ et fídei nostræ præbeat increménta virtútum; et multíplici nos suffrágio consolétur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-01r.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-01r.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -24,14 +24,14 @@
 {"id":"sancti-08-01r.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-08-01r.evangile.2","type":"rubric","t":{"la":["Luc 12:1-8"],"fr":["Luc 12:1-8"]}}
 {"id":"sancti-08-01r.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Atténdite a ferménto pharisæórum, quod est hypócrisis. Nihil autem opértum est, quod non revelétur: neque abscónditum, quod non sciátur. ¶ Quóniam, quæ in ténebris dixístis, in lúmine dicéntur: et quod in aurem locúti estis in cubículis, prædicábitur in tectis. Dico autem vobis amícis meis: Ne terreámini ab his, qui occídunt corpus, et post hæc non habent ámplius quid fáciant. Osténdam autem vobis, quem timeátis: timéte eum, qui postquam occíderit, habet potestátem míttere in gehénnam. Ita dico vobis: hunc timéte. Nonne quinque pásseres véneunt dipóndio, et unus ex illis non est in oblivióne coram Deo? Sed et capílli cápitis vestri omnes numeráti sunt. Nolíte ergo timére: multis passéribus pluris estis vos. Dico autem vobis: Omnis, quicúmque conféssus fúerit me coram homínibus, et Fílius hóminis confitébitur illum coram Angelis Dei."]}}
-{"id":"sancti-08-01r.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-08-01r.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-08-01r.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-01r.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-08-01r.offertoire.1","type":"rubric","t":{"la":["Ps 149:5-6"],"fr":["Ps 149:5-6"]}}
 {"id":"sancti-08-01r.offertoire.2","type":"para","t":{"la":["Exsultábunt sancti in glória; lætabúntur in cubílibus suis. Exaltatiónes Dei in gútture eórum. Allelúia."]}}
 {"id":"sancti-08-01r.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-01r.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-08-01r.secrete.1","type":"para","t":{"la":["Mystéria tua, Dómine, pro sanctórum Mártyrum tuórum honóre, devóta mente tractémus: quibus et præsídium nobis crescat et gáudium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-01r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-08-01r.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-08-01r.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-08-01r.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-01r.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-08-01r.communion.1","type":"rubric","t":{"la":["Luc 12:4"],"fr":["Luc 12:4"]}}
 {"id":"sancti-08-01r.communion.2","type":"para","t":{"la":["Dico autem vobis amícis meis: Ne terreámini ab his qui occídunt corpus."]}}

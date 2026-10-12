@@ -8,7 +8,7 @@
 {"id":"sancti-08-22.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-08-22.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-08-22.introit.7","type":"para","t":{"la":["Adeámus cum fidúcia ad thronum grátiæ, ut misericórdiam consequámur, et grátiam inveniámus in auxílio opportúno."]}}
-{"id":"sancti-08-22.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-08-22.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-08-22.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-22.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-08-22.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, qui in Corde beátæ Maríæ Vírginis dignum Spíritus Sancti habitáculum præparásti: concéde propítius; ut ejúsdem immaculáti Cordis festivitátem devóta mente recoléntes, secúndum cor tuum vívere valeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-22.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/08-22cc.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saints Timothée, Hippolyte et Symphorien, martyrs"]}}
@@ -28,7 +28,7 @@
 {"id":"sancti-08-22.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-08-22.evangile.2","type":"rubric","t":{"la":["Joann 19:25-27"],"fr":["Joann 19:25-27"]}}
 {"id":"sancti-08-22.evangile.3","type":"para","t":{"la":["In illo témpore: Stabant juxta crucem Jesu mater ejus, et soror matris ejus María Cléophæ, et María Magdaléne. Cum vidísset ergo Jesus matrem, et discípulum stantem, quem diligébat, dicit matri suæ: Múlier, ecce fílius tuus. Deinde dicit discípulo: Ecce mater tua. Et ex illa hora accépit eam discípulus in sua."]}}
-{"id":"sancti-08-22.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-08-22.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-08-22.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-22.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-08-22.offertoire.1","type":"rubric","t":{"la":["Luc 1:46; 1:49"],"fr":["Luc 1:46; 1:49"]}}
 {"id":"sancti-08-22.offertoire.2","type":"para","t":{"la":["Exsultávit spíritus meus in Deo salutári meo; quia fecit mihi magna qui potens est, et sanctum nomen ejus."]}}
@@ -37,7 +37,7 @@
 {"id":"sancti-08-22.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/08-22cc.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C6a.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saints Timothée, Hippolyte et Symphorien, martyrs"]}}
 {"id":"sancti-08-22.secrete.c1.1","type":"para","t":{"la":["Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum: quorum se méritis de tribulatióne percepísse cognóscit auxílium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-22.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-08-22.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Festivitate »)."]}}
+{"id":"sancti-08-22.preface.1","type":"rubric","preface":"maria","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Festivitate »)."]}}
 {"id":"sancti-08-22.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-22.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-08-22.communion.1","type":"rubric","t":{"la":["Joann 19:27"],"fr":["Joann 19:27"]}}
 {"id":"sancti-08-22.communion.2","type":"para","t":{"la":["Dixit Jesus matri suæ: Múlier, ecce fílius tuus: deinde dixit discípulo: Ecce mater tua. Et ex illa hora accépit eam discípulus in sua."]}}

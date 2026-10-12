@@ -41,6 +41,7 @@ import do  # noqa: E402
 import keys as K  # noqa: E402
 
 PUB_ID = "missel.1962"
+OVERLAY = HERE / "propres"  # propres de France transcrits par Paroissien (format de DO)
 DO_REPO = "https://github.com/DivinumOfficium/divinum-officium"
 DO_COMMIT = "b9c100d79ae481c67b2801fdd3622b00dd86bd73"
 NNBSP = " "
@@ -108,17 +109,18 @@ VARIANT = {  # groupe → (suffixe d'identifiant, français, latin)
     "N-before-Q": ("hors", "Avant la Septuagésime :", "Ante Septuagesimam:"),
 }
 
-# Stations romaines, d'après le Missel romain (« Statio ad… ») ; rédigé par Paroissien.
+# Stations romaines, relues sur le Missale Romanum de Pustet (archive.org bc.radom.pl.Missale_romanum_skaryszew,
+# « Statio ad… » en tête de chaque messe) ; noms français de Paroissien.
 STATIONS = {
     "Tempora/Adv1-0": "Sainte-Marie-Majeure", "Tempora/Adv2-0": "Sainte-Croix-de-Jérusalem", "Tempora/Adv3-0": "Saint-Pierre",
     "Tempora/Adv3-3": "Sainte-Marie-Majeure", "Tempora/Adv3-5": "Saints-Douze-Apôtres", "Tempora/Adv3-6": "Saint-Pierre",
     "Tempora/Adv4-0": "Saints-Douze-Apôtres", "Sancti/12-24": "Sainte-Marie-Majeure",
     "Sancti/12-25m1": "Sainte-Marie-Majeure, à la Crèche", "Sancti/12-25m2": "Sainte-Anastasie", "Sancti/12-25m3": "Sainte-Marie-Majeure",
-    "Sancti/12-26": "Saint-Étienne-le-Rond", "Sancti/12-27": "Sainte-Marie-Majeure", "Sancti/12-28r": "Saint-Paul-hors-les-Murs",
+    "Sancti/12-26": "Saint-Étienne-au-Mont-Cælius", "Sancti/12-27": "Sainte-Marie-Majeure", "Sancti/12-28r": "Saint-Paul-hors-les-Murs",
     "Sancti/01-01": "Sainte-Marie-du-Transtévère", "Sancti/01-06": "Saint-Pierre",
     "Tempora/Quadp1-0": "Saint-Laurent-hors-les-Murs", "Tempora/Quadp2-0": "Saint-Paul-hors-les-Murs", "Tempora/Quadp3-0": "Saint-Pierre",
     "Tempora/Quadp3-3": "Sainte-Sabine", "Tempora/Quadp3-4": "Saint-Georges", "Tempora/Quadp3-5": "Saints-Jean-et-Paul",
-    "Tempora/Quadp3-6": "Saint-Augustin",
+    "Tempora/Quadp3-6": "Saint-Tryphon",
     "Tempora/Quad1-0": "Saint-Jean-de-Latran", "Tempora/Quad1-1": "Saint-Pierre-aux-Liens", "Tempora/Quad1-2": "Sainte-Anastasie",
     "Tempora/Quad1-3": "Sainte-Marie-Majeure", "Tempora/Quad1-4": "Saint-Laurent-in-Panisperna", "Tempora/Quad1-5": "Saints-Douze-Apôtres",
     "Tempora/Quad1-6": "Saint-Pierre",
@@ -132,7 +134,7 @@ STATIONS = {
     "Tempora/Quad4-3": "Saint-Paul-hors-les-Murs", "Tempora/Quad4-4": "Saints-Silvestre-et-Martin", "Tempora/Quad4-5": "Saint-Eusèbe",
     "Tempora/Quad4-6": "Saint-Nicolas-in-Carcere",
     "Tempora/Quad5-0": "Saint-Pierre", "Tempora/Quad5-1": "Saint-Chrysogone", "Tempora/Quad5-2": "Saint-Cyriaque",
-    "Tempora/Quad5-3": "Saint-Marcel", "Tempora/Quad5-4": "Saint-Apollinaire", "Tempora/Quad5-5": "Saint-Étienne-le-Rond",
+    "Tempora/Quad5-3": "Saint-Marcel", "Tempora/Quad5-4": "Saint-Apollinaire", "Tempora/Quad5-5": "Saint-Étienne-au-Mont-Cælius",
     "Tempora/Quad5-6": "Saint-Jean-Porte-Latine",
     "Tempora/Quad6-0": "Saint-Jean-de-Latran", "Tempora/Quad6-1": "Sainte-Praxède", "Tempora/Quad6-2": "Sainte-Prisque",
     "Tempora/Quad6-3": "Sainte-Marie-Majeure", "Tempora/Quad6-4": "Saint-Jean-de-Latran", "Tempora/Quad6-5": "Sainte-Croix-de-Jérusalem",
@@ -140,7 +142,7 @@ STATIONS = {
     "Tempora/Pasc0-0": "Sainte-Marie-Majeure", "Tempora/Pasc0-1": "Saint-Pierre", "Tempora/Pasc0-2": "Saint-Paul-hors-les-Murs",
     "Tempora/Pasc0-3": "Saint-Laurent-hors-les-Murs", "Tempora/Pasc0-4": "Saints-Douze-Apôtres", "Tempora/Pasc0-5": "Sainte-Marie-aux-Martyrs",
     "Tempora/Pasc0-6": "Saint-Jean-de-Latran", "Tempora/Pasc1-0": "Saint-Pancrace", "Tempora/Pasc5-4": "Saint-Pierre",
-    "Tempora/Pasc6-6": "Saint-Jean-de-Latran", "Tempora/Pasc7-0": "Saint-Pierre", "Tempora/Pasc7-1": "Saint-Pierre-aux-Liens",
+    "Tempora/Pasc6-6": "Saint-Jean-de-Latran", "Tempora/Pasc5-1": "Sainte-Marie-Majeure", "Sancti/04-25c": "Saint-Pierre", "Tempora/Pasc7-0": "Saint-Pierre", "Tempora/Pasc7-1": "Saint-Pierre-aux-Liens",
     "Tempora/Pasc7-2": "Sainte-Anastasie", "Tempora/Pasc7-3": "Sainte-Marie-Majeure", "Tempora/Pasc7-4": "Saint-Laurent-hors-les-Murs",
     "Tempora/Pasc7-5": "Saints-Douze-Apôtres", "Tempora/Pasc7-6": "Saint-Pierre",
     "Tempora/093-3": "Sainte-Marie-Majeure", "Tempora/093-5": "Saints-Douze-Apôtres", "Tempora/093-6": "Saint-Pierre",
@@ -168,9 +170,6 @@ PRELUDE_TITLES = {
 }
 
 # Messes sans propre dans DO pour une clé du calendrier de France : commun et nom (latin, français).
-SYNTHETIC = {
-    "Sancti/01-03": {"commune": "Commune/C6a", "name": ("Genovéfæ", "Geneviève"), "la": "S. Genovefæ Virginis"},
-}
 # Clés jamais célébrées (toujours empêchées par une fête de IIᵉ classe) : pas de formulaire.
 NEVER = {"Tempora/Nat26", "Tempora/Nat27", "Tempora/Nat28"}
 
@@ -1107,8 +1106,8 @@ def replace_n(lines: list[str], name: str | None) -> list[str]:
 class Builder:
     def __init__(self, www: Path):
         self.www = www
-        self.la = do.Library(www, "Latin")
-        self.fr = do.Library(www, "Francais")
+        self.la = do.Library(www, "Latin", OVERLAY)
+        self.fr = do.Library(www, "Francais", OVERLAY)
         self.subs = do.divinum.tempora_substitutions(www)
         self.report = {"macros": Counter()}
         self.r_la = Renderer(self.la, "la", self.report)
@@ -1252,10 +1251,13 @@ class Builder:
             self.missing_pieces.append(f"{prefix}:Introitus")
         if mass.tempora and re.match(r"Tempora/Epi1-[1-6]$", mass.winner or ""):
             # Féries après la Sainte Famille : temps de Noël jusqu'au 13 janvier (n. 72), puis temps après l'Épiphanie.
-            blocks.append(rubric(f"{prefix}.gloria", "On dit le Gloria in excelsis jusqu’au 13 janvier ; ensuite on ne le dit pas."))
+            rb = rubric(f"{prefix}.gloria", "On dit le Gloria in excelsis jusqu’au 13 janvier ; ensuite on ne le dit pas.")
+            rb.attrs = {"gloria": True, "gloriaUntil": "01-13"}
         else:
-            blocks.append(rubric(f"{prefix}.gloria", "On dit le Gloria in excelsis." if mass.gloria() else "On ne dit pas le Gloria in excelsis.",
-                                 "Gloria in excelsis." if mass.gloria() else None))
+            rb = rubric(f"{prefix}.gloria", "On dit le Gloria in excelsis." if mass.gloria() else "On ne dit pas le Gloria in excelsis.",
+                        "Gloria in excelsis." if mass.gloria() else None)
+            rb.attrs = {"gloria": mass.gloria()}
+        blocks.append(rb)
         # Collecte (et Flectamus genua des Quatre-Temps).
         ember = None
         for line in mass.rule:
@@ -1325,8 +1327,10 @@ class Builder:
             self.missing_pieces.append(f"{prefix}:Evangelium")
         if mass.has_rule("Maundi") and la.has(mass.winner, "Maundi", ctx):
             blocks += self.piece(mass, prefix, "mandatum", "Lavement des pieds", "Mandatum", (mass.winner, "Maundi", la.resolve(mass.winner, "Maundi", ctx)), stanzas=True)
-        blocks.append(rubric(f"{prefix}.credo", "On dit le Credo." if mass.credo() else "On ne dit pas le Credo.",
-                             "Credo." if mass.credo() else None))
+        rb = rubric(f"{prefix}.credo", "On dit le Credo." if mass.credo() else "On ne dit pas le Credo.",
+                    "Credo." if mass.credo() else None)
+        rb.attrs = {"credo": mass.credo()}
+        blocks.append(rb)
         for kind, pid, fr_t, la_t in (("Offertorium", "offertoire", "Offertoire", "Offertorium"),):
             g = mass.getitem(kind)
             if g:
@@ -1344,10 +1348,18 @@ class Builder:
             self.missing_pieces.append(f"{prefix}:Secreta")
         # Préface (renvoi) et Communicantes propres.
         blocks.append(heading(f"{prefix}.preface", "Préface", "Præfatio", 2))
+        preface_attrs = {"preface": mass.preface()[0].lower()}
         if mass.tempora and re.match(r"Tempora/Epi1-[1-6]$", mass.winner or ""):
             preface_text = "Préface de l’Épiphanie jusqu’au 13 janvier ; ensuite préface commune."
-        blocks.append(rubric(f"{prefix}.preface.1", preface_text or self.preface_text(mass), self.preface_la(mass)))
-        comm = self.communicantes_note(mass)
+            preface_attrs = {"preface": "epi", "prefaceAfter": {"01-13": "communis"}}
+        comm_key, hanc_key, comm = self.communicantes(mass)
+        if comm_key:
+            preface_attrs["communicantes"] = comm_key
+        if hanc_key:
+            preface_attrs["hancIgitur"] = hanc_key
+        rb = rubric(f"{prefix}.preface.1", preface_text or self.preface_text(mass), self.preface_la(mass))
+        rb.attrs = preface_attrs
+        blocks.append(rb)
         if comm:
             blocks.append(rubric(f"{prefix}.preface.2", comm))
         if mass.has_rule(r"^Communicantes$") and la.has(mass.winner, "Communicantes", ctx):
@@ -1469,19 +1481,23 @@ class Builder:
         return f"Præfatio {first.strip()[1:].strip()}." if first else None
 
     @staticmethod
-    def communicantes_note(mass: Mass) -> str | None:
+    def communicantes(mass: Mass) -> tuple[str | None, str | None, str | None]:
+        """Communicantes et Hanc igitur propres (clés des sous-sections de l'unité `prefaces`) et rubrique de renvoi.
+        Noël : toutes les messes de l'octave, saints compris (« In Nativitate Domini et per Octavam ») ; Épiphanie et
+        Ascension : le jour seulement (1962) ; Pâques et Pentecôte : l'octave, avec le Hanc igitur."""
         w = mass.winner or ""
-        if w.startswith("Sancti/12-25") or re.match(r"Tempora/Nat(1-0|2\d|3\d)", w) or w == "Sancti/01-01":
-            return "Communicantes propre de Noël (voir aux Préfaces)."
+        if (w.startswith("Sancti/12-25") or re.match(r"Tempora/Nat(1-0|2\d|3\d)$", w) or w == "Sancti/01-01"
+                or re.match(r"Sancti/12-(2[6-9]|3[01])", w)):
+            return "c-nat1962", None, "Communicantes propre de Noël (voir aux Préfaces)."
         if w == "Sancti/01-06":
-            return "Communicantes propre de l’Épiphanie (voir aux Préfaces)."
+            return "c-epi1962", None, "Communicantes propre de l’Épiphanie (voir aux Préfaces)."
         if re.match(r"Tempora/Pasc0-|Tempora/Quad6-6", w):
-            return "Communicantes et Hanc igitur propres de Pâques (voir aux Préfaces)."
+            return "c-pasc1962", "h-pent", "Communicantes et Hanc igitur propres de Pâques (voir aux Préfaces)."
         if w == "Tempora/Pasc5-4":
-            return "Communicantes propre de l’Ascension (voir aux Préfaces)."
+            return "c-asc1962", None, "Communicantes propre de l’Ascension (voir aux Préfaces)."
         if re.match(r"Tempora/Pasc6-6|Tempora/Pasc7-", w):
-            return "Communicantes et Hanc igitur propres de la Pentecôte (voir aux Préfaces)."
-        return None
+            return "c-pent1962", "h-pent", "Communicantes et Hanc igitur propres de la Pentecôte (voir aux Préfaces)."
+        return None, None, None
 
 
 # ── Unités ──────────────────────────────────────────────────────────────────────────────────
@@ -1525,6 +1541,7 @@ class Unit:
     blocks: list[Block]
     division: str
     order: tuple
+    kind: str = "mass"
 
 
 class Book:
@@ -1620,7 +1637,6 @@ class Book:
         main = (general or france)[0] if entries else None
         mmdd = key.split("/", 1)[1][:5] if not key.endswith("-DU") else "10-28"
         uid = unit_id(key)
-        synthetic = SYNTHETIC.get(key)
         counts = seasons_of(mmdd)
         allowed = {s: c for s, c in counts.items() if s not in ("holyweek", "pasc0") and c >= 12}
         if not allowed:
@@ -1630,14 +1646,12 @@ class Book:
             groups[GROUP.get(s, "N")] += c
         main_group = groups.most_common(1)[0][0]
         main_season = max((s for s in allowed if GROUP.get(s, "N") == main_group), key=lambda s: allowed[s])
-        winner = None if synthetic else key
+        winner = key
 
         def make(season: str) -> Mass:
             ctx = fixed_ctx(mmdd, season)
             if key.endswith("-DU"):
                 ctx.dow = 0
-            if synthetic:
-                return Mass(b, None, ctx, commune_override=synthetic["commune"], name_override=synthetic["name"])
             return Mass(b, winner, ctx)
 
         mass = make(main_season)
@@ -1650,13 +1664,11 @@ class Book:
         # Titre, rang, couleurs.
         if main:
             title_fr = main.fr
-            title_la = main.la or (b.la.officium(key, mass.dctx) if winner else synthetic.get("la"))
+            title_la = main.la or b.la.officium(key, mass.dctx)
             colors = main.colors
             rank = f"{CLASS_FR.get(main.rank, main.rank)} — {colors_text(colors)}"
         else:
             title_fr, title_la, rank = key, b.la.officium(key, mass.dctx), ""
-        if synthetic:
-            title_la = synthetic["la"]
         notes = []
         if general and france and france[0].id == general[0].id and france[0].rank != general[0].rank:
             rank += f" ; en France : {CLASS_FR.get(france[0].rank, france[0].rank)}"
@@ -1664,9 +1676,8 @@ class Book:
             if general and f.id != general[0].id:
                 notes.append((f"En France, ce jour est la fête de {lower_first(f.fr)} ({CLASS_FR.get(f.rank, f.rank)}). Divinum Officium "
                                f"n’en donne pas la messe propre : on trouve ici la messe du calendrier général.", None))
-        if synthetic:
-            notes.append(("Divinum Officium n’a pas de propre pour cette fête du calendrier de France : messe du commun des vierges "
-                          "(Dilexisti), avec les oraisons du commun.", None))
+        if key in b.la.overlay_keys:
+            notes.append(("Propre de France, absent de Divinum Officium : transcrit par Paroissien (voir le README du missel).", None))
         station = STATIONS.get(key)
         if station:
             rank += f". Station à {station}"
@@ -1716,6 +1727,64 @@ class Book:
             return text + "."
         parts = [f"{', '.join(labels)} : {lower_first(name)}" for name, labels in names.items()]
         return text + " ; " + " ; ".join(parts) + "."
+
+    # Commémoraisons : une unité par clé (collecte, secrète, postcommunion).
+
+    def commemoration_unit(self, key: str, main: K.Saint | None, comm: dict) -> Unit:
+        """Oraisons d'une commémoraison du calendrier (`commemorations[].proper`, ou `Sancti/<date>` pour une
+        commémoraison écrite dans le formulaire du jour, comme saint Pierre le 25 janvier ou l'octave de Noël)."""
+        b = self.b
+        uid = unit_id(key)
+        title = comm.get("title", {})
+        title_fr = commemoration_heading(title.get("fr") or comm["id"])
+        title_la = f"Commemoratio {title['la']}" if title.get("la") else None
+        if key == "Tempora/Quad5-5Feriac":
+            ctx = tempora_ctx("Tempora/Quad5-5", self.temporal.get("Tempora/Quad5-5"))
+            rank = "Commémoraison. Ces oraisons suivent celles de la férie (vendredi de la semaine de la Passion)."
+        else:
+            mmdd = main.date
+            counts = seasons_of(mmdd)
+            allowed = {s_: c for s_, c in counts.items() if s_ not in ("holyweek", "pasc0") and c >= 12} or dict(counts)
+            ctx = fixed_ctx(mmdd, max(allowed, key=lambda s_: allowed[s_]))
+            rank = f"Commémoraison. Ces oraisons suivent celles de la messe du jour ({lower_first(main.fr)})."
+            if STATIONS.get(key):
+                rank += f" Station à {STATIONS[key]} pour la procession."
+        intrinsic = not comm.get("proper")
+        suffix = {"peter_apostle": "Petri", "paul_apostle": "Pauli"}.get(comm["id"])
+        blocks = [heading(f"{uid}.titre", title_fr, title_la, 1, x_source(b.la, [(key, "Rank")]) if b.la.exists(key) else None),
+                  rubric(f"{uid}.rang", rank)]
+        for kind, pid, fr_t, la_t in (("Oratio", "collecte", "Collecte", "Oratio"), ("Secreta", "secrete", "Secrète", "Secreta"),
+                                      ("Postcommunio", "postcommunion", "Postcommunion", "Postcommunio")):
+            got, mass, name_kind = None, None, None
+            candidates: list[tuple[str, str]] = []
+            if key == "Tempora/Quad5-5Feriac":
+                candidates = [("Tempora/Quad5-5Feria", f"Commemoratio {kind}")]
+            elif intrinsic:
+                if suffix:
+                    candidates.append((key, f"{kind} {suffix}"))
+                candidates += [(main.key, f"Commemoratio {kind}"), (key, f"Commemoratio {kind}")]
+            for src, section in candidates:
+                mass = Mass(b, src, ctx)
+                r = b.la.resolve(src, section, mass.dctx)
+                if r:
+                    got = (src, section, r)
+                    break
+            if not candidates:
+                mass = Mass(b, key, ctx)
+                got = mass.oratio(kind)
+                name_kind = kind
+            if not got:
+                self.b.missing_pieces.append(f"{uid}:{kind}")
+                continue
+            la_items, fr_items, source = b.section_items(mass, *got, name_kind=name_kind)
+            # L'intitulé de DO (« Pro S. Petro », « Commemoratio… ») double le titre de l'unité.
+            for items in (la_items, fr_items):
+                while items and items[0].kind == "rubric":
+                    del items[0]
+            blocks.append(heading(f"{uid}.{pid}", fr_t, la_t, 2, source))
+            blocks += items_to_blocks(f"{uid}.{pid}", la_items, fr_items, b.stats, f"{got[0]}:{got[1]}")
+        toc = title_fr if key.startswith("Tempora/") else f"{mmdd_title(main.date)} — {title_fr}"
+        return Unit(uid, key, toc, blocks, "", ())
 
     # Communs.
 
@@ -1812,6 +1881,23 @@ def lower_first(s: str) -> str:
     return s[:1].lower() + s[1:] if s else s
 
 
+COMMEMORATION_TITLES = {"Litanies majeures": "Commémoraison des Litanies majeures",
+                        "Octave de Noël": "Commémoraison de l’octave de Noël",
+                        "Sept Douleurs de la Bienheureuse Vierge Marie": "Commémoraison des Sept Douleurs de la bienheureuse Vierge Marie"}
+
+
+def commemoration_heading(fr: str) -> str:
+    """« Saint Félix de Nole, prêtre et martyr » → « Commémoraison de saint Félix de Nole, prêtre et martyr »."""
+    if fr in COMMEMORATION_TITLES:
+        return COMMEMORATION_TITLES[fr]
+    for article, prep in (("Les ", "des "), ("Le ", "du "), ("La ", "de la ")):
+        if fr.startswith(article):
+            return "Commémoraison " + prep + fr[len(article):]
+    if fr[:1] in "AEIOUÉÈÊHaeiouéèêh":
+        return "Commémoraison de l’" + lower_first(fr)
+    return "Commémoraison de " + lower_first(fr)
+
+
 INTRINSIC_FR = {"Septem Dolorum B. M. V.": "Sept Douleurs de la bienheureuse Vierge Marie", "Pro S. Anastasiæ": "Sainte Anastasie, martyre",
                 "Pro rogationibus": "Rogations", "Pro Octava Nativitatis.": "Octave de Noël"}
 
@@ -1901,9 +1987,28 @@ def build_book(www: Path, verbose: bool = False) -> Book:
             u.division, u.order = "defunts", (0,)
         else:
             u.division = f"m{mmdd[:2]}"
-            u.order = (int(mmdd[3:5]) if not key.endswith("DU") else 32, key)
+            u.order = (int(mmdd[3:5]) if not key.endswith("DU") else 32, 0, key)
         book.units.append(u)
         covered.append(key)
+    # Commémoraisons du calendrier sans formulaire propre : oraisons seules.
+    comm_keys: dict[str, tuple] = {}
+    for key in sorted(book.sanctoral):
+        for main in book.sanctoral[key]:
+            for c in main.commemorations:
+                ck = c.get("proper") or f"Sancti/{main.date}"
+                if ck not in covered and ck not in comm_keys:
+                    comm_keys[ck] = (main, c)
+    comm_keys["Tempora/Quad5-5Feriac"] = (None, {"id": "seven_sorrows_friday", "proper": "Tempora/Quad5-5Feriac",
+                                                 "title": {"fr": "Sept Douleurs de la Bienheureuse Vierge Marie", "la": "Septem Dolorum B. M. V."}})
+    for ck, (main, c) in sorted(comm_keys.items()):
+        u = book.commemoration_unit(ck, main, c)
+        if ck.startswith("Tempora/"):
+            u.division, u.order = "passion", (5, 5, 1)
+        else:
+            u.division, u.order = f"m{main.date[:2]}", (int(main.date[3:5]), 1, ck)
+        u.kind = "commemoration"
+        book.units.append(u)
+        covered.append(ck)
     for i, (key, title) in enumerate(COMMONS):
         if not b.la.exists(key):
             book.absent.append(key)
@@ -1931,7 +2036,7 @@ def divisions(book: Book) -> list[dict]:
         by[u.division].append(u)
 
     def units_of(name: str) -> list[dict]:
-        return [{"id": u.id, "kind": "mass" if u.id != "prefaces" else "section", "toc": typo(u.toc, "fr"), "unit": True}
+        return [{"id": u.id, "kind": u.kind if u.id != "prefaces" else "section", "toc": typo(u.toc, "fr"), "unit": True}
                 for u in sorted(by.get(name, []), key=lambda u: u.order)]
 
     out = [{"id": "propre-du-temps", "kind": "part", "toc": "Propre du temps",
@@ -2021,7 +2126,8 @@ def main(argv: list[str] | None = None) -> int:
     def manifest(path: Path, latin_only: bool) -> dict:
         rows = []
         for rel in sorted(f for f in b.files_read if f and (not latin_only or "/Francais/" not in f)):
-            rows.append(f"{hashlib.sha256((args.divinum / rel).read_bytes()).hexdigest()}  {rel}\n")
+            source = CONTENT.parent / rel if rel.startswith("content/") else args.divinum / rel
+            rows.append(f"{hashlib.sha256(source.read_bytes()).hexdigest()}  {rel}\n")
         text = "".join(rows)
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(text, encoding="utf-8")

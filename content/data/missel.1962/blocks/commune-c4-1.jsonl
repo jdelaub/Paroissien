@@ -8,7 +8,7 @@
 {"id":"commune-c4-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"commune-c4-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"commune-c4-1.introit.7","type":"para","t":{"la":["Sacerdótes tui, Dómine, índuant justítiam, et sancti tui exsúltent: propter David servum tuum, non avértas fáciem Christi tui."]}}
-{"id":"commune-c4-1.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"commune-c4-1.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"commune-c4-1.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"commune-c4-1.collecte.1","type":"para","t":{"la":["Exáudi, quǽsumus, Dómine, preces nostras, quas in beáti N. Confessóris tui atque Pontíficis solemnitáte deférimus: et, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólve peccátis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"commune-c4-1.epitre","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4-1.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -30,14 +30,14 @@
 {"id":"commune-c4-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," Sancti Evangélii secúndum Matthéum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"commune-c4-1.evangile.2","type":"rubric","t":{"la":["Matt 24:42-47"],"fr":["Matt 24:42-47"]}}
 {"id":"commune-c4-1.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Vigiláte ergo, quia nescítis qua hora Dóminus vester ventúrus sit. Illud autem scitóte, quóniam si sciret paterfamólias qua hora fur ventúrus esset, vigiláret útique, et non síneret pérfodi domum suam. Ideo et vos estóte paráti: quia qua nescítis hora Fílius hóminis ventúrus est. Quis, putas, est fidélis servus, et prudens, quem constítuit dóminus suus super famíliam suam ut det illis cibum in témpore? Beátus ille servus, quem cum vénerit dóminus ejus, invénerit sic faciéntem. Amen dico vobis, quóniam super ómnia bona sua constítuet eum."]}}
-{"id":"commune-c4-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"commune-c4-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"commune-c4-1.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4-1.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"commune-c4-1.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
 {"id":"commune-c4-1.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
 {"id":"commune-c4-1.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"commune-c4-1.secrete.1","type":"para","t":{"la":["Sancti N. Confessóris tui atque Pontíficis, quǽsumus, Dómine, ánnua sollémnitas pietáti tuæ nos reddat accéptos: ut, per hæc piæ placatiónis offícia, et illum beáta retribútio comitétur, et nobis grátiæ tuæ dona concíliet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"commune-c4-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"commune-c4-1.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune, ou préface du temps (Carême, Passion, Pâques, Ascension) quand il y en a une."]}}
+{"id":"commune-c4-1.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune, ou préface du temps (Carême, Passion, Pâques, Ascension) quand il y en a une."]}}
 {"id":"commune-c4-1.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"commune-c4-1.communion.1","type":"rubric","t":{"la":["Matt 24:46-47"],"fr":["Matt 24:46-47"]}}
 {"id":"commune-c4-1.communion.2","type":"para","t":{"la":["Beátus servus, quem, cum vénerit dóminus, invénerit vigilántem: amen, dico vobis, super ómnia bona sua constítuet eum."]}}

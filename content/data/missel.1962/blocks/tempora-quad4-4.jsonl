@@ -8,7 +8,7 @@
 {"id":"tempora-quad4-4.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad4-4.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad4-4.introit.7","type":"para","t":{"la":["Lætétur cor quæréntium Dóminum: quǽrite Dóminum, et confirmámini: quǽrite fáciem ejus semper."]}}
-{"id":"tempora-quad4-4.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad4-4.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad4-4.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-4.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad4-4.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut, quos jejúnia votíva castígant, ipsa quoque devótio sancta lætíficet; ut, terrénis afféctibus mitigátis, facílius cœléstia capiámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad4-4.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-4.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -23,14 +23,14 @@
 {"id":"tempora-quad4-4.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-quad4-4.evangile.2","type":"rubric","t":{"la":["Luc 7:11-16"],"fr":["Luc 7:11-16"]}}
 {"id":"tempora-quad4-4.evangile.3","type":"para","t":{"la":["In illo témpore: Ibat Jesus in civitátem, quæ vocátur Naim: et ibant cum eo discípuli ejus et turba copiósa. Cum autem appropinquáret portæ civitátis, ecce, defúnctus efferebátur fílius únicus matris suæ: et hæc vídua erat, et turba civitátis multa cum illa. Quam cum vidísset Dóminus, misericórdia motus super eam, dixit illi: Noli flere. Et accéssit et tétigit lóculum. - Hi autem, qui portábant, stetérunt - Et ait: Adoléscens, tibi dico, surge. Et resédit, qui erat mórtuus, et cœpit loqui. Et dedit illum matri suæ. Accépit autem omnes timor: et magnificábant Deum, dicéntes: Quia Prophéta magnus surréxit in nobis: et quia Deus visitávit plebem suam."]}}
-{"id":"tempora-quad4-4.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad4-4.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad4-4.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-4.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad4-4.offertoire.1","type":"rubric","t":{"la":["Ps 69:2, 3, 4"],"fr":["Ps 69:2, 3, 4"]}}
 {"id":"tempora-quad4-4.offertoire.2","type":"para","t":{"la":["Dómine, ad adjuvándum me festína: confundántur omnes, qui cógitant servis tuis mala."]}}
 {"id":"tempora-quad4-4.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-4.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad4-4.secrete.1","type":"para","t":{"la":["Purífica nos, miséricors Deus: ut Ecclésiæ tuæ preces, quæ tibi gratæ sunt, pia múnera deferéntes, fiant expiátis méntibus gratióres. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad4-4.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad4-4.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad4-4.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad4-4.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad4-4.communion.1","type":"rubric","t":{"la":["Ps 70:16-17, 18"],"fr":["Ps 70:16-17, 18"]}}
 {"id":"tempora-quad4-4.communion.2","type":"para","t":{"la":["Dómine, memorábor justítiæ tuæ solíus: Deus, docuísti me a juventúte mea: et usque in senéctam et sénium, Deus, ne derelínquas me."]}}

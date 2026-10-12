@@ -8,7 +8,7 @@
 {"id":"tempora-quad2-2.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad2-2.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad2-2.introit.7","type":"para","t":{"la":["Tibi dixit cor meum, quæsívi vultum tuum. vultum tuum, Dómine, requíram: ne avértas fáciem tuam a me."]}}
-{"id":"tempora-quad2-2.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad2-2.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad2-2.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-2.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad2-2.collecte.1","type":"para","t":{"la":["Pérfice, quǽsumus, Dómine, benígnus in nobis observántiæ sanctæ subsídium: ut, quæ te auctóre faciénda cognóvimus, te operánte impleámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad2-2.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-2.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -23,14 +23,14 @@
 {"id":"tempora-quad2-2.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-quad2-2.evangile.2","type":"rubric","t":{"la":["Matt 23:1-12"],"fr":["Matt 23:1-12"]}}
 {"id":"tempora-quad2-2.evangile.3","type":"para","t":{"la":["In illo témpore: Locútus est Jesus ad turbas et ad discípulos suos, dicens: Super cáthedram Móysi sedérunt scribæ et pharisǽi. Omnia ergo, quæcúmque díxerint vobis, serváte et fácite: secúndum ópera vero eórum nolíte fácere: dicunt enim, et non fáciunt. Alligant enim ónera grávia et importabília, et impónunt in húmeros hóminum: dígito autem suo nolunt ea movére. Omnia vero ópera sua fáciunt, ut videántur ab homínibus: dilátant enim phylactéria sua, et magníficant fímbrias. Amant autem primos recúbitus in cenis, et primas cáthedras in synagógis, et salutatiónes in foro, et vocári ab homínibus Rabbi. Vos autem nolíte vocári Rabbi: unus est enim Magíster vester, omnes autem vos fratres estis. Et patrem nolíte vocáre vobis super terram, unus est enim Pater vester, qui in cœlis est. Nec vocémini magístri: quia Magíster vester unus est, Christus. Qui major est vestrum, erit miníster vester. Qui autem se exaltáverit, humiliábitur: et qui se humiliáverit, exaltábitur."]}}
-{"id":"tempora-quad2-2.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad2-2.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad2-2.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad2-2.offertoire.1","type":"rubric","t":{"la":["Ps 50:3."],"fr":["Ps 50:3."]}}
 {"id":"tempora-quad2-2.offertoire.2","type":"para","t":{"la":["Miserére mei, Dómine, secúndum magnam misericórdiam tuam: dele, Dómine, iniquitátem meam."]}}
 {"id":"tempora-quad2-2.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-2.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad2-2.secrete.1","type":"para","t":{"la":["Sanctificatiónem tuam nobis, Dómine, his mystériis operáre placátus: quæ nos et a terrénis purget vítiis, et ad cœléstia dona perdúcat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad2-2.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad2-2.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad2-2.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad2-2.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-2.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad2-2.communion.1","type":"rubric","t":{"la":["Ps 9:2-3"],"fr":["Ps 9:2-3"]}}
 {"id":"tempora-quad2-2.communion.2","type":"para","t":{"la":["Narrábo ómnia mirabília tua: lætábor, et exsultábo in te: psallam nómini tuo, Altíssime."]}}

@@ -8,7 +8,7 @@
 {"id":"sancti-04-23.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-04-23.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-04-23.introit.7","type":"para","t":{"la":["Protexísti me, Deus, a convéntu malignántium, allelúja: a multitúdine operántium iniquitátem, allelúja, allelúja."]}}
-{"id":"sancti-04-23.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-04-23.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-04-23.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-23.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-04-23.collecte.1","type":"para","t":{"la":["Deus, qui nos beáti Geórgii Mártyris tui méritis et intercessióne lætíficas: concéde propítius; ut, qui tua per eum benefícia póscimus, dono tuæ grátiæ consequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-04-23.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-23.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C2a-1.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-04-23.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-04-23.evangile.2","type":"rubric","t":{"la":["Joannes 15:1-7"],"fr":["Joannes 15:1-7"]}}
 {"id":"sancti-04-23.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Omnem pálmitem in me non feréntem fructum, tollet eum: et omnem, qui fert fructum, purgábit eum, ut fructum plus áfferat. Jam vos mundi estis propter sermónem, quem locútus sum vobis. Manéte in me: et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite: sic nec vos, nisi in me manséritis. Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis, petétis, et fiet vobis."]}}
-{"id":"sancti-04-23.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-04-23.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-04-23.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2p.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-04-23.offertoire.1","type":"rubric","t":{"la":["Ps 88:6"],"fr":["Ps 88:6"]}}
 {"id":"sancti-04-23.offertoire.2","type":"para","t":{"la":["Confitebúntur cœli mirabília tua, Dómine: et veritátem tuam in ecclésia sanctórum, allelúja, allelúja."]}}
 {"id":"sancti-04-23.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-23.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-04-23.secrete.1","type":"para","t":{"la":["Múnera, Dómine, obláta sanctífica: et, intercedénte beáto Geórgio Mártyre tuo, nos per hæc a peccatórum nostrórum máculis emúnda. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-04-23.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-04-23.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
+{"id":"sancti-04-23.preface.1","type":"rubric","preface":"pasch","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
 {"id":"sancti-04-23.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Communio"},{"file":"horas/Latin/Commune/C2p.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-04-23.communion.1","type":"rubric","t":{"la":["Ps 63:11"],"fr":["Ps 63:11"]}}
 {"id":"sancti-04-23.communion.2","type":"para","t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde, allelúja, allelúja."]}}

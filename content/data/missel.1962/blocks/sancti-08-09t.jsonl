@@ -2,7 +2,7 @@
 {"id":"sancti-08-09t.rang","type":"rubric","t":{"fr":["Vigile de IIIᵉ classe — ornements violets."]}}
 {"id":"sancti-08-09t.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-09t.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
 {"id":"sancti-08-09t.introit.1","type":"para","t":{"la":[{"m":["red","i"],"c":["Ps 111:9"]},{"br":1},"Dispérsit, dedit paupéribus: justítia ejus manet in sǽculum sǽculi: cornu ejus exaltábitur in glória.",{"br":1},{"m":["red","i"],"c":["Ps 111:1."]},{"br":1},"Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis.",{"br":1},{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto.",{"br":1},{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen.",{"br":1},"Dispérsit, dedit paupéribus: justítia ejus manet in sǽculum sǽculi: cornu ejus exaltábitur in glória. Non dicitur Glória in excélsis."]}}
-{"id":"sancti-08-09t.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"sancti-08-09t.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"sancti-08-09t.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-09t.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-08-09t.collecte.1","type":"para","t":{"la":["Adésto, Dómine, supplicatiónibus nostris: et intercessióne beáti Lauréntii Mártyris tui, cujus prævénimus festivitátem; perpétuam nobis misericórdiam benígnus impénde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-09t.collecte.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Romain, martyr"]}}
@@ -19,7 +19,7 @@
 {"id":"sancti-08-09t.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-08-09t.evangile.2","type":"rubric","t":{"la":["Matt 16:24-27"],"fr":["Matt 16:24-27"]}}
 {"id":"sancti-08-09t.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me. Qui enim voluerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam. Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua? Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus."]}}
-{"id":"sancti-08-09t.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-08-09t.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-08-09t.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-09t.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-08-09t.offertoire.1","type":"rubric","t":{"la":["Job 16:20"],"fr":["Job 16:20"]}}
 {"id":"sancti-08-09t.offertoire.2","type":"para","t":{"la":["Orátio mea munda est: et ídeo peto, ut detur locus voci meæ in cœlo: quia ibi est judex meus, et cónscius meus in excélsis: ascéndat ad Dóminum deprecátio mea."]}}
@@ -28,7 +28,7 @@
 {"id":"sancti-08-09t.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/08-09cc.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Romain, martyr"]}}
 {"id":"sancti-08-09t.secrete.c1.1","type":"para","t":{"la":["Munéribus nostris, quǽsumus, Dómine, precibúsque suscéptis: et cæléstibus nos munda mystériis, et cleménter exáudi. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-09t.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-08-09t.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-08-09t.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-08-09t.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-09t.txt","section":"Communio"},{"file":"horas/Latin/Commune/C2a.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-08-09t.communion.1","type":"rubric","t":{"la":["Matt 16:24"],"fr":["Matt 16:24"]}}
 {"id":"sancti-08-09t.communion.2","type":"para","t":{"la":["Qui vult veníre post me, ábneget semetípsum, et tollat crucem suam, et sequátur me."]}}

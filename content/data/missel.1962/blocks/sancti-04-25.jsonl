@@ -8,7 +8,7 @@
 {"id":"sancti-04-25.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-04-25.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-04-25.introit.7","type":"para","t":{"la":["Protexísti me, Deus, a convéntu malignántium, allelúja: a multitúdine operántium iniquitátem, allelúja, allelúja."]}}
-{"id":"sancti-04-25.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-04-25.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-04-25.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-25.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-04-25.collecte.1","type":"para","t":{"la":["Deus, qui beátum Marcum Evangelístam tuum evangélicæ prædicatiónis grátia sublimásti: tríbue, quǽsumus; ejus nos semper et eruditióne profícere et oratióne deféndi. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-04-25.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/04-25c.txt","section":"Oratio"},{"file":"missa/Latin/Tempora/Pasc5-1.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Litanies majeures"]}}
@@ -27,7 +27,7 @@
 {"id":"sancti-04-25.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-04-25.evangile.2","type":"rubric","t":{"la":["Luc 10:1-9"],"fr":["Luc 10:1-9"]}}
 {"id":"sancti-04-25.evangile.3","type":"para","t":{"la":["In illo témpore: Designávit Dóminus et álios septuagínta duos: et misit illos binos ante fáciem suam in omnem civitátem et locum, quo erat ipse ventúrus. ¶ Et dicebat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo Dóminum messis, ut mittat operários in messem suam. Ite: ecce, ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum neque peram neque calceaménta; et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei."]}}
-{"id":"sancti-04-25.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-04-25.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-04-25.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-25.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-04-25.offertoire.1","type":"rubric","t":{"la":["Ps 88:6"],"fr":["Ps 88:6"]}}
 {"id":"sancti-04-25.offertoire.2","type":"para","t":{"la":["Confitebúntur cœli mirabília tua, Dómine: et veritátem tuam in ecclésia sanctórum, allelúja, allelúja."]}}
@@ -36,7 +36,7 @@
 {"id":"sancti-04-25.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/04-25c.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Litanies majeures"]}}
 {"id":"sancti-04-25.secrete.c1.1","type":"para","t":{"la":["Hæc múnera, quǽsumus, Dómine, et víncula nostræ pravitátis absólvant, et tuæ nobis misericórdiæ dona concílient. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-04-25.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-04-25.preface.1","type":"rubric","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
+{"id":"sancti-04-25.preface.1","type":"rubric","preface":"apostolis","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
 {"id":"sancti-04-25.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-25.txt","section":"Communio"},{"file":"horas/Latin/Commune/C2p.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-04-25.communion.1","type":"rubric","t":{"la":["Ps 63:11"],"fr":["Ps 63:11"]}}
 {"id":"sancti-04-25.communion.2","type":"para","t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde, allelúja, allelúja."]}}

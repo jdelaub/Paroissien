@@ -7,7 +7,7 @@
 {"id":"sancti-02-05.introit.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-02-05.introit.5","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-02-05.introit.6","type":"para","t":{"la":["Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Agathæ Vírginis et Martyris: de cujus passióne gaudent Angeli et colláudant Fílium Dei."]}}
-{"id":"sancti-02-05.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-05.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-02-05.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-02-05.collecte.1","type":"para","t":{"la":["Deus, qui inter cétera poténtiæ tuæ mirácula étiam in sexu frágili victóriam martýrii contulísti: concéde propítius; ut, qui beátæ Agathæ Vírginis et Mártyris tuæ natalícia cólimus, per ejus ad te exémpla gradiámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-05.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-05.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -33,14 +33,14 @@
 {"id":"sancti-02-05.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-02-05.evangile.2","type":"rubric","t":{"la":["Matt 19:3-12"],"fr":["Matt 19:3-12"]}}
 {"id":"sancti-02-05.evangile.3","type":"para","t":{"la":["In illo témpore: Accessérunt ad Jesum pharisǽi, tentántes eum et dicéntes: Si licet hómini dimíttere uxórem suam quacúmque ex causa? Qui respóndens, ait eis: Non legístis, quia, qui fecit hóminem ab inítio, másculum et féminam fecit eos? et dixit: Propter hoc dimíttet homo patrem, et matrem, et adhærébit uxóri suæ, et erunt duo in carne una. Itaque jam non sunt duo, sed una caro. Quod ergo Deus conjúnxit, homo non séparet. Dicunt illi: Quid ergo Móyses mandávit dare libéllum repúdii, et dimíttere? Ait illis: Quóniam Móyses ad durítiam cordis vestri permísit vobis dimíttere uxóres vestras: ab inítio autem non fuit sic. Dico autem vobis, quia, quicúmque dimíserit uxórem suam, nisi ob fornicatiónem, et áliam dúxerit, mœchátur: et qui dimíssam dúxerit, mœchátur. Dicunt ei discípuli ejus: Si ita est causa hóminis cum uxóre, non expédit núbere. Qui dixit illis: Non omnes cápiunt verbum istud, sed quibus datum est. Sunt enim eunúchi, qui de matris útero sic nati sunt; et sunt eunúchi, qui facti sunt ab homínibus; et sunt eunúchi, qui seípsos castravérunt propter regnum cœlórum. Qui potest cápere, cápiat."]}}
-{"id":"sancti-02-05.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-02-05.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-02-05.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-05.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-02-05.offertoire.1","type":"rubric","t":{"la":["Ps 44:15."],"fr":["Ps 44:15."]}}
 {"id":"sancti-02-05.offertoire.2","type":"para","t":{"la":["Afferéntur Regi Vírgines post eam: próximæ ejus afferéntur tibi."]}}
 {"id":"sancti-02-05.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-02-05.secrete.1","type":"para","t":{"la":["Súscipe, Dómine, múnera, quæ in beátæ Agathæ Vírginis et Mártyris tuæ sollemnitáte deférimus: cujus nos confídimus patrocínio liberári. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-05.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-02-05.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-02-05.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-02-05.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-05.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-02-05.communion.1","type":"para","t":{"la":["Qui me dignátus est ab omni plaga curáre et mamíllam meam meo péctori restitúere, ipsum ínvoco Deum vivum."]}}
 {"id":"sancti-02-05.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}

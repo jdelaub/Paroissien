@@ -8,7 +8,7 @@
 {"id":"sancti-05-04.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-05-04.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-05-04.introit.7","type":"para","t":{"la":["Cognóvi, Dómine, quia ǽquitas judícia tua, et in veritáte tua humiliásti me: confíge timóre tuo carnes meas, a mandátis tuis tímui. Allelúja, allelúja."]}}
-{"id":"sancti-05-04.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-05-04.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-05-04.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-04.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-05-04.collecte.1","type":"para","t":{"la":["Deus, mæréntium consolátor et in te sperántium salus, qui beátæ Mónicæ pias lácrimas in conversióne fílii sui Augustíni misericórditer suscepísti: da nobis utriúsque intervéntu; peccáta nostra deploráre, et grátiæ tuæ indulgéntiam inveníre. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-05-04.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-04.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C7a.txt","section":"Lectio in 2 loco"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -24,14 +24,14 @@
 {"id":"sancti-05-04.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-05-04.evangile.2","type":"rubric","t":{"la":["Luc 7:11-16"],"fr":["Luc 7:11-16"]}}
 {"id":"sancti-05-04.evangile.3","type":"para","t":{"la":["In illo témpore: Ibat Jesus in civitátem, quæ vocátur Naim: et ibant cum eo discípuli ejus et turba copiósa. Cum autem appropinquáret portæ civitátis, ecce, defúnctus efferebátur fílius únicus matris suæ: et hæc vídua erat, et turba civitátis multa cum illa. Quam cum vidísset Dóminus, misericórdia motus super eam, dixit illi: Noli flere. Et accéssit et tétigit lóculum. - Hi autem, qui portábant, stetérunt - Et ait: Adoléscens, tibi dico, surge. Et resédit, qui erat mórtuus, et cœpit loqui. Et dedit illum matri suæ. Accépit autem omnes timor: et magnificábant Deum, dicéntes: Quia Prophéta magnus surréxit in nobis: et quia Deus visitávit plebem suam."]}}
-{"id":"sancti-05-04.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-05-04.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-05-04.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C7a.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C7.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C6-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-05-04.offertoire.1","type":"rubric","t":{"la":["Ps 44:3"],"fr":["Ps 44:3"]}}
 {"id":"sancti-05-04.offertoire.2","type":"para","t":{"la":["Diffúsa est grátia in lábiis tuis: proptérea benedíxit te Deus in ætérnum, et in sǽculum sǽculi. Allelúja."]}}
 {"id":"sancti-05-04.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C7a.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C6a.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-05-04.secrete.1","type":"para","t":{"la":["Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum: quorum se méritis de tribulatióne percepísse cognóscit auxílium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-05-04.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-05-04.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques ; après l’Ascension : préface de l’Ascension."]}}
+{"id":"sancti-05-04.preface.1","type":"rubric","preface":"pasch","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques ; après l’Ascension : préface de l’Ascension."]}}
 {"id":"sancti-05-04.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C7a.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-05-04.communion.1","type":"rubric","t":{"la":["Ps 44:8"],"fr":["Ps 44:8"]}}
 {"id":"sancti-05-04.communion.2","type":"para","t":{"la":["Dilexísti justítiam, et odísti iniquitátem: proptérea unxit te Deus, Deus tuus, óleo lætítiæ præ consórtibus tuis. Allelúja."]}}

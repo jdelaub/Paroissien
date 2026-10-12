@@ -8,7 +8,7 @@
 {"id":"tempora-pasc6-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pasc6-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pasc6-6.introit.7","type":"para","t":{"la":["Cum sanctificátus fúero in vobis, congregábo vos de univérsis terris: et effúndam super vos aquam mundam, et mundabímini ab ómnibus inquinaméntis vestris: et dabo vobis spíritum novum, allelúja, allelúja"]}}
-{"id":"tempora-pasc6-6.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pasc6-6.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-pasc6-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc6-6r.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pasc6-6.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut claritatis tuæ super nos splendor effúlgeat; et lux tuæ lucis corda eórum, qui per grátiam tuam renáti sunt, Sancti Spíritus illustratióne confírmet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte ejúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc6-6.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc6-6r.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -26,14 +26,14 @@
 {"id":"tempora-pasc6-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-pasc6-6.evangile.2","type":"rubric","t":{"la":["Joannes 14:15-21"],"fr":["Joannes 14:15-21"]}}
 {"id":"tempora-pasc6-6.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Si dilígitis me, mandáta mea serváte. Et ego rogábo Patrem, et alium Paráclitum dabit vobis, ut máneat vobíscum in ætérnum, Spíritum veritátis, quem mundus non potest accípere, quia non videt eum nec scit eum. Vos autem cognoscétis eum: quia apud vos manébit et in vobis erit. Non relínquam vos órphanos: véniam ad vos. Adhuc módicum: et mundus me jam non videt. Vos autem vidétis me, quia ego vivo, et vos vivétis. In illo die vos cognoscétis, quia ego sum in Patre meo, et vos in me, et ego in vobis. Qui habet mandáta mea et servat ea: ille est, qui díligit me. Qui autem díligit me, diligétur a Patre meo: et ego díligam eum, et manifestábo ei meípsum."]}}
-{"id":"tempora-pasc6-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pasc6-6.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pasc6-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc6-6r.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pasc6-6.offertoire.1","type":"rubric","t":{"la":["Ps 103:30-31"],"fr":["Ps 103:30-31"]}}
 {"id":"tempora-pasc6-6.offertoire.2","type":"para","t":{"la":["Emítte Spíritum tuum, et creabúntur, et renovábis fáciem terræ: sit glória Dómini in sǽcula, allelúja."]}}
 {"id":"tempora-pasc6-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc6-6r.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pasc6-6.secrete.1","type":"para","t":{"la":["Múnera, quǽsumus, Dómine, obláta sanctífica: et corda nostra Sancti Spíritus illustratióne emúnda. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte ejúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc6-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pasc6-6.preface.1","type":"rubric","t":{"la":["Præfatio de Spiritu Sancto."],"fr":["Préface du Saint-Esprit (« Et te in hodierna die »)."]}}
+{"id":"tempora-pasc6-6.preface.1","type":"rubric","preface":"spiritu","communicantes":"c-pent1962","hancIgitur":"h-pent","t":{"la":["Præfatio de Spiritu Sancto."],"fr":["Préface du Saint-Esprit (« Et te in hodierna die »)."]}}
 {"id":"tempora-pasc6-6.preface.2","type":"rubric","t":{"fr":["Communicantes et Hanc igitur propres de la Pentecôte (voir aux Préfaces)."]}}
 {"id":"tempora-pasc6-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc6-6r.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pasc6-6.communion.1","type":"rubric","t":{"la":["Joannes 7:37-39"],"fr":["Joannes 7:37-39"]}}

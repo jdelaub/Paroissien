@@ -8,7 +8,7 @@
 {"id":"sancti-06-30.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-06-30.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-06-30.introit.7","type":"para","t":{"la":["Scio, cui crédidi, et certus sum, quia potens est depósitum meum serváre in illum diem, justus judex."]}}
-{"id":"sancti-06-30.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-06-30.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-06-30.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-06-30.collecte.1","type":"para","t":{"la":["Deus, qui multitúdinem géntium beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, cujus natalícia cólimus, ejus apud te patrocínia sentiámus."]}}
 {"id":"sancti-06-30.collecte.2","type":"rubric","t":{"la":["Pro S. Petro"]}}
@@ -27,7 +27,7 @@
 {"id":"sancti-06-30.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-06-30.evangile.2","type":"rubric","t":{"la":["Matt 10:16-22"],"fr":["Matt 10:16-22"]}}
 {"id":"sancti-06-30.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Ecce, ego mitto vos sicut oves in médio lupórum. Estóte ergo prudéntes sicut serpentes, et símplices sicut colúmbæ. ¶ Cavéte autem ab homínibus. Tradent enim vos in concíliis, et in synagógis suis flagellábunt vos: et ad præsides et ad reges ducémini propter me in testimónium illis et géntibus. Cum autem tradent vos, nolíte cogitáre, quómodo aut quid loquámini: dábitur enim vobis in illa hora, quid loquámini. Non enim vos estis, qui loquímini, sed Spíritus Patris vestri, qui lóquitur in vobis. Tradet autem frater fratrem in mortem, et pater fílium: et insúrgent fílii in paréntes, et morte eos affícient: et éritis odio ómnibus propter nomen meum: qui autem perseveráverit usque in finem, hic salvus erit."]}}
-{"id":"sancti-06-30.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-06-30.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-06-30.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/01-25.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-06-30.offertoire.1","type":"rubric","t":{"la":["Ps 138:17"],"fr":["Ps 138:17"]}}
 {"id":"sancti-06-30.offertoire.2","type":"para","t":{"la":["Mihi autem nimis honoráti sunt amíci tui, Deus: nimis confortátus est principátus eórum."]}}
@@ -36,7 +36,7 @@
 {"id":"sancti-06-30.secrete.2","type":"rubric","t":{"la":["Pro S. Petro"]}}
 {"id":"sancti-06-30.secrete.3","type":"para","t":{"la":["Ecclésiæ tuæ, quǽsumus, Dómine, preces et hóstias beáti Petri Apóstoli comméndet orátio: ut, quod pro illíus glória celebrámus, nobis prosit ad véniam. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-06-30.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-06-30.preface.1","type":"rubric","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
+{"id":"sancti-06-30.preface.1","type":"rubric","preface":"apostolis","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
 {"id":"sancti-06-30.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Communio"},{"file":"horas/Latin/Commune/C5-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-06-30.communion.1","type":"rubric","t":{"la":["Matt 19:28-29"],"fr":["Matt 19:28-29"]}}
 {"id":"sancti-06-30.communion.2","type":"para","t":{"la":["Amen, dico vobis: quod vos, qui reliquístis ómnia et secúti estis me, céntuplum accipiétis, et vitam ætérnam possidébitis."]}}

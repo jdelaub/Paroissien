@@ -8,7 +8,7 @@
 {"id":"tempora-quad3-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad3-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad3-1.introit.7","type":"para","t":{"la":["In Deo laudábo verbum, in Dómino laudábo sermónem: in Deo sperábo, non timebo, quid fáciat mihi homo."]}}
-{"id":"tempora-quad3-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad3-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad3-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad3-1.collecte.1","type":"para","t":{"la":["Córdibus nostris, quǽsumus, Dómine, grátiam tuam benígnus infúnde: ut, sicut ab escis carnálibus abstinémus; ita sensus quoque nostros a nóxiis retrahámus excéssibus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad3-1.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-1.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -29,14 +29,14 @@
 {"id":"tempora-quad3-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-quad3-1.evangile.2","type":"rubric","t":{"la":["Luc 4:23-30."],"fr":["Luc 4:23-30."]}}
 {"id":"tempora-quad3-1.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus pharisǽis: Utique dicétis mihi hanc similitúdinem: Médice, cura teípsum: quanta audívimus facta in Caphárnaum, fac et hic in pátria tua. Ait autem: Amen, dico vobis, quia nemo prophéta accéptus est in pátria sua. In veritáte dico vobis, multæ víduæ erant in diébus Elíæ in Israël, quando clausum est cœlum annis tribus et ménsibus sex, cum facta esset fames magna in omni terra: et ad nullam illárum missus est Elías, nisi in Sarépta Sidóniæ ad mulíerem víduam. Et multi leprósi erant in Israël sub Eliséo Prophéta: et nemo eórum mundátus est nisi Náaman Syrus. Et repléti sunt omnes in synagóga ira, hæc audiéntes. Et surrexérunt, et ejecérunt illum extra civitátem: et duxérunt illum usque ad supercílium montis, super quem cívitas illórum erat ædificáta, ut præcipitárent eum. Ipse autem tránsiens per médium illórum, ibat."]}}
-{"id":"tempora-quad3-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad3-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad3-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad3-1.offertoire.1","type":"rubric","t":{"la":["Ps 54:2-3"],"fr":["Ps 54:2-3"]}}
 {"id":"tempora-quad3-1.offertoire.2","type":"para","t":{"la":["Exáudi, Deus, oratiónem meam, et ne despéxeris deprecatiónem meam: inténde in me, et exáudi me."]}}
 {"id":"tempora-quad3-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad3-1.secrete.1","type":"para","t":{"la":["Munus, quod tibi, Dómine, nostræ servitútis offérimus, tu salutáre nobis pérfice sacraméntum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad3-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad3-1.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad3-1.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad3-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad3-1.communion.1","type":"rubric","t":{"la":["Ps 13:7"],"fr":["Ps 13:7"]}}
 {"id":"tempora-quad3-1.communion.2","type":"para","t":{"la":["Quis dabit ex Sion salutáre Israël? cum avérterit Dóminus captivitátem plebis suæ, exsultábit Jacob, et lætábitur Israël."]}}

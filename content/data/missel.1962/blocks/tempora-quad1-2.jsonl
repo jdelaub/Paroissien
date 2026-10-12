@@ -8,7 +8,7 @@
 {"id":"tempora-quad1-2.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad1-2.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad1-2.introit.7","type":"para","t":{"la":["Dómine, refúgium factus es nobis a generatióne et progénie: a sǽculo et in sǽculum tu es."]}}
-{"id":"tempora-quad1-2.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad1-2.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad1-2.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-2.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad1-2.collecte.1","type":"para","t":{"la":["Réspice, Dómine, famíliam tuam: et præsta; ut apud te mens nostra tuo desidério fúlgeat, quæ se carnis maceratióne castígat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad1-2.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-2.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -23,14 +23,14 @@
 {"id":"tempora-quad1-2.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-quad1-2.evangile.2","type":"rubric","t":{"la":["Matt 21:10-17"],"fr":["Matt 21:10-17"]}}
 {"id":"tempora-quad1-2.evangile.3","type":"para","t":{"la":["In illo témpore: Cum intrásset Jesus Jerosólymam, commóta est univérsa cívitas, dicens: Quis est hic? Pópuli autem dicébant: Hic est Jesus Prophéta a Názareth Galilǽæ. Et intrávit Jesus in templum Dei, et ejiciébat omnes vendéntes, et eméntes in templo; et mensas nummulariórum et cáthedras vendéntium colúmbas evértit: et dicit eis: Scriptum est: Domus mea domus oratiónis vocábitur: vos autem fecístis illam spelúncam latrónum. Et accessérunt ad eum cæci et claudi in templo: et sanávit eos. Vidéntes autem príncipes sacerdótum et scribæ mirabília, quæ fecit, et púeros clamantes in templo, et dicéntes: Hosánna fílio David: indignáti sunt, et dixérunt ei: Audis, quid isti dicunt? Jesus autem dixit eis: Utique. Numquam legístis: Quia ex ore infántium et lacténtium perfecísti laudem? Et relíctis illis, ábiit foras extra civitátem in Bethániam: ibíque mansit."]}}
-{"id":"tempora-quad1-2.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad1-2.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad1-2.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad1-2.offertoire.1","type":"rubric","t":{"la":["Ps 30:15-16"],"fr":["Ps 30:15-16"]}}
 {"id":"tempora-quad1-2.offertoire.2","type":"para","t":{"la":["In te sperávi, Dómine; dixi: Tu es Deus meus, in mánibus tuis témpora mea."]}}
 {"id":"tempora-quad1-2.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-2.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad1-2.secrete.1","type":"para","t":{"la":["Oblátis, quǽsumus, Dómine, placáre munéribus: et a cunctis nos defénde perículis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad1-2.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad1-2.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad1-2.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad1-2.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-2.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad1-2.communion.1","type":"rubric","t":{"la":["Ps 4:2"],"fr":["Ps 4:2"]}}
 {"id":"tempora-quad1-2.communion.2","type":"para","t":{"la":["Cum invocárem te, exaudísti me, Deus justítiæ meæ: in tribulatióne dilatásti me: miserére mihi, Dómine, et exáudi oratiónem meam."]}}

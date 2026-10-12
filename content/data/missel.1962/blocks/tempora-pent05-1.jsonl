@@ -8,7 +8,7 @@
 {"id":"tempora-pent05-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pent05-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pent05-1.introit.7","type":"para","t":{"la":["Exáudi, Dómine, vocem meam, qua clamávi ad te: adjútor meus esto, ne derelínquas me neque despícias me, Deus, salutáris meus."]}}
-{"id":"tempora-pent05-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pent05-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-pent05-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent05-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pent05-1.collecte.1","type":"para","t":{"la":["Deus, qui diligéntibus te bona invisibília præparásti: infúnde córdibus nostris tui amóris afféctum; ut te in ómnibus et super ómnia diligéntes, promissiónes tuas, quæ omne desidérium súperant, consequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent05-1.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent05-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-pent05-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-pent05-1.evangile.2","type":"rubric","t":{"la":["Matt 5:20-24"],"fr":["Matt 5:20-24"]}}
 {"id":"tempora-pent05-1.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nisi abundáverit justítia vestra plus quam scribárum et pharisæórum, non intrábitis in regnum cœlórum. Audístis, quia dictum est antíquis: Non occídes: qui autem occíderit, reus erit judício. Ego autem dico vobis: quia omnis, qui iráscitur fratri suo, reus erit judício. Qui autem díxerit fratri suo, raca: reus erit concílio. Qui autem díxerit, fátue: reus erit gehénnæ ignis. Si ergo offers munus tuum ad altáre, et ibi recordátus fúeris, quia frater tuus habet áliquid advérsum te: relínque ibi munus tuum ante altáre et vade prius reconciliári fratri tuo: et tunc véniens ófferes munus tuum."]}}
-{"id":"tempora-pent05-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pent05-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pent05-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent05-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pent05-1.offertoire.1","type":"rubric","t":{"la":["Ps 15:7 et 8"],"fr":["Ps 15:7 et 8"]}}
 {"id":"tempora-pent05-1.offertoire.2","type":"para","t":{"la":["Benedícam Dóminum, qui tríbuit mihi intelléctum: providébam Deum in conspéctu meo semper: quóniam a dextris est mihi, ne commóvear."]}}
 {"id":"tempora-pent05-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent05-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pent05-1.secrete.1","type":"para","t":{"la":["Propitiáre, Dómine, supplicatiónibus nostris: et has oblatiónes famulórum famularúmque tuárum benígnus assúme; ut, quod sínguli obtulérunt ad honórem nóminis tui, cunctis profíciat ad salútem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent05-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pent05-1.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pent05-1.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-pent05-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent05-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pent05-1.communion.1","type":"rubric","t":{"la":["Ps 26:4"],"fr":["Ps 26:4"]}}
 {"id":"tempora-pent05-1.communion.2","type":"para","t":{"la":["Unam pétii a Dómino, hanc requíram: ut inhábitem in domo Dómini ómnibus diébus vitæ meæ."]}}

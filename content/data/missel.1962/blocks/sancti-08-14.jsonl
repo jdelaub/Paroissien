@@ -8,7 +8,7 @@
 {"id":"sancti-08-14.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-08-14.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-08-14.introit.7","type":"para","t":{"la":["Vultum tuum deprecabúntur omnes dívites plebis: adducéntur Regi Vírgines post eam: próximæ ejus adducéntur tibi in lætítia et exsultatióne."]}}
-{"id":"sancti-08-14.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"sancti-08-14.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"sancti-08-14.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-14.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-08-14.collecte.1","type":"para","t":{"la":["Deus, qui virginálem aulam beátæ Maríæ, in qua habitáres, elígere dignátus es: da, quǽsumus; ut, sua nos defensióne munitos, jucúndos fácias suæ interésse festivitáti: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-14.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/08-14cc.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Eusèbe, confesseur"]}}
@@ -24,7 +24,7 @@
 {"id":"sancti-08-14.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-08-14.evangile.2","type":"rubric","t":{"la":["Luc 11:27-28"],"fr":["Luc 11:27-28"]}}
 {"id":"sancti-08-14.evangile.3","type":"para","t":{"la":["In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba, dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. ¶ At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud."]}}
-{"id":"sancti-08-14.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-08-14.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-08-14.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-14.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-08-14.offertoire.1","type":"para","t":{"la":["Beáta es, Virgo María, quæ ómnium portásti Creatórem: genuísti qui te fecit, et in ætérnum pérmanes Virgo."]}}
 {"id":"sancti-08-14.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-14.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
@@ -32,7 +32,7 @@
 {"id":"sancti-08-14.secrete.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Eusèbe, confesseur"]}}
 {"id":"sancti-08-14.secrete.c1.1","type":"para","t":{"la":["Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus et futúris. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-14.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-08-14.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-08-14.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-08-14.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-14.txt","section":"Communio"},{"file":"horas/Latin/Commune/C10.txt","section":"Communio"},{"file":"horas/Latin/Commune/C11.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-08-14.communion.1","type":"para","t":{"la":["Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium."]}}
 {"id":"sancti-08-14.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-14.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}

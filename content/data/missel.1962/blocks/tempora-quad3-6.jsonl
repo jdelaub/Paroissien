@@ -8,7 +8,7 @@
 {"id":"tempora-quad3-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad3-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad3-6.introit.7","type":"para","t":{"la":["Verba mea áuribus pércipe, Dómine, intéllege clamórem meum: inténde voci oratiónis meæ, Rex meus et Deus meus."]}}
-{"id":"tempora-quad3-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad3-6.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad3-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-6.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad3-6.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut, qui se, affligéndo carnem, ab aliméntis ábstinent; sectándo justítiam, a culpa jejúnent. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad3-6.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-6.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -23,14 +23,14 @@
 {"id":"tempora-quad3-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-quad3-6.evangile.2","type":"rubric","t":{"la":["Joann 8:1-11"],"fr":["Joann 8:1-11"]}}
 {"id":"tempora-quad3-6.evangile.3","type":"para","t":{"la":["In illo témpore: Perréxit Jesus in montem Olivéti: et dilúculo íterum venit in templum, et omnis pópulus venit ad eum, et sedens docébat eos. Addúcunt autem scribæ et pharisǽi mulíerem in adultério deprehénsam: et statuérunt eam in médio, et dixérunt ei: Magíster, hæc múlier modo deprehénsa est in adultério. In lege autem Móyses mandávit nobis hujúsmodi lapidáre. Tu ergo quid dicis? Hoc autem dicébant tentántes eum, ut possent accusáre eum. Jesus autem inclínans se deórsum, dígito scribébat in terra. Cum ergo perseverárent interrogántes eum, eréxit se, et dixit eis: Qui sine peccáto est vestrum, primus in illam lápidem mittat. Et íterum se inclínans, scribébat in terra. Audiéntes autem unus post unum exíbant, incipiéntes a senióribus: et remánsit solus Jesus, et múlier in médio stans. Erigens autem se Jesus, dixit ei: Múlier, ubi sunt, qui te accusábant? nemo te condemnávit? Quæ dixit: Nemo, Dómine. Dixit autem Jesus: Nec ego te condemnábo: Vade, et jam ámplius noli peccáre."]}}
-{"id":"tempora-quad3-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad3-6.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad3-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-6.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad3-6.offertoire.1","type":"rubric","t":{"la":["Ps 118:133."],"fr":["Ps 118:133."]}}
 {"id":"tempora-quad3-6.offertoire.2","type":"para","t":{"la":["Gressus meos dírige secúndum elóquium tuum: ut non dominétur mei omnis injustítia, Dómine."]}}
 {"id":"tempora-quad3-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-6.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad3-6.secrete.1","type":"para","t":{"la":["Concéde, quǽsumus, omnípotens Deus: ut hujus sacrifícii munus oblátum, fragilitátem nostram ab omni malo purget semper et múniat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad3-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad3-6.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad3-6.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad3-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-6.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad3-6.communion.1","type":"rubric","t":{"la":["Joann 8:10, 11"],"fr":["Joann 8:10, 11"]}}
 {"id":"tempora-quad3-6.communion.2","type":"para","t":{"la":["Nemo te condemnávit, mulier? Nemo, Dómine. Nec ego te condemnábo: jam ámplius noli peccáre."]}}

@@ -8,7 +8,7 @@
 {"id":"tempora-pentepi4-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pentepi4-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pentepi4-0.introit.7","type":"para","t":{"la":["Dicit Dóminus: Ego cógito cogitatiónes pacis, et non afflictiónis: invocábitis me, et ego exáudiam vos: et redúcam captivitátem vestram de cunctis locis."]}}
-{"id":"tempora-pentepi4-0.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pentepi4-0.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-pentepi4-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi4-0.txt","section":"Oratio"},{"file":"missa/Latin/Tempora/Epi4-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pentepi4-0.collecte.1","type":"para","t":{"la":["Deus, qui nos, in tantis perículis constitútos, pro humána scis fragilitáte non posse subsístere: da nobis salútem mentis et córporis; ut ea, quæ pro peccátis nostris pátimur, te adjuvánte vincámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pentepi4-0.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi4-0.txt","section":"Lectio"},{"file":"missa/Latin/Tempora/Epi4-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-pentepi4-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-pentepi4-0.evangile.2","type":"rubric","t":{"la":["Matt 8:23-27"],"fr":["Matt 8:23-27"]}}
 {"id":"tempora-pentepi4-0.evangile.3","type":"para","t":{"la":["In illo témpore: Ascendénte Jesu in navículam, secúti sunt eum discípuli ejus: et ecce, motus magnus factus est in mari, ita ut navícula operirétur flúctibus, ipse vero dormiébat. Et accessérunt ad eum discípuli ejus, et suscitavérunt eum, dicéntes: Dómine, salva nos, perímus. Et dicit eis Jesus: Quid tímidi estis, módicæ fídei? Tunc surgens, imperávit ventis et mari, et facta est tranquíllitas magna. Porro hómines miráti sunt, dicéntes: Qualis est hic, quia venti et mare obœ́diunt ei?"]}}
-{"id":"tempora-pentepi4-0.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-pentepi4-0.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"tempora-pentepi4-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi4-0.txt","section":"Offertorium"},{"file":"missa/Latin/Tempora/Pent23-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pentepi4-0.offertoire.1","type":"rubric","t":{"la":["Ps 129:1-2"],"fr":["Ps 129:1-2"]}}
 {"id":"tempora-pentepi4-0.offertoire.2","type":"para","t":{"la":["De profúndis clamávi ad te, Dómine: Dómine, exáudi oratiónem meam: de profúndis clamávi ad te, Dómine."]}}
 {"id":"tempora-pentepi4-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi4-0.txt","section":"Secreta"},{"file":"missa/Latin/Tempora/Epi4-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pentepi4-0.secrete.1","type":"para","t":{"la":["Concéde, quǽsumus, omnípotens Deus: ut hujus sacrifícii munus oblátum fragilitátem nostram ab omni malo purget semper et múniat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pentepi4-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pentepi4-0.preface.1","type":"rubric","t":{"la":["Præfatio de sanctissima Trinitate."],"fr":["Préface de la Sainte Trinité."]}}
+{"id":"tempora-pentepi4-0.preface.1","type":"rubric","preface":"trinitate","t":{"la":["Præfatio de sanctissima Trinitate."],"fr":["Préface de la Sainte Trinité."]}}
 {"id":"tempora-pentepi4-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi4-0.txt","section":"Communio"},{"file":"missa/Latin/Tempora/Pent23-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pentepi4-0.communion.1","type":"rubric","t":{"la":["Marc 11:24"],"fr":["Marc 11:24"]}}
 {"id":"tempora-pentepi4-0.communion.2","type":"para","t":{"la":["Amen, dico vobis, quidquid orántes pétitis, crédite, quia accipiétis, et fiet vobis."]}}

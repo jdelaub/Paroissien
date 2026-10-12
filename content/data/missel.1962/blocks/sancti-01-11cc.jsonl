@@ -8,7 +8,7 @@
 {"id":"sancti-01-11cc.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-01-11cc.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-01-11cc.introit.7","type":"para","t":{"la":["Si díligis me, Simon Petre, pasce agnos meos, pasce oves meas."]}}
-{"id":"sancti-01-11cc.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-01-11cc.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-01-11cc.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2b.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-01-11cc.collecte.1","type":"para","t":{"la":["Gregem tuum, Pastor ætérne, placátus inténde: et, per beátum Hygínum Mártyrem tuum atque Summum Pontíficem, perpétua protectióne custódi; quem totíus Ecclésiæ præstitísti esse pastórem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-01-11cc.epitre","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2b.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C4b.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-01-11cc.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-01-11cc.evangile.2","type":"rubric","t":{"la":["Matt 16:13-19"],"fr":["Matt 16:13-19"]}}
 {"id":"sancti-01-11cc.evangile.3","type":"para","t":{"la":["In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? At illi dixérunt: Alii Joánnem Baptístam, alii autem Elíam, álii vero Jeremíam, aut unum ex prophétis. Dicit illis Jesus: Vos autem quem me esse dícitis? Respóndens Simon Petrus, dixit: Tu es Christus, Fílius Dei vivi. Respóndens autem Jesus, dixit ei: Beátus es, Simon Bar Jona: quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cœlis est. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cœlórum. Et quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis."]}}
-{"id":"sancti-01-11cc.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-01-11cc.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-01-11cc.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2b.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C4b.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-01-11cc.offertoire.1","type":"rubric","t":{"la":["Jer 1:9-10"],"fr":["Jer 1:9-10"]}}
 {"id":"sancti-01-11cc.offertoire.2","type":"para","t":{"la":["Ecce, dedi verba mea in ore tuo: ecce, constítui te super gentes et super regna, ut evéllas et déstruas, et ædífices et plantes."]}}
 {"id":"sancti-01-11cc.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2b.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C4b.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-01-11cc.secrete.1","type":"para","t":{"la":["Oblátis munéribus, quǽsumus, Dómine, Ecclésiam tuam benígnus illúmina: ut, et gregis tui profíciat ubíque succéssus, et grati fiant nómini tuo, te gubernánte, pastóres. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-01-11cc.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-01-11cc.preface.1","type":"rubric","t":{"la":["Præfatio de Epiphania Domini."],"fr":["Préface de l’Épiphanie."]}}
+{"id":"sancti-01-11cc.preface.1","type":"rubric","preface":"epi","t":{"la":["Præfatio de Epiphania Domini."],"fr":["Préface de l’Épiphanie."]}}
 {"id":"sancti-01-11cc.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2b.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4b.txt","section":"Communio"},{"file":"missa/Latin/Commune/Coronatio.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-01-11cc.communion.1","type":"rubric","t":{"la":["Matt 16:18"],"fr":["Matt 16:18"]}}
 {"id":"sancti-01-11cc.communion.2","type":"para","t":{"la":["Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam."]}}

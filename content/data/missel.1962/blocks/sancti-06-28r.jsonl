@@ -8,7 +8,7 @@
 {"id":"sancti-06-28r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-06-28r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-06-28r.introit.7","type":"para","t":{"la":["Dicit Dóminus Petro: Cum esses júnior, cingébas te et ambulábas, ubi volébas: cum autem senúeris, exténdes manus tuas, et álius te cinget et ducet, quo tu non vis: hoc autem dixit, signíficans, qua morte clarificatúrus esset Deum."]}}
-{"id":"sancti-06-28r.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"sancti-06-28r.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"sancti-06-28r.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-28r.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-06-28r.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut nullis nos permíttas perturbatiónibus cóncuti; quos in apostólicæ confessiónis petra solidásti. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-06-28r.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-28r.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -23,14 +23,14 @@
 {"id":"sancti-06-28r.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-06-28r.evangile.2","type":"rubric","t":{"la":["Joannes 21:15-10"],"fr":["Joannes 21:15-10"]}}
 {"id":"sancti-06-28r.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus Simóni Petro: Simon Joánnis, díligis me plus his? Dicit ei: Etiam, Dómine, tu scis, quia amo te. Dicit ei: Pasce agnos meos. Dicit ei íterum: Simon Joánnis, díligis me? Ait illi: Etiam, Dómine, tu scis, quia amo te. Dicit ei: Pasce agnos meos. Dicit ei tértio: Simon Joánnis, amas me? Contristátus est Petrus, quia dixit ei tértio, Amas me? et dixit ei: Dómine, tu ómnia nosti: tu scis, quia amo te. Dixit ei: Pasce oves meas. Amen, amen, dico tibi: cum esses júnior, cingébas te et ambulábas, ubi volébas: cum autem senúeris, exténdes manus tuas, et álius te cinget et ducet, quo tu non vis. Hoc autem dixit, signíficans, qua morte clarificatúrus esset Deum."]}}
-{"id":"sancti-06-28r.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-06-28r.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-06-28r.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-28r.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/01-25.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-06-28r.offertoire.1","type":"rubric","t":{"la":["Ps 138:17"],"fr":["Ps 138:17"]}}
 {"id":"sancti-06-28r.offertoire.2","type":"para","t":{"la":["Mihi autem nimis honoráti sunt amíci tui, Deus: nimis confortátus est principátus eórum."]}}
 {"id":"sancti-06-28r.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-28r.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-06-28r.secrete.1","type":"para","t":{"la":["Munus pópuli tui, quǽsumus, Dómine, apostólica intercessióne sanctífica: nosque a peccatórum nostrórum máculis emúnda. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-06-28r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-06-28r.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-06-28r.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-06-28r.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-28r.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-06-28r.communion.1","type":"rubric","t":{"la":["Joannes 21:15; 21:17"],"fr":["Joannes 21:15; 21:17"]}}
 {"id":"sancti-06-28r.communion.2","type":"para","t":{"la":["Simon Joánnis, díligis me plus his? Dómine, tu ómnia nosti: tu scis, Dómine, quia amo te."]}}

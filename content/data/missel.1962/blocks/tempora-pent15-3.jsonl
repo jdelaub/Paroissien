@@ -8,7 +8,7 @@
 {"id":"tempora-pent15-3.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pent15-3.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pent15-3.introit.7","type":"para","t":{"la":["Inclína, Dómine, aurem tuam ad me, et exáudi me: salvum fac servum tuum, Deus meus, sperántem in te: miserére mihi, Dómine, quóniam ad te clamávi tota die."]}}
-{"id":"tempora-pent15-3.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pent15-3.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-pent15-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent15-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pent15-3.collecte.1","type":"para","t":{"la":["Ecclésiam tuam, Dómine, miserátio continuáta mundet et múniat: et quia sine te non potest salva consístere; tuo semper múnere gubernétur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent15-3.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent15-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-pent15-3.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-pent15-3.evangile.2","type":"rubric","t":{"la":["Luc 7:11-16"],"fr":["Luc 7:11-16"]}}
 {"id":"tempora-pent15-3.evangile.3","type":"para","t":{"la":["In illo témpore: Ibat Jesus in civitátem, quæ vocátur Naim: et ibant cum eo discípuli ejus et turba copiósa. Cum autem appropinquáret portæ civitátis, ecce, defúnctus efferebátur fílius únicus matris suæ: et hæc vídua erat, et turba civitátis multa cum illa. Quam cum vidísset Dóminus, misericórdia motus super eam, dixit illi: Noli flere. Et accéssit et tétigit lóculum. - Hi autem, qui portábant, stetérunt - Et ait: Adoléscens, tibi dico, surge. Et resédit, qui erat mórtuus, et cœpit loqui. Et dedit illum matri suæ. Accépit autem omnes timor: et magnificábant Deum, dicéntes: Quia Prophéta magnus surréxit in nobis: et quia Deus visitávit plebem suam."]}}
-{"id":"tempora-pent15-3.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pent15-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pent15-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent15-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pent15-3.offertoire.1","type":"rubric","t":{"la":["Ps 39:2; 39:3; 39:4"],"fr":["Ps 39:2; 39:3; 39:4"]}}
 {"id":"tempora-pent15-3.offertoire.2","type":"para","t":{"la":["Exspéctans exspectávi Dóminum, et respéxit me: et exaudívit deprecatiónem meam: et immísit in os meum cánticum novum, hymnum Deo nostro."]}}
 {"id":"tempora-pent15-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent15-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pent15-3.secrete.1","type":"para","t":{"la":["Tua nos, Dómine, sacramenta custodiant: et contra diabólicos semper tueántur incúrsus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent15-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pent15-3.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pent15-3.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-pent15-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent15-0.txt","section":"Communio"},{"file":"missa/Latin/Tempora/Quad1-4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pent15-3.communion.1","type":"rubric","t":{"la":["Joann 6:52"],"fr":["Joann 6:52"]}}
 {"id":"tempora-pent15-3.communion.2","type":"para","t":{"la":["Panis, quem ego dédero, caro mea est pro sǽculi vita."]}}

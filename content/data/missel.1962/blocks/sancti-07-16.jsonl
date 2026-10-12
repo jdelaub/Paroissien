@@ -8,7 +8,7 @@
 {"id":"sancti-07-16.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-07-16.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-07-16.introit.7","type":"para","t":{"la":["Gaudeamus omnes in Domino diem festum celebrantes sub honore beatae Mariæ Virginis: de cujus assumptione gaudent, angeli, et collaudant Filium Dei."]}}
-{"id":"sancti-07-16.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-16.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-07-16.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-16.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-07-16.collecte.1","type":"para","t":{"la":["Deus, qui beatíssimæ semper Vírginis et Genetrícis tuæ Maríæ singulári título Carméli órdinem decorásti: concéde propítius; ut, cujus hódie Commemoratiónem sollémni celebrámus offício, ejus muníti præsídiis, ad gáudia sempitérna perveníre mereámur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-16.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-16.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -23,14 +23,14 @@
 {"id":"sancti-07-16.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-07-16.evangile.2","type":"rubric","t":{"la":["Luc 11:27-28"],"fr":["Luc 11:27-28"]}}
 {"id":"sancti-07-16.evangile.3","type":"para","t":{"la":["In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba, dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. ¶ At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud."]}}
-{"id":"sancti-07-16.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-16.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-07-16.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-16.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-07-16.offertoire.1","type":"rubric","t":{"la":["Jer 18:20"],"fr":["Jer 18:20"]}}
 {"id":"sancti-07-16.offertoire.2","type":"para","t":{"la":["Recordáre, Virgo Mater, in conspéctu Dei, ut loquáris pro nobis bona, et ut avértat indignatiónem suam a nobis."]}}
 {"id":"sancti-07-16.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-16.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-07-16.secrete.1","type":"para","t":{"la":["Sanctífica, Dómine, quǽsumus, obláta libámina: et, beátæ Dei Genetrícis Maríæ salubérrima intercessióne, nobis salutária fore concéde. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-16.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-07-16.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Commemoratione »)."]}}
+{"id":"sancti-07-16.preface.1","type":"rubric","preface":"maria","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Commemoratione »)."]}}
 {"id":"sancti-07-16.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-16.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-07-16.communion.1","type":"para","t":{"la":["Regína mundi digníssima, María Virgo perpétua, intercéde pro nostra pace et salúte, quæ genuísti Christum Dóminum, Salvatórem ómnium."]}}
 {"id":"sancti-07-16.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-16.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}

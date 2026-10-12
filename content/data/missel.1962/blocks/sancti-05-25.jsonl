@@ -16,7 +16,7 @@
 {"id":"sancti-05-25.introit.hors.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-05-25.introit.hors.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-05-25.introit.hors.7","type":"para","t":{"la":["Si díligis me, Simon Petre, pasce agnos meos, pasce oves meas."]}}
-{"id":"sancti-05-25.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-05-25.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-05-25.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-25.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-05-25.collecte.1","type":"para","t":{"la":["Deus, in te sperántium fortitúdo, qui beátum Gregórium Confessórem tuum atque Pontíficem, pro tuénda Ecclésiæ libertáte, virtúte constántiæ roborásti: da nobis, ejus exémplo et intercessióne, ómnia adversántia fórtiter superáre. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-05-25.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-25o.txt","section":"Oratio"},{"file":"horas/Latin/Commune/C2b.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Urbain Ier, pape et martyr"]}}
@@ -41,7 +41,7 @@
 {"id":"sancti-05-25.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-05-25.evangile.2","type":"rubric","t":{"la":["Matt 16:13-19"],"fr":["Matt 16:13-19"]}}
 {"id":"sancti-05-25.evangile.3","type":"para","t":{"la":["In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? At illi dixérunt: Alii Joánnem Baptístam, alii autem Elíam, álii vero Jeremíam, aut unum ex prophétis. Dicit illis Jesus: Vos autem quem me esse dícitis? Respóndens Simon Petrus, dixit: Tu es Christus, Fílius Dei vivi. Respóndens autem Jesus, dixit ei: Beátus es, Simon Bar Jona: quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cœlis est. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cœlórum. Et quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis."]}}
-{"id":"sancti-05-25.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-05-25.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-05-25.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4b.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-05-25.offertoire.1","type":"rubric","t":{"la":["Jer 1:9-10"],"fr":["Jer 1:9-10"]}}
 {"id":"sancti-05-25.offertoire.2","type":"para","t":{"la":["Ecce, dedi verba mea in ore tuo: ecce, constítui te super gentes et super regna, ut evéllas et déstruas, et ædífices et plantes. Allelúja."]}}
@@ -53,7 +53,7 @@
 {"id":"sancti-05-25.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-25o.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C2b.txt","section":"Secreta pro commemoratio"},{"file":"horas/Latin/Commune/C4b.txt","section":"Secreta pro commemoratio"}],"t":{"fr":["Commémoraison : Saint Urbain Ier, pape et martyr"]}}
 {"id":"sancti-05-25.secrete.c1.1","type":"para","t":{"la":["Múnera, quæ tibi, Dómine, lætántes offérimus, súscipe benígnus, et præsta: ut, intercedénte beáto Urbáno, Ecclésia tua et fídei integritáte lætétur, et témporum tranquillitáte semper exúltet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-05-25.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-05-25.preface.1","type":"rubric","t":{"la":["Præfatio de Ascensione Domini."],"fr":["Préface de l’Ascension ; dans l’octave de la Pentecôte : préface du Saint-Esprit ; au temps pascal : préface de Pâques ; après la Pentecôte : préface des Apôtres."]}}
+{"id":"sancti-05-25.preface.1","type":"rubric","preface":"asc","t":{"la":["Præfatio de Ascensione Domini."],"fr":["Préface de l’Ascension ; dans l’octave de la Pentecôte : préface du Saint-Esprit ; au temps pascal : préface de Pâques ; après la Pentecôte : préface des Apôtres."]}}
 {"id":"sancti-05-25.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4b.txt","section":"Communio"},{"file":"missa/Latin/Commune/Coronatio.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-05-25.communion.1","type":"rubric","t":{"la":["Matt 16:18"],"fr":["Matt 16:18"]}}
 {"id":"sancti-05-25.communion.2","type":"para","t":{"la":["Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam. Allelúja."]}}

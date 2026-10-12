@@ -1,5 +1,5 @@
 {"id":"tempora-pasc5-1.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Pasc5-1r.txt","section":"Officium"}],"t":{"la":["Feria II in Rogationibus"],"fr":["Lundi des Rogations"]}}
-{"id":"tempora-pasc5-1.rang","type":"rubric","t":{"fr":["IVᵉ classe — ornements violets."]}}
+{"id":"tempora-pasc5-1.rang","type":"rubric","t":{"fr":["IVᵉ classe — ornements violets. Station à Sainte-Marie-Majeure."]}}
 {"id":"tempora-pasc5-1.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc5-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
 {"id":"tempora-pasc5-1.introit.1","type":"rubric","t":{"la":["Isa 48:20"],"fr":["Isa 48:20"]}}
 {"id":"tempora-pasc5-1.introit.2","type":"para","dropCap":true,"t":{"la":["Vocem jucunditátis annuntiáte, et audiátur, allelúja: annuntiáte usque ad extrémum terræ: liberávit Dóminus pópulum suum, allelúja, allelúja."]}}
@@ -8,7 +8,7 @@
 {"id":"tempora-pasc5-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pasc5-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pasc5-1.introit.7","type":"para","t":{"la":["Vocem jucunditátis annuntiáte, et audiátur, allelúja: annuntiáte usque ad extrémum terræ: liberávit Dóminus pópulum suum, allelúja, allelúja."]}}
-{"id":"tempora-pasc5-1.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pasc5-1.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-pasc5-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc5-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pasc5-1.collecte.1","type":"para","t":{"la":["Deus, a quo bona cuncta procédunt, largíre supplícibus tuis: ut cogitémus, te inspiránte, quæ recta sunt; et, te gubernánte, éadem faciámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc5-1.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc5-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -24,14 +24,14 @@
 {"id":"tempora-pasc5-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-pasc5-1.evangile.2","type":"rubric","t":{"la":["Joann 16:23-30"],"fr":["Joann 16:23-30"]}}
 {"id":"tempora-pasc5-1.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Amen, amen, dico vobis: si quid petiéritis Patrem in nómine meo, dabit vobis. Usque modo non petístis quidquam in nómine meo: Pétite, et accipiétis, ut gáudium vestrum sit plenum. Hæc in provérbiis locútus sum vobis. Venit hora, cum jam non in provérbiis loquar vobis, sed palam de Patre annuntiábo vobis. In illo die in nómine meo petétis: et non dico vobis, quia ego rogábo Patrem de vobis: ipse enim Pater amat vos, quia vos me amástis, et credidístis quia ego a Deo exívi. Exívi a Patre et veni in mundum: íterum relínquo mundum et vado ad Patrem. Dicunt ei discípuli ejus: Ecce, nunc palam loquéris et provérbium nullum dicis. Nunc scimus, quia scis ómnia et non opus est tibi, ut quis te intérroget: in hoc crédimus, quia a Deo exísti."]}}
-{"id":"tempora-pasc5-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pasc5-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pasc5-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc5-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pasc5-1.offertoire.1","type":"rubric","t":{"la":["Ps 65:8-9; 65:20"],"fr":["Ps 65:8-9; 65:20"]}}
 {"id":"tempora-pasc5-1.offertoire.2","type":"para","t":{"la":["Benedícite, gentes, Dóminum, Deum nostrum, et obaudíte vocem laudis ejus: qui pósuit ánimam meam ad vitam, et non dedit commovéri pedes meos: benedíctus Dóminus, qui non amóvit deprecatiónem meam et misericórdiam suam a me, allelúja."]}}
 {"id":"tempora-pasc5-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc5-0.txt","section":"Secreta"},{"file":"missa/Latin/Tempora/Pasc0-2.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pasc5-1.secrete.1","type":"para","t":{"la":["Súscipe, Dómine, fidélium preces cum oblatiónibus hostiárum: ut, per hæc piæ devotiónis offícia, ad cœléstem glóriam transeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc5-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pasc5-1.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
+{"id":"tempora-pasc5-1.preface.1","type":"rubric","preface":"pasch","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
 {"id":"tempora-pasc5-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc5-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pasc5-1.communion.1","type":"rubric","t":{"la":["Ps 95:2"],"fr":["Ps 95:2"]}}
 {"id":"tempora-pasc5-1.communion.2","type":"para","t":{"la":["Cantáte Dómino, allelúja: cantáte Dómino et benedícite nomen ejus: bene nuntiáte de die in diem salutáre ejus, allelúja, allelúja."]}}

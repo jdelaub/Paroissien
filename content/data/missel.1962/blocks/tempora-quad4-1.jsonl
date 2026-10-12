@@ -8,7 +8,7 @@
 {"id":"tempora-quad4-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad4-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad4-1.introit.7","type":"para","t":{"la":["Deus, in nómine tuo salvum me fac, et in virtúte tua líbera me: Deus, exáudi oratiónem meam: áuribus pércipe verba oris mei."]}}
-{"id":"tempora-quad4-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad4-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad4-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad4-1.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut, observatiónes sacras ánnua devotióne recoléntes, et córpore tibi placeámus et mente. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad4-1.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-1.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -21,14 +21,14 @@
 {"id":"tempora-quad4-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-quad4-1.evangile.2","type":"rubric","t":{"la":["Joann 2:13-25"],"fr":["Joann 2:13-25"]}}
 {"id":"tempora-quad4-1.evangile.3","type":"para","t":{"la":["In illo témpore: Prope erat Pascha Judæórum, et ascéndit Jesus Jerosólymam: et invénit in templo vendéntes boves et oves et colúmbas, et nummulários sedéntes. Et cum fecísset quasi flagéllum de funículis, omnes ejécit de templo, oves quoque et boves, et nummulariórum effúdit æs et mensas subvértit. Et his, qui colúmbas vendébant, dixit: Auférte ista hinc, et nolíte fácere domum Patris mei domum negotiatiónis. Recordáti sunt vero discípuli ejus, quia scriptum est: Zelus domus tuæ comédit me. Respondérunt ergo Judǽi, et dixérunt ei: Quod signum osténdis nobis, quia hæc facis? Respóndit Jesus et dixit eis: Sólvite templum hoc, et in tribus diébus excitábo illud. Dixérunt ergo Judǽi: Quadragínta et sex annis ædificátum est templum hoc, et tu in tribus diébus excitábis illud? Ille autem dicébat de templo córporis sui. Cum ergo resurrexísset a mórtuis, recordáti sunt discípuli ejus, quia hoc dicébat, et credidérunt Scriptúræ, et sermóni, quem dixit Jesus. Cum autem esset Jerosólymis in Pascha in die festo, multi credidérunt in nómine ejus, vidéntes signa ejus, quæ faciébat. Ipse autem Jesus non credébat semetípsum eis, eo quod ipse nosset omnes, et quia opus ei non erat, ut quis testimónium perhibéret de hómine: ipse enim sciébat, quid esset in hómine."]}}
-{"id":"tempora-quad4-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad4-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad4-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad4-1.offertoire.1","type":"rubric","t":{"la":["Ps 99:1-2"],"fr":["Ps 99:1-2"]}}
 {"id":"tempora-quad4-1.offertoire.2","type":"para","t":{"la":["Jubiláte Deo, omnis terra, servíte Dómino in lætítia: intráte in conspéctu ejus in exsultatióne: quia Dóminus ipse est Deus."]}}
 {"id":"tempora-quad4-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad4-1.secrete.1","type":"para","t":{"la":["Oblátum tibi, Dómine, sacrifícium vivíficet nos semper et múniat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad4-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad4-1.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad4-1.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad4-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad4-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad4-1.communion.1","type":"rubric","t":{"la":["Ps 18:13, 14"],"fr":["Ps 18:13, 14"]}}
 {"id":"tempora-quad4-1.communion.2","type":"para","t":{"la":["Ab occúltis meis munda me, Dómine: et ab aliénis parce servo tuo."]}}

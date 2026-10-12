@@ -8,7 +8,7 @@
 {"id":"sancti-08-28.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-08-28.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-08-28.introit.7","type":"para","t":{"la":["In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ et intelléctus: stolam glóriæ índuit eum."]}}
-{"id":"sancti-08-28.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-08-28.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-08-28.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-28.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-08-28.collecte.1","type":"para","t":{"la":["Adésto supplicatiónibus nostris, omnípotens Deus: et, quibus fidúciam sperándæ pietátis indúlges, intercedénte beáto Augustíno Confessóre tuo atque Pontífice, consuétæ misericórdiæ tríbue benígnus efféctum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-28.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/08-28cc.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Hermès, martyr"]}}
@@ -27,7 +27,7 @@
 {"id":"sancti-08-28.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-08-28.evangile.2","type":"rubric","t":{"la":["Matt 5:13-19"],"fr":["Matt 5:13-19"]}}
 {"id":"sancti-08-28.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Ad níhilum valet ultra, nisi ut mittátur foras, et conculcétur ab homínibus. Vos estis lux mundi. ¶ Non potest cívitas abscóndi supra montem pósita. Neque accéndunt lucérnam, et ponunt eam sub módio, sed super candelábrum, ut lúceat ómnibus, qui in domo sunt. Sic luceat lux vestra coram homínibus, ut vídeant ópera vestra bona, et gloríficent Patrem vestrum, qui in cœlis est. Nolíte putáre, quóniam veni sólvere legem aut prophétas: non veni sólvere, sed adimplére. Amen, quippe dico vobis, donec tránseat cœlum et terra, jota unum aut unus apex non præteríbit a lege, donec ómnia fiant. Qui ergo sólverit unum de mandátis istis mínimis, et docúerit sic hómines, mínimus vocábitur in regno cœlórum: qui autem fécerit et docúerit, hic magnus vocábitur in regno cœlórum."]}}
-{"id":"sancti-08-28.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-08-28.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-08-28.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-28.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C4a.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-08-28.offertoire.1","type":"rubric","t":{"la":["Ps 91:13"],"fr":["Ps 91:13"]}}
 {"id":"sancti-08-28.offertoire.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus, quæ in Líbano est, multiplicábitur."]}}
@@ -36,7 +36,7 @@
 {"id":"sancti-08-28.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/08-28cc.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Hermès, martyr"]}}
 {"id":"sancti-08-28.secrete.c1.1","type":"para","t":{"la":["Sacrifícium tibi, Dómine, laudis offérimus in tuórum commemoratióne Sanctórum: da, quǽsumus; ut, quod illis cóntulit glóriam, nobis prosit ad salútem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-28.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-08-28.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-08-28.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-08-28.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-28.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-08-28.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
 {"id":"sancti-08-28.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}

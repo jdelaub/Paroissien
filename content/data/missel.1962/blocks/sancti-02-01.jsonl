@@ -8,7 +8,7 @@
 {"id":"sancti-02-01.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-02-01.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-02-01.introit.7","type":"para","t":{"la":["Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo."]}}
-{"id":"sancti-02-01.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-01.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-02-01.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-02-01.collecte.1","type":"para","t":{"la":["Infirmitátem nostram réspice, omnípotens Deus: et, quia pondus própriæ actiónis gravat, beáti Ignátii Mártyris tui atque Pontíficis intercéssio gloriósa nos prótegat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-01.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -35,14 +35,14 @@
 {"id":"sancti-02-01.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-02-01.evangile.2","type":"rubric","t":{"la":["Joann 12:24-26"],"fr":["Joann 12:24-26"]}}
 {"id":"sancti-02-01.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Amen, amen, dico vobis, nisi granum fruménti cadens in terram, mórtuum fúerit, ipsum solum manet: si autem mórtuum fúerit, multum fructum affert. Qui amat ánimam suam, perdet eam: et qui odit ánimam suam in hoc mundo, in vitam ætérnam custódit eam. Si quis mihi mínistrat, me sequátur: et ubi sum ego, illic et miníster meus erit. Si quis mihi ministráverit, honorificábit eum Pater meus."]}}
-{"id":"sancti-02-01.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-02-01.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-02-01.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C1v.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-02-01.offertoire.1","type":"rubric","t":{"la":["Ps 8:6-7"],"fr":["Ps 8:6-7"]}}
 {"id":"sancti-02-01.offertoire.2","type":"para","t":{"la":["Glória et honore coronásti eum: et constituísti eum super ópera mánuum tuárum, Dómine."]}}
 {"id":"sancti-02-01.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-02-01.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, beáti Ignátii Mártyris tui atque Pontíficis dicátas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-01.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-02-01.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-02-01.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-02-01.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-02-01.communion.1","type":"para","t":{"la":["Fruméntum Christi sum: déntibus bestiárum molar, ut panis mundus invéniar."]}}
 {"id":"sancti-02-01.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}

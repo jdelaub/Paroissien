@@ -8,7 +8,7 @@
 {"id":"sancti-11-09.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-11-09.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-11-09.introit.7","type":"para","t":{"la":["Terríbilis est locus iste: hic domus Dei est et porta cœli: et vocábitur aula Dei."]}}
-{"id":"sancti-11-09.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-11-09.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-11-09.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C8.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-11-09.collecte.1","type":"para","t":{"la":[{"m":["red","i"],"c":["In Anniversario Dedicationis Ecclesiæ"]},{"br":1},"Deus, qui nobis per síngulos annos hujus sancti templi tui consecratiónis réparas diem, et sacris semper mystériis repræséntas incólumes: exáudi preces pópuli tui, et præsta; ut quisquis hoc templum benefícia petitúrus ingréditur, cuncta se impetrásse lætétur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-11-09.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/11-09cc.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Théodore, martyr"]}}
@@ -26,7 +26,7 @@
 {"id":"sancti-11-09.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-11-09.evangile.2","type":"rubric","t":{"la":["Luc 19:1-10"],"fr":["Luc 19:1-10"]}}
 {"id":"sancti-11-09.evangile.3","type":"para","t":{"la":["In illo témpore: Ingréssus Jesus perambulábat Jéricho. Et ecce, vir nómine Zachǽus: et hic princeps erat publicanórum, et ipse dives: et quærébat vidére Jesum, quis esset: et non póterat præ turba, quia statúra pusíllus erat. Et præcúrrens ascéndit in árborem sycómorum, ut vidéret eum; quia inde erat transitúrus. Et cum venísset ad locum, suspíciens Jesus vidit illum, et dixit ad eum: Zachǽe, festínans descénde; quia hódie in domo tua opórtet me manére. Et festínans descéndit, et excépit illum gaudens. Et cum vidérent omnes, murmurábant, dicéntes, quod ad hóminem peccatórem divertísset. Stans autem Zachǽus, dixit ad Dóminum: Ecce, dimídium bonórum meórum, Dómine, do paupéribus: et si quid áliquem defraudávi, reddo quádruplum. Ait Jesus ad eum: Quia hódie salus dómui huic facta est: eo quod et ipse fílius sit Abrahæ. Venit enim Fílius hóminis quǽrere et salvum fácere, quod períerat."]}}
-{"id":"sancti-11-09.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-11-09.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-11-09.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C8.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-11-09.offertoire.1","type":"rubric","t":{"la":["1 Par 29:17-18"],"fr":["1 Par 29:17-18"]}}
 {"id":"sancti-11-09.offertoire.2","type":"para","t":{"la":["Dómine Deus, in simplicitáte cordis mei lætus óbtuli univérsa; et pópulum tuum, qui repértus est, vidi cum ingénti gáudio: Deus Israël, custódi hanc voluntátem, allelúja."]}}
@@ -35,7 +35,7 @@
 {"id":"sancti-11-09.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/11-09cc.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Théodore, martyr"]}}
 {"id":"sancti-11-09.secrete.c1.1","type":"para","t":{"la":["Súscipe, Dómine, fidélium preces cum oblatiónibus hostiárum: et, intercedénte beáto Theodóro Mártyre tuo, per hæc piæ devotiónis offícia ad cœléstem glóriam transeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-11-09.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-11-09.preface.1","type":"rubric","t":{"la":["Præfatio in Dedicatione Ecclesiae."],"fr":["Préface de la Dédicace."]}}
+{"id":"sancti-11-09.preface.1","type":"rubric","preface":"dedicatio","t":{"la":["Præfatio in Dedicatione Ecclesiae."],"fr":["Préface de la Dédicace."]}}
 {"id":"sancti-11-09.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C8.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-11-09.communion.1","type":"rubric","t":{"la":["Matt 21:13"],"fr":["Matt 21:13"]}}
 {"id":"sancti-11-09.communion.2","type":"para","t":{"la":["Domus mea domus oratiónis vocábitur, dicit Dóminus: in ea omnis, qui petit, áccipit; et qui quærit, invénit; et pulsánti aperiétur."]}}

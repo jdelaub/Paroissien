@@ -8,7 +8,7 @@
 {"id":"sancti-09-15.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-09-15.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-09-15.introit.7","type":"para","t":{"la":["Stabant juxta Crucem Jesu Mater ejus, et soror Matris ejus, María Cléophæ, et Salóme et María Magdaléne."]}}
-{"id":"sancti-09-15.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-09-15.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-09-15.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-15.txt","section":"Oratio"},{"file":"missa/Latin/Tempora/Quad5-5.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-09-15.collecte.1","type":"para","t":{"la":["Deus, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam gloriósæ Vírginis et Matris Maríæ dolóris gladius pertransívit: concéde propítius; ut, qui transfixiónem ejus et passiónem venerándo recólimus, gloriósis méritis et précibus ómnium Sanctórum Cruci fidéliter astántium intercedéntibus, passiónis tuæ efféctum felícem consequámur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-09-15.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/09-15cc.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Nicomède, martyr"]}}
@@ -46,7 +46,7 @@
 {"id":"sancti-09-15.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-09-15.evangile.2","type":"rubric","t":{"la":["Joann 19:25-27"],"fr":["Joann 19:25-27"]}}
 {"id":"sancti-09-15.evangile.3","type":"para","t":{"la":["In illo témpore: Stabant juxta Crucem Jesu Mater ejus, et soror Matris ejus, María Cléophæ, et María Magdaléne. Cum vidísset ergo Jesus Matrem, et discípulum stantem, quem diligébat, dicit Matri suæ: Múlier, ecce fílius tuus. Deinde dicit discípulo: Ecce Mater tua. Et ex illa hora accépit eam discípulus in sua."]}}
-{"id":"sancti-09-15.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-09-15.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-09-15.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-15.txt","section":"Offertorium"},{"file":"missa/Latin/Tempora/Quad5-5.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/07-16.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-09-15.offertoire.1","type":"rubric","t":{"la":["Jer 18:20"],"fr":["Jer 18:20"]}}
 {"id":"sancti-09-15.offertoire.2","type":"para","t":{"la":["Recordáre, Virgo Mater, in conspéctu Dei, ut loquáris pro nobis bona, et ut avértat indignatiónem suam a nobis."]}}
@@ -55,7 +55,7 @@
 {"id":"sancti-09-15.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/09-15cc.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Nicomède, martyr"]}}
 {"id":"sancti-09-15.secrete.c1.1","type":"para","t":{"la":["Súscipe, Dómine, múnera propítius obláta: quæ majestáti tuæ beáti Nicomédis Mártyris comméndet orátio. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-09-15.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-09-15.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Transfixióne »)."]}}
+{"id":"sancti-09-15.preface.1","type":"rubric","preface":"maria","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Transfixióne »)."]}}
 {"id":"sancti-09-15.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-15.txt","section":"Communio"},{"file":"missa/Latin/Tempora/Quad5-5.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-09-15.communion.1","type":"para","t":{"la":["Felices sensus beátæ Maríæ Vírginis, qui sine morte meruérunt martýrii palmam sub Cruce Dómini."]}}
 {"id":"sancti-09-15.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-15.txt","section":"Postcommunio"},{"file":"missa/Latin/Tempora/Quad5-5.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}

@@ -8,7 +8,7 @@
 {"id":"sancti-02-27.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-02-27.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-02-27.introit.7","type":"para","t":{"la":["Oculus Dei respéxit illum in bono, et eréxit eum ab humilitáte ipsíus, et exaltávit caput ejus: et miráti sunt in illo multi et honoravérunt Deum."]}}
-{"id":"sancti-02-27.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-27.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-02-27.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-27.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-02-27.collecte.1","type":"para","t":{"la":["Deus, qui beátum Gabriélem dulcíssimæ Matris tuæ dolóres assídue recólere docuísti, ac per illam sanctitátis et miraculórum glória sublimásti: da nobis, ejus intercessióne et exémplo; ita Genetrícis tuæ consociári flétibus, ut matérna ejúsdem protectióne salvémur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-27.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-27.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -21,14 +21,14 @@
 {"id":"sancti-02-27.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Marcum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Marc"]}}
 {"id":"sancti-02-27.evangile.2","type":"rubric","t":{"la":["Marc 10:13-21"],"fr":["Marc 10:13-21"]}}
 {"id":"sancti-02-27.evangile.3","type":"para","t":{"la":["In illo témpore: Offerébant Jesu parvulos, ut tángeret illos. Discípuli autem comminabántur offeréntibus. Quos cum vidéret Jesus, indígne tulit et ait illis: Sinite párvulos veníre ad me, et ne prohibuéritis eos: tálium enim est regnum Dei. Amen, dico vobis: Quisquis non recéperit regnum Dei velut párvulus, non intrábit in illud. Et compléxans eos et impónens manus super illos, benedicébat eos. Et cum egréssus esset in viam, procúrrens quidam genu flexo ante eum, rogábat eum: Magíster bone, quid fáciam, ut vitam ætérnam percípiam? Jesus autem dixit ei: Quid me dicis bonum? Nemo bonus, nisi unus Deus. Præcépta nosti: Ne adúlteris, Ne occídas, Ne furóris, Ne falsum testimónium díxeris, Ne fraudem féceris, Hónora patrem tuum et matrem. At ille respóndens, ait illi: Magíster, hæc ómnia observávi a juventúte mea. Jesus autem intúitus eum, diléxit eum et dixit ei: Unum tibi deest: vade, quæcúmque habes, vende et da paupéribus, et habébis thesáurum in cœlo: et veni, séquere me."]}}
-{"id":"sancti-02-27.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-02-27.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-02-27.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-27.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-02-27.offertoire.1","type":"rubric","t":{"la":["Ps 115:16-17"],"fr":["Ps 115:16-17"]}}
 {"id":"sancti-02-27.offertoire.2","type":"para","t":{"la":["O Dómine, quia ego servus tuus, et fílius ancíllæ tuæ: dirupísti víncula mea, tibi sacrificábo hóstiam laudis."]}}
 {"id":"sancti-02-27.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-27.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-02-27.secrete.1","type":"para","t":{"la":["Salutárem hóstiam in memóriam sancti Gabriélis tibi, Dómine, offeréntes, fac nos sacrifícium mortis tuæ rite recólere: ac, méritis perdoléntis Vírginis, ejúsdem sacrifícii fructum copióse percípere: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-27.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-02-27.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême ; au temps de la Septuagésime : préface commune."]}}
+{"id":"sancti-02-27.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême ; au temps de la Septuagésime : préface commune."]}}
 {"id":"sancti-02-27.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-27.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-02-27.communion.1","type":"rubric","t":{"la":["Apoc. 3:20"],"fr":["Apoc. 3:20"]}}
 {"id":"sancti-02-27.communion.2","type":"para","t":{"la":["Ecce, sto ad óstium et pulso: si quis audiérit vocem meam, et aperúerit mihi jánuam, intrábo ad illum, et cenábo cum illo, et ipse mecum."]}}

@@ -7,7 +7,7 @@
 {"id":"tempora-quad3-4.introit.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad3-4.introit.5","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad3-4.introit.6","type":"para","t":{"la":["Salus pópuli ego sum, dicit Dóminus: de quacúmque tribulatióne clamáverint ad me, exáudiam eos: et ero illórum Dóminus in perpétuum"]}}
-{"id":"tempora-quad3-4.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad3-4.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad3-4.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-4.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad3-4.collecte.1","type":"para","t":{"la":["Magníficet te, Dómine, sanctórum tuórum Cosmæ et Damiáni beáta solémnitas: qua et illis glóriam sempitérnam, et opem nobis ineffábili providéntia contulísti. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad3-4.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-4.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -22,14 +22,14 @@
 {"id":"tempora-quad3-4.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-quad3-4.evangile.2","type":"rubric","t":{"la":["Luc 4:38-44"],"fr":["Luc 4:38-44"]}}
 {"id":"tempora-quad3-4.evangile.3","type":"para","t":{"la":["In illo témpore: Surgens Jesus de synagóga, introívit in domum Simónis. Socrus autem Simónis tenebátur magnis fébribus: et rogavérunt illum pro ea. Et stans super illam, imperávit febri: et dimísit illam. Et contínuo surgens, ministrábat illis. Cum autem sol occidísset, omnes qui habébant infírmos váriis languóribus, ducébant illos ad eum. At ille síngulis manus impónens, curábat eos. Exíbant autem dæmónia a multis clamántia et dicéntia: Quia tu es Fílius Dei: et íncrepans non sinébat ea loqui, quia sciébant ipsum esse Christum. Facta autem die egréssus ibat in desértum locum, et turbæ requirébant eum, et venérunt usque ad ipsum: et detinébant illum, ne discéderet ab eis. Quibus ille ait: Quia et áliis civitátibus opórtet me evangelizáre regnum Dei: quia ídeo missus sum. Et erat prǽdicans in synagógis Galilǽæ."]}}
-{"id":"tempora-quad3-4.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad3-4.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad3-4.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-4.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad3-4.offertoire.1","type":"rubric","t":{"la":["Ps 137:7"],"fr":["Ps 137:7"]}}
 {"id":"tempora-quad3-4.offertoire.2","type":"para","t":{"la":["Si ambulávero in médio tribulatiónis, vivificábis me, Dómine: et super iram inimicórum meorum exténdes manum tuam, et salvum me fáciet déxtera tua."]}}
 {"id":"tempora-quad3-4.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-4.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad3-4.secrete.1","type":"para","t":{"la":["In tuorum, Dómine, pretiósa morte justórum sacrifícium illud offérimus, de quo martýrium sumpsit omne princípium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad3-4.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad3-4.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad3-4.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad3-4.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad3-4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad3-4.communion.1","type":"rubric","t":{"la":["Ps 118:4-5"],"fr":["Ps 118:4-5"]}}
 {"id":"tempora-quad3-4.communion.2","type":"para","t":{"la":["Tu mandásti, mandáta tua custodíri nimis: útinam dirigántur viæ meæ, ad custodiéndas justificatiónes tuas."]}}

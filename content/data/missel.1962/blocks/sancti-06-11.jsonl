@@ -8,7 +8,7 @@
 {"id":"sancti-06-11.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-06-11.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-06-11.introit.7","type":"para","t":{"la":["Mihi autem nimis honoráti sunt amíci tui, Deus: nimis confortátus est principátus eórum."]}}
-{"id":"sancti-06-11.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-06-11.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-06-11.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-11.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-06-11.collecte.1","type":"para","t":{"la":["Deus, qui nos beáti Bárnabæ Apóstoli tui méritis et intercessióne lætíficas: concéde propítius; ut, qui tua per eum benefícia póscimus, dono tuæ grátiæ consequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-06-11.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-11.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-06-11.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-06-11.evangile.2","type":"rubric","t":{"la":["Matt 10:16-22"],"fr":["Matt 10:16-22"]}}
 {"id":"sancti-06-11.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Ecce, ego mitto vos sicut oves in médio lupórum. Estóte ergo prudéntes sicut serpentes, et símplices sicut colúmbæ. ¶ Cavéte autem ab homínibus. Tradent enim vos in concíliis, et in synagógis suis flagellábunt vos: et ad præsides et ad reges ducémini propter me in testimónium illis et géntibus. Cum autem tradent vos, nolíte cogitáre, quómodo aut quid loquámini: dábitur enim vobis in illa hora, quid loquámini. Non enim vos estis, qui loquímini, sed Spíritus Patris vestri, qui lóquitur in vobis. Tradet autem frater fratrem in mortem, et pater fílium: et insúrgent fílii in paréntes, et morte eos affícient: et éritis odio ómnibus propter nomen meum: qui autem perseveráverit usque in finem, hic salvus erit."]}}
-{"id":"sancti-06-11.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-06-11.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-06-11.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-11.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/02-24.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-06-11.offertoire.1","type":"rubric","t":{"la":["Ps 44:17-18"],"fr":["Ps 44:17-18"]}}
 {"id":"sancti-06-11.offertoire.2","type":"para","t":{"la":["Constítues eos príncipes super omnem terram: mémores erunt nóminis tui, Dómine, in omni progénie et generatióne."]}}
 {"id":"sancti-06-11.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-11.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-06-11.secrete.1","type":"para","t":{"la":["Múnera, Dómine, obláta sanctífica, et, intercedénte beáto Bárnaba Apostolo tuo, nos per hæc a peccatórum nostrórum máculis emúnda. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-06-11.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-06-11.preface.1","type":"rubric","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
+{"id":"sancti-06-11.preface.1","type":"rubric","preface":"apostolis","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
 {"id":"sancti-06-11.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-11.txt","section":"Communio"},{"file":"missa/Latin/Sancti/02-24.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-06-11.communion.1","type":"rubric","t":{"la":["Matt 19:28"],"fr":["Matt 19:28"]}}
 {"id":"sancti-06-11.communion.2","type":"para","t":{"la":["Vos, qui secúti estis me, sedébitis super sedes, judicántes duódecim tribus Israël."]}}

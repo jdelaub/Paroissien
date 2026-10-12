@@ -8,7 +8,7 @@
 {"id":"sancti-07-02.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-07-02.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-07-02.introit.7","type":"para","t":{"la":["Salve, sancta parens, eníxa puérpera Regem: qui cælum terrámque regit in sǽcula sæculórum."]}}
-{"id":"sancti-07-02.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-02.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-07-02.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-02.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-07-02.collecte.1","type":"para","t":{"la":["Fámulis tuis, quǽsumus, Dómine, cœléstis grátiæ munus impertíre: ut, quibus beátæ Vírginis partus éxstitit salútis exórdium; Visitatiónis ejus votíva sollémnitas, pacis tríbuat increméntum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-02.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/07-02cc.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saints Processe et Martinien, martyrs"]}}
@@ -25,7 +25,7 @@
 {"id":"sancti-07-02.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-07-02.evangile.2","type":"rubric","t":{"la":["Luc 1:39-47"],"fr":["Luc 1:39-47"]}}
 {"id":"sancti-07-02.evangile.3","type":"para","t":{"la":["In illo témpore: Exsúrgens María ábiit in montána cum festinatióne in civitátem Juda: et intrávit in domum Zacharíæ et salutávit Elísabeth. Et factum est, ut audivit salutatiónem Maríæ Elísabeth, exsultávit infans in útero ejus: et repléta est Spíritu Sancto Elísabeth, et exclamávit voce magna et dixit: Benedícta tu inter mulíeres, et benedíctus fructus ventris tui. Et unde hoc mihi, ut véniat Mater Dómini mei ad me? Ecce enim, ut facta est vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo. Et beáta, quæ credidísti, quóniam perficiéntur ea, quæ dicta sunt tibi a Dómino. Et ait María: Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo, salutári meo."]}}
-{"id":"sancti-07-02.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-07-02.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-07-02.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-02.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-07-02.offertoire.1","type":"para","t":{"la":["Beáta es, Virgo María, quæ ómnium portásti Creatórem: genuísti qui te fecit, et in ætérnum pérmanes Virgo."]}}
 {"id":"sancti-07-02.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-02.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
@@ -33,7 +33,7 @@
 {"id":"sancti-07-02.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/07-02cc.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saints Processe et Martinien, martyrs"]}}
 {"id":"sancti-07-02.secrete.c1.1","type":"para","t":{"la":["Súscipe, Dómine, preces et múnera: quæ ut tuo sint digna conspéctu, Sanctórum tuórum précibus adjuvémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-02.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-07-02.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Visitatióne »)."]}}
+{"id":"sancti-07-02.preface.1","type":"rubric","preface":"maria","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Visitatióne »)."]}}
 {"id":"sancti-07-02.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-07-02.communion.1","type":"para","t":{"la":["Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium."]}}
 {"id":"sancti-07-02.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-02.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}

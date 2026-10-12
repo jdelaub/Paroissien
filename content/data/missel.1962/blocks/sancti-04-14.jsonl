@@ -16,7 +16,7 @@
 {"id":"sancti-04-14.introit.sept.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-04-14.introit.sept.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-04-14.introit.sept.7","type":"para","t":{"la":["Narravérunt mihi iníqui fabulatiónes, sed non ut lex tua: ego autem loquébar de testimóniis tuis in conspéctu regum, et non confundébar."]}}
-{"id":"sancti-04-14.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-04-14.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-04-14.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-14.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-04-14.collecte.1","type":"para","t":{"la":["Deus, qui per stultítiam Crucis eminéntem Jesu Christi sciéntiam beátum Justínum Mártyrem mirabíliter docuísti: ejus nobis intercessióne concéde; ut, errórum circumventióne depúlsa, fídei firmitátem consequámur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-04-14.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/04-14t.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saints Tiburce, Valérien et Maxime, martyrs"]}}
@@ -39,7 +39,7 @@
 {"id":"sancti-04-14.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-04-14.evangile.2","type":"rubric","t":{"la":["Luc 12:2-8"],"fr":["Luc 12:2-8"]}}
 {"id":"sancti-04-14.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nihil est opértum, quod non revelétur, neque abscónditum, quod non sciátur. Quóniam quæ in ténebris dixístis, in lúmine dicéntur: et quod in aurem locúti estis in cubículis, prædicábitur in tectis. Dico autem vobis amícis meis: Ne terreámini ab his, qui occidunt corpus et post hæc non habent ámplius, quid fáciant. Osténdam autem vobis, quem timeátis: timéte eum, qui, postquam occídent, habet potestátem míttere in gehénnam; ita dico vobis, hunc timéte. Nonne quinque pásseres véneunt dipóndio, et unus ex illis non est in oblivióne coram Deo? Sed et capílli capitis vestri omnes numeráti sunt. Nolíte ergo timére: multis passéribus pluris estis vos. Dico autem vobis: Omnis, quicúmque conféssus fúerit me coram homínibus, et Fílius hóminis confitébitur illum coram Angelis Dei."]}}
-{"id":"sancti-04-14.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-04-14.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-04-14.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-14.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-04-14.offertoire.1","type":"rubric","t":{"la":["1 Cor 2:2;"],"fr":["1 Cor 2:2;"]}}
 {"id":"sancti-04-14.offertoire.2","type":"para","t":{"la":["Non enim judicávi me scire áliquid inter vos, nisi Jesum Christum, et hunc crucifíxum. Alleluia."]}}
@@ -51,7 +51,7 @@
 {"id":"sancti-04-14.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/04-14t.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saints Tiburce, Valérien et Maxime, martyrs"]}}
 {"id":"sancti-04-14.secrete.c1.1","type":"para","t":{"la":["Hæc hóstia, quǽsumus, Dómine, quam sanctórum Mártyrum tuórum natalítia recenséntes offérimus: et víncula nostræ pravitátis absólvat, et tuæ nobis misericórdiæ dona concíliet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-04-14.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-04-14.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques ; au temps de la Passion : préface de la Sainte Croix."]}}
+{"id":"sancti-04-14.preface.1","type":"rubric","preface":"pasch","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques ; au temps de la Passion : préface de la Sainte Croix."]}}
 {"id":"sancti-04-14.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-14.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-04-14.communion.1","type":"rubric","t":{"la":["2 Tim 4:8;"],"fr":["2 Tim 4:8;"]}}
 {"id":"sancti-04-14.communion.2","type":"para","t":{"la":["Repósita est mihi coróna justítiæ, quam reddet mihi Dóminus in illa die justus judex. Alleluia"]}}

@@ -8,7 +8,7 @@
 {"id":"tempora-quad2-3.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad2-3.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad2-3.introit.7","type":"para","t":{"la":["Ne derelínquas me, Dómine, Deus meus, ne discédas a me: inténde in adjutórium meum, Dómine, virtus salútis meæ."]}}
-{"id":"tempora-quad2-3.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad2-3.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad2-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-3.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad2-3.collecte.1","type":"para","t":{"la":["Pópulum tuum, quǽsumus, Dómine, propítius réspice: et, quos ab escis carnálibus prǽcipis abstinére, a nóxiis quoque vítiis cessáre concéde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad2-3.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-3.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -29,14 +29,14 @@
 {"id":"tempora-quad2-3.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-quad2-3.evangile.2","type":"rubric","t":{"la":["Matt 20:17-28"],"fr":["Matt 20:17-28"]}}
 {"id":"tempora-quad2-3.evangile.3","type":"para","t":{"la":["In illo témpore: Ascéndens Jesus Jerosólymam, assúmpsit duódecim discípulos secréto, et ait illis: Ecce, ascéndimus Jerosólymam, et Fílius hóminis tradétur princípibus sacerdótum, et scribis, et condemnábunt eum morte, et tradent eum Géntibus ad illudéndum, et flagellándum, et crucifigéndum, et tértia die resúrget. Tunc accéssit ad eum mater filiórum Zebedǽi cum fíliis suis, adórans et petens áliquid ab eo. Qui dixit ei: Quid vis? Ait illi: Dic, ut sédeant hi duo fílii mei, unus ad déxteram tuam et unus ad sinístram in regno tuo. Respóndens autem Jesus, dixit: Nescítis, quid petátis. Potéstis bíbere cálicem, quem ego bibitúrus sum? Dicunt ei: Póssumus. Ait illis: Cálicem quidem meum bibétis: sedére autem ad déxteram meam vel sinístram, non est meum dare vobis, sed quibus parátum est a Patre meo. Et audiéntes decem, indignáti sunt de duóbus frátribus. Jesus autem vocávit eos ad se, et ait: Scitis, quia príncipes géntium dominántur eórum: et qui majóres sunt, potestátem exércent in eos. Non ita erit inter vos: sed quicúmque volúerit inter vos major fíeri, sit vester miníster: et qui volúerit inter vos primus esse, erit vester servus. Sicut Fílius hóminis non venit ministrári, sed ministráre, et dare ánimam suam, redemptiónem pro multis."]}}
-{"id":"tempora-quad2-3.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad2-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad2-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad2-3.offertoire.1","type":"rubric","t":{"la":["Ps 24:1-3"],"fr":["Ps 24:1-3"]}}
 {"id":"tempora-quad2-3.offertoire.2","type":"para","t":{"la":["Ad te, Dómine, levávi ánimam meam: Deus meus, in te confído, non erubéscam: neque irrídeant me inimíci mei: étenim univérsi, qui te exspéctant, non confundéntur."]}}
 {"id":"tempora-quad2-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-3.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad2-3.secrete.1","type":"para","t":{"la":["Hóstias, Dómine, quas tibi offérimus, propítius réspice: et, per hæc sancta commércia, víncula peccatórum nostrórum absólve. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad2-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad2-3.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad2-3.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad2-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad2-3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad2-3.communion.1","type":"rubric","t":{"la":["Ps 10:8"],"fr":["Ps 10:8"]}}
 {"id":"tempora-quad2-3.communion.2","type":"para","t":{"la":["Justus Dóminus, et justítiam diléxit: æquitátem vidit vultus ejus."]}}

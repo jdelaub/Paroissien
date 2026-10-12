@@ -8,7 +8,7 @@
 {"id":"tempora-adv3-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-adv3-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-adv3-6.introit.7","type":"para","t":{"la":["Veni, et osténde nobis fáciem tuam, Dómine, qui sedes super Chérubim: et salvi érimus."]}}
-{"id":"tempora-adv3-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-adv3-6.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-adv3-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-adv3-6.collecte.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
 {"id":"tempora-adv3-6.collecte.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
@@ -94,14 +94,14 @@
 {"id":"tempora-adv3-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secundum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-adv3-6.evangile.2","type":"rubric","t":{"la":["Luc 3:1-6"],"fr":["Luc 3:1-6"]}}
 {"id":"tempora-adv3-6.evangile.3","type":"para","t":{"la":["Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam, tetrárcha autem Galilǽæ Heróde, Philíppo autem fratre ejus tetrárcha Iturǽæ et Trachonítidis regionis, et Lysánia Abilínæ tetrárcha, sub princípibus sacerdotum Anna et Cáipha: factum est verbum Domini super Joannem, Zacharíæ filium, in deserto. Et venit in omnem regiónem Jordánis, prǽdicans baptísmum pæniténtiæ in remissiónem peccatórum, sicut scriptum est in libro sermónum Isaíæ Prophétæ: Vox clamántis in desérto: Paráte viam Dómini: rectas fácite sémitas ejus: omnis vallis implébitur: et omnis mons et collis humiliábitur: et erunt prava in dirécta, et áspera in vias planas: et vidébit omnis caro salutáre Dei."]}}
-{"id":"tempora-adv3-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-adv3-6.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-adv3-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-adv3-6.offertoire.1","type":"rubric","t":{"la":["Zach 9:9"],"fr":["Zach 9:9"]}}
 {"id":"tempora-adv3-6.offertoire.2","type":"para","t":{"la":["Exsúlta satis, fília Sion, prǽdica, fília Jerúsalem: ecce, Rex tuus venit tibi sanctus et Salvátor."]}}
 {"id":"tempora-adv3-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-adv3-6.secrete.1","type":"para","t":{"la":["Sacrifíciis præséntibus, quǽsumus, Dómine, placátus inténde: ut et devotióni nostræ profíciant et salúti. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-adv3-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-adv3-6.preface.1","type":"rubric","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"tempora-adv3-6.preface.1","type":"rubric","preface":"adv","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
 {"id":"tempora-adv3-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-adv3-6.communion.1","type":"rubric","t":{"la":["Ps 18:6-7"],"fr":["Ps 18:6-7"]}}
 {"id":"tempora-adv3-6.communion.2","type":"para","t":{"la":["Exsultávit ut gigas ad curréndam viam: a summo cœlo egréssio ejus, et occúrsus ejus usque ad summum ejus."]}}

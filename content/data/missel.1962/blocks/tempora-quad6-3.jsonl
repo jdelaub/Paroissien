@@ -6,7 +6,7 @@
 {"id":"tempora-quad6-3.introit.3","type":"rubric","t":{"la":["Ps 101:2"],"fr":["Ps 101:2"]}}
 {"id":"tempora-quad6-3.introit.4","type":"para","t":{"la":["Dómine, exáudi oratiónem meam: et clamor meus ad te véniat."]}}
 {"id":"tempora-quad6-3.introit.5","type":"para","t":{"la":["In nómine Jesu omne genu flectátur, cœléstium, terréstrium et infernórum: quia Dóminus factus est obœ́diens usque ad mortem, mortem autem crucis: ideo Dóminus Jesus Christus in glória est Dei Patris."]}}
-{"id":"tempora-quad6-3.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad6-3.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad6-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-3.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad6-3.collecte.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
 {"id":"tempora-quad6-3.collecte.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
@@ -35,14 +35,14 @@
 {"id":"tempora-quad6-3.trait.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Tu exsúrgens, Dómine, miseréberis Sion: quia venit tempus miseréndi eius."]}}
 {"id":"tempora-quad6-3.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-3.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
 {"id":"tempora-quad6-3.evangile.1","type":"para","t":{"la":["Munda cor meum ac lábia mea, omnípotens Deus, qui lábia Isaíæ Prophétæ cálculo mundásti igníto: ita me tua grata miseratióne dignáre mundáre, ut sanctum Evangélium tuum digne váleam nuntiáre. Per Christum, Dóminum nostrum. Amen.",{"br":1},{"m":["red"],"c":["D."]}," ","Jube, domne, benedícere.",{"br":1},{"m":["red"],"c":["S."]}," ","Dóminus sit in córdibus vestris et in lábiis vestris: ut digne et competénter annuntiétis Evangélium suum: In nómine Patris, et Fílii, ",{"sym":"cross"}," et Spíritus Sancti.",{"br":1},{"m":["red"],"c":["D."]}," ","Amen.",{"br":1},"Pássio Dómini nostri Jesu Christi secúndum Lucam.",{"br":1},{"m":["red","i"],"c":["Luc 22:39-71; 23:1-53"]},{"br":1},"Et ecce, vir nómine Joseph, qui erat decúrio, vir bonus et justus: hic non consénserat consílio et áctibus eórum, ab Arimathǽa civitáte Judǽæ, qui exspectábat et ipse regnum Dei. Hic accéssit ad Pilátum et pétiit corpus Jesu: et depósitum invólvit síndone, et pósuit eum in monuménto excíso, in quo nondum quisquam pósitus fúerat."]}}
-{"id":"tempora-quad6-3.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad6-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad6-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad6-3.offertoire.1","type":"rubric","t":{"la":["Ps 101:2-3"],"fr":["Ps 101:2-3"]}}
 {"id":"tempora-quad6-3.offertoire.2","type":"para","t":{"la":["Dómine, exáudi oratiónem meam, et clamor meus ad te pervéniat: ne avértas fáciem tuam a me."]}}
 {"id":"tempora-quad6-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-3.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad6-3.secrete.1","type":"para","t":{"la":["Súscipe, quǽsumus, Dómine, munus oblátum, et dignánter operáre: ut, quod passiónis Fílii tui, Dómini nostri, mystério gérimus, piis afféctibus consequámur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad6-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad6-3.preface.1","type":"rubric","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
+{"id":"tempora-quad6-3.preface.1","type":"rubric","preface":"quad5","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
 {"id":"tempora-quad6-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad6-3.communion.1","type":"rubric","t":{"la":["Ps 101:13 et 14."],"fr":["Ps 101:13 et 14."]}}
 {"id":"tempora-quad6-3.communion.2","type":"para","t":{"la":["Potum meum cum fletu temperábam: quia élevans allisísti me: et ego sicut fænum árui: tu autem, Dómine, in ætérnum pérmanes: tu exsúrgens miseréberis Sion, quia venit tempus miseréndi ejus."]}}

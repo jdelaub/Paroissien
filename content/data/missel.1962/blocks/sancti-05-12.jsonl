@@ -8,7 +8,7 @@
 {"id":"sancti-05-12.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-05-12.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-05-12.introit.7","type":"para","t":{"la":["Ecce, óculi Dómini super timéntes eum, sperántes in misericórdia ejus, allelúja: ut erípiat a morte ánimas eórum: quóniam adjútor et protéctor noster est, allelúja, allelúja."]}}
-{"id":"sancti-05-12.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-05-12.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-05-12.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-12.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-05-12.collecte.1","type":"para","t":{"la":["Semper nos, Dómine, Mártyrum tuórum Nérei, Achíllei, Domitíllæ atque Pancrátii fóveat, quǽsumus, beáta solémnitas: et tuo dignos reddat obséquio. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-05-12.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-12.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/05-01.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -23,14 +23,14 @@
 {"id":"sancti-05-12.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-05-12.evangile.2","type":"rubric","t":{"la":["Joannes 4:46-53"],"fr":["Joannes 4:46-53"]}}
 {"id":"sancti-05-12.evangile.3","type":"para","t":{"la":["In illo témpore: Erat quidam régulus, cujus fílius infirmabátur Caphárnaum. Hic cum audísset, quia Jesus adveníret a Judǽa in Galilǽam, ábiit ad eum, et rogábat eum, ut descénderet et sanáret fílium ejus: incipiébat enim mori. Dixit ergo Jesus ad eum: Nisi signa et prodígia vidéritis, non créditis. Dicit ad eum régulus: Dómine, descénde, priúsquam moriátur fílius meus. Dicit ei Jesus: Vade, fílius tuus vivit. Crédidit homo sermóni, quem dixit ei Jesus, et ibat. Jam autem eo descendénte, servi occurrérunt ei et nuntiavérunt, dicéntes, quia fílius ejus víveret. Interrogábat ergo horam ab eis, in qua mélius habúerit. Et dixérunt ei: Quia heri hora séptima relíquit eum febris. Cognóvit ergo pater, quia illa hora erat, in qua dixit ei Jesus: Fílius tuus vivit: et crédidit ipse et domus ejus tota."]}}
-{"id":"sancti-05-12.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-05-12.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-05-12.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-12.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2ap.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-05-12.offertoire.1","type":"rubric","t":{"la":["Ps 88:6"],"fr":["Ps 88:6"]}}
 {"id":"sancti-05-12.offertoire.2","type":"para","t":{"la":["Confitebúntur cœli mirabília tua, Dómine: et veritátem tuam in ecclésia sanctórum, allelúja, allelúja."]}}
 {"id":"sancti-05-12.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-12.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-05-12.secrete.1","type":"para","t":{"la":["Sanctórum Martyrum tuórum, quǽsumus. Dómine, Nérei, Achíllei, Domitíllæ atque Pancrátii sit tibi grata conféssio: quæ et múnera nostra comméndet, et tuam nobis indulgéntiam semper implóret. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-05-12.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-05-12.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques ; après l’Ascension : préface de l’Ascension."]}}
+{"id":"sancti-05-12.preface.1","type":"rubric","preface":"pasch","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques ; après l’Ascension : préface de l’Ascension."]}}
 {"id":"sancti-05-12.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-12.txt","section":"Communio"},{"file":"horas/Latin/Commune/C3p.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-05-12.communion.1","type":"rubric","t":{"la":["Ps 32:1"],"fr":["Ps 32:1"]}}
 {"id":"sancti-05-12.communion.2","type":"para","t":{"la":["Gaudéte, justi, in Dómino, allelúja: rectos decet collaudátio, allelúja."]}}

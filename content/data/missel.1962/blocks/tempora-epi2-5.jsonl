@@ -8,7 +8,7 @@
 {"id":"tempora-epi2-5.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-epi2-5.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-epi2-5.introit.7","type":"para","t":{"la":["Omnis terra adóret te, Deus, et psallat tibi: psalmum dicat nómini tuo, Altíssime."]}}
-{"id":"tempora-epi2-5.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-epi2-5.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-epi2-5.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi2-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-epi2-5.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, qui cœléstia simul et terréna moderáris: supplicatiónes pópuli tui cleménter exáudi; et pacem tuam nostris concéde tempóribus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-epi2-5.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi2-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-epi2-5.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-epi2-5.evangile.2","type":"rubric","t":{"la":["Joann 2:1-11"],"fr":["Joann 2:1-11"]}}
 {"id":"tempora-epi2-5.evangile.3","type":"para","t":{"la":["In illo témpore: Núptiæ factæ sunt in Cana Galilǽæ: et erat Mater Jesu ibi. Vocátus est autem et Jesus, et discípuli ejus ad núptias. Et deficiénte vino, dicit Mater Jesu ad eum: Vinum non habent. Et dicit ei Jesus: Quid mihi et tibi est, mulier? nondum venit hora mea. Dicit Mater ejus minístris: Quodcúmque díxerit vobis, fácite. Erant autem ibi lapídeæ hýdriæ sex pósitæ secúndum purificatiónem Judæórum, capiéntes síngulæ metrétas binas vel ternas. Dicit eis Jesus: Implete hýdrias aqua. Et implevérunt eas usque ad summum. Et dicit eis Jesus: Hauríte nunc, et ferte architriclíno. Et tulérunt. Ut autem gustávit architriclínus aquam vinum fáctam, et non sciébat unde esset, minístri autem sciébant, qui háuserant aquam: vocat sponsum architriclínus, et dicit ei: Omnis homo primum bonum vinum ponit: et cum inebriáti fúerint, tunc id, quod detérius est. Tu autem servásti bonum vinum usque adhuc. Hoc fecit inítium signórum Jesus in Cana Galilǽæ: et manifestávit glóriam suam, et credidérunt in eum discípuli ejus."]}}
-{"id":"tempora-epi2-5.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-epi2-5.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-epi2-5.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi2-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-epi2-5.offertoire.1","type":"rubric","t":{"la":["Ps 65:1-2; 65:16"],"fr":["Ps 65:1-2; 65:16"]}}
 {"id":"tempora-epi2-5.offertoire.2","type":"para","t":{"la":["Jubiláte Deo, univérsa terra: psalmum dícite nómini ejus: veníte et audíte, et narrábo vobis, omnes qui timétis Deum, quanta fecit Dóminus ánimæ meæ, allelúja."]}}
 {"id":"tempora-epi2-5.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi2-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-epi2-5.secrete.1","type":"para","t":{"la":["Oblata, Dómine, múnera sanctífica: nosque a peccatórum nostrórum máculis emúnda. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-epi2-5.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-epi2-5.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-epi2-5.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-epi2-5.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi2-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-epi2-5.communion.1","type":"rubric","t":{"la":["Joann 2:7; 2:8; 2:9; 2:10-11"],"fr":["Joann 2:7; 2:8; 2:9; 2:10-11"]}}
 {"id":"tempora-epi2-5.communion.2","type":"para","t":{"la":["Dicit Dóminus: Implete hýdrias aqua et ferte architriclíno. Cum gustásset architriclínus aquam vinum factam, dicit sponso: Servásti bonum vinum usque adhuc. Hoc signum fecit Jesus primum coram discípulis suis."]}}

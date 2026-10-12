@@ -8,7 +8,7 @@
 {"id":"sancti-10-05.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-10-05.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-10-05.introit.7","type":"para","t":{"la":["Salus autem justórum a Dómino: et protéctor eórum est in témpore tribulatiónis."]}}
-{"id":"sancti-10-05.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-05.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-10-05.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-05.txt","section":"Oratio"},{"file":"horas/Latin/Commune/C3a.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-10-05.collecte.1","type":"para","t":{"la":["Deus, qui nos concédis sanctórum Mártyrum tuórum Plácidi et Sociórum ejus natalítia cólere: da nobis in ætérna beatitúdine de eórum societáte gaudére. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-05.epitre","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a-1.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -24,14 +24,14 @@
 {"id":"sancti-10-05.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-10-05.evangile.2","type":"rubric","t":{"la":["Luc 12:1-8"],"fr":["Luc 12:1-8"]}}
 {"id":"sancti-10-05.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Atténdite a ferménto pharisæórum, quod est hypócrisis. Nihil autem opértum est, quod non revelétur: neque abscónditum, quod non sciátur. ¶ Quóniam, quæ in ténebris dixístis, in lúmine dicéntur: et quod in aurem locúti estis in cubículis, prædicábitur in tectis. Dico autem vobis amícis meis: Ne terreámini ab his, qui occídunt corpus, et post hæc non habent ámplius quid fáciant. Osténdam autem vobis, quem timeátis: timéte eum, qui postquam occíderit, habet potestátem míttere in gehénnam. Ita dico vobis: hunc timéte. Nonne quinque pásseres véneunt dipóndio, et unus ex illis non est in oblivióne coram Deo? Sed et capílli cápitis vestri omnes numeráti sunt. Nolíte ergo timére: multis passéribus pluris estis vos. Dico autem vobis: Omnis, quicúmque conféssus fúerit me coram homínibus, et Fílius hóminis confitébitur illum coram Angelis Dei."]}}
-{"id":"sancti-10-05.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-10-05.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-10-05.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-10-05.offertoire.1","type":"rubric","t":{"la":["Sap 3:1-3"],"fr":["Sap 3:1-3"]}}
 {"id":"sancti-10-05.offertoire.2","type":"para","t":{"la":["Justórum ánimæ in manu Dei sunt, et non tanget illos torméntum malítiæ: visi sunt óculis insipiéntium mori: illi autem sunt in pace, allelúja."]}}
 {"id":"sancti-10-05.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-05.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C3.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-10-05.secrete.1","type":"para","t":{"la":["Adésto, Dómine, supplicatiónibus nostris, quas in Sanctórum tuórum commemoratióne deférimus: ut, qui nostræ justítiæ fidúciam non habémus, eórum, qui tibi placuérunt, méritis adjuvémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-05.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-10-05.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-10-05.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-10-05.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-10-05.communion.1","type":"rubric","t":{"la":["Matt 10:27"],"fr":["Matt 10:27"]}}
 {"id":"sancti-10-05.communion.2","type":"para","t":{"la":["Quod dico vobis in ténebris, dícite in lúmine, dicit Dóminus: et quod in aure audítis, prædicáte super tecta."]}}

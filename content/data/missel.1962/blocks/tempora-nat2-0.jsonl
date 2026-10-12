@@ -8,7 +8,7 @@
 {"id":"tempora-nat2-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-nat2-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-nat2-0.introit.7","type":"para","t":{"la":["In nómine Jesu omne genu flectátur, cœléstium, terréstrium et infernórum: et omnis lingua confiteátur, quia Dóminus Jesus Christus in glória est Dei Patris"]}}
-{"id":"tempora-nat2-0.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-nat2-0.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-nat2-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat2-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-nat2-0.collecte.1","type":"para","t":{"la":["Deus, qui unigénitum Fílium tuum constituísti humáni géneris Salvatórem, et Jesum vocári jussísti: concéde propítius; ut, cujus sanctum nomen venerámur in terris, ejus quoque aspéctu perfruámur in cœlis. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-nat2-0.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat2-0.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -26,14 +26,14 @@
 {"id":"tempora-nat2-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-nat2-0.evangile.2","type":"rubric","t":{"la":["Luc 2:21"],"fr":["Luc 2:21"]}}
 {"id":"tempora-nat2-0.evangile.3","type":"para","t":{"la":["In illo témpore: Postquam consummáti sunt dies octo, ut circumciderétur Puer: vocátum est nomen ejus Jesus, quod vocátum est ab Angelo, priúsquam in útero conciperétur."]}}
-{"id":"tempora-nat2-0.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-nat2-0.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"tempora-nat2-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat2-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-nat2-0.offertoire.1","type":"rubric","t":{"la":["Ps 85:12; 85:5"],"fr":["Ps 85:12; 85:5"]}}
 {"id":"tempora-nat2-0.offertoire.2","type":"para","t":{"la":["Confitébor tibi, Dómine, Deus meus, in toto corde meo, et glorificábo nomen tuum in ætérnum: quóniam tu, Dómine, suávis et mitis es: et multæ misericórdiæ ómnibus invocántibus te, allelúja."]}}
 {"id":"tempora-nat2-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat2-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-nat2-0.secrete.1","type":"para","t":{"la":["Benedíctio tua, clementíssime Deus, qua omnis viget creatúra, sanctíficet, quǽsumus, hoc sacrifícium nostrum, quod ad glóriam nóminis Fílii tui, Dómini nostri Jesu Christi, offérimus tibi: ut majestáti tuæ placére possit ad laudem, et nobis profícere ad salútem. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-nat2-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-nat2-0.preface.1","type":"rubric","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"tempora-nat2-0.preface.1","type":"rubric","preface":"nat","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
 {"id":"tempora-nat2-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat2-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-nat2-0.communion.1","type":"rubric","t":{"la":["Ps 85:9-10"],"fr":["Ps 85:9-10"]}}
 {"id":"tempora-nat2-0.communion.2","type":"para","t":{"la":["Omnes gentes, quascúmque fecísti, vénient et adorábunt coram te, Dómine, et glorificábunt nomen tuum: quóniam magnus es tu et fáciens mirabília: tu es Deus solus, allelúja."]}}

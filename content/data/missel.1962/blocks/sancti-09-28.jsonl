@@ -8,7 +8,7 @@
 {"id":"sancti-09-28.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-09-28.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-09-28.introit.7","type":"para","t":{"la":["In virtúte tua, Dómine, lætábitur justus: et super salutáre tuum exsultábit veheménter: desidérium ánimæ ejus tribuísti ei."]}}
-{"id":"sancti-09-28.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-09-28.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-09-28.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-28.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-09-28.collecte.1","type":"para","t":{"la":["Deus, qui beátum Wencesláum per martýrii palmam a terréno principátu ad cœléstem glóriam transtulísti: ejus précibus nos ab omni adversitáte custódi; et ejúsdem tríbue gaudére consórtio. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-09-28.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-09-28.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-09-28.evangile.2","type":"rubric","t":{"la":["Matt 10:34-42"],"fr":["Matt 10:34-42"]}}
 {"id":"sancti-09-28.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nolíte arbitrári, quia pacem vénerim míttere in terram: non veni pacem míttere, sed gládium. Veni enim separáre hóminem advérsus patrem suum, et fíliam advérsus matrem suam, et nurum advérsus socrum suam: et inimíci hóminis doméstici ejus. Qui amat patrem aut matrem plus quam me, non est me dignus: et qui amat fílium aut fíliam super me, non est me dignus. Et qui non áccipit crucem suam, et séquitur me, non est me dignus. Qui invénit ánimam suam, perdet illam: et qui perdíderit ánimam suam propter me, invéniet eam. Qui récipit vos, me récipit: et qui me récipit, récipit eum, qui me misit. Qui récipit prophétam in nómine prophétæ, mercédem prophétæ accípiet: et qui récipit justum in nómine justi, mercédem justi accípiet. Et quicúmque potum déderit uni ex mínimis istis cálicem aquæ frígidæ tantum in nómine discípuli: amen, dico vobis, non perdet mercédem suam."]}}
-{"id":"sancti-09-28.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-09-28.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-09-28.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-09-28.offertoire.1","type":"rubric","t":{"la":["Ps 8:6-7"],"fr":["Ps 8:6-7"]}}
 {"id":"sancti-09-28.offertoire.2","type":"para","t":{"la":["Glória et honóre coronásti eum: et constituísti eum super ópera mánuum tuárum, Dómine."]}}
 {"id":"sancti-09-28.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-09-28.secrete.1","type":"para","t":{"la":["Munéribus nostris, quǽsumus, Dómine, precibúsque suscéptis: et cœléstibus nos munda mystériis, et cleménter exáudi. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-09-28.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-09-28.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-09-28.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-09-28.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-09-28.communion.1","type":"rubric","t":{"la":["Matt 16:24"],"fr":["Matt 16:24"]}}
 {"id":"sancti-09-28.communion.2","type":"para","t":{"la":["Qui vult veníre post me, ábneget semetípsum, et tollat crucem suam, et sequátur me."]}}

@@ -8,7 +8,7 @@
 {"id":"sancti-08-07.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-08-07.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-08-07.introit.7","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
-{"id":"sancti-08-07.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-08-07.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-08-07.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-07.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-08-07.collecte.1","type":"para","t":{"la":["Deus, qui beáto Cajetáno Confessóri tuo apostólicam vivéndi formam imitári tribuísti: da nobis, ejus intercessióne et exémplo, in te semper confídere et sola cæléstia desideráre. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-07.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/08-07o.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Donat, évêque et martyr"]}}
@@ -28,7 +28,7 @@
 {"id":"sancti-08-07.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-08-07.evangile.2","type":"rubric","t":{"la":["Matt 6:24-33"],"fr":["Matt 6:24-33"]}}
 {"id":"sancti-08-07.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nemo potest duóbus dóminis servíre: aut enim unum ódio habébit, et álterum díliget: aut unum sustinébit, et álterum contémnet. ¶ Non potéstis Deo servíre et mammónæ. Ideo dico vobis, ne sollíciti sitis ánimæ vestræ, quid manducétis, neque córpori vestro, quid induámini. Nonne ánima plus est quam esca: et corpus plus quam vestiméntum? Respícite volatília cœli, quóniam non serunt neque metunt neque cóngregant in hórrea: et Pater vester cœléstis pascit illa. Nonne vos magis pluris estis illis? Quis autem vestrum cógitans potest adjícere ad statúram suam cúbitum unum? Et de vestiménto quid sollíciti estis? Consideráte lília agri, quómodo crescunt: non labórant neque nent. Dico autem vobis, quóniam nec Sálomon in omni glória sua coopértus est sicut unum ex istis. Si autem fænum agri, quod hódie est et cras in clíbanum míttitur, Deus sic vestit: quanto magis vos módicæ fídei? Nolíte ergo sollíciti esse, dicéntes: Quid manducábimus aut quid bibémus aut quo operiémur? Hæc enim ómnia gentes inquírunt. Scit enim Pater vester, quia his ómnibus indigétis. Quǽrite ergo primum regnum Dei et justítiam ejus: et hæc ómnia adjiciéntur vobis."]}}
-{"id":"sancti-08-07.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-08-07.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-08-07.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-07.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-08-07.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
 {"id":"sancti-08-07.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
@@ -37,7 +37,7 @@
 {"id":"sancti-08-07.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/08-07o.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Donat, évêque et martyr"]}}
 {"id":"sancti-08-07.secrete.c1.1","type":"para","t":{"la":["Præsta, quǽsumus, Dómine: ut sancti Martyris tu iet Episcopi Donati intercessióne, quem ad laudem nóminis tui dicátis munéribus honorámus, piæ nobis fructus devotiónis accréscat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-07.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-08-07.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-08-07.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-08-07.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-07.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-08-07.communion.1","type":"rubric","t":{"la":["Matt 24:46-47"],"fr":["Matt 24:46-47"]}}
 {"id":"sancti-08-07.communion.2","type":"para","t":{"la":["Beátus servus, quem, cum vénerit dóminus, invénerit vigilántem: amen, dico vobis, super ómnia bona sua constítuet eum."]}}

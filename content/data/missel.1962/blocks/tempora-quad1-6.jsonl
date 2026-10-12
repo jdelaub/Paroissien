@@ -8,7 +8,7 @@
 {"id":"tempora-quad1-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad1-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad1-6.introit.7","type":"para","t":{"la":["Intret orátio mea in conspéctu tuo: inclína aurem tuam ad precem meam, Dómine."]}}
-{"id":"tempora-quad1-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad1-6.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad1-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-6.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad1-6.collecte.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
 {"id":"tempora-quad1-6.collecte.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
@@ -77,14 +77,14 @@
 {"id":"tempora-quad1-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-quad1-6.evangile.2","type":"rubric","t":{"la":["Matt 17:1-9"],"fr":["Matt 17:1-9"]}}
 {"id":"tempora-quad1-6.evangile.3","type":"para","t":{"la":["In illo témpore: Assúmpsit Jesus Petrum, et Jacóbum, et Joánnem fratrem eius, et duxit illos in montem excélsum seórsum: et transfigurátus est ante eos. Et resplénduit fácies ejus sicut sol: vestiménta autem ejus facta sunt alba sicut nix. Et ecce, apparuérunt illis Móyses et Elías cum eo loquéntes. Respóndens autem Petrus, dixit ad Jesum: Dómine, bonum est nos hic esse: si vis, faciámus hic tria tabernácula, tibi unum, Móysi unum et Elíæ unum. Adhuc eo loquénte, ecce, nubes lúcida obumbrávit eos. Et ecce vox de nube, dicens: Hic est Fílius meus diléctus, in quo mihi bene complácui: ipsum audíte. Et audiéntes discípuli, cecidérunt in fáciem suam, et timuérunt valde. Et accéssit Jesus, et tétigit eos, dixítque eis: Súrgite, et nolíte timére. Levántes autem óculos suos, néminem vidérunt nisi solum Jesum. Et descendéntibus illis de monte, præcépit eis Jesus, dicens: Némini dixéritis visiónem, donec Fílius hóminis a mórtuis resúrgat."]}}
-{"id":"tempora-quad1-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad1-6.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad1-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-6.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad1-6.offertoire.1","type":"rubric","t":{"la":["Ps 87:2-3"],"fr":["Ps 87:2-3"]}}
 {"id":"tempora-quad1-6.offertoire.2","type":"para","t":{"la":["Dómine, Deus salútis meæ, in die clamávi et nocte coram te: intret orátio mea in conspéctu tuo, Dómine."]}}
 {"id":"tempora-quad1-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-6.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad1-6.secrete.1","type":"para","t":{"la":["Præséntibus sacrifíciis, quǽsumus, Dómine, jejúnia nostra sanctífica: ut, quod observántia nostra profitétur extrínsecus, intérius operétur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad1-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad1-6.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad1-6.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad1-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-6.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad1-6.communion.1","type":"rubric","t":{"la":["Ps 7:2"],"fr":["Ps 7:2"]}}
 {"id":"tempora-quad1-6.communion.2","type":"para","t":{"la":["Dómine, Deus meus, in te sperávi: líbera me ab ómnibus persequéntibus me, et éripe me."]}}

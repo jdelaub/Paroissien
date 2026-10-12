@@ -8,7 +8,7 @@
 {"id":"tempora-pasc3-3.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pasc3-3.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pasc3-3.introit.7","type":"para","t":{"la":["Jubiláte Deo, omnis terra, allelúja: psalmum dícite nómini ejus, allelúja: date glóriam laudi ejus, allelúja, allelúja, allelúja."]}}
-{"id":"tempora-pasc3-3.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pasc3-3.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-pasc3-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc3-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pasc3-3.collecte.1","type":"para","t":{"la":["Deus, qui errántibus, ut in viam possint redíre justítiæ, veritátis tuæ lumen osténdis: da cunctis, qui christiána professióne censéntur, et illa respúere, quæ huic inimíca sunt nómini; et ea, quæ sunt apta, sectári. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc3-3.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc3-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-pasc3-3.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-pasc3-3.evangile.2","type":"rubric","t":{"la":["Joannes 16:16-22"],"fr":["Joannes 16:16-22"]}}
 {"id":"tempora-pasc3-3.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Módicum, et jam non vidébitis me: et íterum módicum, et vidébitis me: quia vado ad Patrem. Dixérunt ergo ex discípulis ejus ad ínvicem: Quid est hoc, quod dicit nobis: Módicum, et non vidébitis me: et íterum módicum, et vidébitis me, et quia vado ad Patrem? Dicébant ergo: Quid est hoc, quod dicit: Módicum? nescímus, quid lóquitur. Cognóvit autem Jesus, quia volébant eum interrogáre, et dixit eis: De hoc quǽritis inter vos, quia dixi: Módicum, et non vidébitis me: et íterum módicum, et vidébitis me. Amen, amen, dico vobis: quia plorábitis et flébitis vos, mundus autem gaudébit: vos autem contristabímini, sed tristítia vestra vertétur in gáudium. Múlier cum parit, tristítiam habet, quia venit hora ejus: cum autem pepérerit púerum, jam non méminit pressúræ propter gáudium, quia natus est homo in mundum. Et vos ígitur nunc quidem tristítiam habétis, íterum autem vidébo vos, et gaudébit cor vestrum: et gáudium vestrum nemo tollet a vobis."]}}
-{"id":"tempora-pasc3-3.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pasc3-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pasc3-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc3-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pasc3-3.offertoire.1","type":"rubric","t":{"la":["Ps 145:2"],"fr":["Ps 145:2"]}}
 {"id":"tempora-pasc3-3.offertoire.2","type":"para","t":{"la":["Lauda, ánima mea, Dóminum: laudábo Dóminum in vita mea: psallam Deo meo, quámdiu ero, allelúja."]}}
 {"id":"tempora-pasc3-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc3-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pasc3-3.secrete.1","type":"para","t":{"la":["His nobis, Dómine, mystériis conferátur, quo, terréna desidéria mitigántes, discámus amáre cœléstia. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc3-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pasc3-3.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
+{"id":"tempora-pasc3-3.preface.1","type":"rubric","preface":"pasch","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
 {"id":"tempora-pasc3-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc3-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pasc3-3.communion.1","type":"rubric","t":{"la":["Joannes 16:16"],"fr":["Joannes 16:16"]}}
 {"id":"tempora-pasc3-3.communion.2","type":"para","t":{"la":["Módicum, et non vidébitis me, allelúja: íterum módicum, et vidébitis me, quia vado ad Patrem, allelúja, allelúja."]}}

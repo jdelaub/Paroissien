@@ -359,6 +359,17 @@ def all_keys() -> set[str]:
     return set(temporal()) | set(sanctoral()) | set(EXTRA)
 
 
+def commemoration_keys() -> set[str]:
+    """Clés des commémoraisons : `commemorations[].proper`, sinon `Sancti/<date>` de l'entrée (`sanctoralCandidates()`),
+    et les Sept Douleurs du vendredi de la Passion (`passiontide()`)."""
+    out = {"Tempora/Quad5-5Feriac"}
+    for entries in sanctoral().values():
+        for e in entries:
+            for c in e.commemorations:
+                out.add(c.get("proper") or f"Sancti/{e.date}")
+    return out
+
+
 def normalize(key: str | None) -> str | None:
     """`GoldenTest.normalize` : on ne compare que la clé du jour, sans les variantes de fichier."""
     if key is None:
@@ -386,4 +397,5 @@ if __name__ == "__main__":
     keys = all_keys()
     tem = temporal()
     print(f"{len(keys)} clés : {len(tem)} du temporal, {len(sanctoral())} du sanctoral, {len(EXTRA)} autres")
-    print("absentes de nos clés (oracle) :", missing_from_oracle(keys))
+    print(f"{len(commemoration_keys())} clés de commémoraison")
+    print("absentes de nos clés (oracle) :", missing_from_oracle(keys | commemoration_keys()))

@@ -8,7 +8,7 @@
 {"id":"sancti-11-30.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-11-30.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-11-30.introit.7","type":"para","t":{"la":["Mihi autem nimis honoráti sunt amíci tui, Deus: nimis confortátus est principátus eórum."]}}
-{"id":"sancti-11-30.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-11-30.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-11-30.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-30.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-11-30.collecte.1","type":"para","t":{"la":["Majestátem tuam, Dómine, supplíciter exorámus: ut, sicut Ecclésiæ tuæ beátus Andréas Apóstolus éxstitit prædicátor et rector; ita apud te sit pro nobis perpétuus intercéssor. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-11-30.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-30.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -24,14 +24,14 @@
 {"id":"sancti-11-30.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-11-30.evangile.2","type":"rubric","t":{"la":["Matt 4:18-22"],"fr":["Matt 4:18-22"]}}
 {"id":"sancti-11-30.evangile.3","type":"para","t":{"la":["In illo témpore: Ambulans Jesus juxta mare Galilǽæ, vidit duos fratres, Simónem, qui vocátur Petrus, et Andréam fratrem ejus, mitténtes rete in mare - erant enim piscatóres - et ait illis: Veníte post me, et fáciam vos fíeri piscatóres hóminum. At illi contínuo, relíctis rétibus, secúti sunt eum. Et procédens inde, vidit álios duos fratres, Jacóbum Zebedæi et Joánnem, fratrem ejus, in navi cum Zebedæo patre eórum reficiéntes rétia sua: et vocávit eos. Illi autem statim, relíctis rétibus et patre, secúti sunt eum."]}}
-{"id":"sancti-11-30.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-11-30.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-11-30.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-30.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/01-25.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-11-30.offertoire.1","type":"rubric","t":{"la":["Ps 138:17"],"fr":["Ps 138:17"]}}
 {"id":"sancti-11-30.offertoire.2","type":"para","t":{"la":["Mihi autem nimis honoráti sunt amíci tui, Deus: nimis confortátus est principátus eórum."]}}
 {"id":"sancti-11-30.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-30.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-11-30.secrete.1","type":"para","t":{"la":["Sacrificium nostrum tibi, Dómine, quǽsumus, beáti Andréæ Apóstoli precátio sancta concíliet: ut, in cujus honóre sollémniter exhibétur, ejus méritis efficiátur accéptum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-11-30.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-11-30.preface.1","type":"rubric","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
+{"id":"sancti-11-30.preface.1","type":"rubric","preface":"apostolis","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
 {"id":"sancti-11-30.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-30.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-11-30.communion.1","type":"rubric","t":{"la":["Matt 4:19-20"],"fr":["Matt 4:19-20"]}}
 {"id":"sancti-11-30.communion.2","type":"para","t":{"la":["Veníte post me: fáciam vos fíeri piscatóres hóminum; at illi contínuo, relíctis rétibus, secúti sunt Dóminum."]}}

@@ -8,7 +8,7 @@
 {"id":"tempora-093-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-093-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-093-6.introit.7","type":"para","t":{"la":["Veníte, adorémus Deum et procidámus ante Dóminum, plorémus ante eum, qui fecit nos: quia ipse est Dóminus, Deus noster."]}}
-{"id":"tempora-093-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-093-6.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-093-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/093-6.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-093-6.collecte.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
 {"id":"tempora-093-6.collecte.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
@@ -93,14 +93,14 @@
 {"id":"tempora-093-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-093-6.evangile.2","type":"rubric","t":{"la":["Luc 13:6-17"],"fr":["Luc 13:6-17"]}}
 {"id":"tempora-093-6.evangile.3","type":"para","t":{"la":["In illo témpore: Dicébat Jesus turbis hanc similitúdinem: Arbórem fici habébat quidam plantátam in vínea sua, et venit quærens fructum in illa, et non invénit. Dixit autem ad cultórem víneæ: Ecce, anni tres sunt, ex quo vénio quærens fructum in ficúlnea hac, et non invénio: succíde ergo illam: ut quid étiam terram óccupat? At ille respóndens, dicit illi: Dómine, dimítte illam et hoc anno, usque dum fódiam circa illam et mittam stércora: et si quidem fécerit fructum: sin autem, in futúrum succídes eam. Erat autem docens in synagóga eórum sábbatis. Et ecce múlier, quæ habébat spíritum infirmitátis annis decem et octo: et erat inclináta, nec omníno póterat sursum respícere. Quam cum vidéret Jesus, vocávit eam ad se, et ait illi: Múlier, dimíssa es ab infirmitáte tua. Et impósuit illi manus, et conféstim erécta est, et glorificábat Deum. Respóndens autem archisynagógus, indígnans quia sábbato curásset Jesus, dicébat turbæ: Sex dies sunt, in quibus opórtet operári: in his ergo veníte, et curámini, et non in die sábbati. Respóndens autem ad illum Dóminus, dixit: Hypócritæ, unusquísque vestrum sábbato non solvit bovem suum aut ásinum a præsépio, et ducit adaquáre? Hanc autem fíliam Abrahæ, quam alligávit sátanas, ecce decem et octo annis, non opórtuit solvi a vínculo isto die sábbati? Et cum hæc díceret, erubescébant omnes adversárii ejus: et omnis pópulus gaudébat in univérsis, quæ glorióse fiébant ab eo."]}}
-{"id":"tempora-093-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-093-6.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-093-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/093-6.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-093-6.offertoire.1","type":"rubric","t":{"la":["Ps 87:2-3"],"fr":["Ps 87:2-3"]}}
 {"id":"tempora-093-6.offertoire.2","type":"para","t":{"la":["Dómine, Deus salútis meæ, in die clamávi et nocte coram te: intret orátio mea in conspéctu tuo, Dómine."]}}
 {"id":"tempora-093-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/093-6.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-093-6.secrete.1","type":"para","t":{"la":["Concéde, quǽsumus, omnípotens Deus: ut oculis tuæ majestátis munus oblátum et grátiam nobis devotiónis obtíneat, et efféctum beátæ perennitátis acquírat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-093-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-093-6.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-093-6.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-093-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/093-6.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-093-6.communion.1","type":"rubric","t":{"la":["Levit 23:41; 23:43"],"fr":["Levit 23:41; 23:43"]}}
 {"id":"tempora-093-6.communion.2","type":"para","t":{"la":["Mense séptimo festa celebrábitis, cum in tabernáculis habitáre fécerim fílios Israël, cum edúcerem eos de terra Ægýpti, ego Dóminus, Deus vester."]}}

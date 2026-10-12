@@ -8,7 +8,7 @@
 {"id":"sancti-03-19.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-03-19.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-03-19.introit.7","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus Líbani multiplicábitur: plantátus in domo Dómini: in átriis domus Dei nostri."]}}
-{"id":"sancti-03-19.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-03-19.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-03-19.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-19.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-03-19.collecte.1","type":"para","t":{"la":["Sanctíssimæ Genetrícis tuæ Sponsi, quǽsumus, Dómine, méritis adjuvémur: ut, quod possibílitas nostra non óbtinet, ejus nobis intercessióne donétur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-03-19.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-19.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C5b.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -21,14 +21,14 @@
 {"id":"sancti-03-19.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-03-19.evangile.2","type":"rubric","t":{"la":["Matt 1:18-21"],"fr":["Matt 1:18-21"]}}
 {"id":"sancti-03-19.evangile.3","type":"para","t":{"la":["Cum esset desponsáta Mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu Sancto. Joseph autem, vir ejus, cum esset justus et nollet eam tradúcere, vóluit occúlte dimíttere eam. Hæc autem eo cogitánte, ecce, Angelus Dómini appáruit in somnis ei, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu Sancto est. Páriet autem fílium, et vocábis nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum."]}}
-{"id":"sancti-03-19.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-03-19.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-03-19.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-19.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-03-19.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
 {"id":"sancti-03-19.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
 {"id":"sancti-03-19.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-19.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-03-19.secrete.1","type":"para","t":{"la":["Débitum tibi, Dómine, nostræ réddimus servitútis, supplíciter exorántes: ut, suffrágiis beáti Joseph, Sponsi Genetrícis Fílii tui Jesu Christi, Dómini nostri, in nobis tua múnera tueáris, ob cujus venerándam festivitátem laudis tibi hóstias immolámus. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-03-19.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-03-19.preface.1","type":"rubric","t":{"la":["Præfatio de S. Joseph."],"fr":["Préface de saint Joseph (« Et te in Festivitáte »)."]}}
+{"id":"sancti-03-19.preface.1","type":"rubric","preface":"joseph","t":{"la":["Præfatio de S. Joseph."],"fr":["Préface de saint Joseph (« Et te in Festivitáte »)."]}}
 {"id":"sancti-03-19.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-19.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-03-19.communion.1","type":"rubric","t":{"la":["Matt 1:20"],"fr":["Matt 1:20"]}}
 {"id":"sancti-03-19.communion.2","type":"para","t":{"la":["Joseph, fili David, noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu Sancto est."]}}

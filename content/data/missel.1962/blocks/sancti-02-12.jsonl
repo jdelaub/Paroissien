@@ -8,7 +8,7 @@
 {"id":"sancti-02-12.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-02-12.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-02-12.introit.7","type":"para","t":{"la":["Justi decantavérunt, Dómine, nomen sanctum tuum, et victrícem manum tuam laudavérunt páriter: quóniam sapiéntia apéruit os mutum et linguas infántium fecit disértas."]}}
-{"id":"sancti-02-12.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-12.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-02-12.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-02-12.collecte.1","type":"para","t":{"la":["Dómine Jesu Christe, qui, ad recoléndam memóriam dolórum sanctíssimæ Genetrícis tuæ, per septem beátos Patres nova Servorum ejus família Ecclésiam tuam fœcundásti: concéde propítius; ita nos eórum consociári flétibus, ut perfruámur et gáudiis: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-12.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -35,14 +35,14 @@
 {"id":"sancti-02-12.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-02-12.evangile.2","type":"rubric","t":{"la":["Matt 19:27-29"],"fr":["Matt 19:27-29"]}}
 {"id":"sancti-02-12.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Petrus ad Jesum: Ecce, nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen, dico vobis, quod vos, qui secúti estis me, in regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros, propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit."]}}
-{"id":"sancti-02-12.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-02-12.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-02-12.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-02-12.offertoire.1","type":"rubric","t":{"la":["Is 56:7."],"fr":["Is 56:7."]}}
 {"id":"sancti-02-12.offertoire.2","type":"para","t":{"la":["Addúcam eos in montem sanctum meum, et lætificábo eos in domo oratiónis meæ: holocáusta eórum et víctimæ eórum placébunt mihi super altáre meum."]}}
 {"id":"sancti-02-12.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-02-12.secrete.1","type":"para","t":{"la":["Accipe, quǽsumus, Dómine, hóstias quas tibi offérimus: et præsta; ut, intercedéntibus Sanctis tuis, libera tibi mente serviámus, et perdoléntis Vírginis Genetrícis Fílii tui amóre inflammémur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-12.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-02-12.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune ; en Carême : préface du Carême."]}}
+{"id":"sancti-02-12.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune ; en Carême : préface du Carême."]}}
 {"id":"sancti-02-12.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-02-12.communion.1","type":"rubric","t":{"la":["Joann 15:16"],"fr":["Joann 15:16"]}}
 {"id":"sancti-02-12.communion.2","type":"para","t":{"la":["Ego vos elégi de mundo, ut eátis et fructum afferátis: et fructus vester máneat."]}}

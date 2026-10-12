@@ -8,7 +8,7 @@
 {"id":"tempora-nat29.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-nat29.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-nat29.introit.7","type":"para","t":{"la":["Puer natus est nobis, et fílius datus est nobis: cujus impérium super húmerum ejus: et vocábitur nomen ejus magni consílii Angelus."]}}
-{"id":"tempora-nat29.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-nat29.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-nat29.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat29.txt","section":"Oratio"},{"file":"missa/Latin/Tempora/Nat30.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-nat29.collecte.1","type":"para","t":{"la":["Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-nat29.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat29.txt","section":"Lectio"},{"file":"missa/Latin/Tempora/Nat30.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/12-25m2.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -24,14 +24,14 @@
 {"id":"tempora-nat29.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-nat29.evangile.2","type":"rubric","t":{"la":["Luc 2:15-20"],"fr":["Luc 2:15-20"]}}
 {"id":"tempora-nat29.evangile.3","type":"para","t":{"la":["In illo témpore: Pastóres loquebántur ad ínvicem: Transeámus usque Béthlehem, et videámus hoc verbum, quod factum est, quod Dóminus osténdit nobis. Et venérunt festinántes, et invenérunt Maríam, et Joseph, et Infántem pósitum in præsépio. Vidéntes autem cognovérunt de verbo, quod dictum erat illis de Púero hoc. Et omnes, qui audiérunt, miráti sunt: et de his, quæ dicta erant a pastóribus ad ipsos. María autem conservábat ómnia verba hæc, cónferens in corde suo. Et revérsi sunt pastores, glorificántes et laudántes Deum in ómnibus, quæ audíerant et víderant, sicut dictum est ad illos."]}}
-{"id":"tempora-nat29.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-nat29.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"tempora-nat29.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat29.txt","section":"Offertorium"},{"file":"missa/Latin/Tempora/Nat30.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-nat29.offertoire.1","type":"rubric","t":{"la":["Ps 88:12; 88:15"],"fr":["Ps 88:12; 88:15"]}}
 {"id":"tempora-nat29.offertoire.2","type":"para","t":{"la":["Tui sunt cœli et tua est terra: orbem terrárum et plenitúdinem ejus tu fundásti: justítia et judícium præparátio sedis tuæ."]}}
 {"id":"tempora-nat29.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat29.txt","section":"Secreta"},{"file":"missa/Latin/Tempora/Nat30.txt","section":"Secreta"},{"file":"missa/Latin/Sancti/12-25m3.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-nat29.secrete.1","type":"para","t":{"la":["Obláta, Dómine, múnera, nova Unigéniti tui Nativitáte sanctífica: nosque a peccatórum nostrórum máculis emúnda. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-nat29.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-nat29.preface.1","type":"rubric","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"tempora-nat29.preface.1","type":"rubric","preface":"nat","communicantes":"c-nat1962","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
 {"id":"tempora-nat29.preface.2","type":"rubric","t":{"fr":["Communicantes propre de Noël (voir aux Préfaces)."]}}
 {"id":"tempora-nat29.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat29.txt","section":"Communio"},{"file":"missa/Latin/Tempora/Nat30.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-nat29.communion.1","type":"rubric","t":{"la":["Ps 97:3"],"fr":["Ps 97:3"]}}

@@ -16,7 +16,7 @@
 {"id":"sancti-06-04.introit.tp.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-06-04.introit.tp.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-06-04.introit.tp.7","type":"para","t":{"la":["Factum est cor meum tamquam cera liquéscens in médio ventris mei: quóniam zelus domus tuæ comédit me. Allelúja, allelúja"]}}
-{"id":"sancti-06-04.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-06-04.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-06-04.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-06-04.collecte.1","type":"para","t":{"la":["Deus, qui beátum Francíscum, novi órdinis institutórem, orándi stúdio et pœniténtiæ amóre decorásti: da fámulis tuis in ejus imitatióne ita profícere; ut, semper orántes et corpus in servitútem redigéntes, ad cœléstem glóriam perveníre mereántur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-06-04.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -40,7 +40,7 @@
 {"id":"sancti-06-04.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-06-04.evangile.2","type":"rubric","t":{"la":["Luc 12:35-40"],"fr":["Luc 12:35-40"]}}
 {"id":"sancti-06-04.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucernæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. ¶ Beáti servi illi, quos, cum vénerit dóminus, invénerit vigilántes: amen, dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam, si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti, quia, qua hora non putátis, Fílius hóminis véniet."]}}
-{"id":"sancti-06-04.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-06-04.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-06-04.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C4a.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-06-04.offertoire.1","type":"rubric","t":{"la":["Ps 91:13"],"fr":["Ps 91:13"]}}
 {"id":"sancti-06-04.offertoire.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus, quæ in Líbano est, multiplicábitur."]}}
@@ -50,7 +50,7 @@
 {"id":"sancti-06-04.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-06-04.secrete.1","type":"para","t":{"la":["Da nobis, clementíssime Jesu: ut præclára beáti Francísci mérita recoléntes, eódem nos, ac ille, caritátis igne succénsi, digne in circúitu sacræ hujus mensæ tuæ esse valeámus: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-06-04.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-06-04.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune ; dans l’octave de la Pentecôte : préface du Saint-Esprit ; après l’Ascension : préface de l’Ascension."]}}
+{"id":"sancti-06-04.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune ; dans l’octave de la Pentecôte : préface du Saint-Esprit ; après l’Ascension : préface de l’Ascension."]}}
 {"id":"sancti-06-04.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-06-04.communion.1","type":"rubric","t":{"la":["Ps 30:20"],"fr":["Ps 30:20"]}}
 {"id":"sancti-06-04.communion.2","type":"para","t":{"la":["Quam magna multitúdo dulcédinis tuæ, Dómine, quam abscondísti timéntibus te!"]}}

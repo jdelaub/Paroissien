@@ -8,7 +8,7 @@
 {"id":"tempora-quad1-3.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad1-3.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad1-3.introit.7","type":"para","t":{"la":["Reminíscere miseratiónum tuárum, Dómine, et misericórdiæ tuæ, quæ a sǽculo sunt: ne umquam dominéntur nobis inimíci nostri: líbera nos, Deus Israël, ex ómnibus angústiis nostris."]}}
-{"id":"tempora-quad1-3.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad1-3.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad1-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-3.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad1-3.collecte.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
 {"id":"tempora-quad1-3.collecte.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
@@ -36,14 +36,14 @@
 {"id":"tempora-quad1-3.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-quad1-3.evangile.2","type":"rubric","t":{"la":["Matt 12:38-50"],"fr":["Matt 12:38-50"]}}
 {"id":"tempora-quad1-3.evangile.3","type":"para","t":{"la":["In illo témpore: Respondérunt Jesu quidam de scribis et pharisǽis, dicéntes: Magíster, vólumus a te signum vidére. Qui respóndens, ait illis: Generátio mala et adúltera signum quærit: et signum non dábitur ei, nisi signum Jonæ Prophétæ. Sicut enim fuit Jonas in ventre ceti tribus diébus et tribus nóctibus: sic erit Fílius hóminis in corde terræ tribus diébus et tribus nóctibus. Viri Ninivítæ surgent in judício cum generatióne ista, et condemnábunt eam: quia pæniténtiam egérunt in prædicatióne Jonæ. Et ecce plus quam Jonas hic. Regína Austri surget in judício cum generatióne ista, et condemnábit eam: quia venit a fínibus terræ audire sapiéntiam Salomónis. Et ecce plus quam Sálomon hic. Cum autem immúndus spíritus exíerit ab hómine, ámbulat per loca árida, quærens réquiem, et non invénit. Tunc dicit: Revértar in domum meam, unde exívi. Et véniens invénit eam vacántem, scopis mundátam, et ornátam. Tunc vadit, et assúmit septem álios spíritus secum nequióres se, et intrántes hábitant ibi: et fiunt novíssima hóminis illíus pejóra prióribus. Sic erit et generatióni huic péssimæ. Adhuc eo loquénte ad turbas, ecce, Mater ejus et fratres stabant foris, quæréntes loqui ei. Dixit autem ei quidam: Ecce, mater tua et fratres tui foris stant, quæréntes te. At ipse respóndens dicénti sibi, ait: Quæ est mater mea, et qui sunt fratres mei? Et exténdens manum in discípulos suos, dixit: Ecce mater mea et fratres mei. Quicúmque enim fécerit voluntátem Patris mei, qui in cœlis est: ipse meus frater et soror et mater est."]}}
-{"id":"tempora-quad1-3.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad1-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad1-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad1-3.offertoire.1","type":"rubric","t":{"la":["Ps 118:47; 118:48"],"fr":["Ps 118:47; 118:48"]}}
 {"id":"tempora-quad1-3.offertoire.2","type":"para","t":{"la":["Meditábor in mandátis tuis, quæ diléxi valde: et levábo manus meas ad mandáta tua, quæ diléxi."]}}
 {"id":"tempora-quad1-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-3.txt","section":"Secreta"},{"file":"missa/Latin/Tempora/Epi5-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad1-3.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, placatiónis offérimus: ut et delícta nostra miserátus absólvas, et nutántia corda tu dírigas. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad1-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad1-3.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad1-3.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad1-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad1-3.communion.1","type":"rubric","t":{"la":["Ps 5:2-4"],"fr":["Ps 5:2-4"]}}
 {"id":"tempora-quad1-3.communion.2","type":"para","t":{"la":["Intéllege clamórem meum: inténde voci oratiónis meæ, Rex meus et Deus meus: quóniam ad te orábo, Dómine."]}}

@@ -8,7 +8,7 @@
 {"id":"sancti-08-15.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-08-15.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-08-15.introit.7","type":"para","t":{"la":["Signum magnum appáruit in cœlo: múlier amicta sole, et luna sub pédibus ejus, et in cápite ejus coróna stellárum duódecim."]}}
-{"id":"sancti-08-15.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-08-15.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-08-15.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-15.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-08-15.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, qui Immaculátam Vírginem Maríam, Fílii tui Genetrícem, córpore et ánima ad cœléstem glóriam assumpsísti: concéde, quǽsumus; ut, ad superna semper inténti, ipsíus glóriæ mereámur esse consórtes. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-15.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-15.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -24,14 +24,14 @@
 {"id":"sancti-08-15.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-08-15.evangile.2","type":"rubric","t":{"la":["Luc 1:41-50"],"fr":["Luc 1:41-50"]}}
 {"id":"sancti-08-15.evangile.3","type":"para","t":{"la":["In illo témpore: Repléta est Spíritu Sancto Elísabeth et exclamávit voce magna, et dixit: Benedícta tu inter mulíeres, et benedíctus fructus ventris tui. Et unde hoc mihi ut véniat mater Dómini mei ad me? Ecce enim ut facta est vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo. Et beáta, quæ credidísti, quóniam perficiéntur ea, quæ dicta sunt tibi a Dómino. Et ait María: Magníficat ánima mea Dóminum; et exsultávit spíritus meus in Deo salutári meo; quia respéxit humilitátem ancíllæ suæ, ecce enim ex hoc beátam me dicent omnes generatiónes. Quia fecit mihi magna qui potens est, et sanctum nomen ejus, et misericórdia ejus a progénie in progénies timéntibus eum."]}}
-{"id":"sancti-08-15.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-08-15.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-08-15.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-15.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-08-15.offertoire.1","type":"rubric","t":{"la":["Gen 3:15"],"fr":["Gen 3:15"]}}
 {"id":"sancti-08-15.offertoire.2","type":"para","t":{"la":["Inimicítias ponam inter te et mulíerem, et semen tuum et semen illíus."]}}
 {"id":"sancti-08-15.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-15.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-08-15.secrete.1","type":"para","t":{"la":["Ascéndat ad te, Dómine, nostræ devotiónis oblátio, et, beatíssima Vírgine María in cœlum assumpta intercedénte, corda nostra, caritátis igne succénsa, ad te júgiter ádspirent. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-15.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-08-15.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Assumptióne »)."]}}
+{"id":"sancti-08-15.preface.1","type":"rubric","preface":"maria","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Assumptióne »)."]}}
 {"id":"sancti-08-15.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-15.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-08-15.communion.1","type":"rubric","t":{"la":["Luc 1:48-49"],"fr":["Luc 1:48-49"]}}
 {"id":"sancti-08-15.communion.2","type":"para","t":{"la":["Beátam me dicent omnes generatiónes, quia fecit mihi magna qui potens est."]}}

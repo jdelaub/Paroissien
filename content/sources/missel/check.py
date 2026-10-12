@@ -4,7 +4,10 @@
     python3 -I content/sources/missel/check.py [--private DIR] [--divinum DIR] [-v]
 
 - chaque formulaire ordinaire a Introït, Collecte, Épître ou Leçon, Évangile, Offertoire, Secrète, Communion et
-  Postcommunion (exceptions nommées dans EXCEPTIONS) ;
+  Postcommunion (exceptions nommées dans EXCEPTIONS) ; chaque commémoraison, Collecte, Secrète et Postcommunion ;
+- chaque formulaire ordinaire porte les attributs lus par l'app : `gloria` et `credo` (booléens) sur `<formulaire>.gloria`
+  et `.credo`, `preface` (et `communicantes`, `hancIgitur` s'il y a lieu) sur `.preface.1`, chacun désignant une
+  section de l'unité `prefaces` ;
 - chaque clé de cles.txt a son unité (`missalUnit()` : minuscules, « / » → « - »), et inversement ;
 - l'oracle Missalemeum 2020-2045 est couvert (clés ramenées comme dans GoldenTest.kt) ;
 - aucune marque de script de DO dans le texte (`wait10`, `N.b`, `N.p`, `$Per`, `&Gloria`, `@Commune`, `!x!`…) ;
@@ -50,11 +53,18 @@ def fold(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 
 
+COMMEMORATION_PIECES = ["collecte", "secrete", "postcommunion"]
+
+
+def commemorations(pub: canon.Publication) -> list[str]:
+    return [u.id for u in pub.units() if u.kind == "commemoration"]
+
+
 def masses(pub: canon.Publication) -> dict[str, list[str]]:
     """Formulaire (préfixe d'identifiant du titre de niveau 1) → pièces (identifiants des titres de niveau 2)."""
     out: dict[str, list[str]] = {}
     for unit in pub.units():
-        if unit.id == "prefaces":
+        if unit.id == "prefaces" or unit.kind == "commemoration":
             continue
         blocks = pub.blocks[unit.id]
         prefixes = [b["id"][: -len(".titre")] for b in blocks if b["type"] == "heading" and b.get("level") == 1]
@@ -87,6 +97,42 @@ def check_pieces(pub: canon.Publication, errors: list[str]) -> dict:
     return dict(stats)
 
 
+def check_commemorations(pub: canon.Publication, errors: list[str]) -> int:
+    ids = {b["id"] for b in pub.all_blocks()}
+    units = commemorations(pub)
+    for u in units:
+        for piece in COMMEMORATION_PIECES:
+            if f"{u}.{piece}" not in ids or f"{u}.{piece}.1" not in ids:
+                errors.append(f"{u} : commémoraison sans {piece}")
+    return len(units)
+
+
+def check_attributes(pub: canon.Publication, errors: list[str]) -> Counter:
+    """Attributs que lit l'app (gloria, credo, preface, communicantes, hancIgitur), clés de l'unité `prefaces`."""
+    blocks = {b["id"]: b for b in pub.all_blocks()}
+    sections = {b["id"][len("prefaces."):] for b in pub.blocks.get("prefaces", []) if b["type"] == "heading" and b.get("level") in (2, 3)}
+    stats = Counter()
+    for prefix in masses(pub):
+        if prefix.split(".")[0] in EXCEPTIONS:
+            continue
+        g, c, p = blocks.get(f"{prefix}.gloria"), blocks.get(f"{prefix}.credo"), blocks.get(f"{prefix}.preface.1")
+        if not g or not isinstance(g.get("gloria"), bool):
+            errors.append(f"{prefix} : attribut gloria absent")
+        if not c or not isinstance(c.get("credo"), bool):
+            errors.append(f"{prefix} : attribut credo absent")
+        if not p or not p.get("preface"):
+            errors.append(f"{prefix} : attribut preface absent")
+            continue
+        for attr in ("preface", "communicantes", "hancIgitur"):
+            if attr in p:
+                stats[f"{attr}={p[attr]}"] += 1
+                if p[attr] not in sections:
+                    errors.append(f"{prefix} : {attr} {p[attr]!r} absent de l'unité prefaces")
+        stats["gloria" if g and g.get("gloria") else "sans gloria"] += 1
+        stats["credo" if c and c.get("credo") else "sans credo"] += 1
+    return stats
+
+
 def check_keys(pub: canon.Publication, errors: list[str]) -> int:
     keys = [k.strip() for k in (HERE / "cles.txt").read_text(encoding="utf-8").splitlines() if k.strip()]
     if keys != sorted(set(keys)):
@@ -95,7 +141,7 @@ def check_keys(pub: canon.Publication, errors: list[str]) -> int:
     for k in keys:
         if k.lower().replace("/", "-") not in units:
             errors.append(f"cles.txt : {k} sans unité {k.lower().replace('/', '-')}")
-    needed = K.all_keys() - {"Tempora/Nat26", "Tempora/Nat27", "Tempora/Nat28"}
+    needed = (K.all_keys() | K.commemoration_keys()) - {"Tempora/Nat26", "Tempora/Nat27", "Tempora/Nat28"}
     for k in sorted(needed - set(keys)):
         errors.append(f"clé du calendrier sans formulaire : {k}")
     for k in K.missing_from_oracle(set(keys)):
@@ -170,6 +216,8 @@ def main(argv: list[str] | None = None) -> int:
     pub = canon.load(args.data / PUB)
     errors += canon.validate(pub)
     stats = check_pieces(pub, errors)
+    ncomm = check_commemorations(pub, errors)
+    attrs = check_attributes(pub, errors)
     nkeys = check_keys(pub, errors)
     check_marks(pub, errors)
     checked = check_public_french(pub, args.divinum, errors)
@@ -177,6 +225,8 @@ def main(argv: list[str] | None = None) -> int:
     print(f"{PUB} (public) : {len(pub.units())} unités, {stats.get('formulaires')} formulaires "
           f"({stats.get('exceptions', 0)} cérémonies complètes), {sum(types.values())} blocs {dict(types)}, {nkeys} clés")
     print("pièces : " + ", ".join(f"{k} {v}" for k, v in sorted(stats.items()) if k not in ("formulaires", "exceptions")))
+    print(f"commémoraisons (oraisons seules) : {ncomm}")
+    print("attributs : " + ", ".join(f"{k} {v}" for k, v in sorted(attrs.items())))
     print(f"français public : {checked} textes comparés aux fichiers français de DO")
     if args.private:
         priv = canon.load(args.private / PUB)

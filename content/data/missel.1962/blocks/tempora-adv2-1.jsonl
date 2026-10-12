@@ -8,7 +8,7 @@
 {"id":"tempora-adv2-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-adv2-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-adv2-1.introit.7","type":"para","t":{"la":["Pópulus Sion, ecce, Dóminus véniet ad salvándas gentes: et audítam fáciet Dóminus glóriam vocis suæ in lætítia cordis vestri."]}}
-{"id":"tempora-adv2-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-adv2-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-adv2-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv2-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-adv2-1.collecte.1","type":"para","t":{"la":["Excita, Dómine, corda nostra ad præparándas Unigéniti tui vias: ut, per ejus advéntum, purificátis tibi méntibus servíre mereámur: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-adv2-1.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv2-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -23,14 +23,14 @@
 {"id":"tempora-adv2-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-adv2-1.evangile.2","type":"rubric","t":{"la":["Matt 11:2-10"],"fr":["Matt 11:2-10"]}}
 {"id":"tempora-adv2-1.evangile.3","type":"para","t":{"la":["In illo tempore: Cum audísset Joánnes in vínculis ópera Christi, mittens duos de discípulis suis, ait illi: Tu es, qui ventúrus es, an alium exspectámus? Et respóndens Jesus, ait illis: Eúntes renuntiáte Joánni, quæ audístis et vidístis. Cæci vident, claudi ámbulant, leprósi mundántur, surdi áudiunt, mórtui resúrgunt, páuperes evangelizántur: et beátus est, qui non fúerit scandalizátus in me. Illis autem abeúntibus, cœpit Jesus dícere ad turbas de Joánne: Quid exístis in desértum vidére? arúndinem vento agitátam? Sed quid exístis vidére? hóminem móllibus vestitum? Ecce, qui móllibus vestiúntur, in dómibus regum sunt. Sed quid exístis vidére? Prophétam? Etiam dico vobis, et plus quam Prophétam. Hic est enim, de quo scriptum est: Ecce, ego mitto Angelum meum ante fáciem tuam, qui præparábit viam tuam ante te."]}}
-{"id":"tempora-adv2-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-adv2-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-adv2-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv2-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-adv2-1.offertoire.1","type":"rubric","t":{"la":["Ps 84:7-8"],"fr":["Ps 84:7-8"]}}
 {"id":"tempora-adv2-1.offertoire.2","type":"para","t":{"la":["Deus, tu convérsus vivificábis nos, et plebs tua lætábitur in te: osténde nobis, Dómine, misericórdiam tuam, et salutáre tuum da nobis."]}}
 {"id":"tempora-adv2-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv2-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-adv2-1.secrete.1","type":"para","t":{"la":["Placáre, quǽsumus, Dómine, humilitátis nostræ précibus et hóstiis: et, ubi nulla suppétunt suffrágia meritórum, tuis nobis succúrre præsídiis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-adv2-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-adv2-1.preface.1","type":"rubric","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"tempora-adv2-1.preface.1","type":"rubric","preface":"adv","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
 {"id":"tempora-adv2-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv2-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-adv2-1.communion.1","type":"rubric","t":{"la":["Bar 5:5; 4:36"],"fr":["Bar 5:5; 4:36"]}}
 {"id":"tempora-adv2-1.communion.2","type":"para","t":{"la":["Jerúsalem, surge et sta in excélso, et vide jucunditátem, quæ véniet tibi a Deo tuo."]}}

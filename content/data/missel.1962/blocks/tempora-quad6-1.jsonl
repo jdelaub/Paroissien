@@ -6,7 +6,7 @@
 {"id":"tempora-quad6-1.introit.3","type":"rubric","t":{"la":["Ps 34:3"],"fr":["Ps 34:3"]}}
 {"id":"tempora-quad6-1.introit.4","type":"para","t":{"la":["Effúnde frámeam, et conclúde advérsus eos, qui persequúntur me: dic ánimæ meæ: Salus tua ego sum."]}}
 {"id":"tempora-quad6-1.introit.5","type":"para","t":{"la":["Júdica, Dómine, nocéntes me, expúgna impugnántes me: apprehénde arma et scutum, et exsúrge in adjutórium meum, Dómine, virtus salútis meæ."]}}
-{"id":"tempora-quad6-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad6-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad6-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad6-1.collecte.1","type":"para","t":{"la":["Da, quǽsumus, omnípotens Deus: ut, qui in tot advérsis ex nostra infirmitáte defícimus; intercedénte unigéniti Fílii tui passióne respirémus: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad6-1.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-1.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -27,14 +27,14 @@
 {"id":"tempora-quad6-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-quad6-1.evangile.2","type":"rubric","t":{"la":["Joann 12:1-9"],"fr":["Joann 12:1-9"]}}
 {"id":"tempora-quad6-1.evangile.3","type":"para","t":{"la":["Ante sex dies Paschæ venit Jesus Bethániam, ubi Lázarus fúerat mórtuus, quem suscitávit Jesus. Fecérunt autem ei cenam ibi: et Martha ministrábat, Lázarus vero unus erat ex discumbéntibus cum eo. María ergo accépit libram unguénti nardi pístici pretiósi, et unxit pedes Jesu, et extérsit pedes ejus capíllis suis: et domus impléta est ex odóre unguénti. Dixit ergo unus ex discípulis ejus, Judas Iscariótes, qui erat eum traditúrus: Quare hoc unguéntum non véniit trecéntis denáriis, et datum est egénis? Dixit autem hoc, non quia de egénis pertinébat ad eum, sed quia fur erat, et lóculos habens, ea, quæ mittebántur, portábat. Dixit ergo Jesus: Sínite illam, ut in diem sepultúræ meæ servet illud. Páuperes enim semper habétis vobíscum: me autem non semper habétis. Cognóvit ergo turba multa ex Judǽis, quia illic est: et venérunt, non propter Jesum tantum, sed ut Lázarum vidérent, quem suscitávit a mórtuis."]}}
-{"id":"tempora-quad6-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad6-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad6-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad6-1.offertoire.1","type":"rubric","t":{"la":["Ps 142:9-10"],"fr":["Ps 142:9-10"]}}
 {"id":"tempora-quad6-1.offertoire.2","type":"para","t":{"la":["Eripe me de inimícis meis, Dómine: ad te confúgi, doce me fácere voluntátem tuam: quia Deus meus es tu."]}}
 {"id":"tempora-quad6-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad6-1.secrete.1","type":"para","t":{"la":["Hæc sacrifícia nos, omnípotens Deus, poténti virtúte mundátos, ad suum fáciant purióres veníre princípium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad6-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad6-1.preface.1","type":"rubric","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
+{"id":"tempora-quad6-1.preface.1","type":"rubric","preface":"quad5","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
 {"id":"tempora-quad6-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad6-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad6-1.communion.1","type":"rubric","t":{"la":["Ps 34:26"],"fr":["Ps 34:26"]}}
 {"id":"tempora-quad6-1.communion.2","type":"para","t":{"la":["Erubéscant et revereántur simul, qui gratulántur malis meis: induántur pudóre et reveréntia, qui malígna loquúntur advérsus me."]}}

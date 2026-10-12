@@ -8,7 +8,7 @@
 {"id":"tempora-pent09-2.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pent09-2.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pent09-2.introit.7","type":"para","t":{"la":["Ecce, Deus adjuvat me, et Dóminus suscéptor est ánimæ meæ: avérte mala inimícis meis, et in veritáte tua dispérde illos, protéctor meus, Dómine."]}}
-{"id":"tempora-pent09-2.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pent09-2.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-pent09-2.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent09-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pent09-2.collecte.1","type":"para","t":{"la":["Páteant aures misericórdiæ tuæ, Dómine, précibus supplicántium: et, ut peténtibus desideráta concédas; fac eos quæ tibi sunt plácita, postuláre. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent09-2.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent09-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-pent09-2.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-pent09-2.evangile.2","type":"rubric","t":{"la":["Luc 19:41-47"],"fr":["Luc 19:41-47"]}}
 {"id":"tempora-pent09-2.evangile.3","type":"para","t":{"la":["In illo témpore: Cum appropinquáret Jesus Jerúsalem, videns civitátem, flevit super illam, dicens: Quia si cognovísses et tu, et quidem in hac die tua, quæ ad pacem tibi, nunc autem abscóndita sunt ab óculis tuis. Quia vénient dies in te: et circúmdabunt te inimíci tui vallo, et circúmdabunt te: et coangustábunt te úndique: et ad terram prostérnent te, et fílios tuos, qui in te sunt, et non relínquent in te lápidem super lápidem: eo quod non cognóveris tempus visitatiónis tuæ. Et ingréssus in templum, cœpit ejícere vendéntes in illo et eméntes, dicens illis: Scriptum est: Quia domus mea domus oratiónis est. Vos autem fecístis illam speluncam latrónum. Et erat docens cotídie in templo."]}}
-{"id":"tempora-pent09-2.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pent09-2.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pent09-2.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent09-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pent09-2.offertoire.1","type":"rubric","t":{"la":["Ps 18:9, 10, 11, 12"],"fr":["Ps 18:9, 10, 11, 12"]}}
 {"id":"tempora-pent09-2.offertoire.2","type":"para","t":{"la":["Justítiæ Dómini rectæ, lætificántes corda, et judícia ejus dulcióra super mel et favum: nam et servus tuus custódit ea."]}}
 {"id":"tempora-pent09-2.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent09-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pent09-2.secrete.1","type":"para","t":{"la":["Concéde nobis, quǽsumus, Dómine, hæc digne frequentáre mystéria: quia, quóties hujus hóstiæ commemorátio celebrátur, opus nostræ redemptiónis exercétur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent09-2.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pent09-2.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pent09-2.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-pent09-2.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent09-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pent09-2.communion.1","type":"rubric","t":{"la":["Joann 6:57"],"fr":["Joann 6:57"]}}
 {"id":"tempora-pent09-2.communion.2","type":"para","t":{"la":["Qui mandúcat meam carnem et bibit meum sánguinem, in me manet et ego in eo, dicit Dóminus."]}}

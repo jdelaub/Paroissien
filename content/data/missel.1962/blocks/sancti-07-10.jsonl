@@ -8,7 +8,7 @@
 {"id":"sancti-07-10.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-07-10.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-07-10.introit.7","type":"para","t":{"la":["Laudáte, púeri, Dóminum, laudáte nomen Dómini: qui habitáre facit stérilem in domo, matrem filiórum lætántem."]}}
-{"id":"sancti-07-10.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-10.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-07-10.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-10.txt","section":"Oratio"},{"file":"missa/Latin/Sancti/03-10.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-07-10.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut, qui gloriósos Mártyres fortes in sua confessióne cognóvimus, pios apud te in nostra intercessióne sentiámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-10.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-10.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C7a.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -24,14 +24,14 @@
 {"id":"sancti-07-10.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-07-10.evangile.2","type":"rubric","t":{"la":["Matt 12:46-50"],"fr":["Matt 12:46-50"]}}
 {"id":"sancti-07-10.evangile.3","type":"para","t":{"la":["In illo témpore: Loquente Jesu ad turbas, ecce, Mater ejus et fratres stabant foris, quæréntes loqui ei. ¶ Dixit autem ei quidam: Ecce, mater tua et fratres tui foris stant, quæréntes te. At ipse respóndens dicénti sibi, ait: Quæ est mater mea et qui sunt fratres mei? Et exténdens manum in discípulos suos, dixit: Ecce mater mea et fratres mei. Quicúmque enim fécerit voluntátem Patris mei, qui in cœlis est: ipse meus frater et soror et mater est."]}}
-{"id":"sancti-07-10.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-10.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-07-10.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-10.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/06-18t.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-07-10.offertoire.1","type":"rubric","t":{"la":["Ps 123:7"],"fr":["Ps 123:7"]}}
 {"id":"sancti-07-10.offertoire.2","type":"para","t":{"la":["Anima nostra, sicut passer, erépta est de láqueo venántium: láqueus contrítus est, et nos liberáti sumus."]}}
 {"id":"sancti-07-10.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-10.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-07-10.secrete.1","type":"para","t":{"la":["Sacrifíciis præséntibus, quǽsumus, Dómine, inténde placátus: et, intercedéntibus Sanctis tuis, devotióni nostræ profíciant et salúti. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-10.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-07-10.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-07-10.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-07-10.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-10.txt","section":"Communio"},{"file":"missa/Latin/Sancti/03-10.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-07-10.communion.1","type":"rubric","t":{"la":["Matt 12:50"],"fr":["Matt 12:50"]}}
 {"id":"sancti-07-10.communion.2","type":"para","t":{"la":["Quicúmque fécerit voluntátem Patris mei, qui in cœlis est: ipse meus frater et soror et mater est, dicit Dóminus."]}}

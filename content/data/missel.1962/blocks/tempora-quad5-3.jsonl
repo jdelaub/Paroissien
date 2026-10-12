@@ -6,7 +6,7 @@
 {"id":"tempora-quad5-3.introit.3","type":"rubric","t":{"la":["Ps 17:2-3"],"fr":["Ps 17:2-3"]}}
 {"id":"tempora-quad5-3.introit.4","type":"para","t":{"la":["Díligam te, Dómine, virtus mea: Dóminus firmaméntum meum, et refúgium meum, et liberátor meus."]}}
 {"id":"tempora-quad5-3.introit.5","type":"para","t":{"la":["Liberátor meus de géntibus iracúndis: ab insurgéntibus in me exaltábis me: a viro iníquo erípies me, Dómine."]}}
-{"id":"tempora-quad5-3.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad5-3.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad5-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-3.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad5-3.collecte.1","type":"para","t":{"la":["Sanctificáto hoc jejúnio, Deus, tuórum corda fidélium miserátor illústra: et quibus devotiónis præstas afféctum, præbe supplicántibus pium benígnus audítum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad5-3.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-3.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -27,14 +27,14 @@
 {"id":"tempora-quad5-3.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-quad5-3.evangile.2","type":"rubric","t":{"la":["Joann 10:22-38"],"fr":["Joann 10:22-38"]}}
 {"id":"tempora-quad5-3.evangile.3","type":"para","t":{"la":["In illo témpore: Facta sunt encǽnia in Jerosólymis: et hiems erat. Et ambulábat Jesus in templo, in pórticu Salomónis. Circumdedérunt ergo eum Judǽi, et dicébant ei: Quoúsque ánimam nostram tollis? Si tu es Christus, dic nobis palam. Respóndit eis Jesus: Loquor vobis, et non créditis: Opera, quæ ego fácio in nómine Patris mei, hæc testimónium pérhibent de me: sed vos non créditis, quia non estis ex óvibus meis. Oves meæ vocem meam áudiunt: et ego cognósco eas, et sequúntur me: et ego vitam ætérnam do eis: et non períbunt in ætérnum, et non rápiet eas quisquam de manu mea. Pater meus quod dedit mihi, majus ómnibus est: et nemo potest rápere de manu Patris mei. Ego et Pater unum sumus. Sustulérunt ergo lápides Judǽi, ut lapidárent eum. Respóndit eis Jesus: Multa bona ópera osténdi vobis ex Patre meo, propter quod eórum opus me lapidátis? Respondérunt ei Judǽi: De bono ópere non lapidámus te, sed de blasphémia: et quia tu, homo cum sis, facis teípsum Deum. Respóndit eis Jesus: Nonne scriptum est in lege vestra: quia ego dixi, dii estis? Si illos dixit deos, ad quos sermo Dei factus est, et non potest solvi Scriptúra: quem Pater sanctificávit, et misit in mundum, vos dícitis: Quia blasphémas: quia dixi, Fílius Dei sum? Si non fácio ópera Patris mei, nolíte crédere mihi. Si autem fácio, et si mihi non vultis crédere, opéribus crédite, ut cognoscátis et credátis, quia Pater in me est et ego in Patre."]}}
-{"id":"tempora-quad5-3.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad5-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad5-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad5-3.offertoire.1","type":"rubric","t":{"la":["Ps 58:2"],"fr":["Ps 58:2"]}}
 {"id":"tempora-quad5-3.offertoire.2","type":"para","t":{"la":["Eripe me de inimícis meis, Deus meus: et ab insurgéntibus in me líbera me, Dómine."]}}
 {"id":"tempora-quad5-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-3.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad5-3.secrete.1","type":"para","t":{"la":["Annue, miséricors Deus: ut hóstias placatiónis et laudis sincéro tibi deferámus obséquio. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad5-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad5-3.preface.1","type":"rubric","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
+{"id":"tempora-quad5-3.preface.1","type":"rubric","preface":"quad5","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
 {"id":"tempora-quad5-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad5-3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad5-3.communion.1","type":"rubric","t":{"la":["Ps 25:6-7"],"fr":["Ps 25:6-7"]}}
 {"id":"tempora-quad5-3.communion.2","type":"para","t":{"la":["Lavábo inter innocéntes manus meas, et circuíbo altáre tuum, Dómine: ut áudiam vocem laudis tuæ, et enárrem univérsa mirabília tua."]}}

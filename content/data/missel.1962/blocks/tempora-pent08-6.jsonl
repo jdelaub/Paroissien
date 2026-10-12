@@ -8,7 +8,7 @@
 {"id":"tempora-pent08-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pent08-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pent08-6.introit.7","type":"para","t":{"la":["Suscépimus, Deus, misericórdiam tuam in médio templi tui: secúndum nomen tuum, Deus, ita et laus tua in fines terræ: justítia plena est déxtera tua."]}}
-{"id":"tempora-pent08-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pent08-6.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-pent08-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent08-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pent08-6.collecte.1","type":"para","t":{"la":["Largíre nobis, quǽsumus, Dómine, semper spíritum cogitándi quæ recta sunt, propítius et agéndi: ut, qui sine te esse non póssumus, secúndum te vívere valeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent08-6.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent08-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -26,14 +26,14 @@
 {"id":"tempora-pent08-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-pent08-6.evangile.2","type":"rubric","t":{"la":["Luc 16:1-9"],"fr":["Luc 16:1-9"]}}
 {"id":"tempora-pent08-6.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo quidam erat dives, qui habébat víllicum: et hic diffamátus est apud illum, quasi dissipásset bona ipsíus. Et vocávit illum et ait illi: Quid hoc audio de te? redde ratiónem villicatiónis tuæ: jam enim non póteris villicáre. Ait autem víllicus intra se: Quid fáciam, quia dóminus meus aufert a me villicatiónem? fódere non váleo, mendicáre erubésco. Scio, quid fáciam, ut, cum amótus fúero a villicatióne, recípiant me in domos suas. Convocátis itaque síngulis debitóribus dómini sui, dicébat primo: Quantum debes dómino meo? At ille dixit: Centum cados ólei. Dixítque illi: Accipe cautiónem tuam: et sede cito, scribe quinquagínta. Deínde álii dixit: Tu vero quantum debes? Qui ait: Centum coros trítici. Ait illi: Accipe lítteras tuas, et scribe octogínta. Et laudávit dóminus víllicum iniquitátis, quia prudénter fecísset: quia fílii hujus sǽculi prudentióres fíliis lucis in generatióne sua sunt. Et ego vobis dico: fácite vobis amicos de mammóna iniquitátis: ut, cum defecéritis, recípiant vos in ætérna tabernácula."]}}
-{"id":"tempora-pent08-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pent08-6.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pent08-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent08-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pent08-6.offertoire.1","type":"rubric","t":{"la":["Ps 17:28; 17:32"],"fr":["Ps 17:28; 17:32"]}}
 {"id":"tempora-pent08-6.offertoire.2","type":"para","t":{"la":["Pópulum húmilem salvum fácies, Dómine, et óculos superbórum humiliábis: quóniam quis Deus præter te, Dómine?"]}}
 {"id":"tempora-pent08-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent08-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pent08-6.secrete.1","type":"para","t":{"la":["Súscipe, quǽsumus, Dómine, múnera, quæ tibi de tua largitáte deférimus: ut hæc sacrosáncta mystéria, grátiæ tuæ operánte virtúte, et præséntis vitæ nos conversatióne sanctíficent, et ad gáudia sempitérna perdúcant. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent08-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pent08-6.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pent08-6.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-pent08-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent08-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pent08-6.communion.1","type":"rubric","t":{"la":["Ps 33:9"],"fr":["Ps 33:9"]}}
 {"id":"tempora-pent08-6.communion.2","type":"para","t":{"la":["Gustáte et vidéte, quóniam suávis est Dóminus: beátus vir, qui sperat in eo."]}}

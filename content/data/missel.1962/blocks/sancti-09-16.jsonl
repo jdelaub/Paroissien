@@ -8,7 +8,7 @@
 {"id":"sancti-09-16.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-09-16.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-09-16.introit.7","type":"para","t":{"la":["Intret in conspéctu tuo, Dómine, gémitus compeditórum: redde vicínis nostris séptuplum in sinu eórum: víndica sánguinem Sanctórum tuórum, qui effúsus est."]}}
-{"id":"sancti-09-16.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-09-16.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-09-16.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-09-16.collecte.1","type":"para","t":{"la":["Beatórum Mártyrum paritérque Pontíficum Cornélii et Cypriáni nos, quǽsumus, Dómine, festa tueántur: et eórum comméndet orátio veneránda. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-09-16.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/09-16cc.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saintes Euphémie et Lucie et saint Géminien, martyrs"]}}
@@ -26,7 +26,7 @@
 {"id":"sancti-09-16.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-09-16.evangile.2","type":"rubric","t":{"la":["Luc 21:9-19"],"fr":["Luc 21:9-19"]}}
 {"id":"sancti-09-16.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Cum audiéritis prǽlia et seditiónes, nolíte terréri: opórtet primum hæc fíeri, sed nondum statim finis. Tunc dicébat illis: Surget gens contra gentem, et regnum advérsus regnum. Et terræmótus magni erunt per loca, et pestiléntiæ, et fames, terrorésque de coelo, et signa magna erunt. Sed ante hæc ómnia injícient vobis manus suas, et persequéntur tradéntes in synagógas et custódias, trahéntes ad reges et praesides propter nomen meum: contínget autem vobis in testimónium. Pónite ergo in córdibus vestris non præmeditári, quemádmodum respondeátis. Ego enim dabo vobis os et sapiéntiam, cui non potérunt resístere et contradícere omnes adversárii vestri. Tradémini autem a paréntibus, et frátribus, et cognátis, et amícis, et morte affícient ex vobis: et éritis ódio ómnibus propter nomen meum: et capíllus de cápite vestro non períbit. In patiéntia vestra possidébitis ánimas vestras."]}}
-{"id":"sancti-09-16.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-09-16.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-09-16.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-09-16.offertoire.1","type":"rubric","t":{"la":["Ps 67:36"],"fr":["Ps 67:36"]}}
 {"id":"sancti-09-16.offertoire.2","type":"para","t":{"la":["Mirábilis Deus in Sanctis suis: Deus Israël, ipse dabit virtútem et fortitúdinem plebi suæ: benedíctus Deus, allelúja."]}}
@@ -35,7 +35,7 @@
 {"id":"sancti-09-16.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/09-16cc.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saintes Euphémie et Lucie et saint Géminien, martyrs"]}}
 {"id":"sancti-09-16.secrete.c1.1","type":"para","t":{"la":["Vota pópuli tui, quǽsumus, Dómine, propítius inténde: et, quorum nos tríbuis sollémnia celebráre, fac gaudére suffrágiis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-09-16.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-09-16.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-09-16.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-09-16.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-09-16.communion.1","type":"rubric","t":{"la":["Sap 3:4-6"],"fr":["Sap 3:4-6"]}}
 {"id":"sancti-09-16.communion.2","type":"para","t":{"la":["Et si coram homínibus torménta passi sunt, Deus tentávit eos: tamquam aurum in fornáce probávit eos, et quasi holocáusta accépit eos."]}}

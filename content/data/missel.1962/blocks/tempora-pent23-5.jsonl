@@ -8,7 +8,7 @@
 {"id":"tempora-pent23-5.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pent23-5.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pent23-5.introit.7","type":"para","t":{"la":["Dicit Dóminus: Ego cógito cogitatiónes pacis, et non afflictiónis: invocábitis me, et ego exáudiam vos: et redúcam captivitátem vestram de cunctis locis."]}}
-{"id":"tempora-pent23-5.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pent23-5.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-pent23-5.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent23-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pent23-5.collecte.1","type":"para","t":{"la":["Absólve, quǽsumus, Dómine, tuórum delícta populórum: ut a peccatórum néxibus, quæ pro nostra fragilitáte contráximus, tua benignitáte liberémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent23-5.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent23-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-pent23-5.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-pent23-5.evangile.2","type":"rubric","t":{"la":["Matt 9:18-26"],"fr":["Matt 9:18-26"]}}
 {"id":"tempora-pent23-5.evangile.3","type":"para","t":{"la":["In illo témpore: Loquénte Jesu ad turbas, ecce, princeps unus accéssit et adorábat eum, dicens: Dómine, fília mea modo defúncta est: sed veni, impóne manum tuam super eam, et vivet. Et surgens Jesus sequebátur eum et discípuli ejus. Et ecce múlier, quæ sánguinis fluxum patiebátur duódecim annis, accéssit retro et tétigit fímbriam vestiménti ejus. Dicébat enim intra se: Si tetígero tantum vestiméntum ejus, salva ero. At Jesus convérsus et videns eam, dixit: Confíde, fília, fides tua te salvam fecit. Et salva facta est múlier ex illa hora. Et cum venísset Jesus in domum príncipis, et vidísset tibícines et turbam tumultuántem, dicebat: Recédite: non est enim mórtua puélla, sed dormit. Et deridébant eum. Et cum ejécta esset turba, intrávit et ténuit manum ejus. Et surréxit puélla. Et éxiit fama hæc in univérsam terram illam."]}}
-{"id":"tempora-pent23-5.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pent23-5.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pent23-5.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent23-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pent23-5.offertoire.1","type":"rubric","t":{"la":["Ps 129:1-2"],"fr":["Ps 129:1-2"]}}
 {"id":"tempora-pent23-5.offertoire.2","type":"para","t":{"la":["De profúndis clamávi ad te, Dómine: Dómine, exáudi oratiónem meam: de profúndis clamávi ad te, Dómine."]}}
 {"id":"tempora-pent23-5.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent23-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pent23-5.secrete.1","type":"para","t":{"la":["Pro nostræ servitútis augménto sacrifícium tibi, Dómine, laudis offérimus: ut, quod imméritis contulísti, propítius exsequáris. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent23-5.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pent23-5.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pent23-5.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-pent23-5.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent23-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pent23-5.communion.1","type":"rubric","t":{"la":["Marc 11:24"],"fr":["Marc 11:24"]}}
 {"id":"tempora-pent23-5.communion.2","type":"para","t":{"la":["Amen, dico vobis, quidquid orántes pétitis, crédite, quia accipiétis, et fiet vobis."]}}

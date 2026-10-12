@@ -8,7 +8,7 @@
 {"id":"tempora-epi1-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-epi1-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-epi1-0.introit.7","type":"para","t":{"la":["Exsúltat gáudio pater Justi, gáudeat Pater tuus et Mater tua, et exsúltet quæ génuit te."]}}
-{"id":"tempora-epi1-0.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-epi1-0.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-epi1-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-epi1-0.collecte.1","type":"para","t":{"la":["Dómine Jesu Christe, qui, Maríæ et Joseph súbditus, domésticam vitam ineffabílibus virtútibus consecrásti: fac nos, utriúsque auxílio, Famíliæ sanctæ tuæ exémplis ínstrui; et consórtium cónsequi sempitérnum: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-epi1-0.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -26,14 +26,14 @@
 {"id":"tempora-epi1-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-epi1-0.evangile.2","type":"rubric","t":{"la":["Luc 2:42-52"],"fr":["Luc 2:42-52"]}}
 {"id":"tempora-epi1-0.evangile.3","type":"para","t":{"la":["Cum factus esset Jesus annórum duódecim, ascendéntibus illis Jerosólymam secúndum consuetúdinem diéi festi, consummatísque diébus, cum redírent, remánsit puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus. Existimántes autem illum esse in comitátu, venérunt iter diéi, et requirébant eum inter cognátos et notos. Et non inveniéntes, regréssi sunt in Jerúsalem, requiréntes eum. Et factum est, post tríduum invenérunt illum in templo sedéntem in médio doctórum, audiéntem illos et interrogántem eos. Stupébant autem omnes, qui eum audiébant, super prudéntia et respónsis ejus. Et vidéntes admiráti sunt. Et dixit Mater ejus ad illum: Fili, quid fecísti nobis sic? Ecce, pater tuus et ego doléntes quærebámus te. Et ait ad illos: Quid est, quod me quærebátis? Nesciebátis, quia in his, quæ Patris mei sunt, opórtet me esse? Et ipsi non intellexérunt verbum, quod locútus est ad eos. Et descéndit cum eis, et venit Názareth: et erat súbditus illis. Et Mater ejus conservábat ómnia verba hæc in corde suo. Et Jesus proficiébat sapiéntia et ætáte et grátia apud Deum et hómines."]}}
-{"id":"tempora-epi1-0.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-epi1-0.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"tempora-epi1-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-epi1-0.offertoire.1","type":"rubric","t":{"la":["Luc 2:22"],"fr":["Luc 2:22"]}}
 {"id":"tempora-epi1-0.offertoire.2","type":"para","t":{"la":["Tulérunt Jesum paréntes ejus in Jerúsalem, ut sísterent eum Dómino."]}}
 {"id":"tempora-epi1-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-epi1-0.secrete.1","type":"para","t":{"la":["Placatiónis hostiam offérimus tibi, Dómine, supplíciter ut, per intercessiónem Deíparæ Vírginis cum beáto Joseph, famílias nostras in pace et grátia tua fírmiter constítuas. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-epi1-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-epi1-0.preface.1","type":"rubric","t":{"la":["Præfatio de Epiphania Domini."],"fr":["Préface de l’Épiphanie."]}}
+{"id":"tempora-epi1-0.preface.1","type":"rubric","preface":"epi","t":{"la":["Præfatio de Epiphania Domini."],"fr":["Préface de l’Épiphanie."]}}
 {"id":"tempora-epi1-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-epi1-0.communion.1","type":"rubric","t":{"la":["Luc 2:51"],"fr":["Luc 2:51"]}}
 {"id":"tempora-epi1-0.communion.2","type":"para","t":{"la":["Descéndit Jesus cum eis, et venit Názareth, et erat súbditus illis."]}}

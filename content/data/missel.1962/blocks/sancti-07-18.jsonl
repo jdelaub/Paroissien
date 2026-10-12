@@ -8,7 +8,7 @@
 {"id":"sancti-07-18.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-07-18.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-07-18.introit.7","type":"para","t":{"la":["Majórem hac dilectiónem nemo habet, ut ánimam suam ponat quis pro amícis suis."]}}
-{"id":"sancti-07-18.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-18.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-07-18.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-18.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-07-18.collecte.1","type":"para","t":{"la":["Deus, qui sanctum Camíllum, ad animárum in extrémo agóne luctántium subsídium, singulári caritátis prærogatíva decorásti: ejus, quǽsumus, méritis, spíritum nobis tuæ dilectiónis infúnde; ut in hora éxitus nostri hostem víncere, et ad cœléstem mereámur corónam perveníre. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-18.collecte.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Sainte Symphorose et ses sept fils, martyrs"]}}
@@ -27,7 +27,7 @@
 {"id":"sancti-07-18.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-07-18.evangile.2","type":"rubric","t":{"la":["Joannes 15:12-16"],"fr":["Joannes 15:12-16"]}}
 {"id":"sancti-07-18.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Hoc est præcéptum meum, ut diligátis ínvicem, sicut diléxi vos. Majórem hac dilectiónem nemo habet, ut ánimam suam ponat quis pro amícis suis. Vos amíci mei estis, si fecéritis quæ ego præcípio vobis. Jam non dicam vos servos: quia servus nescit, quid fáciat dóminus ejus. Vos autem dixi amícos: quia ómnia, quæcúmque audívi a Patre meo, nota feci vobis. Non vos me elegístis: sed ego elégi vos, et pósui vos, ut eátis, et fructum afferátis: et fructus vester maneat: ut, quodcúmque petiéritis Patrem in nómine meo, det vobis."]}}
-{"id":"sancti-07-18.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-18.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-07-18.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-18.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C5-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-07-18.offertoire.1","type":"rubric","t":{"la":["Ps 20:2-3"],"fr":["Ps 20:2-3"]}}
 {"id":"sancti-07-18.offertoire.2","type":"para","t":{"la":["In virtúte tua, Dómine, lætábitur justus, et super salutáre tuum exsultábit veheménter: desidérium ánimæ ejus tribuísti ei."]}}
@@ -36,7 +36,7 @@
 {"id":"sancti-07-18.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/07-18o.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C3a.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Sainte Symphorose et ses sept fils, martyrs"]}}
 {"id":"sancti-07-18.secrete.c1.1","type":"para","t":{"la":["Múnera tibi, Dómine, nostra devotiónis offérimus: quæ et pro tuórum tibi grata sint honóre Justórum, et nobis salutária, te miseránte, reddántur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-18.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-07-18.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-07-18.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-07-18.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-18.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-07-18.communion.1","type":"rubric","t":{"la":["Matt 25:36; 25:40"],"fr":["Matt 25:36; 25:40"]}}
 {"id":"sancti-07-18.communion.2","type":"para","t":{"la":["Infírmus fui, et visitástis me. Amen, amen, dico vobis: Quámdiu fecístis uni ex his frátribus meis minimis, mihi fecístis."]}}

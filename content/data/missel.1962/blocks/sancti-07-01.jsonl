@@ -8,7 +8,7 @@
 {"id":"sancti-07-01.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-07-01.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-07-01.introit.7","type":"para","t":{"la":["Redemísti nos, Dómine, in sánguine tuo, ex omni tribu et lingua et pópulo et natióne: et fecísti nos Deo nostro regnum."]}}
-{"id":"sancti-07-01.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-01.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-07-01.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-01.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-07-01.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, qui unigénitum Fílium tuum mundi Redemptórem constituísti, ac ejus Sánguine placári voluísti: concéde, quǽsumus, salútis nostræ prétium sollémni cultu ita venerári, atque a præséntis vitæ malis ejus virtúte deféndi in terris; ut fructu perpétuo lætémur in cœlis. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-01.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-01.txt","section":"Lectio"},{"file":"missa/Latin/Tempora/Quad5-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-07-01.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-07-01.evangile.2","type":"rubric","t":{"la":["Joann 19:30-35"],"fr":["Joann 19:30-35"]}}
 {"id":"sancti-07-01.evangile.3","type":"para","t":{"la":["In illo témpore: Cum accepísset Jesus acétum, dixit: Consummátum est. Et inclináto cápite trádidit spíritum. Judæi ergo - quóniam Parascéve erat -, ut non remanérent in cruce córpora sábbato - erat enim magnus dies ille sábbati -, rogavérunt Pilátum, ut frangeréntur eórum crura et tolleréntur. Venérunt ergo mílites: et primi quidem fregérunt crura et altérius, qui crucifíxus est cum eo. Ad Jesum autem cum venissent, ut vidérunt eum jam mórtuum, non fregérunt ejus crura, sed unus mílitum láncea latus ejus apéruit, et contínuo exívit sanguis et aqua. Et qui vidit, testimónium perhíbuit; et verum est testimónium ejus."]}}
-{"id":"sancti-07-01.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-07-01.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-07-01.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-01.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-07-01.offertoire.1","type":"rubric","t":{"la":["1 Cor 10:16"],"fr":["1 Cor 10:16"]}}
 {"id":"sancti-07-01.offertoire.2","type":"para","t":{"la":["Calix benedictiónis, cui benedícimus, nonne communicátio sánguinis Christi est? et panis, quem frángimus, nonne participátio córporis Dómini est?"]}}
 {"id":"sancti-07-01.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-01.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-07-01.secrete.1","type":"para","t":{"la":["Per hæc divína mystéria, ad novi, quǽsumus, Testaménti mediatórem Jesum accedámus: et super altária tua, Dómine virtútum, aspersiónem sánguinis mélius loquéntem, quam Abel, innovémus. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-01.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-07-01.preface.1","type":"rubric","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
+{"id":"sancti-07-01.preface.1","type":"rubric","preface":"quad5","t":{"la":["Præfatio de Sancta Cruce."],"fr":["Préface de la Sainte Croix."]}}
 {"id":"sancti-07-01.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-01.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-07-01.communion.1","type":"rubric","t":{"la":["Hebr 9:28"],"fr":["Hebr 9:28"]}}
 {"id":"sancti-07-01.communion.2","type":"para","t":{"la":["Christus semel oblátus est ad multórum exhauriénda peccáta: secúndo sine peccáto apparébit exspectántibus se in salútem."]}}

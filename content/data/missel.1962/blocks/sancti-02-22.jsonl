@@ -8,7 +8,7 @@
 {"id":"sancti-02-22.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-02-22.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-02-22.introit.7","type":"para","t":{"la":["In virtúte tua, Dómine, lætábitur justus: et super salutáre tuum exsultábit veheménter: desidérium ánimæ ejus tribuísti ei."]}}
-{"id":"sancti-02-22.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-22.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-02-22.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-22.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-02-22.collecte.1","type":"para","t":{"la":["Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti: concéde; ut, intercessiónis ejus auxílio, a peccatórum nostrórum néxibus liberémur:"]}}
 {"id":"sancti-02-22.collecte.2","type":"rubric","t":{"la":["Commemoratio S. Pauli"]}}
@@ -23,7 +23,7 @@
 {"id":"sancti-02-22.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-02-22.evangile.2","type":"rubric","t":{"la":["Matt 16:13-19"],"fr":["Matt 16:13-19"]}}
 {"id":"sancti-02-22.evangile.3","type":"para","t":{"la":["In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi, et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? At illi dixérunt: Alii Joánnem Baptístam, alii autem Elíam, álii vero Jeremíam, aut unum ex prophétis. Dicit illis Jesus: Vos autem quem me esse dícitis? Respóndens Simon Petrus, dixit: Tu es Christus, Fílius Dei vivi. Respóndens autem Jesus, dixit ei: Beátus es, Simon Bar Jona: quia caro et sanguis non revelávit tibi, sed Pater meus, qui in cœlis est. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Et tibi dabo claves regni cœlórum. Et quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis."]}}
-{"id":"sancti-02-22.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-02-22.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-02-22.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-22.txt","section":"Offertorium"},{"file":"missa/Latin/Commune/Coronatio.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-02-22.offertoire.1","type":"rubric","t":{"la":["Matt 16:18-19"],"fr":["Matt 16:18-19"]}}
 {"id":"sancti-02-22.offertoire.2","type":"para","t":{"la":["Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam: et portæ ínferi non prævalébunt advérsus eam: et tibi dabo claves regni cœlórum."]}}
@@ -32,7 +32,7 @@
 {"id":"sancti-02-22.secrete.2","type":"rubric","t":{"la":["Pro S. Paulo"]}}
 {"id":"sancti-02-22.secrete.3","type":"para","t":{"la":["Apóstoli tui Pauli précibus, Dómine, plebis tuæ dona sanctífica: ut, quæ tibi tuo grata sunt institúto, gratióra fiant patrocínio supplicántis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-22.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-02-22.preface.1","type":"rubric","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
+{"id":"sancti-02-22.preface.1","type":"rubric","preface":"apostolis","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
 {"id":"sancti-02-22.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-22.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4b.txt","section":"Communio"},{"file":"missa/Latin/Commune/Coronatio.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-02-22.communion.1","type":"rubric","t":{"la":["Matt 16:18"],"fr":["Matt 16:18"]}}
 {"id":"sancti-02-22.communion.2","type":"para","t":{"la":["Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam."]}}

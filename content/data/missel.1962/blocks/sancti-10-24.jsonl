@@ -8,7 +8,7 @@
 {"id":"sancti-10-24.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-10-24.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-10-24.introit.7","type":"para","t":{"la":["Benedícite Dóminum, omnes Angeli ejus: poténtes virtúte, qui fácitis verbum ejus, ad audiéndam vocem sermónum ejus."]}}
-{"id":"sancti-10-24.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-24.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-10-24.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-10-24.collecte.1","type":"para","t":{"la":["Deus, qui beátum Raphaélem Archángelum Tobíæ fámulo tuo cómitem dedísti in via: concéde nobis fámulis tuis; ut ejúsdem semper protegámur custódia et muniámur auxílio. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-24.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -26,14 +26,14 @@
 {"id":"sancti-10-24.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-10-24.evangile.2","type":"rubric","t":{"la":["Joann 5:1-4"],"fr":["Joann 5:1-4"]}}
 {"id":"sancti-10-24.evangile.3","type":"para","t":{"la":["In illo témpore: Erat dies festus Judæórum, et ascéndit Jesus Jerosólymam. ¶ Est autem Jerosólymis Probática piscína, quæ cognominátur hebráice Bethsaida, quinque pórticus habens. In his jacébat multitúdo magna languéntium, cæcórum, claudórum, aridórum exspectántium aquæ motum. Angelus autem Dómini descendébat secúndum tempus in piscínam, et movebátur aqua. Et, qui prior descendísset in piscínam post motiónem aquæ, sanus fiebat, a quacúmque detinebátur infirmitáte."]}}
-{"id":"sancti-10-24.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-10-24.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-10-24.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-10-24.offertoire.1","type":"rubric","t":{"la":["Apoc 8:3; 8:4"],"fr":["Apoc 8:3; 8:4"]}}
 {"id":"sancti-10-24.offertoire.2","type":"para","t":{"la":["Stetit Angelus juxta aram templi, habens thuríbulum áureum in manu sua, et data sunt ei incénsa multa: et ascéndit fumus aromátum in conspéctu Dei."]}}
 {"id":"sancti-10-24.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-10-24.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, laudis offérimus, supplíciter deprecántes: ut eásdem, angélico pro nobis interveniénte suffrágio, et placátus accípias, et ad salútem nostram proveníre concédas. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-24.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-10-24.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-10-24.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-10-24.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Communio"},{"file":"missa/Latin/Sancti/10-02.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-10-24.communion.1","type":"rubric","t":{"la":["Dan 3:58"],"fr":["Dan 3:58"]}}
 {"id":"sancti-10-24.communion.2","type":"para","t":{"la":["Benedícite, omnes Angeli Dómini, Dóminum: hymnum dícite et superexaltáte eum in sǽcula."]}}

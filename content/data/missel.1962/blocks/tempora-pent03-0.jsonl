@@ -8,7 +8,7 @@
 {"id":"tempora-pent03-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pent03-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pent03-0.introit.7","type":"para","t":{"la":["Réspice in me et miserére mei, Dómine: quóniam únicus et pauper sum ego: vide humilitátem meam et labórem meum: et dimítte ómnia peccáta mea, Deus meus."]}}
-{"id":"tempora-pent03-0.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pent03-0.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-pent03-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent03-0r.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pent03-0.collecte.1","type":"para","t":{"la":["Protéctor in te sperántium, Deus, sine quo nihil est válidum, nihil sanctum: multíplica super nos misericórdiam tuam; ut, te rectóre, te duce, sic transeámus per bona temporália, ut non amittámus ætérna. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent03-0.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent03-0r.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -21,14 +21,14 @@
 {"id":"tempora-pent03-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-pent03-0.evangile.2","type":"rubric","t":{"la":["Luc 15:1-10"],"fr":["Luc 15:1-10"]}}
 {"id":"tempora-pent03-0.evangile.3","type":"para","t":{"la":["In illo témpore: Erant appropinquántes ad Jesum publicáni et peccatóres, ut audírent illum. Et murmurábant pharisǽi et scribæ, dicéntes: Quia hic peccatóres recipit et mandúcat cum illis. Et ait ad illos parábolam istam, dicens: Quis ex vobis homo, qui habet centum oves: et si perdíderit unam ex illis, nonne dimíttit nonagínta novem in desérto, et vadit ad illam, quæ períerat, donec invéniat eam? Et cum invénerit eam, impónit in húmeros suos gaudens: et véniens domum, cónvocat amícos et vicínos, dicens illis: Congratulámini mihi, quia invéni ovem meam, quæ períerat? Dico vobis, quod ita gáudium erit in cœlo super uno peccatóre pœniténtiam agénte, quam super nonagínta novem justis, qui non índigent pœniténtia. Aut quæ múlier habens drachmas decem, si perdíderit drachmam unam, nonne accéndit lucérnam, et evérrit domum, et quærit diligénter, donec invéniat? Et cum invénerit, cónvocat amícas et vicínas, dicens: Congratulámini mihi, quia invéni drachmam, quam perdíderam? Ita dico vobis: gáudium erit coram Angelis Dei super uno peccatóre pœniténtiam agénte."]}}
-{"id":"tempora-pent03-0.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-pent03-0.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"tempora-pent03-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent03-0r.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pent03-0.offertoire.1","type":"rubric","t":{"la":["Ps. 9:11-12 9:13"],"fr":["Ps. 9:11-12 9:13"]}}
 {"id":"tempora-pent03-0.offertoire.2","type":"para","t":{"la":["Sperent in te omnes, qui novérunt nomen tuum, Dómine: quóniam non derelínquis quæréntes te: psállite Dómino, qui hábitat in Sion: quóniam non est oblítus oratiónem páuperum."]}}
 {"id":"tempora-pent03-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent03-0r.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pent03-0.secrete.1","type":"para","t":{"la":["Réspice, Dómine, múnera supplicántis Ecclésiæ: et salúti credéntium perpétua sanctificatióne suménda concéde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent03-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pent03-0.preface.1","type":"rubric","t":{"la":["Præfatio de sanctissima Trinitate."],"fr":["Préface de la Sainte Trinité."]}}
+{"id":"tempora-pent03-0.preface.1","type":"rubric","preface":"trinitate","t":{"la":["Præfatio de sanctissima Trinitate."],"fr":["Préface de la Sainte Trinité."]}}
 {"id":"tempora-pent03-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent03-0r.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pent03-0.communion.1","type":"rubric","t":{"la":["Luc 15:10."],"fr":["Luc 15:10."]}}
 {"id":"tempora-pent03-0.communion.2","type":"para","t":{"la":["Dico vobis: gáudium est Angelis Dei super uno peccatóre pœniténtiam agénte."]}}

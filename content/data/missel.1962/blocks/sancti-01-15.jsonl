@@ -8,7 +8,7 @@
 {"id":"sancti-01-15.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-01-15.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-01-15.introit.7","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus Líbani multiplicábitur: plantátus in domo Dómini: in átriis domus Dei nostri."]}}
-{"id":"sancti-01-15.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-01-15.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-01-15.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-01-15.collecte.1","type":"para","t":{"la":["Deus, qui nos beáti Pauli Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, étiam actiónes imitémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-01-15.collecte.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Maur, abbé"]}}
@@ -28,7 +28,7 @@
 {"id":"sancti-01-15.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-01-15.evangile.2","type":"rubric","t":{"la":["Matt 11:25-30"],"fr":["Matt 11:25-30"]}}
 {"id":"sancti-01-15.evangile.3","type":"para","t":{"la":["In illo témpore: Respóndens Jesus, dixit: Confíteor tibi, Pater, Dómine coeli et terræ, quia abscondísti hæc a sapiéntibus et prudéntibus, et revelásti ea párvulis. Ita, Pater: quóniam sic fuit plácitum ante te. Omnia mihi trádita sunt a Patre meo. Et nemo novit Fílium nisi Pater: neque Patrem quis novit nisi Fílius, et cui volúerit Fílius reveláre. Veníte ad me, omnes, qui laborátis et oneráti estis, et ego refíciam vos. Tóllite jugum meum super vos, et díscite a me, quia mitis sum et húmilis corde: et inveniétis réquiem animábus vestris. Jugum enim meum suáve est et onus meum leve."]}}
-{"id":"sancti-01-15.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-01-15.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-01-15.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-15.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C5-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-01-15.offertoire.1","type":"rubric","t":{"la":["Ps 20:2-3"],"fr":["Ps 20:2-3"]}}
 {"id":"sancti-01-15.offertoire.2","type":"para","t":{"la":["In virtúte tua, Dómine, lætábitur justus, et super salutáre tuum exsultábit veheménter: desidérium ánimæ ejus tribuísti ei."]}}
@@ -37,7 +37,7 @@
 {"id":"sancti-01-15.secrete.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Maur, abbé"]}}
 {"id":"sancti-01-15.secrete.c1.1","type":"para","t":{"la":["Sacris altáribus, Dómine, hóstias superpósitas sanctus Maurus Abbas, quǽsumus, in salútem nobis proveníre depóscat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-01-15.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-01-15.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-01-15.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-01-15.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-15.txt","section":"Communio"},{"file":"horas/Latin/Commune/C2ap.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-01-15.communion.1","type":"rubric","t":{"la":["Ps 63:11"],"fr":["Ps 63:11"]}}
 {"id":"sancti-01-15.communion.2","type":"para","t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde, allelúja, allelúja."]}}

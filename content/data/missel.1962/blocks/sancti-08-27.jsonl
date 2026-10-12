@@ -8,7 +8,7 @@
 {"id":"sancti-08-27.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-08-27.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-08-27.introit.7","type":"para","t":{"la":["Veníte, fílii, audíte me: timórem Dómini docébo vos."]}}
-{"id":"sancti-08-27.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-08-27.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-08-27.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-27.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-08-27.collecte.1","type":"para","t":{"la":["Deus, qui per sanctum Joséphum Confessórem tuum, ad erudiéndam spíritu intellegéntiæ ac pietátis juventútem, novum Ecclésiæ tuæ subsídium providére dignátus es: præsta, quǽsumus; nos, ejus exémplo et intercessióne, ita fácere et docére, ut præmia consequámur ætérna. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-27.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-27.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C2a.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-08-27.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-08-27.evangile.2","type":"rubric","t":{"la":["Matt 18:1-5"],"fr":["Matt 18:1-5"]}}
 {"id":"sancti-08-27.evangile.3","type":"para","t":{"la":["In illo témpore: Accessérunt discípuli ad Jesum, dicéntes: Quis, putas, major est in regno cœlorum? Et ádvocans Jesus parvulum, státuit eum in médio eórum et dixit: Amen, dico vobis, nisi convérsi fuéritis et efficiámini sicut párvuli, non intrabitis in regnum cœlórum. Quicúmque ergo humiliáverit se sicut párvulus iste, hic est major in regno cœlorum. Et qui suscéperit unum párvulum talem in nómine meo, me súscipit."]}}
-{"id":"sancti-08-27.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-08-27.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-08-27.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-27.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-08-27.offertoire.1","type":"rubric","t":{"la":["Ps 9:17"],"fr":["Ps 9:17"]}}
 {"id":"sancti-08-27.offertoire.2","type":"para","t":{"la":["Desidérium páuperum exaudívit Dóminus: præparatiónem cordis eórum audívit auris tua."]}}
 {"id":"sancti-08-27.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-27.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-08-27.secrete.1","type":"para","t":{"la":["Altáre tuum, Dómine, munéribus cumulamus oblatis: ut ejus nobis fiant supplicatione propitia, cujus nos donasti patrocínio adjuvári. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-08-27.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-08-27.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-08-27.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-08-27.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-27.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-08-27.communion.1","type":"rubric","t":{"la":["Marc 10:14"],"fr":["Marc 10:14"]}}
 {"id":"sancti-08-27.communion.2","type":"para","t":{"la":["Sínite párvulos veníre ad me, et ne prohibuéritis eos: tálium est enim regnum Dei."]}}

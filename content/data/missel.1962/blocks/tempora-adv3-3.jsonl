@@ -8,7 +8,7 @@
 {"id":"tempora-adv3-3.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-adv3-3.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-adv3-3.introit.7","type":"para","t":{"la":["Roráte, cœli, désuper, et nubes pluant justum: aperiátur terra, et gérminet Salvatórem"]}}
-{"id":"tempora-adv3-3.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-adv3-3.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-adv3-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-3.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-adv3-3.collecte.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
 {"id":"tempora-adv3-3.collecte.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
@@ -35,14 +35,14 @@
 {"id":"tempora-adv3-3.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secundum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-adv3-3.evangile.2","type":"rubric","t":{"la":["Luc 1:26-38"],"fr":["Luc 1:26-38"]}}
 {"id":"tempora-adv3-3.evangile.3","type":"para","t":{"la":["In illo tempore: Missus est Angelus Gábriel a Deo in civitatem Galilǽæ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María. Et ingréssus Angelus ad eam, dixit: Ave, grátia plena; Dóminus tecum: benedícta tu in muliéribus. Quæ cum audísset, turbáta est in sermóne ejus: et cogitábat, qualis esset ista salutátio. Et ait Angelus ei: Ne tímeas, María, invenísti enim grátiam apud Deum: ecce, concípies in útero, et páries fílium, et vocábis nomen ejus Jesum. Hic erit magnus, et Fílius Altíssimi vocábitur, et dabit illi Dóminus Deus sedem David, patris ejus: et regnábit in domo Jacob in ætérnum, et regni ejus non erit finis. Dixit autem María ad Angelum: Quómodo fiet istud, quóniam virum non cognósco? Et respóndens Angelus, dixit ei: Spíritus Sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi. Ideóque et quod nascétur ex te Sanctum, vocábitur Fílius Dei. Et ecce, Elísabeth, cognáta tua, et ipsa concépit fílium in senectúte sua: et hic mensis sextus est illi, quæ vocátur stérilis: quia non erit impossíbile apud Deum omne verbum. Dixit autem María: Ecce ancílla Dómini, fiat mihi secúndum verbum tuum."]}}
-{"id":"tempora-adv3-3.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-adv3-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-adv3-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-adv3-3.offertoire.1","type":"rubric","t":{"la":["Is 35:4."],"fr":["Is 35:4."]}}
 {"id":"tempora-adv3-3.offertoire.2","type":"para","t":{"la":["Confortámini, et jam nolite timére: ecce enim, Deus noster retríbuet judícium: ipse véniet, et salvos nos fáciet."]}}
 {"id":"tempora-adv3-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-3.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-adv3-3.secrete.1","type":"para","t":{"la":["Acépta tibi sint, quǽsumus, Dómine, nostra jejúnia: quæ et expiándo nos tua grátia dignos effíciant, et ad sempiterna promíssa perdúcant. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-adv3-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-adv3-3.preface.1","type":"rubric","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"tempora-adv3-3.preface.1","type":"rubric","preface":"adv","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
 {"id":"tempora-adv3-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-3.txt","section":"Communio"},{"file":"horas/Latin/Commune/C10a.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-adv3-3.communion.1","type":"rubric","t":{"la":["Is 7:14"],"fr":["Is 7:14"]}}
 {"id":"tempora-adv3-3.communion.2","type":"para","t":{"la":["Ecce, Virgo concípiet et páriet fílium: et vocábitur nomen ejus Emmánuel."]}}

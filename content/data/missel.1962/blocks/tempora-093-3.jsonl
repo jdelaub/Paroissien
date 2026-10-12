@@ -8,7 +8,7 @@
 {"id":"tempora-093-3.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-093-3.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-093-3.introit.7","type":"para","t":{"la":["Exsultáte Deo, adjutóri nostro: jubiláte Deo Jacob: súmite psalmum jucúndum cum cíthara: cánite in inítio mensis tuba, quia præcéptum in Israël est, et judícium Deo Jacob."]}}
-{"id":"tempora-093-3.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-093-3.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-093-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/093-3.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-093-3.collecte.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
 {"id":"tempora-093-3.collecte.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
@@ -35,14 +35,14 @@
 {"id":"tempora-093-3.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Marcum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Marc"]}}
 {"id":"tempora-093-3.evangile.2","type":"rubric","t":{"la":["Marc 9:16-28"],"fr":["Marc 9:16-28"]}}
 {"id":"tempora-093-3.evangile.3","type":"para","t":{"la":["In illo témpore: Respóndens unus de turba, dixit ad Jesum: Magíster, áttuli fílium meum ad te, habéntem spíritum mutum: qui, ubicúmque eum apprehénderit, allídit illum, et spumat et stridet déntibus et aréscit: et dixi discípulis tuis, ut ejícerent illum, et non potúerunt. Qui respóndens eis, dixit: O generátio incrédula, quámdiu apud vos ero? quámdiu vos pátiar? Afférte illum ad me. Et attúlerunt eum. Et cum vidísset eum, statim spíritus conturbávit illum: et elísus in terram, volutabátur spumans. Et interrogávit patrem ejus: Quantum témporis est, ex quo ei hoc áccidit? At ille ait: Ab infántia: et frequénter eum in ignem et in aquas misit, ut eum pérderet. Sed si quid potes, ádjuva nos, misértus nostri. Jesus autem ait illi: Si potes credere, ómnia possibília sunt credénti. Et contínuo exclámans pater pueri, cum lácrimis ajébat: Credo, Dómine: ádjuva incredulitátem meam. Et cum vidéret Jesus concurréntem turbam, comminátus est spirítui immundo, dicens illi: Surde et mute spíritus, ego præcípio tibi, exi ab eo: et ámplius ne intróëas in eum. Et exclámans et multum discérpens eum, éxiit ab eo, et factus est sicut mórtuus, ita ut multi dícerent: Quia mórtuus est. Jesus autem tenens manum ejus, elevávit eum, et surréxit. Et cum introísset in domum, discípuli ejus secréto interrogábant eum: Quare nos non potúimus ejícere eum? Et dixit illis: Hoc genus in nullo potest exíre nisi in oratióne et jejúnio."]}}
-{"id":"tempora-093-3.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-093-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-093-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/093-3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-093-3.offertoire.1","type":"rubric","t":{"la":["Ps 118:47; 118:48"],"fr":["Ps 118:47; 118:48"]}}
 {"id":"tempora-093-3.offertoire.2","type":"para","t":{"la":["Meditábor in mandátis tuis, quæ diléxi valde: et levábo manus meas ad mandáta tua, quæ diléxi."]}}
 {"id":"tempora-093-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/093-3.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-093-3.secrete.1","type":"para","t":{"la":["Hæc hóstia, Dómine, quǽsumus, emúndet nostra delícta: et ad sacrifícium celebrándum, subditórum tibi córpora mentésque sanctíficet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-093-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-093-3.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-093-3.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-093-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/093-3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-093-3.communion.1","type":"rubric","t":{"la":["Neh 8:10"],"fr":["Neh 8:10"]}}
 {"id":"tempora-093-3.communion.2","type":"para","t":{"la":["Comédite pínguia et bíbite mulsum, et míttite partes his, qui non præparavérunt sibi: sanctus enim dies Dómini est, nolíte contristári: gáudium étenim Dómini est fortitúdo nostra."]}}

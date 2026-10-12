@@ -8,7 +8,7 @@
 {"id":"sancti-07-27.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-07-27.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-07-27.introit.7","type":"para","t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde."]}}
-{"id":"sancti-07-27.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-27.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-07-27.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-07-27.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut, intercedénte beáto Pantaleóne Mártyre tuo, et a cunctis adversitátibus liberémur in córpore, et a pravis cogitatiónibus mundémur in mente. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-27.epitre","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -26,14 +26,14 @@
 {"id":"sancti-07-27.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-07-27.evangile.2","type":"rubric","t":{"la":["Matt 10:26-32"],"fr":["Matt 10:26-32"]}}
 {"id":"sancti-07-27.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nihil est opértum, quod non revelábitur; et occúltum, quod non sciétur. ¶ Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere; sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam. Nonne duo pásseres asse véneunt: et unus ex illis non cadet super terram sine Patre vestro? Vestri autem capílli cápitis omnes numeráti sunt. Nolíte ergo timére: multis passéribus melióres estis vos. Omnis ergo, qui confitébitur me coram homínibus, confitébor et ego eum coram Patre meo, qui in coelis est."]}}
-{"id":"sancti-07-27.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-27.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-07-27.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-07-27.offertoire.1","type":"rubric","t":{"la":["Ps 20:4-5"],"fr":["Ps 20:4-5"]}}
 {"id":"sancti-07-27.offertoire.2","type":"para","t":{"la":["Posuísti, Dómine, in cápite ejus corónam de lápide pretióso: vitam pétiit a te, et tribuísti ei, allelúja."]}}
 {"id":"sancti-07-27.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-07-27.secrete.1","type":"para","t":{"la":["Accépta sit in conspéctu tuo, Dómine, nostra devótio: et ejus nobis fiat supplicatióne salutáris, pro cujus sollemnitáte defértur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-07-27.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-07-27.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-07-27.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-07-27.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-07-27.communion.1","type":"rubric","t":{"la":["Joann 12:26"],"fr":["Joann 12:26"]}}
 {"id":"sancti-07-27.communion.2","type":"para","t":{"la":["Qui mihi mínistrat, me sequátur: et ubi sum ego, illic et miníster meus erit."]}}

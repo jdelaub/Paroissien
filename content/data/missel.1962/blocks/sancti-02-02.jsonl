@@ -43,7 +43,7 @@
 {"id":"sancti-02-02.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-02-02.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-02-02.introit.7","type":"para","t":{"la":["Suscépimus, Deus, misericórdiam tuam in médio templi tui: secúndum nomen tuum, Deus, ita et laus tua in fines terræ: justítia plena est déxtera tua."]}}
-{"id":"sancti-02-02.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-02.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-02-02.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-02.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-02-02.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, majestátem tuam súpplices exorámus: ut, sicut unigénitus Fílius tuus hodiérna die cum nostræ carnis substántia in templo est præsentátus; ita nos fácias purificátis tibi méntibus præsentári. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-02.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-02.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -68,14 +68,14 @@
 {"id":"sancti-02-02.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-02-02.evangile.2","type":"rubric","t":{"la":["Luc 2:22-32"],"fr":["Luc 2:22-32"]}}
 {"id":"sancti-02-02.evangile.3","type":"para","t":{"la":["In illo témpore: Postquam impleti sunt dies purgatiónis Maríæ, secúndum legem Moysi, tulérunt Jesum in Jerúsalem, ut sísterent eum Dómino, sicut scriptum est in lege Dómini: Quia omne masculínum adapériens vulvam sanctum Dómino vocábitur. Et ut darent hóstiam, secúndum quod dictum est in lege Dómini, par túrturum aut duos pullos columbárum. Et ecce, homo erat in Jerúsalem, cui nomen Símeon, et homo iste justus et timorátus, exspéctans consolatiónem Israël, et Spíritus Sanctus erat in eo. Et respónsum accéperat a Spíritu Sancto, non visúrum se mortem, nisi prius vidéret Christum Dómini. Et venit in spíritu in templum. Et cum indúcerent púerum Jesum parentes ejus, ut fácerent secúndum consuetúdinem legis pro eo: et ipse accépit eum in ulnas suas, et benedíxit Deum, et dixit: Nunc dimíttis servum tuum, Dómine, secúndum verbum tuum in pace: Quia vidérunt óculi mei salutáre tuum: Quod parásti ante fáciem ómnium populórum: Lumen ad revelatiónem géntium et glóriam plebis tuæ Israël."]}}
-{"id":"sancti-02-02.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-02-02.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-02-02.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-02.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C6b.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-02-02.offertoire.1","type":"rubric","t":{"la":["Ps 44:3"],"fr":["Ps 44:3"]}}
 {"id":"sancti-02-02.offertoire.2","type":"para","t":{"la":["Diffúsa est grátia in lábiis tuis: proptérea benedíxit te Deus in ætérnum, et in sǽculum sǽculi."]}}
 {"id":"sancti-02-02.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-02.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-02-02.secrete.1","type":"para","t":{"la":["Exáudi, Dómine, preces nostras: et, ut digna sint múnera, quæ óculis tuæ majestátis offérimus, subsídium nobis tuæ pietátis impénde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-02-02.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-02-02.preface.1","type":"rubric","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"sancti-02-02.preface.1","type":"rubric","preface":"nat","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
 {"id":"sancti-02-02.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-02.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-02-02.communion.1","type":"rubric","t":{"la":["Luc 2:26"],"fr":["Luc 2:26"]}}
 {"id":"sancti-02-02.communion.2","type":"para","t":{"la":["Respónsum accépit Símeon a Spíritu Sancto, non visúrum se mortem, nisi vidéret Christum Dómini."]}}

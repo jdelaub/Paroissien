@@ -8,7 +8,7 @@
 {"id":"sancti-10-28.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-10-28.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-10-28.introit.7","type":"para","t":{"la":["Mihi autem nimis honoráti sunt amíci tui, Deus: nimis confortátus est principátus eórum."]}}
-{"id":"sancti-10-28.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-28.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-10-28.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-28.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-10-28.collecte.1","type":"para","t":{"la":["Deus, qui nos per beátos Apóstolos tuos Simónem et Judam ad agnitiónem tui nóminis veníre tribuísti: da nobis eórum glóriam sempitérnam et proficiéndo celebráre, et celebrándo profícere. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-28.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-28.txt","section":"Lectio"},{"file":"missa/Latin/Tempora/Pasc5-3.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-10-28.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"sancti-10-28.evangile.2","type":"rubric","t":{"la":["Joann 15:17-25"],"fr":["Joann 15:17-25"]}}
 {"id":"sancti-10-28.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Hæc mando vobis, ut diligátis ínvicem. Si mundus vos odit: scitóte, quia me priórem vobis odio hábuit. Si de mundo fuissétis, mundus quod suum erat dilígeret; quia vero de mundo non estis, sed ego elegi vos de mundo, proptérea odit vos mundus. Mementóte sermónis mei, quem ego dixi vobis: Non est servus major dómino suo. Si me persecúti sunt, et vos persequántur: si sermónem meum servavérunt, et vestrum servábunt. Sed hæc ómnia fácient vobis propter nomen meum: quia nésciunt eum, qui misit me. Si non veníssem et locútus fuíssem eis, peccátum non háberent: nunc autem excusatiónem non habent de peccáto suo. Qui me odit: et Patrem meum odit. Si ópera non fecíssem in eis, quæ nemo álius fecit, peccátum non háberent: nunc autem et vidérunt et odérunt et me et Patrem meum. Sed ut adimpleátur sermo, qui in lege eórum scriptus est: Quia ódio habuérunt me gratis."]}}
-{"id":"sancti-10-28.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-10-28.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-10-28.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-28.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/07-04oct.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-10-28.offertoire.1","type":"rubric","t":{"la":["Ps 18:5"],"fr":["Ps 18:5"]}}
 {"id":"sancti-10-28.offertoire.2","type":"para","t":{"la":["In omnem terram exívit sonus eórum: et in fines orbis terræ verba eórum."]}}
 {"id":"sancti-10-28.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-28.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-10-28.secrete.1","type":"para","t":{"la":["Glóriam, Dómine, sanctórum Apostolórum tuórum Simónis et Judæ perpétuam venerántes: quǽsumus; ut eam, sacris mystériis expiati, dígnius celebrémus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-28.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-10-28.preface.1","type":"rubric","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
+{"id":"sancti-10-28.preface.1","type":"rubric","preface":"apostolis","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
 {"id":"sancti-10-28.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-28.txt","section":"Communio"},{"file":"missa/Latin/Sancti/02-24.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-10-28.communion.1","type":"rubric","t":{"la":["Matt 19:28"],"fr":["Matt 19:28"]}}
 {"id":"sancti-10-28.communion.2","type":"para","t":{"la":["Vos, qui secúti estis me, sedébitis super sedes, judicántes duódecim tribus Israël."]}}

@@ -8,7 +8,7 @@
 {"id":"tempora-pent01-2.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pent01-2.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pent01-2.introit.7","type":"para","t":{"la":["Dómine, in tua misericórdia sperávi: exsultávit cor meum in salutári tuo: cantábo Dómino, qui bona tríbuit mihi."]}}
-{"id":"tempora-pent01-2.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pent01-2.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-pent01-2.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-2.txt","section":"Oratio"},{"file":"missa/Latin/Tempora/Pent01-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pent01-2.collecte.1","type":"para","t":{"la":["Deus, in te sperántium fortitúdo, adésto propítius invocatiónibus nostris: et, quia sine te nihil potest mortális infírmitas, præsta auxílium grátiæ tuæ; ut, in exsequéndis mandátis tuis, et voluntáte tibi et actióne placeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent01-2.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0a.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-pent01-2.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-pent01-2.evangile.2","type":"rubric","t":{"la":["Luc 6:36-42"],"fr":["Luc 6:36-42"]}}
 {"id":"tempora-pent01-2.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Estóte misericórdes, sicut et Pater vester miséricors est. Nolíte judicáre, et non judicabímini: nolíte condemnáre, et non condemnabímini. Dimíttite, et dimittémini. Date, et dábitur vobis: mensúram bonam et confértam et coagitátam et supereffluéntem dabunt in sinum vestrum. Eadem quippe mensúra, qua mensi fuéritis, remetiétur vobis. Dicébat autem illis et similitúdinem: Numquid potest cæcus cæcum dúcere? nonne ambo in fóveam cadunt? Non est discípulus super magistrum: perféctus autem omnis erit, si sit sicut magister ejus. Quid autem vides festúcam in óculo fratris tui, trabem autem, quæ in óculo tuo est, non consíderas? Aut quómodo potes dícere fratri tuo: Frater, sine, ejíciam festúcam de óculo tuo: ipse in oculo tuo trabem non videns? Hypócrita, ejice primum trabem de oculo tuo: et tunc perspícies, ut edúcas festúcam de óculo fratris tui."]}}
-{"id":"tempora-pent01-2.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pent01-2.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pent01-2.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0a.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pent01-2.offertoire.1","type":"rubric","t":{"la":["Ps 5:3-4."],"fr":["Ps 5:3-4."]}}
 {"id":"tempora-pent01-2.offertoire.2","type":"para","t":{"la":["Inténde voci orationis meæ, Rex meus et Deus meus: quóniam ad te orábo, Dómine."]}}
 {"id":"tempora-pent01-2.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-2.txt","section":"Secreta"},{"file":"missa/Latin/Tempora/Pent01-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pent01-2.secrete.1","type":"para","t":{"la":["Hostias nostras, quǽsumus, Dómine, tibi dicátas placátus assúme: et ad perpetuum nobis tríbue proveníre subsídium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pent01-2.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pent01-2.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pent01-2.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-pent01-2.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0a.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pent01-2.communion.1","type":"rubric","t":{"la":["Ps 9:2-3"],"fr":["Ps 9:2-3"]}}
 {"id":"tempora-pent01-2.communion.2","type":"para","t":{"la":["Narrábo ómnia mirabília tua: lætábor et exsultábo in te: psallam nómini tuo, Altíssime."]}}

@@ -8,7 +8,7 @@
 {"id":"tempora-quadp3-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quadp3-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quadp3-1.introit.7","type":"para","t":{"la":["Esto mihi in Deum protectórem, et in locum refúgii, ut salvum me fácias: quóniam firmaméntum meum et refúgium meum es tu: et propter nomen tuum dux mihi eris, et enútries me."]}}
-{"id":"tempora-quadp3-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quadp3-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quadp3-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quadp3-1.collecte.1","type":"para","t":{"la":["Preces nostras, quǽsumus, Dómine, cleménter exáudi: atque, a peccatórum vínculis absolútos, ab omni nos adversitáte custódi. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quadp3-1.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -23,14 +23,14 @@
 {"id":"tempora-quadp3-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"tempora-quadp3-1.evangile.2","type":"rubric","t":{"la":["Luc 18:31-43"],"fr":["Luc 18:31-43"]}}
 {"id":"tempora-quadp3-1.evangile.3","type":"para","t":{"la":["In illo témpore: Assúmpsit Jesus duódecim, et ait illis: Ecce, ascéndimus Jerosólymam, et consummabúntur ómnia, quæ scripta sunt per Prophétas de Fílio hominis. Tradétur enim Géntibus, et illudétur, et flagellábitur, et conspuétur: et postquam flagelláverint, occídent eum, et tértia die resúrget. Et ipsi nihil horum intellexérunt, et erat verbum istud abscónditum ab eis, et non intellegébant quæ dicebántur. Factum est autem, cum appropinquáret Jéricho, cæcus quidam sedébat secus viam, mendícans. Et cum audíret turbam prætereúntem, interrogábat, quid hoc esset. Dixérunt autem ei, quod Jesus Nazarénus transíret. Et clamávit, dicens: Jesu, fili David, miserére mei. Et qui præíbant, increpábant eum, ut tacéret. Ipse vero multo magis clamábat: Fili David, miserére mei. Stans autem Jesus, jussit illum addúci ad se. Et cum appropinquásset, interrogávit illum, dicens: Quid tibi vis fáciam? At ille dixit: Dómine, ut vídeam. Et Jesus dixit illi: Réspice, fides tua te salvum fecit. Et conféstim vidit, et sequebátur illum, magníficans Deum. Et omnis plebs ut vidit, dedit laudem Deo."]}}
-{"id":"tempora-quadp3-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quadp3-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quadp3-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quadp3-1.offertoire.1","type":"rubric","t":{"la":["Ps 118:12-13"],"fr":["Ps 118:12-13"]}}
 {"id":"tempora-quadp3-1.offertoire.2","type":"para","t":{"la":["Benedíctus es, Dómine, doce me justificatiónes tuas: in lábiis meis pronuntiávi ómnia judícia oris tui."]}}
 {"id":"tempora-quadp3-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-0.txt","section":"Secreta"},{"file":"missa/Latin/Tempora/Epi3-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quadp3-1.secrete.1","type":"para","t":{"la":["Hæc hóstia, Dómine, quǽsumus, emúndet nostra delícta: et, ad sacrifícium celebrándum, subditórum tibi córpora mentésque sanctíficet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quadp3-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quadp3-1.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-quadp3-1.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-quadp3-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quadp3-1.communion.1","type":"rubric","t":{"la":["Ps 77:29-30"],"fr":["Ps 77:29-30"]}}
 {"id":"tempora-quadp3-1.communion.2","type":"para","t":{"la":["Manducavérunt, et saturári sunt nimis, et desidérium eórum áttulit eis Dóminus: non sunt fraudáti a desidério suo."]}}

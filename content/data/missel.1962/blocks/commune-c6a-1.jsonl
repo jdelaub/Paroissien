@@ -8,7 +8,7 @@
 {"id":"commune-c6a-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"commune-c6a-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"commune-c6a-1.introit.7","type":"para","t":{"la":["Vultum tuum deprecabúntur omnes dívites plebis: adducéntur Regi Vírgines post eam: próximæ ejus adducéntur tibi in lætítia et exsultatióne."]}}
-{"id":"commune-c6a-1.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"commune-c6a-1.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"commune-c6a-1.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6a-1.txt","section":"Oratio"},{"file":"horas/Latin/Commune/C6a.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"commune-c6a-1.collecte.1","type":"para","t":{"la":["Exáudi nos, Deus, salutáris noster: ut sicut de beátæ N. Vírginis tuæ festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"commune-c6a-1.epitre","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6a-1.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -26,14 +26,14 @@
 {"id":"commune-c6a-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"commune-c6a-1.evangile.2","type":"rubric","t":{"la":["Matt 13:44-52"],"fr":["Matt 13:44-52"]}}
 {"id":"commune-c6a-1.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cœlórum thesáuro abscóndito in agro: quem qui invénit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa, quæ habet, et emit agrum illum. ¶ Íterum símile est regnum cœlórum hómini negotiatóri, quærénti bonas margarítas. Invénta autem una pretiósa margaríta, ábiit, et véndidit ómnia, quæ hábuit, et emit eam. Íterum símile est regnum cœlórum sagénæ missæ in mare et ex omni génere píscium congregánti. Quam, cum impléta esset, educéntes, et secus litus sedéntes, elegérunt bonos in vasa, malos autem foras misérunt. Sic erit in consummatióne sǽculi: exíbunt Angeli, et separábunt malos de médio justórum, et mittent eos in camínum ignis: ibi erit fletus et stridor déntium. Intellexístis hæc ómnia? Dicunt ei: Etiam. Ait illis: Ideo omnis scriba doctus in regno cœlórum símilis est hómini patrifamílias, qui profert de thesáuro suo nova et vétera."]}}
-{"id":"commune-c6a-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"commune-c6a-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"commune-c6a-1.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6a-1.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C6.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"commune-c6a-1.offertoire.1","type":"rubric","t":{"la":["Ps 44:15-16"],"fr":["Ps 44:15-16"]}}
 {"id":"commune-c6a-1.offertoire.2","type":"para","t":{"la":["Afferéntur Regi Vírgines post eam: próximæ ejus afferéntur tibi in lætítia et exsultatióne: adducéntur in templum Regi Dómino."]}}
 {"id":"commune-c6a-1.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6a-1.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C6a.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"commune-c6a-1.secrete.1","type":"para","t":{"la":["Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum: quorum se méritis de tribulatióne percepísse cognóscit auxílium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"commune-c6a-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"commune-c6a-1.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune, ou préface du temps (Carême, Passion, Pâques, Ascension) quand il y en a une."]}}
+{"id":"commune-c6a-1.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune, ou préface du temps (Carême, Passion, Pâques, Ascension) quand il y en a une."]}}
 {"id":"commune-c6a-1.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6a-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"commune-c6a-1.communion.1","type":"rubric","t":{"la":["Matt 13:45-46"],"fr":["Matt 13:45-46"]}}
 {"id":"commune-c6a-1.communion.2","type":"para","t":{"la":["Símile est regnum cœlórum hómini negotiatóri, quærénti bonas margarítas: invénta autem una pretiósa margaríta, dedit ómnia sua, et comparávit eam."]}}

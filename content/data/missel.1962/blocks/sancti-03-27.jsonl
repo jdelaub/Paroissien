@@ -8,7 +8,7 @@
 {"id":"sancti-03-27.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-03-27.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-03-27.introit.7","type":"para","t":{"la":["Tenuísti manum déxteram meam: et in voluntáte tua deduxísti me, et cum glória suscepísti me."]}}
-{"id":"sancti-03-27.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-03-27.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-03-27.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-27.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-03-27.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, qui, ad cultum sacrárum imáginum asseréndum, beátum Joánnem cœlésti doctrína et admirábili spíritus fortitúdine imbuísti: concéde nobis ejus intercessióne et exémplo; ut, quorum cólimus imagines, virtútes imitémur et patrocínia sentiámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-03-27.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-27.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C2a.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -21,14 +21,14 @@
 {"id":"sancti-03-27.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
 {"id":"sancti-03-27.evangile.2","type":"rubric","t":{"la":["Luc 6:6-11"],"fr":["Luc 6:6-11"]}}
 {"id":"sancti-03-27.evangile.3","type":"para","t":{"la":["In illo témpore: Factum est et in álio sábbato, ut intráret Jesus in synagógam et docéret. Et erat ibi homo, et manus ejus déxtera erat árida. Observábant autem scribæ et pharisæi, si in sábbato curáret: ut invenírent, unde accusárent eum. Ipse vero sciébat cogitatiónes eórum. Et ait hómini, qui habébat manum áridam: Surge et sta in médium. Et surgens stetit. Ait autem ad illos Jesus: Intérrogo vos, si licet sábbatis benefácere, an male: ánimam salvam fácere, an pérdere? Et circumspéctis ómnibus dixit hómini: Exténde manum tuam. Et exténdit: et restitúta est manus ejus. Ipsi autem repléti sunt insipiéntia, et colloquebántur ad ínvicem, quidnam fácerent Jesu."]}}
-{"id":"sancti-03-27.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-03-27.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-03-27.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-27.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-03-27.offertoire.1","type":"rubric","t":{"la":["Job 14:7"],"fr":["Job 14:7"]}}
 {"id":"sancti-03-27.offertoire.2","type":"para","t":{"la":["Lignum habet spem: si præcísum fúerit, rursum viréscit, et rami ejus púllulant."]}}
 {"id":"sancti-03-27.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-27.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-03-27.secrete.1","type":"para","t":{"la":["Ut, quæ tibi, Dómine, offérimus, dona tuo sint digna conspéctu: beáti Joánnis et Sanctórum, quos ejus ópera expósitos in templis cólimus, pia suffragátio conspíret. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-03-27.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-03-27.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême ; au temps de la Passion : préface de la Sainte Croix."]}}
+{"id":"sancti-03-27.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême ; au temps de la Passion : préface de la Sainte Croix."]}}
 {"id":"sancti-03-27.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-27.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-03-27.communion.1","type":"rubric","t":{"la":["Ps 36:17"],"fr":["Ps 36:17"]}}
 {"id":"sancti-03-27.communion.2","type":"para","t":{"la":["Bráchia peccatórum conteréntur, confírmat autem justos Dóminus."]}}

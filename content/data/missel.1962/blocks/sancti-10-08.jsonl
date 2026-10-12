@@ -8,7 +8,7 @@
 {"id":"sancti-10-08.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-10-08.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-10-08.introit.7","type":"para","t":{"la":["Cognóvi, Dómine, quia ǽquitas judícia tua, et in veritáte tua humiliásti me: confíge timóre tuo carnes meas, a mandátis tuis tímui."]}}
-{"id":"sancti-10-08.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-08.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-10-08.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-08.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-10-08.collecte.1","type":"para","t":{"la":["Dómine, Deus noster, qui beátæ Birgíttæ per Fílium tuum unigénitum secreta cœléstia revelásti: ipsíus pia intercessióne da nobis, fámulis tuis; in revelatióne sempitérna glóriæ tuæ gaudére lætántes. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-08.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/10-07cc.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saints Serge, Bacchus, Marcel et Apulée, martyrs"]}}
@@ -27,7 +27,7 @@
 {"id":"sancti-10-08.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-10-08.evangile.2","type":"rubric","t":{"la":["Matt 13:44-52"],"fr":["Matt 13:44-52"]}}
 {"id":"sancti-10-08.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cœlórum thesáuro abscóndito in agro: quem qui invénit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa, quæ habet, et emit agrum illum. ¶ Íterum símile est regnum cœlórum hómini negotiatóri, quærénti bonas margarítas. Invénta autem una pretiósa margaríta, ábiit, et véndidit ómnia, quæ hábuit, et emit eam. Íterum símile est regnum cœlórum sagénæ missæ in mare et ex omni génere píscium congregánti. Quam, cum impléta esset, educéntes, et secus litus sedéntes, elegérunt bonos in vasa, malos autem foras misérunt. Sic erit in consummatióne sǽculi: exíbunt Angeli, et separábunt malos de médio justórum, et mittent eos in camínum ignis: ibi erit fletus et stridor déntium. Intellexístis hæc ómnia? Dicunt ei: Etiam. Ait illis: Ideo omnis scriba doctus in regno cœlórum símilis est hómini patrifamílias, qui profert de thesáuro suo nova et vétera."]}}
-{"id":"sancti-10-08.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-10-08.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-10-08.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C7a.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C7.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C6-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-10-08.offertoire.1","type":"rubric","t":{"la":["Ps 44:3"],"fr":["Ps 44:3"]}}
 {"id":"sancti-10-08.offertoire.2","type":"para","t":{"la":["Diffúsa est grátia in lábiis tuis: proptérea benedíxit te Deus in ætérnum, et in sǽculum sǽculi."]}}
@@ -36,7 +36,7 @@
 {"id":"sancti-10-08.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/10-07cc.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saints Serge, Bacchus, Marcel et Apulée, martyrs"]}}
 {"id":"sancti-10-08.secrete.c1.1","type":"para","t":{"la":["Majestátem tuam nobis, Dómine, quǽsumus, hæc hóstia reddat immolánda placátam, tuórum digna postulatióne Sanctórum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-10-08.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-10-08.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-10-08.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"sancti-10-08.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C7a.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-10-08.communion.1","type":"rubric","t":{"la":["Ps 44:8"],"fr":["Ps 44:8"]}}
 {"id":"sancti-10-08.communion.2","type":"para","t":{"la":["Dilexísti justítiam, et odísti iniquitátem: proptérea unxit te Deus, Deus tuus, óleo lætítiæ præ consórtibus tuis."]}}

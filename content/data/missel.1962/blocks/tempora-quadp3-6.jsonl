@@ -1,5 +1,5 @@
 {"id":"tempora-quadp3-6.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-6.txt","section":"Officium"}],"t":{"la":["Sabbato post Cineres"],"fr":["Samedi après les Cendres"]}}
-{"id":"tempora-quadp3-6.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements violets. Station à Saint-Augustin."]}}
+{"id":"tempora-quadp3-6.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements violets. Station à Saint-Tryphon."]}}
 {"id":"tempora-quadp3-6.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-6.txt","section":"Introitus"},{"file":"missa/Latin/Tempora/Quadp3-5.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
 {"id":"tempora-quadp3-6.introit.1","type":"rubric","t":{"la":["Ps 29:11."],"fr":["Ps 29:11."]}}
 {"id":"tempora-quadp3-6.introit.2","type":"para","dropCap":true,"t":{"la":["Audívit Dóminus, et misértus est mihi: Dóminus factus est adjútor meus."]}}
@@ -8,7 +8,7 @@
 {"id":"tempora-quadp3-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quadp3-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quadp3-6.introit.7","type":"para","t":{"la":["Audívit Dóminus, et misértus est mihi: Dóminus factus est adjútor meus."]}}
-{"id":"tempora-quadp3-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quadp3-6.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quadp3-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-6.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quadp3-6.collecte.1","type":"para","t":{"la":["Adésto, Dómine, supplicatiónibus nostris: et concéde; ut hoc sollémne jejúnium, quod animábus corporibúsque curándis salúbriter institútum est, devóto servítio celebrémus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quadp3-6.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-6.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -23,14 +23,14 @@
 {"id":"tempora-quadp3-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Marcum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Marc"]}}
 {"id":"tempora-quadp3-6.evangile.2","type":"rubric","t":{"la":["Marc 6:47-56"],"fr":["Marc 6:47-56"]}}
 {"id":"tempora-quadp3-6.evangile.3","type":"para","t":{"la":["In illo témpore: Cum sero esset, erat navis in médio mari, et Jesus solus in terra. Et videns discípulos suos laborántes in remigándo - erat enim ventus contrárius eis, - et circa quartam vigíliam noctis venit ad eos ámbulans supra mare: et volébat præteríre eos. At illi, ut vidérunt eum ambulántem supra mare, putavérunt phantásma esse, et exclamavérunt. Omnes enim vidérunt eum, et conturbáti sunt. Et statim locútus est cum eis, et dixit eis: Confídite, ego sum, nolíte timére. Et ascéndit ad illos in navim, et cessávit ventus. Et plus magis intra se stupébant: non enim intellexérunt de pánibus: erat enim cor eórum obcæcátum. Et cum transfretássent, venérunt in terram Genésareth, et applicuérunt. Cumque egréssi essent de navi, contínuo cognovérunt eum: et percurréntes univérsam regiónem illam, cœpérunt in grabátis eos, qui se male habébant, circumférre ubi audiébant eum esse. Et quocúmque introíbat, in vicos vel in villas aut civitátes, in platéis ponébant infírmos, et deprecabántur eum, ut vel fímbriam vestiménti ejus tángerent: et quotquot tangébant eum, salvi fiébant."]}}
-{"id":"tempora-quadp3-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quadp3-6.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quadp3-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-6.txt","section":"Offertorium"},{"file":"missa/Latin/Tempora/Quadp3-5.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quadp3-6.offertoire.1","type":"rubric","t":{"la":["Ps 118:154; 118:125"],"fr":["Ps 118:154; 118:125"]}}
 {"id":"tempora-quadp3-6.offertoire.2","type":"para","t":{"la":["Dómine, vivífica me secúndum elóquium tuum: ut sciam testimónia tua."]}}
 {"id":"tempora-quadp3-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-6.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quadp3-6.secrete.1","type":"para","t":{"la":["Súscipe, Dómine, sacrifícium, cujus te voluísti dignánter immolatióne placári: præsta, quǽsumus; ut, hujus operatióne mundáti, beneplácitum tibi nostræ mentis offerámus afféctum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quadp3-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quadp3-6.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quadp3-6.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quadp3-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-6.txt","section":"Communio"},{"file":"missa/Latin/Tempora/Quadp3-5.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quadp3-6.communion.1","type":"rubric","t":{"la":["Ps 2:11-12"],"fr":["Ps 2:11-12"]}}
 {"id":"tempora-quadp3-6.communion.2","type":"para","t":{"la":["Servite Dómino in timóre, et exsultáte ei cum tremóre: apprehéndite disciplínam, ne pereátis de via justa."]}}

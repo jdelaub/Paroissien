@@ -8,7 +8,7 @@
 {"id":"tempora-pasc0-5.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pasc0-5.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pasc0-5.introit.7","type":"para","t":{"la":["Edúxit eos Dóminus in spe, allelúja: et inimícos eórum opéruit mare, allelúja, allelúja, allelúja."]}}
-{"id":"tempora-pasc0-5.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pasc0-5.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-pasc0-5.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-5.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pasc0-5.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, qui paschále sacraméntum in reconciliatiónis humánæ fœ́dere contulísti: da méntibus nostris; ut, quod professióne celebrámus, imitémur efféctu. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc0-5.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-5.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -24,14 +24,14 @@
 {"id":"tempora-pasc0-5.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-pasc0-5.evangile.2","type":"rubric","t":{"la":["Matt 28:16-20"],"fr":["Matt 28:16-20"]}}
 {"id":"tempora-pasc0-5.evangile.3","type":"para","t":{"la":["In illo témpore: Undecim discípuli abiérunt in Galilǽam, in montem, ubi constitúerat illis Jesus. Et vidéntes eum adoravérunt: quidam autem dubitavérunt. Et accédens Jesus locútus est eis, dicens: Data est mihi omnis potéstas in cœlo, et in terra. Eúntes ergo, docéte omnes gentes, baptizántes eos in nómine Patris, et Fílii, et Spíritus Sancti: docéntes eos serváre ómnia, quæcúmque mandávi vobis. Et ecce, ego vobíscum sum ómnibus diébus usque ad consummatiónem sǽculi."]}}
-{"id":"tempora-pasc0-5.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-pasc0-5.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"tempora-pasc0-5.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-5.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pasc0-5.offertoire.1","type":"rubric","t":{"la":["Exod 12:14"],"fr":["Exod 12:14"]}}
 {"id":"tempora-pasc0-5.offertoire.2","type":"para","t":{"la":["Erit vobis hæc dies memoriális, allelúja: et diem festum celebrábitis solémnem Dómino in progénies vestras: legítimum sempitérnum diem, allelúja, allelúja, allelúja."]}}
 {"id":"tempora-pasc0-5.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-5.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pasc0-5.secrete.1","type":"para","t":{"la":["Hóstias, quǽsumus, Dómine, placátus assúme: quas et pro renatórum expiatióne peccáti deférimus, et pro acceleratióne cœléstis auxílii. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc0-5.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pasc0-5.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
+{"id":"tempora-pasc0-5.preface.1","type":"rubric","preface":"pasch","communicantes":"c-pasc1962","hancIgitur":"h-pent","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
 {"id":"tempora-pasc0-5.preface.2","type":"rubric","t":{"fr":["Communicantes et Hanc igitur propres de Pâques (voir aux Préfaces)."]}}
 {"id":"tempora-pasc0-5.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc0-5.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pasc0-5.communion.1","type":"rubric","t":{"la":["Matt 28:18-19"],"fr":["Matt 28:18-19"]}}

@@ -8,7 +8,7 @@
 {"id":"sancti-03-18.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-03-18.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-03-18.introit.7","type":"para","t":{"la":["In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ et intelléctus: stolam glóriæ índuit eum."]}}
-{"id":"sancti-03-18.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-03-18.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-03-18.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-18.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-03-18.collecte.1","type":"para","t":{"la":["Da nobis, quǽsumus, omnípotens Deus, beáto Cyríllo Pontífice intercedénte: te solum verum Deum, et quem misísti Jesum Christum ita cognóscere; ut inter oves, quæ vocem ejus áudiunt, perpétuo connumerári mereámur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-03-18.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-18.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C4a.txt","section":"Lectio in 2 loco"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -25,14 +25,14 @@
 {"id":"sancti-03-18.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-03-18.evangile.2","type":"rubric","t":{"la":["Matt 10:23-28."],"fr":["Matt 10:23-28."]}}
 {"id":"sancti-03-18.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitáte ista, fúgite in áliam. Amen, dico vobis, non consummábitis civitátes Israël, donec véniat Fílius hóminis. Non est discípulus super magístrum nec servus super Dominum suum. Súfficit discípulo, ut sit sicut magíster ejus: et servo, sicut dóminus ejus. Si patremfamílias Beélzebub vocavérunt; quanto magis domésticos ejus? Ne ergo timuéritis eos. Nihil enim est opértum, quod non revelábitur: et occúltum, quod non sciétur. Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere: sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam."]}}
-{"id":"sancti-03-18.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-03-18.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"sancti-03-18.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4a.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-03-18.offertoire.1","type":"rubric","t":{"la":["Ps 91:13"],"fr":["Ps 91:13"]}}
 {"id":"sancti-03-18.offertoire.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus, quæ in Líbano est, multiplicábitur."]}}
 {"id":"sancti-03-18.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-18.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-03-18.secrete.1","type":"para","t":{"la":["Réspice, Dómine, immaculátam hóstiam, quam tibi offérimus: et præsta; ut, méritis beáti Pontíficis et Confessóris tui Cyrílli, eam mundo corde suscípere studeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-03-18.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-03-18.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême ; au temps de la Passion : préface de la Sainte Croix."]}}
+{"id":"sancti-03-18.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême ; au temps de la Passion : préface de la Sainte Croix."]}}
 {"id":"sancti-03-18.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4a.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-03-18.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
 {"id":"sancti-03-18.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}

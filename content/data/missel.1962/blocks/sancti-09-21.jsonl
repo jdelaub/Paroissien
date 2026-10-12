@@ -8,7 +8,7 @@
 {"id":"sancti-09-21.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"sancti-09-21.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"sancti-09-21.introit.7","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
-{"id":"sancti-09-21.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-09-21.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"sancti-09-21.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-21.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"sancti-09-21.collecte.1","type":"para","t":{"la":["Beáti Apóstoli et Evangelístæ Matthǽi, Dómine, précibus adjuvémur: ut, quod possibílitas nostra non óbtinet, ejus nobis intercessióne donétur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-09-21.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-21.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/04-25.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -24,14 +24,14 @@
 {"id":"sancti-09-21.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"sancti-09-21.evangile.2","type":"rubric","t":{"la":["Matt 9:9-13"],"fr":["Matt 9:9-13"]}}
 {"id":"sancti-09-21.evangile.3","type":"para","t":{"la":["In illo témpore: Vidit Jesus hóminem sedéntem in telónio, Matthǽum nómine. Et ait illi: Séquere me. Et surgens, secútus est eum. Et factum est, discumbénte eo in domo, ecce, multi publicáni et peccatóres veniéntes discumbébant cum Jesu et discípulis ejus. Et vidéntes pharisæi, dicébant discípulis ejus: Quare cum publicánis et peccatóribus mandúcat Magíster vester? At Jesus áudiens, ait: Non est opus valéntibus médicus, sed male habéntibus. Eúntes autem díscite, quid est: Misericórdiam volo, et non sacrifícium. Non enim veni vocáre justos, sed peccatóres."]}}
-{"id":"sancti-09-21.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-09-21.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"sancti-09-21.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-21.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"sancti-09-21.offertoire.1","type":"rubric","t":{"la":["Ps 20:4-5"],"fr":["Ps 20:4-5"]}}
 {"id":"sancti-09-21.offertoire.2","type":"para","t":{"la":["Posuísti, Dómine, in cápite ejus corónam de lápide pretióso: vitam pétiit a te, et tribuísti ei, allelúja."]}}
 {"id":"sancti-09-21.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-21.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"sancti-09-21.secrete.1","type":"para","t":{"la":["Supplicatiónibus beáti Matthæi Apóstoli et Evangelístæ, quǽsumus, Dómine, Ecclésiæ tuæ commendétur oblátio: cujus magníficis prædicatiónibus erúditur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"sancti-09-21.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"sancti-09-21.preface.1","type":"rubric","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
+{"id":"sancti-09-21.preface.1","type":"rubric","preface":"apostolis","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
 {"id":"sancti-09-21.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-21.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"sancti-09-21.communion.1","type":"rubric","t":{"la":["Ps 20:6"],"fr":["Ps 20:6"]}}
 {"id":"sancti-09-21.communion.2","type":"para","t":{"la":["Magna est glória ejus in salutári tuo: glóriam et magnum deI córem ímpones super eum, Dómine."]}}

@@ -37,8 +37,8 @@
   "repository": "https://github.com/DivinumOfficium/divinum-officium",
   "commit": "b9c100d79ae481c67b2801fdd3622b00dd86bd73",
   "manifest": "content/sources/missel/sources.sha256",
-  "manifestSha256": "abb496ba3e5e87af",
-  "files": 497
+  "manifestSha256": "69d404383d01c233",
+  "files": 499
  },
  "divisions": [
   {
@@ -948,6 +948,12 @@
        "id": "tempora-quad5-5",
        "kind": "mass",
        "toc": "Vendredi de la semaine de la Passion",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad5-5feriac",
+       "kind": "commemoration",
+       "toc": "Commémoraison des Sept Douleurs de la bienheureuse Vierge Marie",
        "unit": true
       },
       {
@@ -2575,9 +2581,21 @@
        "unit": true
       },
       {
+       "id": "sancti-01-14cc",
+       "kind": "commemoration",
+       "toc": "14 janvier — Commémoraison de saint Félix de Nole, prêtre et martyr",
+       "unit": true
+      },
+      {
        "id": "sancti-01-15",
        "kind": "mass",
        "toc": "15 janvier — Saint Paul, premier ermite, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-15cc",
+       "kind": "commemoration",
+       "toc": "15 janvier — Commémoraison de saint Maur, abbé",
        "unit": true
       },
       {
@@ -2605,6 +2623,12 @@
        "unit": true
       },
       {
+       "id": "sancti-01-19o",
+       "kind": "commemoration",
+       "toc": "19 janvier — Commémoraison de saint Canut, roi et martyr",
+       "unit": true
+      },
+      {
        "id": "sancti-01-20",
        "kind": "mass",
        "toc": "20 janvier — Saints Fabien et Sébastien, martyrs",
@@ -2629,6 +2653,12 @@
        "unit": true
       },
       {
+       "id": "sancti-01-23o",
+       "kind": "commemoration",
+       "toc": "23 janvier — Commémoraison de sainte Émérentienne, vierge et martyre",
+       "unit": true
+      },
+      {
        "id": "sancti-01-24",
        "kind": "mass",
        "toc": "24 janvier — Saint Timothée, évêque et martyr",
@@ -2638,6 +2668,12 @@
        "id": "sancti-01-25r",
        "kind": "mass",
        "toc": "25 janvier — Conversion de saint Paul, apôtre",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-25",
+       "kind": "commemoration",
+       "toc": "25 janvier — Commémoraison de saint Pierre, apôtre",
        "unit": true
       },
       {
@@ -2656,6 +2692,12 @@
        "id": "sancti-01-28",
        "kind": "mass",
        "toc": "28 janvier — Saint Pierre Nolasque, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-28t",
+       "kind": "commemoration",
+       "toc": "28 janvier — Commémoraison de sainte Agnès, vierge et martyre (seconde fête)",
        "unit": true
       },
       {
@@ -2720,6 +2762,12 @@
        "unit": true
       },
       {
+       "id": "sancti-02-06o",
+       "kind": "commemoration",
+       "toc": "6 février — Commémoraison de sainte Dorothée, vierge et martyre",
+       "unit": true
+      },
+      {
        "id": "sancti-02-07",
        "kind": "mass",
        "toc": "7 février — Saint Romuald, abbé",
@@ -2735,6 +2783,12 @@
        "id": "sancti-02-09",
        "kind": "mass",
        "toc": "9 février — Saint Cyrille d’Alexandrie, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-09o",
+       "kind": "commemoration",
+       "toc": "9 février — Commémoraison de sainte Apolline, vierge et martyre",
        "unit": true
       },
       {
@@ -2808,6 +2862,12 @@
        "id": "sancti-03-04",
        "kind": "mass",
        "toc": "4 mars — Saint Casimir, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-04cc",
+       "kind": "commemoration",
+       "toc": "4 mars — Commémoraison de saint Luce Ier, pape et martyr",
        "unit": true
       },
       {
@@ -2938,6 +2998,12 @@
        "unit": true
       },
       {
+       "id": "sancti-04-14t",
+       "kind": "commemoration",
+       "toc": "14 avril — Commémoraison de saints Tiburce, Valérien et Maxime, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-04-17",
        "kind": "mass",
        "toc": "17 avril — Saint Anicet, pape et martyr",
@@ -2971,6 +3037,12 @@
        "id": "sancti-04-25",
        "kind": "mass",
        "toc": "25 avril — Saint Marc, évangéliste",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-25c",
+       "kind": "commemoration",
+       "toc": "25 avril — Commémoraison des Litanies majeures",
        "unit": true
       },
       {
@@ -3059,6 +3131,12 @@
        "unit": true
       },
       {
+       "id": "sancti-05-10o",
+       "kind": "commemoration",
+       "toc": "10 mai — Commémoraison de saints Gordien et Épimaque, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-05-11r",
        "kind": "mass",
        "toc": "11 mai — Saints Philippe et Jacques, apôtres",
@@ -3113,6 +3191,12 @@
        "unit": true
       },
       {
+       "id": "sancti-05-19o",
+       "kind": "commemoration",
+       "toc": "19 mai — Commémoraison de sainte Pudentienne, vierge",
+       "unit": true
+      },
+      {
        "id": "sancti-05-20",
        "kind": "mass",
        "toc": "20 mai — Saint Bernardin de Sienne, confesseur",
@@ -3125,15 +3209,33 @@
        "unit": true
       },
       {
+       "id": "sancti-05-25o",
+       "kind": "commemoration",
+       "toc": "25 mai — Commémoraison de saint Urbain Ier, pape et martyr",
+       "unit": true
+      },
+      {
        "id": "sancti-05-26",
        "kind": "mass",
        "toc": "26 mai — Saint Philippe Néri, confesseur",
        "unit": true
       },
       {
+       "id": "sancti-05-26o",
+       "kind": "commemoration",
+       "toc": "26 mai — Commémoraison de saint Éleuthère, pape et martyr",
+       "unit": true
+      },
+      {
        "id": "sancti-05-27",
        "kind": "mass",
        "toc": "27 mai — Saint Bède le Vénérable, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-27o",
+       "kind": "commemoration",
+       "toc": "27 mai — Commémoraison de saint Jean Ier, pape et martyr",
        "unit": true
       },
       {
@@ -3155,9 +3257,21 @@
        "unit": true
       },
       {
+       "id": "sancti-05-30f",
+       "kind": "mass",
+       "toc": "30 mai — Sainte Jeanne d’Arc, vierge, patronne secondaire de la France",
+       "unit": true
+      },
+      {
        "id": "sancti-05-31",
        "kind": "mass",
        "toc": "31 mai — La bienheureuse Vierge Marie, Reine",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-31o",
+       "kind": "commemoration",
+       "toc": "31 mai — Commémoraison de sainte Pétronille, vierge",
        "unit": true
       }
      ]
@@ -3222,6 +3336,12 @@
        "unit": true
       },
       {
+       "id": "sancti-06-12o",
+       "kind": "commemoration",
+       "toc": "12 juin — Commémoraison de saints Basilide, Cyrin, Nabor et Nazaire, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-06-13",
        "kind": "mass",
        "toc": "13 juin — Saint Antoine de Padoue, confesseur et docteur",
@@ -3252,9 +3372,21 @@
        "unit": true
       },
       {
+       "id": "sancti-06-18t",
+       "kind": "commemoration",
+       "toc": "18 juin — Commémoraison de saints Marc et Marcellien, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-06-19",
        "kind": "mass",
        "toc": "19 juin — Sainte Julienne Falconieri, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-19o",
+       "kind": "commemoration",
+       "toc": "19 juin — Commémoraison de saints Gervais et Protais, martyrs",
        "unit": true
       },
       {
@@ -3337,6 +3469,12 @@
        "unit": true
       },
       {
+       "id": "sancti-07-02cc",
+       "kind": "commemoration",
+       "toc": "2 juillet — Commémoraison de saints Processe et Martinien, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-07-03r",
        "kind": "mass",
        "toc": "3 juillet — Saint Irénée, évêque et martyr",
@@ -3379,6 +3517,12 @@
        "unit": true
       },
       {
+       "id": "sancti-07-12o",
+       "kind": "commemoration",
+       "toc": "12 juillet — Commémoraison de saints Nabor et Félix, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-07-14",
        "kind": "mass",
        "toc": "14 juillet — Saint Bonaventure, évêque, confesseur et docteur",
@@ -3409,6 +3553,12 @@
        "unit": true
       },
       {
+       "id": "sancti-07-18o",
+       "kind": "commemoration",
+       "toc": "18 juillet — Commémoraison de sainte Symphorose et ses sept fils, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-07-19",
        "kind": "mass",
        "toc": "19 juillet — Saint Vincent de Paul, confesseur",
@@ -3421,9 +3571,21 @@
        "unit": true
       },
       {
+       "id": "sancti-07-20o",
+       "kind": "commemoration",
+       "toc": "20 juillet — Commémoraison de sainte Marguerite, vierge et martyre",
+       "unit": true
+      },
+      {
        "id": "sancti-07-21r",
        "kind": "mass",
        "toc": "21 juillet — Saint Laurent de Brindes, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-21",
+       "kind": "commemoration",
+       "toc": "21 juillet — Commémoraison de sainte Praxède, vierge",
        "unit": true
       },
       {
@@ -3439,6 +3601,12 @@
        "unit": true
       },
       {
+       "id": "sancti-07-23cc",
+       "kind": "commemoration",
+       "toc": "23 juillet — Commémoraison de saint Liboire, évêque et confesseur",
+       "unit": true
+      },
+      {
        "id": "sancti-07-24r",
        "kind": "mass",
        "toc": "24 juillet — Sainte Christine, vierge et martyre",
@@ -3448,6 +3616,12 @@
        "id": "sancti-07-25",
        "kind": "mass",
        "toc": "25 juillet — Saint Jacques le Majeur, apôtre",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-25cc",
+       "kind": "commemoration",
+       "toc": "25 juillet — Commémoraison de saint Christophe, martyr",
        "unit": true
       },
       {
@@ -3472,6 +3646,12 @@
        "id": "sancti-07-29",
        "kind": "mass",
        "toc": "29 juillet — Sainte Marthe, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-29cc",
+       "kind": "commemoration",
+       "toc": "29 juillet — Commémoraison de saints Félix, Simplice, Faustin et Béatrice, martyrs",
        "unit": true
       },
       {
@@ -3506,6 +3686,12 @@
        "unit": true
       },
       {
+       "id": "sancti-08-02o",
+       "kind": "commemoration",
+       "toc": "2 août — Commémoraison de saint Étienne Ier, pape et martyr",
+       "unit": true
+      },
+      {
        "id": "sancti-08-04",
        "kind": "mass",
        "toc": "4 août — Saint Dominique, confesseur",
@@ -3524,9 +3710,27 @@
        "unit": true
       },
       {
+       "id": "sancti-08-06cc",
+       "kind": "commemoration",
+       "toc": "6 août — Commémoraison de saints Sixte II, pape, Félicissime et Agapit, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-08-07",
        "kind": "mass",
        "toc": "7 août — Saint Gaétan, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-07o",
+       "kind": "commemoration",
+       "toc": "7 août — Commémoraison de saint Donat, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-08",
+       "kind": "commemoration",
+       "toc": "8 août — Commémoraison de saints Cyriaque, Large et Smaragde, martyrs",
        "unit": true
       },
       {
@@ -3539,6 +3743,12 @@
        "id": "sancti-08-09t",
        "kind": "mass",
        "toc": "9 août — Vigile de saint Laurent, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-09cc",
+       "kind": "commemoration",
+       "toc": "9 août — Commémoraison de saint Romain, martyr",
        "unit": true
       },
       {
@@ -3569,6 +3779,12 @@
        "id": "sancti-08-14",
        "kind": "mass",
        "toc": "14 août — Vigile de l’Assomption de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-14cc",
+       "kind": "commemoration",
+       "toc": "14 août — Commémoraison de saint Eusèbe, confesseur",
        "unit": true
       },
       {
@@ -3620,6 +3836,12 @@
        "unit": true
       },
       {
+       "id": "sancti-08-22cc",
+       "kind": "commemoration",
+       "toc": "22 août — Commémoraison de saints Timothée, Hippolyte et Symphorien, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-08-23",
        "kind": "mass",
        "toc": "23 août — Saint Philippe Benizi, confesseur",
@@ -3656,15 +3878,33 @@
        "unit": true
       },
       {
+       "id": "sancti-08-28cc",
+       "kind": "commemoration",
+       "toc": "28 août — Commémoraison de saint Hermès, martyr",
+       "unit": true
+      },
+      {
        "id": "sancti-08-29",
        "kind": "mass",
        "toc": "29 août — Décollation de saint Jean-Baptiste",
        "unit": true
       },
       {
+       "id": "sancti-08-29cc",
+       "kind": "commemoration",
+       "toc": "29 août — Commémoraison de sainte Sabine, martyre",
+       "unit": true
+      },
+      {
        "id": "sancti-08-30",
        "kind": "mass",
        "toc": "30 août — Sainte Rose de Lima, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-30o",
+       "kind": "commemoration",
+       "toc": "30 août — Commémoraison de saints Félix et Adaucte, martyrs",
        "unit": true
       },
       {
@@ -3684,6 +3924,12 @@
        "id": "sancti-09-01",
        "kind": "mass",
        "toc": "1er septembre — Saint Gilles, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-01cc",
+       "kind": "commemoration",
+       "toc": "1er septembre — Commémoraison des douze saints Frères, martyrs",
        "unit": true
       },
       {
@@ -3708,6 +3954,12 @@
        "id": "sancti-09-08",
        "kind": "mass",
        "toc": "8 septembre — Nativité de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-08cc",
+       "kind": "commemoration",
+       "toc": "8 septembre — Commémoraison de saint Adrien, martyr",
        "unit": true
       },
       {
@@ -3747,9 +3999,21 @@
        "unit": true
       },
       {
+       "id": "sancti-09-15cc",
+       "kind": "commemoration",
+       "toc": "15 septembre — Commémoraison de saint Nicomède, martyr",
+       "unit": true
+      },
+      {
        "id": "sancti-09-16",
        "kind": "mass",
        "toc": "16 septembre — Saints Corneille, pape, et Cyprien, évêque, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-16cc",
+       "kind": "commemoration",
+       "toc": "16 septembre — Commémoraison de saintes Euphémie et Lucie et saint Géminien, martyrs",
        "unit": true
       },
       {
@@ -3789,9 +4053,21 @@
        "unit": true
       },
       {
+       "id": "sancti-09-22o",
+       "kind": "commemoration",
+       "toc": "22 septembre — Commémoraison de saint Maurice et ses compagnons, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-09-23",
        "kind": "mass",
        "toc": "23 septembre — Saint Lin, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-23cc",
+       "kind": "commemoration",
+       "toc": "23 septembre — Commémoraison de sainte Thècle, vierge et martyre",
        "unit": true
       },
       {
@@ -3880,15 +4156,33 @@
        "unit": true
       },
       {
+       "id": "sancti-10-07t",
+       "kind": "commemoration",
+       "toc": "7 octobre — Commémoraison de saint Marc, pape et confesseur",
+       "unit": true
+      },
+      {
        "id": "sancti-10-08",
        "kind": "mass",
        "toc": "8 octobre — Sainte Brigitte, veuve",
        "unit": true
       },
       {
+       "id": "sancti-10-07cc",
+       "kind": "commemoration",
+       "toc": "8 octobre — Commémoraison de saints Serge, Bacchus, Marcel et Apulée, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-10-09",
        "kind": "mass",
        "toc": "9 octobre — Saint Jean Léonardi, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-09t",
+       "kind": "commemoration",
+       "toc": "9 octobre — Commémoraison de saints Denis, évêque, Rustique et Éleuthère, martyrs",
        "unit": true
       },
       {
@@ -3958,6 +4252,12 @@
        "unit": true
       },
       {
+       "id": "sancti-10-21cc",
+       "kind": "commemoration",
+       "toc": "21 octobre — Commémoraison de sainte Ursule et ses compagnes, vierges et martyres",
+       "unit": true
+      },
+      {
        "id": "sancti-10-23r",
        "kind": "mass",
        "toc": "23 octobre — Saint Antoine-Marie Claret, évêque et confesseur",
@@ -4013,6 +4313,12 @@
        "unit": true
       },
       {
+       "id": "sancti-11-04cc",
+       "kind": "commemoration",
+       "toc": "4 novembre — Commémoraison de saints Vital et Agricola, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-11-08r",
        "kind": "mass",
        "toc": "8 novembre — Les quatre saints Couronnés, martyrs",
@@ -4025,15 +4331,33 @@
        "unit": true
       },
       {
+       "id": "sancti-11-09cc",
+       "kind": "commemoration",
+       "toc": "9 novembre — Commémoraison de saint Théodore, martyr",
+       "unit": true
+      },
+      {
        "id": "sancti-11-10",
        "kind": "mass",
        "toc": "10 novembre — Saint André Avellin, confesseur",
        "unit": true
       },
       {
+       "id": "sancti-11-10o",
+       "kind": "commemoration",
+       "toc": "10 novembre — Commémoraison de saints Tryphon, Respice et Nymphe, vierge, martyrs",
+       "unit": true
+      },
+      {
        "id": "sancti-11-11",
        "kind": "mass",
        "toc": "11 novembre — Saint Martin, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-11cc",
+       "kind": "commemoration",
+       "toc": "11 novembre — Commémoraison de saint Mennas, martyr",
        "unit": true
       },
       {
@@ -4085,6 +4409,12 @@
        "unit": true
       },
       {
+       "id": "sancti-11-19o",
+       "kind": "commemoration",
+       "toc": "19 novembre — Commémoraison de saint Pontien, pape et martyr",
+       "unit": true
+      },
+      {
        "id": "sancti-11-20",
        "kind": "mass",
        "toc": "20 novembre — Saint Félix de Valois, confesseur",
@@ -4109,9 +4439,21 @@
        "unit": true
       },
       {
+       "id": "sancti-11-23cc",
+       "kind": "commemoration",
+       "toc": "23 novembre — Commémoraison de sainte Félicité, martyre",
+       "unit": true
+      },
+      {
        "id": "sancti-11-24",
        "kind": "mass",
        "toc": "24 novembre — Saint Jean de la Croix, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-24o",
+       "kind": "commemoration",
+       "toc": "24 novembre — Commémoraison de saint Chrysogone, martyr",
        "unit": true
       },
       {
@@ -4124,6 +4466,12 @@
        "id": "sancti-11-26",
        "kind": "mass",
        "toc": "26 novembre — Saint Silvestre, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-26t",
+       "kind": "commemoration",
+       "toc": "26 novembre — Commémoraison de saint Pierre d’Alexandrie, évêque et martyr",
        "unit": true
       },
       {
@@ -4161,6 +4509,12 @@
        "id": "sancti-12-04",
        "kind": "mass",
        "toc": "4 décembre — Saint Pierre Chrysologue, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-04o",
+       "kind": "commemoration",
+       "toc": "4 décembre — Commémoraison de sainte Barbe, vierge et martyre",
        "unit": true
       },
       {
@@ -4233,6 +4587,12 @@
        "id": "sancti-12-28r",
        "kind": "mass",
        "toc": "28 décembre — Les saints Innocents, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-28",
+       "kind": "commemoration",
+       "toc": "28 décembre — Commémoraison de l’octave de Noël",
        "unit": true
       },
       {

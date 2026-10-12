@@ -8,7 +8,7 @@
 {"id":"tempora-pentepi5-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pentepi5-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pentepi5-1.introit.7","type":"para","t":{"la":["Dicit Dóminus: Ego cógito cogitatiónes pacis, et non afflictiónis: invocábitis me, et ego exáudiam vos: et redúcam captivitátem vestram de cunctis locis."]}}
-{"id":"tempora-pentepi5-1.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pentepi5-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-pentepi5-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi5-0.txt","section":"Oratio"},{"file":"missa/Latin/Tempora/Epi5-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pentepi5-1.collecte.1","type":"para","t":{"la":["Famíliam tuam, quǽsumus, Dómine, contínua pietáte custódi: ut, quæ in sola spe grátiæ cœléstis innítitur, tua semper protectióne muniátur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pentepi5-1.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi5-0.txt","section":"Lectio"},{"file":"missa/Latin/Tempora/Epi5-0.txt","section":"Lectio"},{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
@@ -25,14 +25,14 @@
 {"id":"tempora-pentepi5-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-pentepi5-1.evangile.2","type":"rubric","t":{"la":["Matt 13:24-30"],"fr":["Matt 13:24-30"]}}
 {"id":"tempora-pentepi5-1.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus turbis parábolam hanc: Símile factum est regnum cœlórum hómini, qui seminávit bonum semen in agro suo. Cum autem dormírent hómines, venit inimícus ejus, et superseminávit zizánia in médio trítici, et ábiit. Cum autem crevísset herba et fructum fecísset, tunc apparuérunt et zizánia. Accedéntes autem servi patrisfamílias, dixérunt ei: Dómine, nonne bonum semen seminásti in agro tuo? Unde ergo habet zizánia? Et ait illis: Inimícus homo hoc fecit. Servi autem dixérunt ei: Vis, imus, et collígimus ea? Et ait: Non: ne forte colligéntes zizánia eradicétis simul cum eis et tríticum. Sínite utráque créscere usque ad messem, et in témpore messis dicam messóribus: Collígite primum zizánia, et alligáte ea in fascículos ad comburéndum, tríticum autem congregáte in hórreum meum."]}}
-{"id":"tempora-pentepi5-1.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pentepi5-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-pentepi5-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi5-0.txt","section":"Offertorium"},{"file":"missa/Latin/Tempora/Pent23-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pentepi5-1.offertoire.1","type":"rubric","t":{"la":["Ps 129:1-2"],"fr":["Ps 129:1-2"]}}
 {"id":"tempora-pentepi5-1.offertoire.2","type":"para","t":{"la":["De profúndis clamávi ad te, Dómine: Dómine, exáudi oratiónem meam: de profúndis clamávi ad te, Dómine."]}}
 {"id":"tempora-pentepi5-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi5-0.txt","section":"Secreta"},{"file":"missa/Latin/Tempora/Epi5-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pentepi5-1.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, placatiónis offérimus: ut et delícta nostra miserátus absólvas, et nutántia corda tu dírigas. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pentepi5-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pentepi5-1.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pentepi5-1.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
 {"id":"tempora-pentepi5-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/PentEpi5-0.txt","section":"Communio"},{"file":"missa/Latin/Tempora/Pent23-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pentepi5-1.communion.1","type":"rubric","t":{"la":["Marc 11:24"],"fr":["Marc 11:24"]}}
 {"id":"tempora-pentepi5-1.communion.2","type":"para","t":{"la":["Amen, dico vobis, quidquid orántes pétitis, crédite, quia accipiétis, et fiet vobis."]}}

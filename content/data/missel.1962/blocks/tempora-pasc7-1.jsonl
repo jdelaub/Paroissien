@@ -8,7 +8,7 @@
 {"id":"tempora-pasc7-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-pasc7-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-pasc7-1.introit.7","type":"para","t":{"la":["Cibávit eos ex ádipe fruménti, allelúja: et de petra, melle saturávit eos, allelúja, allelúja."]}}
-{"id":"tempora-pasc7-1.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pasc7-1.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
 {"id":"tempora-pasc7-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-pasc7-1.collecte.1","type":"para","t":{"la":["Deus, qui Apóstolis tuis Sanctum dedísti Spíritum: concéde plebi tuæ piæ petitiónis efféctum; ut, quibus dedísti fidem, largiáris et pacem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte ejúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc7-1.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-1.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -35,14 +35,14 @@
 {"id":"tempora-pasc7-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
 {"id":"tempora-pasc7-1.evangile.2","type":"rubric","t":{"la":["Joannes 3:16-21"],"fr":["Joannes 3:16-21"]}}
 {"id":"tempora-pasc7-1.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus Nicodémo: Sic Deus diléxit mundum, ut Fílium suum unigénitum daret: ut omnis, qui credit in eum, non péreat, sed hábeat vitam ætérnam. Non enim misit Deus Fílium suum in mundum, ut júdicet mundum, sed ut salvétur mundus per ipsum. Qui credit in eum, non judicátur; qui autem non credit, jam judicátus est: quia non credit in nómine unigéniti Fílii Dei. Hoc est autem judícium: quia lux venit in mundum, et dilexérunt hómines magis ténebras quam lucem: erant enim eórum mala ópera. Omnis enim, qui male agit, odit lucem, et non venit ad lucem, ut non arguántur ópera ejus: qui autem facit veritátem, venit ad lucem, ut manifesténtur ópera ejus, quia in Deo sunt facta."]}}
-{"id":"tempora-pasc7-1.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-pasc7-1.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
 {"id":"tempora-pasc7-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-pasc7-1.offertoire.1","type":"rubric","t":{"la":["Ps 17:14 et 16"],"fr":["Ps 17:14 et 16"]}}
 {"id":"tempora-pasc7-1.offertoire.2","type":"para","t":{"la":["Intónuit de cœlo Dóminus, et Altíssimus dedit vocem suam: et apparuérunt fontes aquárum, allelúja."]}}
 {"id":"tempora-pasc7-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-pasc7-1.secrete.1","type":"para","t":{"la":["Propítius, Dómine, quǽsumus, hæc dona sanctífica: et, hóstiæ spiritális oblatióne suscépta, nosmetípsos tibi pérfice munus ætérnum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-pasc7-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-pasc7-1.preface.1","type":"rubric","t":{"la":["Præfatio de Spiritu Sancto."],"fr":["Préface du Saint-Esprit (« Et te in hodierna die »)."]}}
+{"id":"tempora-pasc7-1.preface.1","type":"rubric","preface":"spiritu","communicantes":"c-pent1962","hancIgitur":"h-pent","t":{"la":["Præfatio de Spiritu Sancto."],"fr":["Préface du Saint-Esprit (« Et te in hodierna die »)."]}}
 {"id":"tempora-pasc7-1.preface.2","type":"rubric","t":{"fr":["Communicantes et Hanc igitur propres de la Pentecôte (voir aux Préfaces)."]}}
 {"id":"tempora-pasc7-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-pasc7-1.communion.1","type":"rubric","t":{"la":["Joannes 14:26"],"fr":["Joannes 14:26"]}}

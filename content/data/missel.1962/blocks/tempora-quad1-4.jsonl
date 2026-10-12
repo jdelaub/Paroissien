@@ -8,7 +8,7 @@
 {"id":"tempora-quad1-4.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
 {"id":"tempora-quad1-4.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
 {"id":"tempora-quad1-4.introit.7","type":"para","t":{"la":["Conféssio et pulchritúdo in conspéctu ejus: sánctitas et magnificéntia in sanctificatióne eius."]}}
-{"id":"tempora-quad1-4.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quad1-4.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
 {"id":"tempora-quad1-4.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-4.txt","section":"Oratio"},{"file":"missa/Latin/Tempora/Quad1-3.txt","section":"OratioL1"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
 {"id":"tempora-quad1-4.collecte.1","type":"para","t":{"la":["Devotiónem pópuli tui, quǽsumus, Dómine, benígnus inténde: ut, qui per abstinéntiam macerántur in córpore, per fructum boni óperis reficiántur in mente. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad1-4.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-4.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
@@ -23,14 +23,14 @@
 {"id":"tempora-quad1-4.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
 {"id":"tempora-quad1-4.evangile.2","type":"rubric","t":{"la":["Matt 15:21-28"],"fr":["Matt 15:21-28"]}}
 {"id":"tempora-quad1-4.evangile.3","type":"para","t":{"la":["In illo témpore: Egréssus Jesus secéssit in partes Tyri et Sidónis. Et ecce, múlier Chananǽa a fínibus illis egréssa clamávit, dicens ei: Miserére mei, Dómine, fili David: fília mea male a dæmónio vexátur. Qui non respóndit ei verbum. Et accedéntes discípuli ejus rogábant eum, dicéntes: Dimítte eam; quia clamat post nos. Ipse autem respóndens, ait: Non sum missus nisi ad oves, quæ periérunt domus Israël. At illa venit, et adorávit eum, dicens: Dómine, ádjuva me. Qui respóndens, ait: Non est bonum súmere panem filiórum, et míttere cánibus. At illa dixit: Etiam, Dómine: nam et catélli edunt de micis, quæ cadunt de mensa dominórum suórum. Tunc respóndens Jesus, ait illi: O múlier, magna est fides tua: fiat tibi, sicut vis. Et sanáta est fília ejus ex illa hora."]}}
-{"id":"tempora-quad1-4.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quad1-4.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
 {"id":"tempora-quad1-4.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-4.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
 {"id":"tempora-quad1-4.offertoire.1","type":"rubric","t":{"la":["Ps 33:8-9"],"fr":["Ps 33:8-9"]}}
 {"id":"tempora-quad1-4.offertoire.2","type":"para","t":{"la":["Immíttet Angelus Dómini in circúitu timéntium eum, et erípiet eos: gustáte, et vidéte, quóniam suávis est Dóminus."]}}
 {"id":"tempora-quad1-4.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-4.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
 {"id":"tempora-quad1-4.secrete.1","type":"para","t":{"la":["Sacrifícia, Dómine, quǽsumus, propénsius ista nos salvent, quæ medicinálibus sunt institúta jejúniis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
 {"id":"tempora-quad1-4.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
-{"id":"tempora-quad1-4.preface.1","type":"rubric","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quad1-4.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
 {"id":"tempora-quad1-4.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quad1-4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
 {"id":"tempora-quad1-4.communion.1","type":"rubric","t":{"la":["Joann 6:52"],"fr":["Joann 6:52"]}}
 {"id":"tempora-quad1-4.communion.2","type":"para","t":{"la":["Panis, quem ego dédero, caro mea est pro sǽculi vita."]}}

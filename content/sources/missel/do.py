@@ -13,6 +13,10 @@ SetupString.pl) restreint à ce dont la messe a besoin :
   fichiers dans missa/, puis horas/ s'ils manquent.
 Chaque langue est lue dans son propre arbre (missa/Latin, missa/Francais) : le français absent reste absent, sans
 repli sur le latin, pour que le rapport des lacunes soit exact.
+
+`overlay` : dossier de propres transcrits par Paroissien au format de DO (content/sources/missel/propres/<langue>/),
+pour les fêtes de France absentes de DO. Une clé présente dans l'overlay (en latin) masque DO dans toutes les langues :
+`Sancti/01-03` de DO est l'ancienne octave de saint Jean, pas sainte Geneviève.
 """
 
 from __future__ import annotations
@@ -95,8 +99,10 @@ class Resolved:
 class Library:
     """Arbre de DO pour une langue (`Latin`, `Francais`)."""
 
-    def __init__(self, www: Path, lang: str):
-        self.www, self.lang = www, lang
+    def __init__(self, www: Path, lang: str, overlay: Path | None = None):
+        self.www, self.lang, self.overlay = www, lang, overlay
+        self.overlay_keys = ({str(f.relative_to(overlay / "Latin").with_suffix("")) for f in (overlay / "Latin").rglob("*.txt")}
+                             if overlay and (overlay / "Latin").is_dir() else set())
         self._parsed: dict[tuple, dict | None] = {}
         self._loaded: dict[tuple, tuple[dict, dict] | None] = {}
         self.missing_refs: set[str] = set()
@@ -104,6 +110,9 @@ class Library:
     # ── Fichiers ──────────────────────────────────────────────────────────────────────────────
 
     def path(self, key: str) -> Path | None:
+        if key in self.overlay_keys:
+            own = self.overlay / self.lang / f"{key}.txt"
+            return own if own.exists() else None
         missa = self.www / "missa" / self.lang / f"{key}.txt"
         horas = self.www / "horas" / self.lang / f"{key}.txt"
         if re.search(r"C\d", key) and horas.exists():
@@ -118,8 +127,13 @@ class Library:
         return self.path(key) is not None
 
     def relpath(self, key: str) -> str | None:
+        """Chemin dans le dépôt de DO ; pour un propre de Paroissien, chemin dans content/ (« content/sources/… »)."""
         p = self.path(key)
-        return str(p.relative_to(self.www.parent.parent)) if p else None
+        if not p:
+            return None
+        if key in self.overlay_keys:
+            return "content/" + str(p.relative_to(self.overlay.parents[2]))
+        return str(p.relative_to(self.www.parent.parent))
 
     def _parse(self, key: str, ctx: tuple) -> dict | None:
         cache_key = (key, ctx)
