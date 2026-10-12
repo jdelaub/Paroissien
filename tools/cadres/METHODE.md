@@ -78,7 +78,7 @@ Les palettes liturgiques (`PALETTES`) ne remplacent que 2 ou 3 encres, en géné
 - **Repère des terminaisons.** Elles pointent vers +x depuis l'origine, qui est le bout de la baguette.
 - **Écran.** Le moteur (Kotlin et JS) applique la transformation affine propre à chaque bande, pour la direction et le sens de l'extérieur. Les bandes gauche et du pied sont donc des miroirs : l'entrelacs y change de sens, ce qui ne se voit pas.
 
-### Primitives disponibles
+### Primitives disponibles (`commun.py`)
 
 | Fonction | Forme |
 |---|---|
@@ -88,7 +88,10 @@ Les palettes liturgiques (`PALETTES`) ne remplacent que 2 ou 3 encres, en géné
 | `palmette(L)` | Trois lobes vers +x |
 | `trefoil(size)` | Bourgeon trilobé vers le haut |
 | `fleur_de_lis(h)` | Fleur de lys vers le haut |
-| `affine(tx, ty, rot, sx, sy)`, `mirror_x` | Placement : translation, rotation, échelle, miroir |
+| `ellipse`, `rect`, `polygon`, `diamond`, `quatrefoil` | Formes simples |
+| `smooth(points)`, `spiral(cx, cy, r0, r1, tours)` | Courbe lisse passant par des points ; volute |
+| `leaf(L, W, bend)` | Feuille lancéolée vers +x |
+| `affine(tx, ty, rot, sx, sy)`, `mirror_x`, `mirror_y` | Placement : translation, rotation, échelle, miroir |
 
 ### Conventions de dessin
 
@@ -115,7 +118,7 @@ python3 -I tools/cadres/generate.py           # écrit ConfessionFrame.kt, svg/*
 python3 -I tools/cadres/generate.py --check   # échoue si une sortie commitée n'est plus à jour
 ```
 
-1. **L'aperçu.** Ouvrir `apercu.html` dans un navigateur. Il propose trois tailles d'écran, les quatre thèmes et les couleurs liturgiques, et montre les modules isolés. C'est la boucle de travail la plus rapide.
+1. **Le rendu.** `python3 -I tools/cadres/rendu.py <nom> --photo <photo>` dessine une page de 360 × 760 dp à côté de la photo, `--modules` la planche des modules ; `--theme` et `--couleur` changent de thème et de palette. C'est la boucle de travail la plus rapide. L'aperçu `apercu.html`, dans un navigateur, montre tous les cadres de façon interactive.
 2. **Le rendu Android.** Sur la VM, un seul build à la fois, et pas pendant qu'une autre session compile :
 
    ```bash
@@ -124,32 +127,36 @@ python3 -I tools/cadres/generate.py --check   # échoue si une sortie commitée 
 
    Puis regarder les images de `core/designsystem/src/test/screenshots/` avant de les committer.
 
-## 7. Catalogue des cadres photographiés
+## 7. Catalogue des cadres relevés
 
-Les fichiers sont dans `sources/photos/` du zip. La rotation est celle à passer à `--rotation`.
+Les photos sont hors du dépôt (photos personnelles), dans `cadres-photos/` à côté du dépôt, redressées. Chaque cadre a son fichier `cadres/<nom>.py`, dont la docstring décrit le relevé et les simplifications.
 
-| Photo | Rotation | Style | Structure | Difficulté |
-|---|---|---|---|---|
-| `p007-du-matin-litanies.jpg` | 270 | Fond or, motifs en cœur bleu et blanc | Frises très régulières ; médaillons sur la bande du pied | Facile |
-| `p103-pour-la-confession.jpg` | 0 | Bleu nuit, saumon et or, entrelacs argent | **Fait** | — |
-| `p156-antiennes.jpg` | 270 | Entrelacs vert, mauve et argent, rinceaux or | Frise régulière ; rosace au milieu de chaque côté | Facile |
-| `p047-avant-la-messe.jpg` | 270 | Camaïeu or et beige, nœuds celtiques | Carreaux répétés ; losange central ; nœuds aux coins | Facile (2 à 3 encres) |
-| `p035-du-soir-litanies.jpg` | 270 | Brun, or et vert ; médaillons à croix | Frise en cœurs ; médaillons au milieu des côtés | Moyen |
-| `p174-messe-de-mariage.jpg` | 270 | Rinceaux d'acanthe pastel sur vert sombre, baguettes croisées | Répétition souple : rinceaux plus organiques | Moyen |
-| `p116-prieres-acte-de-desir.jpg` | 0 | Guirlande de lys roses sur or | Répétition avec variations | Moyen |
-| `p063-pendant-la-messe-credo.jpg`, `p071-pendant-la-messe-canon.jpg` | 270 | Palmettes bleues, fleurons verts, coins roses ; grand panneau du pied à dragons | Frises régulières ; panneau du pied unique | Difficile : panneau comme pièce unique |
-| `sagesse-frontispice.jpg` | 270 | Gravure monochrome, chérubins et rubans | Non répétitive, figurative | Pour un écran d'ouverture, pas un cadre de page |
-| `contreplat-doublure.jpg` | 0 | Soie bleue moirée, roulette dorée | Frise linéaire parfaite | Pour un écran de couverture |
+| Cadre | Photo | Style |
+|---|---|---|
+| `doublure` | `contreplat-doublure.jpg` | Roulette dorée sur cuir, autour de la soie moirée (dessinée par l'app) |
+| `matin` | `p005-matin.jpg` | Treillis à cœurs bleus sur or ; médaillons au pied |
+| `soir` | `p025-soir.jpg` | Lunettes d'or sur fond sang-de-bœuf ; médaillons au milieu des bandes ; dragons aux coins du pied |
+| `avant_messe` | `p045-avant-la-messe.jpg` | Camaïeu or et argent : rinceau, carreaux, nattes ; têtes de chien aux coins hauts |
+| `pendant_messe` | `p057-pendant-la-messe.jpg` | Palmettes bleues, feuilles de vigne ; grand panneau du pied à rinceaux |
+| `confession` | `p097-confession.jpg` (et p.103) | Arcature entrelacée, chaîne d'anneaux, baguettes roses croisées |
+| `communion` | `p119-communion.jpg` | Guirlande d'œillets roses sur or olive |
+| `vepres` | `p129-vepres.jpg` | Entrelacs bleu clair et acanthes d'or sur brun ; médaillons latéraux |
+| `complies` | `p151-dimanche.jpg` | Câble d'argent et acanthes d'or sur mauve ; médaillons latéraux |
+| `mariage` | `p167-mariage.jpg` | Rinceaux d'acanthe pastel sur vert ; baguettes d'or croisées |
+| `renaissance` | `renaissance-vases.jpg` | Candélabres, guirlande, moulure d'architecture sur bleu |
+| `vigne` | `vigne-oiseaux.jpg` | Vigne et oiseaux sur papier nu, cadre ouvert en haut |
+| `gothique` | `gothique-quadrilobes.jpg` | Crêtes rouges et or, quadrilobes saillants aux coins |
+| `evangeliste` | `saint-matthieu-frontispice.jpg` | Gravure : colombe, anges, chérubins, rinceaux ; ouverture de chaque évangile |
 
-Les frises « au milieu des côtés » (médaillon, losange) demandent une extension du moteur : un élément central, puis deux demi-bandes ajustées séparément de part et d'autre.
+Le second lot (`cadres-photos/lot2/`) attend le moteur v3 : bandeaux latéraux, compositions partielles, cadre simple, gardes et couvertures (voir `docs/planning/ATELIER.md`).
 
 ## 8. Ajouter un cadre : liste de contrôle
 
 1. Choisir la photo et sa rotation (§7). Avec `decoupe.py`, relever les épaisseurs, la période et les zones de coin.
 2. Avec `palette.py`, mesurer les encres ; noter les valeurs retenues dans ce document.
-3. Dans `generate.py`, écrire les fonctions de module (`module_<nom>()`), puis une fonction de spécification du cadre et sa sortie Kotlin (`<Nom>Frame.kt`). Pour un deuxième cadre, sortir d'abord les primitives et les exports dans un module commun.
-4. Itérer avec `apercu.html` jusqu'à un rendu lisible à 360 dp.
-5. Ajouter le cadre à un test de captures, enregistrer les références, les regarder, puis vérifier `generate.py --check`.
+3. Créer `cadres/<nom>.py` : ses fonctions de module, `ORDRE` (la page du paroissien) et `spec()`, qui renvoie `commun.cadre(...)`. `generate.py` le trouve seul et écrit `<Nom>Frame.kt`, les SVG et l'aperçu.
+4. Itérer avec `rendu.py` jusqu'à un rendu lisible à 360 dp.
+5. Lancer `generate.py`, réenregistrer les captures (la galerie `OrnamentalFramesGalleryTest` prend tous les cadres du registre), les regarder, puis vérifier `generate.py --check`.
 
 ## 9. Pièges déjà rencontrés
 

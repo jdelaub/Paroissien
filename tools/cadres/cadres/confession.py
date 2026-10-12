@@ -8,6 +8,8 @@ import math
 from commun import (Path, affine, arc, boite, cadre, circle, fill, fleur_de_lis, frise, outlined, palmette, stroke,
                     strand, teardrop, trefoil, OUTLINE, STRAND)
 
+ORDRE = 97
+
 INKS = {
     "ground": "#2E4865",   # bleu nuit du fond des frises
     "accent": "#D8745A",   # saumon des lunettes

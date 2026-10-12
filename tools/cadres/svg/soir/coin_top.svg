@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.00 0.00 100.00 100.00" width="300" height="300">
+  <rect x="0.00" y="0.00" width="100.00" height="100.00" fill="#6B302B"/>
+  <path d="M50 8L92 50L50 92L8 50Z" fill="#4B7444"/>
+    <path d="M50 10L90 50L50 90L10 50Z" fill="none" stroke="#2C1A15" stroke-width="7.8"/>
+    <path d="M50 10L90 50L50 90L10 50Z" fill="none" stroke="#C9C9C2" stroke-width="5.4"/>
+    <path d="M18.50 33.50L66.50 81.50M66.50 18.50L18.50 66.50M26 26L74 74M74 26L26 74M33.50 18.50L81.50 66.50M81.50 33.50L33.50 81.50" fill="none" stroke="#2C1A15" stroke-width="7.4"/>
+    <path d="M18.50 33.50L66.50 81.50M66.50 18.50L18.50 66.50M26 26L74 74M74 26L26 74M33.50 18.50L81.50 66.50M81.50 33.50L33.50 81.50" fill="none" stroke="#C9C9C2" stroke-width="5.0"/>
+    <path d="M32 47L38 53" fill="none" stroke="#2C1A15" stroke-width="7.4"/>
+    <path d="M30.50 45.50L39.50 54.50" fill="none" stroke="#C9C9C2" stroke-width="5.0"/>
+    <path d="M47 62L53 68" fill="none" stroke="#2C1A15" stroke-width="7.4"/>
+    <path d="M45.50 60.50L54.50 69.50" fill="none" stroke="#C9C9C2" stroke-width="5.0"/>
+    <path d="M47 47L53 53" fill="none" stroke="#2C1A15" stroke-width="7.4"/>
+    <path d="M45.50 45.50L54.50 54.50" fill="none" stroke="#C9C9C2" stroke-width="5.0"/>
+    <path d="M47 32L53 38" fill="none" stroke="#2C1A15" stroke-width="7.4"/>
+    <path d="M45.50 30.50L54.50 39.50" fill="none" stroke="#C9C9C2" stroke-width="5.0"/>
+    <path d="M62 47L68 53" fill="none" stroke="#2C1A15" stroke-width="7.4"/>
+    <path d="M60.50 45.50L69.50 54.50" fill="none" stroke="#C9C9C2" stroke-width="5.0"/>
+    <path d="M54 12.50C54 14.71 52.21 16.50 50 16.50C47.79 16.50 46 14.71 46 12.50C46 10.29 47.79 8.50 50 8.50C52.21 8.50 54 10.29 54 12.50Z" fill="none" stroke="#2C1A15" stroke-width="5.4"/>
+    <path d="M54 12.50C54 14.71 52.21 16.50 50 16.50C47.79 16.50 46 14.71 46 12.50C46 10.29 47.79 8.50 50 8.50C52.21 8.50 54 10.29 54 12.50Z" fill="none" stroke="#C9C9C2" stroke-width="3.2"/>
+    <path d="M91.50 50C91.50 52.21 89.71 54 87.50 54C85.29 54 83.50 52.21 83.50 50C83.50 47.79 85.29 46 87.50 46C89.71 46 91.50 47.79 91.50 50Z" fill="none" stroke="#2C1A15" stroke-width="5.4"/>
+    <path d="M91.50 50C91.50 52.21 89.71 54 87.50 54C85.29 54 83.50 52.21 83.50 50C83.50 47.79 85.29 46 87.50 46C89.71 46 91.50 47.79 91.50 50Z" fill="none" stroke="#C9C9C2" stroke-width="3.2"/>
+    <path d="M54 87.50C54 89.71 52.21 91.50 50 91.50C47.79 91.50 46 89.71 46 87.50C46 85.29 47.79 83.50 50 83.50C52.21 83.50 54 85.29 54 87.50Z" fill="none" stroke="#2C1A15" stroke-width="5.4"/>
+    <path d="M54 87.50C54 89.71 52.21 91.50 50 91.50C47.79 91.50 46 89.71 46 87.50C46 85.29 47.79 83.50 50 83.50C52.21 83.50 54 85.29 54 87.50Z" fill="none" stroke="#C9C9C2" stroke-width="3.2"/>
+    <path d="M16.50 50C16.50 52.21 14.71 54 12.50 54C10.29 54 8.50 52.21 8.50 50C8.50 47.79 10.29 46 12.50 46C14.71 46 16.50 47.79 16.50 50Z" fill="none" stroke="#2C1A15" stroke-width="5.4"/>
+    <path d="M16.50 50C16.50 52.21 14.71 54 12.50 54C10.29 54 8.50 52.21 8.50 50C8.50 47.79 10.29 46 12.50 46C14.71 46 16.50 47.79 16.50 50Z" fill="none" stroke="#C9C9C2" stroke-width="3.2"/>
+</svg>

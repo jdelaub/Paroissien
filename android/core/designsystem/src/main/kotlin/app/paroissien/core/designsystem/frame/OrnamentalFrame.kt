@@ -195,19 +195,8 @@ fun OrnamentalFrame(
     header: @Composable () -> Unit = {},
     content: @Composable (PaddingValues) -> Unit,
 ) {
-    val paper = LocalPaperColors.current
-    val prepared = remember(spec) { PreparedFrame(spec) }
-    val inks = remember(style, liturgicalColor, paper) { style.inks(liturgicalColor, paper) }
     Box(modifier.fillMaxSize().paperBackground()) {
-        Box(
-            Modifier
-                .fillMaxSize()
-                .graphicsLayer()
-                .drawWithCache {
-                    val geometry = FrameGeometry(spec, size.width, size.height, headerHeight.toPx(), this)
-                    onDrawBehind { drawFrame(prepared, spec, inks, geometry) }
-                },
-        )
+        OrnamentalFrameLayer(spec, style, liturgicalColor, headerHeight)
         Box(
             Modifier
                 .fillMaxWidth()
@@ -216,6 +205,33 @@ fun OrnamentalFrame(
         ) { header() }
         content(spec.contentPadding(headerHeight))
     }
+}
+
+/**
+ * Le cadre seul, dessiné dans sa propre couche sur toute la place disponible, sans fond : pour l'insérer sous une
+ * page déjà mise en forme (le lecteur, la doublure). [bottomInset] réserve une bande sous le cadre (les rubans).
+ */
+@Composable
+fun OrnamentalFrameLayer(
+    spec: FrameSpec,
+    style: FrameStyle,
+    liturgicalColor: LiturgicalColor? = null,
+    headerHeight: Dp = 0.dp,
+    bottomInset: Dp = 0.dp,
+    modifier: Modifier = Modifier,
+) {
+    val paper = LocalPaperColors.current
+    val prepared = remember(spec) { PreparedFrame(spec) }
+    val inks = remember(style, liturgicalColor, paper) { style.inks(liturgicalColor, paper) }
+    Box(
+        modifier
+            .fillMaxSize()
+            .graphicsLayer()
+            .drawWithCache {
+                val geometry = FrameGeometry(spec, size.width, size.height - bottomInset.toPx(), headerHeight.toPx(), this)
+                onDrawBehind { drawFrame(prepared, spec, inks, geometry) }
+            },
+    )
 }
 
 /** Fondu en haut et en bas d'une zone qui défile, pour que le texte ne soit pas coupé net par le cadre. */
@@ -390,9 +406,11 @@ private fun DrawScope.drawRun(m: PreparedEdge, inks: Map<String, Color>, mtx: Ma
     val y = band.y0 + band.ay * start
     val o = m.outset * k
     val i = m.inset * k
+    // Un pixel de recouvrement avec la pièce voisine : deux découpes lissées bord à bord laissent un liseré.
+    val e = 1f
     clipped(
-        band.x0 + band.ax * from - band.dx * o, band.y0 + band.ay * from - band.dy * o,
-        band.x0 + band.ax * (from + len) + band.dx * (band.depth + i), band.y0 + band.ay * (from + len) + band.dy * (band.depth + i),
+        band.x0 + band.ax * (from - e) - band.dx * o, band.y0 + band.ay * (from - e) - band.dy * o,
+        band.x0 + band.ax * (from + len + e) + band.dx * (band.depth + i), band.y0 + band.ay * (from + len + e) + band.dy * (band.depth + i),
     ) {
         for (pass in listOf(m.base, m.over)) {
             for (j in -1..n + 1) {
@@ -416,8 +434,8 @@ private fun DrawScope.drawBand(m: PreparedEdge, center: PreparedCenter?, inks: M
     val mid = band.len / 2
     val o = center.outset * k
     clipped(
-        band.x0 + band.ax * (mid - cw / 2) - band.dx * o, band.y0 + band.ay * (mid - cw / 2) - band.dy * o,
-        band.x0 + band.ax * (mid + cw / 2) + band.dx * band.depth, band.y0 + band.ay * (mid + cw / 2) + band.dy * band.depth,
+        band.x0 + band.ax * (mid - cw / 2 - 1f) - band.dx * o, band.y0 + band.ay * (mid - cw / 2 - 1f) - band.dy * o,
+        band.x0 + band.ax * (mid + cw / 2 + 1f) + band.dx * band.depth, band.y0 + band.ay * (mid + cw / 2 + 1f) + band.dy * band.depth,
     ) {
         withAffine(mtx, band.ax * k, band.ay * k, band.dx * k, band.dy * k, band.x0 + band.ax * mid, band.y0 + band.ay * mid) {
             drawOps(center.ops, inks)
@@ -534,6 +552,8 @@ private fun DrawScope.drawFrame(f: PreparedFrame, spec: FrameSpec, inks: Map<Str
     place(f.outerBottomCorner, -1f, 0f, 0f, -1f, ox + ow, oy + oh)
     place(f.outerMid, 1f, 0f, 0f, 1f, ox + ow / 2, oy)
     place(f.outerBottomMid, 1f, 0f, 0f, -1f, ox + ow / 2, oy + oh)
-    place(f.outerSideMid, 0f, -1f, 1f, 0f, ox, oy + oh / 2)
-    place(f.outerSideMid, 0f, 1f, -1f, 0f, ox + ow, oy + oh / 2)
+    // au milieu de la bande latérale (et de sa pièce centrale), pas du cadre : le pied est souvent plus haut
+    val my = oy + t + (oh - t - b) / 2
+    place(f.outerSideMid, 0f, -1f, 1f, 0f, ox, my)
+    place(f.outerSideMid, 0f, 1f, -1f, 0f, ox + ow, my)
 }

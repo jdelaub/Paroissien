@@ -8,6 +8,7 @@
     return p;
   };
 
+  const SEAM = 0.5; // recouvrement des découpes voisines (dp)
   const hex = c => [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16));
   const mix = (a, b, t) => '#' + hex(a).map((v, i) => Math.round(v + (hex(b)[i] - v) * t).toString(16).padStart(2, '0')).join('');
 
@@ -20,6 +21,7 @@
   }
 
   function drawOps(ctx, ops, inks) {
+    ctx.miterLimit = 4; // comme Compose (le canvas vaut 10 par défaut)
     for (const o of ops) {
       const p = path(o.d);
       if (o.stroke != null) {
@@ -72,9 +74,11 @@
     const X = band.x0 + band.ax * start, Y = band.y0 + band.ay * start;
     ctx.save();
     const o = mod.outset * k, i = mod.inset * k;
+    // un demi-pixel de recouvrement avec la pièce voisine : deux découpes lissées bord à bord laissent un liseré
+    const e = SEAM;
     clipRect(ctx,
-      band.x0 + band.ax * from - band.dx * o, band.y0 + band.ay * from - band.dy * o,
-      band.x0 + band.ax * (from + len) + band.dx * (band.depth + i), band.y0 + band.ay * (from + len) + band.dy * (band.depth + i));
+      band.x0 + band.ax * (from - e) - band.dx * o, band.y0 + band.ay * (from - e) - band.dy * o,
+      band.x0 + band.ax * (from + len + e) + band.dx * (band.depth + i), band.y0 + band.ay * (from + len + e) + band.dy * (band.depth + i));
     for (const pass of ['base', 'over']) {
       for (let j = -1; j <= n + 1; j++) {
         const u0 = (j + mod.phase) * step;
@@ -100,8 +104,8 @@
     const o = center.outset * k;
     ctx.save();
     clipRect(ctx,
-      band.x0 + band.ax * (mid - cw / 2) - band.dx * o, band.y0 + band.ay * (mid - cw / 2) - band.dy * o,
-      band.x0 + band.ax * (mid + cw / 2) + band.dx * band.depth, band.y0 + band.ay * (mid + cw / 2) + band.dy * band.depth);
+      band.x0 + band.ax * (mid - cw / 2 - SEAM) - band.dx * o, band.y0 + band.ay * (mid - cw / 2 - SEAM) - band.dy * o,
+      band.x0 + band.ax * (mid + cw / 2 + SEAM) + band.dx * band.depth, band.y0 + band.ay * (mid + cw / 2 + SEAM) + band.dy * band.depth);
     ctx.transform(band.ax * k, band.ay * k, band.dx * k, band.dy * k, band.x0 + band.ax * mid, band.y0 + band.ay * mid);
     drawOps(ctx, center.ops, inks);
     ctx.restore();
@@ -227,8 +231,10 @@
     place(O.cornerBottom, -1, 0, 0, -1, ox + ow, oy + oh);
     place(O.mid, 1, 0, 0, 1, ox + ow / 2, oy);
     place(O.midBottom, 1, 0, 0, -1, ox + ow / 2, oy + oh);
-    place(O.midSide, 0, -1, 1, 0, ox, oy + oh / 2);
-    place(O.midSide, 0, 1, -1, 0, ox + ow, oy + oh / 2);
+    // au milieu de la bande latérale (et de sa pièce centrale), pas du cadre : le pied est souvent plus haut
+    const my = oy + t + (oh - t - b) / 2;
+    place(O.midSide, 0, -1, 1, 0, ox, my);
+    place(O.midSide, 0, 1, -1, 0, ox + ow, my);
     return counts;
   }
 

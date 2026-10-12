@@ -74,7 +74,7 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
                 subtitle = entry.subtitle(),
                 detail = position?.let { stringResource(R.string.library_resume, entry.unitTitle(it.unit)) }
                     ?: pluralStringResource(R.plurals.units, entry.units.size, entry.units.size),
-            ) { open(ReaderKey(entry.publication.id)) }
+            ) { open(ReaderKey(entry.publication.id, opening = true)) }
         }
         // Les quatre Évangiles : une vue de la Bible (PLAN §3.1), reliée comme elle, ouverte au livre ou là où l'on s'est arrêté.
         lib.entry(GOSPEL_BIBLE)?.let { bible ->
@@ -85,7 +85,7 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
                 item(key = "gospel:$unit") {
                     val here = resume[GOSPEL_BIBLE]?.takeIf { it.unit == unit }
                     CoverTile(identity, stringResource(title), null, here?.let { stringResource(R.string.library_resume, bible.unitTitle(it.unit)) } ?: bible.title) {
-                        open(ReaderKey(GOSPEL_BIBLE, unit, here?.block, here?.charOffset ?: 0))
+                        open(ReaderKey(GOSPEL_BIBLE, unit, here?.block, here?.charOffset ?: 0, opening = true))
                     }
                 }
             }

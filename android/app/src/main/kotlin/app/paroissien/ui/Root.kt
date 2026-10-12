@@ -52,7 +52,8 @@ import java.time.LocalDate
 @Serializable data object BookmarksKey : NavKey
 @Serializable data object SearchKey : NavKey
 @Serializable data class SeriesKey(val series: String, val title: String) : NavKey
-@Serializable data class ReaderKey(val publication: String, val unit: String? = null, val block: String? = null, val offset: Int = 0) : NavKey
+/** [opening] : le livre est pris sur le rayon ; il s'ouvre par sa couverture et sa doublure avant la page. */
+@Serializable data class ReaderKey(val publication: String, val unit: String? = null, val block: String? = null, val offset: Int = 0, val opening: Boolean = false) : NavKey
 @Serializable data class DayKey(val date: String) : NavKey
 @Serializable data class OrdoKey(val year: Int, val month: Int) : NavKey
 @Serializable data class PrayerKey(val publication: String? = null, val unit: String? = null, val block: String? = null, val title: String? = null) : NavKey

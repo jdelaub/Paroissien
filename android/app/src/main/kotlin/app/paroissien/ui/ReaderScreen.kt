@@ -79,11 +79,15 @@ import app.paroissien.core.data.CardPlacement
 import app.paroissien.core.reading.book.CardMark
 import app.paroissien.library.subtitle
 import app.paroissien.library.BookIdentities
+import app.paroissien.library.BookFrames
+import app.paroissien.core.reading.book.FrameLook
 import app.paroissien.core.reading.book.BookLook
 import app.paroissien.core.designsystem.bookThickness
 import app.paroissien.core.designsystem.PaperWeight
 import app.paroissien.core.designsystem.PaperTheme
 import app.paroissien.core.designsystem.BookCover
+import app.paroissien.core.designsystem.CoverMaterial
+import app.paroissien.core.designsystem.DoublurePage
 import androidx.compose.runtime.CompositionLocalProvider
 import app.paroissien.library.PiousImage
 import androidx.compose.material3.OutlinedButton
@@ -119,6 +123,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     var atEnd by rememberSaveable { mutableStateOf(false) }
     var resolved by rememberSaveable { mutableStateOf(key.unit != null || isDemo) }
     var panel by rememberSaveable { mutableStateOf<Panel?>(null) }
+    // Pris sur le rayon, le livre s'ouvre par sa couverture, puis sa doublure, avant la page où l'on en était.
+    var opening by rememberSaveable { mutableStateOf(key.opening && !isDemo) }
     var pagination by remember { mutableStateOf("") }
 
     // Ouverture : la position enregistrée, sinon la première unité.
@@ -198,6 +204,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     }
     val totalBlocks = units.sumOf { it.blockCount }.coerceAtLeast(1)
     val before = units.take(unitIndex.coerceAtLeast(0)).sumOf { it.blockCount }
+    // Une couverture de papier n'a pas de doublure de soie.
+    val bound = identity.cover.material != CoverMaterial.WRAPPER
     val look = BookLook(
         edges = identity.edges,
         weight = identity.paper.weight,
@@ -207,6 +215,10 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
         cover = if (unitIndex == 0 && entry != null) {
             { BookCover(identity, entry.title, entry.subtitle(), Modifier.fillMaxSize(), flat = true) }
         } else null,
+        endpaper = if (unitIndex == 0 && entry != null && bound) { { DoublurePage() } } else null,
+        frame = remember(publication, entry, unitIndex, settings.ornamentalFrames) {
+            if (settings.ornamentalFrames && !isDemo) BookFrames.of(publication, entry, unitIndex, unit)?.let { FrameLook(it.spec, it.style) } else null
+        },
     )
 
     Box(Modifier.fillMaxSize().background(paper.background)) {
@@ -216,7 +228,9 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 BookReader(
                     blocks = book,
                     typography = typography,
-                    anchor = anchorBlock?.let { Anchor(it, anchorOffset) },
+                    // Ouvert depuis le rayon sans position enregistrée : la première page de texte, pas la couverture
+                    // qu'on vient de tourner.
+                    anchor = (anchorBlock ?: book.firstOrNull()?.id?.takeIf { key.opening })?.let { Anchor(it, anchorOffset) },
                     onAnchorChange = { a ->
                         anchorBlock = a.blockId
                         anchorOffset = a.charOffset
@@ -292,6 +306,14 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 ReaderSettingsRow(settings, onAll = { panel = null; open(SettingsKey) }) { transform -> graph.scope.launch { graph.settings.update(transform) } }
             }
             null -> Unit
+        }
+
+        if (opening && entry != null) {
+            BookOpening(
+                cover = { BookCover(identity, entry.title, entry.subtitle(), Modifier.fillMaxSize(), flat = true) },
+                endpaper = if (bound) { { DoublurePage() } } else null,
+                onOpened = { opening = false },
+            )
         }
 
         if (settings.showMeasures) {

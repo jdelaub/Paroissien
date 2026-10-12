@@ -229,6 +229,9 @@ Les mesures se font sur le téléphone de référence, avec un APK *release* con
   - **ruban en travers de la page** (réglage, actif par défaut) : aux ondulations légères, il sort de la tête près du pli et pend dans la bande du bas ; un toucher le couche dans le pli ; rouvrir le livre par sa queue le remet en travers ;
   - **tissu des rubans** (réglage) : mat par défaut, avec un grain fin et de 3 à 7 côtes discrètes en long, propres à chaque ruban ; ou satin brillant ;
   - **réglages** : un écran complet, ouvert depuis l'accueil ou depuis Aa ; la barre du lecteur défile de côté, avec ‹ › quand des boutons sont cachés.
+  - **cadres ornementaux** : quatorze cadres relevés sur un paroissien chromolithographié (`tools/cadres`) ; la règle suit le sommaire, un cadre par section, choisi d'abord par le sens (matin, soir, messe, confession, communion, vêpres, complies, mariage), sinon en boucle ; la Bible et les lettres restent sans cadre ; réglage « Cadres » ;
+  - **ouverture du livre** : pris sur le rayon, il s'ouvre par sa couverture, puis la doublure (soie moirée dans une roulette dorée), avant la page ;
+  - **atelier** (proposé, `ATELIER.md`) : moteur v3, second lot de scans, couvertures en modules, habit de chaque livre composé par l'utilisateur.
 - **Avant la phase 5** : mode de messe par défaut (« assemblée » recommandé) ; versions rubricales (1960 seulement au MVP).
 - **À la porte A** : police par défaut (EB Garamond pour les livres liturgiques, Literata en option de lecture) ; seuil de double page sur téléphone.
 

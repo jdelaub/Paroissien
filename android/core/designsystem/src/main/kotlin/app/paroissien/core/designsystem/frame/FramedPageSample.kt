@@ -34,12 +34,15 @@ import app.paroissien.core.designsystem.rememberBookFonts
 import app.paroissien.core.liturgy.LiturgicalColor
 
 /**
- * Échantillon : la p.103 « Pour la confession » dans son cadre reconstruit, en EB Garamond. Le texte défile à
- * l'intérieur du cadre, qui reste fixe. Sert de témoin visuel au cadre en attendant son branchement au lecteur.
+ * Échantillon : la p.103 « Pour la confession », en EB Garamond, dans un cadre reconstruit (celui de la confession
+ * par défaut). Le texte défile à l'intérieur du cadre, qui reste fixe. Sert de témoin visuel aux cadres en attendant
+ * leur branchement au lecteur.
  */
 @Composable
 fun FramedPageSample(
     modifier: Modifier = Modifier,
+    spec: FrameSpec = ConfessionFrame,
+    style: FrameStyle = ConfessionStyle,
     liturgicalColor: LiturgicalColor? = null,
     fontSize: TextUnit = 18.sp,
 ) {
@@ -57,12 +60,12 @@ fun FramedPageSample(
     )
 
     OrnamentalFrame(
-        spec = ConfessionFrame,
-        style = ConfessionStyle,
+        spec = spec,
+        style = style,
         modifier = modifier,
         liturgicalColor = liturgicalColor,
         headerHeight = 22.dp,
-        header = { RunningHead("Pour la confession.", "103", fonts.regular) },
+        header = { RunningHead(spec.title + ".", "103", fonts.regular) },
     ) { padding ->
         Column(
             Modifier

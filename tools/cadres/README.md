@@ -1,6 +1,6 @@
 # Cadres ornementaux
 
-Cadres de page d'après les paroissiens chromolithographiés de la fin du XIXᵉ siècle (domaine public). Le premier est celui de la p.103 « Pour la confession » : baguettes roses croisées terminées par des bourgeons d'or, arcature entrelacée en haut et sur les côtés, chaîne d'anneaux au pied, rosaces aux coins.
+Cadres de page d'après un paroissien chromolithographié de la fin du XIXᵉ siècle (domaine public) : un cadre par section du livre (prières du matin, du soir, avant et pendant la messe, confession, communion, vêpres, complies, mariage…), plus quelques cadres sans texte, le frontispice gravé d'un évangéliste et la bordure dorée de la doublure. Le premier relevé est celui de la p.103 « Pour la confession » : baguettes roses croisées terminées par des bourgeons d'or, arcature entrelacée en haut et sur les côtés, chaîne d'anneaux au pied, rosaces aux coins.
 
 ## Principe
 
@@ -8,11 +8,12 @@ Un cadre n'est pas une image. Il se compose de **modules vectoriels répétés**
 
 | Module | Rôle |
 |---|---|
-| Frise | Bandes haute et latérales, répétée |
-| Frise du pied | Bande du pied, plus haute (convention des manuscrits) |
-| Coin | Rosace |
-| Complément de coin | Fleur de lys qui comble les coins allongés du pied |
-| Terminaison | Bout des baguettes croisées |
+| Frises | Bande haute, bandes latérales (la gauche en miroir de la droite) et bande du pied, souvent plus haute (convention des manuscrits) ; chacune répétée |
+| Pièces centrales | Médaillon ou losange au milieu d'une bande, qui devient alors deux demi-bandes symétriques |
+| Coins | Dessinés pour le coin haut gauche, en miroir pour les autres ; le coin du pied peut être plus haut |
+| Complément de coin | Comble les coins allongés du pied |
+| Filets et baguettes | Filets tout autour à une profondeur donnée ; baguettes croisées aux coins, avec leurs terminaisons |
+| Ornements extérieurs | Hors du cadre, aux coins et au milieu des côtés |
 
 Pour chaque bande de longueur `L` :
 
@@ -34,16 +35,20 @@ Chaque tracé référence une **encre** (`GROUND`, `ACCENT`, `GOLD`…) et non u
 |---|---|
 | `METHODE.md` | Comment passer d'une photo de paroissien à un cadre : relevé, palette, redessin, pièges, catalogue des autres cadres |
 | `analyse/decoupe.py`, `analyse/palette.py` | Outils de relevé : orientation et quadrillage des photos, mesure des encres |
-| `generate.py` | Source unique : géométrie, encres, palettes, mise en page |
-| `svg/*.svg` | Un fichier par module, ouvrable dans Inkscape (généré) |
-| `apercu.html` | Aperçu autonome du même moteur en JavaScript : thèmes, couleurs liturgiques, tailles d'écran (généré) |
+| `cadres/<nom>.py` | Un cadre : géométrie, encres, palettes, mise en page (fonction `spec()`, attribut `ORDRE`) |
+| `commun.py` | Primitives partagées : chemins, formes, opérations de dessin, constructeurs de modules (`frise`, `boite`, `piece`, `filet`, `cadre`) |
+| `generate.py` | Trouve les cadres et écrit leurs sorties |
+| `rendu.py` | Rendu PNG d'un cadre (page ou planche des modules), à côté de sa photo : la boucle de travail |
+| `svg/<nom>/*.svg` | Un fichier par module, ouvrable dans Inkscape (généré) |
+| `apercu.html` | Aperçu autonome du même moteur en JavaScript : cadres, thèmes, couleurs liturgiques, tailles d'écran (généré) |
 | `apercu/` | Gabarit et moteur JavaScript de l'aperçu |
-| `android/core/designsystem/.../frame/ConfessionFrame.kt` | Données du cadre pour Compose (généré) |
+| `android/core/designsystem/.../frame/<Nom>Frame.kt`, `Cadres.kt` | Données de chaque cadre pour Compose, et leur registre (générés) |
 | `android/core/designsystem/.../frame/OrnamentalFrame.kt` | Composable et moteur de dessin |
 
 ```bash
 python3 -I tools/cadres/generate.py          # régénère le Kotlin, les SVG et l'aperçu
 python3 -I tools/cadres/generate.py --check  # échoue si une sortie commitée n'est plus à jour
+python3 -I tools/cadres/rendu.py matin --photo …/p005-matin.jpg   # rendu PNG à côté de la photo
 ```
 
 Après une modification du dessin, réenregistrer les captures :
@@ -61,7 +66,7 @@ OrnamentalFrame(ConfessionFrame, ConfessionStyle, liturgicalColor = LiturgicalCo
 }
 ```
 
-`FramedPageSample` en donne un exemple complet. `OrnamentalFrameScreenshotTest` le capture en clair, en sombre (violet) et en nuit.
+`OrnamentalFrames` (généré) liste tous les cadres. `FramedPageSample` en donne un exemple complet. `OrnamentalFrameScreenshotTest` capture le cadre de la confession en clair, en sombre (violet) et en nuit ; `OrnamentalFramesGalleryTest`, tous les cadres en clair.
 
 Le cadre est dessiné dans sa propre couche (`graphicsLayer` + `drawWithCache`). Le texte qui défile ne le fait donc pas redessiner. Les chemins sont analysés une seule fois par cadre.
 

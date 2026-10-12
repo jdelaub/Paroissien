@@ -333,6 +333,9 @@ def cadre(name, title, source, inks, layout, top, side=None, bottom=None, palett
     outer = outer or {}
     for k in ("margin", "top", "side", "bottom", "textPadding"):
         assert k in layout, f"layout.{k} manquant"
+    reserved = {"paper", "text", "rubric", "dark"}  # l'aperçu JS range le thème sous ces noms
+    clash = reserved & set(inks)
+    assert not clash, f"{name} : noms d'encre réservés {sorted(clash)}"
     names = set(inks) | {"paper"}
 
     def check_ops(ops, where):

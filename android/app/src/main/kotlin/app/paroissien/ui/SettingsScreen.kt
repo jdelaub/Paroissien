@@ -58,6 +58,7 @@ fun SettingsScreen(graph: AppGraph, settings: ReaderSettings, onBack: () -> Unit
                     stringResource(if (it == RibbonFabric.SATIN) R.string.fabric_satin else R.string.fabric_textured)
                 }) { v -> update { it.copy(ribbonFabric = if (v == RibbonFabric.SATIN) "SATIN" else "TISSU") } }
                 SwitchRow(stringResource(R.string.settings_cards_on_page), settings.cardsOnPage) { v -> update { it.copy(cardsOnPage = v) } }
+                SwitchRow(stringResource(R.string.settings_frames), settings.ornamentalFrames) { v -> update { it.copy(ornamentalFrames = v) } }
             }
         }
         item {

@@ -16,6 +16,10 @@ import app.paroissien.core.reading.book.BookReader
 import app.paroissien.core.reading.book.BookTypography
 import app.paroissien.core.reading.book.RibbonMark
 import app.paroissien.core.reading.book.CardMark
+import app.paroissien.core.reading.book.FrameLook
+import app.paroissien.core.designsystem.frame.MatinFrame
+import app.paroissien.core.designsystem.frame.MatinStyle
+import app.paroissien.core.designsystem.DoublurePage
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.core.graphics.createBitmap
@@ -102,6 +106,23 @@ class BookReaderScreenshotTest {
         canvas.drawRect(262f, 220f, 298f, 700f, paint)
         canvas.drawRect(170f, 340f, 390f, 376f, paint)
         return bitmap.asImageBitmap()
+    }
+
+    /** Une page dans le cadre des prières du matin : titre courant et folio au-dessus, rubans dessous. */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun pageEncadree() = capture(
+        Anchor("lat.1", 0), BookFace.GARAMOND, PaperTheme.CLAIR,
+        ribbons = listOf(RibbonMark(0, null, elsewhere = 1)),
+        look = BookLook(frame = FrameLook(MatinFrame, MatinStyle)),
+    )
+
+    /** La doublure du plat : soie moirée dans sa roulette dorée. */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun doublure() {
+        compose.setContent { ParoissienTheme(PaperTheme.CLAIR) { DoublurePage() } }
+        compose.onRoot().captureRoboImage()
     }
 
     private val bible = BookIdentities.of("bible.crampon", null, uniform = false).copy(pages = 2800)

@@ -125,9 +125,9 @@ def render(name, w=360, h=760, k=2, theme="CLAIR", couleur="", modules=False, te
         with open(page, "w", encoding="utf-8") as f:
             f.write(html)
         if modules:
-            size = (1100, 4000)
+            size = (1100, 8000)
         else:
-            size = (w * k, h * k)
+            size = (round(w * k), round(h * k))
         subprocess.run([chrome(), "--headless=new", "--disable-gpu", "--no-sandbox", "--hide-scrollbars",
                         f"--user-data-dir={os.path.join(work, 'profil')}", f"--window-size={size[0]},{size[1]}",
                         f"--screenshot={out}", "file://" + page],

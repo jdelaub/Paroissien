@@ -69,6 +69,8 @@
     <string name="setting_ribbons_across_off">Rubans : dans le pli</string>
     <string name="setting_fabric_textured">Rubans : tissu mat</string>
     <string name="setting_fabric_satin">Rubans : satin</string>
+    <string name="setting_frames_on">Cadres : oui</string>
+    <string name="setting_frames_off">Cadres : non</string>
     <string name="setting_cards_on_page_on">Images : sur la page</string>
     <string name="setting_cards_on_page_off">Images : en tête du livre</string>
     <string name="setting_all">Tous les réglages…</string>
@@ -94,6 +96,7 @@
     <string name="settings_fabric">Tissu des rubans</string>
     <string name="fabric_textured">Tissu mat, à côtes</string>
     <string name="fabric_satin">Satin</string>
+    <string name="settings_frames">Cadres ornementaux du paroissien, un par section des livres de prières</string>
     <string name="settings_cards_on_page">Images pieuses posées sur leur page (un toucher les met de côté)</string>
     <string name="settings_measures">Mesures du lecteur (pagination, images par seconde)</string>
 

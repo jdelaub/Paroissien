@@ -30,6 +30,11 @@ import androidx.compose.ui.semantics.CustomAccessibilityAction
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.toSize
 import app.paroissien.core.designsystem.drawRibbonAlong
+import app.paroissien.core.designsystem.frame.FrameSpec
+import app.paroissien.core.designsystem.frame.FrameStyle
+import app.paroissien.core.designsystem.frame.OrnamentalFrameLayer
+import app.paroissien.core.liturgy.LiturgicalColor
+import androidx.compose.ui.text.style.TextAlign
 import app.paroissien.core.designsystem.LocalRibbonFabric
 import app.paroissien.core.designsystem.RibbonFabric
 import kotlin.math.PI
@@ -130,9 +135,20 @@ class BookLook(
     val progress: ClosedFloatingPointRange<Float> = 0f..1f,
     val thickness: Dp = 6.dp,
     val cover: (@Composable () -> Unit)? = null,
-)
+    /** La doublure du plat, qu'on voit en ouvrant le livre, entre la couverture et la première page. */
+    val endpaper: (@Composable () -> Unit)? = null,
+    /** Le cadre ornemental des pages de cette unité (paroissien chromolithographié), ou aucun. */
+    val frame: FrameLook? = null,
+) {
+    val front: List<@Composable () -> Unit> = listOfNotNull(cover, endpaper)
+}
+
+/** Un cadre ornemental et ses encres ; [liturgicalColor] en change la palette, sinon il garde celles du livre. */
+class FrameLook(val spec: FrameSpec, val style: FrameStyle, val liturgicalColor: LiturgicalColor? = null)
 
 private val PageHorizontal = 28.dp
+/** Hauteur du titre courant et du folio, au-dessus du cadre, comme dans le paroissien. */
+private val FrameHeader = 22.dp
 private val PageTop = 18.dp
 private val PageBottom = 14.dp
 private val Header = 30.dp
@@ -185,14 +201,23 @@ fun BookReader(
             // Le papier court jusqu'au bord de l'écran, sous la caméra ; seul le texte s'en écarte.
             val cutout = WindowInsets.displayCutout.asPaddingValues()
             val direction = LocalLayoutDirection.current
-            val margins = PageMargins(
+            val side = max(cutout.calculateStartPadding(direction), cutout.calculateEndPadding(direction))
+            // Encadrée, la page met son titre courant et son folio au-dessus du cadre ; la bande des rubans reste dessous.
+            val framePad = look.frame?.spec?.contentPadding(FrameHeader)
+            val margins = if (framePad == null) PageMargins(
                 top = PageTop + cutout.calculateTopPadding(),
                 bottom = PageBottom + RibbonBand + cutout.calculateBottomPadding(),
-                horizontal = PageHorizontal + max(cutout.calculateStartPadding(direction), cutout.calculateEndPadding(direction)),
+                horizontal = PageHorizontal + side,
+            ) else PageMargins(
+                top = framePad.calculateTopPadding() + cutout.calculateTopPadding(),
+                bottom = framePad.calculateBottomPadding() + RibbonBand + cutout.calculateBottomPadding(),
+                horizontal = framePad.calculateStartPadding(direction) + side,
+                frameTop = cutout.calculateTopPadding(),
+                frameBottom = RibbonBand + cutout.calculateBottomPadding(),
             )
             val pageWidth = if (double) maxWidth / 2 else maxWidth
             val contentWidth = pageWidth - margins.horizontal * 2
-            val contentHeight = maxHeight - margins.top - Header - Footer - margins.bottom
+            val contentHeight = maxHeight - margins.top - margins.bottom - if (framePad == null) Header + Footer else 0.dp
             val widthPx = with(density) { contentWidth.roundToPx() }
             val heightPx = with(density) { contentHeight.roundToPx() }
 
@@ -205,8 +230,8 @@ fun BookReader(
                 paginated(result)
             }
             val paged = book ?: return@BoxWithConstraints
-            // Avec une couverture, elle est la page 0 du pager : le texte commence à 1.
-            val offset = if (look.cover != null) 1 else 0
+            // La couverture et la doublure sont les premières pages du pager : le texte commence après elles.
+            val offset = look.front.size
             val count = paged.pages.size + offset
 
             val state = rememberMekuriPagerState(pageCount = count, initialPage = anchor?.let { paged.pageOf(it) + offset } ?: 0)
@@ -251,7 +276,7 @@ fun BookReader(
                 onBlockedTurn = { forward -> if (forward) onTurnPastEnd?.invoke() else onTurnPastStart?.invoke() },
             ) { index ->
                 if (index < offset) {
-                    look.cover?.invoke()
+                    look.front[index]()
                 } else {
                     val i = index - offset
                     val side = sideOf(index, double)
@@ -284,8 +309,8 @@ fun BookReader(
                 val side = r.anchor?.let { a -> sideOfPage(paged.pageOf(a)) } ?: r.elsewhere
                 if (side == 0) null else r.slot to side
             }
-            // Elles pendent dans la bande réservée, juste sous le folio.
-            val tailBottom = margins.bottom - RibbonBand + (RibbonBand - TailHeight) / 2
+            // Elles pendent dans la bande réservée, juste sous le folio (ou sous le cadre).
+            val tailBottom = (if (look.frame != null) margins.frameBottom else margins.bottom) - RibbonBand + (RibbonBand - TailHeight) / 2
             // Ouvrir le livre par la queue d'un ruban : il est de nouveau en travers de la page.
             val openAtRibbon: (Int) -> Unit = { slot -> asideRibbons = asideRibbons - slot; onRibbonTap(slot) }
             RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
@@ -314,7 +339,7 @@ fun BookReader(
 
 private enum class PageSide { SINGLE, LEFT, RIGHT }
 
-private class PageMargins(val top: Dp, val bottom: Dp, val horizontal: Dp)
+private class PageMargins(val top: Dp, val bottom: Dp, val horizontal: Dp, val frameTop: Dp = 0.dp, val frameBottom: Dp = 0.dp)
 
 /** Couverture seule à droite, puis paires (1, 2), (3, 4)… : les pages impaires sont à gauche. */
 private fun sideOf(index: Int, double: Boolean) = when {
@@ -381,20 +406,43 @@ private fun PageView(
             .onSizeChanged { pageSize = it.toSize() }
             .pointerInput(Unit) { objectTouches({ tap(it) }, { longPress(it) }) },
     ) {
-        Column(Modifier.fillMaxSize().padding(start = margins.horizontal, end = margins.horizontal, top = margins.top, bottom = margins.bottom)) {
-            BasicText(
-                if (number > 0) page.runningHead else "",
-                style = t.runningHead,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis,
-                modifier = Modifier.fillMaxWidth().height(Header),
-            )
-            PageContent(page, verso, Modifier.size(contentWidth, contentHeight))
-            BasicText(
-                if (number > 0) number.toString() else "",
-                style = t.folio,
-                modifier = Modifier.fillMaxWidth().height(Footer).padding(top = 8.dp),
-            )
+        val frame = look.frame
+        if (frame == null) {
+            Column(Modifier.fillMaxSize().padding(start = margins.horizontal, end = margins.horizontal, top = margins.top, bottom = margins.bottom)) {
+                BasicText(
+                    if (number > 0) page.runningHead else "",
+                    style = t.runningHead,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.fillMaxWidth().height(Header),
+                )
+                PageContent(page, verso, Modifier.size(contentWidth, contentHeight))
+                BasicText(
+                    if (number > 0) number.toString() else "",
+                    style = t.folio,
+                    modifier = Modifier.fillMaxWidth().height(Footer).padding(top = 8.dp),
+                )
+            }
+        } else {
+            Box(Modifier.fillMaxSize().padding(top = margins.frameTop, bottom = margins.frameBottom)) {
+                OrnamentalFrameLayer(frame.spec, frame.style, frame.liturgicalColor, headerHeight = FrameHeader)
+                // Titre courant au milieu, folio du côté libre, au-dessus du cadre.
+                Box(Modifier.fillMaxWidth().padding(top = frame.spec.margin, start = frame.spec.margin + 6.dp, end = frame.spec.margin + 6.dp).height(FrameHeader)) {
+                    BasicText(
+                        page.runningHead.uppercase(),
+                        style = t.runningHead.copy(textAlign = TextAlign.Center),
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.fillMaxWidth().padding(horizontal = 32.dp).align(Alignment.CenterStart),
+                    )
+                    BasicText(
+                        number.toString(),
+                        style = t.folio.copy(textAlign = if (side == PageSide.LEFT) TextAlign.Start else TextAlign.End),
+                        modifier = Modifier.fillMaxWidth().align(Alignment.CenterStart),
+                    )
+                }
+            }
+            PageContent(page, verso, Modifier.padding(start = margins.horizontal, top = margins.top).size(contentWidth, contentHeight))
         }
         if (pageSize != Size.Zero) {
             cards.forEachIndexed { k, card ->
