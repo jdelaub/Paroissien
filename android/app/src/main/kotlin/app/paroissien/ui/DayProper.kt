@@ -1,6 +1,7 @@
 package app.paroissien.ui
 
 import app.paroissien.AppGraph
+import app.paroissien.core.content.PackBlock
 import app.paroissien.core.data.ReaderSettings
 import app.paroissien.core.liturgy.Rite
 import app.paroissien.core.model.text.Inline
@@ -43,13 +44,20 @@ object DayProper {
         val day = graph.calendar.day(LocalDate.now(), settings.calendarConfig().copy(rite = Rite.ROMAN_1962))
         val unit = day.principal.mass?.properId?.let(::missalUnit)?.let(missal::unit) ?: return blocks
         val all = runCatching { graph.packs.blocks(missal, unit) }.getOrNull() ?: return blocks
+        return fill(blocks, all, unit.id, unit.title ?: day.principal.title.fr, day.principal.title.fr, language, missal.publication.primaryLanguage, facing)
+    }
+
+    /** Le remplissage lui-même, à partir des blocs de l'unité [unitId] du missel (testable sans l'app). */
+    fun fill(
+        blocks: List<ReadingBlock>, missal: List<PackBlock>, unitId: String, unitTitle: String, title: String,
+        language: String, fallback: String, facing: Boolean,
+    ): List<ReadingBlock> {
         // Plusieurs messes le même jour (Noël, Jeudi saint, 2 novembre) : la dernière, celle du jour ou du soir.
-        fun rest(id: String) = id.removePrefix(unit.id + ".").split('.')
-        val masses = all.mapNotNull { rest(it.id).firstOrNull()?.takeIf { p -> Regex("m\\d+").matches(p) } }.distinct()
+        fun rest(id: String) = id.removePrefix("$unitId.").split('.')
+        val masses = missal.mapNotNull { rest(it.id).firstOrNull()?.takeIf { p -> Regex("m\\d+").matches(p) } }.distinct()
         val mass = masses.maxByOrNull { it.drop(1).toInt() }
-        val own = all.filter { b -> mass == null || rest(b.id).firstOrNull() == mass }
+        val own = missal.filter { b -> mass == null || rest(b.id).firstOrNull() == mass }
         fun pieceOf(id: String) = rest(id).let { if (mass != null) it.getOrNull(1) else it.firstOrNull() }.orEmpty()
-        val title = day.principal.title.fr
         return blocks.flatMap { block ->
             val wanted = (block as? ReadingBlock.Slot)?.key?.let(pieces::get) ?: return@flatMap listOf(block)
             val chosen = own.filter { matches(pieceOf(it.id), wanted) }
@@ -57,7 +65,7 @@ object DayProper {
             val label = Inlines.plainText(block.text).substringBefore(" — ").substringBefore(" – ").trim()
             val box = ReadingBlock.Slot(block.id, listOf(Inline.Text("$label — $title")), block.key)
             // Le titre de chaque pièce est déjà dans l'encadré.
-            val text = packToReadingBlocks(chosen, unit.title ?: title, language, missal.publication.primaryLanguage, facing)
+            val text = packToReadingBlocks(chosen, unitTitle, language, fallback, facing)
                 .filterNot { it is ReadingBlock.Heading || (it is ReadingBlock.Facing && it.left is ReadingBlock.Heading) }
             listOf(box) + text
         }

@@ -65,6 +65,12 @@ internal class MekuriPagerController(
 
     private var ignoresCurrentDrag = false
 
+    /**
+     * Paroissien : un geste vers une page qui n'existe pas et sans feuillet à soulever (revenir depuis la première
+     * page) ne commence aucun tour ; on le retient pour ouvrir l'unité voisine s'il est franc.
+     */
+    private var leaflessTurn: MekuriTurn? = null
+
     val direction: MekuriDirection get() = this.state.direction
 
     val settledPage: Int get() = this.state.currentPage
@@ -208,7 +214,11 @@ internal class MekuriPagerController(
             grabY = grabY,
             playsHaptics = true,
         )
-        if (!begun.hasLeaf) return
+        if (!begun.hasLeaf) {
+            if (begun.isBlocked) this.leaflessTurn = turn
+            return
+        }
+        this.leaflessTurn = null
         this.turn = begun
         this.progress = MekuriDrag.progress(
             start = 0f,
@@ -224,9 +234,19 @@ internal class MekuriPagerController(
     fun dragEnded(translation: Offset, velocity: Float, grabY: Float) {
         val ignored = this.ignoresCurrentDrag
         this.ignoresCurrentDrag = false
+        val leafless = this.leaflessTurn
+        this.leaflessTurn = null
         if (ignored) return
         if (this.reducesMotion) {
             this.commitReducedMotionDrag(translation, velocity, grabY)
+            return
+        }
+        if (this.turn == null && leafless != null) {
+            // Aucun feuillet n'a suivi le doigt : la course et l'élan décident, comme pour un tour bloqué.
+            val axis = MekuriDrag.axis(leafless, this.direction)
+            val travel = translation.x * axis / this.containerSize.width.coerceAtLeast(1f)
+            val decision = MekuriTurnDecision.resolve(travel, MekuriDrag.projectedVelocity(velocity, axis), this.configuration)
+            if (decision == MekuriTurnDecision.Commit) this.onBlockedTurn(leafless)
             return
         }
         val current = this.turn ?: return
@@ -248,6 +268,7 @@ internal class MekuriPagerController(
 
     fun dragCancelled() {
         this.ignoresCurrentDrag = false
+        this.leaflessTurn = null
         if (this.turn?.phase == MekuriTurnPhase.Dragging) this.settle(MekuriTurnDecision.Revert)
     }
 
