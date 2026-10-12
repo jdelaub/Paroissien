@@ -10,6 +10,7 @@ import app.paroissien.core.liturgy.LiturgicalCalendars
 import app.paroissien.library.Library
 import app.paroissien.library.PackLibrary
 import app.paroissien.library.PiousImages
+import app.paroissien.library.Vignettes
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -33,6 +34,7 @@ class AppGraph(context: Context) {
     val transfer: UserDataTransfer by lazy { UserDataTransfer(database) }
     val calendar: LiturgicalCalendars by lazy { LiturgicalCalendars.load() }
     val images: PiousImages by lazy { PiousImages.load(context, database, scope) }
+    val vignettes = Vignettes(context)
 
     private val libraryState = MutableStateFlow<Library?>(null)
     val library: StateFlow<Library?> = libraryState

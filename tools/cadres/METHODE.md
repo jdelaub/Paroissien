@@ -93,6 +93,8 @@ Les palettes liturgiques (`PALETTES`) ne remplacent que 2 ou 3 encres, en géné
 | `leaf(L, W, bend)` | Feuille lancéolée vers +x |
 | `affine(tx, ty, rot, sx, sy)`, `mirror_x`, `mirror_y` | Placement : translation, rotation, échelle, miroir |
 
+Constructeurs : `frise`, `boite` (coin, pièce de bout ; `dessus=True` pour passer sur les filets), `piece` (pièce centrale ; `inset` pour déborder vers le texte, `droit=True` pour une inscription, `dessus=True`), `bouts(debut, fin)`, `filet` (`depuis="exterieur"` ou `"interieur"` pour une distance fixe en unités), `cadre(..., disposition=..., ends=...)`, `motif` (gardes). Une frise vide (`frise(100, [])`) donne un cadre de filets seuls, comme `filets_rouges`.
+
 ### Conventions de dessin
 
 - **Formes avec contour : `outlined(ink, path)`.** On trace d'abord un trait brun du double de l'épaisseur du contour, puis on remplit par-dessus. Seul le contour extérieur de l'union reste visible, sans calcul d'union.
@@ -118,7 +120,7 @@ python3 -I tools/cadres/generate.py           # écrit ConfessionFrame.kt, svg/*
 python3 -I tools/cadres/generate.py --check   # échoue si une sortie commitée n'est plus à jour
 ```
 
-1. **Le rendu.** `python3 -I tools/cadres/rendu.py <nom> --photo <photo>` dessine une page de 360 × 760 dp à côté de la photo, `--modules` la planche des modules ; `--theme` et `--couleur` changent de thème et de palette. C'est la boucle de travail la plus rapide. L'aperçu `apercu.html`, dans un navigateur, montre tous les cadres de façon interactive.
+1. **Le rendu.** `python3 -I tools/cadres/rendu.py <nom> --photo <photo>` dessine une page de 360 × 760 dp à côté de la photo, `--modules` la planche des modules, `--verso` la page paire (un cadre partiel change de côté) ; `--theme` et `--couleur` changent de thème et de palette. Une garde se rend en pleine page. C'est la boucle de travail la plus rapide. L'aperçu `apercu.html`, dans un navigateur, montre tous les cadres de façon interactive.
 2. **Le rendu Android.** Sur la VM, un seul build à la fois, et pas pendant qu'une autre session compile :
 
    ```bash
@@ -148,7 +150,21 @@ Les photos sont hors du dépôt (photos personnelles), dans `cadres-photos/` à 
 | `gothique` | `gothique-quadrilobes.jpg` | Crêtes rouges et or, quadrilobes saillants aux coins |
 | `evangeliste` | `saint-matthieu-frontispice.jpg` | Gravure : colombe, anges, chérubins, rinceaux ; ouverture de chaque évangile |
 
-Le second lot (`cadres-photos/lot2/`) attend le moteur v3 : bandeaux latéraux, compositions partielles, cadre simple, gardes et couvertures (voir `docs/planning/ATELIER.md`).
+Second lot (`cadres-photos/lot2/`, photos souvent prises de côté : rotation dans la docstring de chaque cadre), un paroissien gravé en sépia ; moteur v3 :
+
+| Cadre | Photo | Style |
+|---|---|---|
+| `filets_rouges` | `cadre-simple-filets-rouges.jpg` | Filet rouge à anneaux d'angle ; la Bible |
+| `vigne_calice` | `bandeau-vigne-ble-calice.jpg` | Bandeau latéral : sarments torsadés, grappes ; mandorle au calice entre les épis |
+| `figuier_jacob` | `bandeau-figuier-jacob-juda-david.jpg` | Bandeau latéral : figuier ; cartouche « Jacob, Juda, David » |
+| `lis_vox_dei` | `bandeau-lis-vox-dei.jpg` | Bandeau latéral : lis ; cartouche « Vox Dei » au tiers |
+| `palmes` | `pages-bandeaux-lateraux-vigne-palmes-vignettes.jpg` | Bandeau latéral : rameau d'olivier ; colombe en médaillon |
+| `passiflores_agneau` | `bandeau-passiflores-lyre-a.jpg`, `-b.jpg` | Bandeau latéral : passiflore d'un seul élan ; croix à l'Agneau au tiers |
+| `litanies` | `litanies-candelabre-et-pied.jpg` | Équerre de pied : candélabre (chérubin, calice IHS) et rinceau à chimères |
+
+Gardes (`gardes/`) : `asanoha` (`garde-asanoha-or-et-bleu.jpg`, réseau en quinconce) et `symboles` (`garde-rouge-symboles-chretiens.jpg`, losanges et symboles en rangées). Les couvertures du second lot attendent les couvertures en modules (`docs/planning/ATELIER.md`).
+
+Les gravures sépia se tracent à l'encre `text` du thème : elles restent lisibles en sombre. Les inscriptions et les figures debout sont des pièces `droit` : identiques sur un recto et un verso.
 
 ## 8. Ajouter un cadre : liste de contrôle
 

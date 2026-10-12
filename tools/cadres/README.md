@@ -13,7 +13,12 @@ Un cadre n'est pas une image. Il se compose de **modules vectoriels répétés**
 | Coins | Dessinés pour le coin haut gauche, en miroir pour les autres ; le coin du pied peut être plus haut |
 | Complément de coin | Comble les coins allongés du pied |
 | Filets et baguettes | Filets tout autour à une profondeur donnée ; baguettes croisées aux coins, avec leurs terminaisons |
+| Pièces de bout | Posées une fois à chaque bout d'une bande (socle et couronnement d'un candélabre) |
 | Ornements extérieurs | Hors du cadre, aux coins et au milieu des côtés |
+
+**Dispositions** (moteur v3). Chaque bande peut manquer : un cadre est plein, latéral (bande extérieure seule), en tête, en équerre (Γ : tête et côté extérieur ; L : côté extérieur et pied)… Le côté extérieur suit le folio : à droite sur un recto, à gauche sur un verso. Une bande sans voisine court jusqu'au bord du cadre, les coins n'existent que là où deux bandes se rencontrent, les filets suivent les bandes présentes, et le texte reprend la place d'une bande absente. Les filets se placent en proportion de chaque bande ou à distance fixe du bord ; pièces centrales et coins peuvent déborder vers le texte et passer par-dessus filets et baguettes ; une pièce « droite » tourne avec la bande sans passer en miroir, pour qu'une inscription reste lisible.
+
+**Gardes à motif.** Une tuile répétée en réseau carré ou en quinconce (`commun.motif`, fichiers `gardes/<nom>.py`), peinte une fois dans une petite image puis répétée par un shader (`PatternPaper`).
 
 Pour chaque bande de longueur `L` :
 
@@ -36,14 +41,17 @@ Chaque tracé référence une **encre** (`GROUND`, `ACCENT`, `GOLD`…) et non u
 | `METHODE.md` | Comment passer d'une photo de paroissien à un cadre : relevé, palette, redessin, pièges, catalogue des autres cadres |
 | `analyse/decoupe.py`, `analyse/palette.py` | Outils de relevé : orientation et quadrillage des photos, mesure des encres |
 | `cadres/<nom>.py` | Un cadre : géométrie, encres, palettes, mise en page (fonction `spec()`, attribut `ORDRE`) |
-| `commun.py` | Primitives partagées : chemins, formes, opérations de dessin, constructeurs de modules (`frise`, `boite`, `piece`, `filet`, `cadre`) |
+| `gardes/<nom>.py` | Une garde à motif (fonction `spec()` qui renvoie `motif(...)`) |
+| `commun.py` | Primitives partagées : chemins, formes, opérations de dessin, constructeurs de modules (`frise`, `boite`, `piece`, `bouts`, `filet`, `cadre`, `motif`) |
 | `generate.py` | Trouve les cadres et écrit leurs sorties |
-| `rendu.py` | Rendu PNG d'un cadre (page ou planche des modules), à côté de sa photo : la boucle de travail |
+| `rendu.py` | Rendu PNG d'un cadre (page recto ou verso, ou planche des modules) ou d'une garde, à côté de sa photo : la boucle de travail |
+| `vignettes.py` | Vignettes gravées : redresse une gravure photographiée et n'en garde que l'encre, en masque alpha, dans le dépôt privé (jamais ici : ce sont des photos personnelles) |
 | `svg/<nom>/*.svg` | Un fichier par module, ouvrable dans Inkscape (généré) |
 | `apercu.html` | Aperçu autonome du même moteur en JavaScript : cadres, thèmes, couleurs liturgiques, tailles d'écran (généré) |
 | `apercu/` | Gabarit et moteur JavaScript de l'aperçu |
 | `android/core/designsystem/.../frame/<Nom>Frame.kt`, `Cadres.kt` | Données de chaque cadre pour Compose, et leur registre (générés) |
-| `android/core/designsystem/.../frame/OrnamentalFrame.kt` | Composable et moteur de dessin |
+| `android/core/designsystem/.../frame/<Nom>Pattern.kt`, `Gardes.kt` | Données de chaque garde, et leur registre (générés) |
+| `android/core/designsystem/.../frame/OrnamentalFrame.kt`, `EndpaperPattern.kt` | Composables et moteurs de dessin |
 
 ```bash
 python3 -I tools/cadres/generate.py          # régénère le Kotlin, les SVG et l'aperçu
@@ -66,7 +74,7 @@ OrnamentalFrame(ConfessionFrame, ConfessionStyle, liturgicalColor = LiturgicalCo
 }
 ```
 
-`OrnamentalFrames` (généré) liste tous les cadres. `FramedPageSample` en donne un exemple complet. `OrnamentalFrameScreenshotTest` capture le cadre de la confession en clair, en sombre (violet) et en nuit ; `OrnamentalFramesGalleryTest`, tous les cadres en clair.
+`OrnamentalFrames` (généré) liste tous les cadres, `EndpaperPatterns` toutes les gardes. `FramedPageSample` en donne un exemple complet ; `outerOnRight = false` le montre en verso. `OrnamentalFrameScreenshotTest` capture le cadre de la confession en clair, en sombre (violet) et en nuit ; `OrnamentalFramesGalleryTest`, tous les cadres en clair (les cadres partiels aussi en verso), puis toutes les gardes.
 
 Le cadre est dessiné dans sa propre couche (`graphicsLayer` + `drawWithCache`). Le texte qui défile ne le fait donc pas redessiner. Les chemins sont analysés une seule fois par cadre.
 

@@ -96,7 +96,8 @@
     <string name="settings_fabric">Tissu des rubans</string>
     <string name="fabric_textured">Tissu mat, à côtes</string>
     <string name="fabric_satin">Satin</string>
-    <string name="settings_frames">Cadres ornementaux du paroissien, un par section des livres de prières</string>
+    <string name="settings_frames">Cadres ornementaux du paroissien : un par section des livres de prières, filet rouge pour la Bible</string>
+    <string name="settings_vignettes">Vignettes gravées en tête des sections des livres de prières</string>
     <string name="settings_cards_on_page">Images pieuses posées sur leur page (un toucher les met de côté)</string>
     <string name="settings_measures">Mesures du lecteur (pagination, images par seconde)</string>
 

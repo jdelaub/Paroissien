@@ -34,6 +34,8 @@ data class ReaderSettings(
     val cardsOnPage: Boolean = true,
     /** Les pages des livres de prières dans les cadres du paroissien chromolithographié, un par section. */
     val ornamentalFrames: Boolean = true,
+    /** Vignettes gravées en tête des sections des livres nobles, quand l'app en contient. */
+    val vignettes: Boolean = true,
     /** Rite du calendrier : "1962" ou "1969". */
     val rite: String = "1962",
     val externalSolemnities: Boolean = true,
@@ -69,6 +71,7 @@ class ReaderSettingsStore(context: Context) {
             p[RIBBON_FABRIC] = next.ribbonFabric
             p[CARDS_ON_PAGE] = next.cardsOnPage
             p[FRAMES] = next.ornamentalFrames
+            p[VIGNETTES] = next.vignettes
             p[RITE] = next.rite
             p[EXTERNAL] = next.externalSolemnities
             p[TRADITIONAL] = next.traditionalPenance
@@ -96,6 +99,7 @@ class ReaderSettingsStore(context: Context) {
             ribbonFabric = p[RIBBON_FABRIC] ?: d.ribbonFabric,
             cardsOnPage = p[CARDS_ON_PAGE] ?: d.cardsOnPage,
             ornamentalFrames = p[FRAMES] ?: d.ornamentalFrames,
+            vignettes = p[VIGNETTES] ?: d.vignettes,
             rite = p[RITE] ?: d.rite,
             externalSolemnities = p[EXTERNAL] ?: d.externalSolemnities,
             traditionalPenance = p[TRADITIONAL] ?: d.traditionalPenance,
@@ -121,6 +125,7 @@ class ReaderSettingsStore(context: Context) {
         val RIBBON_FABRIC = stringPreferencesKey("rubans_tissu")
         val CARDS_ON_PAGE = booleanPreferencesKey("images_sur_la_page")
         val FRAMES = booleanPreferencesKey("cadres_ornementaux")
+        val VIGNETTES = booleanPreferencesKey("vignettes")
         val RITE = stringPreferencesKey("rite")
         val EXTERNAL = booleanPreferencesKey("solennites_exterieures")
         val TRADITIONAL = booleanPreferencesKey("penitence_traditionnelle")

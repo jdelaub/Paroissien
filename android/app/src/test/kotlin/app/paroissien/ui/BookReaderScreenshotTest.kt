@@ -14,6 +14,7 @@ import app.paroissien.core.designsystem.rememberBookFonts
 import app.paroissien.core.reading.book.Anchor
 import app.paroissien.core.reading.book.BookReader
 import app.paroissien.core.reading.book.BookTypography
+import app.paroissien.core.reading.book.ReadingBlock
 import app.paroissien.core.reading.book.RibbonMark
 import app.paroissien.core.reading.book.CardMark
 import app.paroissien.core.reading.book.FrameLook
@@ -108,6 +109,41 @@ class BookReaderScreenshotTest {
         return bitmap.asImageBitmap()
     }
 
+    /** Vignette gravée en tête de section, teinte de l'encre du papier, puis le titre et le texte. */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun vignetteEnTete() = capture(
+        null, BookFace.GARAMOND, PaperTheme.SEPIA,
+        blocks = listOf(ReadingBlock.Vignette("vignette:essai", syntheticEngraving())) + book,
+    )
+
+    /**
+     * Une gravure dessinée pour l'essai, en masque d'encre comme les vignettes de l'app : hachures d'un ciel, une
+     * gloire rayonnante, un sol. Aucune image réelle dans le dépôt (les vignettes viennent de scans personnels).
+     */
+    private fun syntheticEngraving(): ImageBitmap {
+        val bitmap = createBitmap(800, 400)
+        val canvas = android.graphics.Canvas(bitmap)
+        val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG).apply { color = 0xFF000000.toInt(); strokeWidth = 2f }
+        for (y in 0 until 400 step 7) {
+            paint.alpha = (60 + y / 4).coerceAtMost(200)
+            canvas.drawLine(0f, y.toFloat(), 800f, y + 30f, paint)
+        }
+        paint.alpha = 255
+        paint.style = android.graphics.Paint.Style.STROKE
+        paint.strokeWidth = 5f
+        canvas.drawCircle(400f, 170f, 70f, paint)
+        for (k in 0 until 24) {
+            val a = k * Math.PI / 12
+            canvas.drawLine(400f + 85f * Math.cos(a).toFloat(), 170f + 85f * Math.sin(a).toFloat(), 400f + 140f * Math.cos(a).toFloat(), 170f + 140f * Math.sin(a).toFloat(), paint)
+        }
+        paint.style = android.graphics.Paint.Style.FILL
+        canvas.drawRect(388f, 120f, 412f, 330f, paint)
+        canvas.drawRect(340f, 165f, 460f, 189f, paint)
+        canvas.drawRect(0f, 330f, 800f, 400f, paint)
+        return bitmap.asImageBitmap()
+    }
+
     /** Une page dans le cadre des prières du matin : titre courant et folio au-dessus, rubans dessous. */
     @Test
     @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
@@ -152,6 +188,7 @@ class BookReaderScreenshotTest {
         look: BookLook = BookLook(),
         across: Boolean = false,
         cards: List<CardMark> = emptyList(),
+        blocks: List<ReadingBlock> = book,
     ) {
         var ready by mutableStateOf(false)
         compose.setContent {
@@ -161,7 +198,7 @@ class BookReaderScreenshotTest {
                 val paper = identity?.paper?.colors(themePaper) ?: themePaper
                 CompositionLocalProvider(LocalPaperColors provides paper) {
                 BookReader(
-                    blocks = book,
+                    blocks = blocks,
                     typography = remember(fonts, paper) { BookTypography(fonts, paper) },
                     anchor = anchor,
                     onAnchorChange = {},

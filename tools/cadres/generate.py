@@ -2,7 +2,7 @@
 Cadres ornementaux d'après un paroissien chromolithographié de la fin du XIXᵉ siècle. Source unique : chaque cadre est
 décrit une fois dans tools/cadres/cadres/<nom>.py (fonction `spec()`, primitives de commun.py), puis exporté en
   - Kotlin : données du composable OrnamentalFrame (core:designsystem, paquet frame), un fichier par cadre, plus
-             le registre Cadres.kt,
+             le registre Cadres.kt ; de même pour les gardes à motif (tools/cadres/gardes/<nom>.py, registre Gardes.kt),
   - SVG    : un fichier par module, ouvrable dans Inkscape (tools/cadres/svg/<nom>/),
   - HTML   : aperçu autonome du même moteur en JavaScript (tools/cadres/apercu.html).
 
@@ -23,21 +23,34 @@ FRAME_DIR = os.path.join(ROOT, "android", "core", "designsystem", "src", "main",
                          "app", "paroissien", "core", "designsystem", "frame")
 
 
-def frames():
-    """Les cadres, dans l'ordre du paroissien d'origine (attribut ORDRE de chaque module)."""
+def discover(package):
+    """Les modules d'un dossier (cadres, gardes), dans l'ordre de leur attribut ORDRE, puis du nom."""
     out = []
-    for f in sorted(glob.glob(os.path.join(HERE, "cadres", "*.py"))):
+    for f in sorted(glob.glob(os.path.join(HERE, package, "*.py"))):
         name = os.path.splitext(os.path.basename(f))[0]
         if name.startswith("_"):
             continue
-        mod = importlib.import_module("cadres." + name)
+        mod = importlib.import_module(f"{package}.{name}")
         out.append((getattr(mod, "ORDRE", 999), name, mod))
     out.sort(key=lambda x: (x[0], x[1]))
     return [(name, mod.spec()) for _, name, mod in out]
 
 
+def frames():
+    """Les cadres, dans l'ordre du paroissien d'origine."""
+    return discover("cadres")
+
+
+def patterns():
+    """Les gardes à motif."""
+    return discover("gardes")
+
+
 def load(name):
-    return importlib.import_module("cadres." + name).spec()
+    for package in ("cadres", "gardes"):
+        if os.path.exists(os.path.join(HERE, package, name + ".py")):
+            return importlib.import_module(f"{package}.{name}").spec()
+    sys.exit(f"Ni cadre ni garde nommé « {name} »")
 
 
 # --------------------------------------------------------------------------- #
@@ -83,8 +96,11 @@ def svg_box(spec, mod, inks, scale=3.0, x0=0.0, y0=0.0, w=None, h=None, bg=None)
             f'  <rect x="{x0:.2f}" y="{y0:.2f}" width="{w:.2f}" height="{h:.2f}" fill="{bg}"/>\n  {svg_ops(mod["ops"], inks)}\n</svg>\n')
 
 
+THEME_INKS = {"paper": "#FBF8F1", "text": "#1F1B16", "rubric": "#A31F1A"}  # thème clair, pour les SVG
+
+
 def svgs(name, spec):
-    inks = dict(spec["inks"], paper="#FBF8F1")
+    inks = dict(spec["inks"], **THEME_INKS)
     d = os.path.join(HERE, "svg", name)
     out = {}
     seen = set()
@@ -102,7 +118,31 @@ def svgs(name, spec):
         if mod and id(mod) not in seen:
             seen.add(id(mod))
             out[os.path.join(d, f"coin_{k}.svg")] = svg_box(spec, mod, inks)
+    for k, e in spec.get("ends", {}).items():
+        for w in ("start", "end"):
+            mod = e[w]
+            if mod and id(mod) not in seen:
+                seen.add(id(mod))
+                out[os.path.join(d, f"bout_{k}_{'debut' if w == 'start' else 'fin'}.svg")] = svg_box(spec, mod, inks)
     return out
+
+
+def svg_pattern(name, spec):
+    inks = dict(spec["inks"], **THEME_INKS)
+    w, h = spec["w"], spec["h"]
+    rows = 2 if spec["lattice"] == "quinconce" else 1
+    body = []
+    for r in range(-1, rows + 1):
+        for c in range(-1, 2):
+            x = c * w + (w / 2 if rows == 2 and r % 2 else 0)
+            body.append(f'<g transform="translate({x:.2f} {r * h:.2f})">\n    {svg_ops(spec["ops"], inks)}\n  </g>')
+    bg = inks[spec["ground"]] if spec["ground"] else "#FBF8F1"
+    H = h * rows
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w:.2f} {H:.2f}" width="{w * 3:.0f}" height="{H * 3:.0f}">\n'
+           f'  <defs><clipPath id="c"><rect width="{w:.2f}" height="{H:.2f}"/></clipPath></defs>\n'
+           f'  <rect width="{w:.2f}" height="{H:.2f}" fill="{bg}"/>\n'
+           f'  <g clip-path="url(#c)">\n  ' + "\n  ".join(body) + "\n  </g>\n</svg>\n")
+    return {os.path.join(HERE, "svg", "gardes", f"{name}.svg"): svg}
 
 
 # --------------------------------------------------------------------------- #
@@ -141,6 +181,32 @@ def kt_ops(ops, indent):
     return f"ops(\n{body},\n{indent})"
 
 
+def extras(mod):
+    """Champs v3 d'un module, seulement s'ils diffèrent des valeurs par défaut du Kotlin."""
+    out = ""
+    if "at" in mod:
+        out += f"    at = {kt_float(mod['at'])},\n"
+    if mod.get("inset"):
+        out += f"    inset = {kt_float(mod['inset'])},\n"
+    if mod.get("upright"):
+        out += "    upright = true,\n"
+    if mod.get("above"):
+        out += "    above = true,\n"
+    return out
+
+
+def edge_extras(mod):
+    out = ""
+    if mod.get("mirror") is False:
+        out += "    mirrored = false,\n"
+    if mod.get("spill"):
+        out += f"    spill = {kt_float(mod['spill'])},\n"
+    return out
+
+
+RULE_FROM = {"out": "RuleFrom.OUTER", "in": "RuleFrom.INNER"}
+
+
 def kotlin(name, spec):
     P = pascal(name)
     c = camel(name)
@@ -161,21 +227,21 @@ def kotlin(name, spec):
     phase = {kt_float(mod["phase"])},
     outset = {kt_float(mod["outset"])},
     inset = {kt_float(mod["inset"])},
-    base = {kt_ops(mod["base"], ind)},
+{edge_extras(mod)}    base = {kt_ops(mod["base"], ind)},
     over = {kt_ops(mod["over"], ind)},
 )""")
         elif kind == "center":
             decls.append(f"""private val {v} = CenterModule(
     width = {kt_float(mod["width"])},
     outset = {kt_float(mod.get("outset", 0))},
-    ops = {kt_ops(mod["ops"], ind)},
+{extras(mod)}    ops = {kt_ops(mod["ops"], ind)},
 )""")
         else:
             decls.append(f"""private val {v} = BoxModule(
     width = {kt_float(mod.get("w", 100))},
     height = {kt_float(mod.get("h", 100))},
     outset = {kt_float(mod.get("outset", 0))},
-    ops = {kt_ops(mod["ops"], ind)},
+{extras(mod)}    ops = {kt_ops(mod["ops"], ind)},
 )""")
         ids[id(mod)] = v
         return v
@@ -197,6 +263,14 @@ def kotlin(name, spec):
         ("outerBottomMid", ref(O["midBottom"], "box", "OuterBottomMid")),
         ("outerSideMid", ref(O["midSide"], "box", "OuterSideMid")),
     ]
+    for k, label in (("top", "Top"), ("side", "Side"), ("bottom", "Bottom")):
+        e = spec.get("ends", {}).get(k) or {}
+        if e.get("start") or e.get("end"):
+            fields.append((f"{k}Ends", f"BandEnds(start = {ref(e.get('start'), 'box', label + 'Start')}, "
+                                       f"end = {ref(e.get('end'), 'box', label + 'End')})"))
+    pr = spec.get("presence") or {}
+    if not all(pr.get(k, True) for k in ("top", "outer", "bottom", "inner")):
+        fields.append(("bands", "FrameBands(" + ", ".join(f"{k} = {str(pr[k]).lower()}" for k in ("top", "outer", "bottom", "inner")) + ")"))
     bars = spec["bars"]
     if bars:
         layers = ", ".join(f'{kt_string(i)} to {kt_float(w)}' for i, w in bars["layers"])
@@ -206,7 +280,8 @@ def kotlin(name, spec):
     else:
         fields.append(("bars", "null"))
     rules = ", ".join(f"Rule({kt_string(r['ink'])}, at = {kt_float(r['at'])}, width = {kt_float(r['width'])}, "
-                      f"over = {str(bool(r.get('over', True))).lower()})" for r in spec["rules"])
+                      f"over = {str(bool(r.get('over', True))).lower()}"
+                      + (f", from = {RULE_FROM[r['from']]}" if r.get("from") else "") + ")" for r in spec["rules"])
     fields.append(("rules", f"listOf({rules})" if rules else "emptyList()"))
     fields.append(("ground", kt_string(spec["ground"]) if spec["ground"] else "null"))
     for k, f in (("margin", "margin"), ("top", "topDepth"), ("side", "sideDepth"), ("bottom", "bottomDepth"), ("textPadding", "textPadding")):
@@ -244,6 +319,53 @@ val {P}Style = FrameStyle(
     palettes = {"mapOf(" + chr(10) + palettes + chr(10) + "    )" if palettes else "emptyMap()"},
     dimmed = setOf({dimmed}),
 )
+"""
+
+
+def kotlin_pattern(name, spec):
+    P = pascal(name)
+    inks = "\n".join(f"        {kt_string(k)} to {kt_color(v)}," for k, v in spec["inks"].items())
+    dimmed = ", ".join(kt_string(k) for k in spec["dimmedInks"])
+    lattice = "Lattice.STAGGERED" if spec["lattice"] == "quinconce" else "Lattice.SQUARE"
+    return f"""// Généré par tools/cadres/generate.py : ne pas modifier à la main.
+// Source : {spec["source"]}.
+package app.paroissien.core.designsystem.frame
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
+
+/** Garde « {spec["title"]} ». */
+val {P}Pattern = PatternSpec(
+    name = {kt_string(name)},
+    title = {kt_string(spec["title"])},
+    width = {kt_float(spec["w"])},
+    height = {kt_float(spec["h"])},
+    tileWidth = {spec["width"]}.dp,
+    lattice = {lattice},
+    ground = {kt_string(spec["ground"]) if spec["ground"] else "null"},
+    ops = {kt_ops(spec["ops"], "")},
+)
+
+/** Encres de la garde. */
+val {P}PatternStyle = FrameStyle(
+    base = mapOf(
+{inks}
+    ),
+    palettes = emptyMap(),
+    dimmed = setOf({dimmed}),
+)
+"""
+
+
+def pattern_registry(all_patterns):
+    items = "\n".join(f"    PatternDef({kt_string(n)}, {kt_string(s['title'])}, {pascal(n)}Pattern, {pascal(n)}PatternStyle),"
+                      for n, s in all_patterns)
+    body = f"listOf(\n{items}\n)" if items else "emptyList()"
+    return f"""// Généré par tools/cadres/generate.py : ne pas modifier à la main.
+package app.paroissien.core.designsystem.frame
+
+/** Toutes les gardes à motif. */
+val EndpaperPatterns: List<PatternDef> = {body}
 """
 
 
@@ -287,6 +409,11 @@ def outputs():
         out[os.path.join(FRAME_DIR, f"{pascal(name)}Frame.kt")] = kotlin(name, spec)
         out.update(svgs(name, spec))
     out[os.path.join(FRAME_DIR, "Cadres.kt")] = registry(all_frames)
+    all_patterns = patterns()
+    for name, spec in all_patterns:
+        out[os.path.join(FRAME_DIR, f"{pascal(name)}Pattern.kt")] = kotlin_pattern(name, spec)
+        out.update(svg_pattern(name, spec))
+    out[os.path.join(FRAME_DIR, "Gardes.kt")] = pattern_registry(all_patterns)
     out[os.path.join(HERE, "apercu.html")] = preview_html(all_frames)
     return out
 

@@ -41,6 +41,12 @@ if [ -z "${PACKS:-}" ] && [ "$flavor" = personnel ] && [ -d "$private/packages" 
     rm -rf "$PACKS/packs-private"
     python3 -I "$root/content/pqt.py" --data "$private/data" --packages "$private/packages" --registry "$private/registry" \
         build --sign-key "$root/content/schema/keys/test-p256.pem" --out "$PACKS/packs-private"
+    # Vignettes gravées tirées des scans personnels (tools/cadres/vignettes.py) : assets vignettes/.
+    rm -rf "$PACKS/vignettes"
+    if [ -f "$private/vignettes/catalog.json" ]; then
+        mkdir -p "$PACKS/vignettes"
+        cp "$private/vignettes/catalog.json" "$private/vignettes/"*.webp "$PACKS/vignettes/"
+    fi
 fi
 
 packs_arg=()

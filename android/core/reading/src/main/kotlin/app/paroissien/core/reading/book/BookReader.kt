@@ -82,7 +82,10 @@ import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.FilterQuality
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.ui.graphics.drawscope.translate
@@ -98,6 +101,8 @@ import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
+import androidx.compose.ui.unit.IntSize
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.max
 import app.paroissien.core.designsystem.EdgeFinish
@@ -203,7 +208,8 @@ fun BookReader(
             val direction = LocalLayoutDirection.current
             val side = max(cutout.calculateStartPadding(direction), cutout.calculateEndPadding(direction))
             // Encadrée, la page met son titre courant et son folio au-dessus du cadre ; la bande des rubans reste dessous.
-            val framePad = look.frame?.spec?.contentPadding(FrameHeader)
+            // Marges d'un recto : le pli à gauche, le côté extérieur à droite ; un verso les échange.
+            val framePad = look.frame?.spec?.contentPadding(FrameHeader, outerOnRight = true)
             val margins = if (framePad == null) PageMargins(
                 top = PageTop + cutout.calculateTopPadding(),
                 bottom = PageBottom + RibbonBand + cutout.calculateBottomPadding(),
@@ -211,12 +217,14 @@ fun BookReader(
             ) else PageMargins(
                 top = framePad.calculateTopPadding() + cutout.calculateTopPadding(),
                 bottom = framePad.calculateBottomPadding() + RibbonBand + cutout.calculateBottomPadding(),
-                horizontal = framePad.calculateStartPadding(direction) + side,
+                horizontal = minOf(framePad.calculateLeftPadding(LayoutDirection.Ltr), framePad.calculateRightPadding(LayoutDirection.Ltr)) + side,
                 frameTop = cutout.calculateTopPadding(),
                 frameBottom = RibbonBand + cutout.calculateBottomPadding(),
+                inner = framePad.calculateLeftPadding(LayoutDirection.Ltr) + side,
+                outer = framePad.calculateRightPadding(LayoutDirection.Ltr) + side,
             )
             val pageWidth = if (double) maxWidth / 2 else maxWidth
-            val contentWidth = pageWidth - margins.horizontal * 2
+            val contentWidth = pageWidth - margins.inner - margins.outer
             val contentHeight = maxHeight - margins.top - margins.bottom - if (framePad == null) Header + Footer else 0.dp
             val widthPx = with(density) { contentWidth.roundToPx() }
             val heightPx = with(density) { contentHeight.roundToPx() }
@@ -339,7 +347,16 @@ fun BookReader(
 
 private enum class PageSide { SINGLE, LEFT, RIGHT }
 
-private class PageMargins(val top: Dp, val bottom: Dp, val horizontal: Dp, val frameTop: Dp = 0.dp, val frameBottom: Dp = 0.dp)
+/** Marges d'une page ; [inner] (côté du pli) et [outer] diffèrent quand le cadre n'a qu'une bande latérale. */
+private class PageMargins(
+    val top: Dp,
+    val bottom: Dp,
+    val horizontal: Dp,
+    val frameTop: Dp = 0.dp,
+    val frameBottom: Dp = 0.dp,
+    val inner: Dp = horizontal,
+    val outer: Dp = horizontal,
+)
 
 /** Couverture seule à droite, puis paires (1, 2), (3, 4)… : les pages impaires sont à gauche. */
 private fun sideOf(index: Int, double: Boolean) = when {
@@ -382,6 +399,8 @@ private fun PageView(
     val density = LocalDensity.current
     val haptic = LocalHapticFeedback.current
     val gutterAtRight = side == PageSide.LEFT
+    // Le côté extérieur, opposé au pli : à droite sur un recto et sur une page seule (son pli est à gauche).
+    val outerOnRight = !gutterAtRight
     // 0 : en travers de la page ; 1 : couché dans le petit fond. Le ruban qu'on touche y glisse.
     val moves = ribbons.map { r -> key(r.slot) { animateFloatAsState(if (!across || r.aside) 1f else 0f, tween(640, easing = FastOutSlowInEasing), label = "ruban") } }
     var pageSize by remember { mutableStateOf(Size.Zero) }
@@ -416,7 +435,7 @@ private fun PageView(
                     overflow = TextOverflow.Ellipsis,
                     modifier = Modifier.fillMaxWidth().height(Header),
                 )
-                PageContent(page, verso, Modifier.size(contentWidth, contentHeight))
+                PageContent(page, verso, t.paper.inkPrimary, Modifier.size(contentWidth, contentHeight))
                 BasicText(
                     if (number > 0) number.toString() else "",
                     style = t.folio,
@@ -425,7 +444,7 @@ private fun PageView(
             }
         } else {
             Box(Modifier.fillMaxSize().padding(top = margins.frameTop, bottom = margins.frameBottom)) {
-                OrnamentalFrameLayer(frame.spec, frame.style, frame.liturgicalColor, headerHeight = FrameHeader)
+                OrnamentalFrameLayer(frame.spec, frame.style, frame.liturgicalColor, headerHeight = FrameHeader, outerOnRight = outerOnRight)
                 // Titre courant au milieu, folio du côté libre, au-dessus du cadre.
                 Box(Modifier.fillMaxWidth().padding(top = frame.spec.margin, start = frame.spec.margin + 6.dp, end = frame.spec.margin + 6.dp).height(FrameHeader)) {
                     BasicText(
@@ -442,7 +461,7 @@ private fun PageView(
                     )
                 }
             }
-            PageContent(page, verso, Modifier.padding(start = margins.horizontal, top = margins.top).size(contentWidth, contentHeight))
+            PageContent(page, verso, t.paper.inkPrimary, Modifier.padding(start = if (outerOnRight) margins.inner else margins.outer, top = margins.top).size(contentWidth, contentHeight))
         }
         if (pageSize != Size.Zero) {
             cards.forEachIndexed { k, card ->
@@ -596,7 +615,7 @@ private fun near(line: List<Offset>, at: Offset, reach: Float): Boolean = line.z
 }
 
 @Composable
-private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, modifier: Modifier) {
+private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, ink: Color, modifier: Modifier) {
     val density = LocalDensity.current
     Box(modifier) {
         Canvas(Modifier.fillMaxSize()) {
@@ -607,6 +626,7 @@ private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, modifier: Modifi
                         when (item) {
                             is PageItem.Lines -> drawLines(item, alpha = SHOW_THROUGH)
                             is PageItem.Glyph -> translate(item.x, item.y) { drawText(item.layout, alpha = SHOW_THROUGH) }
+                            is PageItem.Picture -> drawPicture(item, ink, alpha = SHOW_THROUGH)
                         }
                     }
                 }
@@ -615,6 +635,7 @@ private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, modifier: Modifi
                 when (item) {
                     is PageItem.Lines -> drawLines(item)
                     is PageItem.Glyph -> translate(item.x, item.y) { drawText(item.layout) }
+                    is PageItem.Picture -> drawPicture(item, ink)
                 }
             }
         }
@@ -629,6 +650,18 @@ private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, modifier: Modifi
             )
         }
     }
+}
+
+/** Vignette gravée : son masque d'encre, teint de l'encre du thème, comme une impression sur le papier. */
+private fun DrawScope.drawPicture(item: PageItem.Picture, ink: Color, alpha: Float = 1f) {
+    drawImage(
+        item.image,
+        dstOffset = IntOffset(item.x.roundToInt(), item.y.roundToInt()),
+        dstSize = IntSize(item.width.roundToInt(), item.height.roundToInt()),
+        alpha = alpha,
+        colorFilter = ColorFilter.tint(ink, BlendMode.SrcIn),
+        filterQuality = FilterQuality.High,
+    )
 }
 
 /** Opacité du verso qui transparaît sur un papier bible. */

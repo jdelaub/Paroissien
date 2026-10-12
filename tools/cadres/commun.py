@@ -13,6 +13,11 @@ Repères
     extérieur haut gauche du cadre, vers l'extérieur en x et y négatifs.
   - Ornement extérieur du milieu : origine au milieu du bord extérieur haut, l'extérieur vers -y.
   - Terminaison : pointe vers +x depuis le bout de la baguette.
+  - Pièce de bout : boîte w × 100 posée au début de la bande (u de 0 à w, v comme la frise) ; celle de la fin est
+    dessinée de même, comme si elle était au début, et retournée par le moteur (comme les coins).
+  - Côtés : « outer » est le côté extérieur de la page (à droite sur un recto, à gauche sur un verso), « inner » le
+    côté du pli. Les deux bandes latérales utilisent la même frise ; seule leur présence diffère.
+  - Motif de garde : tuile w × h en unités, répétée en réseau ; `largeur` donne la largeur de la tuile en dp.
 """
 import math
 
@@ -304,39 +309,105 @@ def strand(path, width=STRAND, ink="strand", outline=OUTLINE, outline_ink="outli
 # --------------------------------------------------------------------------- #
 # Modules et cadre
 # --------------------------------------------------------------------------- #
-def frise(period, base, over=None, phase=0.0, outset=0.0, inset=0.0):
+def frise(period, base, over=None, phase=0.0, outset=0.0, inset=0.0, symetrique=True, deborde=0.0):
     """Élément répété le long d'une bande. `outset` / `inset` : débord permis au-delà du bord
-    extérieur / intérieur, en unités de profondeur (la découpe s'élargit d'autant)."""
-    return {"period": period, "phase": phase, "base": base, "over": over or [], "outset": outset, "inset": inset}
+    extérieur / intérieur, en unités de profondeur (la découpe s'élargit d'autant). `symetrique=False` : après une
+    pièce centrale, la frise continue dans le même sens au lieu de repartir en miroir (une tige qui pousse d'un seul
+    élan). `deborde` : unités dont chaque portion de frise mord sur ses voisines (coins, pièces) ; elle ne dessine
+    alors que ses propres éléments, sans reprendre ceux d'avant et d'après."""
+    f = {"period": period, "phase": phase, "base": base, "over": over or [], "outset": outset, "inset": inset}
+    if not symetrique:
+        f["mirror"] = False
+    if deborde:
+        f["spill"] = deborde
+    return f
 
 
-def boite(ops, w=100.0, h=100.0, outset=0.0):
-    """Motif dans une boîte w × h (coin), ou ornement en unités (terminaison, ornement extérieur)."""
-    return {"ops": ops, "w": w, "h": h, "outset": outset}
+def boite(ops, w=100.0, h=100.0, outset=0.0, inset=0.0, dessus=False):
+    """Motif dans une boîte w × h (coin, pièce de bout), ou ornement en unités (terminaison, ornement extérieur).
+    `inset` : débord permis vers le texte (pièces de bout). `dessus` : un coin dessiné après les filets et les
+    baguettes, qu'il interrompt."""
+    box = {"ops": ops, "w": w, "h": h, "outset": outset}
+    if inset:
+        box["inset"] = inset
+    if dessus:
+        box["above"] = True
+    return box
 
 
-def piece(width, ops, outset=0.0):
-    """Pièce centrale d'une bande (médaillon, losange), large de `width` unités de profondeur."""
-    return {"width": width, "ops": ops, "outset": outset}
+def piece(width, ops, outset=0.0, inset=0.0, droit=False, dessus=False, a=0.5):
+    """Pièce centrale d'une bande (médaillon, losange), large de `width` unités de profondeur, posée à la fraction `a`
+    de la longueur (0,5 = au milieu, 1/3 = au tiers depuis le haut ou la gauche). `inset` : débord vers le texte.
+    `droit` : la pièce garde partout l'aspect qu'elle a sur la bande haute (bandes haute et du pied) ou sur la bande
+    droite (bandes latérales) : sur un verso ou au pied, elle est déplacée, jamais retournée ni renversée (figure
+    debout, inscription) ; son côté v = 0 passe alors du côté du texte. `dessus` : dessinée après les filets et les
+    baguettes, qu'elle interrompt."""
+    p = {"width": width, "ops": ops, "outset": outset}
+    if a != 0.5:
+        p["at"] = a
+    if inset:
+        p["inset"] = inset
+    if droit:
+        p["upright"] = True
+    if dessus:
+        p["above"] = True
+    return p
 
 
-def filet(ink, at, width, over=True):
-    """Filet tout autour du cadre, à la profondeur `at` (0 = bord extérieur, 100 = bord intérieur)."""
-    return {"ink": ink, "at": at, "width": width, "over": over}
+def bouts(debut=None, fin=None, miroir=True):
+    """Pièces posées une fois à chaque bout d'une bande (socle et couronnement d'un candélabre, départ d'une vigne).
+    Les deux se dessinent comme au début de la bande ; sans `fin`, le début sert aux deux bouts si `miroir`."""
+    if fin is None and miroir:
+        fin = debut
+    return {"start": debut, "end": fin}
+
+
+FILET_DEPUIS = {"fraction": "frac", "exterieur": "out", "interieur": "in"}
+
+
+def filet(ink, at, width, over=True, depuis="fraction"):
+    """Filet le long des bandes présentes. `depuis` = « fraction » : `at` de 0 (bord extérieur) à 100 (côté
+    texte), proportionnel à chaque bande ; « exterieur » ou « interieur » : `at` en unités (100 = la bande la plus
+    fine) depuis le bord extérieur ou depuis le côté texte, la même distance sur toutes les bandes."""
+    r = {"ink": ink, "at": at, "width": width, "over": over}
+    if depuis != "fraction":
+        r["from"] = FILET_DEPUIS[depuis]
+    return r
+
+
+# Bandes présentes. Le côté extérieur suit le folio (voir l'en-tête).
+DISPOSITIONS = {
+    "pleine": ("top", "outer", "bottom", "inner"),
+    "laterale": ("outer",),
+    "tete": ("top",),
+    "pied": ("bottom",),
+    "tete_pied": ("top", "bottom"),
+    "equerre_tete": ("top", "outer"),     # Γ sur un recto
+    "equerre_pied": ("outer", "bottom"),  # L sur un recto
+    "ouverte": ("top", "outer", "bottom"),  # sans bande au pli
+}
 
 
 def cadre(name, title, source, inks, layout, top, side=None, bottom=None, palettes=None, dimmed=None, ground="ground",
-          centers=None, corners=None, rules=None, bars=None, outer=None):
-    """Spécification complète d'un cadre, avec ses valeurs par défaut explicites (le Kotlin et le JS n'en ont pas)."""
+          centers=None, corners=None, rules=None, bars=None, outer=None, disposition="pleine", ends=None):
+    """Spécification complète d'un cadre, avec ses valeurs par défaut explicites (le Kotlin et le JS n'en ont pas).
+    `disposition` : un nom de DISPOSITIONS ou une liste de bandes. `ends` : {"top"|"side"|"bottom": bouts(...)}."""
     centers = centers or {}
     corners = corners or {}
     outer = outer or {}
+    ends = ends or {}
+    present = DISPOSITIONS[disposition] if isinstance(disposition, str) else tuple(disposition)
+    assert present and set(present) <= {"top", "outer", "bottom", "inner"}, f"{name} : disposition {disposition!r}"
+    assert not bars or len(present) == 4, f"{name} : les baguettes demandent un cadre plein"
+    assert set(ends) <= {"top", "side", "bottom"}, f"{name} : bouts inconnus {sorted(ends)}"
     for k in ("margin", "top", "side", "bottom", "textPadding"):
         assert k in layout, f"layout.{k} manquant"
     reserved = {"paper", "text", "rubric", "dark"}  # l'aperçu JS range le thème sous ces noms
     clash = reserved & set(inks)
     assert not clash, f"{name} : noms d'encre réservés {sorted(clash)}"
-    names = set(inks) | {"paper"}
+    # encres du thème : « paper » le fond de page, « text » l'encre du texte, « rubric » le rouge des rubriques ;
+    # elles suivent le thème (une gravure tracée en « text » reste lisible en sombre)
+    names = set(inks) | {"paper", "text", "rubric"}
 
     def check_ops(ops, where):
         for o in ops:
@@ -355,6 +426,8 @@ def cadre(name, title, source, inks, layout, top, side=None, bottom=None, palett
         "bands": {"top": top, "side": side or top, "bottom": bottom or top},
         "centers": {"top": centers.get("top"), "side": centers.get("side"), "bottom": centers.get("bottom")},
         "corners": {"top": corners.get("top"), "bottom": corners.get("bottom") or corners.get("top"), "fill": corners.get("fill")},
+        "presence": {k: k in present for k in ("top", "outer", "bottom", "inner")},
+        "ends": {k: ends.get(k) or {"start": None, "end": None} for k in ("top", "side", "bottom")},
         "rules": rules or [],
         "bars": bars,
         "outer": {
@@ -367,7 +440,9 @@ def cadre(name, title, source, inks, layout, top, side=None, bottom=None, palett
     }
     for k, b in spec["bands"].items():
         check_ops(b["base"] + b["over"], f"bande {k}")
-    for k, c in list(spec["centers"].items()) + list(spec["corners"].items()) + list(spec["outer"].items()):
+    pieces = list(spec["centers"].items()) + list(spec["corners"].items()) + list(spec["outer"].items())
+    pieces += [(f"bout {k}", e[w]) for k, e in spec["ends"].items() for w in ("start", "end")]
+    for k, c in pieces:
         if c:
             check_ops(c["ops"], k)
     if bars and bars.get("terminal"):
@@ -380,3 +455,39 @@ def cadre(name, title, source, inks, layout, top, side=None, bottom=None, palett
     if ground:
         assert ground in names
     return spec
+
+
+# --------------------------------------------------------------------------- #
+# Gardes : motif répété sur toute la page
+# --------------------------------------------------------------------------- #
+RESEAUX = ("carre", "quinconce")
+
+
+def motif(name, title, source, inks, w, h, ops, largeur, reseau="carre", ground="ground", dimmed=None):
+    """Garde à motif : une tuile w × h (unités) répétée en réseau « carre » (lignes et colonnes) ou « quinconce »
+    (une ligne sur deux décalée d'une demi-tuile : losanges, nids d'abeilles). La tuile mesure `largeur` dp de
+    large à l'écran. Les tracés qui débordent de la tuile sont repris de l'autre côté (raccords invisibles)."""
+    assert reseau in RESEAUX, f"{name} : réseau {reseau!r}"
+    reserved = {"paper", "text", "rubric", "dark"}
+    clash = reserved & set(inks)
+    assert not clash, f"{name} : noms d'encre réservés {sorted(clash)}"
+    names = set(inks) | {"paper", "text", "rubric"}
+    for o in ops:
+        assert o["ink"] in names, f"{name} : encre inconnue « {o['ink']} »"
+    if ground:
+        assert ground in names
+    return {
+        "kind": "motif",
+        "name": name,
+        "title": title,
+        "source": source,
+        "inks": inks,
+        "dimmedInks": dimmed if dimmed is not None else list(inks),
+        "paperThemes": PAPER_THEMES,
+        "w": w,
+        "h": h,
+        "width": largeur,
+        "lattice": reseau,
+        "ground": ground,
+        "ops": ops,
+    }

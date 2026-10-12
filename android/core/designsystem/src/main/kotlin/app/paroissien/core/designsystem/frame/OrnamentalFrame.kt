@@ -69,24 +69,92 @@ fun ops(vararg chunks: String): List<Op> = chunks.joinToString("").lineSequence(
  * Frise : élément répété le long d'une bande. Repère local : u le long de la bande, v de 0 (bord extérieur) à 100
  * (côté texte). Toutes les instances dessinent [base], puis toutes dessinent [over] (dessus d'entrelacs).
  * [outset] et [inset] : débord permis au-delà du bord extérieur et du bord intérieur, en unités de profondeur.
+ * [mirrored] : après une pièce centrale, la frise repart en miroir (sinon elle continue dans le même sens).
+ * [spill] : unités dont chaque portion mord sur ses voisines ; elle ne dessine alors que ses propres éléments.
  */
 @Immutable
-class EdgeModule(val period: Float, val phase: Float, val base: List<Op>, val over: List<Op>, val outset: Float = 0f, val inset: Float = 0f)
+class EdgeModule(
+    val period: Float,
+    val phase: Float,
+    val base: List<Op>,
+    val over: List<Op>,
+    val outset: Float = 0f,
+    val inset: Float = 0f,
+    val mirrored: Boolean = true,
+    val spill: Float = 0f,
+)
 
 /**
  * Motif dans une boîte [width] × [height] : coin (dessiné pour le coin haut gauche, les autres en miroir), complément
- * de coin, ornement extérieur ou terminaison (en unités de baguette). [outset] : débord permis vers l'extérieur.
+ * de coin, pièce de bout, ornement extérieur ou terminaison (en unités de baguette). [outset] : débord permis vers
+ * l'extérieur ; [inset] : vers le texte (pièces de bout). [above] : un coin dessiné après les filets et les baguettes.
  */
 @Immutable
-class BoxModule(val ops: List<Op>, val width: Float = 100f, val height: Float = 100f, val outset: Float = 0f)
+class BoxModule(
+    val ops: List<Op>,
+    val width: Float = 100f,
+    val height: Float = 100f,
+    val outset: Float = 0f,
+    val inset: Float = 0f,
+    val above: Boolean = false,
+)
 
-/** Pièce au milieu d'une bande (médaillon, losange) : u de -[width]/2 à +[width]/2, v comme la frise. */
+/**
+ * Pièce sur une bande (médaillon, losange) : u de -[width]/2 à +[width]/2, v comme la frise, posée à la fraction [at]
+ * de la longueur. [inset] : débord vers le texte ; [upright] : la pièce garde partout l'aspect qu'elle a sur la bande
+ * haute ou sur la bande droite, déplacée et jamais retournée (figure debout, inscription) ; [above] : dessinée après
+ * les filets et les baguettes, qu'elle interrompt.
+ */
 @Immutable
-class CenterModule(val width: Float, val ops: List<Op>, val outset: Float = 0f)
+class CenterModule(
+    val width: Float,
+    val ops: List<Op>,
+    val outset: Float = 0f,
+    val inset: Float = 0f,
+    val upright: Boolean = false,
+    val above: Boolean = false,
+    val at: Float = 0.5f,
+)
 
-/** Filet tout autour du cadre, à la profondeur [at] (0 = bord extérieur, 100 = côté texte), sous ou sur les frises. */
+/** D'où se mesure la profondeur d'un filet. */
+enum class RuleFrom {
+    /** [Rule.at] de 0 (bord extérieur) à 100 (côté texte), proportionnel à chaque bande. */
+    FRACTION,
+
+    /** [Rule.at] en unités depuis le bord extérieur : la même distance sur toutes les bandes. */
+    OUTER,
+
+    /** [Rule.at] en unités depuis le côté texte. */
+    INNER,
+}
+
+/** Filet le long des bandes présentes, à la profondeur [at], sous ou sur les frises. */
 @Immutable
-class Rule(val ink: String, val at: Float, val width: Float, val over: Boolean = true)
+class Rule(val ink: String, val at: Float, val width: Float, val over: Boolean = true, val from: RuleFrom = RuleFrom.FRACTION)
+
+/**
+ * Pièces posées une fois à chaque bout d'une bande (socle et couronnement d'un candélabre). Boîtes w × 100 dessinées
+ * comme au début de la bande ; celle de la fin est retournée par le moteur.
+ */
+@Immutable
+class BandEnds(val start: BoxModule?, val end: BoxModule?)
+
+/**
+ * Bandes présentes. [outer] est le côté extérieur de la page, à droite sur un recto et à gauche sur un verso, comme
+ * dans un livre ; [inner] le côté du pli. Une bande sans voisine court jusqu'au bord du cadre.
+ */
+@Immutable
+class FrameBands(val top: Boolean = true, val outer: Boolean = true, val bottom: Boolean = true, val inner: Boolean = true) {
+    val full: Boolean get() = top && outer && bottom && inner
+
+    /** Présence à gauche et à droite, selon le côté de la page. */
+    fun left(outerOnRight: Boolean) = if (outerOnRight) inner else outer
+    fun right(outerOnRight: Boolean) = if (outerOnRight) outer else inner
+
+    companion object {
+        val Full = FrameBands()
+    }
+}
 
 /** Baguettes : rectangle extérieur et baguettes intérieures croisées qui débordent de [overhang], terminées par [terminal]. */
 @Immutable
@@ -125,16 +193,23 @@ class FrameSpec(
     val sideDepth: Dp,
     val bottomDepth: Dp,
     val textPadding: Dp,
+    val bands: FrameBands = FrameBands.Full,
+    val topEnds: BandEnds? = null,
+    val sideEnds: BandEnds? = null,
+    val bottomEnds: BandEnds? = null,
 ) {
-    /** Marges que le contenu doit laisser libres : cadre, baguette intérieure et respiration. */
-    fun contentPadding(header: Dp = 0.dp): PaddingValues {
+    /**
+     * Marges que le contenu doit laisser libres : cadre, baguette intérieure et respiration. Sans bande d'un côté,
+     * seules la marge et la respiration restent ; la page est alors asymétrique et suit [outerOnRight].
+     */
+    fun contentPadding(header: Dp = 0.dp, outerOnRight: Boolean = true): PaddingValues {
         val barHalf = bars?.let { (it.layers.first().second / 2 * minOf(topDepth, sideDepth).value / 100f).dp } ?: 0.dp
-        val horizontal = margin + sideDepth + barHalf + textPadding
+        fun band(present: Boolean, depth: Dp) = if (present) depth + barHalf else 0.dp
         return PaddingValues(
-            start = horizontal,
-            end = horizontal,
-            top = margin + header + topDepth + barHalf + textPadding,
-            bottom = margin + bottomDepth + barHalf + textPadding,
+            start = margin + band(bands.left(outerOnRight), sideDepth) + textPadding,
+            end = margin + band(bands.right(outerOnRight), sideDepth) + textPadding,
+            top = margin + header + band(bands.top, topDepth) + textPadding,
+            bottom = margin + band(bands.bottom, bottomDepth) + textPadding,
         )
     }
 }
@@ -159,6 +234,9 @@ class FrameStyle(
             for (ink in dimmed) inks[ink]?.let { inks[ink] = mix(it, paper.background, dim) }
         }
         inks["paper"] = paper.background
+        // encres du thème : une gravure tracée en « text » reste lisible sur un fond sombre
+        inks["text"] = paper.inkPrimary
+        inks["rubric"] = paper.rubric
         return inks
     }
 
@@ -184,6 +262,7 @@ class FrameStyle(
  * Page encadrée sur le papier du thème. Le cadre est dessiné dans sa propre couche : le texte qui défile ne le
  * fait pas redessiner, seuls la taille, le thème ou la couleur liturgique le font. [content] reçoit les marges
  * à respecter pour rester à l'intérieur ; [header] occupe la bande au-dessus du cadre (titre courant, folio).
+ * [outerOnRight] : recto (côté extérieur à droite) ou verso.
  */
 @Composable
 fun OrnamentalFrame(
@@ -192,24 +271,26 @@ fun OrnamentalFrame(
     modifier: Modifier = Modifier,
     liturgicalColor: LiturgicalColor? = null,
     headerHeight: Dp = 0.dp,
+    outerOnRight: Boolean = true,
     header: @Composable () -> Unit = {},
     content: @Composable (PaddingValues) -> Unit,
 ) {
     Box(modifier.fillMaxSize().paperBackground()) {
-        OrnamentalFrameLayer(spec, style, liturgicalColor, headerHeight)
+        OrnamentalFrameLayer(spec, style, liturgicalColor, headerHeight, outerOnRight = outerOnRight)
         Box(
             Modifier
                 .fillMaxWidth()
                 .padding(top = spec.margin, start = spec.margin, end = spec.margin)
                 .height(headerHeight),
         ) { header() }
-        content(spec.contentPadding(headerHeight))
+        content(spec.contentPadding(headerHeight, outerOnRight))
     }
 }
 
 /**
  * Le cadre seul, dessiné dans sa propre couche sur toute la place disponible, sans fond : pour l'insérer sous une
  * page déjà mise en forme (le lecteur, la doublure). [bottomInset] réserve une bande sous le cadre (les rubans).
+ * [outerOnRight] : la page est un recto (côté extérieur à droite) ou un verso.
  */
 @Composable
 fun OrnamentalFrameLayer(
@@ -219,6 +300,7 @@ fun OrnamentalFrameLayer(
     headerHeight: Dp = 0.dp,
     bottomInset: Dp = 0.dp,
     modifier: Modifier = Modifier,
+    outerOnRight: Boolean = true,
 ) {
     val paper = LocalPaperColors.current
     val prepared = remember(spec) { PreparedFrame(spec) }
@@ -228,7 +310,7 @@ fun OrnamentalFrameLayer(
             .fillMaxSize()
             .graphicsLayer()
             .drawWithCache {
-                val geometry = FrameGeometry(spec, size.width, size.height - bottomInset.toPx(), headerHeight.toPx(), this)
+                val geometry = FrameGeometry(spec, size.width, size.height - bottomInset.toPx(), headerHeight.toPx(), outerOnRight, this)
                 onDrawBehind { drawFrame(prepared, spec, inks, geometry) }
             },
     )
@@ -251,9 +333,9 @@ fun Modifier.fadingEdges(top: Dp = 10.dp, bottom: Dp = 22.dp): Modifier = this
 // Préparation : chemins analysés une fois par cadre, géométrie une fois par taille
 // ---------------------------------------------------------------------------------------------------------------
 
-private class PreparedOp(val ink: String, val path: Path, val stroke: Stroke?)
+internal class PreparedOp(val ink: String, val path: Path, val stroke: Stroke?)
 
-private fun List<Op>.prepare(): List<PreparedOp> = map {
+internal fun List<Op>.prepare(): List<PreparedOp> = map {
     val stroke = when {
         it.stroke <= 0f -> null
         it.round -> Stroke(width = it.stroke, cap = StrokeCap.Round, join = StrokeJoin.Round)
@@ -267,6 +349,8 @@ private class PreparedEdge(m: EdgeModule) {
     val phase = m.phase
     val outset = m.outset
     val inset = m.inset
+    val mirrored = m.mirrored
+    val spill = m.spill
     val base = m.base.prepare()
     val over = m.over.prepare()
 }
@@ -275,14 +359,22 @@ private class PreparedBox(m: BoxModule) {
     val width = m.width
     val height = m.height
     val outset = m.outset
+    val inset = m.inset
+    val above = m.above
     val ops = m.ops.prepare()
 }
 
 private class PreparedCenter(m: CenterModule) {
     val width = m.width
     val outset = m.outset
+    val inset = m.inset
+    val upright = m.upright
+    val above = m.above
+    val at = m.at
     val ops = m.ops.prepare()
 }
+
+private class PreparedEnds(val start: PreparedBox?, val end: PreparedBox?)
 
 private class PreparedFrame(spec: FrameSpec) {
     private val edges = HashMap<EdgeModule, PreparedEdge>()
@@ -305,9 +397,18 @@ private class PreparedFrame(spec: FrameSpec) {
     val outerBottomMid = box(spec.outerBottomMid)
     val outerSideMid = box(spec.outerSideMid)
     val terminal = box(spec.bars?.terminal)
+    val topEnds = ends(spec.topEnds)
+    val sideEnds = ends(spec.sideEnds)
+    val bottomEnds = ends(spec.bottomEnds)
+    private fun ends(e: BandEnds?) = e?.let { PreparedEnds(box(it.start), box(it.end)) }
 }
 
-private class FrameGeometry(spec: FrameSpec, width: Float, height: Float, headerPx: Float, density: Density) {
+private class FrameGeometry(spec: FrameSpec, width: Float, height: Float, headerPx: Float, outerOnRight: Boolean, density: Density) {
+    val top = spec.bands.top
+    val bottom = spec.bands.bottom
+    val left = spec.bands.left(outerOnRight)
+    val right = spec.bands.right(outerOnRight)
+    val full = top && bottom && left && right
     val ox: Float
     val oy: Float
     val ow: Float
@@ -333,13 +434,21 @@ private class FrameGeometry(spec: FrameSpec, width: Float, height: Float, header
         }
         u = min(t, s) / 100f
         ring = Path().apply {
-            fillType = PathFillType.EvenOdd
-            addRect(Rect(ox, oy, ox + ow, oy + oh))
-            addRect(Rect(ox + s, oy + t, ox + ow - s, oy + oh - b))
+            if (full) {
+                fillType = PathFillType.EvenOdd
+                addRect(Rect(ox, oy, ox + ow, oy + oh))
+                addRect(Rect(ox + s, oy + t, ox + ow - s, oy + oh - b))
+            } else {
+                // bandes présentes seulement : leurs rectangles se recouvrent aux coins, la règle nonzero les unit
+                if (top) addRect(Rect(ox, oy, ox + ow, oy + t))
+                if (bottom) addRect(Rect(ox, oy + oh - b, ox + ow, oy + oh))
+                if (left) addRect(Rect(ox, oy, ox + s, oy + oh))
+                if (right) addRect(Rect(ox + ow - s, oy, ox + ow, oy + oh))
+            }
         }
         ext = (spec.bars?.overhang ?: 0f) * u
-        // rectangle extérieur, puis baguettes intérieures croisées qui débordent jusqu'aux terminaisons
-        bars = spec.bars?.let {
+        // rectangle extérieur, puis baguettes intérieures croisées qui débordent jusqu'aux terminaisons (cadre plein)
+        bars = spec.bars?.takeIf { full }?.let {
             Path().apply {
                 addRect(Rect(ox, oy, ox + ow, oy + oh))
                 for (y in floatArrayOf(oy + t, oy + oh - b)) {
@@ -359,7 +468,7 @@ private class FrameGeometry(spec: FrameSpec, width: Float, height: Float, header
 // Dessin
 // ---------------------------------------------------------------------------------------------------------------
 
-private fun DrawScope.drawOps(ops: List<PreparedOp>, inks: Map<String, Color>) {
+internal fun DrawScope.drawOps(ops: List<PreparedOp>, inks: Map<String, Color>) {
     for (op in ops) {
         val color = inks[op.ink] ?: continue
         if (op.stroke != null) drawPath(op.path, color, style = op.stroke) else drawPath(op.path, color)
@@ -406,14 +515,18 @@ private fun DrawScope.drawRun(m: PreparedEdge, inks: Map<String, Color>, mtx: Ma
     val y = band.y0 + band.ay * start
     val o = m.outset * k
     val i = m.inset * k
-    // Un pixel de recouvrement avec la pièce voisine : deux découpes lissées bord à bord laissent un liseré.
-    val e = 1f
+    // Un pixel de recouvrement avec la pièce voisine : deux découpes lissées bord à bord laissent un liseré. Une frise
+    // qui déborde mord sur ses voisines et ne dessine alors que ses propres éléments.
+    val spill = m.spill * k
+    val e = 1f + spill
+    val first = if (spill > 0f) 0 else -1
+    val last = if (spill > 0f) n - 1 else n + 1
     clipped(
         band.x0 + band.ax * (from - e) - band.dx * o, band.y0 + band.ay * (from - e) - band.dy * o,
         band.x0 + band.ax * (from + len + e) + band.dx * (band.depth + i), band.y0 + band.ay * (from + len + e) + band.dy * (band.depth + i),
     ) {
         for (pass in listOf(m.base, m.over)) {
-            for (j in -1..n + 1) {
+            for (j in first..last) {
                 val u0 = (j + m.phase) * step
                 withAffine(mtx, sg * band.ax * ka, sg * band.ay * ka, band.dx * k, band.dy * k, x + sg * band.ax * u0, y + sg * band.ay * u0) {
                     drawOps(pass, inks)
@@ -423,24 +536,70 @@ private fun DrawScope.drawRun(m: PreparedEdge, inks: Map<String, Color>, mtx: Ma
     }
 }
 
-/** Une bande entière ; avec une pièce centrale, deux demi-bandes symétriques de part et d'autre. */
-private fun DrawScope.drawBand(m: PreparedEdge, center: PreparedCenter?, inks: Map<String, Color>, mtx: Matrix, band: Band) {
-    if (center == null) return drawRun(m, inks, mtx, band, 0f, band.len, back = false)
+/**
+ * Pièce posée sur la bande entre [from] et [to] (u à l'écran), origine du module en [origin] : pièce centrale ou de
+ * bout. [flip] la retourne le long de la bande (pièce de fin). [upright] : la pièce garde l'aspect qu'elle a sur la
+ * bande haute ou sur la bande droite ; sur la bande gauche ou du pied, elle est déplacée, jamais retournée ni
+ * renversée (son v = 0 passe du côté du texte).
+ */
+private fun DrawScope.drawPiece(
+    ops: List<PreparedOp>, inks: Map<String, Color>, mtx: Matrix, band: Band,
+    from: Float, to: Float, origin: Float, outset: Float, inset: Float, flip: Boolean, upright: Boolean,
+) {
     val k = band.depth / 100f
-    val cw = center.width * k
-    val half = (band.len - cw) / 2
-    drawRun(m, inks, mtx, band, 0f, half, back = false)
-    drawRun(m, inks, mtx, band, band.len - half, half, back = true)
-    val mid = band.len / 2
-    val o = center.outset * k
+    val mirrorBand = band.ax * band.dy - band.ay * band.dx < 0f
+    val turn = upright && mirrorBand
+    val x0 = if (turn) band.x0 + band.dx * band.depth else band.x0
+    val y0 = if (turn) band.y0 + band.dy * band.depth else band.y0
+    val dx = if (turn) -band.dx else band.dx
+    val dy = if (turn) -band.dy else band.dy
+    val out = if (turn) inset else outset
+    val inn = if (turn) outset else inset
+    val ax = if (flip) -band.ax else band.ax
+    val ay = if (flip) -band.ay else band.ay
+    val lo = min(from, to) - 1f
+    val hi = max(from, to) + 1f
     clipped(
-        band.x0 + band.ax * (mid - cw / 2 - 1f) - band.dx * o, band.y0 + band.ay * (mid - cw / 2 - 1f) - band.dy * o,
-        band.x0 + band.ax * (mid + cw / 2 + 1f) + band.dx * band.depth, band.y0 + band.ay * (mid + cw / 2 + 1f) + band.dy * band.depth,
+        x0 + band.ax * lo - dx * out * k, y0 + band.ay * lo - dy * out * k,
+        x0 + band.ax * hi + dx * (band.depth + inn * k), y0 + band.ay * hi + dy * (band.depth + inn * k),
     ) {
-        withAffine(mtx, band.ax * k, band.ay * k, band.dx * k, band.dy * k, band.x0 + band.ax * mid, band.y0 + band.ay * mid) {
-            drawOps(center.ops, inks)
+        withAffine(mtx, ax * k, ay * k, dx * k, dy * k, x0 + band.ax * origin, y0 + band.ay * origin) {
+            drawOps(ops, inks)
         }
     }
+}
+
+/**
+ * Une bande entière : pièces de bout, frise, et pièce centrale entre deux demi-frises symétriques. Les pièces
+ * « dessus » vont dans [later], dessinées après les filets et les baguettes.
+ */
+private fun DrawScope.drawBand(
+    m: PreparedEdge, center: PreparedCenter?, ends: PreparedEnds?, inks: Map<String, Color>, mtx: Matrix, band: Band,
+    later: MutableList<DrawScope.() -> Unit>,
+) {
+    val k = band.depth / 100f
+    val start = ends?.start
+    val end = ends?.end
+    val a = (start?.width ?: 0f) * k
+    val z = (end?.width ?: 0f) * k
+    if (start != null) {
+        val piece: DrawScope.() -> Unit = { drawPiece(start.ops, inks, mtx, band, 0f, a, 0f, start.outset, start.inset, flip = false, upright = false) }
+        if (start.above) later += piece else piece()
+    }
+    if (end != null) {
+        val piece: DrawScope.() -> Unit = { drawPiece(end.ops, inks, mtx, band, band.len - z, band.len, band.len, end.outset, end.inset, flip = true, upright = false) }
+        if (end.above) later += piece else piece()
+    }
+    if (center == null) return drawRun(m, inks, mtx, band, a, band.len - a - z, back = false)
+    val cw = center.width * k
+    // au milieu, ou à la fraction [CenterModule.at] ; la frise repart en miroir après la pièce, ou dans le même sens
+    val mid = band.len * center.at
+    drawRun(m, inks, mtx, band, a, mid - cw / 2 - a, back = false)
+    drawRun(m, inks, mtx, band, mid + cw / 2, band.len - z - mid - cw / 2, back = m.mirrored)
+    val piece: DrawScope.() -> Unit = {
+        drawPiece(center.ops, inks, mtx, band, mid - cw / 2, mid + cw / 2, mid, center.outset, center.inset, flip = false, upright = center.upright)
+    }
+    if (center.above) later += piece else piece()
 }
 
 /**
@@ -469,6 +628,47 @@ private fun DrawScope.drawCorner(
     }
 }
 
+/** Filets le long des bandes présentes ; un filet ouvert court jusqu'au bord du cadre. */
+private fun DrawScope.drawRules(spec: FrameSpec, inks: Map<String, Color>, g: FrameGeometry, over: Boolean) {
+    for (r in spec.rules) {
+        if (r.over != over) continue
+        val color = inks[r.ink] ?: continue
+        fun off(present: Boolean, depth: Float) = when {
+            !present -> 0f
+            r.from == RuleFrom.OUTER -> r.at * g.u
+            r.from == RuleFrom.INNER -> depth - r.at * g.u
+            else -> r.at / 100f * depth
+        }
+        val top = off(g.top, g.t)
+        val left = off(g.left, g.s)
+        val right = off(g.right, g.s)
+        val bottom = off(g.bottom, g.b)
+        val stroke = Stroke(width = r.width * g.u, join = StrokeJoin.Miter)
+        if (g.full) {
+            drawRect(color, Offset(g.ox + left, g.oy + top), Size(g.ow - left - right, g.oh - top - bottom), style = stroke)
+            continue
+        }
+        // côtés dans l'ordre haut, droite, pied, gauche ; chaque suite de côtés présents fait une ligne brisée
+        val xs = floatArrayOf(g.ox + left, g.ox + g.ow - right, g.ox + g.ow - right, g.ox + left)
+        val ys = floatArrayOf(g.oy + top, g.oy + top, g.oy + g.oh - bottom, g.oy + g.oh - bottom)
+        val sides = booleanArrayOf(g.top, g.right, g.bottom, g.left)
+        val first = sides.indexOfFirst { !it }
+        val path = Path()
+        var open = false
+        for (i in 1..4) {
+            val k = (first + i) % 4
+            if (!sides[k]) {
+                open = false
+                continue
+            }
+            if (!open) path.moveTo(xs[k], ys[k])
+            open = true
+            path.lineTo(xs[(k + 1) % 4], ys[(k + 1) % 4])
+        }
+        drawPath(path, color, style = stroke)
+    }
+}
+
 private fun DrawScope.drawFrame(f: PreparedFrame, spec: FrameSpec, inks: Map<String, Color>, g: FrameGeometry) {
     val mtx = Matrix()
     val ox = g.ox
@@ -479,37 +679,37 @@ private fun DrawScope.drawFrame(f: PreparedFrame, spec: FrameSpec, inks: Map<Str
     val s = g.s
     val b = g.b
     val u = g.u
+    val later = ArrayList<DrawScope.() -> Unit>()
 
     // 1. fond des bandes
     spec.ground?.let { ink -> inks[ink]?.let { drawPath(g.ring, it) } }
 
-    fun rules(over: Boolean) {
-        for (r in spec.rules) {
-            if (r.over != over) continue
-            val color = inks[r.ink] ?: continue
-            val k = r.at / 100f
-            drawRect(color, Offset(ox + k * s, oy + k * t), Size(ow - 2 * k * s, oh - k * t - k * b), style = Stroke(width = r.width * u, join = StrokeJoin.Miter))
-        }
+    drawRules(spec, inks, g, over = false)
+
+    // 2. frises : haut, gauche, droite, pied ; une bande sans voisine court jusqu'au bord du cadre
+    val x0 = if (g.left) ox + s else ox
+    val x1 = if (g.right) ox + ow - s else ox + ow
+    val y0 = if (g.top) oy + t else oy
+    val y1 = if (g.bottom) oy + oh - b else oy + oh
+    if (g.top) drawBand(f.top, f.topCenter, f.topEnds, inks, mtx, Band(x0, oy, 1f, 0f, 0f, 1f, x1 - x0, t), later)
+    if (g.left) drawBand(f.side, f.sideCenter, f.sideEnds, inks, mtx, Band(ox, y0, 0f, 1f, 1f, 0f, y1 - y0, s), later)
+    if (g.right) drawBand(f.side, f.sideCenter, f.sideEnds, inks, mtx, Band(ox + ow, y0, 0f, 1f, -1f, 0f, y1 - y0, s), later)
+    if (g.bottom) drawBand(f.bottom, f.bottomCenter, f.bottomEnds, inks, mtx, Band(x0, oy + oh, 1f, 0f, 0f, -1f, x1 - x0, b), later)
+
+    // 3. coins, là où deux bandes se rencontrent
+    fun corner(m: PreparedBox?, present: Boolean, x: Float, y: Float, w: Float, h: Float, fx: Float, fy: Float) {
+        if (m == null || !present) return
+        val piece: DrawScope.() -> Unit = { drawCorner(m, f.cornerFill, inks, mtx, x, y, w, h, fx, fy) }
+        if (m.above) later += piece else piece()
     }
-    rules(over = false)
+    corner(f.corner, g.top && g.left, ox, oy, s, t, 1f, 1f)
+    corner(f.corner, g.top && g.right, ox + ow - s, oy, s, t, -1f, 1f)
+    corner(f.bottomCorner, g.bottom && g.left, ox, oy + oh - b, s, b, 1f, -1f)
+    corner(f.bottomCorner, g.bottom && g.right, ox + ow - s, oy + oh - b, s, b, -1f, -1f)
 
-    // 2. frises : haut, gauche, droite, pied
-    val hLen = ow - 2 * s
-    val vLen = oh - t - b
-    drawBand(f.top, f.topCenter, inks, mtx, Band(ox + s, oy, 1f, 0f, 0f, 1f, hLen, t))
-    drawBand(f.side, f.sideCenter, inks, mtx, Band(ox, oy + t, 0f, 1f, 1f, 0f, vLen, s))
-    drawBand(f.side, f.sideCenter, inks, mtx, Band(ox + ow, oy + t, 0f, 1f, -1f, 0f, vLen, s))
-    drawBand(f.bottom, f.bottomCenter, inks, mtx, Band(ox + s, oy + oh, 1f, 0f, 0f, -1f, hLen, b))
+    drawRules(spec, inks, g, over = true)
 
-    // 3. coins
-    drawCorner(f.corner, f.cornerFill, inks, mtx, ox, oy, s, t, 1f, 1f)
-    drawCorner(f.corner, f.cornerFill, inks, mtx, ox + ow - s, oy, s, t, -1f, 1f)
-    drawCorner(f.bottomCorner, f.cornerFill, inks, mtx, ox, oy + oh - b, s, b, 1f, -1f)
-    drawCorner(f.bottomCorner, f.cornerFill, inks, mtx, ox + ow - s, oy + oh - b, s, b, -1f, -1f)
-
-    rules(over = true)
-
-    // 4. baguettes : chaque couche (contour, couleur, filet clair) ; les croisements se fondent. Puis terminaisons.
+    // 4. baguettes (cadre plein) : chaque couche (contour, couleur, filet clair) ; les croisements se fondent. Puis terminaisons.
     val bars = spec.bars
     val barPath = g.bars
     if (bars != null && barPath != null) {
@@ -541,19 +741,22 @@ private fun DrawScope.drawFrame(f: PreparedFrame, spec: FrameSpec, inks: Map<Str
         }
     }
 
-    // 5. ornements extérieurs : aux quatre coins (miroirs), au milieu de chaque côté
-    fun place(m: PreparedBox?, a: Float, bb: Float, c: Float, d: Float, e: Float, ff: Float) {
-        if (m == null) return
+    // 5. pièces « dessus » : elles interrompent filets et baguettes
+    for (piece in later) piece()
+
+    // 6. ornements extérieurs : aux coins (miroirs), au milieu de chaque côté présent
+    fun place(m: PreparedBox?, present: Boolean, a: Float, bb: Float, c: Float, d: Float, e: Float, ff: Float) {
+        if (m == null || !present) return
         withAffine(mtx, a * u, bb * u, c * u, d * u, e, ff) { drawOps(m.ops, inks) }
     }
-    place(f.outerCorner, 1f, 0f, 0f, 1f, ox, oy)
-    place(f.outerCorner, -1f, 0f, 0f, 1f, ox + ow, oy)
-    place(f.outerBottomCorner, 1f, 0f, 0f, -1f, ox, oy + oh)
-    place(f.outerBottomCorner, -1f, 0f, 0f, -1f, ox + ow, oy + oh)
-    place(f.outerMid, 1f, 0f, 0f, 1f, ox + ow / 2, oy)
-    place(f.outerBottomMid, 1f, 0f, 0f, -1f, ox + ow / 2, oy + oh)
+    place(f.outerCorner, g.top && g.left, 1f, 0f, 0f, 1f, ox, oy)
+    place(f.outerCorner, g.top && g.right, -1f, 0f, 0f, 1f, ox + ow, oy)
+    place(f.outerBottomCorner, g.bottom && g.left, 1f, 0f, 0f, -1f, ox, oy + oh)
+    place(f.outerBottomCorner, g.bottom && g.right, -1f, 0f, 0f, -1f, ox + ow, oy + oh)
+    place(f.outerMid, g.top, 1f, 0f, 0f, 1f, ox + ow / 2, oy)
+    place(f.outerBottomMid, g.bottom, 1f, 0f, 0f, -1f, ox + ow / 2, oy + oh)
     // au milieu de la bande latérale (et de sa pièce centrale), pas du cadre : le pied est souvent plus haut
-    val my = oy + t + (oh - t - b) / 2
-    place(f.outerSideMid, 0f, -1f, 1f, 0f, ox, my)
-    place(f.outerSideMid, 0f, 1f, -1f, 0f, ox + ow, my)
+    val my = (y0 + y1) / 2
+    place(f.outerSideMid, g.left, 0f, -1f, 1f, 0f, ox, my)
+    place(f.outerSideMid, g.right, 0f, 1f, -1f, 0f, ox + ow, my)
 }

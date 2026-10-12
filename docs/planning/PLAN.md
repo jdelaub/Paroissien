@@ -229,9 +229,12 @@ Les mesures se font sur le téléphone de référence, avec un APK *release* con
   - **ruban en travers de la page** (réglage, actif par défaut) : aux ondulations légères, il sort de la tête près du pli et pend dans la bande du bas ; un toucher le couche dans le pli ; rouvrir le livre par sa queue le remet en travers ;
   - **tissu des rubans** (réglage) : mat par défaut, avec un grain fin et de 3 à 7 côtes discrètes en long, propres à chaque ruban ; ou satin brillant ;
   - **réglages** : un écran complet, ouvert depuis l'accueil ou depuis Aa ; la barre du lecteur défile de côté, avec ‹ › quand des boutons sont cachés.
-  - **cadres ornementaux** : quatorze cadres relevés sur un paroissien chromolithographié (`tools/cadres`) ; la règle suit le sommaire, un cadre par section, choisi d'abord par le sens (matin, soir, messe, confession, communion, vêpres, complies, mariage), sinon en boucle ; la Bible et les lettres restent sans cadre ; réglage « Cadres » ;
+  - **cadres ornementaux** : quatorze cadres relevés sur un paroissien chromolithographié (`tools/cadres`) ; la règle suit le sommaire, un cadre par section, choisi d'abord par le sens (matin, soir, messe, confession, communion, vêpres, complies, mariage), sinon en boucle ; réglage « Cadres » ;
   - **ouverture du livre** : pris sur le rayon, il s'ouvre par sa couverture, puis la doublure (soie moirée dans une roulette dorée), avant la page ;
-  - **atelier** (proposé, `ATELIER.md`) : moteur v3, second lot de scans, couvertures en modules, habit de chaque livre composé par l'utilisateur.
+  - **atelier** (`ATELIER.md`) : moteur v3 (fait : dispositions partielles dont le côté extérieur suit le folio, pièces de bout, filets à distance fixe, débords, gardes à motif), second lot de scans, couvertures en modules, un habit par livre composé par l'utilisateur ;
+  - **rangs d'habillage** : les livres nobles (prières, Imitation) ont un cadre par section et une doublure de soie ; la Bible est réglée d'un filet rouge ; les livres simples (exercices) ont une garde de papier à motif et des pages nues ; les lettres n'ont ni cadre ni garde ;
+  - **vignettes gravées** : tirées des scans de l'utilisateur, hors du dépôt public (saveur personnelle) ;
+  - **import et export** de livres (txt, epub, PDF) et d'images pieuses recto verso ; **sauvegarde complète** de l'app dans un fichier (réglages, signets, habits, éléments importés), sans cloud.
 - **Avant la phase 5** : mode de messe par défaut (« assemblée » recommandé) ; versions rubricales (1960 seulement au MVP).
 - **À la porte A** : police par défaut (EB Garamond pour les livres liturgiques, Literata en option de lecture) ; seuil de double page sur téléphone.
 

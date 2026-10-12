@@ -45,6 +45,7 @@ fun FramedPageSample(
     style: FrameStyle = ConfessionStyle,
     liturgicalColor: LiturgicalColor? = null,
     fontSize: TextUnit = 18.sp,
+    outerOnRight: Boolean = true,
 ) {
     val paper = LocalPaperColors.current
     val fonts = rememberBookFonts(BookFace.GARAMOND)
@@ -65,7 +66,8 @@ fun FramedPageSample(
         modifier = modifier,
         liturgicalColor = liturgicalColor,
         headerHeight = 22.dp,
-        header = { RunningHead(spec.title + ".", "103", fonts.regular) },
+        outerOnRight = outerOnRight,
+        header = { RunningHead(spec.title + ".", if (outerOnRight) "103" else "104", fonts.regular) },
     ) { padding ->
         Column(
             Modifier

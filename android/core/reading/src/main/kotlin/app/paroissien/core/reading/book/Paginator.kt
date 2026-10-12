@@ -1,6 +1,7 @@
 package app.paroissien.core.reading.book
 
 import androidx.compose.runtime.Immutable
+import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.TextMeasurer
@@ -34,6 +35,9 @@ sealed interface PageItem {
 
     /** Un décor posé tel quel : la lettrine. */
     class Glyph(val layout: TextLayoutResult, val x: Float, override val y: Float) : PageItem
+
+    /** Une vignette gravée, masque alpha posé dans le rectangle (x, y, width, height). */
+    class Picture(val image: ImageBitmap, val x: Float, override val y: Float, val width: Float, val height: Float) : PageItem
 }
 
 @Immutable
@@ -101,6 +105,27 @@ fun paginate(
             continue
         }
         if (block is ReadingBlock.Heading && block.runningHead != null) runningHead = block.runningHead
+        if (block is ReadingBlock.Vignette) {
+            // Pleine largeur du texte, au plus 40 % de la hauteur ; elle part avec le début du bloc suivant.
+            val ratio = block.image.width / block.image.height.toFloat().coerceAtLeast(1f)
+            val h = minOf(width / ratio, height * 0.4f)
+            val w = h * ratio
+            val gap = with(density) { 4.dp.toPx() }
+            // ce que le bloc suivant demande de garder avec lui (un titre garde le début de son paragraphe)
+            fun solid(i: Int) = blocks[i] !is ReadingBlock.PageBreak && blocks[i] !is ReadingBlock.Vignette
+            val next = (index + 1 until blocks.size).firstOrNull(::solid)
+            val after = next?.let { i ->
+                val n = measured(i)
+                val following = (i + 1 until blocks.size).firstOrNull(::solid)
+                val keep = if (n.keepWithNext && following != null) n.height + measured(following).let { it.gapBefore + it.minStart } else 0f
+                n.gapBefore + maxOf(n.minStart, keep)
+            } ?: 0f
+            if (y > 0f && y + h + gap + after > height) closePage()
+            if (pageHead == null) pageHead = runningHead
+            items += PageItem.Picture(block.image, (width - w) / 2, y, w, h)
+            y += h + gap
+            continue
+        }
         val m = measured(index)
         if (m.units.isEmpty()) continue
         val next = (index + 1 until blocks.size).firstOrNull { blocks[it] !is ReadingBlock.PageBreak }
@@ -216,7 +241,7 @@ private class BlockMeasure(
         is ReadingBlock.Versicle -> Measured(block.id, stack(layout(t.render(block.text, block.lang), t.versicle(block.lang)), 0f), gapBefore = blockGap)
         is ReadingBlock.Ornament -> Measured(block.id, stack(layout(AnnotatedString("❦"), t.ornament), 0f), gapBefore = headingGap)
         is ReadingBlock.Paragraph -> paragraph(block)
-        is ReadingBlock.PageBreak -> Measured(block.id, emptyList(), gapBefore = 0f)
+        is ReadingBlock.PageBreak, is ReadingBlock.Vignette -> Measured(block.id, emptyList(), gapBefore = 0f)
     }
 
     private fun paragraph(block: ReadingBlock.Paragraph): Measured {

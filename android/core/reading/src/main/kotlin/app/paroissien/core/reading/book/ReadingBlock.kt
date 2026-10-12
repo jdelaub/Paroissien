@@ -1,5 +1,7 @@
 package app.paroissien.core.reading.book
 
+import androidx.compose.ui.graphics.ImageBitmap
+
 import app.paroissien.core.model.text.RichText
 
 /**
@@ -51,6 +53,12 @@ sealed interface ReadingBlock {
 
     /** Le bloc suivant commence une nouvelle page (début de chapitre, par exemple). */
     data class PageBreak(override val id: String) : ReadingBlock
+
+    /**
+     * Vignette gravée en tête de section : l'encre seule, en masque alpha, que la page teinte de l'encre du thème
+     * comme une impression. Elle reste avec le début du bloc suivant.
+     */
+    data class Vignette(override val id: String, val image: ImageBitmap) : ReadingBlock
 }
 
 /** Position de lecture ancrée sur le contenu (ADR 004) : bloc et décalage en points de code du texte canonique. */

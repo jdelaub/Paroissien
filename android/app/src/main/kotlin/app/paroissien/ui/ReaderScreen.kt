@@ -79,6 +79,7 @@ import app.paroissien.core.data.CardPlacement
 import app.paroissien.core.reading.book.CardMark
 import app.paroissien.library.subtitle
 import app.paroissien.library.BookIdentities
+import app.paroissien.library.BookDresses
 import app.paroissien.library.BookFrames
 import app.paroissien.core.reading.book.FrameLook
 import app.paroissien.core.reading.book.BookLook
@@ -86,8 +87,6 @@ import app.paroissien.core.designsystem.bookThickness
 import app.paroissien.core.designsystem.PaperWeight
 import app.paroissien.core.designsystem.PaperTheme
 import app.paroissien.core.designsystem.BookCover
-import app.paroissien.core.designsystem.CoverMaterial
-import app.paroissien.core.designsystem.DoublurePage
 import androidx.compose.runtime.CompositionLocalProvider
 import app.paroissien.library.PiousImage
 import androidx.compose.material3.OutlinedButton
@@ -141,12 +140,16 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     val units = entry?.units.orEmpty()
     val unitIndex = units.indexOfFirst { it.id == unitId }
     val language = settings.language
-    val loaded by produceState<Loaded?>(null, entry, unitId, language, resolved) {
+    val withVignette = settings.vignettes && !isDemo
+    val loaded by produceState<Loaded?>(null, entry, unitId, language, resolved, withVignette) {
         value = when {
             isDemo -> Loaded(null, language, demoBook())
             !resolved || entry == null || unit == null -> null
             else -> withContext(Dispatchers.IO) {
-                Loaded(unit.id, language, packToReadingBlocks(graph.packs.blocks(entry, unit), unit.title ?: entry.title, language, entry.publication.primaryLanguage))
+                val text = packToReadingBlocks(graph.packs.blocks(entry, unit), unit.title ?: entry.title, language, entry.publication.primaryLanguage)
+                // Livre noble : une vignette gravée en tête de la section, si l'app en contient (saveur personnelle).
+                val vignette = if (withVignette) graph.vignettes.of(publication, entry, unitIndex, unit)?.let(graph.vignettes::image) else null
+                Loaded(unit.id, language, listOfNotNull(vignette?.let { ReadingBlock.Vignette("vignette:${unit.id}", it) }) + text)
             }
         }
     }
@@ -182,7 +185,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
 
     fun openAt(unit: String?, block: String?, offset: Int, end: Boolean = false) {
         // Le début de l'unité déjà ouverte : une ancre explicite, sinon le lecteur ne bougerait pas.
-        anchorBlock = block ?: blocks?.firstOrNull()?.id?.takeIf { unit == unitId }
+        anchorBlock = block ?: blocks?.firstOrNull { it !is ReadingBlock.Vignette }?.id?.takeIf { unit == unitId }
         unitId = unit
         anchorOffset = offset
         atEnd = end
@@ -204,8 +207,9 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     }
     val totalBlocks = units.sumOf { it.blockCount }.coerceAtLeast(1)
     val before = units.take(unitIndex.coerceAtLeast(0)).sumOf { it.blockCount }
-    // Une couverture de papier n'a pas de doublure de soie.
-    val bound = identity.cover.material != CoverMaterial.WRAPPER
+    // La garde suit le rang du livre : soie pour un livre noble, papier à motif pour un livre simple, rien sous une
+    // couverture de papier.
+    val endpaper = remember(publication, entry) { BookDresses.endpaper(publication, entry) }
     val look = BookLook(
         edges = identity.edges,
         weight = identity.paper.weight,
@@ -215,7 +219,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
         cover = if (unitIndex == 0 && entry != null) {
             { BookCover(identity, entry.title, entry.subtitle(), Modifier.fillMaxSize(), flat = true) }
         } else null,
-        endpaper = if (unitIndex == 0 && entry != null && bound) { { DoublurePage() } } else null,
+        endpaper = if (unitIndex == 0) endpaper else null,
         frame = remember(publication, entry, unitIndex, settings.ornamentalFrames) {
             if (settings.ornamentalFrames && !isDemo) BookFrames.of(publication, entry, unitIndex, unit)?.let { FrameLook(it.spec, it.style) } else null
         },
@@ -277,7 +281,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 unitTitle = { entry?.unitTitle(it) ?: "" },
                 onPlace = { slot ->
                     val here = unitId
-                    val block = anchorBlock ?: blocks?.firstOrNull()?.id
+                    val block = anchorBlock ?: blocks?.firstOrNull { it !is ReadingBlock.Vignette }?.id
                     if (here != null && block != null) graph.scope.launch(Dispatchers.IO) {
                         graph.database.ribbons().place(Ribbon(publication, slot, here, block, anchorOffset, null, System.currentTimeMillis()))
                     }
@@ -293,7 +297,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 placedHere = cards.map { it.card }.toSet(),
                 onPlace = { card ->
                     val here = unitId
-                    val block = anchorBlock ?: blocks?.firstOrNull()?.id
+                    val block = anchorBlock ?: blocks?.firstOrNull { it !is ReadingBlock.Vignette }?.id
                     if (here != null && block != null) graph.scope.launch(Dispatchers.IO) {
                         graph.database.cards().place(CardPlacement(card, publication, here, block, anchorOffset, null, System.currentTimeMillis()))
                     }
@@ -311,7 +315,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
         if (opening && entry != null) {
             BookOpening(
                 cover = { BookCover(identity, entry.title, entry.subtitle(), Modifier.fillMaxSize(), flat = true) },
-                endpaper = if (bound) { { DoublurePage() } } else null,
+                endpaper = endpaper,
                 onOpened = { opening = false },
             )
         }

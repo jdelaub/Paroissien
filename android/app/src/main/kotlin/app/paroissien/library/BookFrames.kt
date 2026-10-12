@@ -11,18 +11,34 @@ import java.text.Normalizer
  * paroissien d'origine où chaque section a le sien. D'abord par le sens (le cadre des prières du matin pour les
  * prières du matin…), sinon en boucle dans l'ordre du sommaire, pour que deux sections voisines diffèrent.
  *
- * La Bible et les lettres restent sans cadre : ce ne sont pas des livres de prières.
+ * Seuls les livres nobles ([Dress.NOBLE]) ont un cadre par section ; la Bible est réglée d'un filet rouge, les livres
+ * simples et les lettres restent sans cadre.
  */
 object BookFrames {
 
-    /** Mots du titre ou de l'identifiant de l'unité, sans accents, et le cadre qu'ils appellent ; le premier trouvé gagne. */
+    /** Débuts de mots du titre ou de l'identifiant de l'unité, sans accents, et le cadre qu'ils appellent ; le premier trouvé gagne. */
     private val bySense = listOf(
         "avant la messe" to "avant_messe",
+        "litanie" to "litanies",
+        "table des matieres" to "candelabres",
+        "sommaire" to "candelabres",
+        "ordinaire" to "candelabres",
         "matin" to "matin",
         "soir" to "soir",
-        "litanie" to "soir",
         "messe" to "pendant_messe",
-        "ordinaire" to "pendant_messe",
+        "careme" to "passiflores_agneau",
+        "passion" to "passiflores_agneau",
+        "chemin de croix" to "passiflores_agneau",
+        "saint esprit" to "palmes",
+        "pentecote" to "palmes",
+        "confirmation" to "palmes",
+        "saint sacrement" to "vigne_calice",
+        "benediction" to "vigne_calice",
+        "avent" to "figuier_jacob",
+        "noel" to "figuier_jacob",
+        "nativite" to "figuier_jacob",
+        "evangile" to "lis_vox_dei",
+        "ecriture" to "lis_vox_dei",
         "confession" to "confession",
         "penitence" to "confession",
         "contrition" to "confession",
@@ -35,20 +51,39 @@ object BookFrames {
         "mariage" to "mariage",
     )
 
-    /** Les cadres courants, dans l'ordre du paroissien ; la doublure et le frontispice gravé n'en font pas partie. */
+    /**
+     * Les cadres courants, dans l'ordre du paroissien, puis les bandeaux gravés du second paroissien, plus légers ; la
+     * doublure, le frontispice gravé, le filet rouge et les compositions propres à une page (table, litanies) n'en
+     * font pas partie.
+     */
     private val cycle = listOf(
         "matin", "soir", "avant_messe", "pendant_messe", "confession", "communion",
         "vepres", "complies", "mariage", "renaissance", "vigne", "gothique",
+        "vigne_calice", "figuier_jacob", "lis_vox_dei", "palmes", "passiflores_agneau",
     )
 
     fun of(publication: String, entry: LibraryEntry?, unitIndex: Int, unit: UnitInfo?): OrnamentalFrameDef? {
         if (entry == null || unit == null) return null
-        if (publication.startsWith("bible") || entry.publication.kind == "bible" || entry.series != null) return null
         val frames = OrnamentalFrames.associateBy { it.name }
+        when (BookDresses.of(publication, entry)) {
+            Dress.NOBLE -> Unit
+            Dress.BIBLE -> return frames["filets_rouges"]
+            Dress.SIMPLE, Dress.PLAIN -> return null
+        }
         val words = plain("${unit.id} ${unit.title.orEmpty()}")
-        bySense.firstOrNull { (word, _) -> word in words }?.let { (_, name) -> frames[name]?.let { return it } }
+        bySense.firstOrNull { (word, _) -> startsWord(words, word) }?.let { (_, name) -> frames[name]?.let { return it } }
         val available = cycle.filter { it in frames }
         return available.takeIf { it.isNotEmpty() }?.let { frames.getValue(it[unitIndex.mod(it.size)]) }
+    }
+
+    /** Le mot commence un mot du titre (« litanie » trouve « litanies », « messe » ne trouve pas « promesse »). */
+    private fun startsWord(words: String, word: String): Boolean {
+        var i = words.indexOf(word)
+        while (i >= 0) {
+            if (i == 0 || !words[i - 1].isLetter()) return true
+            i = words.indexOf(word, i + 1)
+        }
+        return false
     }
 
     private fun plain(s: String) = Normalizer.normalize(s.lowercase().replace('-', ' '), Normalizer.Form.NFD).replace(Regex("\\p{M}"), "")

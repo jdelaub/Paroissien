@@ -6,6 +6,8 @@ redessiner un cadre d'après sa photo.
     python3 -I tools/cadres/rendu.py matin --photo ~/…/p005-matin.jpg   # la photo à droite, même hauteur
     python3 -I tools/cadres/rendu.py matin --modules               # planche des modules, en grand
     python3 -I tools/cadres/rendu.py matin --theme SOMBRE --couleur VIOLET --taille 412x892 --echelle 2
+    python3 -I tools/cadres/rendu.py litanies --verso              # page paire : le côté extérieur passe à gauche
+    python3 -I tools/cadres/rendu.py asanoha                       # une garde (tools/cadres/gardes/) : le motif en pleine page
 
 La sortie va dans $CADRES_SORTIE (par défaut <tmp>/cadres/<nom>[-modules].png) ; le chemin est affiché.
 """
@@ -30,12 +32,16 @@ html,body{margin:0;padding:0;background:#fff}canvas{display:block}</style></head
 const S = %(spec)s, P = %(params)s, MF = window.MisselFrame;
 const c = document.getElementById('c'), ctx = c.getContext('2d');
 const inks = MF.resolveInks(S, P.couleur, P.theme);
-if (!P.modules) {
+if (S.kind === 'motif') {
+  c.width = P.w * P.k; c.height = P.h * P.k;
+  ctx.scale(P.k, P.k);
+  MF.drawPattern(ctx, S, inks, P.w, P.h);
+} else if (!P.modules) {
   c.width = P.w * P.k; c.height = P.h * P.k;
   ctx.scale(P.k, P.k);
   ctx.fillStyle = inks.paper; ctx.fillRect(0, 0, P.w, P.h);
   MF.paperGrain(ctx, P.w, P.h, inks.dark);
-  const g = MF.geometry(S, P.w, P.h, 22);
+  const g = MF.geometry(S, P.w, P.h, 22, !P.verso);
   MF.drawFrame(ctx, S, inks, g);
   // titre courant et texte factice, pour juger des proportions
   ctx.fillStyle = inks.text;
@@ -64,6 +70,10 @@ if (!P.modules) {
   add('ornement du milieu', S.outer.mid, 'outer'); add('ornement du milieu du pied', S.outer.midBottom, 'outer');
   add('ornement du milieu des côtés', S.outer.midSide, 'outer');
   if (S.bars && S.bars.terminal) add('terminaison', S.bars.terminal, 'term');
+  for (const k of ['top', 'side', 'bottom']) {
+    const e = (S.ends || {})[k] || {};
+    add('bout de début (' + k + ')', e.start, 'box'); add('bout de fin (' + k + ')', e.end, 'box');
+  }
   const k = P.k * 2.5, pad = 16, W = 1100;
   const sizes = items.map(([t, m, kind]) => {
     if (kind === 'band') { const o = m.outset || 0, i = m.inset || 0; const n = Math.max(2, Math.floor((W - 2 * pad) / k / m.period)); return [n * m.period, 100 + o + i, n]; }
@@ -111,20 +121,22 @@ def chrome():
     sys.exit("Chrome introuvable : il faut google-chrome ou chromium.")
 
 
-def render(name, w=360, h=760, k=2, theme="CLAIR", couleur="", modules=False, texte=True, photo=None, out=None):
+def render(name, w=360, h=760, k=2, theme="CLAIR", couleur="", modules=False, texte=True, photo=None, out=None,
+           verso=False, photo_rotation=0):
     spec = generate.load(name)
     js = open(os.path.join(HERE, "apercu", "frame.js"), encoding="utf-8").read()
-    params = {"w": w, "h": h, "k": k, "theme": theme, "couleur": couleur, "modules": modules, "texte": texte}
+    params = {"w": w, "h": h, "k": k, "theme": theme, "couleur": couleur, "modules": modules and spec.get("kind") != "motif",
+              "texte": texte, "verso": verso}
     html = PAGE % {"js": js, "spec": json.dumps(spec, ensure_ascii=False), "params": json.dumps(params)}
     outdir = os.environ.get("CADRES_SORTIE") or os.path.join(tempfile.gettempdir(), "cadres")
     os.makedirs(outdir, exist_ok=True)
-    out = out or os.path.join(outdir, f"{name}{'-modules' if modules else ''}.png")
+    out = out or os.path.join(outdir, f"{name}{'-modules' if modules else ''}{'-verso' if verso else ''}.png")
     work = tempfile.mkdtemp(prefix="cadre-")
     try:
         page = os.path.join(work, "page.html")
         with open(page, "w", encoding="utf-8") as f:
             f.write(html)
-        if modules:
+        if params["modules"]:
             size = (1100, 8000)
         else:
             size = (round(w * k), round(h * k))
@@ -134,6 +146,7 @@ def render(name, w=360, h=760, k=2, theme="CLAIR", couleur="", modules=False, te
                        check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=120)
     finally:
         shutil.rmtree(work, ignore_errors=True)
+    modules = params["modules"]
     if modules or photo:
         from PIL import Image, ImageOps
         im = Image.open(out).convert("RGB")
@@ -146,6 +159,8 @@ def render(name, w=360, h=760, k=2, theme="CLAIR", couleur="", modules=False, te
             im = im.crop((0, 0, im.width, bottom))
         if photo:
             ph = ImageOps.exif_transpose(Image.open(os.path.expanduser(photo))).convert("RGB")
+            if photo_rotation:
+                ph = ph.rotate(-photo_rotation, expand=True)  # sens horaire, comme decoupe.py
             ph = ph.resize((round(ph.width * im.height / ph.height), im.height))
             both = Image.new("RGB", (im.width + ph.width + 12, im.height), "white")
             both.paste(im, (0, 0))
@@ -165,10 +180,12 @@ def main():
     a.add_argument("--modules", action="store_true", help="planche des modules au lieu de la page")
     a.add_argument("--sans-texte", action="store_true", help="pas de texte factice")
     a.add_argument("--photo", help="photo à placer à droite, à la même hauteur")
+    a.add_argument("--verso", action="store_true", help="page paire : le côté extérieur à gauche")
+    a.add_argument("--rotation-photo", type=int, default=0, choices=[0, 90, 180, 270], help="sens horaire, après l'EXIF")
     a.add_argument("--sortie", help="fichier PNG de sortie")
     o = a.parse_args()
     w, h = (int(v) for v in o.taille.lower().split("x"))
-    print(render(o.nom, w, h, o.echelle, o.theme, o.couleur, o.modules, not o.sans_texte, o.photo, o.sortie))
+    print(render(o.nom, w, h, o.echelle, o.theme, o.couleur, o.modules, not o.sans_texte, o.photo, o.sortie, o.verso, o.rotation_photo))
 
 
 if __name__ == "__main__":
