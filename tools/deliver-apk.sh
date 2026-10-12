@@ -19,11 +19,11 @@ apksigner="$(ls -d "$HOME"/Android/Sdk/build-tools/*/ | sort -V | tail -1)apksig
 
 # Un seul travail lourd à la fois sur la VM (2 cœurs, 7,8 Gio, hébergée par le NAS) : elle a gelé deux fois le
 # 12/10/2026, un build release tournant en même temps qu'un agent. On refuse de construire sans marge.
-if pgrep -f "qemu-system|emulator64" >/dev/null; then
+if pgrep -f "[q]emu-system|[e]mulator64" >/dev/null; then
     echo "Un émulateur tourne : arrêtez-le avant de construire." >&2
     exit 1
 fi
-if pgrep -f "GradleDaemon|GradleWorkerMain|chrome.*--headless" >/dev/null; then
+if pgrep -f "[G]radleDaemon|[G]radleWorkerMain|[c]hrome.*--headless" >/dev/null; then
     echo "Un autre build Gradle ou un Chrome sans fenêtre tourne : attendez qu'il finisse." >&2
     exit 1
 fi
