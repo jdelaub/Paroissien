@@ -13,6 +13,7 @@ import app.paroissien.R
 import app.paroissien.core.data.ReaderSettings
 import app.paroissien.core.designsystem.BookFace
 import app.paroissien.core.designsystem.PaperTheme
+import app.paroissien.core.designsystem.RibbonFabric
 import app.paroissien.core.reading.book.SpreadMode
 
 /** Animation de page (rapport 07) : pli AGSL, feuille qui glisse, ou aucune. */
@@ -24,6 +25,7 @@ fun ReaderSettings.paperTheme() = PaperTheme.entries.firstOrNull { it.name == th
 fun ReaderSettings.bookFace() = BookFace.entries.firstOrNull { it.name == face } ?: BookFace.GARAMOND
 fun ReaderSettings.spreadMode() = SpreadMode.entries.firstOrNull { it.name == spread } ?: SpreadMode.AUTO
 fun ReaderSettings.turnStyle() = TurnStyle.entries.firstOrNull { it.name == turn } ?: TurnStyle.PAPIER
+fun ReaderSettings.ribbonFabric() = if (ribbonFabric == "SATIN") RibbonFabric.SATIN else RibbonFabric.TEXTURED
 
 /** Les réglages de lecture, chacun un bouton qui passe à la valeur suivante ; [change] les enregistre, [onAll] ouvre l'écran des réglages. */
 @Composable
@@ -41,6 +43,9 @@ fun ReaderSettingsRow(settings: ReaderSettings, onAll: (() -> Unit)? = null, cha
         Setting(stringResource(if (settings.protectEdges) R.string.setting_edges_on else R.string.setting_edges_off)) { change { it.copy(protectEdges = !it.protectEdges) } }
         Setting(stringResource(if (settings.bookIdentity) R.string.setting_identity_on else R.string.setting_identity_off)) { change { it.copy(bookIdentity = !it.bookIdentity) } }
         Setting(stringResource(if (settings.ribbonsAcross) R.string.setting_ribbons_across_on else R.string.setting_ribbons_across_off)) { change { it.copy(ribbonsAcross = !it.ribbonsAcross) } }
+        Setting(stringResource(if (settings.ribbonFabric() == RibbonFabric.SATIN) R.string.setting_fabric_satin else R.string.setting_fabric_textured)) {
+            change { it.copy(ribbonFabric = if (it.ribbonFabric == "SATIN") "TISSU" else "SATIN") }
+        }
         Setting(stringResource(if (settings.cardsOnPage) R.string.setting_cards_on_page_on else R.string.setting_cards_on_page_off)) { change { it.copy(cardsOnPage = !it.cardsOnPage) } }
         Setting(stringResource(if (settings.showMeasures) R.string.setting_measures_on else R.string.setting_measures_off)) { change { it.copy(showMeasures = !it.showMeasures) } }
         onAll?.let { Setting(stringResource(R.string.setting_all), it) }

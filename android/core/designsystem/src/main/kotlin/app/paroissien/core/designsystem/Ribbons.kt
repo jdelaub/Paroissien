@@ -1,6 +1,7 @@
 package app.paroissien.core.designsystem
 
 import android.graphics.BlurMaskFilter
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.BlendMode
@@ -14,7 +15,6 @@ import androidx.compose.ui.graphics.Vertices
 import androidx.compose.ui.graphics.asAndroidPath
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
-import androidx.compose.ui.graphics.drawscope.clipPath
 import androidx.compose.ui.graphics.drawscope.drawIntoCanvas
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.graphics.nativeCanvas
@@ -27,20 +27,27 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sin
 
+/** Le tissu des rubans (réglage) : mat, tissé de fines côtes qui courent dans la longueur, ou satin brillant. */
+enum class RibbonFabric { TEXTURED, SATIN }
+
+/** Le tissu choisi, fourni à la racine de l'application d'après les réglages. */
+val LocalRibbonFabric = staticCompositionLocalOf { RibbonFabric.TEXTURED }
+
 /**
- * Les six rubans de satin d'un livre (rapport 09), à la couleur liturgique, coupés en biais et brodés d'une croix
- * dorée près de l'extrémité, comme les signets des missels. Le nom de la couleur est toujours écrit à côté
- * (panneau des rubans, signets, TalkBack) : la couleur n'est jamais le seul signal.
+ * Les six rubans d'un livre (rapport 09), à la couleur liturgique, coupés en biais et brodés d'une croix dorée près
+ * de l'extrémité, comme les signets des missels. [ribs] : le nombre de côtes du tissu mat, de 3 à 7, propre à chaque
+ * ruban. Le nom de la couleur est toujours écrit à côté (panneau des rubans, signets, TalkBack) : la couleur n'est
+ * jamais le seul signal.
  */
-data class RibbonStyle(val color: LiturgicalColor, val label: String) {
+data class RibbonStyle(val color: LiturgicalColor, val label: String, val ribs: Int) {
     companion object {
         val slots = listOf(
-            RibbonStyle(LiturgicalColor.RED, "rouge"),
-            RibbonStyle(LiturgicalColor.GREEN, "vert"),
-            RibbonStyle(LiturgicalColor.VIOLET, "violet"),
-            RibbonStyle(LiturgicalColor.WHITE, "blanc"),
-            RibbonStyle(LiturgicalColor.ROSE, "rose"),
-            RibbonStyle(LiturgicalColor.BLACK, "noir"),
+            RibbonStyle(LiturgicalColor.RED, "rouge", ribs = 5),
+            RibbonStyle(LiturgicalColor.GREEN, "vert", ribs = 3),
+            RibbonStyle(LiturgicalColor.VIOLET, "violet", ribs = 4),
+            RibbonStyle(LiturgicalColor.WHITE, "blanc", ribs = 7),
+            RibbonStyle(LiturgicalColor.ROSE, "rose", ribs = 6),
+            RibbonStyle(LiturgicalColor.BLACK, "noir", ribs = 3),
         )
 
         fun of(slot: Int) = slots[slot.coerceIn(0, slots.lastIndex)]
@@ -51,89 +58,51 @@ private val GoldDark = Color(0xFF8A6A1C)
 private val Gold = Color(0xFFD8B65A)
 private val GoldLight = Color(0xFFF3DE96)
 
-/**
- * Un ruban vertical de [size] posé en [topLeft]. Le satin tient à trois choses : un reflet clair un peu décentré,
- * des bords plus sombres là où le tissu tourne, et de longs plis doux. L'extrémité est coupée en biais (le côté
- * gauche descend le plus bas), une croix dorée brodée juste au-dessus.
- */
-fun DrawScope.drawRibbon(style: RibbonStyle, dark: Boolean, topLeft: Offset, size: Size) {
-    val tokens = liturgicalTokens(style.color, dark)
-    val w = size.width
-    val h = size.height
-    val x = topLeft.x
-    val y = topLeft.y
-    val bias = (w * 0.9f).coerceAtMost(h * 0.4f)
-    val bottom = y + h
-    val path = Path().apply {
-        moveTo(x, y)
-        lineTo(x + w, y)
-        lineTo(x + w, bottom - bias)
-        lineTo(x, bottom)
-        close()
-    }
-    // Ombre portée très douce sur le papier.
-    drawPath(path, Color.Black.copy(alpha = if (dark) 0.35f else 0.14f), style = Stroke(width = 2.5f))
-    drawPath(path, tokens.fabric)
-
-    clipPath(path) {
-        // Le reflet du satin, en travers du ruban.
-        val light = if (style.color == LiturgicalColor.BLACK) 0.22f else if (style.color == LiturgicalColor.WHITE) 0.55f else 0.32f
-        drawRect(
-            Brush.horizontalGradient(
-                0f to Color.Black.copy(alpha = 0.22f),
-                0.16f to Color.Transparent,
-                0.34f to Color.White.copy(alpha = light),
-                0.46f to Color.White.copy(alpha = light * 0.35f),
-                0.72f to Color.Transparent,
-                1f to Color.Black.copy(alpha = 0.26f),
-                startX = x, endX = x + w,
-            ),
-            topLeft = topLeft, size = size,
-        )
-        // De longs plis doux : le tissu n'est jamais tout à fait plat.
-        if (h > w * 3) {
-            val fold = Color.Black.copy(alpha = if (dark) 0.16f else 0.10f)
-            val shine = Color.White.copy(alpha = if (dark) 0.06f else 0.10f)
-            drawRect(
-                Brush.verticalGradient(
-                    0f to Color.Transparent, 0.22f to shine, 0.38f to fold, 0.55f to Color.Transparent,
-                    0.7f to shine, 0.86f to fold, 1f to Color.Transparent,
-                    startY = y, endY = bottom,
-                ),
-                topLeft = topLeft, size = size,
-            )
-        }
-        // Lisières : un fil plus sombre de chaque côté.
-        val edge = Color.Black.copy(alpha = if (dark) 0.35f else 0.18f)
-        val e = (w * 0.05f).coerceIn(0.6f, 2f)
-        drawRect(edge, Offset(x, y), Size(e, h))
-        drawRect(edge, Offset(x + w - e, y), Size(e, h))
-    }
-    tokens.trim?.let { drawPath(path, it, style = Stroke(width = 1.2f)) }
-    drawCross(Offset(x + w / 2, bottom - bias - w * 0.62f), w)
+/** Un ruban vertical de [size] posé en [topLeft] : une queue qui pend sous la page, une petite icône. */
+fun DrawScope.drawRibbon(style: RibbonStyle, dark: Boolean, topLeft: Offset, size: Size, fabric: RibbonFabric = RibbonFabric.TEXTURED) {
+    val x = topLeft.x + size.width / 2
+    val spine = listOf(Offset(x, topLeft.y), Offset(x, topLeft.y + size.height))
+    drawRibbonAlong(style, dark, spine, size.width, ripple = if (size.height > size.width * 3) 0.35f else 0f, fabric = fabric)
 }
 
-/** Colonnes du maillage dans la largeur (0 = lisière gauche), et leur relief : lisières sombres, reflet décentré. */
+/** Colonnes du maillage dans la largeur (0 = lisière gauche). */
 private val Across = floatArrayOf(0f, 0.05f, 0.16f, 0.34f, 0.46f, 0.72f, 0.95f, 1f)
-private val AcrossLight = floatArrayOf(-0.36f, -0.14f, 0f, 1f, 0.42f, 0f, -0.16f, -0.38f)
+
+/** Relief du satin dans la largeur : lisières sombres, reflet décentré (les colonnes [Sheen]). */
+private val SatinLight = floatArrayOf(-0.36f, -0.14f, 0f, 1f, 0.42f, 0f, -0.16f, -0.38f)
 private val Sheen = booleanArrayOf(false, false, false, true, true, false, false, false)
 
+/** Relief du tissu mat : à peine bombé, sans reflet. */
+private val MatteLight = floatArrayOf(-0.24f, -0.1f, 0.02f, 0.07f, 0.06f, 0f, -0.09f, -0.26f)
+
 /**
- * Un ruban couché sur la page le long de [spine], sa ligne médiane, de la tête du livre vers l'extrémité. Le satin
- * ondule légèrement : dans la longueur, le reflet s'allume et s'éteint au gré de longues ondes douces, le ruban serpente
- * à peine et sa largeur respire comme un tissu qui se tord un peu ; dans la largeur, lisières sombres et reflet
- * décentré. [ripple] (0 à 1) règle la force des ondulations et [phase] les fait glisser, quand on déplace le ruban.
- * Une ombre douce le détache du papier ; même coupe en biais et même croix brodée que [drawRibbon].
+ * Un ruban couché sur la page le long de [spine], sa ligne médiane, de la tête du livre vers l'extrémité. Il ondule
+ * légèrement : le ruban serpente à peine, sa largeur respire comme un tissu qui se tord un peu, et la lumière suit de
+ * longues ondes douces. [ripple] (0 à 1) règle la force des ondulations et [phase] les fait glisser, quand on déplace
+ * le ruban. Le [fabric] mat est tissé : un grain fin en travers, et ses côtes ([RibbonStyle.ribs]) qui courent dans
+ * la longueur, éclairées d'un côté, ombrées de l'autre ; le satin a ses lisières sombres et son reflet décentré qui
+ * s'allume et s'éteint. Une ombre douce le détache du papier ; coupe en biais, croix brodée.
  */
-fun DrawScope.drawRibbonAlong(style: RibbonStyle, dark: Boolean, spine: List<Offset>, width: Float, ripple: Float = 1f, phase: Float = 0f) {
+fun DrawScope.drawRibbonAlong(
+    style: RibbonStyle,
+    dark: Boolean,
+    spine: List<Offset>,
+    width: Float,
+    ripple: Float = 1f,
+    phase: Float = 0f,
+    fabric: RibbonFabric = RibbonFabric.TEXTURED,
+) {
     if (spine.size < 2 || width <= 0f) return
-    val line = resample(spine, (width / 5f).coerceIn(1.5f, 6f))
+    val satin = fabric == RibbonFabric.SATIN
+    // Le tissu mat a un rang de sommets à chaque duite, ou presque : c'est ce qui fait son grain.
+    val line = resample(spine, if (satin) (width / 5f).coerceIn(1.5f, 6f) else (width / 12f).coerceIn(1.2f, 2.5f))
     val n = line.size
     if (n < 2) return
     val dist = FloatArray(n)
     for (i in 1 until n) dist[i] = dist[i - 1] + (line[i] - line[i - 1]).getDistance()
     val length = dist[n - 1]
-    val tangents = Array(n) { i -> unit(line[min(i + 2, n - 1)] - line[max(i - 2, 0)]) }
+    val reach = (width * 0.4f / (length / n)).toInt().coerceAtLeast(2)
+    val tangents = Array(n) { i -> unit(line[min(i + reach, n - 1)] - line[max(i - reach, 0)]) }
 
     // Le point et la direction de la ligne médiane à la distance s, avec le léger serpentement du tissu.
     val meander = width * 0.07f * ripple
@@ -150,11 +119,15 @@ fun DrawScope.drawRibbonAlong(style: RibbonStyle, dark: Boolean, spine: List<Off
 
     val tokens = liturgicalTokens(style.color, dark)
     val highlight = when (style.color) { LiturgicalColor.BLACK -> 0.24f; LiturgicalColor.WHITE -> 0.5f; else -> 0.34f }
-    fun shade(s: Float, j: Int): Color {
+    fun shade(s: Float, j: Int, r: Int): Color {
         val wave = ripple * (0.62f * cos(s * waveA + phase) + 0.38f * cos(s * waveB + 1.7f + phase * 1.6f))
-        val relief = AcrossLight[j]
-        var light = if (Sheen[j]) relief * highlight * (0.7f + 0.6f * wave) else relief * (1f - 0.3f * wave)
-        light += 0.13f * wave
+        val light = if (satin) {
+            val relief = SatinLight[j]
+            (if (Sheen[j]) relief * highlight * (0.7f + 0.6f * wave) else relief * (1f - 0.3f * wave)) + 0.13f * wave
+        } else {
+            // Mat : la lumière diffuse suit à peine les ondulations ; le grain change d'une duite à l'autre.
+            MatteLight[j] + 0.09f * wave + 0.035f * grain(r) + 0.025f * grain(r * 31 + j)
+        }
         return if (light >= 0f) lerp(tokens.fabric, Color.White, light.coerceAtMost(0.8f)) else lerp(tokens.fabric, Color.Black, (-light).coerceAtMost(0.8f))
     }
 
@@ -165,28 +138,29 @@ fun DrawScope.drawRibbonAlong(style: RibbonStyle, dark: Boolean, spine: List<Off
     val m = Across.size
     val positions = ArrayList<Offset>()
     val colors = ArrayList<Color>()
-    fun row(at: (Int) -> Float) {
+    fun row(r: Int, at: (Int) -> Float) {
         for (j in 0 until m) {
             val s = at(j)
             val (p, t) = frame(s)
             val breath = 1f + 0.035f * ripple * sin(s * waveB * 0.8f + phase)
             positions += p + Offset(-t.y, t.x) * ((0.5f - Across[j]) * width * breath)
-            colors += shade(s, j)
+            colors += shade(s, j, r)
         }
     }
-    for (i in 0 until n) if (dist[i] < cut) row { dist[i] }
-    row { j -> length - bias * Across[j] }
+    var r = 0
+    for (i in 0 until n) if (dist[i] < cut) row(r++) { dist[i] }
+    row(r) { j -> length - bias * Across[j] }
     val rows = positions.size / m
     val indices = ArrayList<Int>((rows - 1) * (m - 1) * 6)
-    for (r in 0 until rows - 1) for (j in 0 until m - 1) {
-        val a = r * m + j
+    for (q in 0 until rows - 1) for (j in 0 until m - 1) {
+        val a = q * m + j
         indices += a; indices += a + m; indices += a + 1
         indices += a + 1; indices += a + m; indices += a + m + 1
     }
     val outline = Path().apply {
         moveTo(positions[0].x, positions[0].y)
-        for (r in 1 until rows) lineTo(positions[r * m].x, positions[r * m].y)
-        for (r in rows - 1 downTo 0) lineTo(positions[r * m + m - 1].x, positions[r * m + m - 1].y)
+        for (q in 1 until rows) lineTo(positions[q * m].x, positions[q * m].y)
+        for (q in rows - 1 downTo 0) lineTo(positions[q * m + m - 1].x, positions[q * m + m - 1].y)
         close()
     }
 
@@ -202,6 +176,32 @@ fun DrawScope.drawRibbonAlong(style: RibbonStyle, dark: Boolean, spine: List<Off
         canvas.nativeCanvas.restore()
     }
     drawContext.canvas.drawVertices(Vertices(VertexMode.Triangles, positions, positions, colors, indices), BlendMode.Modulate, Paint().apply { color = Color.White })
+
+    // Les côtes du tissu mat, en long : un fil de lumière du côté de la lisière gauche, un fil d'ombre de l'autre.
+    val ribs = style.ribs
+    if (!satin && width / (ribs + 1) >= 3f) {
+        val rib = (width * 0.022f).coerceIn(0.7f, 1.4f)
+        val lit = Color.White.copy(alpha = if (dark) 0.08f else 0.16f)
+        val shaded = Color.Black.copy(alpha = if (dark) 0.34f else 0.2f)
+        for (k in 1..ribs) {
+            val u = k / (ribs + 1f)
+            val j = Across.indexOfLast { it <= u }.coerceIn(0, m - 2)
+            val f = (u - Across[j]) / (Across[j + 1] - Across[j])
+            val light = Path()
+            val shadow = Path()
+            for (q in 0 until rows) {
+                val a = positions[q * m + j]
+                val p = a + (positions[q * m + j + 1] - a) * f
+                val towardsLeft = unit(positions[q * m] - positions[q * m + m - 1]) * (rib * 0.6f)
+                val pl = p + towardsLeft
+                val ps = p - towardsLeft
+                if (q == 0) { light.moveTo(pl.x, pl.y); shadow.moveTo(ps.x, ps.y) } else { light.lineTo(pl.x, pl.y); shadow.lineTo(ps.x, ps.y) }
+            }
+            drawPath(shadow, shaded, style = Stroke(width = rib, join = StrokeJoin.Round))
+            drawPath(light, lit, style = Stroke(width = rib, join = StrokeJoin.Round))
+        }
+    }
+
     // Les lisières, d'un trait lissé : elles effacent aussi l'escalier des bords du maillage.
     val selvedge = lerp(tokens.fabric, Color.Black, if (dark) 0.5f else 0.38f)
     drawPath(outline, selvedge.copy(alpha = 0.85f), style = Stroke(width = (width * 0.04f).coerceIn(0.8f, 1.6f), join = StrokeJoin.Round))
@@ -209,6 +209,13 @@ fun DrawScope.drawRibbonAlong(style: RibbonStyle, dark: Boolean, spine: List<Off
 
     val (center, t) = frame(cut - width * 0.62f)
     rotate(degrees = (atan2(t.y, t.x) * 180 / PI).toFloat() - 90f, pivot = center) { drawCross(center, width) }
+}
+
+/** Un bruit fixe entre -0,5 et 0,5, tiré de [i] : le grain du tissu, le même à chaque dessin. */
+private fun grain(i: Int): Float {
+    var h = i * 374761393
+    h = (h xor (h ushr 13)) * 1274126177
+    return ((h xor (h ushr 16)) and 0xFFFF) / 65535f - 0.5f
 }
 
 private fun unit(v: Offset): Offset {

@@ -21,7 +21,7 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import org.robolectric.annotation.GraphicsMode
 
-/** Les six rubans de satin : en long (couchés dans le livre) et en queue (dans la bande sous le texte). */
+/** Les six rubans, en tissu mat à côtes ou en satin : en long, en queue, et couchés en travers d'une page. */
 @RunWith(RobolectricTestRunner::class)
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 @Config(sdk = [35], qualifiers = "w384dp-h600dp-xxhdpi")
@@ -32,9 +32,13 @@ class RibbonsScreenshotTest {
 
     @Test fun clair() = capture(PaperTheme.CLAIR)
     @Test fun sombre() = capture(PaperTheme.SOMBRE)
+    @Test fun satin() = capture(PaperTheme.CLAIR, RibbonFabric.SATIN)
 
-    /** Couchés en travers d'une page de texte : satin qui ondule à peine, ombre douce, extrémité en biais. */
-    @Test fun enTravers() {
+    /** Couchés en travers d'une page de texte : ondulations légères, ombre douce, extrémité en biais. */
+    @Test fun enTravers() = across(RibbonFabric.TEXTURED)
+    @Test fun enTraversSatin() = across(RibbonFabric.SATIN)
+
+    private fun across(fabric: RibbonFabric) {
         compose.setContent {
             ParoissienTheme(PaperTheme.CLAIR) {
                 val paper = LocalPaperColors.current
@@ -51,28 +55,28 @@ class RibbonsScreenshotTest {
                         val v = 1 - u
                         Offset(x0 * (v * v * v) + (x0 + w * 0.03f) * (3 * v * v * u) + (x3 - w * 0.14f) * (3 * v * u * u) + x3 * (u * u * u), -10f * v * v * v + h * 0.32f * 3 * v * v * u + h * 0.68f * 3 * v * u * u + (h - 20f) * u * u * u)
                     }
-                    drawRibbonAlong(RibbonStyle.slots[0], false, curve(50f, w * 0.5f), 16.dp.toPx())
-                    drawRibbonAlong(RibbonStyle.slots[3], false, curve(100f, w * 0.62f), 16.dp.toPx(), phase = 1f)
-                    drawRibbonAlong(RibbonStyle.slots[2], false, List(2) { Offset(w - 30f, -10f + (h + 20f) * it) }, 11.dp.toPx(), ripple = 0.45f, phase = 2.4f)
+                    drawRibbonAlong(RibbonStyle.slots[0], false, curve(50f, w * 0.5f), 16.dp.toPx(), fabric = fabric)
+                    drawRibbonAlong(RibbonStyle.slots[3], false, curve(100f, w * 0.62f), 16.dp.toPx(), phase = 1f, fabric = fabric)
+                    drawRibbonAlong(RibbonStyle.slots[2], false, List(2) { Offset(w - 30f, -10f + (h + 20f) * it) }, 11.dp.toPx(), ripple = 0.45f, phase = 2.4f, fabric = fabric)
                 }
             }
         }
         compose.onRoot().captureRoboImage()
     }
 
-    private fun capture(theme: PaperTheme) {
+    private fun capture(theme: PaperTheme, fabric: RibbonFabric = RibbonFabric.TEXTURED) {
         compose.setContent {
             ParoissienTheme(theme) {
                 val paper = LocalPaperColors.current
                 Column(Modifier.background(paper.background).padding(24.dp), verticalArrangement = Arrangement.spacedBy(28.dp)) {
                     Row(horizontalArrangement = Arrangement.spacedBy(18.dp)) {
                         RibbonStyle.slots.forEach { style ->
-                            Canvas(Modifier.size(width = 34.dp, height = 300.dp)) { drawRibbon(style, paper.isDark, Offset.Zero, size) }
+                            Canvas(Modifier.size(width = 34.dp, height = 300.dp)) { drawRibbon(style, paper.isDark, Offset.Zero, size, fabric) }
                         }
                     }
                     Row(horizontalArrangement = Arrangement.spacedBy(26.dp)) {
                         RibbonStyle.slots.forEach { style ->
-                            Canvas(Modifier.size(width = 22.dp, height = 40.dp)) { drawRibbon(style, paper.isDark, Offset.Zero, size) }
+                            Canvas(Modifier.size(width = 22.dp, height = 40.dp)) { drawRibbon(style, paper.isDark, Offset.Zero, size, fabric) }
                         }
                     }
                 }

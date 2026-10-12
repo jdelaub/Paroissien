@@ -37,6 +37,8 @@ import app.paroissien.core.designsystem.LocalPaperColors
 import app.paroissien.core.designsystem.PaperTheme
 import app.paroissien.core.designsystem.ParoissienTheme
 import app.paroissien.core.designsystem.RibbonStyle
+import app.paroissien.core.designsystem.LocalRibbonFabric
+import androidx.compose.runtime.CompositionLocalProvider
 import app.paroissien.core.designsystem.drawRibbon
 import kotlinx.serialization.Serializable
 import java.time.LocalDate
@@ -70,67 +72,69 @@ fun ParoissienRoot(graph: AppGraph) {
     val selectTab: (NavKey) -> Unit = { key -> backStack.clear(); backStack.add(key) }
 
     ParoissienTheme(PaperTheme.entries.firstOrNull { it.name == settings.theme } ?: PaperTheme.CLAIR) {
-        Immersive(enabled = top is ReaderKey || top is PrayerKey)
-        Column(Modifier.fillMaxSize()) {
-            Box(Modifier.weight(1f)) {
-                NavDisplay(
-                    backStack = backStack,
-                    onBack = { backStack.removeLastOrNull() },
-                    entryProvider = entryProvider {
-                        entry<TodayKey> { TodayScreen(graph, settings, date = null, open = open) }
-                        entry<DayKey> { key -> TodayScreen(graph, settings, LocalDate.parse(key.date), open, onBack = { backStack.removeLastOrNull() }) }
-                        entry<OrdoKey> { key -> OrdoScreen(graph, settings, key, open, onBack = { backStack.removeLastOrNull() }) }
-                        entry<PrayerKey> { key ->
-                            PrayerScreen(
-                                graph, settings, key,
-                                onOpenText = { backStack.removeLastOrNull(); key.publication?.let { open(ReaderKey(it, key.unit, key.block)) } },
-                                onClose = { backStack.removeLastOrNull() },
-                            )
-                        }
-                        entry<CardKey> { key -> CardScreen(graph, key, open, onBack = { backStack.removeLastOrNull() }) }
-                        entry<ImageBoxKey> { ImageBoxScreen(graph, open, onBack = { backStack.removeLastOrNull() }) }
-                        entry<ScanKey> { key ->
-                            ScanScreen(
-                                graph, key,
-                                onDone = { id -> backStack.removeLastOrNull(); if (key.backOf == null) open(CardKey(id)) },
-                                onBack = { backStack.removeLastOrNull() },
-                            )
-                        }
-                        entry<SettingsKey> { SettingsScreen(graph, settings, onBack = { backStack.removeLastOrNull() }) }
-                        entry<LibraryKey> { LibraryScreen(graph, settings, open) }
-                        entry<SeriesKey> { key -> SeriesScreen(graph, settings, key, open, onBack = { backStack.removeLastOrNull() }) }
-                        entry<BookmarksKey> { BookmarksScreen(graph, open) }
-                        entry<SearchKey> { SearchScreen(graph, open) }
-                        entry<ReaderKey> { key -> ReaderScreen(graph, key, settings, open, onBack = { backStack.removeLastOrNull() }) }
-                    },
-                )
-            }
-            if (top in tabs) {
-                NavigationBar(containerColor = LocalPaperColors.current.surface) {
-                    NavigationBarItem(
-                        selected = top == TodayKey,
-                        onClick = { selectTab(TodayKey) },
-                        icon = { Icon(Icons.Filled.Home, contentDescription = null) },
-                        label = { Text(stringResource(R.string.tab_today)) },
+        CompositionLocalProvider(LocalRibbonFabric provides settings.ribbonFabric()) {
+            Immersive(enabled = top is ReaderKey || top is PrayerKey)
+            Column(Modifier.fillMaxSize()) {
+                Box(Modifier.weight(1f)) {
+                    NavDisplay(
+                        backStack = backStack,
+                        onBack = { backStack.removeLastOrNull() },
+                        entryProvider = entryProvider {
+                            entry<TodayKey> { TodayScreen(graph, settings, date = null, open = open) }
+                            entry<DayKey> { key -> TodayScreen(graph, settings, LocalDate.parse(key.date), open, onBack = { backStack.removeLastOrNull() }) }
+                            entry<OrdoKey> { key -> OrdoScreen(graph, settings, key, open, onBack = { backStack.removeLastOrNull() }) }
+                            entry<PrayerKey> { key ->
+                                PrayerScreen(
+                                    graph, settings, key,
+                                    onOpenText = { backStack.removeLastOrNull(); key.publication?.let { open(ReaderKey(it, key.unit, key.block)) } },
+                                    onClose = { backStack.removeLastOrNull() },
+                                )
+                            }
+                            entry<CardKey> { key -> CardScreen(graph, key, open, onBack = { backStack.removeLastOrNull() }) }
+                            entry<ImageBoxKey> { ImageBoxScreen(graph, open, onBack = { backStack.removeLastOrNull() }) }
+                            entry<ScanKey> { key ->
+                                ScanScreen(
+                                    graph, key,
+                                    onDone = { id -> backStack.removeLastOrNull(); if (key.backOf == null) open(CardKey(id)) },
+                                    onBack = { backStack.removeLastOrNull() },
+                                )
+                            }
+                            entry<SettingsKey> { SettingsScreen(graph, settings, onBack = { backStack.removeLastOrNull() }) }
+                            entry<LibraryKey> { LibraryScreen(graph, settings, open) }
+                            entry<SeriesKey> { key -> SeriesScreen(graph, settings, key, open, onBack = { backStack.removeLastOrNull() }) }
+                            entry<BookmarksKey> { BookmarksScreen(graph, open) }
+                            entry<SearchKey> { SearchScreen(graph, open) }
+                            entry<ReaderKey> { key -> ReaderScreen(graph, key, settings, open, onBack = { backStack.removeLastOrNull() }) }
+                        },
                     )
-                    NavigationBarItem(
-                        selected = top == LibraryKey,
-                        onClick = { selectTab(LibraryKey) },
-                        icon = { Icon(Icons.AutoMirrored.Filled.List, contentDescription = null) },
-                        label = { Text(stringResource(R.string.tab_library)) },
-                    )
-                    NavigationBarItem(
-                        selected = top == BookmarksKey,
-                        onClick = { selectTab(BookmarksKey) },
-                        icon = { RibbonIcon(slot = 0) },
-                        label = { Text(stringResource(R.string.tab_bookmarks)) },
-                    )
-                    NavigationBarItem(
-                        selected = top == SearchKey,
-                        onClick = { selectTab(SearchKey) },
-                        icon = { Icon(Icons.Filled.Search, contentDescription = null) },
-                        label = { Text(stringResource(R.string.tab_search)) },
-                    )
+                }
+                if (top in tabs) {
+                    NavigationBar(containerColor = LocalPaperColors.current.surface) {
+                        NavigationBarItem(
+                            selected = top == TodayKey,
+                            onClick = { selectTab(TodayKey) },
+                            icon = { Icon(Icons.Filled.Home, contentDescription = null) },
+                            label = { Text(stringResource(R.string.tab_today)) },
+                        )
+                        NavigationBarItem(
+                            selected = top == LibraryKey,
+                            onClick = { selectTab(LibraryKey) },
+                            icon = { Icon(Icons.AutoMirrored.Filled.List, contentDescription = null) },
+                            label = { Text(stringResource(R.string.tab_library)) },
+                        )
+                        NavigationBarItem(
+                            selected = top == BookmarksKey,
+                            onClick = { selectTab(BookmarksKey) },
+                            icon = { RibbonIcon(slot = 0) },
+                            label = { Text(stringResource(R.string.tab_bookmarks)) },
+                        )
+                        NavigationBarItem(
+                            selected = top == SearchKey,
+                            onClick = { selectTab(SearchKey) },
+                            icon = { Icon(Icons.Filled.Search, contentDescription = null) },
+                            label = { Text(stringResource(R.string.tab_search)) },
+                        )
+                    }
                 }
             }
         }
@@ -141,7 +145,8 @@ fun ParoissienRoot(graph: AppGraph) {
 @Composable
 fun RibbonIcon(slot: Int, modifier: Modifier = Modifier) {
     val dark = LocalPaperColors.current.isDark
-    Canvas(modifier.size(width = 10.dp, height = 22.dp)) { drawRibbon(RibbonStyle.of(slot), dark, Offset.Zero, size) }
+    val fabric = LocalRibbonFabric.current
+    Canvas(modifier.size(width = 10.dp, height = 22.dp)) { drawRibbon(RibbonStyle.of(slot), dark, Offset.Zero, size, fabric) }
 }
 
 /** Lecture sans distraction : barres système masquées dans le lecteur, rappelées d'un glissement depuis le bord. */

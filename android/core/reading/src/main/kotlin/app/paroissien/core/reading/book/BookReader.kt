@@ -30,6 +30,8 @@ import androidx.compose.ui.semantics.CustomAccessibilityAction
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.toSize
 import app.paroissien.core.designsystem.drawRibbonAlong
+import app.paroissien.core.designsystem.LocalRibbonFabric
+import app.paroissien.core.designsystem.RibbonFabric
 import kotlin.math.PI
 import kotlin.math.min
 import kotlin.math.sin
@@ -171,6 +173,7 @@ fun BookReader(
     look: BookLook = BookLook(),
 ) {
     val paper = typography.paper
+    val fabric = LocalRibbonFabric.current
     Box(modifier.fillMaxSize().background(paper.background)) {
         BoxWithConstraints(Modifier.fillMaxSize()) {
             val density = LocalDensity.current
@@ -285,8 +288,8 @@ fun BookReader(
             val tailBottom = margins.bottom - RibbonBand + (RibbonBand - TailHeight) / 2
             // Ouvrir le livre par la queue d'un ruban : il est de nouveau en travers de la page.
             val openAtRibbon: (Int) -> Unit = { slot -> asideRibbons = asideRibbons - slot; onRibbonTap(slot) }
-            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, openAtRibbon, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
-            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, openAtRibbon, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
 
             // Images pieuses : celles de la page ouverte au milieu de la tête (posées sur la page, seulement celles qu'on
             // a mises de côté ; un toucher les y remet), les autres à gauche ou à droite.
@@ -374,7 +377,7 @@ private fun PageView(
     }
     Box(
         Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper, look)
-            .pageRibbons(ribbons, moves, gutterAtRight, t.paper.isDark, margin)
+            .pageRibbons(ribbons, moves, gutterAtRight, t.paper.isDark, margin, LocalRibbonFabric.current)
             .onSizeChanged { pageSize = it.toSize() }
             .pointerInput(Unit) { objectTouches({ tap(it) }, { longPress(it) }) },
     ) {
@@ -636,7 +639,7 @@ private fun Modifier.bookEdges(side: PageSide, number: Int, pageCount: Int, pape
  * Les rubans qui marquent cette page, par-dessus le texte : en travers de la page, ou couchés dans le petit fond, côté
  * reliure, sans mordre sur le texte (rapport 09). L'ombre du pli, dessinée ensuite, les recouvre comme le papier.
  */
-private fun Modifier.pageRibbons(ribbons: List<PageRibbon>, moves: List<State<Float>>, gutterAtRight: Boolean, dark: Boolean, margin: Dp): Modifier =
+private fun Modifier.pageRibbons(ribbons: List<PageRibbon>, moves: List<State<Float>>, gutterAtRight: Boolean, dark: Boolean, margin: Dp, fabric: RibbonFabric): Modifier =
     if (ribbons.isEmpty()) this else drawWithContent {
         drawContent()
         ribbons.forEachIndexed { k, r ->
@@ -647,13 +650,14 @@ private fun Modifier.pageRibbons(ribbons: List<PageRibbon>, moves: List<State<Fl
                 width = (AcrossWidth + (LyingWidth - AcrossWidth) * t).toPx(),
                 ripple = 1f - 0.55f * t,
                 phase = 2.4f * t + k,
+                fabric = fabric,
             )
         }
     }
 
 /** Queues de rubans qui pendent sous la page ; un toucher ouvre la page marquée (cible de 48 dp de large au moins). */
 @Composable
-private fun RibbonTails(slots: List<Int>, dark: Boolean, onTap: (Int) -> Unit, modifier: Modifier) {
+private fun RibbonTails(slots: List<Int>, dark: Boolean, fabric: RibbonFabric, onTap: (Int) -> Unit, modifier: Modifier) {
     if (slots.isEmpty()) return
     Row(modifier, horizontalArrangement = Arrangement.spacedBy(2.dp)) {
         slots.forEach { slot ->
@@ -665,7 +669,7 @@ private fun RibbonTails(slots: List<Int>, dark: Boolean, onTap: (Int) -> Unit, m
                     .semantics { contentDescription = "Ruban ${style.label}" },
                 contentAlignment = Alignment.TopCenter,
             ) {
-                Canvas(Modifier.size(width = TailWidth, height = TailHeight)) { drawRibbon(style, dark, Offset.Zero, size) }
+                Canvas(Modifier.size(width = TailWidth, height = TailHeight)) { drawRibbon(style, dark, Offset.Zero, size, fabric) }
             }
         }
     }

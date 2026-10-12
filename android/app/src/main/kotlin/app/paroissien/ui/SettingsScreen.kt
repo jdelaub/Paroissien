@@ -19,6 +19,7 @@ import app.paroissien.core.data.ReaderSettings
 import app.paroissien.core.designsystem.BookFace
 import app.paroissien.core.designsystem.LocalPaperColors
 import app.paroissien.core.designsystem.PaperTheme
+import app.paroissien.core.designsystem.RibbonFabric
 import app.paroissien.core.reading.book.SpreadMode
 import kotlinx.coroutines.launch
 import java.util.Locale
@@ -53,6 +54,9 @@ fun SettingsScreen(graph: AppGraph, settings: ReaderSettings, onBack: () -> Unit
             Group(stringResource(R.string.settings_books)) {
                 SwitchRow(stringResource(R.string.settings_identity), settings.bookIdentity) { v -> update { it.copy(bookIdentity = v) } }
                 SwitchRow(stringResource(R.string.settings_ribbons_across), settings.ribbonsAcross) { v -> update { it.copy(ribbonsAcross = v) } }
+                Choice(stringResource(R.string.settings_fabric), RibbonFabric.entries, settings.ribbonFabric(), {
+                    stringResource(if (it == RibbonFabric.SATIN) R.string.fabric_satin else R.string.fabric_textured)
+                }) { v -> update { it.copy(ribbonFabric = if (v == RibbonFabric.SATIN) "SATIN" else "TISSU") } }
                 SwitchRow(stringResource(R.string.settings_cards_on_page), settings.cardsOnPage) { v -> update { it.copy(cardsOnPage = v) } }
             }
         }

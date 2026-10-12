@@ -28,6 +28,8 @@ data class ReaderSettings(
     val bookIdentity: Boolean = true,
     /** Le ruban est couché en travers de la page, comme dans un vrai livre ; sinon, dans le petit fond. */
     val ribbonsAcross: Boolean = true,
+    /** Tissu des rubans : "TISSU" (mat, à côtes) ou "SATIN". */
+    val ribbonFabric: String = "TISSU",
     /** Les images pieuses sont posées sur leur page ; sinon, on n'en voit que le haut, qui dépasse de la tête. */
     val cardsOnPage: Boolean = true,
     /** Rite du calendrier : "1962" ou "1969". */
@@ -62,6 +64,7 @@ class ReaderSettingsStore(context: Context) {
             p[LANGUAGE] = next.language
             p[IDENTITY] = next.bookIdentity
             p[RIBBONS_ACROSS] = next.ribbonsAcross
+            p[RIBBON_FABRIC] = next.ribbonFabric
             p[CARDS_ON_PAGE] = next.cardsOnPage
             p[RITE] = next.rite
             p[EXTERNAL] = next.externalSolemnities
@@ -87,6 +90,7 @@ class ReaderSettingsStore(context: Context) {
             language = p[LANGUAGE] ?: d.language,
             bookIdentity = p[IDENTITY] ?: d.bookIdentity,
             ribbonsAcross = p[RIBBONS_ACROSS] ?: d.ribbonsAcross,
+            ribbonFabric = p[RIBBON_FABRIC] ?: d.ribbonFabric,
             cardsOnPage = p[CARDS_ON_PAGE] ?: d.cardsOnPage,
             rite = p[RITE] ?: d.rite,
             externalSolemnities = p[EXTERNAL] ?: d.externalSolemnities,
@@ -110,6 +114,7 @@ class ReaderSettingsStore(context: Context) {
         val LANGUAGE = stringPreferencesKey("langue")
         val IDENTITY = booleanPreferencesKey("identite_des_livres")
         val RIBBONS_ACROSS = booleanPreferencesKey("rubans_en_travers")
+        val RIBBON_FABRIC = stringPreferencesKey("rubans_tissu")
         val CARDS_ON_PAGE = booleanPreferencesKey("images_sur_la_page")
         val RITE = stringPreferencesKey("rite")
         val EXTERNAL = booleanPreferencesKey("solennites_exterieures")

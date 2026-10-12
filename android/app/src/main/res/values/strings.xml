@@ -67,6 +67,8 @@
     <string name="setting_measures_off">Mesures : non</string>
     <string name="setting_ribbons_across_on">Rubans : en travers de la page</string>
     <string name="setting_ribbons_across_off">Rubans : dans le pli</string>
+    <string name="setting_fabric_textured">Rubans : tissu mat</string>
+    <string name="setting_fabric_satin">Rubans : satin</string>
     <string name="setting_cards_on_page_on">Images : sur la page</string>
     <string name="setting_cards_on_page_off">Images : en tête du livre</string>
     <string name="setting_all">Tous les réglages…</string>
@@ -89,6 +91,9 @@
     <string name="settings_edges">Protéger les coins du bas du geste « retour »</string>
     <string name="settings_identity">Chaque livre a sa reliure, son papier et ses rubans</string>
     <string name="settings_ribbons_across">Ruban en travers de la page (un toucher le couche dans le pli)</string>
+    <string name="settings_fabric">Tissu des rubans</string>
+    <string name="fabric_textured">Tissu mat, à côtes</string>
+    <string name="fabric_satin">Satin</string>
     <string name="settings_cards_on_page">Images pieuses posées sur leur page (un toucher les met de côté)</string>
     <string name="settings_measures">Mesures du lecteur (pagination, images par seconde)</string>
 
