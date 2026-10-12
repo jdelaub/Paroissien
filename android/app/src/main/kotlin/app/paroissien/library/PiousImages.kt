@@ -8,6 +8,8 @@ import android.util.LruCache
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.core.graphics.scale
+import app.paroissien.core.data.CardCategory
+import app.paroissien.core.data.CardInCategory
 import app.paroissien.core.data.PersonalCard
 import app.paroissien.core.data.UserDatabase
 import app.paroissien.core.liturgy.LiturgicalDay
@@ -15,13 +17,16 @@ import app.paroissien.core.liturgy.Season
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import java.io.File
+import java.io.InputStream
 import java.util.UUID
 
 /** Une image pieuse : d'une bibliothèque embarquée (`catalog.json`), ou numérisée par l'utilisateur. */
@@ -41,28 +46,118 @@ data class PiousImage(
     val prayer: String? = null,
     val personal: Boolean = false,
     val hasBack: Boolean = false,
+    /** Catégories de la bibliothèque (identifiants de [CardCategories]) ; l'utilisateur en ajoute ou en retire. */
+    val categories: List<String> = emptyList(),
+    /** Taille réelle de la carte en millimètres (largeur, hauteur), relevée sur des photos à la même échelle. */
+    val sizeMm: List<Int>? = null,
+    /** Écriture manuscrite (dédicace, date), transcrite. */
+    val inscription: String = "",
+    /** Personnes nommées : baptisé, communiant, prêtre ordonné, défunt. */
+    val people: List<String> = emptyList(),
+    val place: String = "",
+    val feastNames: List<String> = emptyList(),
+    val notes: String = "",
+    /** Photographiée sur une vraie carte (tools/images/cartes.py), et non reproduction d'une œuvre. */
+    val photographed: Boolean = false,
 ) {
     @Serializable
     data class Title(val fr: String)
+
+    /** Une vraie carte (photographiée ou numérisée), avec sa silhouette : à montrer telle quelle, coins arrondis. */
+    val physical: Boolean get() = personal || photographed || sizeMm != null
 }
 
+/** Une catégorie définie par la bibliothèque (son nom à l'écran). */
 @Serializable
-private data class Catalog(val format: Int = 1, val cards: List<PiousImage>)
+data class CategoryLabel(val id: String, val label: String)
+
+@Serializable
+internal data class Catalog(val format: Int = 1, val categories: List<CategoryLabel> = emptyList(), val cards: List<PiousImage>)
+
+/** Une catégorie à l'écran : prédéfinie, venue de la bibliothèque, ou créée par l'utilisateur ([custom]). */
+data class CardCategoryInfo(val id: String, val label: String, val custom: Boolean)
+
+/** Catégories prédéfinies, par occasion ou par usage (demande de l'utilisateur, 12/10/2026). */
+object CardCategories {
+    val predefined = listOf(
+        "bapteme" to "Baptême",
+        "premiere-communion" to "Première communion",
+        "communion-solennelle" to "Communion solennelle",
+        "confirmation" to "Confirmation",
+        "ordination" to "Ordination",
+        "vie-religieuse" to "Vie religieuse",
+        "mariage" to "Mariage",
+        "memento" to "Mementos",
+        "priere" to "Prières",
+        "pelerinage" to "Pèlerinages",
+        "fete" to "Fêtes",
+        "art" to "Œuvres d'art",
+        "saints" to "Saints",
+    )
+
+    /** Souvenirs de famille : jamais proposés comme image du jour. */
+    val family = setOf("bapteme", "premiere-communion", "communion-solennelle", "confirmation", "ordination", "vie-religieuse", "mariage", "memento")
+}
 
 /**
  * La boîte à images (rapport 09, §3.2-3.3). Aucune image n'est fournie d'office : la bibliothèque éventuelle
  * (`assets/images/catalog.json`) est choisie par l'utilisateur, et ses propres images numérisées vivent dans
  * `files/cards/` (recto, verso, vignette), jamais ailleurs. Aucun appel réseau.
  */
-class PiousImages(private val context: Context, private val catalog: List<PiousImage>, private val db: UserDatabase, scope: CoroutineScope) {
+class PiousImages(
+    private val context: Context,
+    private val source: LibrarySource,
+    private val db: UserDatabase,
+    scope: CoroutineScope,
+) {
     private val dir = File(context.filesDir, "cards")
     private val thumbs = LruCache<String, ImageBitmap>(64)
     private val full = LruCache<String, ImageBitmap>(3)
+    private val library = MutableStateFlow(source.catalog())
 
     /** Les images personnelles, les plus récentes d'abord, puis celles de la bibliothèque. */
-    val all: StateFlow<List<PiousImage>> = db.personalCards().observeAll()
-        .map { personal -> personal.map(::asImage) + catalog }
-        .stateIn(scope, SharingStarted.Eagerly, catalog)
+    val all: StateFlow<List<PiousImage>> = combine(db.personalCards().observeAll(), library) { personal, lib -> personal.map(::asImage) + lib.cards }
+        .stateIn(scope, SharingStarted.Eagerly, library.value.cards)
+
+    /** Toutes les catégories : prédéfinies, celles de la bibliothèque, puis celles de l'utilisateur. */
+    val categories: StateFlow<List<CardCategoryInfo>> = combine(db.categories().observeCategories(), library) { custom, lib ->
+        val fixed = (CardCategories.predefined + lib.categories.map { it.id to it.label })
+            .distinctBy { it.first }.map { (id, label) -> CardCategoryInfo(id, label, custom = false) }
+        fixed + custom.map { CardCategoryInfo(it.id, it.label, custom = true) }
+    }.stateIn(scope, SharingStarted.Eagerly, CardCategories.predefined.map { (id, label) -> CardCategoryInfo(id, label, custom = false) })
+
+    /** Après une restauration : la bibliothèque est relue. */
+    fun reloadLibrary() {
+        thumbs.evictAll()
+        full.evictAll()
+        library.value = source.catalog()
+    }
+
+    /** Catégories de chaque image : celles de la bibliothèque, plus celles que l'utilisateur a ajoutées, moins celles qu'il a retirées. */
+    val categoriesOf: StateFlow<Map<String, Set<String>>> = combine(all, db.categories().observeAssignments()) { images, assignments ->
+        val changes = assignments.groupBy { it.card }
+        images.associate { image ->
+            val base = image.categories.toMutableSet()
+            changes[image.id]?.forEach { if (it.removed) base -= it.category else base += it.category }
+            image.id to base.toSet()
+        }
+    }.stateIn(scope, SharingStarted.Eagerly, emptyMap())
+
+    suspend fun setCategory(card: String, category: String, member: Boolean) = withContext(Dispatchers.IO) {
+        db.categories().assign(CardInCategory(card, category, removed = !member, updatedAt = System.currentTimeMillis()))
+    }
+
+    /** Crée une catégorie de l'utilisateur ; renvoie son identifiant. */
+    suspend fun createCategory(label: String): String = withContext(Dispatchers.IO) {
+        val id = "perso-" + UUID.randomUUID().toString().take(8)
+        db.categories().saveCategory(CardCategory(id, label.trim(), System.currentTimeMillis()))
+        id
+    }
+
+    suspend fun deleteCategory(id: String) = withContext(Dispatchers.IO) {
+        db.categories().clearCategory(id)
+        db.categories().deleteCategory(id)
+    }
 
     operator fun get(id: String): PiousImage? = all.value.firstOrNull { it.id == id }
 
@@ -79,8 +174,8 @@ class PiousImages(private val context: Context, private val catalog: List<PiousI
             if (personal) {
                 File(dir, "$id-$kind.webp").takeIf { it.exists() }?.let { BitmapFactory.decodeFile(it.path) }
             } else {
-                val path = when (kind) { "thumb" -> "images/thumbs/$id.webp"; "back" -> return null; else -> "images/$id.webp" }
-                context.assets.open(path).use { BitmapFactory.decodeStream(it) }
+                val path = when (kind) { "thumb" -> "thumbs/$id.webp"; "back" -> "$id-verso.webp"; else -> "$id.webp" }
+                source.open(path).use { BitmapFactory.decodeStream(it) }
             }
         }.getOrNull() ?: return null
         return bitmap.asImageBitmap().also { cache.put(key, it) }
@@ -122,7 +217,8 @@ class PiousImages(private val context: Context, private val catalog: List<PiousI
      * stable pour la journée. Rien si la boîte est vide.
      */
     fun forDay(day: LiturgicalDay): PiousImage? {
-        val images = all.value
+        // Les souvenirs de famille (mementos, baptêmes, communions…) restent dans la boîte : pas d'image du jour.
+        val images = all.value.filter { image -> image.categories.none { it in CardCategories.family } }
         if (images.isEmpty()) return null
         val ids = listOf(day.principal.id.value) + day.commemorations.map { it.id.value } + day.optional.map { it.id.value }
         images.firstOrNull { img -> img.feasts.any { it in ids } }?.let { return it }
@@ -136,6 +232,29 @@ class PiousImages(private val context: Context, private val catalog: List<PiousI
         }
         val pool = images.filter { season in it.seasons }.ifEmpty { images }
         return pool[day.date.toEpochDay().mod(pool.size)]
+    }
+
+    /**
+     * D'où vient la bibliothèque d'images : les assets `images/` de l'APK (saveur personnelle), sinon
+     * `files/bibliotheque-images/`, où une sauvegarde l'a restaurée (app livrée vide).
+     */
+    class LibrarySource(private val context: Context) {
+        val importedDir: File get() = File(context.filesDir, "bibliotheque-images")
+        private val fromAssets: Boolean by lazy { runCatching { context.assets.open("images/catalog.json").close() }.isSuccess }
+
+        fun exists(): Boolean = fromAssets || File(importedDir, "catalog.json").isFile
+
+        fun open(path: String): InputStream = if (fromAssets) context.assets.open("images/$path") else File(importedDir, path).inputStream()
+
+        internal fun catalog(): Catalog = runCatching {
+            open("catalog.json").use { json.decodeFromString<Catalog>(it.readBytes().decodeToString()) }
+        }.getOrNull()?.let { it.copy(cards = it.cards.sortedBy { c -> c.id }) } ?: Catalog(cards = emptyList())
+
+        /** Les fichiers de la bibliothèque, pour la sauvegarde : catalogue, faces, vignettes. */
+        fun files(): List<String> {
+            if (!exists()) return emptyList()
+            return listOf("catalog.json") + catalog().cards.flatMap { c -> listOfNotNull("${c.id}.webp", "thumbs/${c.id}.webp", "${c.id}-verso.webp".takeIf { c.hasBack }) }
+        }
     }
 
     private fun asImage(card: PersonalCard) = PiousImage(
@@ -158,10 +277,6 @@ class PiousImages(private val context: Context, private val catalog: List<PiousI
         private const val QUALITY = 82
         private val json = Json { ignoreUnknownKeys = true }
 
-        fun load(context: Context, db: UserDatabase, scope: CoroutineScope): PiousImages {
-            val text = runCatching { context.assets.open("images/catalog.json").use { it.readBytes().decodeToString() } }.getOrNull()
-            val catalog = text?.let { runCatching { json.decodeFromString<Catalog>(it).cards }.getOrNull() }.orEmpty()
-            return PiousImages(context, catalog.sortedBy { it.id }, db, scope)
-        }
+        fun load(context: Context, db: UserDatabase, scope: CoroutineScope): PiousImages = PiousImages(context, LibrarySource(context), db, scope)
     }
 }

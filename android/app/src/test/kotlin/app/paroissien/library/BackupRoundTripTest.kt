@@ -2,6 +2,8 @@ package app.paroissien.library
 
 import androidx.sqlite.driver.AndroidSQLiteDriver
 import app.paroissien.AppGraph
+import app.paroissien.core.data.CardCategory
+import app.paroissien.core.data.CardInCategory
 import app.paroissien.core.data.PersonalCard
 import app.paroissien.core.data.Ribbon
 import kotlinx.coroutines.runBlocking
@@ -19,7 +21,7 @@ import java.util.zip.ZipFile
 
 /**
  * Sauvegarde complète, aller et retour, pour les données de l'utilisateur : on écrit le fichier, l'appareil oublie
- * image, ruban et réglage, on restaure. Le SQLite embarqué de l'AAR Android n'a pas de bibliothèque pour la machine
+ * image, ruban, réglage et catégorie, on restaure. Le SQLite embarqué de l'AAR Android n'a pas de bibliothèque pour la machine
  * hôte : la base de l'utilisateur prend ici le SQLite du système, et les livres ne s'ouvrent pas (ils sont mis de
  * côté). Leur installation depuis le fichier est celle de [app.paroissien.core.content.PackInstaller], testée dans
  * core:content.
@@ -38,6 +40,8 @@ class BackupRoundTripTest {
         graph.database.personalCards().save(PersonalCard("essai", "Essai", hasBack = true, createdAt = 1L))
         graph.database.ribbons().place(Ribbon("prieres", 0, "u", "b", 0, null, 5L))
         graph.settings.update { it.copy(theme = "SEPIA", vignettes = false) }
+        graph.database.categories().saveCategory(CardCategory("perso-famille", "Famille", 2L))
+        graph.database.categories().assign(CardInCategory("essai", "perso-famille", removed = false, updatedAt = 3L))
 
         val file = File(app.cacheDir, "sauvegarde.zip")
         val written = file.outputStream().use { graph.backup.export(it) }
@@ -51,6 +55,8 @@ class BackupRoundTripTest {
         graph.database.personalCards().delete("essai")
         graph.database.ribbons().remove("prieres", 0)
         graph.settings.update { it.copy(theme = "CLAIR", vignettes = true) }
+        graph.database.categories().clearCategory("perso-famille")
+        graph.database.categories().deleteCategory("perso-famille")
 
         val restored = file.inputStream().use { graph.backup.import(it) }
         assertEquals(1, restored.images)
@@ -61,6 +67,8 @@ class BackupRoundTripTest {
         assertEquals(false, settings.vignettes)
         assertNotNull(graph.database.ribbons().all().firstOrNull { it.publication == "prieres" })
         assertEquals(true, graph.database.personalCards().all().firstOrNull { it.id == "essai" }?.hasBack)
+        assertEquals("Famille", graph.database.categories().categories().single().label)
+        assertEquals("perso-famille", graph.database.categories().assignments().single { it.card == "essai" }.category)
 
         // Deuxième restauration : rien n'est remplacé ni dupliqué.
         val again = file.inputStream().use { graph.backup.import(it) }

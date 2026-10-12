@@ -18,6 +18,9 @@ data class UserDataExport(
     val cards: List<ExportedCard> = emptyList(),
     /** Ajouté en 0.5.9 : images pieuses numérisées ou importées (titre, verso). */
     val personalCards: List<ExportedPersonalCard> = emptyList(),
+    /** Ajoutés en 0.6.0 : catégories créées par l'utilisateur, et ce qu'il a rangé ou retiré. */
+    val categories: List<ExportedCategory> = emptyList(),
+    val cardCategories: List<ExportedCardCategory> = emptyList(),
 ) {
     companion object {
         const val FORMAT_VERSION = 1
@@ -40,6 +43,12 @@ data class ExportedPosition(val publication: String, val unit: String, val block
 data class ExportedRibbon(val publication: String, val slot: Int, val unit: String, val block: String, val charOffset: Int, val blockRev: String? = null, val updatedAt: Long)
 
 @Serializable
+data class ExportedCategory(val id: String, val label: String, val createdAt: Long)
+
+@Serializable
+data class ExportedCardCategory(val card: String, val category: String, val removed: Boolean, val updatedAt: Long)
+
+@Serializable
 data class ExportedPersonalCard(val id: String, val title: String, val hasBack: Boolean, val createdAt: Long)
 
 @Serializable
@@ -55,6 +64,8 @@ class UserDataTransfer(private val db: UserDatabase) {
             ribbons = db.ribbons().all().map { ExportedRibbon(it.publication, it.slot, it.unit, it.block, it.charOffset, it.blockRev, it.updatedAt) },
             cards = db.cards().all().map { ExportedCard(it.card, it.publication, it.unit, it.block, it.charOffset, it.blockRev, it.updatedAt) },
             personalCards = db.personalCards().all().map { ExportedPersonalCard(it.id, it.title, it.hasBack, it.createdAt) },
+            categories = db.categories().categories().map { ExportedCategory(it.id, it.label, it.createdAt) },
+            cardCategories = db.categories().assignments().map { ExportedCardCategory(it.card, it.category, it.removed, it.updatedAt) },
         ),
     )
 
@@ -66,6 +77,20 @@ class UserDataTransfer(private val db: UserDatabase) {
         val cards = db.cards().all().associateBy { it.card }
         val personal = db.personalCards().all().associateBy { it.id }
         var taken = 0
+        val categories = db.categories().categories().associateBy { it.id }
+        for (c in data.categories) {
+            if (c.id !in categories) {
+                db.categories().saveCategory(CardCategory(c.id, c.label, c.createdAt))
+                taken++
+            }
+        }
+        val assignments = db.categories().assignments().associateBy { it.card to it.category }
+        for (a in data.cardCategories) {
+            if ((assignments[a.card to a.category]?.updatedAt ?: Long.MIN_VALUE) < a.updatedAt) {
+                db.categories().assign(CardInCategory(a.card, a.category, a.removed, a.updatedAt))
+                taken++
+            }
+        }
         // Une image déjà là garde son titre : celui de l'appareil a pu être changé depuis la sauvegarde.
         for (c in data.personalCards) {
             if (c.id !in personal) {

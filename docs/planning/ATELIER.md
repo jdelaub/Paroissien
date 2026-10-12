@@ -99,8 +99,12 @@ Les scènes gravées (Évangile, saints) sont des images tramées que le moteur 
 
 ### Images pieuses recto verso
 
+- **La collection de l'utilisateur** (fait le 12/10/2026) : 55 cartes photographiées recto puis verso, à la même échelle. `tools/images/cartes.py detecter` range les photos par horodatage, les groupe par deux, trouve la carte sur le drap sombre et la redresse ; chaque carte est ensuite décrite à l'œil (orientation de chaque face, titre, catégories, sujets, temps liturgiques, transcription fidèle du texte imprimé et des dédicaces manuscrites, personnes, dates, lieux, éditeur) dans `paroissien-content/images-pieuses/cartes.json` ; `cartes.py produire` détoure (coins arrondis gardés, le fond devient transparent), écrit recto, verso et vignette en WebP et le catalogue. Photos et cartes de famille restent dans le dépôt privé ; la saveur personnelle les embarque, la sauvegarde complète les emporte.
+- **Catégories** : prédéfinies par occasion (baptême, première communion, communion solennelle, confirmation, ordination, vie religieuse, mariage, mementos, prières, pèlerinages, fêtes, œuvres d'art, saints), plus celles que crée l'utilisateur ; une image peut en avoir plusieurs, l'utilisateur en ajoute ou en retire ; la boîte à images se filtre par catégorie. Les souvenirs de famille ne sont jamais proposés en image du jour.
+- **Cartes réelles** : montrées dans leurs proportions, coins arrondis et ombre légère ; sous la carte, ce qu'elle dit (date, personnes, lieu, dédicace, texte, éditeur).
+- **Taille réelle** : les photos étant à la même échelle, une seule mesure (le grand côté d'une carte, en millimètres) donnera la taille de toutes (`px_par_mm` dans `cartes.json`).
 - **Import** d'une image pieuse depuis deux fichiers (recto, puis verso facultatif), telle quelle ou par le recadrage existant ; ou d'un fichier d'image exporté par l'app.
-- **Export** d'une image : un fichier `.paroissien-image` (zip : recto, verso, description JSON : titre, prière du verso, fêtes, temps), ou le partage Android des deux faces en JPEG.
+- **Export** d'une image, pour la partager : un fichier `.paroissien-image` (zip : recto, verso, description JSON), ou le partage Android des deux faces en JPEG.
 
 ## 8. Sauvegarde complète (faite le 12/10/2026)
 
@@ -144,7 +148,7 @@ Stockage : `user.db`, une table `book_look` (publication → description JSON de
 2. Moteur v3, rangs d'habillage, cadre simple (fait le 12/10/2026).
 3. Second lot : bandeaux latéraux, équerres, gardes ; règle de choix étendue aux nouveaux cadres (fait).
 4. Vignettes gravées : outil de préparation, dépôt privé, placement (fait ; d'autres vignettes à photographier).
-5. Sauvegarde complète et saveur vide (fait) ; images pieuses recto verso, import et export une à une.
+5. Sauvegarde complète et saveur vide (fait) ; collection d'images pieuses de l'utilisateur, catégories, cartes aux coins arrondis (fait) ; import et partage d'une image à la fois.
 6. Couvertures en modules.
 7. Atelier : habit par livre, puis composition de cadres.
 8. Import de livres (txt, epub, puis PDF), puis export (epub, txt, PDF).

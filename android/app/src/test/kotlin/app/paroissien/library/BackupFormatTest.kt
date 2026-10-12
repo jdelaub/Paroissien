@@ -14,6 +14,8 @@ class BackupFormatTest {
             "images/3f2a-9c-front.webp", "images/3f2a-9c-back.webp", "images/3f2a-9c-thumb.webp",
             "livres/packs/catalog.json", "livres/packs/catalog.json.sig", "livres/packs-private/clairval-fr.sqlite",
             "vignettes/catalog.json", "vignettes/bapteme-du-christ.webp",
+            "bibliotheque-images/catalog.json", "bibliotheque-images/anima-christi.webp", "bibliotheque-images/anima-christi-verso.webp",
+            "bibliotheque-images/thumbs/anima-christi.webp",
         ).forEach { assertTrue(it, BackupFormat.isSafe(it)) }
     }
 
@@ -24,6 +26,7 @@ class BackupFormatTest {
             "livres/packs/.hidden", "livres/Packs/catalog.json", "livres/packs/sous/dossier.sqlite",
             "images/x.webp", "images/../x-front.webp", "images/a/b-front.webp", "autre.json", "livres\\packs\\x",
             "vignettes/../x.webp", "vignettes/x.png", "vignettes/sous/x.webp",
+            "bibliotheque-images/../x.webp", "bibliotheque-images/autre/x.webp", "bibliotheque-images/thumbs/../x.webp",
         ).forEach { assertFalse(it, BackupFormat.isSafe(it)) }
     }
 }

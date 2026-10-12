@@ -211,6 +211,12 @@
 
     <!-- Images pieuses (rapport 09, §3.2) -->
     <string name="images_box">Boîte à images</string>
+    <string name="images_all">Toutes</string>
+    <string name="card_categories">Catégories</string>
+    <string name="category_new">Nouvelle catégorie…</string>
+    <string name="category_name">Nom de la catégorie</string>
+    <string name="category_delete_confirm">Supprimer la catégorie « %1$s » ? Les images restent dans la boîte.</string>
+    <string name="card_size">Environ %1$.1f × %2$.1f cm</string>
     <plurals name="images_box_detail">
         <item quantity="one">%d image pieuse</item>
         <item quantity="many">%d images pieuses</item>

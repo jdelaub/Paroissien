@@ -48,6 +48,13 @@ if [ -z "${PACKS:-}" ] && [ "$flavor" = personnel ] && [ -d "$private/packages" 
         mkdir -p "$PACKS/vignettes"
         cp "$private/vignettes/catalog.json" "$private/vignettes/"*.webp "$PACKS/vignettes/"
     fi
+    # Images pieuses de l'utilisateur, photographiées et décrites (tools/images/cartes.py) : assets images/.
+    rm -rf "$PACKS/images"
+    if [ -f "$private/images-pieuses/catalog.json" ]; then
+        mkdir -p "$PACKS/images/thumbs"
+        cp "$private/images-pieuses/catalog.json" "$private/images-pieuses/"*.webp "$PACKS/images/"
+        cp "$private/images-pieuses/thumbs/"*.webp "$PACKS/images/thumbs/"
+    fi
 fi
 
 packs_arg=()

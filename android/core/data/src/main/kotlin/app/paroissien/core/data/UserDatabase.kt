@@ -70,6 +70,53 @@ data class PersonalCard(
     val createdAt: Long,
 )
 
+/** Une catégorie créée par l'utilisateur pour ranger ses images (en plus des catégories prédéfinies). */
+@Entity(tableName = "card_category")
+data class CardCategory(
+    @PrimaryKey val id: String,
+    val label: String,
+    val createdAt: Long,
+)
+
+/**
+ * Une image rangée dans une catégorie, prédéfinie ou créée, par l'utilisateur. [removed] : il l'en a retirée, alors
+ * que la bibliothèque l'y mettait. Le plus récent l'emporte à l'import.
+ */
+@Entity(tableName = "card_in_category", primaryKeys = ["card", "category"])
+data class CardInCategory(
+    val card: String,
+    val category: String,
+    val removed: Boolean,
+    val updatedAt: Long,
+)
+
+@Dao
+interface CategoryDao {
+    @Query("SELECT * FROM card_category ORDER BY label")
+    fun observeCategories(): Flow<List<CardCategory>>
+
+    @Query("SELECT * FROM card_category")
+    suspend fun categories(): List<CardCategory>
+
+    @Query("SELECT * FROM card_in_category")
+    fun observeAssignments(): Flow<List<CardInCategory>>
+
+    @Query("SELECT * FROM card_in_category")
+    suspend fun assignments(): List<CardInCategory>
+
+    @Upsert
+    suspend fun saveCategory(category: CardCategory)
+
+    @Upsert
+    suspend fun assign(assignment: CardInCategory)
+
+    @Query("DELETE FROM card_category WHERE id = :id")
+    suspend fun deleteCategory(id: String)
+
+    @Query("DELETE FROM card_in_category WHERE category = :id")
+    suspend fun clearCategory(id: String)
+}
+
 @Dao
 interface PositionDao {
     @Query("SELECT * FROM book_position WHERE publication = :publication")
@@ -137,13 +184,14 @@ interface PersonalCardDao {
 }
 
 @Database(
-    entities = [BookPosition::class, Ribbon::class, CardPlacement::class, PersonalCard::class],
-    version = 4,
+    entities = [BookPosition::class, Ribbon::class, CardPlacement::class, PersonalCard::class, CardCategory::class, CardInCategory::class],
+    version = 5,
     exportSchema = true,
     autoMigrations = [
         AutoMigration(from = 1, to = 2, spec = UserDatabase.V1ToV2::class),
         AutoMigration(from = 2, to = 3),
         AutoMigration(from = 3, to = 4),
+        AutoMigration(from = 4, to = 5),
     ],
 )
 abstract class UserDatabase : RoomDatabase() {
@@ -151,6 +199,7 @@ abstract class UserDatabase : RoomDatabase() {
     abstract fun ribbons(): RibbonDao
     abstract fun cards(): CardDao
     abstract fun personalCards(): PersonalCardDao
+    abstract fun categories(): CategoryDao
 
     /** La version 1 n'avait qu'une table d'essai, jamais remplie : elle disparaît. */
     @DeleteTable(tableName = "reading_position")

@@ -44,12 +44,14 @@ internal object BackupFormat {
     val IMAGE = Regex("[A-Za-z0-9_-]+-(front|back|thumb)\\.webp")
     private val BOOK = Regex("livres/[a-z0-9_-]+/[A-Za-z0-9_-][A-Za-z0-9._-]*")
     val VIGNETTE = Regex("catalog\\.json|[A-Za-z0-9_-]+\\.webp")
+    val LIBRARY_IMAGE = Regex("catalog\\.json|(thumbs/)?[A-Za-z0-9_-]+\\.webp")
 
     /** Rien d'autre n'est déplié : ni chemin absolu, ni « .. », ni fichier inattendu. */
     fun isSafe(name: String): Boolean = name == MANIFEST || name == SETTINGS || name == DATA ||
         (name.startsWith("images/") && IMAGE.matches(name.removePrefix("images/"))) ||
         (BOOK.matches(name) && ".." !in name) ||
-        (name.startsWith("vignettes/") && VIGNETTE.matches(name.removePrefix("vignettes/")))
+        (name.startsWith("vignettes/") && VIGNETTE.matches(name.removePrefix("vignettes/"))) ||
+        (name.startsWith("bibliotheque-images/") && LIBRARY_IMAGE.matches(name.removePrefix("bibliotheque-images/")))
 
     /** Au-delà, la sauvegarde est refusée : les livres les plus gros font une trentaine de mégaoctets. */
     const val MAX_BYTES = 2L * 1024 * 1024 * 1024
@@ -65,7 +67,8 @@ internal object BackupFormat {
  * - `livres/<dossier>/` : chaque catalogue signé, sa signature et ses paquets, y compris les contenus privés de la
  *   saveur personnelle (décision de l'utilisateur du 12/10/2026 : une app livrée vide se remplit en important ce
  *   fichier, en attendant les autorisations) ;
- * - `vignettes/` : les vignettes gravées et leur catalogue, s'il y en a.
+ * - `vignettes/` : les vignettes gravées et leur catalogue, s'il y en a ;
+ * - `bibliotheque-images/` : la bibliothèque d'images pieuses de l'app (catalogue, recto, verso, vignettes), s'il y en a.
  *
  * À la restauration, les livres sont revérifiés (signature du catalogue, SHA-256, intégrité) avant d'être installés ;
  * signets et images sont fusionnés (le plus récent l'emporte, rien n'est effacé) ; les réglages sont remplacés.
@@ -110,6 +113,14 @@ class Backup(private val context: Context, private val graph: AppGraph) {
                 put("livres/${source.name}/catalog.json.sig", source.signature)
                 source.packs.forEach { put("livres/${source.name}/${it.entry.file}", it.file) }
             }
+            val library = PiousImages.LibrarySource(context)
+            for (name in library.files()) {
+                runCatching { library.open(name) }.getOrNull()?.use { input ->
+                    zip.putNextEntry(ZipEntry("bibliotheque-images/$name"))
+                    input.copyTo(zip)
+                    zip.closeEntry()
+                }
+            }
             if (graph.vignettes.catalog.isNotEmpty()) {
                 for ((name, open) in graph.vignettes.files()) {
                     zip.putNextEntry(ZipEntry("vignettes/$name"))
@@ -149,6 +160,16 @@ class Backup(private val context: Context, private val graph: AppGraph) {
                 val target = graph.vignettes.importedDir.apply { mkdirs() }
                 dir.listFiles()?.filter { BackupFormat.VIGNETTE.matches(it.name) }?.forEach { it.copyTo(File(target, it.name), overwrite = true) }
                 graph.vignettes.reload()
+            }
+
+            // 2 ter. La bibliothèque d'images pieuses, si l'app n'en a pas.
+            val library = PiousImages.LibrarySource(context)
+            File(staging, "bibliotheque-images").takeIf { File(it, "catalog.json").isFile && !library.exists() }?.let { dir ->
+                dir.walkTopDown().filter { it.isFile }.forEach { file ->
+                    val rel = file.relativeTo(dir).path
+                    if (BackupFormat.LIBRARY_IMAGE.matches(rel)) file.copyTo(File(library.importedDir, rel), overwrite = true)
+                }
+                graph.images.reloadLibrary()
             }
 
             // 3. Signets, rubans, images posées, descriptions des images : fusion, le plus récent l'emporte.

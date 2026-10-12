@@ -3,6 +3,14 @@ package app.paroissien.ui
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.ExperimentalFoundationApi
+import app.paroissien.library.CardCategoryInfo
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.draw.clip
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.AssistChip
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -80,13 +88,18 @@ fun CardScreen(graph: AppGraph, key: CardKey, open: (NavKey) -> Unit, onBack: ()
     val placed = placements.firstOrNull { it.card == key.id }
     var renaming by remember { mutableStateOf(false) }
     var deleting by remember { mutableStateOf(false) }
+    var creating by remember { mutableStateOf(false) }
+    val categories by graph.images.categories.collectAsState()
+    val categoriesOf by graph.images.categoriesOf.collectAsState()
 
     Screen(image?.title?.fr ?: "", onBack = onBack) {
         if (image == null) return@Screen
         item {
+            // Une vraie carte garde ses proportions ; une image de la bibliothèque d'art, celles du cadre.
+            val ratio = if (image.physical) graph.images.thumbnail(image.id)?.let { it.width / it.height.toFloat() } ?: 0.62f else 0.62f
             Box(Modifier.fillMaxWidth().padding(24.dp), contentAlignment = Alignment.Center) {
                 Box(
-                    Modifier.width(280.dp).aspectRatio(0.62f)
+                    Modifier.width(if (ratio > 1f) 320.dp else 280.dp).aspectRatio(ratio)
                         .graphicsLayer { rotationY = rotation; cameraDistance = 16 * density }
                         .clickable { flipped = !flipped },
                 ) {
@@ -94,6 +107,14 @@ fun CardScreen(graph: AppGraph, key: CardKey, open: (NavKey) -> Unit, onBack: ()
                 }
             }
         }
+        item {
+            CardCategoriesRow(
+                categories, categoriesOf[image.id].orEmpty(),
+                onToggle = { id, member -> graph.scope.launch { graph.images.setCategory(image.id, id, member) } },
+                onCreate = { creating = true },
+            )
+        }
+        item { CardDetails(image) }
         item {
             Column(Modifier.fillMaxWidth().padding(horizontal = 20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text(stringResource(R.string.card_flip_hint), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary)
@@ -131,6 +152,20 @@ fun CardScreen(graph: AppGraph, key: CardKey, open: (NavKey) -> Unit, onBack: ()
             dismissButton = { TextButton(onClick = { renaming = false }) { Text(stringResource(R.string.card_cancel)) } },
         )
     }
+    if (creating && image != null) {
+        var name by remember { mutableStateOf("") }
+        AlertDialog(
+            onDismissRequest = { creating = false },
+            text = { OutlinedTextField(value = name, onValueChange = { name = it }, label = { Text(stringResource(R.string.category_name)) }, singleLine = true) },
+            confirmButton = {
+                TextButton(onClick = {
+                    creating = false
+                    if (name.isNotBlank()) graph.scope.launch { graph.images.setCategory(image.id, graph.images.createCategory(name), true) }
+                }) { Text(stringResource(R.string.card_ok)) }
+            },
+            dismissButton = { TextButton(onClick = { creating = false }) { Text(stringResource(R.string.card_cancel)) } },
+        )
+    }
     if (deleting && image != null) {
         AlertDialog(
             onDismissRequest = { deleting = false },
@@ -141,8 +176,20 @@ fun CardScreen(graph: AppGraph, key: CardKey, open: (NavKey) -> Unit, onBack: ()
     }
 }
 
+/**
+ * Coins d'une vraie carte : arrondis, comme le sont presque toutes les images pieuses imprimées. Une carte détourée
+ * (sa silhouette en transparence) garde en plus ses vrais bords, dentelle comprise.
+ */
+val CardShape = RoundedCornerShape(percent = 4)
+
 @Composable
 private fun CardFront(graph: AppGraph, image: PiousImage) {
+    if (image.physical) {
+        graph.images.picture(image.id)?.let {
+            Image(it, contentDescription = image.title.fr, contentScale = ContentScale.Fit, modifier = Modifier.fillMaxSize().shadow(6.dp, CardShape).clip(CardShape))
+        }
+        return
+    }
     Box(Modifier.fillMaxSize().background(CARD_PAPER).border(1.dp, CARD_GOLD).padding(10.dp).border(0.5.dp, CARD_GOLD).padding(6.dp)) {
         // Une image numérisée garde ses proportions : rien de la carte n'est rogné.
         graph.images.picture(image.id)?.let { Image(it, contentDescription = image.work.ifEmpty { image.title.fr }, contentScale = if (image.personal) ContentScale.Fit else ContentScale.Crop, modifier = Modifier.fillMaxSize()) }
@@ -152,6 +199,10 @@ private fun CardFront(graph: AppGraph, image: PiousImage) {
 @Composable
 private fun CardBack(graph: AppGraph, image: PiousImage) {
     val back = if (image.hasBack) graph.images.back(image.id) else null
+    if (back != null && image.physical) {
+        Image(back, contentDescription = null, contentScale = ContentScale.Fit, modifier = Modifier.fillMaxSize().shadow(6.dp, CardShape).clip(CardShape))
+        return
+    }
     if (back != null) {
         Box(Modifier.fillMaxSize().background(CARD_PAPER).border(1.dp, CARD_GOLD).padding(6.dp)) {
             Image(back, contentDescription = null, contentScale = ContentScale.Fit, modifier = Modifier.fillMaxSize())
@@ -172,14 +223,25 @@ private fun CardBack(graph: AppGraph, image: PiousImage) {
     }
 }
 
-/** La boîte à images : celles qu'on a numérisées et celles de la bibliothèque ; filet rouge pour celles d'un livre. */
+/**
+ * La boîte à images : celles qu'on a numérisées et celles de la bibliothèque, rangées par catégories (prédéfinies ou
+ * créées) ; filet rouge pour celles d'un livre.
+ */
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) {
-    val images by graph.images.all.collectAsState()
+    val all by graph.images.all.collectAsState()
     val placements by remember { graph.database.cards().observeAll() }.collectAsState(initial = emptyList())
     val placed = placements.map { it.card }.toSet()
     val paper = LocalPaperColors.current
+    val categories by graph.images.categories.collectAsState()
+    val categoriesOf by graph.images.categoriesOf.collectAsState()
+    var filter by rememberSaveable { mutableStateOf<String?>(null) }
+    var removing by remember { mutableStateOf<CardCategoryInfo?>(null) }
+    // Seules les catégories qui ont des images, plus celles de l'utilisateur (même vides).
+    val used = categoriesOf.values.flatten().toSet()
+    val shown = categories.filter { it.id in used || it.custom }
+    val images = filter?.let { f -> all.filter { f in categoriesOf[it.id].orEmpty() } } ?: all
     Surface(Modifier.fillMaxSize(), color = paper.background) {
         Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
             Row(Modifier.fillMaxWidth().padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -196,16 +258,38 @@ fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
                 item(span = { GridItemSpan(maxLineSpan) }) {
                     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         Button(onClick = { open(ScanKey()) }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.images_scan)) }
-                        if (images.isEmpty()) Text(stringResource(R.string.images_empty), style = MaterialTheme.typography.bodyMedium, color = paper.inkSecondary)
+                        if (all.isEmpty()) Text(stringResource(R.string.images_empty), style = MaterialTheme.typography.bodyMedium, color = paper.inkSecondary)
+                        if (shown.isNotEmpty()) {
+                            FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                                FilterChip(selected = filter == null, onClick = { filter = null }, label = { Text(stringResource(R.string.images_all)) })
+                                shown.forEach { c ->
+                                    // Appui long sur une catégorie de l'utilisateur : la supprimer.
+                                    Box(Modifier.combinedClickable(onClick = { filter = c.id.takeIf { it != filter } }, onLongClick = { if (c.custom) removing = c })) {
+                                        FilterChip(selected = filter == c.id, onClick = { filter = c.id.takeIf { it != filter } }, label = { Text(c.label) })
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 items(images, key = { it.id }) { image ->
                     Column(Modifier.clickable { open(CardKey(image.id)) }, horizontalAlignment = Alignment.CenterHorizontally) {
                         graph.images.thumbnail(image.id)?.let {
-                            Image(
-                                it, contentDescription = image.title.fr, contentScale = ContentScale.Crop,
-                                modifier = Modifier.fillMaxWidth().aspectRatio(0.62f).border(if (image.id in placed) 2.dp else 0.5.dp, if (image.id in placed) paper.rubric else CARD_GOLD),
-                            )
+                            if (image.physical) {
+                                // Une vraie carte : ses proportions, ses coins, un filet rouge si elle est dans un livre.
+                                Box(Modifier.fillMaxWidth().aspectRatio(0.62f), contentAlignment = Alignment.Center) {
+                                    Image(
+                                        it, contentDescription = image.title.fr, contentScale = ContentScale.Fit,
+                                        modifier = Modifier.aspectRatio(it.width / it.height.toFloat()).shadow(2.dp, CardShape).clip(CardShape)
+                                            .then(if (image.id in placed) Modifier.border(2.dp, paper.rubric, CardShape) else Modifier),
+                                    )
+                                }
+                            } else {
+                                Image(
+                                    it, contentDescription = image.title.fr, contentScale = ContentScale.Crop,
+                                    modifier = Modifier.fillMaxWidth().aspectRatio(0.62f).border(if (image.id in placed) 2.dp else 0.5.dp, if (image.id in placed) paper.rubric else CARD_GOLD),
+                                )
+                            }
                         }
                         Text(image.title.fr, style = MaterialTheme.typography.labelSmall, maxLines = 2, textAlign = TextAlign.Center)
                     }
@@ -213,4 +297,54 @@ fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
             }
         }
     }
+    removing?.let { c ->
+        AlertDialog(
+            onDismissRequest = { removing = null },
+            text = { Text(stringResource(R.string.category_delete_confirm, c.label)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    removing = null
+                    if (filter == c.id) filter = null
+                    graph.scope.launch { graph.images.deleteCategory(c.id) }
+                }) { Text(stringResource(R.string.card_delete), color = MaterialTheme.colorScheme.error) }
+            },
+            dismissButton = { TextButton(onClick = { removing = null }) { Text(stringResource(R.string.card_cancel)) } },
+        )
+    }
 }
+
+/** Les catégories d'une carte, à cocher ; « Nouvelle catégorie… » en crée une et y range la carte. */
+@Composable
+private fun CardCategoriesRow(all: List<CardCategoryInfo>, member: Set<String>, onToggle: (String, Boolean) -> Unit, onCreate: () -> Unit) {
+    Column(Modifier.fillMaxWidth().padding(horizontal = 20.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Text(stringResource(R.string.card_categories), style = MaterialTheme.typography.labelLarge, color = LocalPaperColors.current.rubric)
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            all.forEach { c -> FilterChip(selected = c.id in member, onClick = { onToggle(c.id, c.id !in member) }, label = { Text(c.label) }) }
+            AssistChip(onClick = onCreate, label = { Text(stringResource(R.string.category_new)) })
+        }
+    }
+}
+
+/** Ce que dit la carte : date, personnes, lieu, dédicace manuscrite, texte imprimé, éditeur, taille. */
+@Composable
+private fun CardDetails(image: PiousImage) {
+    val paper = LocalPaperColors.current
+    val facts = listOfNotNull(
+        image.date.takeIf { it.isNotBlank() },
+        image.people.joinToString(", ").takeIf { it.isNotBlank() },
+        image.place.takeIf { it.isNotBlank() },
+        listOf(image.work, image.artist).filter { it.isNotBlank() }.joinToString(", ").takeIf { it.isNotBlank() },
+    )
+    if (facts.isEmpty() && image.inscription.isBlank() && image.prayer.isNullOrBlank() && image.credit.isBlank() && image.sizeMm == null) return
+    Column(Modifier.fillMaxWidth().padding(horizontal = 20.dp, vertical = 8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        facts.forEach { Text(it, style = MaterialTheme.typography.bodyMedium) }
+        if (image.inscription.isNotBlank()) Text("« ${image.inscription} »", style = MaterialTheme.typography.bodyMedium, fontStyle = FontStyle.Italic)
+        image.prayer?.takeIf { it.isNotBlank() }?.let { Text(it, style = MaterialTheme.typography.bodyMedium, color = paper.inkSecondary) }
+        val small = listOfNotNull(
+            image.credit.takeIf { it.isNotBlank() },
+            image.sizeMm?.let { stringResource(R.string.card_size, it[0] / 10f, it[1] / 10f) },
+        )
+        small.forEach { Text(it, style = MaterialTheme.typography.labelSmall, color = paper.inkSecondary) }
+    }
+}
+
