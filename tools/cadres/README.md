@@ -32,6 +32,8 @@ Chaque tracé référence une **encre** (`GROUND`, `ACCENT`, `GOLD`…) et non u
 
 | Fichier | Rôle |
 |---|---|
+| `METHODE.md` | Comment passer d'une photo de paroissien à un cadre : relevé, palette, redessin, pièges, catalogue des autres cadres |
+| `analyse/decoupe.py`, `analyse/palette.py` | Outils de relevé : orientation et quadrillage des photos, mesure des encres |
 | `generate.py` | Source unique : géométrie, encres, palettes, mise en page |
 | `svg/*.svg` | Un fichier par module, ouvrable dans Inkscape (généré) |
 | `apercu.html` | Aperçu autonome du même moteur en JavaScript : thèmes, couleurs liturgiques, tailles d'écran (généré) |
