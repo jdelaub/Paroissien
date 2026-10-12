@@ -62,9 +62,34 @@ object BookFrames {
         "vigne_calice", "figuier_jacob", "lis_vox_dei", "palmes", "passiflores_agneau",
     )
 
-    fun of(publication: String, entry: LibraryEntry?, unitIndex: Int, unit: UnitInfo?): OrnamentalFrameDef? {
+    /**
+     * Le cadre d'une unité. [choice] : l'habit choisi dans l'atelier, qui l'emporte sur la règle ; [custom] : les cadres
+     * composés par l'utilisateur, qu'on peut choisir comme les autres.
+     */
+    fun of(
+        publication: String,
+        entry: LibraryEntry?,
+        unitIndex: Int,
+        unit: UnitInfo?,
+        choice: BookDressChoice? = null,
+        custom: List<OrnamentalFrameDef> = emptyList(),
+    ): OrnamentalFrameDef? {
         if (entry == null || unit == null) return null
-        val frames = OrnamentalFrames.associateBy { it.name }
+        val frames = (OrnamentalFrames + custom).associateBy { it.name }
+        when (choice?.frameMode) {
+            FrameMode.NONE -> return null
+            FrameMode.SINGLE -> choice.frame?.let { frames[it] }?.let { return it }
+            FrameMode.PER_CHAPTER -> choice.chapterFrames[unit.id]?.let { name -> return if (name.isEmpty()) null else frames[name] }
+            FrameMode.RANDOM -> {
+                val pool = choice.pool.filter { it in frames }.ifEmpty { cycle.filter { it in frames } }
+                if (pool.isNotEmpty()) return frames.getValue(pool[("$publication/${unit.id}/${choice.seed}").hashCode().mod(pool.size)])
+            }
+            FrameMode.AUTO, null -> Unit
+        }
+        return auto(publication, entry, unitIndex, unit, frames)
+    }
+
+    private fun auto(publication: String, entry: LibraryEntry, unitIndex: Int, unit: UnitInfo, frames: Map<String, OrnamentalFrameDef>): OrnamentalFrameDef? {
         when (BookDresses.of(publication, entry)) {
             Dress.NOBLE -> Unit
             Dress.BIBLE -> return frames["filets_rouges"]

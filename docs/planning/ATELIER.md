@@ -131,6 +131,8 @@ Un seul fichier `paroissien-sauvegarde-<date>.zip`, écrit et relu par le sélec
 
 Un écran par livre, ouvert depuis la bibliothèque (appui long sur la couverture) ou depuis Aa : « Habiller ce livre ». Un habit par livre (décision du 12/10/2026).
 
+**Fait le 12/10/2026 (0.6.1)** : les cadres de chaque livre, en cinq modes (selon le sommaire, un seul cadre, un cadre par chapitre, au hasard dans une sélection avec « tirer à nouveau », aucun), et « Composer un cadre » : frises du haut, des côtés et du pied, coins et médaillon pris dans tous les cadres de la bibliothèque (chacun montré sur un petit cadre), disposition, épaisseurs, fond, filets, aperçu vivant. Les encres de chaque module gardent leur cadre d'origine (« matin.gold ») ; les cadres composés se choisissent comme les autres. Tables `book_look` et `custom_frame` (base en version 6), dans la sauvegarde. Restent : couverture, gardes, tranche et rubans dans l'atelier.
+
 - **Rang** : noble, Bible, simple, sans habit (§4) ; il donne les valeurs de départ des choix suivants.
 - **Couverture** : matière et couleur, décor (modèles de la bibliothèque), motif central, titre doré ou non.
 - **Gardes** : moiré, asanoha, symboles, ou papier uni ; couleur.

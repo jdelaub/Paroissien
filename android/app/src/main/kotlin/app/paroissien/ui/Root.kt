@@ -61,6 +61,8 @@ import java.time.LocalDate
 @Serializable data object ImageBoxKey : NavKey
 @Serializable data class ScanKey(val backOf: String? = null) : NavKey
 @Serializable data object SettingsKey : NavKey
+@Serializable data class BookDressKey(val publication: String) : NavKey
+@Serializable data class FrameEditorKey(val id: String? = null) : NavKey
 
 private val tabs = listOf<NavKey>(TodayKey, LibraryKey, BookmarksKey, SearchKey)
 
@@ -93,6 +95,8 @@ fun ParoissienRoot(graph: AppGraph) {
                             }
                             entry<CardKey> { key -> CardScreen(graph, key, open, onBack = { backStack.removeLastOrNull() }) }
                             entry<ImageBoxKey> { ImageBoxScreen(graph, open, onBack = { backStack.removeLastOrNull() }) }
+                            entry<BookDressKey> { BookDressScreen(graph, it, open, onBack = { backStack.removeLastOrNull() }) }
+                            entry<FrameEditorKey> { FrameEditorScreen(graph, it, onBack = { backStack.removeLastOrNull() }) }
                             entry<ScanKey> { key ->
                                 ScanScreen(
                                     graph, key,

@@ -79,7 +79,10 @@ import app.paroissien.core.data.CardPlacement
 import app.paroissien.core.reading.book.CardMark
 import app.paroissien.library.subtitle
 import app.paroissien.library.BookIdentities
+import app.paroissien.library.BookDressChoice
 import app.paroissien.library.BookDresses
+import app.paroissien.library.CustomFrameSpec
+import app.paroissien.library.FrameComposer
 import app.paroissien.library.BookFrames
 import app.paroissien.core.reading.book.FrameLook
 import app.paroissien.core.reading.book.BookLook
@@ -168,17 +171,22 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     val cardFlow = remember(publication) { if (isDemo) flowOf(emptyList()) else graph.database.cards().observe(publication) }
     val cards by cardFlow.collectAsState(initial = emptyList())
     val images by graph.images.all.collectAsState()
-    // Les images glissées dans l'unité ouverte, entières : elles sont posées sur leur page.
-    val pictures by produceState(emptyMap<String, ImageBitmap>(), cards, unitId, settings.cardsOnPage) {
-        val here = cards.filter { it.unit == unitId && settings.cardsOnPage }.map { it.card }
-        value = withContext(Dispatchers.IO) { here.mapNotNull { id -> graph.images.picture(id)?.let { id to it } }.toMap() }
+    // Les images glissées dans l'unité ouverte, entières, recto et verso : elles sont posées sur leur page et s'y retournent.
+    val pictures by produceState(emptyMap<String, Pair<ImageBitmap?, ImageBitmap?>>(), cards, unitId) {
+        val here = cards.filter { it.unit == unitId }.map { it.card }
+        value = withContext(Dispatchers.IO) {
+            here.associateWith { id -> graph.images.picture(id) to graph.images[id]?.takeIf { it.hasBack }?.let { graph.images.back(id) } }
+        }
     }
     val cardMarks = cards.mapNotNull { c ->
         val index = units.indexOfFirst { it.id == c.unit }
         val image = images.firstOrNull { it.id == c.card } ?: return@mapNotNull null
         when {
             index < 0 -> null
-            c.unit == unitId -> CardMark(c.card, Anchor(c.block, c.charOffset), image = graph.images.thumbnail(c.card), label = image.title.fr, picture = pictures[c.card])
+            c.unit == unitId -> CardMark(
+                c.card, Anchor(c.block, c.charOffset), image = graph.images.thumbnail(c.card), label = image.title.fr,
+                picture = pictures[c.card]?.first, back = pictures[c.card]?.second,
+            )
             else -> CardMark(c.card, null, elsewhere = (index - unitIndex).sign, image = graph.images.thumbnail(c.card), label = image.title.fr)
         }
     }
@@ -210,6 +218,11 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     // La garde suit le rang du livre : soie pour un livre noble, papier à motif pour un livre simple, rien sous une
     // couverture de papier.
     val endpaper = remember(publication, entry) { BookDresses.endpaper(publication, entry) }
+    // L'habit choisi dans l'atelier (cadres) et les cadres composés par l'utilisateur.
+    val lookRow by remember(publication) { graph.database.looks().observe(publication) }.collectAsState(initial = null)
+    val choice = remember(lookRow) { BookDressChoice.decode(lookRow?.json) }
+    val customRows by remember { graph.database.looks().observeFrames() }.collectAsState(initial = emptyList())
+    val customFrames = remember(customRows) { customRows.mapNotNull { CustomFrameSpec.decode(it.json)?.let(FrameComposer::build) } }
     val look = BookLook(
         edges = identity.edges,
         weight = identity.paper.weight,
@@ -220,8 +233,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
             { BookCover(identity, entry.title, entry.subtitle(), Modifier.fillMaxSize(), flat = true) }
         } else null,
         endpaper = if (unitIndex == 0) endpaper else null,
-        frame = remember(publication, entry, unitIndex, settings.ornamentalFrames) {
-            if (settings.ornamentalFrames && !isDemo) BookFrames.of(publication, entry, unitIndex, unit)?.let { FrameLook(it.spec, it.style) } else null
+        frame = remember(publication, entry, unitIndex, settings.ornamentalFrames, choice, customFrames) {
+            if (settings.ornamentalFrames && !isDemo) BookFrames.of(publication, entry, unitIndex, unit, choice, customFrames)?.let { FrameLook(it.spec, it.style) } else null
         },
     )
 
@@ -246,6 +259,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                     slide = turn == TurnStyle.GLISSEMENT,
                     protectEdges = settings.protectEdges,
                     onCenterTap = { panel = if (panel == null) Panel.CHROME else null },
+                    menuOpen = panel != null,
                     onPaginated = { pagination = String.format(Locale.FRANCE, "%d pages · pagination %d ms", it.pages.size, it.elapsedMillis) },
                     ribbons = marks,
                     onRibbonTap = { slot -> ribbons.firstOrNull { it.slot == slot }?.let { openAt(it.unit, it.block, it.charOffset) } },
@@ -307,7 +321,11 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 modifier = Modifier.align(Alignment.BottomCenter),
             )
             Panel.SETTINGS -> Surface(Modifier.align(Alignment.BottomCenter).fillMaxWidth().windowInsetsPadding(WindowInsets.safeDrawing), shadowElevation = 6.dp) {
-                ReaderSettingsRow(settings, onAll = { panel = null; open(SettingsKey) }) { transform -> graph.scope.launch { graph.settings.update(transform) } }
+                ReaderSettingsRow(
+                    settings,
+                    onAll = { panel = null; open(SettingsKey) },
+                    onDress = if (isDemo || entry == null) null else { { panel = null; open(BookDressKey(publication)) } },
+                ) { transform -> graph.scope.launch { graph.settings.update(transform) } }
             }
             null -> Unit
         }

@@ -180,6 +180,8 @@ fun BookReader(
     slide: Boolean = false,
     protectEdges: Boolean = false,
     onCenterTap: (() -> Unit)? = null,
+    /** Menu ouvert : un toucher sur la page le referme et ne tourne pas la page. */
+    menuOpen: Boolean = false,
     onPaginated: (PagedBook) -> Unit = {},
     paginationContext: CoroutineContext = Dispatchers.Default,
     ribbons: List<RibbonMark> = emptyList(),
@@ -269,14 +271,16 @@ fun BookReader(
             // Rubans écartés dans le pli, images mises de côté, le temps de la lecture : un ruban qu'on rouvre par sa
             // queue, ou qu'on pose ailleurs, revient en travers de la page ; une image déplacée revient sur la sienne.
             var asideRibbons by remember { mutableStateOf(mapOf<Int, Anchor?>()) }
-            var asideCards by remember { mutableStateOf(mapOf<String, Anchor?>()) }
-            fun CardMark.aside() = asideCards.containsKey(id) && asideCards[id] == anchor
+            // Une image est posée sur sa page, ou rangée en miniature (réglage « images sur la page » : posée d'abord).
+            var asideCards by remember { mutableStateOf(mapOf<String, Pair<Anchor?, Boolean>>()) }
+            fun CardMark.aside() = asideCards[id]?.takeIf { it.first == anchor }?.second ?: !cardsOnPage
 
             MekuriPager(
                 state = state,
                 modifier = Modifier.fillMaxSize(),
                 configuration = configuration,
                 onCenterTap = onCenterTap,
+                tapsTurn = !menuOpen,
                 spread = if (double) MekuriSpread.Double else MekuriSpread.Single,
                 coverStandsAlone = true,
                 pageAspectRatio = pageWidth.value / maxHeight.value,
@@ -292,19 +296,14 @@ fun BookReader(
                         ribbons.filter { it.anchor != null && paged.pageOf(it.anchor) == i }
                             .map { PageRibbon(it.slot, aside = asideRibbons.containsKey(it.slot) && asideRibbons[it.slot] == it.anchor) }
                     }
-                    val laid = if (cardsOnPage) cards.filter { it.anchor != null && paged.pageOf(it.anchor) == i } else emptyList()
                     // Le verso d'une page de droite est la suivante ; celui d'une page de gauche, la précédente.
                     val verso = if (look.showThrough) paged.pages.getOrNull(if (side == PageSide.LEFT) i - 1 else i + 1) else null
                     PageView(
                         paged.pages[i], i, side, paged.pages.size, typography, margins, contentWidth, contentHeight, look, verso,
                         ribbons = here,
                         across = ribbonsAcross,
-                        cards = laid,
-                        cardsAside = laid.filter { it.aside() }.map { it.id }.toSet(),
                         objects = PageObjects(
                             ribbonAside = { slot -> ribbons.firstOrNull { it.slot == slot }?.let { asideRibbons = asideRibbons + (slot to it.anchor) } },
-                            cardAside = { id -> cards.firstOrNull { it.id == id }?.let { asideCards = asideCards + (id to it.anchor) } },
-                            cardOpen = onCardTap,
                         ),
                     )
                 }
@@ -324,15 +323,36 @@ fun BookReader(
             RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
             RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
 
-            // Images pieuses : celles de la page ouverte au milieu de la tête (posées sur la page, seulement celles qu'on
-            // a mises de côté ; un toucher les y remet), les autres à gauche ou à droite.
+            // Images pieuses de la page ouverte : posées sur elle ou rangées en miniature, au-dessus du livre (leurs gestes
+            // ne vont qu'à elles). Celles d'autres pages dépassent par la tête, à gauche ce qui précède, à droite ce qui suit.
             val placed = cards.map { c -> c to (c.anchor?.let { a -> sideOfPage(paged.pageOf(a)) } ?: c.elsewhere) }
-            val current = placed.filter { it.second == 0 }.map { it.first }
-            if (cardsOnPage) {
-                CardTops(current.filter { it.aside() }, paper, wide = true, { id -> asideCards = asideCards - id }, onCardTap, Modifier.align(Alignment.TopCenter))
-            } else {
-                CardTops(current, paper, wide = true, onCardTap, onCardTap, Modifier.align(Alignment.TopCenter))
+            val pagePx = with(density) { pageWidth.toPx() }
+            val slots = visiblePages(state.currentPage, double, count).filter { it >= offset }.mapNotNull { index ->
+                val i = index - offset
+                val here = cards.filter { it.anchor != null && paged.pageOf(it.anchor) == i }
+                if (here.isEmpty()) return@mapNotNull null
+                val side = sideOf(index, double)
+                val left = if (side == PageSide.RIGHT) pagePx else 0f
+                val framed = look.frame != null
+                val outerOnRight = side != PageSide.LEFT
+                with(density) {
+                    PageSlot(
+                        page = Rect(left, 0f, left + pagePx, maxHeight.toPx()),
+                        textLeft = (if (framed) (if (outerOnRight) margins.inner else margins.outer) else margins.horizontal).toPx(),
+                        textTop = (if (framed) margins.top else margins.top + Header).toPx(),
+                        cards = here,
+                    )
+                }
             }
+            CardsOverlay(
+                slots = slots,
+                isAside = { it.aside() },
+                turning = state.isTurning,
+                topInset = with(density) { cutout.calculateTopPadding().toPx() },
+                onAside = { id -> cards.firstOrNull { it.id == id }?.let { asideCards = asideCards + (id to (it.anchor to true)) } },
+                onBack = { id -> cards.firstOrNull { it.id == id }?.let { asideCards = asideCards + (id to (it.anchor to false)) } },
+                onOpen = onCardTap,
+            )
             CardTops(placed.filter { it.second < 0 }.map { it.first }, paper, wide = false, onCardTap, onCardTap, Modifier.align(Alignment.TopStart).padding(start = margins.horizontal))
             CardTops(placed.filter { it.second > 0 }.map { it.first }, paper, wide = false, onCardTap, onCardTap, Modifier.align(Alignment.TopEnd).padding(end = margins.horizontal))
 
@@ -376,7 +396,7 @@ private fun visiblePages(page: Int, double: Boolean, count: Int): Set<Int> {
 private data class PageRibbon(val slot: Int, val aside: Boolean)
 
 /** Ce qu'on fait des objets posés sur la page : écarter un ruban dans le pli, mettre une image de côté, l'ouvrir. */
-private class PageObjects(val ribbonAside: (Int) -> Unit, val cardAside: (String) -> Unit, val cardOpen: (String) -> Unit)
+private class PageObjects(val ribbonAside: (Int) -> Unit)
 
 @Composable
 private fun PageView(
@@ -392,8 +412,6 @@ private fun PageView(
     verso: LaidOutPage?,
     ribbons: List<PageRibbon>,
     across: Boolean,
-    cards: List<CardMark>,
-    cardsAside: Set<String>,
     objects: PageObjects,
 ) {
     val density = LocalDensity.current
@@ -409,21 +427,14 @@ private fun PageView(
         val ribbon = ribbons.indices.reversed().firstOrNull { k ->
             across && !ribbons[k].aside && with(density) { near(ribbonSpine(k, 0f, gutterAtRight, pageSize, margin), at, (AcrossWidth / 2 + 14.dp).toPx()) }
         }
-        val card = if (ribbon != null) null else cards.indices.reversed().firstOrNull { k -> cards[k].id !in cardsAside && with(density) { cardRect(cards[k].ratio(), k, pageSize) }.contains(at) }
         ribbon?.let { objects.ribbonAside(ribbons[it].slot) }
-        card?.let { objects.cardAside(cards[it].id) }
-        ribbon != null || card != null
-    }
-    val longPress by rememberUpdatedState { at: Offset ->
-        val card = cards.indices.reversed().firstOrNull { k -> cards[k].id !in cardsAside && with(density) { cardRect(cards[k].ratio(), k, pageSize) }.contains(at) }
-        card?.let { haptic.performHapticFeedback(HapticFeedbackType.LongPress); objects.cardOpen(cards[it].id) }
-        card != null
+        ribbon != null
     }
     Box(
         Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper, look)
             .pageRibbons(ribbons, moves, gutterAtRight, t.paper.isDark, margin, LocalRibbonFabric.current)
             .onSizeChanged { pageSize = it.toSize() }
-            .pointerInput(Unit) { objectTouches({ tap(it) }, { longPress(it) }) },
+            .pointerInput(Unit) { objectTouches({ tap(it) }, { false }) },
     ) {
         val frame = look.frame
         if (frame == null) {
@@ -464,9 +475,6 @@ private fun PageView(
             PageContent(page, verso, t.paper.inkPrimary, Modifier.padding(start = if (outerOnRight) margins.inner else margins.outer, top = margins.top).size(contentWidth, contentHeight))
         }
         if (pageSize != Size.Zero) {
-            cards.forEachIndexed { k, card ->
-                key(card.id) { CardOnPage(card, with(density) { cardRect(card.ratio(), k, pageSize) }, visible = card.id !in cardsAside, objects) }
-            }
             // TalkBack : chaque ruban en travers de la page se dit, et s'écarte d'un double toucher.
             ribbons.forEachIndexed { k, r ->
                 if (!across || r.aside) return@forEachIndexed
@@ -486,60 +494,10 @@ private fun PageView(
     }
 }
 
-/** Le rapport largeur sur hauteur de l'image, d'après celle qu'on a sous la main (une carte, sinon). */
-private fun CardMark.ratio(): Float = (picture ?: image)?.let { it.width.toFloat() / it.height.coerceAtLeast(1) } ?: (2f / 3.5f)
-
-private const val PHI = 1.618034f
-
 /**
- * Où l'image est posée : la page vaut φ fois l'image (nombre d'or), qui garde ses proportions et tient dans ce cadre ;
- * centrée, et placée un peu au-dessus du milieu, les blancs du haut et du bas dans le rapport 1 : φ, comme le bloc de
- * texte d'une belle page. Les suivantes, si l'on en a glissé plusieurs, sont un peu décalées, en pile.
- */
-private fun Density.cardRect(ratio: Float, index: Int, page: Size): Rect {
-    val boxW = page.width / PHI
-    val boxH = page.height / PHI
-    val (w, h) = if (ratio > boxW / boxH) boxW to boxW / ratio else boxH * ratio to boxH
-    val shift = (7 * index).dp.toPx()
-    val left = (page.width - w) / 2 + shift
-    val top = (page.height - h) / (1 + PHI) + shift
-    return Rect(left, top, left + w, top + h)
-}
-
-/** Une image pieuse posée sur la page, un rien de travers, avec son ombre ; mise de côté, elle glisse vers la tête. */
-@Composable
-private fun CardOnPage(card: CardMark, rect: Rect, visible: Boolean, objects: PageObjects) {
-    val density = LocalDensity.current
-    val tilt = (card.id.hashCode().mod(5) - 2) * 0.6f
-    AnimatedVisibility(
-        visible = visible,
-        enter = fadeIn(tween(380)) + slideInVertically(tween(420)) { -it / 2 },
-        exit = fadeOut(tween(380)) + slideOutVertically(tween(420)) { -it / 2 },
-        modifier = Modifier.offset { IntOffset(rect.left.roundToInt(), rect.top.roundToInt()) },
-    ) {
-        Box(
-            Modifier
-                .size(with(density) { rect.width.toDp() }, with(density) { rect.height.toDp() })
-                .graphicsLayer {
-                    rotationZ = tilt
-                    shadowElevation = 5.dp.toPx()
-                }
-                .background(Color(0xFFF7F0DD))
-                .semantics {
-                    contentDescription = "Image pieuse : ${card.label}"
-                    onClick("la mettre de côté") { objects.cardAside(card.id); true }
-                    customActions = listOf(CustomAccessibilityAction("Ouvrir l'image") { objects.cardOpen(card.id); true })
-                },
-        ) {
-            (card.picture ?: card.image)?.let { Image(it, contentDescription = null, contentScale = ContentScale.FillBounds, modifier = Modifier.fillMaxSize()) }
-        }
-    }
-}
-
-/**
- * Toucher un ruban ou une image posés sur la page sans rien ôter au feuilletage : le doigt qui glisse tourne la page
- * comme ailleurs. Seuls un toucher bref ou un appui long qui tombent sur un objet sont consommés ; ailleurs, le livre
- * reçoit le geste (bords : tourner, milieu : la barre).
+ * Toucher un ruban posé en travers de la page sans rien ôter au feuilletage : le doigt qui glisse tourne la page comme
+ * ailleurs. Seuls un toucher bref ou un appui long qui tombent sur un ruban sont consommés ; ailleurs, le livre reçoit
+ * le geste (bords : tourner, milieu : la barre). Les images pieuses, elles, sont au-dessus du livre (CardsOnPage.kt).
  */
 private suspend fun PointerInputScope.objectTouches(onTap: (Offset) -> Boolean, onLongPress: (Offset) -> Boolean) {
     awaitEachGesture {

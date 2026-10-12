@@ -34,26 +34,42 @@ import app.paroissien.core.designsystem.PaperColors
  * [elsewhere] dit si elle est avant (-1) ou après (+1). Sur sa page, elle est posée sur le texte ([picture], l'image
  * entière, si on l'a déjà chargée) ; ailleurs, on n'en voit que le haut, qui dépasse par la tête du livre.
  */
-data class CardMark(val id: String, val anchor: Anchor?, val elsewhere: Int = 0, val image: ImageBitmap?, val label: String, val picture: ImageBitmap? = null)
+data class CardMark(
+    val id: String,
+    val anchor: Anchor?,
+    val elsewhere: Int = 0,
+    val image: ImageBitmap?,
+    val label: String,
+    val picture: ImageBitmap? = null,
+    /** Le verso, s'il y en a un : la carte posée sur la page se retourne d'un toucher. */
+    val back: ImageBitmap? = null,
+)
 
 /** Le haut d'une carte : son filet doré, l'image, une inclinaison fixe de ± 2° tirée de son identifiant. */
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 internal fun CardTop(card: CardMark, paper: PaperColors, wide: Boolean, onTap: (String) -> Unit, onLongTap: (String) -> Unit) {
     val tilt = (card.id.hashCode().mod(5) - 2).toFloat()
+    // Le petit haut de carte ne fait que 14 à 18 dp ; on le touche dans une zone de 48 dp, qui ne laisse rien au livre.
     Box(
         Modifier
-            .size(width = if (wide) 64.dp else 40.dp, height = if (wide) 18.dp else 14.dp)
-            .rotate(tilt)
-            .background(Color(0xFFF7F0DD))
-            .border(1.dp, Color(0xFFB8912F))
-            .padding(2.dp)
-            .clipToBounds()
+            .size(width = if (wide) 64.dp else 48.dp, height = 48.dp)
             .combinedClickable(onLongClickLabel = "Ouvrir l'image ${card.label}", onLongClick = { onLongTap(card.id) }) { onTap(card.id) }
             .semantics { contentDescription = "Image pieuse : ${card.label}" },
+        contentAlignment = Alignment.TopCenter,
     ) {
-        card.image?.let { Image(it, contentDescription = null, contentScale = ContentScale.Crop, alignment = Alignment.TopCenter, modifier = Modifier.fillMaxSize()) }
-            ?: Box(Modifier.fillMaxSize().background(paper.hairline))
+        Box(
+            Modifier
+                .size(width = if (wide) 64.dp else 40.dp, height = if (wide) 18.dp else 14.dp)
+                .rotate(tilt)
+                .background(Color(0xFFF7F0DD))
+                .border(1.dp, Color(0xFFB8912F))
+                .padding(2.dp)
+                .clipToBounds(),
+        ) {
+            card.image?.let { Image(it, contentDescription = null, contentScale = ContentScale.Crop, alignment = Alignment.TopCenter, modifier = Modifier.fillMaxSize()) }
+                ?: Box(Modifier.fillMaxSize().background(paper.hairline))
+        }
     }
 }
 

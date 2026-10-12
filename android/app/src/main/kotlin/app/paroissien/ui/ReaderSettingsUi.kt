@@ -29,7 +29,7 @@ fun ReaderSettings.ribbonFabric() = if (ribbonFabric == "SATIN") RibbonFabric.SA
 
 /** Les réglages de lecture, chacun un bouton qui passe à la valeur suivante ; [change] les enregistre, [onAll] ouvre l'écran des réglages. */
 @Composable
-fun ReaderSettingsRow(settings: ReaderSettings, onAll: (() -> Unit)? = null, change: ((ReaderSettings) -> ReaderSettings) -> Unit) {
+fun ReaderSettingsRow(settings: ReaderSettings, onAll: (() -> Unit)? = null, onDress: (() -> Unit)? = null, change: ((ReaderSettings) -> ReaderSettings) -> Unit) {
     FlowRow(Modifier.padding(12.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         Setting(stringResource(R.string.setting_theme, stringResource(themeLabel(settings.paperTheme())))) { change { it.copy(theme = settings.paperTheme().next().name) } }
         Setting(stringResource(R.string.setting_font, stringResource(if (settings.bookFace() == BookFace.GARAMOND) R.string.font_garamond else R.string.font_literata))) {
@@ -49,6 +49,7 @@ fun ReaderSettingsRow(settings: ReaderSettings, onAll: (() -> Unit)? = null, cha
         Setting(stringResource(if (settings.cardsOnPage) R.string.setting_cards_on_page_on else R.string.setting_cards_on_page_off)) { change { it.copy(cardsOnPage = !it.cardsOnPage) } }
         Setting(stringResource(if (settings.ornamentalFrames) R.string.setting_frames_on else R.string.setting_frames_off)) { change { it.copy(ornamentalFrames = !it.ornamentalFrames) } }
         Setting(stringResource(if (settings.showMeasures) R.string.setting_measures_on else R.string.setting_measures_off)) { change { it.copy(showMeasures = !it.showMeasures) } }
+        onDress?.let { Setting(stringResource(R.string.setting_dress), it) }
         onAll?.let { Setting(stringResource(R.string.setting_all), it) }
     }
 }

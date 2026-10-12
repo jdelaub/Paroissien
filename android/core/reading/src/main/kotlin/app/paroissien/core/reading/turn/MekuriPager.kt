@@ -1,6 +1,7 @@
 // Adapté de Mekuri (https://github.com/AniCanon/mekuri, commit b438b03), MIT © 2026 AniCanon : voir THIRD_PARTY_NOTICES.md.
 package app.paroissien.core.reading.turn
 
+import androidx.compose.runtime.snapshotFlow
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -44,6 +45,8 @@ import androidx.compose.ui.semantics.stateDescription
  *   reports when they do not. A gesture keeps the value it began under, so a
  *   drag in flight when this turns false still releases its turn.
  * @param onCenterTap called for a tap outside both edge zones.
+ * @param tapsTurn false while a menu is open: every tap then reports as a centre tap (it closes the menu) and none
+ *   turns a page; drags still turn.
  * @param spread whether one or two pages share the container.
  * @param coverStandsAlone whether page 0 opens alone, like a cover.
  * @param pageAspectRatio width over height of one page.
@@ -61,6 +64,7 @@ public fun MekuriPager(
     configuration: MekuriConfiguration = MekuriConfiguration(),
     pagingEnabled: Boolean = true,
     onCenterTap: (() -> Unit)? = null,
+    tapsTurn: Boolean = true,
     spread: MekuriSpread = MekuriSpread.Automatic,
     coverStandsAlone: Boolean = true,
     pageAspectRatio: Float = DEFAULT_PAGE_ASPECT_RATIO,
@@ -85,6 +89,9 @@ public fun MekuriPager(
         state.attach(controller)
         onDispose { state.detach(controller) }
     }
+    LaunchedEffect(state, controller) {
+        snapshotFlow { controller.turn != null }.collect { state.isTurning = it }
+    }
 
     // Paroissien : libellés d'accessibilité en français, lus depuis les ressources.
     val pageDescription = stringResource(R.string.reading_page_of, state.currentPage + 1, state.pageCount)
@@ -92,7 +99,7 @@ public fun MekuriPager(
     val previousLabel = stringResource(R.string.reading_previous_page)
     BoxWithConstraints(
         modifier
-            .mekuriGestures(controller, pagingEnabled, onCenterTap)
+            .mekuriGestures(controller, pagingEnabled, onCenterTap, tapsTurn)
             .semantics {
                 stateDescription = pageDescription
                 customActions = mekuriPageActions(controller, pagingEnabled, nextLabel, previousLabel)

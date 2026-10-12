@@ -90,6 +90,49 @@ data class CardInCategory(
     val updatedAt: Long,
 )
 
+/**
+ * L'habit d'un livre, choisi dans l'atelier (ATELIER §9) : description JSON (mode des cadres, cadre unique, cadres par
+ * chapitre, tirage au hasard…), lue par l'application.
+ */
+@Entity(tableName = "book_look")
+data class BookLookRow(
+    @PrimaryKey val publication: String,
+    val json: String,
+    val updatedAt: Long,
+)
+
+/** Un cadre composé par l'utilisateur à partir des modules de la bibliothèque : description JSON. */
+@Entity(tableName = "custom_frame")
+data class CustomFrameRow(
+    @PrimaryKey val id: String,
+    val json: String,
+    val updatedAt: Long,
+)
+
+@Dao
+interface LookDao {
+    @Query("SELECT * FROM book_look WHERE publication = :publication")
+    fun observe(publication: String): Flow<BookLookRow?>
+
+    @Query("SELECT * FROM book_look")
+    suspend fun all(): List<BookLookRow>
+
+    @Upsert
+    suspend fun save(look: BookLookRow)
+
+    @Query("SELECT * FROM custom_frame ORDER BY updatedAt")
+    fun observeFrames(): Flow<List<CustomFrameRow>>
+
+    @Query("SELECT * FROM custom_frame")
+    suspend fun frames(): List<CustomFrameRow>
+
+    @Upsert
+    suspend fun saveFrame(frame: CustomFrameRow)
+
+    @Query("DELETE FROM custom_frame WHERE id = :id")
+    suspend fun deleteFrame(id: String)
+}
+
 @Dao
 interface CategoryDao {
     @Query("SELECT * FROM card_category ORDER BY label")
@@ -184,14 +227,18 @@ interface PersonalCardDao {
 }
 
 @Database(
-    entities = [BookPosition::class, Ribbon::class, CardPlacement::class, PersonalCard::class, CardCategory::class, CardInCategory::class],
-    version = 5,
+    entities = [
+        BookPosition::class, Ribbon::class, CardPlacement::class, PersonalCard::class, CardCategory::class, CardInCategory::class,
+        BookLookRow::class, CustomFrameRow::class,
+    ],
+    version = 6,
     exportSchema = true,
     autoMigrations = [
         AutoMigration(from = 1, to = 2, spec = UserDatabase.V1ToV2::class),
         AutoMigration(from = 2, to = 3),
         AutoMigration(from = 3, to = 4),
         AutoMigration(from = 4, to = 5),
+        AutoMigration(from = 5, to = 6),
     ],
 )
 abstract class UserDatabase : RoomDatabase() {
@@ -200,6 +247,7 @@ abstract class UserDatabase : RoomDatabase() {
     abstract fun cards(): CardDao
     abstract fun personalCards(): PersonalCardDao
     abstract fun categories(): CategoryDao
+    abstract fun looks(): LookDao
 
     /** La version 1 n'avait qu'une table d'essai, jamais remplie : elle disparaît. */
     @DeleteTable(tableName = "reading_position")

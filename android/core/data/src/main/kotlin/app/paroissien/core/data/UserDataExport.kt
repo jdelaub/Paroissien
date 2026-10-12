@@ -21,6 +21,9 @@ data class UserDataExport(
     /** Ajoutés en 0.6.0 : catégories créées par l'utilisateur, et ce qu'il a rangé ou retiré. */
     val categories: List<ExportedCategory> = emptyList(),
     val cardCategories: List<ExportedCardCategory> = emptyList(),
+    /** Ajoutés en 0.6.1 : l'habit de chaque livre et les cadres composés (JSON de l'atelier). */
+    val bookLooks: List<ExportedJson> = emptyList(),
+    val customFrames: List<ExportedJson> = emptyList(),
 ) {
     companion object {
         const val FORMAT_VERSION = 1
@@ -41,6 +44,10 @@ data class ExportedPosition(val publication: String, val unit: String, val block
 
 @Serializable
 data class ExportedRibbon(val publication: String, val slot: Int, val unit: String, val block: String, val charOffset: Int, val blockRev: String? = null, val updatedAt: Long)
+
+/** Une description JSON de l'atelier, telle quelle : [key] est la publication ou l'identifiant du cadre. */
+@Serializable
+data class ExportedJson(val key: String, val json: String, val updatedAt: Long)
 
 @Serializable
 data class ExportedCategory(val id: String, val label: String, val createdAt: Long)
@@ -66,6 +73,8 @@ class UserDataTransfer(private val db: UserDatabase) {
             personalCards = db.personalCards().all().map { ExportedPersonalCard(it.id, it.title, it.hasBack, it.createdAt) },
             categories = db.categories().categories().map { ExportedCategory(it.id, it.label, it.createdAt) },
             cardCategories = db.categories().assignments().map { ExportedCardCategory(it.card, it.category, it.removed, it.updatedAt) },
+            bookLooks = db.looks().all().map { ExportedJson(it.publication, it.json, it.updatedAt) },
+            customFrames = db.looks().frames().map { ExportedJson(it.id, it.json, it.updatedAt) },
         ),
     )
 
@@ -88,6 +97,20 @@ class UserDataTransfer(private val db: UserDatabase) {
         for (a in data.cardCategories) {
             if ((assignments[a.card to a.category]?.updatedAt ?: Long.MIN_VALUE) < a.updatedAt) {
                 db.categories().assign(CardInCategory(a.card, a.category, a.removed, a.updatedAt))
+                taken++
+            }
+        }
+        val looks = db.looks().all().associateBy { it.publication }
+        for (l in data.bookLooks) {
+            if ((looks[l.key]?.updatedAt ?: Long.MIN_VALUE) < l.updatedAt) {
+                db.looks().save(BookLookRow(l.key, l.json, l.updatedAt))
+                taken++
+            }
+        }
+        val frames = db.looks().frames().associateBy { it.id }
+        for (f in data.customFrames) {
+            if ((frames[f.key]?.updatedAt ?: Long.MIN_VALUE) < f.updatedAt) {
+                db.looks().saveFrame(CustomFrameRow(f.key, f.json, f.updatedAt))
                 taken++
             }
         }

@@ -1,5 +1,17 @@
 package app.paroissien.ui
 
+import androidx.compose.foundation.combinedClickable
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.draw.clip
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.background
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -84,6 +96,8 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
                 subtitle = entry.subtitle(),
                 detail = position?.let { stringResource(R.string.library_resume, entry.unitTitle(it.unit)) }
                     ?: pluralStringResource(R.plurals.units, entry.units.size, entry.units.size),
+                // Appui long : habiller ce livre (cadres, cadre composé).
+                onLongClick = { open(BookDressKey(entry.publication.id)) },
             ) { open(ReaderKey(entry.publication.id, opening = true)) }
         }
         // Les quatre Évangiles : une vue de la Bible (PLAN §3.1), reliée comme elle, ouverte au livre ou là où l'on s'est arrêté.
@@ -109,9 +123,41 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
                 ) { open(SeriesKey(id, title)) }
             }
         }
+        // La bibliothèque des images pieuses, à côté des livres : une boîte, ses premières cartes en éventail.
+        item(key = "images") { ImageBoxTile(graph) { open(ImageBoxKey) } }
         item(key = DEMO) {
             CoverTile(BookIdentities.of(DEMO, null, true), stringResource(R.string.demo_book), null, stringResource(R.string.demo_book_detail)) { open(ReaderKey(DEMO)) }
         }
+    }
+}
+
+/** La boîte à images sur le rayon : trois cartes en éventail sur un fond de carton, et leur nombre. */
+@Composable
+private fun ImageBoxTile(graph: AppGraph, onClick: () -> Unit) {
+    val images by graph.images.all.collectAsState()
+    val paper = LocalPaperColors.current
+    Column(Modifier.clickable(onClick = onClick), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        Box(
+            Modifier.fillMaxWidth().aspectRatio(0.70f).background(Color(0xFF5B4632), RoundedCornerShape(4.dp)).padding(10.dp),
+            contentAlignment = Alignment.Center,
+        ) {
+            val fan = images.take(3)
+            fan.forEachIndexed { k, image ->
+                graph.images.thumbnail(image.id)?.let {
+                    Image(
+                        it, contentDescription = null, contentScale = ContentScale.Fit,
+                        modifier = Modifier.fillMaxSize(0.78f).rotate((k - (fan.size - 1) / 2f) * 9f)
+                            .offset(x = ((k - (fan.size - 1) / 2f) * 10).dp)
+                            .shadow(3.dp, RoundedCornerShape(4)).clip(RoundedCornerShape(4)),
+                    )
+                }
+            }
+            if (fan.isEmpty()) Text(stringResource(R.string.images_box), color = Color(0xFFF7F0DD), style = MaterialTheme.typography.titleMedium)
+        }
+        Text(
+            if (images.isEmpty()) stringResource(R.string.images_box_empty) else pluralStringResource(R.plurals.images_box_detail, images.size, images.size),
+            style = MaterialTheme.typography.bodySmall, color = paper.inkSecondary, maxLines = 2,
+        )
     }
 }
 
@@ -166,8 +212,9 @@ private fun Heading(text: String) {
 }
 
 @Composable
-private fun CoverTile(identity: BookIdentity, title: String, subtitle: String?, detail: String?, onClick: () -> Unit) {
-    Column(Modifier.clickable(onClick = onClick), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+@OptIn(ExperimentalFoundationApi::class)
+private fun CoverTile(identity: BookIdentity, title: String, subtitle: String?, detail: String?, onLongClick: (() -> Unit)? = null, onClick: () -> Unit) {
+    Column(Modifier.combinedClickable(onLongClick = onLongClick, onClick = onClick), verticalArrangement = Arrangement.spacedBy(6.dp)) {
         BookCover(identity, title, subtitle, Modifier.fillMaxWidth().aspectRatio(0.70f))
         detail?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary, maxLines = 2) }
     }

@@ -29,9 +29,11 @@ internal fun Modifier.mekuriGestures(
     controller: MekuriPagerController,
     pagingEnabled: Boolean,
     onCenterTap: (() -> Unit)?,
+    tapsTurn: Boolean = true,
 ): Modifier {
     val paging = rememberUpdatedState(pagingEnabled)
     val centreTap = rememberUpdatedState(onCenterTap)
+    val turning = rememberUpdatedState(tapsTurn)
     return this.pointerInput(controller) {
         val slop = this.viewConfiguration.touchSlop
         try {
@@ -70,12 +72,17 @@ internal fun Modifier.mekuriGestures(
                     }
                     else -> {
                         last.consume()
-                        controller.tapped(
-                            x = down.position.x / this.density,
-                            y = down.position.y / this.density,
-                            onCenterTap = centreTap.value,
-                            pagingEnabled = pagingEnabledForGesture,
-                        )
+                        // Menu ouvert : un toucher le referme, sans tourner la page (Paroissien).
+                        if (!turning.value) {
+                            centreTap.value?.invoke()
+                        } else {
+                            controller.tapped(
+                                x = down.position.x / this.density,
+                                y = down.position.y / this.density,
+                                onCenterTap = centreTap.value,
+                                pagingEnabled = pagingEnabledForGesture,
+                            )
+                        }
                     }
                 }
             }
