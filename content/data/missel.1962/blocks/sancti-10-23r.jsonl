@@ -1,0 +1,40 @@
+{"id":"sancti-10-23r.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/10-23r.txt","section":"Officium"}],"t":{"la":["S. Antonii Mariæ Claret Episcopi et Confessoris"],"fr":["Saint Antoine-Marie Claret, évêque et confesseur"]}}
+{"id":"sancti-10-23r.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-10-23r.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-23r.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-10-23r.introit.1","type":"rubric","t":{"la":["Ps 131:9-10."],"fr":["Ps 131:9-10."]}}
+{"id":"sancti-10-23r.introit.2","type":"para","dropCap":true,"t":{"la":["Sacerdótes tui, Dómine, induántur justítiam, et sancti tui exsúltent. Propter David servum tuum non avértas fáciem christi tui."]}}
+{"id":"sancti-10-23r.introit.3","type":"rubric","t":{"la":["Ps 131:1"],"fr":["Ps 131:1"]}}
+{"id":"sancti-10-23r.introit.4","type":"para","t":{"la":["Meménto, Dómine, David, et omnis mansuetúdinis ejus:"]}}
+{"id":"sancti-10-23r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-10-23r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-10-23r.introit.7","type":"para","t":{"la":["Sacerdótes tui, Dómine, induántur justítiam, et sancti tui exsúltent. Propter David servum tuum non avértas fáciem christi tui."]}}
+{"id":"sancti-10-23r.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-23r.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-23r.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-10-23r.collecte.1","type":"para","t":{"la":["Deus, qui beátum Antónium Maríam Confessórem tuum atque Pontíficem, apostólicis virtútibus sublimásti, et per eum novas in Ecclésia clericórum ac vírginum famílias collegísti: concéde, quǽsumus; ut, eius dirigéntibus mónitis ac suffragántibus méritis, animárum salútem quǽrere iúgiter studeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-23r.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-23r.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-10-23r.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Hebrǽos"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Hébreux"]}}
+{"id":"sancti-10-23r.epitre.2","type":"rubric","t":{"la":["Heb 7:23-27."],"fr":["Heb 7:23-27."]}}
+{"id":"sancti-10-23r.epitre.3","type":"para","t":{"la":["Fratres : Plures facti sunt sacerdótes, idcírco quod morte prohiberéntur permanére : Iesus autem, eo quod máneat in ætérnum, sempitérnum habet sacerdótium. Unde et salváre in perpétuum potest accedéntes per semetípsum ad Deum : semper vivens ad interpellándum pro nobis. Talis enim decébat, ut nobis esset póntifex, sanctus, ínnocens, impollútus, segregátus a peccatóribus, et excélsior cælis factus : qui non habet necessitátem cotídie, quemádmodum sacerdótes, prius pro suis delíctis hóstias offérre, deínde pro pópuli : hoc enim fecit semel, seípsum offeréndo, Jesus Christus, Dóminus noster."]}}
+{"id":"sancti-10-23r.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-23r.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-10-23r.graduel.1","type":"rubric","t":{"la":["Ps 131:16-17"],"fr":["Ps 131:16-17"]}}
+{"id":"sancti-10-23r.graduel.2","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Sacerdótes ejus índuam salutári, et sancti ejus exsultatióne exsultábunt."]}}
+{"id":"sancti-10-23r.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Illuc prodúcam cornu David; parávi lucérnam christo meo. Allelúia, allelúia."]}}
+{"id":"sancti-10-23r.graduel.4","type":"rubric","t":{"la":["Ps 109:4"],"fr":["Ps 109:4"]}}
+{"id":"sancti-10-23r.graduel.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Jurávit Dóminus, et non pœnitébit eum: Tu es sacérdos in ætérnum secúndum órdinem Melchísedech. Allelúia."]}}
+{"id":"sancti-10-23r.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-23r.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-10-23r.evangile.1","type":"para","style":"intro","t":{"la":["Lectio sancti Evangelii secundum Matthǽum"],"fr":["Lecture du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-10-23r.evangile.2","type":"rubric","t":{"la":["Matt 24:42-47."],"fr":["Matt 24:42-47."]}}
+{"id":"sancti-10-23r.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Vigiláte ergo, quia nescítis qua hora Dóminus vester ventúrus sit. Illud autem scitóte, quóniam si sciret paterfamílias qua hora fur ventúrus esset, vigiláret útique, et non síneret pérfodi domum suam. Ideo et vos estóte paráti: quia qua nescítis hora Fílius hóminis ventúrus est. Quis, putas, est fidélis servus, et prudens, quem constítuit dóminus suus super famíliam suam ut det illis cibum in témpore? Beátus ille servus, quem cum vénerit dóminus ejus, invénerit sic faciéntem. Amen dico vobis, quóniam super ómnia bona sua constítuet eum."]}}
+{"id":"sancti-10-23r.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-10-23r.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-23r.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-10-23r.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
+{"id":"sancti-10-23r.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
+{"id":"sancti-10-23r.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-10-23r.secrete.1","type":"para","t":{"la":["Sancti Antónii Maríæ Confessóris tui atque Pontíficis, quǽsumus, Dómine, ánnua sollémnitas pietáti tuæ nos reddat accéptos: ut, per hæc piæ placatiónis offícia, et illum beáta retribútio comitétur, et nobis grátiæ tuæ dona concíliet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-23r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-10-23r.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-10-23r.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-23r.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-10-23r.communion.1","type":"rubric","t":{"la":["Matt 24:46-47"],"fr":["Matt 24:46-47"]}}
+{"id":"sancti-10-23r.communion.2","type":"para","t":{"la":["Beátus servus, quem, cum vénerit dóminus, invénerit vigilántem: amen, dico vobis, super ómnia bona sua constítuet eum."]}}
+{"id":"sancti-10-23r.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4-1.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-10-23r.postcommunion.1","type":"para","t":{"la":["Deus, fidélium remunerátor animárum: præsta; ut, beáti Antónii Maríæ Confessóris tui atque Pontíficis, cujus venerándam celebrámus festivitátem, précibus indulgéntiam consequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

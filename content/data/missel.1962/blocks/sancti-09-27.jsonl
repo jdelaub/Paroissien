@@ -1,0 +1,39 @@
+{"id":"sancti-09-27.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/09-27.txt","section":"Officium"}],"t":{"la":["Ss. Cosmæ et Damiani Martyrum"],"fr":["Saints Côme et Damien, martyrs"]}}
+{"id":"sancti-09-27.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements rouges."]}}
+{"id":"sancti-09-27.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-09-27.introit.1","type":"rubric","t":{"la":["Eccli 44:15; 44:14"],"fr":["Eccli 44:15; 44:14"]}}
+{"id":"sancti-09-27.introit.2","type":"para","dropCap":true,"t":{"la":["Sapiéntiam Sanctórum narrent populi, et laudes eórum núntiet ecclésia: nómina autem eórum vivent in sǽculum sǽculi."]}}
+{"id":"sancti-09-27.introit.3","type":"rubric","t":{"la":["Ps 32:1"],"fr":["Ps 32:1"]}}
+{"id":"sancti-09-27.introit.4","type":"para","t":{"la":["Exsultáte, justi, in Dómino: rectos decet collaudátio."]}}
+{"id":"sancti-09-27.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-09-27.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-09-27.introit.7","type":"para","t":{"la":["Sapiéntiam Sanctórum narrent populi, et laudes eórum núntiet ecclésia: nómina autem eórum vivent in sǽculum sǽculi."]}}
+{"id":"sancti-09-27.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-09-27.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-27.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-09-27.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut, qui sanctórum Mártyrum tuórum Cosmæ et Damiáni natalítia cólimus, a cunctis malis imminéntibus, eórum intercessiónibus, liberémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-09-27.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-09-27.lecon.1","type":"para","style":"intro","t":{"la":["Lectio libri Sapientiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-09-27.lecon.2","type":"rubric","t":{"la":["Sap 5:16-20"],"fr":["Sap 5:16-20"]}}
+{"id":"sancti-09-27.lecon.3","type":"para","t":{"la":["Justi autem in perpétuum vivent, et apud Dóminum est merces eórum, et cogitátio illórum apud Altíssimum. Ideo accípient regnum decóris, et diadéma speciéi de manu Dómini: quóniam déxtera sua teget eos, et bráchio sancto suo deféndet illos. Accípiet armatúram zelus illíus, et armábit creatúram ad ultiónem inimicórum. Induet pro thoráce justítiam, et accípiet pro gálea judícium certum. Sumet scutum inexpugnábile æquitátem."]}}
+{"id":"sancti-09-27.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-27.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-09-27.graduel.1","type":"rubric","t":{"la":["Ps 33:18-19"],"fr":["Ps 33:18-19"]}}
+{"id":"sancti-09-27.graduel.2","type":"para","t":{"la":["Clamavérunt justi, et Dóminus exaudívit eos: et ex ómnibus tribulatiónibus eórum liberávit eos."]}}
+{"id":"sancti-09-27.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Juxta est Dóminus his, qui tribuláto sunt corde: et húmiles spíritu salvabit. Allelúja, allelúja."]}}
+{"id":"sancti-09-27.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hæc est vera fratérnitas, quæ vicit mundi crímina: Christum secuta est, ínclita tenens regna cœléstia. Allelúja."]}}
+{"id":"sancti-09-27.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-09-27.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-09-27.evangile.2","type":"rubric","t":{"la":["Luc 6:17-23"],"fr":["Luc 6:17-23"]}}
+{"id":"sancti-09-27.evangile.3","type":"para","t":{"la":["In illo témpore: Descéndens Jesus de monte, stetit in loco campéstri, et turba discipulórum ejus, et multitúdo copiósa plebis ab omni Judǽa, et Jerúsalem, et marítima, et Tyri, et Sidónis, qui vénerant, ut audírent eum et sanaréntur a languóribus suis. Et, qui vexabántur a spirítibus immúndis, curabántur. Et omnis turba quærébat eum tángere: quia virtus de illo exíbat, et sanábat omnes. Et ipse, elevátis oculis in discípulos suos, dicébat: Beáti, páuperes: quia vestrum est regnum Dei. Beáti, qui nunc esurítis: quia saturabímini. Beáti, qui nunc fletis: quia ridébitis. Beáti éritis, cum vos óderint hómines, et cum separáverint vos et exprobréverint, et ejécerint nomen vestrum tamquam malum, propter Fílium hóminis. Gaudéte in illa die et exsultáte: ecce enim, merces vestra multa est in cœlo."]}}
+{"id":"sancti-09-27.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-09-27.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-27.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/06-26.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-09-27.offertoire.1","type":"rubric","t":{"la":["Ps 5:12-13"],"fr":["Ps 5:12-13"]}}
+{"id":"sancti-09-27.offertoire.2","type":"para","t":{"la":["Gloriabúntur in te omnes, qui díligunt nomen tuum: quóniam tu, Dómine, benedíces justo: Dómine, ut scuto bonæ voluntátis tuæ coronásti nos."]}}
+{"id":"sancti-09-27.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-27.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-09-27.secrete.1","type":"para","t":{"la":["Sanctórum tuórum nobis, Dómine, pia non desit orátio: quæ et múnera nostra concíliet, et tuam nobis indulgéntiam semper obtíneat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-09-27.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-09-27.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-09-27.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-27.txt","section":"Communio"},{"file":"missa/Latin/Sancti/07-30.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-09-27.communion.1","type":"rubric","t":{"la":["Ps 78:2 & 11"],"fr":["Ps 78:2 & 11"]}}
+{"id":"sancti-09-27.communion.2","type":"para","t":{"la":["Posuérunt mortália servórum tuórum, Dómine, escas volatílibus cœli, carnes Sanctórum tuórum béstiis terræ: secúndum magnitúdinem bráchii tui pósside fílios morte punitórum."]}}
+{"id":"sancti-09-27.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-27.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-09-27.postcommunion.1","type":"para","t":{"la":["Prótegat, quǽsumus, Dómine, pópulum tuum et participátio cœléstis indúlta convívii, et deprecátio colláta Sanctórum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

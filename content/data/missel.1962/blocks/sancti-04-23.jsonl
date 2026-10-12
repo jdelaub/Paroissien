@@ -1,0 +1,40 @@
+{"id":"sancti-04-23.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/04-23.txt","section":"Officium"}],"t":{"la":["S. Georgii Martyris"],"fr":["Saint Georges, martyr"]}}
+{"id":"sancti-04-23.rang","type":"rubric","t":{"fr":["Commémoraison — ornements rouges."]}}
+{"id":"sancti-04-23.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C2p.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-04-23.introit.1","type":"rubric","t":{"la":["Ps 63:3"],"fr":["Ps 63:3"]}}
+{"id":"sancti-04-23.introit.2","type":"para","dropCap":true,"t":{"la":["Protexísti me, Deus, a convéntu malignántium, allelúja: a multitúdine operántium iniquitátem, allelúja, allelúja."]}}
+{"id":"sancti-04-23.introit.3","type":"rubric","t":{"la":["Ps. 63:2"],"fr":["Ps. 63:2"]}}
+{"id":"sancti-04-23.introit.4","type":"para","t":{"la":["Exáudi, Deus, oratiónem meam cum déprecor: a timóre inimíci éripe ánimam meam."]}}
+{"id":"sancti-04-23.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-04-23.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-04-23.introit.7","type":"para","t":{"la":["Protexísti me, Deus, a convéntu malignántium, allelúja: a multitúdine operántium iniquitátem, allelúja, allelúja."]}}
+{"id":"sancti-04-23.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-04-23.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-23.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-04-23.collecte.1","type":"para","t":{"la":["Deus, qui nos beáti Geórgii Mártyris tui méritis et intercessióne lætíficas: concéde propítius; ut, qui tua per eum benefícia póscimus, dono tuæ grátiæ consequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-04-23.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-23.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C2a-1.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-04-23.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Timótheum"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, à Timothée"]}}
+{"id":"sancti-04-23.epitre.2","type":"rubric","t":{"la":["2 Tim 2:8-10; 3:10-12."],"fr":["2 Tim 2:8-10; 3:10-12."]}}
+{"id":"sancti-04-23.epitre.3","type":"para","t":{"la":["Caríssime: Memor esto, Dóminum Jesum Christum resurrexísse a mórtuis ex sémine David, secúndum Evangélium meum, in quo labóro usque ad víncula, quasi male óperans: sed verbum Dei non est alligátum. Ideo ómnia sustíneo propter eléctos, ut et ipsi salútem consequántur, quæ est in Christo Jesu, cum glória coelésti. Tu autem assecútus es meam doctrínam, institutiónem, propósitum, fidem, longanimitátem, dilectiónem, patiéntiam, persecutiónes, passiónes: quália mihi facta sunt Antiochíæ, Icónii et Lystris: quales persecutiónes sustínui, et ex ómnibus erípuit me Dóminus. Et omnes, qui pie volunt vívere in Christo Jesu, persecutiónem patiéntur."]}}
+{"id":"sancti-04-23.alleluia","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Graduale"},{"file":"horas/Latin/Commune/C2p.txt","section":"Graduale"}],"t":{"la":["Allelúja"],"fr":["Alléluia"]}}
+{"id":"sancti-04-23.alleluia.1","type":"para","t":{"la":["Allelúja, allelúja."]}}
+{"id":"sancti-04-23.alleluia.2","type":"rubric","t":{"la":["Ps 88:6"],"fr":["Ps 88:6"]}}
+{"id":"sancti-04-23.alleluia.3","type":"para","t":{"la":["Confitebúntur cœli mirabília tua, Dómine: étenim veritátem tuam in ecclésia sanctórum. Allelúja."]}}
+{"id":"sancti-04-23.alleluia.4","type":"rubric","t":{"la":["Ps 20:4"],"fr":["Ps 20:4"]}}
+{"id":"sancti-04-23.alleluia.5","type":"para","t":{"la":["Posuísti, Dómine, super caput ejus corónam de lápide pretióso. Allelúja."]}}
+{"id":"sancti-04-23.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Evangelium"},{"file":"horas/Latin/Commune/C2p.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-04-23.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"sancti-04-23.evangile.2","type":"rubric","t":{"la":["Joannes 15:1-7"],"fr":["Joannes 15:1-7"]}}
+{"id":"sancti-04-23.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Omnem pálmitem in me non feréntem fructum, tollet eum: et omnem, qui fert fructum, purgábit eum, ut fructum plus áfferat. Jam vos mundi estis propter sermónem, quem locútus sum vobis. Manéte in me: et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite: sic nec vos, nisi in me manséritis. Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis, petétis, et fiet vobis."]}}
+{"id":"sancti-04-23.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-04-23.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2p.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-04-23.offertoire.1","type":"rubric","t":{"la":["Ps 88:6"],"fr":["Ps 88:6"]}}
+{"id":"sancti-04-23.offertoire.2","type":"para","t":{"la":["Confitebúntur cœli mirabília tua, Dómine: et veritátem tuam in ecclésia sanctórum, allelúja, allelúja."]}}
+{"id":"sancti-04-23.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-23.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-04-23.secrete.1","type":"para","t":{"la":["Múnera, Dómine, obláta sanctífica: et, intercedénte beáto Geórgio Mártyre tuo, nos per hæc a peccatórum nostrórum máculis emúnda. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-04-23.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-04-23.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
+{"id":"sancti-04-23.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Communio"},{"file":"horas/Latin/Commune/C2p.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-04-23.communion.1","type":"rubric","t":{"la":["Ps 63:11"],"fr":["Ps 63:11"]}}
+{"id":"sancti-04-23.communion.2","type":"para","t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde, allelúja, allelúja."]}}
+{"id":"sancti-04-23.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-23.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-04-23.postcommunion.1","type":"para","t":{"la":["Súpplices te rogámus, omnípotens Deus: ut, quos tuis réficis sacraméntis, intercedénte beáto Geórgio Mártyre tuo, tibi étiam plácitis móribus dignánter tríbuas deservíre. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

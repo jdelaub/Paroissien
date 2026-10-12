@@ -1,0 +1,39 @@
+{"id":"sancti-08-10.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Officium"}],"t":{"la":["S. Laurentii Martyris"],"fr":["Saint Laurent, martyr"]}}
+{"id":"sancti-08-10.rang","type":"rubric","t":{"fr":["IIᵉ classe — ornements rouges."]}}
+{"id":"sancti-08-10.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-08-10.introit.1","type":"rubric","t":{"la":["Ps 95:6"],"fr":["Ps 95:6"]}}
+{"id":"sancti-08-10.introit.2","type":"para","dropCap":true,"t":{"la":["Conféssio et pulchritúdo in conspéctu ejus: sánctitas et magnificéntia in sanctificatióne ejus."]}}
+{"id":"sancti-08-10.introit.3","type":"rubric","t":{"la":["Ps 95:1"],"fr":["Ps 95:1"]}}
+{"id":"sancti-08-10.introit.4","type":"para","t":{"la":["Cantáte Dómino cánticum novum: cantáte Dómino, omnis terra."]}}
+{"id":"sancti-08-10.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-08-10.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-08-10.introit.7","type":"para","t":{"la":["Conféssio et pulchritúdo in conspéctu ejus: sánctitas et magnificéntia in sanctificatióne ejus."]}}
+{"id":"sancti-08-10.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-08-10.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-08-10.collecte.1","type":"para","t":{"la":["Da nobis, quǽsumus, omnípotens Deus: vitiórum nostrorum flammas exstínguere; qui beáto Lauréntio tribuísti tormentórum suórum incéndia superáre. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-08-10.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-08-10.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Corinthiens"]}}
+{"id":"sancti-08-10.epitre.2","type":"rubric","t":{"la":["2 Cor 9:6-10."],"fr":["2 Cor 9:6-10."]}}
+{"id":"sancti-08-10.epitre.3","type":"para","t":{"la":["Fratres: Qui parce séminat, parce et metet: et qui séminat in benedictiónibus, de benedictiónibus et metet. Unusquísque prout destinávit in corde suo, non ex tristítia aut ex necessitáte: hilárem enim datórem díligit Deus. Potens est autem Deus omnem grátiam abundáre fácere in vobis, ut, in ómnibus semper omnem sufficiéntiam habéntes, abundétis in omne opus bonum, sicut scriptum est: Dispérsit, dedit paupéribus: justítia ejus manet in sǽculum sǽculi. Qui autem admínistrat semen seminánti: et panem ad manducándum præstábit, et multiplicábit semen vestrum, et augébit increménta frugum justítiæ vestræ."]}}
+{"id":"sancti-08-10.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-08-10.graduel.1","type":"rubric","t":{"la":["Ps 16:3."],"fr":["Ps 16:3."]}}
+{"id":"sancti-08-10.graduel.2","type":"para","t":{"la":["Probásti, Dómine, cor meum, et visitásti nocte."]}}
+{"id":"sancti-08-10.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Igne me examinásti, et non est invénta in me iníquitas. Allelúja, allelúja."]}}
+{"id":"sancti-08-10.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Levíta Lauréntius bonum opus operátus est: qui per signum crucis cœcos illuminávit. Allelúja."]}}
+{"id":"sancti-08-10.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Evangelium"},{"file":"missa/Latin/Sancti/02-01.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-08-10.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"sancti-08-10.evangile.2","type":"rubric","t":{"la":["Joann 12:24-26"],"fr":["Joann 12:24-26"]}}
+{"id":"sancti-08-10.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Amen, amen, dico vobis, nisi granum fruménti cadens in terram, mórtuum fúerit, ipsum solum manet: si autem mórtuum fúerit, multum fructum affert. Qui amat ánimam suam, perdet eam: et qui odit ánimam suam in hoc mundo, in vitam ætérnam custódit eam. Si quis mihi mínistrat, me sequátur: et ubi sum ego, illic et miníster meus erit. Si quis mihi ministráverit, honorificábit eum Pater meus."]}}
+{"id":"sancti-08-10.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-08-10.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-08-10.offertoire.1","type":"rubric","t":{"la":["Ps 95:6"],"fr":["Ps 95:6"]}}
+{"id":"sancti-08-10.offertoire.2","type":"para","t":{"la":["Conféssio et pulchritúdo in conspéctu ejus: sánctitas, et magnificéntia in sanctificatióne ejus."]}}
+{"id":"sancti-08-10.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-08-10.secrete.1","type":"para","t":{"la":["Accipe, quǽsumus, Dómine, múnera dignánter obláta: et, beáti Lauréntii suffragántibus méritis, ad nostræ salútis auxílium proveníre concéde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-08-10.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-08-10.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-08-10.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-08-10.communion.1","type":"rubric","t":{"la":["Joann 12:26"],"fr":["Joann 12:26"]}}
+{"id":"sancti-08-10.communion.2","type":"para","t":{"la":["Qui mihi mínistrat, me sequátur: et ubi ego sum, illic et miníster meus erit."]}}
+{"id":"sancti-08-10.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/08-10.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-08-10.postcommunion.1","type":"para","t":{"la":["Sacro múnere satiáti, súpplices te, Dómine, deprecámur: ut, quod débitæ servitútis celebrámus offício, intercedénte beáto Lauréntio Mártyre tuo, salvatiónis tuæ sentiámus augméntum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

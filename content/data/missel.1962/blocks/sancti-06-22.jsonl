@@ -1,0 +1,41 @@
+{"id":"sancti-06-22.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Officium"}],"t":{"la":["S. Paulini Episcopi et Confessoris"],"fr":["Saint Paulin, évêque et confesseur"]}}
+{"id":"sancti-06-22.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-06-22.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-06-22.introit.1","type":"rubric","t":{"la":["Ps 131,9-10."],"fr":["Ps 131,9-10."]}}
+{"id":"sancti-06-22.introit.2","type":"para","dropCap":true,"t":{"la":["Sacerdótes tui, Dómine, índuant justítiam, et sancti tui exsúltent: propter David servum tuum, non avértas fáciem Christi tui."]}}
+{"id":"sancti-06-22.introit.3","type":"rubric","t":{"la":["Ps 131:1"],"fr":["Ps 131:1"]}}
+{"id":"sancti-06-22.introit.4","type":"para","t":{"la":["Meménto, Dómine, David: et omnis mansuetúdinis ejus."]}}
+{"id":"sancti-06-22.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-06-22.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-06-22.introit.7","type":"para","t":{"la":["Sacerdótes tui, Dómine, índuant justítiam, et sancti tui exsúltent: propter David servum tuum, non avértas fáciem Christi tui."]}}
+{"id":"sancti-06-22.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-06-22.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-06-22.collecte.1","type":"para","t":{"la":["Deus, qui ómnia pro te in hoc sǽculo relinquéntibus, céntuplum in futúro et vitam ætérnam promisísti: concéde propítius; ut, sancti Pontíficis Paulíni vestígiis inhæréntes, valeámus terréna despícere et sola cœléstia desideráre: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-22.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-06-22.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Corinthiens"]}}
+{"id":"sancti-06-22.epitre.2","type":"rubric","t":{"la":["2 Cor 8:9-15"],"fr":["2 Cor 8:9-15"]}}
+{"id":"sancti-06-22.epitre.3","type":"para","t":{"la":["Fratres: Scitis grátiam Dómini nostri Jesu Christi, quóniam propter vos egénus factus est, cum esset dives, ut illíus inópia vos dívites essétis. Et consílium in hoc do: hoc enim vobis útile est, qui non solum fácere, sed et velle cœpístis ab anno prióre: nunc vero et facto perfícite: ut, quemádmodum promptus est ánimus voluntátis, ita sit et perficiéndi ex eo quod habétis. Si enim volúntas prompta est, secúndum id quod habet, accépta est, non secúndum id quod non habet. Non enim ut áliis sit remíssio, vobis autem tribulátio, sed ex æqualitáte. In præsénti témpore vestra abundántia illórum inópiam súppleat: ut et illórum abundántia vestræ inópiæ sit suppleméntum, ut fiat æquálitas, sicut scriptum est: Qui multum, non abundávit: et qui módicum, non minorávit."]}}
+{"id":"sancti-06-22.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Graduale"},{"file":"horas/Latin/Commune/C4.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-06-22.graduel.1","type":"rubric","t":{"la":["Eccli 44:16"],"fr":["Eccli 44:16"]}}
+{"id":"sancti-06-22.graduel.2","type":"para","t":{"la":["Ecce sacérdos magnus, qui in diébus suis plácuit Deo."]}}
+{"id":"sancti-06-22.graduel.3","type":"rubric","t":{"la":["Eccli 44:20"],"fr":["Eccli 44:20"]}}
+{"id":"sancti-06-22.graduel.4","type":"para","t":{"la":["Non est invéntus símilis illi, qui conserváret legem Excélsi. Allelúja, allelúja."]}}
+{"id":"sancti-06-22.graduel.5","type":"rubric","t":{"la":["Ps 109:4"],"fr":["Ps 109:4"]}}
+{"id":"sancti-06-22.graduel.6","type":"para","t":{"la":["Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech. Allelúja."]}}
+{"id":"sancti-06-22.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Evangelium"},{"file":"horas/Latin/Commune/C5-1.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-06-22.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-06-22.evangile.2","type":"rubric","t":{"la":["Luc 12:32-34"],"fr":["Luc 12:32-34"]}}
+{"id":"sancti-06-22.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nolíte timére, pusíllus grex, quia complácuit Patri vestro dare vobis regnum. ¶ Véndite quæ possidétis, et date eleemósynam. Fácite vobis sácculos, qui non veteráscunt, thesáurum non deficiéntem in cœlis: quo fur non apprópiat, neque tínea corrúmpit. Ubi enim thesáurus vester est, ibi et cor vestrum erit."]}}
+{"id":"sancti-06-22.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-06-22.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-06-22.offertoire.1","type":"rubric","t":{"la":["Ps 88:21-22"],"fr":["Ps 88:21-22"]}}
+{"id":"sancti-06-22.offertoire.2","type":"para","t":{"la":["Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum."]}}
+{"id":"sancti-06-22.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-06-22.secrete.1","type":"para","t":{"la":["Da nobis, Dómine, perféctæ caritátis sacrifícium, exémplo sancti Pontíficis Paulíni, cum altáris oblatióne conjúngere: et beneficéntiæ stúdio sempitérnam misericórdiam promeréri. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-22.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-06-22.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-06-22.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-06-22.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
+{"id":"sancti-06-22.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}
+{"id":"sancti-06-22.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-22.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-06-22.postcommunion.1","type":"para","t":{"la":["Tríbue nobis per hæc sancta, Dómine, illum pietátis et humilitátis afféctum, quem ex hoc divíno fonte hausit sanctus Póntifex tuus Paulínus: et, ipsíus intercessióne, in omnes, qui te deprecántur, grátiæ tuæ divítias benígnus effúnde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

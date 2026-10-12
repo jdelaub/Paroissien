@@ -1,0 +1,109 @@
+{"id":"tempora-adv3-6.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Officium"}],"t":{"la":["Sabbato Quattuor Temporum in Adventu"],"fr":["Samedi des Quatre-Temps de l’Avent"]}}
+{"id":"tempora-adv3-6.rang","type":"rubric","t":{"fr":["IIᵉ classe — ornements violets. Station à Saint-Pierre."]}}
+{"id":"tempora-adv3-6.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-adv3-6.introit.1","type":"rubric","t":{"la":["Ps 79:4; 79:2"],"fr":["Ps 79:4; 79:2"]}}
+{"id":"tempora-adv3-6.introit.2","type":"para","dropCap":true,"t":{"la":["Veni, et osténde nobis fáciem tuam, Dómine, qui sedes super Chérubim: et salvi érimus."]}}
+{"id":"tempora-adv3-6.introit.3","type":"rubric","t":{"la":["Ps 79:2"],"fr":["Ps 79:2"]}}
+{"id":"tempora-adv3-6.introit.4","type":"para","t":{"la":["Qui regis Israël, inténde: qui dedúcis, velut ovem, Joseph."]}}
+{"id":"tempora-adv3-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-adv3-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-adv3-6.introit.7","type":"para","t":{"la":["Veni, et osténde nobis fáciem tuam, Dómine, qui sedes super Chérubim: et salvi érimus."]}}
+{"id":"tempora-adv3-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-adv3-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-adv3-6.collecte.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
+{"id":"tempora-adv3-6.collecte.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
+{"id":"tempora-adv3-6.collecte.1","type":"para","t":{"la":["Deus, qui cónspicis, quia ex nostra pravitáte afflígimur: concéde propítius; ut ex tua visitatióne consolémur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-6.lecon-1","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"LectioL1"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"tempora-adv3-6.lecon-1.1","type":"para","style":"intro","t":{"la":["Léctio Isaíæ Prophétæ"],"fr":["Lecture du prophète Isaïe"]}}
+{"id":"tempora-adv3-6.lecon-1.2","type":"rubric","t":{"la":["Isa 19:20-22"],"fr":["Isa 19:20-22"]}}
+{"id":"tempora-adv3-6.lecon-1.3","type":"para","t":{"la":["In diebus illis: Clamábunt ad Dóminum a facie tribulántis, et mittet eis salvatórem et propugnatórem, qui líberet eos. Et cognoscétur Dóminus ab Ægýpto, et cognóscent Ægýptii Dóminum in die illa: et colent eum in hóstiis et in munéribus: et vota vovébunt Dómino, et solvent. Et percútiet Dóminus Ægýptum plaga, et sanábit eam: et revertántur ad Dóminum, et placábitur eis, et sanábit eos Dóminus, Deus noster."]}}
+{"id":"tempora-adv3-6.graduel-1","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"GradualeL1"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-adv3-6.graduel-1.1","type":"rubric","t":{"la":["Ps 18:7; 18:2"],"fr":["Ps 18:7; 18:2"]}}
+{"id":"tempora-adv3-6.graduel-1.2","type":"para","t":{"la":["A summo cœlo egréssio ejus: et occúrsus ejus usque ad summum ejus."]}}
+{"id":"tempora-adv3-6.graduel-1.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Cœli enárrant glóriam Dei: et opera mánuum ejus annúntiat firmaméntum."]}}
+{"id":"tempora-adv3-6.oraison-1","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"OratioL1"}],"t":{"la":["Oratio"],"fr":["Oraison"]}}
+{"id":"tempora-adv3-6.oraison-1.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
+{"id":"tempora-adv3-6.oraison-1.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
+{"id":"tempora-adv3-6.oraison-1.1","type":"para","t":{"la":["Concéde, quǽsumus, omnípotens Deus: ut, qui sub peccáti jugo et vetústa servitúte deprímimur; exspectáta unigéniti Fílii tui nova nativitáte liberémur: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-6.lecon-2","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"LectioL2"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"tempora-adv3-6.lecon-2.1","type":"para","style":"intro","t":{"la":["Léctio Isaíæ Prophétæ"],"fr":["Lecture du prophète Isaïe"]}}
+{"id":"tempora-adv3-6.lecon-2.2","type":"rubric","t":{"la":["Isa 35:1-7"],"fr":["Isa 35:1-7"]}}
+{"id":"tempora-adv3-6.lecon-2.3","type":"para","t":{"la":["Hæc dicit Dóminus: Lætábitur desérta et ínvia, ei exsultábit solitúdo, et florébit quasi lílium. Gérminans germinábit, et exsultábit lætabúnda et laudans: glória Líbani data est ei: decor Carméli et Saron, ipsi vidébunt glóriam Dómini, et decórem Dei nostri. Confortáte manus dissolútas, et génua debília roboráte. Dícite pusillánimis: Confortámini, et nolíte timére: ecce, Deus vester ultiónem addúcet retributiónis: Deus ipse véniet, et salvábit vos. Tunc aperiéntur óculi cæcórum, et aures surdórum patébunt. Tunc sáliet sicut cervus claudus, et apérta erit lingua mutórum: quia scissæ sunt in desérto aquæ, et torréntes in solitúdine. Et quæ erat árida, erit in stagnum, et sítiens in fontes aquárum: ait Dóminus omnípotens."]}}
+{"id":"tempora-adv3-6.graduel-2","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"GradualeL2"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-adv3-6.graduel-2.1","type":"rubric","t":{"la":["Ps 18:6; 18:7"],"fr":["Ps 18:6; 18:7"]}}
+{"id":"tempora-adv3-6.graduel-2.2","type":"para","t":{"la":["In sole pósuit tabernáculum suum: et ipse tamquam sponsus procédens de thálamo suo."]}}
+{"id":"tempora-adv3-6.graduel-2.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","A summo cœlo egréssio ejus: et occúrsus ejus usque ad summum ejus."]}}
+{"id":"tempora-adv3-6.oraison-2","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"OratioL2"}],"t":{"la":["Oratio"],"fr":["Oraison"]}}
+{"id":"tempora-adv3-6.oraison-2.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
+{"id":"tempora-adv3-6.oraison-2.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
+{"id":"tempora-adv3-6.oraison-2.1","type":"para","t":{"la":["Indígnos nos, quǽsumus, Dómine, fámulos tuos, quos actiónis própriæ culpa contrístat, unigéniti Fílii tui advéntu lætífica: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-6.lecon-3","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"LectioL3"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"tempora-adv3-6.lecon-3.1","type":"para","style":"intro","t":{"la":["Léctio Isaíæ Prophétæ"],"fr":["Lecture du prophète Isaïe"]}}
+{"id":"tempora-adv3-6.lecon-3.2","type":"rubric","t":{"la":["Is 40:9-11"],"fr":["Is 40:9-11"]}}
+{"id":"tempora-adv3-6.lecon-3.3","type":"para","t":{"la":["Hæc dicit Dóminus: Super montem excélsum ascénde tu, qui evangelízas Sion: exálta in fortitúdine vocem tuam, qui evangelízas Jerúsalem: exálta, noli timére. Dic civitátibus Juda: Ecce, Deus vester: ecce, Dóminus Deus in fortitúdine véniet, et bráchium ejus dominábitur: ecce, merces ejus cum eo, et opus illíus coram illo. Sicut pastor gregem suum pascet: in bráchio suo congregábit agnos, et in sinu suo levábit, Dóminus, Deus noster."]}}
+{"id":"tempora-adv3-6.graduel-3","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"GradualeL3"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-adv3-6.graduel-3.1","type":"rubric","t":{"la":["Ps 79:20; 79:3"],"fr":["Ps 79:20; 79:3"]}}
+{"id":"tempora-adv3-6.graduel-3.2","type":"para","t":{"la":["Dómine, Deus virtútum, convérte nos: et osténde fáciem tuam, et salvi érimus."]}}
+{"id":"tempora-adv3-6.graduel-3.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Excita, Dómine, poténtiam tuam, et veni, ut salvos fácias nos."]}}
+{"id":"tempora-adv3-6.oraison-3","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"OratioL3"}],"t":{"la":["Oratio"],"fr":["Oraison"]}}
+{"id":"tempora-adv3-6.oraison-3.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
+{"id":"tempora-adv3-6.oraison-3.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
+{"id":"tempora-adv3-6.oraison-3.1","type":"para","t":{"la":["Prǽsta, quǽsumus, omnípotens Deus: ut Fílii tui ventúra sollémnitas et præséntis nobis vitæ remédia cónferat, et prǽmia ætérna concédat. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-6.lecon-4","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"LectioL4"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"tempora-adv3-6.lecon-4.1","type":"para","style":"intro","t":{"la":["Léctio Isaíæ Prophétæ"],"fr":["Lecture du prophète Isaïe"]}}
+{"id":"tempora-adv3-6.lecon-4.2","type":"rubric","t":{"la":["Is 45:1-8."],"fr":["Is 45:1-8."]}}
+{"id":"tempora-adv3-6.lecon-4.3","type":"para","t":{"la":["Hæc dicit Dóminus christo meo Cyro, cujus apprehéndi déxteram, ut subjíciam ante fáciem ejus gentes, et dorsa regum vertam, et apériam coram eo jánuas, et portæ non claudéntur. Ego ante te ibo: et gloriósos terræ humiliábo: portas ǽreas cónteram, et vectes férreos confríngam. Et dabo tibi thesáuros abscónditos et arcána secretórum: ut scias, quia ego Dóminus, qui voco nomen tuum, Deus Israël. Propter servum meum Jacob, et Israël electum meum, et vocávi te nómine tuo: assimilávi te, et non cognovísti me. Ego Dóminus, et non est ámplius: extra me non est Deus: accínxi te, et non cognovísti me: ut sciant hi, qui ab ortu solis, et qui ab occidénte, quóniam absque me non est. Ego Dóminus, et non est alter, formans lucem et creans ténebras, fáciens pacem et creans malum: ego Dóminus faciens omnia hæc. Roráte, cœli, désuper, et nubes pluant justum: aperiátur terra, et gérminet Salvatórem: et justítia oriátur simul: ego Dóminus creávi eum."]}}
+{"id":"tempora-adv3-6.graduel-4","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"GradualeL4"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-adv3-6.graduel-4.1","type":"rubric","t":{"la":["Ps 79:3,; 79:2; 79:3"],"fr":["Ps 79:3,; 79:2; 79:3"]}}
+{"id":"tempora-adv3-6.graduel-4.2","type":"para","t":{"la":["Excita, Dómine, poténtiam tuam, et veni, ut salvos fácias nos."]}}
+{"id":"tempora-adv3-6.graduel-4.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Qui regis Israël, inténde: qui dedúcis, velut ovem, Joseph: qui sedes super Chérubim, appáre coram Ephraim, Bénjamin, et Manásse."]}}
+{"id":"tempora-adv3-6.oraison-4","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"OratioL4"}],"t":{"la":["Oratio"],"fr":["Oraison"]}}
+{"id":"tempora-adv3-6.oraison-4.fg.1","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flectámus génua."]}}
+{"id":"tempora-adv3-6.oraison-4.fg.2","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Leváte."]}}
+{"id":"tempora-adv3-6.oraison-4.1","type":"para","t":{"la":["Preces pópuli tui, quǽsumus, Dómine, cleménter exáudi: ut, qui juste pro peccátis nostris afflígimur, pietátis tuæ visitatióne consolémur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-6.lecon-5","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"LectioL5"},{"file":"missa/Latin/Tempora/093-6.txt","section":"LectioL5"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"tempora-adv3-6.lecon-5.1","type":"para","style":"intro","t":{"la":["Léctio Daniélis Prophétæ"],"fr":["Lecture du prophète Daniel"]}}
+{"id":"tempora-adv3-6.lecon-5.2","type":"rubric","t":{"la":["Dan 3:47-51"],"fr":["Dan 3:47-51"]}}
+{"id":"tempora-adv3-6.lecon-5.3","type":"para","t":{"la":["In diébus illis: Angelus Dómini descéndit cum Azaría et sóciis ejus in fornácem: et excússit flammam ignis de fornáce, et fecit médium fornácis quasi ventum roris flantem. Flamma autem effundebátur super fornácem cúbitis quadragínta novem: et erúpit, et incéndit, quos répperit juxta fornácem de Chaldǽis, minístros regis, qui eam incendébant. Et non tétigit eos omníno ignis, neque contristávit, nec quidquam moléstiæ íntulit. Tunc hi tres quasi ex uno ore laudábant, et glorificábant, et benedicébant Deum in fornáce, dicéntes:"]}}
+{"id":"tempora-adv3-6.lecon-5.4","type":"rubric","t":{"la":["Hymnus"]}}
+{"id":"tempora-adv3-6.lecon-5.5","type":"rubric","t":{"la":["Dan 3:52-59"],"fr":["Dan 3:52-59"]}}
+{"id":"tempora-adv3-6.lecon-5.6","type":"para","t":{"la":["Benedíctus es, Dómine, Deus patrum nostrórum. Et laudábilis et gloriósus in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.7","type":"para","t":{"la":["Et benedíctum nomen glóriæ tuæ, quod est sanctum. Et laudábile et gloriósum in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.8","type":"para","t":{"la":["Benedíctus es in templo sancto glóriæ tuæ. Et laudábilis et gloriósus in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.9","type":"para","t":{"la":["Benedíctus es super thronum sanctum regni tui. Et laudábilis et gloriósus in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.10","type":"para","t":{"la":["Benedíctus es super sceptrum divinitátis tuæ. Et laudábilis et gloriósus in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.11","type":"para","t":{"la":["Benedíctus es, qui sedes super Chérubim, íntuens abýssos. Et laudábilis et gloriósus in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.12","type":"para","t":{"la":["Benedíctus es, qui ámbulas super pennas ventórum et super undas maris. Et laudábilis et gloriósus in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.13","type":"para","t":{"la":["Benedícant te omnes Angeli et Sancti tui. Et laudent te et gloríficent in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.14","type":"para","t":{"la":["Benedícant te coeli, terra, mare, et ómnia quæ in eis sunt. Et laudent te et gloríficent in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.15","type":"para","t":{"la":["Glória Patri, et Fílio, et Spirítui Sancto. Et laudábili et glorióso in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.16","type":"para","t":{"la":["Sicut erat in princípio, et nunc, et semper: et in sǽcula sæculórum. Amen. Et laudábilis et gloriósus in sǽcula."]}}
+{"id":"tempora-adv3-6.lecon-5.17","type":"para","t":{"la":["Benedíctus es, Dómine, Deus patrum nostrórum. Et laudábilis et gloriósus in sǽcula."]}}
+{"id":"tempora-adv3-6.oraison-5","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"OratioL5"},{"file":"missa/Latin/Tempora/093-6.txt","section":"OratioL5"}],"t":{"la":["Oratio"],"fr":["Oraison"]}}
+{"id":"tempora-adv3-6.oraison-5.1","type":"para","t":{"la":["Deus, qui tribus púeris mitigásti flammas ígnium: concéde propítius; ut nos fámulos tuos non exúrat flamma vitiórum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-6.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-adv3-6.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Thessaloniciens"]}}
+{"id":"tempora-adv3-6.epitre.2","type":"rubric","t":{"la":["2 Thess 2:1-8"],"fr":["2 Thess 2:1-8"]}}
+{"id":"tempora-adv3-6.epitre.3","type":"para","t":{"la":["Fratres: Rogámus vos per advéntum Dómini nostri Jesu Christi, et nostræ congregatiónis in ipsum: ut non cito moveámini a vestro sensu, neque terreámini, neque per spíritum, neque per sermónem, neque per epístolam tamquam per nos missam, quasi instet dies Dómini. Ne quis vos sedúcat ullo modo: quóniam nisi vénerit discéssio primum, et revelátus fuerit homo peccáti, fílius perditiónis, qui adversátur, et extóllitur supra omne, quod dícitur Deus aut quod cólitur, ita ut in templo Dei sédeat osténdens se, tamquam sit Deus. Non retinétis, quod, cum adhuc essem apud vos, hæc dicébam vobis? Et nunc quid detíneat, scitis, ut revelétur in suo témpore. Nam mystérium jam operátur iniquitátis: tantum ut, qui tenet nunc, téneat, donec de médio fiat. Et tunc revelábitur ille iníquus, quem Dóminus Jesus interfíciet spíritu oris sui, et déstruet illustratióne advéntus sui."]}}
+{"id":"tempora-adv3-6.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-adv3-6.graduel.1","type":"rubric","t":{"la":["Ps:79:2-3"]}}
+{"id":"tempora-adv3-6.graduel.2","type":"para","t":{"la":["Qui regis Israël, inténde: qui dedúcis, velut ovem, Joseph."]}}
+{"id":"tempora-adv3-6.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Qui sedes super Chérubim, appáre coram Ephraim, Bénjamin, et Manásse."]}}
+{"id":"tempora-adv3-6.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Excita, Dómine, poténtiam tuam, et veni: ut salvos fácias nos."]}}
+{"id":"tempora-adv3-6.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-adv3-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secundum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"tempora-adv3-6.evangile.2","type":"rubric","t":{"la":["Luc 3:1-6"],"fr":["Luc 3:1-6"]}}
+{"id":"tempora-adv3-6.evangile.3","type":"para","t":{"la":["Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam, tetrárcha autem Galilǽæ Heróde, Philíppo autem fratre ejus tetrárcha Iturǽæ et Trachonítidis regionis, et Lysánia Abilínæ tetrárcha, sub princípibus sacerdotum Anna et Cáipha: factum est verbum Domini super Joannem, Zacharíæ filium, in deserto. Et venit in omnem regiónem Jordánis, prǽdicans baptísmum pæniténtiæ in remissiónem peccatórum, sicut scriptum est in libro sermónum Isaíæ Prophétæ: Vox clamántis in desérto: Paráte viam Dómini: rectas fácite sémitas ejus: omnis vallis implébitur: et omnis mons et collis humiliábitur: et erunt prava in dirécta, et áspera in vias planas: et vidébit omnis caro salutáre Dei."]}}
+{"id":"tempora-adv3-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-adv3-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-adv3-6.offertoire.1","type":"rubric","t":{"la":["Zach 9:9"],"fr":["Zach 9:9"]}}
+{"id":"tempora-adv3-6.offertoire.2","type":"para","t":{"la":["Exsúlta satis, fília Sion, prǽdica, fília Jerúsalem: ecce, Rex tuus venit tibi sanctus et Salvátor."]}}
+{"id":"tempora-adv3-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-adv3-6.secrete.1","type":"para","t":{"la":["Sacrifíciis præséntibus, quǽsumus, Dómine, placátus inténde: ut et devotióni nostræ profíciant et salúti. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-adv3-6.preface.1","type":"rubric","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"tempora-adv3-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-adv3-6.communion.1","type":"rubric","t":{"la":["Ps 18:6-7"],"fr":["Ps 18:6-7"]}}
+{"id":"tempora-adv3-6.communion.2","type":"para","t":{"la":["Exsultávit ut gigas ad curréndam viam: a summo cœlo egréssio ejus, et occúrsus ejus usque ad summum ejus."]}}
+{"id":"tempora-adv3-6.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-6.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-adv3-6.postcommunion.1","type":"para","t":{"la":["Quǽsumus, Dómine, Deus noster: ut sacrosáncta mystéria, quæ pro reparatiónis nostræ munímine contulísti; et præsens nobis remédium esse fácias et futúrum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

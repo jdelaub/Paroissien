@@ -1,0 +1,41 @@
+{"id":"tempora-nat1-0.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Officium"}],"t":{"la":["Dominica infra octavam Nativitatis"],"fr":["Dimanche dans l’octave de Noël"]}}
+{"id":"tempora-nat1-0.rang","type":"rubric","t":{"fr":["IIᵉ classe — ornements blancs."]}}
+{"id":"tempora-nat1-0.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-nat1-0.introit.1","type":"rubric","t":{"la":["Sap 18:14-15."],"fr":["Sap 18:14-15."]}}
+{"id":"tempora-nat1-0.introit.2","type":"para","dropCap":true,"t":{"la":["Dum médium siléntium tenérent ómnia, et nox in suo cursu médium iter háberet, omnípotens Sermo tuus, Dómine, de cœlis a regálibus sédibus venit."]}}
+{"id":"tempora-nat1-0.introit.3","type":"rubric","t":{"la":["Ps 92:1"],"fr":["Ps 92:1"]}}
+{"id":"tempora-nat1-0.introit.4","type":"para","t":{"la":["Dóminus regnávit, decórem indútus est: indútus est Dóminus fortitúdinem, et præcínxit se."]}}
+{"id":"tempora-nat1-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-nat1-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-nat1-0.introit.7","type":"para","t":{"la":["Dum médium siléntium tenérent ómnia, et nox in suo cursu médium iter háberet, omnípotens Sermo tuus, Dómine, de cœlis a regálibus sédibus venit."]}}
+{"id":"tempora-nat1-0.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-nat1-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-nat1-0.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: ut in nómine dilécti Fílii tui mereámur bonis opéribus abundáre: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-nat1-0.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-nat1-0.epitre.1","type":"para","style":"intro","t":{"la":["Lectio Epístolæ beati Pauli Apóstoli ad Gálatas."],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Galates"]}}
+{"id":"tempora-nat1-0.epitre.2","type":"rubric","t":{"la":["Gal 4:1-7"],"fr":["Gal 4:1-7"]}}
+{"id":"tempora-nat1-0.epitre.3","type":"para","t":{"la":["Fratres: Quanto témpore heres párvulus est, nihil differt a servo, cum sit dóminus ómnium: sed sub tutóribus et actóribus est usque ad præfinítum tempus a patre: ita et nos, cum essémus párvuli, sub eleméntis mundi erámus serviéntes. At ubi venit plenitúdo témporis, misit Deus Fílium suum, factum ex mulíere, factum sub lege, ut eos, qui sub lege erant, redímeret, ut adoptiónem filiórum reciperémus. Quóniam autem estis fílii, misit Deus Spíritum Fílii sui in corda vestra, clamántem: Abba, Pater. Itaque jam non est servus, sed fílius: quod si fílius, et heres per Deum."]}}
+{"id":"tempora-nat1-0.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-nat1-0.graduel.1","type":"rubric","t":{"la":["Ps 44:3; 44:2"],"fr":["Ps 44:3; 44:2"]}}
+{"id":"tempora-nat1-0.graduel.2","type":"para","t":{"la":["Speciósus forma præ fíliis hóminum: diffúsa est grátia in lábiis tuis."]}}
+{"id":"tempora-nat1-0.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Eructávit cor meum verbum bonum, dico ego ópera mea Regi: lingua mea cálamus scribæ, velóciter scribéntis. Allelúja, allelúja."]}}
+{"id":"tempora-nat1-0.graduel.4","type":"rubric","t":{"la":["Ps 92:1."],"fr":["Ps 92:1."]}}
+{"id":"tempora-nat1-0.graduel.5","type":"para","t":{"la":["Dóminus regnávit, decórem índuit: índuit Dóminus fortitúdinem, et præcínxit se virtúte. Allelúja."]}}
+{"id":"tempora-nat1-0.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-nat1-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secundum Lucam."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"tempora-nat1-0.evangile.2","type":"rubric","t":{"la":["Luc 2:33-40"],"fr":["Luc 2:33-40"]}}
+{"id":"tempora-nat1-0.evangile.3","type":"para","t":{"la":["In illo témpore: Erat Joseph et María Mater Jesu, mirántes super his quæ dicebántur de illo. Et benedíxit illis Símeon, et dixit ad Maríam Matrem ejus: Ecce, pósitus est hic in ruínam et in resurrectiónem multórum in Israël: et in signum, cui contradicétur: et tuam ipsíus ánimam pertransíbit gládius, ut reveléntur ex multis córdibus cogitatiónes. Et erat Anna prophetíssa, fília Phánuel, de tribu Aser: hæc procésserat in diébus multis, et víxerat cum viro suo annis septem a virginitáte sua. Et hæc vídua usque ad annos octogínta quátuor: quæ non discedébat de templo, jejúniis et obsecratiónibus sérviens nocte ac die. Et hæc, ipsa hora supervéniens, confitebátur Dómino, et loquebátur de illo ómnibus, qui exspectábant redemptiónem Israël. Et ut perfecérunt ómnia secúndum legem Dómini, revérsi sunt in Galilǽam in civitátem suam Názareth. Puer autem crescébat, et confortabátur, plenus sapiéntia: et grátia Dei erat in illo."]}}
+{"id":"tempora-nat1-0.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-nat1-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-nat1-0.offertoire.1","type":"rubric","t":{"la":["Ps 92:1-2"],"fr":["Ps 92:1-2"]}}
+{"id":"tempora-nat1-0.offertoire.2","type":"para","t":{"la":["Deus firmávit orbem terræ, qui non commovébitur: paráta sedes tua, Deus, ex tunc, a sǽculo tu es."]}}
+{"id":"tempora-nat1-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-nat1-0.secrete.1","type":"para","t":{"la":["Concéde, quǽsumus, omnípotens Deus: ut óculis tuæ majestátis munus oblátum, et grátiam nobis piæ devotiónis obtineat, et efféctum beátæ perennitátis acquírat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-nat1-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-nat1-0.preface.1","type":"rubric","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"tempora-nat1-0.preface.2","type":"rubric","t":{"fr":["Communicantes propre de Noël (voir aux Préfaces)."]}}
+{"id":"tempora-nat1-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-nat1-0.communion.1","type":"rubric","t":{"la":["Matt 2:20"],"fr":["Matt 2:20"]}}
+{"id":"tempora-nat1-0.communion.2","type":"para","t":{"la":["Tolle Púerum et Matrem ejus, et vade in terram Israël: defúncti sunt enim, qui quærébant ánimam Púeri."]}}
+{"id":"tempora-nat1-0.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat1-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-nat1-0.postcommunion.1","type":"para","t":{"la":["Per hujus, Dómine, operatiónem mystérii, et vitia nostra purgéntur, et justa desidéria compleántur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

@@ -1,0 +1,39 @@
+{"id":"sancti-07-24r.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/07-24r.txt","section":"Officium"}],"t":{"la":["S. Christinæ Virginis et Martyris"],"fr":["Sainte Christine, vierge et martyre"]}}
+{"id":"sancti-07-24r.rang","type":"rubric","t":{"fr":["Commémoraison — ornements rouges."]}}
+{"id":"sancti-07-24r.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6-1.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-07-24r.introit.1","type":"rubric","t":{"la":["Ps 118:95-96"],"fr":["Ps 118:95-96"]}}
+{"id":"sancti-07-24r.introit.2","type":"para","dropCap":true,"t":{"la":["Me exspectavérunt peccatóres, ut pérderent me: testimónia tua, Dómine, intelléxi: omnis consummatiónis vidi finem: latum mandátum tuum nimis."]}}
+{"id":"sancti-07-24r.introit.3","type":"rubric","t":{"la":["Ps 118:1"],"fr":["Ps 118:1"]}}
+{"id":"sancti-07-24r.introit.4","type":"para","t":{"la":["Beáti immaculáti in via: qui ámbulant in lege Dómini."]}}
+{"id":"sancti-07-24r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-07-24r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-07-24r.introit.7","type":"para","t":{"la":["Me exspectavérunt peccatóres, ut pérderent me: testimónia tua, Dómine, intelléxi: omnis consummatiónis vidi finem: latum mandátum tuum nimis."]}}
+{"id":"sancti-07-24r.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-24r.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-07-24r.collecte.1","type":"para","t":{"la":["Indulgéntiam nobis, quǽsumus, Dómine, beáta Christína Virgo et Martyr implóret: quæ tibi grata semper éxstitit, et mérito castitátis, et tuæ professióne virtútis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-07-24r.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6-1.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-07-24r.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-07-24r.lecon.2","type":"rubric","t":{"la":["Eccli 51:13-17"],"fr":["Eccli 51:13-17"]}}
+{"id":"sancti-07-24r.lecon.3","type":"para","t":{"la":["Dómine, Deus meus, exaltásti super terram habitatiónem meam, et pro morte defluénte deprecáta sum. Invocávi Dóminum, Patrem Dómini mei, ut non derelínquat me in die tribulatiónis meæ, et in témpore superbórum sine adjutório. Laudábo nomen tuum assídue, et collaudábo illud in confessióne, et exaudíta est orátio mea. Et liberásti me de perditióne, et eripuísti me de témpore iníquo. Proptérea confitébor et laudem dicam tibi, Dómine, Deus noster."]}}
+{"id":"sancti-07-24r.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6-1.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-07-24r.graduel.1","type":"rubric","t":{"la":["Ps 45:6; 45:5"],"fr":["Ps 45:6; 45:5"]}}
+{"id":"sancti-07-24r.graduel.2","type":"para","t":{"la":["Adjuvábit eam Deus vultu suo: Deus in médio ejus, non commovébitur."]}}
+{"id":"sancti-07-24r.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Flúminis ímpetus lætíficat civitátem Dei: sanctificávit tabernáculum suum Altíssimus. Allelúja, allelúja."]}}
+{"id":"sancti-07-24r.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hæc est Virgo sápiens, et una de número prudéntum. Allelúja."]}}
+{"id":"sancti-07-24r.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6-1.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-07-24r.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-07-24r.evangile.2","type":"rubric","t":{"la":["Matt 13:44-52"],"fr":["Matt 13:44-52"]}}
+{"id":"sancti-07-24r.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile est regnum cœlórum thesáuro abscóndito in agro: quem qui invénit homo, abscóndit, et præ gáudio illíus vadit, et vendit univérsa, quæ habet, et emit agrum illum. ¶ Íterum símile est regnum cœlórum hómini negotiatóri, quærénti bonas margarítas. Invénta autem una pretiósa margaríta, ábiit, et véndidit ómnia, quæ hábuit, et emit eam. Íterum símile est regnum cœlórum sagénæ missæ in mare et ex omni génere píscium congregánti. Quam, cum impléta esset, educéntes, et secus litus sedéntes, elegérunt bonos in vasa, malos autem foras misérunt. Sic erit in consummatióne sǽculi: exíbunt Angeli, et separábunt malos de médio justórum, et mittent eos in camínum ignis: ibi erit fletus et stridor déntium. Intellexístis hæc ómnia? Dicunt ei: Etiam. Ait illis: Ideo omnis scriba doctus in regno cœlórum símilis est hómini patrifamílias, qui profert de thesáuro suo nova et vétera."]}}
+{"id":"sancti-07-24r.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-24r.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-07-24r.offertoire.1","type":"rubric","t":{"la":["Ps 44:3"],"fr":["Ps 44:3"]}}
+{"id":"sancti-07-24r.offertoire.2","type":"para","t":{"la":["Diffúsa est grátia in lábiis tuis: proptérea benedíxit te Deus in ætérnum, et in sǽculum sǽculi."]}}
+{"id":"sancti-07-24r.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-07-24r.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, beátæ Christínæ Vírginis et Mártyris tuæ dicátas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-07-24r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-07-24r.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-07-24r.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-07-24r.communion.1","type":"rubric","t":{"la":["Ps 118:121; 118:122; 118:128"],"fr":["Ps 118:121; 118:122; 118:128"]}}
+{"id":"sancti-07-24r.communion.2","type":"para","t":{"la":["Feci judícium et justítiam, Dómine, non calumniéntur mihi supérbi: ad ómnia mandáta tua dirigébar, omnem viam iniquitátis ódio hábui."]}}
+{"id":"sancti-07-24r.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C6-1.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-07-24r.postcommunion.1","type":"para","t":{"la":["Divíni múneris largitáte satiáti, quǽsumus, Dómine, Deus noster: ut, intercedénte beáta Christína Vírgine et Mártyre tua, in ejus semper participatióne vivámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

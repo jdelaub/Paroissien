@@ -1,0 +1,38 @@
+{"id":"commune-c10pasc.titre","type":"heading","level":1,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Officium"}],"t":{"la":["Sanctæ Mariæ Sabbato"],"fr":["Sainte Marie au samedi, au temps pascal : messe Salve, sancta Parens"]}}
+{"id":"commune-c10pasc.rang","type":"rubric","t":{"fr":["IVᵉ classe — ornements blancs."]}}
+{"id":"commune-c10pasc.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C10.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C11.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"commune-c10pasc.introit.1","type":"rubric","t":{"la":["Sedulius"]}}
+{"id":"commune-c10pasc.introit.2","type":"para","dropCap":true,"t":{"la":["Salve, sancta parens, eníxa puérpera Regem: qui cælum terrámque regit in sǽcula sæculórum."]}}
+{"id":"commune-c10pasc.introit.3","type":"rubric","t":{"la":["Ps 44:2"],"fr":["Ps 44:2"]}}
+{"id":"commune-c10pasc.introit.4","type":"para","t":{"la":["Eructávit cor meum verbum bonum: dico ego ópera mea Regi."]}}
+{"id":"commune-c10pasc.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"commune-c10pasc.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"commune-c10pasc.introit.7","type":"para","t":{"la":["Salve, sancta parens, eníxa puérpera Regem: qui cælum terrámque regit in sǽcula sæculórum."]}}
+{"id":"commune-c10pasc.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"commune-c10pasc.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Oratio"},{"file":"horas/Latin/Commune/C10.txt","section":"Oratio"},{"file":"horas/Latin/Commune/C11.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"commune-c10pasc.collecte.1","type":"para","t":{"la":["Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c10pasc.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C10.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C11.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"commune-c10pasc.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"commune-c10pasc.lecon.2","type":"rubric","t":{"la":["Eccli 24:14-16"],"fr":["Eccli 24:14-16"]}}
+{"id":"commune-c10pasc.lecon.3","type":"para","t":{"la":["Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea."]}}
+{"id":"commune-c10pasc.alleluia","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"GradualeP"},{"file":"horas/Latin/Commune/C11.txt","section":"GradualeP"}],"t":{"la":["Allelúja"],"fr":["Alléluia"]}}
+{"id":"commune-c10pasc.alleluia.1","type":"para","t":{"la":["Allelúja, allelúja."]}}
+{"id":"commune-c10pasc.alleluia.2","type":"rubric","t":{"la":["Num 17:8"],"fr":["Num 17:8"]}}
+{"id":"commune-c10pasc.alleluia.3","type":"para","t":{"la":["Virga Jesse flóruit: Virgo Deum et hóminem génuit: pacem Deus réddidit, in se reconcílians ima summis. Allelúja."]}}
+{"id":"commune-c10pasc.alleluia.4","type":"rubric","t":{"la":["Luc 1:28"],"fr":["Luc 1:28"]}}
+{"id":"commune-c10pasc.alleluia.5","type":"para","t":{"la":["Ave, María, grátia plena; Dóminus tecum: benedícta tu in muliéribus. Allelúja."]}}
+{"id":"commune-c10pasc.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"commune-c10pasc.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"commune-c10pasc.evangile.2","type":"rubric","t":{"la":["Joannes 19:25-27"],"fr":["Joannes 19:25-27"]}}
+{"id":"commune-c10pasc.evangile.3","type":"para","t":{"la":["In illo témpore: Stabant juxta Crucem Jesu Mater ejus, et soror Matris ejus, María Cléophæ, et María Magdaléne. Cum vidísset ergo Jesus Matrem, et discípulum stantem, quem diligébat, dicit Matri suæ: Múlier, ecce fílius tuus. Deinde dicit discípulo: Ecce Mater tua. Et ex illa hora accépit eam discípulus in sua."]}}
+{"id":"commune-c10pasc.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"commune-c10pasc.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"commune-c10pasc.offertoire.1","type":"para","t":{"la":["Beáta es, Virgo María, quæ ómnium portásti Creatórem: genuísti qui te fecit, et in ætérnum pérmanes Virgo. Allelúja."]}}
+{"id":"commune-c10pasc.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C10.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C11.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"commune-c10pasc.secrete.1","type":"para","t":{"la":["Tua, Dómine, propitiatióne, et beátæ Maríæ semper Vírginis intercessióne, ad perpétuam atque præséntem hæc oblátio nobis profíciat prosperitátem et pacem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c10pasc.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"commune-c10pasc.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in veneratione »)."]}}
+{"id":"commune-c10pasc.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Communio"},{"file":"horas/Latin/Commune/C10.txt","section":"Communio"},{"file":"horas/Latin/Commune/C11.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"commune-c10pasc.communion.1","type":"para","t":{"la":["Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium. Allelúja."]}}
+{"id":"commune-c10pasc.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C10Pasc.txt","section":"Postcommunio"},{"file":"horas/Latin/Commune/C10.txt","section":"Postcommunio"},{"file":"horas/Latin/Commune/C11.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"commune-c10pasc.postcommunion.1","type":"para","t":{"la":["Sumptis, Dómine, salútis nostræ subsídiis: da, quǽsumus, beátæ Maríæ semper Vírginis patrocíniis nos ubíque prótegi; in cujus veneratióne hæc tuæ obtúlimus majestáti. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

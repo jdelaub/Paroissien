@@ -1,0 +1,40 @@
+{"id":"tempora-epi6-6.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Epi6-6.txt","section":"Officium"}],"t":{"la":["Sabbato infra Hebdomadam VI post Epiphaniam"],"fr":["Samedi de la 6e semaine après l’Épiphanie"]}}
+{"id":"tempora-epi6-6.rang","type":"rubric","t":{"fr":["IVᵉ classe — ornements verts."]}}
+{"id":"tempora-epi6-6.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi6-0.txt","section":"Introitus"},{"file":"missa/Latin/Tempora/Epi3-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-epi6-6.introit.1","type":"rubric","t":{"la":["Ps 96:7-8"],"fr":["Ps 96:7-8"]}}
+{"id":"tempora-epi6-6.introit.2","type":"para","dropCap":true,"t":{"la":["Adoráte Deum, omnes Angeli ejus: audívit, et lætáta est Sion: et exsultavérunt fíliæ Judæ."]}}
+{"id":"tempora-epi6-6.introit.3","type":"rubric","t":{"la":["Ps 96:1"],"fr":["Ps 96:1"]}}
+{"id":"tempora-epi6-6.introit.4","type":"para","t":{"la":["Dóminus regnávit, exsúltet terra: læténtur ínsulæ multæ."]}}
+{"id":"tempora-epi6-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-epi6-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-epi6-6.introit.7","type":"para","t":{"la":["Adoráte Deum, omnes Angeli ejus: audívit, et lætáta est Sion: et exsultavérunt fíliæ Judæ."]}}
+{"id":"tempora-epi6-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-epi6-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi6-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-epi6-6.collecte.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut, semper rationabília meditántes, quæ tibi sunt plácita, et dictis exsequámur et factis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-epi6-6.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi6-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-epi6-6.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Thessaloniciens"]}}
+{"id":"tempora-epi6-6.epitre.2","type":"rubric","t":{"la":["1 Thess 1:2-10"],"fr":["1 Thess 1:2-10"]}}
+{"id":"tempora-epi6-6.epitre.3","type":"para","t":{"la":["Fratres: Grátias ágimus Deo semper pro ómnibus vobis, memóriam vestri faciéntes in oratiónibus nostris sine intermissióne, mémores óperis fídei vestræ, et labóris, et caritátis, et sustinéntiæ spei Dómini nostri Jesu Christi, ante Deum et Patrem nostrum: sciéntes, fratres, dilécti a Deo. electiónem vestram: quia Evangélium nostrum non fuit ad vos in sermóne tantum, sed et in virtúte, et in Spíritu Sancto, et in plenitúdine multa, sicut scitis quales fuérimus in vobis propter vos. Et vos imitatóres nostri facti estis, et Dómini, excipiéntes verbum in tribulatióne multa, cum gáudio Spíritus Sancti: ita ut facti sitis forma ómnibus credéntibus in Macedónia et in Achája. A vobis enim diffamátus est sermo Dómini, non solum in Macedónia et in Achája, sed et in omni loco fides vestra, quæ est ad Deum, profécta est, ita ut non sit nobis necésse quidquam loqui. Ipsi enim de nobis annúntiant, qualem intróitum habuérimus ad vos: et quómodo convérsi estis ad Deum a simulácris, servíre Deo vivo et vero, et exspectáre Fílium ejus de cœlis quem suscitávit ex mórtuis Jesum, qui erípuit nos ab ira ventúra."]}}
+{"id":"tempora-epi6-6.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi6-0.txt","section":"Graduale"},{"file":"missa/Latin/Tempora/Epi3-0.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-epi6-6.graduel.1","type":"rubric","t":{"la":["Ps 101:16-17"],"fr":["Ps 101:16-17"]}}
+{"id":"tempora-epi6-6.graduel.2","type":"para","t":{"la":["Timébunt gentes nomen tuum, Dómine, et omnes reges terræ glóriam tuam."]}}
+{"id":"tempora-epi6-6.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Quóniam ædificávit Dóminus Sion, et vidébitur in majestáte sua. Allelúja, allelúja."]}}
+{"id":"tempora-epi6-6.graduel.4","type":"rubric","t":{"la":["Ps 96:1"],"fr":["Ps 96:1"]}}
+{"id":"tempora-epi6-6.graduel.5","type":"para","t":{"la":["Dóminus regnávit, exsúltet terra: læténtur ínsulæ multæ. Allelúja."]}}
+{"id":"tempora-epi6-6.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi6-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-epi6-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"tempora-epi6-6.evangile.2","type":"rubric","t":{"la":["Matt 13:31-35"],"fr":["Matt 13:31-35"]}}
+{"id":"tempora-epi6-6.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus turbis parábolam hanc: Símile est regnum cœlórum grano sinápis, quod accípiens homo seminávit in agro suo: quod mínimum quidem est ómnibus semínibus: cum autem créverit, majus est ómnibus oléribus, ¶ et fit arbor, ita ut vólucres cœli véniant et hábitent in ramis ejus. Aliam parábolam locútus est eis: Símile est regnum cœlórum ferménto, quod accéptum múlier abscóndit in farínæ satis tribus, donec fermentátum est totum. Hæc ómnia locútus est Jesus in parábolis ad turbas: et sine parábolis non loquebátur eis: ut implerétur quod dictum erat per Prophétam dicéntem: Apériam in parábolis os meum, eructábo abscóndita a constitutióne mundi."]}}
+{"id":"tempora-epi6-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-epi6-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi6-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-epi6-6.offertoire.1","type":"rubric","t":{"la":["Ps 117:16; 117:17"],"fr":["Ps 117:16; 117:17"]}}
+{"id":"tempora-epi6-6.offertoire.2","type":"para","t":{"la":["Déxtera Dómini fecit virtutem, déxtera Dómini exaltávit me: non móriar, sed vivam, et narrábo ópera Dómini."]}}
+{"id":"tempora-epi6-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi6-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-epi6-6.secrete.1","type":"para","t":{"la":["Hæc nos oblátio, Deus, mundet, quǽsumus, et rénovet, gubérnet et prótegat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-epi6-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-epi6-6.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-epi6-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi6-0.txt","section":"Communio"},{"file":"missa/Latin/Tempora/Epi3-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-epi6-6.communion.1","type":"rubric","t":{"la":["Luc 4:22"],"fr":["Luc 4:22"]}}
+{"id":"tempora-epi6-6.communion.2","type":"para","t":{"la":["Mirabántur omnes de his, quæ procedébant de ore Dei."]}}
+{"id":"tempora-epi6-6.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi6-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-epi6-6.postcommunion.1","type":"para","t":{"la":["Cœléstibus, Dómine, pasti delíciis: quǽsumus; ut semper éadem, per quæ veráciter vívimus, appétimus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

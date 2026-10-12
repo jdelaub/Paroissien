@@ -1,0 +1,40 @@
+{"id":"sancti-01-17.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/01-17.txt","section":"Officium"}],"t":{"la":["S. Antonii Abbatis"],"fr":["Saint Antoine, abbé"]}}
+{"id":"sancti-01-17.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-01-17.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C5.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-01-17.introit.1","type":"rubric","t":{"la":["Ps 36:30-31"],"fr":["Ps 36:30-31"]}}
+{"id":"sancti-01-17.introit.2","type":"para","dropCap":true,"t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
+{"id":"sancti-01-17.introit.3","type":"rubric","t":{"la":["Ps 36:1"],"fr":["Ps 36:1"]}}
+{"id":"sancti-01-17.introit.4","type":"para","t":{"la":["Noli æmulári in malignántibus: neque zeláveris faciéntes iniquitátem."]}}
+{"id":"sancti-01-17.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-01-17.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-01-17.introit.7","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
+{"id":"sancti-01-17.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-01-17.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-01-17.collecte.1","type":"para","t":{"la":["Intercéssio nos, quǽsumus, Dómine, beáti Antónii Abbátis comméndet: ut, quod nostris méritis non valémus, ejus patrocínio assequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-17.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-01-17.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-01-17.lecon.2","type":"rubric","t":{"la":["Eccli 45:1-6"],"fr":["Eccli 45:1-6"]}}
+{"id":"sancti-01-17.lecon.3","type":"para","t":{"la":["Diléctus Deo et homínibus, cujus memória in benedictióne est. Símilem illum fecit in glória sanctórum, et magnificávit eum in timóre inimicórum, et in verbis suis monstra placávit. Glorificávit illum in conspéctu regum, et jussit illi coram pópulo suo, et osténdit illi glóriam suam. In fide et lenitáte ipsíus sanctum fecit illum, et elégit eum ex omni carne. Audívit enim eum et vocem ipsíus, et indúxit illum in nubem. Et dedit illi coram præcépta, et legem vitæ et disciplínæ."]}}
+{"id":"sancti-01-17.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-01-17.graduel.1","type":"rubric","t":{"la":["Ps 20:4-5"],"fr":["Ps 20:4-5"]}}
+{"id":"sancti-01-17.graduel.2","type":"para","t":{"la":["Dómine, prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite ejus corónam de lápide pretióso."]}}
+{"id":"sancti-01-17.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Vitam pétiit a te, et tribuísti ei longitúdinem diérum in sǽculum sǽculi. Allelúja, allelúja."]}}
+{"id":"sancti-01-17.graduel.4","type":"rubric","t":{"la":["Ps 91:13"],"fr":["Ps 91:13"]}}
+{"id":"sancti-01-17.graduel.5","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus Líbani multiplicábitur. Allelúja."]}}
+{"id":"sancti-01-17.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-17.txt","section":"Evangelium"},{"file":"horas/Latin/Commune/C5.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-01-17.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-01-17.evangile.2","type":"rubric","t":{"la":["Luc 12:35-40"],"fr":["Luc 12:35-40"]}}
+{"id":"sancti-01-17.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucernæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. ¶ Beáti servi illi, quos, cum vénerit dóminus, invénerit vigilántes: amen, dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam, si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti, quia, qua hora non putátis, Fílius hóminis véniet."]}}
+{"id":"sancti-01-17.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-01-17.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-01-17.offertoire.1","type":"rubric","t":{"la":["Ps 20:3-4"],"fr":["Ps 20:3-4"]}}
+{"id":"sancti-01-17.offertoire.2","type":"para","t":{"la":["Desidérium ánimæ ejus tribuísti ei, Dómine, et voluntáte labiórum ejus non fraudásti eum: posuísti in cápite ejus corónam de lápide pretióso."]}}
+{"id":"sancti-01-17.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-01-17.secrete.1","type":"para","t":{"la":["Sacris altáribus, Dómine, hóstias superpósitas sanctus Antónii Abbas, quǽsumus, in salútem nobis proveníre depóscat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-17.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-01-17.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-01-17.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-01-17.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
+{"id":"sancti-01-17.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}
+{"id":"sancti-01-17.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-01-17.postcommunion.1","type":"para","t":{"la":["Prótegat nos, Dómine, cum tui perceptióne sacraménti beátus Antónii Abbas, pro nobis intercedéndo: ut et conversatiónis ejus experiámur insígnia, et intercessiónis percipiámus suffrágia. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

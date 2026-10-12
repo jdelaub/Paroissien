@@ -1,0 +1,78 @@
+{"id":"commune-c9.titre","type":"heading","level":1,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Officium"}],"t":{"la":["Officium Defunctorum"],"fr":["Messe quotidienne des défunts"]}}
+{"id":"commune-c9.rang","type":"rubric","t":{"fr":["Ornements noirs."]}}
+{"id":"commune-c9.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"commune-c9.introit.1","type":"rubric","t":{"la":["4 Esdr 2:34; 2:35"],"fr":["4 Esdr 2:34; 2:35"]}}
+{"id":"commune-c9.introit.2","type":"para","dropCap":true,"t":{"la":["Réquiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis."]}}
+{"id":"commune-c9.introit.3","type":"rubric","t":{"la":["Ps 64:2-3"],"fr":["Ps 64:2-3"]}}
+{"id":"commune-c9.introit.4","type":"para","t":{"la":["Te decet hymnus, Deus, in Sion, et tibi reddétur votum in Jerúsalem: exáudi oratiónem meam, ad te omnis caro véniet."]}}
+{"id":"commune-c9.introit.5","type":"para","t":{"la":["Réquiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis."]}}
+{"id":"commune-c9.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"commune-c9.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"commune-c9.collecte.1","type":"para","t":{"la":["Fidélium, Deus, ómnium Cónditor et Redémptor: animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum; ut indulgéntiam, quam semper optavérunt, piis supplicatiónibus consequántur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c9.collecte.a1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Oratio1"}],"t":{"la":["Pro defunctis Episcopis vel Sacerdotibus"],"fr":["Pour les évêques ou les prêtres défunts"]}}
+{"id":"commune-c9.collecte.a1.1","type":"para","t":{"la":["Deus, qui inter apostólicos Sacerdótes fámulos tuos pontificáli seu sacerdotáli fecísti dignitáte vigére: præsta, quǽsumus; ut eórum quoque perpétuo aggregéntur consórtio. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c9.collecte.a2","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Oratio2"}],"t":{"la":["Pro defunctis fratribus, propinquis et benefactoribus"],"fr":["Pour les frères, les proches et les bienfaiteurs défunts"]}}
+{"id":"commune-c9.collecte.a2.1","type":"para","t":{"la":["Deus, véniæ largítor et humánæ salútis amátor: quǽsumus cleméntiam tuam; ut nostræ congregatiónis fratres, propínquos et benefactóres, qui ex hoc sǽculo transiérunt, beáta María semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpétuæ beatitúdinis consórtium perveníre concédas. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c9.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"commune-c9.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Apocalýpsis beáti Joánnis Apóstoli"],"fr":["Lecture du livre de l’Apocalypse de saint Jean, Apôtre"]}}
+{"id":"commune-c9.lecon.2","type":"rubric","t":{"la":["Apoc 14:13"],"fr":["Apoc 14:13"]}}
+{"id":"commune-c9.lecon.3","type":"para","t":{"la":["In diébus illis: Audívi vocem de cœlo, dicéntem mihi: Scribe: Beáti mórtui, qui in Dómino moriúntur. Amodo jam dicit Spíritus, ut requiéscant a labóribus suis: ópera enim illórum sequúntur illos."]}}
+{"id":"commune-c9.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"commune-c9.graduel.1","type":"rubric","t":{"la":["4 Esdr 2:34-35"],"fr":["4 Esdr 2:34-35"]}}
+{"id":"commune-c9.graduel.2","type":"para","t":{"la":["Réquiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis."]}}
+{"id":"commune-c9.graduel.3","type":"rubric","t":{"la":["Ps 111:7."],"fr":["Ps 111:7."]}}
+{"id":"commune-c9.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","In memória ætérna erit justus: ab auditióne mala non timébit."]}}
+{"id":"commune-c9.graduel.5","type":"rubric","t":{"la":["Tractus"],"fr":["Trait"]}}
+{"id":"commune-c9.graduel.6","type":"para","t":{"la":["Absólve, Dómine, ánimas ómnium fidélium ab omni vínculo delictórum."]}}
+{"id":"commune-c9.graduel.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Et grátia tua illis succurrénte, mereántur evádere judícium ultiónis."]}}
+{"id":"commune-c9.graduel.8","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Et lucis ætérnæ beatitúdine pérfrui."]}}
+{"id":"commune-c9.sequence","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Sequentia"}],"t":{"la":["Sequentia"],"fr":["Séquence"]}}
+{"id":"commune-c9.sequence.1","type":"stanza","kind":"hymn","t":{"la":["Dies iræ, dies illa",{"br":1},"Solvet sæclum in favílla:",{"br":1},"Teste David cum Sibýlla."]}}
+{"id":"commune-c9.sequence.2","type":"stanza","kind":"hymn","t":{"la":["Quantus tremor est futúrus,",{"br":1},"Quando judex est ventúrus,",{"br":1},"Cuncta stricte discussúrus!"]}}
+{"id":"commune-c9.sequence.3","type":"stanza","kind":"hymn","t":{"la":["Tuba mirum spargens sonum",{"br":1},"Per sepúlcra regiónum,",{"br":1},"Coget omnes ante thronum."]}}
+{"id":"commune-c9.sequence.4","type":"stanza","kind":"hymn","t":{"la":["Mors stupébit et natúra,",{"br":1},"Cum resúrget creatúra,",{"br":1},"Judicánti responsúra."]}}
+{"id":"commune-c9.sequence.5","type":"stanza","kind":"hymn","t":{"la":["Liber scriptus proferétur,",{"br":1},"In quo totum continétur,",{"br":1},"Unde mundus judicétur."]}}
+{"id":"commune-c9.sequence.6","type":"stanza","kind":"hymn","t":{"la":["Judex ergo cum sedébit,",{"br":1},"Quidquid latet, apparébit:",{"br":1},"Nil inúltum remanébit."]}}
+{"id":"commune-c9.sequence.7","type":"stanza","kind":"hymn","t":{"la":["Quid sum miser tunc dictúrus?",{"br":1},"Quem patrónum rogatúrus,",{"br":1},"Cum vix justus sit secúrus?"]}}
+{"id":"commune-c9.sequence.8","type":"stanza","kind":"hymn","t":{"la":["Rex treméndæ majestátis,",{"br":1},"Qui salvándos salvas gratis,",{"br":1},"Salva me, fons pietátis."]}}
+{"id":"commune-c9.sequence.9","type":"stanza","kind":"hymn","t":{"la":["Recordáre, Jesu pie,",{"br":1},"Quod sum causa tuæ viæ:",{"br":1},"Ne me perdas illa die."]}}
+{"id":"commune-c9.sequence.10","type":"stanza","kind":"hymn","t":{"la":["Quærens me, sedísti lassus:",{"br":1},"Redemísti Crucem passus:",{"br":1},"Tantus labor non sit cassus."]}}
+{"id":"commune-c9.sequence.11","type":"stanza","kind":"hymn","t":{"la":["Juste judex ultiónis,",{"br":1},"Donum fac remissiónis",{"br":1},"Ante diem ratiónis."]}}
+{"id":"commune-c9.sequence.12","type":"stanza","kind":"hymn","t":{"la":["Ingemísco, tamquam reus:",{"br":1},"Culpa rubet vultus meus:",{"br":1},"Supplicánti parce, Deus."]}}
+{"id":"commune-c9.sequence.13","type":"stanza","kind":"hymn","t":{"la":["Qui Maríam absolvísti,",{"br":1},"Et latrónem exaudísti,",{"br":1},"Mihi quoque spem dedísti."]}}
+{"id":"commune-c9.sequence.14","type":"stanza","kind":"hymn","t":{"la":["Preces meæ non sunt dignæ:",{"br":1},"Sed tu bonus fac benígne,",{"br":1},"Ne perénni cremer igne."]}}
+{"id":"commune-c9.sequence.15","type":"stanza","kind":"hymn","t":{"la":["Inter oves locum præsta,",{"br":1},"Et ab hœdis me sequéstra,",{"br":1},"Státuens in parte dextra."]}}
+{"id":"commune-c9.sequence.16","type":"stanza","kind":"hymn","t":{"la":["Confutátis maledíctis,",{"br":1},"Flammis ácribus addíctis:",{"br":1},"Voca me cum benedíctis."]}}
+{"id":"commune-c9.sequence.17","type":"stanza","kind":"hymn","t":{"la":["Oro supplex et acclínis,",{"br":1},"Cor contrítum quasi cinis:",{"br":1},"Gere curam mei finis."]}}
+{"id":"commune-c9.sequence.18","type":"stanza","kind":"hymn","t":{"la":["Lacrimósa dies illa,",{"br":1},"Qua resúrget ex favílla",{"br":1},"Judicándus homo reus."]}}
+{"id":"commune-c9.sequence.19","type":"stanza","kind":"hymn","t":{"la":["Huic ergo parce, Deus:",{"br":1},"Pie Jesu Dómine,",{"br":1},"Dona eis réquiem.",{"br":1},"Amen."]}}
+{"id":"commune-c9.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"commune-c9.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"commune-c9.evangile.2","type":"rubric","t":{"la":["Joannes 6:51-55"],"fr":["Joannes 6:51-55"]}}
+{"id":"commune-c9.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus turbis Judæórum: Ego sum panis vivus, qui de cœlo descéndi. Si quis manducáverit ex hoc pane, vivet in ætérnum: et panis, quem ego dabo, caro mea est pro mundi vita. Litigábant ergo Judǽi ad ínvicem, dicéntes: Quómodo potest hic nobis carnem suam dare ad manducándum? Dixit ergo eis Jesus: Amen, amen, dico vobis: nisi manducavéritis carnem Fílii hóminis et bibéritis ejus sánguinem, non habébitis vitam in vobis. Qui mánducat meam carnem et bibit meum sánguinem, habet vitam ætérnam: et ego resuscitábo eum in novíssimo die."]}}
+{"id":"commune-c9.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"commune-c9.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"commune-c9.offertoire.1","type":"para","t":{"la":["Dómine Jesu Christe, Rex glóriæ, líbera ánimas ómnium fidélium defunctórum de pœnis inférni et de profúndo lacu: líbera eas de ore leónis, ne absórbeat eas tártarus, ne cadant in obscúrum: sed sígnifer sanctus Míchaël repræséntet eas in lucem sanctam:"]}}
+{"id":"commune-c9.offertoire.2","type":"para","t":{"la":["* Quam olim Abrahæ promisísti et sémini ejus."]}}
+{"id":"commune-c9.offertoire.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hóstias et preces tibi, Dómine, laudis offérimus: tu súscipe pro animábus illis, quarum hódie memóriam fácimus: fac eas, Dómine, de morte transíre ad vitam."]}}
+{"id":"commune-c9.offertoire.4","type":"para","t":{"la":["* Quam olim Abrahæ promisísti et sémini ejus."]}}
+{"id":"commune-c9.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"commune-c9.secrete.1","type":"para","t":{"la":["Hóstias, quǽsumus, Dómine, quas tibi pro animábus famulórum famularúmque tuárum offérimus, propitiátus inténde: ut, quibus fídei christiánæ méritum contulísti, dones et prǽmium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c9.secrete.a1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Secreta1"}],"t":{"la":["Pro defunctis Episcopis vel Sacerdotibus"],"fr":["Pour les évêques ou les prêtres défunts"]}}
+{"id":"commune-c9.secrete.a1.1","type":"para","t":{"la":["Súscipe, Dómine, quǽsumus, pro animábus famulórum tuórum Pontíficum seu Sacerdótum, quas offérimus, hóstias: ut, quibus in hoc sǽculo pontificále seu sacerdotále donásti méritum, in cœlésti regno Sanctórum tuórum júbeas jungi consórtio. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c9.secrete.a2","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Secreta2"}],"t":{"la":["Pro defunctis fratribus, propinquis et benefactoribus"],"fr":["Pour les frères, les proches et les bienfaiteurs défunts"]}}
+{"id":"commune-c9.secrete.a2.1","type":"para","t":{"la":["Deus, cujus misericórdiæ non est númerus, súscipe propítius preces humilitátis nostræ: et animábus fratrum, propinquórum et benefactórum nostrórum, quibus tui nóminis dedísti confessiónem, per hæc sacraménta salútis nostræ, cunctórum remissiónem tríbue peccatórum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c9.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"commune-c9.preface.1","type":"rubric","t":{"la":["Præfatio Defunctorum."],"fr":["Préface des défunts."]}}
+{"id":"commune-c9.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"commune-c9.communion.1","type":"rubric","t":{"la":["4 Esdr 2:35; 2:34"],"fr":["4 Esdr 2:35; 2:34"]}}
+{"id":"commune-c9.communion.2","type":"para","t":{"la":["Lux ætérna lúceat eis, Dómine:"]}}
+{"id":"commune-c9.communion.3","type":"para","t":{"la":["* Cum Sanctis tuis in ætérnum: quia pius es."]}}
+{"id":"commune-c9.communion.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Requiem ætérnam dona eis, Dómine: et lux perpétua lúceat eis."]}}
+{"id":"commune-c9.communion.5","type":"para","t":{"la":["* Cum Sanctis tuis in ætérnum: quia pius es."]}}
+{"id":"commune-c9.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"commune-c9.postcommunion.1","type":"para","t":{"la":["Animábus, quǽsumus, Dómine, famulórum famularúmque tuárum orátio profíciat supplicántium: ut eas et a peccátis ómnibus éxuas, et tuæ redemptiónis fácias esse partícipes: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c9.postcommunion.a1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Postcommunio1"}],"t":{"la":["Pro defunctis Episcopis vel Sacerdotibus"],"fr":["Pour les évêques ou les prêtres défunts"]}}
+{"id":"commune-c9.postcommunion.a1.1","type":"para","t":{"la":["Prosit, quǽsumus, Dómine, animábus famulórum tuórum Pontíficum seu Sacerdótum misericórdiæ tuæ imploráta cleméntia: ut ejus, in quo speravérunt et credidérunt, ætérnum cápiant, te miseránte, consórtium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c9.postcommunion.a2","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C9.txt","section":"Postcommunio2"}],"t":{"la":["Pro defunctis fratribus, propinquis et benefactoribus"],"fr":["Pour les frères, les proches et les bienfaiteurs défunts"]}}
+{"id":"commune-c9.postcommunion.a2.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens et miséricors Deus: ut ánimæ fratrum, propinquórum et benefactórum nostrórum, pro quibus hoc sacrifícium laudis tuæ obtúlimus majestáti; per hujus virtútem sacraménti a peccátis ómnibus expiátæ, lucis perpétuæ, te miseránte, recípiant beatitúdinem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

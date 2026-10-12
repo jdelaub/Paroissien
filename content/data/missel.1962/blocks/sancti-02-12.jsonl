@@ -1,0 +1,50 @@
+{"id":"sancti-02-12.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Officium"}],"t":{"la":["Ss. Septem Fundatorum Ordinis Servorum B. M. V."],"fr":["Les sept saints Fondateurs de l’ordre des Servites de Marie, confesseurs"]}}
+{"id":"sancti-02-12.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-02-12.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-02-12.introit.1","type":"rubric","t":{"la":["Sap 10:20-21"],"fr":["Sap 10:20-21"]}}
+{"id":"sancti-02-12.introit.2","type":"para","dropCap":true,"t":{"la":["Justi decantavérunt, Dómine, nomen sanctum tuum, et victrícem manum tuam laudavérunt páriter: quóniam sapiéntia apéruit os mutum et linguas infántium fecit disértas."]}}
+{"id":"sancti-02-12.introit.3","type":"rubric","t":{"la":["Ps 8:2."],"fr":["Ps 8:2."]}}
+{"id":"sancti-02-12.introit.4","type":"para","t":{"la":["Dómine, Dóminus noster, quam admirábile est nomen tuum in univérsa terra!"]}}
+{"id":"sancti-02-12.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-02-12.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-02-12.introit.7","type":"para","t":{"la":["Justi decantavérunt, Dómine, nomen sanctum tuum, et victrícem manum tuam laudavérunt páriter: quóniam sapiéntia apéruit os mutum et linguas infántium fecit disértas."]}}
+{"id":"sancti-02-12.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-12.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-02-12.collecte.1","type":"para","t":{"la":["Dómine Jesu Christe, qui, ad recoléndam memóriam dolórum sanctíssimæ Genetrícis tuæ, per septem beátos Patres nova Servorum ejus família Ecclésiam tuam fœcundásti: concéde propítius; ita nos eórum consociári flétibus, ut perfruámur et gáudiis: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-02-12.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-02-12.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-02-12.lecon.2","type":"rubric","t":{"la":["Eccli 44:1-15"],"fr":["Eccli 44:1-15"]}}
+{"id":"sancti-02-12.lecon.3","type":"para","t":{"la":["Laudémus viros gloriósos et paréntes nostros in generatióne sua. Multam glóriam fecit Dóminus magnificéntia sua a sǽculo. Dominántes in potestátibus suis, hómines magni virtúte et prudéntia sua præditi, nuntiántes in prophétis dignitátem prophetárum, et imperántes in præsénti pópulo, et virtúte prudéntiæ pópulis sanctíssima verba. In perítia sua requiréntes modos músicos, et narrántes cármina scripturárum. Hómines dívites in virtúte, pulchritúdinis stúdium habéntes: pacificántes in dómibus suis. Omnes isti in generatiónibus gentis suæ glóriam adépti sunt, et in diébus suis habéntur in láudibus. Qui de illis nati sunt, reliquérunt nomen narrándi laudes eórum. Et sunt, quorum non est memória: periérunt, quasi qui non fúerint: et nati sunt, quasi non nati, et fílii ipsórum cum ipsis. Sed illi viri misericórdiæ sunt, quorum pietátes non defuérunt: cum sémine eórum pérmanent bona, heréditas sancta nepótes eórum, et in testaméntis stetit semen eórum: et fílii eórum propter illos usque in ætérnum manent: semen eórum et glória eórum non derelinquétur. Córpora ipsórum in pace sepúlta sunt, et nomen eórum vivit in generatiónem et generatiónem. Sapiéntiam ipsórum narrent pópuli, et laudem eórum núntiet Ecclésia."]}}
+{"id":"sancti-02-12.trait","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Tractus"}],"t":{"la":["Tractus"],"fr":["Trait"]}}
+{"id":"sancti-02-12.trait.1","type":"rubric","t":{"la":["Is 65:23"],"fr":["Is 65:23"]}}
+{"id":"sancti-02-12.trait.2","type":"para","t":{"la":["Elécti mei non laborábunt frustra, neque germinábunt in conturbatióne: quia semen benedictórum Dómini est, et nepótes eórum cum eis."]}}
+{"id":"sancti-02-12.trait.3","type":"rubric","t":{"la":["Eccli 44:14"],"fr":["Eccli 44:14"]}}
+{"id":"sancti-02-12.trait.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Córpora ipsorum in pace sepúlta sunt, et nomen eórum vivit in generatiónem et generatiónem."]}}
+{"id":"sancti-02-12.trait.5","type":"rubric","t":{"la":["Ps 125:5-6"],"fr":["Ps 125:5-6"]}}
+{"id":"sancti-02-12.trait.6","type":"para","t":{"la":["Qui séminant in lácrimis, in exsultatióne metent."]}}
+{"id":"sancti-02-12.trait.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Eúntes ibant et fiébant, mitténtes sémina sua."]}}
+{"id":"sancti-02-12.trait.8","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Veniéntes autem vénient cum exsultatióne, portántes manípulos suos."]}}
+{"id":"sancti-02-12.trait.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Graduale"}],"t":{"la":["Ante Septuagesimam"],"fr":["Avant la Septuagésime"]}}
+{"id":"sancti-02-12.trait.hors.1","type":"rubric","t":{"la":["Is 65:23"],"fr":["Is 65:23"]}}
+{"id":"sancti-02-12.trait.hors.2","type":"para","t":{"la":["Elécti mei non laborábunt frustra, neque germinábunt in conturbatióne: quia semen benedictórum Dómini est, et nepótes eórum cum eis."]}}
+{"id":"sancti-02-12.trait.hors.3","type":"rubric","t":{"la":["Eccli 44:14"],"fr":["Eccli 44:14"]}}
+{"id":"sancti-02-12.trait.hors.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Córpora ipsorum in pace sepúlta sunt, et nomen eórum vivit in generatiónem et generatiónem. Allelúja, allelúja."]}}
+{"id":"sancti-02-12.trait.hors.5","type":"rubric","t":{"la":["Eccli 44:15"],"fr":["Eccli 44:15"]}}
+{"id":"sancti-02-12.trait.hors.6","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Sapiéntiam ipsorum narrent pópuli, et laudem eórum núntiet Ecclésia. Allelúja."]}}
+{"id":"sancti-02-12.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Evangelium"},{"file":"horas/Latin/Commune/C5b.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-02-12.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-02-12.evangile.2","type":"rubric","t":{"la":["Matt 19:27-29"],"fr":["Matt 19:27-29"]}}
+{"id":"sancti-02-12.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Petrus ad Jesum: Ecce, nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen, dico vobis, quod vos, qui secúti estis me, in regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros, propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit."]}}
+{"id":"sancti-02-12.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-02-12.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-02-12.offertoire.1","type":"rubric","t":{"la":["Is 56:7."],"fr":["Is 56:7."]}}
+{"id":"sancti-02-12.offertoire.2","type":"para","t":{"la":["Addúcam eos in montem sanctum meum, et lætificábo eos in domo oratiónis meæ: holocáusta eórum et víctimæ eórum placébunt mihi super altáre meum."]}}
+{"id":"sancti-02-12.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-02-12.secrete.1","type":"para","t":{"la":["Accipe, quǽsumus, Dómine, hóstias quas tibi offérimus: et præsta; ut, intercedéntibus Sanctis tuis, libera tibi mente serviámus, et perdoléntis Vírginis Genetrícis Fílii tui amóre inflammémur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-02-12.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-02-12.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune ; en Carême : préface du Carême."]}}
+{"id":"sancti-02-12.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-02-12.communion.1","type":"rubric","t":{"la":["Joann 15:16"],"fr":["Joann 15:16"]}}
+{"id":"sancti-02-12.communion.2","type":"para","t":{"la":["Ego vos elégi de mundo, ut eátis et fructum afferátis: et fructus vester máneat."]}}
+{"id":"sancti-02-12.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-12.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-02-12.postcommunion.1","type":"para","t":{"la":["Cœléstibus refécti mystériis te, Dómine, deprecámur: ut, quorum festa percólimus imitántes exémpla; juxta Crucem Jesu cum María Matre ejus fidéliter astémus, et ejúsdem redemptiónis fructum percípere mereámur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

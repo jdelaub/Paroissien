@@ -1,0 +1,41 @@
+{"id":"tempora-epi1-0.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Officium"}],"t":{"la":["S. Familiae Iesu, Mariae, Ioseph"],"fr":["Sainte Famille, Jésus, Marie, Joseph"]}}
+{"id":"tempora-epi1-0.rang","type":"rubric","t":{"fr":["IIᵉ classe — ornements blancs."]}}
+{"id":"tempora-epi1-0.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-epi1-0.introit.1","type":"rubric","t":{"la":["Prov 23:24; 23:25"],"fr":["Prov 23:24; 23:25"]}}
+{"id":"tempora-epi1-0.introit.2","type":"para","dropCap":true,"t":{"la":["Exsúltet gáudio pater Justi, gáudeat Pater tuus et Mater tua, et exsúltet quæ génuit te."]}}
+{"id":"tempora-epi1-0.introit.3","type":"rubric","t":{"la":["Ps 83:2-3"],"fr":["Ps 83:2-3"]}}
+{"id":"tempora-epi1-0.introit.4","type":"para","t":{"la":["Quam dilécta tabernácula tua, Dómine virtútum! Concupíscit, et déficit ánima mea in átria Dómini."]}}
+{"id":"tempora-epi1-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-epi1-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-epi1-0.introit.7","type":"para","t":{"la":["Exsúltat gáudio pater Justi, gáudeat Pater tuus et Mater tua, et exsúltet quæ génuit te."]}}
+{"id":"tempora-epi1-0.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-epi1-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-epi1-0.collecte.1","type":"para","t":{"la":["Dómine Jesu Christe, qui, Maríæ et Joseph súbditus, domésticam vitam ineffabílibus virtútibus consecrásti: fac nos, utriúsque auxílio, Famíliæ sanctæ tuæ exémplis ínstrui; et consórtium cónsequi sempitérnum: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-epi1-0.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-epi1-0.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Colossénses"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Colossiens"]}}
+{"id":"tempora-epi1-0.epitre.2","type":"rubric","t":{"la":["Col 3:12-17"],"fr":["Col 3:12-17"]}}
+{"id":"tempora-epi1-0.epitre.3","type":"para","t":{"la":["Fratres: Indúite vos sicut elécti Dei, sancti et dilécti, víscera misericórdiæ, benignitátem, humilitátem, modéstiam, patiéntiam: supportántes ínvicem, et donántes vobismetípsis, si quis advérsus áliquem habet querélam: sicut et Dóminus donávit vobis, ita et vos. Super ómnia autem hæc caritátem habéte, quod est vínculum perfectiónis: et pax Christi exsúltet in córdibus vestris, in qua et vocáti estis in uno córpore: et grati estóte. Verbum Christi hábitet in vobis abundánter, in omni sapiéntia, docéntes et commonéntes vosmetípsos psalmis, hymnis et cánticis spirituálibus, in grátia cantántes in córdibus vestris Deo. Omne, quodcúmque fácitis in verbo aut in ópere, ómnia in nómine Dómini Jesu Christi, grátias agéntes Deo et Patri per ipsum."]}}
+{"id":"tempora-epi1-0.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-epi1-0.graduel.1","type":"rubric","t":{"la":["Ps 26:4"],"fr":["Ps 26:4"]}}
+{"id":"tempora-epi1-0.graduel.2","type":"para","t":{"la":["Unam pétii a Dómino, hanc requíram: ut inhábitem in domo Dómini ómnibus diébus vitæ meæ."]}}
+{"id":"tempora-epi1-0.graduel.3","type":"rubric","t":{"la":["Ps 83:5."],"fr":["Ps 83:5."]}}
+{"id":"tempora-epi1-0.graduel.4","type":"para","t":{"la":["Beáti, qui hábitant in domo tua, Dómine: in sǽcula sæculórum laudábunt te. Allelúja, allelúja,"]}}
+{"id":"tempora-epi1-0.graduel.5","type":"rubric","t":{"la":["Isa 45:15"],"fr":["Isa 45:15"]}}
+{"id":"tempora-epi1-0.graduel.6","type":"para","t":{"la":["Vere tu es Rex abscónditus, Deus Israël Salvátor. Allelúja."]}}
+{"id":"tempora-epi1-0.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-epi1-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"tempora-epi1-0.evangile.2","type":"rubric","t":{"la":["Luc 2:42-52"],"fr":["Luc 2:42-52"]}}
+{"id":"tempora-epi1-0.evangile.3","type":"para","t":{"la":["Cum factus esset Jesus annórum duódecim, ascendéntibus illis Jerosólymam secúndum consuetúdinem diéi festi, consummatísque diébus, cum redírent, remánsit puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus. Existimántes autem illum esse in comitátu, venérunt iter diéi, et requirébant eum inter cognátos et notos. Et non inveniéntes, regréssi sunt in Jerúsalem, requiréntes eum. Et factum est, post tríduum invenérunt illum in templo sedéntem in médio doctórum, audiéntem illos et interrogántem eos. Stupébant autem omnes, qui eum audiébant, super prudéntia et respónsis ejus. Et vidéntes admiráti sunt. Et dixit Mater ejus ad illum: Fili, quid fecísti nobis sic? Ecce, pater tuus et ego doléntes quærebámus te. Et ait ad illos: Quid est, quod me quærebátis? Nesciebátis, quia in his, quæ Patris mei sunt, opórtet me esse? Et ipsi non intellexérunt verbum, quod locútus est ad eos. Et descéndit cum eis, et venit Názareth: et erat súbditus illis. Et Mater ejus conservábat ómnia verba hæc in corde suo. Et Jesus proficiébat sapiéntia et ætáte et grátia apud Deum et hómines."]}}
+{"id":"tempora-epi1-0.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-epi1-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-epi1-0.offertoire.1","type":"rubric","t":{"la":["Luc 2:22"],"fr":["Luc 2:22"]}}
+{"id":"tempora-epi1-0.offertoire.2","type":"para","t":{"la":["Tulérunt Jesum paréntes ejus in Jerúsalem, ut sísterent eum Dómino."]}}
+{"id":"tempora-epi1-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-epi1-0.secrete.1","type":"para","t":{"la":["Placatiónis hostiam offérimus tibi, Dómine, supplíciter ut, per intercessiónem Deíparæ Vírginis cum beáto Joseph, famílias nostras in pace et grátia tua fírmiter constítuas. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-epi1-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-epi1-0.preface.1","type":"rubric","t":{"la":["Præfatio de Epiphania Domini."],"fr":["Préface de l’Épiphanie."]}}
+{"id":"tempora-epi1-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-epi1-0.communion.1","type":"rubric","t":{"la":["Luc 2:51"],"fr":["Luc 2:51"]}}
+{"id":"tempora-epi1-0.communion.2","type":"para","t":{"la":["Descéndit Jesus cum eis, et venit Názareth, et erat súbditus illis."]}}
+{"id":"tempora-epi1-0.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Epi1-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-epi1-0.postcommunion.1","type":"para","t":{"la":["Quos cœléstibus réficis sacraméntis, fac, Dómine Jesu, sanctæ Famíliæ tuæ exémpla júgiter imitári: ut in hora mortis nostræ, occurrénte gloriósa Vírgine Matre tua cum beáto Joseph; per te in ætérna tabernácula récipi mereámur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

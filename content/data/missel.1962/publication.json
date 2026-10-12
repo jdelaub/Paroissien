@@ -1,0 +1,4485 @@
+{
+ "id": "missel.1962",
+ "revision": 1,
+ "kind": "missal",
+ "title": {
+  "fr": "Missel romain",
+  "la": "Missale Romanum"
+ },
+ "subtitle": {
+  "fr": "Propre de la messe, 1962 — latin"
+ },
+ "languages": [
+  "la",
+  "fr"
+ ],
+ "primaryLanguage": "la",
+ "aligned": false,
+ "contributors": [
+  {
+   "name": "Divinum Officium (2026)",
+   "role": "editor"
+  }
+ ],
+ "issued": "1962",
+ "source": {
+  "name": "Divinum Officium, rubriques de 1960 (« Rubrics 1960 - 1960 »)",
+  "url": "https://github.com/DivinumOfficium/divinum-officium/tree/b9c100d79ae481c67b2801fdd3622b00dd86bd73/web/www/missa",
+  "edition": "Divinum Officium, commit b9c100d79ae481c67b2801fdd3622b00dd86bd73 : missa/Latin/{Tempora,Sancti,Ordo}, horas/Latin/Commune. Rubriques, titres français et règles de 1960 : Paroissien (content/sources/missel/README.md).",
+  "retrieved": "2026-10-12"
+ },
+ "license": {
+  "spdx": "MIT",
+  "attribution": "Texte latin : Divinum Officium (github.com/DivinumOfficium/divinum-officium), licence MIT. Titres français, rubriques de rang, de Gloria, de Credo et de préface, stations : Paroissien.",
+  "notice": "MIT License\n\nCopyright (c) 2026 Divinum Officium\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+ },
+ "x-divinum-officium": {
+  "repository": "https://github.com/DivinumOfficium/divinum-officium",
+  "commit": "b9c100d79ae481c67b2801fdd3622b00dd86bd73",
+  "manifest": "content/sources/missel/sources.sha256",
+  "manifestSha256": "abb496ba3e5e87af",
+  "files": 497
+ },
+ "divisions": [
+  {
+   "id": "propre-du-temps",
+   "kind": "part",
+   "toc": "Propre du temps",
+   "children": [
+    {
+     "id": "avent",
+     "kind": "section",
+     "toc": "Avent",
+     "children": [
+      {
+       "id": "tempora-adv1-0",
+       "kind": "mass",
+       "toc": "1er dimanche de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv1-1",
+       "kind": "mass",
+       "toc": "Lundi de la 1re semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv1-2",
+       "kind": "mass",
+       "toc": "Mardi de la 1re semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv1-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 1re semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv1-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 1re semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv1-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 1re semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv1-6",
+       "kind": "mass",
+       "toc": "Samedi de la 1re semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv2-0",
+       "kind": "mass",
+       "toc": "2e dimanche de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv2-1",
+       "kind": "mass",
+       "toc": "Lundi de la 2e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv2-2",
+       "kind": "mass",
+       "toc": "Mardi de la 2e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv2-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 2e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv2-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 2e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv2-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 2e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv2-6",
+       "kind": "mass",
+       "toc": "Samedi de la 2e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv3-0",
+       "kind": "mass",
+       "toc": "3e dimanche de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv3-1",
+       "kind": "mass",
+       "toc": "Lundi de la 3e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv3-2",
+       "kind": "mass",
+       "toc": "Mardi de la 3e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv3-3",
+       "kind": "mass",
+       "toc": "Mercredi des Quatre-Temps de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv3-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 3e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv3-5",
+       "kind": "mass",
+       "toc": "Vendredi des Quatre-Temps de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv3-6",
+       "kind": "mass",
+       "toc": "Samedi des Quatre-Temps de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv4-0",
+       "kind": "mass",
+       "toc": "4e dimanche de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv4-1",
+       "kind": "mass",
+       "toc": "Lundi de la 4e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv4-2",
+       "kind": "mass",
+       "toc": "Mardi de la 4e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv4-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 4e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv4-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 4e semaine de l’Avent",
+       "unit": true
+      },
+      {
+       "id": "tempora-adv4-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 4e semaine de l’Avent",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "temps-de-noel",
+     "kind": "section",
+     "toc": "Temps de Noël",
+     "children": [
+      {
+       "id": "sancti-12-24",
+       "kind": "mass",
+       "toc": "Vigile de la Nativité",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-25",
+       "kind": "mass",
+       "toc": "Nativité de Notre-Seigneur",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat1-0",
+       "kind": "mass",
+       "toc": "Dimanche dans l’octave de Noël",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat29",
+       "kind": "mass",
+       "toc": "6e jour dans l’octave de Noël",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat30",
+       "kind": "mass",
+       "toc": "7e jour dans l’octave de Noël",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat31",
+       "kind": "mass",
+       "toc": "8e jour dans l’octave de Noël",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-01",
+       "kind": "mass",
+       "toc": "Octave de la Nativité",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat2-0",
+       "kind": "mass",
+       "toc": "Très saint Nom de Jésus",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat02",
+       "kind": "mass",
+       "toc": "2 janvier, férie du temps de Noël",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat03",
+       "kind": "mass",
+       "toc": "3 janvier, férie du temps de Noël",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat04",
+       "kind": "mass",
+       "toc": "4 janvier, férie du temps de Noël",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat05",
+       "kind": "mass",
+       "toc": "5 janvier, férie du temps de Noël",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-06",
+       "kind": "mass",
+       "toc": "Épiphanie de Notre-Seigneur",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-07",
+       "kind": "mass",
+       "toc": "7 janvier, férie du temps de l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-08",
+       "kind": "mass",
+       "toc": "8 janvier, férie du temps de l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-09",
+       "kind": "mass",
+       "toc": "9 janvier, férie du temps de l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-10",
+       "kind": "mass",
+       "toc": "10 janvier, férie du temps de l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-11",
+       "kind": "mass",
+       "toc": "11 janvier, férie du temps de l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-12",
+       "kind": "mass",
+       "toc": "12 janvier, férie du temps de l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi1-0",
+       "kind": "mass",
+       "toc": "Sainte Famille, Jésus, Marie, Joseph",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi1-1",
+       "kind": "mass",
+       "toc": "Lundi après la Sainte Famille",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi1-2",
+       "kind": "mass",
+       "toc": "Mardi après la Sainte Famille",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi1-3",
+       "kind": "mass",
+       "toc": "Mercredi après la Sainte Famille",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi1-4",
+       "kind": "mass",
+       "toc": "Jeudi après la Sainte Famille",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi1-5",
+       "kind": "mass",
+       "toc": "Vendredi après la Sainte Famille",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi1-6",
+       "kind": "mass",
+       "toc": "Samedi après la Sainte Famille",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-13",
+       "kind": "mass",
+       "toc": "Commémoraison du Baptême de Notre-Seigneur",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "apres-epiphanie",
+     "kind": "section",
+     "toc": "Temps après l’Épiphanie",
+     "children": [
+      {
+       "id": "tempora-epi2-0",
+       "kind": "mass",
+       "toc": "2e dimanche après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi2-1",
+       "kind": "mass",
+       "toc": "Lundi de la 2e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi2-2",
+       "kind": "mass",
+       "toc": "Mardi de la 2e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi2-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 2e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi2-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 2e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi2-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 2e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi2-6",
+       "kind": "mass",
+       "toc": "Samedi de la 2e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi3-0",
+       "kind": "mass",
+       "toc": "3e dimanche après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi3-1",
+       "kind": "mass",
+       "toc": "Lundi de la 3e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi3-2",
+       "kind": "mass",
+       "toc": "Mardi de la 3e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi3-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 3e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi3-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 3e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi3-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 3e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi3-6",
+       "kind": "mass",
+       "toc": "Samedi de la 3e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi4-0",
+       "kind": "mass",
+       "toc": "4e dimanche après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi4-1",
+       "kind": "mass",
+       "toc": "Lundi de la 4e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi4-2",
+       "kind": "mass",
+       "toc": "Mardi de la 4e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi4-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 4e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi4-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 4e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi4-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 4e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi4-6",
+       "kind": "mass",
+       "toc": "Samedi de la 4e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi5-0",
+       "kind": "mass",
+       "toc": "5e dimanche après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi5-1",
+       "kind": "mass",
+       "toc": "Lundi de la 5e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi5-2",
+       "kind": "mass",
+       "toc": "Mardi de la 5e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi5-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 5e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi5-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 5e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi5-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 5e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi5-6",
+       "kind": "mass",
+       "toc": "Samedi de la 5e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi6-0",
+       "kind": "mass",
+       "toc": "6e dimanche après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi6-1",
+       "kind": "mass",
+       "toc": "Lundi de la 6e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi6-2",
+       "kind": "mass",
+       "toc": "Mardi de la 6e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi6-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 6e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi6-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 6e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi6-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 6e semaine après l’Épiphanie",
+       "unit": true
+      },
+      {
+       "id": "tempora-epi6-6",
+       "kind": "mass",
+       "toc": "Samedi de la 6e semaine après l’Épiphanie",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "septuagesime",
+     "kind": "section",
+     "toc": "Septuagésime",
+     "children": [
+      {
+       "id": "tempora-quadp1-0",
+       "kind": "mass",
+       "toc": "Dimanche de la Septuagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp1-1",
+       "kind": "mass",
+       "toc": "Lundi après la Septuagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp1-2",
+       "kind": "mass",
+       "toc": "Mardi après la Septuagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp1-3",
+       "kind": "mass",
+       "toc": "Mercredi après la Septuagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp1-4",
+       "kind": "mass",
+       "toc": "Jeudi après la Septuagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp1-5",
+       "kind": "mass",
+       "toc": "Vendredi après la Septuagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp1-6",
+       "kind": "mass",
+       "toc": "Samedi après la Septuagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp2-0",
+       "kind": "mass",
+       "toc": "Dimanche de la Sexagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp2-1",
+       "kind": "mass",
+       "toc": "Lundi après la Sexagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp2-2",
+       "kind": "mass",
+       "toc": "Mardi après la Sexagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp2-3",
+       "kind": "mass",
+       "toc": "Mercredi après la Sexagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp2-4",
+       "kind": "mass",
+       "toc": "Jeudi après la Sexagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp2-5",
+       "kind": "mass",
+       "toc": "Vendredi après la Sexagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp2-6",
+       "kind": "mass",
+       "toc": "Samedi après la Sexagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp3-0",
+       "kind": "mass",
+       "toc": "Dimanche de la Quinquagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp3-1",
+       "kind": "mass",
+       "toc": "Lundi après la Quinquagésime",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp3-2",
+       "kind": "mass",
+       "toc": "Mardi après la Quinquagésime",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "careme",
+     "kind": "section",
+     "toc": "Carême",
+     "children": [
+      {
+       "id": "tempora-quadp3-3",
+       "kind": "mass",
+       "toc": "Mercredi des Cendres",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp3-4",
+       "kind": "mass",
+       "toc": "Jeudi après les Cendres",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp3-5",
+       "kind": "mass",
+       "toc": "Vendredi après les Cendres",
+       "unit": true
+      },
+      {
+       "id": "tempora-quadp3-6",
+       "kind": "mass",
+       "toc": "Samedi après les Cendres",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad1-0",
+       "kind": "mass",
+       "toc": "1er dimanche de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad1-1",
+       "kind": "mass",
+       "toc": "Lundi de la 1re semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad1-2",
+       "kind": "mass",
+       "toc": "Mardi de la 1re semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad1-3",
+       "kind": "mass",
+       "toc": "Mercredi des Quatre-Temps de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad1-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 1re semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad1-5",
+       "kind": "mass",
+       "toc": "Vendredi des Quatre-Temps de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad1-6",
+       "kind": "mass",
+       "toc": "Samedi des Quatre-Temps de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad2-0",
+       "kind": "mass",
+       "toc": "2e dimanche de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad2-1",
+       "kind": "mass",
+       "toc": "Lundi de la 2e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad2-2",
+       "kind": "mass",
+       "toc": "Mardi de la 2e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad2-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 2e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad2-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 2e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad2-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 2e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad2-6",
+       "kind": "mass",
+       "toc": "Samedi de la 2e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad3-0",
+       "kind": "mass",
+       "toc": "3e dimanche de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad3-1",
+       "kind": "mass",
+       "toc": "Lundi de la 3e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad3-2",
+       "kind": "mass",
+       "toc": "Mardi de la 3e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad3-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 3e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad3-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 3e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad3-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 3e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad3-6",
+       "kind": "mass",
+       "toc": "Samedi de la 3e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad4-0",
+       "kind": "mass",
+       "toc": "4e dimanche de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad4-1",
+       "kind": "mass",
+       "toc": "Lundi de la 4e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad4-2",
+       "kind": "mass",
+       "toc": "Mardi de la 4e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad4-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 4e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad4-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 4e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad4-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 4e semaine de Carême",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad4-6",
+       "kind": "mass",
+       "toc": "Samedi de la 4e semaine de Carême",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "passion",
+     "kind": "section",
+     "toc": "Temps de la Passion et Semaine sainte",
+     "children": [
+      {
+       "id": "tempora-quad5-0",
+       "kind": "mass",
+       "toc": "1er dimanche de la Passion",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad5-1",
+       "kind": "mass",
+       "toc": "Lundi de la semaine de la Passion",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad5-2",
+       "kind": "mass",
+       "toc": "Mardi de la semaine de la Passion",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad5-3",
+       "kind": "mass",
+       "toc": "Mercredi de la semaine de la Passion",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad5-4",
+       "kind": "mass",
+       "toc": "Jeudi de la semaine de la Passion",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad5-5",
+       "kind": "mass",
+       "toc": "Vendredi de la semaine de la Passion",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad5-6",
+       "kind": "mass",
+       "toc": "Samedi de la semaine de la Passion",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad6-0",
+       "kind": "mass",
+       "toc": "2e dimanche de la Passion ou des Rameaux",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad6-1",
+       "kind": "mass",
+       "toc": "Lundi saint",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad6-2",
+       "kind": "mass",
+       "toc": "Mardi saint",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad6-3",
+       "kind": "mass",
+       "toc": "Mercredi saint",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad6-4",
+       "kind": "mass",
+       "toc": "Jeudi saint",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad6-5",
+       "kind": "mass",
+       "toc": "Vendredi saint",
+       "unit": true
+      },
+      {
+       "id": "tempora-quad6-6",
+       "kind": "mass",
+       "toc": "Samedi saint",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "temps-pascal",
+     "kind": "section",
+     "toc": "Temps pascal",
+     "children": [
+      {
+       "id": "tempora-pasc0-0",
+       "kind": "mass",
+       "toc": "Dimanche de Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc0-1",
+       "kind": "mass",
+       "toc": "Lundi de Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc0-2",
+       "kind": "mass",
+       "toc": "Mardi de Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc0-3",
+       "kind": "mass",
+       "toc": "Mercredi de Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc0-4",
+       "kind": "mass",
+       "toc": "Jeudi de Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc0-5",
+       "kind": "mass",
+       "toc": "Vendredi de Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc0-6",
+       "kind": "mass",
+       "toc": "Samedi de Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc1-0",
+       "kind": "mass",
+       "toc": "Dimanche in albis, octave de Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc1-1",
+       "kind": "mass",
+       "toc": "Lundi de la 1re semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc1-2",
+       "kind": "mass",
+       "toc": "Mardi de la 1re semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc1-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 1re semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc1-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 1re semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc1-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 1re semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc1-6",
+       "kind": "mass",
+       "toc": "Samedi de la 1re semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc2-0",
+       "kind": "mass",
+       "toc": "2e dimanche après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc2-1",
+       "kind": "mass",
+       "toc": "Lundi de la 2e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc2-2",
+       "kind": "mass",
+       "toc": "Mardi de la 2e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc2-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 2e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc2-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 2e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc2-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 2e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc2-6",
+       "kind": "mass",
+       "toc": "Samedi de la 2e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc3-0",
+       "kind": "mass",
+       "toc": "3e dimanche après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc3-1",
+       "kind": "mass",
+       "toc": "Lundi de la 3e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc3-2",
+       "kind": "mass",
+       "toc": "Mardi de la 3e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc3-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 3e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc3-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 3e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc3-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 3e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc3-6",
+       "kind": "mass",
+       "toc": "Samedi de la 3e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc4-0",
+       "kind": "mass",
+       "toc": "4e dimanche après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc4-1",
+       "kind": "mass",
+       "toc": "Lundi de la 4e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc4-2",
+       "kind": "mass",
+       "toc": "Mardi de la 4e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc4-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 4e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc4-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 4e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc4-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 4e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc4-6",
+       "kind": "mass",
+       "toc": "Samedi de la 4e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc5-0",
+       "kind": "mass",
+       "toc": "5e dimanche après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc5-1",
+       "kind": "mass",
+       "toc": "Lundi des Rogations",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc5-2",
+       "kind": "mass",
+       "toc": "Mardi de la 5e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc5-3",
+       "kind": "mass",
+       "toc": "Vigile de l’Ascension",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc5-4",
+       "kind": "mass",
+       "toc": "Ascension de Notre-Seigneur",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc5-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 5e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc5-6",
+       "kind": "mass",
+       "toc": "Samedi de la 5e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc6-0",
+       "kind": "mass",
+       "toc": "Dimanche après l’Ascension",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc6-1",
+       "kind": "mass",
+       "toc": "Lundi de la 6e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc6-2",
+       "kind": "mass",
+       "toc": "Mardi de la 6e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc6-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 6e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc6-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 6e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc6-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 6e semaine après Pâques",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc6-6",
+       "kind": "mass",
+       "toc": "Vigile de la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc7-0",
+       "kind": "mass",
+       "toc": "Dimanche de la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc7-1",
+       "kind": "mass",
+       "toc": "Lundi de la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc7-2",
+       "kind": "mass",
+       "toc": "Mardi de la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc7-3",
+       "kind": "mass",
+       "toc": "Mercredi de la Pentecôte, Quatre-Temps",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc7-4",
+       "kind": "mass",
+       "toc": "Jeudi de la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc7-5",
+       "kind": "mass",
+       "toc": "Vendredi de la Pentecôte, Quatre-Temps",
+       "unit": true
+      },
+      {
+       "id": "tempora-pasc7-6",
+       "kind": "mass",
+       "toc": "Samedi de la Pentecôte, Quatre-Temps",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "apres-pentecote",
+     "kind": "section",
+     "toc": "Temps après la Pentecôte",
+     "children": [
+      {
+       "id": "tempora-pent01-0",
+       "kind": "mass",
+       "toc": "Très Sainte Trinité",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent01-1",
+       "kind": "mass",
+       "toc": "Lundi de la 1re semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent01-2",
+       "kind": "mass",
+       "toc": "Mardi de la 1re semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent01-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 1re semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent01-4",
+       "kind": "mass",
+       "toc": "Fête-Dieu, le Très Saint-Sacrement",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent01-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 1re semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent01-6",
+       "kind": "mass",
+       "toc": "Samedi de la 1re semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent02-0",
+       "kind": "mass",
+       "toc": "2e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent02-1",
+       "kind": "mass",
+       "toc": "Lundi de la 2e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent02-2",
+       "kind": "mass",
+       "toc": "Mardi de la 2e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent02-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 2e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent02-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 2e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent02-5",
+       "kind": "mass",
+       "toc": "Sacré-Cœur de Jésus",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent02-6",
+       "kind": "mass",
+       "toc": "Samedi de la 2e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent03-0",
+       "kind": "mass",
+       "toc": "3e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent03-1",
+       "kind": "mass",
+       "toc": "Lundi de la 3e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent03-2",
+       "kind": "mass",
+       "toc": "Mardi de la 3e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent03-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 3e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent03-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 3e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent03-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 3e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent03-6",
+       "kind": "mass",
+       "toc": "Samedi de la 3e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent04-0",
+       "kind": "mass",
+       "toc": "4e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent04-1",
+       "kind": "mass",
+       "toc": "Lundi de la 4e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent04-2",
+       "kind": "mass",
+       "toc": "Mardi de la 4e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent04-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 4e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent04-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 4e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent04-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 4e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent04-6",
+       "kind": "mass",
+       "toc": "Samedi de la 4e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent05-0",
+       "kind": "mass",
+       "toc": "5e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent05-1",
+       "kind": "mass",
+       "toc": "Lundi de la 5e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent05-2",
+       "kind": "mass",
+       "toc": "Mardi de la 5e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent05-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 5e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent05-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 5e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent05-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 5e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent05-6",
+       "kind": "mass",
+       "toc": "Samedi de la 5e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent06-0",
+       "kind": "mass",
+       "toc": "6e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent06-1",
+       "kind": "mass",
+       "toc": "Lundi de la 6e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent06-2",
+       "kind": "mass",
+       "toc": "Mardi de la 6e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent06-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 6e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent06-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 6e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent06-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 6e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent06-6",
+       "kind": "mass",
+       "toc": "Samedi de la 6e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent07-0",
+       "kind": "mass",
+       "toc": "7e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent07-1",
+       "kind": "mass",
+       "toc": "Lundi de la 7e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent07-2",
+       "kind": "mass",
+       "toc": "Mardi de la 7e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent07-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 7e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent07-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 7e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent07-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 7e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent07-6",
+       "kind": "mass",
+       "toc": "Samedi de la 7e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent08-0",
+       "kind": "mass",
+       "toc": "8e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent08-1",
+       "kind": "mass",
+       "toc": "Lundi de la 8e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent08-2",
+       "kind": "mass",
+       "toc": "Mardi de la 8e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent08-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 8e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent08-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 8e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent08-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 8e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent08-6",
+       "kind": "mass",
+       "toc": "Samedi de la 8e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent09-0",
+       "kind": "mass",
+       "toc": "9e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent09-1",
+       "kind": "mass",
+       "toc": "Lundi de la 9e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent09-2",
+       "kind": "mass",
+       "toc": "Mardi de la 9e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent09-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 9e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent09-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 9e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent09-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 9e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent09-6",
+       "kind": "mass",
+       "toc": "Samedi de la 9e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent10-0",
+       "kind": "mass",
+       "toc": "10e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent10-1",
+       "kind": "mass",
+       "toc": "Lundi de la 10e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent10-2",
+       "kind": "mass",
+       "toc": "Mardi de la 10e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent10-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 10e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent10-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 10e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent10-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 10e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent10-6",
+       "kind": "mass",
+       "toc": "Samedi de la 10e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent11-0",
+       "kind": "mass",
+       "toc": "11e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent11-1",
+       "kind": "mass",
+       "toc": "Lundi de la 11e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent11-2",
+       "kind": "mass",
+       "toc": "Mardi de la 11e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent11-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 11e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent11-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 11e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent11-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 11e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent11-6",
+       "kind": "mass",
+       "toc": "Samedi de la 11e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent12-0",
+       "kind": "mass",
+       "toc": "12e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent12-1",
+       "kind": "mass",
+       "toc": "Lundi de la 12e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent12-2",
+       "kind": "mass",
+       "toc": "Mardi de la 12e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent12-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 12e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent12-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 12e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent12-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 12e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent12-6",
+       "kind": "mass",
+       "toc": "Samedi de la 12e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent13-0",
+       "kind": "mass",
+       "toc": "13e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent13-1",
+       "kind": "mass",
+       "toc": "Lundi de la 13e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent13-2",
+       "kind": "mass",
+       "toc": "Mardi de la 13e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent13-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 13e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent13-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 13e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent13-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 13e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent13-6",
+       "kind": "mass",
+       "toc": "Samedi de la 13e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent14-0",
+       "kind": "mass",
+       "toc": "14e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent14-1",
+       "kind": "mass",
+       "toc": "Lundi de la 14e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent14-2",
+       "kind": "mass",
+       "toc": "Mardi de la 14e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent14-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 14e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent14-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 14e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent14-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 14e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent14-6",
+       "kind": "mass",
+       "toc": "Samedi de la 14e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent15-0",
+       "kind": "mass",
+       "toc": "15e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent15-1",
+       "kind": "mass",
+       "toc": "Lundi de la 15e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent15-2",
+       "kind": "mass",
+       "toc": "Mardi de la 15e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent15-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 15e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent15-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 15e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent15-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 15e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent15-6",
+       "kind": "mass",
+       "toc": "Samedi de la 15e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent16-0",
+       "kind": "mass",
+       "toc": "16e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent16-1",
+       "kind": "mass",
+       "toc": "Lundi de la 16e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent16-2",
+       "kind": "mass",
+       "toc": "Mardi de la 16e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent16-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 16e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent16-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 16e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent16-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 16e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent16-6",
+       "kind": "mass",
+       "toc": "Samedi de la 16e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent17-0",
+       "kind": "mass",
+       "toc": "17e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent17-1",
+       "kind": "mass",
+       "toc": "Lundi de la 17e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent17-2",
+       "kind": "mass",
+       "toc": "Mardi de la 17e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent17-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 17e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent17-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 17e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent17-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 17e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent17-6",
+       "kind": "mass",
+       "toc": "Samedi de la 17e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-093-3",
+       "kind": "mass",
+       "toc": "Mercredi des Quatre-Temps de septembre",
+       "unit": true
+      },
+      {
+       "id": "tempora-093-5",
+       "kind": "mass",
+       "toc": "Vendredi des Quatre-Temps de septembre",
+       "unit": true
+      },
+      {
+       "id": "tempora-093-6",
+       "kind": "mass",
+       "toc": "Samedi des Quatre-Temps de septembre",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent18-0",
+       "kind": "mass",
+       "toc": "18e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent18-1",
+       "kind": "mass",
+       "toc": "Lundi de la 18e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent18-2",
+       "kind": "mass",
+       "toc": "Mardi de la 18e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent18-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 18e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent18-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 18e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent18-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 18e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent18-6",
+       "kind": "mass",
+       "toc": "Samedi de la 18e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent19-0",
+       "kind": "mass",
+       "toc": "19e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent19-1",
+       "kind": "mass",
+       "toc": "Lundi de la 19e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent19-2",
+       "kind": "mass",
+       "toc": "Mardi de la 19e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent19-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 19e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent19-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 19e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent19-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 19e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent19-6",
+       "kind": "mass",
+       "toc": "Samedi de la 19e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent20-0",
+       "kind": "mass",
+       "toc": "20e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent20-1",
+       "kind": "mass",
+       "toc": "Lundi de la 20e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent20-2",
+       "kind": "mass",
+       "toc": "Mardi de la 20e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent20-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 20e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent20-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 20e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent20-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 20e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent20-6",
+       "kind": "mass",
+       "toc": "Samedi de la 20e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent21-0",
+       "kind": "mass",
+       "toc": "21e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent21-1",
+       "kind": "mass",
+       "toc": "Lundi de la 21e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent21-2",
+       "kind": "mass",
+       "toc": "Mardi de la 21e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent21-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 21e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent21-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 21e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent21-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 21e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent21-6",
+       "kind": "mass",
+       "toc": "Samedi de la 21e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent22-0",
+       "kind": "mass",
+       "toc": "22e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent22-1",
+       "kind": "mass",
+       "toc": "Lundi de la 22e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent22-2",
+       "kind": "mass",
+       "toc": "Mardi de la 22e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent22-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 22e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent22-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 22e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent22-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 22e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent22-6",
+       "kind": "mass",
+       "toc": "Samedi de la 22e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent23-0",
+       "kind": "mass",
+       "toc": "23e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent23-1",
+       "kind": "mass",
+       "toc": "Lundi de la 23e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent23-2",
+       "kind": "mass",
+       "toc": "Mardi de la 23e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent23-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 23e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent23-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 23e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent23-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 23e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent23-6",
+       "kind": "mass",
+       "toc": "Samedi de la 23e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi3-1",
+       "kind": "mass",
+       "toc": "Lundi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi3-2",
+       "kind": "mass",
+       "toc": "Mardi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi3-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi3-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi3-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi3-6",
+       "kind": "mass",
+       "toc": "Samedi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi4-0",
+       "kind": "mass",
+       "toc": "4e dimanche après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi4-1",
+       "kind": "mass",
+       "toc": "Lundi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi4-2",
+       "kind": "mass",
+       "toc": "Mardi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi4-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi4-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi4-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi4-6",
+       "kind": "mass",
+       "toc": "Samedi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi5-0",
+       "kind": "mass",
+       "toc": "5e dimanche après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi5-1",
+       "kind": "mass",
+       "toc": "Lundi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi5-2",
+       "kind": "mass",
+       "toc": "Mardi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi5-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi5-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi5-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi5-6",
+       "kind": "mass",
+       "toc": "Samedi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi6-0",
+       "kind": "mass",
+       "toc": "6e dimanche après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi6-1",
+       "kind": "mass",
+       "toc": "Lundi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi6-2",
+       "kind": "mass",
+       "toc": "Mardi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi6-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi6-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi6-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pentepi6-6",
+       "kind": "mass",
+       "toc": "Samedi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent24-0",
+       "kind": "mass",
+       "toc": "24e dimanche après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent24-1",
+       "kind": "mass",
+       "toc": "Lundi de la 24e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent24-2",
+       "kind": "mass",
+       "toc": "Mardi de la 24e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent24-3",
+       "kind": "mass",
+       "toc": "Mercredi de la 24e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent24-4",
+       "kind": "mass",
+       "toc": "Jeudi de la 24e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent24-5",
+       "kind": "mass",
+       "toc": "Vendredi de la 24e semaine après la Pentecôte",
+       "unit": true
+      },
+      {
+       "id": "tempora-pent24-6",
+       "kind": "mass",
+       "toc": "Samedi de la 24e semaine après la Pentecôte",
+       "unit": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "propre-des-saints",
+   "kind": "part",
+   "toc": "Propre des saints",
+   "children": [
+    {
+     "id": "saints-janvier",
+     "kind": "section",
+     "toc": "Janvier",
+     "children": [
+      {
+       "id": "sancti-01-03",
+       "kind": "mass",
+       "toc": "3 janvier — Sainte Geneviève, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-05cc",
+       "kind": "mass",
+       "toc": "5 janvier — Saint Télesphore, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-11cc",
+       "kind": "mass",
+       "toc": "11 janvier — Saint Hygin, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-14",
+       "kind": "mass",
+       "toc": "14 janvier — Saint Hilaire, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-15",
+       "kind": "mass",
+       "toc": "15 janvier — Saint Paul, premier ermite, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-16",
+       "kind": "mass",
+       "toc": "16 janvier — Saint Marcel Ier, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-17",
+       "kind": "mass",
+       "toc": "17 janvier — Saint Antoine, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-18r",
+       "kind": "mass",
+       "toc": "18 janvier — Sainte Prisque, vierge et martyre",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-19",
+       "kind": "mass",
+       "toc": "19 janvier — Saints Marius, Marthe, Audifax et Abachum, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-20",
+       "kind": "mass",
+       "toc": "20 janvier — Saints Fabien et Sébastien, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-21",
+       "kind": "mass",
+       "toc": "21 janvier — Sainte Agnès, vierge et martyre",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-22",
+       "kind": "mass",
+       "toc": "22 janvier — Saints Vincent et Anastase, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-23",
+       "kind": "mass",
+       "toc": "23 janvier — Saint Raymond de Peñafort, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-24",
+       "kind": "mass",
+       "toc": "24 janvier — Saint Timothée, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-25r",
+       "kind": "mass",
+       "toc": "25 janvier — Conversion de saint Paul, apôtre",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-26",
+       "kind": "mass",
+       "toc": "26 janvier — Saint Polycarpe, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-27",
+       "kind": "mass",
+       "toc": "27 janvier — Saint Jean Chrysostome, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-28",
+       "kind": "mass",
+       "toc": "28 janvier — Saint Pierre Nolasque, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-29",
+       "kind": "mass",
+       "toc": "29 janvier — Saint François de Sales, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-30",
+       "kind": "mass",
+       "toc": "30 janvier — Sainte Martine, vierge et martyre",
+       "unit": true
+      },
+      {
+       "id": "sancti-01-31",
+       "kind": "mass",
+       "toc": "31 janvier — Saint Jean Bosco, confesseur",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-fevrier",
+     "kind": "section",
+     "toc": "Février",
+     "children": [
+      {
+       "id": "sancti-02-01",
+       "kind": "mass",
+       "toc": "1er février — Saint Ignace d’Antioche, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-02",
+       "kind": "mass",
+       "toc": "2 février — Purification de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-03",
+       "kind": "mass",
+       "toc": "3 février — Saint Blaise, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-04",
+       "kind": "mass",
+       "toc": "4 février — Saint André Corsini, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-05",
+       "kind": "mass",
+       "toc": "5 février — Sainte Agathe, vierge et martyre",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-06",
+       "kind": "mass",
+       "toc": "6 février — Saint Tite, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-07",
+       "kind": "mass",
+       "toc": "7 février — Saint Romuald, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-08",
+       "kind": "mass",
+       "toc": "8 février — Saint Jean de Matha, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-09",
+       "kind": "mass",
+       "toc": "9 février — Saint Cyrille d’Alexandrie, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-10",
+       "kind": "mass",
+       "toc": "10 février — Sainte Scholastique, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-11",
+       "kind": "mass",
+       "toc": "11 février — Apparition de la bienheureuse Vierge Marie Immaculée",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-12",
+       "kind": "mass",
+       "toc": "12 février — Les sept saints Fondateurs de l’ordre des Servites de Marie, confesseurs",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-14",
+       "kind": "mass",
+       "toc": "14 février — Saint Valentin, prêtre et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-15",
+       "kind": "mass",
+       "toc": "15 février — Saints Faustin et Jovite, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-18",
+       "kind": "mass",
+       "toc": "18 février — Saint Siméon, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-22",
+       "kind": "mass",
+       "toc": "22 février — Chaire de saint Pierre, apôtre",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-23r",
+       "kind": "mass",
+       "toc": "23 février — Saint Pierre Damien, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-24",
+       "kind": "mass",
+       "toc": "24 février — Saint Matthias, apôtre",
+       "unit": true
+      },
+      {
+       "id": "sancti-02-27",
+       "kind": "mass",
+       "toc": "27 février — Saint Gabriel de la Vierge des Douleurs, confesseur",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-mars",
+     "kind": "section",
+     "toc": "Mars",
+     "children": [
+      {
+       "id": "sancti-03-04",
+       "kind": "mass",
+       "toc": "4 mars — Saint Casimir, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-06",
+       "kind": "mass",
+       "toc": "6 mars — Saintes Perpétue et Félicité, martyres",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-07",
+       "kind": "mass",
+       "toc": "7 mars — Saint Thomas d’Aquin, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-08",
+       "kind": "mass",
+       "toc": "8 mars — Saint Jean de Dieu, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-09",
+       "kind": "mass",
+       "toc": "9 mars — Sainte Françoise Romaine, veuve",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-10",
+       "kind": "mass",
+       "toc": "10 mars — Les saints Quarante Martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-12",
+       "kind": "mass",
+       "toc": "12 mars — Saint Grégoire le Grand, pape, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-17",
+       "kind": "mass",
+       "toc": "17 mars — Saint Patrice, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-18",
+       "kind": "mass",
+       "toc": "18 mars — Saint Cyrille de Jérusalem, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-19",
+       "kind": "mass",
+       "toc": "19 mars — Saint Joseph, époux de la bienheureuse Vierge Marie, confesseur, patron de l’Église universelle",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-21",
+       "kind": "mass",
+       "toc": "21 mars — Saint Benoît, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-24",
+       "kind": "mass",
+       "toc": "24 mars — Saint Gabriel, archange",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-25",
+       "kind": "mass",
+       "toc": "25 mars — Annonciation de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-27",
+       "kind": "mass",
+       "toc": "27 mars — Saint Jean Damascène, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-03-28",
+       "kind": "mass",
+       "toc": "28 mars — Saint Jean de Capistran, confesseur",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-avril",
+     "kind": "section",
+     "toc": "Avril",
+     "children": [
+      {
+       "id": "sancti-04-02",
+       "kind": "mass",
+       "toc": "2 avril — Saint François de Paule, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-04",
+       "kind": "mass",
+       "toc": "4 avril — Saint Isidore, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-05",
+       "kind": "mass",
+       "toc": "5 avril — Saint Vincent Ferrier, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-11",
+       "kind": "mass",
+       "toc": "11 avril — Saint Léon le Grand, pape, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-13",
+       "kind": "mass",
+       "toc": "13 avril — Saint Herménégilde, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-14",
+       "kind": "mass",
+       "toc": "14 avril — Saint Justin, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-17",
+       "kind": "mass",
+       "toc": "17 avril — Saint Anicet, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-21",
+       "kind": "mass",
+       "toc": "21 avril — Saint Anselme, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-22",
+       "kind": "mass",
+       "toc": "22 avril — Saints Soter et Caïus, papes et martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-23",
+       "kind": "mass",
+       "toc": "23 avril — Saint Georges, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-24",
+       "kind": "mass",
+       "toc": "24 avril — Saint Fidèle de Sigmaringen, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-25",
+       "kind": "mass",
+       "toc": "25 avril — Saint Marc, évangéliste",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-26",
+       "kind": "mass",
+       "toc": "26 avril — Saints Clet et Marcellin, papes et martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-27",
+       "kind": "mass",
+       "toc": "27 avril — Saint Pierre Canisius, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-28",
+       "kind": "mass",
+       "toc": "28 avril — Saint Paul de la Croix, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-29",
+       "kind": "mass",
+       "toc": "29 avril — Saint Pierre de Vérone, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-04-30",
+       "kind": "mass",
+       "toc": "30 avril — Sainte Catherine de Sienne, vierge",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-mai",
+     "kind": "section",
+     "toc": "Mai",
+     "children": [
+      {
+       "id": "sancti-05-01r",
+       "kind": "mass",
+       "toc": "1er mai — Saint Joseph artisan, époux de la bienheureuse Vierge Marie, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-02",
+       "kind": "mass",
+       "toc": "2 mai — Saint Athanase, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-03r",
+       "kind": "mass",
+       "toc": "3 mai — Saints Alexandre Ier, pape, Événce et Théodule, martyrs, et saint Juvénal, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-04",
+       "kind": "mass",
+       "toc": "4 mai — Sainte Monique, veuve",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-05",
+       "kind": "mass",
+       "toc": "5 mai — Saint Pie V, pape et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-07",
+       "kind": "mass",
+       "toc": "7 mai — Saint Stanislas, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-09",
+       "kind": "mass",
+       "toc": "9 mai — Saint Grégoire de Nazianze, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-10",
+       "kind": "mass",
+       "toc": "10 mai — Saint Antonin, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-11r",
+       "kind": "mass",
+       "toc": "11 mai — Saints Philippe et Jacques, apôtres",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-12",
+       "kind": "mass",
+       "toc": "12 mai — Saints Nérée, Achillée, Domitille, vierge, et Pancrace, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-13",
+       "kind": "mass",
+       "toc": "13 mai — Saint Robert Bellarmin, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-14",
+       "kind": "mass",
+       "toc": "14 mai — Saint Boniface, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-15",
+       "kind": "mass",
+       "toc": "15 mai — Saint Jean-Baptiste de La Salle, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-16",
+       "kind": "mass",
+       "toc": "16 mai — Saint Ubald, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-17",
+       "kind": "mass",
+       "toc": "17 mai — Saint Pascal Baylon, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-18",
+       "kind": "mass",
+       "toc": "18 mai — Saint Venant, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-19",
+       "kind": "mass",
+       "toc": "19 mai — Saint Pierre Célestin, pape et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-20",
+       "kind": "mass",
+       "toc": "20 mai — Saint Bernardin de Sienne, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-25",
+       "kind": "mass",
+       "toc": "25 mai — Saint Grégoire VII, pape et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-26",
+       "kind": "mass",
+       "toc": "26 mai — Saint Philippe Néri, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-27",
+       "kind": "mass",
+       "toc": "27 mai — Saint Bède le Vénérable, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-28",
+       "kind": "mass",
+       "toc": "28 mai — Saint Augustin de Cantorbéry, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-29",
+       "kind": "mass",
+       "toc": "29 mai — Sainte Marie-Madeleine de Pazzi, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-30",
+       "kind": "mass",
+       "toc": "30 mai — Saint Félix Ier, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-05-31",
+       "kind": "mass",
+       "toc": "31 mai — La bienheureuse Vierge Marie, Reine",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-juin",
+     "kind": "section",
+     "toc": "Juin",
+     "children": [
+      {
+       "id": "sancti-06-01",
+       "kind": "mass",
+       "toc": "1er juin — Sainte Angèle Merici, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-02",
+       "kind": "mass",
+       "toc": "2 juin — Saints Marcellin, Pierre et Érasme, évêque, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-04",
+       "kind": "mass",
+       "toc": "4 juin — Saint François Caracciolo, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-05",
+       "kind": "mass",
+       "toc": "5 juin — Saint Boniface, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-06",
+       "kind": "mass",
+       "toc": "6 juin — Saint Norbert, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-09",
+       "kind": "mass",
+       "toc": "9 juin — Saints Prime et Félicien, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-10",
+       "kind": "mass",
+       "toc": "10 juin — Sainte Marguerite, reine, veuve",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-11",
+       "kind": "mass",
+       "toc": "11 juin — Saint Barnabé, apôtre",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-12",
+       "kind": "mass",
+       "toc": "12 juin — Saint Jean de Saint-Facond, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-13",
+       "kind": "mass",
+       "toc": "13 juin — Saint Antoine de Padoue, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-14",
+       "kind": "mass",
+       "toc": "14 juin — Saint Basile le Grand, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-15",
+       "kind": "mass",
+       "toc": "15 juin — Saints Guy, Modeste et Crescence, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-17r",
+       "kind": "mass",
+       "toc": "17 juin — Saint Grégoire Barbarigo, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-18",
+       "kind": "mass",
+       "toc": "18 juin — Saint Éphrem le Syrien, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-19",
+       "kind": "mass",
+       "toc": "19 juin — Sainte Julienne Falconieri, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-20",
+       "kind": "mass",
+       "toc": "20 juin — Saint Silvère, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-21",
+       "kind": "mass",
+       "toc": "21 juin — Saint Louis de Gonzague, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-22",
+       "kind": "mass",
+       "toc": "22 juin — Saint Paulin, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-23",
+       "kind": "mass",
+       "toc": "23 juin — Vigile de la Nativité de saint Jean-Baptiste",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-24",
+       "kind": "mass",
+       "toc": "24 juin — Nativité de saint Jean-Baptiste",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-25",
+       "kind": "mass",
+       "toc": "25 juin — Saint Guillaume, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-26",
+       "kind": "mass",
+       "toc": "26 juin — Saints Jean et Paul, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-28r",
+       "kind": "mass",
+       "toc": "28 juin — Vigile des saints Pierre et Paul, apôtres",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-29",
+       "kind": "mass",
+       "toc": "29 juin — Saints Pierre et Paul, apôtres",
+       "unit": true
+      },
+      {
+       "id": "sancti-06-30",
+       "kind": "mass",
+       "toc": "30 juin — Commémoraison de saint Paul, apôtre",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-juillet",
+     "kind": "section",
+     "toc": "Juillet",
+     "children": [
+      {
+       "id": "sancti-07-01",
+       "kind": "mass",
+       "toc": "1er juillet — Précieux Sang de Notre-Seigneur Jésus-Christ",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-02",
+       "kind": "mass",
+       "toc": "2 juillet — Visitation de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-03r",
+       "kind": "mass",
+       "toc": "3 juillet — Saint Irénée, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-05",
+       "kind": "mass",
+       "toc": "5 juillet — Saint Antoine-Marie Zaccaria, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-07",
+       "kind": "mass",
+       "toc": "7 juillet — Saints Cyrille et Méthode, évêques et confesseurs",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-08",
+       "kind": "mass",
+       "toc": "8 juillet — Sainte Élisabeth de Portugal, reine, veuve",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-10",
+       "kind": "mass",
+       "toc": "10 juillet — Les sept saints Frères, martyrs, et saintes Rufine et Seconde, vierges et martyres",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-11",
+       "kind": "mass",
+       "toc": "11 juillet — Saint Pie Ier, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-12",
+       "kind": "mass",
+       "toc": "12 juillet — Saint Jean Gualbert, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-14",
+       "kind": "mass",
+       "toc": "14 juillet — Saint Bonaventure, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-15",
+       "kind": "mass",
+       "toc": "15 juillet — Saint Henri, empereur, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-16",
+       "kind": "mass",
+       "toc": "16 juillet — Notre-Dame du Mont-Carmel",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-17",
+       "kind": "mass",
+       "toc": "17 juillet — Saint Alexis, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-18",
+       "kind": "mass",
+       "toc": "18 juillet — Saint Camille de Lellis, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-19",
+       "kind": "mass",
+       "toc": "19 juillet — Saint Vincent de Paul, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-20",
+       "kind": "mass",
+       "toc": "20 juillet — Saint Jérôme Émilien, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-21r",
+       "kind": "mass",
+       "toc": "21 juillet — Saint Laurent de Brindes, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-22",
+       "kind": "mass",
+       "toc": "22 juillet — Sainte Marie-Madeleine, pénitente",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-23",
+       "kind": "mass",
+       "toc": "23 juillet — Saint Apollinaire, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-24r",
+       "kind": "mass",
+       "toc": "24 juillet — Sainte Christine, vierge et martyre",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-25",
+       "kind": "mass",
+       "toc": "25 juillet — Saint Jacques le Majeur, apôtre",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-26",
+       "kind": "mass",
+       "toc": "26 juillet — Sainte Anne, mère de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-27",
+       "kind": "mass",
+       "toc": "27 juillet — Saint Pantaléon, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-28",
+       "kind": "mass",
+       "toc": "28 juillet — Saints Nazaire et Celse, martyrs, Victor Ier, pape et martyr, et Innocent Ier, pape et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-29",
+       "kind": "mass",
+       "toc": "29 juillet — Sainte Marthe, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-30",
+       "kind": "mass",
+       "toc": "30 juillet — Saints Abdon et Sennen, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-07-31",
+       "kind": "mass",
+       "toc": "31 juillet — Saint Ignace de Loyola, confesseur",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-aout",
+     "kind": "section",
+     "toc": "Août",
+     "children": [
+      {
+       "id": "sancti-08-01r",
+       "kind": "mass",
+       "toc": "1er août — Les saints Maccabées, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-02",
+       "kind": "mass",
+       "toc": "2 août — Saint Alphonse-Marie de Liguori, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-04",
+       "kind": "mass",
+       "toc": "4 août — Saint Dominique, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-05",
+       "kind": "mass",
+       "toc": "5 août — Dédicace de Sainte-Marie-aux-Neiges",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-06",
+       "kind": "mass",
+       "toc": "6 août — Transfiguration de Notre-Seigneur Jésus-Christ",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-07",
+       "kind": "mass",
+       "toc": "7 août — Saint Gaétan, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-09",
+       "kind": "mass",
+       "toc": "9 août — Saint Jean-Marie Vianney, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-09t",
+       "kind": "mass",
+       "toc": "9 août — Vigile de saint Laurent, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-10",
+       "kind": "mass",
+       "toc": "10 août — Saint Laurent, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-11",
+       "kind": "mass",
+       "toc": "11 août — Saints Tiburce et Suzanne, vierge, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-12",
+       "kind": "mass",
+       "toc": "12 août — Sainte Claire, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-13",
+       "kind": "mass",
+       "toc": "13 août — Saints Hippolyte et Cassien, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-14",
+       "kind": "mass",
+       "toc": "14 août — Vigile de l’Assomption de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-15",
+       "kind": "mass",
+       "toc": "15 août — Assomption de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-16",
+       "kind": "mass",
+       "toc": "16 août — Saint Joachim, père de la bienheureuse Vierge Marie, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-17",
+       "kind": "mass",
+       "toc": "17 août — Saint Hyacinthe, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-18r",
+       "kind": "mass",
+       "toc": "18 août — Saint Agapit, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-19",
+       "kind": "mass",
+       "toc": "19 août — Saint Jean Eudes, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-20",
+       "kind": "mass",
+       "toc": "20 août — Saint Bernard, abbé et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-21",
+       "kind": "mass",
+       "toc": "21 août — Sainte Jeanne-Françoise Frémiot de Chantal, veuve",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-22",
+       "kind": "mass",
+       "toc": "22 août — Cœur immaculé de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-23",
+       "kind": "mass",
+       "toc": "23 août — Saint Philippe Benizi, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-24",
+       "kind": "mass",
+       "toc": "24 août — Saint Barthélemy, apôtre",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-25",
+       "kind": "mass",
+       "toc": "25 août — Saint Louis, roi de France, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-26",
+       "kind": "mass",
+       "toc": "26 août — Saint Zéphyrin, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-27",
+       "kind": "mass",
+       "toc": "27 août — Saint Joseph Calasanz, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-28",
+       "kind": "mass",
+       "toc": "28 août — Saint Augustin, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-29",
+       "kind": "mass",
+       "toc": "29 août — Décollation de saint Jean-Baptiste",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-30",
+       "kind": "mass",
+       "toc": "30 août — Sainte Rose de Lima, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-08-31",
+       "kind": "mass",
+       "toc": "31 août — Saint Raymond Nonnat, confesseur",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-septembre",
+     "kind": "section",
+     "toc": "Septembre",
+     "children": [
+      {
+       "id": "sancti-09-01",
+       "kind": "mass",
+       "toc": "1er septembre — Saint Gilles, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-02",
+       "kind": "mass",
+       "toc": "2 septembre — Saint Étienne, roi de Hongrie, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-03",
+       "kind": "mass",
+       "toc": "3 septembre — Saint Pie X, pape et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-05",
+       "kind": "mass",
+       "toc": "5 septembre — Saint Laurent Justinien, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-08",
+       "kind": "mass",
+       "toc": "8 septembre — Nativité de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-09",
+       "kind": "mass",
+       "toc": "9 septembre — Saint Gorgon, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-10",
+       "kind": "mass",
+       "toc": "10 septembre — Saint Nicolas de Tolentino, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-11",
+       "kind": "mass",
+       "toc": "11 septembre — Saints Prote et Hyacinthe, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-12",
+       "kind": "mass",
+       "toc": "12 septembre — Très Saint Nom de Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-14",
+       "kind": "mass",
+       "toc": "14 septembre — Exaltation de la sainte Croix",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-15",
+       "kind": "mass",
+       "toc": "15 septembre — Les Sept Douleurs de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-16",
+       "kind": "mass",
+       "toc": "16 septembre — Saints Corneille, pape, et Cyprien, évêque, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-17",
+       "kind": "mass",
+       "toc": "17 septembre — Impression des stigmates de saint François",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-18",
+       "kind": "mass",
+       "toc": "18 septembre — Saint Joseph de Cupertino, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-19",
+       "kind": "mass",
+       "toc": "19 septembre — Saint Janvier, évêque, et ses compagnons, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-20",
+       "kind": "mass",
+       "toc": "20 septembre — Saint Eustache et ses compagnons, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-21",
+       "kind": "mass",
+       "toc": "21 septembre — Saint Matthieu, apôtre et évangéliste",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-22",
+       "kind": "mass",
+       "toc": "22 septembre — Saint Thomas de Villeneuve, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-23",
+       "kind": "mass",
+       "toc": "23 septembre — Saint Lin, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-24",
+       "kind": "mass",
+       "toc": "24 septembre — Notre-Dame de la Merci",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-26",
+       "kind": "mass",
+       "toc": "26 septembre — Saints Cyprien et Justine, vierge, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-27",
+       "kind": "mass",
+       "toc": "27 septembre — Saints Côme et Damien, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-28",
+       "kind": "mass",
+       "toc": "28 septembre — Saint Venceslas, duc et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-29",
+       "kind": "mass",
+       "toc": "29 septembre — Dédicace de saint Michel archange",
+       "unit": true
+      },
+      {
+       "id": "sancti-09-30",
+       "kind": "mass",
+       "toc": "30 septembre — Saint Jérôme, prêtre, confesseur et docteur",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-octobre",
+     "kind": "section",
+     "toc": "Octobre",
+     "children": [
+      {
+       "id": "sancti-10-01",
+       "kind": "mass",
+       "toc": "1er octobre — Saint Remi, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-02",
+       "kind": "mass",
+       "toc": "2 octobre — Les saints Anges gardiens",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-03",
+       "kind": "mass",
+       "toc": "3 octobre — Sainte Thérèse de l’Enfant-Jésus, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-04",
+       "kind": "mass",
+       "toc": "4 octobre — Saint François d’Assise, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-05",
+       "kind": "mass",
+       "toc": "5 octobre — Saint Placide et ses compagnons, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-06",
+       "kind": "mass",
+       "toc": "6 octobre — Saint Bruno, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-07",
+       "kind": "mass",
+       "toc": "7 octobre — Notre-Dame du Rosaire",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-08",
+       "kind": "mass",
+       "toc": "8 octobre — Sainte Brigitte, veuve",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-09",
+       "kind": "mass",
+       "toc": "9 octobre — Saint Jean Léonardi, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-10",
+       "kind": "mass",
+       "toc": "10 octobre — Saint François de Borgia, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-11",
+       "kind": "mass",
+       "toc": "11 octobre — Maternité de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-13",
+       "kind": "mass",
+       "toc": "13 octobre — Saint Édouard, roi, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-14",
+       "kind": "mass",
+       "toc": "14 octobre — Saint Calixte Ier, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-15",
+       "kind": "mass",
+       "toc": "15 octobre — Sainte Thérèse d’Avila, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-16",
+       "kind": "mass",
+       "toc": "16 octobre — Sainte Hedwige, veuve",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-17",
+       "kind": "mass",
+       "toc": "17 octobre — Sainte Marguerite-Marie Alacoque, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-18",
+       "kind": "mass",
+       "toc": "18 octobre — Saint Luc, évangéliste",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-19",
+       "kind": "mass",
+       "toc": "19 octobre — Saint Pierre d’Alcantara, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-20",
+       "kind": "mass",
+       "toc": "20 octobre — Saint Jean de Kenty, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-21",
+       "kind": "mass",
+       "toc": "21 octobre — Saint Hilarion, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-23r",
+       "kind": "mass",
+       "toc": "23 octobre — Saint Antoine-Marie Claret, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-24",
+       "kind": "mass",
+       "toc": "24 octobre — Saint Raphaël, archange",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-25",
+       "kind": "mass",
+       "toc": "25 octobre — Saints Chrysanthe et Darie, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-26",
+       "kind": "mass",
+       "toc": "26 octobre — Saint Évariste, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-28",
+       "kind": "mass",
+       "toc": "28 octobre — Saints Simon et Jude, apôtres",
+       "unit": true
+      },
+      {
+       "id": "sancti-10-du",
+       "kind": "mass",
+       "toc": "Dernier dimanche d’octobre — Notre-Seigneur Jésus-Christ Roi",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-novembre",
+     "kind": "section",
+     "toc": "Novembre",
+     "children": [
+      {
+       "id": "sancti-11-01",
+       "kind": "mass",
+       "toc": "1er novembre — Toussaint",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-04",
+       "kind": "mass",
+       "toc": "4 novembre — Saint Charles Borromée, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-08r",
+       "kind": "mass",
+       "toc": "8 novembre — Les quatre saints Couronnés, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-09",
+       "kind": "mass",
+       "toc": "9 novembre — Dédicace de l’archibasilique du Très-Saint-Sauveur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-10",
+       "kind": "mass",
+       "toc": "10 novembre — Saint André Avellin, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-11",
+       "kind": "mass",
+       "toc": "11 novembre — Saint Martin, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-12",
+       "kind": "mass",
+       "toc": "12 novembre — Saint Martin Ier, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-13",
+       "kind": "mass",
+       "toc": "13 novembre — Saint Didace, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-14",
+       "kind": "mass",
+       "toc": "14 novembre — Saint Josaphat, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-15",
+       "kind": "mass",
+       "toc": "15 novembre — Saint Albert le Grand, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-16",
+       "kind": "mass",
+       "toc": "16 novembre — Sainte Gertrude, vierge",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-17",
+       "kind": "mass",
+       "toc": "17 novembre — Saint Grégoire le Thaumaturge, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-18r",
+       "kind": "mass",
+       "toc": "18 novembre — Dédicace des basiliques des saints Pierre et Paul, apôtres",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-19",
+       "kind": "mass",
+       "toc": "19 novembre — Sainte Élisabeth de Hongrie, veuve",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-20",
+       "kind": "mass",
+       "toc": "20 novembre — Saint Félix de Valois, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-21",
+       "kind": "mass",
+       "toc": "21 novembre — Présentation de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-22",
+       "kind": "mass",
+       "toc": "22 novembre — Sainte Cécile, vierge et martyre",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-23",
+       "kind": "mass",
+       "toc": "23 novembre — Saint Clément Ier, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-24",
+       "kind": "mass",
+       "toc": "24 novembre — Saint Jean de la Croix, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-25",
+       "kind": "mass",
+       "toc": "25 novembre — Sainte Catherine d’Alexandrie, vierge et martyre",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-26",
+       "kind": "mass",
+       "toc": "26 novembre — Saint Silvestre, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-29r",
+       "kind": "mass",
+       "toc": "29 novembre — Saint Saturnin, martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-11-30",
+       "kind": "mass",
+       "toc": "30 novembre — Saint André, apôtre",
+       "unit": true
+      }
+     ]
+    },
+    {
+     "id": "saints-decembre",
+     "kind": "section",
+     "toc": "Décembre",
+     "children": [
+      {
+       "id": "sancti-12-02",
+       "kind": "mass",
+       "toc": "2 décembre — Sainte Bibiane, vierge et martyre",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-03",
+       "kind": "mass",
+       "toc": "3 décembre — Saint François Xavier, confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-04",
+       "kind": "mass",
+       "toc": "4 décembre — Saint Pierre Chrysologue, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-05",
+       "kind": "mass",
+       "toc": "5 décembre — Saint Sabas, abbé",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-06",
+       "kind": "mass",
+       "toc": "6 décembre — Saint Nicolas, évêque et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-07",
+       "kind": "mass",
+       "toc": "7 décembre — Saint Ambroise, évêque, confesseur et docteur",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-08",
+       "kind": "mass",
+       "toc": "8 décembre — Immaculée Conception de la bienheureuse Vierge Marie",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-10o",
+       "kind": "mass",
+       "toc": "10 décembre — Saint Melchiade, pape et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-11",
+       "kind": "mass",
+       "toc": "11 décembre — Saint Damase Ier, pape et confesseur",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-13r",
+       "kind": "mass",
+       "toc": "13 décembre — Sainte Lucie, vierge et martyre",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-16",
+       "kind": "mass",
+       "toc": "16 décembre — Saint Eusèbe, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-21",
+       "kind": "mass",
+       "toc": "21 décembre — Saint Thomas, apôtre",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-26",
+       "kind": "mass",
+       "toc": "26 décembre — Saint Étienne, premier martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-27",
+       "kind": "mass",
+       "toc": "27 décembre — Saint Jean, apôtre et évangéliste",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-28r",
+       "kind": "mass",
+       "toc": "28 décembre — Les saints Innocents, martyrs",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-29r",
+       "kind": "mass",
+       "toc": "29 décembre — Saint Thomas Becket, évêque et martyr",
+       "unit": true
+      },
+      {
+       "id": "sancti-12-31r",
+       "kind": "mass",
+       "toc": "31 décembre — Saint Silvestre Ier, pape et confesseur",
+       "unit": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "communs-des-saints",
+   "kind": "part",
+   "toc": "Communs des saints",
+   "children": [
+    {
+     "id": "commune-c1v",
+     "kind": "mass",
+     "toc": "Vigile d’un Apôtre : messe Ego autem",
+     "unit": true
+    },
+    {
+     "id": "commune-c2",
+     "kind": "mass",
+     "toc": "Commun d’un martyr pontife : messe Statuit",
+     "unit": true
+    },
+    {
+     "id": "commune-c2-1",
+     "kind": "mass",
+     "toc": "Commun d’un martyr pontife : messe Sacerdotes Dei",
+     "unit": true
+    },
+    {
+     "id": "commune-c2b",
+     "kind": "mass",
+     "toc": "Commun d’un souverain pontife martyr : messe Si diligis",
+     "unit": true
+    },
+    {
+     "id": "commune-c2a",
+     "kind": "mass",
+     "toc": "Commun d’un martyr non pontife : messe In virtute",
+     "unit": true
+    },
+    {
+     "id": "commune-c2a-1",
+     "kind": "mass",
+     "toc": "Commun d’un martyr non pontife : messe Lætabitur",
+     "unit": true
+    },
+    {
+     "id": "commune-c2p",
+     "kind": "mass",
+     "toc": "Commun d’un martyr au temps pascal : messe Protexisti",
+     "unit": true
+    },
+    {
+     "id": "commune-c3",
+     "kind": "mass",
+     "toc": "Commun de plusieurs martyrs : messe Intret",
+     "unit": true
+    },
+    {
+     "id": "commune-c3a",
+     "kind": "mass",
+     "toc": "Commun de plusieurs martyrs : messe Sapientiam",
+     "unit": true
+    },
+    {
+     "id": "commune-c3a-1",
+     "kind": "mass",
+     "toc": "Commun de plusieurs martyrs : messe Salus autem",
+     "unit": true
+    },
+    {
+     "id": "commune-c3b",
+     "kind": "mass",
+     "toc": "Commun de plusieurs souverains pontifes martyrs : messe Si diligis",
+     "unit": true
+    },
+    {
+     "id": "commune-c3p",
+     "kind": "mass",
+     "toc": "Commun de plusieurs martyrs au temps pascal : messe Sancti tui",
+     "unit": true
+    },
+    {
+     "id": "commune-c4",
+     "kind": "mass",
+     "toc": "Commun d’un confesseur pontife : messe Statuit",
+     "unit": true
+    },
+    {
+     "id": "commune-c4-1",
+     "kind": "mass",
+     "toc": "Commun d’un confesseur pontife : messe Sacerdotes tui",
+     "unit": true
+    },
+    {
+     "id": "commune-c4b",
+     "kind": "mass",
+     "toc": "Commun d’un souverain pontife confesseur : messe Si diligis",
+     "unit": true
+    },
+    {
+     "id": "commune-c4a",
+     "kind": "mass",
+     "toc": "Commun d’un docteur pontife : messe In medio",
+     "unit": true
+    },
+    {
+     "id": "commune-c5a",
+     "kind": "mass",
+     "toc": "Commun d’un docteur non pontife : messe In medio",
+     "unit": true
+    },
+    {
+     "id": "commune-c5",
+     "kind": "mass",
+     "toc": "Commun d’un confesseur non pontife : messe Os justi",
+     "unit": true
+    },
+    {
+     "id": "commune-c5-1",
+     "kind": "mass",
+     "toc": "Commun d’un confesseur non pontife : messe Justus ut palma",
+     "unit": true
+    },
+    {
+     "id": "commune-c5b",
+     "kind": "mass",
+     "toc": "Commun d’un abbé : messe Os justi",
+     "unit": true
+    },
+    {
+     "id": "commune-c6",
+     "kind": "mass",
+     "toc": "Commun d’une vierge martyre : messe Loquebar",
+     "unit": true
+    },
+    {
+     "id": "commune-c6-1",
+     "kind": "mass",
+     "toc": "Commun d’une vierge martyre : messe Me exspectaverunt",
+     "unit": true
+    },
+    {
+     "id": "commune-c6a",
+     "kind": "mass",
+     "toc": "Commun d’une vierge non martyre : messe Dilexisti",
+     "unit": true
+    },
+    {
+     "id": "commune-c6a-1",
+     "kind": "mass",
+     "toc": "Commun d’une vierge non martyre : messe Vultum tuum",
+     "unit": true
+    },
+    {
+     "id": "commune-c7",
+     "kind": "mass",
+     "toc": "Commun d’une sainte femme martyre : messe Me exspectaverunt",
+     "unit": true
+    },
+    {
+     "id": "commune-c7a",
+     "kind": "mass",
+     "toc": "Commun d’une sainte femme non martyre : messe Cognovi",
+     "unit": true
+    },
+    {
+     "id": "commune-c8",
+     "kind": "mass",
+     "toc": "Commun de la Dédicace d’une église : messe Terribilis",
+     "unit": true
+    },
+    {
+     "id": "commune-c11",
+     "kind": "mass",
+     "toc": "Commun des fêtes de la Sainte Vierge : messe Salve, sancta Parens",
+     "unit": true
+    },
+    {
+     "id": "commune-c10a",
+     "kind": "mass",
+     "toc": "Sainte Marie au samedi, en Avent : messe Rorate",
+     "unit": true
+    },
+    {
+     "id": "commune-c10b",
+     "kind": "mass",
+     "toc": "Sainte Marie au samedi, de Noël à la Purification : messe Vultum tuum",
+     "unit": true
+    },
+    {
+     "id": "commune-c10c",
+     "kind": "mass",
+     "toc": "Sainte Marie au samedi, de la Purification à Pâques : messe Salve, sancta Parens",
+     "unit": true
+    },
+    {
+     "id": "commune-c10pasc",
+     "kind": "mass",
+     "toc": "Sainte Marie au samedi, au temps pascal : messe Salve, sancta Parens",
+     "unit": true
+    },
+    {
+     "id": "commune-c10",
+     "kind": "mass",
+     "toc": "Sainte Marie au samedi, après la Pentecôte : messe Salve, sancta Parens",
+     "unit": true
+    }
+   ]
+  },
+  {
+   "id": "messes-des-defunts",
+   "kind": "part",
+   "toc": "Messes des défunts",
+   "children": [
+    {
+     "id": "sancti-11-02",
+     "kind": "mass",
+     "toc": "2 novembre — Commémoraison de tous les fidèles défunts",
+     "unit": true
+    },
+    {
+     "id": "commune-c9",
+     "kind": "mass",
+     "toc": "Messe quotidienne des défunts",
+     "unit": true
+    }
+   ]
+  },
+  {
+   "id": "prefaces",
+   "kind": "section",
+   "toc": "Préfaces",
+   "unit": true
+  }
+ ]
+}

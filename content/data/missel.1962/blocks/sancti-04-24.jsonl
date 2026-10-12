@@ -1,0 +1,40 @@
+{"id":"sancti-04-24.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/04-24.txt","section":"Officium"}],"t":{"la":["S. Fidelis de Sigmaringa Martyris"],"fr":["Saint Fidèle de Sigmaringen, martyr"]}}
+{"id":"sancti-04-24.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements rouges."]}}
+{"id":"sancti-04-24.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C2p.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-04-24.introit.1","type":"rubric","t":{"la":["Ps 63:3"],"fr":["Ps 63:3"]}}
+{"id":"sancti-04-24.introit.2","type":"para","dropCap":true,"t":{"la":["Protexísti me, Deus, a convéntu malignántium, allelúja: a multitúdine operántium iniquitátem, allelúja, allelúja."]}}
+{"id":"sancti-04-24.introit.3","type":"rubric","t":{"la":["Ps. 63:2"],"fr":["Ps. 63:2"]}}
+{"id":"sancti-04-24.introit.4","type":"para","t":{"la":["Exáudi, Deus, oratiónem meam cum déprecor: a timóre inimíci éripe ánimam meam."]}}
+{"id":"sancti-04-24.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-04-24.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-04-24.introit.7","type":"para","t":{"la":["Protexísti me, Deus, a convéntu malignántium, allelúja: a multitúdine operántium iniquitátem, allelúja, allelúja."]}}
+{"id":"sancti-04-24.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-04-24.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/04-24.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-04-24.collecte.1","type":"para","t":{"la":["Deus, qui beátum Fidélem, seráphico spíritus ardóre succénsum, in veræ fídei propagatióne martýrii palma et gloriósis miráculis decoráre dignátus es: ejus, quǽsumus, méritis et intercessióne, ita nos per grátiam tuam in fide et caritáte confírma; ut in servítio tuo fidéles usque ad mortem inveníri mereámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-04-24.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C2p.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-04-24.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-04-24.lecon.2","type":"rubric","t":{"la":["Sap 5:1-5"],"fr":["Sap 5:1-5"]}}
+{"id":"sancti-04-24.lecon.3","type":"para","t":{"la":["Stabunt justi in magna constántia advérsus eos, qui se angustiavérunt et qui abstulérunt labóres eórum. Vidéntes turbabúntur timore horríbili, et mirabúntur in subitatióne insperátæ salútis, dicéntes intra se, poeniténtiam agéntes, et præ angústia spíritus geméntes: Hi sunt, quos habúimus aliquándo in derísum et in similitúdinem impropérii. Nos insensáti vitam illórum æstimabámus insániam, et finem illórum sine honóre: ecce, quómodo computáti sunt inter fílios Dei, et inter Sanctos sors illórum est."]}}
+{"id":"sancti-04-24.alleluia","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Graduale"},{"file":"horas/Latin/Commune/C2p.txt","section":"Graduale"}],"t":{"la":["Allelúja"],"fr":["Alléluia"]}}
+{"id":"sancti-04-24.alleluia.1","type":"para","t":{"la":["Allelúja, allelúja."]}}
+{"id":"sancti-04-24.alleluia.2","type":"rubric","t":{"la":["Ps 88:6"],"fr":["Ps 88:6"]}}
+{"id":"sancti-04-24.alleluia.3","type":"para","t":{"la":["Confitebúntur cœli mirabília tua, Dómine: étenim veritátem tuam in ecclésia sanctórum. Allelúja."]}}
+{"id":"sancti-04-24.alleluia.4","type":"rubric","t":{"la":["Ps 20:4"],"fr":["Ps 20:4"]}}
+{"id":"sancti-04-24.alleluia.5","type":"para","t":{"la":["Posuísti, Dómine, super caput ejus corónam de lápide pretióso. Allelúja."]}}
+{"id":"sancti-04-24.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Evangelium"},{"file":"horas/Latin/Commune/C2p.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-04-24.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"sancti-04-24.evangile.2","type":"rubric","t":{"la":["Joannes 15:1-7"],"fr":["Joannes 15:1-7"]}}
+{"id":"sancti-04-24.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Omnem pálmitem in me non feréntem fructum, tollet eum: et omnem, qui fert fructum, purgábit eum, ut fructum plus áfferat. Jam vos mundi estis propter sermónem, quem locútus sum vobis. Manéte in me: et ego in vobis. Sicut palmes non potest ferre fructum a semetípso, nisi mánserit in vite: sic nec vos, nisi in me manséritis. Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis, petétis, et fiet vobis."]}}
+{"id":"sancti-04-24.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-04-24.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2p.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-04-24.offertoire.1","type":"rubric","t":{"la":["Ps 88:6"],"fr":["Ps 88:6"]}}
+{"id":"sancti-04-24.offertoire.2","type":"para","t":{"la":["Confitebúntur cœli mirabília tua, Dómine: et veritátem tuam in ecclésia sanctórum, allelúja, allelúja."]}}
+{"id":"sancti-04-24.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C2a.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-04-24.secrete.1","type":"para","t":{"la":["Munéribus nostris, quǽsumus, Dómine, precibúsque suscéptis: et cœléstibus nos munda mystériis, et cleménter exáudi. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-04-24.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-04-24.preface.1","type":"rubric","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
+{"id":"sancti-04-24.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Communio"},{"file":"horas/Latin/Commune/C2p.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-04-24.communion.1","type":"rubric","t":{"la":["Ps 63:11"],"fr":["Ps 63:11"]}}
+{"id":"sancti-04-24.communion.2","type":"para","t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde, allelúja, allelúja."]}}
+{"id":"sancti-04-24.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2ap.txt","section":"Postcommunio"},{"file":"horas/Latin/Commune/C2a.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-04-24.postcommunion.1","type":"para","t":{"la":["Da, quǽsumus, Dómine, Deus noster: ut, sicut tuórum commemoratióne Sanctórum temporáli gratulámur offício; ita perpétuo lætémur aspéctu. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

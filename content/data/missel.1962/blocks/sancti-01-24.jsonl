@@ -1,0 +1,48 @@
+{"id":"sancti-01-24.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/01-24.txt","section":"Officium"}],"t":{"la":["S. Timothei Episcopi et Martyris"],"fr":["Saint Timothée, évêque et martyr"]}}
+{"id":"sancti-01-24.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements rouges."]}}
+{"id":"sancti-01-24.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-01-24.introit.1","type":"rubric","t":{"la":["Eccli 45:30"],"fr":["Eccli 45:30"]}}
+{"id":"sancti-01-24.introit.2","type":"para","dropCap":true,"t":{"la":["Státuit ei Dóminus testaméntum pacis, et príncipem fecit eum: ut sit illi sacerdótii dígnitas in ætérnum."]}}
+{"id":"sancti-01-24.introit.3","type":"rubric","t":{"la":["Ps 131:1."],"fr":["Ps 131:1."]}}
+{"id":"sancti-01-24.introit.4","type":"para","t":{"la":["Meménto, Dómine, David: et omnis mansuetúdinis ejus."]}}
+{"id":"sancti-01-24.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-01-24.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-01-24.introit.7","type":"para","t":{"la":["Státuit ei Dóminus testaméntum pacis, et príncipem fecit eum: ut sit illi sacerdótii dígnitas in ætérnum."]}}
+{"id":"sancti-01-24.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-01-24.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-01-24.collecte.1","type":"para","t":{"la":["Infirmitátem nostram réspice, omnípotens Deus: et, quia pondus própriæ actiónis gravat, beáti Timothei Mártyris tui atque Pontíficis intercéssio gloriósa nos prótegat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-24.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-24.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-01-24.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Timótheum"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, à Timothée"]}}
+{"id":"sancti-01-24.epitre.2","type":"rubric","t":{"la":["1 Tim 6:11-16"],"fr":["1 Tim 6:11-16"]}}
+{"id":"sancti-01-24.epitre.3","type":"para","t":{"la":["Caríssime: Sectáre justítiam, pietátem, fidem, caritátem, patiéntiam, mansuetúdinem. Certa bonum certámen fídei, apprehénde vitam ætérnam, in qua vocátus es, et conféssus bonam confessionem coram multis téstibus. Præcípio tibi coram Deo, qui vivíficat ómnia, et Christo Jesu, qui testimónium réddidit sub Póntio Piláto, bonam confessiónem: ut serves mandátum sine mácula, irreprehensíbile usque in advéntum Dómini nostri Jesu Christi, quem suis tempóribus osténdet beátus et solus potens, Rex regum et Dóminus dominántium: qui solus habet immortalitátem, et lucem inhábitat inaccessíbilem: quem nullus hóminum vidit, sed nec vidére potest: cui honor et impérium sempitérnum. Amen."]}}
+{"id":"sancti-01-24.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-01-24.graduel.1","type":"rubric","t":{"la":["Ps 88:21-23"],"fr":["Ps 88:21-23"]}}
+{"id":"sancti-01-24.graduel.2","type":"para","t":{"la":["Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum."]}}
+{"id":"sancti-01-24.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Nihil profíciet inimícus in eo, et fílius iniquitátis non nocébit ei. Allelúja, allelúja"]}}
+{"id":"sancti-01-24.graduel.4","type":"rubric","t":{"la":["Ps 109:4"],"fr":["Ps 109:4"]}}
+{"id":"sancti-01-24.graduel.5","type":"para","t":{"la":["Jurávit Dóminus, et non pœnitébit eum: Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech. Allelúja."]}}
+{"id":"sancti-01-24.graduel.sept","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Tractus"}],"t":{"la":["Post Septuagesimam"],"fr":["Après la Septuagésime"]}}
+{"id":"sancti-01-24.graduel.sept.1","type":"rubric","t":{"la":["Ps 88:21-23"],"fr":["Ps 88:21-23"]}}
+{"id":"sancti-01-24.graduel.sept.2","type":"para","t":{"la":["Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum."]}}
+{"id":"sancti-01-24.graduel.sept.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Nihil profíciet inimícus in eo, et fílius iniquitátis non nocébit ei."]}}
+{"id":"sancti-01-24.graduel.sept.4","type":"rubric","t":{"la":["Ps 20:3-4"],"fr":["Ps 20:3-4"]}}
+{"id":"sancti-01-24.graduel.sept.5","type":"para","t":{"la":["Desidérium ánimæ ejus tribuísti ei: et voluntáte labiórum ejus non fraudásti eum."]}}
+{"id":"sancti-01-24.graduel.sept.6","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Quóniam prævenísti eum in benedictiónibus dulcédinis."]}}
+{"id":"sancti-01-24.graduel.sept.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Posuísti in cápite ejus corónam de lápide pretióso."]}}
+{"id":"sancti-01-24.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-01-24.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-01-24.evangile.2","type":"rubric","t":{"la":["Luc 14:26-33"],"fr":["Luc 14:26-33"]}}
+{"id":"sancti-01-24.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus turbis: Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus. Et qui non bájulat crucem suam, et venit post me, non potest meus esse discípulus. Quis enim ex vobis volens turrim ædificáre, non prius sedens cómputat sumptus, qui necessárii sunt, si hábeat ad perficiéndum; ne, posteáquam posúerit fundaméntum, et non potúerit perfícere, omnes, qui vident, incípiant illúdere ei, dicéntes: Quia hic homo cœpit ædificáre, et non pótuit consummáre? Aut quis rex itúrus commíttere bellum advérsus álium regem, non sedens prius cógitat, si possit cum decem mílibus occúrrere ei, qui cum vigínti mílibus venit ad se? Alióquin, adhuc illo longe agénte, legatiónem mittens, rogat ea, quæ pacis sunt. Sic ergo omnis ex vobis, qui non renúntiat ómnibus, quæ póssidet, non potest meus esse discípulus."]}}
+{"id":"sancti-01-24.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-01-24.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-01-24.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
+{"id":"sancti-01-24.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
+{"id":"sancti-01-24.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-01-24.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, beáti Timothei Mártyris tui atque Pontíficis dicátas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-24.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-01-24.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-01-24.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-01-24.communion.1","type":"rubric","t":{"la":["Ps 88:36; 88:37-38"],"fr":["Ps 88:36; 88:37-38"]}}
+{"id":"sancti-01-24.communion.2","type":"para","t":{"la":["Semel jurávi in sancto meo: Semen ejus in ætérnum manébit: et sedes ejus sicut sol in conspéctu meo, et sicut luna perfécta in ætérnum, et testis in coelo fidélis."]}}
+{"id":"sancti-01-24.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-01-24.postcommunion.1","type":"para","t":{"la":["Refécti participatióne múneris sacri, quǽsumus, Dómine, Deus noster: ut, cujus exséquimur cultum, intercedénte beáto Timotheo Mártyre tuo atque Pontífice, sentiámus efféctum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

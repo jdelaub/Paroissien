@@ -1,0 +1,41 @@
+{"id":"sancti-11-17.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/11-17.txt","section":"Officium"}],"t":{"la":["S. Gregorii Thaumaturgi Episcopi et Confessoris"],"fr":["Saint Grégoire le Thaumaturge, évêque et confesseur"]}}
+{"id":"sancti-11-17.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-11-17.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C2.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-11-17.introit.1","type":"rubric","t":{"la":["Eccli 45:30"],"fr":["Eccli 45:30"]}}
+{"id":"sancti-11-17.introit.2","type":"para","dropCap":true,"t":{"la":["Státuit ei Dóminus testaméntum pacis, et príncipem fecit eum: ut sit illi sacerdótii dígnitas in ætérnum."]}}
+{"id":"sancti-11-17.introit.3","type":"rubric","t":{"la":["Ps 131:1."],"fr":["Ps 131:1."]}}
+{"id":"sancti-11-17.introit.4","type":"para","t":{"la":["Meménto, Dómine, David: et omnis mansuetúdinis ejus."]}}
+{"id":"sancti-11-17.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-11-17.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-11-17.introit.7","type":"para","t":{"la":["Státuit ei Dóminus testaméntum pacis, et príncipem fecit eum: ut sit illi sacerdótii dígnitas in ætérnum."]}}
+{"id":"sancti-11-17.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-11-17.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-11-17.collecte.1","type":"para","t":{"la":["Da, quǽsumus, omnípotens Deus: ut beáti Gregórii Confessóris tui atque Pontíficis veneránda solémnitas, et devotiónem nobis áugeat et salútem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-11-17.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-11-17.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-11-17.lecon.2","type":"rubric","t":{"la":["Eccli 44:16-27; 45, 3-20"],"fr":["Eccli 44:16-27; 45, 3-20"]}}
+{"id":"sancti-11-17.lecon.3","type":"para","t":{"la":["Ecce sacérdos magnus, qui in diébus suis plácuit Deo, et invéntus est justus: et in témpore iracúndiæ factus est reconciliátio. Non est invéntus símilis illi, qui conservávit legem Excélsi. Ideo jurejurándo fecit illum Dóminus créscere in plebem suam. Benedictiónem ómnium géntium dedit illi, et testaméntum suum confirmávit super caput ejus. Agnóvit eum in benedictiónibus suis: conservávit illi misericórdiam suam: et invénit grátiam coram óculis Dómini. Magnificávit eum in conspéctu regum: et dedit illi corónam glóriæ. Státuit illi testaméntum ætérnum, et dedit illi sacerdótium magnum: et beatificávit illum in glória. Fungi sacerdótio, et habére laudem in nómine ipsíus, et offérre illi incénsum dignum in odórem suavitátis."]}}
+{"id":"sancti-11-17.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-11-17.graduel.1","type":"rubric","t":{"la":["Eccli 44:16"],"fr":["Eccli 44:16"]}}
+{"id":"sancti-11-17.graduel.2","type":"para","t":{"la":["Ecce sacérdos magnus, qui in diébus suis plácuit Deo."]}}
+{"id":"sancti-11-17.graduel.3","type":"rubric","t":{"la":["Eccli 44:20"],"fr":["Eccli 44:20"]}}
+{"id":"sancti-11-17.graduel.4","type":"para","t":{"la":["Non est invéntus símilis illi, qui conserváret legem Excélsi. Allelúja, allelúja."]}}
+{"id":"sancti-11-17.graduel.5","type":"rubric","t":{"la":["Ps 109:4"],"fr":["Ps 109:4"]}}
+{"id":"sancti-11-17.graduel.6","type":"para","t":{"la":["Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech. Allelúja."]}}
+{"id":"sancti-11-17.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-17.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-11-17.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Marcum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Marc"]}}
+{"id":"sancti-11-17.evangile.2","type":"rubric","t":{"la":["Marc 11:22-24"],"fr":["Marc 11:22-24"]}}
+{"id":"sancti-11-17.evangile.3","type":"para","t":{"la":["In illo témpore: Respóndens Jesus discípulis suis, ait illis: Habéte fidem Dei. Amen, dico vobis, quia, quicúmque díxerit huic monti: Tóllere et míttere in mare, et non hæsitáverit in corde suo, sed credíderit, quia, quodcúmque díxerit, fiat, fiet ei. Proptérea dico vobis: Omnia quæcúmque orántes pétitis, crédite quia accipiétis, et evénient vobis."]}}
+{"id":"sancti-11-17.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-11-17.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-11-17.offertoire.1","type":"rubric","t":{"la":["Ps 88:21-22"],"fr":["Ps 88:21-22"]}}
+{"id":"sancti-11-17.offertoire.2","type":"para","t":{"la":["Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum."]}}
+{"id":"sancti-11-17.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-11-17.secrete.1","type":"para","t":{"la":["Sancti tui, quǽsumus, Dómine, nos ubíque lætíficant: ut, dum eórum mérita recólimus, patrocínia sentiámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-11-17.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-11-17.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-11-17.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-11-17.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
+{"id":"sancti-11-17.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}
+{"id":"sancti-11-17.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C4.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-11-17.postcommunion.1","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut, de percéptis munéribus grátias exhibéntes, intercedénte beáto Gregório Confessóre tuo atque Pontífice, benefícia potióra sumámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

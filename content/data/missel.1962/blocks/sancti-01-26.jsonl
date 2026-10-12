@@ -1,0 +1,47 @@
+{"id":"sancti-01-26.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/01-26.txt","section":"Officium"}],"t":{"la":["S. Polycarpi Episcopi et Martyris"],"fr":["Saint Polycarpe, évêque et martyr"]}}
+{"id":"sancti-01-26.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements rouges."]}}
+{"id":"sancti-01-26.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-26.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C2-1.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-01-26.introit.1","type":"rubric","t":{"la":["Dan 3:84; 3:87"],"fr":["Dan 3:84; 3:87"]}}
+{"id":"sancti-01-26.introit.2","type":"para","dropCap":true,"t":{"la":["Sacerdótes Dei, benedícite Dóminum: sancti et húmiles corde, laudáte Deum."]}}
+{"id":"sancti-01-26.introit.3","type":"rubric","t":{"la":["Dan 3:57"],"fr":["Dan 3:57"]}}
+{"id":"sancti-01-26.introit.4","type":"para","t":{"la":["Benedícite, ómnia ópera Dómini, Dómino: laudáte et superexaltáte eum in sǽcula."]}}
+{"id":"sancti-01-26.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-01-26.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-01-26.introit.7","type":"para","t":{"la":["Sacerdótes Dei, benedícite Dóminum: sancti et húmiles corde, laudáte Deum."]}}
+{"id":"sancti-01-26.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-01-26.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-01-26.collecte.1","type":"para","t":{"la":["Deus, qui nos beáti Polycárpi Mártyris tui atque Pontíficis ánnua solemnitáte lætíficas: concéde propítius; ut, cujus natalítia cólimus, de ejúsdem étiam protectióne gaudeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-26.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-26.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-01-26.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Joánnis Apóstoli"],"fr":["Lecture de l’Épître de saint Jean, Apôtre"]}}
+{"id":"sancti-01-26.epitre.2","type":"rubric","t":{"la":["1 Joann 3:10-16"],"fr":["1 Joann 3:10-16"]}}
+{"id":"sancti-01-26.epitre.3","type":"para","t":{"la":["Caríssimi: Omnis qui non est justus, non est ex Deo, et qui non díligit fratrem suum: quóniam hæc est annuntiátio, quam audístis ab inítio, ut diligátis altérutrum. Non sicut Cain, qui ex malígno erat, et occídit fratrem suum. Et propter quid occídit eum? Quóniam ópera ejus malígna erant: fratris autem ejus justa. Nolíte mirári fratres, si odit vos mundus. Nos scimus quóniam transláti sumus de morte ad vitam, quóniam dilígimus fratres. Qui non díligit, manet in morte: omnis qui odit fratrem suum, homicída est. Et scitis, quóniam omnis homicída non habet vitam ætérnam in semetípso manéntem. In hoc cognóvimus caritátem Dei, quóniam ille ánimam suam pro nobis pósuit: et nos debémus pro frátribus ánimas pónere."]}}
+{"id":"sancti-01-26.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-26.txt","section":"Graduale"},{"file":"horas/Latin/Commune/C2-1.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-01-26.graduel.1","type":"rubric","t":{"la":["Ps 8:6-7"],"fr":["Ps 8:6-7"]}}
+{"id":"sancti-01-26.graduel.2","type":"para","t":{"la":["Glória et honóre coronásti eum."]}}
+{"id":"sancti-01-26.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Et constituísti eum super ópera mánuum tuárum, Dómine. Allelúja, allelúja."]}}
+{"id":"sancti-01-26.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hic est Sacérdos, quem coronávit Dóminus. Allelúja."]}}
+{"id":"sancti-01-26.graduel.sept","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/01-26.txt","section":"Tractus"},{"file":"horas/Latin/Commune/C2-1.txt","section":"Tractus"}],"t":{"la":["Post Septuagesimam"],"fr":["Après la Septuagésime"]}}
+{"id":"sancti-01-26.graduel.sept.1","type":"rubric","t":{"la":["Ps 8:6-7"],"fr":["Ps 8:6-7"]}}
+{"id":"sancti-01-26.graduel.sept.2","type":"para","t":{"la":["Glória et honóre coronásti eum."]}}
+{"id":"sancti-01-26.graduel.sept.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Et constituísti eum super ópera mánuum tuárum, Dómine."]}}
+{"id":"sancti-01-26.graduel.sept.4","type":"rubric","t":{"la":["Ps 111:1-3"],"fr":["Ps 111:1-3"]}}
+{"id":"sancti-01-26.graduel.sept.5","type":"para","t":{"la":["Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis."]}}
+{"id":"sancti-01-26.graduel.sept.6","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Potens in terra erit semen ejus: generátio rectórum benedicétur."]}}
+{"id":"sancti-01-26.graduel.sept.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi."]}}
+{"id":"sancti-01-26.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-26.txt","section":"Evangelium"},{"file":"horas/Latin/Commune/C2a-1.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-01-26.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-01-26.evangile.2","type":"rubric","t":{"la":["Matt 10:26-32"],"fr":["Matt 10:26-32"]}}
+{"id":"sancti-01-26.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nihil est opértum, quod non revelábitur; et occúltum, quod non sciétur. ¶ Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere; sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam. Nonne duo pásseres asse véneunt: et unus ex illis non cadet super terram sine Patre vestro? Vestri autem capílli cápitis omnes numeráti sunt. Nolíte ergo timére: multis passéribus melióres estis vos. Omnis ergo, qui confitébitur me coram homínibus, confitébor et ego eum coram Patre meo, qui in coelis est."]}}
+{"id":"sancti-01-26.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-01-26.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-26.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-01-26.offertoire.1","type":"rubric","t":{"la":["Ps 88:21-22"],"fr":["Ps 88:21-22"]}}
+{"id":"sancti-01-26.offertoire.2","type":"para","t":{"la":["Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum."]}}
+{"id":"sancti-01-26.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-01-26.secrete.1","type":"para","t":{"la":["Múnera tibi, Dómine, dicáta sanctífica: et, intercedénte beáto Polycárpo Mártyre tuo atque Pontífice, per éadem nos placátus inténde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-26.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-01-26.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-01-26.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-26.txt","section":"Communio"},{"file":"horas/Latin/Commune/C2-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-01-26.communion.1","type":"rubric","t":{"la":["Ps 20:4"],"fr":["Ps 20:4"]}}
+{"id":"sancti-01-26.communion.2","type":"para","t":{"la":["Posuísti, Dómine, in cápite ejus corónam de lápide pretióso."]}}
+{"id":"sancti-01-26.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-26.txt","section":"Postcommunio"},{"file":"horas/Latin/Commune/C2.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-01-26.postcommunion.1","type":"para","t":{"la":["Refécti participatióne múneris sacri, quǽsumus, Dómine, Deus noster: ut, cujus exséquimur cultum, intercedénte beáto Polycárpo Mártyre tuo atque Pontífice, sentiámus efféctum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

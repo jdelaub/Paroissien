@@ -1,0 +1,46 @@
+{"id":"sancti-06-30.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Officium"}],"t":{"la":["In Commemoratione S. Pauli Apostoli"],"fr":["Commémoraison de saint Paul, apôtre"]}}
+{"id":"sancti-06-30.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements rouges."]}}
+{"id":"sancti-06-30.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Introitus"},{"file":"missa/Latin/Sancti/01-25.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-06-30.introit.1","type":"rubric","t":{"la":["2 Tim 1:12"],"fr":["2 Tim 1:12"]}}
+{"id":"sancti-06-30.introit.2","type":"para","dropCap":true,"t":{"la":["Scio, cui crédidi, et certus sum, quia potens est depósitum meum serváre in illum diem, justus judex."]}}
+{"id":"sancti-06-30.introit.3","type":"rubric","t":{"la":["Ps 138:1-2"],"fr":["Ps 138:1-2"]}}
+{"id":"sancti-06-30.introit.4","type":"para","t":{"la":["Dómine, probásti me et cognovísti me: tu cognovísti sessiónem meam et resurrectiónem meam."]}}
+{"id":"sancti-06-30.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-06-30.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-06-30.introit.7","type":"para","t":{"la":["Scio, cui crédidi, et certus sum, quia potens est depósitum meum serváre in illum diem, justus judex."]}}
+{"id":"sancti-06-30.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-06-30.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-06-30.collecte.1","type":"para","t":{"la":["Deus, qui multitúdinem géntium beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, cujus natalícia cólimus, ejus apud te patrocínia sentiámus."]}}
+{"id":"sancti-06-30.collecte.2","type":"rubric","t":{"la":["Pro S. Petro"]}}
+{"id":"sancti-06-30.collecte.3","type":"para","t":{"la":["Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti: concéde; ut, intercessiónis ejus auxílio, a peccatórum nostrórum néxibus liberémur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-30.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-06-30.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Gálatas"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Galates"]}}
+{"id":"sancti-06-30.epitre.2","type":"rubric","t":{"la":["Gal 1:11-20"],"fr":["Gal 1:11-20"]}}
+{"id":"sancti-06-30.epitre.3","type":"para","t":{"la":["Fratres: Notum vobis facio Evangélium, quod evangelizátum est a me, quia non est secúndum hóminem: neque enim ego ab hómine accépi illud neque dídici, sed per revelatiónem Jesu Christi. Audístis enim conversatiónem meam aliquándo in Judaísmo: quóniam supra modum persequébar Ecclésiam Dei, et expugnábam illam, et proficiébam in Judaísmo supra multos coætáneos meos in génere meo, abundántius æmulátor exsístens paternárum mearum traditiónum. Cum autem plácuit ei, qui me segregávit ex útero matris meæ, et vocávit per grátiam suam, ut reveláret Fílium suum in me, ut evangelizárem illum in géntibus: contínuo non acquiévi carni et sánguini, neque veni Jerosólymam ad antecessóres meos Apóstolos: sed ábii in Arábiam: et íterum revérsus sum Damáscum: déinde post annos tres veni Jerosólymam vidére Petrum, et mansi apud eum diébus quíndecim: álium autem Apostolórum vidi néminem, nisi Jacóbum fratrem Dómini. Quæ autem scribo vobis, ecce coram Deo, quia non méntior."]}}
+{"id":"sancti-06-30.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-06-30.graduel.1","type":"rubric","t":{"la":["Gal 2:8-9"],"fr":["Gal 2:8-9"]}}
+{"id":"sancti-06-30.graduel.2","type":"para","t":{"la":["Qui operátus est Petro in apostolátum, operátus est et mihi inter gentes: et cognovérunt grátiam Dei, quæ data est mihi."]}}
+{"id":"sancti-06-30.graduel.3","type":"rubric","t":{"la":["1 Cor 15:10"],"fr":["1 Cor 15:10"]}}
+{"id":"sancti-06-30.graduel.4","type":"para","t":{"la":["Grátia Dei in me vácua non fuit: sed grátia ejus semper in me manet. Allelúja, allelúja."]}}
+{"id":"sancti-06-30.graduel.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Sancte Paule Apóstole, prædicátor veritátis et doctor géntium, intercéde pro nobis. Allelúja."]}}
+{"id":"sancti-06-30.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Evangelium"},{"file":"missa/Latin/Sancti/06-11.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-06-30.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-06-30.evangile.2","type":"rubric","t":{"la":["Matt 10:16-22"],"fr":["Matt 10:16-22"]}}
+{"id":"sancti-06-30.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Ecce, ego mitto vos sicut oves in médio lupórum. Estóte ergo prudéntes sicut serpentes, et símplices sicut colúmbæ. ¶ Cavéte autem ab homínibus. Tradent enim vos in concíliis, et in synagógis suis flagellábunt vos: et ad præsides et ad reges ducémini propter me in testimónium illis et géntibus. Cum autem tradent vos, nolíte cogitáre, quómodo aut quid loquámini: dábitur enim vobis in illa hora, quid loquámini. Non enim vos estis, qui loquímini, sed Spíritus Patris vestri, qui lóquitur in vobis. Tradet autem frater fratrem in mortem, et pater fílium: et insúrgent fílii in paréntes, et morte eos affícient: et éritis odio ómnibus propter nomen meum: qui autem perseveráverit usque in finem, hic salvus erit."]}}
+{"id":"sancti-06-30.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-06-30.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/01-25.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-06-30.offertoire.1","type":"rubric","t":{"la":["Ps 138:17"],"fr":["Ps 138:17"]}}
+{"id":"sancti-06-30.offertoire.2","type":"para","t":{"la":["Mihi autem nimis honoráti sunt amíci tui, Deus: nimis confortátus est principátus eórum."]}}
+{"id":"sancti-06-30.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Secreta"},{"file":"missa/Latin/Sancti/01-25.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-06-30.secrete.1","type":"para","t":{"la":["Apóstoli tui Pauli précibus, Dómine, plebis tuæ dona sanctífica: ut, quæ tibi tuo grata sunt institúto, gratióra fiant patrocínio supplicántis."]}}
+{"id":"sancti-06-30.secrete.2","type":"rubric","t":{"la":["Pro S. Petro"]}}
+{"id":"sancti-06-30.secrete.3","type":"para","t":{"la":["Ecclésiæ tuæ, quǽsumus, Dómine, preces et hóstias beáti Petri Apóstoli comméndet orátio: ut, quod pro illíus glória celebrámus, nobis prosit ad véniam. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-30.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-06-30.preface.1","type":"rubric","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
+{"id":"sancti-06-30.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Communio"},{"file":"horas/Latin/Commune/C5-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-06-30.communion.1","type":"rubric","t":{"la":["Matt 19:28-29"],"fr":["Matt 19:28-29"]}}
+{"id":"sancti-06-30.communion.2","type":"para","t":{"la":["Amen, dico vobis: quod vos, qui reliquístis ómnia et secúti estis me, céntuplum accipiétis, et vitam ætérnam possidébitis."]}}
+{"id":"sancti-06-30.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-30.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-06-30.postcommunion.1","type":"para","t":{"la":["Percéptis, Dómine, sacraméntis: beáto Paulo Apóstolo tuo interveniénte, deprecámur; ut, quæ pro illíus celebráta sunt glória, nobis profíciant ad medélam."]}}
+{"id":"sancti-06-30.postcommunion.2","type":"rubric","t":{"la":["Pro S. Petro"]}}
+{"id":"sancti-06-30.postcommunion.3","type":"para","t":{"la":["Lætíficet nos, Dómine, munus oblátum: ut, sicut in Apóstolo tuo Petro te mirábilem prædicámus; sic per illum tuæ sumámus indulgéntiæ largitátem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

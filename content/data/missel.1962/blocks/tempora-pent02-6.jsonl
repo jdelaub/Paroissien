@@ -1,0 +1,40 @@
+{"id":"tempora-pent02-6.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Pent02-6Feria.txt","section":"Officium"}],"t":{"la":["Sabbato infra Hebdomadam II post Octavam Pentecostes"],"fr":["Samedi de la 2e semaine après la Pentecôte"]}}
+{"id":"tempora-pent02-6.rang","type":"rubric","t":{"fr":["IVᵉ classe — ornements verts."]}}
+{"id":"tempora-pent02-6.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent02-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-pent02-6.introit.1","type":"rubric","t":{"la":["Ps 17:19-20"],"fr":["Ps 17:19-20"]}}
+{"id":"tempora-pent02-6.introit.2","type":"para","dropCap":true,"t":{"la":["Factus est Dóminus protéctor meus, et edúxit me in latitúdinem: salvum me fecit, quóniam vóluit me."]}}
+{"id":"tempora-pent02-6.introit.3","type":"rubric","t":{"la":["Ps 17:2-3"],"fr":["Ps 17:2-3"]}}
+{"id":"tempora-pent02-6.introit.4","type":"para","t":{"la":["Díligam te. Dómine, virtus mea: Dóminus firmaméntum meum et refúgium meum et liberátor meus."]}}
+{"id":"tempora-pent02-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-pent02-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-pent02-6.introit.7","type":"para","t":{"la":["Factus est Dóminus protéctor meus, et edúxit me in latitúdinem: salvum me fecit, quóniam vóluit me."]}}
+{"id":"tempora-pent02-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pent02-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent02-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-pent02-6.collecte.1","type":"para","t":{"la":["Sancti nóminis tui, Dómine, timórem páriter et amórem fac nos habére perpétuum: quia numquam tua gubernatióne destítuis, quos in soliditáte tuæ dilectiónis instítuis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent02-6.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent02-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-pent02-6.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Joánnis Apóstoli"],"fr":["Lecture de l’Épître de saint Jean, Apôtre"]}}
+{"id":"tempora-pent02-6.epitre.2","type":"rubric","t":{"la":["1 John 3:13-18"],"fr":["1 John 3:13-18"]}}
+{"id":"tempora-pent02-6.epitre.3","type":"para","t":{"la":["Caríssimi: Nolíte mirári, si odit vos mundus. Nos scimus, quóniam transláti sumus de morte ad vitam, quóniam dilígimus fratres. Qui non díligit, manet in morte: omnis, qui odit fratrem suum, homicída est. Et scitis, quóniam omnis homicída non habet vitam ætérnam in semetípso manéntem. In hoc cognóvimus caritátem Dei, quóniam ille ánimam suam pro nobis pósuit: et nos debémus pro frátribus ánimas pónere. Qui habúerit substántiam hujus mundi, et víderit fratrem suum necessitátem habére, et cláuserit víscera sua ab eo: quómodo cáritas Dei manet in eo? Filíoli mei, non diligámus verbo neque lingua, sed ópere et veritáte."]}}
+{"id":"tempora-pent02-6.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent02-0.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-pent02-6.graduel.1","type":"rubric","t":{"la":["Ps 119:1-2"],"fr":["Ps 119:1-2"]}}
+{"id":"tempora-pent02-6.graduel.2","type":"para","t":{"la":["Ad Dóminum, cum tribulárer, clamávi, et exaudívit me."]}}
+{"id":"tempora-pent02-6.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Dómine, libera ánimam meam a lábiis iníquis, et a lingua dolósa. Allelúja, allelúja."]}}
+{"id":"tempora-pent02-6.graduel.4","type":"rubric","t":{"la":["Ps 7:2"],"fr":["Ps 7:2"]}}
+{"id":"tempora-pent02-6.graduel.5","type":"para","t":{"la":["Dómine, Deus meus, in te sperávi: salvum me fac ex ómnibus persequéntibus me et líbera me. Allelúja."]}}
+{"id":"tempora-pent02-6.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent02-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-pent02-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"tempora-pent02-6.evangile.2","type":"rubric","t":{"la":["Luc 14:16-24"],"fr":["Luc 14:16-24"]}}
+{"id":"tempora-pent02-6.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus pharisǽis parábolam hanc: Homo quidam fecit cœnam magnam, et vocávit multos. Et misit servum suum hora cœnæ dícere invitátis, ut venírent, quia jam paráta sunt ómnia. Et cœpérunt simul omnes excusáre. Primus dixit ei: Villam emi, et necésse hábeo exíre et vidére illam: rogo te, habe me excusátum. Et alter dixit: Juga boum emi quinque et eo probáre illa: rogo te, habe me excusátum. Et álius dixit: Uxórem duxi, et ídeo non possum veníre. Et revérsus servus nuntiávit hæc dómino suo. Tunc irátus paterfamílias, dixit servo suo: Exi cito in pláteas et vicos civitátis: et páuperes ac débiles et cæcos et claudos íntroduc huc. Et ait servus: Dómine, factum est, ut imperásti, et adhuc locus est. Et ait dóminus servo: Exi in vias et sepes: et compélle intrare, ut impleátur domus mea. Dico autem vobis, quod nemo virórum illórum, qui vocáti sunt, gustábit cœnam meam."]}}
+{"id":"tempora-pent02-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pent02-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent02-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-pent02-6.offertoire.1","type":"rubric","t":{"la":["Ps 6:5"],"fr":["Ps 6:5"]}}
+{"id":"tempora-pent02-6.offertoire.2","type":"para","t":{"la":["Dómine, convértere, et éripe ánimam meam: salvum me fac propter misericórdiam tuam."]}}
+{"id":"tempora-pent02-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent02-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-pent02-6.secrete.1","type":"para","t":{"la":["Oblátio nos, Dómine, tuo nómini dicánda puríficet: et de die in diem ad cœléstis vitæ tránsferat actiónem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent02-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-pent02-6.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pent02-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent02-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-pent02-6.communion.1","type":"rubric","t":{"la":["Ps 12:6"],"fr":["Ps 12:6"]}}
+{"id":"tempora-pent02-6.communion.2","type":"para","t":{"la":["Cantábo Dómino, qui bona tríbuit mihi: et psallam nómini Dómini altíssimi."]}}
+{"id":"tempora-pent02-6.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent02-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-pent02-6.postcommunion.1","type":"para","t":{"la":["Sumptis munéribus sacris, quǽsumus, Dómine: ut cum frequentatióne mystérii, crescat nostræ salútis efféctus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

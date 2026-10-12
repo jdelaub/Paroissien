@@ -1,0 +1,40 @@
+{"id":"sancti-10-du.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Officium"}],"t":{"la":["D. N. Iesu Christi Regis"],"fr":["Notre-Seigneur Jésus-Christ Roi"]}}
+{"id":"sancti-10-du.rang","type":"rubric","t":{"fr":["Iʳᵉ classe — ornements blancs."]}}
+{"id":"sancti-10-du.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-10-du.introit.1","type":"rubric","t":{"la":["Apoc 5:12; 1:6"],"fr":["Apoc 5:12; 1:6"]}}
+{"id":"sancti-10-du.introit.2","type":"para","dropCap":true,"t":{"la":["Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem. Ipsi glória et impérium in sǽcula sæculórum."]}}
+{"id":"sancti-10-du.introit.3","type":"rubric","t":{"la":["Ps 71:1"],"fr":["Ps 71:1"]}}
+{"id":"sancti-10-du.introit.4","type":"para","t":{"la":["Deus, judícium tuum Regi da: et justítiam tuam Fílio Regis."]}}
+{"id":"sancti-10-du.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-10-du.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-10-du.introit.7","type":"para","t":{"la":["Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem. Ipsi glória et impérium in sǽcula sæculórum."]}}
+{"id":"sancti-10-du.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-du.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-10-du.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, qui in dilécto Fílio tuo, universórum Rege, ómnia instauráre voluísti: concéde propítius; ut cunctæ famíliæ géntium, peccáti vúlnere disgregátæ, ejus suavissímo subdántur império: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-du.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-10-du.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Colossénses."],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Colossiens"]}}
+{"id":"sancti-10-du.epitre.2","type":"rubric","t":{"la":["Col 1:12-20"],"fr":["Col 1:12-20"]}}
+{"id":"sancti-10-du.epitre.3","type":"para","t":{"la":["Fratres: Grátias ágimus Deo Patri, qui dignos nos fecit in partem sortis sanctórum in lúmine: qui erípuit nos de potestáte tenebrárum, et tránstulit in regnum Fílii dilectiónis suæ, in quo habémus redemptiónem per sánguinem ejus, remissiónem peccatórum: qui est imágo Dei invisíbilis, primogénitus omnis creatúra: quóniam in ipso cóndita sunt univérsa in cœlis et in terra, visibília et invisibília, sive Throni, sive Dominatiónes, sive Principátus, sive Potestátes: ómnia per ipsum, et in ipso creáta sunt: et ipse est ante omnes, et ómnia in ipso constant. Et ipse est caput córporis Ecclésiæ, qui est princípium, primogénitus ex mórtuis: ut sit in ómnibus ipse primátum tenens; quia in ipso complácuit omnem plenitúdinem inhabitáre; et per eum reconciliáre ómnia in ipsum, pacíficans per sánguinem crucis ejus, sive quæ in terris, sive quæ in cœlis sunt, in Christo Jesu Dómino nostro."]}}
+{"id":"sancti-10-du.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-10-du.graduel.1","type":"rubric","t":{"la":["Ps 71:8; 78:11"],"fr":["Ps 71:8; 78:11"]}}
+{"id":"sancti-10-du.graduel.2","type":"para","t":{"la":["Dominábitur a mari usque ad mare, et a flúmine usque ad términos orbis terrárum."]}}
+{"id":"sancti-10-du.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Et adorábunt eum omnes reges terræ: omnes gentes sérvient ei. Allelúja, allelúja."]}}
+{"id":"sancti-10-du.graduel.4","type":"rubric","t":{"la":["Dan 7:14."],"fr":["Dan 7:14."]}}
+{"id":"sancti-10-du.graduel.5","type":"para","t":{"la":["Potéstas ejus, potéstas ætérna, quæ non auferétur: et regnum ejus, quod non corrumpétur. Allelúja."]}}
+{"id":"sancti-10-du.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-10-du.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"sancti-10-du.evangile.2","type":"rubric","t":{"la":["Joann 18:33-37"],"fr":["Joann 18:33-37"]}}
+{"id":"sancti-10-du.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Pilátus ad Jesum: Tu es Rex Judæórum? Respóndit Jesus: A temetípso hoc dicis, an álii dixérunt tibi de me? Respóndit Pilátus: Numquid ego Judǽus sum? Gens tua et pontífices tradidérunt te mihi: quid fecísti? Respóndit Jesus: Regnum meum non est de hoc mundo. Si ex hoc mundo esset regnum meum, minístri mei útique decertárent, ut non tráderer Judǽis: nunc autem regnum meum non est hinc. Dixit ítaque ei Pilátus: Ergo Rex es tu? Respóndit Jesus: Tu dicis, quia Rex sum ego. Ego in hoc natus sum et ad hoc veni in mundum, ut testimónium perhíbeam veritáti: omnis, qui est ex veritáte, audit vocem meam."]}}
+{"id":"sancti-10-du.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-10-du.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-10-du.offertoire.1","type":"rubric","t":{"la":["Ps 2:8."],"fr":["Ps 2:8."]}}
+{"id":"sancti-10-du.offertoire.2","type":"para","t":{"la":["Póstula a me, et dabo tibi gentes hereditátem tuam, et possessiónem tuam términos terræ."]}}
+{"id":"sancti-10-du.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-10-du.secrete.1","type":"para","t":{"la":["Hóstiam tibi, Dómine, humánæ reconciliatiónis offérimus: præsta, quǽsumus; ut, quem sacrifíciis præséntibus immolámus, ipse cunctis géntibus unitátis et pacis dona concédat, Jesus Christus Fílius tuus, Dóminus noster: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-du.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-10-du.preface.1","type":"rubric","t":{"la":["Præfatio de D.N. Jesu Christi Rege."],"fr":["Préface du Christ-Roi."]}}
+{"id":"sancti-10-du.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-10-du.communion.1","type":"rubric","t":{"la":["Ps 28:10; 28:11"],"fr":["Ps 28:10; 28:11"]}}
+{"id":"sancti-10-du.communion.2","type":"para","t":{"la":["Sedébit Dóminus Rex in ætérnum: Dóminus benedícet pópulo suo in pace."]}}
+{"id":"sancti-10-du.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-DU.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-10-du.postcommunion.1","type":"para","t":{"la":["Immortalitátis alimóniam consecúti, quǽsumus, Dómine: ut, qui sub Christi Regis vexíllis militáre gloriámur, cum ipso, in cœlésti sede, júgiter regnáre possímus: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

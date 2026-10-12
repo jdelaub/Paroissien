@@ -1,0 +1,41 @@
+{"id":"sancti-07-28.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/07-28.txt","section":"Officium"}],"t":{"la":["Ss. Nazarii et Celsi Martyrum, Victoris I Papæ et Martyris ac Innocentii I Papæ et Confessoris"],"fr":["Saints Nazaire et Celse, martyrs, Victor Ier, pape et martyr, et Innocent Ier, pape et confesseur"]}}
+{"id":"sancti-07-28.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements rouges."]}}
+{"id":"sancti-07-28.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-07-28.introit.1","type":"rubric","t":{"la":["Ps 78:11-12; 78:10"],"fr":["Ps 78:11-12; 78:10"]}}
+{"id":"sancti-07-28.introit.2","type":"para","dropCap":true,"t":{"la":["Intret in conspéctu tuo, Dómine, gémitus compeditórum: redde vicínis nostris séptuplum in sinu eórum: víndica sánguinem Sanctórum tuórum, qui effúsus est."]}}
+{"id":"sancti-07-28.introit.3","type":"rubric","t":{"la":["Ps 78:1"],"fr":["Ps 78:1"]}}
+{"id":"sancti-07-28.introit.4","type":"para","t":{"la":["Deus, venérunt gentes in hereditátem tuam: polluérunt templum sanctum tuum: posuérunt Jerúsalem in pomórum custódiam."]}}
+{"id":"sancti-07-28.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-07-28.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-07-28.introit.7","type":"para","t":{"la":["Intret in conspéctu tuo, Dómine, gémitus compeditórum: redde vicínis nostris séptuplum in sinu eórum: víndica sánguinem Sanctórum tuórum, qui effúsus est."]}}
+{"id":"sancti-07-28.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-28.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-28.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-07-28.collecte.1","type":"para","t":{"la":["Sanctórum tuórum nos, Dómine, Nazárii, Celsi, Victóris et Innocéntii conféssio beáta commúniat: et fragilitáti nostræ subsídium dignánter exóret. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-07-28.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-28.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-07-28.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-07-28.lecon.2","type":"rubric","t":{"la":["Sap 10:17-20"],"fr":["Sap 10:17-20"]}}
+{"id":"sancti-07-28.lecon.3","type":"para","t":{"la":["Réddidit Deus justis mercédem labórum suorum, et deduxit illos in via mirábili: et fuit illis in velaménto diei et in luce stellárum per noctem: tránstulit illos per Mare Rubrum, et transvéxit illos per aquam nímiam. Inimícos autem illórum demérsit in mare, et ab altitúdine inferórum edúxit illos. Ideo justi tulérunt spolia impiórum, et decantavérunt, Dómine, nomen sanctum tuum, et victrícem manum tuam laudavérunt páriter, Dómine, Deus noster."]}}
+{"id":"sancti-07-28.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-28.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-07-28.graduel.1","type":"rubric","t":{"la":["Exodi 15:11"],"fr":["Exodi 15:11"]}}
+{"id":"sancti-07-28.graduel.2","type":"para","t":{"la":["Gloriósus Deus in Sanctis suis: mirábilis in majestáte, fáciens prodígia."]}}
+{"id":"sancti-07-28.graduel.3","type":"rubric","t":{"la":["Exodi 15:6"],"fr":["Exodi 15:6"]}}
+{"id":"sancti-07-28.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Déxtera tua, Dómine, glorificáta est in virtúte: déxtera manus tua confrégit inimícos. Allelúja, allelúja."]}}
+{"id":"sancti-07-28.graduel.5","type":"rubric","t":{"la":["Sir 44:14"],"fr":["Sir 44:14"]}}
+{"id":"sancti-07-28.graduel.6","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Córpora Sanctórum in pace sepúlta sunt, et nómina eórum vivent in generatiónem et generatiónem. Allelúja."]}}
+{"id":"sancti-07-28.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-07-28.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-07-28.evangile.2","type":"rubric","t":{"la":["Luc 21:9-19"],"fr":["Luc 21:9-19"]}}
+{"id":"sancti-07-28.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Cum audiéritis prǽlia et seditiónes, nolíte terréri: opórtet primum hæc fíeri, sed nondum statim finis. Tunc dicébat illis: Surget gens contra gentem, et regnum advérsus regnum. Et terræmótus magni erunt per loca, et pestiléntiæ, et fames, terrorésque de coelo, et signa magna erunt. Sed ante hæc ómnia injícient vobis manus suas, et persequéntur tradéntes in synagógas et custódias, trahéntes ad reges et praesides propter nomen meum: contínget autem vobis in testimónium. Pónite ergo in córdibus vestris non præmeditári, quemádmodum respondeátis. Ego enim dabo vobis os et sapiéntiam, cui non potérunt resístere et contradícere omnes adversárii vestri. Tradémini autem a paréntibus, et frátribus, et cognátis, et amícis, et morte affícient ex vobis: et éritis ódio ómnibus propter nomen meum: et capíllus de cápite vestro non períbit. In patiéntia vestra possidébitis ánimas vestras."]}}
+{"id":"sancti-07-28.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-28.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-28.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-07-28.offertoire.1","type":"rubric","t":{"la":["Ps 67:36"],"fr":["Ps 67:36"]}}
+{"id":"sancti-07-28.offertoire.2","type":"para","t":{"la":["Mirábilis Deus in Sanctis suis: Deus Israël, ipse dabit virtútem et fortitúdinem plebi suæ: benedíctus Deus, allelúja."]}}
+{"id":"sancti-07-28.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-28.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-07-28.secrete.1","type":"para","t":{"la":["Concéde nobis, omnípotens Deus: ut his munéribus, quæ in sanctórum tuórum Nazarii, Celsi, Victóris et Innocéntii honóre deférimus, et te placémus exhíbitis, et nos vivificémur accéptis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-07-28.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-07-28.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-07-28.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-28.txt","section":"Communio"},{"file":"horas/Latin/Commune/C3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-07-28.communion.1","type":"rubric","t":{"la":["Sap 3:4-6"],"fr":["Sap 3:4-6"]}}
+{"id":"sancti-07-28.communion.2","type":"para","t":{"la":["Et si coram homínibus torménta passi sunt, Deus tentávit eos: tamquam aurum in fornáce probávit eos, et quasi holocáusta accépit eos."]}}
+{"id":"sancti-07-28.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-28.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-07-28.postcommunion.1","type":"para","t":{"la":["Sanctórum Nazárii, Celsi, Victóris et Innocéntii, Dómine, intercessióne placátus: præsta, quǽsumus; ut, quod temporáli celebrámus actióne, perpétua salvatióne capiámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

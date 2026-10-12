@@ -1,0 +1,41 @@
+{"id":"sancti-07-05.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Officium"}],"t":{"la":["S. Antonii Mariæ Zaccaria Confessoris"],"fr":["Saint Antoine-Marie Zaccaria, confesseur"]}}
+{"id":"sancti-07-05.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-07-05.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-07-05.introit.1","type":"rubric","t":{"la":["1 Cor 2:4"],"fr":["1 Cor 2:4"]}}
+{"id":"sancti-07-05.introit.2","type":"para","dropCap":true,"t":{"la":["Sermo meus et prædicátio mea non in persuasibílibus humánæ sapiéntiæ verbis, sed in ostensióne spíritus et virtútis."]}}
+{"id":"sancti-07-05.introit.3","type":"rubric","t":{"la":["Ps 110:1"],"fr":["Ps 110:1"]}}
+{"id":"sancti-07-05.introit.4","type":"para","t":{"la":["Confitébor tibi, Dómine, in toto corde meo, in consílio justórum et congregatióne."]}}
+{"id":"sancti-07-05.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-07-05.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-07-05.introit.7","type":"para","t":{"la":["Sermo meus et prædicátio mea non in persuasibílibus humánæ sapiéntiæ verbis, sed in ostensióne spíritus et virtútis."]}}
+{"id":"sancti-07-05.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-07-05.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-07-05.collecte.1","type":"para","t":{"la":["Fac nos, Dómine Deus, supereminéntem Jesu Christi sciéntiam, spíritu Pauli Apóstoli, edíscere: qua beátus Antónius María mirabíliter erudítus, novas in Ecclésia tua clericórum et vírginum famílias congregávit. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-07-05.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-07-05.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Timótheum"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, à Timothée"]}}
+{"id":"sancti-07-05.epitre.2","type":"rubric","t":{"la":["1. Tim 4:8-16."]}}
+{"id":"sancti-07-05.epitre.3","type":"para","t":{"la":["Caríssime: Píetas ad ómnia utilis est: promissiónem habens vitæ, quæ nunc est, et futúræ. Fidélis sermo et omni acceptióne dignus. In hoc enim laborámus et maledícimur, quia sperámus in Deum vivum, qui est Salvátor ómnium hóminum, maxime fidélium. Præcipe hæc et doce. Nemo adolescentiam tuam contémnat: sed exémplum esto fidélium in verbo, in conversatióne, in caritáte, in fide, in castitáte. Dum vénio, atténde lectióni, exhortatióni et doctrínæ. Noli neglégere grátiam, quæ in te est, quæ data est tibi per prophetíam, cum impositióne mánuum presbytérii. Hæc meditáre, in his esto: ut proféctus tuus maniféstus sit ómnibus. Attende tibi et doctrínæ: insta in illis. Hoc enim fáciens, et teípsum salvum fácies, et eos qui te áudiunt."]}}
+{"id":"sancti-07-05.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-07-05.graduel.1","type":"rubric","t":{"la":["Philipp 1:8-9"],"fr":["Philipp 1:8-9"]}}
+{"id":"sancti-07-05.graduel.2","type":"para","t":{"la":["Testis mihi est Deus, quo modo cúpiam omnes vos in viscéribus Jesu Christi. Et hoc oro, ut cáritas vestra magis ac magis abúndet in sciéntia et in omni sensu."]}}
+{"id":"sancti-07-05.graduel.3","type":"rubric","t":{"la":["Philip 1:10"],"fr":["Philip 1:10"]}}
+{"id":"sancti-07-05.graduel.4","type":"para","t":{"la":["Ut probétis potióra, ut sitis sincéri et sine offénsa in diem Christi. Allelúja, allelúja."]}}
+{"id":"sancti-07-05.graduel.5","type":"rubric","t":{"la":["Philip 1:11."],"fr":["Philip 1:11."]}}
+{"id":"sancti-07-05.graduel.6","type":"para","t":{"la":["Repléti fructu justítiæ per Jesum Christum, in glóriam et laudem Dei. Allelúja."]}}
+{"id":"sancti-07-05.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-07-05.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Marcum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Marc"]}}
+{"id":"sancti-07-05.evangile.2","type":"rubric","t":{"la":["Marc 10:15-21"],"fr":["Marc 10:15-21"]}}
+{"id":"sancti-07-05.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Quisquis non recéperit regnum Dei velut párvulus, non intrábit in illud. Et compléxans párvulos et impónens manus super illos, benedicébat eos. ¶ Et cum egréssus esset in viam, procúrrens quidam, genu flexo ante eum, rogábat eum: Magíster bone, quid fáciam, ut vitam ætérnam percípiam? Jesus autem dixit ei: Quid me dicis bonum? Nemo bonus, nisi unus Deus. Præcépta nosti: Ne adúlteres, ne occídas, ne furéris, ne falsum testimónium díxeris, ne fraudem féceris, honora patrem tuum et matrem. At ille respóndens, ait illi: Magíster, hæc ómnia observávi a juventúte mea. Jesus autem intúitus eum, diléxit eum et dixit ei: Unum tibi deest: vade, quæcúmque habes, vende et da paupéribus, et habébis thesáurum in cælo: et veni, séquere me."]}}
+{"id":"sancti-07-05.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-07-05.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-07-05.offertoire.1","type":"rubric","t":{"la":["Ps 137:1-2"],"fr":["Ps 137:1-2"]}}
+{"id":"sancti-07-05.offertoire.2","type":"para","t":{"la":["In conspéctu Angelórum psallam tibi: adorábo ad templum sanctum tuum, et confitébor nómini tuo."]}}
+{"id":"sancti-07-05.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-07-05.secrete.1","type":"para","t":{"la":["Ad mensam cœléstis convívii fac nos, Dómine, eam mentis et córporis puritátem afférre, qua beátus Antónius María, hanc sacratíssimam hóstiam ófferens, mirífice ornátus enítuit. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-07-05.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-07-05.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-07-05.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-07-05.communion.1","type":"rubric","t":{"la":["Philipp 3:17"],"fr":["Philipp 3:17"]}}
+{"id":"sancti-07-05.communion.2","type":"para","t":{"la":["Imitatóres mei estóte, fratres, et observáte eos, qui ita ámbulant, sicut habétis formam nostram."]}}
+{"id":"sancti-07-05.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/07-05.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-07-05.postcommunion.1","type":"para","t":{"la":["Cœlésti dape, qua pasti sumus, Dómine Jesu Christe, eo corda nostra caritátis igne flamméscant: quo beátus Antónius María salutáris hóstiæ vexíllum, contra Ecclésiæ tuæ hostes, éxtulit ad victóriam: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

@@ -1,0 +1,40 @@
+{"id":"tempora-pent13-6.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Pent13-6.txt","section":"Officium"}],"t":{"la":["Sabbato infra Hebdomadam XIII post Octavam Pentecostes"],"fr":["Samedi de la 13e semaine après la Pentecôte"]}}
+{"id":"tempora-pent13-6.rang","type":"rubric","t":{"fr":["IVᵉ classe — ornements verts."]}}
+{"id":"tempora-pent13-6.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent13-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-pent13-6.introit.1","type":"rubric","t":{"la":["Ps 73:20; 73:19; 73:23"],"fr":["Ps 73:20; 73:19; 73:23"]}}
+{"id":"tempora-pent13-6.introit.2","type":"para","dropCap":true,"t":{"la":["Réspice, Dómine, in testaméntum tuum, et ánimas páuperum tuórum ne derelínquas in finem: exsúrge, Dómine, et júdica causam tuam, et ne obliviscáris voces quæréntium te."]}}
+{"id":"tempora-pent13-6.introit.3","type":"rubric","t":{"la":["Ps 73:1"],"fr":["Ps 73:1"]}}
+{"id":"tempora-pent13-6.introit.4","type":"para","t":{"la":["Ut quid, Deus, reppulísti in finem: irátus est furor tuus super oves páscuæ tuæ?"]}}
+{"id":"tempora-pent13-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-pent13-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-pent13-6.introit.7","type":"para","t":{"la":["Réspice, Dómine, in testaméntum tuum, et ánimas páuperum tuórum ne derelínquas in finem: exsúrge, Dómine, et júdica causam tuam, et ne obliviscáris voces quæréntium te."]}}
+{"id":"tempora-pent13-6.gloria","type":"rubric","t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pent13-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent13-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-pent13-6.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, da nobis fídei, spei et caritátis augméntum: et, ut mereámur asséqui quod promíttis, fac nos amáre quod prǽcipis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent13-6.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent13-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-pent13-6.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Gálatas"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Galates"]}}
+{"id":"tempora-pent13-6.epitre.2","type":"rubric","t":{"la":["Gal 3:16-22"],"fr":["Gal 3:16-22"]}}
+{"id":"tempora-pent13-6.epitre.3","type":"para","t":{"la":["Fratres: Abrahæ dictæ sunt promissiónes, et sémini ejus. Non dicit: Et semínibus, quasi in multis; sed quasi in uno: Et sémini tuo, qui est Christus. Hoc autem dico: testaméntum confirmátum a Deo, quæ post quadringéntos et trigínta annos facta est lex, non írritum facit ad evacuándam promissiónem. Nam si ex lege heréditas, jam non ex promissióne. Abrahæ autem per repromissiónem donávit Deus. Quid igitur lex? Propter transgressiónes pósita est, donec veníret semen, cui promíserat, ordináta per Angelos in manu mediatóris. Mediátor autem uníus non est: Deus autem unus est. Lex ergo advérsus promíssa Dei? Absit. Si enim data esset lex, quæ posset vivificáre, vere ex lege esset justítia. Sed conclúsit Scriptúra ómnia sub peccáto, ut promíssio ex fide Jesu Christi darétur credéntibus."]}}
+{"id":"tempora-pent13-6.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent13-0.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-pent13-6.graduel.1","type":"rubric","t":{"la":["Ps 73:20; 73:19; 73:22"],"fr":["Ps 73:20; 73:19; 73:22"]}}
+{"id":"tempora-pent13-6.graduel.2","type":"para","t":{"la":["Réspice, Dómine, in testaméntum tuum: et ánimas páuperum tuórum ne obliviscáris in finem."]}}
+{"id":"tempora-pent13-6.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Exsúrge, Dómine, et júdica causam tuam: memor esto oppróbrii servórum tuórum. Allelúja, allelúja"]}}
+{"id":"tempora-pent13-6.graduel.4","type":"rubric","t":{"la":["Ps 89:1"],"fr":["Ps 89:1"]}}
+{"id":"tempora-pent13-6.graduel.5","type":"para","t":{"la":["Dómine, refúgium factus es nobis a generatióne et progénie. Allelúja."]}}
+{"id":"tempora-pent13-6.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent13-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-pent13-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"tempora-pent13-6.evangile.2","type":"rubric","t":{"la":["Luc 17:11-19"],"fr":["Luc 17:11-19"]}}
+{"id":"tempora-pent13-6.evangile.3","type":"para","t":{"la":["In illo témpore: Dum iret Jesus in Jerúsalem, transíbat per médiam Samaríam et Galilǽam. Et cum ingrederétur quoddam castéllum, occurrérunt ei decem viri leprósi, qui stetérunt a longe; et levavérunt vocem dicéntes: Jesu præcéptor, miserére nostri. Quos ut vidit, dixit: Ite, osténdite vos sacerdótibus. Et factum est, dum irent, mundáti sunt. Unus autem ex illis, ut vidit quia mundátus est, regréssus est, cum magna voce magníficans Deum, et cecidit in fáciem ante pedes ejus, grátias agens: et hic erat Samaritánus. Respóndens autem Jesus, dixit: Nonne decem mundáti sunt? et novem ubi sunt? Non est invéntus, qui redíret et daret glóriam Deo, nisi hic alienígena. Et ait illi: Surge, vade; quia fides tua te salvum fecit."]}}
+{"id":"tempora-pent13-6.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pent13-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent13-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-pent13-6.offertoire.1","type":"rubric","t":{"la":["Ps 30:15-16"],"fr":["Ps 30:15-16"]}}
+{"id":"tempora-pent13-6.offertoire.2","type":"para","t":{"la":["In te sperávi, Dómine; dixi: Tu es Deus meus, in mánibus tuis témpora mea."]}}
+{"id":"tempora-pent13-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent13-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-pent13-6.secrete.1","type":"para","t":{"la":["Propitiáre, Dómine, pópulo tuo, propitiáre munéribus: ut, hac oblatióne placátus, et indulgéntiam nobis tríbuas et postuláta concedas. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent13-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-pent13-6.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pent13-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent13-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-pent13-6.communion.1","type":"rubric","t":{"la":["Sap 16:20"],"fr":["Sap 16:20"]}}
+{"id":"tempora-pent13-6.communion.2","type":"para","t":{"la":["Panem de cœlo dedísti nobis, Dómine, habéntem omne delectaméntum et omnem sapórem suavitátis."]}}
+{"id":"tempora-pent13-6.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent13-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-pent13-6.postcommunion.1","type":"para","t":{"la":["Sumptis, Dómine, cœléstibus sacraméntis: ad redemptiónis ætérnæ, quǽsumus, proficiámus augméntum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

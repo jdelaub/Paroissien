@@ -1,0 +1,40 @@
+{"id":"sancti-09-03.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Officium"}],"t":{"la":["S. Pii X Papæ Confessoris"],"fr":["Saint Pie X, pape et confesseur"]}}
+{"id":"sancti-09-03.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-09-03.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-09-03.introit.1","type":"rubric","t":{"la":["Ps 88:20-22"],"fr":["Ps 88:20-22"]}}
+{"id":"sancti-09-03.introit.2","type":"para","dropCap":true,"t":{"la":["Éxtuli eléctum de pópulo, óleo sancto meo unxi eum: ut manus mea sit semper cum eo, et brácchium meum confírmet eum."]}}
+{"id":"sancti-09-03.introit.3","type":"rubric","t":{"la":["Ps. 88:2"],"fr":["Ps. 88:2"]}}
+{"id":"sancti-09-03.introit.4","type":"para","t":{"la":["Grátias Dómini in ætérnum cantábo: per omnes generatiónes annuntiábo fidelitátem tuam ore meo."]}}
+{"id":"sancti-09-03.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-09-03.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-09-03.introit.7","type":"para","t":{"la":["Éxtuli eléctum de pópulo, óleo sancto meo unxi eum: ut manus mea sit semper cum eo, et brácchium meum confírmet eum."]}}
+{"id":"sancti-09-03.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-09-03.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-09-03.collecte.1","type":"para","t":{"la":["Deus, qui ad tuéndam cathólicam fidem, et univérsa in Christo instauránda sanctum Pium, Summum Pontíficem, cælésti sapiéntia et apostólica fortitúdine replevísti: concéde propítius; ut, ejus institúta et exémpla sectántes, præmia consequámur ætérna. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-09-03.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-09-03.lecon.1","type":"para","style":"intro","t":{"la":["Lectio prima Sancti Pauli apóstoli ad Thessalonicénses"],"fr":["Lecture de la première Épître de saint Paul, Apôtre, aux Thessaloniciens"]}}
+{"id":"sancti-09-03.lecon.2","type":"rubric","t":{"la":["1 Thess 2:2-8"],"fr":["1 Thess 2:2-8"]}}
+{"id":"sancti-09-03.lecon.3","type":"para","t":{"la":["Fratres: Fidúciam habúimus in Deo nostro, loqui ad vos Evangélium Dei in multa sollicitúdine. Exhortátio enim nostra non de erróre, neque de immundítia, neque in dolo, sed sicut probáti sumus a Deo ut crederétur nobis Evangélium: ita lóquimur non quasi homínibus placéntes, sed Deo, qui probat corda nostra. Neque enim aliquándo fúimus in sermóne adulatiónis, sicut scitis: neque in occasióne avarítiæ: Deus testis est: nec quæréntes ab homínibus glóriam, neque a vobis, neque ab áliis. Cum possémus vobis óneri esse ut Christi apóstoli: sed facti sumus párvuli in médio vestrum, tamquam si nutrix fóveat fílios suos. Ita desiderántes vos, cúpide volebámus trádere vobis non solum Evangélium Dei, sed étiam ánimas nostras: quóniam caríssimi nobis facti estis."]}}
+{"id":"sancti-09-03.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-09-03.graduel.1","type":"rubric","t":{"la":["Ps 39:10-11"],"fr":["Ps 39:10-11"]}}
+{"id":"sancti-09-03.graduel.2","type":"para","t":{"la":["Annuntiávi justítiam tuam in cœtu magno; ecce lábia mea non cohíbui: Dómine, tu nosti."]}}
+{"id":"sancti-09-03.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Justítiam tuam non abscóndi in corde meo; fidelitátem tuam et auxílium tuum narrávi. Allelúia, allelúia."]}}
+{"id":"sancti-09-03.graduel.4","type":"rubric","t":{"la":["Ps 22:5-6"],"fr":["Ps 22:5-6"]}}
+{"id":"sancti-09-03.graduel.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Paras mihi mensam, inúngis óleo caput meum, calix meus ubérrimus est. Allelúia."]}}
+{"id":"sancti-09-03.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-09-03.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia Sancti evangélii secúndum Joánnem"],"fr":["Suite du saint Évangile selon saint Jean"]}}
+{"id":"sancti-09-03.evangile.2","type":"rubric","t":{"la":["Joannes 21:15-17"],"fr":["Joannes 21:15-17"]}}
+{"id":"sancti-09-03.evangile.3","type":"para","t":{"la":["In illo témpore, dicit Jesus Simóni Petro: Simon Joánnis, díligis me plus his? Dicit ei: Etiam Dómine, tu scis quia amo te. Dicit ei: Pasce agnos meos. ¶ Dicit ei íterum: Simon Joánnis, díligis me? Ait illi: Etiam Dómine, tu scis quia amo te. Dicit ei: Pasce agnos meos. Dicit ei tértio: Simon Joánnis, amas me? Contristátus est Petrus, quia dixit ei tértio: Amas me? et dixit ei: Dómine, tu ómnia nosti, tu scis quia amo te. Dixit ei: Pasce oves meas."]}}
+{"id":"sancti-09-03.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-09-03.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-09-03.offertoire.1","type":"rubric","t":{"la":["Ps 33:12"],"fr":["Ps 33:12"]}}
+{"id":"sancti-09-03.offertoire.2","type":"para","t":{"la":["Veníte, fílii; audíte me: timórem Dómini docébo vos."]}}
+{"id":"sancti-09-03.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-09-03.secrete.1","type":"para","t":{"la":["Oblatiónibus nostris, quǽsumus, Dómine, benígne suscéptis, da nobis, ut hæc divína mystéria, sancto Pio Summo Pontífice intercedénte, sincéris tractémus obséquiis et fidéli mente sumámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-09-03.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-09-03.preface.1","type":"rubric","t":{"la":["Præfatio de Apostolis."],"fr":["Préface des Apôtres."]}}
+{"id":"sancti-09-03.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-09-03.communion.1","type":"rubric","t":{"la":["Joannes 6:56-57"],"fr":["Joannes 6:56-57"]}}
+{"id":"sancti-09-03.communion.2","type":"para","t":{"la":["Caro enim mea vere est cibus: et sanguis meus, vere est potus; qui mandúcat meam carnem et bibit meum sánguinem, in me manet, et ego in illo."]}}
+{"id":"sancti-09-03.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/09-03.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-09-03.postcommunion.1","type":"para","t":{"la":["Mensæ cæléstis virtúte refécti, quǽsumus, Dómine Deus noster: ut, interveniénte sancto Pio Summo Pontífice; fortes efficiámur in fide, et in tua simus caritáte concórdes. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

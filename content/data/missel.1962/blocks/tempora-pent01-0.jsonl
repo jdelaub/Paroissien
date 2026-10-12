@@ -1,0 +1,40 @@
+{"id":"tempora-pent01-0.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Officium"}],"t":{"la":["Sanctissimae Trinitatis"],"fr":["Très Sainte Trinité"]}}
+{"id":"tempora-pent01-0.rang","type":"rubric","t":{"fr":["Iʳᵉ classe — ornements blancs."]}}
+{"id":"tempora-pent01-0.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-pent01-0.introit.1","type":"rubric","t":{"la":["Tob 12:6"],"fr":["Tob 12:6"]}}
+{"id":"tempora-pent01-0.introit.2","type":"para","dropCap":true,"t":{"la":["Benedícta sit sancta Trínitas atque indivísa Unitas: confitébimur ei, quia fecit nobíscum misericórdiam suam."]}}
+{"id":"tempora-pent01-0.introit.3","type":"rubric","t":{"la":["Ps 8:2"],"fr":["Ps 8:2"]}}
+{"id":"tempora-pent01-0.introit.4","type":"para","t":{"la":["Dómine, Dóminus noster, quam admirábile est nomen tuum in univérsa terra!"]}}
+{"id":"tempora-pent01-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-pent01-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-pent01-0.introit.7","type":"para","t":{"la":["Benedícta sit sancta Trínitas atque indivísa Unitas: confitébimur ei, quia fecit nobíscum misericórdiam suam."]}}
+{"id":"tempora-pent01-0.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pent01-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-pent01-0.collecte.1","type":"para","t":{"la":["Omnípotens sempitérne Deus, qui dedísti fámulis tuis in confessióne veræ fídei, ætérnæ Trinitátis glóriam agnóscere, et in poténtia majestátis adoráre Unitátem: quǽsumus; ut, ejúsdem fídei firmitáte, ab ómnibus semper muniámur advérsis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent01-0.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-pent01-0.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Romános"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Romains"]}}
+{"id":"tempora-pent01-0.epitre.2","type":"rubric","t":{"la":["Rom 11:33-36."],"fr":["Rom 11:33-36."]}}
+{"id":"tempora-pent01-0.epitre.3","type":"para","t":{"la":["O altitúdo divitiárum sapiéntiæ et sciéntiæ Dei: quam incomprehensibília sunt judícia ejus, et investigábiles viæ ejus! Quis enim cognovit sensum Dómini? Aut quis consiliárius ejus fuit? Aut quis prior dedit illi, et retribuétur ei? Quóniam ex ipso et per ipsum et in ipso sunt ómnia: ipsi glória in sǽcula. Amen."]}}
+{"id":"tempora-pent01-0.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-pent01-0.graduel.1","type":"rubric","t":{"la":["Dan 3:55-56"],"fr":["Dan 3:55-56"]}}
+{"id":"tempora-pent01-0.graduel.2","type":"para","t":{"la":["Benedíctus es, Dómine, qui intuéris abýssos, et sedes super Chérubim,"]}}
+{"id":"tempora-pent01-0.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Benedíctus es, Dómine, in firmaménto cæli, et laudábilis in sǽcula. Allelúja, allelúja."]}}
+{"id":"tempora-pent01-0.graduel.4","type":"rubric","t":{"la":["Dan 3:52"],"fr":["Dan 3:52"]}}
+{"id":"tempora-pent01-0.graduel.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Benedíctus es, Dómine, Deus patrum nostrórum, et laudábilis in sǽcula. Allelúja."]}}
+{"id":"tempora-pent01-0.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-pent01-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"tempora-pent01-0.evangile.2","type":"rubric","t":{"la":["Matt 28:18-20"],"fr":["Matt 28:18-20"]}}
+{"id":"tempora-pent01-0.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Data est mihi omnis potéstas in cœlo et in terra. Eúntes ergo docéte omnes gentes, baptizántes eos in nómine Patris, et Fílii, et Spíritus Sancti: docéntes eos serváre ómnia, quæcúmque mandávi vobis. Et ecce, ego vobíscum sum ómnibus diébus usque ad consummatiónem sǽculi."]}}
+{"id":"tempora-pent01-0.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-pent01-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-pent01-0.offertoire.1","type":"rubric","t":{"la":["Tob 12:6."],"fr":["Tob 12:6."]}}
+{"id":"tempora-pent01-0.offertoire.2","type":"para","t":{"la":["Benedíctus sit Deus Pater, unigenitúsque Dei Fílius, Sanctus quoque Spíritus: quia fecit nobíscum misericórdiam suam."]}}
+{"id":"tempora-pent01-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-pent01-0.secrete.1","type":"para","t":{"la":["Sanctífica, quǽsumus, Dómine, Deus noster, per tui sancti nóminis invocatiónem, hujus oblatiónis hóstiam: et per eam nosmetípsos tibi pérfice munus ætérnum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent01-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-pent01-0.preface.1","type":"rubric","t":{"la":["Præfatio de sanctissima Trinitate."],"fr":["Préface de la Sainte Trinité."]}}
+{"id":"tempora-pent01-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-pent01-0.communion.1","type":"rubric","t":{"la":["Tob 12:6"],"fr":["Tob 12:6"]}}
+{"id":"tempora-pent01-0.communion.2","type":"para","t":{"la":["Benedícimus Deum cœli et coram ómnibus vivéntibus confitébimur ei: quia fecit nobíscum misericórdiam suam."]}}
+{"id":"tempora-pent01-0.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-0r.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-pent01-0.postcommunion.1","type":"para","t":{"la":["Profíciat nobis ad salútem córporis et ánimæ, Dómine, Deus noster, hujus sacraménti suscéptio: et sempitérnæ sanctæ Trinitátis ejusdémque indivíduæ Unitátis conféssio. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

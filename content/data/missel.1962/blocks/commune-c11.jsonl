@@ -1,0 +1,39 @@
+{"id":"commune-c11.titre","type":"heading","level":1,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Officium"}],"t":{"la":["In Festis Beatae Mariae Virginis"],"fr":["Commun des fêtes de la Sainte Vierge : messe Salve, sancta Parens"]}}
+{"id":"commune-c11.rang","type":"rubric","t":{"fr":["Ornements rouges."]}}
+{"id":"commune-c11.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"commune-c11.introit.1","type":"rubric","t":{"la":["Sedulius"]}}
+{"id":"commune-c11.introit.2","type":"para","dropCap":true,"t":{"la":["Salve, sancta parens, eníxa puérpera Regem: qui cælum terrámque regit in sǽcula sæculórum."]}}
+{"id":"commune-c11.introit.3","type":"rubric","t":{"la":["Ps 44:2"],"fr":["Ps 44:2"]}}
+{"id":"commune-c11.introit.4","type":"para","t":{"la":["Eructávit cor meum verbum bonum: dico ego ópera mea Regi."]}}
+{"id":"commune-c11.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"commune-c11.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"commune-c11.introit.7","type":"para","t":{"la":["Salve, sancta parens, eníxa puérpera Regem: qui cælum terrámque regit in sǽcula sæculórum."]}}
+{"id":"commune-c11.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"commune-c11.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"commune-c11.collecte.1","type":"para","t":{"la":["Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c11.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"commune-c11.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"commune-c11.lecon.2","type":"rubric","t":{"la":["Eccli 24:14-16"],"fr":["Eccli 24:14-16"]}}
+{"id":"commune-c11.lecon.3","type":"para","t":{"la":["Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea."]}}
+{"id":"commune-c11.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"commune-c11.graduel.1","type":"para","t":{"la":["Benedícta et venerábilis es, Virgo María: quæ sine tactu pudóris invénta es Mater Salvatóris."]}}
+{"id":"commune-c11.graduel.2","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Virgo, Dei Génetrix, quem totus non capit orbis, in tua se clausit víscera factus homo. Allelúja, allelúja."]}}
+{"id":"commune-c11.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Post partum, Virgo, invioláta permansísti: Dei Génetrix, intercéde pro nobis. Allelúja."]}}
+{"id":"commune-c11.graduel.sept","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Tractus"}],"t":{"la":["Post Septuagesimam"],"fr":["Après la Septuagésime"]}}
+{"id":"commune-c11.graduel.sept.1","type":"para","t":{"la":["Benedícta et venerábilis es, Virgo María: quæ sine tactu pudóris invénia es Mater Salvatóris.",{"br":1},{"sym":"V"}," ","Virgo, Dei Génetrix, quem totus non capit orbis, in tua se clausit víscera factus homo.",{"br":1},{"m":["red","i"],"c":["Tractus"]},{"br":1},"Gaude, María Virgo, cunctas hǽreses sola interemísti.",{"br":1},{"sym":"V"}," ","Quæ Gabriélis Archángeli dictis credidísti.",{"br":1},{"sym":"V"}," ","Dum Virgo Deum et hóminem genuísti: et post partum, Virgo, invioláta permansísti.",{"br":1},{"sym":"V"}," ","Dei Génetrix, intercéde pro nobis."]}}
+{"id":"commune-c11.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"commune-c11.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"commune-c11.evangile.2","type":"rubric","t":{"la":["Luc 11:27-28"],"fr":["Luc 11:27-28"]}}
+{"id":"commune-c11.evangile.3","type":"para","t":{"la":["In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba, dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. ¶ At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud."]}}
+{"id":"commune-c11.credo","type":"rubric","t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"commune-c11.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"commune-c11.offertoire.1","type":"rubric","t":{"la":["Luc 1:28 1:42"],"fr":["Luc 1:28 1:42"]}}
+{"id":"commune-c11.offertoire.2","type":"para","t":{"la":["Ave, María, grátia plena; Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui."]}}
+{"id":"commune-c11.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"commune-c11.secrete.1","type":"para","t":{"la":["Tua, Dómine, propitiatióne, et beátæ Maríæ semper Vírginis intercessióne, ad perpétuam atque præséntem hæc oblátio nobis profíciat prosperitátem et pacem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c11.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"commune-c11.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Festivitate »)."]}}
+{"id":"commune-c11.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"commune-c11.communion.1","type":"para","t":{"la":["Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium."]}}
+{"id":"commune-c11.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C11.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"commune-c11.postcommunion.1","type":"para","t":{"la":["Sumptis, Dómine, salútis nostræ subsídiis: da, quǽsumus, beátæ Maríæ semper Vírginis patrocíniis nos ubíque prótegi; in cujus veneratióne hæc tuæ obtúlimus majestáti. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

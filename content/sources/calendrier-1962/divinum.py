@@ -13,6 +13,10 @@ on ne les exécute jamais, on les lit comme du texte.
 - `dclass(rank)` : rang numérique de Divinum Officium → classe de 1960 (table `[Festa] (rubrica 196)`
   de `horas/Latin/Psalterium/Comment.txt` : 1 → IV, 2 à 4 → III, 5 → II, 6 et 7 → I ; 4.9, rang
   des Quatre-Temps, → II).
+
+`vero` et `process_conditional_lines` acceptent un `context` facultatif (`{"tempore": "Quadragesimæ",
+"missa": 1, …}`) qui donne la valeur des sujets dépendant du jour ; sans lui, ces conditions restent fausses
+et sont consignées dans `UNEVALUATED` (comportement du calendrier). Le missel (content/sources/missel) s'en sert.
 """
 
 from __future__ import annotations
@@ -115,6 +119,14 @@ SCOPE_NULL, SCOPE_LINE, SCOPE_CHUNK, SCOPE_NEST = 0, 1, 2, 3
 _SUBJECTS = {"rubricis": VERSION, "rubrica": VERSION, "communi": VERSION, "ad": "missam"}
 _KNOWN_DAY_SUBJECTS = {"tempore", "missa", "die", "feria", "commune", "votiva", "officio", "mense", "dioecesis", "tonus", "toni"}
 _PREDICATES = {
+    "paschali": lambda s: re.search("Paschæ|Ascensionis|Octava Pentecostes", s, re.I) is not None,
+    "post septuagesimam": lambda s: re.search("Septua|Quadra|Passio", s, re.I) is not None,
+    "prima": lambda s: s == "1",
+    "secunda": lambda s: s == "2",
+    "tertia": lambda s: s == "3",
+    "longior": lambda s: s == "1",
+    "brevior": lambda s: s == "2",
+    "feriali": lambda s: re.search("feria|vigilia", s, re.I) is not None,
     "tridentina": lambda s: re.search("Trident", s) is not None,
     "monastica": lambda s: re.search("Monastic", s) is not None,
     "innovata": lambda s: re.search("2020 USA|NewCal", s, re.I) is not None,
@@ -125,7 +137,7 @@ _PREDICATES = {
 UNEVALUATED: set[str] = set()  # conditions dépendant du jour rencontrées (pour le rapport)
 
 
-def vero(condition: str) -> bool:
+def vero(condition: str, context: dict | None = None) -> bool:
     condition = condition.strip()
     if not condition:
         return True
@@ -147,11 +159,14 @@ def vero(condition: str) -> bool:
             if subject and subject.lower() not in _SUBJECTS and subject.lower() not in _KNOWN_DAY_SUBJECTS:
                 subject, predicate = "", f"{subject} {predicate}"
             subject = (subject or "tempore").lower()
-            if subject not in _SUBJECTS:
+            if context is not None and subject in context:
+                value = str(context[subject])
+            elif subject in _SUBJECTS:
+                value = _SUBJECTS[subject]
+            else:
                 UNEVALUATED.add(condition)
                 ok = False
                 break
-            value = _SUBJECTS[subject]
             test = _PREDICATES.get(predicate.lower())
             result = test(value) if test else re.search(predicate, value, re.I) is not None
             if not (result ^ negation):
@@ -162,10 +177,10 @@ def vero(condition: str) -> bool:
     return False
 
 
-def _parse_conditional(stopwords: str, condition: str, scope: str):
+def _parse_conditional(stopwords: str, condition: str, scope: str, context: dict | None = None):
     words = stopwords.lower().split()
     strength = sum(_STOPWORD_WEIGHTS.get(w, 0) for w in words)
-    result = vero(condition)
+    result = vero(condition, context)
     implicit_backscope = any(w in _BACKSCOPED for w in words)
     if re.search("versuum|omittuntur", scope, re.I):
         backscope = SCOPE_NEST
@@ -184,7 +199,7 @@ def _parse_conditional(stopwords: str, condition: str, scope: str):
     return strength, result, backscope, forwardscope
 
 
-def process_conditional_lines(lines: list[str]) -> list[str]:
+def process_conditional_lines(lines: list[str], context: dict | None = None) -> list[str]:
     """Port ligne à ligne de `process_conditional_lines` (SetupString.pl)."""
     AFFIRMATIVE, NOT_YET, DUMMY = 1, 0, 2
     blank = re.compile(r"^\s*_?\s*$")
@@ -194,7 +209,7 @@ def process_conditional_lines(lines: list[str]) -> list[str]:
     for line in lines:
         m = _CONDITIONAL_LINE.match(line)
         if m:
-            strength, result, backscope, forwardscope = _parse_conditional(m.group(1) or "", m.group(2) or "", m.group(3) or "")
+            strength, result, backscope, forwardscope = _parse_conditional(m.group(1) or "", m.group(2) or "", m.group(3) or "", context)
             line = m.group(4)
             last = len(offsets) - 1
             if stack[-1][0] == AFFIRMATIVE or strength >= last:

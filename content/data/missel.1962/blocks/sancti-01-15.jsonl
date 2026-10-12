@@ -1,0 +1,47 @@
+{"id":"sancti-01-15.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/01-15.txt","section":"Officium"}],"t":{"la":["S. Pauli Primi Eremitæ et Confessoris"],"fr":["Saint Paul, premier ermite, confesseur"]}}
+{"id":"sancti-01-15.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-01-15.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-15.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C5-1.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-01-15.introit.1","type":"rubric","t":{"la":["Ps 91:13-14"],"fr":["Ps 91:13-14"]}}
+{"id":"sancti-01-15.introit.2","type":"para","dropCap":true,"t":{"la":["Justus ut palma florébit: sicut cedrus Líbani multiplicábitur: plantátus in domo Dómini: in átriis domus Dei nostri."]}}
+{"id":"sancti-01-15.introit.3","type":"rubric","t":{"la":["Ps 91:2"],"fr":["Ps 91:2"]}}
+{"id":"sancti-01-15.introit.4","type":"para","t":{"la":["Bonum est confitéri Dómino: et psállere nómini tuo, Altíssime."]}}
+{"id":"sancti-01-15.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-01-15.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-01-15.introit.7","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus Líbani multiplicábitur: plantátus in domo Dómini: in átriis domus Dei nostri."]}}
+{"id":"sancti-01-15.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-01-15.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-01-15.collecte.1","type":"para","t":{"la":["Deus, qui nos beáti Pauli Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, étiam actiónes imitémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-15.collecte.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Maur, abbé"]}}
+{"id":"sancti-01-15.collecte.c1.1","type":"para","t":{"la":["Intercéssio nos, quǽsumus, Dómine, beáti Mauri Abbátis comméndet: ut, quod nostris méritis non valémus, ejus patrocínio assequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-15.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-15.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-01-15.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Philippénses"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Philippiens"]}}
+{"id":"sancti-01-15.epitre.2","type":"rubric","t":{"la":["Philipp 3:7-12"],"fr":["Philipp 3:7-12"]}}
+{"id":"sancti-01-15.epitre.3","type":"para","t":{"la":["Fratres: Quæ mihi fuérunt lucra, hæc arbitrátus sum propter Christum defriménta. Verúmtamen exístimo ómnia detriméntum esse propter eminéntem sciéntiam Jesu Christi, Dómini mei: propter quem ómnia detriméntum feci et árbitror ut stércora, ut Christum lucrifáciam et invéniar in illo, non habens meam justítiam, quæ ex lege est, sed illam, quæ ex fide est Christi Jesu: quæ ex Deo est justítia in fide, ad cognoscéndum illum, et virtútem resurrectiónis ejus, et societátem passiónum illíus: configurátus morti ejus: si quo modo occúrram ad resurrectiónem, quæ est ex mórtuis: non quod jam accéperim aut jam perféctus sim: sequor autem, si quo modo comprehéndam, in quo et comprehénsus sum a Christo Jesu."]}}
+{"id":"sancti-01-15.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-15.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-01-15.graduel.1","type":"rubric","t":{"la":["Ps 91:13; 91:14"],"fr":["Ps 91:13; 91:14"]}}
+{"id":"sancti-01-15.graduel.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus Líbani multiplicábitur in domo Dómini."]}}
+{"id":"sancti-01-15.graduel.3","type":"rubric","t":{"la":["Ps 91:3"],"fr":["Ps 91:3"]}}
+{"id":"sancti-01-15.graduel.4","type":"para","t":{"la":["Annuntiándum mane misericórdiam tuam, et veritátem tuam per noctem. Allelúja, allelúja."]}}
+{"id":"sancti-01-15.graduel.5","type":"rubric","t":{"la":["Osee 14:6"],"fr":["Osee 14:6"]}}
+{"id":"sancti-01-15.graduel.6","type":"para","t":{"la":["Justus germinábit sicut lílium: et florébit in ætérnum ante Dóminum. Allelúja."]}}
+{"id":"sancti-01-15.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-15.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-01-15.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-01-15.evangile.2","type":"rubric","t":{"la":["Matt 11:25-30"],"fr":["Matt 11:25-30"]}}
+{"id":"sancti-01-15.evangile.3","type":"para","t":{"la":["In illo témpore: Respóndens Jesus, dixit: Confíteor tibi, Pater, Dómine coeli et terræ, quia abscondísti hæc a sapiéntibus et prudéntibus, et revelásti ea párvulis. Ita, Pater: quóniam sic fuit plácitum ante te. Omnia mihi trádita sunt a Patre meo. Et nemo novit Fílium nisi Pater: neque Patrem quis novit nisi Fílius, et cui volúerit Fílius reveláre. Veníte ad me, omnes, qui laborátis et oneráti estis, et ego refíciam vos. Tóllite jugum meum super vos, et díscite a me, quia mitis sum et húmilis corde: et inveniétis réquiem animábus vestris. Jugum enim meum suáve est et onus meum leve."]}}
+{"id":"sancti-01-15.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-01-15.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-15.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C5-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-01-15.offertoire.1","type":"rubric","t":{"la":["Ps 20:2-3"],"fr":["Ps 20:2-3"]}}
+{"id":"sancti-01-15.offertoire.2","type":"para","t":{"la":["In virtúte tua, Dómine, lætábitur justus, et super salutáre tuum exsultábit veheménter: desidérium ánimæ ejus tribuísti ei."]}}
+{"id":"sancti-01-15.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-01-15.secrete.1","type":"para","t":{"la":["Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus et futúris. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-15.secrete.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Maur, abbé"]}}
+{"id":"sancti-01-15.secrete.c1.1","type":"para","t":{"la":["Sacris altáribus, Dómine, hóstias superpósitas sanctus Maurus Abbas, quǽsumus, in salútem nobis proveníre depóscat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-15.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-01-15.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-01-15.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-15.txt","section":"Communio"},{"file":"horas/Latin/Commune/C2ap.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-01-15.communion.1","type":"rubric","t":{"la":["Ps 63:11"],"fr":["Ps 63:11"]}}
+{"id":"sancti-01-15.communion.2","type":"para","t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde, allelúja, allelúja."]}}
+{"id":"sancti-01-15.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-01-15.postcommunion.1","type":"para","t":{"la":["Refécti cibo potúque cœlésti, Deus noster, te súpplices exorámus: ut, in cujus hæc commemoratióne percépimus, ejus muniámur et précibus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-15.postcommunion.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Postcommunio"}],"t":{"fr":["Commémoraison : Saint Maur, abbé"]}}
+{"id":"sancti-01-15.postcommunion.c1.1","type":"para","t":{"la":["Prótegat nos, Dómine, cum tui perceptióne sacraménti beátus Maurus Abbas, pro nobis intercedéndo: ut et conversatiónis ejus experiámur insígnia, et intercessiónis percipiámus suffrágia. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

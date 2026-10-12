@@ -1,0 +1,42 @@
+{"id":"sancti-02-11.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Officium"}],"t":{"la":["In Apparitione Beatæ Mariæ Virginis Immaculatæ"],"fr":["Apparition de la bienheureuse Vierge Marie Immaculée"]}}
+{"id":"sancti-02-11.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-02-11.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-02-11.introit.1","type":"rubric","t":{"la":["Apoc 21:2"],"fr":["Apoc 21:2"]}}
+{"id":"sancti-02-11.introit.2","type":"para","dropCap":true,"t":{"la":["Vidi civitátem sanctam, Jerúsalem novam, descendéntem de cœlo a Deo, parátam sicut sponsam ornátam viro suo."]}}
+{"id":"sancti-02-11.introit.3","type":"rubric","t":{"la":["Ps 44,2."],"fr":["Ps 44,2."]}}
+{"id":"sancti-02-11.introit.4","type":"para","t":{"la":["Eructávit cor meum verbum bonum: dico ego ópera mea Regi."]}}
+{"id":"sancti-02-11.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-02-11.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-02-11.introit.7","type":"para","t":{"la":["Vidi civitátem sanctam, Jerúsalem novam, descendéntem de cœlo a Deo, parátam sicut sponsam ornátam viro suo."]}}
+{"id":"sancti-02-11.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-11.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-02-11.collecte.1","type":"para","t":{"la":["Deus, qui per immaculátam Vírginis Conceptiónem dignum Filio tuo habitáculum præparásti: súpplices a te quǽsumus; ut, ejúsdem Vírginis Apparitiónem celebrántes, salútem mentis et córporis consequámur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-02-11.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-02-11.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Apocalýpsis beáti Joánnis Apóstoli"],"fr":["Lecture du livre de l’Apocalypse de saint Jean, Apôtre"]}}
+{"id":"sancti-02-11.lecon.2","type":"rubric","t":{"la":["Apoc 11:19; 12:1, 10"],"fr":["Apoc 11:19; 12:1, 10"]}}
+{"id":"sancti-02-11.lecon.3","type":"para","t":{"la":["Apértum est templum Dei in cœlo: et visa est arca testaménti ejus in templo ejus, et facta sunt fúlgura et voces et terræmótus et grando magna. Et signum magnum appáruit in cœlo: Múlier amícta sole, et luna sub pédibus ejus, et in cápite ejus coróna stellárum duódecim. Et audívi vocem magnam in cœlo dicéntem: Nunc facta est salus et virtus, et regnum Dei nostri et potéstas Christi ejus."]}}
+{"id":"sancti-02-11.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Tractus"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-02-11.graduel.1","type":"para","t":{"la":[{"m":["red","i"],"c":["Cant 2:12"]},{"br":1},"Flores apparuérunt in terra nostra, tempus putatiónis advénit, vox túrturis audíta est in terra nostra.",{"br":1},{"m":["red","i"],"c":["Cant 2:10 et 14"]},{"br":1},{"sym":"V"}," ","Surge, amíca mea, speciósa mea, et veni: colúmba mea in foramínibus petræ, in cavérna macériæ.",{"br":1},{"m":["red","i"],"c":["Tractus"]},{"br":1},{"m":["red","i"],"c":["Judith 15:10"]},{"br":1},"Tu glória Jerúsalem, tu lætítia Israël, tu honorificéntia pópuli nostri.",{"br":1},{"m":["red","i"],"c":["Cant 4:7"]},{"br":1},{"sym":"V"}," ","Tota pulchra es, María: et mácula originális non est in te.",{"br":1},{"sym":"V"}," ","Felix es, sacra Virgo María, et omni laude digníssima, quæ serpéntis caput virgíneo pede contrivísti."]}}
+{"id":"sancti-02-11.graduel.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Graduale"}],"t":{"la":["Ante Septuagesimam"],"fr":["Avant la Septuagésime"]}}
+{"id":"sancti-02-11.graduel.hors.1","type":"rubric","t":{"la":["Cant 2:12"],"fr":["Cant 2:12"]}}
+{"id":"sancti-02-11.graduel.hors.2","type":"para","t":{"la":["Flores apparuérunt in terra nostra, tempus putatiónis advénit, vox túrturis audíta est in terra nostra."]}}
+{"id":"sancti-02-11.graduel.hors.3","type":"rubric","t":{"la":["Cant 2:10 et 14"],"fr":["Cant 2:10 et 14"]}}
+{"id":"sancti-02-11.graduel.hors.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Surge, amíca mea, speciósa mea, et veni: colúmba mea in foramínibus petræ, in cavérna macériæ. Allelúia, allelúia."]}}
+{"id":"sancti-02-11.graduel.hors.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Osténde mihi fáciem tuam, sonet vox tua in áuribus meis: vox enim tua dulcis, et fácies tua decóra. Allelúia."]}}
+{"id":"sancti-02-11.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-02-11.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-02-11.evangile.2","type":"rubric","t":{"la":["Luc 1:26-31"],"fr":["Luc 1:26-31"]}}
+{"id":"sancti-02-11.evangile.3","type":"para","t":{"la":["In illo témpore: Missus est Angelus Gábriel a Deo in civitátem Galilææ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María. Et ingréssus Angelus ad eam dixit: Ave, grátia plena; Dóminus tecum: benedícta tu in muliéribus. Quæ cum audísset, turbáta est in sermóne ejus: et cogitábat, qualis esset ista salutátio. Et ait Angelus ei: Ne tímeas, María, invenísti enim grátiam apud Deum: ecce, concípies in útero et páries fílium, et vocábis nomen ejus Jesum."]}}
+{"id":"sancti-02-11.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-02-11.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-02-11.offertoire.1","type":"rubric","t":{"la":["Luc 1:28"],"fr":["Luc 1:28"]}}
+{"id":"sancti-02-11.offertoire.2","type":"para","t":{"la":["Ave, grátia plena; Dóminus tecum: benedícta tu in muliéribus."]}}
+{"id":"sancti-02-11.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-02-11.secrete.1","type":"para","t":{"la":["Hóstia laudis, quam tibi, Dómine, per mérita gloriósæ et immaculátæ Vírginis offérimus, sit tibi in odórem suavitátis, et nobis optátam cónferat córporis et ánimæ sanitátem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-02-11.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-02-11.preface.1","type":"rubric","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in apparitióne »)."]}}
+{"id":"sancti-02-11.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-02-11.communion.1","type":"rubric","t":{"la":["Ps 64:10"],"fr":["Ps 64:10"]}}
+{"id":"sancti-02-11.communion.2","type":"para","t":{"la":["Visitásti terram et inebriásti eam, multiplicásti locupletáre eam."]}}
+{"id":"sancti-02-11.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-11.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-02-11.postcommunion.1","type":"para","t":{"la":["Quos cœlésti, Dómine, aliménto satiásti, súblevet dextera Genetrícis tuæ immaculátæ: ut ad ætérnam pátriam, ipsa adjuvánte, perveníre mereámur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

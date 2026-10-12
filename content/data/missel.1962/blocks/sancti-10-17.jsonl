@@ -1,0 +1,41 @@
+{"id":"sancti-10-17.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Officium"}],"t":{"la":["S. Margaritæ Mariæ Alacoque Virginis"],"fr":["Sainte Marguerite-Marie Alacoque, vierge"]}}
+{"id":"sancti-10-17.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-10-17.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-10-17.introit.1","type":"rubric","t":{"la":["Cant 2:3."],"fr":["Cant 2:3."]}}
+{"id":"sancti-10-17.introit.2","type":"para","dropCap":true,"t":{"la":["Sub umbra illíus, quem desideráveram, sedi: et fructus ejus dulcis gútturi meo."]}}
+{"id":"sancti-10-17.introit.3","type":"rubric","t":{"la":["Ps 83:2-3"],"fr":["Ps 83:2-3"]}}
+{"id":"sancti-10-17.introit.4","type":"para","t":{"la":["Quam dilécta tabernácula tua, Dómine virtútum! Concupíscit, et déficit ánima mea in átria Dómini."]}}
+{"id":"sancti-10-17.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-10-17.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-10-17.introit.7","type":"para","t":{"la":["Sub umbra illíus, quem desideráveram, sedi: et fructus ejus dulcis gútturi meo."]}}
+{"id":"sancti-10-17.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-17.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-10-17.collecte.1","type":"para","t":{"la":["Dómine Jesu Christe, qui investigábiles divítias Cordis tui beátæ Margarítæ Maríæ Vírgini mirabíliter revelásti: da nobis ejus méritis et imitatióne; ut, te in ómnibus et super ómnia diligéntes, jugem in eódem Corde tuo mansiónem habére mereámur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-17.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-10-17.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Ephésios."],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Éphésiens"]}}
+{"id":"sancti-10-17.epitre.2","type":"rubric","t":{"la":["Ephes 3:8-9; 14-19."],"fr":["Ephes 3:8-9; 14-19."]}}
+{"id":"sancti-10-17.epitre.3","type":"para","t":{"la":["Fratres: Mihi ómnium sanctórum mínimo data est grátia hæc, in géntibus evangelizáre investigábiles divítias Christi, et illumináre omnes, quæ sit dispensátio sacraménti abscónditi a sǽculis in Deo, qui ómnia creávit. Hujus rei grátia flecto génua mea ad Patrem Dómini nostri Jesu Christi, ex quo omnis patérnitas in cælis et in terra nominátur, ut det vobis secúndum divítias glóriæ suæ, virtúte corroborári per Spíritum ejus in interiórem hóminem: Christum habitáre per fidem in córdibus vestris: in caritáte radicáti et fundáti, ut póssitis comprehéndere cum ómnibus sanctis, quæ sit latitúdo et longitúdo et sublímitas et profúndum: scire étiam supereminéntem sciéntiæ caritátem Christi, ut impleámini in omnem plenitúdinem Dei."]}}
+{"id":"sancti-10-17.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-10-17.graduel.1","type":"rubric","t":{"la":["Cant 8:7."],"fr":["Cant 8:7."]}}
+{"id":"sancti-10-17.graduel.2","type":"para","t":{"la":["Aquæ multæ non potuérunt exstínguere caritátem, nec flúmina óbruent illam."]}}
+{"id":"sancti-10-17.graduel.3","type":"rubric","t":{"la":["Ps 72:26"],"fr":["Ps 72:26"]}}
+{"id":"sancti-10-17.graduel.4","type":"para","t":{"la":["Defécit caro mea et cor meum: Deus cordis mei, et pars mea Deus in ætérnum. Allelúja, allelúja."]}}
+{"id":"sancti-10-17.graduel.5","type":"rubric","t":{"la":["Cant 7:10."],"fr":["Cant 7:10."]}}
+{"id":"sancti-10-17.graduel.6","type":"para","t":{"la":["Ego dilécto meo, et ad me conversio ejus. Allelúja."]}}
+{"id":"sancti-10-17.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-10-17.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-10-17.evangile.2","type":"rubric","t":{"la":["Matt 11:25-30"],"fr":["Matt 11:25-30"]}}
+{"id":"sancti-10-17.evangile.3","type":"para","t":{"la":["In illo témpore: Respóndens Jesus, dixit: Confíteor tibi, Pater, Dómine cæli et terræ, quia abscondísti hæc a sapiéntibus et prudéntibus, et revelásti ea párvulis. Ita, Pater: quóniam sic fuit plácitum ante te. Omnia mihi trádita sunt a Patre meo. Et nemo novit Fílium nisi Pater: neque Patrem quis novit nisi Fílius, et cui volúerit Fílius reveláre. Veníte ad me, omnes, qui laborátis et oneráti estis, et ego refíciam vos. Tóllite jugum meum super vos, et discite a me, quia mitis sum et húmilis corde: et inveniétis réquiem animábus vestris. Jugum enim meum suave est et onus meum leve."]}}
+{"id":"sancti-10-17.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-10-17.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-10-17.offertoire.1","type":"rubric","t":{"la":["Zach 9:17"],"fr":["Zach 9:17"]}}
+{"id":"sancti-10-17.offertoire.2","type":"para","t":{"la":["Quid bonum ejus est et quid pulchrum ejus, nisi fruméntum electórum et vinum gérminans vírgines?"]}}
+{"id":"sancti-10-17.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-10-17.secrete.1","type":"para","t":{"la":["Accépta tibi sint, Dómine, plebis tuæ múnera: et concéde; ut ignis ille divínus nos inflámmet, quo de Corde Fílii tui emisso beáta Margaríta María veheménter æstuávit. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-17.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-10-17.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-10-17.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-10-17.communion.1","type":"rubric","t":{"la":["Cant 6:2"],"fr":["Cant 6:2"]}}
+{"id":"sancti-10-17.communion.2","type":"para","t":{"la":["Ego dilécto meo, et diléctus meus mihi, qui páscitur inter lília."]}}
+{"id":"sancti-10-17.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-17.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-10-17.postcommunion.1","type":"para","t":{"la":["Córporis et Sánguinis tui, Dómine Jesu, sumptis mystériis: concéde nobis, quǽsumus, beáta Margaríta María Vírgine intercedénte; ut, supérbis sǽculi vanitátibus exútis, mansuetúdinem et humilitátem Cordis tui indúere mereámur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

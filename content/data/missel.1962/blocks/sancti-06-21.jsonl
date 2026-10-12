@@ -1,0 +1,41 @@
+{"id":"sancti-06-21.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/06-21.txt","section":"Officium"}],"t":{"la":["S. Aloisii Gonzagæ Confessoris"],"fr":["Saint Louis de Gonzague, confesseur"]}}
+{"id":"sancti-06-21.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-06-21.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-21.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-06-21.introit.1","type":"rubric","t":{"la":["Ps 8:6"],"fr":["Ps 8:6"]}}
+{"id":"sancti-06-21.introit.2","type":"para","dropCap":true,"t":{"la":["Minuísti eum paulo minus ab Angelis: glória et honóre coronásti eum."]}}
+{"id":"sancti-06-21.introit.3","type":"rubric","t":{"la":["Ps 148:2"],"fr":["Ps 148:2"]}}
+{"id":"sancti-06-21.introit.4","type":"para","t":{"la":["Laudáte Dóminum, omnes Angeli ejus: laudáte eum, omnes virtútes ejus."]}}
+{"id":"sancti-06-21.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-06-21.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-06-21.introit.7","type":"para","t":{"la":["Minuísti eum paulo minus ab Angelis: glória et honóre coronásti eum."]}}
+{"id":"sancti-06-21.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-06-21.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-21.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-06-21.collecte.1","type":"para","t":{"la":["Cœléstium donórum distribútor, Deus, qui in angélico júvene Aloísio miram vitæ innocéntiam pari cum pœniténtia sociásti: ejus méritis et précibus concéde; ut, innocéntem non secúti, pœniténtem imitémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-21.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-06-21.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-06-21.lecon.2","type":"rubric","t":{"la":["Eccli 31:8-11"],"fr":["Eccli 31:8-11"]}}
+{"id":"sancti-06-21.lecon.3","type":"para","t":{"la":["Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui potuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ídeo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum."]}}
+{"id":"sancti-06-21.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-21.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-06-21.graduel.1","type":"rubric","t":{"la":["Ps 70:5-6"],"fr":["Ps 70:5-6"]}}
+{"id":"sancti-06-21.graduel.2","type":"para","t":{"la":["Dómine, spes mea a juventúte mea: in te confirmátus sum ex útero: de ventre matris meæ tu es protéctor meus."]}}
+{"id":"sancti-06-21.graduel.3","type":"rubric","t":{"la":["Ps 40:13"],"fr":["Ps 40:13"]}}
+{"id":"sancti-06-21.graduel.4","type":"para","t":{"la":["Me autem propter innocéntiam suscepísti: et confirmásti me in conspéctu tuo in ætérnum. Allelúja, allelúja."]}}
+{"id":"sancti-06-21.graduel.5","type":"rubric","t":{"la":["Ps 64:5"],"fr":["Ps 64:5"]}}
+{"id":"sancti-06-21.graduel.6","type":"para","t":{"la":["Beátus, quem elegísti et assumpsísti: inhabitábit in átriis tuis. Allelúja."]}}
+{"id":"sancti-06-21.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-21.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-06-21.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-06-21.evangile.2","type":"rubric","t":{"la":["Matt 22:29-40"],"fr":["Matt 22:29-40"]}}
+{"id":"sancti-06-21.evangile.3","type":"para","t":{"la":["In illo témpore: Respóndens Jesus, ait sadducæis: Errátis, nesciéntes Scriptúras neque virtútem Dei. In resurrectióne enim neque nubent neque nubéntur: sed erunt sicut Angeli Dei in cœlo. De resurrectióne autem mortuórum non legístis, quod dictum est a Deo dicénte vobis: Ego sum Deus Abraham et Deus Isaac et Deus Jacob? Non est Deus mortuórum, sed vivéntium. Et audiéntes turbæ, mirabántur in doctrína ejus. Pharisæi autem audiéntes, quod siléntium imposuísset sadducæis, convenérunt in unum: et interrogávit eum unus ex eis legis doctor, tentans eum: Magíster, quod est mandátum magnum in lege? Ait illi Jesus: Díliges Dóminum, Deum tuum, ex toto corde tuo, et in tota ánima tua, et in tota mente tua. Hoc est máximum et primum mandátum. Secúndum autem símile est huic: Díliges próximum tuum, sicut teípsum. In his duóbus mandátis univérsa lex pendet et Prophétæ."]}}
+{"id":"sancti-06-21.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-06-21.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-21.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-06-21.offertoire.1","type":"rubric","t":{"la":["Ps 23:3-4"],"fr":["Ps 23:3-4"]}}
+{"id":"sancti-06-21.offertoire.2","type":"para","t":{"la":["Quis ascéndet in montem Dómini, aut quis stabit in loco sancto ejus? Innocens mánibus, et mundo corde."]}}
+{"id":"sancti-06-21.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-21.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-06-21.secrete.1","type":"para","t":{"la":["Cœlésti convívio fac nos, Dómine, nuptiáli veste indútos accúmbere: quam beáti Aloísii pia præparátio et juges lácrimæ inæstimabílibus ornábant margarítis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-21.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-06-21.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-06-21.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-21.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-06-21.communion.1","type":"rubric","t":{"la":["Ps 77:24-25"],"fr":["Ps 77:24-25"]}}
+{"id":"sancti-06-21.communion.2","type":"para","t":{"la":["Panem cœli dedit eis: panem Angelórum manducávit homo."]}}
+{"id":"sancti-06-21.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-21.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-06-21.postcommunion.1","type":"para","t":{"la":["Angelórum esca nutrítos, angélicis étiam, Dómine, da móribus vívere: et ejus, quem hódie cólimus, exémplo in gratiárum semper actióne manére. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

@@ -1,0 +1,38 @@
+{"id":"sancti-11-14.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Officium"}],"t":{"la":["S. Josaphat Episcopi et Martyris"],"fr":["Saint Josaphat, évêque et martyr"]}}
+{"id":"sancti-11-14.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements rouges."]}}
+{"id":"sancti-11-14.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-11-14.introit.1","type":"para","dropCap":true,"t":{"la":["Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beáti Jósaphat Mártyris: de cujus passióne gaudent Angeli et colláudant Fílium Dei."]}}
+{"id":"sancti-11-14.introit.2","type":"rubric","t":{"la":["Ps 32:1"],"fr":["Ps 32:1"]}}
+{"id":"sancti-11-14.introit.3","type":"para","t":{"la":["Exsultáte, justi, in Dómino: rectos decet collaudátio."]}}
+{"id":"sancti-11-14.introit.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-11-14.introit.5","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-11-14.introit.6","type":"para","t":{"la":["Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beáti Jósaphat Mártyris: de cujus passióne gaudent Angeli et colláudant Fílium Dei."]}}
+{"id":"sancti-11-14.gloria","type":"rubric","t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-11-14.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-11-14.collecte.1","type":"para","t":{"la":["Excita, quǽsumus, Dómine, in Ecclésia tua Spíritum, quo replétus beátus Jósaphat Martyr et Póntifex tuus ánimam suam pro óvibus pósuit: ut, eo intercedénte, nos quoque eódem Spíritu moti ac roboráti, ánimam nostram pro frátribus pónere non vereámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte ejúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-11-14.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-11-14.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Hebræos."],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Hébreux"]}}
+{"id":"sancti-11-14.epitre.2","type":"rubric","t":{"la":["Hebr 5:1-6"],"fr":["Hebr 5:1-6"]}}
+{"id":"sancti-11-14.epitre.3","type":"para","t":{"la":["Fratres: Omnis póntifex ex homínibus assúmptus, pro homínibus constitúitur in iis, quæ sunt ad Deum, ut ófferat dona, et sacrifícia pro peccátis: qui condolére possit iis, qui ígnorant et errant: quóniam et ipse circúmdatus est infirmitáte: et proptérea debet, quemádmodum pro pópulo, ita étiam et pro semetípso offérre pro peccátis. Nec quisquam sumit sibi honórem, sed qui vocátur a Deo, tamquam Aaron. Sic et Christus non semetípsum clarificávit, ut Póntifex fíeret: sed qui locútus est ad eum: Fílius meus es tu, ego hódie génui te. Quemádmodum et in álio loco dicit: Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech."]}}
+{"id":"sancti-11-14.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-11-14.graduel.1","type":"rubric","t":{"la":["Ps 88:21-23"],"fr":["Ps 88:21-23"]}}
+{"id":"sancti-11-14.graduel.2","type":"para","t":{"la":["Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum."]}}
+{"id":"sancti-11-14.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Nihil profíciet inimícus in eo, et fílius iniquitátis non nocébit ei. Allelúja, allelúja."]}}
+{"id":"sancti-11-14.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hic est sacérdos, quem coronávit Dóminus. Allelúja."]}}
+{"id":"sancti-11-14.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Evangelium"},{"file":"missa/Latin/Tempora/Pasc2-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-11-14.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"sancti-11-14.evangile.2","type":"rubric","t":{"la":["Joann 10:11-16"],"fr":["Joann 10:11-16"]}}
+{"id":"sancti-11-14.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus pharisǽis: Ego sum pastor bonus. Bonus pastor ánimam suam dat pro óvibus suis. Mercenárius autem et qui non est pastor, cujus non sunt oves própriæ, videt lupum veniéntem, et dimíttit oves et fugit: et lupus rapit et dispérgit oves: mercenárius autem fugit, quia mercenárius est et non pértinet ad eum de óvibus. Ego sum pastor bonus: et cognósco meas et cognóscunt me meæ. Sicut novit me Pater, et ego agnósco Patrem, et ánimam meam pono pro óvibus meis. Et álias oves hábeo, quæ non sunt ex hoc ovíli: et illas opórtet me addúcere, et vocem meam áudient, et fiet unum ovíle et unus pastor."]}}
+{"id":"sancti-11-14.credo","type":"rubric","t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-11-14.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-11-14.offertoire.1","type":"rubric","t":{"la":["Joann 15:13"],"fr":["Joann 15:13"]}}
+{"id":"sancti-11-14.offertoire.2","type":"para","t":{"la":["Majórem caritátem nemo habet, ut ánimam suam ponat quis pro amícis suis."]}}
+{"id":"sancti-11-14.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-11-14.secrete.1","type":"para","t":{"la":["Clementíssime Deus, múnera hæc tua benedictióne perfunde, et nos in fide confírma: quam sanctus Jósaphat Martyr et Póntifex tuus, effúso sánguine, asséruit. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-11-14.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-11-14.preface.1","type":"rubric","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-11-14.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Communio"},{"file":"missa/Latin/Tempora/Pasc2-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-11-14.communion.1","type":"rubric","t":{"la":["Joannes 10:14"],"fr":["Joannes 10:14"]}}
+{"id":"sancti-11-14.communion.2","type":"para","t":{"la":["Ego sum pastor bonus, allelúja: et cognósco oves meas, et cognóscunt me meæ, allelúja, allelúja."]}}
+{"id":"sancti-11-14.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-14.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-11-14.postcommunion.1","type":"para","t":{"la":["Spíritum, Dómine, fortitúdinis hæc nobis tríbuat mensa cœléstis: quæ sancti Jósaphat Mártyris tui atque Pontíficis vitam pro Ecclésiæ honóre júgiter áluit ad victóriam. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
