@@ -435,6 +435,8 @@ def svg_strip(mod, inks, count=6, scale=2.0):
     w = P * count
     body = [f'<rect width="{w}" height="100" fill="{inks["ground"]}"/>']
     for pass_ in ("base", "over"):
+        if not mod[pass_]:
+            continue  # pas de groupe vide (l'arcature n'a pas de passe « over »)
         for i in range(-1, count + 2):
             body.append(f'<g transform="translate({(i + mod["phase"]) * P:.2f} 0)">\n    {svg_ops(mod[pass_], inks)}\n  </g>')
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w:.2f} 100" '
