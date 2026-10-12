@@ -239,21 +239,39 @@
        "unit": true
       },
       {
+       "id": "tempora-nat26",
+       "kind": "commemoration",
+       "toc": "Commémoraison du 2e jour dans l’octave de Noël",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat27",
+       "kind": "commemoration",
+       "toc": "Commémoraison du 3e jour dans l’octave de Noël",
+       "unit": true
+      },
+      {
+       "id": "tempora-nat28",
+       "kind": "commemoration",
+       "toc": "Commémoraison du 4e jour dans l’octave de Noël",
+       "unit": true
+      },
+      {
        "id": "tempora-nat29",
        "kind": "mass",
-       "toc": "6e jour dans l’octave de Noël",
+       "toc": "5e jour dans l’octave de Noël",
        "unit": true
       },
       {
        "id": "tempora-nat30",
        "kind": "mass",
-       "toc": "7e jour dans l’octave de Noël",
+       "toc": "6e jour dans l’octave de Noël",
        "unit": true
       },
       {
        "id": "tempora-nat31",
        "kind": "mass",
-       "toc": "8e jour dans l’octave de Noël",
+       "toc": "7e jour dans l’octave de Noël",
        "unit": true
       },
       {

@@ -422,6 +422,9 @@ Tempora/Nat04
 Tempora/Nat05
 Tempora/Nat1-0
 Tempora/Nat2-0
+Tempora/Nat26
+Tempora/Nat27
+Tempora/Nat28
 Tempora/Nat29
 Tempora/Nat30
 Tempora/Nat31

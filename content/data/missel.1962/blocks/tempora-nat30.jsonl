@@ -1,4 +1,4 @@
-{"id":"tempora-nat30.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Nat30.txt","section":"Officium"}],"t":{"la":["Die VI infra Octavam Nativitatis"],"fr":["7e jour dans l’octave de Noël"]}}
+{"id":"tempora-nat30.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Nat30.txt","section":"Officium"}],"t":{"la":["Die VI infra Octavam Nativitatis"],"fr":["6e jour dans l’octave de Noël"]}}
 {"id":"tempora-nat30.rang","type":"rubric","t":{"fr":["IIᵉ classe — ornements blancs."]}}
 {"id":"tempora-nat30.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Nat30.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
 {"id":"tempora-nat30.introit.1","type":"rubric","t":{"la":["Isa 9:6"],"fr":["Isa 9:6"]}}

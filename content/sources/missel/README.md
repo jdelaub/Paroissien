@@ -1,13 +1,13 @@
 # Missel de 1962 : Propre de la messe (provenance)
 
-Publication `missel.1962`, paquet `missel` (`licence-libre:MIT`, version 2026101301). C'est le Propre de la messe selon les rubriques de 1960 (missel de 1962), tiré de Divinum Officium : le latin seul, avec des titres et des rubriques en français rédigés par Paroissien. Le dépôt privé publie la même publication avec la traduction française de Divinum Officium, sous le même `packageId` et une version supérieure (2026101302) : l'app garde la plus haute version, la saveur personnelle montre donc le missel bilingue.
+Publication `missel.1962`, paquet `missel` (`licence-libre:MIT`, version 2026101303). C'est le Propre de la messe selon les rubriques de 1960 (missel de 1962), tiré de Divinum Officium : le latin seul, avec des titres et des rubriques en français rédigés par Paroissien. Le dépôt privé publie la même publication avec la traduction française de Divinum Officium, sous le même `packageId` et une version supérieure (2026101304) : l'app garde la plus haute version, la saveur personnelle montre donc le missel bilingue.
 
 | | |
 |---|---|
-| Unités | 772 : Propre du temps 407 (Avent 27, Temps de Noël 27, après l'Épiphanie 35, Septuagésime 17, Carême 32, Passion et Semaine sainte 15, Temps pascal 56, après la Pentecôte 198), Propre des saints 329 (par mois, 271 messes et 58 commémoraisons), Communs des saints 33, Messes des défunts 2, Préfaces 1 |
-| Formulaires | 717 messes (trois à Noël et le 2 novembre, deux le Jeudi saint ; dont 2 cérémonies données en entier, le Vendredi saint et la Vigile pascale) et 59 commémoraisons (collecte, secrète, postcommunion) |
-| Blocs | 32 045 : 8 313 `heading`, 9 563 `rubric`, 11 221 `para`, 2 719 `versicle`, 229 `stanza` |
-| Clés | 742 clés couvertes (`cles.txt`) : celles de chaque jour et de chaque commémoraison du calendrier de l'app |
+| Unités | 775 : Propre du temps 410 (Avent 27, Temps de Noël 30, après l'Épiphanie 35, Septuagésime 17, Carême 32, Passion et Semaine sainte 15, Temps pascal 56, après la Pentecôte 198), Propre des saints 329 (par mois, 271 messes et 58 commémoraisons), Communs des saints 33, Messes des défunts 2, Préfaces 1 |
+| Formulaires | 717 messes (trois à Noël et le 2 novembre, deux le Jeudi saint ; dont 2 cérémonies données en entier, le Vendredi saint et la Vigile pascale) et 62 commémoraisons (collecte, secrète, postcommunion) |
+| Blocs | 32 069 : 8 325 `heading`, 9 566 `rubric`, 11 230 `para`, 2 719 `versicle`, 229 `stanza` |
+| Clés | 745 clés couvertes (`cles.txt`) : celles de chaque jour et de chaque commémoraison du calendrier de l'app |
 | Sources | 497 fichiers de Divinum Officium (latin, `LICENSE`, `Tabulae/Tempora/Generale.txt`) et 2 propres de France transcrits (`propres/`), sha256 dans `sources.sha256` |
 | Paquet | voir le compte rendu de construction (`pqt.py build`) |
 
@@ -67,7 +67,7 @@ Divinum Officium, commit `b9c100d79ae481c67b2801fdd3622b00dd86bd73` (11/10/2026)
 - **Clés sans formulaire propre dans DO, ou ambiguës** :
   - `Sancti/01-03` (sainte Geneviève, calendrier de France) : le fichier 01-03 de DO est l'ancienne octave de saint Jean, supprimée en 1955. L'unité prend la messe propre de Paris, transcrite dans `propres/` (voir plus bas), qui masque ce fichier.
   - `Sancti/05-30f` (sainte Jeanne d'Arc, France) : clé propre, donnée dans `fr.json` (`proper`). Jeanne d'Arc partageait avec saint Félix Iᵉʳ la clé `Sancti/05-30`, qui reste celle de saint Félix. Sa messe est transcrite dans `propres/`.
-  - `Tempora/Nat26`, `Nat27`, `Nat28` : produites par `base()`, jamais célébrées (saint Étienne, saint Jean et les saints Innocents, de IIᵉ classe, l'emportent toujours) ; pas d'unité.
+  - `Tempora/Nat26`, `Nat27`, `Nat28` : produites par `base()`, toujours empêchées par saint Étienne, saint Jean et les saints Innocents (IIᵉ classe) ; le calendrier en fait des commémoraisons, qui ont leur unité d'oraisons (voir « Commémoraisons »).
   - `Tempora/PentEpi3-0` n'existe jamais : ce dimanche est toujours le Christ-Roi.
   - `Commune/C10a` (samedi de la Sainte Vierge en Avent) : jamais choisi par l'app (les féries de l'Avent sont de IIIᵉ classe), donné dans les Communs.
   - Clés propres à l'oracle Missalemeum (`Sancti/01-25c`, `02-22c`, `12-26c`… `Tempora/Pent03-0r`) : l'app ne les produit pas.
@@ -77,7 +77,8 @@ Divinum Officium, commit `b9c100d79ae481c67b2801fdd3622b00dd86bd73` (11/10/2026)
 Chaque clé de commémoraison du calendrier a son unité, rangée au Propre des saints après la messe du jour (Sept Douleurs : après le vendredi de la Passion). Elle contient un titre (« Commémoraison de saint Félix de Nole, prêtre et martyr »), une rubrique et trois pièces, `<unité>.collecte`, `.secrete` et `.postcommunion`. Ce sont les oraisons du fichier de DO de la clé, avec son commun et son `[Name]`, conditions de 1960 appliquées et conclusions développées. Commémoraisons écrites dans le formulaire du jour :
 - `Sancti/01-25` (saint Pierre, à la Conversion de saint Paul) : `[Oratio Petri]`, `[Secreta Petri]`, `[Postcommunio Petri]` de `Sancti/01-25` ;
 - `Sancti/12-28` (octave de Noël, aux saints Innocents) : `[Commemoratio Oratio]`… de `Sancti/12-28` ;
-- `Tempora/Quad5-5Feriac` : `[Commemoratio Oratio]`… de `Tempora/Quad5-5Feria`.
+- `Tempora/Quad5-5Feriac` : `[Commemoratio Oratio]`… de `Tempora/Quad5-5Feria` ;
+- `Tempora/Nat26`, `Nat27`, `Nat28` (2ᵉ, 3ᵉ et 4ᵉ jours de l'octave de Noël) : `[Commemoratio Oratio]`… de la fête du jour, soit les oraisons de la 3ᵉ messe de Noël. Ces trois unités sont au Propre du temps, après le dimanche dans l'octave.
 
 Les mêmes oraisons restent aussi dans le formulaire du jour, sous la collecte, la secrète et la postcommunion (`.c1`).
 

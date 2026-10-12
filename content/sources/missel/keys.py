@@ -271,7 +271,7 @@ def christmas_octave(d: date) -> Temporal:
         return _t("Sancti/12-25", "Nativité de Notre-Seigneur", "In Nativitate Domini", 10, ["WHITE"], "CHRISTMAS")
     if is_sunday(d):
         return _t("Tempora/Nat1-0", "Dimanche dans l'octave de Noël", "Dominica infra octavam Nativitatis", 31, ["WHITE"], "CHRISTMAS")
-    return _t(f"Tempora/Nat{d.day}", f"{ordinal(d.day - 23)} jour dans l'octave de Noël", None, 33, ["WHITE"], "CHRISTMAS")
+    return _t(f"Tempora/Nat{d.day}", f"{ordinal(d.day - 24)} jour dans l'octave de Noël", None, 33, ["WHITE"], "CHRISTMAS")
 
 
 def roman(k: int) -> str:

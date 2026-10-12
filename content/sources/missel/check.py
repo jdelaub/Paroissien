@@ -141,7 +141,7 @@ def check_keys(pub: canon.Publication, errors: list[str]) -> int:
     for k in keys:
         if k.lower().replace("/", "-") not in units:
             errors.append(f"cles.txt : {k} sans unité {k.lower().replace('/', '-')}")
-    needed = (K.all_keys() | K.commemoration_keys()) - {"Tempora/Nat26", "Tempora/Nat27", "Tempora/Nat28"}
+    needed = K.all_keys() | K.commemoration_keys()
     for k in sorted(needed - set(keys)):
         errors.append(f"clé du calendrier sans formulaire : {k}")
     for k in K.missing_from_oracle(set(keys)):

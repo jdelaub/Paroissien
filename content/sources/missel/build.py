@@ -170,8 +170,8 @@ PRELUDE_TITLES = {
 }
 
 # Messes sans propre dans DO pour une clé du calendrier de France : commun et nom (latin, français).
-# Clés jamais célébrées (toujours empêchées par une fête de IIᵉ classe) : pas de formulaire.
-NEVER = {"Tempora/Nat26", "Tempora/Nat27", "Tempora/Nat28"}
+# Jours de l'octave de Noël toujours empêchés par une fête de IIᵉ classe : commémoraison seule (oraisons de la 3ᵉ messe).
+OCTAVE_COMMEMORATIONS = {"Tempora/Nat26", "Tempora/Nat27", "Tempora/Nat28"}
 
 # Communs : (clé, titre français) dans l'ordre du Missel romain.
 COMMONS = [
@@ -1749,7 +1749,7 @@ class Book:
             rank = f"Commémoraison. Ces oraisons suivent celles de la messe du jour ({lower_first(main.fr)})."
             if STATIONS.get(key):
                 rank += f" Station à {STATIONS[key]} pour la procession."
-        intrinsic = not comm.get("proper")
+        intrinsic = not comm.get("proper") or key in OCTAVE_COMMEMORATIONS
         suffix = {"peter_apostle": "Petri", "paul_apostle": "Pauli"}.get(comm["id"])
         blocks = [heading(f"{uid}.titre", title_fr, title_la, 1, x_source(b.la, [(key, "Rank")]) if b.la.exists(key) else None),
                   rubric(f"{uid}.rang", rank)]
@@ -1762,7 +1762,7 @@ class Book:
             elif intrinsic:
                 if suffix:
                     candidates.append((key, f"{kind} {suffix}"))
-                candidates += [(main.key, f"Commemoratio {kind}"), (key, f"Commemoratio {kind}")]
+                candidates += [(main.key, f"Commemoratio {kind}"), (f"Sancti/{main.date}", f"Commemoratio {kind}")]
             for src, section in candidates:
                 mass = Mass(b, src, ctx)
                 r = b.la.resolve(src, section, mass.dctx)
@@ -1890,6 +1890,8 @@ def commemoration_heading(fr: str) -> str:
     """« Saint Félix de Nole, prêtre et martyr » → « Commémoraison de saint Félix de Nole, prêtre et martyr »."""
     if fr in COMMEMORATION_TITLES:
         return COMMEMORATION_TITLES[fr]
+    if fr[:1].isdigit():
+        return "Commémoraison du " + fr
     for article, prep in (("Les ", "des "), ("Le ", "du "), ("La ", "de la ")):
         if fr.startswith(article):
             return "Commémoraison " + prep + fr[len(article):]
@@ -1967,7 +1969,7 @@ def build_book(www: Path, verbose: bool = False) -> Book:
     temporal_keys -= {"Sancti/10-DU"}
     covered: list[str] = []
     for key in sorted(temporal_keys):
-        if key in NEVER:
+        if key in OCTAVE_COMMEMORATIONS:
             continue
         if key == "Sancti/01-13":
             book.temporal[key] = K.Temporal(key, K.EXTRA[key][0], K.EXTRA[key][1], 30, ("WHITE",), "CHRISTMAS", [date(2026, 1, 13)])
@@ -1998,11 +2000,18 @@ def build_book(www: Path, verbose: bool = False) -> Book:
                 ck = c.get("proper") or f"Sancti/{main.date}"
                 if ck not in covered and ck not in comm_keys:
                     comm_keys[ck] = (main, c)
+    for ck in sorted(OCTAVE_COMMEMORATIONS):
+        day = book.temporal[ck]
+        main = next(e for es in book.sanctoral.values() for e in es if e.date == f"12-{ck[-2:]}" and e.calendar == "general")
+        comm_keys[ck] = (main, {"id": "commemoration_of_the_octave_of_christmas", "proper": ck,
+                                "title": {"fr": day.fr, "la": b.la.officium(ck) or day.la}})
     comm_keys["Tempora/Quad5-5Feriac"] = (None, {"id": "seven_sorrows_friday", "proper": "Tempora/Quad5-5Feriac",
                                                  "title": {"fr": "Sept Douleurs de la Bienheureuse Vierge Marie", "la": "Septem Dolorum B. M. V."}})
     for ck, (main, c) in sorted(comm_keys.items()):
         u = book.commemoration_unit(ck, main, c)
-        if ck.startswith("Tempora/"):
+        if ck in OCTAVE_COMMEMORATIONS:
+            u.division, u.order = temporal_division(ck)
+        elif ck.startswith("Tempora/"):
             u.division, u.order = "passion", (5, 5, 1)
         else:
             u.division, u.order = f"m{main.date[:2]}", (int(main.date[3:5]), 1, ck)
