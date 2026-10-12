@@ -17,9 +17,19 @@ export JAVA_HOME="${JAVA_HOME:-$HOME/Android/jdk-21}"
 export PATH="$JAVA_HOME/bin:$PATH" # apksigner cherche java dans le PATH
 apksigner="$(ls -d "$HOME"/Android/Sdk/build-tools/*/ | sort -V | tail -1)apksigner"
 
-# Un seul travail lourd à la fois sur la VM (2 cœurs, 7,8 Gio).
+# Un seul travail lourd à la fois sur la VM (2 cœurs, 7,8 Gio, hébergée par le NAS) : elle a gelé deux fois le
+# 12/10/2026, un build release tournant en même temps qu'un agent. On refuse de construire sans marge.
 if pgrep -f "qemu-system|emulator64" >/dev/null; then
     echo "Un émulateur tourne : arrêtez-le avant de construire." >&2
+    exit 1
+fi
+if pgrep -f "GradleDaemon|GradleWorkerMain|chrome.*--headless" >/dev/null; then
+    echo "Un autre build Gradle ou un Chrome sans fenêtre tourne : attendez qu'il finisse." >&2
+    exit 1
+fi
+available=$(awk '/MemAvailable/ {print int($2 / 1024)}' /proc/meminfo)
+if [ "$available" -lt 3000 ]; then
+    echo "Seulement $available Mo de mémoire libre (3000 au moins) : fermez ce qui tourne avant de construire." >&2
     exit 1
 fi
 
@@ -59,7 +69,8 @@ fi
 
 packs_arg=()
 [ -z "${PACKS:-}" ] || packs_arg=("-Pparoissien.personnelPacksDir=$PACKS")
-(cd "$root/android" && ./gradlew --console=plain "${packs_arg[@]}" ":app:assemble${flavor^}Debug" ":app:assemble${flavor^}Release")
+# Priorité basse (processeur et disque) ; sans daemon, la mémoire du build est rendue dès la fin.
+(cd "$root/android" && nice -n 10 ionice -c2 -n7 ./gradlew --no-daemon --console=plain "${packs_arg[@]}" ":app:assemble${flavor^}Debug" ":app:assemble${flavor^}Release")
 
 out="$root/android/app/build/outputs/apk/$flavor"
 debug_apk=$(ls "$out"/debug/*.apk)
@@ -73,6 +84,7 @@ esac
 "$apksigner" verify "$release_apk"
 
 mkdir -p "$dest"
-cp "$debug_apk" "$dest/$debug_name"
-cp "$release_apk" "$dest/$release_name"
+# Copie vers le partage du NAS bridée à 20 Mo/s : le NAS héberge aussi la VM.
+rsync --bwlimit=20000 "$debug_apk" "$dest/$debug_name"
+rsync --bwlimit=20000 "$release_apk" "$dest/$release_name"
 ls -l "$dest/$debug_name" "$dest/$release_name"

@@ -5,6 +5,7 @@ Application Android catholique (Kotlin/Compose) qui imite un livre de prière pa
 ## Builds et livraison
 
 - La VM a 2 cœurs et 7,8 Gio : un seul build Gradle à la fois, jamais d'émulateur. `./gradlew --stop` arrête aussi les daemons des autres sessions qui utilisent Gradle 9.8 : à éviter si une autre session compile.
+- **Ressources** : la VM est hébergée par le NAS ; elle et le NAS ont gelé deux fois le 12/10/2026 (build release lancé pendant qu'un agent travaillait). Jamais d'agent, de Chrome sans fenêtre ni d'OCR pendant un build Gradle ; vérification (tests, captures, lint) et livraison l'une après l'autre ; regarder `free -m` avant un build lourd (3 Gio disponibles au moins, `deliver-apk.sh` le vérifie). Gradle est bridé dans `android/gradle.properties` (2 Gio, un worker).
 - JDK : `JAVA_HOME=~/Android/jdk-21` (java n'est pas dans le PATH).
 - **Livrer un APK de test** : monter `versionCode` et `versionName` dans `android/app/build.gradle.kts`, puis lancer `tools/deliver-apk.sh`. Le script construit sur la VM le debug et la release de la saveur `personnel`, puis les copie dans `~/VM-Exchange/APK/Paroissien/` sous les noms `Paroissien-<v>-debug.apk` et `Paroissien-<v>.apk`.
 - **Signatures** :
