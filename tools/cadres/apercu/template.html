@@ -1,4 +1,4 @@
-<title>Cadre de la Confession</title>
+<title>Cadres du paroissien</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -98,12 +98,16 @@ h2.section { font-family: var(--font-book); font-weight: 400; font-size: var(--s
 
 <main class="bench">
   <header class="intro">
-    <h1>Cadre <em>« Pour la confession »</em>, p.103</h1>
-    <p>Reconstruction vectorielle du cadre d’un paroissien chromolithographié de la fin du XIXᵉ siècle, découpée en modules qui se répètent. L’aperçu applique la même géométrie et le même algorithme que <code>OrnamentalFrame</code>. Fichier généré par <code>tools/cadres/generate.py</code>.</p>
+    <h1>Cadre <em id="frame-title"></em></h1>
+    <p>Reconstruction vectorielle des cadres d’un paroissien chromolithographié de la fin du XIXᵉ siècle, découpés en modules qui se répètent. L’aperçu applique la même géométrie et le même algorithme que <code>OrnamentalFrame</code>. Fichier généré par <code>tools/cadres/generate.py</code>.</p>
   </header>
 
   <div class="workspace">
     <section class="controls" aria-label="Réglages">
+      <div class="group">
+        <span class="label" id="lbl-frame">Cadre</span>
+        <div class="seg" role="group" aria-labelledby="lbl-frame" id="frames"></div>
+      </div>
       <div class="group">
         <span class="label" id="lbl-screen">Écran</span>
         <div class="seg" role="group" aria-labelledby="lbl-screen" id="screens"></div>
@@ -131,7 +135,7 @@ h2.section { font-family: var(--font-book); font-weight: 400; font-size: var(--s
       <div class="device-fit" id="fit">
         <div class="device" id="device">
           <canvas id="frame"></canvas>
-          <div class="runhead" id="runhead"><span>Pour la confession.</span><span class="folio">103</span></div>
+          <div class="runhead" id="runhead"><span id="runhead-title"></span><span class="folio">103</span></div>
           <div class="page-text" id="text" lang="fr">
             <p class="first">Toute ma vie je glorifierai un Dieu si bon, le meilleur de tous les maîtres, le plus doux et le plus aimable de tous les pères.</p>
             <h2>Réitérer la résolution de ne plus pécher.</h2>
@@ -147,13 +151,13 @@ h2.section { font-family: var(--font-book); font-weight: 400; font-size: var(--s
   </div>
 
   <section class="modules" aria-label="Modules">
-    <h2 class="section">Les cinq modules</h2>
+    <h2 class="section">Les modules</h2>
     <div class="grid" id="modules"></div>
   </section>
 </main>
 
 <script>
-const SPEC = /*@SPEC@*/null;
+const SPECS = /*@SPECS@*/null;
 </script>
 <script>
 /*@FRAMEJS@*/
@@ -174,10 +178,12 @@ const SPEC = /*@SPEC@*/null;
   const SIZES = [[16, 'Petit'], [18, 'Moyen'], [21, 'Grand']];
   const HEADER = 22;
 
-  const state = { screen: 'compact', season: '', mode: 'CLAIR', size: 18 };
-  try { Object.assign(state, JSON.parse(localStorage.getItem('cadre-confession-v2') || '{}')); } catch (e) {}
+  const state = { frame: SPECS[0].name, screen: 'compact', season: '', mode: 'CLAIR', size: 18 };
+  try { Object.assign(state, JSON.parse(localStorage.getItem('cadres-v3') || '{}')); } catch (e) {}
   if (!MODES.some(m => m[0] === state.mode)) state.mode = 'CLAIR';
-  const save = () => { try { localStorage.setItem('cadre-confession-v2', JSON.stringify(state)); } catch (e) {} };
+  if (!SPECS.some(s => s.name === state.frame)) state.frame = SPECS[0].name;
+  const save = () => { try { localStorage.setItem('cadres-v3', JSON.stringify(state)); } catch (e) {} };
+  const spec = () => SPECS.find(s => s.name === state.frame);
 
   function seg(el, items, key, swatch) {
     el.innerHTML = '';
@@ -189,11 +195,12 @@ const SPEC = /*@SPEC@*/null;
       if (swatch) {
         const s = document.createElement('span');
         s.className = 'swatch';
-        s.style.background = MF.resolveInks(SPEC, value, 'CLAIR').ground;
+        const inks = MF.resolveInks(spec(), value, 'CLAIR');
+        s.style.background = spec().ground ? inks[spec().ground] : inks[Object.keys(spec().inks)[0]];
         b.append(s);
       }
       b.append(label);
-      b.addEventListener('click', () => { state[key] = value; save(); render(); });
+      b.addEventListener('click', () => { state[key] = value; save(); render(); if (key === 'frame') renderModules(); });
       el.append(b);
     }
   }
@@ -205,13 +212,17 @@ const SPEC = /*@SPEC@*/null;
   const fit = document.getElementById('fit');
 
   function render() {
+    const S = spec();
+    seg(document.getElementById('frames'), SPECS.map(s => [s.name, s.title]), 'frame');
     seg(document.getElementById('screens'), SCREENS.map(s => [s.id, s.label]), 'screen');
-    seg(document.getElementById('seasons'), SEASONS, 'season', true);
+    seg(document.getElementById('seasons'), SEASONS.filter(([k]) => !k || S.palettes[k]), 'season', true);
     seg(document.getElementById('modes'), MODES, 'mode');
     seg(document.getElementById('sizes'), SIZES, 'size');
+    document.getElementById('frame-title').textContent = '« ' + S.title + ' »';
+    document.getElementById('runhead-title').textContent = S.title + '.';
 
     const sc = SCREENS.find(s => s.id === state.screen) || SCREENS[0];
-    const inks = MF.resolveInks(SPEC, state.season, state.mode);
+    const inks = MF.resolveInks(S, S.palettes[state.season] ? state.season : '', state.mode);
     const dark = inks.dark;
     const dpr = Math.min(3, window.devicePixelRatio || 1);
     device.style.width = sc.w + 'px';
@@ -223,76 +234,104 @@ const SPEC = /*@SPEC@*/null;
     ctx.fillStyle = inks.paper;
     ctx.fillRect(0, 0, sc.w, sc.h);
     MF.paperGrain(ctx, sc.w, sc.h, dark);
-    const g = MF.geometry(SPEC, sc.w, sc.h, HEADER);
-    const counts = MF.drawFrame(ctx, SPEC, inks, g);
+    const g = MF.geometry(S, sc.w, sc.h, HEADER);
+    const counts = MF.drawFrame(ctx, S, inks, g);
 
     Object.assign(text.style, {
       left: g.text.x + 'px', top: g.text.y + 'px', width: g.text.w + 'px', height: g.text.h + 'px',
       fontSize: state.size + 'px', color: inks.text,
     });
-    Object.assign(runhead.style, { top: (SPEC.layout.margin - 2) + 'px', height: HEADER + 'px', color: inks.text });
-    runhead.querySelector('.folio').style.right = (SPEC.layout.margin + 4) + 'px';
+    Object.assign(runhead.style, { top: (S.layout.margin - 2) + 'px', height: HEADER + 'px', color: inks.text });
+    runhead.querySelector('.folio').style.right = (S.layout.margin + 4) + 'px';
     text.querySelectorAll('.lettrine').forEach(el => { el.style.color = inks.rubric; });
 
     document.getElementById('facts').innerHTML =
-      `<dt>Bande haute</dt><dd>${counts.top + 1} arcs</dd>` +
-      `<dt>Côtés</dt><dd>${counts.left + 1} arcs chacun</dd>` +
-      `<dt>Pied</dt><dd>${counts.bottom} anneaux</dd>` +
-      `<dt>Données</dt><dd>${opCount()} tracés, ${Math.round(JSON.stringify(SPEC.modules).length / 1024)} Ko</dd>`;
+      `<dt>Bande haute</dt><dd>${counts.top} éléments</dd>` +
+      `<dt>Côtés</dt><dd>${counts.left} éléments chacun</dd>` +
+      `<dt>Pied</dt><dd>${counts.bottom} éléments</dd>` +
+      `<dt>Données</dt><dd>${opCount(S)} tracés, ${Math.round(JSON.stringify(S).length / 1024)} Ko</dd>`;
 
-    // ajuste l'échelle d'affichage si l'écran simulé dépasse la place disponible
     const avail = fit.clientWidth;
     const scale = Math.min(1, (avail - 20) / sc.w);
     device.style.transform = scale < 1 ? `scale(${scale})` : '';
     fit.style.height = scale < 1 ? (sc.h * scale + 20) + 'px' : '';
   }
 
-  function opCount() {
+  function modulesOf(S) {
+    const items = [];
+    const seen = new Set();
+    const add = (title, mod, kind) => { if (mod && !seen.has(mod)) { seen.add(mod); items.push([title, mod, kind]); } };
+    // les modules identiques arrivent en JSON comme des copies : on compare leur contenu
+    const key = m => m && JSON.stringify(m);
+    const keys = new Set();
+    const addOnce = (title, mod, kind) => { if (!mod) return; const k = key(mod); if (keys.has(k)) return; keys.add(k); items.push([title, mod, kind]); };
+    addOnce('Frise haute', S.bands.top, 'band');
+    addOnce('Frise des côtés', S.bands.side, 'band');
+    addOnce('Frise du pied', S.bands.bottom, 'band');
+    addOnce('Pièce centrale haute', S.centers.top, 'center');
+    addOnce('Pièce centrale des côtés', S.centers.side, 'center');
+    addOnce('Pièce centrale du pied', S.centers.bottom, 'center');
+    addOnce('Coin', S.corners.top, 'box');
+    addOnce('Coin du pied', S.corners.bottom, 'box');
+    addOnce('Complément de coin', S.corners.fill, 'box');
+    addOnce('Ornement extérieur de coin', S.outer.corner, 'outer');
+    addOnce('Ornement extérieur de coin du pied', S.outer.cornerBottom, 'outer');
+    addOnce('Ornement extérieur du milieu', S.outer.mid, 'outer');
+    if (S.bars && S.bars.terminal) addOnce('Terminaison', S.bars.terminal, 'term');
+    return items;
+  }
+
+  function opCount(S) {
     let n = 0;
-    for (const m of Object.values(SPEC.modules)) n += (m.base || []).length + (m.over || []).length + (m.ops || []).length;
+    for (const [, m] of modulesOf(S)) n += (m.base || []).length + (m.over || []).length + (m.ops || []).length;
     return n;
   }
 
   function renderModules() {
+    const S = spec();
     const host = document.getElementById('modules');
-    const inks = MF.resolveInks(SPEC, '', 'CLAIR');
-    const m = SPEC.modules;
-    const items = [
-      ['Arcature entrelacée', 'Bandes haute et latérales', m.edge, 'band'],
-      ['Chaîne d’anneaux', 'Bande du pied', m.bottomEdge, 'band'],
-      ['Rosace', 'Coins', m.corner, 'box'],
-      ['Fleur de lys', 'Prolonge les coins du pied', m.cornerFill, 'box'],
-      ['Terminaison', 'Bout des baguettes', m.terminal, 'term'],
-    ];
-    for (const [title, role, mod, kind] of items) {
+    host.innerHTML = '';
+    const inks = MF.resolveInks(S, '', 'CLAIR');
+    const ground = S.ground ? inks[S.ground] : inks.paper;
+    for (const [title, mod, kind] of modulesOf(S)) {
       const fig = document.createElement('figure');
       const c = document.createElement('canvas');
       const ctx = c.getContext('2d');
       const k = 2;
       if (kind === 'band') {
-        const n = 4, w = mod.period * n;
-        c.width = w * k; c.height = 100 * k;
+        const n = 4, w = mod.period * n, o = mod.outset || 0, i = mod.inset || 0, h = 100 + o + i;
+        c.width = w * k; c.height = h * k;
         ctx.scale(k, k);
-        ctx.fillStyle = inks.ground; ctx.fillRect(0, 0, w, 100);
-        for (const pass of ['base', 'over']) for (let i = -1; i <= n + 1; i++) {
-          ctx.save(); ctx.translate((i + mod.phase) * mod.period, 0); MF.drawOps(ctx, mod[pass], inks); ctx.restore();
+        ctx.fillStyle = inks.paper; ctx.fillRect(0, 0, w, h);
+        ctx.translate(0, o);
+        ctx.fillStyle = ground; ctx.fillRect(0, 0, w, 100);
+        for (const pass of ['base', 'over']) for (let j = -1; j <= n + 1; j++) {
+          ctx.save(); ctx.translate((j + mod.phase) * mod.period, 0); MF.drawOps(ctx, mod[pass], inks); ctx.restore();
         }
-      } else if (kind === 'box') {
-        c.width = 100 * k; c.height = 100 * k;
+      } else if (kind === 'center') {
+        const w = mod.width, o = mod.outset || 0;
+        c.width = w * k; c.height = (100 + o) * k;
         ctx.scale(k, k);
-        ctx.fillStyle = inks.ground; ctx.fillRect(0, 0, 100, 100);
+        ctx.fillStyle = ground; ctx.fillRect(0, 0, w, 100 + o);
+        ctx.translate(w / 2, o);
+        MF.drawOps(ctx, mod.ops, inks);
+      } else if (kind === 'box') {
+        c.width = mod.w * k; c.height = mod.h * k;
+        ctx.scale(k, k);
+        ctx.fillStyle = ground; ctx.fillRect(0, 0, mod.w, mod.h);
         MF.drawOps(ctx, mod.ops, inks);
       } else {
-        c.width = 60 * k * 2; c.height = 30 * k * 2;
+        const W = kind === 'term' ? 60 : 120, H = kind === 'term' ? 30 : 120;
+        c.width = W * k * 2; c.height = H * k * 2;
         ctx.scale(k * 2, k * 2);
-        ctx.fillStyle = inks.paper; ctx.fillRect(0, 0, 60, 30);
-        ctx.translate(6, 15);
+        ctx.fillStyle = inks.paper; ctx.fillRect(0, 0, W, H);
+        if (kind === 'term') ctx.translate(6, 15); else ctx.translate(W * 0.75, H * 0.75);
         MF.drawOps(ctx, mod.ops, inks);
       }
-      if (kind === 'box' || kind === 'term') c.style.maxWidth = '200px';
+      if (kind !== 'band') c.style.maxWidth = '200px';
       const n = (mod.base || []).length + (mod.over || []).length + (mod.ops || []).length;
       const cap = document.createElement('figcaption');
-      cap.textContent = `${title}. ${role}, ${n} tracés.`;
+      cap.textContent = `${title}, ${n} tracés.`;
       fig.append(c, cap);
       host.append(fig);
     }
