@@ -87,7 +87,9 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
                 }
             }
         }
-        val (series, books) = lib.entries.partition { it.series != null }
+        // Rangés comme sur une étagère de prie-Dieu : missels, prières, Bibles, puis les autres livres.
+        val (series, books) = lib.entries.sortedBy { SHELF_ORDER.indexOf(it.publication.kind).let { i -> if (i < 0) SHELF_ORDER.size else i } }
+            .partition { it.series != null }
         items(books, key = { it.publication.id }) { entry ->
             val position = resume[entry.publication.id]
             CoverTile(
@@ -269,3 +271,5 @@ fun BookRow(title: String, detail: String?, onClick: () -> Unit) {
 fun Note(text: String, error: Boolean = false) {
     Text(text, color = if (error) MaterialTheme.colorScheme.error else LocalPaperColors.current.inkSecondary, modifier = Modifier.padding(20.dp))
 }
+
+private val SHELF_ORDER = listOf("missal", "prayers", "bible")

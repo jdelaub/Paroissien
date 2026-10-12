@@ -1,0 +1,249 @@
+# Communion : du Pater à la postcommunion.
+# Latin : Divinum Officium, Ordo.txt et Communio.txt ; français : Solis 1913, p. 117-125, témoin Déry 1914, p. 71-79.
+# Communion des fidèles : rite de 1960, sans Confiteor ni absolution (voir README).
+
+== pater
+title.la: Pater noster
+title.fr: Pater noster
+src: do | la | Ordo.txt | 274-279
+src: cihm_990278 | fr | 117-118 | 123-124
+wit: cihm_80314 | fr | 71-72 | 70-71
+
+versicle V
+la: ℣. Orémus.
+fr: ℣. Prions.
+
+para
+la: Præcéptis salutáribus móniti, et divína institutióne formáti audémus dícere:
+fr: Avertis par le précepte du Sauveur, et instruits par la leçon divine, nous osons dire :
+
+para
+la: Pater noster, qui es in cælis. Sanctificétur nomen tuum. Advéniat regnum tuum. Fiat volúntas tua, sicut in cælo et in terra. Panem nostrum quotidiánum da nobis hódie. Et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris. Et ne nos indúcas in tentatiónem:
+fr: Notre Père, qui êtes aux cieux, que votre nom soit sanctifié, que votre règne arrive ; que votre volonté soit faite sur la terre comme au ciel. Donnez-nous aujourd'hui notre pain quotidien : et pardonnez-nous nos offenses comme nous pardonnons à ceux qui nous ont offensés ; et ne nous laissez pas succomber à la tentation.
+
+versicle R
+la: ℟. Sed líbera nos a malo.
+fr: ℟. Mais délivrez-nous du mal.
+
+versicle V
+la: ℣. Amen.
+fr: ℣. Ainsi soit-il.
+
+== libera-nos 2
+title.la: Libera nos
+title.fr: Fraction de l'Hostie
+src: do | la | Ordo.txt | 281-295
+src: cihm_990278 | fr | 118-120 | 124-126
+wit: cihm_80314 | fr | 72-74 | 71-73
+
+rubric
+fr: Le prêtre continue à voix basse :
+
+para
+la: Líbera nos, quǽsumus, Dómine, ab ómnibus malis, prætéritis, præséntibus et futúris: et intercedénte beáta et gloriósa semper Vírgine Dei Genetríce María, cum beátis Apóstolis tuis Petro et Paulo, atque Andréa, et ómnibus Sanctis, da propítius pacem in diébus nostris: ut, ope misericórdiæ tuæ adjúti, et a peccáto simus semper líberi et ab omni perturbatióne secúri.
+fr: Délivrez-nous, s'il vous plaît, Seigneur, de tous les maux passés, présents et à venir ; et par l'intercession de la bienheureuse et glorieuse Marie, toujours Vierge, Mère de Dieu, et de vos bienheureux Apôtres Pierre, Paul et André, et de tous les Saints, daignez-nous faire jouir de la paix tous les jours de notre vie ; afin que par le secours de votre miséricorde, nous soyons à jamais délivrés du péché, et exempts de toute sorte de trouble.
+
+rubric
+fr: Le prêtre rompt la sainte Hostie ; en la rompant, il dit tout bas la conclusion de la prière :
+
+para
+la: Per eúndem Dóminum nostrum Jesum Christum, Fílium tuum. Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus.
+fr: Par le même Jésus-Christ votre Fils notre Seigneur, qui étant Dieu, vit et règne avec vous, en l'unité du Saint-Esprit.
+
+versicle V
+la: ℣. Per ómnia sǽcula sæculórum.
+fr: ℣. Dans tous les siècles des siècles.
+
+versicle R
+la: ℟. Amen.
+fr: ℟. Ainsi soit-il.
+
+rubric
+fr: Avec une parcelle de la sainte Hostie, il fait trois fois le signe de la croix sur le calice en disant :
+
+versicle V
+la: ℣. Pax Dómini sit semper vobíscum.
+fr: ℣. Que la paix ✠ du Seigneur soit ✠ toujours avec ✠ vous.
+
+versicle R
+la: ℟. Et cum spíritu tuo.
+fr: ℟. Et avec votre esprit.
+
+rubric
+fr: Il laisse tomber la parcelle dans le calice et dit :
+
+para
+la: Hæc commíxtio, et consecrátio Córporis et Sánguinis Dómini nostri Jesu Christi, fiat accipiéntibus nobis in vitam ætérnam. Amen.
+fr: Que ce mélange et cette consécration du Corps et du Sang de notre Seigneur Jésus-Christ, que nous allons recevoir, nous soit un gage de la vie éternelle. Ainsi soit-il.
+
+== agnus-dei 2
+title.la: Agnus Dei
+title.fr: Agnus Dei
+src: do | la | Ordo.txt | 296-308
+src: cihm_990278 | fr | 120-121 | 126-127
+wit: cihm_80314 | fr | 74 | 73
+
+rubric
+fr: Incliné, le prêtre se frappe trois fois la poitrine en disant :
+
+para
+la: Agnus Dei, qui tollis peccáta mundi: miserére nobis.
+fr: Agneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous.
+
+para
+la: Agnus Dei, qui tollis peccáta mundi: miserére nobis.
+fr: Agneau de Dieu, qui effacez les péchés du monde, ayez pitié de nous.
+
+para
+la: Agnus Dei, qui tollis peccáta mundi: dona nobis pacem.
+fr: Agneau de Dieu, qui effacez les péchés du monde, donnez-nous la paix.
+
+rubric
+fr: Aux messes des défunts, le prêtre ne se frappe pas la poitrine ; on dit aux deux premières invocations : donnez-leur le repos (dona eis réquiem), et à la troisième : donnez-leur le repos éternel (dona eis réquiem sempitérnam).
+
+== oraisons-avant-la-communion 2
+title.la: Orationes ante Communionem
+title.fr: Oraisons avant la communion
+src: do | la | Ordo.txt | 310-324
+src: cihm_990278 | fr | 121-122 | 127-128
+wit: cihm_80314 | fr | 75-76 | 74-75
+
+rubric
+fr: Trois oraisons préparent immédiatement à la communion. La première, où le prêtre implore la paix pour l'Église, est omise aux messes des défunts :
+
+para
+la: Dómine Jesu Christe, qui dixísti Apóstolis tuis: Pacem relínquo vobis, pacem meam do vobis: ne respícias peccáta mea, sed fidem Ecclésiæ tuæ; eámque secúndum voluntátem tuam pacificáre et coadunáre dignéris: Qui vivis et regnas Deus per ómnia sǽcula sæculórum. Amen.
+fr: Seigneur Jésus-Christ, qui avez dit à vos Apôtres : « Je vous laisse la paix, je vous donne ma paix, » oubliez mes péchés, pour ne voir que la foi de votre Église ; et daignez, selon votre volonté, la pacifier et l'unir. Vous qui, étant Dieu, vivez et régnez avec le Père et le Saint-Esprit, dans tous les siècles des siècles. Ainsi soit-il.
+
+rubric
+fr: Dans la deuxième, il implore la délivrance du péché et la persévérance finale :
+
+para
+la: Dómine Jesu Christe, Fili Dei vivi, qui ex voluntáte Patris, cooperánte Spíritu Sancto, per mortem tuam mundum vivificásti: líbera me per hoc sacrosánctum Corpus et Sánguinem tuum ab ómnibus iniquitátibus meis, et univérsis malis: et fac me tuis semper inhærére mandátis, et a te numquam separári permíttas: Qui cum eódem Deo Patre et Spíritu Sancto vivis et regnas Deus in sǽcula sæculórum. Amen.
+fr: Seigneur Jésus-Christ, Fils de Dieu vivant, qui, par la volonté du Père et la coopération du Saint-Esprit, avez donné la vie au monde par votre mort, délivrez-moi, par ce Corps très saint et par votre Sang, de toutes mes fautes et de tous les maux. Faites que je m'attache toujours à votre loi, et ne permettez pas que je me sépare jamais de vous, qui, étant Dieu, vivez et régnez. Ainsi soit-il.
+
+rubric
+fr: Dans la troisième, il demande que la communion soit pour lui un gage de salut :
+
+para
+la: Percéptio Córporis tui, Dómine Jesu Christe, quod ego indígnus súmere præsúmo, non mihi provéniat in judícium et condemnatiónem: sed pro tua pietáte prosit mihi ad tutaméntum mentis et córporis, et ad medélam percipiéndam: Qui vivis et regnas cum Deo Patre in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. Amen.
+fr: Seigneur Jésus-Christ, puisse cette communion, que je me propose de faire, malgré mon indignité, ne pas être cause de ma condamnation, mais que par votre bonté, elle fortifie mon être tout entier et me guérisse, vous qui, étant Dieu, vivez et régnez dans les siècles des siècles. Ainsi soit-il.
+
+== communion-du-pretre 2
+title.la: Communio sacerdotis
+title.fr: Communion du prêtre
+src: do | la | Ordo.txt | 326-341
+src: cihm_990278 | fr | 123-124 | 129-130
+wit: cihm_80314 | fr | 76-78 | 75-77
+
+rubric
+fr: Le prêtre fait la génuflexion, se relève et dit :
+
+para
+la: Panem cæléstem accípiam, et nomen Dómini invocábo.
+fr: Je prendrai le pain du ciel et j'invoquerai le nom du Seigneur.
+
+rubric
+fr: Confessant son indignité, il se frappe la poitrine et dit trois fois :
+
+para
+la: Dómine, non sum dignus, ut intres sub tectum meum: sed tantum dic verbo, et sanábitur ánima mea.
+fr: Seigneur, je ne suis pas digne que vous entriez sous mon toit ; mais dites seulement un mot et mon âme sera guérie.
+
+rubric
+fr: Traçant avec la sainte Hostie le signe de la croix, il dit en communiant :
+
+para
+la: Corpus Dómini nostri Jesu Christi custódiat ánimam meam in vitam ætérnam. Amen.
+fr: Que le corps de notre Seigneur Jésus-Christ garde mon âme pour la vie éternelle. Ainsi soit-il.
+
+rubric
+fr: Aussitôt, le cœur débordant de reconnaissance, il dit :
+
+para
+la: Quid retríbuam Dómino pro ómnibus, quæ retríbuit mihi? Cálicem salutáris accípiam, et nomen Dómini invocábo. Laudans invocábo Dóminum, et ab inimícis meis salvus ero.
+fr: Que rendrai-je au Seigneur pour tout ce qu'il m'a donné ? Je prendrai le calice du salut et j'invoquerai le nom du Seigneur. J'implorerai le Seigneur et je le louerai, et je serai délivré de mes ennemis.
+
+rubric
+fr: Faisant le signe de la croix avec le calice, il dit :
+
+para
+la: Sanguis Dómini nostri Jesu Christi custódiat ánimam meam in vitam ætérnam. Amen.
+fr: Que le Sang de notre Seigneur Jésus-Christ garde mon âme pour la vie éternelle. Ainsi soit-il.
+
+== communion-des-fideles 2
+title.la: Communio fidelium
+title.fr: Communion des fidèles
+src: do | la | Communio.txt | 8-16
+src: cihm_990278 | fr | 120-123 | 126-129
+
+rubric
+fr: S'il y a des fidèles à communier, le prêtre, sans Confiteor ni absolution depuis les rubriques de 1960, se tourne vers eux, une hostie à la main, et dit :
+# vérifié : Code des rubriques de 1960, n. 503 (« the Confiteor and the absolution are omitted ») ; Divinum Officium (Communio.txt) les donne encore
+
+versicle V
+la: ℣. Ecce Agnus Dei, ecce, qui tollit peccáta mundi.
+fr: ℣. Voici l'Agneau de Dieu, voici celui qui efface les péchés du monde.
+# vérifié : absent du livre ; traduction de Paroissien, sur le modèle de l'Agnus Dei du livre (« qui effacez les péchés du monde »)
+
+rubric
+fr: Le prêtre dit trois fois, et les fidèles avec lui :
+
+para
+la: Dómine, non sum dignus, ut intres sub tectum meum, sed tantum dic verbo, et sanábitur ánima mea.
+fr: Seigneur, je ne suis pas digne que vous entriez sous mon toit ; mais dites seulement un mot et mon âme sera guérie.
+
+rubric
+fr: Il donne la communion à chacun en disant :
+
+para
+la: Corpus Dómini nostri Jesu Christi custódiat ánimam tuam in vitam ætérnam. Amen.
+fr: Que le corps de notre Seigneur Jésus-Christ garde votre âme pour la vie éternelle. Ainsi soit-il.
+# vérifié : absent du livre ; formule de la communion du prêtre (p. 123), « votre âme » pour « mon âme »
+
+== ablutions 2
+title.la: Ablutiones
+title.fr: Ablutions
+src: do | la | Ordo.txt | 346-350
+src: cihm_990278 | fr | 124-125 | 130-131
+wit: cihm_80314 | fr | 78-79 | 77-78
+
+rubric
+fr: Le prêtre tend le calice au servant en disant :
+
+para
+la: Quod ore súmpsimus, Dómine, pura mente capiámus: et de múnere temporáli fiat nobis remédium sempitérnum.
+fr: Puissions-nous recevoir dans un cœur pur, Seigneur, ce que nos lèvres ont goûté, et puisse ce don, qui nous est accordé ici-bas, devenir pour nous le salut éternel.
+
+rubric
+fr: Il purifie ses doigts en disant :
+
+para
+la: Corpus tuum, Dómine, quod sumpsi, et Sanguis, quem potávi, adhǽreat viscéribus meis: et præsta; ut in me non remáneat scélerum mácula, quem pura et sancta refecérunt sacraménta: Qui vivis et regnas in sǽcula sæculórum. Amen.
+fr: Puissent votre Corps, Seigneur, dont je me suis nourri, et votre Sang dont je me suis abreuvé, s'attacher à mon être ; et faites qu'il ne reste en moi aucune souillure du péché, tandis que je suis réconforté par des sacrements si purs et si saints. Vous qui vivez et régnez dans les siècles des siècles. Ainsi soit-il.
+
+== postcommunion 2
+title.la: Communio et Postcommunio
+title.fr: Communion et postcommunion
+src: do | la | Ordo.txt | 352-360
+src: do | la | Ordo.txt | 149
+src: cihm_990278 | fr | 125 | 131
+wit: cihm_80314 | fr | 79 | 78
+
+rubric
+fr: Le prêtre lit au côté de l'Épître l'antienne appelée Communion (voir au propre), puis il baise l'autel et dit :
+
+versicle V
+la: ℣. Dóminus vobíscum.
+fr: ℣. Le Seigneur soit avec vous.
+
+versicle R
+la: ℟. Et cum spíritu tuo.
+fr: ℟. Et avec votre esprit.
+
+versicle V
+la: ℣. Orémus.
+fr: ℣. Prions.
+
+rubric
+fr: Suivent la postcommunion ou les postcommunions (voir au propre).

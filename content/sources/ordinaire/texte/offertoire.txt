@@ -1,0 +1,170 @@
+# Offertoire (messe basse).
+# Latin : Divinum Officium, Ordo.txt et Prayers.txt ; français : Solis 1913, p. 101-107, témoin Déry 1914, p. 55-61.
+# Les prières de l'encensement (messe solennelle) ne sont pas dans le paroissien : voir README.
+
+== offertorium
+title.la: Offertorium
+title.fr: Offertoire
+src: do | la | Ordo.txt | 144-150
+src: cihm_990278 | fr | 101-102 | 107-108
+wit: cihm_80314 | fr | 55-56 | 54-55
+
+rubric
+fr: Le prêtre baise l'autel et, tourné vers le peuple, dit :
+
+versicle V
+la: ℣. Dóminus vobíscum.
+fr: ℣. Le Seigneur soit avec vous.
+
+versicle R
+la: ℟. Et cum spíritu tuo.
+fr: ℟. Et avec votre esprit.
+
+versicle V
+la: ℣. Orémus.
+fr: ℣. Prions.
+
+rubric
+fr: Le prêtre lit tout bas l'Offertoire (voir au propre).
+
+== offrande 2
+title.la: Oblatio
+title.fr: Offrande du pain et du vin
+src: do | la | Ordo.txt | 152-166
+src: cihm_990278 | fr | 102-104 | 108-110
+wit: cihm_80314 | fr | 56-58 | 55-57
+
+rubric
+fr: Le prêtre découvre le calice et offre l'hostie :
+
+para
+la: Súscipe, sancte Pater, omnípotens ætérne Deus, hanc immaculátam hóstiam, quam ego indígnus fámulus tuus óffero tibi Deo meo vivo et vero, pro innumerabílibus peccátis, et offensiónibus, et neglegéntiis meis, et pro ómnibus circumstántibus, sed et pro ómnibus fidélibus christiánis vivis atque defúnctis: ut mihi, et illis profíciat ad salútem in vitam ætérnam. Amen.
+fr: Recevez, ô Père saint, Dieu tout-puissant et éternel, cette Hostie sans tache que je vous offre, moi votre indigne serviteur, à vous mon Dieu vivant et véritable, pour mes péchés, offenses et négligences sans nombre ; pour tous les assistants, et pour tous les fidèles chrétiens, vivants et morts : afin que cette oblation serve à eux et à moi pour le salut éternel. Ainsi soit-il.
+
+rubric
+fr: Il verse du vin dans le calice, y ajoute quelques gouttes d'eau, qu'il bénit (sauf aux messes des défunts), et prie :
+
+para
+la: Deus, ✠ qui humánæ substántiæ dignitátem mirabíliter condidísti, et mirabílius reformásti: da nobis per hujus aquæ et vini mystérium, ejus divinitátis esse consórtes, qui humanitátis nostræ fíeri dignátus est párticeps, Jesus Christus, Fílius tuus, Dóminus noster: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus: per ómnia sǽcula sæculórum. Amen.
+fr: O Dieu, qui avez élevé à une merveilleuse dignité la nature humaine et qui l'y avez rétablie d'une manière plus admirable encore, faites que, par ce mystère, de l'eau et du vin, nous ayons part à la divinité de celui qui a daigné se faire participant de notre humanité, Jésus-Christ : votre Fils, notre Seigneur, qui étant Dieu, vit et règne avec vous, en l'unité du Saint-Esprit, dans tous les siècles des siècles. Ainsi soit-il.
+
+rubric
+fr: Il élève le calice et offre le vin pour le salut de tous :
+
+para
+la: Offérimus tibi, Dómine, cálicem salutáris, tuam deprecántes cleméntiam: ut in conspéctu divínæ majestátis tuæ, pro nostra et totíus mundi salúte, cum odóre suavitátis ascéndat. Amen.
+fr: Nous vous offrons, Seigneur, le calice du salut, suppliant votre bonté qu'il s'élève comme un parfum agréable, en présence de votre divine Majesté, pour notre salut et celui du monde entier. Ainsi soit-il.
+
+rubric
+fr: S'inclinant un peu, il demande à Dieu d'agréer son sacrifice :
+
+para
+la: In spíritu humilitátis et in ánimo contríto suscipiámur a te, Dómine: et sic fiat sacrifícium nostrum in conspéctu tuo hódie, ut pláceat tibi, Dómine Deus.
+fr: Nous nous présentons devant vous, Seigneur, avec un esprit humilié et un cœur contrit : recevez-nous, et faites que notre sacrifice s'accomplisse aujourd'hui en votre présence, de telle sorte qu'il vous soit agréable, ô Seigneur notre Dieu.
+# vérifié : Solis et Déry impriment « Nous vous présentons devant vous » ; corrigé en « Nous nous présentons » (in spiritu humilitatis… suscipiamur)
+
+rubric
+fr: Puis il invoque la bénédiction du Saint-Esprit :
+
+para
+la: Veni, sanctificátor omnípotens ætérne Deus: et béne ✠ dic hoc sacrifícium, tuo sancto nómini præparátum.
+fr: Venez, sanctificateur tout-puissant, Dieu éternel, et bénissez ce Sacrifice préparé à la gloire de votre saint nom.
+
+== lavabo 2
+title.la: Lavabo
+title.fr: Lavabo
+src: do | la | Ordo.txt | 181-185
+src: do | la | Prayers.txt | 12-14
+src: cihm_990278 | fr | 104-105 | 110-111
+wit: cihm_80314 | fr | 58-59 | 57-58
+
+rubric
+fr: Le prêtre se lave les mains en récitant le psaume 25 :
+
+para
+la: Lavábo inter innocéntes manus meas: et circúmdabo altáre tuum, Dómine:
+fr: Je laverai mes mains parmi des innocents, et je me tiendrai autour de votre autel, ô Dieu ;
+
+para
+la: Ut áudiam vocem laudis, et enárrem univérsa mirabília tua.
+fr: Afin que j'entende la voix de votre louange, et que je raconte toutes vos merveilles.
+
+para
+la: Dómine, diléxi decórem domus tuæ et locum habitatiónis glóriæ tuæ.
+fr: Seigneur, j'ai aimé la beauté de votre maison, et le lieu où habite votre gloire.
+
+para
+la: Ne perdas cum ímpiis, Deus, ánimam meam, et cum viris sánguinum vitam meam:
+fr: Ne perdez pas, ô Dieu, mon âme avec des impies, ni ma vie avec des hommes de sang ;
+
+para
+la: In quorum mánibus iniquitátes sunt: déxtera eórum repléta est munéribus.
+fr: Dans les mains desquels sont des iniquités, dont la droite est remplie de présents.
+
+para
+la: Ego autem in innocéntia mea ingréssus sum: rédime me et miserére mei.
+fr: Mais moi, j'ai marché dans mon innocence, rachetez-moi et ayez pitié de moi.
+
+para
+la: Pes meus stetit in dirécto: in ecclésiis benedícam te, Dómine.
+fr: Mon pied est demeuré ferme dans la droite voie : dans les assemblées, je vous bénirai, mon Dieu.
+
+rubric
+fr: Le Gloria Patri est omis aux messes des défunts et aux messes du temps, du premier dimanche de la Passion au Jeudi saint.
+# vérifié : le livre ne l'omet qu'aux messes des défunts (note de la p. 105) ; au temps de la Passion, Ritus servandus VII et, pour l'introït, Code des rubriques de 1960, n. 428
+
+para
+la: Glória Patri, et Fílio, et Spirítui Sancto.
+fr: Gloire au Père, et au Fils, et au Saint-Esprit.
+
+para
+la: Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen.
+fr: Comme il était au commencement, et maintenant et toujours, et dans les siècles des siècles. Ainsi soit-il.
+
+== suscipe-sancta-trinitas 2
+title.la: Suscipe, sancta Trinitas
+title.fr: Prière à la Sainte Trinité
+src: do | la | Ordo.txt | 187-188
+src: cihm_990278 | fr | 105-106 | 111-112
+wit: cihm_80314 | fr | 59 | 58
+
+rubric
+fr: Incliné au milieu de l'autel, le prêtre prie la Sainte Trinité de recevoir le Sacrifice :
+
+para
+la: Súscipe, sancta Trínitas, hanc oblatiónem, quam tibi offérimus ob memóriam passiónis, resurrectiónis, et ascensiónis Jesu Christi, Dómini nostri: et in honórem beátæ Maríæ semper Vírginis, et beáti Joannis Baptistæ, et sanctórum Apostolórum Petri et Pauli, et istórum et ómnium Sanctórum: ut illis profíciat ad honórem, nobis autem ad salútem: et illi pro nobis intercédere dignéntur in cælis, quorum memóriam ágimus in terris. Per eúndem Christum, Dóminum nostrum. Amen.
+fr: Recevez, ô Trinité sainte, cette offrande que nous vous présentons en mémoire de la Passion, de la Résurrection et de l'Ascension de Jésus-Christ notre Seigneur : et en l'honneur de la bienheureuse Marie toujours Vierge, de saint Jean-Baptiste et des saints Apôtres Pierre et Paul, des Martyrs dont les reliques sont ici, et de tous les autres saints ; pour que cette oblation serve à leur gloire et à notre salut, et que ceux dont nous honorons la mémoire sur la terre, daignent intercéder pour nous dans le ciel. Par le même Jésus-Christ notre Seigneur. Ainsi soit-il.
+
+== orate-fratres 2
+title.la: Orate, fratres
+title.fr: Orate, fratres
+src: do | la | Ordo.txt | 190-199
+src: do | la | Ordo.txt | 271-272
+src: cihm_990278 | fr | 106-107 | 112-113
+wit: cihm_80314 | fr | 60-61 | 59-60
+
+rubric
+fr: Le prêtre baise l'autel, se tourne vers les fidèles et les invite à prier :
+
+versicle V
+la: ℣. Oráte, fratres: ut meum ac vestrum sacrifícium acceptábile fiat apud Deum Patrem omnipoténtem.
+fr: ℣. Priez, mes frères, que mon Sacrifice, qui est aussi le vôtre, soit agréable à Dieu le Père tout-puissant.
+
+versicle R
+la: ℟. Suscípiat Dóminus sacrifícium de mánibus tuis ad laudem et glóriam nominis sui, ad utilitátem quoque nostram, totiúsque Ecclésiæ suæ sanctæ.
+fr: ℟. Que le Seigneur reçoive de vos mains ce Sacrifice pour l'honneur et la gloire de son nom, pour notre utilité et pour le bien de toute son Église sainte.
+
+versicle V
+la: ℣. Amen.
+fr: ℣. Ainsi soit-il.
+
+rubric
+fr: Le prêtre récite à voix basse la secrète ou les secrètes (voir au propre), puis il termine à haute voix :
+
+versicle V
+la: ℣. Per ómnia sǽcula sæculórum.
+fr: ℣. Dans tous les siècles des siècles.
+
+versicle R
+la: ℟. Amen.
+fr: ℟. Ainsi soit-il.

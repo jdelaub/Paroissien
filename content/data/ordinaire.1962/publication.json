@@ -1,0 +1,129 @@
+{
+ "id": "ordinaire.1962",
+ "revision": 1,
+ "kind": "missal",
+ "title": {
+  "fr": "Ordinaire de la messe"
+ },
+ "subtitle": {
+  "fr": "Forme de 1962, latin et français"
+ },
+ "languages": [
+  "la",
+  "fr"
+ ],
+ "primaryLanguage": "fr",
+ "aligned": true,
+ "contributors": [
+  {
+   "name": "Divinum Officium (texte latin, 2026)",
+   "role": "editor"
+  },
+  {
+   "name": "É. Solis (Saint-Hyacinthe, 1913)",
+   "role": "publisher"
+  },
+  {
+   "name": "I.-P. Déry (Québec, 1914)",
+   "role": "publisher"
+  },
+  {
+   "name": "Alfred Mame et fils (Tours, 1869)",
+   "role": "publisher"
+  },
+  {
+   "name": "A. Mame et fils (Tours, 1890)",
+   "role": "publisher"
+  }
+ ],
+ "issued": "1913-1962",
+ "source": {
+  "name": "Divinum Officium (latin) ; paroissiens romains du domaine public numérisés sur archive.org (français)",
+  "url": "https://github.com/DivinumOfficium/divinum-officium/tree/b9c100d79ae481c67b2801fdd3622b00dd86bd73/web/www/missa/Latin/Ordo",
+  "edition": "Latin : Ordo Missæ de Divinum Officium (Ordo.txt, Prayers.txt, Prefationes.txt, Communio.txt), commit b9c100d79ae481c67b2801fdd3622b00dd86bd73. Français : Nouveau paroissien romain, Saint-Hyacinthe, É. Solis, 1913 (Canadiana cihm_990278), collationné avec le Paroissien de poche, Québec, I.-P. Déry, 1914 (cihm_80314) ; préface de la Sainte Trinité : Paroissien romain, Tours, Mame, 1869 ; Ave Maria : Paroissien romain, Tours, Mame, 1890. Ajustements à 1962 et rubriques : Paroissien. Voir x-source sur chaque section et content/sources/ordinaire/README.md",
+  "retrieved": "2026-10-12"
+ },
+ "license": {
+  "spdx": "MIT AND LicenseRef-PublicDomain",
+  "attribution": "Texte latin : Divinum Officium (github.com/DivinumOfficium/divinum-officium), licence MIT. Texte français : paroissiens anonymes publiés en 1869, 1890, 1913 et 1914 (Mame, Solis, Déry), domaine public, numérisés par Internet Archive, Google Books et Canadiana. Rubriques et ajustements à 1962 : Paroissien.",
+  "notice": "MIT License\n\nCopyright (c) 2026 Divinum Officium\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+ },
+ "x-editions": [
+  {
+   "archive": "cihm_990278",
+   "title": "Nouveau paroissien romain",
+   "publisher": "St-Hyacinthe, Québec : É. Solis",
+   "date": "1913",
+   "ocrSha256": "4b4c7b916c6611d2"
+  },
+  {
+   "archive": "cihm_80314",
+   "title": "Paroissien de poche",
+   "publisher": "Québec : I.P. Déry",
+   "date": "1914",
+   "ocrSha256": "152d686702dbbc88"
+  },
+  {
+   "archive": "paroissienromai00churgoog",
+   "title": "Paroissien romain, en latin et français, traduction nouvelle",
+   "publisher": "Tours : Alfred Mame et fils",
+   "date": "1869",
+   "ocrSha256": "faf16f3c27944380"
+  },
+  {
+   "archive": "paroissienromain00tour",
+   "title": "Paroissien romain",
+   "publisher": "Tours : A. Mame",
+   "date": "1890",
+   "ocrSha256": "310fe3e4493189c0"
+  }
+ ],
+ "x-divinum-officium": {
+  "repository": "https://github.com/DivinumOfficium/divinum-officium",
+  "commit": "b9c100d79ae481c67b2801fdd3622b00dd86bd73",
+  "files": {
+   "web/www/missa/Latin/Ordo/Ordo.txt": "a7f63e8030325b80",
+   "web/www/missa/Latin/Ordo/Prayers.txt": "7bf86beb01c17021",
+   "web/www/missa/Latin/Ordo/Prefationes.txt": "cdcc5bb39df5043a",
+   "web/www/missa/Latin/Ordo/Communio.txt": "c3cd48f833537744"
+  }
+ },
+ "divisions": [
+  {
+   "id": "avant-messe",
+   "kind": "section",
+   "toc": "Prières au bas de l’autel",
+   "unit": true
+  },
+  {
+   "id": "messe-des-catechumenes",
+   "kind": "section",
+   "toc": "Messe des catéchumènes",
+   "unit": true
+  },
+  {
+   "id": "offertoire",
+   "kind": "section",
+   "toc": "Offertoire",
+   "unit": true
+  },
+  {
+   "id": "canon",
+   "kind": "section",
+   "toc": "Préface et Canon",
+   "unit": true
+  },
+  {
+   "id": "communion",
+   "kind": "section",
+   "toc": "Communion",
+   "unit": true
+  },
+  {
+   "id": "fin-de-messe",
+   "kind": "section",
+   "toc": "Fin de la messe",
+   "unit": true
+  }
+ ]
+}

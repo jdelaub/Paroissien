@@ -1,0 +1,234 @@
+# Messe des catéchumènes : de l'Introït au Credo (messe basse).
+# Latin : Divinum Officium, Ordo.txt et Prayers.txt ; français : Solis 1913, p. 91-101, témoin Déry 1914, p. 44-55.
+# Les parties propres (Introït, Collecte, Épître, Graduel, Évangile) sont au propre : le livre les donne pour le
+# 1er dimanche de l'Avent, elles ne sont pas reprises ici.
+
+== introit
+title.la: Introitus
+title.fr: Introït
+src: do | la | Ordo.txt | 69-72
+src: cihm_990278 | fr | 91 | 97
+wit: cihm_80314 | fr | 44 | 43
+
+rubric
+fr: Le prêtre baise l'autel, puis, au côté de l'Épître, il se signe et lit l'Introït (voir au propre). Aux messes des défunts, il fait le signe de la croix sur le missel.
+
+== kyrie 2
+title.la: Kyrie
+title.fr: Kyrie
+src: do | la | Ordo.txt | 75-84
+src: cihm_990278 | fr | 92 | 98
+wit: cihm_80314 | fr | 45 | 44
+
+rubric
+fr: Au milieu de l'autel, le prêtre dit alternativement avec le servant :
+
+versicle V
+la: ℣. Kýrie, eléison.
+fr: ℣. Seigneur, ayez pitié de nous.
+
+versicle R
+la: ℟. Kýrie, eléison.
+fr: ℟. Seigneur, ayez pitié de nous.
+
+versicle V
+la: ℣. Kýrie, eléison.
+fr: ℣. Seigneur, ayez pitié de nous.
+
+versicle R
+la: ℟. Christe, eléison.
+fr: ℟. Jésus Christ, ayez pitié de nous.
+
+versicle V
+la: ℣. Christe, eléison.
+fr: ℣. Jésus Christ, ayez pitié de nous.
+
+versicle R
+la: ℟. Christe, eléison.
+fr: ℟. Jésus Christ, ayez pitié de nous.
+
+versicle V
+la: ℣. Kýrie, eléison.
+fr: ℣. Seigneur, ayez pitié de nous.
+
+versicle R
+la: ℟. Kýrie, eléison.
+fr: ℟. Seigneur, ayez pitié de nous.
+
+versicle V
+la: ℣. Kýrie, eléison.
+fr: ℣. Seigneur, ayez pitié de nous.
+
+== gloria 2
+title.la: Gloria in excelsis
+title.fr: Gloria in excelsis
+src: do | la | Ordo.txt | 86-89
+src: cihm_990278 | fr | 92-94 | 98-100
+wit: cihm_80314 | fr | 45-47 | 44-46
+
+rubric
+fr: Puis il dit le Gloria, quand la messe le demande (voir au propre) ; on ne le dit jamais aux messes des défunts.
+
+para
+la: Glória in excélsis Deo. Et in terra pax homínibus bonæ voluntátis.
+fr: Gloire à Dieu dans le ciel. Et paix sur la terre aux hommes de bonne volonté.
+
+para
+la: Laudámus te. Benedícimus te. Adorámus te. Glorificámus te. Grátias ágimus tibi propter magnam glóriam tuam.
+fr: Nous vous louons. Nous vous bénissons. Nous vous adorons. Nous vous glorifions. Nous vous rendons grâces à cause de votre gloire infinie.
+
+para
+la: Dómine Deus, Rex cæléstis, Deus Pater omnípotens. Dómine Fili unigénite, Jesu Christe. Dómine Deus, Agnus Dei, Fílius Patris.
+fr: Seigneur Dieu, Roi du ciel, ô Dieu, Père tout-puissant. Seigneur, Fils unique, Jésus-Christ. Seigneur Dieu, Agneau de Dieu, Fils du Père.
+
+para
+la: Qui tollis peccáta mundi, miserére nobis. Qui tollis peccáta mundi, súscipe deprecatiónem nostram. Qui sedes ad déxteram Patris, miserére nobis.
+fr: Qui effacez les péchés du monde, ayez pitié de nous. Qui effacez les péchés du monde, recevez notre prière. Qui êtes assis à la droite du Père, ayez pitié de nous.
+
+para
+la: Quóniam tu solus Sanctus. Tu solus Dóminus. Tu solus Altíssimus, Jesu Christe. Cum Sancto Spíritu ✠ in glória Dei Patris. Amen.
+fr: Car vous êtes le seul Saint. Le seul Seigneur. Le seul Très-Haut, ô Jésus-Christ. Avec le Saint-Esprit, dans la gloire de Dieu, le Père. Ainsi soit-il.
+
+== collecte 2
+title.la: Oratio
+title.fr: Collecte
+src: do | la | Ordo.txt | 91-95
+src: do | la | Prayers.txt | 38-40
+src: cihm_990278 | fr | 94 | 100
+wit: cihm_80314 | fr | 47 | 46
+
+rubric
+fr: Le prêtre baise l'autel, puis il dit :
+
+versicle V
+la: ℣. Dóminus vobíscum.
+fr: ℣. Le Seigneur soit avec vous.
+
+versicle R
+la: ℟. Et cum spíritu tuo.
+fr: ℟. Et avec votre esprit.
+
+versicle V
+la: ℣. Orémus.
+fr: ℣. Prions.
+
+rubric
+fr: Suivent la collecte ou les oraisons du jour (voir au propre).
+
+== epitre 2
+title.la: Epistola
+title.fr: Épître
+src: do | la | Prayers.txt | 81-82
+src: cihm_990278 | fr | 95 | 101
+wit: cihm_80314 | fr | 49 | 48
+
+rubric
+fr: Le prêtre lit l'Épître (voir au propre). À la fin, le servant répond :
+
+versicle R
+la: ℟. Deo grátias.
+fr: ℟. Grâces à Dieu.
+
+rubric
+fr: L'Épître est suivie du graduel, puis de l'Alléluia et de son verset, que remplace le trait aux messes des défunts et aux jours de pénitence, et parfois de la séquence (voir au propre).
+
+== munda-cor 2
+title.la: Munda cor meum
+title.fr: Avant l'Évangile
+src: do | la | Ordo.txt | 120-122
+src: cihm_990278 | fr | 96 | 102
+wit: cihm_80314 | fr | 49-50 | 48-49
+
+rubric
+fr: Le prêtre, profondément incliné au milieu de l'autel, prie Dieu de purifier son cœur et ses lèvres :
+
+para
+la: Munda cor meum ac lábia mea, omnípotens Deus, qui lábia Isaíæ Prophétæ cálculo mundásti igníto: ita me tua grata miseratióne dignáre mundáre, ut sanctum Evangélium tuum digne váleam nuntiáre. Per Christum, Dóminum nostrum. Amen.
+fr: Purifiez mon cœur et mes lèvres, Dieu tout-puissant, qui d'un charbon ardent, avez purifié les lèvres du prophète Isaïe. Daignez par votre miséricordieuse bonté, me purifier, pour que je puisse annoncer dignement votre Saint Évangile. Par Jésus-Christ notre Seigneur. Ainsi soit-il.
+
+para
+la: Jube, Dómine, benedícere.
+fr: Seigneur, bénissez-moi.
+
+para
+la: Dóminus sit in corde meo et in lábiis meis: ut digne et competénter annúntiem Evangélium suum. Amen.
+fr: Que le Seigneur soit dans mon cœur et sur mes lèvres, afin que j'annonce dignement et convenablement son Évangile. Ainsi soit-il.
+
+== evangile 2
+title.la: Evangelium
+title.fr: Évangile
+src: do | la | Ordo.txt | 114
+src: do | la | Ordo.txt | 123-126
+src: do | la | Prayers.txt | 84-89
+src: cihm_990278 | fr | 96-98 | 102-104
+wit: cihm_80314 | fr | 50-52 | 49-51
+
+rubric
+fr: Les fidèles se lèvent pour l'Évangile.
+
+versicle V
+la: ℣. Dóminus vobíscum.
+fr: ℣. Le Seigneur soit avec vous.
+
+versicle R
+la: ℟. Et cum spíritu tuo.
+fr: ℟. Et avec votre esprit.
+
+versicle V
+la: ℣. Sequéntia sancti Evangélii secúndum N.
+fr: ℣. Suite du saint Évangile selon saint N.
+
+versicle R
+la: ℟. Glória tibi, Dómine.
+fr: ℟. Gloire à vous, Seigneur !
+
+rubric
+fr: Le prêtre lit l'Évangile (voir au propre). Si le passage ouvre un Évangile, il dit Initium (Commencement) au lieu de Sequentia (Suite). À la fin, le servant répond :
+
+versicle R
+la: ℟. Laus tibi, Christe.
+fr: ℟. Christ ! louange à vous.
+
+rubric
+fr: Le prêtre baise le livre en disant :
+
+para
+la: Per Evangélica dicta, deleántur nostra delícta.
+fr: Que par le saint Évangile nos fautes soient effacées.
+
+== credo 2
+title.la: Credo
+title.fr: Credo
+src: do | la | Ordo.txt | 139-142
+src: cihm_990278 | fr | 98-101 | 104-107
+wit: cihm_80314 | fr | 52-55 | 51-54
+
+rubric
+fr: Le Credo se dit les dimanches, aux fêtes de première classe et aux autres messes où le propre l'indique.
+
+para
+la: Credo in unum Deum, Patrem omnipoténtem, factórem cæli et terræ, visibílium ómnium et invisibílium.
+fr: Je crois en un seul Dieu, Père tout-puissant, qui a fait le ciel et la terre, toutes choses visibles et invisibles.
+
+para
+la: Et in unum Dóminum Jesum Christum, Fílium Dei unigénitum. Et ex Patre natum ante ómnia sǽcula. Deum de Deo, Lumen de Lúmine, Deum verum de Deo vero. Génitum, non factum, consubstantiálem Patri: per quem ómnia facta sunt. Qui propter nos hómines et propter nostram salútem descéndit de cælis.
+fr: Et en un seul Seigneur Jésus-Christ, Fils unique de Dieu. Et né du Père avant tous les siècles. Dieu de Dieu, lumière de lumière, vrai Dieu de vrai Dieu. Engendré et non créé, consubstantiel au Père ; par qui tout a été fait. Est descendu des cieux pour nous et pour notre salut.
+
+rubric
+fr: Ici l'on s'agenouille.
+
+para
+la: Et incarnátus est de Spíritu Sancto ex María Vírgine: Et homo factus est.
+fr: Qui a pris chair par le Saint-Esprit, de la Vierge Marie ; et s'est fait homme.
+
+para
+la: Crucifíxus étiam pro nobis: sub Póntio Piláto passus, et sepúltus est. Et resurréxit tértia die, secúndum Scriptúras. Et ascéndit in cælum: sedet ad déxteram Patris. Et íterum ventúrus est cum glória judicáre vivos et mórtuos: cujus regni non erit finis.
+fr: Il a été crucifié pour nous, a souffert sous Ponce-Pilate, et a été enseveli. Il est ressuscité le troisième jour selon les Écritures. Il est monté au ciel, est assis à la droite du Père. Il viendra de nouveau avec gloire, juger les vivants et les morts ; son règne n'aura pas de fin.
+
+para
+la: Et in Spíritum Sanctum, Dóminum et vivificántem: qui ex Patre Filióque procédit. Qui cum Patre et Fílio simul adorátur et conglorificátur: qui locútus est per Prophétas.
+fr: Je crois au Saint-Esprit, Seigneur, et donnant la vie, qui procède du Père et du Fils. Qui est adoré et glorifié conjointement avec le Père et le Fils ; qui a parlé par les Prophètes.
+
+para
+la: Et unam sanctam cathólicam et apostólicam Ecclésiam. Confíteor unum baptísma in remissiónem peccatórum. Et exspécto resurrectiónem mortuórum. Et vitam ventúri sæculi. Amen.
+fr: Je crois l'Église : une, sainte, catholique et apostolique. Je confesse un Baptême, pour la rémission des péchés. Et j'attends la résurrection des morts. Et la vie du siècle à venir. Ainsi soit-il.

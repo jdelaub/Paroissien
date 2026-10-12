@@ -1,0 +1,220 @@
+# Préface et Canon.
+# Latin : Divinum Officium, Ordo.txt et Prefationes.txt ; français : Solis 1913, p. 107-117 (témoin Déry 1914,
+# p. 61-71), sauf la préface de la Sainte Trinité, que Solis ne donne pas : Mame 1869, p. 128-129.
+# Seules la préface commune et celle de la Sainte Trinité sont ici ; les autres sont au propre.
+
+== preface
+title.la: Præfatio
+title.fr: Préface
+src: do | la | Ordo.txt | 201-208
+src: cihm_990278 | fr | 107-108 | 113-114
+wit: cihm_80314 | fr | 61-62 | 60-61
+
+rubric
+fr: Le prêtre commence la préface :
+
+versicle V
+la: ℣. Dóminus vobíscum.
+fr: ℣. Le Seigneur soit avec vous.
+
+versicle R
+la: ℟. Et cum spíritu tuo.
+fr: ℟. Et avec votre esprit.
+
+versicle V
+la: ℣. Sursum corda.
+fr: ℣. Élevez vos cœurs.
+
+versicle R
+la: ℟. Habémus ad Dóminum.
+fr: ℟. Nous les tenons vers le Seigneur.
+
+versicle V
+la: ℣. Grátias agámus Dómino, Deo nostro.
+fr: ℣. Rendons grâces au Seigneur notre Dieu.
+
+versicle R
+la: ℟. Dignum et justum est.
+fr: ℟. Cela est digne et juste.
+
+rubric
+fr: Suit la préface du jour. On donne ici la préface commune et celle de la Sainte Trinité ; les autres préfaces sont au propre.
+
+== preface-commune 2
+title.la: Præfatio communis
+title.fr: Préface commune
+src: do | la | Prefationes.txt | 67-69
+src: cihm_990278 | fr | 108-109 | 114-115
+wit: cihm_80314 | fr | 62-63 | 61-62
+
+rubric
+fr: Elle se dit aux messes qui n'ont pas de préface propre.
+
+para
+la: Vere dignum et justum est, æquum et salutáre, nos tibi semper et ubíque grátias ágere: Dómine sancte, Pater omnípotens, ætérne Deus: per Christum, Dóminum nostrum. Per quem majestátem tuam laudant Angeli, adórant Dominatiónes, tremunt Potestátes. Cæli cælorúmque Virtútes ac beáta Séraphim sócia exsultatióne concélebrant. Cum quibus et nostras voces ut admítti jubeas, deprecámur, súpplici confessione dicéntes:
+fr: Il est bien juste, raisonnable et salutaire, de vous rendre grâces en tout temps et en tout lieu, Seigneur Saint, Père tout-puissant, Dieu éternel, par le Christ notre Seigneur. Par lui les Anges louent votre Majesté, les Dominations l'adorent, les Puissances la révèrent, les cieux, les Vertus des cieux et les bienheureux Séraphins dans un commun transport la célèbrent. Daignez ordonner, ô Dieu, que nos voix suppliantes puissent se mêler aux leurs, en disant :
+
+== preface-trinite 2
+title.la: Præfatio de sanctissima Trinitate
+title.fr: Préface de la Sainte Trinité
+src: do | la | Prefationes.txt | 51-53
+src: paroissienromai00churgoog | fr | 128-129 | 138-139
+
+rubric
+fr: Elle se dit tous les dimanches qui n'en ont pas de propre.
+
+para
+la: Vere dignum et justum est, æquum et salutáre, nos tibi semper et ubíque grátias ágere: Dómine sancte, Pater omnípotens, ætérne Deus: Qui cum unigénito Fílio tuo et Spíritu Sancto unus es Deus, unus es Dóminus: non in uníus singularitáte persónæ, sed in uníus Trinitáte substántiæ. Quod enim de tua glória, revelánte te, crédimus, hoc de Fílio tuo, hoc de Spíritu Sancto sine differéntia discretiónis sentímus. Ut in confessióne veræ sempiternǽque Deitátis, et in persónis propríetas, et in esséntia únitas, et in majestáte adorétur æquálitas. Quam laudant Angeli atque Archángeli, Chérubim quoque ac Séraphim: qui non cessant clamáre cotídie, una voce dicéntes:
+fr: Il est véritablement juste et raisonnable, il est équitable et salutaire de vous rendre grâces en tout temps et en tout lieu, Seigneur saint, Père tout-puissant, Dieu éternel, qui, avec votre Fils unique et le Saint-Esprit, êtes un seul Dieu et un seul Seigneur, non en ne faisant qu'une seule personne, mais trois personnes en une même substance. Car ce que vous nous avez révélé et ce que nous croyons de votre gloire, nous le croyons aussi, sans aucune différence, de votre Fils et du Saint-Esprit ; en sorte que, confessant une véritable et éternelle divinité, nous adorons tout ensemble la propriété dans les personnes, l'unité dans l'essence, et l'égalité dans la majesté. C'est elle que louent les Anges et les Archanges, les Chérubins et les Séraphins, qui ne cessent de chanter d'une voix unanime.
+
+== sanctus 2
+title.la: Sanctus
+title.fr: Sanctus
+src: do | la | Ordo.txt | 212
+src: cihm_990278 | fr | 109 | 115
+wit: cihm_80314 | fr | 63 | 62
+
+para
+la: Sanctus, Sanctus, Sanctus Dóminus, Deus Sábaoth. Pleni sunt cæli et terra glória tua. Hosánna in excélsis. Benedíctus, qui venit in nómine Dómini. Hosánna in excélsis.
+fr: Saint, Saint, Saint, le Seigneur, Dieu des armées. Votre gloire remplit ciel et terre. Hosanna au plus haut des cieux. Béni Celui qui vient au nom du Seigneur. Hosanna au plus haut des cieux.
+
+== te-igitur
+title.la: Canon Missæ
+title.fr: Canon de la messe
+src: do | la | Prefationes.txt | 130-131
+src: do | la | Ordo.txt | 214-229
+src: cihm_990278 | fr | 109-112 | 115-118
+wit: cihm_80314 | fr | 63-66 | 62-65
+
+rubric
+fr: Le prêtre élève les yeux et les mains, puis, profondément incliné, il prie pour l'Église militante :
+
+para
+la: Te ígitur, clementíssime Pater, per Jesum Christum, Fílium tuum, Dóminum nostrum, súpplices rogámus, ac pétimus, uti accépta hábeas et benedícas, hæc ✠ dona, hæc ✠ múnera, hæc ✠ sancta sacrifícia illibáta,
+fr: Nous vous supplions, Père très clément, et nous vous le demandons par Jésus-Christ, votre Fils et notre Seigneur, daignez agréer et bénir ces dons, ces offrandes, ces sacrifices saints et sans tache.
+
+para
+la: in primis, quæ tibi offérimus pro Ecclésia tua sancta cathólica: quam pacificáre, custodíre, adunáre et régere dignéris toto orbe terrárum: una cum fámulo tuo Papa nostro N. et Antístite nostro N. et ómnibus orthodóxis, atque cathólicæ et apostólicæ fídei cultóribus.
+fr: Nous vous les offrons premièrement pour votre sainte Église catholique : daignez, dans tous les pays, lui donner la paix, la protéger, l'unifier et la gouverner. / Nous vous les offrons pour votre serviteur notre Pape, N., / Pour notre Évêque, N., / Pour tous les vrais croyants professant avec nous la foi des Apôtres.
+
+rubric
+fr: Mémento des vivants : le prêtre joint les mains et prie un moment pour ceux qu'il veut recommander.
+
+para
+la: Meménto, Dómine, famulórum famularúmque tuarum N. et N. et ómnium circumstántium, quorum tibi fides cógnita est et nota devótio, pro quibus tibi offérimus: vel qui tibi ófferunt hoc sacrifícium laudis, pro se suísque ómnibus: pro redemptióne animárum suárum, pro spe salútis et incolumitátis suæ: tibíque reddunt vota sua ætérno Deo, vivo et vero.
+fr: Souvenez-vous, Seigneur, de vos serviteurs et de vos servantes, N. N. et de tous ceux qui sont ici présents, dont vous connaissez la foi et la dévotion ; c'est pour eux que nous vous offrons cette messe ; ou plutôt ils vous l'offrent eux-mêmes pour eux et pour tous leurs proches. Ils en espèrent pour leurs âmes des fruits abondants avec le salut et le bien-être. Par ce sacrifice ils veulent accomplir les promesses qu'ils vous ont faites, à vous, Dieu éternel, vivant et véritable.
+
+rubric
+fr: Unissons-nous à l'Église triomphante :
+
+para
+la: Communicántes, et memóriam venerántes, in primis gloriósæ semper Vírginis Maríæ, Genetrícis Dei et Dómini nostri Jesu Christi: sed et beáti Joseph, ejúsdem Vírginis Sponsi, et beatórum Apostolórum ac Mártyrum tuórum, Petri et Pauli, Andréæ, Jacóbi, Joánnis, Thomæ, Jacóbi, Philíppi, Bartholomǽi, Matthǽi, Simónis et Thaddǽi: Lini, Cleti, Cleméntis, Xysti, Cornélii, Cypriáni, Lauréntii, Chrysógoni, Joánnis et Pauli, Cosmæ et Damiáni: et ómnium Sanctórum tuórum; quorum méritis precibúsque concédas, ut in ómnibus protectiónis tuæ muniámur auxílio. Per eúndem Christum, Dóminum nostrum. Amen.
+fr: Unis dans une même communion, vénérons la mémoire premièrement de la glorieuse Marie toujours Vierge, Mère de Dieu et de notre Seigneur Jésus-Christ ; et aussi du bienheureux Joseph, Époux de la même Vierge. Et ensuite de vos bienheureux Apôtres et Martyrs : / Pierre et Paul, André, Jacques, Jean, Thomas, Jacques, Philippe, Barthélemy, Mathieu, Simon et Thaddée, Lin, Clet, Clément, Xyste, Corneille, Cyprien, Laurent, Chrysogone, Jean et Paul, Côme et Damien, / Et de tous vos Saints : puissent leurs mérites et leurs prières nous obtenir le secours de votre puissante protection. Par le même Jésus-Christ notre Seigneur. Ainsi soit-il.
+# vérifié : saint Joseph, inséré au Canon par le décret du 13 novembre 1962 (en vigueur le 8 décembre 1962), n'est pas dans le livre : « et aussi du bienheureux Joseph, Époux de la même Vierge » est une traduction de Paroissien, et « ; » remplace le point après « Jésus-Christ »
+
+rubric
+fr: Le prêtre étend les mains sur le pain et le vin :
+
+para
+la: Hanc ígitur oblatiónem servitútis nostræ, sed et cunctæ famíliæ tuæ, quǽsumus, Dómine, ut placátus accípias: diésque nostros in tua pace dispónas, atque ab ætérna damnatióne nos éripi, et in electórum tuórum júbeas grege numerári. Per Christum, Dóminum nostrum. Amen.
+fr: Nous vous prions donc, Seigneur, de recevoir favorablement cette offrande de notre ministère, qui est aussi l'offrande de toute votre famille, d'établir nos jours dans votre paix, enfin d'ordonner que nous soyons préservés de l'éternelle damnation, et enrôlés dans la troupe de vos élus. Par notre Seigneur Jésus-Christ. Ainsi soit-il.
+
+para
+la: Quam oblatiónem tu, Deus, in ómnibus, quǽsumus, bene ✠ díctam, adscríp ✠ tam, ra ✠ tam, rationábilem, acceptabilémque fácere dignéris: ut nobis Cor ✠ pus, et San ✠ guis fiat dilectíssimi Fílii tui, Dómini nostri Jesu Christi.
+fr: Nous vous prions, ô Dieu, de bénir cette oblation, de la recevoir, de la ratifier comme rançon pleine et satisfaisante, afin qu'elle devienne pour nous le Corps et le sang de votre très cher fils notre Seigneur Jésus-Christ.
+
+== consecration 2
+title.la: Consecratio
+title.fr: Consécration
+src: do | la | Ordo.txt | 231-250
+src: cihm_990278 | fr | 112-114 | 118-120
+wit: cihm_80314 | fr | 66-67 | 65-66
+
+para
+la: Qui prídie quam paterétur, accépit panem in sanctas ac venerábiles manus suas, et elevátis óculis in cælum ad te Deum, Patrem suum omnipoténtem, tibi grátias agens, bene ✠ díxit, fregit, dedítque discípulis suis, dicens: Accípite, et manducáte ex hoc omnes.
+fr: Qui, la veille de sa passion, prit du pain dans ses mains saintes et vénérables, et, levant les yeux au ciel vers vous, Dieu tout-puissant, son Père, vous rendit grâces, bénit ce pain, le rompit et le donna à ses disciples en disant : Prenez et mangez-en tous :
+
+para centered
+la: HOC EST ENIM CORPUS MEUM.
+fr: car ceci est mon Corps.
+
+rubric
+fr: Le prêtre fait la génuflexion, élève la sainte Hostie et fait encore la génuflexion. Regardez-la avec une foi vive et adorez Jésus en disant : « Mon Seigneur et mon Dieu ! »
+removed: (Indulgence de 7 ans et de 7 quarantaines)
+
+para
+la: Símili modo postquam cenátum est, accípiens et hunc præclárum Cálicem in sanctas ac venerábiles manus suas: item tibi grátias agens, bene ✠ díxit, dedítque discípulis suis, dicens: Accípite, et bíbite ex eo omnes.
+fr: De même, après la Cène, prenant aussi ce précieux Calice entre ses mains saintes et vénérables, et vous rendant également grâces, le bénit, et le donna à ses disciples en disant : Prenez, et buvez-en tous,
+
+para centered
+la: HIC EST ENIM CALIX SANGUINIS MEI, NOVI ET ÆTERNI TESTAMENTI: MYSTERIUM FIDEI: QUI PRO VOBIS ET PRO MULTIS EFFUNDETUR IN REMISSIONEM PECCATORUM.
+fr: car ceci est le Calice de mon Sang, le Sang du nouveau et éternel testament (mystère de foi), Sang qui sera répandu pour vous et pour la multitude en rémission des péchés.
+
+para
+la: Hæc quotiescúmque fecéritis, in mei memóriam faciétis.
+fr: Toutes les fois que vous accomplirez ces mystères, vous les ferez en mémoire de moi.
+
+rubric
+fr: Le prêtre adore, élève le calice et adore de nouveau.
+
+== unde-et-memores 2
+title.la: Post consecrationem
+title.fr: Après la consécration
+src: do | la | Ordo.txt | 252-272
+src: cihm_990278 | fr | 114-117 | 120-123
+wit: cihm_80314 | fr | 68-71 | 67-70
+
+rubric
+fr: Le prêtre offre à Dieu le Sacrifice qui vient de s'accomplir :
+
+para
+la: Unde et mémores, Dómine, nos servi tui, sed et plebs tua sancta, ejúsdem Christi Fílii tui, Dómini nostri, tam beátæ passiónis, nec non et ab ínferis resurrectiónis, sed et in cælos gloriósæ ascensiónis: offérimus præcláræ majestáti tuæ de tuis donis ac datis, Hóstiam ✠ puram, Hóstiam ✠ sanctam, Hóstiam ✠ immaculátam, Panem ✠ sanctum vitæ ætérnæ, et Cálicem ✠ salútis perpétuæ.
+fr: C'est pourquoi, Seigneur, nous, vos serviteurs, et votre peuple saint, au souvenir de la si heureuse Passion de ce même Christ votre Fils, notre Seigneur, et de sa Résurrection des enfers, et de sa glorieuse Ascension au ciel, nous offrons à votre très auguste Majesté, de vos propres dons et bienfaits, l'Hostie pure, l'Hostie sainte, l'Hostie sans tache, le Pain sacré de vie éternelle, et le Calice de l'éternel salut.
+
+para
+la: Supra quæ propítio ac seréno vultu respícere dignéris: et accépta habére, sicúti accépta habére dignátus es múnera púeri tui justi Abel, et sacrifícium Patriárchæ nostri Abrahæ: et quod tibi óbtulit summus sacérdos tuus Melchísedech, sanctum sacrifícium, immaculátam hóstiam.
+fr: Daignez, Seigneur, jeter un regard de complaisance et de bonté sur ces dons, et agréer ce Sacrifice saint, cette Hostie sans tache, comme il vous a plu d'agréer les présents d'Abel, le juste, votre serviteur, ainsi que le sacrifice d'Abraham, notre Patriarche, et celui que vous a offert votre grand prêtre Melchisédech.
+
+rubric
+fr: Profondément incliné, il demande grâces et bénédictions pour ceux qui vont participer au sacrifice :
+
+para
+la: Súpplices te rogámus, omnípotens Deus: jube hæc perférri per manus sancti Angeli tui in sublíme altáre tuum, in conspéctu divínæ majestátis tuæ: ut, quotquot ex hac altáris participatióne sacrosánctum Fílii tui Cor ✠ pus, et Sán ✠ guinem sumpsérimus, omni benedictióne cælésti et grátia repleámur. Per eúndem Christum, Dóminum nostrum. Amen.
+fr: Nous vous en supplions, Dieu tout-puissant, ordonnez que ces offrandes soient portées par les mains de votre saint Ange jusque sur votre autel, en présence de votre divine Majesté ; afin que nous tous, qui, en participant à ce sacrifice, aurons reçu le Corps et le Sang sacrés de votre Fils, nous soyons comblés de bénédictions et de grâces. Par le même Jésus-Christ notre Seigneur. Ainsi soit-il.
+
+rubric
+fr: Mémento des morts : on nomme ici les défunts pour lesquels on veut prier spécialement.
+
+para
+la: Meménto étiam, Dómine, famulórum famularúmque tuárum N. et N., qui nos præcessérunt cum signo fídei, et dórmiunt in somno pacis.
+fr: Souvenez-vous aussi, Seigneur, de vos serviteurs et de vos servantes, N. N. qui nous ont précédés marqués du sceau de la Foi, et qui reposent en paix.
+
+para
+la: Ipsis, Dómine, et ómnibus in Christo quiescéntibus locum refrigérii, lucis, et pacis, ut indúlgeas, deprecámur. Per eúndem Christum, Dóminum nostrum. Amen.
+fr: A eux, Seigneur, et à tous ceux qui reposent dans le Christ, accordez, nous vous en supplions, le lieu de rafraîchissement, de la lumière et de la paix. Par le même Jésus-Christ notre Seigneur. Ainsi soit-il.
+
+rubric
+fr: Il se frappe la poitrine en élevant un peu la voix aux premiers mots :
+
+para
+la: Nobis quoque peccatóribus fámulis tuis, de multitúdine miseratiónum tuárum sperántibus, partem áliquam et societátem donáre dignéris, cum tuis sanctis Apóstolis et Martýribus: cum Joánne, Stéphano, Matthía, Bárnaba, Ignátio, Alexándro, Marcellíno, Petro, Felicitáte, Perpétua, Agatha, Lúcia, Agnéte, Cæcília, Anastásia, et ómnibus Sanctis tuis: intra quorum nos consórtium, non æstimátor mériti, sed véniæ, quǽsumus, largítor admítte. Per Christum, Dóminum nostrum.
+fr: Et à nous pécheurs, vos serviteurs, confiants dans la multitude de vos miséricordes, daignez-nous admettre dans la société de vos saints Apôtres et Martyrs : / Jean, Étienne, Matthias, Barnabé, Ignace, Alexandre, Marcellin, Pierre, Félicité, Perpétue, Agathe, Lucie, Agnès, Cécile, Anastasie, / Et de tous vos Saints : Soyez assez bon pour nous recevoir dans leur société, en considération non pas de nos mérites, mais de votre indulgence. Par Jésus-Christ notre Seigneur,
+
+para
+la: Per quem hæc ómnia, Dómine, semper bona creas, sanctí ✠ ficas, viví ✠ ficas, bene ✠ dícis et præstas nobis.
+fr: par qui sans cesse vous créez ces offrandes, vous les sanctifiez, vous les vivifiez, vous les bénissez, et vous nous les donnez.
+
+para
+la: Per Ip ✠ sum, et cum Ip ✠ so, et in Ip ✠ so, est tibi Deo Patri ✠ omnipoténti, in unitáte Spíritus ✠ Sancti, omnis honor, et glória.
+fr: C'est par lui, avec lui, et en lui, que vous sont rendus tout honneur et toute gloire, ô Dieu, Père tout-puissant, en l'unité du Saint-Esprit,
+
+rubric
+fr: Le prêtre conclut le Canon à haute voix :
+
+versicle V
+la: ℣. Per ómnia sǽcula sæculórum.
+fr: ℣. Dans tous les siècles des siècles.
+
+versicle R
+la: ℟. Amen.
+fr: ℟. Ainsi soit-il.
