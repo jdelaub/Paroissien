@@ -59,6 +59,18 @@ sealed interface ReadingBlock {
      * comme une impression. Elle reste avec le début du bloc suivant.
      */
     data class Vignette(override val id: String, val image: ImageBitmap) : ReadingBlock
+
+    /**
+     * Emplacement d'une pièce variable (« Introït — texte de la messe du jour ») : un encadré centré, comme dans les
+     * livrets de messe.
+     */
+    data class Slot(override val id: String, val text: RichText, val key: String? = null) : ReadingBlock
+
+    /**
+     * Deux langues en regard (latin à gauche, français à droite), comme dans un missel : chaque colonne se compose à
+     * la moitié de la largeur, la paire commence à la même hauteur, un filet les sépare.
+     */
+    data class Facing(override val id: String, val left: ReadingBlock, val right: ReadingBlock) : ReadingBlock
 }
 
 /** Position de lecture ancrée sur le contenu (ADR 004) : bloc et décalage en points de code du texte canonique. */

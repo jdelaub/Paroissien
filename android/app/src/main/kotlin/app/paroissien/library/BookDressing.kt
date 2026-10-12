@@ -2,6 +2,11 @@ package app.paroissien.library
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import app.paroissien.core.designsystem.BookIdentity
+import app.paroissien.core.designsystem.CoverMaterial
+import app.paroissien.core.designsystem.CoverMotif
+import app.paroissien.core.designsystem.EdgeFinish
+import app.paroissien.core.designsystem.Tooling
 import app.paroissien.core.designsystem.frame.BoxModule
 import app.paroissien.core.designsystem.frame.CenterModule
 import app.paroissien.core.designsystem.frame.EdgeModule
@@ -50,12 +55,65 @@ data class BookDressChoice(
     val seed: Int = 0,
     /** Couleurs des cadres : null (celles du livre), « jour » (la couleur liturgique du jour) ou une couleur liturgique. */
     val colors: String? = null,
+    /** Reliure retouchée dans l'atelier ; null garde celle du livre. */
+    val binding: BindingChoice? = null,
 ) {
     companion object {
         private val json = Json { ignoreUnknownKeys = true; encodeDefaults = false }
         fun decode(text: String?): BookDressChoice? = text?.let { runCatching { json.decodeFromString(serializer(), it) }.getOrNull() }
         fun encode(choice: BookDressChoice): String = json.encodeToString(serializer(), choice)
     }
+}
+
+/**
+ * La reliure choisie dans l'atelier (ATELIER §9) : chaque champ null garde la valeur du livre. Les énumérations sont
+ * gardées par leur nom ; un nom inconnu (version future) est ignoré.
+ */
+@Serializable
+data class BindingChoice(
+    /** Couleur de la peau ou de la toile (ARGB). */
+    val leather: Long? = null,
+    val material: String? = null,
+    val tooling: String? = null,
+    val motif: String? = null,
+    val edge: String? = null,
+    /** « soie » (doublure), le nom d'un papier à motif, ou « aucune ». */
+    val endpaper: String? = null,
+    /** Les rubans, par emplacement de `RibbonStyle.slots`, dans l'ordre. */
+    val ribbons: List<Int>? = null,
+) {
+    val isEmpty: Boolean get() = this == BindingChoice()
+
+    companion object {
+        const val SILK = "soie"
+        const val NO_ENDPAPER = "aucune"
+
+        /** Les peaux et toiles proposées : celles des livres de la bibliothèque, puis quelques classiques. */
+        val leathers: List<Long> = listOf(
+            0xFF16130F, 0xFF241416, 0xFF2B1A14, 0xFF5C3A22, 0xFF5E1519, 0xFF7A2A1E,
+            0xFF1E3A2B, 0xFF1C2B40, 0xFF3B2347, 0xFF1D1D20, 0xFF6B5A3A, 0xFFEDE3CB,
+        )
+    }
+}
+
+private inline fun <reified E : Enum<E>> enumOrNull(name: String?): E? = name?.let { n -> enumValues<E>().firstOrNull { it.name == n } }
+
+/** Le livre tel que l'atelier l'a relié : la reliure d'origine, retouchée champ par champ. */
+fun BookIdentity.dressed(binding: BindingChoice?): BookIdentity {
+    if (binding == null || binding.isEmpty) return this
+    val material = enumOrNull<CoverMaterial>(binding.material) ?: cover.material
+    val tooling = enumOrNull<Tooling>(binding.tooling) ?: cover.tooling
+    return copy(
+        cover = cover.copy(
+            leather = binding.leather?.let { Color(it) } ?: cover.leather,
+            material = material,
+            tooling = tooling,
+            motifTooling = if (binding.tooling != null) tooling else cover.motifTooling,
+            motif = enumOrNull<CoverMotif>(binding.motif) ?: cover.motif,
+        ),
+        edges = enumOrNull<EdgeFinish>(binding.edge) ?: edges,
+        ribbons = binding.ribbons?.takeIf { it.isNotEmpty() } ?: ribbons,
+    )
 }
 
 /** Un module d'un cadre de la bibliothèque : [part] = top, side, bottom, topCenter, sideCenter, bottomCenter, corner, bottomCorner. */

@@ -15,6 +15,9 @@ import app.paroissien.core.reading.book.Anchor
 import app.paroissien.core.reading.book.BookReader
 import app.paroissien.core.reading.book.BookTypography
 import app.paroissien.core.reading.book.ReadingBlock
+import app.paroissien.core.reading.book.BlockLang
+import app.paroissien.core.reading.book.TextRole
+import app.paroissien.core.model.text.Inlines
 import app.paroissien.core.reading.book.RibbonMark
 import app.paroissien.core.reading.book.CardMark
 import app.paroissien.core.reading.book.FrameLook
@@ -142,6 +145,47 @@ class BookReaderScreenshotTest {
         canvas.drawRect(340f, 165f, 460f, 189f, paint)
         canvas.drawRect(0f, 330f, 800f, 400f, paint)
         return bitmap.asImageBitmap()
+    }
+
+    /**
+     * Livret de messe : latin et français en regard (deux colonnes, un filet), rubrique sur toute la largeur, encadré
+     * « texte de la messe du jour », puis une consigne du servant avec son dessin. Texte de l'Ordinaire du domaine public.
+     */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun livretEnRegard() = capture(null, BookFace.GARAMOND, PaperTheme.CLAIR, blocks = livret())
+
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun livretEnRegardSombre() = capture(null, BookFace.GARAMOND, PaperTheme.SOMBRE, blocks = livret())
+
+    /** La page suivante : la consigne du servant, son dessin teint de l'encre du papier, puis le texte. */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun livretServant() = capture(Anchor("servant3", 0), BookFace.GARAMOND, PaperTheme.SEPIA, blocks = livret())
+
+    private fun livret(): List<ReadingBlock> {
+        fun rt(s: String) = Inlines.fromMarkup(s)
+        fun pair(id: String, la: String, fr: String, versicle: Boolean = false) = ReadingBlock.Facing(
+            id,
+            if (versicle) ReadingBlock.Versicle(id, rt(la), BlockLang.LA) else ReadingBlock.Paragraph(id, rt(la), BlockLang.LA),
+            if (versicle) ReadingBlock.Versicle(id, rt(fr), BlockLang.FR) else ReadingBlock.Paragraph(id, rt(fr), BlockLang.FR),
+        )
+        return listOf(
+            ReadingBlock.Heading("kyrie", rt("Kyrie"), runningHead = "Ordinaire de la messe"),
+            pair("k1", "℣. Kýrie, eléison.", "℣. Seigneur, ayez pitié de nous.", versicle = true),
+            pair("k2", "℟. Kýrie, eléison.", "℟. Seigneur, ayez pitié de nous.", versicle = true),
+            pair("k3", "℣. Christe, eléison.", "℣. Christ, ayez pitié de nous.", versicle = true),
+            ReadingBlock.Rubric("r1", rt("Le prêtre baise l'autel, se tourne vers les fidèles et dit :")),
+            pair("d1", "℣. Dóminus vobíscum.", "℣. Le Seigneur soit avec vous.", versicle = true),
+            pair("d2", "℟. Et cum spíritu tuo.", "℟. Et avec votre esprit.", versicle = true),
+            ReadingBlock.Slot("collecte", rt("Collecte — texte de la messe du jour")),
+            pair("munda", "Munda cor meum, ac lábia mea, omnípotens Deus, qui lábia Isaíæ Prophétæ cálculo mundásti ignito : ita me tua grata miseratióne dignáre mundáre, ut sanctum Evangélium tuum digne váleam nuntiáre.",
+                "Purifiez mon cœur et mes lèvres, Dieu tout-puissant, qui avez purifié avec un charbon ardent les lèvres du prophète Isaïe ; daignez, par votre bonté miséricordieuse, me purifier, afin que je puisse annoncer dignement votre saint Évangile."),
+            ReadingBlock.Heading("servant3", rt("Le servant — 3. À la fin de l'Épître"), minor = true),
+            ReadingBlock.Vignette("servant3.image", syntheticEngraving()),
+            ReadingBlock.Paragraph("servant3.1", rt("Le servant se lève à l'Alléluia, fait la génuflexion et se rend du côté de l'Épître."), BlockLang.FR, role = TextRole.SMALL),
+        )
     }
 
     /** Une page dans le cadre des prières du matin : titre courant et folio au-dessus, rubans dessous. */

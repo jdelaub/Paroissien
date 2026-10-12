@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredSize
@@ -35,7 +36,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -46,20 +49,34 @@ import app.paroissien.AppGraph
 import app.paroissien.R
 import app.paroissien.core.data.BookLookRow
 import app.paroissien.core.data.CustomFrameRow
+import app.paroissien.core.designsystem.BookCover
+import app.paroissien.core.designsystem.CoverMaterial
+import app.paroissien.core.designsystem.CoverMotif
+import app.paroissien.core.designsystem.EdgeFinish
 import app.paroissien.core.designsystem.LocalPaperColors
+import app.paroissien.core.designsystem.RibbonStyle
+import app.paroissien.core.designsystem.Tooling
+import app.paroissien.core.designsystem.frame.EndpaperPatterns
 import app.paroissien.core.designsystem.frame.OrnamentalFrameDef
 import app.paroissien.core.designsystem.frame.OrnamentalFrameLayer
 import app.paroissien.core.designsystem.frame.OrnamentalFrames
 import app.paroissien.core.liturgy.LiturgicalColor
+import app.paroissien.library.BindingChoice
 import app.paroissien.library.BookDressChoice
+import app.paroissien.library.BookDresses
+import app.paroissien.library.BookIdentities
 import app.paroissien.library.CustomFrameSpec
 import app.paroissien.library.CustomMotif
 import app.paroissien.library.FrameComposer
 import app.paroissien.library.FrameMode
+import app.paroissien.library.LibraryEntry
 import app.paroissien.library.ModuleRef
+import app.paroissien.library.dressed
+import app.paroissien.library.imported
+import app.paroissien.library.subtitle
+import java.util.UUID
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.util.UUID
 
 /**
  * « Habiller ce livre » (ATELIER §9) : comment le livre reçoit ses cadres (selon le sommaire, un seul cadre, un cadre
@@ -78,12 +95,14 @@ fun BookDressScreen(graph: AppGraph, key: BookDressKey, open: (NavKey) -> Unit, 
     }
     val frames = OrnamentalFrames.filter { it.name != "doublure" } + custom.map { it.second }
     var picking by remember { mutableStateOf<String?>(null) }
+    var removing by remember { mutableStateOf(false) }
 
     fun save(next: BookDressChoice) = graph.scope.launch(Dispatchers.IO) {
         graph.database.looks().save(BookLookRow(key.publication, BookDressChoice.encode(next), System.currentTimeMillis()))
     }
 
     Screen(stringResource(R.string.dress_title, entry?.title ?: key.publication), onBack = onBack) {
+        item { BindingSection(key.publication, entry, choice.binding ?: BindingChoice()) { save(choice.copy(binding = it.takeUnless { b -> b.isEmpty })) } }
         item {
             Section(stringResource(R.string.dress_frames)) {
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -156,6 +175,26 @@ fun BookDressScreen(graph: AppGraph, key: BookDressKey, open: (NavKey) -> Unit, 
                 Button(onClick = { open(FrameEditorKey()) }) { Text(stringResource(R.string.dress_compose)) }
             }
         }
+        // Un livre importé par l'utilisateur se retire de la bibliothèque (il reste dans les sauvegardes complètes).
+        if (entry?.imported == true) item {
+            TextButton(onClick = { removing = true }, modifier = Modifier.padding(horizontal = 12.dp)) {
+                Text(stringResource(R.string.book_remove), color = MaterialTheme.colorScheme.error)
+            }
+        }
+    }
+    if (removing && entry != null) {
+        AlertDialog(
+            onDismissRequest = { removing = false },
+            text = { Text(stringResource(R.string.book_remove_confirm, entry.title)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    removing = false
+                    graph.scope.launch(Dispatchers.IO) { if (graph.packs.removeBook(entry)) graph.reloadLibrary() }
+                    onBack()
+                }) { Text(stringResource(R.string.card_delete), color = MaterialTheme.colorScheme.error) }
+            },
+            dismissButton = { TextButton(onClick = { removing = false }) { Text(stringResource(R.string.card_cancel)) } },
+        )
     }
 
     picking?.let { unitId ->
@@ -343,6 +382,82 @@ fun FrameThumb(def: OrnamentalFrameDef, width: Dp, selected: Boolean = false, li
     ) {
         Box(Modifier.requiredSize(180.dp, 300.dp).graphicsLayer { scaleX = scale; scaleY = scale }.background(paper.background)) {
             OrnamentalFrameLayer(def.spec, def.style, liturgicalColor)
+        }
+    }
+}
+
+/**
+ * La reliure du livre (ATELIER §9) : peau et couleur, décor, motif, tranche, garde et rubans, sur un aperçu de la
+ * couverture et de la garde. Chaque retouche s'enregistre aussitôt ; « Reliure d'origine » les efface toutes.
+ */
+@Composable
+private fun BindingSection(publication: String, entry: LibraryEntry?, binding: BindingChoice, onChange: (BindingChoice) -> Unit) {
+    val base = remember(publication, entry) { BookIdentities.of(publication, entry, uniform = false) }
+    val identity = base.dressed(binding)
+    Section(stringResource(R.string.binding_title)) {
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
+            BookCover(identity, entry?.title ?: publication, entry?.subtitle(), Modifier.width(110.dp).aspectRatio(0.66f))
+            val endpaper = BookDresses.endpaper(publication, entry, binding.endpaper)
+            Box(Modifier.width(80.dp).aspectRatio(0.66f).clipToBounds().border(1.dp, LocalPaperColors.current.hairline)) {
+                if (endpaper != null) endpaper() else Box(Modifier.matchParentSize().background(identity.paper.tint))
+            }
+        }
+        Text(stringResource(R.string.binding_leather), style = MaterialTheme.typography.bodyMedium)
+        Swatches(BindingChoice.leathers.map { Color(it) }, selected = binding.leather ?: (base.cover.leather.toArgb().toLong() and 0xFFFFFFFFL)) {
+            onChange(binding.copy(leather = it))
+        }
+        Chips(
+            stringResource(R.string.binding_material), identity.cover.material.name,
+            listOf(CoverMaterial.MOROCCO to R.string.binding_morocco, CoverMaterial.CALF to R.string.binding_calf, CoverMaterial.CLOTH to R.string.binding_cloth, CoverMaterial.WRAPPER to R.string.binding_wrapper),
+        ) { onChange(binding.copy(material = it)) }
+        Chips(
+            stringResource(R.string.binding_tooling), identity.cover.tooling.name,
+            listOf(Tooling.GOLD to R.string.binding_gold, Tooling.BLIND to R.string.binding_blind, Tooling.PRINTED to R.string.binding_printed),
+        ) { onChange(binding.copy(tooling = it)) }
+        Chips(
+            stringResource(R.string.binding_motif), identity.cover.motif.name,
+            listOf(CoverMotif.CROSS to R.string.binding_cross, CoverMotif.IHS to R.string.binding_ihs, CoverMotif.CHI_RHO to R.string.binding_chi_rho, CoverMotif.NONE to R.string.binding_none),
+        ) { onChange(binding.copy(motif = it)) }
+        Chips(
+            stringResource(R.string.binding_edges), identity.edges.name,
+            listOf(EdgeFinish.GILT to R.string.binding_gilt, EdgeFinish.RED to R.string.binding_red, EdgeFinish.PLAIN to R.string.binding_plain),
+        ) { onChange(binding.copy(edge = it)) }
+        Text(stringResource(R.string.binding_endpaper), style = MaterialTheme.typography.bodyMedium)
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            FilterChip(selected = binding.endpaper == null, onClick = { onChange(binding.copy(endpaper = null)) }, label = { Text(stringResource(R.string.binding_book_default)) })
+            FilterChip(selected = binding.endpaper == BindingChoice.SILK, onClick = { onChange(binding.copy(endpaper = BindingChoice.SILK)) }, label = { Text(stringResource(R.string.binding_silk)) })
+            EndpaperPatterns.forEach { pattern ->
+                FilterChip(selected = binding.endpaper == pattern.name, onClick = { onChange(binding.copy(endpaper = pattern.name)) }, label = { Text(pattern.title) })
+            }
+            FilterChip(selected = binding.endpaper == BindingChoice.NO_ENDPAPER, onClick = { onChange(binding.copy(endpaper = BindingChoice.NO_ENDPAPER)) }, label = { Text(stringResource(R.string.binding_none)) })
+        }
+        Text(stringResource(R.string.binding_ribbons), style = MaterialTheme.typography.bodyMedium)
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            RibbonStyle.slots.forEachIndexed { slot, ribbon ->
+                val on = slot in identity.ribbons
+                FilterChip(
+                    selected = on,
+                    onClick = {
+                        val next = if (on) identity.ribbons - slot else identity.ribbons + slot
+                        // Au moins un ruban : un livre relié en a toujours un.
+                        if (next.isNotEmpty()) onChange(binding.copy(ribbons = next))
+                    },
+                    label = { Text(ribbon.label) },
+                    leadingIcon = { ColorDot(ribbon.color) },
+                )
+            }
+        }
+        if (!binding.isEmpty) OutlinedButton(onClick = { onChange(BindingChoice()) }) { Text(stringResource(R.string.binding_reset)) }
+    }
+}
+
+/** Une rangée de choix exclusifs, nommés par une énumération. */
+@Composable
+private fun <E : Enum<E>> Chips(title: String, selected: String, options: List<Pair<E, Int>>, onPick: (String) -> Unit) {
+    Text(title, style = MaterialTheme.typography.bodyMedium)
+    FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+        options.forEach { (value, label) ->
+            FilterChip(selected = selected == value.name, onClick = { onPick(value.name) }, label = { Text(stringResource(label)) })
         }
     }
 }

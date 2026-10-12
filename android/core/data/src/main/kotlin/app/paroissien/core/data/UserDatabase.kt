@@ -68,6 +68,8 @@ data class PersonalCard(
     val title: String,
     val hasBack: Boolean,
     val createdAt: Long,
+    /** Description reçue avec une image importée (`.paroissien-image`) : le JSON d'une carte du catalogue. */
+    val meta: String? = null,
 )
 
 /** Une catégorie créée par l'utilisateur pour ranger ses images (en plus des catégories prédéfinies). */
@@ -116,6 +118,9 @@ interface LookDao {
 
     @Query("SELECT * FROM book_look")
     suspend fun all(): List<BookLookRow>
+
+    @Query("SELECT * FROM book_look")
+    fun observeAll(): Flow<List<BookLookRow>>
 
     @Upsert
     suspend fun save(look: BookLookRow)
@@ -219,6 +224,9 @@ interface PersonalCardDao {
     @Query("SELECT * FROM personal_card")
     suspend fun all(): List<PersonalCard>
 
+    @Query("SELECT * FROM personal_card WHERE id = :id")
+    suspend fun get(id: String): PersonalCard?
+
     @Upsert
     suspend fun save(card: PersonalCard)
 
@@ -231,7 +239,7 @@ interface PersonalCardDao {
         BookPosition::class, Ribbon::class, CardPlacement::class, PersonalCard::class, CardCategory::class, CardInCategory::class,
         BookLookRow::class, CustomFrameRow::class,
     ],
-    version = 6,
+    version = 7,
     exportSchema = true,
     autoMigrations = [
         AutoMigration(from = 1, to = 2, spec = UserDatabase.V1ToV2::class),
@@ -239,6 +247,7 @@ interface PersonalCardDao {
         AutoMigration(from = 3, to = 4),
         AutoMigration(from = 4, to = 5),
         AutoMigration(from = 5, to = 6),
+        AutoMigration(from = 6, to = 7),
     ],
 )
 abstract class UserDatabase : RoomDatabase() {

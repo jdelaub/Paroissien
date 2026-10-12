@@ -25,7 +25,8 @@ data class ReaderSettings(
     val turn: String = "PAPIER",
     val protectEdges: Boolean = false,
     val showMeasures: Boolean = false,
-    val language: String = "fr",
+    /** « fr », « la », ou « la-fr » : latin et français en regard dans les livres bilingues (par défaut). */
+    val language: String = "la-fr",
     /** Chaque livre a sa reliure, son papier, sa tranche et ses signets ; sinon, tous pareils. */
     val bookIdentity: Boolean = true,
     /** Le ruban est couché en travers de la page, comme dans un vrai livre ; sinon, dans le petit fond. */

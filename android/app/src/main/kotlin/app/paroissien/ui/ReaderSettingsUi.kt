@@ -39,7 +39,10 @@ fun ReaderSettingsRow(settings: ReaderSettings, onAll: (() -> Unit)? = null, onD
         Setting(stringResource(R.string.setting_larger)) { change { it.copy(scaleIndex = (it.scaleIndex + 1).coerceAtMost(SCALES.lastIndex)) } }
         Setting(stringResource(R.string.setting_spread, stringResource(spreadLabel(settings.spreadMode())))) { change { it.copy(spread = settings.spreadMode().next().name) } }
         Setting(stringResource(R.string.setting_turn, stringResource(turnLabel(settings.turnStyle())))) { change { it.copy(turn = settings.turnStyle().next().name) } }
-        Setting(stringResource(R.string.setting_language, settings.language)) { change { it.copy(language = if (it.language == "fr") "la" else "fr") } }
+        // Français, latin, puis les deux en regard.
+        Setting(stringResource(R.string.setting_language, stringResource(languageLabel(settings.language)))) {
+            change { it.copy(language = when (it.language) { "fr" -> "la"; "la" -> LANGUAGE_FACING; else -> "fr" }) }
+        }
         Setting(stringResource(if (settings.protectEdges) R.string.setting_edges_on else R.string.setting_edges_off)) { change { it.copy(protectEdges = !it.protectEdges) } }
         Setting(stringResource(if (settings.bookIdentity) R.string.setting_identity_on else R.string.setting_identity_off)) { change { it.copy(bookIdentity = !it.bookIdentity) } }
         Setting(stringResource(if (settings.ribbonsAcross) R.string.setting_ribbons_across_on else R.string.setting_ribbons_across_off)) { change { it.copy(ribbonsAcross = !it.ribbonsAcross) } }
@@ -80,3 +83,10 @@ internal fun turnLabel(t: TurnStyle) = when (t) {
 }
 
 private inline fun <reified E : Enum<E>> E.next(): E = enumValues<E>().let { it[(ordinal + 1) % it.size] }
+
+/** Le nom d'un réglage de langue : français, latin, ou les deux en regard. */
+fun languageLabel(language: String) = when (language) {
+    "la" -> R.string.language_la
+    LANGUAGE_FACING -> R.string.language_facing
+    else -> R.string.language_fr
+}

@@ -2,11 +2,14 @@ package app.paroissien.library
 
 import android.content.Context
 import app.paroissien.core.content.Catalog
+import app.paroissien.core.content.CatalogPack
 import app.paroissien.core.content.CatalogVerifier
+import app.paroissien.core.content.DraftBook
 import app.paroissien.core.content.InstalledPack
 import app.paroissien.core.content.PackBlock
 import app.paroissien.core.content.PackInstaller
 import app.paroissien.core.content.PackReader
+import app.paroissien.core.content.PackWriter
 import app.paroissien.core.content.PublicationInfo
 import app.paroissien.core.content.SearchHit
 import app.paroissien.core.content.TocEntry
@@ -44,9 +47,18 @@ data class LibraryEntry(val pack: InstalledPack, val publication: PublicationInf
  */
 class PackSource(val name: String, val imported: Boolean, val catalog: ByteArray, val signature: ByteArray, val packs: List<InstalledPack>)
 
-data class Library(val entries: List<LibraryEntry>, val problems: List<String>, val sources: List<PackSource> = emptyList()) {
+data class Library(
+    val entries: List<LibraryEntry>,
+    val problems: List<String>,
+    val sources: List<PackSource> = emptyList(),
+    /** Les livres que l'utilisateur a importés (`files/mes-livres/`), non signés : ils sont à lui. */
+    val own: List<InstalledPack> = emptyList(),
+) {
     fun entry(publication: String): LibraryEntry? = entries.firstOrNull { it.publication.id == publication }
 }
+
+/** Vrai pour un livre importé par l'utilisateur (txt, epub) : il peut le retirer de la bibliothèque. */
+val LibraryEntry.imported: Boolean get() = pack.entry.rights == DraftBook.RIGHTS
 
 /** Un passage trouvé, avec la publication qui le contient. */
 data class SearchResult(val entry: LibraryEntry, val hit: SearchHit)
@@ -87,6 +99,9 @@ class PackLibrary(private val context: Context) {
             val other = kept[pack.entry.packageId]
             if (other == null || pack.entry.packageVersion > other.entry.packageVersion) kept[pack.entry.packageId] = pack
         }
+        // Les livres importés par l'utilisateur, après ceux de l'app.
+        val own = ownBooks()
+        own.forEach { kept.putIfAbsent(it.entry.packageId, it) }
         val entries = ArrayList<LibraryEntry>()
         for (pack in kept.values) {
             runCatching {
@@ -95,7 +110,51 @@ class PackLibrary(private val context: Context) {
                 }
             }.onFailure { problems += "« ${pack.entry.title["fr"] ?: pack.entry.packageId} » ne s'ouvre pas" }
         }
-        return Library(entries, problems, sources)
+        return Library(entries, problems, sources, own)
+    }
+
+    /** Dossier des livres importés par l'utilisateur : un paquet `.sqlite` par livre. */
+    val ownRoot: File get() = File(context.filesDir, "mes-livres")
+
+    private fun ownBooks(): List<InstalledPack> = ownRoot.listFiles { f -> f.name.endsWith(".sqlite") }.orEmpty().sortedBy { it.name }.mapNotNull { file ->
+        runCatching {
+            PackReader.open(file).use { reader ->
+                val info = reader.info()
+                CatalogPack(
+                    packageId = info.getValue("packageId"), packageVersion = info.getValue("packageVersion").toLong(), file = file.name,
+                    manifest = "", sha256 = "", size = file.length(), rights = info["rights"] ?: DraftBook.RIGHTS,
+                    minAppFormat = info["minAppFormat"] ?: "1.0", title = mapOf("fr" to (info["title"] ?: file.nameWithoutExtension)),
+                    publications = reader.publications().map { it.id },
+                )
+            }.let { InstalledPack(it, file) }
+        }.getOrNull()
+    }
+
+    /**
+     * Importe un livre (txt ou epub) : il est lu, écrit en paquet dans `files/mes-livres/`, et devient un livre de la
+     * bibliothèque. Renvoie l'identifiant de sa publication, ou null si le fichier n'a rien donné de lisible.
+     */
+    fun importBook(bytes: ByteArray, fileName: String): String? {
+        val book = BookImport.parse(bytes, fileName) ?: return null
+        PackWriter.write(book, File(ownRoot, "${book.packageId}.sqlite"))
+        return book.publicationId
+    }
+
+    /** Retire de la bibliothèque un livre importé ; ses rubans et sa position restent dans la base, sans effet. */
+    fun removeBook(entry: LibraryEntry): Boolean = entry.imported && entry.pack.file.parentFile == ownRoot && entry.pack.file.delete()
+
+    /** Restaure un livre importé depuis une sauvegarde : refusé s'il n'est pas un paquet lisible. */
+    fun restoreOwnBook(file: File): Boolean {
+        if (!OWN_BOOK.matches(file.name) || runCatching { PackReader.open(file).close() }.isFailure) return false
+        val target = File(ownRoot.apply { mkdirs() }, file.name)
+        if (target.exists()) return false
+        file.copyTo(target)
+        return true
+    }
+
+    companion object {
+        /** Nom d'un livre importé, dans `files/mes-livres/` et dans une sauvegarde (`mes-livres/`). */
+        val OWN_BOOK = Regex("perso-[a-z0-9-]+\\.sqlite")
     }
 
     /**
@@ -126,6 +185,10 @@ class PackLibrary(private val context: Context) {
 
     fun blocks(entry: LibraryEntry, unit: UnitInfo): List<PackBlock> =
         PackReader.open(entry.pack.file).use { it.blocks(entry.publication.id, unit.id) }
+
+    /** L'image `<nom>` d'un bloc `image` de la publication, telle que le paquet la garde (WebP, masque d'encre). */
+    fun asset(entry: LibraryEntry, name: String): ByteArray? =
+        runCatching { PackReader.open(entry.pack.file).use { it.asset("${entry.publication.id}/$name") } }.getOrNull()
 
     fun toc(entry: LibraryEntry, language: String): List<TocEntry> =
         PackReader.open(entry.pack.file).use { it.toc(entry.publication.id, language) }

@@ -50,6 +50,7 @@ internal object BackupFormat {
     fun isSafe(name: String): Boolean = name == MANIFEST || name == SETTINGS || name == DATA ||
         (name.startsWith("images/") && IMAGE.matches(name.removePrefix("images/"))) ||
         (BOOK.matches(name) && ".." !in name) ||
+        (name.startsWith("mes-livres/") && PackLibrary.OWN_BOOK.matches(name.removePrefix("mes-livres/"))) ||
         (name.startsWith("vignettes/") && VIGNETTE.matches(name.removePrefix("vignettes/"))) ||
         (name.startsWith("bibliotheque-images/") && LIBRARY_IMAGE.matches(name.removePrefix("bibliotheque-images/")))
 
@@ -90,7 +91,7 @@ class Backup(private val context: Context, private val graph: AppGraph) {
             app = BuildConfig.VERSION_NAME,
             flavor = BuildConfig.FLAVOR,
             createdAt = System.currentTimeMillis(),
-            books = sources.flatMap { s -> s.packs.map { it.entry.title["fr"] ?: it.entry.packageId } },
+            books = sources.flatMap { s -> s.packs.map { it.entry.title["fr"] ?: it.entry.packageId } } + library.own.map { it.entry.title["fr"] ?: it.entry.packageId },
             images = images.count { it.name.endsWith("-front.webp") },
         )
         ZipOutputStream(BufferedOutputStream(out)).use { zip ->
@@ -113,6 +114,8 @@ class Backup(private val context: Context, private val graph: AppGraph) {
                 put("livres/${source.name}/catalog.json.sig", source.signature)
                 source.packs.forEach { put("livres/${source.name}/${it.entry.file}", it.file) }
             }
+            // Les livres importés par l'utilisateur, tels quels.
+            library.own.forEach { put("mes-livres/${it.file.name}", it.file) }
             val library = PiousImages.LibrarySource(context)
             for (name in library.files()) {
                 runCatching { library.open(name) }.getOrNull()?.use { input ->
@@ -142,8 +145,11 @@ class Backup(private val context: Context, private val graph: AppGraph) {
             require(manifest.format <= BackupFormat.VERSION) { "cette sauvegarde vient d'une version plus récente de Paroissien" }
 
             // 1. Les livres, vérifiés comme ceux de l'APK.
-            val (books, problems) = File(staging, "livres").takeIf { it.isDirectory }
+            val (signed, problems) = File(staging, "livres").takeIf { it.isDirectory }
                 ?.let { graph.packs.importPacks(it, graph.library.value) } ?: (0 to emptyList())
+            // 1 bis. Les livres importés par l'utilisateur : un livre déjà là n'est pas remplacé.
+            val own = File(staging, "mes-livres").listFiles()?.count { graph.packs.restoreOwnBook(it) } ?: 0
+            val books = signed + own
 
             // 2. Les images pieuses : un fichier déjà là n'est jamais remplacé.
             var images = 0

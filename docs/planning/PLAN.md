@@ -168,6 +168,8 @@ Les durées sont des estimations en semaines de travail effectif pour une person
 | **Porte B2 = MVP** | Usage quotidien ; corrections ; décision sur le passage à B selon les réponses obtenues | — |
 | **V1** | Voir §3.2 | — |
 
+**Phase 5, état au 12/10/2026 (0.6.4)** : Ordinaire de 1962 (domaine public, `content/sources/ordinaire`) ; Propre de 1962 tiré de Divinum Officium (`content/sources/missel` : 712 unités, latin public, français du Barroux dans le dépôt privé sous le même paquet) ; « Messe du jour » dans Aujourd'hui et ruban de la messe du jour au ferret doré ; latin et français en regard (réglage « la-fr », par défaut) ; blocs `image` (ressources du paquet) et `slot` (« texte de la messe du jour », rempli depuis le missel). Restent : les oraisons des commémoraisons, le mode « messe intégrée », les féries renvoyées au dimanche (un tiers du poids du paquet), la messe propre de sainte Jeanne d'Arc et de sainte Geneviève.
+
 ### 4.1 ADR de la phase 0 (une page chacun, `docs/adr/`)
 1. **001 — Horizon, dépôts et saveurs** : scénario A, B ou C, statuts de droits, et quelle CI construit quoi.
 2. **002 — Appareils et SDK** : téléphone de référence et second appareil, minSdk, `applicationId`, keystore de débogage.

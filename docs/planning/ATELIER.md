@@ -94,6 +94,7 @@ Les scènes gravées (Évangile, saints) sont des images tramées que le moteur 
   - **epub** : le manifeste et l'ordre de lecture (`spine`) donnent les unités ; le XHTML donne les blocs (titres, paragraphes, italiques, gras) ; titre, auteur et langue viennent des métadonnées. Lecture avec le parseur XML d'Android, sans bibliothèque de plus.
   - **PDF** : deux cas. Un PDF né numérique : extraction du texte (bibliothèque PdfBox-Android, Apache-2.0) puis même traitement que le txt. Un PDF scanné, sans texte : livre en fac-similé, une image par page (`PdfRenderer` d'Android) dans le même livre à pages ; pas de recherche, mais rubans, signets et habit.
   - Le livre importé reçoit le rang simple ; l'atelier peut l'anoblir.
+  - **Fait le 12/10/2026 (0.6.4) pour le txt et l'epub** : tuile « Importer un livre » sur le rayon ; `BookImport` lit le fichier (texte : UTF-8 sinon Windows-1252, en-tête Gutenberg écarté, chapitres repérés ; epub : `container.xml`, OPF, `spine`, XHTML avec titres, paragraphes, italiques, gras, exposants, entités HTML courantes ; images ignorées), `PackWriter` (core:content, même schéma `pack-v1.sql` que la chaîne Python) l'écrit dans `files/mes-livres/perso-<titre>-<6>.sqlite`. Statut `import-personnel` ; « Retirer ce livre » dans « Habiller ce livre » ; la sauvegarde complète l'emporte (`mes-livres/`). Reste le PDF.
 - **Export.** Un livre vers **epub** (titres, paragraphes, rubriques en rouge) ou **txt** ; vers **PDF**, en imprimant les pages telles que l'app les met en page, cadres et vignettes compris (`PdfDocument` d'Android) : de quoi imprimer son propre paroissien.
 - **Contenus protégés.** Ils font partie de la sauvegarde complète (§8), décision du 12/10/2026 ; l'export d'un livre seul (epub, txt, PDF) suivra la même règle.
 
@@ -103,8 +104,8 @@ Les scènes gravées (Évangile, saints) sont des images tramées que le moteur 
 - **Catégories** : prédéfinies par occasion (baptême, première communion, communion solennelle, confirmation, ordination, vie religieuse, mariage, mementos, prières, pèlerinages, fêtes, œuvres d'art, saints), plus celles que crée l'utilisateur ; une image peut en avoir plusieurs, l'utilisateur en ajoute ou en retire ; la boîte à images se filtre par catégorie. Les souvenirs de famille ne sont jamais proposés en image du jour.
 - **Cartes réelles** : montrées dans leurs proportions, coins arrondis et ombre légère ; sous la carte, ce qu'elle dit (date, personnes, lieu, dédicace, texte, éditeur).
 - **Taille réelle** : les photos étant à la même échelle, une seule mesure (le grand côté d'une carte, en millimètres) donnera la taille de toutes (`px_par_mm` dans `cartes.json`).
-- **Import** d'une image pieuse depuis deux fichiers (recto, puis verso facultatif), telle quelle ou par le recadrage existant ; ou d'un fichier d'image exporté par l'app.
-- **Export** d'une image, pour la partager : un fichier `.paroissien-image` (zip : recto, verso, description JSON), ou le partage Android des deux faces en JPEG.
+- **Import** (fait le 12/10/2026, 0.6.4) : « Importer une image… » dans la boîte prend un fichier `.paroissien-image`, ou une ou deux images ordinaires (recto, puis verso). Le zip est lu comme une donnée : seuls les noms attendus, 20 Mo au plus chacun, faces décodées puis réencodées. La description reçue (date, personnes, dédicace, catégories) est gardée avec l'image (`personal_card.meta`, base en version 7).
+- **Partage** (fait, 0.6.4) : « Partager l'image » envoie les deux faces en JPEG sur fond blanc à n'importe quelle app ; « Pour Paroissien » envoie le `.paroissien-image` (zip : `image.json`, recto, verso, vignette). Les catégories créées par l'utilisateur ne voyagent pas.
 
 ## 8. Sauvegarde complète (faite le 12/10/2026)
 
@@ -131,7 +132,9 @@ Un seul fichier `paroissien-sauvegarde-<date>.zip`, écrit et relu par le sélec
 
 Un écran par livre, ouvert depuis la bibliothèque (appui long sur la couverture) ou depuis Aa : « Habiller ce livre ». Un habit par livre (décision du 12/10/2026).
 
-**Fait le 12/10/2026 (0.6.1)** : les cadres de chaque livre, en cinq modes (selon le sommaire, un seul cadre, un cadre par chapitre, au hasard dans une sélection avec « tirer à nouveau », aucun), et « Composer un cadre » : frises du haut, des côtés et du pied, coins et médaillon pris dans tous les cadres de la bibliothèque (chacun montré sur un petit cadre), disposition, épaisseurs, fond, filets, aperçu vivant. Les encres de chaque module gardent leur cadre d'origine (« matin.gold ») ; les cadres composés se choisissent comme les autres. Tables `book_look` et `custom_frame` (base en version 6), dans la sauvegarde. Restent : couverture, gardes, tranche et rubans dans l'atelier.
+**Fait le 12/10/2026 (0.6.1)** : les cadres de chaque livre, en cinq modes (selon le sommaire, un seul cadre, un cadre par chapitre, au hasard dans une sélection avec « tirer à nouveau », aucun), et « Composer un cadre » : frises du haut, des côtés et du pied, coins et médaillon pris dans tous les cadres de la bibliothèque (chacun montré sur un petit cadre), disposition, épaisseurs, fond, filets, aperçu vivant. Les encres de chaque module gardent leur cadre d'origine (« matin.gold ») ; les cadres composés se choisissent comme les autres. Tables `book_look` et `custom_frame` (base en version 6), dans la sauvegarde.
+
+**Reliure (0.6.4)** : en tête de « Habiller ce livre », la couleur de la peau ou de la toile, la matière (maroquin, veau, toile, papier), le décor (doré, à froid, imprimé), le motif du plat, la tranche (dorée, rouge, naturelle), la garde (celle du livre, soie moirée, chaque papier à motif, aucune) et les rubans (ceux qu'on coud, parmi les six couleurs), sur un aperçu de la couverture et de la garde. Chaque champ non retouché garde la valeur du livre (`BindingChoice` dans `book_look`) ; « Reliure d'origine » efface tout. La bibliothèque et le lecteur montrent la reliure retouchée.
 
 **Ajouts du 12/10/2026 (0.6.3)** :
 
@@ -158,10 +161,10 @@ Stockage : `user.db`, une table `book_look` (publication → description JSON de
 2. Moteur v3, rangs d'habillage, cadre simple (fait le 12/10/2026).
 3. Second lot : bandeaux latéraux, équerres, gardes ; règle de choix étendue aux nouveaux cadres (fait).
 4. Vignettes gravées : outil de préparation, dépôt privé, placement (fait ; d'autres vignettes à photographier).
-5. Sauvegarde complète et saveur vide (fait) ; collection d'images pieuses de l'utilisateur, catégories, cartes aux coins arrondis (fait) ; import et partage d'une image à la fois.
+5. Sauvegarde complète et saveur vide (fait) ; collection d'images pieuses de l'utilisateur, catégories, cartes aux coins arrondis (fait) ; import et partage d'une image à la fois (fait).
 6. Couvertures en modules.
-7. Atelier : habit par livre, puis composition de cadres.
-8. Import de livres (txt, epub, puis PDF), puis export (epub, txt, PDF).
+7. Atelier : habit par livre, composition de cadres, reliure (fait) ; restent le titre doré ou non, la tranche rouge orangé et les extrémités des rubans.
+8. Import de livres (txt, epub : fait ; PDF à venir), puis export (epub, txt, PDF).
 
 ## 11. Questions ouvertes
 

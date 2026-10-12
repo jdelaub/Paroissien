@@ -91,9 +91,17 @@ class PackReader private constructor(private val connection: SQLiteConnection) :
             listOf(TocEntry(unit.id, null, 0, unit.title ?: unit.id)) +
                 byUnit[unit.id].orEmpty().mapNotNull { row ->
                     val level = row.attrs?.let { json.parseToJsonElement(it).jsonObject["level"]?.jsonPrimitive?.content?.toIntOrNull() } ?: 1
-                    if (level > 2) null else TocEntry(unit.id, row.block, level, Inlines.plainText(Inlines.parse(row.inlines)))
+                    val title = Inlines.plainText(Inlines.parse(row.inlines))
+                    // Le titre qui répète celui de l'unité n'ajoute rien au sommaire.
+                    if (level > 2 || title == unit.title) null else TocEntry(unit.id, row.block, level, title)
                 }
         }
+    }
+
+    /** Une ressource du paquet (l'image d'un bloc `image`), par son chemin `<publication>/<nom>` ; null si absente. */
+    fun asset(href: String): ByteArray? = connection.prepare("SELECT data FROM asset WHERE href = ?").use { st ->
+        st.bindText(1, href)
+        if (st.step()) st.getBlob(0) else null
     }
 
     /** Passages qui contiennent tous les mots de [input] (le dernier en préfixe), du plus pertinent au moins pertinent. */

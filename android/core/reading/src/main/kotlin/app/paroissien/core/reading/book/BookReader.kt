@@ -83,12 +83,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.FilterQuality
 import androidx.compose.ui.graphics.drawscope.DrawScope
+import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.ui.graphics.drawscope.translate
 import androidx.compose.ui.graphics.drawscope.withTransform
@@ -126,9 +128,12 @@ enum class SpreadMode { AUTO, SINGLE, DOUBLE }
 
 /**
  * Un ruban du livre (rapport 09). [anchor] le situe dans l'unité ouverte ; sinon [elsewhere] dit s'il marque une
- * unité précédente (-1) ou suivante (+1), pour que sa queue pende du bon côté.
+ * unité précédente (-1) ou suivante (+1), pour que sa queue pende du bon côté. [style] remplace celui de
+ * l'emplacement (le ruban de la messe du jour, à la couleur du jour).
  */
-data class RibbonMark(val slot: Int, val anchor: Anchor?, val elsewhere: Int = 0)
+data class RibbonMark(val slot: Int, val anchor: Anchor?, val elsewhere: Int = 0, val style: RibbonStyle? = null) {
+    val look: RibbonStyle get() = style ?: RibbonStyle.of(slot)
+}
 
 /**
  * L'apparence matérielle du livre ouvert : sa tranche (dorée, rouge, naturelle), son papier (plus il est fin, plus
@@ -310,7 +315,7 @@ fun BookReader(
                     val side = sideOf(index, double)
                     val here = remember(ribbons, paged, i, asideRibbons) {
                         ribbons.filter { it.anchor != null && paged.pageOf(it.anchor) == i }
-                            .map { PageRibbon(it.slot, aside = asideRibbons.containsKey(it.slot) && asideRibbons[it.slot] == it.anchor) }
+                            .map { PageRibbon(it.slot, aside = asideRibbons.containsKey(it.slot) && asideRibbons[it.slot] == it.anchor, it.look) }
                     }
                     // Le verso d'une page de droite est la suivante ; celui d'une page de gauche, la précédente.
                     val verso = if (look.showThrough) paged.pages.getOrNull(if (side == PageSide.LEFT) i - 1 else i + 1) else null
@@ -330,14 +335,14 @@ fun BookReader(
             fun sideOfPage(p: Int) = if (shown.isEmpty()) 1 else if (p in shown) 0 else if (p < shown.min()) -1 else 1
             val tails = ribbons.mapNotNull { r ->
                 val side = r.anchor?.let { a -> sideOfPage(paged.pageOf(a)) } ?: r.elsewhere
-                if (side == 0) null else r.slot to side
+                if (side == 0) null else r to side
             }
             // Elles pendent dans la bande réservée, juste sous le folio (ou sous le cadre).
             val tailBottom = (if (look.frame != null) margins.frameBottom else margins.bottom) - RibbonBand + (RibbonBand - TailHeight) / 2
             // Ouvrir le livre par la queue d'un ruban : il est de nouveau en travers de la page.
             val openAtRibbon: (Int) -> Unit = { slot -> asideRibbons = asideRibbons - slot; onRibbonTap(slot) }
-            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
-            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second < 0 }.map { it.first.slot to it.first.look }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second > 0 }.map { it.first.slot to it.first.look }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
 
             // Images pieuses de la page ouverte : posées sur elle ou rangées en miniature, au-dessus du livre (leurs gestes
             // ne vont qu'à elles). Celles d'autres pages dépassent par la tête, à gauche ce qui précède, à droite ce qui suit.
@@ -409,7 +414,7 @@ private fun visiblePages(page: Int, double: Boolean, count: Int): Set<Int> {
 }
 
 /** Un ruban qui marque cette page ; [aside] : écarté dans le pli. */
-private data class PageRibbon(val slot: Int, val aside: Boolean)
+private data class PageRibbon(val slot: Int, val aside: Boolean, val style: RibbonStyle)
 
 /** Ce qu'on fait des objets posés sur la page : écarter un ruban dans le pli, mettre une image de côté, l'ouvrir. */
 private class PageObjects(val ribbonAside: (Int) -> Unit)
@@ -494,7 +499,7 @@ private fun PageView(
             // TalkBack : chaque ruban en travers de la page se dit, et s'écarte d'un double toucher.
             ribbons.forEachIndexed { k, r ->
                 if (!across || r.aside) return@forEachIndexed
-                val label = RibbonStyle.of(r.slot).label
+                val label = r.style.label
                 val middle = with(density) { ribbonSpine(k, 0f, gutterAtRight, pageSize, margin) }.let { it[it.size / 2] }
                 Box(
                     Modifier
@@ -601,6 +606,7 @@ private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, ink: Color, modi
                             is PageItem.Lines -> drawLines(item, alpha = SHOW_THROUGH)
                             is PageItem.Glyph -> translate(item.x, item.y) { drawText(item.layout, alpha = SHOW_THROUGH) }
                             is PageItem.Picture -> drawPicture(item, ink, alpha = SHOW_THROUGH)
+                            is PageItem.Frame, is PageItem.Rule -> Unit
                         }
                     }
                 }
@@ -610,6 +616,12 @@ private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, ink: Color, modi
                     is PageItem.Lines -> drawLines(item)
                     is PageItem.Glyph -> translate(item.x, item.y) { drawText(item.layout) }
                     is PageItem.Picture -> drawPicture(item, ink)
+                    is PageItem.Frame -> {
+                        val r = CornerRadius(3.dp.toPx())
+                        drawRoundRect(ink.copy(alpha = 0.05f), Offset(item.x, item.y), Size(item.width, item.height), r)
+                        drawRoundRect(ink.copy(alpha = 0.45f), Offset(item.x, item.y), Size(item.width, item.height), r, style = Stroke(1.dp.toPx()))
+                    }
+                    is PageItem.Rule -> drawLine(ink.copy(alpha = 0.4f), Offset(item.x, item.y), Offset(item.x, item.y + item.height), strokeWidth = 0.8.dp.toPx())
                 }
             }
         }
@@ -700,7 +712,7 @@ private fun Modifier.pageRibbons(ribbons: List<PageRibbon>, moves: List<State<Fl
         ribbons.forEachIndexed { k, r ->
             val t = moves[k].value
             drawRibbonAlong(
-                RibbonStyle.of(r.slot), dark,
+                r.style, dark,
                 spine = ribbonSpine(k, t, gutterAtRight, size, margin),
                 width = (AcrossWidth + (LyingWidth - AcrossWidth) * t).toPx(),
                 ripple = 1f - 0.55f * t,
@@ -713,12 +725,11 @@ private fun Modifier.pageRibbons(ribbons: List<PageRibbon>, moves: List<State<Fl
 /** Queues de rubans qui pendent sous la page ; un toucher ouvre la page marquée (cible de 48 dp de large au moins). */
 @Composable
 @OptIn(ExperimentalFoundationApi::class)
-private fun RibbonTails(slots: List<Int>, dark: Boolean, fabric: RibbonFabric, onTap: (Int) -> Unit, onMove: (Int) -> Unit, modifier: Modifier) {
+private fun RibbonTails(slots: List<Pair<Int, RibbonStyle>>, dark: Boolean, fabric: RibbonFabric, onTap: (Int) -> Unit, onMove: (Int) -> Unit, modifier: Modifier) {
     if (slots.isEmpty()) return
     val haptic = LocalHapticFeedback.current
     Row(modifier, horizontalArrangement = Arrangement.spacedBy(2.dp)) {
-        slots.forEach { slot ->
-            val style = RibbonStyle.of(slot)
+        slots.forEach { (slot, style) ->
             Box(
                 Modifier
                     .size(width = 48.dp, height = TailHeight)

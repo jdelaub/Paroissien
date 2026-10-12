@@ -58,7 +58,7 @@ fun SettingsScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> 
                 }
                 Choice(stringResource(R.string.settings_spread), SpreadMode.entries, settings.spreadMode(), { stringResource(spreadLabel(it)) }) { v -> update { it.copy(spread = v.name) } }
                 Choice(stringResource(R.string.settings_turn), TurnStyle.entries, settings.turnStyle(), { stringResource(turnLabel(it)) }) { v -> update { it.copy(turn = v.name) } }
-                Choice(stringResource(R.string.settings_language), listOf("fr", "la"), settings.language, { stringResource(if (it == "la") R.string.language_la else R.string.language_fr) }) { v ->
+                Choice(stringResource(R.string.settings_language), listOf("fr", "la", LANGUAGE_FACING), settings.language, { stringResource(languageLabel(it)) }) { v ->
                     update { it.copy(language = v) }
                 }
                 SwitchRow(stringResource(R.string.settings_edges), settings.protectEdges) { v -> update { it.copy(protectEdges = v) } }

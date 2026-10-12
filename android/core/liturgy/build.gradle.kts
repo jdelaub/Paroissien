@@ -23,9 +23,14 @@ dependencies {
 // Oracles des tests G3 (romcal, Missalemeum), lus sur le disque : ils ne vont pas dans le jar.
 val golden = rootProject.layout.projectDirectory.dir("../content/golden/calendar")
 
+// Les formulaires du missel (content/sources/missel/cles.txt) : chaque jour doit trouver sa messe.
+val missalKeys = rootProject.layout.projectDirectory.file("../content/sources/missel/cles.txt")
+
 tasks.test {
     inputs.dir(golden).optional().withPropertyName("golden")
     systemProperty("calendar.golden", golden.asFile.absolutePath)
+    inputs.files(missalKeys).optional().withPropertyName("missalKeys")
+    systemProperty("missal.keys", missalKeys.asFile.absolutePath)
     maxHeapSize = "1g"
     testLogging { events("failed"); exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL }
 }

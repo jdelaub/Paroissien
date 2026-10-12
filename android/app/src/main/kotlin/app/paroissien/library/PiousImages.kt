@@ -3,6 +3,7 @@ package app.paroissien.library
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.Canvas
 import android.os.Build
 import android.util.LruCache
 import androidx.compose.ui.graphics.ImageBitmap
@@ -27,7 +28,11 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import java.io.File
 import java.io.InputStream
+import java.text.Normalizer
 import java.util.UUID
+import java.util.zip.ZipEntry
+import java.util.zip.ZipInputStream
+import java.util.zip.ZipOutputStream
 
 /** Une image pieuse : d'une bibliothèque embarquée (`catalog.json`), ou numérisée par l'utilisateur. */
 @Serializable
@@ -219,12 +224,114 @@ class PiousImages(
         val card = this@PiousImages[id] ?: return@withContext
         write(back, File(dir, "$id-back.webp"))
         full.remove("b:$id")
-        db.personalCards().save(PersonalCard(id, card.title.fr, hasBack = true, createdAt = System.currentTimeMillis()))
+        val row = db.personalCards().get(id) ?: PersonalCard(id, card.title.fr, hasBack = false, createdAt = 0)
+        db.personalCards().save(row.copy(hasBack = true, createdAt = System.currentTimeMillis()))
     }
 
     suspend fun rename(id: String, title: String) = withContext(Dispatchers.IO) {
-        val card = this@PiousImages[id] ?: return@withContext
-        db.personalCards().save(PersonalCard(id, title, card.hasBack, System.currentTimeMillis()))
+        val row = db.personalCards().get(id) ?: return@withContext
+        db.personalCards().save(row.copy(title = title, createdAt = System.currentTimeMillis()))
+    }
+
+    /**
+     * Les faces d'une image en JPEG sur fond blanc (une carte détourée n'a pas de fond), pour n'importe quelle app :
+     * recto, puis verso s'il y en a un, dans `cache/partage/` que le FileProvider expose.
+     */
+    suspend fun shareFaces(id: String): List<File> = withContext(Dispatchers.IO) {
+        val image = this@PiousImages[id] ?: return@withContext emptyList()
+        val out = shareDir()
+        val base = slug(image.title.fr)
+        listOfNotNull("front" to "recto", ("back" to "verso").takeIf { image.hasBack }).mapNotNull { (kind, name) ->
+            val bitmap = rawFace(image, kind)?.let { BitmapFactory.decodeByteArray(it, 0, it.size) } ?: return@mapNotNull null
+            val flat = Bitmap.createBitmap(bitmap.width, bitmap.height, Bitmap.Config.ARGB_8888)
+            Canvas(flat).apply { drawColor(android.graphics.Color.WHITE); drawBitmap(bitmap, 0f, 0f, null) }
+            File(out, "$base-$name.jpg").also { f -> f.outputStream().use { flat.compress(Bitmap.CompressFormat.JPEG, 90, it) } }
+        }
+    }
+
+    /**
+     * L'image pour une autre app Paroissien (ATELIER §7) : un zip `.paroissien-image` avec la description du catalogue
+     * (`image.json`), `recto.webp`, `verso.webp` et `vignette.webp`. Les catégories créées par l'utilisateur ne
+     * voyagent pas : elles n'ont de sens que sur son téléphone.
+     */
+    suspend fun bundle(id: String): File? = withContext(Dispatchers.IO) {
+        val image = this@PiousImages[id] ?: return@withContext null
+        val front = rawFace(image, "front") ?: return@withContext null
+        val known = knownCategories()
+        val categories = (categoriesOf.value[id] ?: image.categories.toSet()).filter { it in known }
+        val described = image.copy(id = "", personal = false, categories = categories)
+        val file = File(shareDir(), "${slug(image.title.fr)}.$BUNDLE")
+        ZipOutputStream(file.outputStream()).use { zip ->
+            fun put(name: String, bytes: ByteArray) {
+                zip.putNextEntry(ZipEntry(name)); zip.write(bytes); zip.closeEntry()
+            }
+            put(BUNDLE_META, json.encodeToString(PiousImage.serializer(), described).encodeToByteArray())
+            put("recto.webp", front)
+            if (image.hasBack) rawFace(image, "back")?.let { put("verso.webp", it) }
+            rawFace(image, "thumb")?.let { put("vignette.webp", it) }
+        }
+        file
+    }
+
+    /**
+     * Reçoit un `.paroissien-image` : sa description et ses faces deviennent une image personnelle. Le zip est lu comme
+     * une donnée : seuls les noms attendus, chacun borné en taille ; les faces sont décodées puis réencodées, rien
+     * d'autre n'entre. Renvoie l'identifiant, ou null si le fichier n'en est pas un.
+     */
+    suspend fun importBundle(input: InputStream): String? = withContext(Dispatchers.IO) {
+        val parts = HashMap<String, ByteArray>()
+        runCatching {
+            ZipInputStream(input).use { zip ->
+                while (true) {
+                    val entry = zip.nextEntry ?: break
+                    if (!entry.isDirectory && entry.name in BUNDLE_PARTS) parts[entry.name] = zip.readCapped(MAX_PART) ?: return@withContext null
+                }
+            }
+        }.getOrElse { return@withContext null }
+        val meta = parts[BUNDLE_META]?.let { runCatching { json.decodeFromString(PiousImage.serializer(), it.decodeToString()) }.getOrNull() }
+            ?: return@withContext null
+        val front = parts["recto.webp"]?.let(::decodeBounded) ?: return@withContext null
+        // Seules les catégories connues ici (prédéfinies ou de la bibliothèque) sont gardées.
+        val known = knownCategories()
+        save(front, parts["verso.webp"]?.let(::decodeBounded), meta.title.fr, meta.copy(categories = meta.categories.filter { it in known }))
+    }
+
+    private fun knownCategories(): Set<String> = CardCategories.predefined.map { it.first }.toSet() + library.value.categories.map { it.id }
+
+    /** Une image reçue en fichiers ordinaires (photo, JPEG, PNG, WebP) : le recto, et le verso s'il y en a un. */
+    suspend fun importFaces(front: ByteArray, back: ByteArray?, title: String): String? = withContext(Dispatchers.IO) {
+        val bitmap = decodeBounded(front) ?: return@withContext null
+        save(bitmap, back?.let(::decodeBounded), title, null)
+    }
+
+    private suspend fun save(front: Bitmap, back: Bitmap?, title: String, meta: PiousImage?): String {
+        val id = PERSONAL + UUID.randomUUID().toString().take(8)
+        dir.mkdirs()
+        write(front, File(dir, "$id-front.webp"))
+        back?.let { write(it, File(dir, "$id-back.webp")) }
+        write(front.scaleToHeight(THUMB_HEIGHT), File(dir, "$id-thumb.webp"))
+        val name = title.trim().take(200).ifEmpty { "Image" }
+        val described = meta?.copy(id = id, title = PiousImage.Title(name), personal = true, hasBack = back != null)
+        db.personalCards().save(
+            PersonalCard(id, name, back != null, System.currentTimeMillis(), described?.let { json.encodeToString(PiousImage.serializer(), it) }),
+        )
+        return id
+    }
+
+    /** Une face telle qu'enregistrée (WebP) : recto, verso ou vignette. */
+    private fun rawFace(image: PiousImage, kind: String): ByteArray? = runCatching {
+        if (image.personal) {
+            File(dir, "${image.id}-$kind.webp").takeIf { it.exists() }?.readBytes()
+        } else {
+            val path = when (kind) { "thumb" -> "thumbs/${image.id}.webp"; "back" -> "${image.id}-verso.webp"; else -> "${image.id}.webp" }
+            source.open(path).use { it.readBytes() }
+        }
+    }.getOrNull()
+
+    /** Le dossier partagé par le FileProvider ; les fichiers de plus d'un jour sont effacés. */
+    private fun shareDir(): File = File(context.cacheDir, "partage").apply {
+        mkdirs()
+        listFiles()?.filter { System.currentTimeMillis() - it.lastModified() > 86_400_000L }?.forEach { it.delete() }
     }
 
     /** Supprime une image personnelle, ses fichiers, et la retire du livre où elle était glissée. */
@@ -280,9 +387,40 @@ class PiousImages(
         }
     }
 
-    private fun asImage(card: PersonalCard) = PiousImage(
-        id = card.id, title = PiousImage.Title(card.title), credit = "", personal = true, hasBack = card.hasBack,
-    )
+    /** Une image personnelle ; celle reçue d'une autre app garde sa description (date, personnes, dédicace…). */
+    private fun asImage(card: PersonalCard): PiousImage {
+        val described = card.meta?.let { runCatching { json.decodeFromString(PiousImage.serializer(), it) }.getOrNull() }
+        return (described ?: PiousImage(id = card.id, title = PiousImage.Title(card.title))).copy(
+            id = card.id, title = PiousImage.Title(card.title), personal = true, hasBack = card.hasBack,
+        )
+    }
+
+    /** Décode une image sans dépasser [MAX_SIDE] de côté long ; null si ce n'en est pas une. */
+    private fun decodeBounded(bytes: ByteArray): Bitmap? {
+        val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        BitmapFactory.decodeByteArray(bytes, 0, bytes.size, bounds)
+        if (bounds.outWidth <= 0 || bounds.outHeight <= 0) return null
+        var sample = 1
+        while (maxOf(bounds.outWidth, bounds.outHeight) / (sample * 2) >= MAX_SIDE) sample *= 2
+        val bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.size, BitmapFactory.Options().apply { inSampleSize = sample }) ?: return null
+        val long = maxOf(bitmap.width, bitmap.height)
+        return if (long <= MAX_SIDE) bitmap else bitmap.scale(bitmap.width * MAX_SIDE / long, bitmap.height * MAX_SIDE / long)
+    }
+
+    private fun InputStream.readCapped(max: Int): ByteArray? {
+        val out = java.io.ByteArrayOutputStream()
+        val buffer = ByteArray(64 * 1024)
+        while (true) {
+            val n = read(buffer)
+            if (n < 0) return out.toByteArray()
+            if (out.size() + n > max) return null
+            out.write(buffer, 0, n)
+        }
+    }
+
+    private fun slug(title: String): String =
+        Normalizer.normalize(title, Normalizer.Form.NFD).replace(Regex("\\p{M}+"), "").lowercase()
+            .replace(Regex("[^a-z0-9]+"), "-").trim('-').take(40).ifEmpty { "image" }
 
     private fun write(bitmap: Bitmap, file: File) {
         @Suppress("DEPRECATION")
@@ -301,6 +439,11 @@ class PiousImages(
         private const val THUMB_HEIGHT = 360
         private const val QUALITY = 82
         private val json = Json { ignoreUnknownKeys = true }
+        /** Extension d'une image partagée entre deux apps Paroissien. */
+        const val BUNDLE = "paroissien-image"
+        private const val BUNDLE_META = "image.json"
+        private val BUNDLE_PARTS = setOf(BUNDLE_META, "recto.webp", "verso.webp", "vignette.webp")
+        private const val MAX_PART = 20 * 1024 * 1024
 
         fun load(context: Context, db: UserDatabase, scope: CoroutineScope): PiousImages = PiousImages(context, LibrarySource(context), db, scope)
     }

@@ -233,7 +233,7 @@ fun MotifEditorScreen(graph: AppGraph, key: MotifEditorKey, onBack: () -> Unit) 
 
 /** Les couleurs des cadres, en pastilles ; [selected] est cerclée. */
 @Composable
-private fun Swatches(colors: List<Color>, selected: Long?, onPick: (Long) -> Unit) {
+internal fun Swatches(colors: List<Color>, selected: Long?, onPick: (Long) -> Unit) {
     LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
         items(colors) { c ->
             val argb = c.toArgb().toLong() and 0xFFFFFFFFL

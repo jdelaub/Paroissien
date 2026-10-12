@@ -53,6 +53,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
@@ -92,6 +93,8 @@ fun CardScreen(graph: AppGraph, key: CardKey, open: (NavKey) -> Unit, onBack: ()
     var creating by remember { mutableStateOf(false) }
     val categories by graph.images.categories.collectAsState()
     val categoriesOf by graph.images.categoriesOf.collectAsState()
+    val context = LocalContext.current
+    val shareTitle = stringResource(R.string.card_share_title, image?.title?.fr.orEmpty())
 
     Screen(image?.title?.fr ?: "", onBack = onBack) {
         if (image == null) return@Screen
@@ -134,6 +137,15 @@ fun CardScreen(graph: AppGraph, key: CardKey, open: (NavKey) -> Unit, onBack: ()
                             graph.database.cards().place(CardPlacement(key.id, pos.publication, pos.unit, pos.block, pos.charOffset, null, System.currentTimeMillis()))
                         }
                     }) { Text(stringResource(R.string.card_slip_into, book.title)) }
+                }
+                // Partager : les faces en JPEG pour tous, ou le fichier .paroissien-image pour une autre app Paroissien.
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    OutlinedButton(onClick = {
+                        graph.scope.launch { shareFiles(context, graph.images.shareFaces(image.id), "image/jpeg", shareTitle) }
+                    }) { Text(stringResource(R.string.card_share)) }
+                    OutlinedButton(onClick = {
+                        graph.scope.launch { graph.images.bundle(image.id)?.let { shareFiles(context, listOf(it), "application/octet-stream", shareTitle) } }
+                    }) { Text(stringResource(R.string.card_share_app)) }
                 }
                 if (image.personal) {
                     if (!image.hasBack) OutlinedButton(onClick = { open(ScanKey(backOf = image.id)) }) { Text(stringResource(R.string.card_scan_back)) }
@@ -249,6 +261,7 @@ fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
     val used = categoriesOf.values.flatten().toSet()
     val shown = categories.filter { it.id in used || it.custom }
     val images = filter?.let { f -> all.filter { f in categoriesOf[it.id].orEmpty() } } ?: all
+    val importCard = rememberCardImporter(graph) { id -> open(CardKey(id)) }
     Surface(Modifier.fillMaxSize(), color = paper.background) {
         Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
             Row(Modifier.fillMaxWidth().padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -271,6 +284,7 @@ fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
                 item(span = { GridItemSpan(maxLineSpan) }) {
                     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         Button(onClick = { open(ScanKey()) }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.images_scan)) }
+                        OutlinedButton(onClick = importCard, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.images_import)) }
                         if (all.isEmpty()) Text(stringResource(R.string.images_empty), style = MaterialTheme.typography.bodyMedium, color = paper.inkSecondary)
                         if (shown.isNotEmpty()) {
                             FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {

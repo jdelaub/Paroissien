@@ -40,8 +40,21 @@ object BookDresses {
         }
     }
 
-    /** La garde du livre, après la couverture : soie pour les livres nobles, papier à motif pour les simples. */
-    fun endpaper(publication: String, entry: LibraryEntry?): (@Composable () -> Unit)? = when (of(publication, entry)) {
+    /**
+     * La garde du livre, après la couverture : soie pour les livres nobles, papier à motif pour les simples ; ou celle
+     * choisie dans l'atelier ([chosen] : « soie », le nom d'un papier, « aucune »).
+     */
+    fun endpaper(publication: String, entry: LibraryEntry?, chosen: String? = null): (@Composable () -> Unit)? {
+        when (chosen) {
+            null -> Unit
+            BindingChoice.SILK -> return { DoublurePage() }
+            BindingChoice.NO_ENDPAPER -> return null
+            else -> EndpaperPatterns.firstOrNull { it.name == chosen }?.let { pattern -> return { PatternPaper(pattern, Modifier.fillMaxSize()) } }
+        }
+        return byDress(publication, entry)
+    }
+
+    private fun byDress(publication: String, entry: LibraryEntry?): (@Composable () -> Unit)? = when (of(publication, entry)) {
         Dress.NOBLE, Dress.BIBLE -> { { DoublurePage() } }
         Dress.SIMPLE -> EndpaperPatterns.takeIf { it.isNotEmpty() }?.let { all ->
             // le même motif pour un livre donné, d'un livre à l'autre ils varient

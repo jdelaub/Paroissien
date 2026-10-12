@@ -56,7 +56,7 @@ data class ExportedCategory(val id: String, val label: String, val createdAt: Lo
 data class ExportedCardCategory(val card: String, val category: String, val removed: Boolean, val updatedAt: Long)
 
 @Serializable
-data class ExportedPersonalCard(val id: String, val title: String, val hasBack: Boolean, val createdAt: Long)
+data class ExportedPersonalCard(val id: String, val title: String, val hasBack: Boolean, val createdAt: Long, val meta: String? = null)
 
 @Serializable
 data class ExportedCard(val card: String, val publication: String, val unit: String, val block: String, val charOffset: Int, val blockRev: String? = null, val updatedAt: Long)
@@ -70,7 +70,7 @@ class UserDataTransfer(private val db: UserDatabase) {
             positions = db.positions().all().map { ExportedPosition(it.publication, it.unit, it.block, it.charOffset, it.blockRev, it.updatedAt) },
             ribbons = db.ribbons().all().map { ExportedRibbon(it.publication, it.slot, it.unit, it.block, it.charOffset, it.blockRev, it.updatedAt) },
             cards = db.cards().all().map { ExportedCard(it.card, it.publication, it.unit, it.block, it.charOffset, it.blockRev, it.updatedAt) },
-            personalCards = db.personalCards().all().map { ExportedPersonalCard(it.id, it.title, it.hasBack, it.createdAt) },
+            personalCards = db.personalCards().all().map { ExportedPersonalCard(it.id, it.title, it.hasBack, it.createdAt, it.meta) },
             categories = db.categories().categories().map { ExportedCategory(it.id, it.label, it.createdAt) },
             cardCategories = db.categories().assignments().map { ExportedCardCategory(it.card, it.category, it.removed, it.updatedAt) },
             bookLooks = db.looks().all().map { ExportedJson(it.publication, it.json, it.updatedAt) },
@@ -117,7 +117,7 @@ class UserDataTransfer(private val db: UserDatabase) {
         // Une image déjà là garde son titre : celui de l'appareil a pu être changé depuis la sauvegarde.
         for (c in data.personalCards) {
             if (c.id !in personal) {
-                db.personalCards().save(PersonalCard(c.id, c.title, c.hasBack, c.createdAt))
+                db.personalCards().save(PersonalCard(c.id, c.title, c.hasBack, c.createdAt, c.meta))
                 taken++
             }
         }

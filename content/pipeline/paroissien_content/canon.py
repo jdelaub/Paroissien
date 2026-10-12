@@ -4,6 +4,7 @@ Disposition dans le dépôt :
     data/<publication>/publication.json   métadonnées et arbre des divisions
     data/<publication>/blocks/<unité>.jsonl   un bloc par ligne, dans l'ordre de lecture
     data/<publication>/aliases.json       (facultatif) identifiants retirés : {"ancien": "nouveau" | null}
+    data/<publication>/assets/<nom>       (facultatif) images des blocs `image` (WebP ou PNG), rangées dans le paquet
 
 Une division porte "unit": true quand elle est une unité de lecture ; chaque unité a son fichier de blocs.
 """
@@ -21,6 +22,8 @@ from . import inlines as inl
 BLOCK_TYPES = {"heading", "para", "verse", "rubric", "versicle", "quote", "stanza", "note", "image", "separator", "item", "slot"}
 PUB_ID = re.compile(r"^[a-z0-9]+(\.[a-z0-9-]+)+$")
 NODE_ID = re.compile(r"^[a-z0-9][a-z0-9._-]{0,63}$")
+ASSET_NAME = re.compile(r"^[a-z0-9][a-z0-9._-]{0,63}\.(webp|png)$")
+MEDIA_TYPES = {"webp": "image/webp", "png": "image/png"}
 REQUIRED_META = ("id", "revision", "kind", "title", "languages", "primaryLanguage", "source", "license")
 
 
@@ -41,6 +44,7 @@ class Publication:
     divisions: list[Division]
     blocks: dict[str, list[dict]]  # unité → blocs
     aliases: dict[str, str | None]
+    assets: dict[str, Path] = field(default_factory=dict)  # nom → fichier
 
     @property
     def id(self) -> str:
@@ -81,7 +85,9 @@ def load(path: Path) -> Publication:
             blocks[d.id] = [json.loads(line) for line in lines if line.strip()]
     aliases_file = path / "aliases.json"
     aliases = json.loads(aliases_file.read_text(encoding="utf-8")) if aliases_file.exists() else {}
-    return Publication(path, meta, divisions, blocks, aliases)
+    assets_dir = path / "assets"
+    assets = {f.name: f for f in sorted(assets_dir.iterdir()) if f.is_file()} if assets_dir.is_dir() else {}
+    return Publication(path, meta, divisions, blocks, aliases, assets)
 
 
 def rev(text: str) -> str:
@@ -100,6 +106,8 @@ def content_hash(pub: Publication) -> str:
     for block in pub.all_blocks():
         h.update(b"\n")
         h.update(dumps(block).encode("utf-8"))
+    for name, f in sorted(pub.assets.items()):
+        h.update(f"\n{name}:{hashlib.sha256(f.read_bytes()).hexdigest()}".encode("utf-8"))
     return "sha256:" + h.hexdigest()
 
 
@@ -156,12 +164,24 @@ def validate(pub: Publication) -> list[str]:
             if block.get("type") not in BLOCK_TYPES:
                 errors.append(f"{at} : type de bloc inconnu {block.get('type')!r}")
             texts = block.get("t", {})
-            if block.get("type") != "separator" and not texts:
+            if block.get("type") not in ("separator", "image") and not texts:
                 errors.append(f"{at} : bloc sans texte")
+            if block.get("type") == "image":
+                # Une image du paquet (assets/) ; sa légende facultative est dans t, sa description dans alt.
+                href = block.get("href", "")
+                if href not in pub.assets:
+                    errors.append(f"{at} : image {href!r} absente de assets/")
+                if not isinstance(block.get("alt"), dict) or not block["alt"]:
+                    errors.append(f"{at} : image sans description alt")
+            if block.get("type") == "slot" and not block.get("slot"):
+                errors.append(f"{at} : emplacement sans attribut slot")
             for lang, value in texts.items():
                 if lang not in languages:
                     errors.append(f"{at} : langue {lang} non déclarée")
                 inl.validate(value, f"{at}.t.{lang}", errors, note_ids)
+    for name in pub.assets:
+        if not ASSET_NAME.match(name):
+            errors.append(f"{where} : nom de ressource invalide {name!r} (minuscules, .webp ou .png)")
     for old, new in pub.aliases.items():
         if old in seen:
             errors.append(f"{where} : l'alias {old} est encore un identifiant vivant")

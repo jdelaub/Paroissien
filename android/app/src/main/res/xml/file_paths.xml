@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Seul le dossier temporaire des photos à numériser est partagé, avec l'appareil photo. -->
+<!-- Partagés : les photos à numériser (avec l'appareil photo) et les images pieuses qu'on envoie. -->
 <paths>
     <cache-path name="scans" path="scans/" />
+    <cache-path name="partage" path="partage/" />
 </paths>

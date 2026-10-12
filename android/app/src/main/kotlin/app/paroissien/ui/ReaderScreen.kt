@@ -1,6 +1,8 @@
 package app.paroissien.ui
 
 import java.time.LocalDate
+import androidx.compose.ui.graphics.asImageBitmap
+import android.graphics.BitmapFactory
 import app.paroissien.core.liturgy.LiturgicalColor
 import androidx.compose.runtime.rememberUpdatedState
 import kotlin.math.roundToInt
@@ -70,6 +72,7 @@ import app.paroissien.core.designsystem.LocalPaperColors
 import app.paroissien.core.designsystem.RibbonStyle
 import app.paroissien.core.designsystem.rememberBookFonts
 import app.paroissien.core.reading.book.Anchor
+import app.paroissien.core.liturgy.Rite
 import app.paroissien.core.reading.book.BookReader
 import app.paroissien.core.reading.book.BookTypography
 import app.paroissien.core.reading.book.ReadingBlock
@@ -89,6 +92,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.navigation3.runtime.NavKey
 import app.paroissien.core.data.CardPlacement
 import app.paroissien.core.reading.book.CardMark
+import app.paroissien.library.dressed
 import app.paroissien.library.subtitle
 import app.paroissien.library.BookIdentities
 import app.paroissien.library.BookDressChoice
@@ -156,13 +160,22 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     val units = entry?.units.orEmpty()
     val unitIndex = units.indexOfFirst { it.id == unitId }
     val language = settings.language
+    // « la-fr » : latin et français en regard, en deux colonnes ; ailleurs (titres, sommaire), le français.
+    val facing = language == LANGUAGE_FACING
+    val textLanguage = if (facing) "fr" else language
     val withVignette = settings.vignettes && !isDemo
     val loaded by produceState<Loaded?>(null, entry, unitId, language, resolved, withVignette) {
         value = when {
             isDemo -> Loaded(null, language, demoBook())
             !resolved || entry == null || unit == null -> null
             else -> withContext(Dispatchers.IO) {
-                val text = packToReadingBlocks(graph.packs.blocks(entry, unit), unit.title ?: entry.title, language, entry.publication.primaryLanguage)
+                // Les images des blocs `image` (gravures, dessins), décodées une fois pour l'unité.
+                val images = HashMap<String, ImageBitmap?>()
+                val text = packToReadingBlocks(
+                    graph.packs.blocks(entry, unit), unit.title ?: entry.title, textLanguage, entry.publication.primaryLanguage, facing,
+                ) { name -> images.getOrPut(name) { graph.packs.asset(entry, name)?.let { BitmapFactory.decodeByteArray(it, 0, it.size)?.asImageBitmap() } } }
+                    // Les emplacements « texte de la messe du jour » d'un livret, remplis avec la messe du jour du missel.
+                    .let { DayProper.fill(graph, settings, it, textLanguage, facing) }
                 // Livre noble : une vignette gravée en tête de la section, si l'app en contient (saveur personnelle).
                 val vignette = if (withVignette) graph.vignettes.of(publication, entry, unitIndex, unit)?.let(graph.vignettes::image) else null
                 Loaded(unit.id, language, listOfNotNull(vignette?.let { ReadingBlock.Vignette("vignette:${unit.id}", it) }) + text)
@@ -215,9 +228,14 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     BackHandler(enabled = panel != null) { panel = null }
 
     val fonts = rememberBookFonts(settings.bookFace())
+    // L'habit choisi dans l'atelier (reliure, cadres) et les cadres composés par l'utilisateur.
+    val lookRow by remember(publication) { graph.database.looks().observe(publication) }.collectAsState(initial = null)
+    val choice = remember(lookRow) { BookDressChoice.decode(lookRow?.json) }
     // L'identité du livre : son papier en thème clair (les autres thèmes, choisis pour le confort, l'emportent), sa
-    // tranche, sa couverture, ses rubans ; un papier fin plie plus volontiers qu'un papier épais.
-    val identity = remember(publication, entry, settings.bookIdentity) { BookIdentities.of(publication, entry, uniform = !settings.bookIdentity || isDemo) }
+    // tranche, sa couverture, ses rubans, retouchés dans l'atelier ; un papier fin plie plus volontiers qu'un papier épais.
+    val identity = remember(publication, entry, settings.bookIdentity, choice?.binding) {
+        BookIdentities.of(publication, entry, uniform = !settings.bookIdentity || isDemo).let { if (settings.bookIdentity && !isDemo) it.dressed(choice?.binding) else it }
+    }
     val themePaper = LocalPaperColors.current
     val ownPaper = settings.bookIdentity && !isDemo && settings.paperTheme() == PaperTheme.CLAIR
     val paper = remember(identity, themePaper, ownPaper) { if (ownPaper) identity.paper.colors(themePaper) else themePaper }
@@ -230,10 +248,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     val before = units.take(unitIndex.coerceAtLeast(0)).sumOf { it.blockCount }
     // La garde suit le rang du livre : soie pour un livre noble, papier à motif pour un livre simple, rien sous une
     // couverture de papier.
-    val endpaper = remember(publication, entry) { BookDresses.endpaper(publication, entry) }
-    // L'habit choisi dans l'atelier (cadres) et les cadres composés par l'utilisateur.
-    val lookRow by remember(publication) { graph.database.looks().observe(publication) }.collectAsState(initial = null)
-    val choice = remember(lookRow) { BookDressChoice.decode(lookRow?.json) }
+    val endpaper = remember(publication, entry, choice?.binding?.endpaper) { BookDresses.endpaper(publication, entry, choice?.binding?.endpaper) }
     // Couleurs des cadres : celles du livre, la couleur liturgique du jour, ou une couleur choisie dans l'atelier.
     val dayConfig = settings.calendarConfig()
     val frameColor by produceState<LiturgicalColor?>(null, choice?.colors, dayConfig) {
@@ -241,6 +256,22 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
             null -> null
             "jour" -> withContext(Dispatchers.Default) { graph.calendar.day(LocalDate.now(), dayConfig).colors.primary }
             else -> LiturgicalColor.entries.firstOrNull { it.name == c }
+        }
+    }
+    // Le missel : un ruban se pose tout seul à la messe du jour, à la couleur du jour, serré d'un ferret doré.
+    val massOfDay by produceState<Pair<String, LiturgicalColor>?>(null, publication, dayConfig) {
+        value = if (publication != MISSAL_BOOK) null else withContext(Dispatchers.Default) {
+            val day = graph.calendar.day(LocalDate.now(), dayConfig.copy(rite = Rite.ROMAN_1962))
+            day.principal.mass?.properId?.let { missalUnit(it) to day.colors.primary }
+        }
+    }
+    val massMark = massOfDay?.let { (u, color) ->
+        val index = units.indexOfFirst { it.id == u }
+        val style = RibbonStyle.mass(color)
+        when {
+            index < 0 -> null
+            u == unitId -> blocks?.firstOrNull { it !is ReadingBlock.Vignette }?.let { RibbonMark(RibbonStyle.MASS_SLOT, Anchor(it.id, 0), style = style) }
+            else -> RibbonMark(RibbonStyle.MASS_SLOT, null, elsewhere = (index - unitIndex).sign, style = style)
         }
     }
     val customRows by remember { graph.database.looks().observeFrames() }.collectAsState(initial = emptyList())
@@ -306,9 +337,14 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                     onCenterTap = { panel = if (panel == null) Panel.CHROME else null },
                     menuOpen = panel != null,
                     onPaginated = { pagination = String.format(Locale.FRANCE, "%d pages · pagination %d ms", it.pages.size, it.elapsedMillis) },
-                    ribbons = marks,
-                    onRibbonTap = { slot -> ribbons.firstOrNull { it.slot == slot }?.let { openAt(it.unit, it.block, it.charOffset) } },
+                    ribbons = marks + listOfNotNull(massMark),
+                    onRibbonTap = { slot ->
+                        if (slot == RibbonStyle.MASS_SLOT) massOfDay?.let { openAt(it.first, null, 0) }
+                        else ribbons.firstOrNull { it.slot == slot }?.let { openAt(it.unit, it.block, it.charOffset) }
+                    },
                     onRibbonMove = { slot ->
+                        // Le ruban de la messe du jour se pose tout seul : on ne le déplace pas.
+                        if (slot == RibbonStyle.MASS_SLOT) return@BookReader
                         val here = unitId
                         val block = anchorBlock ?: blocks?.firstOrNull { it !is ReadingBlock.Vignette }?.id
                         if (here != null && block != null && !isDemo) graph.scope.launch(Dispatchers.IO) {
@@ -339,7 +375,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 onSettings = { panel = Panel.SETTINGS },
                 modifier = Modifier.align(Alignment.TopCenter),
             )
-            Panel.TOC -> if (entry != null) TocPanel(graph, entry, language, unitId, onClose = { panel = null }) { e -> openAt(e.unit, e.blockId, 0); panel = null }
+            Panel.TOC -> if (entry != null) TocPanel(graph, entry, textLanguage, unitId, onClose = { panel = null }) { e -> openAt(e.unit, e.blockId, 0); panel = null }
             Panel.RIBBONS -> RibbonPanel(
                 ribbons = ribbons,
                 // Les rubans cousus dans ce livre, plus ceux qu'on y aurait posés en mode « tous pareils ».
@@ -647,3 +683,5 @@ private suspend fun PointerInputScope.detectPinch(onZoom: (Float) -> Unit, onEnd
     }
 }
 
+/** Le réglage de langue qui met latin et français en regard. */
+const val LANGUAGE_FACING = "la-fr"

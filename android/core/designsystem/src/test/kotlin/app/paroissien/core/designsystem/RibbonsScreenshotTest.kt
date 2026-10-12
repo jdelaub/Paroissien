@@ -13,6 +13,7 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.unit.dp
+import app.paroissien.core.liturgy.LiturgicalColor
 import com.github.takahirom.roborazzi.captureRoboImage
 import org.junit.Rule
 import org.junit.Test
@@ -33,6 +34,21 @@ class RibbonsScreenshotTest {
     @Test fun clair() = capture(PaperTheme.CLAIR)
     @Test fun sombre() = capture(PaperTheme.SOMBRE)
     @Test fun satin() = capture(PaperTheme.CLAIR, RibbonFabric.SATIN)
+
+    /** Le ruban de la messe du jour, dans chaque couleur liturgique : coupé droit, serré d'un ferret doré. */
+    @Test fun messeDuJour() {
+        compose.setContent {
+            ParoissienTheme(PaperTheme.CLAIR) {
+                val paper = LocalPaperColors.current
+                Row(Modifier.background(paper.background).padding(24.dp), horizontalArrangement = Arrangement.spacedBy(14.dp)) {
+                    LiturgicalColor.entries.forEach { color ->
+                        Canvas(Modifier.size(width = 30.dp, height = 220.dp)) { drawRibbon(RibbonStyle.mass(color), paper.isDark, Offset.Zero, size) }
+                    }
+                }
+            }
+        }
+        compose.onRoot().captureRoboImage()
+    }
 
     /** Couchés en travers d'une page de texte : ondulations légères, ombre douce, extrémité en biais. */
     @Test fun enTravers() = across(RibbonFabric.TEXTURED)

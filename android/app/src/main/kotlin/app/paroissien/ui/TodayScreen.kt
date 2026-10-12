@@ -66,6 +66,7 @@ import app.paroissien.core.liturgy.DayFlag
 import app.paroissien.core.liturgy.LiturgicalColor
 import app.paroissien.core.liturgy.LiturgicalDay
 import app.paroissien.core.liturgy.Rite
+import app.paroissien.library.subtitle
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -76,6 +77,11 @@ import java.time.LocalDateTime
 
 /** Le livre de méditation proposé chaque jour, un chapitre après l'autre. */
 private const val MEDITATION_BOOK = "imitation.fr"
+internal const val MISSAL_BOOK = "missel.1962"
+private const val ORDINARY_BOOK = "ordinaire.1962"
+
+/** Unité du missel pour une clé de propre de Divinum Officium : « Tempora/Adv1-0 » → « tempora-adv1-0 ». */
+fun missalUnit(properId: String): String = properId.lowercase().replace('/', '-')
 
 /**
  * « Aujourd'hui » (rapport 08, §2.3) : la fête du jour, sa couleur et son rang, le précepte et la pénitence, la lecture
@@ -137,6 +143,19 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
 
                 val resume = positions.firstOrNull()
                 val lib = library
+                // Messe du jour (1962) : le propre dans le missel, s'il est là, puis l'Ordinaire.
+                if (settings.rite == "1962" && lib != null) {
+                    val missal = lib.entry(MISSAL_BOOK)
+                    val proper = d.principal.mass?.properId?.let(::missalUnit)?.takeIf { missal?.unit(it) != null }
+                    val ordinary = lib.entry(ORDINARY_BOOK)
+                    if (proper != null || ordinary != null) {
+                        item(key = "mass") {
+                            Section(stringResource(R.string.today_mass))
+                            if (missal != null && proper != null) BookRow(d.principal.title.fr, missal.title) { open(ReaderKey(MISSAL_BOOK, proper)) }
+                            if (ordinary != null) BookRow(ordinary.title, ordinary.subtitle()) { open(ReaderKey(ORDINARY_BOOK)) }
+                        }
+                    }
+                }
                 if (resume != null && lib != null) {
                     lib.entry(resume.publication)?.let { entry ->
                         item(key = "resume") {

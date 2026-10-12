@@ -1,5 +1,16 @@
 package app.paroissien.ui
 
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.Dispatchers
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.foundation.border
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.compose.rememberLauncherForActivityResult
+import android.widget.Toast
+import android.provider.OpenableColumns
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.ui.layout.ContentScale
@@ -44,9 +55,11 @@ import androidx.navigation3.runtime.NavKey
 import app.paroissien.AppGraph
 import app.paroissien.R
 import app.paroissien.core.designsystem.LocalPaperColors
-import app.paroissien.library.LibraryEntry
-import app.paroissien.library.subtitle
+import app.paroissien.library.BookDressChoice
 import app.paroissien.library.BookIdentities
+import app.paroissien.library.LibraryEntry
+import app.paroissien.library.dressed
+import app.paroissien.library.subtitle
 import app.paroissien.core.designsystem.BookIdentity
 import app.paroissien.core.designsystem.BookCover
 import app.paroissien.core.data.ReaderSettings
@@ -71,6 +84,10 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
     val positions by remember { graph.database.positions().observeAll() }.collectAsState(initial = emptyList())
     val resume = positions.associateBy { it.publication }
     val uniform = !settings.bookIdentity
+    // Les reliures retouchées dans l'atelier.
+    val lookRows by remember { graph.database.looks().observeAll() }.collectAsState(initial = emptyList())
+    val bindings = remember(lookRows) { lookRows.associate { it.publication to BookDressChoice.decode(it.json)?.binding } }
+    fun identityOf(entry: LibraryEntry) = BookIdentities.of(entry.publication.id, entry, uniform).let { if (uniform) it else it.dressed(bindings[entry.publication.id]) }
     Shelf(stringResource(R.string.tab_library)) {
         val lib = library
         if (lib == null) {
@@ -93,7 +110,7 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
         items(books, key = { it.publication.id }) { entry ->
             val position = resume[entry.publication.id]
             CoverTile(
-                identity = BookIdentities.of(entry.publication.id, entry, uniform),
+                identity = identityOf(entry),
                 title = entry.title,
                 subtitle = entry.subtitle(),
                 detail = position?.let { stringResource(R.string.library_resume, entry.unitTitle(it.unit)) }
@@ -128,9 +145,57 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
         // La bibliothèque des images pieuses, à côté des livres : une boîte, ses premières cartes en éventail.
         item(key = "images") { ImageBoxTile(graph) { open(ImageBoxKey) } }
         item(key = "atelier") { WorkshopTile { open(WorkshopKey) } }
+        item(key = "importer") { ImportBookTile(graph) { publication -> open(ReaderKey(publication)) } }
         item(key = DEMO) {
             CoverTile(BookIdentities.of(DEMO, null, true), stringResource(R.string.demo_book), null, stringResource(R.string.demo_book_detail)) { open(ReaderKey(DEMO)) }
         }
+    }
+}
+
+/**
+ * Importer un livre (ATELIER §7) : un fichier texte ou un epub devient un livre de la bibliothèque, lu, cherché et
+ * habillé comme les autres. Le fichier est lu en entier (200 Mo au plus) puis écrit en paquet dans `files/mes-livres/`.
+ */
+@Composable
+private fun ImportBookTile(graph: AppGraph, onImported: (String) -> Unit) {
+    val context = LocalContext.current
+    val paper = LocalPaperColors.current
+    var working by remember { mutableStateOf(false) }
+    val launcher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        uri ?: return@rememberLauncherForActivityResult
+        working = true
+        graph.scope.launch {
+            val publication = withContext(Dispatchers.IO) {
+                runCatching {
+                    val name = context.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use { c ->
+                        if (c.moveToFirst()) c.getString(0) else null
+                    } ?: "livre.txt"
+                    val size = context.contentResolver.openAssetFileDescriptor(uri, "r")?.use { it.length } ?: -1L
+                    require(size <= 200L * 1024 * 1024) { "fichier trop gros" }
+                    val bytes = context.contentResolver.openInputStream(uri)?.use { it.readBytes() } ?: return@runCatching null
+                    graph.packs.importBook(bytes, name)
+                }.getOrNull()
+            }
+            working = false
+            if (publication != null) {
+                graph.reloadLibrary()
+                onImported(publication)
+            } else {
+                Toast.makeText(context, R.string.library_import_failed, Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+    Column(
+        Modifier.clickable(enabled = !working) { launcher.launch(arrayOf("text/plain", "application/epub+zip", "application/octet-stream")) },
+        verticalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
+        Box(
+            Modifier.fillMaxWidth().aspectRatio(0.70f).border(1.dp, paper.hairline, RoundedCornerShape(4.dp)).background(paper.surface, RoundedCornerShape(4.dp)),
+            contentAlignment = Alignment.Center,
+        ) {
+            Text(if (working) "…" else "+", style = MaterialTheme.typography.displaySmall, color = paper.inkSecondary)
+        }
+        Text(stringResource(if (working) R.string.library_importing else R.string.library_import), style = MaterialTheme.typography.bodySmall, color = paper.inkSecondary, maxLines = 2)
     }
 }
 

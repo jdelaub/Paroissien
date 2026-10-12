@@ -46,6 +46,12 @@ object BookIdentities {
                 PaperStock(Color(0xFFFFFEFA), Color(0xFF101010), Color(0xFF444444), Color(0xFF8E1B16), PaperWeight.REGULAR),
                 EdgeFinish.PLAIN, ribbons = listOf(0, 5), importance = 1, pages = pages,
             )
+            // Le missel quotidien : maroquin rouge sombre, papier bible, tranche dorée, quatre rubans (et celui de la messe du jour).
+            publication.startsWith("missel") -> BookIdentity(
+                CoverStyle(Color(0xFF4A1014), CoverMaterial.MOROCCO, Tooling.GOLD, CoverMotif.CROSS, fillets = 3, corners = true, bands = 5),
+                PaperStock(Color(0xFFF5ECD4), Color(0xFF221A12), Color(0xFF5A4E40), Color(0xFFA31F1A), PaperWeight.BIBLE),
+                EdgeFinish.GILT, ribbons = listOf(0, 1, 2, 3), importance = 3, pages = pages,
+            )
             publication.startsWith("ordinaire") -> BookIdentity(
                 CoverStyle(Color(0xFF16130F), CoverMaterial.MOROCCO, Tooling.GOLD, CoverMotif.CROSS, fillets = 2, corners = true, bands = 4),
                 PaperStock(Color(0xFFF7EFDA), Color(0xFF1F1A14), Color(0xFF574C3F), Color(0xFFA31F1A), PaperWeight.FINE),
@@ -55,6 +61,12 @@ object BookIdentities {
                 CoverStyle(Color(0xFF1E3A2B), CoverMaterial.MOROCCO, Tooling.GOLD, CoverMotif.CROSS, fillets = 2, corners = true, bands = 4),
                 PaperStock(Color(0xFFFAF3E2), Color(0xFF1F1A14), Color(0xFF574C3F), Color(0xFFA31F1A), PaperWeight.FINE),
                 EdgeFinish.GILT, ribbons = listOf(0, 3, 1), importance = 2, pages = pages,
+            )
+            // Livret de messe agrafé : couverture de papier, filets rouges imprimés comme sur l'original, papier blanc.
+            publication.startsWith("livret") -> BookIdentity(
+                CoverStyle(Color(0xFFF7F2E8), CoverMaterial.WRAPPER, Tooling.PRINTED, CoverMotif.CROSS, fillets = 2, corners = false, bands = 0, ink = Color(0xFFB0141B)),
+                PaperStock(Color(0xFFFFFEFA), Color(0xFF151515), Color(0xFF4A4A4A), Color(0xFFA3171C), PaperWeight.REGULAR),
+                EdgeFinish.PLAIN, ribbons = listOf(0), importance = 1, pages = pages,
             )
             entry?.series != null -> letter(pages)
             else -> byKind(entry?.publication?.kind, pages)

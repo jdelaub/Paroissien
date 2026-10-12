@@ -39,8 +39,14 @@ val LocalRibbonFabric = staticCompositionLocalOf { RibbonFabric.TEXTURED }
  * ruban. Le nom de la couleur est toujours écrit à côté (panneau des rubans, signets, TalkBack) : la couleur n'est
  * jamais le seul signal.
  */
-data class RibbonStyle(val color: LiturgicalColor, val label: String, val ribs: Int) {
+data class RibbonStyle(val color: LiturgicalColor, val label: String, val ribs: Int, val ferret: Boolean = false) {
     companion object {
+        /** L'emplacement du ruban posé tout seul : la messe du jour, dans le missel (rapport 09, PLAN phase 5). */
+        const val MASS_SLOT = 6
+
+        /** Le ruban de la messe du jour : à la couleur liturgique du jour, coupé droit et serré d'un ferret doré. */
+        fun mass(color: LiturgicalColor) = RibbonStyle(color, "messe du jour", ribs = 5, ferret = true)
+
         val slots = listOf(
             RibbonStyle(LiturgicalColor.RED, "rouge", ribs = 5),
             RibbonStyle(LiturgicalColor.GREEN, "vert", ribs = 3),
@@ -132,9 +138,12 @@ fun DrawScope.drawRibbonAlong(
     }
 
     // Le maillage : une rangée de sommets tous les quelques pixels, puis la coupe en biais (la lisière gauche descend
-    // le plus bas). Les couleurs s'interpolent d'un sommet à l'autre : ni bande ni couture.
-    val bias = (width * 0.9f).coerceAtMost(length * 0.4f)
-    val cut = length - bias
+    // le plus bas), ou droite sous un ferret. Les couleurs s'interpolent d'un sommet à l'autre : ni bande ni couture.
+    // Sous un ferret, le tissu s'arrête à l'intérieur de l'embout : il ne dépasse pas de sa pointe resserrée.
+    val ferretLength = if (style.ferret) (width * 1.35f).coerceAtMost(length * 0.3f) else 0f
+    val end = length - ferretLength * 0.7f
+    val bias = if (style.ferret) 0f else (width * 0.9f).coerceAtMost(length * 0.4f)
+    val cut = end - bias
     val m = Across.size
     val positions = ArrayList<Offset>()
     val colors = ArrayList<Color>()
@@ -149,7 +158,7 @@ fun DrawScope.drawRibbonAlong(
     }
     var r = 0
     for (i in 0 until n) if (dist[i] < cut) row(r++) { dist[i] }
-    row(r) { j -> length - bias * Across[j] }
+    row(r) { j -> end - bias * Across[j] }
     val rows = positions.size / m
     val indices = ArrayList<Int>((rows - 1) * (m - 1) * 6)
     for (q in 0 until rows - 1) for (j in 0 until m - 1) {
@@ -207,8 +216,38 @@ fun DrawScope.drawRibbonAlong(
     drawPath(outline, selvedge.copy(alpha = 0.85f), style = Stroke(width = (width * 0.04f).coerceIn(0.8f, 1.6f), join = StrokeJoin.Round))
     tokens.trim?.let { drawPath(outline, it, style = Stroke(width = 1.2f, join = StrokeJoin.Round)) }
 
-    val (center, t) = frame(cut - width * 0.62f)
+    val (center, t) = frame(cut - ferretLength * 0.3f - width * 0.62f)
     rotate(degrees = (atan2(t.y, t.x) * 180 / PI).toFloat() - 90f, pivot = center) { drawCross(center, width) }
+    if (style.ferret) {
+        val (tip, dir) = frame(length)
+        rotate(degrees = (atan2(dir.y, dir.x) * 180 / PI).toFloat() - 90f, pivot = tip) { drawFerret(tip, width, ferretLength) }
+    }
+}
+
+/**
+ * Le ferret : un embout de laiton doré serti sur l'extrémité du ruban, qui se resserre un peu vers la pointe, avec
+ * deux bagues gravées. Dessiné la pointe en [tip], le ruban au-dessus.
+ */
+private fun DrawScope.drawFerret(tip: Offset, ribbonWidth: Float, length: Float) {
+    if (length < 4f) return
+    val top = tip.y - length
+    val wTop = ribbonWidth * 1.04f
+    val wTip = ribbonWidth * 0.52f
+    val body = Path().apply {
+        moveTo(tip.x - wTop / 2, top)
+        lineTo(tip.x + wTop / 2, top)
+        lineTo(tip.x + wTip / 2, tip.y - length * 0.12f)
+        quadraticTo(tip.x, tip.y + length * 0.05f, tip.x - wTip / 2, tip.y - length * 0.12f)
+        close()
+    }
+    val metal = Brush.horizontalGradient(listOf(GoldDark, Gold, GoldLight, Gold, GoldDark), startX = tip.x - wTop / 2, endX = tip.x + wTop / 2)
+    drawPath(body, metal)
+    drawPath(body, GoldDark, style = Stroke(width = (ribbonWidth * 0.05f).coerceAtLeast(0.8f)))
+    val ring = (length * 0.07f).coerceAtLeast(0.8f)
+    for (f in floatArrayOf(0.16f, 0.3f)) {
+        val y = top + length * f
+        drawLine(GoldDark.copy(alpha = 0.8f), Offset(tip.x - wTop / 2 * 0.98f, y), Offset(tip.x + wTop / 2 * 0.98f, y), strokeWidth = ring)
+    }
 }
 
 /** Un bruit fixe entre -0,5 et 0,5, tiré de [i] : le grain du tissu, le même à chaque dessin. */
