@@ -234,7 +234,7 @@ Les mesures se font sur le téléphone de référence, avec un APK *release* con
   - **atelier** (`ATELIER.md`) : moteur v3 (fait : dispositions partielles dont le côté extérieur suit le folio, pièces de bout, filets à distance fixe, débords, gardes à motif), second lot de scans, couvertures en modules, un habit par livre composé par l'utilisateur ;
   - **rangs d'habillage** : les livres nobles (prières, Imitation) ont un cadre par section et une doublure de soie ; la Bible est réglée d'un filet rouge ; les livres simples (exercices) ont une garde de papier à motif et des pages nues ; les lettres n'ont ni cadre ni garde ;
   - **vignettes gravées** : tirées des scans de l'utilisateur, hors du dépôt public (saveur personnelle) ;
-  - **import et export** de livres (txt, epub, PDF) et d'images pieuses recto verso ; **sauvegarde complète** de l'app dans un fichier (réglages, signets, habits, éléments importés), sans cloud.
+  - **import et export** de livres (txt, epub, PDF) et d'images pieuses recto verso ; **sauvegarde complète** de l'app dans un fichier (réglages, signets, habits, éléments importés), sans cloud, **textes privés compris** : une app livrée vide se remplira en l'important, en attendant les autorisations ; saveur `vide` pour l'essayer dès maintenant.
 - **Avant la phase 5** : mode de messe par défaut (« assemblée » recommandé) ; versions rubricales (1960 seulement au MVP).
 - **À la porte A** : police par défaut (EB Garamond pour les livres liturgiques, Literata en option de lecture) ; seuil de double page sur téléphone.
 

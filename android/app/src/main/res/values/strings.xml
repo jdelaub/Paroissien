@@ -257,4 +257,34 @@
     <string name="scan_default_title">Image du %1$s</string>
     <string name="scan_untitled">Image pieuse</string>
     <string name="scan_save">Enregistrer</string>
+    <string name="settings_backup">Sauvegarde</string>
+    <string name="backup_explain">Un seul fichier avec les livres, textes privés compris, les réglages, les signets, les rubans et vos images pieuses. Il se réimporte dans cette app, sur un autre téléphone ou dans une app livrée vide.</string>
+    <string name="backup_export">Tout exporter…</string>
+    <string name="backup_import">Importer une sauvegarde…</string>
+    <string name="backup_exporting">Écriture de la sauvegarde…</string>
+    <string name="backup_importing">Lecture de la sauvegarde…</string>
+    <string name="backup_exported">Sauvegarde écrite : %1$s, %2$s.</string>
+    <string name="backup_restored">Restauré : %1$s, %2$s, %3$s%4$s.</string>
+    <string name="backup_restored_settings">, réglages</string>
+    <string name="backup_failed">Échec : %1$s</string>
+    <string name="backup_confirm_title">Importer cette sauvegarde ?</string>
+    <string name="backup_confirm_text">Les livres absents sont installés après vérification, signets et images fusionnés (le plus récent l\'emporte, rien n\'est effacé), et les réglages remplacés.</string>
+    <string name="backup_confirm">Importer</string>
+    <string name="backup_cancel">Annuler</string>
+    <string name="library_empty">Aucun livre dans l\'application. Une sauvegarde de Paroissien les rapporte, avec vos signets, vos rubans et vos images.</string>
+    <plurals name="backup_books">
+        <item quantity="one">%d livre</item>
+        <item quantity="many">%d livres</item>
+        <item quantity="other">%d livres</item>
+    </plurals>
+    <plurals name="backup_images">
+        <item quantity="one">%d image</item>
+        <item quantity="many">%d images</item>
+        <item quantity="other">%d images</item>
+    </plurals>
+    <plurals name="backup_marks">
+        <item quantity="one">%d signet ou ruban</item>
+        <item quantity="many">%d signets ou rubans</item>
+        <item quantity="other">%d signets ou rubans</item>
+    </plurals>
 </resources>

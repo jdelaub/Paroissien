@@ -95,16 +95,18 @@ Les scènes gravées (Évangile, saints) sont des images tramées que le moteur 
   - **PDF** : deux cas. Un PDF né numérique : extraction du texte (bibliothèque PdfBox-Android, Apache-2.0) puis même traitement que le txt. Un PDF scanné, sans texte : livre en fac-similé, une image par page (`PdfRenderer` d'Android) dans le même livre à pages ; pas de recherche, mais rubans, signets et habit.
   - Le livre importé reçoit le rang simple ; l'atelier peut l'anoblir.
 - **Export.** Un livre vers **epub** (titres, paragraphes, rubriques en rouge) ou **txt** ; vers **PDF**, en imprimant les pages telles que l'app les met en page, cadres et vignettes compris (`PdfDocument` d'Android) : de quoi imprimer son propre paroissien.
-- **Contenus protégés.** Les textes de Clairval, du Barroux et de l'AELF de la saveur personnelle ne s'exportent pas, ou seulement en PDF pour soi. À confirmer.
+- **Contenus protégés.** Ils font partie de la sauvegarde complète (§8), décision du 12/10/2026 ; l'export d'un livre seul (epub, txt, PDF) suivra la même règle.
 
 ### Images pieuses recto verso
 
 - **Import** d'une image pieuse depuis deux fichiers (recto, puis verso facultatif), telle quelle ou par le recadrage existant ; ou d'un fichier d'image exporté par l'app.
 - **Export** d'une image : un fichier `.paroissien-image` (zip : recto, verso, description JSON : titre, prière du verso, fêtes, temps), ou le partage Android des deux faces en JPEG.
 
-## 8. Sauvegarde complète
+## 8. Sauvegarde complète (faite le 12/10/2026)
 
-Un seul fichier `paroissien-sauvegarde-<date>.zip`, écrit et relu par le sélecteur de documents d'Android (aucun réseau) :
+Décision de l'utilisateur : la sauvegarde emporte **tout**, textes privés compris, pour pouvoir livrer plus tard une app vide, remplie en important ce fichier, en attendant les autorisations. Les textes protégés restent dans l'APK personnel tant qu'il sert aux essais ; la saveur `vide` (aucun livre, `app.paroissien.vide`, « Paroissien vide » sur le téléphone) permet d'essayer dès maintenant l'app livrée vide.
+
+Un seul fichier `paroissien-sauvegarde-<date>.zip`, écrit et relu par le sélecteur de documents d'Android (aucun réseau), depuis Réglages, groupe « Sauvegarde » ; la bibliothèque vide y renvoie :
 
 | Contenu | Source |
 |---|---|
@@ -112,10 +114,13 @@ Un seul fichier `paroissien-sauvegarde-<date>.zip`, écrit et relu par le sélec
 | `reglages.json` | toutes les préférences (DataStore), clé par clé |
 | `donnees.json` | l'export actuel (positions, rubans, images posées, images personnelles), puis les habits des livres et les cadres composés |
 | `images/` | recto, verso et vignette des images pieuses personnelles |
-| `livres/` | les livres importés |
+| `livres/<dossier>/` | chaque catalogue signé, sa signature et ses paquets : livres de l'APK (publics et privés) et livres importés |
+| `vignettes/` | les vignettes gravées et leur catalogue (saveur personnelle), restaurées dans `files/vignettes/` si l'app n'en a pas |
 
 - **Restauration** au choix : fusion (la donnée la plus récente l'emporte et rien n'est effacé, comme l'import actuel des signets) ou remplacement complet, après confirmation. Un fichier d'une version plus récente de l'app est refusé avec un message clair.
-- **Non sauvegardé** : les paquets embarqués (réinstallés avec l'app) et les caches.
+- **Livres** : à la restauration, chaque catalogue est revérifié (signature, SHA-256, intégrité SQLite) avant installation dans `files/livres/` ; un livre déjà présent dans la même version est sauté ; un livre présent à la fois dans l'APK et dans une sauvegarde ne compte qu'une fois, dans sa version la plus récente.
+- **Sécurité** : seuls les noms attendus sont dépliés (pas de chemin absolu ni de « .. »), 2 Gio au plus.
+- **Non sauvegardé** : les caches, la règle « Ne pas déranger » propre à l'appareil.
 - **Sauvegarde Android automatique** (cloud) : reste désactivée (PLAN, ADR 008) ; le fichier de sauvegarde ne quitte l'appareil que si l'utilisateur le place ailleurs.
 
 ## 9. L'atelier
@@ -139,12 +144,11 @@ Stockage : `user.db`, une table `book_look` (publication → description JSON de
 2. Moteur v3, rangs d'habillage, cadre simple (fait le 12/10/2026).
 3. Second lot : bandeaux latéraux, équerres, gardes ; règle de choix étendue aux nouveaux cadres (fait).
 4. Vignettes gravées : outil de préparation, dépôt privé, placement (fait ; d'autres vignettes à photographier).
-5. Sauvegarde complète et images pieuses recto verso (import, export) : avant l'atelier, qui créera des données à sauvegarder.
+5. Sauvegarde complète et saveur vide (fait) ; images pieuses recto verso, import et export une à une.
 6. Couvertures en modules.
 7. Atelier : habit par livre, puis composition de cadres.
 8. Import de livres (txt, epub, puis PDF), puis export (epub, txt, PDF).
 
 ## 11. Questions ouvertes
 
-- **Export des contenus protégés** (§7) : interdit, ou PDF pour soi seulement ?
 - **Page d'ouverture et page courante** (§4) : cadre plein puis bandeau léger dans une même section, ou un seul cadre par section comme aujourd'hui ?

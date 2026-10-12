@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Saveur sans livres : un autre nom sur l'écran d'accueil du téléphone. -->
+    <string name="app_name">Paroissien vide</string>
+</resources>

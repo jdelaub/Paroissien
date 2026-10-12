@@ -6,6 +6,7 @@
 # Saveur « personnel » par défaut (le téléphone de l'utilisateur, scénario A). Variables facultatives :
 #   PACKS=/chemin/assets    dossier contenant packs-private/ (paquets privés de la saveur personnelle, ADR 001)
 #   FLAVOR=domainePublic    autre saveur (suffixe -domainePublic dans le nom)
+#   FLAVOR=vide             l'app sans aucun livre, à remplir par une sauvegarde (Paroissien-<v>-vide.apk)
 #   DEST=/autre/dossier     autre destination
 set -euo pipefail
 

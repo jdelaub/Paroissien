@@ -1,16 +1,28 @@
 package app.paroissien.ui
 
+import android.net.Uri
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import app.paroissien.AppGraph
@@ -22,6 +34,7 @@ import app.paroissien.core.designsystem.PaperTheme
 import app.paroissien.core.designsystem.RibbonFabric
 import app.paroissien.core.reading.book.SpreadMode
 import kotlinx.coroutines.launch
+import java.time.LocalDate
 import java.util.Locale
 
 /**
@@ -78,12 +91,73 @@ fun SettingsScreen(graph: AppGraph, settings: ReaderSettings, onBack: () -> Unit
                 SwitchRow(stringResource(R.string.prayer_dnd), settings.prayerDoNotDisturb) { v -> update { it.copy(prayerDoNotDisturb = v) } }
             }
         }
+        item { BackupGroup(graph) }
         item {
             Group(stringResource(R.string.settings_trials)) {
                 SwitchRow(stringResource(R.string.settings_measures), settings.showMeasures) { v -> update { it.copy(showMeasures = v) } }
             }
             Spacer(Modifier.height(24.dp))
         }
+    }
+}
+
+/**
+ * Sauvegarde complète : tout exporter dans un fichier, ou l'importer (après confirmation). Le travail tourne dans la
+ * portée de l'application : il continue si l'on quitte l'écran.
+ */
+@Composable
+private fun BackupGroup(graph: AppGraph) {
+    val context = LocalContext.current
+    val resources = LocalResources.current
+    var status by remember { mutableStateOf<String?>(null) }
+    var pending by remember { mutableStateOf<Uri?>(null) }
+    val exporting = stringResource(R.string.backup_exporting)
+    val importing = stringResource(R.string.backup_importing)
+    fun failed(e: Throwable) = resources.getString(R.string.backup_failed, e.message ?: e.javaClass.simpleName)
+    fun count(id: Int, n: Int) = resources.getQuantityString(id, n, n)
+
+    val exporter = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/zip")) { uri ->
+        uri ?: return@rememberLauncherForActivityResult
+        status = exporting
+        graph.scope.launch {
+            status = runCatching {
+                val s = context.contentResolver.openOutputStream(uri, "wt")!!.use { graph.backup.export(it) }
+                resources.getString(R.string.backup_exported, count(R.plurals.backup_books, s.books), count(R.plurals.backup_images, s.images))
+            }.getOrElse(::failed)
+        }
+    }
+    val importer = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri -> pending = uri }
+
+    Group(stringResource(R.string.settings_backup)) {
+        Text(stringResource(R.string.backup_explain), style = MaterialTheme.typography.bodyMedium, color = LocalPaperColors.current.inkSecondary)
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            OutlinedButton(onClick = { exporter.launch("paroissien-sauvegarde-${LocalDate.now()}.zip") }) { Text(stringResource(R.string.backup_export)) }
+            OutlinedButton(onClick = { importer.launch(arrayOf("application/zip", "application/octet-stream")) }) { Text(stringResource(R.string.backup_import)) }
+        }
+        status?.let { Text(it, style = MaterialTheme.typography.bodyMedium) }
+    }
+
+    pending?.let { uri ->
+        AlertDialog(
+            onDismissRequest = { pending = null },
+            title = { Text(stringResource(R.string.backup_confirm_title)) },
+            text = { Text(stringResource(R.string.backup_confirm_text)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    pending = null
+                    status = importing
+                    graph.scope.launch {
+                        status = runCatching {
+                            val s = context.contentResolver.openInputStream(uri)!!.use { graph.backup.import(it) }
+                            val settings = if (s.settings) resources.getString(R.string.backup_restored_settings) else ""
+                            (listOf(resources.getString(R.string.backup_restored, count(R.plurals.backup_books, s.books), count(R.plurals.backup_images, s.images), count(R.plurals.backup_marks, s.marks), settings)) + s.problems)
+                                .joinToString("\n")
+                        }.getOrElse(::failed)
+                    }
+                }) { Text(stringResource(R.string.backup_confirm)) }
+            },
+            dismissButton = { TextButton(onClick = { pending = null }) { Text(stringResource(R.string.backup_cancel)) } },
+        )
     }
 }
 

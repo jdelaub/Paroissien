@@ -10,11 +10,13 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import kotlinx.serialization.Serializable
 
 /**
  * Réglages, mémorisés sur l'appareil (DataStore) : lecture (noms d'énumérations du lecteur), calendrier (ADR 009)
- * et temps de prière (rapport 08, §2.10).
+ * et temps de prière (rapport 08, §2.10). Sérialisables pour la sauvegarde complète.
  */
+@Serializable
 data class ReaderSettings(
     val theme: String = "CLAIR",
     val face: String = "GARAMOND",

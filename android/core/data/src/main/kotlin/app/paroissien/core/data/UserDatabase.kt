@@ -126,6 +126,9 @@ interface PersonalCardDao {
     @Query("SELECT * FROM personal_card ORDER BY createdAt DESC")
     fun observeAll(): Flow<List<PersonalCard>>
 
+    @Query("SELECT * FROM personal_card")
+    suspend fun all(): List<PersonalCard>
+
     @Upsert
     suspend fun save(card: PersonalCard)
 

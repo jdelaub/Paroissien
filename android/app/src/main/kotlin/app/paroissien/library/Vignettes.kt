@@ -7,6 +7,8 @@ import androidx.compose.ui.graphics.asImageBitmap
 import app.paroissien.core.content.UnitInfo
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
+import java.io.File
+import java.io.InputStream
 import java.text.Normalizer
 
 /** Une vignette gravée du catalogue : masque d'encre (WebP), titre, et mots de section qui l'appellent. */
@@ -27,20 +29,43 @@ private data class VignetteCatalog(val format: Int = 1, val vignettes: List<Vign
 
 /**
  * Vignettes gravées tirées des scans de l'utilisateur (ATELIER §6) : elles viennent du dépôt privé et n'existent que
- * dans la saveur personnelle (assets `vignettes/`). Sans catalogue, il n'y en a simplement pas.
+ * dans la saveur personnelle (assets `vignettes/`), ou dans `files/vignettes/` quand une sauvegarde les a apportées
+ * (app livrée vide). Sans catalogue, il n'y en a simplement pas.
  *
  * Règle : seuls les livres nobles en reçoivent, une en tête de chaque section, choisie d'abord par le sens du titre de
  * la section, sinon en boucle dans l'ordre du sommaire, comme les cadres.
  */
 class Vignettes(private val context: Context) {
 
-    val catalog: List<VignetteInfo> by lazy {
-        runCatching {
-            context.assets.open("vignettes/catalog.json").use { stream ->
+    /** Dossier des vignettes apportées par une sauvegarde. */
+    val importedDir: File get() = File(context.filesDir, "vignettes")
+
+    private val fromAssets: Boolean by lazy { runCatching { context.assets.open("vignettes/catalog.json").close() }.isSuccess }
+
+    /** Le catalogue, relu après une restauration. */
+    @Volatile
+    private var loaded: List<VignetteInfo>? = null
+
+    val catalog: List<VignetteInfo>
+        get() = loaded ?: runCatching {
+            open("catalog.json").use { stream ->
                 json.decodeFromString(VignetteCatalog.serializer(), stream.readBytes().decodeToString()).vignettes
             }
-        }.getOrDefault(emptyList())
+        }.getOrDefault(emptyList()).also { loaded = it }
+
+    /** Après une restauration : le catalogue sera relu. */
+    fun reload() {
+        loaded = null
     }
+
+    /** Les fichiers à mettre dans une sauvegarde : catalogue et images, où qu'ils soient. */
+    fun files(): List<Pair<String, () -> InputStream>> {
+        val names = listOf("catalog.json") + catalog.map { it.file }
+        return names.map { name -> name to { open(name) } }
+    }
+
+    private fun open(name: String): InputStream =
+        if (fromAssets) context.assets.open("vignettes/$name") else File(importedDir, name).inputStream()
 
     fun of(publication: String, entry: LibraryEntry?, unitIndex: Int, unit: UnitInfo?): VignetteInfo? {
         if (entry == null || unit == null || catalog.isEmpty()) return null
@@ -52,7 +77,7 @@ class Vignettes(private val context: Context) {
 
     /** L'image, décodée hors du fil principal. */
     fun image(vignette: VignetteInfo): ImageBitmap? = runCatching {
-        context.assets.open("vignettes/${vignette.file}").use { BitmapFactory.decodeStream(it) }?.asImageBitmap()
+        open(vignette.file).use { BitmapFactory.decodeStream(it) }?.asImageBitmap()
     }.getOrNull()
 
     private fun plain(s: String) = Normalizer.normalize(s.lowercase().replace('-', ' '), Normalizer.Form.NFD).replace(Regex("\\p{M}"), "")

@@ -15,6 +15,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -65,6 +66,15 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
             return@Shelf
         }
         lib.problems.forEach { wide { Note(it, error = true) } }
+        // App livrée vide (saveur « vide ») ou sans paquet : les livres reviennent par une sauvegarde.
+        if (lib.entries.isEmpty()) {
+            wide {
+                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Note(stringResource(R.string.library_empty))
+                    OutlinedButton(onClick = { open(SettingsKey) }) { Text(stringResource(R.string.backup_import)) }
+                }
+            }
+        }
         val (series, books) = lib.entries.partition { it.series != null }
         items(books, key = { it.publication.id }) { entry ->
             val position = resume[entry.publication.id]

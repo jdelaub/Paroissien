@@ -91,6 +91,8 @@ val copyPiousImages = tasks.register<CopyPiousImages>("copyPiousImages") {
 
 androidComponents {
     onVariants { variant ->
+        // La saveur « vide » n'embarque aucun livre ni aucune image : on la remplit par une sauvegarde.
+        if (variant.flavorName == "vide") return@onVariants
         variant.sources.assets?.addGeneratedSourceDirectory(buildContentPacks, BuildContentPacks::outputDir)
         variant.sources.assets?.addGeneratedSourceDirectory(copyPiousImages, CopyPiousImages::outputDir)
     }
@@ -109,16 +111,19 @@ android {
         applicationId = "app.paroissien" // figé (ADR 002) : ne plus changer après la première installation
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 15
-        versionName = "0.5.8"
+        versionCode = 16
+        versionName = "0.5.9"
     }
 
     // ADR 001 : seule « domainePublic » est construite par la CI publique ; « personnel » peut embarquer
-    // des contenus réservés à l'usage privé (Clairval, Barroux, AELF) et ne se construit qu'en privé.
+    // des contenus réservés à l'usage privé (Clairval, Barroux, AELF) et ne se construit qu'en privé. « vide » n'a
+    // aucun livre : l'app telle qu'on pourrait la livrer en attendant les autorisations, remplie par une sauvegarde
+    // (décision du 12/10/2026) ; elle cohabite avec les deux autres sur le téléphone.
     flavorDimensions += "distribution"
     productFlavors {
         create("domainePublic") { dimension = "distribution" }
         create("personnel") { dimension = "distribution"; versionNameSuffix = "-perso" }
+        create("vide") { dimension = "distribution"; applicationIdSuffix = ".vide"; versionNameSuffix = "-vide" }
     }
     if (personnelPacksDir != null) sourceSets.getByName("personnel").assets.directories.add(personnelPacksDir)
 
@@ -204,6 +209,7 @@ dependencies {
 
     testImplementation(libs.junit)
     testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.sqlite.framework)
     testImplementation(libs.roborazzi)
     testImplementation(libs.roborazzi.compose)
     testImplementation(platform(libs.compose.bom))

@@ -18,7 +18,7 @@ Application Android catholique (Kotlin/Compose) qui imite un livre de prière pa
 
 ## Règles
 
-- Deux saveurs. `domainePublic` est la seule construite par la CI publique (github.com/jdelaub/Paroissien). `personnel` lit ses paquets privés hors du dépôt, via `-Pparoissien.personnelPacksDir` ou `PACKS=` pour `deliver-apk.sh`. Aucun contenu protégé (Clairval, Barroux, AELF) n'entre dans ce dépôt : il va dans le dépôt privé `jdelaub/paroissien-content`.
+- Trois saveurs. `domainePublic` est la seule construite par la CI publique (github.com/jdelaub/Paroissien). `personnel` lit ses paquets privés hors du dépôt, via `-Pparoissien.personnelPacksDir` ou `PACKS=` pour `deliver-apk.sh`. `vide` n'embarque aucun livre (`app.paroissien.vide`) : on la remplit en important une sauvegarde complète (`FLAVOR=vide tools/deliver-apk.sh`). Aucun contenu protégé (Clairval, Barroux, AELF) n'entre dans ce dépôt : il va dans le dépôt privé `jdelaub/paroissien-content`.
 - `core:liturgy` est sous Apache-2.0 : il ne doit dépendre d'aucun module GPL du projet.
 - Le pliage de recherche (`core:model` `Fold.kt` et `content/.../fold.py`) se modifie d'abord dans `content/schema/fold-vectors.json`.
 - Commits : identité `53884675+jdelaub@users.noreply.github.com` (configurée dans le dépôt), jamais l'adresse personnelle.
