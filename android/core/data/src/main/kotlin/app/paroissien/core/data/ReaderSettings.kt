@@ -38,6 +38,8 @@ data class ReaderSettings(
     val ornamentalFrames: Boolean = true,
     /** Vignettes gravées en tête des sections des livres nobles, quand l'app en contient. */
     val vignettes: Boolean = true,
+    /** Pincer l'écran à deux doigts change la taille du texte ; désactivé par défaut (Aa). */
+    val pinchToZoom: Boolean = false,
     /** Rite du calendrier : "1962" ou "1969". */
     val rite: String = "1962",
     val externalSolemnities: Boolean = true,
@@ -74,6 +76,7 @@ class ReaderSettingsStore(context: Context) {
             p[CARDS_ON_PAGE] = next.cardsOnPage
             p[FRAMES] = next.ornamentalFrames
             p[VIGNETTES] = next.vignettes
+            p[PINCH] = next.pinchToZoom
             p[RITE] = next.rite
             p[EXTERNAL] = next.externalSolemnities
             p[TRADITIONAL] = next.traditionalPenance
@@ -102,6 +105,7 @@ class ReaderSettingsStore(context: Context) {
             cardsOnPage = p[CARDS_ON_PAGE] ?: d.cardsOnPage,
             ornamentalFrames = p[FRAMES] ?: d.ornamentalFrames,
             vignettes = p[VIGNETTES] ?: d.vignettes,
+            pinchToZoom = p[PINCH] ?: d.pinchToZoom,
             rite = p[RITE] ?: d.rite,
             externalSolemnities = p[EXTERNAL] ?: d.externalSolemnities,
             traditionalPenance = p[TRADITIONAL] ?: d.traditionalPenance,
@@ -128,6 +132,7 @@ class ReaderSettingsStore(context: Context) {
         val CARDS_ON_PAGE = booleanPreferencesKey("images_sur_la_page")
         val FRAMES = booleanPreferencesKey("cadres_ornementaux")
         val VIGNETTES = booleanPreferencesKey("vignettes")
+        val PINCH = booleanPreferencesKey("pincer_taille")
         val RITE = stringPreferencesKey("rite")
         val EXTERNAL = booleanPreferencesKey("solennites_exterieures")
         val TRADITIONAL = booleanPreferencesKey("penitence_traditionnelle")

@@ -1,5 +1,7 @@
 package app.paroissien.core.reading.book
 
+import androidx.compose.foundation.combinedClickable
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.animateFloatAsState
@@ -144,8 +146,12 @@ class BookLook(
     val endpaper: (@Composable () -> Unit)? = null,
     /** Le cadre ornemental des pages de cette unité (paroissien chromolithographié), ou aucun. */
     val frame: FrameLook? = null,
+    /** À la fin du livre, dans l'ordre inverse du début : la doublure du second plat, puis le plat, sans inscription. */
+    val backEndpaper: (@Composable () -> Unit)? = null,
+    val backCover: (@Composable () -> Unit)? = null,
 ) {
     val front: List<@Composable () -> Unit> = listOfNotNull(cover, endpaper)
+    val back: List<@Composable () -> Unit> = listOfNotNull(backEndpaper, backCover)
 }
 
 /** Un cadre ornemental et ses encres ; [liturgicalColor] en change la palette, sinon il garde celles du livre. */
@@ -186,6 +192,8 @@ fun BookReader(
     paginationContext: CoroutineContext = Dispatchers.Default,
     ribbons: List<RibbonMark> = emptyList(),
     onRibbonTap: (Int) -> Unit = {},
+    /** Appui long sur la queue d'un ruban : il marque désormais la page ouverte. */
+    onRibbonMove: (Int) -> Unit = {},
     cards: List<CardMark> = emptyList(),
     onCardTap: (String) -> Unit = {},
     ribbonsAcross: Boolean = false,
@@ -242,7 +250,7 @@ fun BookReader(
             val paged = book ?: return@BoxWithConstraints
             // La couverture et la doublure sont les premières pages du pager : le texte commence après elles.
             val offset = look.front.size
-            val count = paged.pages.size + offset
+            val count = paged.pages.size + offset + look.back.size
 
             val state = rememberMekuriPagerState(pageCount = count, initialPage = anchor?.let { paged.pageOf(it) + offset } ?: 0)
             val currentAnchor by rememberUpdatedState(anchor)
@@ -289,6 +297,8 @@ fun BookReader(
             ) { index ->
                 if (index < offset) {
                     look.front[index]()
+                } else if (index >= offset + paged.pages.size) {
+                    look.back[index - offset - paged.pages.size]()
                 } else {
                     val i = index - offset
                     val side = sideOf(index, double)
@@ -320,8 +330,8 @@ fun BookReader(
             val tailBottom = (if (look.frame != null) margins.frameBottom else margins.bottom) - RibbonBand + (RibbonBand - TailHeight) / 2
             // Ouvrir le livre par la queue d'un ruban : il est de nouveau en travers de la page.
             val openAtRibbon: (Int) -> Unit = { slot -> asideRibbons = asideRibbons - slot; onRibbonTap(slot) }
-            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
-            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
 
             // Images pieuses de la page ouverte : posées sur elle ou rangées en miniature, au-dessus du livre (leurs gestes
             // ne vont qu'à elles). Celles d'autres pages dépassent par la tête, à gauche ce qui précède, à droite ce qui suit.
@@ -696,15 +706,22 @@ private fun Modifier.pageRibbons(ribbons: List<PageRibbon>, moves: List<State<Fl
 
 /** Queues de rubans qui pendent sous la page ; un toucher ouvre la page marquée (cible de 48 dp de large au moins). */
 @Composable
-private fun RibbonTails(slots: List<Int>, dark: Boolean, fabric: RibbonFabric, onTap: (Int) -> Unit, modifier: Modifier) {
+@OptIn(ExperimentalFoundationApi::class)
+private fun RibbonTails(slots: List<Int>, dark: Boolean, fabric: RibbonFabric, onTap: (Int) -> Unit, onMove: (Int) -> Unit, modifier: Modifier) {
     if (slots.isEmpty()) return
+    val haptic = LocalHapticFeedback.current
     Row(modifier, horizontalArrangement = Arrangement.spacedBy(2.dp)) {
         slots.forEach { slot ->
             val style = RibbonStyle.of(slot)
             Box(
                 Modifier
                     .size(width = 48.dp, height = TailHeight)
-                    .clickable(onClickLabel = "Ouvrir au ruban ${style.label}") { onTap(slot) }
+                    // Toucher : ouvrir au ruban. Appui long : le ruban vient marquer la page ouverte.
+                    .combinedClickable(
+                        onClickLabel = "Ouvrir au ruban ${style.label}",
+                        onLongClickLabel = "Marquer cette page avec le ruban ${style.label}",
+                        onLongClick = { haptic.performHapticFeedback(HapticFeedbackType.LongPress); onMove(slot) },
+                    ) { onTap(slot) }
                     .semantics { contentDescription = "Ruban ${style.label}" },
                 contentAlignment = Alignment.TopCenter,
             ) {

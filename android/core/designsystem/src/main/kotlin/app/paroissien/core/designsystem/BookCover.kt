@@ -56,7 +56,7 @@ fun bookThickness(pages: Int): Float = (0.025f + 0.07f * (ln(pages.coerceAtLeast
  * la couverture qu'on tourne dans le lecteur.
  */
 @Composable
-fun BookCover(identity: BookIdentity, title: String, subtitle: String? = null, modifier: Modifier = Modifier, flat: Boolean = false) {
+fun BookCover(identity: BookIdentity, title: String, subtitle: String? = null, modifier: Modifier = Modifier, flat: Boolean = false, inscriptions: Boolean = true) {
     val fonts = rememberBookFonts(BookFace.GARAMOND)
     val cover = identity.cover
     val grain = remember(cover.material) { grainFor(cover.material) }
@@ -101,6 +101,8 @@ fun BookCover(identity: BookIdentity, title: String, subtitle: String? = null, m
             } else {
                 base.merge(TextStyle(brush = Brush.linearGradient(listOf(GoldDeep, GoldBright, GoldMid, GoldDeep)), shadow = Shadow(GoldShadow.copy(alpha = 0.8f), Offset(0f, 1.6f), 1.2f)))
             }
+            // Le second plat, à la fin du livre : la même reliure, sans titre ni monogramme.
+            if (!inscriptions) return@BoxWithConstraints
             if (cover.motif == CoverMotif.IHS) {
                 val monogram = if (cover.motifTooling == Tooling.PRINTED) base.copy(color = cover.ink) else titleStyle
                 Column(

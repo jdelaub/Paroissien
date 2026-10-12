@@ -61,6 +61,7 @@ fun SettingsScreen(graph: AppGraph, settings: ReaderSettings, onBack: () -> Unit
                     update { it.copy(language = v) }
                 }
                 SwitchRow(stringResource(R.string.settings_edges), settings.protectEdges) { v -> update { it.copy(protectEdges = v) } }
+                SwitchRow(stringResource(R.string.settings_pinch), settings.pinchToZoom) { v -> update { it.copy(pinchToZoom = v) } }
             }
         }
         item {

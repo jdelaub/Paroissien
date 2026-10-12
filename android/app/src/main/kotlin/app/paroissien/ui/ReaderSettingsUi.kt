@@ -48,6 +48,7 @@ fun ReaderSettingsRow(settings: ReaderSettings, onAll: (() -> Unit)? = null, onD
         }
         Setting(stringResource(if (settings.cardsOnPage) R.string.setting_cards_on_page_on else R.string.setting_cards_on_page_off)) { change { it.copy(cardsOnPage = !it.cardsOnPage) } }
         Setting(stringResource(if (settings.ornamentalFrames) R.string.setting_frames_on else R.string.setting_frames_off)) { change { it.copy(ornamentalFrames = !it.ornamentalFrames) } }
+        Setting(stringResource(if (settings.pinchToZoom) R.string.setting_pinch_on else R.string.setting_pinch_off)) { change { it.copy(pinchToZoom = !it.pinchToZoom) } }
         Setting(stringResource(if (settings.showMeasures) R.string.setting_measures_on else R.string.setting_measures_off)) { change { it.copy(showMeasures = !it.showMeasures) } }
         onDress?.let { Setting(stringResource(R.string.setting_dress), it) }
         onAll?.let { Setting(stringResource(R.string.setting_all), it) }

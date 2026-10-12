@@ -1,5 +1,15 @@
 package app.paroissien.ui
 
+import androidx.compose.runtime.rememberUpdatedState
+import kotlin.math.roundToInt
+import kotlin.math.abs
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.input.pointer.PointerInputScope
+import androidx.compose.ui.input.pointer.PointerEventPass
+import androidx.compose.foundation.gestures.calculateZoom
+import androidx.compose.foundation.gestures.awaitFirstDown
+import androidx.compose.foundation.gestures.awaitEachGesture
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -233,12 +243,33 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
             { BookCover(identity, entry.title, entry.subtitle(), Modifier.fillMaxSize(), flat = true) }
         } else null,
         endpaper = if (unitIndex == 0) endpaper else null,
+        // La fin du livre répond à son début : la doublure du second plat, puis le plat, sans titre.
+        backEndpaper = if (entry != null && unitIndex == units.lastIndex) endpaper else null,
+        backCover = if (entry != null && unitIndex == units.lastIndex) {
+            { BookCover(identity, entry.title, null, Modifier.fillMaxSize(), flat = true, inscriptions = false) }
+        } else null,
         frame = remember(publication, entry, unitIndex, settings.ornamentalFrames, choice, customFrames) {
             if (settings.ornamentalFrames && !isDemo) BookFrames.of(publication, entry, unitIndex, unit, choice, customFrames)?.let { FrameLook(it.spec, it.style) } else null
         },
     )
 
-    Box(Modifier.fillMaxSize().background(paper.background)) {
+    // Pincer à deux doigts (réglage, désactivé par défaut) : la taille suit les doigts, puis se pose sur la plus proche.
+    var pinch by remember { mutableStateOf<Float?>(null) }
+    val scaleNow = SCALES[settings.scaleIndex.coerceIn(0, SCALES.lastIndex)]
+    val scaleIndexNow by rememberUpdatedState(settings.scaleIndex.coerceIn(0, SCALES.lastIndex))
+    Box(
+        Modifier.fillMaxSize().background(paper.background).then(
+            if (settings.pinchToZoom && !isDemo) {
+                Modifier.pointerInput(Unit) {
+                    detectPinch(onZoom = { pinch = it }) { zoom ->
+                        pinch = null
+                        val target = SCALES.indices.minBy { abs(SCALES[it] - SCALES[scaleIndexNow] * zoom) }
+                        graph.scope.launch { graph.settings.update { it.copy(scaleIndex = target) } }
+                    }
+                }
+            } else Modifier,
+        ),
+    ) {
         blocks?.let { book ->
             key(unitId, language) {
                 CompositionLocalProvider(LocalPaperColors provides paper) {
@@ -263,6 +294,13 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                     onPaginated = { pagination = String.format(Locale.FRANCE, "%d pages · pagination %d ms", it.pages.size, it.elapsedMillis) },
                     ribbons = marks,
                     onRibbonTap = { slot -> ribbons.firstOrNull { it.slot == slot }?.let { openAt(it.unit, it.block, it.charOffset) } },
+                    onRibbonMove = { slot ->
+                        val here = unitId
+                        val block = anchorBlock ?: blocks?.firstOrNull { it !is ReadingBlock.Vignette }?.id
+                        if (here != null && block != null && !isDemo) graph.scope.launch(Dispatchers.IO) {
+                            graph.database.ribbons().place(Ribbon(publication, slot, here, block, anchorOffset, null, System.currentTimeMillis()))
+                        }
+                    },
                     cards = cardMarks,
                     onCardTap = { id -> open(CardKey(id)) },
                     ribbonsAcross = settings.ribbonsAcross,
@@ -335,6 +373,14 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 cover = { BookCover(identity, entry.title, entry.subtitle(), Modifier.fillMaxSize(), flat = true) },
                 endpaper = endpaper,
                 onOpened = { opening = false },
+            )
+        }
+
+        pinch?.let { zoom ->
+            Text(
+                "${(scaleNow * zoom * 100).roundToInt()} %",
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.align(Alignment.Center).background(MaterialTheme.colorScheme.surface.copy(alpha = 0.85f), RoundedCornerShape(8.dp)).padding(horizontal = 16.dp, vertical = 8.dp),
             )
         }
 
@@ -564,3 +610,26 @@ private fun ImagePanel(graph: AppGraph, images: List<PiousImage>, onScan: () -> 
         }
     }
 }
+
+/**
+ * Pincer à deux doigts : vu avant le livre (passe initiale), le geste est consommé dès que deux doigts sont posés ; la
+ * page ne tourne pas. [onZoom] suit le rapport depuis le début du geste, [onEnd] le reçoit au lever des doigts.
+ */
+private suspend fun PointerInputScope.detectPinch(onZoom: (Float) -> Unit, onEnd: (Float) -> Unit) {
+    awaitEachGesture {
+        awaitFirstDown(requireUnconsumed = false, pass = PointerEventPass.Initial)
+        var zoom = 1f
+        var pinching = false
+        do {
+            val event = awaitPointerEvent(PointerEventPass.Initial)
+            if (event.changes.count { it.pressed } >= 2) {
+                zoom *= event.calculateZoom()
+                pinching = true
+                onZoom(zoom)
+            }
+            if (pinching) event.changes.forEach { it.consume() }
+        } while (event.changes.any { it.pressed })
+        if (pinching) onEnd(zoom)
+    }
+}
+

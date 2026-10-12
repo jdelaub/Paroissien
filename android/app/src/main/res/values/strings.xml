@@ -71,6 +71,9 @@
     <string name="setting_fabric_satin">Rubans : satin</string>
     <string name="setting_frames_on">Cadres : oui</string>
     <string name="setting_frames_off">Cadres : non</string>
+    <string name="setting_pinch_on">Pincer : oui</string>
+    <string name="setting_pinch_off">Pincer : non</string>
+    <string name="settings_pinch">Pincer l\'écran à deux doigts pour agrandir ou réduire le texte</string>
     <string name="setting_cards_on_page_on">Images : sur la page</string>
     <string name="setting_cards_on_page_off">Images : en tête du livre</string>
     <string name="setting_all">Tous les réglages…</string>
