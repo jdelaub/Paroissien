@@ -262,7 +262,7 @@ private class BlockMeasure(
             Measured(block.id, units, gapBefore = headingGap, keepTogether = units.size)
         }
         is ReadingBlock.Heading -> {
-            val units = stack(layout(t.render(block.text, block.lang), if (block.minor) t.minorHeading else t.heading), 0f)
+            val units = stack(layout(t.render(block.text, block.lang, hyphenate = false), if (block.minor) t.minorHeading else t.heading), 0f)
             Measured(block.id, units, gapBefore = headingGap, keepWithNext = true, keepTogether = units.size)
         }
         is ReadingBlock.Rubric -> Measured(block.id, stack(layout(t.render(block.text, BlockLang.FR), t.rubric.ragged()), 0f), gapBefore = blockGap)
@@ -280,7 +280,8 @@ private class BlockMeasure(
         val text = layout(t.render(block.text, BlockLang.FR), t.paragraph(BlockLang.FR, TextRole.CENTERED), (width - 2 * pad).toInt())
         val part = Part(text, pad, 0)
         val units = (0 until text.lineCount).map { LineUnit(part, it, pad + text.getLineTop(it), pad + text.getLineBottom(it)) }
-        return Measured(block.id, units, gapBefore = headingGap, keepTogether = units.size, frame = pad)
+        // L'encadré annonce ce qui suit : il ne reste pas seul en bas de page.
+        return Measured(block.id, units, gapBefore = headingGap, keepWithNext = true, keepTogether = units.size, frame = pad)
     }
 
     /** Les colonnes en regard, à la moitié de la largeur : les lignes des deux colonnes, rangées par hauteur. */

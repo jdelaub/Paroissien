@@ -13,6 +13,9 @@ wit: cihm_80314 | fr | 44 | 43
 rubric
 fr: Le prêtre baise l'autel, puis, au côté de l'Épître, il se signe et lit l'Introït (voir au propre). Aux messes des défunts, il fait le signe de la croix sur le missel.
 
+slot proprium.introitus propre
+fr: Introït — texte de la messe du jour
+
 == kyrie 2
 title.la: Kyrie
 title.fr: Kyrie
@@ -69,6 +72,10 @@ wit: cihm_80314 | fr | 45-47 | 44-46
 rubric
 fr: Puis il dit le Gloria, quand la messe le demande (voir au propre) ; on ne le dit jamais aux messes des défunts.
 
+slot proprium.gloria regle
+fr: Gloria — selon la messe du jour
+omit: gloria.2 gloria.3 gloria.4 gloria.5 gloria.6
+
 para
 la: Glória in excélsis Deo. Et in terra pax homínibus bonæ voluntátis.
 fr: Gloire à Dieu dans le ciel. Et paix sur la terre aux hommes de bonne volonté.
@@ -115,6 +122,9 @@ fr: ℣. Prions.
 rubric
 fr: Suivent la collecte ou les oraisons du jour (voir au propre).
 
+slot proprium.oratio propre
+fr: Collecte — texte de la messe du jour
+
 == epitre 2
 title.la: Epistola
 title.fr: Épître
@@ -125,12 +135,18 @@ wit: cihm_80314 | fr | 49 | 48
 rubric
 fr: Le prêtre lit l'Épître (voir au propre). À la fin, le servant répond :
 
+slot proprium.lectio propre
+fr: Épître — texte de la messe du jour
+
 versicle R
 la: ℟. Deo grátias.
 fr: ℟. Grâces à Dieu.
 
 rubric
 fr: L'Épître est suivie du graduel, puis de l'Alléluia et de son verset, que remplace le trait aux messes des défunts et aux jours de pénitence, et parfois de la séquence (voir au propre).
+
+slot proprium.graduale graduel
+fr: Graduel — texte de la messe du jour
 
 == munda-cor 2
 title.la: Munda cor meum
@@ -185,6 +201,9 @@ fr: ℟. Gloire à vous, Seigneur !
 rubric
 fr: Le prêtre lit l'Évangile (voir au propre). Si le passage ouvre un Évangile, il dit Initium (Commencement) au lieu de Sequentia (Suite). À la fin, le servant répond :
 
+slot proprium.evangelium propre
+fr: Évangile — texte de la messe du jour
+
 versicle R
 la: ℟. Laus tibi, Christe.
 fr: ℟. Christ ! louange à vous.
@@ -205,6 +224,10 @@ wit: cihm_80314 | fr | 52-55 | 51-54
 
 rubric
 fr: Le Credo se dit les dimanches, aux fêtes de première classe et aux autres messes où le propre l'indique.
+
+slot proprium.credo regle
+fr: Credo — selon la messe du jour
+omit: credo.2 credo.3 credo.4 credo.5 credo.6 credo.7 credo.8
 
 para
 la: Credo in unum Deum, Patrem omnipoténtem, factórem cæli et terræ, visibílium ómnium et invisibílium.

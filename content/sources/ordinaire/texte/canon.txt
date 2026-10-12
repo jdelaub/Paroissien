@@ -40,6 +40,10 @@ fr: ℟. Cela est digne et juste.
 rubric
 fr: Suit la préface du jour. On donne ici la préface commune et celle de la Sainte Trinité ; les autres préfaces sont au propre.
 
+slot proprium.praefatio propre
+fr: Préface — préface de la messe du jour
+replaces: preface-commune preface-trinite
+
 == preface-commune 2
 title.la: Præfatio communis
 title.fr: Préface commune
@@ -107,6 +111,10 @@ fr: Souvenez-vous, Seigneur, de vos serviteurs et de vos servantes, N. N. et de 
 rubric
 fr: Unissons-nous à l'Église triomphante :
 
+slot proprium.communicantes communicantes
+fr: Communicantes propre du jour
+replaces: te-igitur.7
+
 para
 la: Communicántes, et memóriam venerántes, in primis gloriósæ semper Vírginis Maríæ, Genetrícis Dei et Dómini nostri Jesu Christi: sed et beáti Joseph, ejúsdem Vírginis Sponsi, et beatórum Apostolórum ac Mártyrum tuórum, Petri et Pauli, Andréæ, Jacóbi, Joánnis, Thomæ, Jacóbi, Philíppi, Bartholomǽi, Matthǽi, Simónis et Thaddǽi: Lini, Cleti, Cleméntis, Xysti, Cornélii, Cypriáni, Lauréntii, Chrysógoni, Joánnis et Pauli, Cosmæ et Damiáni: et ómnium Sanctórum tuórum; quorum méritis precibúsque concédas, ut in ómnibus protectiónis tuæ muniámur auxílio. Per eúndem Christum, Dóminum nostrum. Amen.
 fr: Unis dans une même communion, vénérons la mémoire premièrement de la glorieuse Marie toujours Vierge, Mère de Dieu et de notre Seigneur Jésus-Christ ; et aussi du bienheureux Joseph, Époux de la même Vierge. Et ensuite de vos bienheureux Apôtres et Martyrs : / Pierre et Paul, André, Jacques, Jean, Thomas, Jacques, Philippe, Barthélemy, Mathieu, Simon et Thaddée, Lin, Clet, Clément, Xyste, Corneille, Cyprien, Laurent, Chrysogone, Jean et Paul, Côme et Damien, / Et de tous vos Saints : puissent leurs mérites et leurs prières nous obtenir le secours de votre puissante protection. Par le même Jésus-Christ notre Seigneur. Ainsi soit-il.
@@ -114,6 +122,10 @@ fr: Unis dans une même communion, vénérons la mémoire premièrement de la gl
 
 rubric
 fr: Le prêtre étend les mains sur le pain et le vin :
+
+slot proprium.hancigitur hanc-igitur
+fr: Hanc igitur propre du jour
+replaces: te-igitur.9
 
 para
 la: Hanc ígitur oblatiónem servitútis nostræ, sed et cunctæ famíliæ tuæ, quǽsumus, Dómine, ut placátus accípias: diésque nostros in tua pace dispónas, atque ab ætérna damnatióne nos éripi, et in electórum tuórum júbeas grege numerári. Per Christum, Dóminum nostrum. Amen.

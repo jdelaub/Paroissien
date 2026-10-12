@@ -14,6 +14,13 @@ Format des transcriptions : celui des prières (content/sources/prieres/normaliz
 
 Les blocs et leurs lignes la:, fr:, review: sont ceux des prières ; « ✠ » note un signe de croix, « / » un saut de
 ligne. Les rubriques n'ont que le français.
+
+    slot <clé> <nom>                emplacement d'une pièce du propre (proprium.introitus…), identifiant <section>.<nom>
+                                    hors de la numérotation des blocs (les identifiants publiés ne bougent pas)
+    replaces: id id…                (slot) blocs ou sections que la pièce du jour remplace (préfaces, Communicantes)
+    omit: id id…                    (slot Gloria, Credo) blocs ou sections omis quand le jour ne les a pas
+
+Les six parties forment une seule unité de lecture, `messe` : l'app y insère les pièces de la messe du jour.
 """
 
 from __future__ import annotations
@@ -28,6 +35,8 @@ HERE = Path(__file__).resolve().parent
 CONTENT = HERE.parents[1]
 OUT = CONTENT / "data" / "ordinaire.1962"
 NNBSP = " "
+
+BOOK_UNIT = "messe"
 
 UNITS = [
     ("avant-messe", "Prières au bas de l’autel"),
@@ -115,7 +124,7 @@ def parse(path: Path) -> list[dict]:
         if not sections:
             raise SystemExit(f"{where} : texte avant la première section")
         cur = sections[-1]
-        m = re.match(r"^(title\.(la|fr)|src|wit|removed|la|fr|review):\s?(.*)$", line)
+        m = re.match(r"^(title\.(la|fr)|src|wit|removed|la|fr|review|replaces|omit):\s?(.*)$", line)
         if m:
             key, value = m.group(1), m.group(3)
             if key.startswith("title."):
@@ -128,6 +137,10 @@ def parse(path: Path) -> list[dict]:
                 if block is None:
                     raise SystemExit(f"{where} : review hors d'un bloc")
                 block["review"] = value
+            elif key in ("replaces", "omit"):
+                if block is None or block["type"] != "slot":
+                    raise SystemExit(f"{where} : {key} hors d'un emplacement")
+                block["attrs"][key] = value.split()
             else:
                 if block is None:
                     raise SystemExit(f"{where} : texte hors d'un bloc")
@@ -135,7 +148,7 @@ def parse(path: Path) -> list[dict]:
             continue
         words = line.split()
         btype, args = words[0], words[1:]
-        if btype not in {"para", "rubric", "versicle", "stanza", "heading"}:
+        if btype not in {"para", "rubric", "versicle", "stanza", "heading", "slot"}:
             raise SystemExit(f"{where} : type de bloc inconnu {btype!r}")
         attrs: dict = {}
         if btype == "para" and args:
@@ -146,7 +159,11 @@ def parse(path: Path) -> list[dict]:
             attrs["kind"] = args[0] if args else "psalm"
         elif btype == "heading":
             attrs["level"] = int(args[0]) if args else 3
-        block = {"type": btype, "attrs": attrs, "t": {}, "review": None, "where": where}
+        elif btype == "slot":
+            if len(args) != 2:
+                raise SystemExit(f"{where} : « slot <clé> <nom> » attendu")
+            attrs["slot"] = args[0]
+        block = {"type": btype, "attrs": attrs, "t": {}, "review": None, "where": where, "name": args[1] if btype == "slot" else None}
         cur["blocks"].append(block)
     return sections
 
@@ -182,8 +199,14 @@ def build() -> dict:
         for s in parse(path):
             rows.append({"id": s["key"], "type": "heading", "level": s["level"], "x-source": source_attr(s["src"]),
                          "t": {lang: inlines(title, lang) for lang, title in sorted(s["title"].items())}})
-            for n, b in enumerate(s["blocks"], 1):
-                row = {"id": f"{s['key']}.{n}", "type": b["type"], **b["attrs"]}
+            n = 0
+            for b in s["blocks"]:
+                if b["type"] == "slot":
+                    row_id = f"{s['key']}.{b['name']}"
+                else:
+                    n += 1
+                    row_id = f"{s['key']}.{n}"
+                row = {"id": row_id, "type": b["type"], **b["attrs"]}
                 if b["review"]:
                     row["x-review"] = "à vérifier : " + b["review"]
                     report["reviews"].append((row["id"], b["review"]))
@@ -198,12 +221,17 @@ def build() -> dict:
 def write(result: dict) -> None:
     (OUT / "blocks").mkdir(parents=True, exist_ok=True)
     meta = json.loads((HERE / "publication.base.json").read_text(encoding="utf-8"))
-    meta["divisions"] = [{"id": unit, "kind": "section", "toc": toc, "unit": True}
-                         for unit, toc in UNITS if unit in result["blocks"]]
+    # Une seule unité : la messe se lit d'un seul tenant (un changement d'unité recharge le livre sans tourner la
+    # page). Les six parties restent au sommaire par leurs titres de niveau 1 ; les anciennes unités y renvoient.
+    meta["divisions"] = [{"id": BOOK_UNIT, "kind": "section", "toc": "Ordinaire de la messe", "unit": True}]
     (OUT / "publication.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    for unit, rows in result["blocks"].items():
-        text = "".join(json.dumps(r, ensure_ascii=False, separators=(",", ":")) + "\n" for r in rows)
-        (OUT / "blocks" / f"{unit}.jsonl").write_text(text, encoding="utf-8")
+    for old in (OUT / "blocks").glob("*.jsonl"):
+        old.unlink()
+    rows = [r for unit_rows in result["blocks"].values() for r in unit_rows]
+    text = "".join(json.dumps(r, ensure_ascii=False, separators=(",", ":")) + "\n" for r in rows)
+    (OUT / "blocks" / f"{BOOK_UNIT}.jsonl").write_text(text, encoding="utf-8")
+    aliases = {unit: unit_rows[0]["id"] for unit, unit_rows in result["blocks"].items() if unit_rows}
+    (OUT / "aliases.json").write_text(json.dumps(aliases, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
 
 def main() -> int:
@@ -211,7 +239,7 @@ def main() -> int:
     write(result)
     rep = result["report"]
     total = sum(len(rows) for rows in result["blocks"].values())
-    print(f"{len(result['blocks'])} unités, {len(rep['sections'])} sections, {total} blocs ;"
+    print(f"{len(result['blocks'])} parties en une unité, {len(rep['sections'])} sections, {total} blocs ;"
           f" {len(rep['reviews'])} blocs à vérifier ; {len(rep['removed'])} mentions retirées → {OUT.relative_to(CONTENT)}")
     if "-v" in sys.argv:
         for unit, rows in result["blocks"].items():

@@ -33,7 +33,7 @@ internal object FrenchExternalSolemnities : Calendar1962.ExternalSolemnities {
             put(sundayFrom(LocalDate.of(year, 1, 2)), "epiphany_of_the_lord", "Sancti/01-06", "Solennité de l'Épiphanie", "In Epiphania Domini", WHITE)
         }
         // Sainte Jeanne d'Arc : 2e dimanche de mai, jour de la fête nationale (loi du 10 juillet 1920).
-        put(sundayFrom(LocalDate.of(year, 5, 1)).plusWeeks(1), "joan_of_arc_virgin", "Sancti/05-30", "Solennité de sainte Jeanne d'Arc", "S. Ioannae Arcensis", WHITE)
+        put(sundayFrom(LocalDate.of(year, 5, 1)).plusWeeks(1), "joan_of_arc_virgin", "Sancti/05-30f", "Solennité de sainte Jeanne d'Arc", "S. Ioannae Arcensis", WHITE)
         // Saint-Sacrement : 2e dimanche après la Pentecôte, avec la procession.
         put(easter.plusDays(63), "most_holy_body_and_blood_of_christ", "Tempora/Pent01-4", "Solennité du Saint-Sacrement", "Ss.mi Corporis Christi", WHITE)
         // Saints Pierre et Paul : dimanche du 30 juin au 5 juillet, sauf si le 29 juin est un dimanche.

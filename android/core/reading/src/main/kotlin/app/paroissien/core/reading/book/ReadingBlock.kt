@@ -64,7 +64,15 @@ sealed interface ReadingBlock {
      * Emplacement d'une pièce variable (« Introït — texte de la messe du jour ») : un encadré centré, comme dans les
      * livrets de messe.
      */
-    data class Slot(override val id: String, val text: RichText, val key: String? = null) : ReadingBlock
+    data class Slot(
+        override val id: String,
+        val text: RichText,
+        val key: String? = null,
+        /** Blocs ou sections que la pièce du jour remplace (préfaces du livre, Communicantes commun). */
+        val replaces: List<String> = emptyList(),
+        /** Blocs ou sections omis quand le jour ne les a pas (texte du Gloria, du Credo). */
+        val omit: List<String> = emptyList(),
+    ) : ReadingBlock
 
     /**
      * Deux langues en regard (latin à gauche, français à droite), comme dans un missel : chaque colonne se compose à

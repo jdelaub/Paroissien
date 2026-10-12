@@ -300,7 +300,7 @@ internal class Calendar1962(
         else -> if (d.isSunday()) {
             Base(tempora("Tempora/Nat1-0", "sunday_within_the_octave_of_christmas", "Dimanche dans l'octave de Noël", "Dominica infra octavam Nativitatis", 31, listOf(WHITE), CelebrationKind.SUNDAY, privileged = true, sunday = true), Season.CHRISTMAS, null, setOf(DayFlag.OCTAVE))
         } else {
-            Base(tempora("Tempora/Nat${d.dayOfMonth}", "christmas_octave_day_${d.dayOfMonth - 23}", "${French.ordinal(d.dayOfMonth - 23)} jour dans l'octave de Noël", null, 33, listOf(WHITE), CelebrationKind.OCTAVE_DAY), Season.CHRISTMAS, null, setOf(DayFlag.OCTAVE))
+            Base(tempora("Tempora/Nat${d.dayOfMonth}", "christmas_octave_day_${d.dayOfMonth - 24}", "${French.ordinal(d.dayOfMonth - 24)} jour dans l'octave de Noël", null, 33, listOf(WHITE), CelebrationKind.OCTAVE_DAY), Season.CHRISTMAS, null, setOf(DayFlag.OCTAVE))
         }
     }
 

@@ -233,6 +233,9 @@ wit: cihm_80314 | fr | 79 | 78
 rubric
 fr: Le prêtre lit au côté de l'Épître l'antienne appelée Communion (voir au propre), puis il baise l'autel et dit :
 
+slot proprium.communio communion
+fr: Communion — texte de la messe du jour
+
 versicle V
 la: ℣. Dóminus vobíscum.
 fr: ℣. Le Seigneur soit avec vous.
@@ -247,3 +250,6 @@ fr: ℣. Prions.
 
 rubric
 fr: Suivent la postcommunion ou les postcommunions (voir au propre).
+
+slot proprium.postcommunio propre
+fr: Postcommunion — texte de la messe du jour

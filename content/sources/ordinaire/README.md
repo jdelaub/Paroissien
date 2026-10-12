@@ -1,13 +1,17 @@
 # Ordinaire de la messe (1962) : provenance
 
-Publication `ordinaire.1962`, paquet `ordinaire` (`licence-libre:MIT`, version 2026101201). C'est l'Ordinaire de la messe basse selon le missel de 1962, en latin et en français, aligné bloc à bloc.
+Publication `ordinaire.1962`, paquet `ordinaire` (`licence-libre:MIT`, version 2026101301). C'est l'Ordinaire de la messe basse selon le missel de 1962, en latin et en français, aligné bloc à bloc.
 
 | | |
 |---|---|
-| Unités | 6 : `avant-messe`, `messe-des-catechumenes`, `offertoire`, `canon`, `communion`, `fin-de-messe` |
+| Unités | 1 : `messe` (depuis le 13/10/2026), qui réunit les 6 parties transcrites à part (`avant-messe`, `messe-des-catechumenes`, `offertoire`, `canon`, `communion`, `fin-de-messe`) ; ces anciens identifiants renvoient au titre de leur partie (`aliases.json`) |
 | Sections | 37 (titres `heading` : 6 de niveau 1, 31 de niveau 2) |
-| Blocs | 295 : 37 `heading`, 94 `versicle`, 86 `para`, 78 `rubric` |
+| Blocs | 309 : 37 `heading`, 94 `versicle`, 86 `para`, 78 `rubric`, 14 `slot` |
 | Collation | latin : 2 985 mots, tous dans Divinum Officium ; français : 4 192 mots, 94,7 % confirmés par l'OCR (voir « Relecture ») |
+
+## Messe du jour (emplacements)
+
+Depuis le 13/10/2026, chaque « voir au propre » est suivi d'un bloc `slot` (identifiant `<section>.<nom>`, hors de la numérotation : les identifiants publiés ne bougent pas). L'app y insère la pièce de la messe du jour tirée du missel (`DayProper`) : Introït, Collecte, Épître, Graduel, Évangile, Offertoire, Secrète, Préface (texte entier ; il remplace alors la préface commune et celle de la Trinité, `replaces`), Communicantes et Hanc igitur propres (`replaces` du texte commun), Communion, Postcommunion, avec les oraisons des commémoraisons. Le Gloria et le Credo suivent la règle du jour : quand la messe ne les a pas, leur texte est omis (`omit`). Sans missel, l'encadré reste avec sa mention.
 
 ## Droits
 

@@ -232,6 +232,10 @@
     <string name="today_resume">Reprendre</string>
     <string name="today_image">Image du jour</string>
     <string name="today_mass">Messe du jour</string>
+    <string name="today_mass_whole">La messe du jour en entier</string>
+    <string name="today_mass_whole_detail">L\'Ordinaire, avec le propre du jour à sa place</string>
+    <string name="today_mass_ordinary_only">Ordinaire de la messe</string>
+    <string name="today_gospel">Évangile du jour</string>
     <string name="today_meditation">Méditation</string>
     <string name="calendar_settings">Calendrier</string>
     <string name="setting_external">Solennités extérieures (1962)</string>

@@ -168,7 +168,15 @@ Les durées sont des estimations en semaines de travail effectif pour une person
 | **Porte B2 = MVP** | Usage quotidien ; corrections ; décision sur le passage à B selon les réponses obtenues | — |
 | **V1** | Voir §3.2 | — |
 
-**Phase 5, état au 12/10/2026 (0.6.4)** : Ordinaire de 1962 (domaine public, `content/sources/ordinaire`) ; Propre de 1962 tiré de Divinum Officium (`content/sources/missel` : 712 unités, latin public, français du Barroux dans le dépôt privé sous le même paquet) ; « Messe du jour » dans Aujourd'hui et ruban de la messe du jour au ferret doré ; latin et français en regard (réglage « la-fr », par défaut) ; blocs `image` (ressources du paquet) et `slot` (« texte de la messe du jour », rempli depuis le missel). Restent : les oraisons des commémoraisons, le mode « messe intégrée », les féries renvoyées au dimanche (un tiers du poids du paquet), la messe propre de sainte Jeanne d'Arc et de sainte Geneviève.
+**Phase 5, terminée le 13/10/2026 (0.6.6)** :
+- Ordinaire de 1962 du domaine public (`content/sources/ordinaire`), d'un seul tenant, avec 14 emplacements de la messe du jour ;
+- Propre de 1962 tiré de Divinum Officium (`content/sources/missel`) : 775 unités, dont 62 commémoraisons, latin public et français du Barroux dans le dépôt privé sous le même paquet ; propres de sainte Jeanne d'Arc et de sainte Geneviève en latin (missel de Pustet, propre de Paris) ; stations relues ;
+- mode « livre » (missel avec le ruban de la messe du jour au ferret doré) et mode « messe intégrée » (l'Ordinaire où l'app insère le propre du jour, les oraisons des commémoraisons, la préface du jour en entier, les Communicantes et Hanc igitur propres, et omet le Gloria ou le Credo les jours qui ne les ont pas : `DayProper`) ;
+- Aujourd'hui : messe du jour, messe entière, début de l'Évangile du jour ;
+- latin et français en regard (réglage « la-fr », par défaut) ;
+- liste des formulaires sans français du domaine public : `content/sources/missel/francais-domaine-public.md` (le meilleur candidat pour les combler est Mame 1890, environ 60 messes).
+
+Reportés en V1 : le français du domaine public pour le paquet public ; les féries renvoyées au dimanche (un tiers du poids, mais leurs rubriques diffèrent) ; une seconde relecture des propres de Jeanne d'Arc et de Geneviève.
 
 ### 4.1 ADR de la phase 0 (une page chacun, `docs/adr/`)
 1. **001 — Horizon, dépôts et saveurs** : scénario A, B ou C, statuts de droits, et quelle CI construit quoi.

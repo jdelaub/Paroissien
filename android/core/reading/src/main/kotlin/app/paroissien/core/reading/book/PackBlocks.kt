@@ -4,6 +4,7 @@ import androidx.compose.ui.graphics.ImageBitmap
 import app.paroissien.core.content.PackBlock
 import app.paroissien.core.model.text.Inlines
 import app.paroissien.core.model.text.RichText
+import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.contentOrNull
 import kotlinx.serialization.json.jsonPrimitive
 
@@ -60,7 +61,10 @@ fun packToReadingBlocks(
             "separator" -> ReadingBlock.Ornament(block.id)
             "note" -> null
             "image" -> block.attrs["href"]?.jsonPrimitive?.contentOrNull?.let(image)?.let { ReadingBlock.Vignette(block.id, it) }
-            "slot" -> text?.let { ReadingBlock.Slot(block.id, it, block.attrs["slot"]?.jsonPrimitive?.contentOrNull) }
+            "slot" -> text?.let {
+                fun ids(key: String) = (block.attrs[key] as? JsonArray)?.mapNotNull { e -> e.jsonPrimitive.contentOrNull }.orEmpty()
+                ReadingBlock.Slot(block.id, it, block.attrs["slot"]?.jsonPrimitive?.contentOrNull, ids("replaces"), ids("omit"))
+            }
             else -> {
                 val la = block.texts["la"]
                 val fr = block.texts["fr"]

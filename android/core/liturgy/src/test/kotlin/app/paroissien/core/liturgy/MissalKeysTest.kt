@@ -3,7 +3,6 @@ package app.paroissien.core.liturgy
 
 import org.junit.Assert.assertTrue
 import org.junit.Assume.assumeTrue
-import org.junit.Ignore
 import org.junit.Test
 import java.io.File
 import java.time.LocalDate
@@ -19,8 +18,7 @@ class MissalKeysTest {
     @Test
     fun everyDayHasItsMass() = check { day -> listOf(day.principal) + listOfNotNull(day.externalSolemnity) }
 
-    /** Les oraisons des commémoraisons (fichiers `cc`, `o`, `t` de Divinum Officium) ne sont pas encore dans le missel. */
-    @Ignore("à faire : les commémoraisons du missel (collecte, secrète, postcommunion)")
+    /** Les oraisons des commémoraisons (collecte, secrète, postcommunion), que la messe du jour ajoute aux siennes. */
     @Test
     fun everyCommemorationHasItsPrayers() = check { day -> day.commemorations }
 

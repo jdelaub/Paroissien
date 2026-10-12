@@ -70,7 +70,7 @@ def collate() -> list[tuple]:
                 pool = [w for x in srcs for w in source_words(x)]
                 for n, b in enumerate(s["blocks"], 1):
                     text = b["t"].get(lang)
-                    if not text or b["type"] == "rubric":
+                    if not text or b["type"] in ("rubric", "slot"):
                         continue
                     mine = words(re.sub(r"[℣℟✠/_]", " ", text))
                     sm = difflib.SequenceMatcher(None, mine, pool, autojunk=False)

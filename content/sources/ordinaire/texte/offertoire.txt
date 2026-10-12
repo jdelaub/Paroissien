@@ -27,6 +27,9 @@ fr: ℣. Prions.
 rubric
 fr: Le prêtre lit tout bas l'Offertoire (voir au propre).
 
+slot proprium.offertorium propre
+fr: Offertoire — texte de la messe du jour
+
 == offrande 2
 title.la: Oblatio
 title.fr: Offrande du pain et du vin
@@ -160,6 +163,9 @@ fr: ℣. Ainsi soit-il.
 
 rubric
 fr: Le prêtre récite à voix basse la secrète ou les secrètes (voir au propre), puis il termine à haute voix :
+
+slot proprium.secreta propre
+fr: Secrète — texte de la messe du jour
 
 versicle V
 la: ℣. Per ómnia sǽcula sæculórum.

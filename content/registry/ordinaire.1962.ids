@@ -31,6 +31,7 @@ collecte.2
 collecte.3
 collecte.4
 collecte.5
+collecte.propre
 communion
 communion-des-fideles
 communion-des-fideles.1
@@ -89,6 +90,7 @@ credo.5
 credo.6
 credo.7
 credo.8
+credo.regle
 dernier-evangile
 dernier-evangile.1
 dernier-evangile.10
@@ -104,6 +106,8 @@ epitre
 epitre.1
 epitre.2
 epitre.3
+epitre.graduel
+epitre.propre
 evangile
 evangile.1
 evangile.2
@@ -114,6 +118,7 @@ evangile.6
 evangile.7
 evangile.8
 evangile.9
+evangile.propre
 fin-de-messe
 gloria
 gloria.1
@@ -122,8 +127,10 @@ gloria.3
 gloria.4
 gloria.5
 gloria.6
+gloria.regle
 introit
 introit.1
+introit.propre
 ite-missa-est
 ite-missa-est.1
 ite-missa-est.10
@@ -185,6 +192,7 @@ libera-nos.6
 libera-nos.7
 libera-nos.8
 libera-nos.9
+messe
 messe-des-catechumenes
 munda-cor
 munda-cor.1
@@ -198,6 +206,7 @@ offertorium.2
 offertorium.3
 offertorium.4
 offertorium.5
+offertorium.propre
 offrande
 offrande.1
 offrande.10
@@ -224,6 +233,7 @@ orate-fratres.4
 orate-fratres.5
 orate-fratres.6
 orate-fratres.7
+orate-fratres.propre
 pater
 pater.1
 pater.2
@@ -239,6 +249,8 @@ postcommunion.2
 postcommunion.3
 postcommunion.4
 postcommunion.5
+postcommunion.communion
+postcommunion.propre
 preface
 preface-commune
 preface-commune.1
@@ -254,6 +266,7 @@ preface.5
 preface.6
 preface.7
 preface.8
+preface.propre
 prieres-apres-la-messe
 prieres-apres-la-messe.1
 prieres-apres-la-messe.10
@@ -283,6 +296,8 @@ te-igitur.6
 te-igitur.7
 te-igitur.8
 te-igitur.9
+te-igitur.communicantes
+te-igitur.hanc-igitur
 unde-et-memores
 unde-et-memores.1
 unde-et-memores.10

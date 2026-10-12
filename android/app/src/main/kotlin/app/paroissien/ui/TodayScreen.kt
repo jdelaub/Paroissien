@@ -58,7 +58,9 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation3.runtime.NavKey
 import app.paroissien.AppGraph
 import app.paroissien.R
+import app.paroissien.core.content.PackBlock
 import app.paroissien.core.content.TocEntry
+import app.paroissien.core.model.text.Inlines
 import app.paroissien.core.data.ReaderSettings
 import app.paroissien.core.designsystem.LocalPaperColors
 import app.paroissien.core.designsystem.liturgicalTokens
@@ -79,6 +81,20 @@ import java.time.LocalDateTime
 private const val MEDITATION_BOOK = "imitation.fr"
 internal const val MISSAL_BOOK = "missel.1962"
 private const val ORDINARY_BOOK = "ordinaire.1962"
+
+/** Le début de l'Évangile du jour : son titre (« Suite ✠ du saint Évangile selon saint Luc »), ses premières lignes. */
+class Gospel(val block: String, val incipit: String, val opening: String)
+
+/** L'Évangile d'un formulaire du missel (la dernière messe s'il y en a plusieurs), en français s'il y en a. */
+fun gospelOf(blocks: List<PackBlock>, unit: String): Gospel? {
+    val gospel = blocks.filter { b -> b.id.removePrefix("$unit.").split('.').let { it.firstOrNull() == "evangile" || it.getOrNull(1) == "evangile" } }
+    val texts = gospel.filter { it.type != "heading" && it.type != "rubric" }
+    val head = gospel.firstOrNull { it.type == "heading" } ?: return null
+    fun plain(b: PackBlock) = (b.texts["fr"] ?: b.texts["la"])?.let(Inlines::plainText)?.trim().orEmpty()
+    val incipit = texts.firstOrNull() ?: return null
+    val body = texts.drop(1).firstOrNull() ?: return null
+    return Gospel(head.id, plain(incipit), plain(body))
+}
 
 /** Unité du missel pour une clé de propre de Divinum Officium : « Tempora/Adv1-0 » → « tempora-adv1-0 ». */
 fun missalUnit(properId: String): String = properId.lowercase().replace('/', '-')
@@ -113,6 +129,14 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
         value = chapters.takeIf { it.isNotEmpty() }?.let { it[day.toEpochDay().mod(it.size.toLong()).toInt()] }
     }
 
+    // L'Évangile du jour (1962) : son titre et ses premières lignes, en français s'il y en a.
+    val gospel by produceState<Gospel?>(null, library, liturgical) {
+        val d = liturgical ?: return@produceState
+        val missal = library?.entry(MISSAL_BOOK) ?: return@produceState
+        val unit = d.principal.mass?.properId?.let(::missalUnit)?.let(missal::unit) ?: return@produceState
+        value = withContext(Dispatchers.IO) { runCatching { gospelOf(graph.packs.blocks(missal, unit), unit.id) }.getOrNull() }
+    }
+
     Surface(Modifier.fillMaxSize(), color = LocalPaperColors.current.background) {
         Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
             Row(Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -143,7 +167,8 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
 
                 val resume = positions.firstOrNull()
                 val lib = library
-                // Messe du jour (1962) : le propre dans le missel, s'il est là, puis l'Ordinaire.
+                // Messe du jour (1962) : le propre dans le missel, la messe entière (l'Ordinaire où s'insère le propre du
+                // jour), et le début de l'Évangile, qui ouvre le missel à l'Évangile.
                 if (settings.rite == "1962" && lib != null) {
                     val missal = lib.entry(MISSAL_BOOK)
                     val proper = d.principal.mass?.properId?.let(::missalUnit)?.takeIf { missal?.unit(it) != null }
@@ -152,7 +177,21 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
                         item(key = "mass") {
                             Section(stringResource(R.string.today_mass))
                             if (missal != null && proper != null) BookRow(d.principal.title.fr, missal.title) { open(ReaderKey(MISSAL_BOOK, proper)) }
-                            if (ordinary != null) BookRow(ordinary.title, ordinary.subtitle()) { open(ReaderKey(ORDINARY_BOOK)) }
+                            if (ordinary != null) {
+                                BookRow(stringResource(R.string.today_mass_whole), stringResource(if (proper != null) R.string.today_mass_whole_detail else R.string.today_mass_ordinary_only)) {
+                                    open(ReaderKey(ORDINARY_BOOK))
+                                }
+                            }
+                            gospel?.let { g ->
+                                Column(
+                                    Modifier.fillMaxWidth().clickable { open(ReaderKey(MISSAL_BOOK, proper, g.block)) }.padding(horizontal = 20.dp, vertical = 10.dp),
+                                    verticalArrangement = Arrangement.spacedBy(4.dp),
+                                ) {
+                                    Text(stringResource(R.string.today_gospel), style = MaterialTheme.typography.labelLarge, color = LocalPaperColors.current.rubric)
+                                    Text(g.incipit, style = MaterialTheme.typography.bodyMedium, color = LocalPaperColors.current.inkSecondary)
+                                    Text(g.opening, style = MaterialTheme.typography.bodyLarge, maxLines = 4, overflow = TextOverflow.Ellipsis)
+                                }
+                            }
                         }
                     }
                 }

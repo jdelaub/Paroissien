@@ -90,39 +90,9 @@
  },
  "divisions": [
   {
-   "id": "avant-messe",
+   "id": "messe",
    "kind": "section",
-   "toc": "Prières au bas de l’autel",
-   "unit": true
-  },
-  {
-   "id": "messe-des-catechumenes",
-   "kind": "section",
-   "toc": "Messe des catéchumènes",
-   "unit": true
-  },
-  {
-   "id": "offertoire",
-   "kind": "section",
-   "toc": "Offertoire",
-   "unit": true
-  },
-  {
-   "id": "canon",
-   "kind": "section",
-   "toc": "Préface et Canon",
-   "unit": true
-  },
-  {
-   "id": "communion",
-   "kind": "section",
-   "toc": "Communion",
-   "unit": true
-  },
-  {
-   "id": "fin-de-messe",
-   "kind": "section",
-   "toc": "Fin de la messe",
+   "toc": "Ordinaire de la messe",
    "unit": true
   }
  ]
