@@ -12,6 +12,8 @@ import app.paroissien.library.Library
 import app.paroissien.library.PackLibrary
 import app.paroissien.library.PiousImages
 import app.paroissien.library.Backup
+import app.paroissien.library.CustomMotif
+import app.paroissien.library.FrameComposer
 import app.paroissien.library.Vignettes
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -46,6 +48,13 @@ class AppGraph(context: Context, sqliteDriver: SQLiteDriver? = null) {
 
     init {
         scope.launch(Dispatchers.IO) { libraryState.value = packs.load() }
+        // Les motifs dessinés par l'utilisateur, connus du compositeur de cadres.
+        scope.launch {
+            database.looks().observeFrames().collect { rows ->
+                FrameComposer.motifs = rows.filter { it.id.startsWith(CustomMotif.PREFIX) }
+                    .mapNotNull { CustomMotif.decode(it.json) }.associateBy { it.id }
+            }
+        }
     }
 
     /** Relit les livres après une restauration : ceux de la sauvegarde rejoignent la bibliothèque. */

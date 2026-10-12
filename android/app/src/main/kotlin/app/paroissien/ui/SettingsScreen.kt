@@ -1,5 +1,6 @@
 package app.paroissien.ui
 
+import androidx.navigation3.runtime.NavKey
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -42,7 +43,7 @@ import java.util.Locale
  * prière. Chaque choix s'enregistre aussitôt.
  */
 @Composable
-fun SettingsScreen(graph: AppGraph, settings: ReaderSettings, onBack: () -> Unit) {
+fun SettingsScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> Unit, onBack: () -> Unit) {
     fun update(transform: (ReaderSettings) -> ReaderSettings) = graph.scope.launch { graph.settings.update(transform) }
 
     Screen(stringResource(R.string.settings_title), onBack = onBack) {
@@ -74,6 +75,7 @@ fun SettingsScreen(graph: AppGraph, settings: ReaderSettings, onBack: () -> Unit
                 SwitchRow(stringResource(R.string.settings_cards_on_page), settings.cardsOnPage) { v -> update { it.copy(cardsOnPage = v) } }
                 SwitchRow(stringResource(R.string.settings_frames), settings.ornamentalFrames) { v -> update { it.copy(ornamentalFrames = v) } }
                 SwitchRow(stringResource(R.string.settings_vignettes), settings.vignettes) { v -> update { it.copy(vignettes = v) } }
+                OutlinedButton(onClick = { open(WorkshopKey) }) { Text(stringResource(R.string.settings_workshop)) }
             }
         }
         item {

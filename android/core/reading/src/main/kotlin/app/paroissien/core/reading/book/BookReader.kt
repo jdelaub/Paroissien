@@ -289,6 +289,12 @@ fun BookReader(
                 configuration = configuration,
                 onCenterTap = onCenterTap,
                 tapsTurn = !menuOpen,
+                // Les plats de la reliure (couverture, doublures) pivotent d'un bloc ; les pages se plient.
+                rigidPages = buildSet {
+                    if (look.cover != null) add(0)
+                    if (look.endpaper != null) add(look.front.size - 1)
+                    if (look.backEndpaper != null) add(offset + paged.pages.size)
+                },
                 spread = if (double) MekuriSpread.Double else MekuriSpread.Single,
                 coverStandsAlone = true,
                 pageAspectRatio = pageWidth.value / maxHeight.value,

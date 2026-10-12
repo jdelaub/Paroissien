@@ -125,9 +125,21 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
         }
         // La bibliothèque des images pieuses, à côté des livres : une boîte, ses premières cartes en éventail.
         item(key = "images") { ImageBoxTile(graph) { open(ImageBoxKey) } }
+        item(key = "atelier") { WorkshopTile { open(WorkshopKey) } }
         item(key = DEMO) {
             CoverTile(BookIdentities.of(DEMO, null, true), stringResource(R.string.demo_book), null, stringResource(R.string.demo_book_detail)) { open(ReaderKey(DEMO)) }
         }
+    }
+}
+
+/** L'atelier sur le rayon : un cadre en petit, pour composer des cadres et dessiner des motifs sans passer par un livre. */
+@Composable
+private fun WorkshopTile(onClick: () -> Unit) {
+    Column(Modifier.clickable(onClick = onClick), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        Box(Modifier.fillMaxWidth().aspectRatio(0.70f).background(LocalPaperColors.current.background), contentAlignment = Alignment.Center) {
+            app.paroissien.core.designsystem.frame.OrnamentalFrames.firstOrNull { it.name == "matin" }?.let { FrameThumb(it, width = 96.dp) }
+        }
+        Text(stringResource(R.string.library_workshop), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary, maxLines = 2)
     }
 }
 

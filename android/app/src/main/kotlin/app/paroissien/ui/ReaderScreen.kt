@@ -1,5 +1,7 @@
 package app.paroissien.ui
 
+import java.time.LocalDate
+import app.paroissien.core.liturgy.LiturgicalColor
 import androidx.compose.runtime.rememberUpdatedState
 import kotlin.math.roundToInt
 import kotlin.math.abs
@@ -92,6 +94,7 @@ import app.paroissien.library.BookIdentities
 import app.paroissien.library.BookDressChoice
 import app.paroissien.library.BookDresses
 import app.paroissien.library.CustomFrameSpec
+import app.paroissien.library.CustomMotif
 import app.paroissien.library.FrameComposer
 import app.paroissien.library.BookFrames
 import app.paroissien.core.reading.book.FrameLook
@@ -231,8 +234,19 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     // L'habit choisi dans l'atelier (cadres) et les cadres composés par l'utilisateur.
     val lookRow by remember(publication) { graph.database.looks().observe(publication) }.collectAsState(initial = null)
     val choice = remember(lookRow) { BookDressChoice.decode(lookRow?.json) }
+    // Couleurs des cadres : celles du livre, la couleur liturgique du jour, ou une couleur choisie dans l'atelier.
+    val dayConfig = settings.calendarConfig()
+    val frameColor by produceState<LiturgicalColor?>(null, choice?.colors, dayConfig) {
+        value = when (val c = choice?.colors) {
+            null -> null
+            "jour" -> withContext(Dispatchers.Default) { graph.calendar.day(LocalDate.now(), dayConfig).colors.primary }
+            else -> LiturgicalColor.entries.firstOrNull { it.name == c }
+        }
+    }
     val customRows by remember { graph.database.looks().observeFrames() }.collectAsState(initial = emptyList())
-    val customFrames = remember(customRows) { customRows.mapNotNull { CustomFrameSpec.decode(it.json)?.let(FrameComposer::build) } }
+    val customFrames = remember(customRows) {
+        customRows.filterNot { it.id.startsWith(CustomMotif.PREFIX) }.mapNotNull { CustomFrameSpec.decode(it.json)?.let(FrameComposer::build) }
+    }
     val look = BookLook(
         edges = identity.edges,
         weight = identity.paper.weight,
@@ -248,8 +262,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
         backCover = if (entry != null && unitIndex == units.lastIndex) {
             { BookCover(identity, entry.title, null, Modifier.fillMaxSize(), flat = true, inscriptions = false) }
         } else null,
-        frame = remember(publication, entry, unitIndex, settings.ornamentalFrames, choice, customFrames) {
-            if (settings.ornamentalFrames && !isDemo) BookFrames.of(publication, entry, unitIndex, unit, choice, customFrames)?.let { FrameLook(it.spec, it.style) } else null
+        frame = remember(publication, entry, unitIndex, settings.ornamentalFrames, choice, customFrames, frameColor) {
+            if (settings.ornamentalFrames && !isDemo) BookFrames.of(publication, entry, unitIndex, unit, choice, customFrames)?.let { FrameLook(it.spec, it.style, frameColor) } else null
         },
     )
 

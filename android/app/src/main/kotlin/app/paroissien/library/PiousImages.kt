@@ -115,9 +115,32 @@ class PiousImages(
     private val full = LruCache<String, ImageBitmap>(3)
     private val library = MutableStateFlow(source.catalog())
 
-    /** Les images personnelles, les plus récentes d'abord, puis celles de la bibliothèque. */
-    val all: StateFlow<List<PiousImage>> = combine(db.personalCards().observeAll(), library) { personal, lib -> personal.map(::asImage) + lib.cards }
-        .stateIn(scope, SharingStarted.Eagerly, library.value.cards)
+    /** Les images personnelles, les plus récentes d'abord, puis celles de la bibliothèque, sauf celles qu'on a masquées. */
+    val all: StateFlow<List<PiousImage>> = combine(db.personalCards().observeAll(), library, db.categories().observeAssignments()) { personal, lib, marks ->
+        val hidden = marks.filter { it.category == HIDDEN && !it.removed }.map { it.card }.toSet()
+        (personal.map(::asImage) + lib.cards).filter { it.id !in hidden }
+    }.stateIn(scope, SharingStarted.Eagerly, library.value.cards)
+
+    /** Les images de la bibliothèque qu'on a masquées : elles se rendent d'un toucher. */
+    val hidden: StateFlow<List<PiousImage>> = combine(library, db.categories().observeAssignments()) { lib, marks ->
+        val ids = marks.filter { it.category == HIDDEN && !it.removed }.map { it.card }.toSet()
+        lib.cards.filter { it.id in ids }
+    }.stateIn(scope, SharingStarted.Eagerly, emptyList())
+
+    /**
+     * Retire des images de la boîte : une image personnelle est supprimée (fichiers et description) ; une image de la
+     * bibliothèque, embarquée dans l'app, est masquée et se rend depuis « Images masquées ».
+     */
+    suspend fun remove(ids: Collection<String>) = withContext(Dispatchers.IO) {
+        val personal = db.personalCards().all().map { it.id }.toSet()
+        for (id in ids) {
+            if (id in personal) delete(id) else db.categories().assign(CardInCategory(id, HIDDEN, removed = false, updatedAt = System.currentTimeMillis()))
+        }
+    }
+
+    suspend fun restore(id: String) = withContext(Dispatchers.IO) {
+        db.categories().assign(CardInCategory(id, HIDDEN, removed = true, updatedAt = System.currentTimeMillis()))
+    }
 
     /** Toutes les catégories : prédéfinies, celles de la bibliothèque, puis celles de l'utilisateur. */
     val categories: StateFlow<List<CardCategoryInfo>> = combine(db.categories().observeCategories(), library) { custom, lib ->
@@ -271,6 +294,8 @@ class PiousImages(
 
     companion object {
         const val PERSONAL = "perso_"
+        /** Pseudo-catégorie des images de la bibliothèque qu'on a retirées de la boîte. */
+        const val HIDDEN = "masquee"
         /** Côté long d'une image enregistrée : assez pour la carte en plein écran (rapport 09, §3.2.3). */
         const val MAX_SIDE = 1440
         private const val THUMB_HEIGHT = 360

@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 internal fun MekuriSingleLayers(
     controller: MekuriPagerController,
+    rigid: (Int) -> Boolean,
     content: @Composable (Int) -> Unit,
 ) {
     val turn = controller.turn
@@ -33,7 +34,15 @@ internal fun MekuriSingleLayers(
             MekuriPage(page, MekuriPageMode.Live, controller.arrangement, content)
         }
         val turning = turn?.turningIndex
-        if (turn != null && turning != null) {
+        if (turn != null && turning != null && rigid(turning)) {
+            // Un plat de reliure pivote d'un bloc autour du dos, sans se plier (Paroissien).
+            key(turn.id) {
+                val progress = remember { { controller.foldProgress() } }
+                MekuriRigidLeaf(progress, spineAtStart = controller.direction == MekuriDirection.LeftToRight, Modifier.fillMaxSize()) {
+                    MekuriPage(turning, MekuriPageMode.Turning, controller.arrangement, content)
+                }
+            }
+        } else if (turn != null && turning != null) {
             key(turn.id) {
                 val progress = remember { { controller.foldProgress() } }
                 MekuriFoldedPage(
@@ -59,6 +68,7 @@ internal fun MekuriSingleLayers(
 internal fun MekuriSpreadLayers(
     controller: MekuriPagerController,
     pageSize: Size,
+    rigid: (Int) -> Boolean,
     content: @Composable (Int) -> Unit,
 ) {
     val turn = controller.turn
@@ -78,7 +88,22 @@ internal fun MekuriSpreadLayers(
                 faded.leading?.let { MekuriSlotLayer(it, MekuriSlot.Leading, pageSize, controller, content) }
                 faded.trailing?.let { MekuriSlotLayer(it, MekuriSlot.Trailing, pageSize, controller, content) }
             }
-            if (turn != null) {
+            val rigidLeaf = turn != null && (turn.leafFront?.let(rigid) == true || turn.leafBack?.let(rigid) == true)
+            if (turn != null && rigidLeaf) {
+                // Un plat de reliure : il pivote autour du dos, au milieu de la double page, sans se plier (Paroissien).
+                key(turn.id) {
+                    val progress = remember { { controller.foldProgress() } }
+                    val ltr = controller.direction == MekuriDirection.LeftToRight
+                    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                        Box(Modifier.size(pageSize.width.dp, pageSize.height.dp).graphicsLayer { translationX = (if (ltr) 1f else -1f) * pageSize.width * density / 2f }) {
+                            MekuriRigidLeaf(
+                                progress, spineAtStart = ltr, Modifier.fillMaxSize(),
+                                back = turn.leafBack?.let { b -> { MekuriFace(b, controller.arrangement, content) } },
+                            ) { MekuriFace(turn.leafFront, controller.arrangement, content) }
+                        }
+                    }
+                }
+            } else if (turn != null) {
                 key(turn.id) {
                     val progress = remember { { controller.foldProgress() } }
                     MekuriLeafShadow(

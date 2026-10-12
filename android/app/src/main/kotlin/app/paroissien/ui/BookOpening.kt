@@ -34,6 +34,8 @@ fun BookOpening(cover: @Composable () -> Unit, endpaper: (@Composable () -> Unit
         state = state,
         modifier = Modifier.fillMaxSize(),
         spread = MekuriSpread.Single,
+        // La couverture et sa doublure sont les plats de la reliure : ils pivotent d'un bloc, sans se plier.
+        rigidPages = pages.indices.toSet(),
         onCenterTap = { scope.launch { state.animateToPage((state.currentPage + 1).coerceAtMost(pages.size)) } },
     ) { page ->
         if (page < pages.size) pages[page]() else Spacer(Modifier.fillMaxSize())

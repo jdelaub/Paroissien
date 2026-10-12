@@ -94,6 +94,35 @@
     <string name="dress_compose">Composer un cadre…</string>
     <string name="dress_edit">Modifier</string>
     <string name="dress_pick_frame">Cadre de « %1$s »</string>
+    <string name="dress_colors">Couleurs des cadres</string>
+    <string name="dress_colors_book">Du livre</string>
+    <string name="dress_colors_day">Du jour</string>
+    <string name="editor_random">Composer au hasard</string>
+    <string name="editor_colors">Couleurs</string>
+    <string name="editor_colors_source">Des cadres d\'origine</string>
+    <string name="workshop_title">Atelier des cadres</string>
+    <string name="workshop_no_frames">Pas encore de cadre composé.</string>
+    <string name="workshop_motifs">Mes motifs</string>
+    <string name="workshop_new_motif">Dessiner un motif…</string>
+    <string name="workshop_no_motifs">Pas encore de motif : dessinez-en un, il deviendra une frise.</string>
+    <string name="workshop_motif_default">Mon motif</string>
+    <string name="workshop_motif_title">Dessiner un motif</string>
+    <string name="workshop_motif_hint">Dessinez du doigt dans la cellule ; chaque trait est lissé, reflété selon la symétrie, puis répété le long de la bande. Un toucher pose un point.</string>
+    <string name="workshop_undo">Annuler le dernier trait</string>
+    <string name="workshop_clear">Tout effacer</string>
+    <string name="workshop_symmetry">Symétrie</string>
+    <string name="workshop_mirror_u">Miroir gauche-droite</string>
+    <string name="workshop_mirror_v">Miroir haut-bas</string>
+    <string name="workshop_period">Largeur du motif : %1$d</string>
+    <string name="workshop_stroke">Trait</string>
+    <string name="workshop_thin">Fin</string>
+    <string name="workshop_medium">Moyen</string>
+    <string name="workshop_thick">Épais</string>
+    <string name="workshop_paper">Papier</string>
+    <string name="workshop_preview">Aperçu</string>
+    <string name="workshop_motif_name">Nom du motif</string>
+    <string name="settings_workshop">Atelier des cadres et des motifs…</string>
+    <string name="library_workshop">Atelier des cadres</string>
     <string name="editor_title">Composer un cadre</string>
     <string name="editor_name">Nom du cadre</string>
     <string name="editor_default_name">Mon cadre</string>
@@ -258,6 +287,24 @@
     <!-- Images pieuses (rapport 09, §3.2) -->
     <string name="images_box">Boîte à images</string>
     <string name="images_all">Toutes</string>
+    <string name="images_select">Sélectionner</string>
+    <string name="images_remove">Retirer</string>
+    <string name="images_restore">Remettre dans la boîte</string>
+    <plurals name="images_selected">
+        <item quantity="one">%d image choisie</item>
+        <item quantity="many">%d images choisies</item>
+        <item quantity="other">%d images choisies</item>
+    </plurals>
+    <plurals name="images_hidden">
+        <item quantity="one">%d image masquée</item>
+        <item quantity="many">%d images masquées</item>
+        <item quantity="other">%d images masquées</item>
+    </plurals>
+    <plurals name="images_remove_confirm">
+        <item quantity="one">Retirer cette image de la boîte ? Une image que vous avez numérisée est supprimée ; une image de la bibliothèque est masquée et peut être remise.</item>
+        <item quantity="many">Retirer ces %d images de la boîte ? Celles que vous avez numérisées sont supprimées ; celles de la bibliothèque sont masquées et peuvent être remises.</item>
+        <item quantity="other">Retirer ces %d images de la boîte ? Celles que vous avez numérisées sont supprimées ; celles de la bibliothèque sont masquées et peuvent être remises.</item>
+    </plurals>
     <string name="card_categories">Catégories</string>
     <string name="category_new">Nouvelle catégorie…</string>
     <string name="category_name">Nom de la catégorie</string>

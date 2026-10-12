@@ -42,6 +42,49 @@ class FrameComposerTest {
         assertTrue(OrnamentalFrames.isNotEmpty())
     }
 
+    private fun assertInked(def: app.paroissien.core.designsystem.frame.OrnamentalFrameDef) {
+        val s = def.spec
+        val inks = def.style.base.keys + theme
+        val ops = s.top.base + s.top.over + s.side.base + s.side.over + s.bottom.base + s.bottom.over +
+            listOfNotNull(s.corner, s.bottomCorner).flatMap { it.ops } + listOfNotNull(s.topCenter, s.sideCenter).flatMap { it.ops }
+        val missing = ops.map { it.ink }.toSet() - inks
+        assertEquals("${def.name} : encres sans couleur $missing", emptySet<String>(), missing)
+        s.ground?.let { assertTrue(it in inks) }
+    }
+
+    @Test
+    fun compositionsAuHasard() {
+        repeat(40) { seed ->
+            val spec = FrameComposer.random(seed.toLong(), "perso-$seed", "Essai")
+            assertInked(requireNotNull(FrameComposer.build(spec)) { "graine $seed" })
+            // La composition tirée survit à l'enregistrement.
+            assertEquals(spec, CustomFrameSpec.decode(CustomFrameSpec.encode(spec)))
+        }
+    }
+
+    @Test
+    fun motifDessineDansUnCadre() {
+        val motif = CustomMotif(
+            id = "motif-essai", name = "Essai", period = 120f, mirrorU = true, mirrorV = true, ground = 0xFF2E4865,
+            strokes = listOf(
+                MotifStroke(listOf(10f, 20f, 30f, 50f, 55f, 40f), width = 6f, color = 0xFFB89C5A),
+                MotifStroke(listOf(60f, 50f), width = 10f, color = 0xFFD8745A, dot = true),
+            ),
+        )
+        FrameComposer.motifs = mapOf(motif.id to motif)
+        try {
+            val def = requireNotNull(FrameComposer.build(CustomFrameSpec("perso-m", "M", top = ModuleRef(motif.id, "top"), ground = motif.id)))
+            assertInked(def)
+            // Deux traits, chacun en quatre exemplaires (miroirs gauche-droite et haut-bas).
+            assertEquals(8, def.spec.top.base.size)
+            assertEquals("motif-essai.ground", def.spec.ground)
+            assertTrue(FrameComposer.modules("frise").any { it.frame == motif.id })
+            assertEquals(motif, CustomMotif.decode(CustomMotif.encode(motif)))
+        } finally {
+            FrameComposer.motifs = emptyMap()
+        }
+    }
+
     @Test
     fun choixAllerRetour() {
         val choice = BookDressChoice(FrameMode.PER_CHAPTER, chapterFrames = mapOf("u1" to "matin", "u2" to ""), seed = 3)

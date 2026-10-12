@@ -1,5 +1,6 @@
 package app.paroissien.ui
 
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -238,6 +239,12 @@ fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
     val categoriesOf by graph.images.categoriesOf.collectAsState()
     var filter by rememberSaveable { mutableStateOf<String?>(null) }
     var removing by remember { mutableStateOf<CardCategoryInfo?>(null) }
+    // Appui long sur une image : on entre en sélection ; un toucher en ajoute ou en ôte ; « Retirer » les ôte de la boîte.
+    var selection by remember { mutableStateOf(setOf<String>()) }
+    var confirming by remember { mutableStateOf(false) }
+    val hidden by graph.images.hidden.collectAsState()
+    var showHidden by rememberSaveable { mutableStateOf(false) }
+    fun toggle(id: String) { selection = if (id in selection) selection - id else selection + id }
     // Seules les catégories qui ont des images, plus celles de l'utilisateur (même vides).
     val used = categoriesOf.values.flatten().toSet()
     val shown = categories.filter { it.id in used || it.custom }
@@ -245,8 +252,14 @@ fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
     Surface(Modifier.fillMaxSize(), color = paper.background) {
         Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
             Row(Modifier.fillMaxWidth().padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text("‹") }
-                Text(stringResource(R.string.images_box), style = MaterialTheme.typography.headlineSmall)
+                if (selection.isEmpty()) {
+                    TextButton(onClick = onBack) { Text("‹") }
+                    Text(stringResource(R.string.images_box), style = MaterialTheme.typography.headlineSmall)
+                } else {
+                    TextButton(onClick = { selection = emptySet() }) { Text("✕") }
+                    Text(pluralStringResource(R.plurals.images_selected, selection.size, selection.size), style = MaterialTheme.typography.titleLarge, modifier = Modifier.weight(1f))
+                    TextButton(onClick = { confirming = true }) { Text(stringResource(R.string.images_remove), color = MaterialTheme.colorScheme.error) }
+                }
             }
             LazyVerticalGrid(
                 columns = GridCells.Adaptive(96.dp),
@@ -273,7 +286,16 @@ fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
                     }
                 }
                 items(images, key = { it.id }) { image ->
-                    Column(Modifier.clickable { open(CardKey(image.id)) }, horizontalAlignment = Alignment.CenterHorizontally) {
+                    val chosen = image.id in selection
+                    Column(
+                        Modifier
+                            .combinedClickable(
+                                onLongClickLabel = stringResource(R.string.images_select),
+                                onLongClick = { toggle(image.id) },
+                            ) { if (selection.isNotEmpty()) toggle(image.id) else open(CardKey(image.id)) }
+                            .then(if (chosen) Modifier.background(paper.rubric.copy(alpha = 0.14f), RoundedCornerShape(6.dp)).border(2.dp, paper.rubric, RoundedCornerShape(6.dp)) else Modifier),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                    ) {
                         graph.images.thumbnail(image.id)?.let {
                             if (image.physical) {
                                 // Une vraie carte : ses proportions, ses coins, un filet rouge si elle est dans un livre.
@@ -294,8 +316,42 @@ fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
                         Text(image.title.fr, style = MaterialTheme.typography.labelSmall, maxLines = 2, textAlign = TextAlign.Center)
                     }
                 }
+                // Les images de la bibliothèque qu'on a retirées : un toucher les rend à la boîte.
+                if (hidden.isNotEmpty() && selection.isEmpty()) {
+                    item(span = { GridItemSpan(maxLineSpan) }) {
+                        TextButton(onClick = { showHidden = !showHidden }) {
+                            Text(pluralStringResource(R.plurals.images_hidden, hidden.size, hidden.size) + if (showHidden) " ▴" else " ▾")
+                        }
+                    }
+                    if (showHidden) {
+                        items(hidden, key = { "masquee:" + it.id }) { image ->
+                            Column(Modifier.clickable { graph.scope.launch { graph.images.restore(image.id) } }, horizontalAlignment = Alignment.CenterHorizontally) {
+                                graph.images.thumbnail(image.id)?.let {
+                                    Image(it, contentDescription = image.title.fr, contentScale = ContentScale.Fit, modifier = Modifier.fillMaxWidth().aspectRatio(0.62f).graphicsLayer { alpha = 0.45f })
+                                }
+                                Text(stringResource(R.string.images_restore), style = MaterialTheme.typography.labelSmall, color = paper.rubric)
+                            }
+                        }
+                    }
+                }
             }
         }
+    }
+    if (confirming) {
+        val count = selection.size
+        AlertDialog(
+            onDismissRequest = { confirming = false },
+            text = { Text(pluralStringResource(R.plurals.images_remove_confirm, count, count)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    confirming = false
+                    val ids = selection
+                    selection = emptySet()
+                    graph.scope.launch { graph.images.remove(ids) }
+                }) { Text(stringResource(R.string.images_remove), color = MaterialTheme.colorScheme.error) }
+            },
+            dismissButton = { TextButton(onClick = { confirming = false }) { Text(stringResource(R.string.card_cancel)) } },
+        )
     }
     removing?.let { c ->
         AlertDialog(

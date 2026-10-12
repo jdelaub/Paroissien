@@ -133,6 +133,14 @@ Un écran par livre, ouvert depuis la bibliothèque (appui long sur la couvertur
 
 **Fait le 12/10/2026 (0.6.1)** : les cadres de chaque livre, en cinq modes (selon le sommaire, un seul cadre, un cadre par chapitre, au hasard dans une sélection avec « tirer à nouveau », aucun), et « Composer un cadre » : frises du haut, des côtés et du pied, coins et médaillon pris dans tous les cadres de la bibliothèque (chacun montré sur un petit cadre), disposition, épaisseurs, fond, filets, aperçu vivant. Les encres de chaque module gardent leur cadre d'origine (« matin.gold ») ; les cadres composés se choisissent comme les autres. Tables `book_look` et `custom_frame` (base en version 6), dans la sauvegarde. Restent : couverture, gardes, tranche et rubans dans l'atelier.
 
+**Ajouts du 12/10/2026 (0.6.3)** :
+
+- **Atelier des cadres** sans passer par un livre (réglages, et une tuile sur le rayon) : ses cadres composés, ses motifs.
+- **Composer au hasard** : un cadre principal donne le fond, les coins et le haut, un second les côtés ou le pied ; médaillon une fois sur deux ; disposition le plus souvent pleine ; on retouche ensuite.
+- **Couleurs** : chaque cadre a ses variantes liturgiques (vert, violet, rouge, rose, blanc, noir, or) ; un cadre composé choisit la sienne ; un livre choisit les couleurs du livre, celles du jour (couleur liturgique) ou une couleur fixe.
+- **Dessiner un motif** : on trace du doigt dans une cellule de frise ; chaque trait est simplifié (Douglas-Peucker) puis lissé en courbe (Catmull-Rom), reflété selon la symétrie (gauche-droite, haut-bas), tracé à bouts ronds en trois épaisseurs ; les couleurs se prennent dans l'éventail des encres des cadres (toutes, avec leurs variantes, rangées par teinte). Le motif devient une frise qu'on pose dans un cadre composé.
+- **Reliure** : la couverture, la doublure et le second plat pivotent d'un bloc autour du dos, sans se plier.
+
 - **Rang** : noble, Bible, simple, sans habit (§4) ; il donne les valeurs de départ des choix suivants.
 - **Couverture** : matière et couleur, décor (modèles de la bibliothèque), motif central, titre doré ou non.
 - **Gardes** : moiré, asanoha, symboles, ou papier uni ; couleur.

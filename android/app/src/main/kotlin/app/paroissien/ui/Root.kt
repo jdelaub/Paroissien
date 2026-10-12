@@ -62,7 +62,9 @@ import java.time.LocalDate
 @Serializable data class ScanKey(val backOf: String? = null) : NavKey
 @Serializable data object SettingsKey : NavKey
 @Serializable data class BookDressKey(val publication: String) : NavKey
-@Serializable data class FrameEditorKey(val id: String? = null) : NavKey
+@Serializable data class FrameEditorKey(val id: String? = null, val random: Boolean = false) : NavKey
+@Serializable data object WorkshopKey : NavKey
+@Serializable data class MotifEditorKey(val id: String? = null) : NavKey
 
 private val tabs = listOf<NavKey>(TodayKey, LibraryKey, BookmarksKey, SearchKey)
 
@@ -104,7 +106,9 @@ fun ParoissienRoot(graph: AppGraph) {
                                     onBack = { backStack.removeLastOrNull() },
                                 )
                             }
-                            entry<SettingsKey> { SettingsScreen(graph, settings, onBack = { backStack.removeLastOrNull() }) }
+                            entry<SettingsKey> { SettingsScreen(graph, settings, open, onBack = { backStack.removeLastOrNull() }) }
+                            entry<WorkshopKey> { WorkshopScreen(graph, open, onBack = { backStack.removeLastOrNull() }) }
+                            entry<MotifEditorKey> { MotifEditorScreen(graph, it, onBack = { backStack.removeLastOrNull() }) }
                             entry<LibraryKey> { LibraryScreen(graph, settings, open) }
                             entry<SeriesKey> { key -> SeriesScreen(graph, settings, key, open, onBack = { backStack.removeLastOrNull() }) }
                             entry<BookmarksKey> { BookmarksScreen(graph, open) }

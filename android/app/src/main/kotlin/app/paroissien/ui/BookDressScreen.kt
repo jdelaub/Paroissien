@@ -50,8 +50,10 @@ import app.paroissien.core.designsystem.LocalPaperColors
 import app.paroissien.core.designsystem.frame.OrnamentalFrameDef
 import app.paroissien.core.designsystem.frame.OrnamentalFrameLayer
 import app.paroissien.core.designsystem.frame.OrnamentalFrames
+import app.paroissien.core.liturgy.LiturgicalColor
 import app.paroissien.library.BookDressChoice
 import app.paroissien.library.CustomFrameSpec
+import app.paroissien.library.CustomMotif
 import app.paroissien.library.FrameComposer
 import app.paroissien.library.FrameMode
 import app.paroissien.library.ModuleRef
@@ -70,7 +72,10 @@ fun BookDressScreen(graph: AppGraph, key: BookDressKey, open: (NavKey) -> Unit, 
     val row by remember(key.publication) { graph.database.looks().observe(key.publication) }.collectAsState(initial = null)
     val choice = BookDressChoice.decode(row?.json) ?: BookDressChoice()
     val customRows by remember { graph.database.looks().observeFrames() }.collectAsState(initial = emptyList())
-    val custom = remember(customRows) { customRows.mapNotNull { r -> CustomFrameSpec.decode(r.json)?.let { spec -> FrameComposer.build(spec)?.let { spec to it } } } }
+    val custom = remember(customRows) {
+        customRows.filterNot { it.id.startsWith(CustomMotif.PREFIX) }
+            .mapNotNull { r -> CustomFrameSpec.decode(r.json)?.let { spec -> FrameComposer.build(spec)?.let { spec to it } } }
+    }
     val frames = OrnamentalFrames.filter { it.name != "doublure" } + custom.map { it.second }
     var picking by remember { mutableStateOf<String?>(null) }
 
@@ -124,6 +129,21 @@ fun BookDressScreen(graph: AppGraph, key: BookDressKey, open: (NavKey) -> Unit, 
             }
             FrameMode.NONE -> Unit
         }
+        if (choice.frameMode != FrameMode.NONE) item {
+            Section(stringResource(R.string.dress_colors)) {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    FilterChip(selected = choice.colors == null, onClick = { save(choice.copy(colors = null)) }, label = { Text(stringResource(R.string.dress_colors_book)) })
+                    FilterChip(selected = choice.colors == "jour", onClick = { save(choice.copy(colors = "jour")) }, label = { Text(stringResource(R.string.dress_colors_day)) })
+                    LiturgicalColor.entries.forEach { color ->
+                        FilterChip(selected = choice.colors == color.name, onClick = { save(choice.copy(colors = color.name)) }, label = { Text(stringResource(colorLabel(color))) })
+                    }
+                }
+                // Aperçu : un cadre de la sélection dans les couleurs choisies.
+                val sample = frames.firstOrNull { it.name == choice.frame } ?: frames.firstOrNull { it.name == "matin" }
+                val shown = choice.colors?.let { c -> LiturgicalColor.entries.firstOrNull { it.name == c } }
+                sample?.let { FrameThumb(it, width = 90.dp, liturgicalColor = shown) }
+            }
+        }
         item {
             Section(stringResource(R.string.dress_my_frames)) {
                 custom.forEach { (spec, def) ->
@@ -175,10 +195,13 @@ fun FrameEditorScreen(graph: AppGraph, key: FrameEditorKey, onBack: () -> Unit) 
     var text by rememberSaveable(key.id, existing != null) {
         mutableStateOf(
             CustomFrameSpec.encode(
-                existing ?: CustomFrameSpec(
-                    id = "perso-" + UUID.randomUUID().toString().take(8), name = defaultName,
-                    top = ModuleRef("matin", "top"), corner = ModuleRef("matin", "corner"), ground = "matin", fillets = "cadre",
-                ),
+                existing ?: ("perso-" + UUID.randomUUID().toString().take(8)).let { id ->
+                    if (key.random) FrameComposer.random(System.nanoTime(), id, defaultName)
+                    else CustomFrameSpec(
+                        id = id, name = defaultName,
+                        top = ModuleRef("matin", "top"), corner = ModuleRef("matin", "corner"), ground = "matin", fillets = "cadre",
+                    )
+                },
             ),
         )
     }
@@ -197,10 +220,26 @@ fun FrameEditorScreen(graph: AppGraph, key: FrameEditorKey, onBack: () -> Unit) 
             }
         }
         item {
+            Row(Modifier.fillMaxWidth().padding(horizontal = 20.dp), horizontalArrangement = Arrangement.Center) {
+                // Une composition tirée au hasard, d'un même esprit ; on la retouche ensuite.
+                OutlinedButton(onClick = { update(FrameComposer.random(System.nanoTime(), spec.id, spec.name)) }) { Text(stringResource(R.string.editor_random)) }
+            }
+        }
+        item {
             OutlinedTextField(
                 value = spec.name, onValueChange = { update(spec.copy(name = it)) }, singleLine = true,
                 label = { Text(stringResource(R.string.editor_name)) }, modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp),
             )
+        }
+        item {
+            Section(stringResource(R.string.editor_colors)) {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    FilterChip(selected = spec.palette == null, onClick = { update(spec.copy(palette = null)) }, label = { Text(stringResource(R.string.editor_colors_source)) })
+                    LiturgicalColor.entries.forEach { color ->
+                        FilterChip(selected = spec.palette == color.name, onClick = { update(spec.copy(palette = color.name)) }, label = { Text(stringResource(colorLabel(color))) })
+                    }
+                }
+            }
         }
         item { ModulePicker(stringResource(R.string.editor_top), friezes, "frise", spec.top, null) { update(spec.copy(top = it ?: spec.top)) } }
         item { ModulePicker(stringResource(R.string.editor_side), friezes, "frise", spec.side, stringResource(R.string.editor_like_top)) { update(spec.copy(side = it)) } }
@@ -294,7 +333,7 @@ private fun FrameGallery(frames: List<OrnamentalFrameDef>, selected: Set<String>
  * proportions réelles sur la page.
  */
 @Composable
-fun FrameThumb(def: OrnamentalFrameDef, width: Dp, selected: Boolean = false) {
+fun FrameThumb(def: OrnamentalFrameDef, width: Dp, selected: Boolean = false, liturgicalColor: LiturgicalColor? = null) {
     val paper = LocalPaperColors.current
     val scale = width / 180.dp
     Box(
@@ -303,7 +342,7 @@ fun FrameThumb(def: OrnamentalFrameDef, width: Dp, selected: Boolean = false) {
         contentAlignment = Alignment.Center,
     ) {
         Box(Modifier.requiredSize(180.dp, 300.dp).graphicsLayer { scaleX = scale; scaleY = scale }.background(paper.background)) {
-            OrnamentalFrameLayer(def.spec, def.style)
+            OrnamentalFrameLayer(def.spec, def.style, liturgicalColor)
         }
     }
 }
@@ -319,6 +358,17 @@ private fun Section(title: String, content: @Composable () -> Unit) {
 @Composable
 private fun Hint(text: String, padded: Boolean = true) {
     Text(text, style = MaterialTheme.typography.bodyMedium, color = LocalPaperColors.current.inkSecondary, modifier = if (padded) Modifier.padding(horizontal = 20.dp) else Modifier)
+}
+
+/** Le nom d'une couleur liturgique, pour les cadres. */
+fun colorLabel(color: LiturgicalColor) = when (color) {
+    LiturgicalColor.GREEN -> R.string.color_green
+    LiturgicalColor.VIOLET -> R.string.color_violet
+    LiturgicalColor.RED -> R.string.color_red
+    LiturgicalColor.ROSE -> R.string.color_rose
+    LiturgicalColor.WHITE -> R.string.color_white
+    LiturgicalColor.BLACK -> R.string.color_black
+    LiturgicalColor.GOLD -> R.string.color_gold
 }
 
 private fun dispositionLabel(d: String) = when (d) {

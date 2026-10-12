@@ -45,6 +45,8 @@ import androidx.compose.ui.semantics.stateDescription
  *   reports when they do not. A gesture keeps the value it began under, so a
  *   drag in flight when this turns false still releases its turn.
  * @param onCenterTap called for a tap outside both edge zones.
+ * @param rigidPages pages that turn as a rigid board (book covers and their insides), pivoting about the spine
+ *   instead of folding.
  * @param tapsTurn false while a menu is open: every tap then reports as a centre tap (it closes the menu) and none
  *   turns a page; drags still turn.
  * @param spread whether one or two pages share the container.
@@ -65,6 +67,7 @@ public fun MekuriPager(
     pagingEnabled: Boolean = true,
     onCenterTap: (() -> Unit)? = null,
     tapsTurn: Boolean = true,
+    rigidPages: Set<Int> = emptySet(),
     spread: MekuriSpread = MekuriSpread.Automatic,
     coverStandsAlone: Boolean = true,
     pageAspectRatio: Float = DEFAULT_PAGE_ASPECT_RATIO,
@@ -123,8 +126,8 @@ public fun MekuriPager(
         controller.arrangement = arrangement
         CompositionLocalProvider(LocalMekuriSlides provides slide) {
             when (arrangement) {
-                is MekuriArrangement.Single -> MekuriSingleLayers(controller, content)
-                is MekuriArrangement.Spread -> MekuriSpreadLayers(controller, arrangement.pageSize, content)
+                is MekuriArrangement.Single -> MekuriSingleLayers(controller, { it in rigidPages }, content)
+                is MekuriArrangement.Spread -> MekuriSpreadLayers(controller, arrangement.pageSize, { it in rigidPages }, content)
             }
         }
     }
