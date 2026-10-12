@@ -23,6 +23,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -121,6 +122,11 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
                 TextButton(onClick = { shown += 1 }) { Text("›", style = MaterialTheme.typography.titleLarge) }
                 IconButton(onClick = { open(OrdoKey(day.year, day.monthValue)) }) {
                     Icon(Icons.Filled.DateRange, contentDescription = stringResource(R.string.ordo_open))
+                }
+                if (onBack == null) {
+                    IconButton(onClick = { open(SettingsKey) }) {
+                        Icon(Icons.Filled.Settings, contentDescription = stringResource(R.string.settings_title))
+                    }
                 }
             }
             LazyColumn(Modifier.fillMaxSize()) {

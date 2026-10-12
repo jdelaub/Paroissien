@@ -224,6 +224,10 @@ Les mesures se font sur le téléphone de référence, avec un APK *release* con
   - **pas de plafond de taille** pour l'APK : le budget de 30 Mo d'IzzyOnDroid ne vaut que pour une diffusion publique, non prévue ; la CI affiche la taille sans l'imposer ;
   - **identité des livres** : chaque livre a sa reliure (cuir, dorure ou fer à froid, motif, nerfs), son papier (teinte, encre, grammage : fin pour un gros livre, épais pour un livret), sa tranche et ses rubans ; la couverture est la page d'avant la première ; un réglage « Livres : tous pareils » uniformise ;
   - **images pieuses** : aucune image fournie par défaut. L'utilisateur choisira lui-même une bibliothèque, et chacun peut numériser ses propres images (bords détectés, perspective, contraste, exposition, compression).
+- **Le 12/10/2026** :
+  - **images posées sur leur page** : la page vaut φ fois l'image, qui garde ses proportions ; un toucher la met de côté (elle dépasse alors par la tête), un appui long l'ouvre ; un réglage les range toutes en tête ; import possible « telle quelle », sans recadrage ni retouche ;
+  - **ruban en travers de la page** (réglage, actif par défaut) : satin aux ondulations légères, qui sort de la tête près du pli et pend dans la bande du bas ; un toucher le couche dans le pli ; rouvrir le livre par sa queue le remet en travers ;
+  - **réglages** : un écran complet, ouvert depuis l'accueil ou depuis Aa ; la barre du lecteur défile de côté, avec ‹ › quand des boutons sont cachés.
 - **Avant la phase 5** : mode de messe par défaut (« assemblée » recommandé) ; versions rubricales (1960 seulement au MVP).
 - **À la porte A** : police par défaut (EB Garamond pour les livres liturgiques, Literata en option de lecture) ; seuil de double page sur téléphone.
 
@@ -241,7 +245,7 @@ Les mesures se font sur le téléphone de référence, avec un APK *release* con
 | Rubriques | Rouge et italique ; ℣ ℟ ✠ en rouge | 08 |
 | Césure du latin | Motifs `la-x-liturgic` (MIT) appliqués à l'exécution (Liang en Kotlin) ou stockés à part ; jamais dans le texte canonique | 07, 15 |
 | Rubans | Propres à chaque livre ; 7ᵉ ruban automatique au ferret doré (phase 5) ; extrémité ou initiale par couleur | 09, 08, 15 |
-| Images pieuses | Aucune fournie par défaut : bibliothèque choisie par l'utilisateur ; images personnelles numérisées dans l'app (bords, perspective, contraste, exposition, compression ; EXIF supprimés) ; elles dépassent par la tête du livre | 09, 12, décision du 11/10/2026 |
+| Images pieuses | Aucune fournie par défaut : bibliothèque choisie par l'utilisateur ; images personnelles numérisées dans l'app (bords, perspective, contraste, exposition, compression ; EXIF supprimés), ou importées telles quelles ; posées sur leur page au nombre d'or, elles dépassent par la tête du livre une fois mises de côté | 09, 12, décisions des 11 et 12/10/2026 |
 | Données de l'utilisateur | Room 3 ; sauvegarde cloud désactivée ; transfert d'appareil à appareil ; export proposé dès le premier ruban posé (ADR 008) | 09, 10, 15 |
 | Paquets | Une base SQLite par paquet (ADR 003) ; `BundledSQLiteDriver` ; ABI `arm64-v8a` (plus `armeabi-v7a` pour la distribution) ; taille de l'APK affichée en CI, sans plafond (décision du 11/10/2026) | 10, 11, 15 |
 | Requêtes de recherche | Construites à partir des jetons ; la saisie brute ne va jamais dans `MATCH` | 15 |

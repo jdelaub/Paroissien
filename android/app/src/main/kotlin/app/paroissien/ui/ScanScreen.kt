@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.aspectRatio
@@ -93,7 +94,8 @@ private enum class Step { SOURCE, CORNERS, TONE }
 /**
  * Numériser une image pieuse (rapport 09, §3.3) : photographier ou choisir une photo, ajuster les quatre coins
  * (détectés d'office), redresser la perspective, régler exposition et contraste (niveaux automatiques), puis
- * compresser en WebP. Les métadonnées EXIF disparaissent au réencodage. [key] porte l'image dont on numérise le verso.
+ * compresser en WebP. Une image déjà propre s'importe telle quelle : ni recadrage ni retouche, seulement réduite et
+ * compressée. Les métadonnées EXIF disparaissent au réencodage. [key] porte l'image dont on numérise le verso.
  */
 @Composable
 fun ScanScreen(graph: AppGraph, key: ScanKey, onDone: (String) -> Unit, onBack: () -> Unit) {
@@ -110,14 +112,25 @@ fun ScanScreen(graph: AppGraph, key: ScanKey, onDone: (String) -> Unit, onBack: 
     var title by remember { mutableStateOf(resources.getString(R.string.scan_default_title, LocalDate.now().longFrench())) }
     var message by remember { mutableStateOf<String?>(null) }
     var busy by remember { mutableStateOf(false) }
+    var asIs by remember { mutableStateOf(false) }
 
     fun load(uri: Uri) {
         busy = true
         scope.launch {
             val loaded = withContext(Dispatchers.Default) { runCatching { decode(context, uri) }.getOrNull() }
-            busy = false
-            if (loaded == null) { message = resources.getString(R.string.scan_unreadable); return@launch }
+            if (loaded == null) { busy = false; message = resources.getString(R.string.scan_unreadable); return@launch }
             source = loaded
+            if (asIs) {
+                val out = withContext(Dispatchers.Default) { loaded.scaleToFit(PiousImages.MAX_SIDE) }
+                straight = out
+                auto = withContext(Dispatchers.Default) { Tone.auto(toRgb(out.scaleToFit(DETECT_SIDE))) }
+                tone = Tone()
+                message = null
+                busy = false
+                step = Step.TONE
+                return@launch
+            }
+            busy = false
             val found = withContext(Dispatchers.Default) { CardDetector.detect(toRgb(loaded.scaleToFit(DETECT_SIDE))) }
             detected = found
             quad = found ?: Quad.FULL
@@ -133,21 +146,27 @@ fun ScanScreen(graph: AppGraph, key: ScanKey, onDone: (String) -> Unit, onBack: 
     Surface(Modifier.fillMaxSize(), color = LocalPaperColors.current.background) {
         Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
             Row(Modifier.fillMaxWidth().padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = { if (step == Step.SOURCE) onBack() else step = if (step == Step.TONE) Step.CORNERS else Step.SOURCE }) { Text("‹") }
+                TextButton(onClick = { if (step == Step.SOURCE) onBack() else step = if (step == Step.TONE && !asIs) Step.CORNERS else Step.SOURCE }) { Text("‹") }
                 Text(stringResource(if (key.backOf != null) R.string.scan_title_back else R.string.scan_title), style = MaterialTheme.typography.headlineSmall)
             }
             when (step) {
                 Step.SOURCE -> Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                     Text(stringResource(R.string.scan_hint), style = MaterialTheme.typography.bodyMedium)
                     Button(onClick = {
+                        asIs = false
                         shot.parentFile?.mkdirs()
                         val uri = FileProvider.getUriForFile(context, "${context.packageName}.fichiers", shot)
                         try { camera.launch(uri) } catch (_: ActivityNotFoundException) { message = resources.getString(R.string.scan_no_camera) }
                     }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.scan_camera)) }
                     OutlinedButton(
-                        onClick = { gallery.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)) },
+                        onClick = { asIs = false; gallery.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)) },
                         modifier = Modifier.fillMaxWidth(),
                     ) { Text(stringResource(R.string.scan_gallery)) }
+                    OutlinedButton(
+                        onClick = { asIs = true; gallery.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)) },
+                        modifier = Modifier.fillMaxWidth(),
+                    ) { Text(stringResource(R.string.scan_as_is)) }
+                    Text(stringResource(R.string.scan_as_is_hint), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary)
                     if (busy) Text(stringResource(R.string.scan_working), style = MaterialTheme.typography.bodySmall)
                     message?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error) }
                 }
@@ -183,7 +202,8 @@ fun ScanScreen(graph: AppGraph, key: ScanKey, onDone: (String) -> Unit, onBack: 
                         Slider(value = tone.exposure, onValueChange = { tone = tone.copy(exposure = it) }, valueRange = -1f..1f)
                         Text(stringResource(R.string.scan_contrast), style = MaterialTheme.typography.labelLarge)
                         Slider(value = tone.contrast, onValueChange = { tone = tone.copy(contrast = it) }, valueRange = 0.6f..1.6f)
-                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            OutlinedButton(onClick = { tone = Tone() }) { Text(stringResource(R.string.scan_original)) }
                             OutlinedButton(onClick = { tone = auto }) { Text(stringResource(R.string.scan_auto)) }
                             OutlinedButton(onClick = { straight = bitmap.rotated() }) { Text(stringResource(R.string.scan_rotate)) }
                         }
@@ -193,7 +213,7 @@ fun ScanScreen(graph: AppGraph, key: ScanKey, onDone: (String) -> Unit, onBack: 
                         Button(onClick = {
                             busy = true
                             scope.launch {
-                                val final = withContext(Dispatchers.Default) { applyTone(bitmap, tone) }
+                                val final = if (tone == Tone()) bitmap else withContext(Dispatchers.Default) { applyTone(bitmap, tone) }
                                 val id = key.backOf?.also { graph.images.setBack(it, final) } ?: graph.images.add(final, title.trim().ifEmpty { resources.getString(R.string.scan_untitled) })
                                 busy = false
                                 onDone(id)

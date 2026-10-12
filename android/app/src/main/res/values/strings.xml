@@ -34,8 +34,10 @@
     <string name="reader_settings">Aa</string>
     <string name="reader_images">Images</string>
     <string name="reader_pray">Prier</string>
-    <string name="images_hint">Toucher une image la glisse à cette page ; un appui long la remet dans la boîte.</string>
-    <string name="ribbons_hint">Toucher un ruban le place à cette page ; un appui long le retire.</string>
+    <string name="images_hint">Toucher une image la pose à cette page ; un appui long la remet dans la boîte. Sur la page, un toucher la met de côté, un appui long l\'ouvre.</string>
+    <string name="ribbons_hint">Toucher un ruban le place à cette page ; un appui long le retire. Sur la page, un toucher le couche dans le pli.</string>
+    <string name="reader_more_before">Boutons précédents</string>
+    <string name="reader_more_after">Boutons suivants</string>
     <string name="ribbon_free">libre</string>
 
     <string name="setting_theme">Thème : %1$s</string>
@@ -63,6 +65,32 @@
     <string name="setting_identity_off">Livres : tous pareils</string>
     <string name="setting_measures_on">Mesures : oui</string>
     <string name="setting_measures_off">Mesures : non</string>
+    <string name="setting_ribbons_across_on">Rubans : en travers de la page</string>
+    <string name="setting_ribbons_across_off">Rubans : dans le pli</string>
+    <string name="setting_cards_on_page_on">Images : sur la page</string>
+    <string name="setting_cards_on_page_off">Images : en tête du livre</string>
+    <string name="setting_all">Tous les réglages…</string>
+
+    <!-- Réglages -->
+    <string name="settings_title">Réglages</string>
+    <string name="settings_reading">Lecture</string>
+    <string name="settings_books">Livres</string>
+    <string name="settings_prayer">Temps de prière</string>
+    <string name="settings_trials">Essais</string>
+    <string name="settings_theme">Thème</string>
+    <string name="settings_font">Police</string>
+    <string name="settings_size">Taille du texte</string>
+    <string name="settings_spread">Pages côte à côte</string>
+    <string name="settings_turn">Tourner la page</string>
+    <string name="settings_language">Langue des textes</string>
+    <string name="settings_rite">Calendrier</string>
+    <string name="language_fr">Français</string>
+    <string name="language_la">Latin</string>
+    <string name="settings_edges">Protéger les coins du bas du geste « retour »</string>
+    <string name="settings_identity">Chaque livre a sa reliure, son papier et ses rubans</string>
+    <string name="settings_ribbons_across">Ruban en travers de la page (un toucher le couche dans le pli)</string>
+    <string name="settings_cards_on_page">Images pieuses posées sur leur page (un toucher les met de côté)</string>
+    <string name="settings_measures">Mesures du lecteur (pagination, images par seconde)</string>
 
     <string name="search_hint">Un mot, une phrase…</string>
     <string name="search_none">Aucun passage trouvé.</string>
@@ -201,6 +229,9 @@
     <string name="scan_hint">Posez la carte à plat sur un fond uni et contrasté, bien éclairée, sans reflet. Les bords sont détectés ensuite ; vous pourrez les ajuster.</string>
     <string name="scan_camera">Photographier</string>
     <string name="scan_gallery">Choisir une photo</string>
+    <string name="scan_as_is">Importer une image telle quelle</string>
+    <string name="scan_as_is_hint">Sans recadrage ni retouche : l\'image est seulement réduite et compressée. Vous pourrez encore régler exposition et contraste.</string>
+    <string name="scan_original">Originale</string>
     <string name="scan_working">Analyse de la photo…</string>
     <string name="scan_unreadable">Cette image n\'a pas pu être lue.</string>
     <string name="scan_no_camera">Aucun appareil photo disponible.</string>

@@ -1,6 +1,38 @@
 package app.paroissien.core.reading.book
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.gestures.awaitEachGesture
+import androidx.compose.foundation.gestures.awaitFirstDown
+import androidx.compose.runtime.State
+import androidx.compose.runtime.key
+import androidx.compose.ui.geometry.Rect
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.hapticfeedback.HapticFeedbackType
+import androidx.compose.ui.input.pointer.AwaitPointerEventScope
+import androidx.compose.ui.input.pointer.PointerInputChange
+import androidx.compose.ui.input.pointer.PointerInputScope
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.platform.LocalHapticFeedback
+import androidx.compose.ui.semantics.onClick
+import androidx.compose.ui.semantics.customActions
+import androidx.compose.ui.semantics.CustomAccessibilityAction
+import androidx.compose.ui.unit.Density
+import androidx.compose.ui.unit.toSize
+import app.paroissien.core.designsystem.drawRibbonAlong
+import kotlin.math.PI
+import kotlin.math.min
+import kotlin.math.sin
 import app.paroissien.core.designsystem.drawRibbon
 import app.paroissien.core.designsystem.RibbonStyle
 import androidx.compose.ui.semantics.contentDescription
@@ -131,6 +163,8 @@ fun BookReader(
     onRibbonTap: (Int) -> Unit = {},
     cards: List<CardMark> = emptyList(),
     onCardTap: (String) -> Unit = {},
+    ribbonsAcross: Boolean = false,
+    cardsOnPage: Boolean = false,
     onTurnPastEnd: (() -> Unit)? = null,
     onTurnPastStart: (() -> Unit)? = null,
     initialAtEnd: Boolean = false,
@@ -196,6 +230,12 @@ fun BookReader(
                 if (target !in visiblePages(state.currentPage, double, count)) state.scrollToPage(target)
             }
 
+            // Rubans écartés dans le pli, images mises de côté, le temps de la lecture : un ruban qu'on rouvre par sa
+            // queue, ou qu'on pose ailleurs, revient en travers de la page ; une image déplacée revient sur la sienne.
+            var asideRibbons by remember { mutableStateOf(mapOf<Int, Anchor?>()) }
+            var asideCards by remember { mutableStateOf(mapOf<String, Anchor?>()) }
+            fun CardMark.aside() = asideCards.containsKey(id) && asideCards[id] == anchor
+
             MekuriPager(
                 state = state,
                 modifier = Modifier.fillMaxSize(),
@@ -212,10 +252,25 @@ fun BookReader(
                 } else {
                     val i = index - offset
                     val side = sideOf(index, double)
-                    val here = remember(ribbons, paged, i) { ribbons.filter { it.anchor != null && paged.pageOf(it.anchor) == i }.map { it.slot } }
+                    val here = remember(ribbons, paged, i, asideRibbons) {
+                        ribbons.filter { it.anchor != null && paged.pageOf(it.anchor) == i }
+                            .map { PageRibbon(it.slot, aside = asideRibbons.containsKey(it.slot) && asideRibbons[it.slot] == it.anchor) }
+                    }
+                    val laid = if (cardsOnPage) cards.filter { it.anchor != null && paged.pageOf(it.anchor) == i } else emptyList()
                     // Le verso d'une page de droite est la suivante ; celui d'une page de gauche, la précédente.
                     val verso = if (look.showThrough) paged.pages.getOrNull(if (side == PageSide.LEFT) i - 1 else i + 1) else null
-                    PageView(paged.pages[i], i, side, paged.pages.size, typography, margins, contentWidth, contentHeight, here, look, verso)
+                    PageView(
+                        paged.pages[i], i, side, paged.pages.size, typography, margins, contentWidth, contentHeight, look, verso,
+                        ribbons = here,
+                        across = ribbonsAcross,
+                        cards = laid,
+                        cardsAside = laid.filter { it.aside() }.map { it.id }.toSet(),
+                        objects = PageObjects(
+                            ribbonAside = { slot -> ribbons.firstOrNull { it.slot == slot }?.let { asideRibbons = asideRibbons + (slot to it.anchor) } },
+                            cardAside = { id -> cards.firstOrNull { it.id == id }?.let { asideCards = asideCards + (id to it.anchor) } },
+                            cardOpen = onCardTap,
+                        ),
+                    )
                 }
             }
 
@@ -228,14 +283,22 @@ fun BookReader(
             }
             // Elles pendent dans la bande réservée, juste sous le folio.
             val tailBottom = margins.bottom - RibbonBand + (RibbonBand - TailHeight) / 2
-            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
-            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, onRibbonTap, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
+            // Ouvrir le livre par la queue d'un ruban : il est de nouveau en travers de la page.
+            val openAtRibbon: (Int) -> Unit = { slot -> asideRibbons = asideRibbons - slot; onRibbonTap(slot) }
+            RibbonTails(tails.filter { it.second < 0 }.map { it.first }, typography.paper.isDark, openAtRibbon, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second > 0 }.map { it.first }, typography.paper.isDark, openAtRibbon, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
 
-            // Images pieuses : celles de la page ouverte au milieu de la tête, les autres à gauche ou à droite.
+            // Images pieuses : celles de la page ouverte au milieu de la tête (posées sur la page, seulement celles qu'on
+            // a mises de côté ; un toucher les y remet), les autres à gauche ou à droite.
             val placed = cards.map { c -> c to (c.anchor?.let { a -> sideOfPage(paged.pageOf(a)) } ?: c.elsewhere) }
-            CardTops(placed.filter { it.second == 0 }.map { it.first }, paper, wide = true, onCardTap, Modifier.align(Alignment.TopCenter))
-            CardTops(placed.filter { it.second < 0 }.map { it.first }, paper, wide = false, onCardTap, Modifier.align(Alignment.TopStart).padding(start = margins.horizontal))
-            CardTops(placed.filter { it.second > 0 }.map { it.first }, paper, wide = false, onCardTap, Modifier.align(Alignment.TopEnd).padding(end = margins.horizontal))
+            val current = placed.filter { it.second == 0 }.map { it.first }
+            if (cardsOnPage) {
+                CardTops(current.filter { it.aside() }, paper, wide = true, { id -> asideCards = asideCards - id }, onCardTap, Modifier.align(Alignment.TopCenter))
+            } else {
+                CardTops(current, paper, wide = true, onCardTap, onCardTap, Modifier.align(Alignment.TopCenter))
+            }
+            CardTops(placed.filter { it.second < 0 }.map { it.first }, paper, wide = false, onCardTap, onCardTap, Modifier.align(Alignment.TopStart).padding(start = margins.horizontal))
+            CardTops(placed.filter { it.second > 0 }.map { it.first }, paper, wide = false, onCardTap, onCardTap, Modifier.align(Alignment.TopEnd).padding(end = margins.horizontal))
 
             // Variante de l'ADR 006 : les coins bas protégés du geste « retour » (200 dp au plus par bord).
             if (protectEdges) {
@@ -264,6 +327,12 @@ private fun visiblePages(page: Int, double: Boolean, count: Int): Set<Int> {
     return setOfNotNull(pages.leading, pages.trailing)
 }
 
+/** Un ruban qui marque cette page ; [aside] : écarté dans le pli. */
+private data class PageRibbon(val slot: Int, val aside: Boolean)
+
+/** Ce qu'on fait des objets posés sur la page : écarter un ruban dans le pli, mettre une image de côté, l'ouvrir. */
+private class PageObjects(val ribbonAside: (Int) -> Unit, val cardAside: (String) -> Unit, val cardOpen: (String) -> Unit)
+
 @Composable
 private fun PageView(
     page: LaidOutPage,
@@ -274,11 +343,41 @@ private fun PageView(
     margins: PageMargins,
     contentWidth: Dp,
     contentHeight: Dp,
-    ribbonSlots: List<Int>,
     look: BookLook,
     verso: LaidOutPage?,
+    ribbons: List<PageRibbon>,
+    across: Boolean,
+    cards: List<CardMark>,
+    cardsAside: Set<String>,
+    objects: PageObjects,
 ) {
-    Box(Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper, look).lyingRibbons(ribbonSlots, side, t.paper.isDark, margins.horizontal)) {
+    val density = LocalDensity.current
+    val haptic = LocalHapticFeedback.current
+    val gutterAtRight = side == PageSide.LEFT
+    // 0 : en travers de la page ; 1 : couché dans le petit fond. Le ruban qu'on touche y glisse.
+    val moves = ribbons.map { r -> key(r.slot) { animateFloatAsState(if (!across || r.aside) 1f else 0f, tween(640, easing = FastOutSlowInEasing), label = "ruban") } }
+    var pageSize by remember { mutableStateOf(Size.Zero) }
+    val margin = margins.horizontal
+    val tap by rememberUpdatedState { at: Offset ->
+        val ribbon = ribbons.indices.reversed().firstOrNull { k ->
+            across && !ribbons[k].aside && with(density) { near(ribbonSpine(k, 0f, gutterAtRight, pageSize, margin), at, (AcrossWidth / 2 + 14.dp).toPx()) }
+        }
+        val card = if (ribbon != null) null else cards.indices.reversed().firstOrNull { k -> cards[k].id !in cardsAside && with(density) { cardRect(cards[k].ratio(), k, pageSize) }.contains(at) }
+        ribbon?.let { objects.ribbonAside(ribbons[it].slot) }
+        card?.let { objects.cardAside(cards[it].id) }
+        ribbon != null || card != null
+    }
+    val longPress by rememberUpdatedState { at: Offset ->
+        val card = cards.indices.reversed().firstOrNull { k -> cards[k].id !in cardsAside && with(density) { cardRect(cards[k].ratio(), k, pageSize) }.contains(at) }
+        card?.let { haptic.performHapticFeedback(HapticFeedbackType.LongPress); objects.cardOpen(cards[it].id) }
+        card != null
+    }
+    Box(
+        Modifier.fillMaxSize().paperBackground().bookEdges(side, number, pageCount, t.paper, look)
+            .pageRibbons(ribbons, moves, gutterAtRight, t.paper.isDark, margin)
+            .onSizeChanged { pageSize = it.toSize() }
+            .pointerInput(Unit) { objectTouches({ tap(it) }, { longPress(it) }) },
+    ) {
         Column(Modifier.fillMaxSize().padding(start = margins.horizontal, end = margins.horizontal, top = margins.top, bottom = margins.bottom)) {
             BasicText(
                 if (number > 0) page.runningHead else "",
@@ -294,7 +393,155 @@ private fun PageView(
                 modifier = Modifier.fillMaxWidth().height(Footer).padding(top = 8.dp),
             )
         }
+        if (pageSize != Size.Zero) {
+            cards.forEachIndexed { k, card ->
+                key(card.id) { CardOnPage(card, with(density) { cardRect(card.ratio(), k, pageSize) }, visible = card.id !in cardsAside, objects) }
+            }
+            // TalkBack : chaque ruban en travers de la page se dit, et s'écarte d'un double toucher.
+            ribbons.forEachIndexed { k, r ->
+                if (!across || r.aside) return@forEachIndexed
+                val label = RibbonStyle.of(r.slot).label
+                val middle = with(density) { ribbonSpine(k, 0f, gutterAtRight, pageSize, margin) }.let { it[it.size / 2] }
+                Box(
+                    Modifier
+                        .offset { IntOffset((middle.x - 24.dp.toPx()).roundToInt(), (middle.y - 24.dp.toPx()).roundToInt()) }
+                        .size(48.dp)
+                        .semantics {
+                            contentDescription = "Ruban $label, en travers de la page"
+                            onClick("l'écarter dans le pli") { objects.ribbonAside(r.slot); true }
+                        },
+                )
+            }
+        }
     }
+}
+
+/** Le rapport largeur sur hauteur de l'image, d'après celle qu'on a sous la main (une carte, sinon). */
+private fun CardMark.ratio(): Float = (picture ?: image)?.let { it.width.toFloat() / it.height.coerceAtLeast(1) } ?: (2f / 3.5f)
+
+private const val PHI = 1.618034f
+
+/**
+ * Où l'image est posée : la page vaut φ fois l'image (nombre d'or), qui garde ses proportions et tient dans ce cadre ;
+ * centrée, et placée un peu au-dessus du milieu, les blancs du haut et du bas dans le rapport 1 : φ, comme le bloc de
+ * texte d'une belle page. Les suivantes, si l'on en a glissé plusieurs, sont un peu décalées, en pile.
+ */
+private fun Density.cardRect(ratio: Float, index: Int, page: Size): Rect {
+    val boxW = page.width / PHI
+    val boxH = page.height / PHI
+    val (w, h) = if (ratio > boxW / boxH) boxW to boxW / ratio else boxH * ratio to boxH
+    val shift = (7 * index).dp.toPx()
+    val left = (page.width - w) / 2 + shift
+    val top = (page.height - h) / (1 + PHI) + shift
+    return Rect(left, top, left + w, top + h)
+}
+
+/** Une image pieuse posée sur la page, un rien de travers, avec son ombre ; mise de côté, elle glisse vers la tête. */
+@Composable
+private fun CardOnPage(card: CardMark, rect: Rect, visible: Boolean, objects: PageObjects) {
+    val density = LocalDensity.current
+    val tilt = (card.id.hashCode().mod(5) - 2) * 0.6f
+    AnimatedVisibility(
+        visible = visible,
+        enter = fadeIn(tween(380)) + slideInVertically(tween(420)) { -it / 2 },
+        exit = fadeOut(tween(380)) + slideOutVertically(tween(420)) { -it / 2 },
+        modifier = Modifier.offset { IntOffset(rect.left.roundToInt(), rect.top.roundToInt()) },
+    ) {
+        Box(
+            Modifier
+                .size(with(density) { rect.width.toDp() }, with(density) { rect.height.toDp() })
+                .graphicsLayer {
+                    rotationZ = tilt
+                    shadowElevation = 5.dp.toPx()
+                }
+                .background(Color(0xFFF7F0DD))
+                .semantics {
+                    contentDescription = "Image pieuse : ${card.label}"
+                    onClick("la mettre de côté") { objects.cardAside(card.id); true }
+                    customActions = listOf(CustomAccessibilityAction("Ouvrir l'image") { objects.cardOpen(card.id); true })
+                },
+        ) {
+            (card.picture ?: card.image)?.let { Image(it, contentDescription = null, contentScale = ContentScale.FillBounds, modifier = Modifier.fillMaxSize()) }
+        }
+    }
+}
+
+/**
+ * Toucher un ruban ou une image posés sur la page sans rien ôter au feuilletage : le doigt qui glisse tourne la page
+ * comme ailleurs. Seuls un toucher bref ou un appui long qui tombent sur un objet sont consommés ; ailleurs, le livre
+ * reçoit le geste (bords : tourner, milieu : la barre).
+ */
+private suspend fun PointerInputScope.objectTouches(onTap: (Offset) -> Boolean, onLongPress: (Offset) -> Boolean) {
+    awaitEachGesture {
+        val down = awaitFirstDown(requireUnconsumed = false)
+        var moved = false
+        val up = withTimeoutOrNull(viewConfiguration.longPressTimeoutMillis) {
+            awaitRelease(down, viewConfiguration.touchSlop).also { if (it == null) moved = true }
+        }
+        when {
+            up != null -> if (onTap(down.position)) up.consume()
+            !moved && onLongPress(down.position) -> {
+                // Le reste du geste appartient à l'image : ni page tournée, ni barre.
+                do {
+                    val event = awaitPointerEvent()
+                    event.changes.forEach { it.consume() }
+                } while (event.changes.any { it.pressed })
+            }
+        }
+    }
+}
+
+/** Le relâchement du doigt, ou rien s'il a glissé ou si un autre a pris le geste. */
+private suspend fun AwaitPointerEventScope.awaitRelease(down: PointerInputChange, slop: Float): PointerInputChange? {
+    while (true) {
+        val change = awaitPointerEvent().changes.firstOrNull { it.id == down.id } ?: return null
+        if (change.isConsumed) return null
+        if (!change.pressed) return change
+        if ((change.position - down.position).getDistance() > slop) return null
+    }
+}
+
+/** Largeur d'un ruban en travers de la page, et couché dans le petit fond. */
+private val AcrossWidth = 16.dp
+private val LyingWidth = 11.dp
+private const val SPINE_POINTS = 96
+
+/**
+ * La ligne médiane du ruban n° [index] de la page, de la tête vers l'extrémité. À [t] = 0, en travers de la page : il
+ * sort de la tête près du pli, descend en biais en serpentant à peine, et son extrémité pend dans la bande du bas. À
+ * [t] = 1, couché dans le petit fond, sans mordre sur le texte ; entre les deux pendant qu'il y glisse.
+ */
+private fun Density.ribbonSpine(index: Int, t: Float, gutterAtRight: Boolean, size: Size, margin: Dp): List<Offset> {
+    val w = size.width
+    val h = size.height
+    val x0 = (16 + 18 * index).dp.toPx()
+    val x3 = w * (0.5f + 0.12f * index).coerceAtMost(0.8f)
+    val p0 = Offset(x0, -4.dp.toPx())
+    val p1 = Offset(x0 + w * 0.03f, h * 0.32f)
+    val p2 = Offset(x3 - w * 0.14f, h * 0.68f)
+    val p3 = Offset(x3, h - 8.dp.toPx())
+    val room = ((margin - 6.dp + 2.dp) / (LyingWidth + 2.dp)).toInt().coerceAtLeast(1)
+    val lyingX = (4.dp + (LyingWidth + 2.dp) * min(index, room - 1)).toPx() + LyingWidth.toPx() / 2
+    val top = -4.dp.toPx()
+    val bottom = h + 2.dp.toPx()
+    val sway = 1.3.dp.toPx()
+    val waves = h / 420.dp.toPx()
+    return List(SPINE_POINTS + 1) { k ->
+        val u = k / SPINE_POINTS.toFloat()
+        val v = 1 - u
+        val curve = p0 * (v * v * v) + p1 * (3 * v * v * u) + p2 * (3 * v * u * u) + p3 * (u * u * u)
+        val lying = Offset(lyingX, top + (bottom - top) * u)
+        val across = curve + Offset(sway * sin(u * waves * 2 * PI.toFloat() + index * 1.3f), 0f)
+        val p = across + (lying - across) * t
+        if (gutterAtRight) Offset(w - p.x, p.y) else p
+    }
+}
+
+/** Le point est-il à moins de [reach] de la polyligne ? */
+private fun near(line: List<Offset>, at: Offset, reach: Float): Boolean = line.zipWithNext().any { (a, b) ->
+    val ab = b - a
+    val k = (((at - a).x * ab.x + (at - a).y * ab.y) / (ab.x * ab.x + ab.y * ab.y).coerceAtLeast(1e-3f)).coerceIn(0f, 1f)
+    (a + ab * k - at).getDistance() <= reach
 }
 
 @Composable
@@ -386,21 +633,23 @@ private fun Modifier.bookEdges(side: PageSide, number: Int, pageCount: Int, pape
 }
 
 /**
- * Les rubans qui marquent cette page sont couchés dans le petit fond, côté reliure, du haut au bas de la page,
- * sans jamais mordre sur le texte : au-delà de ce que la marge contient, on ne dessine pas.
+ * Les rubans qui marquent cette page, par-dessus le texte : en travers de la page, ou couchés dans le petit fond, côté
+ * reliure, sans mordre sur le texte (rapport 09). L'ombre du pli, dessinée ensuite, les recouvre comme le papier.
  */
-private fun Modifier.lyingRibbons(slots: List<Int>, side: PageSide, dark: Boolean, margin: Dp): Modifier = if (slots.isEmpty()) this else drawWithContent {
-    drawContent()
-    val width = 10.dp.toPx()
-    val gap = 2.dp.toPx()
-    val start = 4.dp.toPx()
-    val room = ((margin.toPx() - start - 2.dp.toPx() + gap) / (width + gap)).toInt().coerceAtLeast(1)
-    slots.take(room).forEachIndexed { i, slot ->
-        val inset = start + i * (width + gap)
-        val x = if (side == PageSide.LEFT) size.width - inset - width else inset
-        drawRibbon(RibbonStyle.of(slot), dark, Offset(x, 0f), Size(width, size.height + 2.dp.toPx()))
+private fun Modifier.pageRibbons(ribbons: List<PageRibbon>, moves: List<State<Float>>, gutterAtRight: Boolean, dark: Boolean, margin: Dp): Modifier =
+    if (ribbons.isEmpty()) this else drawWithContent {
+        drawContent()
+        ribbons.forEachIndexed { k, r ->
+            val t = moves[k].value
+            drawRibbonAlong(
+                RibbonStyle.of(r.slot), dark,
+                spine = ribbonSpine(k, t, gutterAtRight, size, margin),
+                width = (AcrossWidth + (LyingWidth - AcrossWidth) * t).toPx(),
+                ripple = 1f - 0.55f * t,
+                phase = 2.4f * t + k,
+            )
+        }
     }
-}
 
 /** Queues de rubans qui pendent sous la page ; un toucher ouvre la page marquée (cible de 48 dp de large au moins). */
 @Composable

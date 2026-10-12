@@ -26,6 +26,10 @@ data class ReaderSettings(
     val language: String = "fr",
     /** Chaque livre a sa reliure, son papier, sa tranche et ses signets ; sinon, tous pareils. */
     val bookIdentity: Boolean = true,
+    /** Le ruban est couché en travers de la page, comme dans un vrai livre ; sinon, dans le petit fond. */
+    val ribbonsAcross: Boolean = true,
+    /** Les images pieuses sont posées sur leur page ; sinon, on n'en voit que le haut, qui dépasse de la tête. */
+    val cardsOnPage: Boolean = true,
     /** Rite du calendrier : "1962" ou "1969". */
     val rite: String = "1962",
     val externalSolemnities: Boolean = true,
@@ -57,6 +61,8 @@ class ReaderSettingsStore(context: Context) {
             p[MEASURES] = next.showMeasures
             p[LANGUAGE] = next.language
             p[IDENTITY] = next.bookIdentity
+            p[RIBBONS_ACROSS] = next.ribbonsAcross
+            p[CARDS_ON_PAGE] = next.cardsOnPage
             p[RITE] = next.rite
             p[EXTERNAL] = next.externalSolemnities
             p[TRADITIONAL] = next.traditionalPenance
@@ -80,6 +86,8 @@ class ReaderSettingsStore(context: Context) {
             showMeasures = p[MEASURES] ?: d.showMeasures,
             language = p[LANGUAGE] ?: d.language,
             bookIdentity = p[IDENTITY] ?: d.bookIdentity,
+            ribbonsAcross = p[RIBBONS_ACROSS] ?: d.ribbonsAcross,
+            cardsOnPage = p[CARDS_ON_PAGE] ?: d.cardsOnPage,
             rite = p[RITE] ?: d.rite,
             externalSolemnities = p[EXTERNAL] ?: d.externalSolemnities,
             traditionalPenance = p[TRADITIONAL] ?: d.traditionalPenance,
@@ -101,6 +109,8 @@ class ReaderSettingsStore(context: Context) {
         val MEASURES = booleanPreferencesKey("mesures")
         val LANGUAGE = stringPreferencesKey("langue")
         val IDENTITY = booleanPreferencesKey("identite_des_livres")
+        val RIBBONS_ACROSS = booleanPreferencesKey("rubans_en_travers")
+        val CARDS_ON_PAGE = booleanPreferencesKey("images_sur_la_page")
         val RITE = stringPreferencesKey("rite")
         val EXTERNAL = booleanPreferencesKey("solennites_exterieures")
         val TRADITIONAL = booleanPreferencesKey("penitence_traditionnelle")

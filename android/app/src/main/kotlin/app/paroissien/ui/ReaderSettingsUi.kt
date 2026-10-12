@@ -25,9 +25,9 @@ fun ReaderSettings.bookFace() = BookFace.entries.firstOrNull { it.name == face }
 fun ReaderSettings.spreadMode() = SpreadMode.entries.firstOrNull { it.name == spread } ?: SpreadMode.AUTO
 fun ReaderSettings.turnStyle() = TurnStyle.entries.firstOrNull { it.name == turn } ?: TurnStyle.PAPIER
 
-/** Les réglages de lecture, chacun un bouton qui passe à la valeur suivante ; [change] les enregistre. */
+/** Les réglages de lecture, chacun un bouton qui passe à la valeur suivante ; [change] les enregistre, [onAll] ouvre l'écran des réglages. */
 @Composable
-fun ReaderSettingsRow(settings: ReaderSettings, change: ((ReaderSettings) -> ReaderSettings) -> Unit) {
+fun ReaderSettingsRow(settings: ReaderSettings, onAll: (() -> Unit)? = null, change: ((ReaderSettings) -> ReaderSettings) -> Unit) {
     FlowRow(Modifier.padding(12.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         Setting(stringResource(R.string.setting_theme, stringResource(themeLabel(settings.paperTheme())))) { change { it.copy(theme = settings.paperTheme().next().name) } }
         Setting(stringResource(R.string.setting_font, stringResource(if (settings.bookFace() == BookFace.GARAMOND) R.string.font_garamond else R.string.font_literata))) {
@@ -40,7 +40,10 @@ fun ReaderSettingsRow(settings: ReaderSettings, change: ((ReaderSettings) -> Rea
         Setting(stringResource(R.string.setting_language, settings.language)) { change { it.copy(language = if (it.language == "fr") "la" else "fr") } }
         Setting(stringResource(if (settings.protectEdges) R.string.setting_edges_on else R.string.setting_edges_off)) { change { it.copy(protectEdges = !it.protectEdges) } }
         Setting(stringResource(if (settings.bookIdentity) R.string.setting_identity_on else R.string.setting_identity_off)) { change { it.copy(bookIdentity = !it.bookIdentity) } }
+        Setting(stringResource(if (settings.ribbonsAcross) R.string.setting_ribbons_across_on else R.string.setting_ribbons_across_off)) { change { it.copy(ribbonsAcross = !it.ribbonsAcross) } }
+        Setting(stringResource(if (settings.cardsOnPage) R.string.setting_cards_on_page_on else R.string.setting_cards_on_page_off)) { change { it.copy(cardsOnPage = !it.cardsOnPage) } }
         Setting(stringResource(if (settings.showMeasures) R.string.setting_measures_on else R.string.setting_measures_off)) { change { it.copy(showMeasures = !it.showMeasures) } }
+        onAll?.let { Setting(stringResource(R.string.setting_all), it) }
     }
 }
 
@@ -49,20 +52,20 @@ private fun Setting(label: String, onClick: () -> Unit) {
     OutlinedButton(onClick = onClick) { Text(label) }
 }
 
-private fun themeLabel(t: PaperTheme) = when (t) {
+internal fun themeLabel(t: PaperTheme) = when (t) {
     PaperTheme.CLAIR -> R.string.theme_clair
     PaperTheme.SEPIA -> R.string.theme_sepia
     PaperTheme.SOMBRE -> R.string.theme_sombre
     PaperTheme.NUIT -> R.string.theme_nuit
 }
 
-private fun spreadLabel(s: SpreadMode) = when (s) {
+internal fun spreadLabel(s: SpreadMode) = when (s) {
     SpreadMode.AUTO -> R.string.spread_auto
     SpreadMode.SINGLE -> R.string.spread_single
     SpreadMode.DOUBLE -> R.string.spread_double
 }
 
-private fun turnLabel(t: TurnStyle) = when (t) {
+internal fun turnLabel(t: TurnStyle) = when (t) {
     TurnStyle.PAPIER -> R.string.turn_paper
     TurnStyle.GLISSEMENT -> R.string.turn_slide
     TurnStyle.AUCUN -> R.string.turn_none

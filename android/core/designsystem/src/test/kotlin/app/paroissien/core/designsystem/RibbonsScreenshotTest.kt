@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.ui.Modifier
@@ -31,6 +32,33 @@ class RibbonsScreenshotTest {
 
     @Test fun clair() = capture(PaperTheme.CLAIR)
     @Test fun sombre() = capture(PaperTheme.SOMBRE)
+
+    /** Couchés en travers d'une page de texte : satin qui ondule à peine, ombre douce, extrémité en biais. */
+    @Test fun enTravers() {
+        compose.setContent {
+            ParoissienTheme(PaperTheme.CLAIR) {
+                val paper = LocalPaperColors.current
+                Canvas(Modifier.fillMaxSize().background(paper.background)) {
+                    var y = 40f
+                    while (y < size.height - 60f) {
+                        drawLine(paper.inkTertiary.copy(alpha = 0.5f), Offset(60f, y), Offset(size.width - 60f, y), strokeWidth = 9f)
+                        y += 46f
+                    }
+                    val w = size.width
+                    val h = size.height
+                    fun curve(x0: Float, x3: Float) = List(49) { k ->
+                        val u = k / 48f
+                        val v = 1 - u
+                        Offset(x0 * (v * v * v) + (x0 + w * 0.03f) * (3 * v * v * u) + (x3 - w * 0.14f) * (3 * v * u * u) + x3 * (u * u * u), -10f * v * v * v + h * 0.32f * 3 * v * v * u + h * 0.68f * 3 * v * u * u + (h - 20f) * u * u * u)
+                    }
+                    drawRibbonAlong(RibbonStyle.slots[0], false, curve(50f, w * 0.5f), 16.dp.toPx())
+                    drawRibbonAlong(RibbonStyle.slots[3], false, curve(100f, w * 0.62f), 16.dp.toPx(), phase = 1f)
+                    drawRibbonAlong(RibbonStyle.slots[2], false, List(2) { Offset(w - 30f, -10f + (h + 20f) * it) }, 11.dp.toPx(), ripple = 0.45f, phase = 2.4f)
+                }
+            }
+        }
+        compose.onRoot().captureRoboImage()
+    }
 
     private fun capture(theme: PaperTheme) {
         compose.setContent {

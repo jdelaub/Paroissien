@@ -57,7 +57,7 @@ import kotlinx.coroutines.launch
 
 private enum class Phase { PREPARE, RUNNING, ENDED }
 
-private val DURATIONS = listOf(5, 10, 15, 20, 30, 45)
+internal val DURATIONS = listOf(5, 10, 15, 20, 30, 45)
 
 /** Encre ambre sur noir : la séance ne doit ni éclairer la chapelle ni attirer l'œil (rapport 08, §2.13 F). */
 private val AMBER = Color(0xFFD9A441)

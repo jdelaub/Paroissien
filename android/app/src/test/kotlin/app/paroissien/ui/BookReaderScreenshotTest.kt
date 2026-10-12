@@ -15,6 +15,10 @@ import app.paroissien.core.reading.book.Anchor
 import app.paroissien.core.reading.book.BookReader
 import app.paroissien.core.reading.book.BookTypography
 import app.paroissien.core.reading.book.RibbonMark
+import app.paroissien.core.reading.book.CardMark
+import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.graphics.asImageBitmap
+import androidx.core.graphics.createBitmap
 import app.paroissien.library.BookIdentities
 import app.paroissien.core.reading.book.BookLook
 import app.paroissien.core.designsystem.PaperWeight
@@ -65,6 +69,41 @@ class BookReaderScreenshotTest {
         ribbons = listOf(RibbonMark(0, Anchor("lat.1", 0)), RibbonMark(1, null, elsewhere = -1), RibbonMark(2, null, elsewhere = 1), RibbonMark(3, null, elsewhere = 1)),
     )
 
+    /** Le ruban couché en travers de la page, comme dans un vrai livre ; les autres pendent dans la bande. */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun rubanEnTravers() = capture(
+        Anchor("lat.1", 0), BookFace.GARAMOND, PaperTheme.CLAIR,
+        ribbons = listOf(RibbonMark(2, Anchor("lat.1", 0)), RibbonMark(0, null, elsewhere = -1), RibbonMark(3, null, elsewhere = 1)),
+        across = true,
+    )
+
+    /** Une image pieuse posée sur sa page : la page vaut φ fois l'image. */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun imageSurLaPage() = capture(
+        Anchor("lat.1", 0), BookFace.GARAMOND, PaperTheme.CLAIR,
+        cards = listOf(CardMark("essai", Anchor("lat.1", 0), image = null, label = "Essai", picture = syntheticCard())),
+    )
+
+    /** Une carte dessinée pour l'essai : fond dégradé, filet doré, croix. Aucune image réelle dans le dépôt. */
+    private fun syntheticCard(): ImageBitmap {
+        val bitmap = createBitmap(560, 960)
+        val canvas = android.graphics.Canvas(bitmap)
+        val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG)
+        paint.shader = android.graphics.LinearGradient(0f, 0f, 0f, 960f, 0xFF2D4A7A.toInt(), 0xFFC9B27C.toInt(), android.graphics.Shader.TileMode.CLAMP)
+        canvas.drawRect(0f, 0f, 560f, 960f, paint)
+        paint.shader = null
+        paint.style = android.graphics.Paint.Style.STROKE
+        paint.strokeWidth = 10f
+        paint.color = 0xFFD8B65A.toInt()
+        canvas.drawRect(24f, 24f, 536f, 936f, paint)
+        paint.style = android.graphics.Paint.Style.FILL
+        canvas.drawRect(262f, 220f, 298f, 700f, paint)
+        canvas.drawRect(170f, 340f, 390f, 376f, paint)
+        return bitmap.asImageBitmap()
+    }
+
     private val bible = BookIdentities.of("bible.crampon", null, uniform = false).copy(pages = 2800)
 
     /** La Bible : la couverture de maroquin, page d'avant la première. */
@@ -90,6 +129,8 @@ class BookReaderScreenshotTest {
         ribbons: List<RibbonMark> = emptyList(),
         identity: BookIdentity? = null,
         look: BookLook = BookLook(),
+        across: Boolean = false,
+        cards: List<CardMark> = emptyList(),
     ) {
         var ready by mutableStateOf(false)
         compose.setContent {
@@ -106,6 +147,9 @@ class BookReaderScreenshotTest {
                     onPaginated = { ready = true },
                     paginationContext = EmptyCoroutineContext,
                     ribbons = ribbons,
+                    ribbonsAcross = across,
+                    cards = cards,
+                    cardsOnPage = cards.isNotEmpty(),
                     look = look,
                 )
                 }

@@ -3,7 +3,8 @@ package app.paroissien.core.reading.book
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -30,13 +31,15 @@ import app.paroissien.core.designsystem.PaperColors
 
 /**
  * Une image pieuse glissée dans le livre (rapport 09, §3.2.1) : [anchor] la situe dans l'unité ouverte, sinon
- * [elsewhere] dit si elle est avant (-1) ou après (+1). On n'en voit que le haut, qui dépasse par la tête du livre.
+ * [elsewhere] dit si elle est avant (-1) ou après (+1). Sur sa page, elle est posée sur le texte ([picture], l'image
+ * entière, si on l'a déjà chargée) ; ailleurs, on n'en voit que le haut, qui dépasse par la tête du livre.
  */
-data class CardMark(val id: String, val anchor: Anchor?, val elsewhere: Int = 0, val image: ImageBitmap?, val label: String)
+data class CardMark(val id: String, val anchor: Anchor?, val elsewhere: Int = 0, val image: ImageBitmap?, val label: String, val picture: ImageBitmap? = null)
 
 /** Le haut d'une carte : son filet doré, l'image, une inclinaison fixe de ± 2° tirée de son identifiant. */
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
-internal fun CardTop(card: CardMark, paper: PaperColors, wide: Boolean, onTap: (String) -> Unit) {
+internal fun CardTop(card: CardMark, paper: PaperColors, wide: Boolean, onTap: (String) -> Unit, onLongTap: (String) -> Unit) {
     val tilt = (card.id.hashCode().mod(5) - 2).toFloat()
     Box(
         Modifier
@@ -46,7 +49,7 @@ internal fun CardTop(card: CardMark, paper: PaperColors, wide: Boolean, onTap: (
             .border(1.dp, Color(0xFFB8912F))
             .padding(2.dp)
             .clipToBounds()
-            .clickable(onClickLabel = "Ouvrir l'image ${card.label}") { onTap(card.id) }
+            .combinedClickable(onLongClickLabel = "Ouvrir l'image ${card.label}", onLongClick = { onLongTap(card.id) }) { onTap(card.id) }
             .semantics { contentDescription = "Image pieuse : ${card.label}" },
     ) {
         card.image?.let { Image(it, contentDescription = null, contentScale = ContentScale.Crop, alignment = Alignment.TopCenter, modifier = Modifier.fillMaxSize()) }
@@ -56,10 +59,10 @@ internal fun CardTop(card: CardMark, paper: PaperColors, wide: Boolean, onTap: (
 
 /** Les cartes d'une rangée, en haut de la page, sous la zone des gestes système. */
 @Composable
-internal fun CardTops(cards: List<CardMark>, paper: PaperColors, wide: Boolean, onTap: (String) -> Unit, modifier: Modifier) {
+internal fun CardTops(cards: List<CardMark>, paper: PaperColors, wide: Boolean, onTap: (String) -> Unit, onLongTap: (String) -> Unit, modifier: Modifier) {
     if (cards.isEmpty()) return
     Row(modifier.windowInsetsPadding(WindowInsets.systemGestures.only(WindowInsetsSides.Top)), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
         // Au-delà de quatre, l'épaisseur suffit : on ne dessine pas tout.
-        cards.take(4).forEach { CardTop(it, paper, wide, onTap) }
+        cards.take(4).forEach { CardTop(it, paper, wide, onTap, onLongTap) }
     }
 }

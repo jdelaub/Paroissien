@@ -9,6 +9,16 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.gestures.animateScrollBy
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -149,12 +159,17 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     val cardFlow = remember(publication) { if (isDemo) flowOf(emptyList()) else graph.database.cards().observe(publication) }
     val cards by cardFlow.collectAsState(initial = emptyList())
     val images by graph.images.all.collectAsState()
+    // Les images glissées dans l'unité ouverte, entières : elles sont posées sur leur page.
+    val pictures by produceState(emptyMap<String, ImageBitmap>(), cards, unitId, settings.cardsOnPage) {
+        val here = cards.filter { it.unit == unitId && settings.cardsOnPage }.map { it.card }
+        value = withContext(Dispatchers.IO) { here.mapNotNull { id -> graph.images.picture(id)?.let { id to it } }.toMap() }
+    }
     val cardMarks = cards.mapNotNull { c ->
         val index = units.indexOfFirst { it.id == c.unit }
         val image = images.firstOrNull { it.id == c.card } ?: return@mapNotNull null
         when {
             index < 0 -> null
-            c.unit == unitId -> CardMark(c.card, Anchor(c.block, c.charOffset), image = graph.images.thumbnail(c.card), label = image.title.fr)
+            c.unit == unitId -> CardMark(c.card, Anchor(c.block, c.charOffset), image = graph.images.thumbnail(c.card), label = image.title.fr, picture = pictures[c.card])
             else -> CardMark(c.card, null, elsewhere = (index - unitIndex).sign, image = graph.images.thumbnail(c.card), label = image.title.fr)
         }
     }
@@ -218,6 +233,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                     onRibbonTap = { slot -> ribbons.firstOrNull { it.slot == slot }?.let { openAt(it.unit, it.block, it.charOffset) } },
                     cards = cardMarks,
                     onCardTap = { id -> open(CardKey(id)) },
+                    ribbonsAcross = settings.ribbonsAcross,
+                    cardsOnPage = settings.cardsOnPage,
                     onTurnPastEnd = units.getOrNull(unitIndex + 1)?.let { next -> { openAt(next.id, null, 0) } },
                     onTurnPastStart = units.getOrNull(unitIndex - 1)?.let { previous -> { openAt(previous.id, null, 0, end = true) } },
                     initialAtEnd = atEnd,
@@ -272,7 +289,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 modifier = Modifier.align(Alignment.BottomCenter),
             )
             Panel.SETTINGS -> Surface(Modifier.align(Alignment.BottomCenter).fillMaxWidth().windowInsetsPadding(WindowInsets.safeDrawing), shadowElevation = 6.dp) {
-                ReaderSettingsRow(settings) { transform -> graph.scope.launch { graph.settings.update(transform) } }
+                ReaderSettingsRow(settings, onAll = { panel = null; open(SettingsKey) }) { transform -> graph.scope.launch { graph.settings.update(transform) } }
             }
             null -> Unit
         }
@@ -287,18 +304,57 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     }
 }
 
+/** La barre du lecteur : le titre sur sa ligne, puis les boutons, qui défilent quand l'écran est trop étroit. */
 @Composable
 private fun Chrome(title: String, onBack: () -> Unit, onToc: (() -> Unit)?, onRibbons: (() -> Unit)?, onImages: (() -> Unit)?, onPray: () -> Unit, onSettings: () -> Unit, modifier: Modifier) {
     Surface(modifier.fillMaxWidth().windowInsetsPadding(WindowInsets.safeDrawing), shadowElevation = 4.dp) {
-        Row(Modifier.padding(horizontal = 4.dp, vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
-            TextButton(onClick = onBack, modifier = Modifier.semantics { contentDescription = "Retour à la bibliothèque" }) { Text("‹") }
-            Text(title, style = MaterialTheme.typography.titleSmall, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f))
-            onToc?.let { TextButton(onClick = it) { Text(stringResource(R.string.reader_toc)) } }
-            onRibbons?.let { TextButton(onClick = it) { Text(stringResource(R.string.reader_ribbons)) } }
-            onImages?.let { TextButton(onClick = it) { Text(stringResource(R.string.reader_images)) } }
-            TextButton(onClick = onPray) { Text(stringResource(R.string.reader_pray)) }
-            TextButton(onClick = onSettings) { Text(stringResource(R.string.reader_settings)) }
+        Column(Modifier.padding(horizontal = 4.dp, vertical = 2.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                TextButton(onClick = onBack, modifier = Modifier.semantics { contentDescription = "Retour à la bibliothèque" }) { Text("‹") }
+                Text(title, style = MaterialTheme.typography.titleSmall, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f))
+            }
+            ScrollingRow {
+                onToc?.let { TextButton(onClick = it) { Text(stringResource(R.string.reader_toc)) } }
+                onRibbons?.let { TextButton(onClick = it) { Text(stringResource(R.string.reader_ribbons)) } }
+                onImages?.let { TextButton(onClick = it) { Text(stringResource(R.string.reader_images)) } }
+                TextButton(onClick = onPray) { Text(stringResource(R.string.reader_pray)) }
+                TextButton(onClick = onSettings) { Text(stringResource(R.string.reader_settings)) }
+            }
         }
+    }
+}
+
+/**
+ * Une rangée qui défile de côté. Quand des éléments sont cachés, un simple ‹ ou › le dit, sur un fondu de la couleur
+ * de la barre ; le toucher fait défiler d'un écran.
+ */
+@Composable
+fun ScrollingRow(modifier: Modifier = Modifier, content: @Composable RowScope.() -> Unit) {
+    val state = rememberScrollState()
+    val scope = rememberCoroutineScope()
+    val surface = MaterialTheme.colorScheme.surface
+    Box(modifier.fillMaxWidth().height(IntrinsicSize.Min)) {
+        Row(Modifier.horizontalScroll(state), verticalAlignment = Alignment.CenterVertically, content = content)
+        if (state.canScrollBackward) {
+            ScrollHint("‹", stringResource(R.string.reader_more_before), Brush.horizontalGradient(listOf(surface, surface, surface.copy(alpha = 0f))), Modifier.align(Alignment.CenterStart)) {
+                scope.launch { state.animateScrollBy(-state.viewportSize * 0.7f) }
+            }
+        }
+        if (state.canScrollForward) {
+            ScrollHint("›", stringResource(R.string.reader_more_after), Brush.horizontalGradient(listOf(surface.copy(alpha = 0f), surface, surface)), Modifier.align(Alignment.CenterEnd)) {
+                scope.launch { state.animateScrollBy(state.viewportSize * 0.7f) }
+            }
+        }
+    }
+}
+
+@Composable
+private fun ScrollHint(glyph: String, label: String, fade: Brush, modifier: Modifier, onClick: () -> Unit) {
+    Box(
+        modifier.fillMaxHeight().width(32.dp).background(fade).clickable(onClickLabel = label, onClick = onClick),
+        contentAlignment = Alignment.Center,
+    ) {
+        Text(glyph, style = MaterialTheme.typography.titleMedium, color = LocalPaperColors.current.inkTertiary)
     }
 }
 

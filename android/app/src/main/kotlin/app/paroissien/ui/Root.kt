@@ -43,7 +43,7 @@ import java.time.LocalDate
 
 /**
  * Écrans de l'application (rapport 08) : quatre entrées de premier niveau (Aujourd'hui, Bibliothèque, Signets,
- * Recherche), puis le lecteur, l'Ordo, le temps de prière et les images pieuses.
+ * Recherche), puis le lecteur, l'Ordo, le temps de prière, les images pieuses et les réglages.
  */
 @Serializable data object TodayKey : NavKey
 @Serializable data object LibraryKey : NavKey
@@ -57,6 +57,7 @@ import java.time.LocalDate
 @Serializable data class CardKey(val id: String) : NavKey
 @Serializable data object ImageBoxKey : NavKey
 @Serializable data class ScanKey(val backOf: String? = null) : NavKey
+@Serializable data object SettingsKey : NavKey
 
 private val tabs = listOf<NavKey>(TodayKey, LibraryKey, BookmarksKey, SearchKey)
 
@@ -95,6 +96,7 @@ fun ParoissienRoot(graph: AppGraph) {
                                 onBack = { backStack.removeLastOrNull() },
                             )
                         }
+                        entry<SettingsKey> { SettingsScreen(graph, settings, onBack = { backStack.removeLastOrNull() }) }
                         entry<LibraryKey> { LibraryScreen(graph, settings, open) }
                         entry<SeriesKey> { key -> SeriesScreen(graph, settings, key, open, onBack = { backStack.removeLastOrNull() }) }
                         entry<BookmarksKey> { BookmarksScreen(graph, open) }
