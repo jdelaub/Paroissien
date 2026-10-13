@@ -98,6 +98,8 @@ import androidx.navigation3.runtime.NavKey
 import app.paroissien.core.data.CardPlacement
 import app.paroissien.core.reading.book.CardMark
 import app.paroissien.library.dressed
+import app.paroissien.library.enumOrNull
+import app.paroissien.core.designsystem.Metal
 import app.paroissien.library.subtitle
 import app.paroissien.library.BookIdentities
 import app.paroissien.library.BookDressChoice
@@ -294,6 +296,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     }
     val look = BookLook(
         edges = identity.edges,
+        edgeMetal = identity.edgeMetal,
+        edgeTooling = identity.edgeTooling,
         weight = identity.paper.weight,
         showThrough = ownPaper && identity.paper.weight == PaperWeight.BIBLE,
         progress = (before / totalBlocks.toFloat())..((before + (unit?.blockCount ?: 0)) / totalBlocks.toFloat()),
@@ -308,7 +312,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
             { BookCover(identity, entry.title, null, Modifier.fillMaxSize(), flat = true, inscriptions = false) }
         } else null,
         frame = remember(publication, entry, unitIndex, settings.ornamentalFrames, choice, customFrames, frameColor) {
-            if (settings.ornamentalFrames && !isDemo) BookFrames.of(publication, entry, unitIndex, unit, choice, customFrames)?.let { FrameLook(it.spec, it.style, frameColor) } else null
+            if (settings.ornamentalFrames && !isDemo) BookFrames.of(publication, entry, unitIndex, unit, choice, customFrames)?.let { FrameLook(it.spec, it.style.withMetal(enumOrNull<Metal>(choice?.frameMetal)), frameColor) } else null
         },
     )
 

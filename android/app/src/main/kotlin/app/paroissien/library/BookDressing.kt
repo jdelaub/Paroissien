@@ -3,9 +3,14 @@ package app.paroissien.library
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import app.paroissien.core.designsystem.BookIdentity
+import app.paroissien.core.designsystem.CoverBorder
+import app.paroissien.core.designsystem.CoverCenter
+import app.paroissien.core.designsystem.CoverCorner
 import app.paroissien.core.designsystem.CoverMaterial
 import app.paroissien.core.designsystem.CoverMotif
 import app.paroissien.core.designsystem.EdgeFinish
+import app.paroissien.core.designsystem.EdgeTooling
+import app.paroissien.core.designsystem.Metal
 import app.paroissien.core.designsystem.Tooling
 import app.paroissien.core.designsystem.frame.BoxModule
 import app.paroissien.core.designsystem.frame.CenterModule
@@ -59,6 +64,8 @@ data class BookDressChoice(
     val binding: BindingChoice? = null,
     /** La langue de ce livre (« fr », « la », « la-fr ») ; null : le réglage général (demande du 13/10/2026). */
     val language: String? = null,
+    /** Les ors des cadres : null à plat (couleur d'origine), ou le nom d'un [Metal] (reflet d'or, d'argent…). */
+    val frameMetal: String? = null,
 ) {
     companion object {
         private val json = Json { ignoreUnknownKeys = true; encodeDefaults = false }
@@ -87,6 +94,15 @@ data class BindingChoice(
     val fillets: Int? = null,
     val corners: Boolean? = null,
     val bands: Int? = null,
+    /** Atelier du 13/10/2026 : métal des fers, roulette, fers d'angle, encadrement du motif, dos à caissons. */
+    val metal: String? = null,
+    val border: String? = null,
+    val cornerStyle: String? = null,
+    val center: String? = null,
+    val spineTooling: Boolean? = null,
+    /** Métal et ciselure de la tranche. */
+    val edgeMetal: String? = null,
+    val edgeTooling: String? = null,
 ) {
     val isEmpty: Boolean get() = this == BindingChoice()
 
@@ -102,13 +118,17 @@ data class BindingChoice(
     }
 }
 
-private inline fun <reified E : Enum<E>> enumOrNull(name: String?): E? = name?.let { n -> enumValues<E>().firstOrNull { it.name == n } }
+internal inline fun <reified E : Enum<E>> enumOrNull(name: String?): E? = name?.let { n -> enumValues<E>().firstOrNull { it.name == n } }
 
 /** Le livre tel que l'atelier l'a relié : la reliure d'origine, retouchée champ par champ. */
 fun BookIdentity.dressed(binding: BindingChoice?): BookIdentity {
     if (binding == null || binding.isEmpty) return this
     val material = enumOrNull<CoverMaterial>(binding.material) ?: cover.material
     val tooling = enumOrNull<Tooling>(binding.tooling) ?: cover.tooling
+    // « Fleurons aux coins » (avant les fers d'angle) : le quadrilobe, ou le fer d'angle du livre s'il en a un
+    val cornerStyle = enumOrNull<CoverCorner>(binding.cornerStyle)
+        ?: binding.corners?.let { on -> if (!on) CoverCorner.NONE else cover.cornerStyle.takeIf { it != CoverCorner.NONE } ?: CoverCorner.QUADRILOBE }
+        ?: cover.cornerStyle
     return copy(
         cover = cover.copy(
             leather = binding.leather?.let { Color(it) } ?: cover.leather,
@@ -117,10 +137,17 @@ fun BookIdentity.dressed(binding: BindingChoice?): BookIdentity {
             motifTooling = if (binding.tooling != null) tooling else cover.motifTooling,
             motif = enumOrNull<CoverMotif>(binding.motif) ?: cover.motif,
             fillets = binding.fillets?.coerceIn(0, 3) ?: cover.fillets,
-            corners = binding.corners ?: cover.corners,
+            corners = cornerStyle != CoverCorner.NONE,
+            cornerStyle = cornerStyle,
             bands = binding.bands?.coerceIn(0, 6) ?: cover.bands,
+            metal = enumOrNull<Metal>(binding.metal) ?: cover.metal,
+            border = enumOrNull<CoverBorder>(binding.border) ?: cover.border,
+            center = enumOrNull<CoverCenter>(binding.center) ?: cover.center,
+            spineTooling = binding.spineTooling ?: cover.spineTooling,
         ),
         edges = enumOrNull<EdgeFinish>(binding.edge) ?: edges,
+        edgeMetal = enumOrNull<Metal>(binding.edgeMetal) ?: edgeMetal,
+        edgeTooling = enumOrNull<EdgeTooling>(binding.edgeTooling) ?: edgeTooling,
         ribbons = binding.ribbons?.takeIf { it.isNotEmpty() } ?: ribbons,
     )
 }

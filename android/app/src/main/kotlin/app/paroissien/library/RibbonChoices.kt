@@ -50,8 +50,6 @@ object RibbonChoices {
     }
 }
 
-private inline fun <reified E : Enum<E>> enumOrNull(name: String?): E? = name?.let { n -> enumValues<E>().firstOrNull { it.name == n } }
-
 /** Le ruban liturgique d'un emplacement, retouché. */
 fun RibbonStyle.with(choice: RibbonChoice): RibbonStyle = copy(
     label = choice.label?.takeIf { it.isNotBlank() } ?: label,

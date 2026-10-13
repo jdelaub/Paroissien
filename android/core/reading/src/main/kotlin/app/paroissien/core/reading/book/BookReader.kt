@@ -112,6 +112,9 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.max
 import app.paroissien.core.designsystem.EdgeFinish
+import app.paroissien.core.designsystem.EdgeTooling
+import app.paroissien.core.designsystem.Metal
+import app.paroissien.core.designsystem.drawPageEdge
 import app.paroissien.core.designsystem.PaperColors
 import app.paroissien.core.designsystem.PaperWeight
 import app.paroissien.core.designsystem.paperBackground
@@ -157,6 +160,9 @@ class BookLook(
     /** À la fin du livre, dans l'ordre inverse du début : la doublure du second plat, puis le plat, sans inscription. */
     val backEndpaper: (@Composable () -> Unit)? = null,
     val backCover: (@Composable () -> Unit)? = null,
+    /** Le métal d'une tranche dorée, et sa ciselure (atelier). */
+    val edgeMetal: Metal = Metal.GOLD,
+    val edgeTooling: EdgeTooling = EdgeTooling.NONE,
 ) {
     val front: List<@Composable () -> Unit> = listOfNotNull(cover, endpaper)
     val back: List<@Composable () -> Unit> = listOfNotNull(backEndpaper, backCover)
@@ -704,19 +710,11 @@ private fun Modifier.bookEdges(side: PageSide, number: Int, pageCount: Int, pape
     val band = (1.dp + look.thickness * fraction).toPx()
     val freeAtRight = side != PageSide.LEFT
     val x0 = if (freeAtRight) size.width - band else 0f
-    val edge: Brush = when (look.edges) {
-        EdgeFinish.GILT -> Brush.verticalGradient(listOf(Color(0xFF8A6A1C), Color(0xFFF0DB94), Color(0xFFC9A44C), Color(0xFF8A6A1C)))
-        EdgeFinish.RED -> Brush.verticalGradient(listOf(Color(0xFF7E1A16), Color(0xFFB0332B), Color(0xFF8A201B)))
-        EdgeFinish.PLAIN -> SolidColor(paper.hairline.copy(alpha = 0.7f))
-    }
-    drawRect(edge, topLeft = Offset(x0, 0f), size = Size(band, size.height))
-    val step = look.weight.stepDp.dp.toPx()
-    val line = if (look.edges == EdgeFinish.PLAIN) paper.surface.copy(alpha = 0.9f) else Color.Black.copy(alpha = 0.12f)
-    var x = x0 + step / 2
-    while (x < x0 + band) {
-        drawLine(line, Offset(x, 0f), Offset(x, size.height), strokeWidth = 0.5.dp.toPx())
-        x += step
-    }
+    drawPageEdge(
+        Rect(x0, 0f, x0 + band, size.height), look.edges, look.edgeMetal, look.edgeTooling,
+        plain = paper.hairline.copy(alpha = 0.7f), plainLine = paper.surface.copy(alpha = 0.9f),
+        leaf = look.weight.stepDp.dp.toPx(),
+    )
 }
 
 /**

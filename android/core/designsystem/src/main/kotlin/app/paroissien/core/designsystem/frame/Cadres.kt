@@ -25,4 +25,8 @@ val OrnamentalFrames: List<OrnamentalFrameDef> = listOf(
     OrnamentalFrameDef("vigne", "Vigne aux oiseaux", VigneFrame, VigneStyle),
     OrnamentalFrameDef("gothique", "Quadrilobes et crêtes", GothiqueFrame, GothiqueStyle),
     OrnamentalFrameDef("evangeliste", "Saint Matthieu, évangéliste", EvangelisteFrame, EvangelisteStyle),
+    OrnamentalFrameDef("fleurs_de_lys", "Roulette de fleurs de lys", FleursDeLysFrame, FleursDeLysStyle),
+    OrnamentalFrameDef("palmettes", "Palmettes et lotus", PalmettesFrame, PalmettesStyle),
+    OrnamentalFrameDef("ecoincons", "Écoinçons et filets", EcoinconsFrame, EcoinconsStyle),
+    OrnamentalFrameDef("enluminure", "Enluminure aux fraisiers", EnluminureFrame, EnluminureStyle),
 )

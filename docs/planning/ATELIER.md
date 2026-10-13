@@ -151,6 +151,17 @@ Un écran par livre, ouvert depuis la bibliothèque (appui long sur la couvertur
 - **Éditeur de rubans** : les six rubans des livres, retouchés un à un (nom, couleur liturgique ou libre, tissu mat, satin, moiré ou velours, extrémité en biais, droite, en queue d'aronde ou à ferret, croix brodée ou non) ; gardés dans les réglages (`rubans`), donc dans la sauvegarde ; les livres gardent leurs emplacements.
 - **Langue par livre** : un livre latin-français a sa propre langue (Aa, « Ce livre ») en plus du réglage général (`BookDressChoice.language`).
 
+**Le 13/10/2026 (0.7.2)**, d'après une vingtaine d'images d'inspiration données par l'utilisateur (plats dorés, roulettes, écoinçons, cartouches, dos à caissons, bordures enluminées). Ces images (banques d'images, enluminure signée) ne sont pas recopiées : seuls les genres sont repris, en dessins originaux.
+
+- **Métaux** (`Metal` : or, argent, bronze, cuivre) : les fers, le titre et le motif du plat ; la tranche dorée ; les ors des cadres de pages (« Ors des cadres » dans l'habit du livre : à plat, ou en reflet d'un métal sur les encres `gold`, `goldLight`, `goldDark`).
+- **Plat** : dix motifs (croix, croix tréflée, IHS, chrisme, fleur de lys, lis, rose, Sacré-Cœur, étoile, calice et hostie) ; encadrement du motif (médaillon, losange, cartouche aux angles rentrants, gloire) ; roulette entre les filets (fleurs de lys, palmettes et lotus, rinceaux, dentelle, perles), carrés aux angles de la roulette ; fers d'angle (quadrilobe, fleur de lys, écoinçon de rinceaux, carré, rosace).
+- **Dos** : nerfs (0 à 6) et dos à caissons (filets dorés et petit fer dans chaque caisson).
+- **Tranche** : dorée (dans un des quatre métaux), rouge sous or, rouge, rouge orangé, bleue, verte, jaune, jaspée, marbrée (caillouté), naturelle ; ciselure d'une tranche dorée (pointillés, losanges, rinceaux) ; un aperçu de la tranche vue de face. La couverture et la page ouverte dessinent la même tranche (`drawPageEdge`).
+- **Quatre cadres de pages** (§1) : roulette de fleurs de lys, palmettes et lotus, écoinçons et filets, enluminure aux fraisiers (acanthes bleues et ocre aux couleurs du temps, fraises, églantines, besants à vrilles, oiseau au pied).
+- L'éditeur de couvertures et « Habiller ce livre » partagent les mêmes choix (`BindingFields`).
+
+Idées notées sur les mêmes images, pour plus tard : tranchefiles de couleur ; bandeau latéral sur le plat (frise verticale côté dos) ; pièce de titre et cartouche doré pour le titre ; cadre de page aux angles rentrants (arcs aux coins) ; gaufrage du cuir (décor en relief sans or) et mosaïque de cuirs de couleur ; bandeau latéral enluminé (un fraisier seul, sur le côté extérieur) et lettrines enluminées en tête de section ; d'autres oiseaux et fleurs (ancolie, pensée, chardon) pour varier l'enluminure.
+
 - **Rang** : noble, Bible, simple, sans habit (§4) ; il donne les valeurs de départ des choix suivants.
 - **Couverture** : matière et couleur, décor (modèles de la bibliothèque), motif central, titre doré ou non.
 - **Gardes** : moiré, asanoha, symboles, ou papier uni ; couleur.
@@ -170,7 +181,7 @@ Stockage : `user.db`, une table `book_look` (publication → description JSON de
 4. Vignettes gravées : outil de préparation, dépôt privé, placement (fait ; d'autres vignettes à photographier).
 5. Sauvegarde complète et saveur vide (fait) ; collection d'images pieuses de l'utilisateur, catégories, cartes aux coins arrondis (fait) ; import et partage d'une image à la fois (fait).
 6. Couvertures en modules.
-7. Atelier : habit par livre, composition de cadres, reliure (fait) ; restent le titre doré ou non, la tranche rouge orangé et les extrémités des rubans.
+7. Atelier : habit par livre, composition de cadres, reliure (fait) ; métaux, motifs, roulettes, fers d'angle, dos à caissons, tranches travaillées et quatre cadres nouveaux (fait, 0.7.2) ; reste le titre doré ou non.
 8. Import de livres (txt, epub : fait ; PDF à venir), puis export (epub, txt, PDF).
 
 ## 11. Questions ouvertes

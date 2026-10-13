@@ -162,6 +162,17 @@ Second lot (`cadres-photos/lot2/`, photos souvent prises de côté : rotation da
 | `passiflores_agneau` | `bandeau-passiflores-lyre-a.jpg`, `-b.jpg` | Bandeau latéral : passiflore d'un seul élan ; croix à l'Agneau au tiers |
 | `litanies` | `litanies-candelabre-et-pied.jpg` | Équerre de pied : candélabre (chérubin, calice IHS) et rinceau à chimères |
 
+Cadres de l'atelier (13/10/2026), dessinés sans photo, dans le genre des exemples donnés par l'utilisateur (reliures dorées, livres d'heures) ; aucune image n'est recopiée :
+
+| Cadre | Genre | Style |
+|---|---|---|
+| `fleurs_de_lys` | Roulette de reliure | Fleurs de lys d'or entre deux filets, carrés d'angle à losange réservé |
+| `palmettes` | Anthémion | Palmettes vers le dehors, lotus vers le texte, volutes ; rosace dans un carré aux angles |
+| `ecoincons` | Fers d'angle | Double filet ; écoinçons de rinceaux (coin, et pièces de bout qui longent les côtés) ; fleuron pendant au milieu des côtés |
+| `enluminure` | Livre d'heures | Tige à l'encre, acanthes bleues (couleur du temps) et ocre, fraises, églantines, besants à vrilles ; rosace aux angles ; oiseau au pied (pièce `droit`) |
+
+Leurs encres `gold` prennent le reflet du métal choisi (`FrameStyle.withMetal`).
+
 Gardes (`gardes/`) : `asanoha` (`garde-asanoha-or-et-bleu.jpg`, réseau en quinconce) et `symboles` (`garde-rouge-symboles-chretiens.jpg`, losanges et symboles en rangées). Les couvertures du second lot attendent les couvertures en modules (`docs/planning/ATELIER.md`).
 
 Les gravures sépia se tracent à l'encre `text` du thème : elles restent lisibles en sombre. Les inscriptions et les figures debout sont des pièces `droit` : identiques sur un recto et un verso.

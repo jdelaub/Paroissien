@@ -10,13 +10,32 @@ import androidx.compose.ui.graphics.Color
  */
 enum class CoverMaterial { MOROCCO, CALF, CLOTH, WRAPPER, SHAGREEN, VELVET, VELLUM, MARBLED, LINEN }
 
-/** Décor : dorure au fer, ou fer à froid (relief sans or), ou impression (couverture de papier). */
+/** Décor : dorure au fer (dans le [Metal] de la couverture), ou fer à froid (relief sans or), ou impression (papier). */
 enum class Tooling { GOLD, BLIND, PRINTED }
 
-enum class CoverMotif { CROSS, IHS, CHI_RHO, NONE }
+/** Motif central du plat ; les fleurs et les symboles s'ajoutent à la croix, au monogramme et au chrisme (13/10/2026). */
+enum class CoverMotif { CROSS, IHS, CHI_RHO, NONE, FLEUR_DE_LYS, CROSS_FLEURY, LILY, ROSE, SACRED_HEART, STAR, CHALICE }
 
-/** Tranche : dorée (missels, bibles), rouge (livres de piété), ou naturelle. */
-enum class EdgeFinish { GILT, RED, PLAIN }
+/**
+ * Roulette du cadre : une frise poussée au fer entre les filets, comme sur les reliures anciennes : fleurs de lys,
+ * palmettes et fleurons de lotus, rinceau de feuillages, dentelle de petits fers, perles.
+ */
+enum class CoverBorder { NONE, LYS, PALMETTES, RINCEAUX, DENTELLE, PERLES }
+
+/** Fers des angles du cadre : quadrilobe, fleur de lys, écoinçon de rinceaux, carré plein, rosace. */
+enum class CoverCorner { NONE, QUADRILOBE, FLEUR_DE_LYS, ECOINCON, CARRE, ROSETTE }
+
+/** Encadrement du motif central : médaillon ovale, losange, cartouche aux angles rentrants, gloire rayonnante. */
+enum class CoverCenter { NONE, MEDAILLON, LOSANGE, CARTOUCHE, GLOIRE }
+
+/**
+ * Tranche : métallique ([Metal] de la tranche : or, argent, bronze, cuivre), rouge sous or, couleurs (rouge, rouge
+ * orangé, bleue, verte, jaune), jaspée (mouchetée de rouge), marbrée, ou naturelle.
+ */
+enum class EdgeFinish { GILT, RED, PLAIN, RED_UNDER_GOLD, RED_ORANGE, BLUE, GREEN, YELLOW, SPRINKLED, MARBLED }
+
+/** Ciselure d'une tranche dorée : pointillés, losanges, rinceaux poussés au fer dans l'or. */
+enum class EdgeTooling { NONE, POINTILLE, LOSANGES, RINCEAUX }
 
 /** Grammage : un gros livre a des pages très fines (papier bible), un livret des pages épaisses. */
 enum class PaperWeight(val stepDp: Float, val foldRadius: Float) {
@@ -41,6 +60,15 @@ data class CoverStyle(
     val ink: Color = Color(0xFF7A1E1A),
     /** Le fer du motif central, qui peut différer du cadre (un IHS doré sur une toile poussée à froid). */
     val motifTooling: Tooling = tooling,
+    /** Le métal de la dorure : fers, titre et motif. */
+    val metal: Metal = Metal.GOLD,
+    /** Roulette poussée entre les filets. */
+    val border: CoverBorder = CoverBorder.NONE,
+    /** Fers des angles ; par défaut le quadrilobe quand [corners] est vrai. */
+    val cornerStyle: CoverCorner = if (corners) CoverCorner.QUADRILOBE else CoverCorner.NONE,
+    val center: CoverCenter = CoverCenter.NONE,
+    /** Dos à caissons : filets dorés de part et d'autre des nerfs et un petit fer au milieu de chaque caisson. */
+    val spineTooling: Boolean = false,
 )
 
 @Immutable
@@ -78,6 +106,9 @@ data class BookIdentity(
     val ribbons: List<Int>,
     val importance: Int,
     val pages: Int,
+    /** Le métal d'une tranche dorée ou rouge sous or. */
+    val edgeMetal: Metal = Metal.GOLD,
+    val edgeTooling: EdgeTooling = EdgeTooling.NONE,
 ) {
     companion object {
         /** Tous les livres pareils : reliure de veau, papier du thème, tranche naturelle, six rubans. */

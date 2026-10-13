@@ -58,7 +58,7 @@ class PatternDef(val name: String, val title: String, val spec: PatternSpec, val
 @Composable
 fun PatternPaper(pattern: PatternDef, modifier: Modifier = Modifier, scale: Float = 1f) {
     val paper = LocalPaperColors.current
-    val inks = remember(pattern, paper) { pattern.style.inks(null, paper) }
+    val inks = remember(pattern, paper) { pattern.style.resolve(null, paper) }
     val ops = remember(pattern) { pattern.spec.ops.prepare() }
     Box(
         modifier.fillMaxSize().drawWithCache {

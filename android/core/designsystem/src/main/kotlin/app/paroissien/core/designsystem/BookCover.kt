@@ -24,6 +24,7 @@ import androidx.compose.ui.graphics.ImageShader
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.ShaderBrush
 import androidx.compose.ui.graphics.Shadow
+import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.TileMode
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.drawscope.DrawScope
@@ -41,11 +42,6 @@ import kotlin.math.PI
 import kotlin.math.abs
 import kotlin.math.ln
 import kotlin.random.Random
-
-private val GoldShadow = Color(0xFF4A3608)
-private val GoldDeep = Color(0xFF8A6A1C)
-private val GoldMid = Color(0xFFD2AE52)
-private val GoldBright = Color(0xFFF5E2A0)
 
 /** Épaisseur du bloc des pages, en fraction de la largeur de la couverture : le poids du livre, à l'œil. */
 fun bookThickness(pages: Int): Float = (0.025f + 0.07f * (ln(pages.coerceAtLeast(10).toFloat()) / ln(3000f))).coerceIn(0.03f, 0.10f)
@@ -71,18 +67,24 @@ fun BookCover(identity: BookIdentity, title: String, subtitle: String? = null, m
             Modifier.fillMaxSize().drawWithCache {
                 val board = Rect(0f, 0f, size.width - thickness, size.height - thickness * 0.35f)
                 val grainBrush = grain?.let { ShaderBrush(ImageShader(it, TileMode.Repeated, TileMode.Repeated)) }
+                val decor = coverDecor(board, cover, identity.importance)
+                val motifCenter = Offset(board.left + board.width * 0.075f + (board.width * 0.925f) / 2f, board.top + board.height * 0.30f)
+                val motifHeight = board.width * 0.22f
+                val motif = motifPath(cover.motif, motifCenter, motifHeight)
+                val around = centerFrame(cover.center, motifCenter, motifHeight, board.width * 0.0075f)
                 onDrawBehind {
                     if (!flat) drawPageBlock(board, thickness, identity)
                     drawLeather(board, cover, grainBrush, shadow = !flat)
                     drawSpine(board, cover)
-                    drawTooling(board, cover, identity.importance)
-                    drawMotif(board, cover)
+                    tool(cover.tooling, cover, decor)
+                    tool(cover.motifTooling, cover, around)
+                    motif?.let { tool(cover.motifTooling, cover, CoverDecor(listOf(it), emptyList())) }
                 }
             },
         ) {
             // Le titre se tient à l'intérieur du cadre, quel que soit le nombre de filets ; son corps diminue pour que le mot
             // le plus long tienne sur une ligne (jamais « JÉSUS-CHRIS / T »).
-            val frame = 0.022f * cover.fillets + 0.04f
+            val frame = CoverFrame.depth(cover) + 0.04f
             val room = w * (1f - (0.13f + frame) - (0.07f + frame + edge))
             val measurer = rememberTextMeasurer()
             val longest = title.uppercase().split(' ').maxByOrNull { it.length }.orEmpty()
@@ -100,7 +102,8 @@ fun BookCover(identity: BookIdentity, title: String, subtitle: String? = null, m
             val titleStyle = if (cover.tooling == Tooling.PRINTED) {
                 base.copy(color = cover.ink)
             } else {
-                base.merge(TextStyle(brush = Brush.linearGradient(listOf(GoldDeep, GoldBright, GoldMid, GoldDeep)), shadow = Shadow(GoldShadow.copy(alpha = 0.8f), Offset(0f, 1.6f), 1.2f)))
+                val m = cover.metal
+                base.merge(TextStyle(brush = Brush.linearGradient(listOf(m.deep, m.bright, m.mid, m.deep)), shadow = Shadow(m.shadow.copy(alpha = 0.8f), Offset(0f, 1.6f), 1.2f)))
             }
             // Le second plat, à la fin du livre : la même reliure, sans titre ni monogramme.
             if (!inscriptions) return@BoxWithConstraints
@@ -193,93 +196,42 @@ private fun DrawScope.drawSpine(board: Rect, cover: CoverStyle) {
     }
 }
 
-/** La tranche des pages, côté libre et en pied : dorée, rouge ou naturelle ; plus fine est la page, plus serrées les lignes. */
+/** La tranche des pages, côté libre : dorée, teinte, jaspée ou marbrée ; plus fine est la page, plus serrées les lignes. */
 private fun DrawScope.drawPageBlock(board: Rect, thickness: Float, identity: BookIdentity) {
     val block = Rect(board.right - thickness * 0.5f, board.top + thickness * 0.25f, board.right + thickness * 0.95f, board.bottom + thickness * 0.3f)
-    val edge = when (identity.edges) {
-        EdgeFinish.GILT -> Brush.verticalGradient(listOf(GoldDeep, GoldBright, GoldMid, GoldDeep, GoldMid), startY = block.top, endY = block.bottom)
-        EdgeFinish.RED -> Brush.verticalGradient(listOf(Color(0xFF7E1A16), Color(0xFFB0332B), Color(0xFF8A201B)), startY = block.top, endY = block.bottom)
-        EdgeFinish.PLAIN -> Brush.verticalGradient(listOf(lerp(identity.paper.tint, Color.Black, 0.08f), identity.paper.tint, lerp(identity.paper.tint, Color.Black, 0.12f)), startY = block.top, endY = block.bottom)
-    }
     // Plat arrière, puis bloc des pages.
     drawRoundRect(lerp(identity.cover.leather, Color.Black, 0.35f), topLeft = Offset(block.left, block.top + thickness * 0.1f), size = Size(block.width + thickness * 0.12f, block.height), cornerRadius = CornerRadius(4f))
-    drawRect(edge, topLeft = block.topLeft, size = block.size)
-    val step = identity.paper.weight.stepDp * density * 0.9f
-    var x = block.left + step
-    while (x < block.right) {
-        drawLine(Color.Black.copy(alpha = 0.10f), Offset(x, block.top), Offset(x, block.bottom), 0.6f)
-        x += step
+    val tint = identity.paper.tint
+    drawPageEdge(
+        block, identity.edges, identity.edgeMetal, identity.edgeTooling,
+        plain = tint, plainLine = Color.Black.copy(alpha = 0.10f),
+        leaf = identity.paper.weight.stepDp * density * 0.9f,
+    )
+    if (identity.edges == EdgeFinish.PLAIN) {
+        drawRect(Brush.verticalGradient(listOf(lerp(tint, Color.Black, 0.08f), Color.Transparent, lerp(tint, Color.Black, 0.12f)), startY = block.top, endY = block.bottom), block.topLeft, block.size)
     }
 }
 
 // ── Décor ───────────────────────────────────────────────────────────────────
 
-private fun DrawScope.drawTooling(board: Rect, cover: CoverStyle, importance: Int) {
-    val left = board.left + board.width * 0.13f
-    val inset = board.width * 0.07f
-    val gap = board.width * 0.022f
-    for (i in 0 until cover.fillets) {
-        val r = Rect(left + gap * i, board.top + inset + gap * i, board.right - inset - gap * i, board.bottom - inset - gap * i)
-        tool(cover) { brush, width -> drawRect(brush, topLeft = r.topLeft, size = r.size, style = Stroke(width)) }
+/** Pousser des fers : au métal (ombre puis reflet), à froid (creux sombre et arête claire), ou imprimés à l'encre. */
+private fun DrawScope.tool(tooling: Tooling, cover: CoverStyle, decor: CoverDecor) {
+    if (decor.fills.isEmpty() && decor.strokes.isEmpty()) return
+    fun pass(brush: Brush, widen: Float = 1f) {
+        decor.fills.forEach { drawPath(it, brush) }
+        decor.strokes.forEach { (p, w) -> drawPath(p, brush, style = Stroke(w * widen)) }
     }
-    if (cover.corners && cover.fillets > 0) {
-        val k = cover.fillets
-        val r = Rect(left + gap * k + gap, board.top + inset + gap * k + gap, board.right - inset - gap * k - gap, board.bottom - inset - gap * k - gap)
-        val s = board.width * (0.035f + 0.01f * importance)
-        listOf(r.topLeft to Offset(1f, 1f), Offset(r.right, r.top) to Offset(-1f, 1f), Offset(r.right, r.bottom) to Offset(-1f, -1f), Offset(r.left, r.bottom) to Offset(1f, -1f))
-            .forEach { (corner, dir) -> fleuron(corner, dir, s, cover) }
-    }
-}
-
-/** Un fer : or (dégradé et ombre) ou froid (creux sombre et arête claire). Imprimé : l'encre seule. */
-private fun DrawScope.tool(cover: CoverStyle, draw: DrawScope.(Brush, Float) -> Unit) {
-    val w = 1.4f * density
-    when (cover.tooling) {
+    when (tooling) {
         Tooling.GOLD -> {
-            translate(0f, 1f) { draw(androidx.compose.ui.graphics.SolidColor(GoldShadow.copy(alpha = 0.6f)), w) }
-            draw(Brush.linearGradient(listOf(GoldDeep, GoldBright, GoldMid, GoldDeep), start = Offset.Zero, end = Offset(size.width, size.height)), w)
+            val m = cover.metal
+            translate(0f, 1f) { pass(SolidColor(m.shadow.copy(alpha = 0.6f))) }
+            pass(m.brush(Offset.Zero, Offset(size.width, size.height)))
         }
         Tooling.BLIND -> {
-            translate(0f, 1f) { draw(androidx.compose.ui.graphics.SolidColor(Color.White.copy(alpha = 0.14f)), w) }
-            draw(androidx.compose.ui.graphics.SolidColor(Color.Black.copy(alpha = 0.45f)), w)
+            translate(0f, 1f) { pass(SolidColor(Color.White.copy(alpha = 0.14f))) }
+            pass(SolidColor(Color.Black.copy(alpha = 0.45f)))
         }
-        Tooling.PRINTED -> draw(androidx.compose.ui.graphics.SolidColor(cover.ink), w * 0.7f)
-    }
-}
-
-/** Fleuron d'angle : un quadrilobe plein, posé dans l'angle du cadre, et un point vers le centre. */
-private fun DrawScope.fleuron(corner: Offset, dir: Offset, s: Float, cover: CoverStyle) {
-    val c = Offset(corner.x + dir.x * s * 0.55f, corner.y + dir.y * s * 0.55f)
-    val r = s * 0.2f
-    val path = Path().apply {
-        addOval(Rect(Offset(c.x - r * 1.1f, c.y), r))
-        addOval(Rect(Offset(c.x + r * 1.1f, c.y), r))
-        addOval(Rect(Offset(c.x, c.y - r * 1.1f), r))
-        addOval(Rect(Offset(c.x, c.y + r * 1.1f), r))
-        addOval(Rect(Offset(c.x + dir.x * s * 0.62f, c.y + dir.y * s * 0.62f), r * 0.45f))
-    }
-    tool(cover) { brush, _ -> drawPath(path, brush) }
-}
-
-private fun DrawScope.drawMotif(board: Rect, cover: CoverStyle) {
-    val cx = board.left + board.width * 0.075f + (board.width * 0.925f) / 2f
-    val cy = board.top + board.height * 0.30f
-    val h = board.width * 0.22f
-    val path = when (cover.motif) {
-        CoverMotif.CROSS -> crossPath(Offset(cx, cy), h)
-        CoverMotif.CHI_RHO -> chiRhoPath(Offset(cx, cy), h)
-        CoverMotif.IHS, CoverMotif.NONE -> return // IHS : composé en lettres, au-dessus
-    }
-    when (cover.motifTooling) {
-        Tooling.GOLD -> {
-            translate(0f, 1.5f) { drawPath(path, GoldShadow.copy(alpha = 0.7f)) }
-            drawPath(path, Brush.linearGradient(listOf(GoldDeep, GoldBright, GoldMid, GoldDeep), start = Offset(cx - h / 2, cy - h / 2), end = Offset(cx + h / 2, cy + h / 2)))
-        }
-        Tooling.BLIND -> {
-            translate(0f, 1.2f) { drawPath(path, Color.White.copy(alpha = 0.14f)) }
-            drawPath(path, Color.Black.copy(alpha = 0.40f))
-        }
-        Tooling.PRINTED -> drawPath(path, cover.ink)
+        Tooling.PRINTED -> pass(SolidColor(cover.ink), 0.7f)
     }
 }
 
@@ -302,7 +254,7 @@ internal fun crossPath(c: Offset, height: Float): Path {
 }
 
 /** Chrisme : le X et le P entrelacés. */
-private fun chiRhoPath(c: Offset, h: Float): Path {
+internal fun chiRhoPath(c: Offset, h: Float): Path {
     val t = h * 0.09f
     fun bar(x0: Float, y0: Float, x1: Float, y1: Float) = Path().apply {
         val dx = x1 - x0; val dy = y1 - y0

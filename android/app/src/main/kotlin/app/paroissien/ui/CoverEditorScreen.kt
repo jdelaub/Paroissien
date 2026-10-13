@@ -16,11 +16,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Checkbox
-import androidx.compose.material3.FilterChip
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -43,10 +41,7 @@ import app.paroissien.core.data.CustomFrameRow
 import app.paroissien.core.designsystem.BookCover
 import app.paroissien.core.designsystem.BookIdentity
 import app.paroissien.core.designsystem.CoverMaterial
-import app.paroissien.core.designsystem.CoverMotif
-import app.paroissien.core.designsystem.EdgeFinish
 import app.paroissien.core.designsystem.LocalPaperColors
-import app.paroissien.core.designsystem.Tooling
 import app.paroissien.library.BindingChoice
 import app.paroissien.library.BookDressChoice
 import app.paroissien.library.CoverTemplate
@@ -57,8 +52,8 @@ import java.util.UUID
 
 /**
  * L'éditeur de couvertures (atelier, demande du 13/10/2026) : une reliure qu'on compose à vue (matière et sa texture,
- * couleur, fers, motif, filets, coins, nerfs, tranche), qu'on garde comme modèle et qu'on applique à un ou plusieurs
- * livres. Rien n'est enregistré tant qu'on n'a pas touché « Enregistrer » ou « Appliquer ».
+ * couleur, fers et leur métal, motif et son encadrement, roulette, filets, fers d'angle, dos, tranche), qu'on garde
+ * comme modèle et qu'on applique à un ou plusieurs livres. Rien n'est enregistré tant qu'on n'a pas touché « Enregistrer » ou « Appliquer ».
  */
 @Composable
 fun CoverEditorScreen(graph: AppGraph, key: CoverEditorKey, onBack: () -> Unit) {
@@ -90,34 +85,9 @@ fun CoverEditorScreen(graph: AppGraph, key: CoverEditorKey, onBack: () -> Unit) 
                     value = template.name, onValueChange = { template = template.copy(name = it.take(40)) },
                     label = { Text(stringResource(R.string.cover_editor_name)) }, singleLine = true, modifier = Modifier.fillMaxWidth(),
                 )
-                Label(R.string.binding_material)
-                Chips(MATERIALS, identity.cover.material) { edit(binding.copy(material = it.name)) }
                 Label(R.string.binding_leather)
                 ColorPicker(BindingChoice.leathers, binding.leather, identity.cover.leather) { edit(binding.copy(leather = it)) }
-                Label(R.string.binding_tooling)
-                Chips(listOf(Tooling.GOLD to R.string.binding_gold, Tooling.BLIND to R.string.binding_blind, Tooling.PRINTED to R.string.binding_printed), identity.cover.tooling) {
-                    edit(binding.copy(tooling = it.name))
-                }
-                Label(R.string.binding_motif)
-                Chips(listOf(CoverMotif.CROSS to R.string.binding_cross, CoverMotif.IHS to R.string.binding_ihs, CoverMotif.CHI_RHO to R.string.binding_chi_rho, CoverMotif.NONE to R.string.binding_none), identity.cover.motif) {
-                    edit(binding.copy(motif = it.name))
-                }
-                Label(R.string.cover_editor_fillets)
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    (0..3).forEach { n -> FilterChip(identity.cover.fillets == n, { edit(binding.copy(fillets = n)) }, { Text("$n") }) }
-                }
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Text(stringResource(R.string.cover_editor_corners), style = MaterialTheme.typography.bodyMedium, modifier = Modifier.weight(1f))
-                    Switch(identity.cover.corners, { edit(binding.copy(corners = it)) })
-                }
-                Label(R.string.cover_editor_bands)
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    (0..6).forEach { n -> FilterChip(identity.cover.bands == n, { edit(binding.copy(bands = n)) }, { Text("$n") }) }
-                }
-                Label(R.string.binding_edges)
-                Chips(listOf(EdgeFinish.GILT to R.string.binding_gilt, EdgeFinish.RED to R.string.binding_red, EdgeFinish.PLAIN to R.string.binding_plain), identity.edges) {
-                    edit(binding.copy(edge = it.name))
-                }
+                BindingFields(binding, identity) { edit(it) }
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     Button(onClick = { persist(); onBack() }) { Text(stringResource(R.string.cover_editor_save)) }
                     OutlinedButton(onClick = { applying = true }) { Text(stringResource(R.string.cover_editor_apply)) }
@@ -173,13 +143,6 @@ private fun ApplyToBooks(graph: AppGraph, template: CoverTemplate, onDone: () ->
 
 @Composable
 private fun Label(@StringRes id: Int) = Text(stringResource(id), style = MaterialTheme.typography.bodyMedium)
-
-@Composable
-private fun <E> Chips(values: List<Pair<E, Int>>, selected: E, onPick: (E) -> Unit) {
-    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        values.forEach { (v, label) -> FilterChip(v == selected, { onPick(v) }, { Text(stringResource(label)) }) }
-    }
-}
 
 /** Les matières, dans l'ordre de l'atelier : les reliures des livres, puis les nouvelles textures. */
 internal val MATERIALS = listOf(

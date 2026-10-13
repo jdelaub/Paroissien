@@ -17,6 +17,8 @@ import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.TileMode
+import app.paroissien.core.designsystem.Metal
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.CompositingStrategy
 import androidx.compose.ui.graphics.Matrix
@@ -225,7 +227,33 @@ class FrameStyle(
     val palettes: Map<LiturgicalColor, Map<String, Color>>,
     /** Encres rapprochées du fond de page dans les thèmes sombres ([ornamentDim]). */
     val dimmed: Set<String>,
+    /**
+     * Le métal des ors (atelier, 13/10/2026) : les encres « gold », « goldLight », « goldDark » prennent le reflet de
+     * l'or, de l'argent, du bronze ou du cuivre ; null les garde à plat, dans leur couleur d'origine.
+     */
+    val metal: Metal? = null,
 ) {
+    fun withMetal(metal: Metal?): FrameStyle = if (metal == this.metal) this else FrameStyle(base, palettes, dimmed, metal)
+
+    /** Les encres résolues pour le dessin : couleurs, et reflets des ors quand un métal est choisi. */
+    internal fun resolve(liturgicalColor: LiturgicalColor?, paper: PaperColors): Inks {
+        val colors = inks(liturgicalColor, paper)
+        val m = metal ?: return Inks(colors)
+        val dim = ornamentDim(paper)
+        fun tone(c: Color) = if (dim > 0f) mix(c, paper.background, dim) else c
+        val sheen = HashMap<String, Brush>()
+        for (name in colors.keys) {
+            val tones = when (name) {
+                "gold" -> listOf(m.deep, m.bright, m.mid, m.deep)
+                "goldLight" -> listOf(m.mid, m.bright, m.bright, m.mid)
+                "goldDark" -> listOf(m.shadow, m.deep, m.mid, m.shadow)
+                else -> continue
+            }
+            sheen[name] = Brush.linearGradient(tones.map(::tone), start = Offset.Zero, end = Offset(SHEEN, SHEEN), tileMode = TileMode.Mirror)
+        }
+        return Inks(colors, sheen)
+    }
+
     fun inks(liturgicalColor: LiturgicalColor?, paper: PaperColors): Map<String, Color> {
         val inks = base.toMutableMap()
         liturgicalColor?.let { palettes[it]?.let(inks::putAll) }
@@ -255,7 +283,16 @@ class FrameStyle(
 
     private companion object {
         val nightPaper = paperColors(PaperTheme.NUIT)
+
+        /** Pas du reflet d'un or, en unités de module (100 = l'épaisseur de la bande) ou en px pour les filets. */
+        const val SHEEN = 36f
     }
+}
+
+/** Les encres d'un cadre prêtes à dessiner : une couleur par nom, et un reflet pour les ors en métal. */
+internal class Inks(private val colors: Map<String, Color>, private val sheen: Map<String, Brush> = emptyMap()) {
+    operator fun get(name: String): Color? = colors[name]
+    fun sheen(name: String): Brush? = sheen[name]
 }
 
 /**
@@ -304,7 +341,7 @@ fun OrnamentalFrameLayer(
 ) {
     val paper = LocalPaperColors.current
     val prepared = remember(spec) { PreparedFrame(spec) }
-    val inks = remember(style, liturgicalColor, paper) { style.inks(liturgicalColor, paper) }
+    val inks = remember(style, liturgicalColor, paper) { style.resolve(liturgicalColor, paper) }
     Box(
         modifier
             .fillMaxSize()
@@ -468,10 +505,16 @@ private class FrameGeometry(spec: FrameSpec, width: Float, height: Float, header
 // Dessin
 // ---------------------------------------------------------------------------------------------------------------
 
-internal fun DrawScope.drawOps(ops: List<PreparedOp>, inks: Map<String, Color>) {
+internal fun DrawScope.drawOps(ops: List<PreparedOp>, inks: Inks) {
     for (op in ops) {
         val color = inks[op.ink] ?: continue
-        if (op.stroke != null) drawPath(op.path, color, style = op.stroke) else drawPath(op.path, color)
+        val sheen = inks.sheen(op.ink)
+        when {
+            sheen != null && op.stroke != null -> drawPath(op.path, sheen, style = op.stroke)
+            sheen != null -> drawPath(op.path, sheen)
+            op.stroke != null -> drawPath(op.path, color, style = op.stroke)
+            else -> drawPath(op.path, color)
+        }
     }
 }
 
@@ -503,7 +546,7 @@ private class Band(val x0: Float, val y0: Float, val ax: Float, val ay: Float, v
  * est ajusté pour tomber juste (comme border-image-repeat: round) ; un NinePatch étirerait le motif au lieu de le
  * répéter. [back] la parcourt depuis sa fin, en miroir.
  */
-private fun DrawScope.drawRun(m: PreparedEdge, inks: Map<String, Color>, mtx: Matrix, band: Band, from: Float, len: Float, back: Boolean) {
+private fun DrawScope.drawRun(m: PreparedEdge, inks: Inks, mtx: Matrix, band: Band, from: Float, len: Float, back: Boolean) {
     if (len <= 0f) return
     val k = band.depth / 100f
     val n = max(1, (len / (m.period * k)).roundToInt())
@@ -543,7 +586,7 @@ private fun DrawScope.drawRun(m: PreparedEdge, inks: Map<String, Color>, mtx: Ma
  * renversée (son v = 0 passe du côté du texte).
  */
 private fun DrawScope.drawPiece(
-    ops: List<PreparedOp>, inks: Map<String, Color>, mtx: Matrix, band: Band,
+    ops: List<PreparedOp>, inks: Inks, mtx: Matrix, band: Band,
     from: Float, to: Float, origin: Float, outset: Float, inset: Float, flip: Boolean, upright: Boolean,
 ) {
     val k = band.depth / 100f
@@ -574,7 +617,7 @@ private fun DrawScope.drawPiece(
  * « dessus » vont dans [later], dessinées après les filets et les baguettes.
  */
 private fun DrawScope.drawBand(
-    m: PreparedEdge, center: PreparedCenter?, ends: PreparedEnds?, inks: Map<String, Color>, mtx: Matrix, band: Band,
+    m: PreparedEdge, center: PreparedCenter?, ends: PreparedEnds?, inks: Inks, mtx: Matrix, band: Band,
     later: MutableList<DrawScope.() -> Unit>,
 ) {
     val k = band.depth / 100f
@@ -608,7 +651,7 @@ private fun DrawScope.drawBand(
  * comble le reste, pointe vers l'extérieur.
  */
 private fun DrawScope.drawCorner(
-    m: PreparedBox?, fill: PreparedBox?, inks: Map<String, Color>, mtx: Matrix,
+    m: PreparedBox?, fill: PreparedBox?, inks: Inks, mtx: Matrix,
     x: Float, y: Float, w: Float, h: Float, fx: Float, fy: Float,
 ) {
     if (m == null) return
@@ -629,7 +672,7 @@ private fun DrawScope.drawCorner(
 }
 
 /** Filets le long des bandes présentes ; un filet ouvert court jusqu'au bord du cadre. */
-private fun DrawScope.drawRules(spec: FrameSpec, inks: Map<String, Color>, g: FrameGeometry, over: Boolean) {
+private fun DrawScope.drawRules(spec: FrameSpec, inks: Inks, g: FrameGeometry, over: Boolean) {
     for (r in spec.rules) {
         if (r.over != over) continue
         val color = inks[r.ink] ?: continue
@@ -645,7 +688,9 @@ private fun DrawScope.drawRules(spec: FrameSpec, inks: Map<String, Color>, g: Fr
         val bottom = off(g.bottom, g.b)
         val stroke = Stroke(width = r.width * g.u, join = StrokeJoin.Miter)
         if (g.full) {
-            drawRect(color, Offset(g.ox + left, g.oy + top), Size(g.ow - left - right, g.oh - top - bottom), style = stroke)
+            val sheen = inks.sheen(r.ink)
+            if (sheen != null) drawRect(sheen, Offset(g.ox + left, g.oy + top), Size(g.ow - left - right, g.oh - top - bottom), style = stroke)
+            else drawRect(color, Offset(g.ox + left, g.oy + top), Size(g.ow - left - right, g.oh - top - bottom), style = stroke)
             continue
         }
         // côtés dans l'ordre haut, droite, pied, gauche ; chaque suite de côtés présents fait une ligne brisée
@@ -665,11 +710,11 @@ private fun DrawScope.drawRules(spec: FrameSpec, inks: Map<String, Color>, g: Fr
             open = true
             path.lineTo(xs[(k + 1) % 4], ys[(k + 1) % 4])
         }
-        drawPath(path, color, style = stroke)
+        inks.sheen(r.ink)?.let { drawPath(path, it, style = stroke) } ?: drawPath(path, color, style = stroke)
     }
 }
 
-private fun DrawScope.drawFrame(f: PreparedFrame, spec: FrameSpec, inks: Map<String, Color>, g: FrameGeometry) {
+private fun DrawScope.drawFrame(f: PreparedFrame, spec: FrameSpec, inks: Inks, g: FrameGeometry) {
     val mtx = Matrix()
     val ox = g.ox
     val oy = g.oy
@@ -682,7 +727,7 @@ private fun DrawScope.drawFrame(f: PreparedFrame, spec: FrameSpec, inks: Map<Str
     val later = ArrayList<DrawScope.() -> Unit>()
 
     // 1. fond des bandes
-    spec.ground?.let { ink -> inks[ink]?.let { drawPath(g.ring, it) } }
+    spec.ground?.let { ink -> inks.sheen(ink)?.let { drawPath(g.ring, it) } ?: inks[ink]?.let { drawPath(g.ring, it) } }
 
     drawRules(spec, inks, g, over = false)
 
@@ -715,7 +760,8 @@ private fun DrawScope.drawFrame(f: PreparedFrame, spec: FrameSpec, inks: Map<Str
     if (bars != null && barPath != null) {
         for ((ink, width) in bars.layers) {
             val color = inks[ink] ?: continue
-            drawPath(barPath, color, style = Stroke(width = width * u, cap = StrokeCap.Butt, join = StrokeJoin.Miter))
+            val stroke = Stroke(width = width * u, cap = StrokeCap.Butt, join = StrokeJoin.Miter)
+            inks.sheen(ink)?.let { drawPath(barPath, it, style = stroke) } ?: drawPath(barPath, color, style = stroke)
         }
         f.terminal?.let { term ->
             fun terminal(x: Float, y: Float, degrees: Float, push: Float = 0f) {

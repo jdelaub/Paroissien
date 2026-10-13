@@ -6,6 +6,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onRoot
+import app.paroissien.core.designsystem.Metal
 import app.paroissien.core.designsystem.PaperTheme
 import app.paroissien.core.designsystem.ParoissienTheme
 import com.github.takahirom.roborazzi.captureRoboImage
@@ -44,6 +45,23 @@ class OrnamentalFramesGalleryTest {
                 val suffix = if (side) "" else ".verso"
                 compose.onRoot().captureRoboImage("src/test/screenshots/app.paroissien.core.designsystem.frame.galerie.${def.name}$suffix.png")
             }
+        }
+    }
+
+    /** Les ors des cadres en reflet de métal (atelier) : or, argent, bronze, cuivre, sur des cadres riches en or. */
+    @Test
+    fun metaux() {
+        val samples = listOf("matin" to Metal.GOLD, "palmettes" to Metal.SILVER, "fleurs_de_lys" to Metal.BRONZE, "ecoincons" to Metal.COPPER)
+        var index by mutableIntStateOf(0)
+        compose.setContent {
+            val (name, metal) = samples[index]
+            val def = OrnamentalFrames.first { it.name == name }
+            ParoissienTheme(PaperTheme.CLAIR) { FramedPageSample(spec = def.spec, style = def.style.withMetal(metal)) }
+        }
+        samples.forEachIndexed { i, (name, metal) ->
+            index = i
+            compose.waitForIdle()
+            compose.onRoot().captureRoboImage("src/test/screenshots/app.paroissien.core.designsystem.frame.metal.$name.${metal.name.lowercase()}.png")
         }
     }
 

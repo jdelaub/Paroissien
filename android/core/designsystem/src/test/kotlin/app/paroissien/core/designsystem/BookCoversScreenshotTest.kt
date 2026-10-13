@@ -79,6 +79,71 @@ class BookCoversScreenshotTest {
         compose.onRoot().captureRoboImage()
     }
 
+    private fun atelier(color: Long, metal: Metal = Metal.GOLD, motif: CoverMotif = CoverMotif.CROSS, border: CoverBorder = CoverBorder.NONE, corner: CoverCorner = CoverCorner.NONE, center: CoverCenter = CoverCenter.NONE, fillets: Int = 2, spine: Boolean = false, material: CoverMaterial = CoverMaterial.MOROCCO) = BookIdentity(
+        CoverStyle(Color(color), material, Tooling.GOLD, motif, fillets = fillets, corners = corner != CoverCorner.NONE, bands = 4, metal = metal, border = border, cornerStyle = corner, center = center, spineTooling = spine),
+        PaperStock(Color(0xFFF8F1DF), Color(0xFF241C14), Color(0xFF5A4E40), Color(0xFFA31F1A), PaperWeight.FINE),
+        EdgeFinish.GILT, listOf(0), importance = 2, pages = 500, edgeMetal = metal,
+    )
+
+    private fun grid(covers: List<Pair<BookIdentity, String>>, perRow: Int = 3) {
+        compose.setContent {
+            ParoissienTheme(PaperTheme.CLAIR) {
+                Column(Modifier.background(Color(0xFFE9E1D0)).padding(12.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                    covers.chunked(perRow).forEach { row ->
+                        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                            row.forEach { (identity, title) -> BookCover(identity, title, null, Modifier.size(112.dp, 160.dp)) }
+                        }
+                    }
+                }
+            }
+        }
+        compose.onRoot().captureRoboImage()
+    }
+
+    /** Les quatre métaux, les roulettes et les fers d'angle de l'atelier (13/10/2026). */
+    @Test
+    fun roulettesEtMetaux() = grid(
+        listOf(
+            atelier(0xFF5E1519, Metal.GOLD, CoverMotif.FLEUR_DE_LYS, CoverBorder.LYS, CoverCorner.CARRE, fillets = 2) to "Lys",
+            atelier(0xFF1C2B40, Metal.SILVER, CoverMotif.STAR, CoverBorder.PALMETTES, CoverCorner.ROSETTE, CoverCenter.MEDAILLON) to "Palmettes",
+            atelier(0xFF1E3A2B, Metal.GOLD, CoverMotif.LILY, CoverBorder.RINCEAUX, CoverCorner.ECOINCON, spine = true) to "Rinceaux",
+            atelier(0xFF2B1A14, Metal.BRONZE, CoverMotif.ROSE, CoverBorder.DENTELLE, CoverCorner.FLEUR_DE_LYS, CoverCenter.LOSANGE) to "Dentelle",
+            atelier(0xFF16130F, Metal.COPPER, CoverMotif.CHALICE, CoverBorder.PERLES, CoverCorner.QUADRILOBE, CoverCenter.GLOIRE, fillets = 1) to "Perles",
+            atelier(0xFF6B1A1A, Metal.GOLD, CoverMotif.SACRED_HEART, CoverBorder.NONE, CoverCorner.ECOINCON, CoverCenter.CARTOUCHE, fillets = 3, spine = true) to "Cartouche",
+        ),
+    )
+
+    /** Les motifs du plat, en or sur maroquin. */
+    @Test
+    fun motifsDuPlat() = grid(
+        listOf(CoverMotif.CROSS, CoverMotif.CROSS_FLEURY, CoverMotif.CHI_RHO, CoverMotif.FLEUR_DE_LYS, CoverMotif.LILY, CoverMotif.ROSE, CoverMotif.SACRED_HEART, CoverMotif.STAR, CoverMotif.CHALICE)
+            .map { atelier(0xFF241416, motif = it, fillets = 1) to it.name.lowercase().replace('_', ' ') },
+    )
+
+    /** Les tranches : métaux, rouge sous or, teintes, jaspée, marbrée, ciselures. */
+    @Test
+    fun tranches() {
+        val paper = PaperStock(Color(0xFFF6EEDA), Color(0xFF1C1712), Color(0xFF574C3F), Color(0xFFA31F1A), PaperWeight.FINE)
+        fun edge(finish: EdgeFinish, metal: Metal = Metal.GOLD, tooling: EdgeTooling = EdgeTooling.NONE) = BookIdentity(
+            CoverStyle(Color(0xFF2B1A14), CoverMaterial.MOROCCO, Tooling.GOLD, CoverMotif.CROSS, fillets = 1, corners = false, bands = 4),
+            paper, finish, listOf(0), importance = 2, pages = 600, edgeMetal = metal, edgeTooling = tooling,
+        )
+        val edges = listOf(
+            edge(EdgeFinish.GILT), edge(EdgeFinish.GILT, Metal.SILVER), edge(EdgeFinish.GILT, Metal.BRONZE), edge(EdgeFinish.GILT, Metal.COPPER),
+            edge(EdgeFinish.GILT, tooling = EdgeTooling.POINTILLE), edge(EdgeFinish.GILT, tooling = EdgeTooling.LOSANGES), edge(EdgeFinish.RED_UNDER_GOLD, tooling = EdgeTooling.RINCEAUX),
+            edge(EdgeFinish.RED), edge(EdgeFinish.RED_ORANGE), edge(EdgeFinish.BLUE), edge(EdgeFinish.GREEN), edge(EdgeFinish.YELLOW),
+            edge(EdgeFinish.SPRINKLED), edge(EdgeFinish.MARBLED), edge(EdgeFinish.PLAIN),
+        )
+        compose.setContent {
+            ParoissienTheme(PaperTheme.CLAIR) {
+                Column(Modifier.background(Color(0xFFE9E1D0)).padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    edges.forEach { BookEdgeSample(it, Modifier.size(340.dp, 38.dp)) }
+                }
+            }
+        }
+        compose.onRoot().captureRoboImage()
+    }
+
     @Test
     fun reliures() {
         compose.setContent {

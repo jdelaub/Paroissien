@@ -56,11 +56,9 @@ import app.paroissien.core.data.BookLookRow
 import app.paroissien.core.data.CustomFrameRow
 import app.paroissien.core.designsystem.BookCover
 import app.paroissien.core.designsystem.CoverMaterial
-import app.paroissien.core.designsystem.CoverMotif
-import app.paroissien.core.designsystem.EdgeFinish
+import app.paroissien.core.designsystem.Metal
 import app.paroissien.core.designsystem.LocalPaperColors
 import app.paroissien.core.designsystem.RibbonStyle
-import app.paroissien.core.designsystem.Tooling
 import app.paroissien.core.designsystem.frame.EndpaperPatterns
 import app.paroissien.core.designsystem.frame.OrnamentalFrameDef
 import app.paroissien.core.designsystem.frame.OrnamentalFrameLayer
@@ -78,6 +76,7 @@ import app.paroissien.library.FrameMode
 import app.paroissien.library.LibraryEntry
 import app.paroissien.library.ModuleRef
 import app.paroissien.library.dressed
+import app.paroissien.library.enumOrNull
 import app.paroissien.library.imported
 import app.paroissien.library.subtitle
 import java.util.UUID
@@ -166,10 +165,18 @@ fun BookDressScreen(graph: AppGraph, key: BookDressKey, open: (NavKey) -> Unit, 
                         FilterChip(selected = choice.colors == color.name, onClick = { save(choice.copy(colors = color.name)) }, label = { Text(stringResource(colorLabel(color))) })
                     }
                 }
-                // Aperçu : un cadre de la sélection dans les couleurs choisies.
+                // Les ors des cadres : à plat, ou en reflet d'or, d'argent, de bronze ou de cuivre.
+                Text(stringResource(R.string.dress_frame_metal), style = MaterialTheme.typography.bodyMedium)
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    FilterChip(selected = choice.frameMetal == null, onClick = { save(choice.copy(frameMetal = null)) }, label = { Text(stringResource(R.string.metal_flat)) })
+                    METALS.forEach { (metal, label) ->
+                        FilterChip(selected = choice.frameMetal == metal.name, onClick = { save(choice.copy(frameMetal = metal.name)) }, label = { Text(stringResource(label)) })
+                    }
+                }
+                // Aperçu : un cadre de la sélection dans les couleurs et le métal choisis.
                 val sample = frames.firstOrNull { it.name == choice.frame } ?: frames.firstOrNull { it.name == "matin" }
                 val shown = choice.colors?.let { c -> LiturgicalColor.entries.firstOrNull { it.name == c } }
-                sample?.let { FrameThumb(it, width = 90.dp, liturgicalColor = shown) }
+                sample?.let { FrameThumb(it, width = 90.dp, liturgicalColor = shown, metal = enumOrNull<Metal>(choice.frameMetal)) }
             }
         }
         item {
@@ -381,7 +388,7 @@ private fun FrameGallery(frames: List<OrnamentalFrameDef>, selected: Set<String>
  * proportions réelles sur la page.
  */
 @Composable
-fun FrameThumb(def: OrnamentalFrameDef, width: Dp, selected: Boolean = false, liturgicalColor: LiturgicalColor? = null) {
+fun FrameThumb(def: OrnamentalFrameDef, width: Dp, selected: Boolean = false, liturgicalColor: LiturgicalColor? = null, metal: Metal? = null) {
     val paper = LocalPaperColors.current
     val scale = width / 180.dp
     Box(
@@ -390,7 +397,7 @@ fun FrameThumb(def: OrnamentalFrameDef, width: Dp, selected: Boolean = false, li
         contentAlignment = Alignment.Center,
     ) {
         Box(Modifier.requiredSize(180.dp, 300.dp).graphicsLayer { scaleX = scale; scaleY = scale }.background(paper.background)) {
-            OrnamentalFrameLayer(def.spec, def.style, liturgicalColor)
+            OrnamentalFrameLayer(def.spec, def.style.withMetal(metal), liturgicalColor)
         }
     }
 }
@@ -427,22 +434,7 @@ private fun BindingSection(publication: String, entry: LibraryEntry?, binding: B
         Swatches(BindingChoice.leathers.map { Color(it) }, selected = binding.leather ?: (base.cover.leather.toArgb().toLong() and 0xFFFFFFFFL)) {
             onChange(binding.copy(leather = it))
         }
-        Chips(
-            stringResource(R.string.binding_material), identity.cover.material.name,
-            MATERIALS,
-        ) { onChange(binding.copy(material = it)) }
-        Chips(
-            stringResource(R.string.binding_tooling), identity.cover.tooling.name,
-            listOf(Tooling.GOLD to R.string.binding_gold, Tooling.BLIND to R.string.binding_blind, Tooling.PRINTED to R.string.binding_printed),
-        ) { onChange(binding.copy(tooling = it)) }
-        Chips(
-            stringResource(R.string.binding_motif), identity.cover.motif.name,
-            listOf(CoverMotif.CROSS to R.string.binding_cross, CoverMotif.IHS to R.string.binding_ihs, CoverMotif.CHI_RHO to R.string.binding_chi_rho, CoverMotif.NONE to R.string.binding_none),
-        ) { onChange(binding.copy(motif = it)) }
-        Chips(
-            stringResource(R.string.binding_edges), identity.edges.name,
-            listOf(EdgeFinish.GILT to R.string.binding_gilt, EdgeFinish.RED to R.string.binding_red, EdgeFinish.PLAIN to R.string.binding_plain),
-        ) { onChange(binding.copy(edge = it)) }
+        BindingFields(binding, identity, onChange)
         Text(stringResource(R.string.binding_endpaper), style = MaterialTheme.typography.bodyMedium)
         FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
             FilterChip(selected = binding.endpaper == null, onClick = { onChange(binding.copy(endpaper = null)) }, label = { Text(stringResource(R.string.binding_book_default)) })
@@ -469,17 +461,6 @@ private fun BindingSection(publication: String, entry: LibraryEntry?, binding: B
             }
         }
         if (!binding.isEmpty) OutlinedButton(onClick = { onChange(BindingChoice()) }) { Text(stringResource(R.string.binding_reset)) }
-    }
-}
-
-/** Une rangée de choix exclusifs, nommés par une énumération. */
-@Composable
-private fun <E : Enum<E>> Chips(title: String, selected: String, options: List<Pair<E, Int>>, onPick: (String) -> Unit) {
-    Text(title, style = MaterialTheme.typography.bodyMedium)
-    FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-        options.forEach { (value, label) ->
-            FilterChip(selected = selected == value.name, onClick = { onPick(value.name) }, label = { Text(stringResource(label)) })
-        }
     }
 }
 
