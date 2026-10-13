@@ -178,6 +178,13 @@ def _insert_publication(db: sqlite3.Connection, pub: canon.Publication) -> str:
 
     for old, new in sorted(pub.aliases.items()):
         db.execute("INSERT INTO id_alias(pub, old_id, new_id, since_revision) VALUES (?, ?, ?, ?)", (pub_row, old, new, meta["revision"]))
+    # Images des blocs `image` : rangées par nom, préfixé de la publication (un paquet peut en porter plusieurs).
+    for name, f in sorted(pub.assets.items()):
+        data = f.read_bytes()
+        db.execute(
+            "INSERT INTO asset(href, media_type, sha256, meta, data) VALUES (?, ?, ?, ?, ?)",
+            (f"{pub.id}/{name}", canon.MEDIA_TYPES[name.rsplit(".", 1)[1]], hashlib.sha256(data).hexdigest(), "{}", data),
+        )
     return content_hash
 
 

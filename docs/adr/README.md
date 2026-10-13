@@ -12,3 +12,4 @@ Une page par décision, rédigée en phase 0 (PLAN §4.1). Statuts : **Proposé*
 | [006](006-gestes.md) | Gestes du lecteur | Accepté (2026-10-11) ; variante d'exclusion tranchée au spike 1b |
 | [007](007-polices.md) | Polices | Proposé (2026-10-11) ; police par défaut confirmée à la porte A |
 | [008](008-donnees-utilisateur.md) | Données de l'utilisateur | Accepté (2026-10-11) |
+| [009](009-calendrier.md) | Calendrier liturgique | Accepté (2026-10-11) |

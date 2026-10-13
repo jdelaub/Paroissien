@@ -1,0 +1,43 @@
+{"id":"sancti-06-09.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Officium"}],"t":{"la":["Ss. Primi et Feliciani Martyrum"],"fr":["Saints Prime et Félicien, martyrs"]}}
+{"id":"sancti-06-09.rang","type":"rubric","t":{"fr":["Commémoraison — ornements rouges."]}}
+{"id":"sancti-06-09.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C3a.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-06-09.introit.1","type":"rubric","t":{"la":["Eccli 44:15; 44:14"],"fr":["Eccli 44:15; 44:14"]}}
+{"id":"sancti-06-09.introit.2","type":"para","dropCap":true,"t":{"la":["Sapiéntiam Sanctórum narrent populi, et laudes eórum núntiet ecclésia: nómina autem eórum vivent in sǽculum sǽculi."]}}
+{"id":"sancti-06-09.introit.3","type":"rubric","t":{"la":["Ps 32:1"],"fr":["Ps 32:1"]}}
+{"id":"sancti-06-09.introit.4","type":"para","t":{"la":["Exsultáte, justi, in Dómino: rectos decet collaudátio."]}}
+{"id":"sancti-06-09.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-06-09.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-06-09.introit.7","type":"para","t":{"la":["Sapiéntiam Sanctórum narrent populi, et laudes eórum núntiet ecclésia: nómina autem eórum vivent in sǽculum sǽculi."]}}
+{"id":"sancti-06-09.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-06-09.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-06-09.collecte.1","type":"para","t":{"la":["Fac nos, quǽsumus. Dómine, sanctórum Martyrum tuórum Primi et Feliciáni semper festa sectári: quorum suffrágiis protectiónis tuæ dona sentiámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-09.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Lectio"},{"file":"horas/Latin/Commune/C3a.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-06-09.lecon.1","type":"para","style":"intro","t":{"la":["Lectio libri Sapientiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-06-09.lecon.2","type":"rubric","t":{"la":["Sap 5:16-20"],"fr":["Sap 5:16-20"]}}
+{"id":"sancti-06-09.lecon.3","type":"para","t":{"la":["Justi autem in perpétuum vivent, et apud Dóminum est merces eórum, et cogitátio illórum apud Altíssimum. Ideo accípient regnum decóris, et diadéma speciéi de manu Dómini: quóniam déxtera sua teget eos, et bráchio sancto suo deféndet illos. Accípiet armatúram zelus illíus, et armábit creatúram ad ultiónem inimicórum. Induet pro thoráce justítiam, et accípiet pro gálea judícium certum. Sumet scutum inexpugnábile æquitátem."]}}
+{"id":"sancti-06-09.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-06-09.graduel.1","type":"rubric","t":{"la":["Ps 88:6; 88:2"],"fr":["Ps 88:6; 88:2"]}}
+{"id":"sancti-06-09.graduel.2","type":"para","t":{"la":["Confitebúntur cœli mirabília tua, Dómine: etenim veritátem tuam in ecclésia sanctórum."]}}
+{"id":"sancti-06-09.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Misericórdias tuas, Dómine, in ætérnum cantábo: in generatióne et progénie. Allelúja, allelúja."]}}
+{"id":"sancti-06-09.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hæc est vera fratérnitas, quæ vicit mundi crímina: Christum secúta est, ínclita tenens regna cœléstia. Allelúja."]}}
+{"id":"sancti-06-09.graduel.tp","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"GradualeP"}],"t":{"la":["Tempore paschali"],"fr":["Au temps pascal"]}}
+{"id":"sancti-06-09.graduel.tp.1","type":"para","t":{"la":["Allelúja, allelúja."]}}
+{"id":"sancti-06-09.graduel.tp.2","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hæc est vera fratérnitas, quæ vicit mundi crímina: Christum secúta est, ínclita tenens regna cœléstia. Allelúja."]}}
+{"id":"sancti-06-09.graduel.tp.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Te Mártyrum candidátus laudat exércitus, Dómine. Allelúja."]}}
+{"id":"sancti-06-09.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Evangelium"},{"file":"missa/Latin/Sancti/01-15.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-06-09.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-06-09.evangile.2","type":"rubric","t":{"la":["Matt 11:25-30"],"fr":["Matt 11:25-30"]}}
+{"id":"sancti-06-09.evangile.3","type":"para","t":{"la":["In illo témpore: Respóndens Jesus, dixit: Confíteor tibi, Pater, Dómine coeli et terræ, quia abscondísti hæc a sapiéntibus et prudéntibus, et revelásti ea párvulis. Ita, Pater: quóniam sic fuit plácitum ante te. Omnia mihi trádita sunt a Patre meo. Et nemo novit Fílium nisi Pater: neque Patrem quis novit nisi Fílius, et cui volúerit Fílius reveláre. Veníte ad me, omnes, qui laborátis et oneráti estis, et ego refíciam vos. Tóllite jugum meum super vos, et díscite a me, quia mitis sum et húmilis corde: et inveniétis réquiem animábus vestris. Jugum enim meum suáve est et onus meum leve."]}}
+{"id":"sancti-06-09.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-06-09.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-06-09.offertoire.1","type":"rubric","t":{"la":["Ps 67:36"],"fr":["Ps 67:36"]}}
+{"id":"sancti-06-09.offertoire.2","type":"para","t":{"la":["Mirábilis Deus in Sanctis suis: Deus Israël, ipse dabit virtútem et fortitúdinem plebi suæ: benedíctus Deus, allelúja."]}}
+{"id":"sancti-06-09.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-06-09.secrete.1","type":"para","t":{"la":["Fiat tibi, quǽsumus, Dómine, hóstia sacránda placábilis, pretiósi celebritáte martýrii: quæ et peccáta nostra puríficet, et tuórum tibi vota concíliet famulórum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-09.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-06-09.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune ; dans l’octave de la Pentecôte : préface du Saint-Esprit ; après l’Ascension : préface de l’Ascension."]}}
+{"id":"sancti-06-09.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-06-09.communion.1","type":"rubric","t":{"la":["Joannes 15:16"],"fr":["Joannes 15:16"]}}
+{"id":"sancti-06-09.communion.2","type":"para","t":{"la":["Ego vos elégi de mundo, ut eátis et fructum afferátis: et fructus vester máneat."]}}
+{"id":"sancti-06-09.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-09.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-06-09.postcommunion.1","type":"para","t":{"la":["Quǽsumus, omnípotens Deus: ut sanctórum Mártyrum tuórum Primi et Feliciáni cœléstibus mystériis celebráta sollémnitas, indulgéntiam nobis tuæ propitiatiónis acquírat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

@@ -1,0 +1,345 @@
+<title>Cadres du paroissien</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Mise en page : un établi. Réglages à gauche, écran de téléphone à droite, modules dessous. */
+:root {
+  --bg: #E8EBEE;          /* gris pierre, biaisé vers le bleu nuit du cadre */
+  --surface: #F6F7F8;
+  --fg: #1E2731;
+  --muted: #5A6570;
+  --line: #C9CFD5;
+  --accent: #2E4865;      /* bleu nuit des frises */
+  --gold: #9C8247;
+  --on-accent: #F6F7F8;
+  --font-book: "EB Garamond", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-ui: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161B; --surface: #19212A; --fg: #E2E6EA; --muted: #9AA5B0; --line: #2C3742;
+    --accent: #8EABBA; --gold: #C9AD6A; --on-accent: #11161B; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161B; --surface: #19212A; --fg: #E2E6EA; --muted: #9AA5B0; --line: #2C3742;
+  --accent: #8EABBA; --gold: #C9AD6A; --on-accent: #11161B; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: var(--step-0); line-height: 1.5; }
+.bench { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 56px; display: grid; gap: 32px; }
+.intro h1 { font-family: var(--font-book); font-weight: 400; font-size: var(--step-2); line-height: 1.15; margin: 0 0 6px; text-wrap: balance; }
+.intro h1 em { font-style: italic; }
+.intro p { margin: 0; color: var(--muted); max-width: 62ch; }
+
+.workspace { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 32px; align-items: start; }
+@media (max-width: 760px) { .workspace { grid-template-columns: minmax(0, 1fr); } }
+
+.controls { display: grid; gap: 22px; }
+.group { display: grid; gap: 8px; min-width: 0; }
+.label { font-size: var(--step--1); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg button {
+  font: inherit; font-size: var(--step--1); color: var(--fg); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.seg button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.swatch { width: 12px; height: 12px; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); flex: none; }
+.facts { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; font-size: var(--step--1); }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; font-variant-numeric: tabular-nums; }
+.note { font-size: var(--step--1); color: var(--muted); margin: 0; max-width: 46ch; }
+
+.stage { display: grid; justify-items: center; min-width: 0; }
+.device-fit { width: 100%; display: grid; justify-items: center; }
+.device {
+  position: relative; border-radius: 16px; overflow: hidden; transform-origin: top center;
+  box-shadow: 0 0 0 9px #0E1216, 0 18px 40px rgba(14, 18, 22, .28);
+}
+.device canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.runhead {
+  position: absolute; left: 0; right: 0; display: flex; justify-content: center; align-items: baseline;
+  font-family: var(--font-book); font-size: 10.5px; letter-spacing: 0.32em; text-transform: uppercase;
+}
+.runhead .folio { position: absolute; letter-spacing: 0.04em; font-size: 12px; }
+.page-text {
+  position: absolute; overflow-y: auto; font-family: var(--font-book); line-height: 1.38;
+  text-align: justify; hyphens: auto; -webkit-hyphens: auto; scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 10px, #000 calc(100% - 22px), transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 10px, #000 calc(100% - 22px), transparent 100%);
+  padding-block: 6px 18px;
+}
+.page-text::-webkit-scrollbar { display: none; }
+.page-text p { margin: 0 0 0.6em; text-indent: 1.1em; }
+.page-text p.first, .page-text p.lead { text-indent: 0; }
+.page-text h2 {
+  font-size: 0.92em; font-weight: 400; letter-spacing: 0.06em; font-variant: all-small-caps;
+  text-align: center; margin: 1em 0 0.8em; line-height: 1.3; text-wrap: balance;
+}
+.page-text .sc { font-variant: small-caps; letter-spacing: 0.03em; }
+.lettrine { font-size: 1.8em; line-height: 0.8; }
+.fleuron { text-align: center; margin: 0.8em 0 1.2em; letter-spacing: 0.6em; }
+
+.modules figcaption { font-size: var(--step--1); color: var(--muted); }
+h2.section { font-family: var(--font-book); font-weight: 400; font-size: var(--step-1); margin: 0 0 12px; }
+
+.modules .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 20px; }
+.modules figure { margin: 0; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.modules canvas { width: 100%; height: auto; display: block; border-radius: 4px; }
+@media (prefers-reduced-motion: no-preference) { .device { transition: transform .2s ease; } }
+</style>
+
+<main class="bench">
+  <header class="intro">
+    <h1>Cadre <em id="frame-title"></em></h1>
+    <p>Reconstruction vectorielle des cadres d’un paroissien chromolithographié de la fin du XIXᵉ siècle, découpés en modules qui se répètent. L’aperçu applique la même géométrie et le même algorithme que <code>OrnamentalFrame</code>. Fichier généré par <code>tools/cadres/generate.py</code>.</p>
+  </header>
+
+  <div class="workspace">
+    <section class="controls" aria-label="Réglages">
+      <div class="group">
+        <span class="label" id="lbl-frame">Cadre</span>
+        <div class="seg" role="group" aria-labelledby="lbl-frame" id="frames"></div>
+      </div>
+      <div class="group">
+        <span class="label" id="lbl-screen">Écran</span>
+        <div class="seg" role="group" aria-labelledby="lbl-screen" id="screens"></div>
+      </div>
+      <div class="group">
+        <span class="label" id="lbl-season">Couleur liturgique</span>
+        <div class="seg" role="group" aria-labelledby="lbl-season" id="seasons"></div>
+      </div>
+      <div class="group">
+        <span class="label" id="lbl-mode">Thème</span>
+        <div class="seg" role="group" aria-labelledby="lbl-mode" id="modes"></div>
+      </div>
+      <div class="group">
+        <span class="label" id="lbl-size">Taille du texte</span>
+        <div class="seg" role="group" aria-labelledby="lbl-size" id="sizes"></div>
+      </div>
+      <div class="group">
+        <span class="label">Modules posés</span>
+        <dl class="facts" id="facts"></dl>
+      </div>
+      <p class="note">Le texte défile à l’intérieur du cadre, qui reste fixe. Le nombre de modules par côté est arrondi à l’entier le plus proche, puis le pas est ajusté pour que les coins tombent juste.</p>
+    </section>
+
+    <section class="stage" aria-label="Aperçu sur téléphone">
+      <div class="device-fit" id="fit">
+        <div class="device" id="device">
+          <canvas id="frame"></canvas>
+          <div class="runhead" id="runhead"><span id="runhead-title"></span><span class="folio">103</span></div>
+          <div class="page-text" id="text" lang="fr">
+            <p class="first">Toute ma vie je glorifierai un Dieu si bon, le meilleur de tous les maîtres, le plus doux et le plus aimable de tous les pères.</p>
+            <h2>Réitérer la résolution de ne plus pécher.</h2>
+            <p class="lead"><span class="lettrine">M</span><span class="sc">on</span> Dieu, ce que vous venez de faire en ma faveur m’inspire une haine toute nouvelle pour le péché, et me fait prendre une nouvelle résolution de n’en plus commettre. Je vous conjure donc, ô mon Dieu&#8239;! d’augmenter en moi le désir que j’ai de changer de vie&#8239;; fortifiez par votre grâce la résolution où je suis de ne plus pécher, et rendez efficace le propos que je fais d’éviter toutes les occasions du péché, et surtout du péché qui vous déplaît en moi depuis si longtemps.</p>
+            <p>Je vais commencer, ô mon Dieu&#8239;! et faire voir dès ce moment que j’ai eu le bonheur de me réconcilier avec vous. On s’apercevra dès aujourd’hui, par la…</p>
+            <div class="fleuron" aria-hidden="true">❧</div>
+            <h2>Acte de contrition.</h2>
+            <p class="lead"><span class="lettrine">M</span><span class="sc">on</span> Dieu, j’ai un très grand regret de vous avoir offensé, parce que vous êtes infiniment bon, infiniment aimable, et que le péché vous déplaît. Je prends la ferme résolution, avec le secours de votre sainte grâce, de ne plus vous offenser et de faire pénitence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="modules" aria-label="Modules">
+    <h2 class="section">Les modules</h2>
+    <div class="grid" id="modules"></div>
+  </section>
+</main>
+
+<script>
+const SPECS = /*@SPECS@*/null;
+</script>
+<script>
+/*@FRAMEJS@*/
+</script>
+<script>
+(function () {
+  const MF = window.MisselFrame;
+  const SCREENS = [
+    { id: 'compact', label: '360 × 760', w: 360, h: 760 },
+    { id: 'pixel', label: '412 × 892', w: 412, h: 892 },
+    { id: 'tablet', label: '600 × 960', w: 600, h: 960 },
+  ];
+  const SEASONS = [
+    ['', 'Livre'], ['GREEN', 'Vert'], ['VIOLET', 'Violet'], ['RED', 'Rouge'], ['ROSE', 'Rose'],
+    ['WHITE', 'Blanc'], ['BLACK', 'Noir'], ['GOLD', 'Or'],
+  ];
+  const MODES = [['CLAIR', 'Clair'], ['SEPIA', 'Sépia'], ['SOMBRE', 'Sombre'], ['NUIT', 'Nuit']];
+  const SIZES = [[16, 'Petit'], [18, 'Moyen'], [21, 'Grand']];
+  const HEADER = 22;
+
+  const state = { frame: SPECS[0].name, screen: 'compact', season: '', mode: 'CLAIR', size: 18 };
+  try { Object.assign(state, JSON.parse(localStorage.getItem('cadres-v3') || '{}')); } catch (e) {}
+  if (!MODES.some(m => m[0] === state.mode)) state.mode = 'CLAIR';
+  if (!SPECS.some(s => s.name === state.frame)) state.frame = SPECS[0].name;
+  const save = () => { try { localStorage.setItem('cadres-v3', JSON.stringify(state)); } catch (e) {} };
+  const spec = () => SPECS.find(s => s.name === state.frame);
+
+  function seg(el, items, key, swatch) {
+    el.innerHTML = '';
+    for (const [value, label] of items) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.id = key + '-' + value;
+      b.setAttribute('aria-pressed', String(state[key] === value));
+      if (swatch) {
+        const s = document.createElement('span');
+        s.className = 'swatch';
+        const inks = MF.resolveInks(spec(), value, 'CLAIR');
+        s.style.background = spec().ground ? inks[spec().ground] : inks[Object.keys(spec().inks)[0]];
+        b.append(s);
+      }
+      b.append(label);
+      b.addEventListener('click', () => { state[key] = value; save(); render(); if (key === 'frame') renderModules(); });
+      el.append(b);
+    }
+  }
+
+  const device = document.getElementById('device');
+  const canvas = document.getElementById('frame');
+  const text = document.getElementById('text');
+  const runhead = document.getElementById('runhead');
+  const fit = document.getElementById('fit');
+
+  function render() {
+    const S = spec();
+    seg(document.getElementById('frames'), SPECS.map(s => [s.name, s.title]), 'frame');
+    seg(document.getElementById('screens'), SCREENS.map(s => [s.id, s.label]), 'screen');
+    seg(document.getElementById('seasons'), SEASONS.filter(([k]) => !k || S.palettes[k]), 'season', true);
+    seg(document.getElementById('modes'), MODES, 'mode');
+    seg(document.getElementById('sizes'), SIZES, 'size');
+    document.getElementById('frame-title').textContent = '« ' + S.title + ' »';
+    document.getElementById('runhead-title').textContent = S.title + '.';
+
+    const sc = SCREENS.find(s => s.id === state.screen) || SCREENS[0];
+    const inks = MF.resolveInks(S, S.palettes[state.season] ? state.season : '', state.mode);
+    const dark = inks.dark;
+    const dpr = Math.min(3, window.devicePixelRatio || 1);
+    device.style.width = sc.w + 'px';
+    device.style.height = sc.h + 'px';
+    canvas.width = Math.round(sc.w * dpr);
+    canvas.height = Math.round(sc.h * dpr);
+    const ctx = canvas.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.fillStyle = inks.paper;
+    ctx.fillRect(0, 0, sc.w, sc.h);
+    MF.paperGrain(ctx, sc.w, sc.h, dark);
+    const g = MF.geometry(S, sc.w, sc.h, HEADER);
+    const counts = MF.drawFrame(ctx, S, inks, g);
+
+    Object.assign(text.style, {
+      left: g.text.x + 'px', top: g.text.y + 'px', width: g.text.w + 'px', height: g.text.h + 'px',
+      fontSize: state.size + 'px', color: inks.text,
+    });
+    Object.assign(runhead.style, { top: (S.layout.margin - 2) + 'px', height: HEADER + 'px', color: inks.text });
+    runhead.querySelector('.folio').style.right = (S.layout.margin + 4) + 'px';
+    text.querySelectorAll('.lettrine').forEach(el => { el.style.color = inks.rubric; });
+
+    document.getElementById('facts').innerHTML =
+      `<dt>Bande haute</dt><dd>${counts.top} éléments</dd>` +
+      `<dt>Côtés</dt><dd>${counts.left} éléments chacun</dd>` +
+      `<dt>Pied</dt><dd>${counts.bottom} éléments</dd>` +
+      `<dt>Données</dt><dd>${opCount(S)} tracés, ${Math.round(JSON.stringify(S).length / 1024)} Ko</dd>`;
+
+    const avail = fit.clientWidth;
+    const scale = Math.min(1, (avail - 20) / sc.w);
+    device.style.transform = scale < 1 ? `scale(${scale})` : '';
+    fit.style.height = scale < 1 ? (sc.h * scale + 20) + 'px' : '';
+  }
+
+  function modulesOf(S) {
+    const items = [];
+    const seen = new Set();
+    const add = (title, mod, kind) => { if (mod && !seen.has(mod)) { seen.add(mod); items.push([title, mod, kind]); } };
+    // les modules identiques arrivent en JSON comme des copies : on compare leur contenu
+    const key = m => m && JSON.stringify(m);
+    const keys = new Set();
+    const addOnce = (title, mod, kind) => { if (!mod) return; const k = key(mod); if (keys.has(k)) return; keys.add(k); items.push([title, mod, kind]); };
+    addOnce('Frise haute', S.bands.top, 'band');
+    addOnce('Frise des côtés', S.bands.side, 'band');
+    addOnce('Frise du pied', S.bands.bottom, 'band');
+    addOnce('Pièce centrale haute', S.centers.top, 'center');
+    addOnce('Pièce centrale des côtés', S.centers.side, 'center');
+    addOnce('Pièce centrale du pied', S.centers.bottom, 'center');
+    addOnce('Coin', S.corners.top, 'box');
+    addOnce('Coin du pied', S.corners.bottom, 'box');
+    addOnce('Complément de coin', S.corners.fill, 'box');
+    addOnce('Ornement extérieur de coin', S.outer.corner, 'outer');
+    addOnce('Ornement extérieur de coin du pied', S.outer.cornerBottom, 'outer');
+    addOnce('Ornement extérieur du milieu', S.outer.mid, 'outer');
+    if (S.bars && S.bars.terminal) addOnce('Terminaison', S.bars.terminal, 'term');
+    return items;
+  }
+
+  function opCount(S) {
+    let n = 0;
+    for (const [, m] of modulesOf(S)) n += (m.base || []).length + (m.over || []).length + (m.ops || []).length;
+    return n;
+  }
+
+  function renderModules() {
+    const S = spec();
+    const host = document.getElementById('modules');
+    host.innerHTML = '';
+    const inks = MF.resolveInks(S, '', 'CLAIR');
+    const ground = S.ground ? inks[S.ground] : inks.paper;
+    for (const [title, mod, kind] of modulesOf(S)) {
+      const fig = document.createElement('figure');
+      const c = document.createElement('canvas');
+      const ctx = c.getContext('2d');
+      const k = 2;
+      if (kind === 'band') {
+        const n = 4, w = mod.period * n, o = mod.outset || 0, i = mod.inset || 0, h = 100 + o + i;
+        c.width = w * k; c.height = h * k;
+        ctx.scale(k, k);
+        ctx.fillStyle = inks.paper; ctx.fillRect(0, 0, w, h);
+        ctx.translate(0, o);
+        ctx.fillStyle = ground; ctx.fillRect(0, 0, w, 100);
+        for (const pass of ['base', 'over']) for (let j = -1; j <= n + 1; j++) {
+          ctx.save(); ctx.translate((j + mod.phase) * mod.period, 0); MF.drawOps(ctx, mod[pass], inks); ctx.restore();
+        }
+      } else if (kind === 'center') {
+        const w = mod.width, o = mod.outset || 0;
+        c.width = w * k; c.height = (100 + o) * k;
+        ctx.scale(k, k);
+        ctx.fillStyle = ground; ctx.fillRect(0, 0, w, 100 + o);
+        ctx.translate(w / 2, o);
+        MF.drawOps(ctx, mod.ops, inks);
+      } else if (kind === 'box') {
+        c.width = mod.w * k; c.height = mod.h * k;
+        ctx.scale(k, k);
+        ctx.fillStyle = ground; ctx.fillRect(0, 0, mod.w, mod.h);
+        MF.drawOps(ctx, mod.ops, inks);
+      } else {
+        const W = kind === 'term' ? 60 : 120, H = kind === 'term' ? 30 : 120;
+        c.width = W * k * 2; c.height = H * k * 2;
+        ctx.scale(k * 2, k * 2);
+        ctx.fillStyle = inks.paper; ctx.fillRect(0, 0, W, H);
+        if (kind === 'term') ctx.translate(6, 15); else ctx.translate(W * 0.75, H * 0.75);
+        MF.drawOps(ctx, mod.ops, inks);
+      }
+      if (kind !== 'band') c.style.maxWidth = '200px';
+      const n = (mod.base || []).length + (mod.over || []).length + (mod.ops || []).length;
+      const cap = document.createElement('figcaption');
+      cap.textContent = `${title}, ${n} tracés.`;
+      fig.append(c, cap);
+      host.append(fig);
+    }
+  }
+
+  render();
+  renderModules();
+  window.addEventListener('resize', render);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(render);
+})();
+</script>

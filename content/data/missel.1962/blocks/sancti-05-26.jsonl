@@ -1,0 +1,66 @@
+{"id":"sancti-05-26.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Officium"}],"t":{"la":["S. Philippi Neri Confessoris"],"fr":["Saint Philippe Néri, confesseur"]}}
+{"id":"sancti-05-26.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-05-26.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-05-26.introit.1","type":"rubric","t":{"la":["Rom 5:5"],"fr":["Rom 5:5"]}}
+{"id":"sancti-05-26.introit.2","type":"para","dropCap":true,"t":{"la":["Cáritas Dei diffúsa est in córdibus nostris per inhabitántem Spíritum ejus in nobis. Allelúja, allelúja."]}}
+{"id":"sancti-05-26.introit.3","type":"rubric","t":{"la":["Ps. 102:1"],"fr":["Ps. 102:1"]}}
+{"id":"sancti-05-26.introit.4","type":"para","t":{"la":["Benedic, ánima mea, Dómino: et ómnia, quæ intra me sunt, nómini sancto ejus."]}}
+{"id":"sancti-05-26.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-05-26.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-05-26.introit.7","type":"para","t":{"la":["Cáritas Dei diffúsa est in córdibus nostris per inhabitántem Spíritum ejus in nobis. Allelúja, allelúja."]}}
+{"id":"sancti-05-26.introit.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Introitus"}],"t":{"la":["Extra tempus paschale"],"fr":["Hors du temps pascal"]}}
+{"id":"sancti-05-26.introit.hors.1","type":"rubric","t":{"la":["Rom 5:5"],"fr":["Rom 5:5"]}}
+{"id":"sancti-05-26.introit.hors.2","type":"para","t":{"la":["Cáritas Dei diffúsa est in córdibus nostris per inhabitántem Spíritum ejus in nobis."]}}
+{"id":"sancti-05-26.introit.hors.3","type":"rubric","t":{"la":["Ps. 102:1"],"fr":["Ps. 102:1"]}}
+{"id":"sancti-05-26.introit.hors.4","type":"para","t":{"la":["Benedic, ánima mea, Dómino: et ómnia, quæ intra me sunt, nómini sancto ejus."]}}
+{"id":"sancti-05-26.introit.hors.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-05-26.introit.hors.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-05-26.introit.hors.7","type":"para","t":{"la":["Cáritas Dei diffúsa est in córdibus nostris per inhabitántem Spíritum ejus in nobis."]}}
+{"id":"sancti-05-26.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-05-26.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-05-26.collecte.1","type":"para","t":{"la":["Deus, qui beátum Philíppum Confessórem tuum Sanctórum tuórum glória sublimásti: concéde propítius; ut, cujus sollemnitáte lætámur, ejus virtútum proficiámus exémplo. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-05-26.collecte.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C2bp.txt","section":"Oratio"},{"file":"horas/Latin/Commune/C2b.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Éleuthère, pape et martyr"]}}
+{"id":"sancti-05-26.collecte.c1.1","type":"para","t":{"la":["Gregem tuum, Pastor ætérne, placátus inténde: et, per beátum Eleuthérium Mártyrem tuum atque Summum Pontíficem, perpétua protectióne custódi; quem totíus Ecclésiæ præstitísti esse pastórem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-05-26.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/03-07.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-05-26.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-05-26.lecon.2","type":"rubric","t":{"la":["Sap 7:7-14"],"fr":["Sap 7:7-14"]}}
+{"id":"sancti-05-26.lecon.3","type":"para","t":{"la":["Optávi, et datus est mihi sensus: et invocávi, et venit in me spíritus sapiéntiæ: et præpósui illam regnis et sédibus, et divítias nihil esse duxi in comparatióne illíus: nec comparávi illi lápidem pretiósum: quóniam omne aurum in comparatióne illíus arena est exígua, et tamquam lutum æstimábitur argéntum in conspéctu illíus. Super salútem et spéciem diléxi illam, et propósui pro luce habére illam: quóniam inexstinguíbile est lumen illíus. Venérunt autem mihi ómnia bona páriter cum illa, et innumerábilis honéstas per manus illíus, et lætátus sum in ómnibus: quóniam antecedébat me ista sapiéntia, et ignorábam, quóniam horum ómnium mater est. Quam sine fictióne dídici et sine invídia commúnico, et honestátem illíus non abscóndo. Infinítus enim thesáurus est homínibus: quo qui usi sunt, partícipes facti sunt amicítiæ Dei, propter disciplínæ dona commendáti."]}}
+{"id":"sancti-05-26.alleluia","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"GradualeP"}],"t":{"la":["Allelúja"],"fr":["Alléluia"]}}
+{"id":"sancti-05-26.alleluia.1","type":"para","t":{"la":["Allelúja, allelúja."]}}
+{"id":"sancti-05-26.alleluia.2","type":"rubric","t":{"la":["Lam 1:13"],"fr":["Lam 1:13"]}}
+{"id":"sancti-05-26.alleluia.3","type":"para","t":{"la":["De excélso misit ignem in óssibus meis, et erudívit me. Allelúja"]}}
+{"id":"sancti-05-26.alleluia.4","type":"rubric","t":{"la":["Ps 38:4"],"fr":["Ps 38:4"]}}
+{"id":"sancti-05-26.alleluia.5","type":"para","t":{"la":["Concáluit cor meum intra me: et in meditatióne mea exardéscet ignis. Allelúja."]}}
+{"id":"sancti-05-26.alleluia.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Graduale"}],"t":{"la":["Extra tempus paschale"],"fr":["Hors du temps pascal"]}}
+{"id":"sancti-05-26.alleluia.hors.1","type":"rubric","t":{"la":["Ps 33:12; 33:6"],"fr":["Ps 33:12; 33:6"]}}
+{"id":"sancti-05-26.alleluia.hors.2","type":"para","t":{"la":["Veníte, fílii, audíte me: timórem Dómini docébo vos."]}}
+{"id":"sancti-05-26.alleluia.hors.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Accédite ad eum, et illuminámini: et fácies vestra? non confundántur. Allelúja, allelúja."]}}
+{"id":"sancti-05-26.alleluia.hors.4","type":"rubric","t":{"la":["Lam 1:18"],"fr":["Lam 1:18"]}}
+{"id":"sancti-05-26.alleluia.hors.5","type":"para","t":{"la":["De excélso misit ignem in óssibus meis, et erudívit me. Allelúja."]}}
+{"id":"sancti-05-26.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Evangelium"},{"file":"horas/Latin/Commune/C5.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-05-26.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-05-26.evangile.2","type":"rubric","t":{"la":["Luc 12:35-40"],"fr":["Luc 12:35-40"]}}
+{"id":"sancti-05-26.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucernæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. ¶ Beáti servi illi, quos, cum vénerit dóminus, invénerit vigilántes: amen, dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam, si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti, quia, qua hora non putátis, Fílius hóminis véniet."]}}
+{"id":"sancti-05-26.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-05-26.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-05-26.offertoire.1","type":"rubric","t":{"la":["Ps 118:32"],"fr":["Ps 118:32"]}}
+{"id":"sancti-05-26.offertoire.2","type":"para","t":{"la":["Viam mandatórum tuórum cucúrri, cum dilatásti cor meum. Allelúja."]}}
+{"id":"sancti-05-26.offertoire.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Offertorium"}],"t":{"la":["Extra tempus paschale"],"fr":["Hors du temps pascal"]}}
+{"id":"sancti-05-26.offertoire.hors.1","type":"rubric","t":{"la":["Ps 118:32"],"fr":["Ps 118:32"]}}
+{"id":"sancti-05-26.offertoire.hors.2","type":"para","t":{"la":["Viam mandatórum tuórum cucúrri, cum dilatásti cor meum."]}}
+{"id":"sancti-05-26.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-05-26.secrete.1","type":"para","t":{"la":["Sacrifíciis præséntibus, quǽsumus, Dómine, inténde placatus: et præsta; ut illo nos igne Spíritus Sanctus inflámmet, quo beáti Phílippi cor mirabíliter penetrávit. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte ejúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-05-26.secrete.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C2bp.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C4b.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Éleuthère, pape et martyr"]}}
+{"id":"sancti-05-26.secrete.c1.1","type":"para","t":{"la":["Oblátis munéribus, quǽsumus, Dómine, Ecclésiam tuam benígnus illúmina: ut, et gregis tui profíciat ubíque succéssus, et grati fiant nómini tuo, te gubernánte, pastóres. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-05-26.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-05-26.preface.1","type":"rubric","preface":"asc","t":{"la":["Præfatio de Ascensione Domini."],"fr":["Préface de l’Ascension ; dans l’octave de la Pentecôte : préface du Saint-Esprit ; après la Pentecôte : préface commune ; au temps pascal : préface de Pâques."]}}
+{"id":"sancti-05-26.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-05-26.communion.1","type":"rubric","t":{"la":["Ps 83:3"],"fr":["Ps 83:3"]}}
+{"id":"sancti-05-26.communion.2","type":"para","t":{"la":["Cor meum et caro mea exsultavérunt in Deum vivum. Allelúja."]}}
+{"id":"sancti-05-26.communion.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Communio"}],"t":{"la":["Extra tempus paschale"],"fr":["Hors du temps pascal"]}}
+{"id":"sancti-05-26.communion.hors.1","type":"rubric","t":{"la":["Ps 83:3"],"fr":["Ps 83:3"]}}
+{"id":"sancti-05-26.communion.hors.2","type":"para","t":{"la":["Cor meum et caro mea exsultavérunt in Deum vivum."]}}
+{"id":"sancti-05-26.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-26.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-05-26.postcommunion.1","type":"para","t":{"la":["Cœléstibus, Dómine, pasti delíciis: quǽsumus; ut beáti Philippi Confessóris tui méritis et imitatióne, semper eadem, per quæ veráciter vívimus, appetámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-05-26.postcommunion.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C2bp.txt","section":"Postcommunio"},{"file":"horas/Latin/Commune/C4b.txt","section":"Postcommunio"}],"t":{"fr":["Commémoraison : Saint Éleuthère, pape et martyr"]}}
+{"id":"sancti-05-26.postcommunion.c1.1","type":"para","t":{"la":["Refectióne sancta enutrítam gubérna, quǽsumus, Dómine, tuam placátus Ecclésiam: ut, poténti moderatióne dirécta, et increménta libertátis accípiat et in religiónis integritáte persístat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

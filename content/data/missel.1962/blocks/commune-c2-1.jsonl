@@ -1,0 +1,41 @@
+{"id":"commune-c2-1.titre","type":"heading","level":1,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Officium"}],"t":{"la":["Commune Unius Martyris Pontificis"],"fr":["Commun d’un martyr pontife : messe Sacerdotes Dei"]}}
+{"id":"commune-c2-1.rang","type":"rubric","t":{"fr":["Ornements rouges."]}}
+{"id":"commune-c2-1.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"commune-c2-1.introit.1","type":"rubric","t":{"la":["Dan 3:84; 3:87"],"fr":["Dan 3:84; 3:87"]}}
+{"id":"commune-c2-1.introit.2","type":"para","dropCap":true,"t":{"la":["Sacerdótes Dei, benedícite Dóminum: sancti et húmiles corde, laudáte Deum."]}}
+{"id":"commune-c2-1.introit.3","type":"rubric","t":{"la":["Dan 3:57"],"fr":["Dan 3:57"]}}
+{"id":"commune-c2-1.introit.4","type":"para","t":{"la":["Benedícite, ómnia ópera Dómini, Dómino: laudáte et superexaltáte eum in sǽcula."]}}
+{"id":"commune-c2-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"commune-c2-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"commune-c2-1.introit.7","type":"para","t":{"la":["Sacerdótes Dei, benedícite Dóminum: sancti et húmiles corde, laudáte Deum."]}}
+{"id":"commune-c2-1.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"commune-c2-1.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"commune-c2-1.collecte.1","type":"para","t":{"la":["Deus, qui nos beáti N. Mártyris tui atque Pontíficis ánnua solemnitáte lætíficas: concéde propítius; ut, cujus natalítia cólimus, de ejúsdem étiam protectióne gaudeámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c2-1.epitre","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"commune-c2-1.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Corinthiens"]}}
+{"id":"commune-c2-1.epitre.2","type":"rubric","t":{"la":["2 Cor 1:3-7"],"fr":["2 Cor 1:3-7"]}}
+{"id":"commune-c2-1.epitre.3","type":"para","t":{"la":["Fratres: Benedíctus Deus et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolatiónis, qui consolátur nos in omni tribulatióne nostra: ut possímus et ipsi consolári eos, qui in omni pressúra sunt, per exhortatiónem, qua exhortámur et ipsi a Deo. Quóniam sicut abúndant passiónes Christi in nobis: ita et per Christum abúndat consolátio nostra. Sive autem tribulámur pro vestra exhortatióne et salúte, sive consolámur pro vestra consolatióne, sive exhortámur pro vestra exhortatióne et salúte, quæ operátur tolerántiam earúndem passiónum, quas et nos pátimur: ut spes nostra firma sit pro vobis: sciéntes, quod, sicut sócii passiónum estis, sic éritis et consolatiónis: in Christo Jesu, Dómino nostro."]}}
+{"id":"commune-c2-1.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"commune-c2-1.graduel.1","type":"rubric","t":{"la":["Ps 8:6-7"],"fr":["Ps 8:6-7"]}}
+{"id":"commune-c2-1.graduel.2","type":"para","t":{"la":["Glória et honóre coronásti eum."]}}
+{"id":"commune-c2-1.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Et constituísti eum super ópera mánuum tuárum, Dómine. Allelúja, allelúja."]}}
+{"id":"commune-c2-1.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hic est Sacérdos, quem coronávit Dóminus. Allelúja."]}}
+{"id":"commune-c2-1.graduel.sept","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Tractus"}],"t":{"la":["Post Septuagesimam"],"fr":["Après la Septuagésime"]}}
+{"id":"commune-c2-1.graduel.sept.1","type":"para","t":{"la":[{"m":["red","i"],"c":["Ps 8:6-7"]},{"br":1},"Glória et honóre coronásti eum.",{"br":1},{"sym":"V"}," ","Et constituísti eum super ópera mánuum tuárum, Dómine.",{"br":1},{"m":["red","i"],"c":["Ps 111:1-3"]},{"br":1},"Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis.",{"br":1},{"sym":"V"}," ","Potens in terra erit semen ejus: generátio rectórum benedicétur.",{"br":1},{"sym":"V"}," ","Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi."]}}
+{"id":"commune-c2-1.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"commune-c2-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"commune-c2-1.evangile.2","type":"rubric","t":{"la":["Matt 16:24-27"],"fr":["Matt 16:24-27"]}}
+{"id":"commune-c2-1.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me. Qui enim voluerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam. Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua? Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus."]}}
+{"id":"commune-c2-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"commune-c2-1.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"commune-c2-1.offertoire.1","type":"rubric","t":{"la":["Ps 88:21-22"],"fr":["Ps 88:21-22"]}}
+{"id":"commune-c2-1.offertoire.2","type":"para","t":{"la":["Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum."]}}
+{"id":"commune-c2-1.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"commune-c2-1.secrete.1","type":"para","t":{"la":["Múnera tibi, Dómine, dicáta sanctífica: et, intercedénte beáto N. Mártyre tuo atque Pontífice, per éadem nos placátus inténde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c2-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"commune-c2-1.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune, ou préface du temps (Carême, Passion, Pâques, Ascension) quand il y en a une."]}}
+{"id":"commune-c2-1.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"commune-c2-1.communion.1","type":"rubric","t":{"la":["Ps 20:4"],"fr":["Ps 20:4"]}}
+{"id":"commune-c2-1.communion.2","type":"para","t":{"la":["Posuísti, Dómine, in cápite ejus corónam de lápide pretióso."]}}
+{"id":"commune-c2-1.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"commune-c2-1.postcommunion.1","type":"para","t":{"la":["Hæc nos commúnio, Dómine, purget a crímine: et, intercedénte beáto N. Mártyre tuo atque Pontífice, coeléstis remédii fáciat esse consórtes. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

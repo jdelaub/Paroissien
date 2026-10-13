@@ -1,0 +1,40 @@
+{"id":"tempora-pasc4-5.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-5.txt","section":"Officium"}],"t":{"la":["Feria Sexta infra Hebdomadam IV post Octavam Paschæ"],"fr":["Vendredi de la 4e semaine après Pâques"]}}
+{"id":"tempora-pasc4-5.rang","type":"rubric","t":{"fr":["IVᵉ classe — ornements blancs."]}}
+{"id":"tempora-pasc4-5.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-pasc4-5.introit.1","type":"rubric","t":{"la":["Ps 97:1; 97:2"],"fr":["Ps 97:1; 97:2"]}}
+{"id":"tempora-pasc4-5.introit.2","type":"para","dropCap":true,"t":{"la":["Cantáte Dómino cánticum novum, allelúja: quia mirabília fecit Dóminus, allelúja: ante conspéctum géntium revelávit justítiam suam, allelúja, allelúja, allelúja."]}}
+{"id":"tempora-pasc4-5.introit.3","type":"rubric","t":{"la":["Ps 97:1"],"fr":["Ps 97:1"]}}
+{"id":"tempora-pasc4-5.introit.4","type":"para","t":{"la":["Salvávit sibi déxtera ejus: et bráchium sanctum ejus."]}}
+{"id":"tempora-pasc4-5.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-pasc4-5.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-pasc4-5.introit.7","type":"para","t":{"la":["Cantáte Dómino cánticum novum, allelúja: quia mirabília fecit Dóminus, allelúja: ante conspéctum géntium revelávit justítiam suam, allelúja, allelúja, allelúja."]}}
+{"id":"tempora-pasc4-5.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pasc4-5.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-pasc4-5.collecte.1","type":"para","t":{"la":["Deus, qui fidélium mentes uníus éfficis voluntátis: da pópulis tuis id amáre quod prǽcipis, id desideráre quod promíttis; ut inter mundánas varietátes ibi nostra fixa sint corda, ubi vera sunt gáudia. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pasc4-5.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-pasc4-5.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Jacóbi Apóstoli"],"fr":["Lecture de l’Épître de saint Jacques, Apôtre"]}}
+{"id":"tempora-pasc4-5.epitre.2","type":"rubric","t":{"la":["Jas 1:17-21"],"fr":["Jas 1:17-21"]}}
+{"id":"tempora-pasc4-5.epitre.3","type":"para","t":{"la":["Caríssimi: Omne datum óptimum, et omne donum perféctum desúrsum est, descéndens a Patre lúminum, apud quem non est transmutátio nec vicissitúdinis obumbrátio. Voluntárie enim génuit nos verbo veritátis, ut simus inítium áliquod creatúræ ejus. Scitis, fratres mei dilectíssimi. Sit autem omnis homo velox ad audiéndum: tardus autem ad loquéndum et tardus ad iram. Ira enim viri justítiam Dei non operátur. Propter quod abjiciéntes omnem immundítiam et abundántiam malítiæ, in mansuetúdine suscípite ínsitum verbum, quod potest salváre ánimas vestras."]}}
+{"id":"tempora-pasc4-5.alleluia","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-0.txt","section":"Graduale"}],"t":{"la":["Allelúja"],"fr":["Alléluia"]}}
+{"id":"tempora-pasc4-5.alleluia.1","type":"para","t":{"la":["Allelúja, allelúja."]}}
+{"id":"tempora-pasc4-5.alleluia.2","type":"rubric","t":{"la":["Ps 117:16."],"fr":["Ps 117:16."]}}
+{"id":"tempora-pasc4-5.alleluia.3","type":"para","t":{"la":["Déxtera Dómini fecit virtútem: déxtera Dómini exaltávit me. Allelúja."]}}
+{"id":"tempora-pasc4-5.alleluia.4","type":"rubric","t":{"la":["Rom 6:9"],"fr":["Rom 6:9"]}}
+{"id":"tempora-pasc4-5.alleluia.5","type":"para","t":{"la":["Christus resúrgens ex mórtuis jam non móritur: mors illi ultra non dominábitur. Allelúja."]}}
+{"id":"tempora-pasc4-5.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-pasc4-5.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"tempora-pasc4-5.evangile.2","type":"rubric","t":{"la":["Joannes 16:5-14"],"fr":["Joannes 16:5-14"]}}
+{"id":"tempora-pasc4-5.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Vado ad eum, qui misit me: et nemo ex vobis intérrogat me: Quo vadis? Sed quia hæc locútus sum vobis, tristítia implévit cor vestrum. Sed ego veritátem dico vobis: expédit vobis, ut ego vadam: si enim non abíero, Paráclitus non véniet ad vos: si autem abíero, mittam eum ad vos. Et cum vénerit ille, árguet mundum de peccáto et de justítia et de judício. De peccáto quidem, quia non credidérunt in me: de justítia vero, quia ad Patrem vado, et jam non vidébitis me: de judício autem, quia princeps hujus mundi jam judicátus est. Adhuc multa hábeo vobis dícere: sed non potéstis portáre modo. Cum autem vénerit ille Spíritus veritátis, docébit vos omnem veritátem. Non enim loquétur a semetípso: sed quæcúmque áudiet, loquétur, et quæ ventúra sunt, annuntiábit vobis. Ille me clarificábit: quia de meo accípiet et annuntiábit vobis."]}}
+{"id":"tempora-pasc4-5.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pasc4-5.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-pasc4-5.offertoire.1","type":"rubric","t":{"la":["Ps 65:1-2; 65:16"],"fr":["Ps 65:1-2; 65:16"]}}
+{"id":"tempora-pasc4-5.offertoire.2","type":"para","t":{"la":["Jubiláte Deo, univérsa terra, psalmum dícite nómini ejus: veníte et audíte, et narrábo vobis, omnes qui timétis Deum, quanta fecit Dóminus ánimæ meæ, allelúja."]}}
+{"id":"tempora-pasc4-5.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-pasc4-5.secrete.1","type":"para","t":{"la":["Deus, qui nos, per hujus sacrifícii veneránda commércia, uníus summæ divinitátis partícipes effecísti: præsta, quǽsumus; ut, sicut tuam cognóscimus veritátem, sic eam dignis móribus assequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pasc4-5.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-pasc4-5.preface.1","type":"rubric","preface":"pasch","t":{"la":["Præfatio Paschalis."],"fr":["Préface de Pâques."]}}
+{"id":"tempora-pasc4-5.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-pasc4-5.communion.1","type":"rubric","t":{"la":["Joann 16:8"],"fr":["Joann 16:8"]}}
+{"id":"tempora-pasc4-5.communion.2","type":"para","t":{"la":["Cum vénerit Paráclitus Spíritus veritátis, ille árguet mundum de peccáto et de justítia et de judício, allelúja, allelúja."]}}
+{"id":"tempora-pasc4-5.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc4-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-pasc4-5.postcommunion.1","type":"para","t":{"la":["Adésto nobis, Dómine, Deus noster: ut per hæc, quæ fidéliter súmpsimus, et purgémur a vítiis et a perículis ómnibus eruámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

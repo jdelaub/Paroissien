@@ -1,0 +1,824 @@
+# Missel de 1962 : formulaires sans français du domaine public
+
+Le paquet public `missel` est en latin seul : aucun de ses 771 formulaires n'a de traduction française libre de droits. Celle de la saveur personnelle (Divinum Officium, traduction de l'abbaye du Barroux) ne peut pas être publiée. Cette page évalue les paroissiens du domaine public qui pourraient la remplacer, puis liste tous les formulaires par rang, les dimanches et les fêtes de Iʳᵉ classe d'abord. Les Préfaces, à part, ont leur français dans l'Ordinaire public pour la préface commune et celle de la Trinité (`ordinaire.1962`).
+
+## Sources du domaine public
+
+Ce sont les quatre paroissiens déjà en cache pour l'Ordinaire et les prières (`content/.cache/raw/prieres/`). Les chiffres viennent de leur texte OCR d'archive.org, rien n'a été transcrit.
+
+| Paroissien | Contenu du propre | Pour quelles messes | Effort estimé |
+|---|---|---|---|
+| *Paroissien romain*, Tours, Mame, 1869, « traduction nouvelle » (`paroissienromai00churgoog`, 822 p.) | Propre complet, de l'Introït à la Postcommunion, en latin et en français en regard | Les « offices de tous les dimanches et des principales fêtes » : environ 60 messes (58 introïts relevés dans l'OCR), soit les 52 dimanches du temps et les grandes fêtes | 40 à 50 heures. L'OCR mêle les deux colonnes, il faut transcrire sur les fac-similés (`fetch.py page`), comme pour l'Ordinaire. Il faut aussi comparer chaque texte au latin de 1962 |
+| *Paroissien romain*, Tours, A. Mame, 1890 (`paroissienromain00tour`, 574 p.) | Même plan, latin et français en regard | Même ensemble, environ 60 messes (62 introïts relevés) ; c'est sans doute la même traduction, révisée | À peu près le même effort. L'OCR semble meilleur : c'est la source à préférer, l'édition de 1869 servant de témoin |
+| *Nouveau paroissien romain*, Saint-Hyacinthe, É. Solis, 1913 (`cihm_990278`) | Évangiles seuls, en français | Les dimanches et les principales fêtes | 10 à 15 heures pour environ 70 évangiles ; utile pour combler les lacunes de Mame |
+| *Paroissien de poche*, Québec, I.-P. Déry, 1914 (`cihm_80314`) | Évangiles seuls, en français | Comme Solis | Témoin de Solis |
+
+**Limites.** Ces paroissiens sont antérieurs aux messes créées ou refaites après eux. Ils n'ont donc pas :
+- la Sainte Famille (1921), le Christ-Roi (1925), la nouvelle messe du Sacré-Cœur (1929) ;
+- le Cœur immaculé de Marie (1944), l'Assomption (*Signum magnum*, 1950), Marie Reine (1954), saint Joseph artisan (1955) ;
+- la Semaine sainte réformée (1955) ;
+- la plupart des saints canonisés depuis.
+
+Pour ces formulaires, il faudrait un missel français antérieur à la protection, ou une traduction propre à Paroissien. Rien de cela n'a été fait. Les féries de IVᵉ classe reprennent la messe du dimanche : traduire un dimanche les traduit aussi.
+
+**Ordre conseillé** : les dimanches d'abord, puis les fêtes de Iʳᵉ classe, avec Mame 1890 sur fac-similé et Mame 1869 en témoin. Les 57 dimanches et les 259 féries qui reprennent leur messe font à eux seuls plus de 300 des 771 unités, pour une cinquantaine d'heures.
+
+## Formulaires, par rang
+
+### Dimanches (Iʳᵉ et IIᵉ classe) et Christ-Roi (57)
+
+- `tempora-adv1-0` — 1er dimanche de l’Avent
+- `tempora-adv2-0` — 2e dimanche de l’Avent
+- `tempora-adv3-0` — 3e dimanche de l’Avent
+- `tempora-adv4-0` — 4e dimanche de l’Avent
+- `tempora-nat1-0` — Dimanche dans l’octave de Noël
+- `tempora-nat2-0` — Très saint Nom de Jésus
+- `tempora-epi1-0` — Sainte Famille, Jésus, Marie, Joseph
+- `tempora-epi2-0` — 2e dimanche après l’Épiphanie
+- `tempora-epi3-0` — 3e dimanche après l’Épiphanie
+- `tempora-epi4-0` — 4e dimanche après l’Épiphanie
+- `tempora-epi5-0` — 5e dimanche après l’Épiphanie
+- `tempora-epi6-0` — 6e dimanche après l’Épiphanie
+- `tempora-quadp1-0` — Dimanche de la Septuagésime
+- `tempora-quadp2-0` — Dimanche de la Sexagésime
+- `tempora-quadp3-0` — Dimanche de la Quinquagésime
+- `tempora-quad1-0` — 1er dimanche de Carême
+- `tempora-quad2-0` — 2e dimanche de Carême
+- `tempora-quad3-0` — 3e dimanche de Carême
+- `tempora-quad4-0` — 4e dimanche de Carême
+- `tempora-quad5-0` — 1er dimanche de la Passion
+- `tempora-quad6-0` — 2e dimanche de la Passion ou des Rameaux
+- `tempora-pasc0-0` — Dimanche de Pâques
+- `tempora-pasc1-0` — Dimanche in albis, octave de Pâques
+- `tempora-pasc2-0` — 2e dimanche après Pâques
+- `tempora-pasc3-0` — 3e dimanche après Pâques
+- `tempora-pasc4-0` — 4e dimanche après Pâques
+- `tempora-pasc5-0` — 5e dimanche après Pâques
+- `tempora-pasc6-0` — Dimanche après l’Ascension
+- `tempora-pasc7-0` — Dimanche de la Pentecôte
+- `tempora-pent01-0` — Très Sainte Trinité
+- `tempora-pent02-0` — 2e dimanche après la Pentecôte
+- `tempora-pent03-0` — 3e dimanche après la Pentecôte
+- `tempora-pent04-0` — 4e dimanche après la Pentecôte
+- `tempora-pent05-0` — 5e dimanche après la Pentecôte
+- `tempora-pent06-0` — 6e dimanche après la Pentecôte
+- `tempora-pent07-0` — 7e dimanche après la Pentecôte
+- `tempora-pent08-0` — 8e dimanche après la Pentecôte
+- `tempora-pent09-0` — 9e dimanche après la Pentecôte
+- `tempora-pent10-0` — 10e dimanche après la Pentecôte
+- `tempora-pent11-0` — 11e dimanche après la Pentecôte
+- `tempora-pent12-0` — 12e dimanche après la Pentecôte
+- `tempora-pent13-0` — 13e dimanche après la Pentecôte
+- `tempora-pent14-0` — 14e dimanche après la Pentecôte
+- `tempora-pent15-0` — 15e dimanche après la Pentecôte
+- `tempora-pent16-0` — 16e dimanche après la Pentecôte
+- `tempora-pent17-0` — 17e dimanche après la Pentecôte
+- `tempora-pent18-0` — 18e dimanche après la Pentecôte
+- `tempora-pent19-0` — 19e dimanche après la Pentecôte
+- `tempora-pent20-0` — 20e dimanche après la Pentecôte
+- `tempora-pent21-0` — 21e dimanche après la Pentecôte
+- `tempora-pent22-0` — 22e dimanche après la Pentecôte
+- `tempora-pent23-0` — 23e dimanche après la Pentecôte
+- `tempora-pentepi4-0` — 4e dimanche après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi5-0` — 5e dimanche après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi6-0` — 6e dimanche après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pent24-0` — 24e dimanche après la Pentecôte
+- `sancti-10-du` — Dernier dimanche d’octobre — Notre-Seigneur Jésus-Christ Roi
+
+### Autres jours et fêtes de Iʳᵉ classe (37)
+
+- `sancti-12-24` — Vigile de la Nativité
+- `sancti-12-25` — Nativité de Notre-Seigneur
+- `sancti-01-01` — Octave de la Nativité
+- `sancti-01-06` — Épiphanie de Notre-Seigneur
+- `tempora-quadp3-3` — Mercredi des Cendres
+- `tempora-quad6-1` — Lundi saint
+- `tempora-quad6-2` — Mardi saint
+- `tempora-quad6-3` — Mercredi saint
+- `tempora-quad6-4` — Jeudi saint
+- `tempora-quad6-5` — Vendredi saint
+- `tempora-quad6-6` — Samedi saint
+- `tempora-pasc0-1` — Lundi de Pâques
+- `tempora-pasc0-2` — Mardi de Pâques
+- `tempora-pasc0-3` — Mercredi de Pâques
+- `tempora-pasc0-4` — Jeudi de Pâques
+- `tempora-pasc0-5` — Vendredi de Pâques
+- `tempora-pasc0-6` — Samedi de Pâques
+- `tempora-pasc5-4` — Ascension de Notre-Seigneur
+- `tempora-pasc6-6` — Vigile de la Pentecôte
+- `tempora-pasc7-1` — Lundi de la Pentecôte
+- `tempora-pasc7-2` — Mardi de la Pentecôte
+- `tempora-pasc7-3` — Mercredi de la Pentecôte, Quatre-Temps
+- `tempora-pasc7-4` — Jeudi de la Pentecôte
+- `tempora-pasc7-5` — Vendredi de la Pentecôte, Quatre-Temps
+- `tempora-pasc7-6` — Samedi de la Pentecôte, Quatre-Temps
+- `tempora-pent01-4` — Fête-Dieu, le Très Saint-Sacrement
+- `tempora-pent02-5` — Sacré-Cœur de Jésus
+- `sancti-03-19` — 19 mars — Saint Joseph, époux de la bienheureuse Vierge Marie, confesseur, patron de l’Église universelle
+- `sancti-03-25` — 25 mars — Annonciation de la bienheureuse Vierge Marie
+- `sancti-05-01r` — 1er mai — Saint Joseph artisan, époux de la bienheureuse Vierge Marie, confesseur
+- `sancti-06-24` — 24 juin — Nativité de saint Jean-Baptiste
+- `sancti-06-29` — 29 juin — Saints Pierre et Paul, apôtres
+- `sancti-07-01` — 1er juillet — Précieux Sang de Notre-Seigneur Jésus-Christ
+- `sancti-08-15` — 15 août — Assomption de la bienheureuse Vierge Marie
+- `sancti-09-29` — 29 septembre — Dédicace de saint Michel archange
+- `sancti-11-01` — 1er novembre — Toussaint
+- `sancti-12-08` — 8 décembre — Immaculée Conception de la bienheureuse Vierge Marie
+
+### IIᵉ classe (48)
+
+- `tempora-adv3-3` — Mercredi des Quatre-Temps de l’Avent
+- `tempora-adv3-5` — Vendredi des Quatre-Temps de l’Avent
+- `tempora-adv3-6` — Samedi des Quatre-Temps de l’Avent
+- `tempora-adv4-1` — Lundi de la 4e semaine de l’Avent
+- `tempora-adv4-2` — Mardi de la 4e semaine de l’Avent
+- `tempora-adv4-3` — Mercredi de la 4e semaine de l’Avent
+- `tempora-adv4-4` — Jeudi de la 4e semaine de l’Avent
+- `tempora-adv4-5` — Vendredi de la 4e semaine de l’Avent
+- `tempora-nat29` — 6e jour dans l’octave de Noël
+- `tempora-nat30` — 7e jour dans l’octave de Noël
+- `tempora-nat31` — 8e jour dans l’octave de Noël
+- `sancti-01-13` — Commémoraison du Baptême de Notre-Seigneur
+- `tempora-quad1-3` — Mercredi des Quatre-Temps de Carême
+- `tempora-quad1-5` — Vendredi des Quatre-Temps de Carême
+- `tempora-quad1-6` — Samedi des Quatre-Temps de Carême
+- `tempora-pasc5-3` — Vigile de l’Ascension
+- `tempora-093-3` — Mercredi des Quatre-Temps de septembre
+- `tempora-093-5` — Vendredi des Quatre-Temps de septembre
+- `tempora-093-6` — Samedi des Quatre-Temps de septembre
+- `sancti-02-02` — 2 février — Purification de la bienheureuse Vierge Marie
+- `sancti-02-22` — 22 février — Chaire de saint Pierre, apôtre
+- `sancti-02-24` — 24 février — Saint Matthias, apôtre
+- `sancti-04-25` — 25 avril — Saint Marc, évangéliste
+- `sancti-05-11r` — 11 mai — Saints Philippe et Jacques, apôtres
+- `sancti-05-30f` — 30 mai — Sainte Jeanne d’Arc, vierge, patronne secondaire de la France
+- `sancti-05-31` — 31 mai — La bienheureuse Vierge Marie, Reine
+- `sancti-07-02` — 2 juillet — Visitation de la bienheureuse Vierge Marie
+- `sancti-07-25` — 25 juillet — Saint Jacques le Majeur, apôtre
+- `sancti-07-26` — 26 juillet — Sainte Anne, mère de la bienheureuse Vierge Marie
+- `sancti-08-06` — 6 août — Transfiguration de Notre-Seigneur Jésus-Christ
+- `sancti-08-10` — 10 août — Saint Laurent, martyr
+- `sancti-08-16` — 16 août — Saint Joachim, père de la bienheureuse Vierge Marie, confesseur
+- `sancti-08-22` — 22 août — Cœur immaculé de la bienheureuse Vierge Marie
+- `sancti-08-24` — 24 août — Saint Barthélemy, apôtre
+- `sancti-09-08` — 8 septembre — Nativité de la bienheureuse Vierge Marie
+- `sancti-09-14` — 14 septembre — Exaltation de la sainte Croix
+- `sancti-09-15` — 15 septembre — Les Sept Douleurs de la bienheureuse Vierge Marie
+- `sancti-09-21` — 21 septembre — Saint Matthieu, apôtre et évangéliste
+- `sancti-10-07` — 7 octobre — Notre-Dame du Rosaire
+- `sancti-10-11` — 11 octobre — Maternité de la bienheureuse Vierge Marie
+- `sancti-10-18` — 18 octobre — Saint Luc, évangéliste
+- `sancti-10-28` — 28 octobre — Saints Simon et Jude, apôtres
+- `sancti-11-09` — 9 novembre — Dédicace de l’archibasilique du Très-Saint-Sauveur
+- `sancti-11-30` — 30 novembre — Saint André, apôtre
+- `sancti-12-21` — 21 décembre — Saint Thomas, apôtre
+- `sancti-12-26` — 26 décembre — Saint Étienne, premier martyr
+- `sancti-12-27` — 27 décembre — Saint Jean, apôtre et évangéliste
+- `sancti-12-28r` — 28 décembre — Les saints Innocents, martyrs
+
+### IIIᵉ classe (226)
+
+- `tempora-adv1-1` — Lundi de la 1re semaine de l’Avent
+- `tempora-adv1-2` — Mardi de la 1re semaine de l’Avent
+- `tempora-adv1-3` — Mercredi de la 1re semaine de l’Avent
+- `tempora-adv1-4` — Jeudi de la 1re semaine de l’Avent
+- `tempora-adv1-5` — Vendredi de la 1re semaine de l’Avent
+- `tempora-adv1-6` — Samedi de la 1re semaine de l’Avent
+- `tempora-adv2-1` — Lundi de la 2e semaine de l’Avent
+- `tempora-adv2-2` — Mardi de la 2e semaine de l’Avent
+- `tempora-adv2-3` — Mercredi de la 2e semaine de l’Avent
+- `tempora-adv2-4` — Jeudi de la 2e semaine de l’Avent
+- `tempora-adv2-5` — Vendredi de la 2e semaine de l’Avent
+- `tempora-adv2-6` — Samedi de la 2e semaine de l’Avent
+- `tempora-adv3-1` — Lundi de la 3e semaine de l’Avent
+- `tempora-adv3-2` — Mardi de la 3e semaine de l’Avent
+- `tempora-adv3-4` — Jeudi de la 3e semaine de l’Avent
+- `tempora-quadp3-4` — Jeudi après les Cendres
+- `tempora-quadp3-5` — Vendredi après les Cendres
+- `tempora-quadp3-6` — Samedi après les Cendres
+- `tempora-quad1-1` — Lundi de la 1re semaine de Carême
+- `tempora-quad1-2` — Mardi de la 1re semaine de Carême
+- `tempora-quad1-4` — Jeudi de la 1re semaine de Carême
+- `tempora-quad2-1` — Lundi de la 2e semaine de Carême
+- `tempora-quad2-2` — Mardi de la 2e semaine de Carême
+- `tempora-quad2-3` — Mercredi de la 2e semaine de Carême
+- `tempora-quad2-4` — Jeudi de la 2e semaine de Carême
+- `tempora-quad2-5` — Vendredi de la 2e semaine de Carême
+- `tempora-quad2-6` — Samedi de la 2e semaine de Carême
+- `tempora-quad3-1` — Lundi de la 3e semaine de Carême
+- `tempora-quad3-2` — Mardi de la 3e semaine de Carême
+- `tempora-quad3-3` — Mercredi de la 3e semaine de Carême
+- `tempora-quad3-4` — Jeudi de la 3e semaine de Carême
+- `tempora-quad3-5` — Vendredi de la 3e semaine de Carême
+- `tempora-quad3-6` — Samedi de la 3e semaine de Carême
+- `tempora-quad4-1` — Lundi de la 4e semaine de Carême
+- `tempora-quad4-2` — Mardi de la 4e semaine de Carême
+- `tempora-quad4-3` — Mercredi de la 4e semaine de Carême
+- `tempora-quad4-4` — Jeudi de la 4e semaine de Carême
+- `tempora-quad4-5` — Vendredi de la 4e semaine de Carême
+- `tempora-quad4-6` — Samedi de la 4e semaine de Carême
+- `tempora-quad5-1` — Lundi de la semaine de la Passion
+- `tempora-quad5-2` — Mardi de la semaine de la Passion
+- `tempora-quad5-3` — Mercredi de la semaine de la Passion
+- `tempora-quad5-4` — Jeudi de la semaine de la Passion
+- `tempora-quad5-5` — Vendredi de la semaine de la Passion
+- `tempora-quad5-6` — Samedi de la semaine de la Passion
+- `sancti-01-03` — 3 janvier — Sainte Geneviève, vierge
+- `sancti-01-14` — 14 janvier — Saint Hilaire, évêque, confesseur et docteur
+- `sancti-01-15` — 15 janvier — Saint Paul, premier ermite, confesseur
+- `sancti-01-16` — 16 janvier — Saint Marcel Ier, pape et martyr
+- `sancti-01-17` — 17 janvier — Saint Antoine, abbé
+- `sancti-01-20` — 20 janvier — Saints Fabien et Sébastien, martyrs
+- `sancti-01-21` — 21 janvier — Sainte Agnès, vierge et martyre
+- `sancti-01-22` — 22 janvier — Saints Vincent et Anastase, martyrs
+- `sancti-01-23` — 23 janvier — Saint Raymond de Peñafort, confesseur
+- `sancti-01-24` — 24 janvier — Saint Timothée, évêque et martyr
+- `sancti-01-25r` — 25 janvier — Conversion de saint Paul, apôtre
+- `sancti-01-26` — 26 janvier — Saint Polycarpe, évêque et martyr
+- `sancti-01-27` — 27 janvier — Saint Jean Chrysostome, évêque, confesseur et docteur
+- `sancti-01-28` — 28 janvier — Saint Pierre Nolasque, confesseur
+- `sancti-01-29` — 29 janvier — Saint François de Sales, évêque, confesseur et docteur
+- `sancti-01-30` — 30 janvier — Sainte Martine, vierge et martyre
+- `sancti-01-31` — 31 janvier — Saint Jean Bosco, confesseur
+- `sancti-02-01` — 1er février — Saint Ignace d’Antioche, évêque et martyr
+- `sancti-02-04` — 4 février — Saint André Corsini, évêque et confesseur
+- `sancti-02-05` — 5 février — Sainte Agathe, vierge et martyre
+- `sancti-02-06` — 6 février — Saint Tite, évêque et confesseur
+- `sancti-02-07` — 7 février — Saint Romuald, abbé
+- `sancti-02-08` — 8 février — Saint Jean de Matha, confesseur
+- `sancti-02-09` — 9 février — Saint Cyrille d’Alexandrie, évêque, confesseur et docteur
+- `sancti-02-10` — 10 février — Sainte Scholastique, vierge
+- `sancti-02-11` — 11 février — Apparition de la bienheureuse Vierge Marie Immaculée
+- `sancti-02-12` — 12 février — Les sept saints Fondateurs de l’ordre des Servites de Marie, confesseurs
+- `sancti-02-23r` — 23 février — Saint Pierre Damien, évêque, confesseur et docteur
+- `sancti-02-27` — 27 février — Saint Gabriel de la Vierge des Douleurs, confesseur
+- `sancti-03-04` — 4 mars — Saint Casimir, confesseur
+- `sancti-03-06` — 6 mars — Saintes Perpétue et Félicité, martyres
+- `sancti-03-07` — 7 mars — Saint Thomas d’Aquin, confesseur et docteur
+- `sancti-03-08` — 8 mars — Saint Jean de Dieu, confesseur
+- `sancti-03-09` — 9 mars — Sainte Françoise Romaine, veuve
+- `sancti-03-10` — 10 mars — Les saints Quarante Martyrs
+- `sancti-03-12` — 12 mars — Saint Grégoire le Grand, pape, confesseur et docteur
+- `sancti-03-17` — 17 mars — Saint Patrice, évêque et confesseur
+- `sancti-03-18` — 18 mars — Saint Cyrille de Jérusalem, évêque, confesseur et docteur
+- `sancti-03-21` — 21 mars — Saint Benoît, abbé
+- `sancti-03-24` — 24 mars — Saint Gabriel, archange
+- `sancti-03-27` — 27 mars — Saint Jean Damascène, confesseur et docteur
+- `sancti-03-28` — 28 mars — Saint Jean de Capistran, confesseur
+- `sancti-04-02` — 2 avril — Saint François de Paule, confesseur
+- `sancti-04-04` — 4 avril — Saint Isidore, évêque, confesseur et docteur
+- `sancti-04-05` — 5 avril — Saint Vincent Ferrier, confesseur
+- `sancti-04-11` — 11 avril — Saint Léon le Grand, pape, confesseur et docteur
+- `sancti-04-13` — 13 avril — Saint Herménégilde, martyr
+- `sancti-04-14` — 14 avril — Saint Justin, martyr
+- `sancti-04-21` — 21 avril — Saint Anselme, évêque, confesseur et docteur
+- `sancti-04-22` — 22 avril — Saints Soter et Caïus, papes et martyrs
+- `sancti-04-24` — 24 avril — Saint Fidèle de Sigmaringen, martyr
+- `sancti-04-26` — 26 avril — Saints Clet et Marcellin, papes et martyrs
+- `sancti-04-27` — 27 avril — Saint Pierre Canisius, confesseur et docteur
+- `sancti-04-28` — 28 avril — Saint Paul de la Croix, confesseur
+- `sancti-04-29` — 29 avril — Saint Pierre de Vérone, martyr
+- `sancti-04-30` — 30 avril — Sainte Catherine de Sienne, vierge
+- `sancti-05-02` — 2 mai — Saint Athanase, évêque, confesseur et docteur
+- `sancti-05-04` — 4 mai — Sainte Monique, veuve
+- `sancti-05-05` — 5 mai — Saint Pie V, pape et confesseur
+- `sancti-05-07` — 7 mai — Saint Stanislas, évêque et martyr
+- `sancti-05-09` — 9 mai — Saint Grégoire de Nazianze, évêque, confesseur et docteur
+- `sancti-05-10` — 10 mai — Saint Antonin, évêque et confesseur
+- `sancti-05-12` — 12 mai — Saints Nérée, Achillée, Domitille, vierge, et Pancrace, martyrs
+- `sancti-05-13` — 13 mai — Saint Robert Bellarmin, évêque, confesseur et docteur
+- `sancti-05-15` — 15 mai — Saint Jean-Baptiste de La Salle, confesseur
+- `sancti-05-16` — 16 mai — Saint Ubald, évêque et confesseur
+- `sancti-05-17` — 17 mai — Saint Pascal Baylon, confesseur
+- `sancti-05-18` — 18 mai — Saint Venant, martyr
+- `sancti-05-19` — 19 mai — Saint Pierre Célestin, pape et confesseur
+- `sancti-05-20` — 20 mai — Saint Bernardin de Sienne, confesseur
+- `sancti-05-25` — 25 mai — Saint Grégoire VII, pape et confesseur
+- `sancti-05-26` — 26 mai — Saint Philippe Néri, confesseur
+- `sancti-05-27` — 27 mai — Saint Bède le Vénérable, confesseur et docteur
+- `sancti-05-28` — 28 mai — Saint Augustin de Cantorbéry, évêque et confesseur
+- `sancti-05-29` — 29 mai — Sainte Marie-Madeleine de Pazzi, vierge
+- `sancti-06-01` — 1er juin — Sainte Angèle Merici, vierge
+- `sancti-06-04` — 4 juin — Saint François Caracciolo, confesseur
+- `sancti-06-05` — 5 juin — Saint Boniface, évêque et martyr
+- `sancti-06-06` — 6 juin — Saint Norbert, évêque et confesseur
+- `sancti-06-10` — 10 juin — Sainte Marguerite, reine, veuve
+- `sancti-06-11` — 11 juin — Saint Barnabé, apôtre
+- `sancti-06-12` — 12 juin — Saint Jean de Saint-Facond, confesseur
+- `sancti-06-13` — 13 juin — Saint Antoine de Padoue, confesseur et docteur
+- `sancti-06-14` — 14 juin — Saint Basile le Grand, évêque, confesseur et docteur
+- `sancti-06-17r` — 17 juin — Saint Grégoire Barbarigo, évêque et confesseur
+- `sancti-06-18` — 18 juin — Saint Éphrem le Syrien, confesseur et docteur
+- `sancti-06-19` — 19 juin — Sainte Julienne Falconieri, vierge
+- `sancti-06-21` — 21 juin — Saint Louis de Gonzague, confesseur
+- `sancti-06-22` — 22 juin — Saint Paulin, évêque et confesseur
+- `sancti-06-25` — 25 juin — Saint Guillaume, abbé
+- `sancti-06-26` — 26 juin — Saints Jean et Paul, martyrs
+- `sancti-06-30` — 30 juin — Commémoraison de saint Paul, apôtre
+- `sancti-07-03r` — 3 juillet — Saint Irénée, évêque et martyr
+- `sancti-07-05` — 5 juillet — Saint Antoine-Marie Zaccaria, confesseur
+- `sancti-07-07` — 7 juillet — Saints Cyrille et Méthode, évêques et confesseurs
+- `sancti-07-08` — 8 juillet — Sainte Élisabeth de Portugal, reine, veuve
+- `sancti-07-10` — 10 juillet — Les sept saints Frères, martyrs, et saintes Rufine et Seconde, vierges et martyres
+- `sancti-07-12` — 12 juillet — Saint Jean Gualbert, abbé
+- `sancti-07-14` — 14 juillet — Saint Bonaventure, évêque, confesseur et docteur
+- `sancti-07-15` — 15 juillet — Saint Henri, empereur, confesseur
+- `sancti-07-18` — 18 juillet — Saint Camille de Lellis, confesseur
+- `sancti-07-19` — 19 juillet — Saint Vincent de Paul, confesseur
+- `sancti-07-20` — 20 juillet — Saint Jérôme Émilien, confesseur
+- `sancti-07-21r` — 21 juillet — Saint Laurent de Brindes, confesseur et docteur
+- `sancti-07-22` — 22 juillet — Sainte Marie-Madeleine, pénitente
+- `sancti-07-23` — 23 juillet — Saint Apollinaire, évêque et martyr
+- `sancti-07-28` — 28 juillet — Saints Nazaire et Celse, martyrs, Victor Ier, pape et martyr, et Innocent Ier, pape et confesseur
+- `sancti-07-29` — 29 juillet — Sainte Marthe, vierge
+- `sancti-07-31` — 31 juillet — Saint Ignace de Loyola, confesseur
+- `sancti-08-02` — 2 août — Saint Alphonse-Marie de Liguori, évêque, confesseur et docteur
+- `sancti-08-04` — 4 août — Saint Dominique, confesseur
+- `sancti-08-05` — 5 août — Dédicace de Sainte-Marie-aux-Neiges
+- `sancti-08-07` — 7 août — Saint Gaétan, confesseur
+- `sancti-08-09` — 9 août — Saint Jean-Marie Vianney, confesseur
+- `sancti-08-12` — 12 août — Sainte Claire, vierge
+- `sancti-08-17` — 17 août — Saint Hyacinthe, confesseur
+- `sancti-08-19` — 19 août — Saint Jean Eudes, confesseur
+- `sancti-08-20` — 20 août — Saint Bernard, abbé et docteur
+- `sancti-08-21` — 21 août — Sainte Jeanne-Françoise Frémiot de Chantal, veuve
+- `sancti-08-23` — 23 août — Saint Philippe Benizi, confesseur
+- `sancti-08-25` — 25 août — Saint Louis, roi de France, confesseur
+- `sancti-08-27` — 27 août — Saint Joseph Calasanz, confesseur
+- `sancti-08-28` — 28 août — Saint Augustin, évêque, confesseur et docteur
+- `sancti-08-29` — 29 août — Décollation de saint Jean-Baptiste
+- `sancti-08-30` — 30 août — Sainte Rose de Lima, vierge
+- `sancti-08-31` — 31 août — Saint Raymond Nonnat, confesseur
+- `sancti-09-02` — 2 septembre — Saint Étienne, roi de Hongrie, confesseur
+- `sancti-09-03` — 3 septembre — Saint Pie X, pape et confesseur
+- `sancti-09-05` — 5 septembre — Saint Laurent Justinien, évêque et confesseur
+- `sancti-09-10` — 10 septembre — Saint Nicolas de Tolentino, confesseur
+- `sancti-09-12` — 12 septembre — Très Saint Nom de Marie
+- `sancti-09-16` — 16 septembre — Saints Corneille, pape, et Cyprien, évêque, martyrs
+- `sancti-09-18` — 18 septembre — Saint Joseph de Cupertino, confesseur
+- `sancti-09-19` — 19 septembre — Saint Janvier, évêque, et ses compagnons, martyrs
+- `sancti-09-22` — 22 septembre — Saint Thomas de Villeneuve, évêque et confesseur
+- `sancti-09-23` — 23 septembre — Saint Lin, pape et martyr
+- `sancti-09-27` — 27 septembre — Saints Côme et Damien, martyrs
+- `sancti-09-28` — 28 septembre — Saint Venceslas, duc et martyr
+- `sancti-09-30` — 30 septembre — Saint Jérôme, prêtre, confesseur et docteur
+- `sancti-10-02` — 2 octobre — Les saints Anges gardiens
+- `sancti-10-03` — 3 octobre — Sainte Thérèse de l’Enfant-Jésus, vierge
+- `sancti-10-04` — 4 octobre — Saint François d’Assise, confesseur
+- `sancti-10-06` — 6 octobre — Saint Bruno, confesseur
+- `sancti-10-08` — 8 octobre — Sainte Brigitte, veuve
+- `sancti-10-09` — 9 octobre — Saint Jean Léonardi, confesseur
+- `sancti-10-10` — 10 octobre — Saint François de Borgia, confesseur
+- `sancti-10-13` — 13 octobre — Saint Édouard, roi, confesseur
+- `sancti-10-14` — 14 octobre — Saint Calixte Ier, pape et martyr
+- `sancti-10-15` — 15 octobre — Sainte Thérèse d’Avila, vierge
+- `sancti-10-16` — 16 octobre — Sainte Hedwige, veuve
+- `sancti-10-17` — 17 octobre — Sainte Marguerite-Marie Alacoque, vierge
+- `sancti-10-19` — 19 octobre — Saint Pierre d’Alcantara, confesseur
+- `sancti-10-20` — 20 octobre — Saint Jean de Kenty, confesseur
+- `sancti-10-23r` — 23 octobre — Saint Antoine-Marie Claret, évêque et confesseur
+- `sancti-10-24` — 24 octobre — Saint Raphaël, archange
+- `sancti-11-04` — 4 novembre — Saint Charles Borromée, évêque et confesseur
+- `sancti-11-10` — 10 novembre — Saint André Avellin, confesseur
+- `sancti-11-11` — 11 novembre — Saint Martin, évêque et confesseur
+- `sancti-11-12` — 12 novembre — Saint Martin Ier, pape et martyr
+- `sancti-11-13` — 13 novembre — Saint Didace, confesseur
+- `sancti-11-14` — 14 novembre — Saint Josaphat, évêque et martyr
+- `sancti-11-15` — 15 novembre — Saint Albert le Grand, évêque, confesseur et docteur
+- `sancti-11-16` — 16 novembre — Sainte Gertrude, vierge
+- `sancti-11-17` — 17 novembre — Saint Grégoire le Thaumaturge, évêque et confesseur
+- `sancti-11-18r` — 18 novembre — Dédicace des basiliques des saints Pierre et Paul, apôtres
+- `sancti-11-19` — 19 novembre — Sainte Élisabeth de Hongrie, veuve
+- `sancti-11-20` — 20 novembre — Saint Félix de Valois, confesseur
+- `sancti-11-21` — 21 novembre — Présentation de la bienheureuse Vierge Marie
+- `sancti-11-22` — 22 novembre — Sainte Cécile, vierge et martyre
+- `sancti-11-23` — 23 novembre — Saint Clément Ier, pape et martyr
+- `sancti-11-24` — 24 novembre — Saint Jean de la Croix, confesseur et docteur
+- `sancti-11-25` — 25 novembre — Sainte Catherine d’Alexandrie, vierge et martyre
+- `sancti-11-26` — 26 novembre — Saint Silvestre, abbé
+- `sancti-12-02` — 2 décembre — Sainte Bibiane, vierge et martyre
+- `sancti-12-03` — 3 décembre — Saint François Xavier, confesseur
+- `sancti-12-04` — 4 décembre — Saint Pierre Chrysologue, évêque, confesseur et docteur
+- `sancti-12-06` — 6 décembre — Saint Nicolas, évêque et confesseur
+- `sancti-12-07` — 7 décembre — Saint Ambroise, évêque, confesseur et docteur
+- `sancti-12-11` — 11 décembre — Saint Damase Ier, pape et confesseur
+- `sancti-12-13r` — 13 décembre — Sainte Lucie, vierge et martyre
+- `sancti-12-16` — 16 décembre — Saint Eusèbe, évêque et martyr
+
+### IVᵉ classe (féries) (259)
+
+- `tempora-nat02` — 2 janvier, férie du temps de Noël
+- `tempora-nat03` — 3 janvier, férie du temps de Noël
+- `tempora-nat04` — 4 janvier, férie du temps de Noël
+- `tempora-nat05` — 5 janvier, férie du temps de Noël
+- `sancti-01-07` — 7 janvier, férie du temps de l’Épiphanie
+- `sancti-01-08` — 8 janvier, férie du temps de l’Épiphanie
+- `sancti-01-09` — 9 janvier, férie du temps de l’Épiphanie
+- `sancti-01-10` — 10 janvier, férie du temps de l’Épiphanie
+- `sancti-01-11` — 11 janvier, férie du temps de l’Épiphanie
+- `sancti-01-12` — 12 janvier, férie du temps de l’Épiphanie
+- `tempora-epi1-1` — Lundi après la Sainte Famille
+- `tempora-epi1-2` — Mardi après la Sainte Famille
+- `tempora-epi1-3` — Mercredi après la Sainte Famille
+- `tempora-epi1-4` — Jeudi après la Sainte Famille
+- `tempora-epi1-5` — Vendredi après la Sainte Famille
+- `tempora-epi1-6` — Samedi après la Sainte Famille
+- `tempora-epi2-1` — Lundi de la 2e semaine après l’Épiphanie
+- `tempora-epi2-2` — Mardi de la 2e semaine après l’Épiphanie
+- `tempora-epi2-3` — Mercredi de la 2e semaine après l’Épiphanie
+- `tempora-epi2-4` — Jeudi de la 2e semaine après l’Épiphanie
+- `tempora-epi2-5` — Vendredi de la 2e semaine après l’Épiphanie
+- `tempora-epi2-6` — Samedi de la 2e semaine après l’Épiphanie
+- `tempora-epi3-1` — Lundi de la 3e semaine après l’Épiphanie
+- `tempora-epi3-2` — Mardi de la 3e semaine après l’Épiphanie
+- `tempora-epi3-3` — Mercredi de la 3e semaine après l’Épiphanie
+- `tempora-epi3-4` — Jeudi de la 3e semaine après l’Épiphanie
+- `tempora-epi3-5` — Vendredi de la 3e semaine après l’Épiphanie
+- `tempora-epi3-6` — Samedi de la 3e semaine après l’Épiphanie
+- `tempora-epi4-1` — Lundi de la 4e semaine après l’Épiphanie
+- `tempora-epi4-2` — Mardi de la 4e semaine après l’Épiphanie
+- `tempora-epi4-3` — Mercredi de la 4e semaine après l’Épiphanie
+- `tempora-epi4-4` — Jeudi de la 4e semaine après l’Épiphanie
+- `tempora-epi4-5` — Vendredi de la 4e semaine après l’Épiphanie
+- `tempora-epi4-6` — Samedi de la 4e semaine après l’Épiphanie
+- `tempora-epi5-1` — Lundi de la 5e semaine après l’Épiphanie
+- `tempora-epi5-2` — Mardi de la 5e semaine après l’Épiphanie
+- `tempora-epi5-3` — Mercredi de la 5e semaine après l’Épiphanie
+- `tempora-epi5-4` — Jeudi de la 5e semaine après l’Épiphanie
+- `tempora-epi5-5` — Vendredi de la 5e semaine après l’Épiphanie
+- `tempora-epi5-6` — Samedi de la 5e semaine après l’Épiphanie
+- `tempora-epi6-1` — Lundi de la 6e semaine après l’Épiphanie
+- `tempora-epi6-2` — Mardi de la 6e semaine après l’Épiphanie
+- `tempora-epi6-3` — Mercredi de la 6e semaine après l’Épiphanie
+- `tempora-epi6-4` — Jeudi de la 6e semaine après l’Épiphanie
+- `tempora-epi6-5` — Vendredi de la 6e semaine après l’Épiphanie
+- `tempora-epi6-6` — Samedi de la 6e semaine après l’Épiphanie
+- `tempora-quadp1-1` — Lundi après la Septuagésime
+- `tempora-quadp1-2` — Mardi après la Septuagésime
+- `tempora-quadp1-3` — Mercredi après la Septuagésime
+- `tempora-quadp1-4` — Jeudi après la Septuagésime
+- `tempora-quadp1-5` — Vendredi après la Septuagésime
+- `tempora-quadp1-6` — Samedi après la Septuagésime
+- `tempora-quadp2-1` — Lundi après la Sexagésime
+- `tempora-quadp2-2` — Mardi après la Sexagésime
+- `tempora-quadp2-3` — Mercredi après la Sexagésime
+- `tempora-quadp2-4` — Jeudi après la Sexagésime
+- `tempora-quadp2-5` — Vendredi après la Sexagésime
+- `tempora-quadp2-6` — Samedi après la Sexagésime
+- `tempora-quadp3-1` — Lundi après la Quinquagésime
+- `tempora-quadp3-2` — Mardi après la Quinquagésime
+- `tempora-pasc1-1` — Lundi de la 1re semaine après Pâques
+- `tempora-pasc1-2` — Mardi de la 1re semaine après Pâques
+- `tempora-pasc1-3` — Mercredi de la 1re semaine après Pâques
+- `tempora-pasc1-4` — Jeudi de la 1re semaine après Pâques
+- `tempora-pasc1-5` — Vendredi de la 1re semaine après Pâques
+- `tempora-pasc1-6` — Samedi de la 1re semaine après Pâques
+- `tempora-pasc2-1` — Lundi de la 2e semaine après Pâques
+- `tempora-pasc2-2` — Mardi de la 2e semaine après Pâques
+- `tempora-pasc2-3` — Mercredi de la 2e semaine après Pâques
+- `tempora-pasc2-4` — Jeudi de la 2e semaine après Pâques
+- `tempora-pasc2-5` — Vendredi de la 2e semaine après Pâques
+- `tempora-pasc2-6` — Samedi de la 2e semaine après Pâques
+- `tempora-pasc3-1` — Lundi de la 3e semaine après Pâques
+- `tempora-pasc3-2` — Mardi de la 3e semaine après Pâques
+- `tempora-pasc3-3` — Mercredi de la 3e semaine après Pâques
+- `tempora-pasc3-4` — Jeudi de la 3e semaine après Pâques
+- `tempora-pasc3-5` — Vendredi de la 3e semaine après Pâques
+- `tempora-pasc3-6` — Samedi de la 3e semaine après Pâques
+- `tempora-pasc4-1` — Lundi de la 4e semaine après Pâques
+- `tempora-pasc4-2` — Mardi de la 4e semaine après Pâques
+- `tempora-pasc4-3` — Mercredi de la 4e semaine après Pâques
+- `tempora-pasc4-4` — Jeudi de la 4e semaine après Pâques
+- `tempora-pasc4-5` — Vendredi de la 4e semaine après Pâques
+- `tempora-pasc4-6` — Samedi de la 4e semaine après Pâques
+- `tempora-pasc5-1` — Lundi des Rogations
+- `tempora-pasc5-2` — Mardi de la 5e semaine après Pâques
+- `tempora-pasc5-5` — Vendredi de la 5e semaine après Pâques
+- `tempora-pasc5-6` — Samedi de la 5e semaine après Pâques
+- `tempora-pasc6-1` — Lundi de la 6e semaine après Pâques
+- `tempora-pasc6-2` — Mardi de la 6e semaine après Pâques
+- `tempora-pasc6-3` — Mercredi de la 6e semaine après Pâques
+- `tempora-pasc6-4` — Jeudi de la 6e semaine après Pâques
+- `tempora-pasc6-5` — Vendredi de la 6e semaine après Pâques
+- `tempora-pent01-1` — Lundi de la 1re semaine après la Pentecôte
+- `tempora-pent01-2` — Mardi de la 1re semaine après la Pentecôte
+- `tempora-pent01-3` — Mercredi de la 1re semaine après la Pentecôte
+- `tempora-pent01-5` — Vendredi de la 1re semaine après la Pentecôte
+- `tempora-pent01-6` — Samedi de la 1re semaine après la Pentecôte
+- `tempora-pent02-1` — Lundi de la 2e semaine après la Pentecôte
+- `tempora-pent02-2` — Mardi de la 2e semaine après la Pentecôte
+- `tempora-pent02-3` — Mercredi de la 2e semaine après la Pentecôte
+- `tempora-pent02-4` — Jeudi de la 2e semaine après la Pentecôte
+- `tempora-pent02-6` — Samedi de la 2e semaine après la Pentecôte
+- `tempora-pent03-1` — Lundi de la 3e semaine après la Pentecôte
+- `tempora-pent03-2` — Mardi de la 3e semaine après la Pentecôte
+- `tempora-pent03-3` — Mercredi de la 3e semaine après la Pentecôte
+- `tempora-pent03-4` — Jeudi de la 3e semaine après la Pentecôte
+- `tempora-pent03-5` — Vendredi de la 3e semaine après la Pentecôte
+- `tempora-pent03-6` — Samedi de la 3e semaine après la Pentecôte
+- `tempora-pent04-1` — Lundi de la 4e semaine après la Pentecôte
+- `tempora-pent04-2` — Mardi de la 4e semaine après la Pentecôte
+- `tempora-pent04-3` — Mercredi de la 4e semaine après la Pentecôte
+- `tempora-pent04-4` — Jeudi de la 4e semaine après la Pentecôte
+- `tempora-pent04-5` — Vendredi de la 4e semaine après la Pentecôte
+- `tempora-pent04-6` — Samedi de la 4e semaine après la Pentecôte
+- `tempora-pent05-1` — Lundi de la 5e semaine après la Pentecôte
+- `tempora-pent05-2` — Mardi de la 5e semaine après la Pentecôte
+- `tempora-pent05-3` — Mercredi de la 5e semaine après la Pentecôte
+- `tempora-pent05-4` — Jeudi de la 5e semaine après la Pentecôte
+- `tempora-pent05-5` — Vendredi de la 5e semaine après la Pentecôte
+- `tempora-pent05-6` — Samedi de la 5e semaine après la Pentecôte
+- `tempora-pent06-1` — Lundi de la 6e semaine après la Pentecôte
+- `tempora-pent06-2` — Mardi de la 6e semaine après la Pentecôte
+- `tempora-pent06-3` — Mercredi de la 6e semaine après la Pentecôte
+- `tempora-pent06-4` — Jeudi de la 6e semaine après la Pentecôte
+- `tempora-pent06-5` — Vendredi de la 6e semaine après la Pentecôte
+- `tempora-pent06-6` — Samedi de la 6e semaine après la Pentecôte
+- `tempora-pent07-1` — Lundi de la 7e semaine après la Pentecôte
+- `tempora-pent07-2` — Mardi de la 7e semaine après la Pentecôte
+- `tempora-pent07-3` — Mercredi de la 7e semaine après la Pentecôte
+- `tempora-pent07-4` — Jeudi de la 7e semaine après la Pentecôte
+- `tempora-pent07-5` — Vendredi de la 7e semaine après la Pentecôte
+- `tempora-pent07-6` — Samedi de la 7e semaine après la Pentecôte
+- `tempora-pent08-1` — Lundi de la 8e semaine après la Pentecôte
+- `tempora-pent08-2` — Mardi de la 8e semaine après la Pentecôte
+- `tempora-pent08-3` — Mercredi de la 8e semaine après la Pentecôte
+- `tempora-pent08-4` — Jeudi de la 8e semaine après la Pentecôte
+- `tempora-pent08-5` — Vendredi de la 8e semaine après la Pentecôte
+- `tempora-pent08-6` — Samedi de la 8e semaine après la Pentecôte
+- `tempora-pent09-1` — Lundi de la 9e semaine après la Pentecôte
+- `tempora-pent09-2` — Mardi de la 9e semaine après la Pentecôte
+- `tempora-pent09-3` — Mercredi de la 9e semaine après la Pentecôte
+- `tempora-pent09-4` — Jeudi de la 9e semaine après la Pentecôte
+- `tempora-pent09-5` — Vendredi de la 9e semaine après la Pentecôte
+- `tempora-pent09-6` — Samedi de la 9e semaine après la Pentecôte
+- `tempora-pent10-1` — Lundi de la 10e semaine après la Pentecôte
+- `tempora-pent10-2` — Mardi de la 10e semaine après la Pentecôte
+- `tempora-pent10-3` — Mercredi de la 10e semaine après la Pentecôte
+- `tempora-pent10-4` — Jeudi de la 10e semaine après la Pentecôte
+- `tempora-pent10-5` — Vendredi de la 10e semaine après la Pentecôte
+- `tempora-pent10-6` — Samedi de la 10e semaine après la Pentecôte
+- `tempora-pent11-1` — Lundi de la 11e semaine après la Pentecôte
+- `tempora-pent11-2` — Mardi de la 11e semaine après la Pentecôte
+- `tempora-pent11-3` — Mercredi de la 11e semaine après la Pentecôte
+- `tempora-pent11-4` — Jeudi de la 11e semaine après la Pentecôte
+- `tempora-pent11-5` — Vendredi de la 11e semaine après la Pentecôte
+- `tempora-pent11-6` — Samedi de la 11e semaine après la Pentecôte
+- `tempora-pent12-1` — Lundi de la 12e semaine après la Pentecôte
+- `tempora-pent12-2` — Mardi de la 12e semaine après la Pentecôte
+- `tempora-pent12-3` — Mercredi de la 12e semaine après la Pentecôte
+- `tempora-pent12-4` — Jeudi de la 12e semaine après la Pentecôte
+- `tempora-pent12-5` — Vendredi de la 12e semaine après la Pentecôte
+- `tempora-pent12-6` — Samedi de la 12e semaine après la Pentecôte
+- `tempora-pent13-1` — Lundi de la 13e semaine après la Pentecôte
+- `tempora-pent13-2` — Mardi de la 13e semaine après la Pentecôte
+- `tempora-pent13-3` — Mercredi de la 13e semaine après la Pentecôte
+- `tempora-pent13-4` — Jeudi de la 13e semaine après la Pentecôte
+- `tempora-pent13-5` — Vendredi de la 13e semaine après la Pentecôte
+- `tempora-pent13-6` — Samedi de la 13e semaine après la Pentecôte
+- `tempora-pent14-1` — Lundi de la 14e semaine après la Pentecôte
+- `tempora-pent14-2` — Mardi de la 14e semaine après la Pentecôte
+- `tempora-pent14-3` — Mercredi de la 14e semaine après la Pentecôte
+- `tempora-pent14-4` — Jeudi de la 14e semaine après la Pentecôte
+- `tempora-pent14-5` — Vendredi de la 14e semaine après la Pentecôte
+- `tempora-pent14-6` — Samedi de la 14e semaine après la Pentecôte
+- `tempora-pent15-1` — Lundi de la 15e semaine après la Pentecôte
+- `tempora-pent15-2` — Mardi de la 15e semaine après la Pentecôte
+- `tempora-pent15-3` — Mercredi de la 15e semaine après la Pentecôte
+- `tempora-pent15-4` — Jeudi de la 15e semaine après la Pentecôte
+- `tempora-pent15-5` — Vendredi de la 15e semaine après la Pentecôte
+- `tempora-pent15-6` — Samedi de la 15e semaine après la Pentecôte
+- `tempora-pent16-1` — Lundi de la 16e semaine après la Pentecôte
+- `tempora-pent16-2` — Mardi de la 16e semaine après la Pentecôte
+- `tempora-pent16-3` — Mercredi de la 16e semaine après la Pentecôte
+- `tempora-pent16-4` — Jeudi de la 16e semaine après la Pentecôte
+- `tempora-pent16-5` — Vendredi de la 16e semaine après la Pentecôte
+- `tempora-pent16-6` — Samedi de la 16e semaine après la Pentecôte
+- `tempora-pent17-1` — Lundi de la 17e semaine après la Pentecôte
+- `tempora-pent17-2` — Mardi de la 17e semaine après la Pentecôte
+- `tempora-pent17-3` — Mercredi de la 17e semaine après la Pentecôte
+- `tempora-pent17-4` — Jeudi de la 17e semaine après la Pentecôte
+- `tempora-pent17-5` — Vendredi de la 17e semaine après la Pentecôte
+- `tempora-pent17-6` — Samedi de la 17e semaine après la Pentecôte
+- `tempora-pent18-1` — Lundi de la 18e semaine après la Pentecôte
+- `tempora-pent18-2` — Mardi de la 18e semaine après la Pentecôte
+- `tempora-pent18-3` — Mercredi de la 18e semaine après la Pentecôte
+- `tempora-pent18-4` — Jeudi de la 18e semaine après la Pentecôte
+- `tempora-pent18-5` — Vendredi de la 18e semaine après la Pentecôte
+- `tempora-pent18-6` — Samedi de la 18e semaine après la Pentecôte
+- `tempora-pent19-1` — Lundi de la 19e semaine après la Pentecôte
+- `tempora-pent19-2` — Mardi de la 19e semaine après la Pentecôte
+- `tempora-pent19-3` — Mercredi de la 19e semaine après la Pentecôte
+- `tempora-pent19-4` — Jeudi de la 19e semaine après la Pentecôte
+- `tempora-pent19-5` — Vendredi de la 19e semaine après la Pentecôte
+- `tempora-pent19-6` — Samedi de la 19e semaine après la Pentecôte
+- `tempora-pent20-1` — Lundi de la 20e semaine après la Pentecôte
+- `tempora-pent20-2` — Mardi de la 20e semaine après la Pentecôte
+- `tempora-pent20-3` — Mercredi de la 20e semaine après la Pentecôte
+- `tempora-pent20-4` — Jeudi de la 20e semaine après la Pentecôte
+- `tempora-pent20-5` — Vendredi de la 20e semaine après la Pentecôte
+- `tempora-pent20-6` — Samedi de la 20e semaine après la Pentecôte
+- `tempora-pent21-1` — Lundi de la 21e semaine après la Pentecôte
+- `tempora-pent21-2` — Mardi de la 21e semaine après la Pentecôte
+- `tempora-pent21-3` — Mercredi de la 21e semaine après la Pentecôte
+- `tempora-pent21-4` — Jeudi de la 21e semaine après la Pentecôte
+- `tempora-pent21-5` — Vendredi de la 21e semaine après la Pentecôte
+- `tempora-pent21-6` — Samedi de la 21e semaine après la Pentecôte
+- `tempora-pent22-1` — Lundi de la 22e semaine après la Pentecôte
+- `tempora-pent22-2` — Mardi de la 22e semaine après la Pentecôte
+- `tempora-pent22-3` — Mercredi de la 22e semaine après la Pentecôte
+- `tempora-pent22-4` — Jeudi de la 22e semaine après la Pentecôte
+- `tempora-pent22-5` — Vendredi de la 22e semaine après la Pentecôte
+- `tempora-pent22-6` — Samedi de la 22e semaine après la Pentecôte
+- `tempora-pent23-1` — Lundi de la 23e semaine après la Pentecôte
+- `tempora-pent23-2` — Mardi de la 23e semaine après la Pentecôte
+- `tempora-pent23-3` — Mercredi de la 23e semaine après la Pentecôte
+- `tempora-pent23-4` — Jeudi de la 23e semaine après la Pentecôte
+- `tempora-pent23-5` — Vendredi de la 23e semaine après la Pentecôte
+- `tempora-pent23-6` — Samedi de la 23e semaine après la Pentecôte
+- `tempora-pentepi3-1` — Lundi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi3-2` — Mardi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi3-3` — Mercredi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi3-4` — Jeudi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi3-5` — Vendredi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi3-6` — Samedi de la 3e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi4-1` — Lundi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi4-2` — Mardi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi4-3` — Mercredi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi4-4` — Jeudi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi4-5` — Vendredi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi4-6` — Samedi de la 4e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi5-1` — Lundi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi5-2` — Mardi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi5-3` — Mercredi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi5-4` — Jeudi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi5-5` — Vendredi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi5-6` — Samedi de la 5e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi6-1` — Lundi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi6-2` — Mardi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi6-3` — Mercredi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi6-4` — Jeudi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi6-5` — Vendredi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pentepi6-6` — Samedi de la 6e semaine après l’Épiphanie, reprise après la Pentecôte
+- `tempora-pent24-1` — Lundi de la 24e semaine après la Pentecôte
+- `tempora-pent24-2` — Mardi de la 24e semaine après la Pentecôte
+- `tempora-pent24-3` — Mercredi de la 24e semaine après la Pentecôte
+- `tempora-pent24-4` — Jeudi de la 24e semaine après la Pentecôte
+- `tempora-pent24-5` — Vendredi de la 24e semaine après la Pentecôte
+- `tempora-pent24-6` — Samedi de la 24e semaine après la Pentecôte
+
+### Vigiles (4)
+
+- `sancti-06-23` — 23 juin — Vigile de la Nativité de saint Jean-Baptiste
+- `sancti-06-28r` — 28 juin — Vigile des saints Pierre et Paul, apôtres
+- `sancti-08-09t` — 9 août — Vigile de saint Laurent, martyr
+- `sancti-08-14` — 14 août — Vigile de l’Assomption de la bienheureuse Vierge Marie
+
+### Commémoraisons (105)
+
+- `tempora-quad5-5feriac` — Commémoraison des Sept Douleurs de la bienheureuse Vierge Marie
+- `sancti-01-05cc` — 5 janvier — Saint Télesphore, pape et martyr
+- `sancti-01-11cc` — 11 janvier — Saint Hygin, pape et martyr
+- `sancti-01-14cc` — 14 janvier — Commémoraison de saint Félix de Nole, prêtre et martyr
+- `sancti-01-15cc` — 15 janvier — Commémoraison de saint Maur, abbé
+- `sancti-01-18r` — 18 janvier — Sainte Prisque, vierge et martyre
+- `sancti-01-19` — 19 janvier — Saints Marius, Marthe, Audifax et Abachum, martyrs
+- `sancti-01-19o` — 19 janvier — Commémoraison de saint Canut, roi et martyr
+- `sancti-01-23o` — 23 janvier — Commémoraison de sainte Émérentienne, vierge et martyre
+- `sancti-01-25` — 25 janvier — Commémoraison de saint Pierre, apôtre
+- `sancti-01-28t` — 28 janvier — Commémoraison de sainte Agnès, vierge et martyre (seconde fête)
+- `sancti-02-03` — 3 février — Saint Blaise, évêque et martyr
+- `sancti-02-06o` — 6 février — Commémoraison de sainte Dorothée, vierge et martyre
+- `sancti-02-09o` — 9 février — Commémoraison de sainte Apolline, vierge et martyre
+- `sancti-02-14` — 14 février — Saint Valentin, prêtre et martyr
+- `sancti-02-15` — 15 février — Saints Faustin et Jovite, martyrs
+- `sancti-02-18` — 18 février — Saint Siméon, évêque et martyr
+- `sancti-03-04cc` — 4 mars — Commémoraison de saint Luce Ier, pape et martyr
+- `sancti-04-14t` — 14 avril — Commémoraison de saints Tiburce, Valérien et Maxime, martyrs
+- `sancti-04-17` — 17 avril — Saint Anicet, pape et martyr
+- `sancti-04-23` — 23 avril — Saint Georges, martyr
+- `sancti-04-25c` — 25 avril — Commémoraison des Litanies majeures
+- `sancti-05-03r` — 3 mai — Saints Alexandre Ier, pape, Événce et Théodule, martyrs, et saint Juvénal, évêque et confesseur
+- `sancti-05-10o` — 10 mai — Commémoraison de saints Gordien et Épimaque, martyrs
+- `sancti-05-14` — 14 mai — Saint Boniface, martyr
+- `sancti-05-19o` — 19 mai — Commémoraison de sainte Pudentienne, vierge
+- `sancti-05-25o` — 25 mai — Commémoraison de saint Urbain Ier, pape et martyr
+- `sancti-05-26o` — 26 mai — Commémoraison de saint Éleuthère, pape et martyr
+- `sancti-05-27o` — 27 mai — Commémoraison de saint Jean Ier, pape et martyr
+- `sancti-05-30` — 30 mai — Saint Félix Ier, pape et martyr
+- `sancti-05-31o` — 31 mai — Commémoraison de sainte Pétronille, vierge
+- `sancti-06-02` — 2 juin — Saints Marcellin, Pierre et Érasme, évêque, martyrs
+- `sancti-06-09` — 9 juin — Saints Prime et Félicien, martyrs
+- `sancti-06-12o` — 12 juin — Commémoraison de saints Basilide, Cyrin, Nabor et Nazaire, martyrs
+- `sancti-06-15` — 15 juin — Saints Guy, Modeste et Crescence, martyrs
+- `sancti-06-18t` — 18 juin — Commémoraison de saints Marc et Marcellien, martyrs
+- `sancti-06-19o` — 19 juin — Commémoraison de saints Gervais et Protais, martyrs
+- `sancti-06-20` — 20 juin — Saint Silvère, pape et martyr
+- `sancti-07-02cc` — 2 juillet — Commémoraison de saints Processe et Martinien, martyrs
+- `sancti-07-11` — 11 juillet — Saint Pie Ier, pape et martyr
+- `sancti-07-12o` — 12 juillet — Commémoraison de saints Nabor et Félix, martyrs
+- `sancti-07-16` — 16 juillet — Notre-Dame du Mont-Carmel
+- `sancti-07-17` — 17 juillet — Saint Alexis, confesseur
+- `sancti-07-18o` — 18 juillet — Commémoraison de sainte Symphorose et ses sept fils, martyrs
+- `sancti-07-20o` — 20 juillet — Commémoraison de sainte Marguerite, vierge et martyre
+- `sancti-07-21` — 21 juillet — Commémoraison de sainte Praxède, vierge
+- `sancti-07-23cc` — 23 juillet — Commémoraison de saint Liboire, évêque et confesseur
+- `sancti-07-24r` — 24 juillet — Sainte Christine, vierge et martyre
+- `sancti-07-25cc` — 25 juillet — Commémoraison de saint Christophe, martyr
+- `sancti-07-27` — 27 juillet — Saint Pantaléon, martyr
+- `sancti-07-29cc` — 29 juillet — Commémoraison de saints Félix, Simplice, Faustin et Béatrice, martyrs
+- `sancti-07-30` — 30 juillet — Saints Abdon et Sennen, martyrs
+- `sancti-08-01r` — 1er août — Les saints Maccabées, martyrs
+- `sancti-08-02o` — 2 août — Commémoraison de saint Étienne Ier, pape et martyr
+- `sancti-08-06cc` — 6 août — Commémoraison de saints Sixte II, pape, Félicissime et Agapit, martyrs
+- `sancti-08-07o` — 7 août — Commémoraison de saint Donat, évêque et martyr
+- `sancti-08-08` — 8 août — Commémoraison de saints Cyriaque, Large et Smaragde, martyrs
+- `sancti-08-09cc` — 9 août — Commémoraison de saint Romain, martyr
+- `sancti-08-11` — 11 août — Saints Tiburce et Suzanne, vierge, martyrs
+- `sancti-08-13` — 13 août — Saints Hippolyte et Cassien, martyrs
+- `sancti-08-14cc` — 14 août — Commémoraison de saint Eusèbe, confesseur
+- `sancti-08-18r` — 18 août — Saint Agapit, martyr
+- `sancti-08-22cc` — 22 août — Commémoraison de saints Timothée, Hippolyte et Symphorien, martyrs
+- `sancti-08-26` — 26 août — Saint Zéphyrin, pape et martyr
+- `sancti-08-28cc` — 28 août — Commémoraison de saint Hermès, martyr
+- `sancti-08-29cc` — 29 août — Commémoraison de sainte Sabine, martyre
+- `sancti-08-30o` — 30 août — Commémoraison de saints Félix et Adaucte, martyrs
+- `sancti-09-01` — 1er septembre — Saint Gilles, abbé
+- `sancti-09-01cc` — 1er septembre — Commémoraison des douze saints Frères, martyrs
+- `sancti-09-08cc` — 8 septembre — Commémoraison de saint Adrien, martyr
+- `sancti-09-09` — 9 septembre — Saint Gorgon, martyr
+- `sancti-09-11` — 11 septembre — Saints Prote et Hyacinthe, martyrs
+- `sancti-09-15cc` — 15 septembre — Commémoraison de saint Nicomède, martyr
+- `sancti-09-16cc` — 16 septembre — Commémoraison de saintes Euphémie et Lucie et saint Géminien, martyrs
+- `sancti-09-17` — 17 septembre — Impression des stigmates de saint François
+- `sancti-09-20` — 20 septembre — Saint Eustache et ses compagnons, martyrs
+- `sancti-09-22o` — 22 septembre — Commémoraison de saint Maurice et ses compagnons, martyrs
+- `sancti-09-23cc` — 23 septembre — Commémoraison de sainte Thècle, vierge et martyre
+- `sancti-09-24` — 24 septembre — Notre-Dame de la Merci
+- `sancti-09-26` — 26 septembre — Saints Cyprien et Justine, vierge, martyrs
+- `sancti-10-01` — 1er octobre — Saint Remi, évêque et confesseur
+- `sancti-10-05` — 5 octobre — Saint Placide et ses compagnons, martyrs
+- `sancti-10-07t` — 7 octobre — Commémoraison de saint Marc, pape et confesseur
+- `sancti-10-07cc` — 8 octobre — Commémoraison de saints Serge, Bacchus, Marcel et Apulée, martyrs
+- `sancti-10-09t` — 9 octobre — Commémoraison de saints Denis, évêque, Rustique et Éleuthère, martyrs
+- `sancti-10-21` — 21 octobre — Saint Hilarion, abbé
+- `sancti-10-21cc` — 21 octobre — Commémoraison de sainte Ursule et ses compagnes, vierges et martyres
+- `sancti-10-25` — 25 octobre — Saints Chrysanthe et Darie, martyrs
+- `sancti-10-26` — 26 octobre — Saint Évariste, pape et martyr
+- `sancti-11-04cc` — 4 novembre — Commémoraison de saints Vital et Agricola, martyrs
+- `sancti-11-08r` — 8 novembre — Les quatre saints Couronnés, martyrs
+- `sancti-11-09cc` — 9 novembre — Commémoraison de saint Théodore, martyr
+- `sancti-11-10o` — 10 novembre — Commémoraison de saints Tryphon, Respice et Nymphe, vierge, martyrs
+- `sancti-11-11cc` — 11 novembre — Commémoraison de saint Mennas, martyr
+- `sancti-11-19o` — 19 novembre — Commémoraison de saint Pontien, pape et martyr
+- `sancti-11-23cc` — 23 novembre — Commémoraison de sainte Félicité, martyre
+- `sancti-11-24o` — 24 novembre — Commémoraison de saint Chrysogone, martyr
+- `sancti-11-26t` — 26 novembre — Commémoraison de saint Pierre d’Alexandrie, évêque et martyr
+- `sancti-11-29r` — 29 novembre — Saint Saturnin, martyr
+- `sancti-12-04o` — 4 décembre — Commémoraison de sainte Barbe, vierge et martyre
+- `sancti-12-05` — 5 décembre — Saint Sabas, abbé
+- `sancti-12-10o` — 10 décembre — Saint Melchiade, pape et martyr
+- `sancti-12-28` — 28 décembre — Commémoraison de l’octave de Noël
+- `sancti-12-29r` — 29 décembre — Saint Thomas Becket, évêque et martyr
+- `sancti-12-31r` — 31 décembre — Saint Silvestre Ier, pape et confesseur
+
+### Communs des saints (33)
+
+- `commune-c1v` — Vigile d’un Apôtre : messe Ego autem
+- `commune-c2` — Commun d’un martyr pontife : messe Statuit
+- `commune-c2-1` — Commun d’un martyr pontife : messe Sacerdotes Dei
+- `commune-c2b` — Commun d’un souverain pontife martyr : messe Si diligis
+- `commune-c2a` — Commun d’un martyr non pontife : messe In virtute
+- `commune-c2a-1` — Commun d’un martyr non pontife : messe Lætabitur
+- `commune-c2p` — Commun d’un martyr au temps pascal : messe Protexisti
+- `commune-c3` — Commun de plusieurs martyrs : messe Intret
+- `commune-c3a` — Commun de plusieurs martyrs : messe Sapientiam
+- `commune-c3a-1` — Commun de plusieurs martyrs : messe Salus autem
+- `commune-c3b` — Commun de plusieurs souverains pontifes martyrs : messe Si diligis
+- `commune-c3p` — Commun de plusieurs martyrs au temps pascal : messe Sancti tui
+- `commune-c4` — Commun d’un confesseur pontife : messe Statuit
+- `commune-c4-1` — Commun d’un confesseur pontife : messe Sacerdotes tui
+- `commune-c4b` — Commun d’un souverain pontife confesseur : messe Si diligis
+- `commune-c4a` — Commun d’un docteur pontife : messe In medio
+- `commune-c5a` — Commun d’un docteur non pontife : messe In medio
+- `commune-c5` — Commun d’un confesseur non pontife : messe Os justi
+- `commune-c5-1` — Commun d’un confesseur non pontife : messe Justus ut palma
+- `commune-c5b` — Commun d’un abbé : messe Os justi
+- `commune-c6` — Commun d’une vierge martyre : messe Loquebar
+- `commune-c6-1` — Commun d’une vierge martyre : messe Me exspectaverunt
+- `commune-c6a` — Commun d’une vierge non martyre : messe Dilexisti
+- `commune-c6a-1` — Commun d’une vierge non martyre : messe Vultum tuum
+- `commune-c7` — Commun d’une sainte femme martyre : messe Me exspectaverunt
+- `commune-c7a` — Commun d’une sainte femme non martyre : messe Cognovi
+- `commune-c8` — Commun de la Dédicace d’une église : messe Terribilis
+- `commune-c11` — Commun des fêtes de la Sainte Vierge : messe Salve, sancta Parens
+- `commune-c10a` — Sainte Marie au samedi, en Avent : messe Rorate
+- `commune-c10b` — Sainte Marie au samedi, de Noël à la Purification : messe Vultum tuum
+- `commune-c10c` — Sainte Marie au samedi, de la Purification à Pâques : messe Salve, sancta Parens
+- `commune-c10pasc` — Sainte Marie au samedi, au temps pascal : messe Salve, sancta Parens
+- `commune-c10` — Sainte Marie au samedi, après la Pentecôte : messe Salve, sancta Parens
+
+### Messes des défunts (2)
+
+- `sancti-11-02` — 2 novembre — Commémoraison de tous les fidèles défunts
+- `commune-c9` — Messe quotidienne des défunts

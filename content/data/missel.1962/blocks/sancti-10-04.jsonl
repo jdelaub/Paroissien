@@ -1,0 +1,39 @@
+{"id":"sancti-10-04.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Officium"}],"t":{"la":["S. Francisci Confessoris"],"fr":["Saint François d’Assise, confesseur"]}}
+{"id":"sancti-10-04.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-10-04.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Introitus"},{"file":"missa/Latin/Sancti/09-17.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-10-04.introit.1","type":"rubric","t":{"la":["Gal 6:14"],"fr":["Gal 6:14"]}}
+{"id":"sancti-10-04.introit.2","type":"para","dropCap":true,"t":{"la":["Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo."]}}
+{"id":"sancti-10-04.introit.3","type":"rubric","t":{"la":["Ps 141:2"],"fr":["Ps 141:2"]}}
+{"id":"sancti-10-04.introit.4","type":"para","t":{"la":["Voce mea ad Dóminum clamávi: voce mea ad Dóminum deprecátus sum."]}}
+{"id":"sancti-10-04.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-10-04.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-10-04.introit.7","type":"para","t":{"la":["Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo."]}}
+{"id":"sancti-10-04.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-04.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-10-04.collecte.1","type":"para","t":{"la":["Deus, qui Ecclésiam tuam, beáti Francisci méritis fœtu novæ prolis amplíficas: tríbue nobis; ex ejus imitatióne, terréna despícere et cœléstium donórum semper participatióne gaudére. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-04.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/09-17.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-10-04.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Gálatas"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Galates"]}}
+{"id":"sancti-10-04.epitre.2","type":"rubric","t":{"la":["Gal 6:14-18"],"fr":["Gal 6:14-18"]}}
+{"id":"sancti-10-04.epitre.3","type":"para","t":{"la":["Fratres: Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo. In Christo enim Jesu neque circumcísio áliquid valet neque præpútium, sed nova creatúra. Et quicúmque hanc régulam secúti fúerint, pax sin per illos et misericórdia, et super Israël Dei. De cetero nemo mihi moléstus sit: ego enim stígmata Dómini Jesu in córpore meo porto. Grátia Dómini nostri Jesu Christi cum spíritu vestro, fratres. Amen."]}}
+{"id":"sancti-10-04.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Graduale"},{"file":"missa/Latin/Sancti/09-17.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-10-04.graduel.1","type":"rubric","t":{"la":["Ps 36:30-31"],"fr":["Ps 36:30-31"]}}
+{"id":"sancti-10-04.graduel.2","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium."]}}
+{"id":"sancti-10-04.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Lex Dei ejus in corde ipsíus: et non supplantabúntur gressus ejus. Allelúja, allelúja."]}}
+{"id":"sancti-10-04.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Francíscus pauper et húmilis cœlum dives ingréditur, hymnis cœléstibus honorátur. Allelúja."]}}
+{"id":"sancti-10-04.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Evangelium"},{"file":"missa/Latin/Sancti/01-15.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-10-04.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-10-04.evangile.2","type":"rubric","t":{"la":["Matt 11:25-30"],"fr":["Matt 11:25-30"]}}
+{"id":"sancti-10-04.evangile.3","type":"para","t":{"la":["In illo témpore: Respóndens Jesus, dixit: Confíteor tibi, Pater, Dómine coeli et terræ, quia abscondísti hæc a sapiéntibus et prudéntibus, et revelásti ea párvulis. Ita, Pater: quóniam sic fuit plácitum ante te. Omnia mihi trádita sunt a Patre meo. Et nemo novit Fílium nisi Pater: neque Patrem quis novit nisi Fílius, et cui volúerit Fílius reveláre. Veníte ad me, omnes, qui laborátis et oneráti estis, et ego refíciam vos. Tóllite jugum meum super vos, et díscite a me, quia mitis sum et húmilis corde: et inveniétis réquiem animábus vestris. Jugum enim meum suáve est et onus meum leve."]}}
+{"id":"sancti-10-04.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-10-04.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-10-04.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
+{"id":"sancti-10-04.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
+{"id":"sancti-10-04.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Secreta"},{"file":"missa/Latin/Sancti/09-17.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-10-04.secrete.1","type":"para","t":{"la":["Múnera tibi, Dómine, dicata sanctífica: et, intercedénte beáto Francísco, ab omni nos culpárum labe purífica. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-04.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-10-04.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-10-04.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-10-04.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
+{"id":"sancti-10-04.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}
+{"id":"sancti-10-04.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-04.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-10-04.postcommunion.1","type":"para","t":{"la":["Ecclésiam tuam, quǽsumus, Dómine, grátia cœléstis amplíficet: quam beáti Francísci Confessóris tui illumináre voluísti gloriósis méritis et exémplis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

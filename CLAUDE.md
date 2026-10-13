@@ -5,6 +5,7 @@ Application Android catholique (Kotlin/Compose) qui imite un livre de prière pa
 ## Builds et livraison
 
 - La VM a 2 cœurs et 7,8 Gio : un seul build Gradle à la fois, jamais d'émulateur. `./gradlew --stop` arrête aussi les daemons des autres sessions qui utilisent Gradle 9.8 : à éviter si une autre session compile.
+- **Ressources** : la VM est hébergée par le NAS ; elle et le NAS ont gelé deux fois le 12/10/2026 (build release lancé pendant qu'un agent travaillait). Jamais d'agent, de Chrome sans fenêtre ni d'OCR pendant un build Gradle ; vérification (tests, captures, lint) et livraison l'une après l'autre ; regarder `free -m` avant un build lourd (3 Gio disponibles au moins, `deliver-apk.sh` le vérifie). Gradle est bridé dans `android/gradle.properties` (2 Gio, un worker).
 - JDK : `JAVA_HOME=~/Android/jdk-21` (java n'est pas dans le PATH).
 - **Livrer un APK de test** : monter `versionCode` et `versionName` dans `android/app/build.gradle.kts`, puis lancer `tools/deliver-apk.sh`. Le script construit sur la VM le debug et la release de la saveur `personnel`, puis les copie dans `~/VM-Exchange/APK/Paroissien/` sous les noms `Paroissien-<v>-debug.apk` et `Paroissien-<v>.apk`.
 - **Signatures** :
@@ -18,7 +19,7 @@ Application Android catholique (Kotlin/Compose) qui imite un livre de prière pa
 
 ## Règles
 
-- Deux saveurs. `domainePublic` est la seule construite par la CI publique (github.com/jdelaub/Paroissien). `personnel` lit ses paquets privés hors du dépôt, via `-Pparoissien.personnelPacksDir` ou `PACKS=` pour `deliver-apk.sh`. Aucun contenu protégé (Clairval, Barroux, AELF) n'entre dans ce dépôt : il va dans le dépôt privé `jdelaub/paroissien-content`.
+- Trois saveurs. `domainePublic` est la seule construite par la CI publique (github.com/jdelaub/Paroissien). `personnel` lit ses paquets privés hors du dépôt, via `-Pparoissien.personnelPacksDir` ou `PACKS=` pour `deliver-apk.sh`. `vide` n'embarque aucun livre (`app.paroissien.vide`) : on la remplit en important une sauvegarde complète (`FLAVOR=vide tools/deliver-apk.sh`). Aucun contenu protégé (Clairval, Barroux, AELF) n'entre dans ce dépôt : il va dans le dépôt privé `jdelaub/paroissien-content`.
 - `core:liturgy` est sous Apache-2.0 : il ne doit dépendre d'aucun module GPL du projet.
 - Le pliage de recherche (`core:model` `Fold.kt` et `content/.../fold.py`) se modifie d'abord dans `content/schema/fold-vectors.json`.
 - Commits : identité `53884675+jdelaub@users.noreply.github.com` (configurée dans le dépôt), jamais l'adresse personnelle.

@@ -1,0 +1,40 @@
+{"id":"tempora-pent22-1.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Pent22-1.txt","section":"Officium"}],"t":{"la":["Feria Secunda infra Hebdomadam XXII post Octavam Pentecostes"],"fr":["Lundi de la 22e semaine après la Pentecôte"]}}
+{"id":"tempora-pent22-1.rang","type":"rubric","t":{"fr":["IVᵉ classe — ornements verts."]}}
+{"id":"tempora-pent22-1.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent22-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-pent22-1.introit.1","type":"rubric","t":{"la":["Ps 129:3-4"],"fr":["Ps 129:3-4"]}}
+{"id":"tempora-pent22-1.introit.2","type":"para","dropCap":true,"t":{"la":["Si iniquitátes observáveris, Dómine: Dómine, quis sustinébit? quia apud te propitiátio est, Deus Israël."]}}
+{"id":"tempora-pent22-1.introit.3","type":"rubric","t":{"la":["Ps 129:1-2"],"fr":["Ps 129:1-2"]}}
+{"id":"tempora-pent22-1.introit.4","type":"para","t":{"la":["De profúndis clamávi ad te, Dómine: Dómine, exáudi vocem meam."]}}
+{"id":"tempora-pent22-1.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-pent22-1.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-pent22-1.introit.7","type":"para","t":{"la":["Si iniquitátes observáveris, Dómine: Dómine, quis sustinébit? quia apud te propitiátio est, Deus Israël."]}}
+{"id":"tempora-pent22-1.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-pent22-1.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent22-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-pent22-1.collecte.1","type":"para","t":{"la":["Deus, refúgium nostrum et virtus: adésto piis Ecclésiæ tuæ précibus, auctor ipse pietátis, et præsta; ut, quod fidéliter pétimus, efficáciter consequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent22-1.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent22-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-pent22-1.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Philippénses"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Philippiens"]}}
+{"id":"tempora-pent22-1.epitre.2","type":"rubric","t":{"la":["Phil 1:6-11"],"fr":["Phil 1:6-11"]}}
+{"id":"tempora-pent22-1.epitre.3","type":"para","t":{"la":["Fratres: Confídimus in Dómino Jesu, quia, qui cœpit in vobis opus bonum, perfíciet usque in diem Christi Jesu. Sicut est mihi justum hoc sentíre pro ómnibus vobis: eo quod hábeam vos in corde, et in vínculis meis, et in defensióne, et confirmatióne Evangélii, sócios gáudii mei omnes vos esse. Testis enim mihi est Deus, quómodo cúpiam omnes vos in viscéribus Jesu Christi. Et hoc oro, ut cáritas vestra magis ac magis abúndet in sciéntia et in omni sensu: ut probétis potióra, ut sitis sincéri et sine offénsa in diem Christi, repléti fructu justítiæ per Jesum Christum, in glóriam et laudem Dei."]}}
+{"id":"tempora-pent22-1.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent22-0.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-pent22-1.graduel.1","type":"rubric","t":{"la":["Ps 132:1-2"],"fr":["Ps 132:1-2"]}}
+{"id":"tempora-pent22-1.graduel.2","type":"para","t":{"la":["Ecce, quam bonum et quam jucúndum, habitáre fratres in unum!"]}}
+{"id":"tempora-pent22-1.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Sicut unguéntum in cápite, quod descéndit in barbam, barbam Aaron. Allelúja, allelúja."]}}
+{"id":"tempora-pent22-1.graduel.4","type":"rubric","t":{"la":["Ps 113:11"],"fr":["Ps 113:11"]}}
+{"id":"tempora-pent22-1.graduel.5","type":"para","t":{"la":["Qui timent Dóminum sperent in eo: adjútor et protéctor eórum est. Allelúja."]}}
+{"id":"tempora-pent22-1.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent22-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-pent22-1.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"tempora-pent22-1.evangile.2","type":"rubric","t":{"la":["Matt 22:15-21"],"fr":["Matt 22:15-21"]}}
+{"id":"tempora-pent22-1.evangile.3","type":"para","t":{"la":["In illo témpore: Abeúntes pharisǽi consílium iniérunt, ut cáperent Jesum in sermóne. Et mittunt ei discípulos suos cum Herodiánis, dicéntes: Magíster, scimus, quia verax es et viam Dei in veritáte doces, et non est tibi cura de áliquo: non enim réspicis persónam hóminum: dic ergo nobis, quid tibi vidétur, licet censum dare Cǽsari, an non? Cógnita autem Jesus nequítia eórum, ait: Quid me tentátis, hypócritæ? Osténdite mihi numísma census. At illi obtulérunt ei denárium. Et ait illis Jesus: Cujus est imágo hæc et superscríptio? Dicunt ei: Cǽsaris. Tunc ait illis: Réddite ergo, quæ sunt Cǽsaris, Cǽsari; et, quæ sunt Dei, Deo."]}}
+{"id":"tempora-pent22-1.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-pent22-1.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent22-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-pent22-1.offertoire.1","type":"rubric","t":{"la":["Esth 14:12; 14:13"],"fr":["Esth 14:12; 14:13"]}}
+{"id":"tempora-pent22-1.offertoire.2","type":"para","t":{"la":["Recordáre mei, Dómine, omni potentátui dóminans: et da sermónem rectum in os meum, ut pláceant verba mea in conspéctu príncipis."]}}
+{"id":"tempora-pent22-1.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent22-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-pent22-1.secrete.1","type":"para","t":{"la":["Da, miséricors Deus: ut hæc salutáris oblátio et a própriis nos reátibus indesinénter expédiat, et ab ómnibus tueátur advérsis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent22-1.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-pent22-1.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"tempora-pent22-1.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent22-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-pent22-1.communion.1","type":"rubric","t":{"la":["Ps 16:6"],"fr":["Ps 16:6"]}}
+{"id":"tempora-pent22-1.communion.2","type":"para","t":{"la":["Ego clamávi, quóniam exaudísti me, Deus: inclína aurem tuam et exáudi verba mea."]}}
+{"id":"tempora-pent22-1.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent22-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-pent22-1.postcommunion.1","type":"para","t":{"la":["Súmpsimus, Dómine, sacri dona mystérii, humíliter deprecántes: ut, quæ in tui commemoratiónem nos fácere præcepísti, in nostræ profíciant infirmitátis auxílium: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

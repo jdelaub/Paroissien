@@ -1,5 +1,7 @@
 package app.paroissien.core.reading.book
 
+import androidx.compose.ui.graphics.ImageBitmap
+
 import app.paroissien.core.model.text.RichText
 
 /**
@@ -51,6 +53,35 @@ sealed interface ReadingBlock {
 
     /** Le bloc suivant commence une nouvelle page (début de chapitre, par exemple). */
     data class PageBreak(override val id: String) : ReadingBlock
+
+    /**
+     * Vignette gravée en tête de section : l'encre seule, en masque alpha, que la page teinte de l'encre du thème
+     * comme une impression. Elle reste avec le début du bloc suivant.
+     *
+     * [color] : un dessin en couleurs (les schémas du servant), posé tel quel et fondu dans le papier comme une
+     * impression (le blanc prend la teinte du papier).
+     */
+    data class Vignette(override val id: String, val image: ImageBitmap, val color: Boolean = false) : ReadingBlock
+
+    /**
+     * Emplacement d'une pièce variable (« Introït — texte de la messe du jour ») : un encadré centré, comme dans les
+     * livrets de messe.
+     */
+    data class Slot(
+        override val id: String,
+        val text: RichText,
+        val key: String? = null,
+        /** Blocs ou sections que la pièce du jour remplace (préfaces du livre, Communicantes commun). */
+        val replaces: List<String> = emptyList(),
+        /** Blocs ou sections omis quand le jour ne les a pas (texte du Gloria, du Credo). */
+        val omit: List<String> = emptyList(),
+    ) : ReadingBlock
+
+    /**
+     * Deux langues en regard (latin à gauche, français à droite), comme dans un missel : chaque colonne se compose à
+     * la moitié de la largeur, la paire commence à la même hauteur, un filet les sépare.
+     */
+    data class Facing(override val id: String, val left: ReadingBlock, val right: ReadingBlock) : ReadingBlock
 }
 
 /** Position de lecture ancrée sur le contenu (ADR 004) : bloc et décalage en points de code du texte canonique. */

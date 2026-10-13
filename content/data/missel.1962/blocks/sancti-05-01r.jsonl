@@ -1,0 +1,38 @@
+{"id":"sancti-05-01r.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Officium"}],"t":{"la":["S. Joseph Opificis"],"fr":["Saint Joseph artisan, époux de la bienheureuse Vierge Marie, confesseur"]}}
+{"id":"sancti-05-01r.rang","type":"rubric","t":{"fr":["Iʳᵉ classe — ornements blancs."]}}
+{"id":"sancti-05-01r.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-05-01r.introit.1","type":"rubric","t":{"la":["Sap. 10:17"],"fr":["Sap. 10:17"]}}
+{"id":"sancti-05-01r.introit.2","type":"para","dropCap":true,"t":{"la":["Sapiéntia réddidit justis mercédem labórum suórum, et dedúxit illos in via mirábili, et fuit illis in velaménto diéi et in luce stellárum per noctem, allelúja, allelúja."]}}
+{"id":"sancti-05-01r.introit.3","type":"rubric","t":{"la":["Ps 126:1"],"fr":["Ps 126:1"]}}
+{"id":"sancti-05-01r.introit.4","type":"para","t":{"la":["Nisi Dóminus ædificáverit domum, in vanum labórant qui ædíficant eam."]}}
+{"id":"sancti-05-01r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-05-01r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-05-01r.introit.7","type":"para","t":{"la":["Sapiéntia réddidit justis mercédem labórum suórum, et dedúxit illos in via mirábili, et fuit illis in velaménto diéi et in luce stellárum per noctem, allelúja, allelúja."]}}
+{"id":"sancti-05-01r.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-05-01r.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-05-01r.collecte.1","type":"para","t":{"la":["Rerum cónditor Deus, qui legem labóris humáno géneri statuísti: concéde propítius; ut, sancti Joseph exémplo et patrocínio, ópera perficiámus quæ præcipis, et præmia consequámur quæ promíttis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-05-01r.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-05-01r.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Colossénses."],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Colossiens"]}}
+{"id":"sancti-05-01r.epitre.2","type":"rubric","t":{"la":["Col. 3:14-15, 17, 23-24"],"fr":["Col. 3:14-15, 17, 23-24"]}}
+{"id":"sancti-05-01r.epitre.3","type":"para","t":{"la":["Fratres: Caritátem habéte, quod est vínculum perfectiónis, et pax Christi exsúltet in córdibus vestris, in qua et vocáti estis in uno córpore, et grati estóte. Omne quodcúmque fácitis in verbo aut in ópere, ómnia in nómine Dómini Jesu Christi, grátias agéntes Deo et Patri per ipsum. Quodcúmque fácitis, ex ánimo operámini sicut Dómino, et non homínibus, sciéntes quod a Dómino accipiétis retributiónem hereditátis. Dómino Christo servíte."]}}
+{"id":"sancti-05-01r.alleluia","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Graduale"}],"t":{"la":["Allelúja"],"fr":["Alléluia"]}}
+{"id":"sancti-05-01r.alleluia.1","type":"para","t":{"la":["Allelúja, allelúja."]}}
+{"id":"sancti-05-01r.alleluia.2","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","De quacúmque tribulatióne clamáverint ad me, exáudiam eos, et ero protéctor eórum semper. Allelúja."]}}
+{"id":"sancti-05-01r.alleluia.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Fac nos innócuam, Joseph, decúrrere vitam: sitque tuo semper tuta patrocínio. Allelúja."]}}
+{"id":"sancti-05-01r.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-05-01r.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-05-01r.evangile.2","type":"rubric","t":{"la":["Matt 13:54-58"],"fr":["Matt 13:54-58"]}}
+{"id":"sancti-05-01r.evangile.3","type":"para","t":{"la":["In illo témpore: Véniens Jesus in pátriam suam, docébat eos in synagógis eórum, ita ut miraréntur et dícerent: Unde huic sapiéntia hæc et virtútes? Nonne hic est fabri fílius? Nonne mater ejus dícitur María, et fratres ejus Jacóbus et Joseph et Simon et Judas? Et soróres ejus nonne omnes apud nos sunt? Unde ergo huic ómnia ista? Et scandalizabántur in eo. Jesus autem dixit eis: Non est prophéta sine honóre nisi in pátria sua et in domo sua. Et non fecit ibi virtútes multas propter incredulitátem illórum."]}}
+{"id":"sancti-05-01r.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-05-01r.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-05-01r.offertoire.1","type":"rubric","t":{"la":["Ps 89:17"],"fr":["Ps 89:17"]}}
+{"id":"sancti-05-01r.offertoire.2","type":"para","t":{"la":["Bónitas Dómini Dei nostri sit super nos, et opus mánuum nostrárum secúnda nobis, et opus mánuum nostrárum secúnda, allelúja."]}}
+{"id":"sancti-05-01r.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-05-01r.secrete.1","type":"para","t":{"la":["Quas tibi, Dómine, de opéribus mánuum nostrárum offérimus hóstias, sancti Joseph interpósito suffrágio, pignus fácias nobis unitátis et pacis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-05-01r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-05-01r.preface.1","type":"rubric","preface":"joseph","t":{"la":["Præfatio de S. Joseph."],"fr":["Préface de saint Joseph (« Et te in Solemnitáte »)."]}}
+{"id":"sancti-05-01r.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-05-01r.communion.1","type":"rubric","t":{"la":["Matt 13:54-55"],"fr":["Matt 13:54-55"]}}
+{"id":"sancti-05-01r.communion.2","type":"para","t":{"la":["Unde huic sapiéntia hæc et virtútes? Nonne hic est fabri fílius? Nonne mater ejus dícitur María? Allelúja."]}}
+{"id":"sancti-05-01r.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-01r.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-05-01r.postcommunion.1","type":"para","t":{"la":["Hæc sancta quæ súmpsimus, Dómine, per intercessiónem beáti Joseph; et operatiónem nostram cómpleant, et prǽmia confírment. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

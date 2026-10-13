@@ -1,0 +1,50 @@
+{"id":"sancti-12-27.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Officium"}],"t":{"la":["S. Joannis Apostoli et Evangelistæ"],"fr":["Saint Jean, apôtre et évangéliste"]}}
+{"id":"sancti-12-27.rang","type":"rubric","t":{"fr":["IIᵉ classe — ornements blancs. Station à Sainte-Marie-Majeure."]}}
+{"id":"sancti-12-27.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C4a.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-12-27.introit.1","type":"rubric","t":{"la":["Eccli 15:5"],"fr":["Eccli 15:5"]}}
+{"id":"sancti-12-27.introit.2","type":"para","dropCap":true,"t":{"la":["In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ et intelléctus: stolam glóriæ índuit eum."]}}
+{"id":"sancti-12-27.introit.3","type":"rubric","t":{"la":["Ps 91:2"],"fr":["Ps 91:2"]}}
+{"id":"sancti-12-27.introit.4","type":"para","t":{"la":["Bonum est confitéri Dómino: et psállere nómini tuo, Altíssime."]}}
+{"id":"sancti-12-27.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-12-27.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-12-27.introit.7","type":"para","t":{"la":["In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ et intelléctus: stolam glóriæ índuit eum."]}}
+{"id":"sancti-12-27.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-12-27.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-12-27.collecte.1","type":"para","t":{"la":["Ecclésiam tuam, Dómine, benígnus illústra: ut, beáti Joánnis Apóstoli tui et Evangelístæ illumináta doctrínis, ad dona pervéniat sempitérna. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-27.collecte.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Commemoratio Oratio"},{"file":"missa/Latin/Sancti/12-26.txt","section":"Commemoratio Oratio"}],"t":{"fr":["Commémoraison : Octave de Noël"]}}
+{"id":"sancti-12-27.collecte.c1.1","type":"rubric","t":{"la":["Pro Octava Nativitatis."]}}
+{"id":"sancti-12-27.collecte.c1.2","type":"para","t":{"la":["Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-27.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-12-27.lecon.1","type":"para","style":"intro","t":{"la":["Lectio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-12-27.lecon.2","type":"rubric","t":{"la":["Eccli 15:1-6"],"fr":["Eccli 15:1-6"]}}
+{"id":"sancti-12-27.lecon.3","type":"para","t":{"la":["Qui timet Deum, fáciet bona: et qui cóntinens est justítiæ, apprehéndet illam, et obviábit illi quasi mater honorificáta. Cibábit illum pane vitæ et intelléctus, et aqua sapiéntiæ salutáris potábit illum: et firmábitur in illo, et non flectétur: et continébit illum, et non confundétur: et exaltábit illum apud próximos suos, et in médio ecclésiæ apériet os ejus, et adimplébit illum spíritu sapiéntiæ et intelléctus, et stola glóriæ véstiet illum. Jucunditátem et exsultatiónem thesaurizábit super illum, et nómine ætérno hereditábit illum, Dóminus, Deus noster."]}}
+{"id":"sancti-12-27.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-12-27.graduel.1","type":"rubric","t":{"la":["Joann 21:23; 21:19"],"fr":["Joann 21:23; 21:19"]}}
+{"id":"sancti-12-27.graduel.2","type":"para","t":{"la":["Exiit sermo inter fratres, quod discípulus ille non móritur: et non dixit Jesus: Non móritur,"]}}
+{"id":"sancti-12-27.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Sed: Sic eum volo manére, donec véniam: tu me séquere. Allelúja, allelúja."]}}
+{"id":"sancti-12-27.graduel.4","type":"rubric","t":{"la":["Joann 21:24"],"fr":["Joann 21:24"]}}
+{"id":"sancti-12-27.graduel.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hic est discípulus ille, qui testimónium pérhibet de his: et scimus, quia verum est testimónium ejus. Allelúja."]}}
+{"id":"sancti-12-27.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-12-27.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secundum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"sancti-12-27.evangile.2","type":"rubric","t":{"la":["Joann 21:19-24"],"fr":["Joann 21:19-24"]}}
+{"id":"sancti-12-27.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus Petro: Séquere me. Convérsus Petrus vidit illum discípulum, quem diligébat Jesus, sequéntem, qui et recúbuit in cena super pectus ejus, et dixit: Dómine, quis est qui tradet te ? Hunc ergo cum vidísset Petrus, dixit Jesu: Dómine, hic autem quid? Dicit ei Jesus: Sic eum volo manére, donec véniam, quid ad te? tu me séquere. Exiit ergo sermo iste inter fratres, quia discípulus ille non móritur. Et non dixit ei Jesus: Non móritur; sed: Sic eum volo manére, donec véniam: quid ad te? Hic est discípulus ille, qui testimónium pérhibet de his, et scripsit hæc: et scimus, quia verum est testimónium ejus."]}}
+{"id":"sancti-12-27.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-12-27.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C4a.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-12-27.offertoire.1","type":"rubric","t":{"la":["Ps 91:13"],"fr":["Ps 91:13"]}}
+{"id":"sancti-12-27.offertoire.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus, quæ in Líbano est, multiplicábitur."]}}
+{"id":"sancti-12-27.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-12-27.secrete.1","type":"para","t":{"la":["Súscipe, Dómine, múnera, quæ in ejus tibi sollemnitáte deférimus, cujus nos confídimus patrocínio liberári. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-27.secrete.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Commemoratio Secreta"},{"file":"missa/Latin/Sancti/12-26.txt","section":"Commemoratio Secreta"}],"t":{"fr":["Commémoraison : Octave de Noël"]}}
+{"id":"sancti-12-27.secrete.c1.1","type":"rubric","t":{"la":["Pro Octava Nativitatis."]}}
+{"id":"sancti-12-27.secrete.c1.2","type":"para","t":{"la":["Obláta, Dómine, múnera, nova Unigéniti tui Nativitáte sanctífica: nosque a peccatórum nostrórum máculis emúnda. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-27.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-12-27.preface.1","type":"rubric","preface":"nat","communicantes":"c-nat1962","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"sancti-12-27.preface.2","type":"rubric","t":{"fr":["Communicantes propre de Noël (voir aux Préfaces)."]}}
+{"id":"sancti-12-27.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-12-27.communion.1","type":"rubric","t":{"la":["Joann 21:23"],"fr":["Joann 21:23"]}}
+{"id":"sancti-12-27.communion.2","type":"para","t":{"la":["Exiit sermo inter fratres, quod discípulus ille non móritur: et non dixit Jesus: Non móritur; sed: Sic eum volo manére, donec véniam."]}}
+{"id":"sancti-12-27.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Postcommunio"},{"file":"horas/Latin/Commune/C5.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-12-27.postcommunion.1","type":"para","t":{"la":["Refécti cibo potúque cœlésti, Deus noster, te súpplices exorámus: ut, in cujus hæc commemoratióne percépimus, ejus muniámur et précibus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-27.postcommunion.c1","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/12-27.txt","section":"Commemoratio Postcommunio"},{"file":"missa/Latin/Sancti/12-26.txt","section":"Commemoratio Postcommunio"}],"t":{"fr":["Commémoraison : Octave de Noël"]}}
+{"id":"sancti-12-27.postcommunion.c1.1","type":"rubric","t":{"la":["Pro Octava Nativitatis."]}}
+{"id":"sancti-12-27.postcommunion.c1.2","type":"para","t":{"la":["Præsta, quǽsumus, omnípotens Deus: ut natus hódie Salvátor mundi, sicut divínæ nobis generatiónis est auctor; ita et immortalitátis sit ipse largítor: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

@@ -1,0 +1,49 @@
+{"id":"sancti-02-01.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Officium"}],"t":{"la":["S. Ignatii Episcopi et Martyris"],"fr":["Saint Ignace d’Antioche, évêque et martyr"]}}
+{"id":"sancti-02-01.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements rouges."]}}
+{"id":"sancti-02-01.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-02-01.introit.1","type":"rubric","t":{"la":["Gal 6:14."],"fr":["Gal 6:14."]}}
+{"id":"sancti-02-01.introit.2","type":"para","dropCap":true,"t":{"la":["Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo."]}}
+{"id":"sancti-02-01.introit.3","type":"rubric","t":{"la":["Ps 131:1."],"fr":["Ps 131:1."]}}
+{"id":"sancti-02-01.introit.4","type":"para","t":{"la":["Meménto, Dómine, David: et omnis mansuetúdinis ejus."]}}
+{"id":"sancti-02-01.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-02-01.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-02-01.introit.7","type":"para","t":{"la":["Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo."]}}
+{"id":"sancti-02-01.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-02-01.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-02-01.collecte.1","type":"para","t":{"la":["Infirmitátem nostram réspice, omnípotens Deus: et, quia pondus própriæ actiónis gravat, beáti Ignátii Mártyris tui atque Pontíficis intercéssio gloriósa nos prótegat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-02-01.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-02-01.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epistolæ beáti Pauli Apóstoli ad Romános"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Romains"]}}
+{"id":"sancti-02-01.epitre.2","type":"rubric","t":{"la":["Rom 8:35-39"],"fr":["Rom 8:35-39"]}}
+{"id":"sancti-02-01.epitre.3","type":"para","t":{"la":["Fratres: Quis nos separábit a caritáte Christi: tribulátio, an angustia, an fames, an núditas, an perículum, an persecútio, an gládius? sicut scriptum est: Quia propter te mortificámur tota die: æstimáti sumus sicut oves occisiónis. Sed in his ómnibus superámus propter eum, qui diléxit nos. Certus sum enim, quia neque mors, neque vita, neque ángeli, neque principátus, neque virtútes, neque instántia, neque futúra, neque fortitúdo, neque altitúdo, neque profúndum, neque creatúra alia poterit nos separáre a caritáte Dei, quæ est in Christo Jesu, Dómino nostro."]}}
+{"id":"sancti-02-01.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-02-01.graduel.1","type":"rubric","t":{"la":["Eccli 44:16."],"fr":["Eccli 44:16."]}}
+{"id":"sancti-02-01.graduel.2","type":"para","t":{"la":["Ecce sacérdos magnus, qui in diébus suis plácuit Deo."]}}
+{"id":"sancti-02-01.graduel.3","type":"rubric","t":{"la":["Eccli 44:20."],"fr":["Eccli 44:20."]}}
+{"id":"sancti-02-01.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Non est invéntus símilis illi, qui conserváret legem Excélsi. Allelúja, allelúja"]}}
+{"id":"sancti-02-01.graduel.5","type":"rubric","t":{"la":["Gal 2:19-20."],"fr":["Gal 2:19-20."]}}
+{"id":"sancti-02-01.graduel.6","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Christo confíxus sum Cruci: vivo ego, jam non ego, vivit vero in me Christus. Allelúja."]}}
+{"id":"sancti-02-01.graduel.sept","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Tractus"}],"t":{"la":["Post Septuagesimam"],"fr":["Après la Septuagésime"]}}
+{"id":"sancti-02-01.graduel.sept.1","type":"rubric","t":{"la":["Eccli 44:16."],"fr":["Eccli 44:16."]}}
+{"id":"sancti-02-01.graduel.sept.2","type":"para","t":{"la":["Ecce sacérdos magnus, qui in diébus suis plácuit Deo."]}}
+{"id":"sancti-02-01.graduel.sept.3","type":"rubric","t":{"la":["Eccli 44:20."],"fr":["Eccli 44:20."]}}
+{"id":"sancti-02-01.graduel.sept.4","type":"para","t":{"la":["Non est invéntus símilis illi, qui conserváret legem Excélsi."]}}
+{"id":"sancti-02-01.graduel.sept.5","type":"rubric","t":{"la":["Ps 20:3-4."],"fr":["Ps 20:3-4."]}}
+{"id":"sancti-02-01.graduel.sept.6","type":"para","t":{"la":["Desidérium ánimæ ejus tribuísti ei: et voluntáte labiórum ejus non fraudásti eum."]}}
+{"id":"sancti-02-01.graduel.sept.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Quoniam prævenísti eum in benedictiónibus dulcedinis."]}}
+{"id":"sancti-02-01.graduel.sept.8","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Posuísti in cápite ejus coronam de lápide pretióso."]}}
+{"id":"sancti-02-01.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-02-01.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"sancti-02-01.evangile.2","type":"rubric","t":{"la":["Joann 12:24-26"],"fr":["Joann 12:24-26"]}}
+{"id":"sancti-02-01.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Amen, amen, dico vobis, nisi granum fruménti cadens in terram, mórtuum fúerit, ipsum solum manet: si autem mórtuum fúerit, multum fructum affert. Qui amat ánimam suam, perdet eam: et qui odit ánimam suam in hoc mundo, in vitam ætérnam custódit eam. Si quis mihi mínistrat, me sequátur: et ubi sum ego, illic et miníster meus erit. Si quis mihi ministráverit, honorificábit eum Pater meus."]}}
+{"id":"sancti-02-01.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-02-01.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C1v.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-02-01.offertoire.1","type":"rubric","t":{"la":["Ps 8:6-7"],"fr":["Ps 8:6-7"]}}
+{"id":"sancti-02-01.offertoire.2","type":"para","t":{"la":["Glória et honore coronásti eum: et constituísti eum super ópera mánuum tuárum, Dómine."]}}
+{"id":"sancti-02-01.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-02-01.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, beáti Ignátii Mártyris tui atque Pontíficis dicátas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-02-01.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-02-01.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-02-01.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/02-01.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-02-01.communion.1","type":"para","t":{"la":["Fruméntum Christi sum: déntibus bestiárum molar, ut panis mundus invéniar."]}}
+{"id":"sancti-02-01.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-02-01.postcommunion.1","type":"para","t":{"la":["Refécti participatióne múneris sacri, quǽsumus, Dómine, Deus noster: ut, cujus exséquimur cultum, intercedénte beáto Ignátio Mártyre tuo atque Pontífice, sentiámus efféctum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

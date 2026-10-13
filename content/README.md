@@ -23,6 +23,12 @@ Seul le pliage de recherche existe aujourd'hui : `pipeline/paroissien_content/fo
 - Aujourd'hui (bibliothèque standard seule) : `python3 -I run_tests.py` depuis `content/` (`-v` pour le détail).
 - À terme : `uv sync --locked`, `uv run pytest`, puis `uv run pqt fetch|normalize|validate|package|publish`.
 
+## Calendrier et images pieuses
+
+- `data/calendar/` : sanctoral de 1962 et de 1969 (général et France), au format `schema/calendar-v1.md`, lu par `core:liturgy`. Provenance dans `data/calendar/SOURCES.md` ; scripts rejouables dans `sources/calendrier-*`.
+- `golden/calendar/` : oracles des tests G3 (romcal pour 1969, Missalemeum pour 1962) et `known-divergences.md`, où chaque écart est justifié.
+- `data/images/` (absent pour l'instant) : la bibliothèque d'images pieuses, choisie par l'utilisateur ; un `catalog.json` et ses fichiers y seraient copiés dans les assets de l'APK. Chacun peut aussi numériser ses propres images dans l'app.
+
 ## Règles
 
 - Rien de `.cache/raw/` n'est commité ; les paquets se construisent uniquement depuis `data/`.

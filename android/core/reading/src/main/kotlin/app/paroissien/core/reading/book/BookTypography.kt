@@ -72,19 +72,20 @@ class BookTypography(val fonts: BookFonts, val paper: PaperColors, val scale: Fl
      * liturgiques en rouge, numéros de versets en petit rouge. Le latin reçoit la césure liturgique à l'affichage
      * (jamais stockée, ADR 004). Les numéros sont annotés [NON_CANONICAL] : ils ne comptent pas dans les ancres.
      */
-    fun render(text: RichText, lang: BlockLang): AnnotatedString = buildAnnotatedString { append(text, lang) }
+    /** [hyphenate] faux pour les titres : en petites capitales, la césure latine laisserait voir ses traits d'union. */
+    fun render(text: RichText, lang: BlockLang, hyphenate: Boolean = true): AnnotatedString = buildAnnotatedString { append(text, lang, hyphenate) }
 
-    private fun AnnotatedString.Builder.append(text: RichText, lang: BlockLang) {
+    private fun AnnotatedString.Builder.append(text: RichText, lang: BlockLang, hyphenate: Boolean) {
         for (node in text) when (node) {
-            is Inline.Text -> append(if (lang == BlockLang.LA) LiangHyphenator.latinLiturgical.insertSoftHyphens(node.value) else node.value)
-            is Inline.Marked -> withStyle(node.marks.fold(SpanStyle()) { style, mark -> style.merge(spanFor(mark)) }) { append(node.children, lang) }
+            is Inline.Text -> append(if (lang == BlockLang.LA && hyphenate) LiangHyphenator.latinLiturgical.insertSoftHyphens(node.value) else node.value)
+            is Inline.Marked -> withStyle(node.marks.fold(SpanStyle()) { style, mark -> style.merge(spanFor(mark)) }) { append(node.children, lang, hyphenate) }
             is Inline.Lang -> {
                 val inner = BlockLang.of(node.lang)
                 withStyle(SpanStyle(localeList = LocaleList(inner.tag), fontFeatureSettings = if (inner == BlockLang.LA) LATIN_FEATURES else null)) {
-                    append(node.children, inner)
+                    append(node.children, inner, hyphenate)
                 }
             }
-            is Inline.Link -> append(node.children, lang)
+            is Inline.Link -> append(node.children, lang, hyphenate)
             is Inline.Sym -> withStyle(SpanStyle(color = paper.rubric)) { append(node.symbol.char) }
             is Inline.Num -> {
                 pushStringAnnotation(NON_CANONICAL, node.value)

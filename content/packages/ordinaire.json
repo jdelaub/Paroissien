@@ -1,0 +1,8 @@
+{
+  "packageId": "ordinaire",
+  "packageVersion": 2026101301,
+  "rights": "licence-libre:MIT",
+  "publications": ["ordinaire.1962"],
+  "title": {"fr": "Ordinaire de la messe"},
+  "minAppFormat": "1.0"
+}

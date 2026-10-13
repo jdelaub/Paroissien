@@ -8,6 +8,12 @@ plugins {
 java { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
 kotlin { compilerOptions { jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17) } }
 
+// Le schéma des paquets voyage dans le jar : les livres importés par l'utilisateur s'écrivent avec lui (PackWriter).
+sourceSets.main {
+    resources.srcDir(rootProject.layout.projectDirectory.dir("../content/schema"))
+    resources.include("pack-v1.sql")
+}
+
 dependencies {
     api(project(":core:model"))
     api(libs.androidx.sqlite)

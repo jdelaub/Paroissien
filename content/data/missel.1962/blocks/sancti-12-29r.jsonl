@@ -1,0 +1,40 @@
+{"id":"sancti-12-29r.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/12-29r.txt","section":"Officium"}],"t":{"la":["S. Thomæ Cantuariensis Episcopi et Martyris"],"fr":["Saint Thomas Becket, évêque et martyr"]}}
+{"id":"sancti-12-29r.rang","type":"rubric","t":{"fr":["Commémoraison — ornements rouges."]}}
+{"id":"sancti-12-29r.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-12-29r.introit.1","type":"rubric","t":{"la":["Dan 3:84; 3:87"],"fr":["Dan 3:84; 3:87"]}}
+{"id":"sancti-12-29r.introit.2","type":"para","dropCap":true,"t":{"la":["Sacerdótes Dei, benedícite Dóminum: sancti et húmiles corde, laudáte Deum."]}}
+{"id":"sancti-12-29r.introit.3","type":"rubric","t":{"la":["Dan 3:57"],"fr":["Dan 3:57"]}}
+{"id":"sancti-12-29r.introit.4","type":"para","t":{"la":["Benedícite, ómnia ópera Dómini, Dómino: laudáte et superexaltáte eum in sǽcula."]}}
+{"id":"sancti-12-29r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-12-29r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-12-29r.introit.7","type":"para","t":{"la":["Sacerdótes Dei, benedícite Dóminum: sancti et húmiles corde, laudáte Deum."]}}
+{"id":"sancti-12-29r.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-12-29r.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-29r.txt","section":"Oratio"},{"file":"missa/Latin/Sancti/12-29.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-12-29r.collecte.1","type":"para","t":{"la":["Deus, pro cujus Ecclésia gloriósus Póntifex Thomas gládiis impiórum occúbuit: præsta, quǽsumus; ut omnes, qui ejus implórant auxílium, petitiónis suæ salutárem consequántur efféctum. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-29r.epitre","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-12-29r.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Corinthiens"]}}
+{"id":"sancti-12-29r.epitre.2","type":"rubric","t":{"la":["2 Cor 1:3-7"],"fr":["2 Cor 1:3-7"]}}
+{"id":"sancti-12-29r.epitre.3","type":"para","t":{"la":["Fratres: Benedíctus Deus et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolatiónis, qui consolátur nos in omni tribulatióne nostra: ut possímus et ipsi consolári eos, qui in omni pressúra sunt, per exhortatiónem, qua exhortámur et ipsi a Deo. Quóniam sicut abúndant passiónes Christi in nobis: ita et per Christum abúndat consolátio nostra. Sive autem tribulámur pro vestra exhortatióne et salúte, sive consolámur pro vestra consolatióne, sive exhortámur pro vestra exhortatióne et salúte, quæ operátur tolerántiam earúndem passiónum, quas et nos pátimur: ut spes nostra firma sit pro vobis: sciéntes, quod, sicut sócii passiónum estis, sic éritis et consolatiónis: in Christo Jesu, Dómino nostro."]}}
+{"id":"sancti-12-29r.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-12-29r.graduel.1","type":"rubric","t":{"la":["Ps 8:6-7"],"fr":["Ps 8:6-7"]}}
+{"id":"sancti-12-29r.graduel.2","type":"para","t":{"la":["Glória et honóre coronásti eum."]}}
+{"id":"sancti-12-29r.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Et constituísti eum super ópera mánuum tuárum, Dómine. Allelúja, allelúja."]}}
+{"id":"sancti-12-29r.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hic est Sacérdos, quem coronávit Dóminus. Allelúja."]}}
+{"id":"sancti-12-29r.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-12-29r.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-12-29r.evangile.2","type":"rubric","t":{"la":["Matt 16:24-27"],"fr":["Matt 16:24-27"]}}
+{"id":"sancti-12-29r.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me. Qui enim voluerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam. Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua? Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuíque secúndum ópera ejus."]}}
+{"id":"sancti-12-29r.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-12-29r.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-12-29r.offertoire.1","type":"rubric","t":{"la":["Ps 88:21-22"],"fr":["Ps 88:21-22"]}}
+{"id":"sancti-12-29r.offertoire.2","type":"para","t":{"la":["Invéni David servum meum, óleo sancto meo unxi eum: manus enim mea auxiliábitur ei, et bráchium meum confortábit eum."]}}
+{"id":"sancti-12-29r.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-12-29r.secrete.1","type":"para","t":{"la":["Múnera tibi, Dómine, dicáta sanctífica: et, intercedénte beáto Thoma Mártyre tuo atque Pontífice, per éadem nos placátus inténde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-29r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-12-29r.preface.1","type":"rubric","preface":"nat","communicantes":"c-nat1962","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"sancti-12-29r.preface.2","type":"rubric","t":{"fr":["Communicantes propre de Noël (voir aux Préfaces)."]}}
+{"id":"sancti-12-29r.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-12-29r.communion.1","type":"rubric","t":{"la":["Ps 20:4"],"fr":["Ps 20:4"]}}
+{"id":"sancti-12-29r.communion.2","type":"para","t":{"la":["Posuísti, Dómine, in cápite ejus corónam de lápide pretióso."]}}
+{"id":"sancti-12-29r.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2-1.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-12-29r.postcommunion.1","type":"para","t":{"la":["Hæc nos commúnio, Dómine, purget a crímine: et, intercedénte beáto Thoma Mártyre tuo atque Pontífice, coeléstis remédii fáciat esse consórtes. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

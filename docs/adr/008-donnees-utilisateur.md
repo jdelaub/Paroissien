@@ -34,6 +34,10 @@ Rubans, images pieuses placées et positions de lecture sont la mémoire du livr
 - (−) Une clé du Keystore ne quitte pas l'appareil : le journal ne migre que par un export chiffré.
 - (−) Room 3 est jeune (3.0.0 en juillet 2026) ; le squelette de la phase 0 doit prouver qu'il fonctionne avec AGP 9.4.1 et KSP.
 
+## Mise en œuvre (phase 3, 0.4.0)
+- Schéma 2 : `book_position` (une par publication) et `ribbon` (six emplacements par publication), par `AutoMigration` depuis le schéma 1, testée.
+- Export minimal : un fichier JSON (`formatVersion: 1`, positions et rubans), import par fusion où le plus récent l'emporte. Le ZIP `.paroissien`, les UUID, les pierres tombales et l'export proposé au premier ruban viennent avec les images pieuses.
+
 ## Points ouverts
 - Smart Switch (Samsung) passe-t-il par le transfert `device-transfer` pour `user.db` ? À vérifier sur le Flip6 avant de compter dessus.
 - Nom de l'artefact de test des migrations de Room 3 : à confirmer au squelette.

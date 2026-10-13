@@ -1,0 +1,23 @@
+{
+  "engine": "Missalemeum (mmolenda/Missalemeum, MIT), module backend/api/kalendar, langue « la »",
+  "commit": "88c491d17d7e7edabaa43d2cf02463413336fb75",
+  "divinumOfficiumCommit": "b9c100d79ae481c67b2801fdd3622b00dd86bd73",
+  "command": "python3 -I content/sources/calendrier-1962/oracle.py --missalemeum <clone> --divinum <clone> --from 2020 --to 2045 --out content/golden/calendar/1962-missalemeum.jsonl",
+  "python": "3.12.3",
+  "generated": "2026-10-11",
+  "years": [
+    2020,
+    2045
+  ],
+  "days": 9497,
+  "sha256": "75c96dba1d2a6672d774019c7bffe284695f22b6b2cd74e9125eea32dfb6a471",
+  "normalization": "content/sources/calendrier-1962/README.md § Oracle",
+  "keysWithoutDivinumOfficiumFile": [
+    "Sancti/01-25c",
+    "Sancti/02-22c",
+    "Sancti/12-26c",
+    "Sancti/12-27c",
+    "Sancti/12-28c",
+    "Tempora/Quad5-5Feriac"
+  ]
+}

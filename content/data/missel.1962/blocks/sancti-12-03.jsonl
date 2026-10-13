@@ -1,0 +1,40 @@
+{"id":"sancti-12-03.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/12-03.txt","section":"Officium"}],"t":{"la":["S. Francisci Xaverii Confessoris"],"fr":["Saint François Xavier, confesseur"]}}
+{"id":"sancti-12-03.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-12-03.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-03.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-12-03.introit.1","type":"rubric","t":{"la":["Ps 118:46-47"],"fr":["Ps 118:46-47"]}}
+{"id":"sancti-12-03.introit.2","type":"para","dropCap":true,"t":{"la":["Loquébar de testimóniis tuis in conspéctu regum, et non confundébar: et meditábar in mandátis tuis, quæ diléxi nimis."]}}
+{"id":"sancti-12-03.introit.3","type":"rubric","t":{"la":["Ps 116:1-2"],"fr":["Ps 116:1-2"]}}
+{"id":"sancti-12-03.introit.4","type":"para","t":{"la":["Laudáte Dóminum, omnes gentes, laudáte eum, omnes pópuli: quóniam confirmáta est super nos misericórdia ejus, et véritas Dómini manet in ætérnum."]}}
+{"id":"sancti-12-03.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-12-03.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-12-03.introit.7","type":"para","t":{"la":["Loquébar de testimóniis tuis in conspéctu regum, et non confundébar: et meditábar in mandátis tuis, quæ diléxi nimis."]}}
+{"id":"sancti-12-03.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-12-03.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-03.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-12-03.collecte.1","type":"para","t":{"la":["Deus, qui Indiárum gentes beáti Francísci prædicatióne et miráculis Ecclésiæ tuæ aggregáre voluísti: concéde propítius; ut, cujus gloriósa mérita venerámur, virtútum quoque imitémur exémpla. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-03.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-03.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/11-30.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-12-03.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Romános"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Romains"]}}
+{"id":"sancti-12-03.epitre.2","type":"rubric","t":{"la":["Rom 10:10-18"],"fr":["Rom 10:10-18"]}}
+{"id":"sancti-12-03.epitre.3","type":"para","t":{"la":["Fratres: Corde enim créditur ad justítiam: ore autem conféssio fit ad salútem. Dicit enim Scriptúra: Omnis, qui credit in illum, non confundétur. Non enim est distínctio Judǽi et Græci: nam idem Dóminus ómnium, dives in omnes, qui ínvocant illum. Omnis enim, quicúmque invocáverit nomen Dómini, salvus erit. Quómodo ergo invocábunt, in quem non credidérunt? Aut quómodo credent ei, quem non audiérunt? Quómodo autem áudient sine prædicánte? Quómodo vero prædicábunt, nisi mittántur? sicut scriptum est: Quam speciósi pedes evangelizántium pacem, evangelizándum bona! Sed non omnes obédiunt Evangélio. Isaías enim dicit: Dómine, quis crédidit audítui nostro? Ergo fides ex audítu, audítus autem per verbum Christi. Sed dico: Numquid non audiérunt? Et quidem in omnem terram exívit sonus eórum, et in fines orbis terræ verba eórum."]}}
+{"id":"sancti-12-03.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5-1.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-12-03.graduel.1","type":"rubric","t":{"la":["Ps 36:30-31"],"fr":["Ps 36:30-31"]}}
+{"id":"sancti-12-03.graduel.2","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium."]}}
+{"id":"sancti-12-03.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Lex Dei ejus in corde ipsíus: et non supplantabúntur gressus ejus. Allelúja, allelúja."]}}
+{"id":"sancti-12-03.graduel.4","type":"rubric","t":{"la":["Ps 111:1"],"fr":["Ps 111:1"]}}
+{"id":"sancti-12-03.graduel.5","type":"para","t":{"la":["Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis. Allelúja."]}}
+{"id":"sancti-12-03.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-03.txt","section":"Evangelium"},{"file":"missa/Latin/Sancti/08-08.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-12-03.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Marcum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Marc"]}}
+{"id":"sancti-12-03.evangile.2","type":"rubric","t":{"la":["Marc 16:15-18"],"fr":["Marc 16:15-18"]}}
+{"id":"sancti-12-03.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Eúntes in mundum univérsum, prædicáte Evangélium omni creatúræ. Qui credíderit, et baptizátus fúerit, salvus erit: qui vero non credíderit, condemnábitur. Signa autem eos, qui credíderint, hæc sequéntur: In nómine meo dæmónia ejícient: linguis loquéntur novis: serpéntes tollent: et si mortíferum quid bíberint, non eis nocébit: super ægros manus impónent, et bene habébunt."]}}
+{"id":"sancti-12-03.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-12-03.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-03.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-12-03.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
+{"id":"sancti-12-03.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
+{"id":"sancti-12-03.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5-1.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-12-03.secrete.1","type":"para","t":{"la":["Præsta nobis, quǽsumus, omnípotens Deus: ut nostræ humilitátis oblátio et pro tuórum tibi grata sit honóre Sanctórum, et nos córpore páriter et mente puríficet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-03.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-12-03.preface.1","type":"rubric","preface":"adv","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"sancti-12-03.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-03.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-12-03.communion.1","type":"rubric","t":{"la":["Matt 24:46-47"],"fr":["Matt 24:46-47"]}}
+{"id":"sancti-12-03.communion.2","type":"para","t":{"la":["Beátus servus, quem, cum vénerit dóminus, invénerit vigilántem: amen, dico vobis, super ómnia bona sua constítuet eum."]}}
+{"id":"sancti-12-03.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5-1.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-12-03.postcommunion.1","type":"para","t":{"la":["Quǽsumus, omnípotens Deus: ut, qui cœléstia aliménta percépimus, intercedénte beáto Francísco Confessóre tuo, per hæc contra ómnia advérsa muniámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

@@ -1,0 +1,66 @@
+{"id":"tempora-pent01-4.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Officium"}],"t":{"la":["Ss.mi Corporis Christi"],"fr":["Fête-Dieu, le Très Saint-Sacrement"]}}
+{"id":"tempora-pent01-4.rang","type":"rubric","t":{"fr":["Iʳᵉ classe — ornements blancs."]}}
+{"id":"tempora-pent01-4.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-pent01-4.introit.1","type":"rubric","t":{"la":["Ps 80:17"],"fr":["Ps 80:17"]}}
+{"id":"tempora-pent01-4.introit.2","type":"para","dropCap":true,"t":{"la":["Cibávit eos ex ádipe fruménti, allelúja: et de petra, melle saturávit eos, allelúja, allelúja, allelúja."]}}
+{"id":"tempora-pent01-4.introit.3","type":"rubric","t":{"la":["Ps 80:2"],"fr":["Ps 80:2"]}}
+{"id":"tempora-pent01-4.introit.4","type":"para","t":{"la":["Exsultáte Deo, adjutóri nostro: jubiláte Deo Jacob."]}}
+{"id":"tempora-pent01-4.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-pent01-4.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-pent01-4.introit.7","type":"para","t":{"la":["Cibávit eos ex ádipe fruménti, allelúja: et de petra, melle saturávit eos, allelúja, allelúja, allelúja."]}}
+{"id":"tempora-pent01-4.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pent01-4.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-pent01-4.collecte.1","type":"para","t":{"la":["Deus, qui nobis sub Sacraménto mirábili passiónis tuæ memóriam reliquísti: tríbue, quǽsumus, ita nos Córporis et Sánguinis tui sacra mystéria venerári; ut redemptiónis tuæ fructum in nobis júgiter sentiámus: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent01-4.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-pent01-4.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epistolæ beáti Pauli Apóstoli ad Corinthios"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Corinthiens"]}}
+{"id":"tempora-pent01-4.epitre.2","type":"rubric","t":{"la":["1 Cor 11:23-29"],"fr":["1 Cor 11:23-29"]}}
+{"id":"tempora-pent01-4.epitre.3","type":"para","t":{"la":["Fratres: Ego enim accépi a Dómino quod et trádidi vobis, quóniam Dóminus Jesus, in qua nocte tradebátur, accépit panem, et grátias agens fregit, et dixit: Accípite, et manducáte: hoc est corpus meum, quod pro vobis tradétur: hoc fácite in meam commemoratiónem. Simíliter et cálicem, postquam cenávit, dicens: Hic calix novum Testaméntum est in meo sánguine. Hoc fácite, quotiescúmque bibétis, in meam commemoratiónem. Quotiescúmque enim manducábitis panem hunc et cálicem bibétis, mortem Dómini annuntiábitis, donec véniat. Itaque quicúmque manducáverit panem hunc vel bíberit cálicem Dómini indígne, reus erit córporis et sánguinis Dómini. Probet autem seípsum homo: et sic de pane illo edat et de calice bibat. Qui enim mandúcat et bibit indígne, judícium sibi mandúcat et bibit: non dijúdicans corpus Dómini."]}}
+{"id":"tempora-pent01-4.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-pent01-4.graduel.1","type":"rubric","t":{"la":["Ps 144:15-16"],"fr":["Ps 144:15-16"]}}
+{"id":"tempora-pent01-4.graduel.2","type":"para","t":{"la":["Oculi ómnium in te sperant, Dómine: et tu das illis escam in témpore opportúno,"]}}
+{"id":"tempora-pent01-4.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Aperis tu manum tuam: et imples omne ánimal benedictióne. Allelúja, allelúja,"]}}
+{"id":"tempora-pent01-4.graduel.4","type":"rubric","t":{"la":["Joannes 6:56-57"],"fr":["Joannes 6:56-57"]}}
+{"id":"tempora-pent01-4.graduel.5","type":"para","t":{"la":["Caro mea vere est cibus, et sanguis meus vere est potus: qui mandúcat meam carnem et bibit meum sánguinem, in me manet et ego in eo. Alleluia."]}}
+{"id":"tempora-pent01-4.sequence","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Sequentia"}],"t":{"la":["Sequentia"],"fr":["Séquence"]}}
+{"id":"tempora-pent01-4.sequence.1","type":"rubric","t":{"la":["Thomæ de Aquino. (infra octavam ad libitum Celebrantis omitti potest, juxta Rubricas.)"]}}
+{"id":"tempora-pent01-4.sequence.2","type":"stanza","kind":"hymn","t":{"la":["Lauda, Sion, Salvatórem,",{"br":1},"lauda ducem et pastórem",{"br":1},"in hymnis et cánticis."]}}
+{"id":"tempora-pent01-4.sequence.3","type":"stanza","kind":"hymn","t":{"la":["Quantum potes, tantum aude:",{"br":1},"quia major omni laude,",{"br":1},"nec laudáre súfficis."]}}
+{"id":"tempora-pent01-4.sequence.4","type":"stanza","kind":"hymn","t":{"la":["Laudis thema speciális,",{"br":1},"panis vivus et vitális",{"br":1},"hódie propónitur."]}}
+{"id":"tempora-pent01-4.sequence.5","type":"stanza","kind":"hymn","t":{"la":["Quem in sacræ mensa cenæ",{"br":1},"turbæ fratrum duodénæ",{"br":1},"datum non ambígitur."]}}
+{"id":"tempora-pent01-4.sequence.6","type":"stanza","kind":"hymn","t":{"la":["Sit laus plena, sit sonóra,",{"br":1},"sit jucúnda, sit decóra",{"br":1},"mentis jubilátio."]}}
+{"id":"tempora-pent01-4.sequence.7","type":"stanza","kind":"hymn","t":{"la":["Dies enim sollémnis agitur,",{"br":1},"in qua mensæ prima recólitur",{"br":1},"hujus institútio."]}}
+{"id":"tempora-pent01-4.sequence.8","type":"stanza","kind":"hymn","t":{"la":["In hac mensa novi Regis,",{"br":1},"novum Pascha novæ legis",{"br":1},"Phase vetus términat."]}}
+{"id":"tempora-pent01-4.sequence.9","type":"stanza","kind":"hymn","t":{"la":["Vetustátem nóvitas,",{"br":1},"umbram fugat véritas,",{"br":1},"noctem lux elíminat."]}}
+{"id":"tempora-pent01-4.sequence.10","type":"stanza","kind":"hymn","t":{"la":["Quod in cœna Christus gessit,",{"br":1},"faciéndum hoc expréssit",{"br":1},"in sui memóriam."]}}
+{"id":"tempora-pent01-4.sequence.11","type":"stanza","kind":"hymn","t":{"la":["Docti sacris institútis,",{"br":1},"panem, vinum in salútis",{"br":1},"consecrámus hóstiam."]}}
+{"id":"tempora-pent01-4.sequence.12","type":"stanza","kind":"hymn","t":{"la":["Dogma datur Christiánis,",{"br":1},"quod in carnem transit panis",{"br":1},"et vinum in sánguinem."]}}
+{"id":"tempora-pent01-4.sequence.13","type":"stanza","kind":"hymn","t":{"la":["Quod non capis, quod non vides,",{"br":1},"animosa fírmat fides,",{"br":1},"præter rerum órdinem."]}}
+{"id":"tempora-pent01-4.sequence.14","type":"stanza","kind":"hymn","t":{"la":["Sub divérsis speciébus,",{"br":1},"signis tantum, et non rebus,",{"br":1},"latent res exímiæ."]}}
+{"id":"tempora-pent01-4.sequence.15","type":"stanza","kind":"hymn","t":{"la":["Caro cibus, sanguis potus:",{"br":1},"manet tamen Christus totus",{"br":1},"sub utráque spécie."]}}
+{"id":"tempora-pent01-4.sequence.16","type":"stanza","kind":"hymn","t":{"la":["A suménte non concísus,",{"br":1},"non confráctus, non divísus:",{"br":1},"ínteger accípitur."]}}
+{"id":"tempora-pent01-4.sequence.17","type":"stanza","kind":"hymn","t":{"la":["Sumit unus, sumunt mille:",{"br":1},"quantum isti, tantum ille:",{"br":1},"nec sumptus consúmitur."]}}
+{"id":"tempora-pent01-4.sequence.18","type":"stanza","kind":"hymn","t":{"la":["Sumunt boni, sumunt mali",{"br":1},"sorte tamen inæquáli,",{"br":1},"vitæ vel intéritus."]}}
+{"id":"tempora-pent01-4.sequence.19","type":"stanza","kind":"hymn","t":{"la":["Mors est malis, vita bonis:",{"br":1},"vide, paris sumptiónis",{"br":1},"quam sit dispar éxitus."]}}
+{"id":"tempora-pent01-4.sequence.20","type":"stanza","kind":"hymn","t":{"la":["Fracto demum sacraménto,",{"br":1},"ne vacílles, sed meménto,",{"br":1},"tantum esse sub fragménto,",{"br":1},"quantum toto tégitur."]}}
+{"id":"tempora-pent01-4.sequence.21","type":"stanza","kind":"hymn","t":{"la":["Nulla rei fit scissúra:",{"br":1},"signi tantum fit fractúra:",{"br":1},"qua nec status nec statúra",{"br":1},"signáti minúitur."]}}
+{"id":"tempora-pent01-4.sequence.22","type":"stanza","kind":"hymn","t":{"la":["Ecce panis Angelórum,",{"br":1},"factus cibus viatórum:",{"br":1},"vere panis filiórum,",{"br":1},"non mitténdus cánibus."]}}
+{"id":"tempora-pent01-4.sequence.23","type":"stanza","kind":"hymn","t":{"la":["In figúris præsignátur,",{"br":1},"cum Isaac immolátur:",{"br":1},"agnus paschæ deputátur:",{"br":1},"datur manna pátribus."]}}
+{"id":"tempora-pent01-4.sequence.24","type":"stanza","kind":"hymn","t":{"la":["Bone pastor, panis vere,",{"br":1},"Jesu, nostri miserére:",{"br":1},"tu nos pasce, nos tuére:",{"br":1},"tu nos bona fac vidére",{"br":1},"in terra vivéntium."]}}
+{"id":"tempora-pent01-4.sequence.25","type":"stanza","kind":"hymn","t":{"la":["Tu, qui cuncta scis et vales:",{"br":1},"qui nos pascis hic mortáles:",{"br":1},"tuos ibi commensáles,",{"br":1},"coherédes et sodáles",{"br":1},"fac sanctórum cívium.",{"br":1},"Amen. Allelúja."]}}
+{"id":"tempora-pent01-4.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-pent01-4.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia sancti Evangéli secúndum Joánnem"],"fr":["Suite du saint Évangile selon saint Jean"]}}
+{"id":"tempora-pent01-4.evangile.2","type":"rubric","t":{"la":["Joann 6:56-59"],"fr":["Joann 6:56-59"]}}
+{"id":"tempora-pent01-4.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus turbis Judæórum: Caro mea vere est cibus et sanguis meus vere est potus. Qui mandúcat meam carnem et bibit meum sánguinem, in me manet et ego in illo. Sicut misit me vivens Pater, et ego vivo propter Patrem: et qui mandúcat me, et ipse vivet propter me. Hic est panis, qui de cœlo descéndit. Non sicut manducavérunt patres vestri manna, et mórtui sunt. Qui mandúcat hunc panem, vivet in ætérnum."]}}
+{"id":"tempora-pent01-4.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-pent01-4.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-pent01-4.offertoire.1","type":"rubric","t":{"la":["Levit 21:6"],"fr":["Levit 21:6"]}}
+{"id":"tempora-pent01-4.offertoire.2","type":"para","t":{"la":["Sacerdótes Dómini incénsum et panes ófferunt Deo: et ideo sancti erunt Deo suo, et non pólluent nomen ejus, allelúja."]}}
+{"id":"tempora-pent01-4.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-pent01-4.secrete.1","type":"para","t":{"la":["Ecclésiæ tuæ, quǽsumus, Dómine, unitátis et pacis propítius dona concéde: quæ sub oblátis munéribus mýstice designántur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent01-4.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-pent01-4.preface.1","type":"rubric","preface":"sacramento","t":{"la":["Præfatio de Sanctissimo Sacramento."],"fr":["Préface du Saint-Sacrement."]}}
+{"id":"tempora-pent01-4.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-pent01-4.communion.1","type":"rubric","t":{"la":["1 Cor 11:26-27"],"fr":["1 Cor 11:26-27"]}}
+{"id":"tempora-pent01-4.communion.2","type":"para","t":{"la":["Quotiescúmque manducábitis panem hunc et cálicem bibétis, mortem Dómini annuntiábitis, donec véniat: itaque quicúmque manducáverit panem vel bíberit calicem Dómini indígne, reus erit córporis et sánguinis Dómini, allelúja."]}}
+{"id":"tempora-pent01-4.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent01-4.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-pent01-4.postcommunion.1","type":"para","t":{"la":["Fac nos, quǽsumus, Dómine, divinitátis tuæ sempitérna fruitióne repléri: quam pretiósi Corporis et Sanguinis tui temporalis percéptio præfigúrat: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

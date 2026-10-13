@@ -1,0 +1,39 @@
+{"id":"sancti-06-26.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Officium"}],"t":{"la":["Ss. Joannis et Pauli Martyrum"],"fr":["Saints Jean et Paul, martyrs"]}}
+{"id":"sancti-06-26.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements rouges."]}}
+{"id":"sancti-06-26.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Introitus"},{"file":"missa/Latin/Sancti/06-15.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-06-26.introit.1","type":"rubric","t":{"la":["Ps 33:20-21"],"fr":["Ps 33:20-21"]}}
+{"id":"sancti-06-26.introit.2","type":"para","dropCap":true,"t":{"la":["Multæ tribulatiónes justórum, et de his ómnibus liberávit eos Dóminus: Dóminus custódit ómnia ossa eórum: unum ex his non conterétur."]}}
+{"id":"sancti-06-26.introit.3","type":"rubric","t":{"la":["Ps 33:2"],"fr":["Ps 33:2"]}}
+{"id":"sancti-06-26.introit.4","type":"para","t":{"la":["Benedícam Dóminum in omni témpore: semper laus ejus in ore meo."]}}
+{"id":"sancti-06-26.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-06-26.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-06-26.introit.7","type":"para","t":{"la":["Multæ tribulatiónes justórum, et de his ómnibus liberávit eos Dóminus: Dóminus custódit ómnia ossa eórum: unum ex his non conterétur."]}}
+{"id":"sancti-06-26.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-06-26.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-06-26.collecte.1","type":"para","t":{"la":["Quǽsumus, omnípotens Deus: ut nos gemináta lætítia hodiérnæ festivitátis excípiat, quæ de beatórum Joánnis et Pauli glorificatióne procédit; quos eadem fides et pássio vere fecit esse germános. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-26.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-06-26.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-06-26.lecon.2","type":"rubric","t":{"la":["Eccli 44:10-15"],"fr":["Eccli 44:10-15"]}}
+{"id":"sancti-06-26.lecon.3","type":"para","t":{"la":["Hi viri misericórdiæ sunt, quorum pietátes non defuérunt: cum semine eórum pérmanent bona, heréditas sancta nepótes eórum, et in testaméntis stetit semen eórum: et fílii eórum propter illos usque in ætérnum manent: semen eórum et glória eórum non derelinquétur. Córpora ipsórum in pace sepúlta sunt, et nomen eórum vivit in generatiónem et generatiónem. Sapiéntiam ipsórum narrent pópuli, et laudem eórum núntiet Ecclésia."]}}
+{"id":"sancti-06-26.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-06-26.graduel.1","type":"rubric","t":{"la":["Ps 132:1-2"],"fr":["Ps 132:1-2"]}}
+{"id":"sancti-06-26.graduel.2","type":"para","t":{"la":["Ecce, quam bonum et quam jucúndum, habitáre fratres in unum!"]}}
+{"id":"sancti-06-26.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Sicut unguéntum in cápite, quod descéndit in barbam, barbam Aaron. Allelúja, allelúja."]}}
+{"id":"sancti-06-26.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Hæc est vera fratérnitas, quæ vicit mundi crímina: Christum secúta est, ínclita tenens regna cœléstia. Allelúja."]}}
+{"id":"sancti-06-26.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Evangelium"},{"file":"horas/Latin/Commune/C3a-1.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-06-26.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-06-26.evangile.2","type":"rubric","t":{"la":["Luc 12:1-8"],"fr":["Luc 12:1-8"]}}
+{"id":"sancti-06-26.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Atténdite a ferménto pharisæórum, quod est hypócrisis. Nihil autem opértum est, quod non revelétur: neque abscónditum, quod non sciátur. ¶ Quóniam, quæ in ténebris dixístis, in lúmine dicéntur: et quod in aurem locúti estis in cubículis, prædicábitur in tectis. Dico autem vobis amícis meis: Ne terreámini ab his, qui occídunt corpus, et post hæc non habent ámplius quid fáciant. Osténdam autem vobis, quem timeátis: timéte eum, qui postquam occíderit, habet potestátem míttere in gehénnam. Ita dico vobis: hunc timéte. Nonne quinque pásseres véneunt dipóndio, et unus ex illis non est in oblivióne coram Deo? Sed et capílli cápitis vestri omnes numeráti sunt. Nolíte ergo timére: multis passéribus pluris estis vos. Dico autem vobis: Omnis, quicúmque conféssus fúerit me coram homínibus, et Fílius hóminis confitébitur illum coram Angelis Dei."]}}
+{"id":"sancti-06-26.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-06-26.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-06-26.offertoire.1","type":"rubric","t":{"la":["Ps 5:12-13"],"fr":["Ps 5:12-13"]}}
+{"id":"sancti-06-26.offertoire.2","type":"para","t":{"la":["Gloriabúntur in te omnes, qui díligunt nomen tuum: quóniam tu, Dómine, benedíces justo: Dómine, ut scuto bonæ voluntátis tuæ coronásti nos."]}}
+{"id":"sancti-06-26.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-06-26.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, sanctórum Martyrum tuórum Joánnis et Pauli dicátas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-26.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-06-26.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-06-26.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Communio"},{"file":"horas/Latin/Commune/C3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-06-26.communion.1","type":"rubric","t":{"la":["Sap 3:4-6"],"fr":["Sap 3:4-6"]}}
+{"id":"sancti-06-26.communion.2","type":"para","t":{"la":["Et si coram homínibus torménta passi sunt, Deus tentávit eos: tamquam aurum in fornáce probávit eos, et quasi holocáusta accépit eos."]}}
+{"id":"sancti-06-26.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-26.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-06-26.postcommunion.1","type":"para","t":{"la":["Súmpsimus, Dómine, sanctórum Martyrum tuórum Joánnis et Pauli sollémnia celebrántes, sacraménta cœléstia: præsta, quǽsumus; ut, quod temporáliter gérimus, ætérnis gáudiis consequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

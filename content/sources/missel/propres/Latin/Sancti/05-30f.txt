@@ -1,0 +1,84 @@
+# Sainte Jeanne d'Arc, vierge (30 mai, France) : messe propre « pro aliquibus locis ».
+# Transcrit par Paroissien sur les fac-similés du Missale Romanum, Ratisbonne, F. Pustet (édition de Benoît XV),
+# appendice « Missæ pro aliquibus locis », pages [167]-[168] ; archive.org bc.radom.pl.Missale_romanum_skaryszew,
+# images n533-n534. Témoins concordants (recherche plein texte d'archive.org) : Missale Romanum Benziger 1942,
+# Missale Romanum 1947, Liber usualis 1929 et 1961. Latin seul. Le missel n'indique pas la préface : celle des
+# Saints, comme au propre de Paris de 1953 (« Préface des Saints », 30 mai).
+
+[Officium]
+S. Ioannæ de Arc Virginis
+
+[Rank]
+;;Duplex II classis;;5
+
+[Rule]
+Gloria
+no Credo
+Prefatio=Sanctis
+
+[Introitus]
+!Exod 15:1-2
+v. Cantémus Dómino: glorióse enim magnificátus est. Fortitúdo mea et laus mea Dóminus, et factus est mihi in salútem. (Allelúja, allelúja.)
+!Ps 97:1
+Cantáte Dómino cánticum novum, quia mirabília fecit.
+&Gloria
+v. Cantémus Dómino: glorióse enim magnificátus est. Fortitúdo mea et laus mea Dóminus, et factus est mihi in salútem. (Allelúja, allelúja.)
+
+[Oratio]
+Deus, qui beátam Joánnam Vírginem ad fidem ac pátriam tuéndam mirabíliter suscitásti: da, quǽsumus, ejus intercessióne; ut Ecclésia tua, hóstium superátis insídiis, perpétua pace fruátur.
+$Per Dominum
+
+[Lectio]
+Léctio libri Sapiéntiæ
+!Sap 8:9-15
+Propósui sapiéntiam addúcere mihi ad convivéndum: sciens, quóniam mecum communicábit de bonis, et erit allocútio cogitatiónis et tǽdii mei. Habébo, propter hanc, claritátem ad turbas et honórem apud senióres júvenis: et acútus invéniar in judício, et in conspéctu poténtium admirábilis ero, et fácies príncipum mirabúntur me: tacéntem me sustinébunt, et loquéntem me respícient, et, sermocinánte me plura, manus ori suo impónent. Prætérea habébo, per hanc, immortalitátem: et memóriam ætérnam his, qui post me futúri sunt, relínquam. Dispónam pópulos: et natiónes mihi erunt súbditæ. Timébunt me audiéntes reges horréndi: in multitúdine vidébor bonus et in bello fortis.
+
+[Graduale]
+!Judic 5:8-11
+Nova bella elégit Dóminus, et portas hóstium ipse subvértit.
+V. Ubi collísi sunt currus, et hóstium suffocátus est exércitus, ibi narréntur justítiæ Dómini, et cleméntia ejus in fortes Israel.
+Allelúja, allelúja.
+!Judith 13:17-18
+V. Laudáte Dóminum, Deum nostrum, qui non deséruit sperántes in se, et in me, ancílla sua, adimplévit misericórdiam suam, quam promísit dómui Israel. Allelúja.
+
+[Tractus]
+!Judic 5:8-11
+Nova bella elégit Dóminus, et portas hóstium ipse subvértit.
+V. Ubi collísi sunt currus, et hóstium suffocátus est exércitus, ibi narréntur justítiæ Dómini, et cleméntia ejus in fortes Israel.
+_
+!Tractus
+!Judith 6:15
+Benedíctus es, Dómine, qui non derelínquis præsuméntes de te: et præsuméntes de se et de sua virtúte gloriántes humílias.
+!2 Mach 1:5
+V. Exaudívit Dóminus oratiónem puéllæ suæ, qua orávit pro nobis, ut reconciliétur nobíscum Deus.
+!Judith 15:11; 8:29
+V. Fecísti viríliter, et confortátum est cor tuum: manus Dómini confortávit te, et ídeo eris benedícta in ætérnum.
+V. Nunc ergo ora pro nobis, quóniam múlier sancta es et timens Deum.
+
+[GradualeP]
+Allelúja, allelúja.
+!Judith 15:11
+V. Fecísti viríliter, et confortátum est cor tuum: manus Dómini confortávit te, et ídeo eris benedícta in ætérnum. Allelúja.
+!Judith 8:29
+V. Nunc ergo ora pro nobis, quóniam múlier sancta es et timens Deum. Allelúja.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Matthæum
+!Matt 16:24-27
+In illo témpore: Dixit Jesus discípulis suis: Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me. Qui enim volúerit ánimam suam salvam fácere, perdet eam: qui autem perdíderit ánimam suam propter me, invéniet eam. Quid enim prodest hómini, si mundum univérsum lucrétur, ánimæ vero suæ detriméntum patiátur? Aut quam dabit homo commutatiónem pro ánima sua? Fílius enim hóminis ventúrus est in glória Patris sui cum Angelis suis: et tunc reddet unicuique secúndum ópera ejus.
+
+[Offertorium]
+!Judith 15:10
+Benedixérunt eam omnes una voce, dicéntes: Tu glória Jerúsalem, tu lætítia Israel, tu honorificéntia pópuli nostri. (Allelúja.)
+
+[Secreta]
+Hæc hóstia salutáris, Dómine, illam nobis in rebus árduis cónferat fortitúdinem, cujus beáta Joánna, sub tanta discríminum varietáte, tam insígnia præbuit exémpla: ut, ad inimícos repelléndos, étiam belli perícula subíre non dubitáverit.
+$Per Dominum
+
+[Communio]
+!Ps 22:4
+Si ambulávero in médio umbræ mortis, non timébo mala, quóniam tu mecum es, Dómine Jesu. (Allelúja.)
+
+[Postcommunio]
+Cælésti pane reféctos, qui tóties beátam Joánnam áluit ad victóriam: præsta, quǽsumus, omnípotens Deus; ut hoc salútis aliméntum de inimícis nostris victóres nos effíciat.
+$Per Dominum

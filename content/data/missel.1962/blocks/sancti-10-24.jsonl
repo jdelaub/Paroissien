@@ -1,0 +1,41 @@
+{"id":"sancti-10-24.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Officium"}],"t":{"la":["S. Raphaëlis Archangeli"],"fr":["Saint Raphaël, archange"]}}
+{"id":"sancti-10-24.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-10-24.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-10-24.introit.1","type":"rubric","t":{"la":["Ps 102:20"],"fr":["Ps 102:20"]}}
+{"id":"sancti-10-24.introit.2","type":"para","dropCap":true,"t":{"la":["Benedícite Dóminum, omnes Angeli ejus: poténtes virtúte, qui fácitis verbum ejus, ad audiéndam vocem sermónum ejus."]}}
+{"id":"sancti-10-24.introit.3","type":"rubric","t":{"la":["Ps 102:1"],"fr":["Ps 102:1"]}}
+{"id":"sancti-10-24.introit.4","type":"para","t":{"la":["Bénedic, ánima mea, Dómino: et ómnia, quæ intra me sunt, nómini sancto ejus."]}}
+{"id":"sancti-10-24.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-10-24.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-10-24.introit.7","type":"para","t":{"la":["Benedícite Dóminum, omnes Angeli ejus: poténtes virtúte, qui fácitis verbum ejus, ad audiéndam vocem sermónum ejus."]}}
+{"id":"sancti-10-24.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-10-24.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-10-24.collecte.1","type":"para","t":{"la":["Deus, qui beátum Raphaélem Archángelum Tobíæ fámulo tuo cómitem dedísti in via: concéde nobis fámulis tuis; ut ejúsdem semper protegámur custódia et muniámur auxílio. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-24.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-10-24.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Tobíæ"],"fr":["Lecture du livre de Tobie"]}}
+{"id":"sancti-10-24.lecon.2","type":"rubric","t":{"la":["Tob 12:7-15"],"fr":["Tob 12:7-15"]}}
+{"id":"sancti-10-24.lecon.3","type":"para","t":{"la":["In diébus illis: Dixit Angelus Ráphaël ad Tobíam: Sacraméntum regis abscóndere bonum est: ópera autem Dei reveláre et confitéri honoríficum est. Bona est orátio cum jejúnio, et eleemósyna magis quam thesáuros auri recóndere: quóniam eleemósyna a morte liberat, et ipsa est, quæ purgat peccáta et facit invenire misericórdiam et vitam ætérnam. Qui autem faciunt peccátum et iniquitátem, hostes sunt ánimæ suæ. Manifésto ergo vobis veritátem, et non abscóndam a vobis occúltum sermónem. Quando orábas cum lácrimis, et sepeliébas mórtuos, et derelinquébas prándium tuum, et mórtuos abscondébas per diem in domo tua, et nocte sepeliébas eos, ego óbtuli oratiónem tuam Dómino. Et quia accéptus eras Deo, necésse fuit, ut tentátio probáret te. Et nunc misit me Dóminus, ut curárem te, et Saram uxórem fílii tui a dæmónio liberárem. Ego enim sum Raphaël Angelus, unus ex septem, qui astámus ante Dóminum."]}}
+{"id":"sancti-10-24.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-10-24.graduel.1","type":"rubric","t":{"la":["Tob 8:3"],"fr":["Tob 8:3"]}}
+{"id":"sancti-10-24.graduel.2","type":"para","t":{"la":["Angelus Dómini Raphaël apprehéndit et ligávit dæmonem."]}}
+{"id":"sancti-10-24.graduel.3","type":"rubric","t":{"la":["Ps 146:5."],"fr":["Ps 146:5."]}}
+{"id":"sancti-10-24.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Magnus Dóminus noster, et magna virtus ejus. Allelúja, allelúja."]}}
+{"id":"sancti-10-24.graduel.5","type":"rubric","t":{"la":["Ps 137:1-2."],"fr":["Ps 137:1-2."]}}
+{"id":"sancti-10-24.graduel.6","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","In conspéctu Angelórum psallam tibi: adorábo ad templum sanctum tuum, et confitébor nómini tuo, Dómine. Allelúja."]}}
+{"id":"sancti-10-24.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-10-24.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"sancti-10-24.evangile.2","type":"rubric","t":{"la":["Joann 5:1-4"],"fr":["Joann 5:1-4"]}}
+{"id":"sancti-10-24.evangile.3","type":"para","t":{"la":["In illo témpore: Erat dies festus Judæórum, et ascéndit Jesus Jerosólymam. ¶ Est autem Jerosólymis Probática piscína, quæ cognominátur hebráice Bethsaida, quinque pórticus habens. In his jacébat multitúdo magna languéntium, cæcórum, claudórum, aridórum exspectántium aquæ motum. Angelus autem Dómini descendébat secúndum tempus in piscínam, et movebátur aqua. Et, qui prior descendísset in piscínam post motiónem aquæ, sanus fiebat, a quacúmque detinebátur infirmitáte."]}}
+{"id":"sancti-10-24.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-10-24.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-10-24.offertoire.1","type":"rubric","t":{"la":["Apoc 8:3; 8:4"],"fr":["Apoc 8:3; 8:4"]}}
+{"id":"sancti-10-24.offertoire.2","type":"para","t":{"la":["Stetit Angelus juxta aram templi, habens thuríbulum áureum in manu sua, et data sunt ei incénsa multa: et ascéndit fumus aromátum in conspéctu Dei."]}}
+{"id":"sancti-10-24.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-10-24.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, laudis offérimus, supplíciter deprecántes: ut eásdem, angélico pro nobis interveniénte suffrágio, et placátus accípias, et ad salútem nostram proveníre concédas. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-10-24.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-10-24.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune."]}}
+{"id":"sancti-10-24.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Communio"},{"file":"missa/Latin/Sancti/10-02.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-10-24.communion.1","type":"rubric","t":{"la":["Dan 3:58"],"fr":["Dan 3:58"]}}
+{"id":"sancti-10-24.communion.2","type":"para","t":{"la":["Benedícite, omnes Angeli Dómini, Dóminum: hymnum dícite et superexaltáte eum in sǽcula."]}}
+{"id":"sancti-10-24.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/10-24.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-10-24.postcommunion.1","type":"para","t":{"la":["Dirigere dignáre, Dómine Deus, in adjutórium nostrum sanctum Raphaélem Archángelum: et, quem tuæ majestáti semper assístere crédimus, tibi nostras exíguas preces benedicéndas assígnet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

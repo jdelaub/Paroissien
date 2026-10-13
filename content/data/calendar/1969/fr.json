@@ -1,0 +1,273 @@
+{
+  "format": 1,
+  "rite": "1969",
+  "calendar": "fr",
+  "sources": [
+    "romcal@3cde69c21fcf3176b8728cf0a54d0ca8f3d97166"
+  ],
+  "entries": [
+    {
+      "id": "genevieve_of_paris_virgin",
+      "date": "01-03",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Geneviève, vierge",
+        "la": "S. Genovefæ, virginis"
+      }
+    },
+    {
+      "id": "remigius_of_reims_bishop",
+      "date": "01-15",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Remi, évêque de Reims",
+        "la": "S. Remigii, episcopi"
+      }
+    },
+    {
+      "id": "cyril_constantine_the_philosopher_monk_and_methodius_michael_of_thessaloniki_bishop",
+      "date": "02-14",
+      "rank": "FEAST",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saints Cyrille, Moine, et Méthode, évêque, apôtres des Slaves, co-patrons de l’Europe",
+        "la": "Ss. Cyrilli, monachi, et Methodii, episcopi, patronorum secundariorum Europæ"
+      },
+      "patron": "PRINCIPAL"
+    },
+    {
+      "id": "bernadette_soubirous_virgin",
+      "date": "02-18",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Bernadette Soubirous, vierge",
+        "la": "S. Bernardæ Soubirous, virginis"
+      }
+    },
+    {
+      "id": "catherine_of_siena_virgin",
+      "date": "04-29",
+      "rank": "FEAST",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Catherine de Sienne, vierge, docteur de l’Église, co-patronne de l’Europe",
+        "la": "S. Catharinæ Senensis, virginis et Ecclesiæ doctoris, patronæ secundariæ Europæ"
+      },
+      "patron": "PRINCIPAL"
+    },
+    {
+      "id": "louise_de_marillac_religious",
+      "date": "05-09",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Louise de Marillac, religieuse",
+        "la": "S. Ludovicæ de Marillac, religiosæ"
+      }
+    },
+    {
+      "id": "ivo_of_kermartin_priest",
+      "date": "05-19",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Yves Hélory, prêtre et juge en Bretagne",
+        "la": "S. Ivonis, presbyteri"
+      }
+    },
+    {
+      "id": "joan_of_arc_virgin",
+      "date": "05-30",
+      "rank": "MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Jeanne d’Arc, vierge, co-patronne de la France",
+        "la": "S. Ioannæ Arcensis, virginis, patronæ secundariæ Galliæ"
+      },
+      "patron": "SECONDARY"
+    },
+    {
+      "id": "pothinus_of_lyon_bishop_blandina_of_lyon_virgin_and_companions_martyrs",
+      "date": "06-02",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Pothin, évêque, Sainte Blandine, vierge, et leurs compagnons, martyrs",
+        "la": "Ss. Pothini, episcopi, Blandinæ, virginis, et sociorum, martyrum"
+      }
+    },
+    {
+      "id": "clotilde_of_burgundy",
+      "date": "06-04",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Clotilde, reine des Francs",
+        "la": "S. Clotildis"
+      }
+    },
+    {
+      "id": "benedict_of_nursia_abbot",
+      "date": "07-11",
+      "rank": "FEAST",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Benoît de Nursie, Patriarche des moines d’Occident, fondateur de l’ordre des Bénédictins et patron de l’Europe",
+        "la": "S. Benedicti, abbatis, patroni Europæ"
+      },
+      "patron": "PRINCIPAL"
+    },
+    {
+      "id": "bridget_of_sweden_religious",
+      "date": "07-23",
+      "rank": "FEAST",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Brigitte de Suède, veuve puis religieuse, fondatrice de l’ordre du Saint-Sauveur, co-patronne de l’Europe",
+        "la": "S. Birgittæ, religiosæ, patronæ secundariæ Europæ"
+      },
+      "patron": "PRINCIPAL"
+    },
+    {
+      "id": "teresa_benedicta_of_the_cross_stein_virgin",
+      "date": "08-09",
+      "rank": "FEAST",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Thérèse-Bénédicte de la Croix (Edith Stein), Carmélite, martyre en Pologne, co-patronne de l’Europe",
+        "la": "S. Teresiæ Benedictæ a Cruce Stein, virginis, martyris, patronæ secundariæ Europæ"
+      },
+      "validFrom": 2002,
+      "patron": "PRINCIPAL"
+    },
+    {
+      "id": "assumption_of_the_blessed_virgin_mary",
+      "date": "08-15",
+      "rank": "SOLEMNITY",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Assomption de la bienheureuse Vierge Marie, patronne principale de la France",
+        "la": "In Assumptione Beatæ Mariæ Virginis"
+      },
+      "obligation": true,
+      "patron": "PRINCIPAL"
+    },
+    {
+      "id": "louis_ix_of_france",
+      "date": "08-25",
+      "rank": "MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Louis, roi de France",
+        "la": "S. Ludovici"
+      }
+    },
+    {
+      "id": "caesarius_of_arles_bishop",
+      "date": "08-26",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Césaire d’Arles, évêque",
+        "la": "S. Cæsarii Arelatensis, episcopi"
+      }
+    },
+    {
+      "id": "joseph_of_calasanz_priest",
+      "date": "08-26",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Joseph de Calasanz, prêtre",
+        "la": "S. Iosephi de Calasanz, presbyteri"
+      }
+    },
+    {
+      "id": "our_lady_of_la_salette",
+      "date": "09-19",
+      "rank": "OPTIONAL_MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Bienheureuse Vierge Marie de La Salette"
+      }
+    },
+    {
+      "id": "therese_of_the_child_jesus_and_the_holy_face_of_lisieux_virgin",
+      "date": "10-01",
+      "rank": "MEMORIAL",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Thérèse de l’Enfant-Jésus, vierge, docteur de l’Église, co-patronne de la France",
+        "la": "S. Teresiæ a Iesu Infante et a Sacro Vultu Lexoviensis, virginis et Ecclesiæ doctoris, patronæ secundariæ Galliæ"
+      },
+      "patron": "SECONDARY"
+    },
+    {
+      "id": "all_saints",
+      "date": "11-01",
+      "rank": "SOLEMNITY",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Tous les Saints",
+        "la": "Omnium Sanctorum"
+      },
+      "obligation": true
+    },
+    {
+      "id": "nativity_of_the_lord",
+      "date": "12-25",
+      "rank": "SOLEMNITY",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Nativité du Seigneur",
+        "la": "In Nativitate Domini"
+      },
+      "obligation": true
+    }
+  ]
+}

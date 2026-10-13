@@ -1,0 +1,4127 @@
+{
+  "format": 1,
+  "rite": "1962",
+  "calendar": "general",
+  "sources": [
+    "divinum-officium@b9c100d79ae481c67b2801fdd3622b00dd86bd73",
+    "missalemeum@88c491d17d7e7edabaa43d2cf02463413336fb75"
+  ],
+  "entries": [
+    {
+      "id": "telesphorus_pope",
+      "date": "01-05",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Télesphore, pape et martyr",
+        "la": "S. Telesphori Papæ et Martyris"
+      },
+      "proper": "Sancti/01-05cc"
+    },
+    {
+      "id": "hyginus_pope",
+      "date": "01-11",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Hygin, pape et martyr",
+        "la": "S. Hygini Papæ et Martyris"
+      },
+      "proper": "Sancti/01-11cc"
+    },
+    {
+      "id": "hilary_of_poitiers_bishop",
+      "date": "01-14",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Hilaire, évêque, confesseur et docteur",
+        "la": "S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/01-14",
+      "commemorations": [
+        {
+          "id": "felix_of_nola_priest",
+          "title": {
+            "fr": "Saint Félix de Nole, prêtre et martyr",
+            "la": "S. Felicis Presbyteri et Martyris"
+          },
+          "proper": "Sancti/01-14cc"
+        }
+      ]
+    },
+    {
+      "id": "paul_the_first_hermit",
+      "date": "01-15",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Paul, premier ermite, confesseur",
+        "la": "S. Pauli Primi Eremitæ et Confessoris"
+      },
+      "proper": "Sancti/01-15",
+      "commemorations": [
+        {
+          "id": "maurus_of_glanfeuil_abbot",
+          "title": {
+            "fr": "Saint Maur, abbé",
+            "la": "S. Mauri Abbatis"
+          },
+          "proper": "Sancti/01-15cc"
+        }
+      ]
+    },
+    {
+      "id": "marcellus_i_pope",
+      "date": "01-16",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Marcel Ier, pape et martyr",
+        "la": "S. Marcelli Papæ et Martyris"
+      },
+      "proper": "Sancti/01-16"
+    },
+    {
+      "id": "anthony_of_egypt_abbot",
+      "date": "01-17",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Antoine, abbé",
+        "la": "S. Antonii Abbatis"
+      },
+      "proper": "Sancti/01-17"
+    },
+    {
+      "id": "prisca_of_rome_virgin",
+      "date": "01-18",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Prisque, vierge et martyre",
+        "la": "S. Priscæ Virginis et Martyris"
+      },
+      "proper": "Sancti/01-18r"
+    },
+    {
+      "id": "marius_martha_audifax_and_abachum_martyrs",
+      "date": "01-19",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Marius, Marthe, Audifax et Abachum, martyrs",
+        "la": "Ss. Marii, Marthæ, Audifacis, et Abachum Martyrum"
+      },
+      "proper": "Sancti/01-19",
+      "commemorations": [
+        {
+          "id": "canute_iv_of_denmark_martyr",
+          "title": {
+            "fr": "Saint Canut, roi et martyr",
+            "la": "S. Canuti Regis et Martyris"
+          },
+          "proper": "Sancti/01-19o"
+        }
+      ]
+    },
+    {
+      "id": "fabian_i_pope_and_sebastian_of_milan_martyrs",
+      "date": "01-20",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Fabien et Sébastien, martyrs",
+        "la": "Ss. Fabiani et Sebastiani Martyrum"
+      },
+      "proper": "Sancti/01-20"
+    },
+    {
+      "id": "agnes_of_rome_virgin",
+      "date": "01-21",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Agnès, vierge et martyre",
+        "la": "S. Agnetis Virginis et Martyris"
+      },
+      "proper": "Sancti/01-21"
+    },
+    {
+      "id": "vincent_of_saragossa_and_anastasius_the_persian_martyrs",
+      "date": "01-22",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Vincent et Anastase, martyrs",
+        "la": "Ss. Vincentii et Anastasii Martyrum"
+      },
+      "proper": "Sancti/01-22"
+    },
+    {
+      "id": "raymond_of_penyafort_priest",
+      "date": "01-23",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Raymond de Peñafort, confesseur",
+        "la": "S. Raymundi de Peñafort Confessoris"
+      },
+      "proper": "Sancti/01-23",
+      "commemorations": [
+        {
+          "id": "emerentiana_virgin",
+          "title": {
+            "fr": "Sainte Émérentienne, vierge et martyre",
+            "la": "S. Emerentianæ Virginis et Martyris"
+          },
+          "proper": "Sancti/01-23o"
+        }
+      ]
+    },
+    {
+      "id": "timothy_of_ephesus_bishop",
+      "date": "01-24",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Timothée, évêque et martyr",
+        "la": "S. Timothei Episcopi et Martyris"
+      },
+      "proper": "Sancti/01-24"
+    },
+    {
+      "id": "conversion_of_saint_paul_the_apostle",
+      "date": "01-25",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Conversion de saint Paul, apôtre",
+        "la": "In Conversione S. Pauli Apostoli"
+      },
+      "proper": "Sancti/01-25r",
+      "commemorations": [
+        {
+          "id": "peter_apostle",
+          "title": {
+            "fr": "Saint Pierre, apôtre",
+            "la": "S. Petri Apostoli"
+          }
+        }
+      ]
+    },
+    {
+      "id": "polycarp_of_smyrna_bishop",
+      "date": "01-26",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Polycarpe, évêque et martyr",
+        "la": "S. Polycarpi Episcopi et Martyris"
+      },
+      "proper": "Sancti/01-26"
+    },
+    {
+      "id": "john_chrysostom_bishop",
+      "date": "01-27",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean Chrysostome, évêque, confesseur et docteur",
+        "la": "S. Joannis Chrysostomi Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/01-27"
+    },
+    {
+      "id": "peter_nolasco_religious",
+      "date": "01-28",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Pierre Nolasque, confesseur",
+        "la": "S. Petri Nolasci Confessoris"
+      },
+      "proper": "Sancti/01-28",
+      "commemorations": [
+        {
+          "id": "agnes_of_rome_virgin_second_feast",
+          "title": {
+            "fr": "Sainte Agnès, vierge et martyre (seconde fête)",
+            "la": "S. Agnetis Virginis et Martyris secundo"
+          },
+          "proper": "Sancti/01-28t"
+        }
+      ]
+    },
+    {
+      "id": "francis_de_sales_bishop",
+      "date": "01-29",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint François de Sales, évêque, confesseur et docteur",
+        "la": "S. Francisci Salesii Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/01-29"
+    },
+    {
+      "id": "martina_of_rome_virgin",
+      "date": "01-30",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Martine, vierge et martyre",
+        "la": "S. Martinæ Virginis et Martyris"
+      },
+      "proper": "Sancti/01-30"
+    },
+    {
+      "id": "john_bosco_priest",
+      "date": "01-31",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean Bosco, confesseur",
+        "la": "S. Joannis Bosco Confessoris"
+      },
+      "proper": "Sancti/01-31"
+    },
+    {
+      "id": "ignatius_of_antioch_bishop",
+      "date": "02-01",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Ignace d’Antioche, évêque et martyr",
+        "la": "S. Ignatii Episcopi et Martyris"
+      },
+      "proper": "Sancti/02-01"
+    },
+    {
+      "id": "presentation_of_the_lord",
+      "date": "02-02",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Purification de la bienheureuse Vierge Marie",
+        "la": "In Purificatione Beatæ Mariæ Virginis"
+      },
+      "lord": true,
+      "proper": "Sancti/02-02"
+    },
+    {
+      "id": "blaise_of_sebaste_bishop",
+      "date": "02-03",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Blaise, évêque et martyr",
+        "la": "S. Blasii Episcopi et Martyris"
+      },
+      "proper": "Sancti/02-03"
+    },
+    {
+      "id": "andrew_corsini_bishop",
+      "date": "02-04",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint André Corsini, évêque et confesseur",
+        "la": "S. Andreæ Corsini Episcopi et Confessoris"
+      },
+      "proper": "Sancti/02-04"
+    },
+    {
+      "id": "agatha_of_sicily_virgin",
+      "date": "02-05",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Agathe, vierge et martyre",
+        "la": "S. Agathæ Virginis et Martyris"
+      },
+      "proper": "Sancti/02-05"
+    },
+    {
+      "id": "titus_of_crete_bishop",
+      "date": "02-06",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Tite, évêque et confesseur",
+        "la": "S. Titi Episcopi et Confessoris"
+      },
+      "proper": "Sancti/02-06",
+      "commemorations": [
+        {
+          "id": "dorothy_of_caesarea_virgin",
+          "title": {
+            "fr": "Sainte Dorothée, vierge et martyre",
+            "la": "S. Dorotheæ Virginis et Martyris"
+          },
+          "proper": "Sancti/02-06o"
+        }
+      ]
+    },
+    {
+      "id": "romuald_of_ravenna_abbot",
+      "date": "02-07",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Romuald, abbé",
+        "la": "S. Romualdi Abbatis"
+      },
+      "proper": "Sancti/02-07"
+    },
+    {
+      "id": "john_of_matha_priest",
+      "date": "02-08",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean de Matha, confesseur",
+        "la": "S. Joannis de Matha Confessoris"
+      },
+      "proper": "Sancti/02-08"
+    },
+    {
+      "id": "cyril_of_alexandria_bishop",
+      "date": "02-09",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Cyrille d’Alexandrie, évêque, confesseur et docteur",
+        "la": "S. Cyrilli Episc. Alexandrini Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/02-09",
+      "commemorations": [
+        {
+          "id": "apollonia_of_alexandria_virgin",
+          "title": {
+            "fr": "Sainte Apolline, vierge et martyre",
+            "la": "S. Apolloniæ Virginis et Martyris"
+          },
+          "proper": "Sancti/02-09o"
+        }
+      ]
+    },
+    {
+      "id": "scholastica_of_nursia_virgin",
+      "date": "02-10",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Scholastique, vierge",
+        "la": "S. Scholasticæ Virginis"
+      },
+      "proper": "Sancti/02-10"
+    },
+    {
+      "id": "our_lady_of_lourdes",
+      "date": "02-11",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Apparition de la bienheureuse Vierge Marie Immaculée",
+        "la": "In Apparitione Beatæ Mariæ Virginis Immaculatæ"
+      },
+      "proper": "Sancti/02-11"
+    },
+    {
+      "id": "seven_holy_founders_of_the_servite_order",
+      "date": "02-12",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Les sept saints Fondateurs de l’ordre des Servites de Marie, confesseurs",
+        "la": "Ss. Septem Fundatorum Ordinis Servorum B. M. V."
+      },
+      "proper": "Sancti/02-12"
+    },
+    {
+      "id": "valentine_of_rome_martyr",
+      "date": "02-14",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Valentin, prêtre et martyr",
+        "la": "S. Valentini Presbyteri et Martyris"
+      },
+      "proper": "Sancti/02-14"
+    },
+    {
+      "id": "faustinus_and_jovita_martyrs",
+      "date": "02-15",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Faustin et Jovite, martyrs",
+        "la": "Ss. Faustini et Jovitæ"
+      },
+      "proper": "Sancti/02-15"
+    },
+    {
+      "id": "simeon_of_jerusalem_bishop",
+      "date": "02-18",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Siméon, évêque et martyr",
+        "la": "S. Simeonis Episcopi et Martyris"
+      },
+      "proper": "Sancti/02-18"
+    },
+    {
+      "id": "chair_of_saint_peter_the_apostle",
+      "date": "02-22",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Chaire de saint Pierre, apôtre",
+        "la": "In Cathedra S. Petri Apostoli"
+      },
+      "proper": "Sancti/02-22",
+      "commemorations": [
+        {
+          "id": "paul_apostle",
+          "title": {
+            "fr": "Saint Paul, apôtre",
+            "la": "S. Pauli Apostoli"
+          }
+        }
+      ]
+    },
+    {
+      "id": "peter_damian_bishop",
+      "date": "02-23",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Pierre Damien, évêque, confesseur et docteur",
+        "la": "S. Petri Damiani Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/02-23r"
+    },
+    {
+      "id": "matthias_apostle",
+      "date": "02-24",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Matthias, apôtre",
+        "la": "S. Matthiæ Apostoli"
+      },
+      "proper": "Sancti/02-24"
+    },
+    {
+      "id": "gabriel_of_our_lady_of_sorrows_religious",
+      "date": "02-27",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Gabriel de la Vierge des Douleurs, confesseur",
+        "la": "S. Gabrielis a Virgine Perdolente Confessoris"
+      },
+      "proper": "Sancti/02-27"
+    },
+    {
+      "id": "casimir_of_poland",
+      "date": "03-04",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Casimir, confesseur",
+        "la": "S. Casimiri Confessoris"
+      },
+      "proper": "Sancti/03-04",
+      "commemorations": [
+        {
+          "id": "lucius_i_pope",
+          "title": {
+            "fr": "Saint Luce Ier, pape et martyr",
+            "la": "S. Lucii I Papæ et Martyris"
+          },
+          "proper": "Sancti/03-04cc"
+        }
+      ]
+    },
+    {
+      "id": "perpetua_of_carthage_and_felicity_of_carthage_martyrs",
+      "date": "03-06",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saintes Perpétue et Félicité, martyres",
+        "la": "Ss. Perpetuæ et Felicitatis Martyrum"
+      },
+      "proper": "Sancti/03-06"
+    },
+    {
+      "id": "thomas_aquinas_priest",
+      "date": "03-07",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Thomas d’Aquin, confesseur et docteur",
+        "la": "S. Thomæ de Aquino Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/03-07"
+    },
+    {
+      "id": "john_of_god_duarte_cidade_religious",
+      "date": "03-08",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean de Dieu, confesseur",
+        "la": "S. Joannis de Deo Confessoris"
+      },
+      "proper": "Sancti/03-08"
+    },
+    {
+      "id": "frances_of_rome_religious",
+      "date": "03-09",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Françoise Romaine, veuve",
+        "la": "S. Franciscæ Romanæ Viduæ"
+      },
+      "proper": "Sancti/03-09"
+    },
+    {
+      "id": "forty_martyrs_of_sebaste",
+      "date": "03-10",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Les saints Quarante Martyrs",
+        "la": "Ss. Quadraginta Martyrum"
+      },
+      "proper": "Sancti/03-10"
+    },
+    {
+      "id": "gregory_i_the_great_pope",
+      "date": "03-12",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Grégoire le Grand, pape, confesseur et docteur",
+        "la": "S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/03-12"
+    },
+    {
+      "id": "patrick_of_ireland_bishop",
+      "date": "03-17",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Patrice, évêque et confesseur",
+        "la": "S. Patricii Episcopi et Confessoris"
+      },
+      "proper": "Sancti/03-17"
+    },
+    {
+      "id": "cyril_of_jerusalem_bishop",
+      "date": "03-18",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Cyrille de Jérusalem, évêque, confesseur et docteur",
+        "la": "S. Cyrilli Episcopi Hierosolymitani Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/03-18"
+    },
+    {
+      "id": "joseph_spouse_of_mary",
+      "date": "03-19",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Joseph, époux de la bienheureuse Vierge Marie, confesseur, patron de l’Église universelle",
+        "la": "S. Joseph Sponsi B.M.V. Confessoris"
+      },
+      "proper": "Sancti/03-19"
+    },
+    {
+      "id": "benedict_of_nursia_abbot",
+      "date": "03-21",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Benoît, abbé",
+        "la": "S. Benedicti Abbatis"
+      },
+      "proper": "Sancti/03-21"
+    },
+    {
+      "id": "gabriel_archangel",
+      "date": "03-24",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Gabriel, archange",
+        "la": "S. Gabrielis Archangeli"
+      },
+      "proper": "Sancti/03-24"
+    },
+    {
+      "id": "annunciation_of_the_lord",
+      "date": "03-25",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Annonciation de la bienheureuse Vierge Marie",
+        "la": "In Annuntiatione Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/03-25"
+    },
+    {
+      "id": "john_damascene_priest",
+      "date": "03-27",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean Damascène, confesseur et docteur",
+        "la": "S. Joannis Damasceni Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/03-27"
+    },
+    {
+      "id": "john_of_capistrano_priest",
+      "date": "03-28",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean de Capistran, confesseur",
+        "la": "S. Joannis a Capistrano Confessoris"
+      },
+      "proper": "Sancti/03-28"
+    },
+    {
+      "id": "francis_of_paola_hermit",
+      "date": "04-02",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint François de Paule, confesseur",
+        "la": "S. Francisci de Paula Confessoris"
+      },
+      "proper": "Sancti/04-02"
+    },
+    {
+      "id": "isidore_of_seville_bishop",
+      "date": "04-04",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Isidore, évêque, confesseur et docteur",
+        "la": "S. Isidori Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/04-04"
+    },
+    {
+      "id": "vincent_ferrer_priest",
+      "date": "04-05",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Vincent Ferrier, confesseur",
+        "la": "S. Vincentii Ferrerii Confessoris"
+      },
+      "proper": "Sancti/04-05"
+    },
+    {
+      "id": "leo_i_the_great_pope",
+      "date": "04-11",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Léon le Grand, pape, confesseur et docteur",
+        "la": "S. Leonis I Papæ Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/04-11"
+    },
+    {
+      "id": "hermenegild_martyr",
+      "date": "04-13",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Herménégilde, martyr",
+        "la": "S. Hermenegildi Martyris"
+      },
+      "proper": "Sancti/04-13"
+    },
+    {
+      "id": "justin_martyr",
+      "date": "04-14",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Justin, martyr",
+        "la": "S. Justini Martyris"
+      },
+      "proper": "Sancti/04-14",
+      "commemorations": [
+        {
+          "id": "tiburtius_valerian_and_maximus_martyrs",
+          "title": {
+            "fr": "Saints Tiburce, Valérien et Maxime, martyrs",
+            "la": "Ss. Tiburtii, Valeriani, et Maximi Martyrum"
+          },
+          "proper": "Sancti/04-14t"
+        }
+      ]
+    },
+    {
+      "id": "anicetus_pope",
+      "date": "04-17",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Anicet, pape et martyr",
+        "la": "S. Aniceti Papæ et Martyris"
+      },
+      "proper": "Sancti/04-17"
+    },
+    {
+      "id": "anselm_of_canterbury_bishop",
+      "date": "04-21",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Anselme, évêque, confesseur et docteur",
+        "la": "S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/04-21"
+    },
+    {
+      "id": "soter_and_caius_popes",
+      "date": "04-22",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Soter et Caïus, papes et martyrs",
+        "la": "Ss. Soteris et Caii Summorum Pontificum et Martyrum"
+      },
+      "proper": "Sancti/04-22"
+    },
+    {
+      "id": "george_of_lydda_martyr",
+      "date": "04-23",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Georges, martyr",
+        "la": "S. Georgii Martyris"
+      },
+      "proper": "Sancti/04-23"
+    },
+    {
+      "id": "fidelis_of_sigmaringen_priest",
+      "date": "04-24",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Fidèle de Sigmaringen, martyr",
+        "la": "S. Fidelis de Sigmaringa Martyris"
+      },
+      "proper": "Sancti/04-24"
+    },
+    {
+      "id": "mark_evangelist",
+      "date": "04-25",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Marc, évangéliste",
+        "la": "S. Marci Evangelistæ"
+      },
+      "proper": "Sancti/04-25",
+      "commemorations": [
+        {
+          "id": "greater_litanies",
+          "title": {
+            "fr": "Litanies majeures",
+            "la": "Litaniæ Maiores"
+          },
+          "proper": "Sancti/04-25c"
+        }
+      ]
+    },
+    {
+      "id": "cletus_and_marcellinus_popes",
+      "date": "04-26",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Clet et Marcellin, papes et martyrs",
+        "la": "Ss. Cleti et Marcellini Summorum Pontificum et Martyrum"
+      },
+      "proper": "Sancti/04-26"
+    },
+    {
+      "id": "peter_canisius_priest",
+      "date": "04-27",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Pierre Canisius, confesseur et docteur",
+        "la": "S. Petri Canisii Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/04-27"
+    },
+    {
+      "id": "paul_of_the_cross_priest",
+      "date": "04-28",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Paul de la Croix, confesseur",
+        "la": "S. Pauli a Cruce Confessoris"
+      },
+      "proper": "Sancti/04-28"
+    },
+    {
+      "id": "peter_of_verona_priest",
+      "date": "04-29",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Pierre de Vérone, martyr",
+        "la": "S. Petri Martyris"
+      },
+      "proper": "Sancti/04-29"
+    },
+    {
+      "id": "catherine_of_siena_virgin",
+      "date": "04-30",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Catherine de Sienne, vierge",
+        "la": "S. Catharinæ Senensis Virginis"
+      },
+      "proper": "Sancti/04-30"
+    },
+    {
+      "id": "joseph_the_worker",
+      "date": "05-01",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Joseph artisan, époux de la bienheureuse Vierge Marie, confesseur",
+        "la": "S. Joseph Opificis"
+      },
+      "proper": "Sancti/05-01r"
+    },
+    {
+      "id": "athanasius_of_alexandria_bishop",
+      "date": "05-02",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Athanase, évêque, confesseur et docteur",
+        "la": "S. Athanasii Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/05-02"
+    },
+    {
+      "id": "alexander_i_pope_eventius_theodulus_and_juvenal",
+      "date": "05-03",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Alexandre Ier, pape, Événce et Théodule, martyrs, et saint Juvénal, évêque et confesseur",
+        "la": "Ss. Alexandri I Papæ, Eventii et Theoduli Mm. ac Juvenalis Ep. et Conf."
+      },
+      "proper": "Sancti/05-03r"
+    },
+    {
+      "id": "monica_of_hippo",
+      "date": "05-04",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Monique, veuve",
+        "la": "S. Monicæ Viduæ"
+      },
+      "proper": "Sancti/05-04"
+    },
+    {
+      "id": "pius_v_pope",
+      "date": "05-05",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Pie V, pape et confesseur",
+        "la": "S. Pii V Papæ et Confessoris"
+      },
+      "proper": "Sancti/05-05"
+    },
+    {
+      "id": "stanislaus_of_szczepanow_bishop",
+      "date": "05-07",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Stanislas, évêque et martyr",
+        "la": "S. Stanislai Episcopi et Martyris"
+      },
+      "proper": "Sancti/05-07"
+    },
+    {
+      "id": "gregory_nazianzen_bishop",
+      "date": "05-09",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Grégoire de Nazianze, évêque, confesseur et docteur",
+        "la": "S. Gregorii Nazianzeni Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/05-09"
+    },
+    {
+      "id": "antoninus_of_florence_bishop",
+      "date": "05-10",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Antonin, évêque et confesseur",
+        "la": "S. Antonini Episcopi et Confessoris"
+      },
+      "proper": "Sancti/05-10",
+      "commemorations": [
+        {
+          "id": "gordian_and_epimachus_martyrs",
+          "title": {
+            "fr": "Saints Gordien et Épimaque, martyrs",
+            "la": "Ss. Gordiani et Epimachi Martyrum"
+          },
+          "proper": "Sancti/05-10o"
+        }
+      ]
+    },
+    {
+      "id": "philip_and_james_apostles",
+      "date": "05-11",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Philippe et Jacques, apôtres",
+        "la": "Ss. Philippi et Jacobi Apostolorum"
+      },
+      "proper": "Sancti/05-11r"
+    },
+    {
+      "id": "nereus_achilleus_domitilla_and_pancras_martyrs",
+      "date": "05-12",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Nérée, Achillée, Domitille, vierge, et Pancrace, martyrs",
+        "la": "Ss. Nerei, Achillei et Domitillæ Virg. atque Pancratii Martyrum"
+      },
+      "proper": "Sancti/05-12"
+    },
+    {
+      "id": "robert_bellarmine_bishop",
+      "date": "05-13",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Robert Bellarmin, évêque, confesseur et docteur",
+        "la": "S. Roberti Bellarmino Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/05-13"
+    },
+    {
+      "id": "boniface_of_tarsus_martyr",
+      "date": "05-14",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Boniface, martyr",
+        "la": "S. Bonifatii Martyris"
+      },
+      "proper": "Sancti/05-14"
+    },
+    {
+      "id": "john_baptist_de_la_salle_priest",
+      "date": "05-15",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean-Baptiste de La Salle, confesseur",
+        "la": "S. Joannis Baptistæ de la Salle Confessoris"
+      },
+      "proper": "Sancti/05-15"
+    },
+    {
+      "id": "ubaldus_of_gubbio_bishop",
+      "date": "05-16",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Ubald, évêque et confesseur",
+        "la": "S. Ubaldi Episcopi et Confessoris"
+      },
+      "proper": "Sancti/05-16"
+    },
+    {
+      "id": "paschal_baylon_religious",
+      "date": "05-17",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Pascal Baylon, confesseur",
+        "la": "S. Paschalis Baylon Confessoris"
+      },
+      "proper": "Sancti/05-17"
+    },
+    {
+      "id": "venantius_of_camerino_martyr",
+      "date": "05-18",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Venant, martyr",
+        "la": "S. Venantii Martyris"
+      },
+      "proper": "Sancti/05-18"
+    },
+    {
+      "id": "celestine_v_pope",
+      "date": "05-19",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Pierre Célestin, pape et confesseur",
+        "la": "S. Petri Celestini Papæ et Confessoris"
+      },
+      "proper": "Sancti/05-19",
+      "commemorations": [
+        {
+          "id": "pudentiana_virgin",
+          "title": {
+            "fr": "Sainte Pudentienne, vierge",
+            "la": "S. Pudentianæ Virginis"
+          },
+          "proper": "Sancti/05-19o"
+        }
+      ]
+    },
+    {
+      "id": "bernardine_of_siena_priest",
+      "date": "05-20",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Bernardin de Sienne, confesseur",
+        "la": "S. Bernardini Senensis Confessoris"
+      },
+      "proper": "Sancti/05-20"
+    },
+    {
+      "id": "gregory_vii_pope",
+      "date": "05-25",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Grégoire VII, pape et confesseur",
+        "la": "S. Gregorii VII Papæ et Confessoris"
+      },
+      "proper": "Sancti/05-25",
+      "commemorations": [
+        {
+          "id": "urban_i_pope",
+          "title": {
+            "fr": "Saint Urbain Ier, pape et martyr",
+            "la": "S. Urbani Papæ et Martyris"
+          },
+          "proper": "Sancti/05-25o"
+        }
+      ]
+    },
+    {
+      "id": "philip_neri_priest",
+      "date": "05-26",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Philippe Néri, confesseur",
+        "la": "S. Philippi Neri Confessoris"
+      },
+      "proper": "Sancti/05-26",
+      "commemorations": [
+        {
+          "id": "eleutherius_pope",
+          "title": {
+            "fr": "Saint Éleuthère, pape et martyr",
+            "la": "S. Eleutherii Papæ et Martyris"
+          },
+          "proper": "Sancti/05-26o"
+        }
+      ]
+    },
+    {
+      "id": "bede_the_venerable_priest",
+      "date": "05-27",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Bède le Vénérable, confesseur et docteur",
+        "la": "S. Bedæ Venerabilis Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/05-27",
+      "commemorations": [
+        {
+          "id": "john_i_pope",
+          "title": {
+            "fr": "Saint Jean Ier, pape et martyr",
+            "la": "S. Joannis Papæ et Martyris"
+          },
+          "proper": "Sancti/05-27o"
+        }
+      ]
+    },
+    {
+      "id": "augustine_of_canterbury_bishop",
+      "date": "05-28",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Augustin de Cantorbéry, évêque et confesseur",
+        "la": "S. Augustini Episcopi et Confessoris"
+      },
+      "proper": "Sancti/05-28"
+    },
+    {
+      "id": "mary_magdalene_de_pazzi_virgin",
+      "date": "05-29",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Marie-Madeleine de Pazzi, vierge",
+        "la": "S. Mariæ Magdalenæ de Pazzis Virginis"
+      },
+      "proper": "Sancti/05-29"
+    },
+    {
+      "id": "felix_i_pope",
+      "date": "05-30",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Félix Ier, pape et martyr",
+        "la": "S. Felicis I Papæ et Martyris"
+      },
+      "proper": "Sancti/05-30"
+    },
+    {
+      "id": "queenship_of_the_blessed_virgin_mary",
+      "date": "05-31",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "La bienheureuse Vierge Marie, Reine",
+        "la": "Beatæ Mariæ Virginis Reginæ"
+      },
+      "proper": "Sancti/05-31",
+      "commemorations": [
+        {
+          "id": "petronilla_virgin",
+          "title": {
+            "fr": "Sainte Pétronille, vierge",
+            "la": "S. Petronillæ Virginis"
+          },
+          "proper": "Sancti/05-31o"
+        }
+      ]
+    },
+    {
+      "id": "angela_merici_virgin",
+      "date": "06-01",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Angèle Merici, vierge",
+        "la": "S. Angelæ Mericiæ Virginis"
+      },
+      "proper": "Sancti/06-01"
+    },
+    {
+      "id": "marcellinus_peter_and_erasmus_martyrs",
+      "date": "06-02",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Marcellin, Pierre et Érasme, évêque, martyrs",
+        "la": "Ss. Marcellini, Petri, atque Erasmi, Episcopi, Martyrum"
+      },
+      "proper": "Sancti/06-02"
+    },
+    {
+      "id": "francis_caracciolo_priest",
+      "date": "06-04",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint François Caracciolo, confesseur",
+        "la": "S. Francisci Caracciolo Confessoris"
+      },
+      "proper": "Sancti/06-04"
+    },
+    {
+      "id": "boniface_of_mainz_bishop",
+      "date": "06-05",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Boniface, évêque et martyr",
+        "la": "S. Bonifatii Episcopi et Martyris"
+      },
+      "proper": "Sancti/06-05"
+    },
+    {
+      "id": "norbert_of_xanten_bishop",
+      "date": "06-06",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Norbert, évêque et confesseur",
+        "la": "S. Norberti Episcopi et Confessoris"
+      },
+      "proper": "Sancti/06-06"
+    },
+    {
+      "id": "primus_and_felician_martyrs",
+      "date": "06-09",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Prime et Félicien, martyrs",
+        "la": "Ss. Primi et Feliciani Martyrum"
+      },
+      "proper": "Sancti/06-09"
+    },
+    {
+      "id": "margaret_of_scotland",
+      "date": "06-10",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Marguerite, reine, veuve",
+        "la": "S. Margaritæ Reginæ Viduæ"
+      },
+      "proper": "Sancti/06-10"
+    },
+    {
+      "id": "barnabas_apostle",
+      "date": "06-11",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Barnabé, apôtre",
+        "la": "S. Barnabæ Apostoli"
+      },
+      "proper": "Sancti/06-11"
+    },
+    {
+      "id": "john_of_sahagun_priest",
+      "date": "06-12",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean de Saint-Facond, confesseur",
+        "la": "S. Joannis a S. Facundo Confessoris"
+      },
+      "proper": "Sancti/06-12",
+      "commemorations": [
+        {
+          "id": "basilides_cyrinus_nabor_and_nazarius_martyrs",
+          "title": {
+            "fr": "Saints Basilide, Cyrin, Nabor et Nazaire, martyrs",
+            "la": "Ss. Basilidis, Cyrini, Naboris et Nazarii Martyrum"
+          },
+          "proper": "Sancti/06-12o"
+        }
+      ]
+    },
+    {
+      "id": "anthony_of_padua_priest",
+      "date": "06-13",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Antoine de Padoue, confesseur et docteur",
+        "la": "S. Antonii de Padua Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/06-13"
+    },
+    {
+      "id": "basil_the_great_bishop",
+      "date": "06-14",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Basile le Grand, évêque, confesseur et docteur",
+        "la": "S. Basilii Magni, Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/06-14"
+    },
+    {
+      "id": "vitus_modestus_and_crescentia_martyrs",
+      "date": "06-15",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Guy, Modeste et Crescence, martyrs",
+        "la": "Ss. Viti, Modesti atque Crescentiæ Martyrum"
+      },
+      "proper": "Sancti/06-15"
+    },
+    {
+      "id": "gregory_barbarigo_bishop",
+      "date": "06-17",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Grégoire Barbarigo, évêque et confesseur",
+        "la": "S. Gregorii Barbadici Episcopi et Confessoris"
+      },
+      "proper": "Sancti/06-17r"
+    },
+    {
+      "id": "ephrem_the_syrian_deacon",
+      "date": "06-18",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Éphrem le Syrien, confesseur et docteur",
+        "la": "S. Ephræm Syri Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/06-18",
+      "commemorations": [
+        {
+          "id": "mark_and_marcellian_martyrs",
+          "title": {
+            "fr": "Saints Marc et Marcellien, martyrs",
+            "la": "Ss. Marci et Marcelliani Martyrum"
+          },
+          "proper": "Sancti/06-18t"
+        }
+      ]
+    },
+    {
+      "id": "juliana_falconieri_virgin",
+      "date": "06-19",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Julienne Falconieri, vierge",
+        "la": "S. Julianæ de Falconeriis Virginis"
+      },
+      "proper": "Sancti/06-19",
+      "commemorations": [
+        {
+          "id": "gervase_and_protase_martyrs",
+          "title": {
+            "fr": "Saints Gervais et Protais, martyrs",
+            "la": "Ss. Gervasii et Protasii Martyrum"
+          },
+          "proper": "Sancti/06-19o"
+        }
+      ]
+    },
+    {
+      "id": "silverius_pope",
+      "date": "06-20",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Silvère, pape et martyr",
+        "la": "S. Silverii Papæ et Martyris"
+      },
+      "proper": "Sancti/06-20"
+    },
+    {
+      "id": "aloysius_gonzaga_religious",
+      "date": "06-21",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Louis de Gonzague, confesseur",
+        "la": "S. Aloisii Gonzagæ Confessoris"
+      },
+      "proper": "Sancti/06-21"
+    },
+    {
+      "id": "paulinus_of_nola_bishop",
+      "date": "06-22",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Paulin, évêque et confesseur",
+        "la": "S. Paulini Episcopi et Confessoris"
+      },
+      "proper": "Sancti/06-22"
+    },
+    {
+      "id": "vigil_of_the_nativity_of_john_the_baptist",
+      "date": "06-23",
+      "rank": "VIGIL_II",
+      "colors": [
+        "VIOLET"
+      ],
+      "title": {
+        "fr": "Vigile de la Nativité de saint Jean-Baptiste",
+        "la": "In Vigilia S. Joannis Baptistæ"
+      },
+      "proper": "Sancti/06-23"
+    },
+    {
+      "id": "nativity_of_john_the_baptist",
+      "date": "06-24",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Nativité de saint Jean-Baptiste",
+        "la": "In Nativitate S. Joannis Baptistæ"
+      },
+      "proper": "Sancti/06-24"
+    },
+    {
+      "id": "william_of_vercelli_abbot",
+      "date": "06-25",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Guillaume, abbé",
+        "la": "S. Gulielmi Abbatis"
+      },
+      "proper": "Sancti/06-25"
+    },
+    {
+      "id": "john_and_paul_martyrs",
+      "date": "06-26",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Jean et Paul, martyrs",
+        "la": "Ss. Joannis et Pauli Martyrum"
+      },
+      "proper": "Sancti/06-26"
+    },
+    {
+      "id": "vigil_of_peter_and_paul_apostles",
+      "date": "06-28",
+      "rank": "VIGIL_II",
+      "colors": [
+        "VIOLET"
+      ],
+      "title": {
+        "fr": "Vigile des saints Pierre et Paul, apôtres",
+        "la": "In Vigilia Ss. Petri et Pauli Apostolorum"
+      },
+      "proper": "Sancti/06-28r"
+    },
+    {
+      "id": "peter_and_paul_apostles",
+      "date": "06-29",
+      "rank": "I",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Pierre et Paul, apôtres",
+        "la": "Ss. Apostolorum Petri et Pauli"
+      },
+      "proper": "Sancti/06-29"
+    },
+    {
+      "id": "commemoration_of_saint_paul_the_apostle",
+      "date": "06-30",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Commémoraison de saint Paul, apôtre",
+        "la": "In Commemoratione S. Pauli Apostoli"
+      },
+      "proper": "Sancti/06-30",
+      "commemorations": [
+        {
+          "id": "peter_apostle",
+          "title": {
+            "fr": "Saint Pierre, apôtre",
+            "la": "S. Petri Apostoli"
+          }
+        }
+      ]
+    },
+    {
+      "id": "most_precious_blood_of_our_lord_jesus_christ",
+      "date": "07-01",
+      "rank": "I",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Précieux Sang de Notre-Seigneur Jésus-Christ",
+        "la": "Pretiosissimi Sanguinis Domini Nostri Jesu Christi"
+      },
+      "lord": true,
+      "proper": "Sancti/07-01"
+    },
+    {
+      "id": "visitation_of_mary",
+      "date": "07-02",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Visitation de la bienheureuse Vierge Marie",
+        "la": "In Visitatione Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/07-02",
+      "commemorations": [
+        {
+          "id": "processus_and_martinian_martyrs",
+          "title": {
+            "fr": "Saints Processe et Martinien, martyrs",
+            "la": "Ss. Processi et Martiniani Martyrum"
+          },
+          "proper": "Sancti/07-02cc"
+        }
+      ]
+    },
+    {
+      "id": "irenaeus_of_lyon_bishop",
+      "date": "07-03",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Irénée, évêque et martyr",
+        "la": "S. Irenæi Episcopi et Martyris"
+      },
+      "proper": "Sancti/07-03r"
+    },
+    {
+      "id": "anthony_zaccaria_priest",
+      "date": "07-05",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Antoine-Marie Zaccaria, confesseur",
+        "la": "S. Antonii Mariæ Zaccaria Confessoris"
+      },
+      "proper": "Sancti/07-05"
+    },
+    {
+      "id": "cyril_constantine_the_philosopher_monk_and_methodius_michael_of_thessaloniki_bishop",
+      "date": "07-07",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saints Cyrille et Méthode, évêques et confesseurs",
+        "la": "Ss. Cyrilli et Methodii Pont. et Conf."
+      },
+      "proper": "Sancti/07-07"
+    },
+    {
+      "id": "elizabeth_of_portugal",
+      "date": "07-08",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Élisabeth de Portugal, reine, veuve",
+        "la": "S. Elisabeth Reg. Portugaliæ Viduæ"
+      },
+      "proper": "Sancti/07-08"
+    },
+    {
+      "id": "seven_holy_brothers_and_rufina_and_secunda_martyrs",
+      "date": "07-10",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Les sept saints Frères, martyrs, et saintes Rufine et Seconde, vierges et martyres",
+        "la": "Ss. Septem Fratrum Martyrum, ac Rufinæ et Secundæ Virginum et Martyrum"
+      },
+      "proper": "Sancti/07-10"
+    },
+    {
+      "id": "pius_i_pope",
+      "date": "07-11",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Pie Ier, pape et martyr",
+        "la": "S. Pii I Papæ et Martyris"
+      },
+      "proper": "Sancti/07-11"
+    },
+    {
+      "id": "john_gualbert_abbot",
+      "date": "07-12",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean Gualbert, abbé",
+        "la": "S. Joannis Gualberti Abbatis"
+      },
+      "proper": "Sancti/07-12",
+      "commemorations": [
+        {
+          "id": "nabor_and_felix_martyrs",
+          "title": {
+            "fr": "Saints Nabor et Félix, martyrs",
+            "la": "Ss. Naboris et Felicis Martyrum"
+          },
+          "proper": "Sancti/07-12o"
+        }
+      ]
+    },
+    {
+      "id": "bonaventure_of_bagnoregio_bishop",
+      "date": "07-14",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Bonaventure, évêque, confesseur et docteur",
+        "la": "S. Bonaventuræ Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/07-14"
+    },
+    {
+      "id": "henry_ii_emperor",
+      "date": "07-15",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Henri, empereur, confesseur",
+        "la": "S. Henrici Imperatoris Confessoris"
+      },
+      "proper": "Sancti/07-15"
+    },
+    {
+      "id": "our_lady_of_mount_carmel",
+      "date": "07-16",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Notre-Dame du Mont-Carmel",
+        "la": "Beatæ Mariæ Virginis de Monte Carmelo"
+      },
+      "proper": "Sancti/07-16"
+    },
+    {
+      "id": "alexius_of_rome",
+      "date": "07-17",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Alexis, confesseur",
+        "la": "S. Alexii Confessoris"
+      },
+      "proper": "Sancti/07-17"
+    },
+    {
+      "id": "camillus_de_lellis_priest",
+      "date": "07-18",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Camille de Lellis, confesseur",
+        "la": "S. Camilli de Lellis Confessoris"
+      },
+      "proper": "Sancti/07-18",
+      "commemorations": [
+        {
+          "id": "symphorosa_and_her_seven_sons_martyrs",
+          "title": {
+            "fr": "Sainte Symphorose et ses sept fils, martyrs",
+            "la": "Ss. Symphorosæ et Septem Filiorum Martyrum"
+          },
+          "proper": "Sancti/07-18o"
+        }
+      ]
+    },
+    {
+      "id": "vincent_de_paul_priest",
+      "date": "07-19",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Vincent de Paul, confesseur",
+        "la": "S. Vincentii a Paulo Confessoris"
+      },
+      "proper": "Sancti/07-19"
+    },
+    {
+      "id": "jerome_emiliani",
+      "date": "07-20",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jérôme Émilien, confesseur",
+        "la": "S. Hieronymi Æmiliani Confessoris"
+      },
+      "proper": "Sancti/07-20",
+      "commemorations": [
+        {
+          "id": "margaret_of_antioch_virgin",
+          "title": {
+            "fr": "Sainte Marguerite, vierge et martyre",
+            "la": "S. Margaritæ, Virginis et Martyris"
+          },
+          "proper": "Sancti/07-20o"
+        }
+      ]
+    },
+    {
+      "id": "lawrence_of_brindisi_priest",
+      "date": "07-21",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Laurent de Brindes, confesseur et docteur",
+        "la": "S. Laurentii a Brundusio Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/07-21r",
+      "commemorations": [
+        {
+          "id": "praxedes_virgin",
+          "title": {
+            "fr": "Sainte Praxède, vierge",
+            "la": "S. Praxedis Virginis"
+          },
+          "proper": "Sancti/07-21"
+        }
+      ]
+    },
+    {
+      "id": "mary_magdalene",
+      "date": "07-22",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Marie-Madeleine, pénitente",
+        "la": "S. Mariæ Magdalenæ Pœnitentis"
+      },
+      "proper": "Sancti/07-22"
+    },
+    {
+      "id": "apollinaris_of_ravenna_bishop",
+      "date": "07-23",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Apollinaire, évêque et martyr",
+        "la": "S. Apollinaris Episcopi et Martyris"
+      },
+      "proper": "Sancti/07-23",
+      "commemorations": [
+        {
+          "id": "liborius_of_le_mans_bishop",
+          "title": {
+            "fr": "Saint Liboire, évêque et confesseur",
+            "la": "S. Liborii Episcopi et Confessoris"
+          },
+          "proper": "Sancti/07-23cc"
+        }
+      ]
+    },
+    {
+      "id": "christina_of_bolsena_virgin",
+      "date": "07-24",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Christine, vierge et martyre",
+        "la": "S. Christinæ Virginis et Martyris"
+      },
+      "proper": "Sancti/07-24r"
+    },
+    {
+      "id": "james_apostle",
+      "date": "07-25",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Jacques le Majeur, apôtre",
+        "la": "S. Jacobi Apostoli"
+      },
+      "proper": "Sancti/07-25",
+      "commemorations": [
+        {
+          "id": "christopher_of_palestine_martyr",
+          "title": {
+            "fr": "Saint Christophe, martyr",
+            "la": "S. Christophori Martyris"
+          },
+          "proper": "Sancti/07-25cc"
+        }
+      ]
+    },
+    {
+      "id": "anne_mother_of_mary",
+      "date": "07-26",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Anne, mère de la bienheureuse Vierge Marie",
+        "la": "S. Annæ Matris B.M.V."
+      },
+      "proper": "Sancti/07-26"
+    },
+    {
+      "id": "pantaleon_of_nicomedia_martyr",
+      "date": "07-27",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Pantaléon, martyr",
+        "la": "S. Pantaleonis Martyris"
+      },
+      "proper": "Sancti/07-27"
+    },
+    {
+      "id": "nazarius_celsus_victor_i_and_innocent_i",
+      "date": "07-28",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Nazaire et Celse, martyrs, Victor Ier, pape et martyr, et Innocent Ier, pape et confesseur",
+        "la": "Ss. Nazarii et Celsi Martyrum, Victoris I Papæ et Martyris ac Innocentii I Papæ et Confessoris"
+      },
+      "proper": "Sancti/07-28"
+    },
+    {
+      "id": "martha_of_bethany",
+      "date": "07-29",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Marthe, vierge",
+        "la": "S. Marthæ Virginis"
+      },
+      "proper": "Sancti/07-29",
+      "commemorations": [
+        {
+          "id": "felix_simplicius_faustinus_and_beatrice_martyrs",
+          "title": {
+            "fr": "Saints Félix, Simplice, Faustin et Béatrice, martyrs",
+            "la": "Ss. Felicis, Simplicii, Faustini et Beatricis Martyrum"
+          },
+          "proper": "Sancti/07-29cc"
+        }
+      ]
+    },
+    {
+      "id": "abdon_and_sennen_martyrs",
+      "date": "07-30",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Abdon et Sennen, martyrs",
+        "la": "Ss. Abdon et Sennen Martyrum"
+      },
+      "proper": "Sancti/07-30"
+    },
+    {
+      "id": "ignatius_of_loyola_priest",
+      "date": "07-31",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Ignace de Loyola, confesseur",
+        "la": "S. Ignatii Confessoris"
+      },
+      "proper": "Sancti/07-31"
+    },
+    {
+      "id": "holy_maccabees_martyrs",
+      "date": "08-01",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Les saints Maccabées, martyrs",
+        "la": "Ss. Martyrum Machabæorum"
+      },
+      "proper": "Sancti/08-01r"
+    },
+    {
+      "id": "alphonsus_mary_liguori_bishop",
+      "date": "08-02",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Alphonse-Marie de Liguori, évêque, confesseur et docteur",
+        "la": "S. Alfonsi Mariæ de Ligorio Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/08-02",
+      "commemorations": [
+        {
+          "id": "stephen_i_pope",
+          "title": {
+            "fr": "Saint Étienne Ier, pape et martyr",
+            "la": "S. Stephani Papæ Martyris"
+          },
+          "proper": "Sancti/08-02o"
+        }
+      ]
+    },
+    {
+      "id": "dominic_de_guzman_priest",
+      "date": "08-04",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Dominique, confesseur",
+        "la": "S. Dominici Confessoris"
+      },
+      "proper": "Sancti/08-04"
+    },
+    {
+      "id": "dedication_of_the_basilica_of_saint_mary_major",
+      "date": "08-05",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Dédicace de Sainte-Marie-aux-Neiges",
+        "la": "Sanctæ Mariæ Virginis ad Nives"
+      },
+      "proper": "Sancti/08-05"
+    },
+    {
+      "id": "transfiguration_of_the_lord",
+      "date": "08-06",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Transfiguration de Notre-Seigneur Jésus-Christ",
+        "la": "In Transfiguratione Domini Nostri Jesu Christi"
+      },
+      "lord": true,
+      "proper": "Sancti/08-06",
+      "commemorations": [
+        {
+          "id": "sixtus_ii_pope_and_companions_martyrs",
+          "title": {
+            "fr": "Saints Sixte II, pape, Félicissime et Agapit, martyrs",
+            "la": "Ss. Xysti II Papæ, Felicissimi et Agapiti Martyrum"
+          },
+          "proper": "Sancti/08-06cc"
+        }
+      ]
+    },
+    {
+      "id": "cajetan_of_thiene_priest",
+      "date": "08-07",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Gaétan, confesseur",
+        "la": "S. Cajetani Confessoris"
+      },
+      "proper": "Sancti/08-07",
+      "commemorations": [
+        {
+          "id": "donatus_of_arezzo_bishop",
+          "title": {
+            "fr": "Saint Donat, évêque et martyr",
+            "la": "S. Donati Episcopi et Martyris"
+          },
+          "proper": "Sancti/08-07o"
+        }
+      ]
+    },
+    {
+      "id": "john_mary_vianney_priest",
+      "date": "08-08",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean-Marie Vianney, confesseur",
+        "la": "S. Joannis Mariæ Vianney Confessoris"
+      },
+      "proper": "Sancti/08-09",
+      "commemorations": [
+        {
+          "id": "cyriacus_largus_and_smaragdus_martyrs",
+          "title": {
+            "fr": "Saints Cyriaque, Large et Smaragde, martyrs",
+            "la": "Ss. Cyriaci, Largi et Smaragdi Martyrum"
+          },
+          "proper": "Sancti/08-08"
+        }
+      ]
+    },
+    {
+      "id": "vigil_of_saint_lawrence",
+      "date": "08-09",
+      "rank": "VIGIL_III",
+      "colors": [
+        "VIOLET"
+      ],
+      "title": {
+        "fr": "Vigile de saint Laurent, martyr",
+        "la": "In Vigilia S. Laurentii Martyris"
+      },
+      "proper": "Sancti/08-09t",
+      "commemorations": [
+        {
+          "id": "romanus_ostiarius_martyr",
+          "title": {
+            "fr": "Saint Romain, martyr",
+            "la": "S. Romani Martyris"
+          },
+          "proper": "Sancti/08-09cc"
+        }
+      ]
+    },
+    {
+      "id": "lawrence_of_rome_deacon",
+      "date": "08-10",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Laurent, martyr",
+        "la": "S. Laurentii Martyris"
+      },
+      "proper": "Sancti/08-10"
+    },
+    {
+      "id": "tiburtius_and_susanna_martyrs",
+      "date": "08-11",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Tiburce et Suzanne, vierge, martyrs",
+        "la": "Ss. Tiburtii et Susannæ Virginis, Martyrum"
+      },
+      "proper": "Sancti/08-11"
+    },
+    {
+      "id": "clare_of_assisi_virgin",
+      "date": "08-12",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Claire, vierge",
+        "la": "S. Claræ Virginis"
+      },
+      "proper": "Sancti/08-12"
+    },
+    {
+      "id": "hippolytus_and_cassian_martyrs",
+      "date": "08-13",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Hippolyte et Cassien, martyrs",
+        "la": "Ss. Hippolyti et Cassiani Martyrum"
+      },
+      "proper": "Sancti/08-13"
+    },
+    {
+      "id": "vigil_of_the_assumption_of_the_blessed_virgin_mary",
+      "date": "08-14",
+      "rank": "VIGIL_II",
+      "colors": [
+        "VIOLET"
+      ],
+      "title": {
+        "fr": "Vigile de l’Assomption de la bienheureuse Vierge Marie",
+        "la": "In Vigilia Assumptionis B.M.V."
+      },
+      "proper": "Sancti/08-14",
+      "commemorations": [
+        {
+          "id": "eusebius_of_rome_priest",
+          "title": {
+            "fr": "Saint Eusèbe, confesseur",
+            "la": "S. Eusebii Confessoris"
+          },
+          "proper": "Sancti/08-14cc"
+        }
+      ]
+    },
+    {
+      "id": "assumption_of_the_blessed_virgin_mary",
+      "date": "08-15",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Assomption de la bienheureuse Vierge Marie",
+        "la": "In Assumptione Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/08-15"
+    },
+    {
+      "id": "joachim_father_of_mary",
+      "date": "08-16",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Joachim, père de la bienheureuse Vierge Marie, confesseur",
+        "la": "S. Joachim Confessoris, Patris B. M. V."
+      },
+      "proper": "Sancti/08-16"
+    },
+    {
+      "id": "hyacinth_of_poland_priest",
+      "date": "08-17",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Hyacinthe, confesseur",
+        "la": "S. Hyacinthi Confessoris"
+      },
+      "proper": "Sancti/08-17"
+    },
+    {
+      "id": "agapitus_of_palestrina_martyr",
+      "date": "08-18",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Agapit, martyr",
+        "la": "S. Agapiti Martyris"
+      },
+      "proper": "Sancti/08-18r"
+    },
+    {
+      "id": "john_eudes_priest",
+      "date": "08-19",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean Eudes, confesseur",
+        "la": "S. Joannis Eudes Confessoris"
+      },
+      "proper": "Sancti/08-19"
+    },
+    {
+      "id": "bernard_of_clairvaux_abbot",
+      "date": "08-20",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Bernard, abbé et docteur",
+        "la": "S. Bernardi Abbatis et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/08-20"
+    },
+    {
+      "id": "jane_frances_de_chantal_religious",
+      "date": "08-21",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Jeanne-Françoise Frémiot de Chantal, veuve",
+        "la": "S. Joannæ Franciscæ Frémiot de Chantal Viduæ"
+      },
+      "proper": "Sancti/08-21"
+    },
+    {
+      "id": "immaculate_heart_of_mary",
+      "date": "08-22",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Cœur immaculé de la bienheureuse Vierge Marie",
+        "la": "Immaculati Cordis Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/08-22",
+      "commemorations": [
+        {
+          "id": "timothy_hippolytus_and_symphorian_martyrs",
+          "title": {
+            "fr": "Saints Timothée, Hippolyte et Symphorien, martyrs",
+            "la": "Ss. Timothei, Hippolyti et Symphoriani Martyrum"
+          },
+          "proper": "Sancti/08-22cc"
+        }
+      ]
+    },
+    {
+      "id": "philip_benizi_priest",
+      "date": "08-23",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Philippe Benizi, confesseur",
+        "la": "S. Philippi Benitii Confessoris"
+      },
+      "proper": "Sancti/08-23"
+    },
+    {
+      "id": "bartholomew_apostle",
+      "date": "08-24",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Barthélemy, apôtre",
+        "la": "S. Bartholomæi Apostoli"
+      },
+      "proper": "Sancti/08-24"
+    },
+    {
+      "id": "louis_ix_of_france",
+      "date": "08-25",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Louis, roi de France, confesseur",
+        "la": "S. Ludovici Regis Franciæ Confessoris"
+      },
+      "proper": "Sancti/08-25"
+    },
+    {
+      "id": "zephyrinus_pope",
+      "date": "08-26",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Zéphyrin, pape et martyr",
+        "la": "S. Zephyrini Papæ et Martyris"
+      },
+      "proper": "Sancti/08-26"
+    },
+    {
+      "id": "joseph_of_calasanz_priest",
+      "date": "08-27",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Joseph Calasanz, confesseur",
+        "la": "S. Josephi Calasanctii Confessoris"
+      },
+      "proper": "Sancti/08-27"
+    },
+    {
+      "id": "augustine_of_hippo_bishop",
+      "date": "08-28",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Augustin, évêque, confesseur et docteur",
+        "la": "S. Augustini Episcopi et Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/08-28",
+      "commemorations": [
+        {
+          "id": "hermes_of_rome_martyr",
+          "title": {
+            "fr": "Saint Hermès, martyr",
+            "la": "S. Hermetis Martyris"
+          },
+          "proper": "Sancti/08-28cc"
+        }
+      ]
+    },
+    {
+      "id": "passion_of_saint_john_the_baptist",
+      "date": "08-29",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Décollation de saint Jean-Baptiste",
+        "la": "In Decollatione S. Joannis Baptistæ"
+      },
+      "proper": "Sancti/08-29",
+      "commemorations": [
+        {
+          "id": "sabina_of_rome_martyr",
+          "title": {
+            "fr": "Sainte Sabine, martyre",
+            "la": "S. Sabinæ Martyris"
+          },
+          "proper": "Sancti/08-29cc"
+        }
+      ]
+    },
+    {
+      "id": "rose_of_lima_virgin",
+      "date": "08-30",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Rose de Lima, vierge",
+        "la": "S. Rosæ a Sancta Maria Limanæ Virginis"
+      },
+      "proper": "Sancti/08-30",
+      "commemorations": [
+        {
+          "id": "felix_and_adauctus_martyrs",
+          "title": {
+            "fr": "Saints Félix et Adaucte, martyrs",
+            "la": "Ss. Felicis et Adaucti Martyrum"
+          },
+          "proper": "Sancti/08-30o"
+        }
+      ]
+    },
+    {
+      "id": "raymond_nonnatus_religious",
+      "date": "08-31",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Raymond Nonnat, confesseur",
+        "la": "S. Raymundi Nonnati Confessoris"
+      },
+      "proper": "Sancti/08-31"
+    },
+    {
+      "id": "giles_of_saint_gilles_abbot",
+      "date": "09-01",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Gilles, abbé",
+        "la": "S. Ægidii Abbatis"
+      },
+      "proper": "Sancti/09-01",
+      "commemorations": [
+        {
+          "id": "twelve_holy_brothers_martyrs",
+          "title": {
+            "fr": "Les douze saints Frères, martyrs",
+            "la": "Ss. Duodecim Fratrum Martyrum"
+          },
+          "proper": "Sancti/09-01cc"
+        }
+      ]
+    },
+    {
+      "id": "stephen_i_of_hungary",
+      "date": "09-02",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Étienne, roi de Hongrie, confesseur",
+        "la": "S. Stephani Hungariæ Regis Confessoris"
+      },
+      "proper": "Sancti/09-02"
+    },
+    {
+      "id": "pius_x_pope",
+      "date": "09-03",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Pie X, pape et confesseur",
+        "la": "S. Pii X Papæ Confessoris"
+      },
+      "proper": "Sancti/09-03"
+    },
+    {
+      "id": "lawrence_justinian_bishop",
+      "date": "09-05",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Laurent Justinien, évêque et confesseur",
+        "la": "S. Laurentii Justiniani Episcopi et Confessoris"
+      },
+      "proper": "Sancti/09-05"
+    },
+    {
+      "id": "nativity_of_the_blessed_virgin_mary",
+      "date": "09-08",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Nativité de la bienheureuse Vierge Marie",
+        "la": "In Nativitate Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/09-08",
+      "commemorations": [
+        {
+          "id": "adrian_of_nicomedia_martyr",
+          "title": {
+            "fr": "Saint Adrien, martyr",
+            "la": "S. Hadriani Martyris"
+          },
+          "proper": "Sancti/09-08cc"
+        }
+      ]
+    },
+    {
+      "id": "gorgonius_martyr",
+      "date": "09-09",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Gorgon, martyr",
+        "la": "S. Gorgonii Martyris"
+      },
+      "proper": "Sancti/09-09"
+    },
+    {
+      "id": "nicholas_of_tolentino_priest",
+      "date": "09-10",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Nicolas de Tolentino, confesseur",
+        "la": "S. Nicolai de Tolentino Confessoris"
+      },
+      "proper": "Sancti/09-10"
+    },
+    {
+      "id": "protus_and_hyacinth_martyrs",
+      "date": "09-11",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Prote et Hyacinthe, martyrs",
+        "la": "Ss. Proti et Hyacinthi Martyrum"
+      },
+      "proper": "Sancti/09-11"
+    },
+    {
+      "id": "most_holy_name_of_mary",
+      "date": "09-12",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Très Saint Nom de Marie",
+        "la": "S. Nominis Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/09-12"
+    },
+    {
+      "id": "exaltation_of_the_holy_cross",
+      "date": "09-14",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Exaltation de la sainte Croix",
+        "la": "In Exaltatione Sanctæ Crucis"
+      },
+      "lord": true,
+      "proper": "Sancti/09-14"
+    },
+    {
+      "id": "our_lady_of_sorrows",
+      "date": "09-15",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Les Sept Douleurs de la bienheureuse Vierge Marie",
+        "la": "Septem Dolorum Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/09-15",
+      "commemorations": [
+        {
+          "id": "nicomedes_martyr",
+          "title": {
+            "fr": "Saint Nicomède, martyr",
+            "la": "S. Nicomedis Martyris"
+          },
+          "proper": "Sancti/09-15cc"
+        }
+      ]
+    },
+    {
+      "id": "cornelius_i_pope_and_cyprian_of_carthage_bishop_martyrs",
+      "date": "09-16",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Corneille, pape, et Cyprien, évêque, martyrs",
+        "la": "Ss. Cornelii Papæ et Cypriani Episcopi, Martyrum"
+      },
+      "proper": "Sancti/09-16",
+      "commemorations": [
+        {
+          "id": "euphemia_lucy_and_geminianus_martyrs",
+          "title": {
+            "fr": "Saintes Euphémie et Lucie et saint Géminien, martyrs",
+            "la": "Ss. Euphemiæ, Luciæ et Geminiani Martyrum"
+          },
+          "proper": "Sancti/09-16cc"
+        }
+      ]
+    },
+    {
+      "id": "stigmata_of_saint_francis",
+      "date": "09-17",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Impression des stigmates de saint François",
+        "la": "Impressionis Stigmatum S. Francisci"
+      },
+      "proper": "Sancti/09-17"
+    },
+    {
+      "id": "joseph_of_cupertino_priest",
+      "date": "09-18",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Joseph de Cupertino, confesseur",
+        "la": "S. Josephi de Cupertino Confessoris"
+      },
+      "proper": "Sancti/09-18"
+    },
+    {
+      "id": "januarius_i_of_benevento_bishop",
+      "date": "09-19",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Janvier, évêque, et ses compagnons, martyrs",
+        "la": "S. Januarii Episcopi et Sociorum Martyrum"
+      },
+      "proper": "Sancti/09-19"
+    },
+    {
+      "id": "eustace_and_companions_martyrs",
+      "date": "09-20",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Eustache et ses compagnons, martyrs",
+        "la": "Ss. Eustachii et Sociorum Martyrum"
+      },
+      "proper": "Sancti/09-20"
+    },
+    {
+      "id": "matthew_apostle",
+      "date": "09-21",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Matthieu, apôtre et évangéliste",
+        "la": "S. Matthæi Apostoli et Evangelistæ"
+      },
+      "proper": "Sancti/09-21"
+    },
+    {
+      "id": "thomas_of_villanova_bishop",
+      "date": "09-22",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Thomas de Villeneuve, évêque et confesseur",
+        "la": "S. Thomæ de Villanova Episcopi et Confessoris"
+      },
+      "proper": "Sancti/09-22",
+      "commemorations": [
+        {
+          "id": "maurice_and_companions_martyrs",
+          "title": {
+            "fr": "Saint Maurice et ses compagnons, martyrs",
+            "la": "Ss. Mauritii et Sociorum Martyrum"
+          },
+          "proper": "Sancti/09-22o"
+        }
+      ]
+    },
+    {
+      "id": "linus_pope",
+      "date": "09-23",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Lin, pape et martyr",
+        "la": "S. Lini Papæ et Martyris"
+      },
+      "proper": "Sancti/09-23",
+      "commemorations": [
+        {
+          "id": "thecla_of_iconium_virgin",
+          "title": {
+            "fr": "Sainte Thècle, vierge et martyre",
+            "la": "S. Theclæ Virginis et Martyris"
+          },
+          "proper": "Sancti/09-23cc"
+        }
+      ]
+    },
+    {
+      "id": "our_lady_of_ransom",
+      "date": "09-24",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Notre-Dame de la Merci",
+        "la": "Beatæ Mariæ Virginis de Mercede"
+      },
+      "proper": "Sancti/09-24"
+    },
+    {
+      "id": "cyprian_and_justina_martyrs",
+      "date": "09-26",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Cyprien et Justine, vierge, martyrs",
+        "la": "Ss. Cypriani et Justinæ Virginis, Martyrum"
+      },
+      "proper": "Sancti/09-26"
+    },
+    {
+      "id": "cosmas_of_cilicia_and_damian_of_cilicia_martyrs",
+      "date": "09-27",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Côme et Damien, martyrs",
+        "la": "Ss. Cosmæ et Damiani Martyrum"
+      },
+      "proper": "Sancti/09-27"
+    },
+    {
+      "id": "wenceslaus_i_of_bohemia_martyr",
+      "date": "09-28",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Venceslas, duc et martyr",
+        "la": "S. Wenceslai Ducis et Martyris"
+      },
+      "proper": "Sancti/09-28"
+    },
+    {
+      "id": "dedication_of_saint_michael_the_archangel",
+      "date": "09-29",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Dédicace de saint Michel archange",
+        "la": "In Dedicatione S. Michaëlis Archangeli"
+      },
+      "proper": "Sancti/09-29"
+    },
+    {
+      "id": "jerome_of_stridon_priest",
+      "date": "09-30",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jérôme, prêtre, confesseur et docteur",
+        "la": "S. Hieronymi Presbyteri Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/09-30"
+    },
+    {
+      "id": "remigius_of_reims_bishop",
+      "date": "10-01",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Remi, évêque et confesseur",
+        "la": "S. Remigii Episcopi et Confessoris"
+      },
+      "proper": "Sancti/10-01"
+    },
+    {
+      "id": "holy_guardian_angels",
+      "date": "10-02",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Les saints Anges gardiens",
+        "la": "Ss. Angelorum Custodum"
+      },
+      "proper": "Sancti/10-02"
+    },
+    {
+      "id": "therese_of_the_child_jesus_and_the_holy_face_of_lisieux_virgin",
+      "date": "10-03",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Thérèse de l’Enfant-Jésus, vierge",
+        "la": "S. Theresiæ a Jesu Infante Virginis"
+      },
+      "proper": "Sancti/10-03"
+    },
+    {
+      "id": "francis_of_assisi",
+      "date": "10-04",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint François d’Assise, confesseur",
+        "la": "S. Francisci Confessoris"
+      },
+      "proper": "Sancti/10-04"
+    },
+    {
+      "id": "placid_and_companions_martyrs",
+      "date": "10-05",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Placide et ses compagnons, martyrs",
+        "la": "Ss. Placidi et Sociorum Martyrum"
+      },
+      "proper": "Sancti/10-05"
+    },
+    {
+      "id": "bruno_of_cologne_priest",
+      "date": "10-06",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Bruno, confesseur",
+        "la": "S. Brunonis Confessoris"
+      },
+      "proper": "Sancti/10-06"
+    },
+    {
+      "id": "our_lady_of_the_rosary",
+      "date": "10-07",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Notre-Dame du Rosaire",
+        "la": "Beatæ Mariæ Virginis a Rosario"
+      },
+      "proper": "Sancti/10-07",
+      "commemorations": [
+        {
+          "id": "mark_pope",
+          "title": {
+            "fr": "Saint Marc, pape et confesseur",
+            "la": "S. Marci Papæ Confessoris"
+          },
+          "proper": "Sancti/10-07t"
+        }
+      ]
+    },
+    {
+      "id": "bridget_of_sweden_religious",
+      "date": "10-08",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Brigitte, veuve",
+        "la": "S. Birgittæ Viduæ"
+      },
+      "proper": "Sancti/10-08",
+      "commemorations": [
+        {
+          "id": "sergius_bacchus_marcellus_and_apuleius_martyrs",
+          "title": {
+            "fr": "Saints Serge, Bacchus, Marcel et Apulée, martyrs",
+            "la": "Ss. Sergii, Bacchi, Marcelli et Apulei Martyrum"
+          },
+          "proper": "Sancti/10-07cc"
+        }
+      ]
+    },
+    {
+      "id": "john_leonardi_priest",
+      "date": "10-09",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean Léonardi, confesseur",
+        "la": "S. Joannis Leonardi Confessoris"
+      },
+      "proper": "Sancti/10-09",
+      "commemorations": [
+        {
+          "id": "denis_of_paris_bishop_and_companions_martyrs",
+          "title": {
+            "fr": "Saints Denis, évêque, Rustique et Éleuthère, martyrs",
+            "la": "Ss. Dionysii Episcopi, Rustici et Eleutherii Martyrum"
+          },
+          "proper": "Sancti/10-09t"
+        }
+      ]
+    },
+    {
+      "id": "francis_borgia_priest",
+      "date": "10-10",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint François de Borgia, confesseur",
+        "la": "S. Francisci Borgiæ Confessoris"
+      },
+      "proper": "Sancti/10-10"
+    },
+    {
+      "id": "maternity_of_the_blessed_virgin_mary",
+      "date": "10-11",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Maternité de la bienheureuse Vierge Marie",
+        "la": "Maternitatis Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/10-11"
+    },
+    {
+      "id": "edward_the_confessor",
+      "date": "10-13",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Édouard, roi, confesseur",
+        "la": "S. Eduardi Regis Confessoris"
+      },
+      "proper": "Sancti/10-13"
+    },
+    {
+      "id": "callistus_i_pope",
+      "date": "10-14",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Calixte Ier, pape et martyr",
+        "la": "S. Callisti Papæ et Martyris"
+      },
+      "proper": "Sancti/10-14"
+    },
+    {
+      "id": "teresa_of_jesus_of_avila_virgin",
+      "date": "10-15",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Thérèse d’Avila, vierge",
+        "la": "S. Teresiæ Virginis"
+      },
+      "proper": "Sancti/10-15"
+    },
+    {
+      "id": "hedwig_of_silesia_religious",
+      "date": "10-16",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Hedwige, veuve",
+        "la": "S. Hedwigis Viduæ"
+      },
+      "proper": "Sancti/10-16"
+    },
+    {
+      "id": "margaret_mary_alacoque_virgin",
+      "date": "10-17",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Marguerite-Marie Alacoque, vierge",
+        "la": "S. Margaritæ Mariæ Alacoque Virginis"
+      },
+      "proper": "Sancti/10-17"
+    },
+    {
+      "id": "luke_evangelist",
+      "date": "10-18",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Luc, évangéliste",
+        "la": "S. Lucæ Evangelistæ"
+      },
+      "proper": "Sancti/10-18"
+    },
+    {
+      "id": "peter_of_alcantara_priest",
+      "date": "10-19",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Pierre d’Alcantara, confesseur",
+        "la": "S. Petri de Alcantara Confessoris"
+      },
+      "proper": "Sancti/10-19"
+    },
+    {
+      "id": "john_of_kanty_priest",
+      "date": "10-20",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean de Kenty, confesseur",
+        "la": "S. Joannis Cantii Confessoris"
+      },
+      "proper": "Sancti/10-20"
+    },
+    {
+      "id": "hilarion_abbot",
+      "date": "10-21",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Hilarion, abbé",
+        "la": "S. Hilarionis Abbatis"
+      },
+      "proper": "Sancti/10-21",
+      "commemorations": [
+        {
+          "id": "ursula_and_companions_martyrs",
+          "title": {
+            "fr": "Sainte Ursule et ses compagnes, vierges et martyres",
+            "la": "Ss. Ursulæ et Sociarum Virg. et Mart."
+          },
+          "proper": "Sancti/10-21cc"
+        }
+      ]
+    },
+    {
+      "id": "anthony_mary_claret_bishop",
+      "date": "10-23",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Antoine-Marie Claret, évêque et confesseur",
+        "la": "S. Antonii Mariæ Claret Episcopi et Confessoris"
+      },
+      "proper": "Sancti/10-23r"
+    },
+    {
+      "id": "raphael_archangel",
+      "date": "10-24",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Raphaël, archange",
+        "la": "S. Raphaëlis Archangeli"
+      },
+      "proper": "Sancti/10-24"
+    },
+    {
+      "id": "chrysanthus_and_daria_martyrs",
+      "date": "10-25",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Chrysanthe et Darie, martyrs",
+        "la": "Ss. Chrysanthi et Dariæ Martyrum"
+      },
+      "proper": "Sancti/10-25"
+    },
+    {
+      "id": "evaristus_pope",
+      "date": "10-26",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Évariste, pape et martyr",
+        "la": "S. Evaristi Papæ et Martyris"
+      },
+      "proper": "Sancti/10-26"
+    },
+    {
+      "id": "simon_and_jude_apostles",
+      "date": "10-28",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saints Simon et Jude, apôtres",
+        "la": "Ss. Simonis et Judæ Apostolorum"
+      },
+      "proper": "Sancti/10-28"
+    },
+    {
+      "id": "all_saints",
+      "date": "11-01",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Toussaint",
+        "la": "Omnium Sanctorum"
+      },
+      "proper": "Sancti/11-01"
+    },
+    {
+      "id": "commemoration_of_all_the_faithful_departed",
+      "date": "11-02",
+      "rank": "I",
+      "colors": [
+        "BLACK"
+      ],
+      "title": {
+        "fr": "Commémoraison de tous les fidèles défunts",
+        "la": "In Commemoratione Omnium Fidelium Defunctorum"
+      },
+      "proper": "Sancti/11-02"
+    },
+    {
+      "id": "charles_borromeo_bishop",
+      "date": "11-04",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Charles Borromée, évêque et confesseur",
+        "la": "S. Caroli Episcopi et Confessoris"
+      },
+      "proper": "Sancti/11-04",
+      "commemorations": [
+        {
+          "id": "vitalis_and_agricola_martyrs",
+          "title": {
+            "fr": "Saints Vital et Agricola, martyrs",
+            "la": "Ss. Vitalis et Agricolæ Martyrum"
+          },
+          "proper": "Sancti/11-04cc"
+        }
+      ]
+    },
+    {
+      "id": "four_holy_crowned_martyrs",
+      "date": "11-08",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Les quatre saints Couronnés, martyrs",
+        "la": "Ss. Quatuor Coronatorum Martyrum"
+      },
+      "proper": "Sancti/11-08r"
+    },
+    {
+      "id": "dedication_of_the_lateran_basilica",
+      "date": "11-09",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Dédicace de l’archibasilique du Très-Saint-Sauveur",
+        "la": "In Dedicatione Archibasilicæ Ss. Salvatoris"
+      },
+      "lord": true,
+      "proper": "Sancti/11-09",
+      "commemorations": [
+        {
+          "id": "theodore_of_amasea_martyr",
+          "title": {
+            "fr": "Saint Théodore, martyr",
+            "la": "S. Theodori Martyris"
+          },
+          "proper": "Sancti/11-09cc"
+        }
+      ]
+    },
+    {
+      "id": "andrew_avellino_priest",
+      "date": "11-10",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint André Avellin, confesseur",
+        "la": "S. Andreæ Avellini Confessoris"
+      },
+      "proper": "Sancti/11-10",
+      "commemorations": [
+        {
+          "id": "tryphon_respicius_and_nympha_martyrs",
+          "title": {
+            "fr": "Saints Tryphon, Respice et Nymphe, vierge, martyrs",
+            "la": "Ss. Tryphonis, Respicii, et Nymphæ Virg., Martyrum"
+          },
+          "proper": "Sancti/11-10o"
+        }
+      ]
+    },
+    {
+      "id": "martin_of_tours_bishop",
+      "date": "11-11",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Martin, évêque et confesseur",
+        "la": "S. Martini Episcopi et Confessoris"
+      },
+      "proper": "Sancti/11-11",
+      "commemorations": [
+        {
+          "id": "menas_of_egypt_martyr",
+          "title": {
+            "fr": "Saint Mennas, martyr",
+            "la": "S. Mennæ Martyris"
+          },
+          "proper": "Sancti/11-11cc"
+        }
+      ]
+    },
+    {
+      "id": "martin_i_pope",
+      "date": "11-12",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Martin Ier, pape et martyr",
+        "la": "S. Martini Papæ et Martyris"
+      },
+      "proper": "Sancti/11-12"
+    },
+    {
+      "id": "didacus_of_alcala_religious",
+      "date": "11-13",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Didace, confesseur",
+        "la": "S. Didaci Confessoris"
+      },
+      "proper": "Sancti/11-13"
+    },
+    {
+      "id": "josaphat_kuntsevych_bishop",
+      "date": "11-14",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Josaphat, évêque et martyr",
+        "la": "S. Josaphat Episcopi et Martyris"
+      },
+      "proper": "Sancti/11-14"
+    },
+    {
+      "id": "albert_the_great_bishop",
+      "date": "11-15",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Albert le Grand, évêque, confesseur et docteur",
+        "la": "S. Alberti Magni Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/11-15"
+    },
+    {
+      "id": "gertrude_the_great_virgin",
+      "date": "11-16",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Gertrude, vierge",
+        "la": "S. Gertrudis Virginis"
+      },
+      "proper": "Sancti/11-16"
+    },
+    {
+      "id": "gregory_thaumaturgus_bishop",
+      "date": "11-17",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Grégoire le Thaumaturge, évêque et confesseur",
+        "la": "S. Gregorii Thaumaturgi Episcopi et Confessoris"
+      },
+      "proper": "Sancti/11-17"
+    },
+    {
+      "id": "dedication_of_the_basilicas_of_saints_peter_and_paul_apostles",
+      "date": "11-18",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Dédicace des basiliques des saints Pierre et Paul, apôtres",
+        "la": "In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli"
+      },
+      "proper": "Sancti/11-18r"
+    },
+    {
+      "id": "elizabeth_of_hungary_religious",
+      "date": "11-19",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Élisabeth de Hongrie, veuve",
+        "la": "S. Elisabeth Viduæ"
+      },
+      "proper": "Sancti/11-19",
+      "commemorations": [
+        {
+          "id": "pontian_i_pope",
+          "title": {
+            "fr": "Saint Pontien, pape et martyr",
+            "la": "S. Pontiani Papæ et Martyris"
+          },
+          "proper": "Sancti/11-19o"
+        }
+      ]
+    },
+    {
+      "id": "felix_of_valois_priest",
+      "date": "11-20",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Félix de Valois, confesseur",
+        "la": "S. Felicis de Valois Confessoris"
+      },
+      "proper": "Sancti/11-20"
+    },
+    {
+      "id": "presentation_of_the_blessed_virgin_mary",
+      "date": "11-21",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Présentation de la bienheureuse Vierge Marie",
+        "la": "In Præsentatione Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/11-21"
+    },
+    {
+      "id": "cecilia_of_rome_virgin",
+      "date": "11-22",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Cécile, vierge et martyre",
+        "la": "S. Cæciliæ Virginis et Martyris"
+      },
+      "proper": "Sancti/11-22"
+    },
+    {
+      "id": "clement_i_pope",
+      "date": "11-23",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Clément Ier, pape et martyr",
+        "la": "S. Clementis Papæ et Martyris"
+      },
+      "proper": "Sancti/11-23",
+      "commemorations": [
+        {
+          "id": "felicity_of_rome_martyr",
+          "title": {
+            "fr": "Sainte Félicité, martyre",
+            "la": "S. Felicitatis Martyris"
+          },
+          "proper": "Sancti/11-23cc"
+        }
+      ]
+    },
+    {
+      "id": "john_of_the_cross_priest",
+      "date": "11-24",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean de la Croix, confesseur et docteur",
+        "la": "S. Joannis a Cruce Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/11-24",
+      "commemorations": [
+        {
+          "id": "chrysogonus_martyr",
+          "title": {
+            "fr": "Saint Chrysogone, martyr",
+            "la": "S. Chrysogoni Martyris"
+          },
+          "proper": "Sancti/11-24o"
+        }
+      ]
+    },
+    {
+      "id": "catherine_of_alexandria_virgin",
+      "date": "11-25",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Catherine d’Alexandrie, vierge et martyre",
+        "la": "S. Catharinæ Virginis et Martyris"
+      },
+      "proper": "Sancti/11-25"
+    },
+    {
+      "id": "sylvester_gozzolini_abbot",
+      "date": "11-26",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Silvestre, abbé",
+        "la": "S. Silvestri Abbatis"
+      },
+      "proper": "Sancti/11-26",
+      "commemorations": [
+        {
+          "id": "peter_of_alexandria_bishop",
+          "title": {
+            "fr": "Saint Pierre d’Alexandrie, évêque et martyr",
+            "la": "S. Petri Alexandrini Martyris"
+          },
+          "proper": "Sancti/11-26t"
+        }
+      ]
+    },
+    {
+      "id": "saturninus_martyr",
+      "date": "11-29",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Saturnin, martyr",
+        "la": "S. Saturnini Martyris"
+      },
+      "proper": "Sancti/11-29r"
+    },
+    {
+      "id": "andrew_apostle",
+      "date": "11-30",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint André, apôtre",
+        "la": "S. Andreæ Apostoli"
+      },
+      "proper": "Sancti/11-30"
+    },
+    {
+      "id": "bibiana_virgin",
+      "date": "12-02",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Bibiane, vierge et martyre",
+        "la": "S. Bibianæ Virginis et Martyris"
+      },
+      "proper": "Sancti/12-02"
+    },
+    {
+      "id": "francis_xavier_priest",
+      "date": "12-03",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint François Xavier, confesseur",
+        "la": "S. Francisci Xaverii Confessoris"
+      },
+      "proper": "Sancti/12-03"
+    },
+    {
+      "id": "peter_chrysologus_bishop",
+      "date": "12-04",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Pierre Chrysologue, évêque, confesseur et docteur",
+        "la": "S. Petri Chrysologi Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/12-04",
+      "commemorations": [
+        {
+          "id": "barbara_of_heliopolis_virgin",
+          "title": {
+            "fr": "Sainte Barbe, vierge et martyre",
+            "la": "S. Barbaræ Virginis et Martyris"
+          },
+          "proper": "Sancti/12-04o"
+        }
+      ]
+    },
+    {
+      "id": "sabbas_abbot",
+      "date": "12-05",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Sabas, abbé",
+        "la": "S. Sabbæ Abbatis"
+      },
+      "proper": "Sancti/12-05"
+    },
+    {
+      "id": "nicholas_of_myra_bishop",
+      "date": "12-06",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Nicolas, évêque et confesseur",
+        "la": "S. Nicolai Episcopi et Confessoris"
+      },
+      "proper": "Sancti/12-06"
+    },
+    {
+      "id": "ambrose_of_milan_bishop",
+      "date": "12-07",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Ambroise, évêque, confesseur et docteur",
+        "la": "S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris"
+      },
+      "proper": "Sancti/12-07"
+    },
+    {
+      "id": "immaculate_conception_of_the_blessed_virgin_mary",
+      "date": "12-08",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Immaculée Conception de la bienheureuse Vierge Marie",
+        "la": "In Conceptione Immaculata Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/12-08"
+    },
+    {
+      "id": "miltiades_i_pope",
+      "date": "12-10",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Melchiade, pape et martyr",
+        "la": "S. Melchiadis Papæ et Martyris"
+      },
+      "proper": "Sancti/12-10o"
+    },
+    {
+      "id": "damasus_i_pope",
+      "date": "12-11",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Damase Ier, pape et confesseur",
+        "la": "S. Damasi Papæ et Confessoris"
+      },
+      "proper": "Sancti/12-11"
+    },
+    {
+      "id": "lucy_of_syracuse_virgin",
+      "date": "12-13",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Sainte Lucie, vierge et martyre",
+        "la": "S. Luciæ Virginis et Martyris"
+      },
+      "proper": "Sancti/12-13r"
+    },
+    {
+      "id": "eusebius_of_vercelli_bishop",
+      "date": "12-16",
+      "rank": "III",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Eusèbe, évêque et martyr",
+        "la": "S. Eusebii Episcopi et Martyris"
+      },
+      "proper": "Sancti/12-16"
+    },
+    {
+      "id": "thomas_apostle",
+      "date": "12-21",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Thomas, apôtre",
+        "la": "S. Thomæ Apostoli"
+      },
+      "proper": "Sancti/12-21"
+    },
+    {
+      "id": "stephen_the_first_martyr",
+      "date": "12-26",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Étienne, premier martyr",
+        "la": "S. Stephani Protomartyris"
+      },
+      "proper": "Sancti/12-26",
+      "commemorations": [
+        {
+          "id": "commemoration_of_the_octave_of_christmas",
+          "title": {
+            "fr": "Octave de Noël",
+            "la": "Octavæ Nativitatis Domini"
+          }
+        }
+      ]
+    },
+    {
+      "id": "john_apostle",
+      "date": "12-27",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Jean, apôtre et évangéliste",
+        "la": "S. Joannis Apostoli et Evangelistæ"
+      },
+      "proper": "Sancti/12-27",
+      "commemorations": [
+        {
+          "id": "commemoration_of_the_octave_of_christmas",
+          "title": {
+            "fr": "Octave de Noël",
+            "la": "Octavæ Nativitatis Domini"
+          }
+        }
+      ]
+    },
+    {
+      "id": "holy_innocents_martyrs",
+      "date": "12-28",
+      "rank": "II",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Les saints Innocents, martyrs",
+        "la": "Ss. Innocentium"
+      },
+      "proper": "Sancti/12-28r",
+      "commemorations": [
+        {
+          "id": "commemoration_of_the_octave_of_christmas",
+          "title": {
+            "fr": "Octave de Noël",
+            "la": "Octavæ Nativitatis Domini"
+          }
+        }
+      ]
+    },
+    {
+      "id": "thomas_becket_bishop",
+      "date": "12-29",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "RED"
+      ],
+      "title": {
+        "fr": "Saint Thomas Becket, évêque et martyr",
+        "la": "S. Thomæ Cantuariensis Episcopi et Martyris"
+      },
+      "proper": "Sancti/12-29r"
+    },
+    {
+      "id": "sylvester_i_pope",
+      "date": "12-31",
+      "rank": "COMMEMORATION",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Silvestre Ier, pape et confesseur",
+        "la": "S. Silvestri Papæ et Confessoris"
+      },
+      "proper": "Sancti/12-31r"
+    }
+  ]
+}

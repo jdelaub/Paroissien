@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Aucune permission : pas d'INTERNET au MVP, tout le contenu est embarqué (PLAN §2, principe 6). -->
+<!-- Pas d'INTERNET au MVP : tout le contenu est embarqué (PLAN §2, principe 6). Deux permissions pour le temps de
+     prière : la règle « Ne pas déranger » de l'app (accordée à la main par l'utilisateur) et la vibration qui remplace
+     la cloche quand le volume est coupé. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- L'écran des réglages où l'on accorde l'accès « Ne pas déranger » : vérifié avant de l'ouvrir. -->
+    <queries>
+        <intent>
+            <action android:name="android.settings.NOTIFICATION_POLICY_ACCESS_SETTINGS" />
+        </intent>
+    </queries>
+
     <application
+        android:name=".ParoissienApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
+
+        <!-- La photo prise pour numériser une image pieuse, partagée avec l'appareil photo le temps de la prise. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fichiers"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
         <activity
             android:name=".MainActivity"

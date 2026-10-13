@@ -1,0 +1,41 @@
+{"id":"sancti-12-08.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Officium"}],"t":{"la":["In Conceptione Immaculata Beatæ Mariæ Virginis"],"fr":["Immaculée Conception de la bienheureuse Vierge Marie"]}}
+{"id":"sancti-12-08.rang","type":"rubric","t":{"fr":["Iʳᵉ classe — ornements blancs."]}}
+{"id":"sancti-12-08.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-12-08.introit.1","type":"rubric","t":{"la":["Is 61:10"],"fr":["Is 61:10"]}}
+{"id":"sancti-12-08.introit.2","type":"para","dropCap":true,"t":{"la":["Gaudens gaudébo in Dómino, et exsultábit ánima mea in Deo meo: quia índuit me vestiméntis salútis: et induménto justítiæ circúmdedit me, quasi sponsam ornátam monílibus suis."]}}
+{"id":"sancti-12-08.introit.3","type":"rubric","t":{"la":["Ps 29:2"],"fr":["Ps 29:2"]}}
+{"id":"sancti-12-08.introit.4","type":"para","t":{"la":["Exaltábo te, Dómine, quóniam suscepísti me: nec delectásti inimícos meos super me."]}}
+{"id":"sancti-12-08.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-12-08.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-12-08.introit.7","type":"para","t":{"la":["Gaudens gaudébo in Dómino, et exsultábit ánima mea in Deo meo: quia índuit me vestiméntis salútis: et induménto justítiæ circúmdedit me, quasi sponsam ornátam monílibus suis."]}}
+{"id":"sancti-12-08.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-12-08.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-12-08.collecte.1","type":"para","t":{"la":["Deus, qui per immaculátam Vírginis Conceptiónem dignum Fílio tuo habitáculum præparásti: quǽsumus; ut, qui ex morte ejúsdem Filii tui prævísa eam ab omni labe præservásti, nos quoque mundos ejus intercessióne ad te perveníre concédas. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-08.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/09-08.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-12-08.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-12-08.lecon.2","type":"rubric","t":{"la":["Prov 8:22-35"],"fr":["Prov 8:22-35"]}}
+{"id":"sancti-12-08.lecon.3","type":"para","t":{"la":["Dóminus possedit me in inítio viárum suárum, ántequam quidquam fáceret a princípio. Ab ætérno ordináta sum, et ex antíquis, ántequam terra fíeret. Nondum erant abýssi, et ego jam concépta eram: necdum fontes aquárum erúperant: necdum montes gravi mole constíterant: ante colles ego parturiébar: adhuc terram non fécerat et flúmina et cárdines orbis terræ. Quando præparábat cœlos, áderam: quando certa lege et gyro vallábat abýssos: quando æthera firmábat sursum et librábat fontes aquárum: quando circúmdabat mari términum suum et legem ponébat aquis, ne transírent fines suos: quando appendébat fundaménta terræ. Cum eo eram cuncta compónens: et delectábar per síngulos dies, ludens coram eo omni témpore: ludens in orbe terrárum: et delíciæ meæ esse cum filiis hóminum. Nunc ergo, filii, audíte me: Beáti, qui custódiunt vias meas. Audíte disciplínam, et estóte sapiéntes, et nolíte abjícere eam. Beátus homo, qui audit me et qui vígilat ad fores meas cotídie, et obsérvat ad postes óstii mei. Qui me invénerit, invéniet vitam et háuriet salútem a Dómino."]}}
+{"id":"sancti-12-08.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-12-08.graduel.1","type":"rubric","t":{"la":["Judith 13:23"],"fr":["Judith 13:23"]}}
+{"id":"sancti-12-08.graduel.2","type":"para","t":{"la":["Benedícta es tu. Virgo María, a Dómino, Deo excélso, præ ómnibus muliéribus super terram."]}}
+{"id":"sancti-12-08.graduel.3","type":"rubric","t":{"la":["Judith 15:10"],"fr":["Judith 15:10"]}}
+{"id":"sancti-12-08.graduel.4","type":"para","t":{"la":["Tu glória Jerúsalem, tu lætítia Israël, tu honorificéntia pópuli nostri. Allelúja, allelúja."]}}
+{"id":"sancti-12-08.graduel.5","type":"rubric","t":{"la":["Cant 4:7"],"fr":["Cant 4:7"]}}
+{"id":"sancti-12-08.graduel.6","type":"para","t":{"la":["Tota pulchra es, María: et mácula originális non est in te. Allelúja."]}}
+{"id":"sancti-12-08.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-12-08.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-12-08.evangile.2","type":"rubric","t":{"la":["Luc 1:26-28"],"fr":["Luc 1:26-28"]}}
+{"id":"sancti-12-08.evangile.3","type":"para","t":{"la":["In illo témpore: Missus est Angelus Gábriël a Deo in civitátem Galilææ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María. Et ingréssus Angelus ad eam, dixit: Ave, grátia plena; Dóminus tecum: benedícta tu in muliéribus."]}}
+{"id":"sancti-12-08.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-12-08.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-12-08.offertoire.1","type":"rubric","t":{"la":["Luc 1:28"],"fr":["Luc 1:28"]}}
+{"id":"sancti-12-08.offertoire.2","type":"para","t":{"la":["Ave, María, grátia plena; Dóminus tecum: benedícta tu in muliéribus, allelúja."]}}
+{"id":"sancti-12-08.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-12-08.secrete.1","type":"para","t":{"la":["Salutárem hóstiam, quam in sollemnitáte immaculátæ Conceptiónis beátæ Vírginis Maríæ tibi, Dómine, offérimus, súscipe et præsta: ut, sicut illam tua grátia præveniénte ab omni labe immúnem profitémur; ita ejus intercessióne a culpis ómnibus liberémur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-08.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-12-08.preface.1","type":"rubric","preface":"maria","t":{"la":["Præfatio de Beata Maria Virgine."],"fr":["Préface de la Sainte Vierge (« Et te in Conceptióne immaculáta »)."]}}
+{"id":"sancti-12-08.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-12-08.communion.1","type":"rubric","t":{"la":["Ps 86:3, Luc 1:49"],"fr":["Ps 86:3, Luc 1:49"]}}
+{"id":"sancti-12-08.communion.2","type":"para","t":{"la":["Gloriósa dicta sunt de te, María: quia fecit tibi magna qui potens est."]}}
+{"id":"sancti-12-08.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-08.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-12-08.postcommunion.1","type":"para","t":{"la":["Sacraménta quæ súmpsimus, Dómine, Deus noster: illíus in nobis culpæ vúlnera réparent; a qua immaculátam beátæ Maríæ Conceptiónem singuláriter præservásti. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

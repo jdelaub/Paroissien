@@ -1,0 +1,49 @@
+{"id":"sancti-03-04.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/03-04.txt","section":"Officium"}],"t":{"la":["S. Casimiri Confessoris"],"fr":["Saint Casimir, confesseur"]}}
+{"id":"sancti-03-04.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-03-04.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-03-04.introit.1","type":"rubric","t":{"la":["Ps 36:30-31"],"fr":["Ps 36:30-31"]}}
+{"id":"sancti-03-04.introit.2","type":"para","dropCap":true,"t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
+{"id":"sancti-03-04.introit.3","type":"rubric","t":{"la":["Ps 36:1"],"fr":["Ps 36:1"]}}
+{"id":"sancti-03-04.introit.4","type":"para","t":{"la":["Noli æmulári in malignántibus: neque zeláveris faciéntes iniquitátem."]}}
+{"id":"sancti-03-04.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-03-04.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-03-04.introit.7","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
+{"id":"sancti-03-04.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-03-04.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-04.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-03-04.collecte.1","type":"para","t":{"la":["Deus, qui inter regáles delícias et mundi illécebras sanctum Casimírum virtúte constántiæ roborásti: quǽsumus; ut ejus intercessióne fidéles tui terréna despíciant, et ad cœléstia semper aspírent. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-03-04.collecte.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C2b-1.txt","section":"Oratio"},{"file":"horas/Latin/Commune/C2b.txt","section":"Oratio"}],"t":{"fr":["Commémoraison : Saint Luce Ier, pape et martyr"]}}
+{"id":"sancti-03-04.collecte.c1.1","type":"para","t":{"la":["Gregem tuum, Pastor ætérne, placátus inténde: et, per beátum Lúcium Mártyrem tuum atque Summum Pontíficem, perpétua protectióne custódi; quem totíus Ecclésiæ præstitísti esse pastórem. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-03-04.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-03-04.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-03-04.lecon.2","type":"rubric","t":{"la":["Eccli 31:8-11"],"fr":["Eccli 31:8-11"]}}
+{"id":"sancti-03-04.lecon.3","type":"para","t":{"la":["Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui potuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ídeo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum."]}}
+{"id":"sancti-03-04.trait","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Tractus"}],"t":{"la":["Tractus"],"fr":["Trait"]}}
+{"id":"sancti-03-04.trait.1","type":"rubric","t":{"la":["Ps 91:13; 91:14"],"fr":["Ps 91:13; 91:14"]}}
+{"id":"sancti-03-04.trait.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus Líbani multiplicábitur in domo Dómini."]}}
+{"id":"sancti-03-04.trait.3","type":"rubric","t":{"la":["Ps 91:3"],"fr":["Ps 91:3"]}}
+{"id":"sancti-03-04.trait.4","type":"para","t":{"la":["Ad annuntiándum mane misericórdiam tuam, et veritátem tuam per noctem."]}}
+{"id":"sancti-03-04.trait.5","type":"rubric","t":{"la":["Ps 111:1-3"],"fr":["Ps 111:1-3"]}}
+{"id":"sancti-03-04.trait.6","type":"para","t":{"la":["Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis."]}}
+{"id":"sancti-03-04.trait.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Potens in terra erit semen ejus: generátio rectórum benedicétur."]}}
+{"id":"sancti-03-04.trait.8","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi."]}}
+{"id":"sancti-03-04.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-03-04.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-03-04.evangile.2","type":"rubric","t":{"la":["Luc 12:35-40"],"fr":["Luc 12:35-40"]}}
+{"id":"sancti-03-04.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucernæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. ¶ Beáti servi illi, quos, cum vénerit dóminus, invénerit vigilántes: amen, dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam, si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti, quia, qua hora non putátis, Fílius hóminis véniet."]}}
+{"id":"sancti-03-04.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-03-04.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-03-04.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
+{"id":"sancti-03-04.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
+{"id":"sancti-03-04.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-03-04.secrete.1","type":"para","t":{"la":["Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus et futúris. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-03-04.secrete.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C2b-1.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C4b.txt","section":"Secreta"}],"t":{"fr":["Commémoraison : Saint Luce Ier, pape et martyr"]}}
+{"id":"sancti-03-04.secrete.c1.1","type":"para","t":{"la":["Oblátis munéribus, quǽsumus, Dómine, Ecclésiam tuam benígnus illúmina: ut, et gregis tui profíciat ubíque succéssus, et grati fiant nómini tuo, te gubernánte, pastóres. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-03-04.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-03-04.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême ; au temps de la Septuagésime : préface commune."]}}
+{"id":"sancti-03-04.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-03-04.communion.1","type":"rubric","t":{"la":["Matt 24:46-47"],"fr":["Matt 24:46-47"]}}
+{"id":"sancti-03-04.communion.2","type":"para","t":{"la":["Beátus servus, quem, cum vénerit dóminus, invénerit vigilántem: amen, dico vobis, super ómnia bona sua constítuet eum."]}}
+{"id":"sancti-03-04.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-03-04.postcommunion.1","type":"para","t":{"la":["Refécti cibo potúque cœlésti, Deus noster, te súpplices exorámus: ut, in cujus hæc commemoratióne percépimus, ejus muniámur et précibus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-03-04.postcommunion.c1","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C2b-1.txt","section":"Postcommunio"},{"file":"horas/Latin/Commune/C4b.txt","section":"Postcommunio"}],"t":{"fr":["Commémoraison : Saint Luce Ier, pape et martyr"]}}
+{"id":"sancti-03-04.postcommunion.c1.1","type":"para","t":{"la":["Refectióne sancta enutrítam gubérna, quǽsumus, Dómine, tuam placátus Ecclésiam: ut, poténti moderatióne dirécta, et increménta libertátis accípiat et in religiónis integritáte persístat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

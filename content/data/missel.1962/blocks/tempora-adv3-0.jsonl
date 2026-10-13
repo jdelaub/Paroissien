@@ -1,0 +1,39 @@
+{"id":"tempora-adv3-0.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Officium"}],"t":{"la":["Dominica III Adventus"],"fr":["3e dimanche de l’Avent"]}}
+{"id":"tempora-adv3-0.rang","type":"rubric","t":{"fr":["Iʳᵉ classe — ornements roses ou violets. Station à Saint-Pierre."]}}
+{"id":"tempora-adv3-0.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-adv3-0.introit.1","type":"rubric","t":{"la":["Phil 4:4-6"],"fr":["Phil 4:4-6"]}}
+{"id":"tempora-adv3-0.introit.2","type":"para","dropCap":true,"t":{"la":["Gaudéte in Dómino semper: íterum dico, gaudéte. Modéstia vestra nota sit ómnibus homínibus: Dóminus enim prope est. Nihil sollíciti sitis: sed in omni oratióne petitiónes vestræ innotéscant apud Deum."]}}
+{"id":"tempora-adv3-0.introit.3","type":"rubric","t":{"la":["Ps 84:2"],"fr":["Ps 84:2"]}}
+{"id":"tempora-adv3-0.introit.4","type":"para","t":{"la":["Benedixísti, Dómine, terram tuam: avertísti captivitátem Jacob."]}}
+{"id":"tempora-adv3-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-adv3-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-adv3-0.introit.7","type":"para","t":{"la":["Gaudéte in Dómino semper: íterum dico, gaudéte. Modéstia vestra nota sit ómnibus homínibus: Dóminus enim prope est. Nihil sollíciti sitis: sed in omni oratióne petitiónes vestræ innotéscant apud Deum."]}}
+{"id":"tempora-adv3-0.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-adv3-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-adv3-0.collecte.1","type":"para","t":{"la":["Aurem tuam, quǽsumus, Dómine, précibus nostris accómmoda: et mentis nostræ ténebras, grátia tuæ visitatiónis illústra: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-0.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-adv3-0.epitre.1","type":"para","style":"intro","t":{"la":["Lectio Epístolæ beáti Pauli Apóstoli ad Philippénses"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Philippiens"]}}
+{"id":"tempora-adv3-0.epitre.2","type":"rubric","t":{"la":["Philipp 4:4-7"],"fr":["Philipp 4:4-7"]}}
+{"id":"tempora-adv3-0.epitre.3","type":"para","t":{"la":["Fratres: Gaudéte in Dómino semper: íterum dico, gaudéte. Modéstia vestra nota sit ómnibus homínibus: Dóminus prope est. Nihil sollíciti sitis: sed in omni oratióne et obsecratióne, cum gratiárum actióne, petitiónes vestræ innotéscant apud Deum. Et pax Dei, quæ exsúperat omnem sensum, custódiat corda vestra et intellegéntias vestras, in Christo Jesu, Dómino nostro."]}}
+{"id":"tempora-adv3-0.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-adv3-0.graduel.1","type":"rubric","t":{"la":["Ps 79:2; 79:3; 79:2"],"fr":["Ps 79:2; 79:3; 79:2"]}}
+{"id":"tempora-adv3-0.graduel.2","type":"para","t":{"la":["Qui sedes, Dómine, super Chérubim, éxcita poténtiam tuam, et veni."]}}
+{"id":"tempora-adv3-0.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Qui regis Israël, inténde: qui dedúcis, velut ovem, Joseph. Allelúja, allelúja,"]}}
+{"id":"tempora-adv3-0.graduel.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Excita, Dómine, potentiam tuam, et veni, ut salvos fácias nos. Allelúja."]}}
+{"id":"tempora-adv3-0.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-adv3-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"tempora-adv3-0.evangile.2","type":"rubric","t":{"la":["Joann 1:19-28"],"fr":["Joann 1:19-28"]}}
+{"id":"tempora-adv3-0.evangile.3","type":"para","t":{"la":["In illo tempore: Misérunt Judǽi ab Jerosólymis sacerdótes et levítas ad Joánnem, ut interrogárent eum: Tu quis es? Et conféssus est, et non negávit: et conféssus est: Quia non sum ego Christus. Et interrogavérunt eum: Quid ergo? Elías es tu? Et dixit: Non sum. Prophéta es tu? Et respondit: Non. Dixérunt ergo ei: Quis es, ut respónsum demus his, qui misérunt nos? Quid dicis de te ipso? Ait: Ego vox clamántis in desérto: Dirígite viam Dómini, sicut dixit Isaías Prophéta. Et qui missi fúerant, erant ex pharisǽis. Et interrogavérunt eum, et dixérunt ei: Quid ergo baptízas, si tu non es Christus, neque Elías, neque Prophéta? Respóndit eis Joánnes, dicens: Ego baptízo in aqua: médius autem vestrum stetit, quem vos nescítis. Ipse est, qui post me ventúrus est, qui ante me factus est: cujus ego non sum dignus ut solvam ejus corrígiam calceaménti. Hæc in Bethánia facta sunt trans Jordánem, ubi erat Joánnes baptízans."]}}
+{"id":"tempora-adv3-0.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-adv3-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-adv3-0.offertoire.1","type":"rubric","t":{"la":["Ps 84:2"],"fr":["Ps 84:2"]}}
+{"id":"tempora-adv3-0.offertoire.2","type":"para","t":{"la":["Benedixísti, Dómine, terram tuam: avertísti captivitátem Jacob: remisísti iniquitatem plebis tuæ."]}}
+{"id":"tempora-adv3-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-adv3-0.secrete.1","type":"para","t":{"la":["Devotiónis nostræ tibi, quǽsumus, Dómine, hóstia júgiter immolétur: quæ et sacri péragat institúta mystérii, et salutáre tuum in nobis mirabíliter operétur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-adv3-0.preface.1","type":"rubric","preface":"adv","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"tempora-adv3-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-adv3-0.communion.1","type":"rubric","t":{"la":["Is 35:4."],"fr":["Is 35:4."]}}
+{"id":"tempora-adv3-0.communion.2","type":"para","t":{"la":["Dícite: pusillánimes, confortámini et nolíte timére: ecce, Deus noster véniet et salvábit nos."]}}
+{"id":"tempora-adv3-0.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-adv3-0.postcommunion.1","type":"para","t":{"la":["Implorámus, Dómine, cleméntiam tuam: ut hæc divína subsídia, a vítiis expiátos, ad festa ventúra nos prǽparent. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

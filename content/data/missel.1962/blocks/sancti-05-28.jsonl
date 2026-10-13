@@ -1,0 +1,60 @@
+{"id":"sancti-05-28.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Officium"}],"t":{"la":["S. Augustini Episcopi et Confessoris"],"fr":["Saint Augustin de Cantorbéry, évêque et confesseur"]}}
+{"id":"sancti-05-28.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-05-28.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-05-28.introit.1","type":"rubric","t":{"la":["Ps 131,9-10."],"fr":["Ps 131,9-10."]}}
+{"id":"sancti-05-28.introit.2","type":"para","dropCap":true,"t":{"la":["Sacerdótes tui, Dómine, índuant justítiam, et sancti tui exsúltent: propter David servum tuum, non avértas fáciem Christi tui. Allelúja, allelúja."]}}
+{"id":"sancti-05-28.introit.3","type":"rubric","t":{"la":["Ps 131:1"],"fr":["Ps 131:1"]}}
+{"id":"sancti-05-28.introit.4","type":"para","t":{"la":["Meménto, Dómine, David: et omnis mansuetúdinis ejus."]}}
+{"id":"sancti-05-28.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-05-28.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-05-28.introit.7","type":"para","t":{"la":["Sacerdótes tui, Dómine, índuant justítiam, et sancti tui exsúltent: propter David servum tuum, non avértas fáciem Christi tui. Allelúja, allelúja."]}}
+{"id":"sancti-05-28.introit.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Introitus"}],"t":{"la":["Extra tempus paschale"],"fr":["Hors du temps pascal"]}}
+{"id":"sancti-05-28.introit.hors.1","type":"rubric","t":{"la":["Ps 131,9-10."],"fr":["Ps 131,9-10."]}}
+{"id":"sancti-05-28.introit.hors.2","type":"para","t":{"la":["Sacerdótes tui, Dómine, índuant justítiam, et sancti tui exsúltent: propter David servum tuum, non avértas fáciem Christi tui."]}}
+{"id":"sancti-05-28.introit.hors.3","type":"rubric","t":{"la":["Ps 131:1"],"fr":["Ps 131:1"]}}
+{"id":"sancti-05-28.introit.hors.4","type":"para","t":{"la":["Meménto, Dómine, David: et omnis mansuetúdinis ejus."]}}
+{"id":"sancti-05-28.introit.hors.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-05-28.introit.hors.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-05-28.introit.hors.7","type":"para","t":{"la":["Sacerdótes tui, Dómine, índuant justítiam, et sancti tui exsúltent: propter David servum tuum, non avértas fáciem Christi tui."]}}
+{"id":"sancti-05-28.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-05-28.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-05-28.collecte.1","type":"para","t":{"la":["Deus, qui Anglórum gentes, prædicatióne et miráculis beáti Augustíni Confessóris tui atque Pontíficis, veræ fídei luce illustráre dignátus es: concéde; ut, ipso interveniénte, errántium corda ad veritátis tuæ rédeant unitátem, et nos in tua simus voluntáte concórdes. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-05-28.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-05-28.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Thessalonicénses"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Thessaloniciens"]}}
+{"id":"sancti-05-28.epitre.2","type":"rubric","t":{"la":["1 Thess 2:2-9"],"fr":["1 Thess 2:2-9"]}}
+{"id":"sancti-05-28.epitre.3","type":"para","t":{"la":["Fratres: Fidúciam habúimus in Deo nostro loqui ad vos Evangélium Dei in multa sollicitúdine. Exhortátio enim nostra non de erróre neque de immundítia neque in dolo, sed sicut probáti sumus a Deo, ut crederétur nobis Evangélium: ita lóquimur, non quasi homínibus placéntes, sed Deo, qui probat corda nostra. Neque enim aliquándo fuimus in sermóne adulatiónis, sicut scitis: neque in occasióne avarítiæ: Deus testis est: nec quæréntes ab homínibus glóriam, neque a vobis neque ab áliis; cum possémus vobis óneri esse ut Christi Apóstoli: sed facti sumus párvuli in médio vestrum, tamquam si nutrix fóveat fílios suos. Ita desiderántes vos, cúpide volebámus trádere vobis non solum Evangélium Dei, sed étiam ánimas nostras: quóniam caríssimi nobis facti estis. Mémores enim estis, fratres, labóris nostri et fatigatiónis: nocte ac die operántes, ne quem vestrum gravarémus, prædicávimus in vobis Evangélium Dei."]}}
+{"id":"sancti-05-28.alleluia","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"GradualeP"},{"file":"horas/Latin/Commune/C4-1.txt","section":"GradualeP"}],"t":{"la":["Allelúja"],"fr":["Alléluia"]}}
+{"id":"sancti-05-28.alleluia.1","type":"para","t":{"la":["Allelúja, allelúja."]}}
+{"id":"sancti-05-28.alleluia.2","type":"rubric","t":{"la":["Ps 109:4."],"fr":["Ps 109:4."]}}
+{"id":"sancti-05-28.alleluia.3","type":"para","t":{"la":["Jurávit Dóminus, et non pœnitébit eum: Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech. Allelúja."]}}
+{"id":"sancti-05-28.alleluia.4","type":"rubric","t":{"la":["Eccli 45:9"],"fr":["Eccli 45:9"]}}
+{"id":"sancti-05-28.alleluia.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Amávit eum Dóminus, et ornávit eum: stolam glóriæ índuit eum. Allelúja."]}}
+{"id":"sancti-05-28.alleluia.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Graduale"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Graduale"}],"t":{"la":["Extra tempus paschale"],"fr":["Hors du temps pascal"]}}
+{"id":"sancti-05-28.alleluia.hors.1","type":"rubric","t":{"la":["Ps 131:16-17"],"fr":["Ps 131:16-17"]}}
+{"id":"sancti-05-28.alleluia.hors.2","type":"para","t":{"la":["Sacerdótes ejus índuam salutári: et sancti ejus exsultatióne exsultábunt."]}}
+{"id":"sancti-05-28.alleluia.hors.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Illuc prodúcam cornu David: parávi lucérnam Christo meo. Allelúja, allelúja."]}}
+{"id":"sancti-05-28.alleluia.hors.4","type":"rubric","t":{"la":["Ps 109:4"],"fr":["Ps 109:4"]}}
+{"id":"sancti-05-28.alleluia.hors.5","type":"para","t":{"la":["Jurávit Dóminus, et non poenitébit eum: Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech. Allelúja."]}}
+{"id":"sancti-05-28.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Evangelium"},{"file":"missa/Latin/Sancti/02-06.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-05-28.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-05-28.evangile.2","type":"rubric","t":{"la":["Luc 10:1-9"],"fr":["Luc 10:1-9"]}}
+{"id":"sancti-05-28.evangile.3","type":"para","t":{"la":["In illo témpore: Designávit Dóminus et álios septuagínta duos: et misit illos binos ante fáciem suam in omnem civitátem et locum, quo erat ipse ventúrus. ¶ Et dicebat illis: Messis quidem multa, operárii autem pauci. Rogáte ergo Dóminum messis, ut mittat operários in messem suam. Ite: ecce, ego mitto vos sicut agnos inter lupos. Nolíte portáre sácculum neque peram neque calceaménta; et néminem per viam salutavéritis. In quamcúmque domum intravéritis, primum dícite: Pax huic dómui: et si ibi fúerit fílius pacis, requiéscet super illum pax vestra: sin autem, ad vos revertétur. In eádem autem domo manéte, edéntes et bibéntes quæ apud illos sunt: dignus est enim operárius mercéde sua. Nolíte transíre de domo in domum. Et in quamcúmque civitátem intravéritis, et suscéperint vos, manducáte quæ apponúntur vobis: et curáte infírmos, qui in illa sunt, et dícite illis: Appropinquávit in vos regnum Dei."]}}
+{"id":"sancti-05-28.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-05-28.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-05-28.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
+{"id":"sancti-05-28.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus. Allelúja."]}}
+{"id":"sancti-05-28.offertoire.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Extra tempus paschale"],"fr":["Hors du temps pascal"]}}
+{"id":"sancti-05-28.offertoire.hors.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
+{"id":"sancti-05-28.offertoire.hors.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
+{"id":"sancti-05-28.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-05-28.secrete.1","type":"para","t":{"la":["Sacrifícium tibi offérimus, Dómine, in sollemnitáte beáti Augustíni Pontíficis et Confessóris tui, humíliter deprecántes: ut oves, quæ periérunt, ad unum ovile revérsæ, hoc salutári pábulo nutriántur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-05-28.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-05-28.preface.1","type":"rubric","preface":"asc","t":{"la":["Præfatio de Ascensione Domini."],"fr":["Préface de l’Ascension ; après la Pentecôte : préface commune ; dans l’octave de la Pentecôte : préface du Saint-Esprit ; au temps pascal : préface de Pâques."]}}
+{"id":"sancti-05-28.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-05-28.communion.1","type":"rubric","t":{"la":["Matt 24:46-47"],"fr":["Matt 24:46-47"]}}
+{"id":"sancti-05-28.communion.2","type":"para","t":{"la":["Beátus servus, quem, cum vénerit dóminus, invénerit vigilántem: amen, dico vobis, super ómnia bona sua constítuet eum. Allelúja."]}}
+{"id":"sancti-05-28.communion.hors","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Communio"}],"t":{"la":["Extra tempus paschale"],"fr":["Hors du temps pascal"]}}
+{"id":"sancti-05-28.communion.hors.1","type":"rubric","t":{"la":["Matt 24:46-47"],"fr":["Matt 24:46-47"]}}
+{"id":"sancti-05-28.communion.hors.2","type":"para","t":{"la":["Beátus servus, quem, cum vénerit dóminus, invénerit vigilántem: amen, dico vobis, super ómnia bona sua constítuet eum."]}}
+{"id":"sancti-05-28.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/05-28.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-05-28.postcommunion.1","type":"para","t":{"la":["Hóstia salutári refécti: te, Dómine, súpplices exorámus; ut eadem, beáti Augustíni interveniénte suffrágio, in omni loco nómini tuo júgiter immolétur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

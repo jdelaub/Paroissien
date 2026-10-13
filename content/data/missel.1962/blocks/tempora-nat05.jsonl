@@ -1,0 +1,40 @@
+{"id":"tempora-nat05.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Nat05.txt","section":"Officium"}],"t":{"la":["Die Quinta Januarii"],"fr":["5 janvier, férie du temps de Noël"]}}
+{"id":"tempora-nat05.rang","type":"rubric","t":{"fr":["IVᵉ classe — ornements blancs."]}}
+{"id":"tempora-nat05.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-01.txt","section":"Introitus"},{"file":"missa/Latin/Tempora/Nat30.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-nat05.introit.1","type":"rubric","t":{"la":["Isa 9:6"],"fr":["Isa 9:6"]}}
+{"id":"tempora-nat05.introit.2","type":"para","dropCap":true,"t":{"la":["Puer natus est nobis, et fílius datus est nobis: cujus impérium super húmerum ejus: et vocábitur nomen ejus magni consílii Angelus."]}}
+{"id":"tempora-nat05.introit.3","type":"rubric","t":{"la":["Ps 97:1"],"fr":["Ps 97:1"]}}
+{"id":"tempora-nat05.introit.4","type":"para","t":{"la":["Cantáte Dómino cánticum novum, quia mirabília fecit."]}}
+{"id":"tempora-nat05.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-nat05.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-nat05.introit.7","type":"para","t":{"la":["Puer natus est nobis, et fílius datus est nobis: cujus impérium super húmerum ejus: et vocábitur nomen ejus magni consílii Angelus."]}}
+{"id":"tempora-nat05.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-nat05.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-01.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-nat05.collecte.1","type":"para","t":{"la":["Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fecúnda, humáno generi præmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum, Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-nat05.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-01.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-nat05.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beati Pauli Apóstoli ad Titum"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, à Tite"]}}
+{"id":"tempora-nat05.epitre.2","type":"rubric","t":{"la":["Tit 2:11-15"],"fr":["Tit 2:11-15"]}}
+{"id":"tempora-nat05.epitre.3","type":"para","t":{"la":["Caríssime: Appáruit grátia Dei Salvatóris nostri ómnibus homínibus, erúdiens nos, ut, abnegántes impietátem et sæculária desidéria, sóbrie et juste et pie vivámus in hoc sǽculo, exspectántes beátam spem et advéntum glóriæ magni Dei et Salvatóris nostri Jesu Christi: qui dedit semetípsum pro nobis: ut nos redímeret ab omni iniquitáte, et mundáret sibi pópulum acceptábilem, sectatórem bonórum óperum. Hæc lóquere et exhortáre: in Christo Jesu, Dómino nostro."]}}
+{"id":"tempora-nat05.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-01.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-nat05.graduel.1","type":"rubric","t":{"la":["Ps 97:3; 97:2"],"fr":["Ps 97:3; 97:2"]}}
+{"id":"tempora-nat05.graduel.2","type":"para","t":{"la":["Vidérunt omnes fines terræ salutare Dei nostri: jubiláte Deo, omnis terra."]}}
+{"id":"tempora-nat05.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Notum fecit Dominus salutare suum: ante conspéctum géntium revelávit justitiam suam. Allelúja, allelúja."]}}
+{"id":"tempora-nat05.graduel.4","type":"rubric","t":{"la":["Heb 1:1-2"],"fr":["Heb 1:1-2"]}}
+{"id":"tempora-nat05.graduel.5","type":"para","t":{"la":["Multifárie olim Deus loquens pátribus in Prophétis, novíssime diébus istis locútus est nobis in Fílio. Allelúja."]}}
+{"id":"tempora-nat05.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-01.txt","section":"Evangelium"},{"file":"missa/Latin/Tempora/Nat2-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-nat05.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"tempora-nat05.evangile.2","type":"rubric","t":{"la":["Luc 2:21"],"fr":["Luc 2:21"]}}
+{"id":"tempora-nat05.evangile.3","type":"para","t":{"la":["In illo témpore: Postquam consummáti sunt dies octo, ut circumciderétur Puer: vocátum est nomen ejus Jesus, quod vocátum est ab Angelo, priúsquam in útero conciperétur."]}}
+{"id":"tempora-nat05.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-nat05.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-01.txt","section":"Offertorium"},{"file":"missa/Latin/Tempora/Nat30.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-nat05.offertoire.1","type":"rubric","t":{"la":["Ps 88:12; 88:15"],"fr":["Ps 88:12; 88:15"]}}
+{"id":"tempora-nat05.offertoire.2","type":"para","t":{"la":["Tui sunt cœli et tua est terra: orbem terrárum et plenitúdinem ejus tu fundásti: justítia et judícium præparátio sedis tuæ."]}}
+{"id":"tempora-nat05.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-01.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C2a.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-nat05.secrete.1","type":"para","t":{"la":["Munéribus nostris, quǽsumus, Dómine, precibúsque suscéptis: et cœléstibus nos munda mystériis, et cleménter exáudi. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-nat05.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-nat05.preface.1","type":"rubric","preface":"nat","t":{"la":["Præfatio de Nativitate Domini."],"fr":["Préface de la Nativité."]}}
+{"id":"tempora-nat05.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-01.txt","section":"Communio"},{"file":"missa/Latin/Tempora/Nat30.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-nat05.communion.1","type":"rubric","t":{"la":["Ps 97:3"],"fr":["Ps 97:3"]}}
+{"id":"tempora-nat05.communion.2","type":"para","t":{"la":["Vidérunt omnes fines terræ salutáre Dei nostri."]}}
+{"id":"tempora-nat05.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-01.txt","section":"Postcommunio"},{"file":"horas/Latin/Commune/C10b.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-nat05.postcommunion.1","type":"para","t":{"la":["Hæc nos commúnio, Dómine, purget a crímine: et, intercedénte beáta Vírgine Dei Genetríce María, cœléstis remédii fáciat esse consórtes. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

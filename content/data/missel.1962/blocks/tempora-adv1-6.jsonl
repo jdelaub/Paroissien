@@ -1,0 +1,38 @@
+{"id":"tempora-adv1-6.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Adv1-6.txt","section":"Officium"}],"t":{"la":["Sabbato infra Hebdomadam I Adventus"],"fr":["Samedi de la 1re semaine de l’Avent"]}}
+{"id":"tempora-adv1-6.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements violets."]}}
+{"id":"tempora-adv1-6.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv1-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-adv1-6.introit.1","type":"rubric","t":{"la":["Ps 24:1-3"],"fr":["Ps 24:1-3"]}}
+{"id":"tempora-adv1-6.introit.2","type":"para","dropCap":true,"t":{"la":["Ad te levávi ánimam meam: Deus meus, in te confído, non erubéscam: neque irrídeant me inimíci mei: étenim univérsi, qui te exspéctant, non confundéntur."]}}
+{"id":"tempora-adv1-6.introit.3","type":"rubric","t":{"la":["Ps 24:4"],"fr":["Ps 24:4"]}}
+{"id":"tempora-adv1-6.introit.4","type":"para","t":{"la":["Vias tuas, Dómine, demónstra mihi: et sémitas tuas édoce me."]}}
+{"id":"tempora-adv1-6.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-adv1-6.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-adv1-6.introit.7","type":"para","t":{"la":["Ad te levávi ánimam meam: Deus meus, in te confído, non erubéscam: neque irrídeant me inimíci mei: étenim univérsi, qui te exspéctant, non confundéntur."]}}
+{"id":"tempora-adv1-6.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-adv1-6.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv1-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-adv1-6.collecte.1","type":"para","t":{"la":["Excita, quǽsumus, Dómine, poténtiam tuam, et veni: ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi, te liberánte salvári: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv1-6.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv1-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-adv1-6.epitre.1","type":"para","style":"intro","t":{"la":["Lectio Epístolæ beáti Pauli Apóstoli ad Romános"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Romains"]}}
+{"id":"tempora-adv1-6.epitre.2","type":"rubric","t":{"la":["Rom 13:11-14."],"fr":["Rom 13:11-14."]}}
+{"id":"tempora-adv1-6.epitre.3","type":"para","t":{"la":["Fratres: Sciéntes, quia hora est jam nos de somno súrgere. Nunc enim própior est nostra salus, quam cum credídimus. Nox præcéssit, dies autem appropinquávit. Abjiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus: non in comessatiónibus et ebrietátibus, non in cubílibus et impudicítiis, non in contentióne et æmulatióne: sed induímini Dóminum Jesum Christum."]}}
+{"id":"tempora-adv1-6.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv1-0.txt","section":"GradualeF"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-adv1-6.graduel.1","type":"rubric","t":{"la":["Ps 24:3; 24:4"],"fr":["Ps 24:3; 24:4"]}}
+{"id":"tempora-adv1-6.graduel.2","type":"para","t":{"la":["Univérsi, qui te exspéctant, non confundéntur, Dómine."]}}
+{"id":"tempora-adv1-6.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Vias tuas, Dómine, notas fac mihi: et sémitas tuas édoce me."]}}
+{"id":"tempora-adv1-6.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv1-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-adv1-6.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secundum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"tempora-adv1-6.evangile.2","type":"rubric","t":{"la":["Luc 21:25-33."],"fr":["Luc 21:25-33."]}}
+{"id":"tempora-adv1-6.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Erunt signa in sole et luna et stellis, et in terris pressúra géntium præ confusióne sónitus maris et flúctuum: arescéntibus homínibus præ timóre et exspectatióne, quæ supervénient univérso orbi: nam virtútes cœlórum movebúntur. Et tunc vidébunt Fílium hóminis veniéntem in nube cum potestáte magna et majestáte. His autem fíeri incipiéntibus, respícite et leváte cápita vestra: quóniam appropínquat redémptio vestra. Et dixit illis similitúdinem: Vidéte ficúlneam et omnes árbores: cum prodúcunt jam ex se fructum, scitis, quóniam prope est æstas. Ita et vos, cum vidéritis hæc fíeri, scitóte, quóniam prope est regnum Dei. Amen, dico vobis, quia non præteríbit generátio hæc, donec ómnia fiant. Cœlum et terra transíbunt: verba autem mea non transíbunt."]}}
+{"id":"tempora-adv1-6.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-adv1-6.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv1-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-adv1-6.offertoire.1","type":"rubric","t":{"la":["Ps 24:1-3."],"fr":["Ps 24:1-3."]}}
+{"id":"tempora-adv1-6.offertoire.2","type":"para","t":{"la":["Ad te levávi ánimam meam: Deus meus, in te confído, non erubéscam: neque irrídeant me inimíci mei: étenim univérsi, qui te exspéctant, non confundéntur."]}}
+{"id":"tempora-adv1-6.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv1-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-adv1-6.secrete.1","type":"para","t":{"la":["Hæc sacra nos, Dómine, poténti virtúte mundátos ad suum fáciant purióres veníre princípium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv1-6.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-adv1-6.preface.1","type":"rubric","preface":"adv","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"tempora-adv1-6.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv1-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-adv1-6.communion.1","type":"rubric","t":{"la":["Ps 84:13."],"fr":["Ps 84:13."]}}
+{"id":"tempora-adv1-6.communion.2","type":"para","t":{"la":["Dóminus dabit benignitátem: et terra nostra dabit fructum suum."]}}
+{"id":"tempora-adv1-6.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv1-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-adv1-6.postcommunion.1","type":"para","t":{"la":["Suscipiámus, Dómine, misericórdiam tuam in médio templi tui: ut reparatiónis nostræ ventúra sollémnia cóngruis honóribus præcedámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

@@ -1,0 +1,51 @@
+{"id":"commune-c3a.titre","type":"heading","level":1,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Officium"}],"t":{"la":["Commune Plurimorum Martyrum"],"fr":["Commun de plusieurs martyrs : messe Sapientiam"]}}
+{"id":"commune-c3a.rang","type":"rubric","t":{"fr":["Ornements rouges."]}}
+{"id":"commune-c3a.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"commune-c3a.introit.1","type":"rubric","t":{"la":["Eccli 44:15; 44:14"],"fr":["Eccli 44:15; 44:14"]}}
+{"id":"commune-c3a.introit.2","type":"para","dropCap":true,"t":{"la":["Sapiéntiam Sanctórum narrent populi, et laudes eórum núntiet ecclésia: nómina autem eórum vivent in sǽculum sǽculi."]}}
+{"id":"commune-c3a.introit.3","type":"rubric","t":{"la":["Ps 32:1"],"fr":["Ps 32:1"]}}
+{"id":"commune-c3a.introit.4","type":"para","t":{"la":["Exsultáte, justi, in Dómino: rectos decet collaudátio."]}}
+{"id":"commune-c3a.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"commune-c3a.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"commune-c3a.introit.7","type":"para","t":{"la":["Sapiéntiam Sanctórum narrent populi, et laudes eórum núntiet ecclésia: nómina autem eórum vivent in sǽculum sǽculi."]}}
+{"id":"commune-c3a.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"commune-c3a.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"commune-c3a.collecte.1","type":"para","t":{"la":["Deus, qui nos concédis sanctórum Mártyrum tuórum N. et N. natalítia cólere: da nobis in ætérna beatitúdine de eórum societáte gaudére. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c3a.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"commune-c3a.lecon.1","type":"para","style":"intro","t":{"la":["Lectio libri Sapientiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"commune-c3a.lecon.2","type":"rubric","t":{"la":["Sap 5:16-20"],"fr":["Sap 5:16-20"]}}
+{"id":"commune-c3a.lecon.3","type":"para","t":{"la":["Justi autem in perpétuum vivent, et apud Dóminum est merces eórum, et cogitátio illórum apud Altíssimum. Ideo accípient regnum decóris, et diadéma speciéi de manu Dómini: quóniam déxtera sua teget eos, et bráchio sancto suo deféndet illos. Accípiet armatúram zelus illíus, et armábit creatúram ad ultiónem inimicórum. Induet pro thoráce justítiam, et accípiet pro gálea judícium certum. Sumet scutum inexpugnábile æquitátem."]}}
+{"id":"commune-c3a.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"commune-c3a.graduel.1","type":"rubric","t":{"la":["Ps 123:7-8"],"fr":["Ps 123:7-8"]}}
+{"id":"commune-c3a.graduel.2","type":"para","t":{"la":["Anima nostra, sicut passer, erépta est de láqueo venántium."]}}
+{"id":"commune-c3a.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Láqueus contrítus est, et nos liberáti sumus: adjutórium nostrum in nómine Dómini, qui fecit cœlum et terram. Allelúja, allelúja."]}}
+{"id":"commune-c3a.graduel.4","type":"rubric","t":{"la":["Ps 67:4"],"fr":["Ps 67:4"]}}
+{"id":"commune-c3a.graduel.5","type":"para","t":{"la":["Justi epuléntur, et exsúltent in conspéctu Dei: et delecténtur in lætítia. Alleluja."]}}
+{"id":"commune-c3a.graduel.sept","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Tractus"}],"t":{"la":["Post Septuagesimam"],"fr":["Après la Septuagésime"]}}
+{"id":"commune-c3a.graduel.sept.1","type":"rubric","t":{"la":["Ps 123:7-8"],"fr":["Ps 123:7-8"]}}
+{"id":"commune-c3a.graduel.sept.2","type":"para","t":{"la":["Anima nostra, sicut passer, erépta est de láqueo venántium."]}}
+{"id":"commune-c3a.graduel.sept.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Láqueus contrítus est, et nos liberáti sumus: adjutórium nostrum in nómine Dómini, qui fecit cœlum et terram."]}}
+{"id":"commune-c3a.graduel.sept.4","type":"rubric","t":{"la":["Ps 125:5-6"],"fr":["Ps 125:5-6"]}}
+{"id":"commune-c3a.graduel.sept.5","type":"para","t":{"la":["Qui séminant in lácrimis, in gáudio metent."]}}
+{"id":"commune-c3a.graduel.sept.6","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Eúntes ibant et flebant, mitténtes sémina sua."]}}
+{"id":"commune-c3a.graduel.sept.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Veniéntes autem vénient cum exsultatióne, portántes manípulos suos."]}}
+{"id":"commune-c3a.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"commune-c3a.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"commune-c3a.evangile.2","type":"rubric","t":{"la":["Luc 6:17-23"],"fr":["Luc 6:17-23"]}}
+{"id":"commune-c3a.evangile.3","type":"para","t":{"la":["In illo témpore: Descéndens Jesus de monte, stetit in loco campéstri, et turba discipulórum ejus, et multitúdo copiósa plebis ab omni Judǽa, et Jerúsalem, et marítima, et Tyri, et Sidónis, qui vénerant, ut audírent eum et sanaréntur a languóribus suis. Et, qui vexabántur a spirítibus immúndis, curabántur. Et omnis turba quærébat eum tángere: quia virtus de illo exíbat, et sanábat omnes. Et ipse, elevátis oculis in discípulos suos, dicébat: Beáti, páuperes: quia vestrum est regnum Dei. Beáti, qui nunc esurítis: quia saturabímini. Beáti, qui nunc fletis: quia ridébitis. Beáti éritis, cum vos óderint hómines, et cum separáverint vos et exprobréverint, et ejécerint nomen vestrum tamquam malum, propter Fílium hóminis. Gaudéte in illa die et exsultáte: ecce enim, merces vestra multa est in cœlo."]}}
+{"id":"commune-c3a.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"commune-c3a.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"commune-c3a.offertoire.1","type":"rubric","t":{"la":["Ps 149:5-6"],"fr":["Ps 149:5-6"]}}
+{"id":"commune-c3a.offertoire.2","type":"para","t":{"la":["Exsultábunt Sancti in glória, lætabúntur in cubílibus suis: exaltatiónes Dei in fáucibus eórum, allelúja."]}}
+{"id":"commune-c3a.offertoire.sept","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Offertorium"}],"t":{"la":["Post Septuagesimam"],"fr":["Après la Septuagésime"]}}
+{"id":"commune-c3a.offertoire.sept.1","type":"rubric","t":{"la":["Ps 149:5-6"],"fr":["Ps 149:5-6"]}}
+{"id":"commune-c3a.offertoire.sept.2","type":"para","t":{"la":["Exsultábunt Sancti in glória, lætabúntur in cubílibus suis: exaltatiónes Dei in fáucibus eórum."]}}
+{"id":"commune-c3a.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"commune-c3a.secrete.1","type":"para","t":{"la":["Múnera tibi, Dómine, nostra devotiónis offérimus: quæ et pro tuórum tibi grata sint honóre Justórum, et nobis salutária, te miseránte, reddántur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c3a.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"commune-c3a.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune, ou préface du temps (Carême, Passion, Pâques, Ascension) quand il y en a une."]}}
+{"id":"commune-c3a.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"commune-c3a.communion.1","type":"rubric","t":{"la":["Luc 12:4"],"fr":["Luc 12:4"]}}
+{"id":"commune-c3a.communion.2","type":"para","t":{"la":["Dico autem vobis amícis meis: Ne terreámini ab his, qui vos persequúntur."]}}
+{"id":"commune-c3a.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C3a.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"commune-c3a.postcommunion.1","type":"para","t":{"la":["Præsta nobis, quǽsumus, Dómine: intercedéntibus sanctis Martýribus tuis N. et N.; ut, quod ore contíngimus, pura mente capiámus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

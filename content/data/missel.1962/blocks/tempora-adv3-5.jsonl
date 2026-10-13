@@ -1,0 +1,38 @@
+{"id":"tempora-adv3-5.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Officium"}],"t":{"la":["Feria VI Quattuor Temporum in Adventu"],"fr":["Vendredi des Quatre-Temps de l’Avent"]}}
+{"id":"tempora-adv3-5.rang","type":"rubric","t":{"fr":["IIᵉ classe — ornements violets. Station à Saints-Douze-Apôtres."]}}
+{"id":"tempora-adv3-5.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-adv3-5.introit.1","type":"rubric","t":{"la":["Ps 118:151-152"],"fr":["Ps 118:151-152"]}}
+{"id":"tempora-adv3-5.introit.2","type":"para","dropCap":true,"t":{"la":["Prope es tu, Dómine, et omnes viæ tuæ véritas: inítio cognóvi de testimóniis tuis, quia in ætérnum tu es."]}}
+{"id":"tempora-adv3-5.introit.3","type":"rubric","t":{"la":["Ps 118:1"],"fr":["Ps 118:1"]}}
+{"id":"tempora-adv3-5.introit.4","type":"para","t":{"la":["Beati immaculáti in via: qui ámbulant in lege Dómini."]}}
+{"id":"tempora-adv3-5.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-adv3-5.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-adv3-5.introit.7","type":"para","t":{"la":["Prope es tu, Dómine, et omnes viæ tuæ véritas: inítio cognóvi de testimóniis tuis, quia in ætérnum tu es."]}}
+{"id":"tempora-adv3-5.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-adv3-5.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-adv3-5.collecte.1","type":"para","t":{"la":["Excita, quǽsumus, Dómine, poténtiam tuam, et veni: ut hi, qui in tua pietáte confídunt, ab omni cítius adversitáte liberéntur: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-5.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"tempora-adv3-5.lecon.1","type":"para","style":"intro","t":{"la":["Léctio Isaíæ Prophétæ"],"fr":["Lecture du prophète Isaïe"]}}
+{"id":"tempora-adv3-5.lecon.2","type":"rubric","t":{"la":["Is 11:1-5"],"fr":["Is 11:1-5"]}}
+{"id":"tempora-adv3-5.lecon.3","type":"para","t":{"la":["Hæc dicit Dóminus Deus: Egrediétur virga de radíce Jesse, et flos de radíce ejus ascéndet. Et requiéscet super eum spíritus Dómini: spíritus sapiéntiæ et intelléctus, spíritus consílii et fortitúdinis, spíritus sciéntiæ et pietátis; et replébit eum spíritus timóris Dómini. Non secundum visiónem oculórum judicábit: neque secúndum audítum áurium árguet: sed judicábit in justítia páuperes, et árguet in æquitáte pro mansuétis terræ: et percútiet terram virga oris sui, et spíritu labiórum suórum interfíciet ímpium. Et erit justítia cíngulum lumbórum ejus: et fides cinctórium renum ejus."]}}
+{"id":"tempora-adv3-5.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-adv3-5.graduel.1","type":"rubric","t":{"la":["Ps 84:8; 84:2"],"fr":["Ps 84:8; 84:2"]}}
+{"id":"tempora-adv3-5.graduel.2","type":"para","t":{"la":["Osténde nobis, Dómine, misericórdiam tuam: et salutáre tuum da nobis."]}}
+{"id":"tempora-adv3-5.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Benedixísti, Dómine, terram tuam: avertísti captivitátem Jacob."]}}
+{"id":"tempora-adv3-5.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-adv3-5.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"tempora-adv3-5.evangile.2","type":"rubric","t":{"la":["Luc 1:39-47"],"fr":["Luc 1:39-47"]}}
+{"id":"tempora-adv3-5.evangile.3","type":"para","t":{"la":["In illo témpore: Exsúrgens María ábiit in montána cum festinatióne in civitátem Juda: et intrávit in domum Zacharíæ et salutávit Elísabeth. Et factum est, ut audivit salutatiónem Maríæ Elísabeth, exsultávit infans in útero ejus: et repléta est Spíritu Sancto Elísabeth, et exclamávit voce magna et dixit: Benedícta tu inter mulíeres, et benedíctus fructus ventris tui. Et unde hoc mihi, ut véniat Mater Dómini mei ad me? Ecce enim, ut facta est vox salutatiónis tuæ in áuribus meis, exsultávit in gáudio infans in útero meo. Et beáta, quæ credidísti, quóniam perficiéntur ea, quæ dicta sunt tibi a Dómino. Et ait María: Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo, salutári meo."]}}
+{"id":"tempora-adv3-5.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-adv3-5.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-adv3-5.offertoire.1","type":"rubric","t":{"la":["Ps 84:7-8"],"fr":["Ps 84:7-8"]}}
+{"id":"tempora-adv3-5.offertoire.2","type":"para","t":{"la":["Deus, tu convérsus vivificábis nos, et plebs tua lætábitur in te: osténde nobis, Dómine, misericórdiam tuam, et salutáre tuum da nobis."]}}
+{"id":"tempora-adv3-5.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Secreta"},{"file":"horas/Latin/Commune/C2.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-adv3-5.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, beáti N. Mártyris tui atque Pontíficis dicátas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-adv3-5.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-adv3-5.preface.1","type":"rubric","preface":"adv","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"tempora-adv3-5.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-adv3-5.communion.1","type":"rubric","t":{"la":["Zach 14:5"],"fr":["Zach 14:5"]}}
+{"id":"tempora-adv3-5.communion.2","type":"para","t":{"la":["Ecce, Dóminus véniet et omnes Sancti ejus cum eo: et erit in die illa lux magna."]}}
+{"id":"tempora-adv3-5.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Adv3-5.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-adv3-5.postcommunion.1","type":"para","t":{"la":["Tui nos, Dómine, sacraménti libátio sancta restáuret: et a vetustáte purgátos, in mystérii salutáris fáciat transíre consórtium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

@@ -1,0 +1,40 @@
+{"id":"tempora-pent18-0.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Officium"}],"t":{"la":["Dominica XVIII post Pentecosten"],"fr":["18e dimanche après la Pentecôte"]}}
+{"id":"tempora-pent18-0.rang","type":"rubric","t":{"fr":["IIᵉ classe — ornements verts."]}}
+{"id":"tempora-pent18-0.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-pent18-0.introit.1","type":"rubric","t":{"la":["Eccli 36:18"],"fr":["Eccli 36:18"]}}
+{"id":"tempora-pent18-0.introit.2","type":"para","dropCap":true,"t":{"la":["Da pacem, Dómine, sustinéntibus te, ut prophétæ tui fidéles inveniántur: exáudi preces servi tui et plebis tuæ Israël"]}}
+{"id":"tempora-pent18-0.introit.3","type":"rubric","t":{"la":["Ps 121:1"],"fr":["Ps 121:1"]}}
+{"id":"tempora-pent18-0.introit.4","type":"para","t":{"la":["Lætátus sum in his, quæ dicta sunt mihi: in domum Dómini íbimus."]}}
+{"id":"tempora-pent18-0.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-pent18-0.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-pent18-0.introit.7","type":"para","t":{"la":["Da pacem, Dómine, sustinéntibus te, ut prophétæ tui fidéles inveniántur: exáudi preces servi tui et plebis tuæ Israël"]}}
+{"id":"tempora-pent18-0.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pent18-0.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-pent18-0.collecte.1","type":"para","t":{"la":["Dírigat corda nostra, quǽsumus, Dómine, tuæ miseratiónis operátio: quia tibi sine te placére non póssumus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent18-0.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"tempora-pent18-0.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Corinthios"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Corinthiens"]}}
+{"id":"tempora-pent18-0.epitre.2","type":"rubric","t":{"la":["1 Cor 1:4-8"],"fr":["1 Cor 1:4-8"]}}
+{"id":"tempora-pent18-0.epitre.3","type":"para","t":{"la":["Fratres: Grátias ago Deo meo semper pro vobis in grátia Dei, quæ data est vobis in Christo Jesu: quod in ómnibus dívites facti estis in illo, in omni verbo et in omni sciéntia: sicut testimónium Christi confirmátum est in vobis: ita ut nihil vobis desit in ulla grátia, exspectántibus revelatiónem Dómini nostri Jesu Christi, qui et confirmábit vos usque in finem sine crímine, in die advéntus Dómini nostri Jesu Christi."]}}
+{"id":"tempora-pent18-0.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-pent18-0.graduel.1","type":"rubric","t":{"la":["Ps 121:1; 121:7"],"fr":["Ps 121:1; 121:7"]}}
+{"id":"tempora-pent18-0.graduel.2","type":"para","t":{"la":["Lætátus sum in his, quæ dicta sunt mihi: in domum Dómini íbimus."]}}
+{"id":"tempora-pent18-0.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Fiat pax in virtúte tua: et abundántia in túrribus tuis. Allelúja, allelúja"]}}
+{"id":"tempora-pent18-0.graduel.4","type":"rubric","t":{"la":["Ps 101:16"],"fr":["Ps 101:16"]}}
+{"id":"tempora-pent18-0.graduel.5","type":"para","t":{"la":["Timébunt gentes nomen tuum, Dómine, et omnes reges terræ glóriam tuam. Allelúja."]}}
+{"id":"tempora-pent18-0.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-pent18-0.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"tempora-pent18-0.evangile.2","type":"rubric","t":{"la":["Matt 9:1-8"],"fr":["Matt 9:1-8"]}}
+{"id":"tempora-pent18-0.evangile.3","type":"para","t":{"la":["In illo témpore: Ascéndens Jesus in navículam, transfretávit et venit in civitátem suam. Et ecce, offerébant ei paralýticum jacéntem in lecto. Et videns Jesus fidem illórum, dixit paralýtico: Confíde, fili, remittúntur tibi peccáta tua. Et ecce, quidam de scribis dixérunt intra se: Hic blasphémat. Et cum vidísset Jesus cogitatiónes eórum, dixit: Ut quid cogitátis mala in córdibus vestris? Quid est facílius dícere: Dimittúntur tibi peccáta tua; an dícere: Surge et ámbula? Ut autem sciátis, quia Fílius hóminis habet potestátem in terra dimitténdi peccáta, tunc ait paralýtico: Surge, tolle lectum tuum, et vade in domum tuam. Et surréxit et ábiit in domum suam. Vidéntes autem turbæ timuérunt, et glorificavérunt Deum, qui dedit potestátem talem homínibus."]}}
+{"id":"tempora-pent18-0.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-pent18-0.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-pent18-0.offertoire.1","type":"rubric","t":{"la":["Exodi 24:4; 24:5"],"fr":["Exodi 24:4; 24:5"]}}
+{"id":"tempora-pent18-0.offertoire.2","type":"para","t":{"la":["Sanctificávit Móyses altáre Dómino, ófferens super illud holocáusta et ímmolans víctimas: fecit sacrifícium vespertínum in odórem suavitátis Dómino Deo, in conspéctu filiórum Israël."]}}
+{"id":"tempora-pent18-0.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-pent18-0.secrete.1","type":"para","t":{"la":["Deus, qui nos, per hujus sacrifícii veneránda commércia, uníus summæ divinitátis partícipes éfficis: præsta, quǽsumus; ut, sicut tuam cognóscimus veritátem, sic eam dignis móribus assequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pent18-0.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-pent18-0.preface.1","type":"rubric","preface":"trinitate","t":{"la":["Præfatio de sanctissima Trinitate."],"fr":["Préface de la Sainte Trinité."]}}
+{"id":"tempora-pent18-0.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-pent18-0.communion.1","type":"rubric","t":{"la":["Ps 95:8-9"],"fr":["Ps 95:8-9"]}}
+{"id":"tempora-pent18-0.communion.2","type":"para","t":{"la":["Tóllite hóstias, et introíte in átria ejus: adoráte Dóminum in aula sancta ejus."]}}
+{"id":"tempora-pent18-0.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pent18-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-pent18-0.postcommunion.1","type":"para","t":{"la":["Grátias tibi reférimus, Dómine, sacro múnere vegetáti: tuam misericórdiam deprecántes; ut dignos nos ejus participatióne perfícias. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

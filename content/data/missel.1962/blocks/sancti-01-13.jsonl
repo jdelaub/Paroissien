@@ -1,0 +1,40 @@
+{"id":"sancti-01-13.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Officium"}],"t":{"la":["In Commemoratione Baptismatis D. N. Iesu Christi"],"fr":["Commémoraison du Baptême de Notre-Seigneur"]}}
+{"id":"sancti-01-13.rang","type":"rubric","t":{"fr":["IIᵉ classe — ornements blancs."]}}
+{"id":"sancti-01-13.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Introitus"},{"file":"missa/Latin/Sancti/01-06.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-01-13.introit.1","type":"rubric","t":{"la":["Malach 3:1; 1 Par 29:12"],"fr":["Malach 3:1; 1 Par 29:12"]}}
+{"id":"sancti-01-13.introit.2","type":"para","dropCap":true,"t":{"la":["Ecce, advénit dominátor Dóminus: et regnum in manu ejus et potéstas et impérium."]}}
+{"id":"sancti-01-13.introit.3","type":"rubric","t":{"la":["Ps 71:1"],"fr":["Ps 71:1"]}}
+{"id":"sancti-01-13.introit.4","type":"para","t":{"la":["Deus, judícium tuum Regi da: et justítiam tuam Fílio Regis."]}}
+{"id":"sancti-01-13.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-01-13.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-01-13.introit.7","type":"para","t":{"la":["Ecce, advénit dominátor Dóminus: et regnum in manu ejus et potéstas et impérium."]}}
+{"id":"sancti-01-13.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-01-13.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-01-13.collecte.1","type":"para","t":{"la":["Deus, cujus Unigénitus in substántia nostræ carnis appáruit: præsta, quǽsumus; ut per eum, quem símilem nobis foris agnóvimus, intus reformári mereámur: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-13.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Lectio"},{"file":"missa/Latin/Sancti/01-06.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-01-13.lecon.1","type":"para","style":"intro","t":{"la":["Léctio Isaíæ Prophétæ"],"fr":["Lecture du prophète Isaïe"]}}
+{"id":"sancti-01-13.lecon.2","type":"rubric","t":{"la":["Is 60:1-6"],"fr":["Is 60:1-6"]}}
+{"id":"sancti-01-13.lecon.3","type":"para","t":{"la":["Surge, illumináre, Jerúsalem: quia venit lumen tuum, et glória Dómini super te orta est. Quia ecce, ténebræ opérient terram et calígo pópulos: super te autem oriétur Dóminus, et glória ejus in te vidébitur. Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui. Leva in circúitu óculos tuos, et vide: omnes isti congregáti sunt, venérunt tibi: fílii tui de longe vénient, et fíliæ tuæ de látere surgent. Tunc vidébis et áfflues, mirábitur et dilatábitur cor tuum, quando convérsa fúerit ad te multitúdo maris, fortitúdo géntium vénerit tibi. Inundátio camelórum opériet te, dromedárii Mádian et Epha: omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes."]}}
+{"id":"sancti-01-13.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Graduale"},{"file":"missa/Latin/Sancti/01-06.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-01-13.graduel.1","type":"rubric","t":{"la":["Isa 60:6; 60:1"],"fr":["Isa 60:6; 60:1"]}}
+{"id":"sancti-01-13.graduel.2","type":"para","t":{"la":["Omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes."]}}
+{"id":"sancti-01-13.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Surge et illumináre, Jerúsalem: quia glória Dómini super te orta est. Allelúja, allelúja"]}}
+{"id":"sancti-01-13.graduel.4","type":"rubric","t":{"la":["Matt 2:2."],"fr":["Matt 2:2."]}}
+{"id":"sancti-01-13.graduel.5","type":"para","t":{"la":["Vídimus stellam ejus in Oriénte, et vénimus cum munéribus adoráre Dóminum. Allelúja."]}}
+{"id":"sancti-01-13.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-01-13.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Joánnem"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Jean"]}}
+{"id":"sancti-01-13.evangile.2","type":"rubric","t":{"la":["Joann 1:29-34"],"fr":["Joann 1:29-34"]}}
+{"id":"sancti-01-13.evangile.3","type":"para","t":{"la":["In illo témpore: Vidit Joánnes Jesum veniéntem ad se, et ait: Ecce Agnus Dei, ecce, qui tollit peccátum mundi. Hic est, de quo dixi: Post me venit vir, qui ante me factus est: quia prior me erat. Et ego nesciébam eum, sed ut manifestétur in Israël, proptérea veni ego in aqua baptízans. Et testimónium perhíbuit Joánnes, dicens: Quia vidi Spíritum descendéntem quasi colúmbam de coelo, et mansit super eum. Et ego nesciébam eum: sed qui misit me baptizáre in aqua, ille mihi dixit: Super quem víderis Spíritum descendéntem, et manéntem super eum, hic est, qui baptízat in Spíritu Sancto. Et ego vidi: et testimónium perhíbui, quia hic est Fílius Dei."]}}
+{"id":"sancti-01-13.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"sancti-01-13.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Offertorium"},{"file":"missa/Latin/Sancti/01-06.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-01-13.offertoire.1","type":"rubric","t":{"la":["Ps 71:10-11"],"fr":["Ps 71:10-11"]}}
+{"id":"sancti-01-13.offertoire.2","type":"para","t":{"la":["Reges Tharsis, et ínsulæ múnera ófferent: reges Arabum et Saba dona addúcent: et adorábunt eum omnes reges terræ, omnes gentes sérvient ei."]}}
+{"id":"sancti-01-13.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-01-13.secrete.1","type":"para","t":{"la":["Hóstias tibi, Dómine, pro nati Fílii tui apparitióne deférimus, supplíciter exorántes: ut, sicut ipse nostrórum auctor est múnerum, ita sit ipse miséricors et suscéptor, Jesus Christus, Dóminus noster: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-01-13.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-01-13.preface.1","type":"rubric","preface":"epi","t":{"la":["Præfatio de Epiphania Domini."],"fr":["Préface de l’Épiphanie."]}}
+{"id":"sancti-01-13.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Communio"},{"file":"missa/Latin/Sancti/01-06.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-01-13.communion.1","type":"rubric","t":{"la":["Matt 2:2"],"fr":["Matt 2:2"]}}
+{"id":"sancti-01-13.communion.2","type":"para","t":{"la":["Vídimus stellam ejus in Oriénte, et vénimus cum munéribus adoráre Dóminum."]}}
+{"id":"sancti-01-13.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/01-13.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-01-13.postcommunion.1","type":"para","t":{"la":["Cœlésti lúmine, quǽsumus, Dómine, semper et ubíque nos præveni: ut mystérium, cujus nos partícipes esse voluísti, et puro cernámus intúitu, et digno percipiámus affectu. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

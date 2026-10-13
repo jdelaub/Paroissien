@@ -168,6 +168,22 @@ Les durées sont des estimations en semaines de travail effectif pour une person
 | **Porte B2 = MVP** | Usage quotidien ; corrections ; décision sur le passage à B selon les réponses obtenues | — |
 | **V1** | Voir §3.2 | — |
 
+**Phase 5, terminée le 13/10/2026 (0.6.6)** :
+- Ordinaire de 1962 du domaine public (`content/sources/ordinaire`), d'un seul tenant, avec 14 emplacements de la messe du jour ;
+- Propre de 1962 tiré de Divinum Officium (`content/sources/missel`) : 775 unités, dont 62 commémoraisons, latin public et français du Barroux dans le dépôt privé sous le même paquet ; propres de sainte Jeanne d'Arc et de sainte Geneviève en latin (missel de Pustet, propre de Paris) ; stations relues ;
+- mode « livre » (missel avec le ruban de la messe du jour au ferret doré) et mode « messe intégrée » (l'Ordinaire où l'app insère le propre du jour, les oraisons des commémoraisons, la préface du jour en entier, les Communicantes et Hanc igitur propres, et omet le Gloria ou le Credo les jours qui ne les ont pas : `DayProper`) ;
+- Aujourd'hui : messe du jour, messe entière, début de l'Évangile du jour ;
+- latin et français en regard (réglage « la-fr », par défaut) ;
+- liste des formulaires sans français du domaine public : `content/sources/missel/francais-domaine-public.md` (le meilleur candidat pour les combler est Mame 1890, environ 60 messes).
+
+Reportés en V1 : le français du domaine public pour le paquet public ; les féries renvoyées au dimanche (un tiers du poids, mais leurs rubriques diffèrent) ; une seconde relecture des propres de Jeanne d'Arc et de Geneviève.
+
+**Phase 6, en cours (0.6.9, 13/10/2026)**, saveur `personnel` seulement, dépôt privé :
+- lectionnaire de l’AELF (`sources/aelf`) : les lectures de 2016 à juin 2027 (l’AELF publie environ huit mois à l’avance), rangées sous les clés que l'application calcule avec son calendrier de 1969 (célébration ou férie, année A/B/C ou paire/impaire) : elles valent pour toutes les années (99,8 % des jours jusqu’en 2045). `LiturgicalDay.temporal` donne la férie sous une mémoire ;
+- Ordinaire de 2021 (`sources/ordinaire-2021`), d'après iBreviary, collationné avec les livrets d’Ajaccio et de Cambrai, avec les prières eucharistiques I à IV et 91 préfaces ; l'application y insère les lectures du jour ;
+- Aujourd'hui en 1969 : lectures du jour, messe entière, début de l'Évangile ;
+- oraisons de 2021 : aucune source licite et structurée ; encadrés « dans le missel ».
+
 ### 4.1 ADR de la phase 0 (une page chacun, `docs/adr/`)
 1. **001 — Horizon, dépôts et saveurs** : scénario A, B ou C, statuts de droits, et quelle CI construit quoi.
 2. **002 — Appareils et SDK** : téléphone de référence et second appareil, minSdk, `applicationId`, keystore de débogage.
@@ -219,10 +235,22 @@ Les mesures se font sur le téléphone de référence, avec un APK *release* con
 - **Avant la phase 2** :
   - nom divin dans le Crampon : « Yahweh » tel qu'imprimé, ou « le Seigneur » comme variante de texte construite par la chaîne avec ses propres ancres (04, 15) ;
   - affichage de la numérotation des psaumes (les identifiants suivent la versification propre à chaque édition).
-- **Avant la phase 4** :
-  - Ordo de référence pour 1962 : FSSP, FSSPX ou monastère ;
-  - solennités extérieures ;
-  - jeûne : droit en vigueur, plus la discipline traditionnelle en option (05).
+- **Avant la phase 4** (tranché le 11/10/2026, ADR 009) : Ordo de référence d'un monastère (Le Barroux ou Fontgombault) ramené au romain de 1962 ; solennités extérieures activées par défaut ; droit en vigueur, plus la discipline traditionnelle en option ; 1962 tel qu'imprimé.
+- **Après la phase 4** (tranché le 11/10/2026) :
+  - **pas de plafond de taille** pour l'APK : le budget de 30 Mo d'IzzyOnDroid ne vaut que pour une diffusion publique, non prévue ; la CI affiche la taille sans l'imposer ;
+  - **identité des livres** : chaque livre a sa reliure (cuir, dorure ou fer à froid, motif, nerfs), son papier (teinte, encre, grammage : fin pour un gros livre, épais pour un livret), sa tranche et ses rubans ; la couverture est la page d'avant la première ; un réglage « Livres : tous pareils » uniformise ;
+  - **images pieuses** : aucune image fournie par défaut. L'utilisateur choisira lui-même une bibliothèque, et chacun peut numériser ses propres images (bords détectés, perspective, contraste, exposition, compression).
+- **Le 12/10/2026** :
+  - **images posées sur leur page** : la page vaut φ fois l'image, qui garde ses proportions ; un toucher la met de côté (elle dépasse alors par la tête), un appui long l'ouvre ; un réglage les range toutes en tête ; import possible « telle quelle », sans recadrage ni retouche ;
+  - **ruban en travers de la page** (réglage, actif par défaut) : aux ondulations légères, il sort de la tête près du pli et pend dans la bande du bas ; un toucher le couche dans le pli ; rouvrir le livre par sa queue le remet en travers ;
+  - **tissu des rubans** (réglage) : mat par défaut, avec un grain fin et de 3 à 7 côtes discrètes en long, propres à chaque ruban ; ou satin brillant ;
+  - **réglages** : un écran complet, ouvert depuis l'accueil ou depuis Aa ; la barre du lecteur défile de côté, avec ‹ › quand des boutons sont cachés.
+  - **cadres ornementaux** : quatorze cadres relevés sur un paroissien chromolithographié (`tools/cadres`) ; la règle suit le sommaire, un cadre par section, choisi d'abord par le sens (matin, soir, messe, confession, communion, vêpres, complies, mariage), sinon en boucle ; réglage « Cadres » ;
+  - **ouverture du livre** : pris sur le rayon, il s'ouvre par sa couverture, puis la doublure (soie moirée dans une roulette dorée), avant la page ;
+  - **atelier** (`ATELIER.md`) : moteur v3 (fait : dispositions partielles dont le côté extérieur suit le folio, pièces de bout, filets à distance fixe, débords, gardes à motif), second lot de scans, couvertures en modules, un habit par livre composé par l'utilisateur ;
+  - **rangs d'habillage** : les livres nobles (prières, Imitation) ont un cadre par section et une doublure de soie ; la Bible est réglée d'un filet rouge ; les livres simples (exercices) ont une garde de papier à motif et des pages nues ; les lettres n'ont ni cadre ni garde ;
+  - **vignettes gravées** : tirées des scans de l'utilisateur, hors du dépôt public (saveur personnelle) ;
+  - **import et export** de livres (txt, epub, PDF) et d'images pieuses recto verso ; **sauvegarde complète** de l'app dans un fichier (réglages, signets, habits, éléments importés), sans cloud, **textes privés compris** : une app livrée vide se remplira en l'important, en attendant les autorisations ; saveur `vide` pour l'essayer dès maintenant.
 - **Avant la phase 5** : mode de messe par défaut (« assemblée » recommandé) ; versions rubricales (1960 seulement au MVP).
 - **À la porte A** : police par défaut (EB Garamond pour les livres liturgiques, Literata en option de lecture) ; seuil de double page sur téléphone.
 
@@ -240,9 +268,9 @@ Les mesures se font sur le téléphone de référence, avec un APK *release* con
 | Rubriques | Rouge et italique ; ℣ ℟ ✠ en rouge | 08 |
 | Césure du latin | Motifs `la-x-liturgic` (MIT) appliqués à l'exécution (Liang en Kotlin) ou stockés à part ; jamais dans le texte canonique | 07, 15 |
 | Rubans | Propres à chaque livre ; 7ᵉ ruban automatique au ferret doré (phase 5) ; extrémité ou initiale par couleur | 09, 08, 15 |
-| Images pieuses | Institutions CC0 seulement ; elles dépassent par la tête du livre ; photo personnelle en V1 (sélecteur système, EXIF supprimés) | 09, 12 |
+| Images pieuses | Aucune fournie par défaut : bibliothèque choisie par l'utilisateur ; images personnelles numérisées dans l'app (bords, perspective, contraste, exposition, compression ; EXIF supprimés), ou importées telles quelles ; posées sur leur page au nombre d'or, elles dépassent par la tête du livre une fois mises de côté | 09, 12, décisions des 11 et 12/10/2026 |
 | Données de l'utilisateur | Room 3 ; sauvegarde cloud désactivée ; transfert d'appareil à appareil ; export proposé dès le premier ruban posé (ADR 008) | 09, 10, 15 |
-| Paquets | Une base SQLite par paquet (ADR 003) ; `BundledSQLiteDriver` ; ABI `arm64-v8a` (plus `armeabi-v7a` pour la distribution) ; contrôle de taille en CI, 30 Mo au plus | 10, 11, 15 |
+| Paquets | Une base SQLite par paquet (ADR 003) ; `BundledSQLiteDriver` ; ABI `arm64-v8a` (plus `armeabi-v7a` pour la distribution) ; taille de l'APK affichée en CI, sans plafond (décision du 11/10/2026) | 10, 11, 15 |
 | Requêtes de recherche | Construites à partir des jetons ; la saisie brute ne va jamais dans `MATCH` | 15 |
 | Chaîne de contenu | Python et uv ; JSON canonique commité ; relecture par PR ; normalisation typographique (’ et U+202F) | 11 |
 | Pile Android | Navigation 3, injection de dépendances manuelle, DataStore, WorkManager, kotlinx.serialization | 10 |

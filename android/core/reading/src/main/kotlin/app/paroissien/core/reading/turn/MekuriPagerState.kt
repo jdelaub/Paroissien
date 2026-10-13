@@ -69,6 +69,10 @@ public class MekuriPagerState(
     public val pageCount: Int
         get() = this.pageCountProvider().coerceAtLeast(0)
 
+    /** True while a leaf is lifted, dragged or landing; objects laid over the page hide meanwhile. */
+    public var isTurning: Boolean by mutableStateOf(false)
+        internal set
+
     /** Spine placement and sweep direction. */
     public var direction: MekuriDirection = direction
         internal set

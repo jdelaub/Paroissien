@@ -1,0 +1,195 @@
+# Prières au bas de l'autel (messe basse).
+# Latin : Divinum Officium, Ordo.txt ; français : Solis 1913, p. 84-90, témoin Déry 1914, p. 36-44.
+# Rôles : ℣ le prêtre, ℟ le servant (P. et S. du paroissien).
+
+== bas-de-l-autel
+title.la: Ordo Missæ
+title.fr: Prières au bas de l'autel
+src: do | la | Ordo.txt | 4-12
+src: cihm_990278 | fr | 84 | 87
+wit: cihm_80314 | fr | 36-37 | 35-36
+
+rubric
+fr: Le prêtre, au bas de l'autel, fait le signe de la croix :
+
+para
+la: In nómine Patris, ✠ et Fílii, et Spíritus Sancti. Amen.
+fr: Au nom du Père, et du Fils, et du Saint-Esprit. Ainsi soit-il.
+
+versicle V
+la: ℣. Introíbo ad altáre Dei.
+fr: ℣. Je monterai à l'autel de Dieu.
+
+versicle R
+la: ℟. Ad Deum, qui lætíficat juventútem meam.
+fr: ℟. Du Dieu qui réjouit ma jeunesse.
+
+== judica 2
+title.la: Psalmus 42
+title.fr: Psaume 42
+src: do | la | Ordo.txt | 7-30
+src: cihm_990278 | fr | 84-87 | 87-90
+wit: cihm_80314 | fr | 37-40 | 36-39
+
+rubric
+fr: Le prêtre récite avec le servant le psaume Judica. Ce psaume est omis aux messes des défunts et à celles du temps de la Passion ; on passe alors au verset Adjutorium.
+
+versicle V
+la: ℣. Júdica me, Deus, et discérne causam meam de gente non sancta: ab hómine iníquo et dolóso érue me.
+fr: ℣. Seigneur, soyez mon juge, et prenez ma défense contre les impies : délivrez-moi de l'homme injuste et trompeur.
+
+versicle R
+la: ℟. Quia tu es, Deus, fortitúdo mea: quare me repulísti, et quare tristis incédo, dum afflígit me inimícus?
+fr: ℟. Car vous êtes ma force, ô Dieu ; pourquoi me repousser, et me laisser triste, tandis que mon ennemi m'afflige ?
+
+versicle V
+la: ℣. Emítte lucem tuam et veritátem tuam: ipsa me deduxérunt, et adduxérunt in montem sanctum tuum et in tabernácula tua.
+fr: ℣. Faites luire votre lumière et votre vérité : elles me conduiront sur votre montagne sainte et dans votre tabernacle.
+
+versicle R
+la: ℟. Et introíbo ad altáre Dei: ad Deum, qui lætíficat juventútem meam.
+fr: ℟. Je monterai à l'autel de Dieu : du Dieu qui réjouit ma jeunesse.
+
+versicle V
+la: ℣. Confitébor tibi in cíthara, Deus, Deus meus: quare tristis es, ánima mea, et quare contúrbas me?
+fr: ℣. Je vous louerai sur la harpe, ô Dieu, mon Dieu ; pourquoi, mon âme, es-tu triste, et pourquoi me troubles-tu ?
+
+versicle R
+la: ℟. Spera in Deo, quóniam adhuc confitébor illi: salutáre vultus mei, et Deus meus.
+fr: ℟. Espère en Dieu, car je le louerai encore : il est mon salut et mon Dieu.
+
+versicle V
+la: ℣. Glória Patri, et Fílio, et Spirítui Sancto.
+fr: ℣. Gloire au Père, et au Fils, et au Saint-Esprit.
+
+versicle R
+la: ℟. Sicut erat in princípio, et nunc, et semper: et in sǽcula sæculórum. Amen.
+fr: ℟. Comme il était au commencement, maintenant et toujours, et dans les siècles des siècles. Ainsi soit-il.
+
+versicle V
+la: ℣. Introíbo ad altáre Dei.
+fr: ℣. Je monterai à l'autel de Dieu.
+
+versicle R
+la: ℟. Ad Deum, qui lætíficat juventútem meam.
+fr: ℟. Du Dieu qui réjouit ma jeunesse.
+
+rubric
+fr: Le prêtre se signe en disant :
+
+versicle V
+la: ℣. Adjutórium nostrum ✠ in nómine Dómini.
+fr: ℣. Notre secours est dans le nom du Seigneur.
+
+versicle R
+la: ℟. Qui fecit cælum et terram.
+fr: ℟. Qui a fait le ciel et la terre.
+
+== confiteor 2
+title.la: Confiteor
+title.fr: Confession
+src: do | la | Ordo.txt | 31-55
+src: cihm_990278 | fr | 87-89 | 90-95
+wit: cihm_80314 | fr | 40-43 | 39-42
+
+rubric
+fr: Le prêtre, profondément incliné, récite le Confiteor :
+
+para
+la: Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joánni Baptístæ, sanctis Apóstolis Petro et Paulo, ómnibus Sanctis, et vobis, fratres: quia peccávi nimis cogitatióne, verbo et ópere: mea culpa, mea culpa, mea máxima culpa. Ideo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Joánnem Baptístam, sanctos Apóstolos Petrum et Paulum, omnes Sanctos, et vos, fratres, oráre pro me ad Dóminum, Deum nostrum.
+fr: Je confesse à Dieu tout-puissant, à Marie toujours Vierge, à saint Michel Archange, à saint Jean Baptiste, aux saints Apôtres Pierre et Paul, à tous les Saints, et à vous, mes frères, que j'ai beaucoup péché par pensées, paroles et actions, c'est ma faute, c'est ma faute, c'est ma très grande faute. C'est pourquoi je supplie Marie, toujours Vierge, saint Michel Archange, saint Jean-Baptiste, Saint Pierre et Paul, Apôtres, tous les Saints, et vous, mes frères, de prier pour moi le Seigneur notre Dieu.
+# vérifié : Confiteor du prêtre (« et vobis, fratres… et vos, fratres ») ; le livre abrège le Confiteor du prêtre (« Je confesse, etc. ») ; texte de celui des fidèles (p. 87-88), avec « mes frères » pour « mon Père »
+
+rubric
+fr: Le servant répond :
+
+versicle R
+la: ℟. Misereátur tui omnípotens Deus, et, dimíssis peccátis tuis, perdúcat te ad vitam ætérnam.
+fr: ℟. Que le Dieu tout-puissant ait pitié de vous, vous pardonne vos péchés, et vous conduise à la vie éternelle.
+
+versicle V
+la: ℣. Amen.
+fr: ℣. Ainsi soit-il.
+
+rubric
+fr: Le servant, au nom des fidèles, récite à son tour le Confiteor :
+
+para
+la: Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joánni Baptístæ, sanctis Apóstolis Petro et Paulo, ómnibus Sanctis, et tibi, pater: quia peccávi nimis cogitatióne, verbo et ópere: mea culpa, mea culpa, mea máxima culpa. Ideo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Joánnem Baptístam, sanctos Apóstolos Petrum et Paulum, omnes Sanctos, et te, pater, oráre pro me ad Dóminum, Deum nostrum.
+fr: Je confesse à Dieu tout-puissant, à Marie toujours Vierge, à saint Michel Archange, à saint Jean Baptiste, aux saints Apôtres Pierre et Paul, à tous les Saints, et à vous, mon Père, que j'ai beaucoup péché par pensées, paroles et actions, c'est ma faute, c'est ma faute, c'est ma très grande faute. C'est pourquoi je supplie Marie, toujours Vierge, saint Michel Archange, saint Jean-Baptiste, Saint Pierre et Paul, Apôtres, tous les Saints, et vous, mon Père, de prier pour moi le Seigneur notre Dieu.
+
+versicle V
+la: ℣. Misereátur vestri omnípotens Deus, et, dimíssis peccátis vestris, perdúcat vos ad vitam ætérnam.
+fr: ℣. Que Dieu tout-puissant ait pitié de vous ; vous pardonne vos péchés, et vous conduise à la vie éternelle.
+
+versicle R
+la: ℟. Amen.
+fr: ℟. Ainsi soit-il.
+
+versicle V
+la: ℣. Indulgéntiam, ✠ absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus.
+fr: ℣. Que le Seigneur tout-puissant et miséricordieux nous accorde le pardon, l'absolution et la rémission de nos péchés.
+
+versicle R
+la: ℟. Amen.
+fr: ℟. Ainsi soit-il.
+
+rubric
+fr: Le prêtre, incliné, poursuit :
+
+versicle V
+la: ℣. Deus, tu convérsus vivificábis nos.
+fr: ℣. Dieu, tournez-vous vers nous, et vous nous vivifierez.
+
+versicle R
+la: ℟. Et plebs tua lætábitur in te.
+fr: ℟. Et votre peuple se réjouira en vous.
+
+versicle V
+la: ℣. Osténde nobis, Dómine, misericórdiam tuam.
+fr: ℣. Montrez-nous, Seigneur, votre miséricorde.
+
+versicle R
+la: ℟. Et salutáre tuum da nobis.
+fr: ℟. Et donnez-nous votre salut.
+
+versicle V
+la: ℣. Dómine, exáudi oratiónem meam.
+fr: ℣. Seigneur, exaucez ma prière.
+
+versicle R
+la: ℟. Et clamor meus ad te véniat.
+fr: ℟. Que mes cris s'élèvent jusqu'à vous.
+
+versicle V
+la: ℣. Dóminus vobíscum.
+fr: ℣. Le Seigneur soit avec vous.
+
+versicle R
+la: ℟. Et cum spíritu tuo.
+fr: ℟. Et avec votre esprit.
+
+versicle V
+la: ℣. Orémus.
+fr: ℣. Prions.
+
+== aufer 2
+title.la: Aufer a nobis
+title.fr: Le prêtre monte à l'autel
+src: do | la | Ordo.txt | 54-58
+src: cihm_990278 | fr | 90 | 96
+wit: cihm_80314 | fr | 43-44 | 42-43
+
+rubric
+fr: Le prêtre, montant à l'autel, prie à voix basse :
+
+para
+la: Aufer a nobis, quǽsumus, Dómine, iniquitátes nostras: ut ad Sancta sanctórum puris mereámur méntibus introíre. Per Christum, Dóminum nostrum. Amen.
+fr: Nous vous en supplions, Seigneur, ôtez de nous nos iniquités, afin que nous approchions du Saint des saints avec un esprit pur. Par Jésus-Christ notre Seigneur. Ainsi soit-il.
+
+rubric
+fr: Monté à l'autel, il dit, et il baise l'autel aux mots « dont les reliques sont ici » :
+
+para
+la: Orámus te, Dómine, per mérita Sanctórum tuórum, quorum relíquiæ hic sunt, et ómnium Sanctórum: ut indulgére dignéris ómnia peccáta mea. Amen.
+fr: Nous vous prions, Seigneur, par les mérites des Saints dont les reliques sont ici, et de tous les Saints, de daigner me pardonner mes péchés. Ainsi soit-il.

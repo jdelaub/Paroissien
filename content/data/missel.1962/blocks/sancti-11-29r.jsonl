@@ -1,0 +1,41 @@
+{"id":"sancti-11-29r.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/11-29r.txt","section":"Officium"}],"t":{"la":["S. Saturnini Martyris"],"fr":["Saint Saturnin, martyr"]}}
+{"id":"sancti-11-29r.rang","type":"rubric","t":{"fr":["Commémoraison — ornements rouges."]}}
+{"id":"sancti-11-29r.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-11-29r.introit.1","type":"rubric","t":{"la":["Ps 63:11"],"fr":["Ps 63:11"]}}
+{"id":"sancti-11-29r.introit.2","type":"para","dropCap":true,"t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde."]}}
+{"id":"sancti-11-29r.introit.3","type":"rubric","t":{"la":["Ps 63:2"],"fr":["Ps 63:2"]}}
+{"id":"sancti-11-29r.introit.4","type":"para","t":{"la":["Exáudi, Deus, oratiónem meam cum déprecor: a timóre inimíci éripe ánimam meam."]}}
+{"id":"sancti-11-29r.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-11-29r.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-11-29r.introit.7","type":"para","t":{"la":["Lætábitur justus in Dómino, et sperábit in eo: et laudabúntur omnes recti corde."]}}
+{"id":"sancti-11-29r.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-11-29r.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-29r.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-11-29r.collecte.1","type":"para","t":{"la":["Deus, qui nos beáti Saturníni Mártyris tui concédis natalícia pérfrui: ejus nos tríbue méritis adjuvári. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-11-29r.epitre","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-11-29r.epitre.1","type":"para","style":"intro","t":{"la":["Léctio Epístolæ beáti Pauli Apóstoli ad Timótheum"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, à Timothée"]}}
+{"id":"sancti-11-29r.epitre.2","type":"rubric","t":{"la":["2 Tim 2:8-10; 3:10-12."],"fr":["2 Tim 2:8-10; 3:10-12."]}}
+{"id":"sancti-11-29r.epitre.3","type":"para","t":{"la":["Caríssime: Memor esto, Dóminum Jesum Christum resurrexísse a mórtuis ex sémine David, secúndum Evangélium meum, in quo labóro usque ad víncula, quasi male óperans: sed verbum Dei non est alligátum. Ideo ómnia sustíneo propter eléctos, ut et ipsi salútem consequántur, quæ est in Christo Jesu, cum glória coelésti. Tu autem assecútus es meam doctrínam, institutiónem, propósitum, fidem, longanimitátem, dilectiónem, patiéntiam, persecutiónes, passiónes: quália mihi facta sunt Antiochíæ, Icónii et Lystris: quales persecutiónes sustínui, et ex ómnibus erípuit me Dóminus. Et omnes, qui pie volunt vívere in Christo Jesu, persecutiónem patiéntur."]}}
+{"id":"sancti-11-29r.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-11-29r.graduel.1","type":"rubric","t":{"la":["Ps 36:24"],"fr":["Ps 36:24"]}}
+{"id":"sancti-11-29r.graduel.2","type":"para","t":{"la":["Justus cum cecíderit, non collidétur: quia Dóminus suppónit manum suam."]}}
+{"id":"sancti-11-29r.graduel.3","type":"rubric","t":{"la":["Ps 36:26"],"fr":["Ps 36:26"]}}
+{"id":"sancti-11-29r.graduel.4","type":"para","t":{"la":["Tota die miserétur, et cómmodat: et semen ejus in benedictióne erit. Allelúja, allelúja"]}}
+{"id":"sancti-11-29r.graduel.5","type":"rubric","t":{"la":["Joann 8:12"],"fr":["Joann 8:12"]}}
+{"id":"sancti-11-29r.graduel.6","type":"para","t":{"la":["Qui séquitur me, non ámbulat in ténebris: sed habébit lumen vitæ ætérnæ. Allelúja."]}}
+{"id":"sancti-11-29r.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-11-29r.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-11-29r.evangile.2","type":"rubric","t":{"la":["Matt 10:26-32"],"fr":["Matt 10:26-32"]}}
+{"id":"sancti-11-29r.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Nihil est opértum, quod non revelábitur; et occúltum, quod non sciétur. ¶ Quod dico vobis in ténebris, dícite in lúmine: et quod in aure audítis, prædicáte super tecta. Et nolíte timére eos, qui occídunt corpus, ánimam autem non possunt occídere; sed pótius timéte eum, qui potest et ánimam et corpus pérdere in gehénnam. Nonne duo pásseres asse véneunt: et unus ex illis non cadet super terram sine Patre vestro? Vestri autem capílli cápitis omnes numeráti sunt. Nolíte ergo timére: multis passéribus melióres estis vos. Omnis ergo, qui confitébitur me coram homínibus, confitébor et ego eum coram Patre meo, qui in coelis est."]}}
+{"id":"sancti-11-29r.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-11-29r.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-11-29r.offertoire.1","type":"rubric","t":{"la":["Ps 20:4-5"],"fr":["Ps 20:4-5"]}}
+{"id":"sancti-11-29r.offertoire.2","type":"para","t":{"la":["Posuísti, Dómine, in cápite ejus corónam de lápide pretióso: vitam pétiit a te, et tribuísti ei, allelúja."]}}
+{"id":"sancti-11-29r.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-29r.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-11-29r.secrete.1","type":"para","t":{"la":["Múnera, Dómine, tibi dicáta sanctífica: et, intercedénte beáto Saturníno Mártyre tuo, per hæc eádem nos placátus inténde. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-11-29r.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-11-29r.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune ; en Avent : préface de l’Avent."]}}
+{"id":"sancti-11-29r.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C2a-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-11-29r.communion.1","type":"rubric","t":{"la":["Joann 12:26"],"fr":["Joann 12:26"]}}
+{"id":"sancti-11-29r.communion.2","type":"para","t":{"la":["Qui mihi mínistrat, me sequátur: et ubi sum ego, illic et miníster meus erit."]}}
+{"id":"sancti-11-29r.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/11-29r.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-11-29r.postcommunion.1","type":"para","t":{"la":["Sanctíficet nos, quǽsumus, Dómine, tui percéptio sacraménti: et intercessióne Sanctórum tuórum tibi reddat accéptos. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

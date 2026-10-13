@@ -40,6 +40,9 @@ internal class MekuriPagerController(
     /** Plays a cue; written by the pager each composition. */
     var onHaptic: (MekuriHaptic) -> Unit = {}
 
+    /** Paroissien : un tour demandé au-delà de la première ou de la dernière page (passage à l'unité voisine). */
+    var onBlockedTurn: (MekuriTurn) -> Unit = {}
+
     /** Presented progress of the turn in flight. */
     var progress: Float by mutableFloatStateOf(0f)
 
@@ -61,6 +64,12 @@ internal class MekuriPagerController(
     private var nextTurnId = 0
 
     private var ignoresCurrentDrag = false
+
+    /**
+     * Paroissien : un geste vers une page qui n'existe pas et sans feuillet à soulever (revenir depuis la première
+     * page) ne commence aucun tour ; on le retient pour ouvrir l'unité voisine s'il est franc.
+     */
+    private var leaflessTurn: MekuriTurn? = null
 
     val direction: MekuriDirection get() = this.state.direction
 
@@ -99,7 +108,7 @@ internal class MekuriPagerController(
     fun perform(turn: MekuriTurn, liftsFromBottom: Boolean = false, grabY: Float? = null) {
         if (this.turn != null) return
         val begun = this.begin(turn).copy(liftsFromBottom = liftsFromBottom, grabY = grabY, playsHaptics = true)
-        val target = begun.targetIndex ?: return
+        val target = begun.targetIndex ?: return this.onBlockedTurn(turn)
         if (this.reducesMotion) {
             this.state.currentPage = target
             this.onHaptic(MekuriHaptic.Land)
@@ -205,7 +214,11 @@ internal class MekuriPagerController(
             grabY = grabY,
             playsHaptics = true,
         )
-        if (!begun.hasLeaf) return
+        if (!begun.hasLeaf) {
+            if (begun.isBlocked) this.leaflessTurn = turn
+            return
+        }
+        this.leaflessTurn = null
         this.turn = begun
         this.progress = MekuriDrag.progress(
             start = 0f,
@@ -221,35 +234,47 @@ internal class MekuriPagerController(
     fun dragEnded(translation: Offset, velocity: Float, grabY: Float) {
         val ignored = this.ignoresCurrentDrag
         this.ignoresCurrentDrag = false
+        val leafless = this.leaflessTurn
+        this.leaflessTurn = null
         if (ignored) return
         if (this.reducesMotion) {
             this.commitReducedMotionDrag(translation, velocity, grabY)
             return
         }
-        val current = this.turn ?: return
-        if (current.phase != MekuriTurnPhase.Dragging) return
-        if (current.isBlocked) {
-            this.settle(MekuriTurnDecision.Revert)
+        if (this.turn == null && leafless != null) {
+            // Aucun feuillet n'a suivi le doigt : la course et l'élan décident, comme pour un tour bloqué.
+            val axis = MekuriDrag.axis(leafless, this.direction)
+            val travel = translation.x * axis / this.containerSize.width.coerceAtLeast(1f)
+            val decision = MekuriTurnDecision.resolve(travel, MekuriDrag.projectedVelocity(velocity, axis), this.configuration)
+            if (decision == MekuriTurnDecision.Commit) this.onBlockedTurn(leafless)
             return
         }
+        val current = this.turn ?: return
+        if (current.phase != MekuriTurnPhase.Dragging) return
         val axis = MekuriDrag.axis(current.turn, this.direction)
-        this.settle(
-            MekuriTurnDecision.resolve(
-                progress = this.edgeTrack(current).releaseProgress(this.progress),
-                velocity = MekuriDrag.projectedVelocity(velocity, axis),
-                configuration = this.configuration,
-            ),
+        val decision = MekuriTurnDecision.resolve(
+            progress = this.edgeTrack(current).releaseProgress(this.progress),
+            velocity = MekuriDrag.projectedVelocity(velocity, axis),
+            configuration = this.configuration,
         )
+        if (current.isBlocked) {
+            this.settle(MekuriTurnDecision.Revert)
+            // Paroissien : un geste franc au bord du livre ouvre l'unité voisine.
+            if (decision == MekuriTurnDecision.Commit) this.onBlockedTurn(current.turn)
+            return
+        }
+        this.settle(decision)
     }
 
     fun dragCancelled() {
         this.ignoresCurrentDrag = false
+        this.leaflessTurn = null
         if (this.turn?.phase == MekuriTurnPhase.Dragging) this.settle(MekuriTurnDecision.Revert)
     }
 
     private fun commitReducedMotionDrag(translation: Offset, velocity: Float, grabY: Float) {
         val turn = MekuriDrag.turn(translation, this.direction) ?: return
-        val target = this.arrangement.turnState(0, turn, this.settledPage).targetIndex ?: return
+        val target = this.arrangement.turnState(0, turn, this.settledPage).targetIndex ?: return this.onBlockedTurn(turn)
         val axis = MekuriDrag.axis(turn, this.direction)
         val track = this.arrangement.edgeTrack(
             turn = turn,

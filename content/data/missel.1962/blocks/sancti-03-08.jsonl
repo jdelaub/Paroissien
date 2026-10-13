@@ -1,0 +1,43 @@
+{"id":"sancti-03-08.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/03-08.txt","section":"Officium"}],"t":{"la":["S. Joannis de Deo Confessoris"],"fr":["Saint Jean de Dieu, confesseur"]}}
+{"id":"sancti-03-08.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-03-08.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-03-08.introit.1","type":"rubric","t":{"la":["Ps 36:30-31"],"fr":["Ps 36:30-31"]}}
+{"id":"sancti-03-08.introit.2","type":"para","dropCap":true,"t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
+{"id":"sancti-03-08.introit.3","type":"rubric","t":{"la":["Ps 36:1"],"fr":["Ps 36:1"]}}
+{"id":"sancti-03-08.introit.4","type":"para","t":{"la":["Noli æmulári in malignántibus: neque zeláveris faciéntes iniquitátem."]}}
+{"id":"sancti-03-08.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-03-08.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-03-08.introit.7","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
+{"id":"sancti-03-08.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-03-08.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-08.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-03-08.collecte.1","type":"para","t":{"la":["Deus, qui beátum Joánnem, tuo amóre succénsum, inter flammas innóxium incédere fecísti, et per eum Ecclésiam tuam nova prole fœcundásti: præsta, ipsíus suffragántibus méritis; ut igne caritátis tuæ vitia nostra curéntur, et remédia nobis ætérna provéniant. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-03-08.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-03-08.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-03-08.lecon.2","type":"rubric","t":{"la":["Eccli 31:8-11"],"fr":["Eccli 31:8-11"]}}
+{"id":"sancti-03-08.lecon.3","type":"para","t":{"la":["Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesáuris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua. Qui probátus est in illo, et perféctus est, erit illi glória ætérna: qui potuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ídeo stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum."]}}
+{"id":"sancti-03-08.trait","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Tractus"}],"t":{"la":["Tractus"],"fr":["Trait"]}}
+{"id":"sancti-03-08.trait.1","type":"rubric","t":{"la":["Ps 91:13; 91:14"],"fr":["Ps 91:13; 91:14"]}}
+{"id":"sancti-03-08.trait.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus Líbani multiplicábitur in domo Dómini."]}}
+{"id":"sancti-03-08.trait.3","type":"rubric","t":{"la":["Ps 91:3"],"fr":["Ps 91:3"]}}
+{"id":"sancti-03-08.trait.4","type":"para","t":{"la":["Ad annuntiándum mane misericórdiam tuam, et veritátem tuam per noctem."]}}
+{"id":"sancti-03-08.trait.5","type":"rubric","t":{"la":["Ps 111:1-3"],"fr":["Ps 111:1-3"]}}
+{"id":"sancti-03-08.trait.6","type":"para","t":{"la":["Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis."]}}
+{"id":"sancti-03-08.trait.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Potens in terra erit semen ejus: generátio rectórum benedicétur."]}}
+{"id":"sancti-03-08.trait.8","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi."]}}
+{"id":"sancti-03-08.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/03-08.txt","section":"Evangelium"},{"file":"missa/Latin/Tempora/Pent17-0.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-03-08.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-03-08.evangile.2","type":"rubric","t":{"la":["Matt 22:34-46"],"fr":["Matt 22:34-46"]}}
+{"id":"sancti-03-08.evangile.3","type":"para","t":{"la":["In illo témpore: Accessérunt ad Jesum pharisǽi: et interrogávit eum unus ex eis legis doctor, tentans eum: Magíster, quod est mandátum magnum in lege? Ait illi Jesus: Díliges Dóminum, Deum tuum, ex toto corde tuo et in tota ánima tua et in tota mente tua. Hoc est máximum et primum mandátum. Secúndum autem símile est huic: Díliges próximum tuum sicut teípsum. In his duóbus mandátis univérsa lex pendet et prophétæ. Congregátis autem pharisǽis, interrogávit eos Jesus, dicens: Quid vobis vidétur de Christo? cujus fílius est? Dicunt ei: David. Ait illis: Quómodo ergo David in spíritu vocat eum Dóminum, dicens: Dixit Dóminus Dómino meo, sede a dextris meis, donec ponam inimícos tuos scabéllum pedum tuórum? Si ergo David vocat eum Dóminum, quómodo fílius ejus est? Et nemo poterat ei respóndere verbum: neque ausus fuit quisquam ex illa die eum ámplius interrogáre."]}}
+{"id":"sancti-03-08.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-03-08.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C2.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-03-08.offertoire.1","type":"rubric","t":{"la":["Ps 88:25"],"fr":["Ps 88:25"]}}
+{"id":"sancti-03-08.offertoire.2","type":"para","t":{"la":["Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus."]}}
+{"id":"sancti-03-08.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-03-08.secrete.1","type":"para","t":{"la":["Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum: quibus nos et præséntibus éxui malis confídimus et futúris. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-03-08.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-03-08.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"sancti-03-08.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4-1.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-03-08.communion.1","type":"rubric","t":{"la":["Matt 24:46-47"],"fr":["Matt 24:46-47"]}}
+{"id":"sancti-03-08.communion.2","type":"para","t":{"la":["Beátus servus, quem, cum vénerit dóminus, invénerit vigilántem: amen, dico vobis, super ómnia bona sua constítuet eum."]}}
+{"id":"sancti-03-08.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-03-08.postcommunion.1","type":"para","t":{"la":["Refécti cibo potúque cœlésti, Deus noster, te súpplices exorámus: ut, in cujus hæc commemoratióne percépimus, ejus muniámur et précibus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

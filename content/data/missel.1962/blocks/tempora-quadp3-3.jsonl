@@ -1,0 +1,93 @@
+{"id":"tempora-quadp3-3.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Officium"}],"t":{"la":["Feria IV Cinerum"],"fr":["Mercredi des Cendres"]}}
+{"id":"tempora-quadp3-3.rang","type":"rubric","t":{"fr":["Iʳᵉ classe — ornements violets. Station à Sainte-Sabine."]}}
+{"id":"tempora-quadp3-3.prelude","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Prelude"}],"t":{"la":["Benedictio et impositio cinerum"],"fr":["Bénédiction et imposition des cendres"]}}
+{"id":"tempora-quadp3-3.prelude.1.1","type":"para","t":{"la":["#Benedictio cinerum"]}}
+{"id":"tempora-quadp3-3.prelude.1.2","type":"rubric","t":{"la":["Antiphona."]}}
+{"id":"tempora-quadp3-3.prelude.1.3","type":"rubric","t":{"la":["Ps 68:17"],"fr":["Ps 68:17"]}}
+{"id":"tempora-quadp3-3.prelude.1.4","type":"para","t":{"la":["Exáudi nos, Dómine, quóniam benígna est misericórdia tua: secúndum multitúdinem miseratiónum tuárum réspice nos, Dómine."]}}
+{"id":"tempora-quadp3-3.prelude.1.5","type":"rubric","t":{"la":["Ps 68:2"],"fr":["Ps 68:2"]}}
+{"id":"tempora-quadp3-3.prelude.1.6","type":"para","t":{"la":["Salvum me fac, Deus: quóniam intravérunt aquæ usque ad ánimam meam."]}}
+{"id":"tempora-quadp3-3.prelude.1.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-quadp3-3.prelude.1.8","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-quadp3-3.prelude.1.9","type":"para","t":{"la":["Exáudi nos, Dómine, quóniam benígna est misericórdia tua: secúndum multitúdinem miseratiónum tuárum réspice nos, Dómine."]}}
+{"id":"tempora-quadp3-3.prelude.1.10","type":"para","t":{"la":[{"m":["red","i"],"c":["Deinde Sacerdos in cornu Epistolæ, non vertens se ad populum, manibus junctis (quod servatur etiam in orationibus omnium benedictionum quoad manus junctas) dicit:"]}]}}
+{"id":"tempora-quadp3-3.prelude.1.11","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Dóminus vobíscum."]}}
+{"id":"tempora-quadp3-3.prelude.1.12","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Et cum spíritu tuo."]}}
+{"id":"tempora-quadp3-3.prelude.1.13","type":"para","t":{"la":["Orémus. Omnípotens sempitérne Deus, parce pæniténtibus, propitiáre supplicántibus: et míttere dignéris sanctum Angelum tuum de coelis, qui bene ",{"sym":"cross"}," dícat et sanctí ",{"sym":"cross"}," ficet hos cíneres, ut sint remédium salúbre ómnibus nomen sanctum tuum humilíter implorántibus, ac semetípsos pro consciéntia delictórum suórum accusántibus, ante conspéctum divínæ cleméntiæ tuæ facínora sua deplorántibus, vel sereníssimam pietátem tuam supplíciter obnixéque flagitántibus: et præsta per invocatiónem sanctíssimi nóminis tui; ut, quicúmque per eos aspérsi fúerint, pro redemptióne peccatórum suórum, córporis sanitátem et ánimæ tutélam percípiant. Per Christum, Dóminum nostrum."]}}
+{"id":"tempora-quadp3-3.prelude.1.14","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Amen."]}}
+{"id":"tempora-quadp3-3.prelude.1.15","type":"para","t":{"la":["Orémus. Deus, qui non mortem, sed pæniténtiam desíderas peccatórum: fragilitátem condiciónis humánæ benigníssime réspice; et hos cíneres, quos, causa proferéndæ humilitátis atque promeréndæ véniæ, capítibus nostris impóni decérnimus, bene ",{"sym":"cross"}," dícere pro tua pietáte dignáre: ut, qui nos cínerem esse, et ob pravitátis nostræ deméritum in púlverem reversúros cognóscimus; peccatórum ómnium véniam, et præmia pæniténtibus repromíssa, misericórditer cónsequi mereámur. Per Christum, Dóminum nostrum."]}}
+{"id":"tempora-quadp3-3.prelude.1.16","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Amen."]}}
+{"id":"tempora-quadp3-3.prelude.1.17","type":"para","t":{"la":["Orémus. Deus, qui humiliatióne flécteris, et satisfactióne placáris: aurem tuæ pietátis inclína précibus nostris; et capítibus servórum tuórum, horum cínerum aspersióne contáctis, effúnde propítius grátiam tuæ benedictiónis: ut eos et spíritu compunctiónis répleas et, quæ juste postuláverint, efficáciter tríbuas; et concéssa perpétuo stabilíta et intácta manére decérnas. Per Christum, Dóminum nostrum."]}}
+{"id":"tempora-quadp3-3.prelude.1.18","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Amen."]}}
+{"id":"tempora-quadp3-3.prelude.1.19","type":"para","t":{"la":["Orémus. Omnípotens sempitérne Deus, qui Ninivítis, in cínere et cilício pæniténtibus, indulgéntiæ tuæ remédia præstitísti: concéde propítius; ut sic eos imitémur hábitu, quaténus véniæ prosequámur obténtu."]}}
+{"id":"tempora-quadp3-3.prelude.1.20","type":"para","t":{"la":["Per Christum, Dóminum nostrum."]}}
+{"id":"tempora-quadp3-3.prelude.1.21","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Amen."]}}
+{"id":"tempora-quadp3-3.prelude.1.22","type":"para","t":{"la":[{"m":["red","i"],"c":["Postea Celebrans, imposito incenso in thuribulo, ter aspergit cineres aqua benedícta, dicendo Antiphonam Aspérges, sine cantu et sine Psalmo, et ter adolet incenso. Deinde dignior Sacerdos ex Clero accedens ad Altare, imponit cineres Celebranti non genuflexo. Si vero non adsit alius Sacerdos, ipsemet Celebrans, genibus flexis coram Altari, sibi ipsi cineres imponit in capite, nihil dicens, et cantatur statim a choro:"]}]}}
+{"id":"tempora-quadp3-3.prelude.1.23","type":"rubric","t":{"la":["Antiphona."]}}
+{"id":"tempora-quadp3-3.prelude.1.24","type":"para","t":{"la":[{"m":["red","i"],"c":["Joël 2:13"]}]}}
+{"id":"tempora-quadp3-3.prelude.1.25","type":"para","t":{"la":["Immutémur habitu, in cínere et cilício: jejunémus, et plorémus ante Dóminum: quia multum miséricors est dimíttere peccáta nostra Deus noster."]}}
+{"id":"tempora-quadp3-3.prelude.1.26","type":"rubric","t":{"la":["Alia Antiph."]}}
+{"id":"tempora-quadp3-3.prelude.1.27","type":"para","t":{"la":[{"m":["red","i"],"c":["Joël 2:17"]}]}}
+{"id":"tempora-quadp3-3.prelude.1.28","type":"para","t":{"la":["Inter vestíbulum et altáre plorábunt sacerdótes minístri Dómini, et dicent: Parce, Dómine, parce pópulo tuo: et ne claudas ora canéntium te, Dómine."]}}
+{"id":"tempora-quadp3-3.prelude.1.29","type":"rubric","t":{"la":["Responsorium"]}}
+{"id":"tempora-quadp3-3.prelude.1.30","type":"rubric","t":{"la":["Esther 13; Joël 2"]}}
+{"id":"tempora-quadp3-3.prelude.1.31","type":"para","t":{"la":["Emendémus in mélius, quæ ignoránter peccávimus: ne, subito præoccupáti die mortis, quærámus spátium pæniténtiæ, et inveníre non possímus. Atténde, Dómine, et miserére: quia peccávimus tibi."]}}
+{"id":"tempora-quadp3-3.prelude.1.32","type":"rubric","t":{"la":["Ps 78:9"],"fr":["Ps 78:9"]}}
+{"id":"tempora-quadp3-3.prelude.1.33","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Adjuva nos, Deus, salutáris noster: et propter honórem nóminis tui, Dómine, líbera nos. Atténde, Dómine, et miserére: quia peccávimus tibi."]}}
+{"id":"tempora-quadp3-3.prelude.1.34","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto. Atténde, Dómine, et miserére: quia peccávimus tibi."]}}
+{"id":"tempora-quadp3-3.prelude.1.35","type":"para","t":{"la":[{"m":["red","i"],"c":["Sacerdos vero, dum cantantur Antiphonæ et Responsorium, detecto capite, primo imponit cineres digniori Sacerdoti, a quo ipse accepit, deinde Ministris paratis, genibus flexis coram Altari, dicens:"]}]}}
+{"id":"tempora-quadp3-3.prelude.1.36","type":"rubric","t":{"la":["Genesis 3:19"],"fr":["Genesis 3:19"]}}
+{"id":"tempora-quadp3-3.prelude.1.37","type":"para","t":{"la":["Memento, homo, quia pulvis es, et in púlverem revertéris."]}}
+{"id":"tempora-quadp3-3.prelude.1.38","type":"para","t":{"la":[{"m":["red","i"],"c":["Postea veniunt alii, primo Clerus per ordinem, deinde populus: et genibus flexis ante Altare, singulatim recipiunt cinerem a Sacerdote, ut dictum est de Ministris. Completa cinerum impositione, Sacerdos dicit:"]}]}}
+{"id":"tempora-quadp3-3.prelude.1.39","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Dóminus vobíscum."]}}
+{"id":"tempora-quadp3-3.prelude.1.40","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Et cum spíritu tuo."]}}
+{"id":"tempora-quadp3-3.prelude.1.41","type":"para","t":{"la":["Orémus. Concéde nobis, Dómine, præsídia milítiæ christiánæ sanctis inchoáre jejúniis: ut, contra spiritáles nequítias pugnatúri, continéntiæ muniámur auxíliis. Per Christum, Dóminum nostrum."]}}
+{"id":"tempora-quadp3-3.prelude.1.42","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Amen."]}}
+{"id":"tempora-quadp3-3.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-quadp3-3.introit.1","type":"rubric","t":{"la":["Sap 11:24 11:25; 11:27"],"fr":["Sap 11:24 11:25; 11:27"]}}
+{"id":"tempora-quadp3-3.introit.2","type":"para","dropCap":true,"t":{"la":["Miseréris ómnium, Dómine, et nihil odísti eórum quæ fecísti, dissímulans peccáta hóminum propter pæniténtiam et parcens illis: quia tu es Dóminus, Deus noster"]}}
+{"id":"tempora-quadp3-3.introit.3","type":"rubric","t":{"la":["Ps 56:2"],"fr":["Ps 56:2"]}}
+{"id":"tempora-quadp3-3.introit.4","type":"para","t":{"la":["Miserére mei, Deus, miserére mei: quóniam in te confídit ánima mea."]}}
+{"id":"tempora-quadp3-3.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-quadp3-3.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-quadp3-3.introit.7","type":"para","t":{"la":["Miseréris ómnium, Dómine, et nihil odísti eórum quæ fecísti, dissímulans peccáta hóminum propter pæniténtiam et parcens illis: quia tu es Dóminus, Deus noster"]}}
+{"id":"tempora-quadp3-3.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"tempora-quadp3-3.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-quadp3-3.collecte.1","type":"para","t":{"la":["Præsta, Dómine, fidélibus tuis: ut jejuniórum veneránda sollémnia, et cóngrua pietáte suscípiant, et secúra devotióne percúrrant. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-quadp3-3.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"tempora-quadp3-3.lecon.1","type":"para","style":"intro","t":{"la":["Léctio Joélis Prophétæ"],"fr":["Lecture du prophète Joël"]}}
+{"id":"tempora-quadp3-3.lecon.2","type":"rubric","t":{"la":["Joël 2:12-19"]}}
+{"id":"tempora-quadp3-3.lecon.3","type":"para","t":{"la":["Hæc dicit Dóminus: Convertímini ad me in toto corde vestro, in jejúnio, et in fletu, et in planctu. Et scíndite corda vestra, et non vestiménta vestra, et convertímini ad Dóminum, Deum vestrum: quia benígnus et miséricors est, pátiens, et multæ misericórdiæ, et præstábilis super malítia. Quis scit, si convertátur, et ignóscat, et relínquat post se benedictiónem, sacrifícium et libámen Dómino, Deo vestro? Cánite tuba in Sion, sanctificáte jejúnium, vocáte coetum, congregáte pópulum, sanctificáte ecclésiam, coadunáte senes, congregáte parvulos et sugéntes úbera: egrediátur sponsus de cubíli suo, et sponsa de thálamo suo. Inter vestíbulum et altare plorábunt sacerdótes minístri Dómini, et dicent: Parce, Dómine, parce pópulo tuo: et ne des hereditátem tuam in oppróbrium, ut dominéntur eis natiónes. Quare dicunt in pópulis: Ubi est Deus eórum? Zelátus est Dóminus terram suam, et pepércit pópulo suo. Et respóndit Dóminus, et dixit populo suo: Ecce, ego mittam vobis fruméntum et vinum et óleum, et replebímini eis: et non dabo vos ultra oppróbrium in géntibus: dicit Dóminus omnípotens."]}}
+{"id":"tempora-quadp3-3.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"tempora-quadp3-3.graduel.1","type":"rubric","t":{"la":["Ps 56:2; 56:4"],"fr":["Ps 56:2; 56:4"]}}
+{"id":"tempora-quadp3-3.graduel.2","type":"para","t":{"la":["Miserére mei, Deus, miserére mei: quóniam in te confídit ánima mea."]}}
+{"id":"tempora-quadp3-3.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Misit de coelo, et liberávit me, dedit in oppróbrium conculcántes me."]}}
+{"id":"tempora-quadp3-3.graduel.4","type":"rubric","t":{"la":["Tractus"],"fr":["Trait"]}}
+{"id":"tempora-quadp3-3.graduel.5","type":"rubric","t":{"la":["Ps 102:10"],"fr":["Ps 102:10"]}}
+{"id":"tempora-quadp3-3.graduel.6","type":"para","t":{"la":["Dómine, non secúndum peccáta nostra, quæ fécimus nos: neque secúndum iniquitátes nostras retríbuas nobis."]}}
+{"id":"tempora-quadp3-3.graduel.7","type":"rubric","t":{"la":["Ps 78:8-9"],"fr":["Ps 78:8-9"]}}
+{"id":"tempora-quadp3-3.graduel.8","type":"para","t":{"la":["Dómine, ne memíneris iniquitátum nostrarum antiquarum: cito antícipent nos misericórdiæ tuæ, quia páuperes facti sumus nimis. (Hic genuflectitur)"]}}
+{"id":"tempora-quadp3-3.graduel.9","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Adjuva nos, Deus, salutáris noster: et propter glóriam nóminis tui, Dómine, libera nos: et propítius esto peccátis nostris, propter nomen tuum."]}}
+{"id":"tempora-quadp3-3.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-quadp3-3.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum."],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"tempora-quadp3-3.evangile.2","type":"rubric","t":{"la":["Matt 6:16-21"],"fr":["Matt 6:16-21"]}}
+{"id":"tempora-quadp3-3.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Cum jejunátis, nolíte fíeri, sicut hypócritæ, tristes. Extérminant enim fácies suas, ut appáreant homínibus jejunántes. Amen, dico vobis, quia recepérunt mercédem suam. Tu autem, cum jejúnas, unge caput tuum, et fáciem tuam lava, ne videáris homínibus jejúnans, sed Patri tuo, qui est in abscóndito: et Pater tuus, qui videt in abscóndito, reddet tibi. Nolíte thesaurizáre vobis thesáuros in terra: ubi ærúgo et tínea demolítur: et ubi fures effódiunt et furántur. Thesaurizáte autem vobis thesáuros in coelo: ubi neque ærúgo neque tínea demolítur; et ubi fures non effódiunt nec furántur. Ubi enim est thesáurus tuus, ibi est et cor tuum."]}}
+{"id":"tempora-quadp3-3.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"tempora-quadp3-3.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-quadp3-3.offertoire.1","type":"rubric","t":{"la":["Ps 29:2-3"],"fr":["Ps 29:2-3"]}}
+{"id":"tempora-quadp3-3.offertoire.2","type":"para","t":{"la":["Exaltábo te, Dómine, quóniam suscepísti me, nec delectásti inimícos meos super me: Dómine, clamávi ad te, et sanásti me."]}}
+{"id":"tempora-quadp3-3.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-quadp3-3.secrete.1","type":"para","t":{"la":["Fac nos, quǽsumus, Dómine, his munéribus offeréndis conveniénter aptári: quibus ipsíus venerábilis sacraménti celebrámus exórdium. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-quadp3-3.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-quadp3-3.preface.1","type":"rubric","preface":"quad","t":{"la":["Præfatio de Quadragesima."],"fr":["Préface du Carême."]}}
+{"id":"tempora-quadp3-3.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-quadp3-3.communion.1","type":"rubric","t":{"la":["Ps 1:2 et 3."],"fr":["Ps 1:2 et 3."]}}
+{"id":"tempora-quadp3-3.communion.2","type":"para","t":{"la":["Qui meditábitur in lege Dómini die ac nocte, dabit fructum suum in témpore suo."]}}
+{"id":"tempora-quadp3-3.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-quadp3-3.postcommunion.1","type":"para","t":{"la":["Percépta nobis, Dómine, prǽbeant sacraménta subsídium: ut tibi grata sint nostra jejúnia, et nobis profíciant ad medélam. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-quadp3-3.super-populum","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Quadp3-3.txt","section":"Super populum"}],"t":{"la":["Oratio super populum"],"fr":["Oraison sur le peuple"]}}
+{"id":"tempora-quadp3-3.super-populum.1","type":"rubric","t":{"la":["Oratio super populum"]}}
+{"id":"tempora-quadp3-3.super-populum.2","type":"para","t":{"la":["Orémus."]}}
+{"id":"tempora-quadp3-3.super-populum.3","type":"rubric","t":{"la":["Et Diaconus, si in officio Diaconatus serviat versus ad populum, junctis manibus, dicit. Alioquin ipse Sacerdos, stans in eodem loco ante librum, et non vertens se ad populum."]}}
+{"id":"tempora-quadp3-3.super-populum.4","type":"para","t":{"la":["Humiliáte cápita vestra Deo."]}}
+{"id":"tempora-quadp3-3.super-populum.5","type":"para","t":{"la":["Inclinántes se, Dómine, majestáti tuæ, propitiátus inténde: ut, qui divíno múnere sunt refécti, coeléstibus semper nutriántur auxíliis. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

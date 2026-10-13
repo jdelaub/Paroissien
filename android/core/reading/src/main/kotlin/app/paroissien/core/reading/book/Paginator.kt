@@ -1,10 +1,12 @@
 package app.paroissien.core.reading.book
 
 import androidx.compose.runtime.Immutable
+import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.TextMeasurer
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
@@ -34,6 +36,17 @@ sealed interface PageItem {
 
     /** Un décor posé tel quel : la lettrine. */
     class Glyph(val layout: TextLayoutResult, val x: Float, override val y: Float) : PageItem
+
+    /** Une vignette gravée (masque alpha) ou un dessin en couleurs ([color]), posé dans le rectangle (x, y, width, height). */
+    class Picture(
+        val image: ImageBitmap, val x: Float, override val y: Float, val width: Float, val height: Float, val color: Boolean = false,
+    ) : PageItem
+
+    /** L'encadré d'un emplacement (« texte de la messe du jour »). */
+    class Frame(val x: Float, override val y: Float, val width: Float, val height: Float) : PageItem
+
+    /** Le filet vertical entre deux colonnes en regard, de [y] à [y] + [height]. */
+    class Rule(val x: Float, override val y: Float, val height: Float) : PageItem
 }
 
 @Immutable
@@ -84,6 +97,10 @@ fun paginate(
     var pageAnchor: Anchor? = null
     val cache = HashMap<Int, Measured>()
     fun measured(i: Int) = cache.getOrPut(i) { measure(blocks[i]) }
+    fun vignetteHeight(v: ReadingBlock.Vignette): Float {
+        val ratio = v.image.width / v.image.height.toFloat().coerceAtLeast(1f)
+        return minOf(width / ratio, height * 0.4f)
+    }
 
     fun closePage() {
         if (items.isEmpty()) return
@@ -101,17 +118,50 @@ fun paginate(
             continue
         }
         if (block is ReadingBlock.Heading && block.runningHead != null) runningHead = block.runningHead
+        if (block is ReadingBlock.Vignette) {
+            // Pleine largeur du texte, au plus 40 % de la hauteur ; elle part avec le début du bloc suivant.
+            val ratio = block.image.width / block.image.height.toFloat().coerceAtLeast(1f)
+            val h = vignetteHeight(block)
+            val w = h * ratio
+            val gap = with(density) { 4.dp.toPx() }
+            // ce que le bloc suivant demande de garder avec lui (un titre garde le début de son paragraphe)
+            fun solid(i: Int) = blocks[i] !is ReadingBlock.PageBreak && blocks[i] !is ReadingBlock.Vignette
+            val next = (index + 1 until blocks.size).firstOrNull(::solid)
+            val after = next?.let { i ->
+                val n = measured(i)
+                val following = (i + 1 until blocks.size).firstOrNull(::solid)
+                val keep = if (n.keepWithNext && following != null) n.height + measured(following).let { it.gapBefore + it.minStart } else 0f
+                n.gapBefore + maxOf(n.minStart, keep)
+            } ?: 0f
+            // En tête d'une planche (des dessins qui se suivent), toute la planche part avec le texte si elle tient sur une page.
+            val board = if (index > 0 && blocks[index - 1] is ReadingBlock.Vignette) 0f else
+                (index + 1 until blocks.size).takeWhile { blocks[it] is ReadingBlock.Vignette }
+                    .sumOf { (vignetteHeight(blocks[it] as ReadingBlock.Vignette) + gap).toDouble() }.toFloat()
+            val rest = if (h + gap + board + after <= height) board else 0f
+            if (y > 0f && y + h + gap + rest + after > height) closePage()
+            if (pageHead == null) pageHead = runningHead
+            items += PageItem.Picture(block.image, (width - w) / 2, y, w, h, block.color)
+            y += h + gap
+            continue
+        }
         val m = measured(index)
         if (m.units.isEmpty()) continue
         val next = (index + 1 until blocks.size).firstOrNull { blocks[it] !is ReadingBlock.PageBreak }
-        val keepHeight = if (m.keepWithNext && next != null) m.height + measured(next).let { it.gapBefore + it.minStart } else 0f
+        // Un titre reste avec ce qui le suit : le début du bloc, ou l'image et le début du texte qu'elle illustre.
+        val keepHeight = if (m.keepWithNext && next != null) m.height + when (val n = blocks[next]) {
+            is ReadingBlock.Vignette -> vignetteHeight(n) + with(density) { 4.dp.toPx() } +
+                ((next + 1 until blocks.size).firstOrNull { blocks[it] !is ReadingBlock.PageBreak && blocks[it] !is ReadingBlock.Vignette }
+                    ?.let { measured(it).let { f -> f.gapBefore + f.minStart } } ?: 0f)
+            else -> measured(next).let { it.gapBefore + it.minStart }
+        } else 0f
 
         if (y > 0f && y + m.gapBefore + maxOf(m.minStart, keepHeight) > height) closePage()
         if (y > 0f) y += m.gapBefore
 
         var u = 0
         while (u < m.units.size) {
-            val origin = y - m.units[u].top
+            // Le haut du bloc pour sa première ligne (un encadré commence au-dessus de son texte), sinon la ligne reprise.
+            val origin = y - if (u == 0) 0f else m.units[u].top
             var fit = 0
             while (u + fit < m.units.size && origin + m.units[u + fit].bottom <= height + 0.5f) fit++
             val remaining = m.units.size - u
@@ -126,6 +176,10 @@ fun paginate(
             }
             if (pageHead == null) pageHead = runningHead
             if (u == 0) m.decorations.forEach { items += PageItem.Glyph(it.layout, it.x, origin + it.y) }
+            if (u == 0) m.frame?.let { items += PageItem.Frame(0f, origin, width.toFloat(), m.height) }
+            val placedTop = origin + m.units[u].top
+            val placedBottom = origin + (u until u + fit).maxOf { m.units[it].bottom }
+            m.ruleX?.let { items += PageItem.Rule(it, placedTop, placedBottom - placedTop) }
             var first = u
             while (first < u + fit) {
                 val part = m.units[first].part
@@ -141,8 +195,9 @@ fun paginate(
                 items += lines
                 first = last + 1
             }
-            y = origin + m.units[u + fit - 1].bottom
+            y = placedBottom
             u += fit
+            if (u >= m.units.size && m.frame != null) y = origin + m.height
             if (u < m.units.size) closePage()
         }
     }
@@ -182,8 +237,12 @@ private class Measured(
     val keepWithNext: Boolean = false,
     /** Lignes de tête qui ne se séparent pas (lettrine, titre). */
     val keepTogether: Int = 0,
+    /** Marge intérieure d'un encadré autour des lignes, ou null. */
+    val frame: Float? = null,
+    /** Abscisse du filet entre deux colonnes en regard, ou null. */
+    val ruleX: Float? = null,
 ) {
-    val height: Float get() = units.lastOrNull()?.bottom ?: 0f
+    val height: Float get() = (units.maxOfOrNull { it.bottom } ?: 0f) + (frame ?: 0f)
 
     /** Hauteur minimale à poser ensemble au début du bloc. */
     val minStart: Float get() = units.getOrNull(minOf(units.size, maxOf(2, keepTogether)) - 1)?.bottom ?: 0f
@@ -193,7 +252,8 @@ private class BlockMeasure(
     private val measurer: TextMeasurer,
     private val t: BookTypography,
     private val density: Density,
-    private val width: Int,
+    val width: Int,
+    private val ragged: Boolean = false,
 ) {
     private val blockGap = with(density) { 8.dp.toPx() }
     private val headingGap = with(density) { 20.dp.toPx() }
@@ -209,14 +269,51 @@ private class BlockMeasure(
             Measured(block.id, units, gapBefore = headingGap, keepTogether = units.size)
         }
         is ReadingBlock.Heading -> {
-            val units = stack(layout(t.render(block.text, block.lang), if (block.minor) t.minorHeading else t.heading), 0f)
+            val units = stack(layout(t.render(block.text, block.lang, hyphenate = false), if (block.minor) t.minorHeading else t.heading), 0f)
             Measured(block.id, units, gapBefore = headingGap, keepWithNext = true, keepTogether = units.size)
         }
-        is ReadingBlock.Rubric -> Measured(block.id, stack(layout(t.render(block.text, BlockLang.FR), t.rubric), 0f), gapBefore = blockGap)
-        is ReadingBlock.Versicle -> Measured(block.id, stack(layout(t.render(block.text, block.lang), t.versicle(block.lang)), 0f), gapBefore = blockGap)
+        is ReadingBlock.Rubric -> Measured(block.id, stack(layout(t.render(block.text, BlockLang.FR), t.rubric.ragged()), 0f), gapBefore = blockGap)
+        is ReadingBlock.Versicle -> Measured(block.id, stack(layout(t.render(block.text, block.lang), t.versicle(block.lang).ragged()), 0f), gapBefore = blockGap)
         is ReadingBlock.Ornament -> Measured(block.id, stack(layout(AnnotatedString("❦"), t.ornament), 0f), gapBefore = headingGap)
         is ReadingBlock.Paragraph -> paragraph(block)
-        is ReadingBlock.PageBreak -> Measured(block.id, emptyList(), gapBefore = 0f)
+        is ReadingBlock.PageBreak, is ReadingBlock.Vignette -> Measured(block.id, emptyList(), gapBefore = 0f)
+        is ReadingBlock.Slot -> slot(block)
+        is ReadingBlock.Facing -> facing(block)
+    }
+
+    /** L'encadré d'un emplacement : son texte centré, avec une marge intérieure ; il ne se coupe pas. */
+    private fun slot(block: ReadingBlock.Slot): Measured {
+        val pad = with(density) { 8.dp.toPx() }
+        val text = layout(t.render(block.text, BlockLang.FR), t.paragraph(BlockLang.FR, TextRole.CENTERED), (width - 2 * pad).toInt())
+        val part = Part(text, pad, 0)
+        val units = (0 until text.lineCount).map { LineUnit(part, it, pad + text.getLineTop(it), pad + text.getLineBottom(it)) }
+        // L'encadré annonce ce qui suit : il ne reste pas seul en bas de page.
+        return Measured(block.id, units, gapBefore = headingGap, keepWithNext = true, keepTogether = units.size, frame = pad)
+    }
+
+    /** Les colonnes en regard, à la moitié de la largeur : les lignes des deux colonnes, rangées par hauteur. */
+    private val gutter = with(density) { 14.dp.toPx() }.toInt()
+    private val column: BlockMeasure by lazy { BlockMeasure(measurer, t, density, (width - gutter) / 2, ragged = true) }
+
+    /** En colonne étroite, versets et rubriques vont au fer à gauche : justifiés, deux mots s'y écartent trop. */
+    private fun TextStyle.ragged(): TextStyle = if (ragged) copy(textAlign = TextAlign.Start) else this
+
+    private fun facing(block: ReadingBlock.Facing): Measured {
+        val left = column(block.left)
+        val right = column(block.right)
+        val dx = (column.width + gutter).toFloat()
+        val moved = HashMap<Part, Part>()
+        fun shift(part: Part) = moved.getOrPut(part) { Part(part.layout, part.x + dx, part.charBase) }
+        val units = (left.units + right.units.map { LineUnit(shift(it.part), it.line, it.top, it.bottom) }).sortedWith(compareBy({ it.top }, { it.part.x }))
+        val heading = left.keepTogether >= left.units.size || right.keepTogether >= right.units.size
+        return Measured(
+            block.id, units,
+            decorations = left.decorations + right.decorations.map { Decoration(it.layout, it.x + dx, it.y) },
+            gapBefore = maxOf(left.gapBefore, right.gapBefore),
+            keepWithNext = left.keepWithNext || right.keepWithNext,
+            keepTogether = if (heading) units.size else 2 * maxOf(2, left.keepTogether, right.keepTogether),
+            ruleX = column.width + gutter / 2f,
+        )
     }
 
     private fun paragraph(block: ReadingBlock.Paragraph): Measured {

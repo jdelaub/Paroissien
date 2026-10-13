@@ -4,6 +4,7 @@ import org.gradle.process.ExecOperations
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.roborazzi)
 }
 
@@ -53,8 +54,48 @@ val buildContentPacks = tasks.register<BuildContentPacks>("buildContentPacks") {
     outputDir.set(layout.buildDirectory.dir("generated/content-packs"))
 }
 
+/**
+ * Bibliothèque d'images pieuses choisie par l'utilisateur, si content/data/images existe : copiée telle quelle vers
+ * assets/images/. Sans elle, la boîte ne contient que les images numérisées dans l'app.
+ */
+abstract class CopyPiousImages : DefaultTask() {
+    @get:InputDirectory
+    @get:Optional
+    @get:PathSensitive(PathSensitivity.RELATIVE)
+    abstract val source: DirectoryProperty
+
+    @get:OutputDirectory
+    abstract val outputDir: DirectoryProperty
+
+    @get:Inject
+    abstract val fs: FileSystemOperations
+
+    @TaskAction
+    fun copy() {
+        val images = outputDir.dir("images").get().asFile
+        if (!source.isPresent) {
+            images.deleteRecursively()
+            return
+        }
+        fs.sync {
+            from(source) { include("catalog.json", "*.webp", "thumbs/*.webp") }
+            into(images)
+        }
+    }
+}
+
+val copyPiousImages = tasks.register<CopyPiousImages>("copyPiousImages") {
+    source.set(content.dir("data/images").takeIf { it.asFile.isDirectory })
+    outputDir.set(layout.buildDirectory.dir("generated/pious-images"))
+}
+
 androidComponents {
-    onVariants { variant -> variant.sources.assets?.addGeneratedSourceDirectory(buildContentPacks, BuildContentPacks::outputDir) }
+    onVariants { variant ->
+        // La saveur « vide » n'embarque aucun livre ni aucune image : on la remplit par une sauvegarde.
+        if (variant.flavorName == "vide") return@onVariants
+        variant.sources.assets?.addGeneratedSourceDirectory(buildContentPacks, BuildContentPacks::outputDir)
+        variant.sources.assets?.addGeneratedSourceDirectory(copyPiousImages, CopyPiousImages::outputDir)
+    }
 }
 
 // Clé de publication hors du dépôt, comme pour les autres projets (~/.gradle/gradle.properties). Absente : APK release non signé.
@@ -70,16 +111,19 @@ android {
         applicationId = "app.paroissien" // figé (ADR 002) : ne plus changer après la première installation
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 5
-        versionName = "0.3.1"
+        versionCode = 31
+        versionName = "0.7.4"
     }
 
     // ADR 001 : seule « domainePublic » est construite par la CI publique ; « personnel » peut embarquer
-    // des contenus réservés à l'usage privé (Clairval, Barroux, AELF) et ne se construit qu'en privé.
+    // des contenus réservés à l'usage privé (Clairval, Barroux, AELF) et ne se construit qu'en privé. « vide » n'a
+    // aucun livre : l'app telle qu'on pourrait la livrer en attendant les autorisations, remplie par une sauvegarde
+    // (décision du 12/10/2026) ; elle cohabite avec les deux autres sur le téléphone.
     flavorDimensions += "distribution"
     productFlavors {
         create("domainePublic") { dimension = "distribution" }
         create("personnel") { dimension = "distribution"; versionNameSuffix = "-perso" }
+        create("vide") { dimension = "distribution"; applicationIdSuffix = ".vide"; versionNameSuffix = "-vide" }
     }
     if (personnelPacksDir != null) sourceSets.getByName("personnel").assets.directories.add(personnelPacksDir)
 
@@ -150,8 +194,13 @@ dependencies {
     implementation(project(":core:liturgy"))
     implementation(project(":core:data"))
     implementation(project(":core:model"))
+    implementation(project(":core:imaging"))
     implementation(project(":core:reading"))
     implementation(libs.compose.foundation)
+    implementation(libs.compose.material.icons.core)
+    implementation(libs.androidx.navigation3.runtime)
+    implementation(libs.androidx.navigation3.ui)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.metrics.performance)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
@@ -160,6 +209,7 @@ dependencies {
 
     testImplementation(libs.junit)
     testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.sqlite.framework)
     testImplementation(libs.roborazzi)
     testImplementation(libs.roborazzi.compose)
     testImplementation(platform(libs.compose.bom))

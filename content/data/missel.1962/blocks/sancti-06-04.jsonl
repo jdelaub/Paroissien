@@ -1,0 +1,61 @@
+{"id":"sancti-06-04.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Officium"}],"t":{"la":["S. Francisci Caracciolo Confessoris"],"fr":["Saint François Caracciolo, confesseur"]}}
+{"id":"sancti-06-04.rang","type":"rubric","t":{"fr":["IIIᵉ classe — ornements blancs."]}}
+{"id":"sancti-06-04.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-06-04.introit.1","type":"rubric","t":{"la":["Ps 68:10."],"fr":["Ps 68:10."]}}
+{"id":"sancti-06-04.introit.2","type":"para","dropCap":true,"t":{"la":["Factum est cor meum tamquam cera liquéscens in médio ventris mei: quóniam zelus domus tuæ comédit me."]}}
+{"id":"sancti-06-04.introit.3","type":"rubric","t":{"la":["Ps 72:1"],"fr":["Ps 72:1"]}}
+{"id":"sancti-06-04.introit.4","type":"para","t":{"la":["Quam bonus Israël Deus: his, qui recto sunt corde!"]}}
+{"id":"sancti-06-04.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-06-04.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-06-04.introit.7","type":"para","t":{"la":["Factum est cor meum tamquam cera liquéscens in médio ventris mei: quóniam zelus domus tuæ comédit me."]}}
+{"id":"sancti-06-04.introit.tp","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Introitus"}],"t":{"la":["Tempore paschali"],"fr":["Au temps pascal"]}}
+{"id":"sancti-06-04.introit.tp.1","type":"rubric","t":{"la":["Ps 68:10."],"fr":["Ps 68:10."]}}
+{"id":"sancti-06-04.introit.tp.2","type":"para","t":{"la":["Factum est cor meum tamquam cera liquéscens in médio ventris mei: quóniam zelus domus tuæ comédit me. Allelúja, allelúja"]}}
+{"id":"sancti-06-04.introit.tp.3","type":"rubric","t":{"la":["Ps 72:1"],"fr":["Ps 72:1"]}}
+{"id":"sancti-06-04.introit.tp.4","type":"para","t":{"la":["Quam bonus Israël Deus: his, qui recto sunt corde!"]}}
+{"id":"sancti-06-04.introit.tp.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-06-04.introit.tp.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-06-04.introit.tp.7","type":"para","t":{"la":["Factum est cor meum tamquam cera liquéscens in médio ventris mei: quóniam zelus domus tuæ comédit me. Allelúja, allelúja"]}}
+{"id":"sancti-06-04.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"sancti-06-04.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-06-04.collecte.1","type":"para","t":{"la":["Deus, qui beátum Francíscum, novi órdinis institutórem, orándi stúdio et pœniténtiæ amóre decorásti: da fámulis tuis in ejus imitatióne ita profícere; ut, semper orántes et corpus in servitútem redigéntes, ad cœléstem glóriam perveníre mereántur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-04.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"sancti-06-04.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"sancti-06-04.lecon.2","type":"rubric","t":{"la":["Sap 4:7-14"],"fr":["Sap 4:7-14"]}}
+{"id":"sancti-06-04.lecon.3","type":"para","t":{"la":["Justus, si morte præoccupátus fúerit, in refrigério erit. Senéctus enim venerábilis est non diutúrna, neque annórum número computáta: cani autem sunt sensus hóminis, et ætas senectútis vita immaculáta. Placens Deo Jactus est diléctus, et vivens inter peccatóres translátus est. Raptus est, ne malítia mutáret intelléctum ejus, aut ne fíctio decíperet ánimam illíus. Fascinátio enim nugacitátis obscúrat bona, et inconstántia concupiscéntiæ transvértit sensum sine malítia. Consummátus in brevi explévit témpora multa, plácita enim erat Deo ánima illíus: propter hoc properávit edúcere illum de médio iniquitátum."]}}
+{"id":"sancti-06-04.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-06-04.graduel.1","type":"rubric","t":{"la":["Ps 41:2"],"fr":["Ps 41:2"]}}
+{"id":"sancti-06-04.graduel.2","type":"para","t":{"la":["Quemádmodum desíderat cervus ad fontes aquárum: ita desíderat ánima mea ad te, Deus."]}}
+{"id":"sancti-06-04.graduel.3","type":"rubric","t":{"la":["Ps 41:3"],"fr":["Ps 41:3"]}}
+{"id":"sancti-06-04.graduel.4","type":"para","t":{"la":["Sitívit ánima mea ad Deum fortem vivum. Allelúja, allelúja."]}}
+{"id":"sancti-06-04.graduel.5","type":"rubric","t":{"la":["Ps 72:26"],"fr":["Ps 72:26"]}}
+{"id":"sancti-06-04.graduel.6","type":"para","t":{"la":["Defécit caro mea et cor meum: Deus cordis mei, et pars mea Deus in ætérnum. Allelúja."]}}
+{"id":"sancti-06-04.graduel.tp","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"GradualeP"}],"t":{"la":["Tempore paschali"],"fr":["Au temps pascal"]}}
+{"id":"sancti-06-04.graduel.tp.1","type":"para","t":{"la":["Allelúja, allelúja"]}}
+{"id":"sancti-06-04.graduel.tp.2","type":"rubric","t":{"la":["Ps 64:5"],"fr":["Ps 64:5"]}}
+{"id":"sancti-06-04.graduel.tp.3","type":"para","t":{"la":["Beátus, quem elegísti et assumpsísti: inhabitábit in átriis tuis. Allelúja."]}}
+{"id":"sancti-06-04.graduel.tp.4","type":"rubric","t":{"la":["Ps 111:9"],"fr":["Ps 111:9"]}}
+{"id":"sancti-06-04.graduel.tp.5","type":"para","t":{"la":["Dispérsit, dedit paupéribus: justítia ejus manet in sǽculum sǽculi. Allelúja."]}}
+{"id":"sancti-06-04.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-06-04.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"sancti-06-04.evangile.2","type":"rubric","t":{"la":["Luc 12:35-40"],"fr":["Luc 12:35-40"]}}
+{"id":"sancti-06-04.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucernæ ardéntes in mánibus vestris, et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut, cum vénerit et pulsáverit, conféstim apériant ei. ¶ Beáti servi illi, quos, cum vénerit dóminus, invénerit vigilántes: amen, dico vobis, quod præcínget se, et fáciet illos discúmbere, et tránsiens ministrábit illis. Et si vénerit in secúnda vigília, et si in tértia vigília vénerit, et ita invénerit, beáti sunt servi illi. Hoc autem scitóte, quóniam, si sciret paterfamílias, qua hora fur veníret, vigiláret útique, et non síneret pérfodi domum suam. Et vos estóte paráti, quia, qua hora non putátis, Fílius hóminis véniet."]}}
+{"id":"sancti-06-04.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-06-04.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C4a.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-06-04.offertoire.1","type":"rubric","t":{"la":["Ps 91:13"],"fr":["Ps 91:13"]}}
+{"id":"sancti-06-04.offertoire.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus, quæ in Líbano est, multiplicábitur."]}}
+{"id":"sancti-06-04.offertoire.tp","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Offertorium"},{"file":"horas/Latin/Commune/C4a.txt","section":"Offertorium"}],"t":{"la":["Tempore paschali"],"fr":["Au temps pascal"]}}
+{"id":"sancti-06-04.offertoire.tp.1","type":"rubric","t":{"la":["Ps 91:13"],"fr":["Ps 91:13"]}}
+{"id":"sancti-06-04.offertoire.tp.2","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus, quæ in Líbano est, multiplicábitur. Allelúja."]}}
+{"id":"sancti-06-04.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-06-04.secrete.1","type":"para","t":{"la":["Da nobis, clementíssime Jesu: ut præclára beáti Francísci mérita recoléntes, eódem nos, ac ille, caritátis igne succénsi, digne in circúitu sacræ hujus mensæ tuæ esse valeámus: Qui vivis et regnas cum Deo Patre, in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-06-04.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-06-04.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune ; dans l’octave de la Pentecôte : préface du Saint-Esprit ; après l’Ascension : préface de l’Ascension."]}}
+{"id":"sancti-06-04.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-06-04.communion.1","type":"rubric","t":{"la":["Ps 30:20"],"fr":["Ps 30:20"]}}
+{"id":"sancti-06-04.communion.2","type":"para","t":{"la":["Quam magna multitúdo dulcédinis tuæ, Dómine, quam abscondísti timéntibus te!"]}}
+{"id":"sancti-06-04.communion.tp","type":"rubric","x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Communio"}],"t":{"la":["Tempore paschali"],"fr":["Au temps pascal"]}}
+{"id":"sancti-06-04.communion.tp.1","type":"rubric","t":{"la":["Ps 30:20"],"fr":["Ps 30:20"]}}
+{"id":"sancti-06-04.communion.tp.2","type":"para","t":{"la":["Quam magna multitúdo dulcédinis tuæ, Dómine, quam abscondísti timéntibus te! Allelúja."]}}
+{"id":"sancti-06-04.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/06-04.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-06-04.postcommunion.1","type":"para","t":{"la":["Sacrosáncta sacrifícii, quǽsumus, Dómine, quod hódie in sollemnitáte beáti Francísci tuæ obtúlimus majestáti, grata semper in méntibus nostris memória persevéret et fructus. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

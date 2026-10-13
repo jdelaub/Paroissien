@@ -1,0 +1,120 @@
+# Sainte Geneviève, vierge (3 janvier, propre de Paris et de France) : messe propre.
+# Transcrit par Paroissien sur les fac-similés de « Messes et offices propres au diocèse de Paris à l'usage des
+# fidèles », Tours, Mame, [1953] (permission du cardinal Feltin), pages 11-15 ; archive.org
+# messes-diocese-de-paris, images n9-n13. Latin seul. L'Épître (2 Cor 10:17-18 ; 11:1-2) et l'Évangile (Matt 25:1-13)
+# sont les péricopes du commun des vierges : on les prend à Divinum Officium (C6a, C6). Préface des Saints (p. 15).
+
+[Officium]
+S. Genovefæ Virginis
+
+[Rank]
+;;Duplex;;3;;vide C6a
+
+[Rule]
+vide C6a;
+Gloria
+Prefatio=Sanctis
+Sequentia
+
+[Introitus]
+!Is 61
+v. Gaudens gaudébo in Dómino et exsultábit ánima mea in Deo meo: quia índuit me vestiméntis salútis, et induménto justítiæ circúmdedit me, quasi sponsam ornátam monílibus suis.
+!Ps 44
+Eructávit cor meum verbum bonum: dico ego ópera mea Regi.
+&Gloria
+v. Gaudens gaudébo in Dómino et exsultábit ánima mea in Deo meo: quia índuit me vestiméntis salútis, et induménto justítiæ circúmdedit me, quasi sponsam ornátam monílibus suis.
+
+[Oratio]
+Effúnde super nos, Dómine, Spíritum agnitiónis et dilectiónis quo ancíllam tuam Genovéfam implevísti: ut sédula ejus imitatióne tibi sincére obsequéntes; fide tibi et ópere placeámus.
+$Per Dominum eiusdem
+
+[Lectio]
+@Commune/C6a
+
+[Graduale]
+!Os 2
+Sponsábo te mihi in sempitérnum in justítia et judício, et in miseratiónibus.
+V. Et sponsábo te mihi in fide, et scies quia ego Dóminus.
+Allelúia, allelúia.
+!Ps 72
+V. Mihi adhærére Deo bonum est, pónere in Dómino Deo spem meam.
+
+[Sequentia]
+Genovéfæ solémnitas
+Solémne parit gáudium.
+Cordis erúmpat púritas
+In laudis sacrifícium.
+_
+Felix ortus infántulæ,
+Teste Germáno Præsule,
+Quod prævídit in spíritu
+Rerum probátur éxitu.
+_
+Hic ad pectus virgíneum,
+Pro pudóris signáculo,
+Nummum suspéndit ǽneum,
+Insígnem crucis título.
+_
+Genovéfam divínitus
+Oblato dotat múnere,
+In templum Sancti Spíritus,
+Sub Christi ditans fœdere.
+_
+Insóntem manu fériens,
+Mater privátur lúmine,
+Matri Virgo compátiens
+Lucis dat usum prístinæ.
+_
+Cælésti duce prævio
+Cælos lustrat et Tártara,
+Civésque precum stúdio
+Servat a gente bárbara.
+_
+Divíno diu múnere
+Sitim levat artíficum;
+Confráctum casu míseræ
+Matri resígnat únicum.
+_
+Ad primam precem Vírginis
+Contremíscunt dæmónia,
+Pax datur energúmenis,
+Spes ægris, reis vénia.
+_
+In ejus manu cérei
+Reaccendúntur cǽlitus:
+Per hanc in sinus álvei
+Redit amnis coércitus.
+_
+Ignem sacrum refrígerat.
+Post mortem vivens méritis,
+Quæ prius in se vícerat,
+Æstus intérni fómitis.
+_
+Morti, morbis dæmónibus
+Et eleméntis ímperat,
+Sed Genovéfa précibus
+Natúræ leges súperat.
+_
+Operátur in párvulis
+Christi virtus magnália:
+Christo, pro tot miráculis,
+Laus frequens, jugis glória.
+Amen. Alleluia.
+
+[Evangelium]
+@Commune/C6:Evangelium
+
+[Offertorium]
+O Genovéfa, réspice nos pietátis óculo! consors lucis angélicæ, Regis assístens vúltui, nos Deo reconcília.
+
+[Secreta]
+Offeréntibus tibi, Dómine, preces et múnera in honóre sanctæ Vírginis tuæ Genovéfæ: da nobis, ejus exémplo, perseveráre in innocéntia vitæ, in humilitáte pœniténtiæ, in mansuetúdine patiéntiæ.
+$Per Dominum
+
+[Communio]
+!Judith 15
+Tu glória Jerúsalem, tu lætítia Israël, tu honorificéntia pópuli nostri, allelúia.
+
+[Postcommunio]
+Adjuvent nos, quǽsumus, Dómine, et hæc mystéria sancta quæ súmpsimus, et beátæ Genovéfæ intercéssio veneránda.
+$Per Dominum

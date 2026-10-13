@@ -4,21 +4,21 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.core.view.WindowCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
-import app.paroissien.spike.SpikeScreen
+import app.paroissien.prayer.PrayerMode
+import app.paroissien.ui.ParoissienRoot
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
 
-/** Phase 1a : le livre d'essai (tourne-page, papier, polices, césure). Remplacé par « Aujourd'hui » en phase 4. */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        // Lecture sans distraction : barres système masquées, rappelées d'un glissement depuis le bord.
-        WindowCompat.getInsetsController(window, window.decorView).apply {
-            systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-            hide(WindowInsetsCompat.Type.systemBars())
+        val graph = (application as ParoissienApp).graph
+        // Filet de sécurité (rapport 08, §2.10.2) : sans séance en cours, le mode « Temps de prière » ne reste pas actif.
+        if (!PrayerMode.sessionRunning) {
+            val mode = PrayerMode(applicationContext)
+            graph.scope.launch { mode.ensureOff(graph.settings.settings.first().zenRuleId) }
         }
-        setContent { SpikeScreen() }
+        setContent { ParoissienRoot(graph) }
     }
 }

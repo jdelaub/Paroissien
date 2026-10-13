@@ -49,6 +49,8 @@ Les **divisions** descendent jusqu'aux unités de lecture (`"unit": true`), c'es
 | `note` | `placement` ∈ foot, end, margin ; `label` | note appelée par `{"note":"<id>"}` |
 | `separator` | `kind` ∈ rule, asterism, fleuron, space | pas de texte |
 | `item` | `marker?`, `level?` | points, listes |
+| `image` | `href` (fichier de `assets/`), `alt` {langue: description}, `credit?`, `kind?` ∈ ink (défaut), color | gravure ou dessin ; légende facultative dans `t`. `ink` : un masque d'encre (WebP, l'encre dans l'alpha) que le lecteur teint de l'encre du thème. `color` : un dessin en couleurs sur fond blanc, que le lecteur multiplie avec le papier (sur papier sombre, posé sur une planche claire). Des images qui se suivent restent ensemble sur la page quand elles y tiennent. Le paquet les range dans `asset` sous `<publication>/<nom>` |
+| `slot` | `slot` (ex. `proprium.introitus`) | emplacement d'une pièce variable (« texte de la messe du jour ») ; `t` porte l'intitulé affiché, l'app pourra le remplir depuis le missel |
 
 Chaque bloc : `{"id": …, "type": …, <attributs>, "t": {"<langue>": [inlines]}}`. Une langue doit figurer dans `languages`.
 

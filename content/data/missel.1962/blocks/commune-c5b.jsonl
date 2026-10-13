@@ -1,0 +1,48 @@
+{"id":"commune-c5b.titre","type":"heading","level":1,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Officium"}],"t":{"la":["Commune Abbatis"],"fr":["Commun d’un abbé : messe Os justi"]}}
+{"id":"commune-c5b.rang","type":"rubric","t":{"fr":["Ornements blancs."]}}
+{"id":"commune-c5b.introit","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Introitus"},{"file":"horas/Latin/Commune/C5.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"commune-c5b.introit.1","type":"rubric","t":{"la":["Ps 36:30-31"],"fr":["Ps 36:30-31"]}}
+{"id":"commune-c5b.introit.2","type":"para","dropCap":true,"t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
+{"id":"commune-c5b.introit.3","type":"rubric","t":{"la":["Ps 36:1"],"fr":["Ps 36:1"]}}
+{"id":"commune-c5b.introit.4","type":"para","t":{"la":["Noli æmulári in malignántibus: neque zeláveris faciéntes iniquitátem."]}}
+{"id":"commune-c5b.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"commune-c5b.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"commune-c5b.introit.7","type":"para","t":{"la":["Os justi meditábitur sapiéntiam, et lingua ejus loquétur judícium: lex Dei ejus in corde ipsíus."]}}
+{"id":"commune-c5b.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"commune-c5b.collecte","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"commune-c5b.collecte.1","type":"para","t":{"la":["Intercéssio nos, quǽsumus, Dómine, beáti N. Abbátis comméndet: ut, quod nostris méritis non valémus, ejus patrocínio assequámur. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c5b.lecon","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"commune-c5b.lecon.1","type":"para","style":"intro","t":{"la":["Léctio libri Sapiéntiæ"],"fr":["Lecture du livre de la Sagesse"]}}
+{"id":"commune-c5b.lecon.2","type":"rubric","t":{"la":["Eccli 45:1-6"],"fr":["Eccli 45:1-6"]}}
+{"id":"commune-c5b.lecon.3","type":"para","t":{"la":["Diléctus Deo et homínibus, cujus memória in benedictióne est. Símilem illum fecit in glória sanctórum, et magnificávit eum in timóre inimicórum, et in verbis suis monstra placávit. Glorificávit illum in conspéctu regum, et jussit illi coram pópulo suo, et osténdit illi glóriam suam. In fide et lenitáte ipsíus sanctum fecit illum, et elégit eum ex omni carne. Audívit enim eum et vocem ipsíus, et indúxit illum in nubem. Et dedit illi coram præcépta, et legem vitæ et disciplínæ."]}}
+{"id":"commune-c5b.graduel","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"commune-c5b.graduel.1","type":"rubric","t":{"la":["Ps 20:4-5"],"fr":["Ps 20:4-5"]}}
+{"id":"commune-c5b.graduel.2","type":"para","t":{"la":["Dómine, prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite ejus corónam de lápide pretióso."]}}
+{"id":"commune-c5b.graduel.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Vitam pétiit a te, et tribuísti ei longitúdinem diérum in sǽculum sǽculi. Allelúja, allelúja."]}}
+{"id":"commune-c5b.graduel.4","type":"rubric","t":{"la":["Ps 91:13"],"fr":["Ps 91:13"]}}
+{"id":"commune-c5b.graduel.5","type":"para","t":{"la":["Justus ut palma florébit: sicut cedrus Líbani multiplicábitur. Allelúja."]}}
+{"id":"commune-c5b.graduel.sept","type":"rubric","x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Tractus"}],"t":{"la":["Post Septuagesimam"],"fr":["Après la Septuagésime"]}}
+{"id":"commune-c5b.graduel.sept.1","type":"rubric","t":{"la":["Ps 20:4-5"],"fr":["Ps 20:4-5"]}}
+{"id":"commune-c5b.graduel.sept.2","type":"para","t":{"la":["Dómine, prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite ejus corónam de lápide pretióso."]}}
+{"id":"commune-c5b.graduel.sept.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Vitam pétiit a te, et tribuísti ei longitúdinem diérum in sǽculum sǽculi."]}}
+{"id":"commune-c5b.graduel.sept.4","type":"rubric","t":{"la":["Ps 111:1-3"],"fr":["Ps 111:1-3"]}}
+{"id":"commune-c5b.graduel.sept.5","type":"para","t":{"la":["Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis."]}}
+{"id":"commune-c5b.graduel.sept.6","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Potens in terra erit semen ejus: generátio rectórum benedicétur."]}}
+{"id":"commune-c5b.graduel.sept.7","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi."]}}
+{"id":"commune-c5b.evangile","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"commune-c5b.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"commune-c5b.evangile.2","type":"rubric","t":{"la":["Matt 19:27-29"],"fr":["Matt 19:27-29"]}}
+{"id":"commune-c5b.evangile.3","type":"para","t":{"la":["In illo témpore: Dixit Petrus ad Jesum: Ecce, nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Jesus autem dixit illis: Amen, dico vobis, quod vos, qui secúti estis me, in regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. Et omnis, qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros, propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit."]}}
+{"id":"commune-c5b.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"commune-c5b.offertoire","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"commune-c5b.offertoire.1","type":"rubric","t":{"la":["Ps 20:3-4"],"fr":["Ps 20:3-4"]}}
+{"id":"commune-c5b.offertoire.2","type":"para","t":{"la":["Desidérium ánimæ ejus tribuísti ei, Dómine, et voluntáte labiórum ejus non fraudásti eum: posuísti in cápite ejus corónam de lápide pretióso."]}}
+{"id":"commune-c5b.secrete","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"commune-c5b.secrete.1","type":"para","t":{"la":["Sacris altáribus, Dómine, hóstias superpósitas sanctus N. Abbas, quǽsumus, in salútem nobis proveníre depóscat. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"commune-c5b.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"commune-c5b.preface.1","type":"rubric","preface":"communis","t":{"la":["Præfatio Communis."],"fr":["Préface commune, ou préface du temps (Carême, Passion, Pâques, Ascension) quand il y en a une."]}}
+{"id":"commune-c5b.communion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Communio"},{"file":"horas/Latin/Commune/C4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"commune-c5b.communion.1","type":"rubric","t":{"la":["Luc 12:42"],"fr":["Luc 12:42"]}}
+{"id":"commune-c5b.communion.2","type":"para","t":{"la":["Fidélis servus et prudens, quem constítuit dóminus super famíliam suam: ut det illis in témpore trítici mensúram."]}}
+{"id":"commune-c5b.postcommunion","type":"heading","level":2,"x-source":[{"file":"horas/Latin/Commune/C5b.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"commune-c5b.postcommunion.1","type":"para","t":{"la":["Prótegat nos, Dómine, cum tui perceptióne sacraménti beátus N. Abbas, pro nobis intercedéndo: ut et conversatiónis ejus experiámur insígnia, et intercessiónis percipiámus suffrágia. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

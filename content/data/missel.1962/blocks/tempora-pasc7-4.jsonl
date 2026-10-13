@@ -1,0 +1,51 @@
+{"id":"tempora-pasc7-4.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Officium"}],"t":{"la":["Die Quinta infra octavam Pentecostes"],"fr":["Jeudi de la Pentecôte"]}}
+{"id":"tempora-pasc7-4.rang","type":"rubric","t":{"fr":["Iʳᵉ classe — ornements rouges. Station à Saint-Laurent-hors-les-Murs."]}}
+{"id":"tempora-pasc7-4.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"tempora-pasc7-4.introit.1","type":"rubric","t":{"la":["Sap 1:7"],"fr":["Sap 1:7"]}}
+{"id":"tempora-pasc7-4.introit.2","type":"para","dropCap":true,"t":{"la":["Spíritus Dómini replévit orbem terrárum, allelúja: et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja, allelúja, allelúja."]}}
+{"id":"tempora-pasc7-4.introit.3","type":"rubric","t":{"la":["Ps 67:2."],"fr":["Ps 67:2."]}}
+{"id":"tempora-pasc7-4.introit.4","type":"para","t":{"la":["Exsúrgat Deus, et dissipéntur inimíci ejus: et fúgiant, qui odérunt eum, a fácie ejus."]}}
+{"id":"tempora-pasc7-4.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"tempora-pasc7-4.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"tempora-pasc7-4.introit.7","type":"para","t":{"la":["Spíritus Dómini replévit orbem terrárum, allelúja: et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja, allelúja, allelúja."]}}
+{"id":"tempora-pasc7-4.gloria","type":"rubric","gloria":true,"t":{"la":["Gloria in excelsis."],"fr":["On dit le Gloria in excelsis."]}}
+{"id":"tempora-pasc7-4.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Oratio"},{"file":"missa/Latin/Tempora/Pasc7-0.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"tempora-pasc7-4.collecte.1","type":"para","t":{"la":["Deus, qui hodiérna die corda fidélium Sancti Spíritus illustratióne docuísti: da nobis in eódem Spíritu recta sápere; et de ejus semper consolatióne gaudére. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte ejúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pasc7-4.lecon","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Lectio"}],"t":{"la":["Lectio"],"fr":["Leçon"]}}
+{"id":"tempora-pasc7-4.lecon.1","type":"para","style":"intro","t":{"la":["Léctio Actuum Apostolórum"],"fr":["Lecture des Actes des Apôtres"]}}
+{"id":"tempora-pasc7-4.lecon.2","type":"rubric","t":{"la":["Acts 8:5-8"],"fr":["Acts 8:5-8"]}}
+{"id":"tempora-pasc7-4.lecon.3","type":"para","t":{"la":["In diébus illis: Philíppus descéndens in civitátem Samaríæ, prædicábat illis Christum. Intendébant autem turbæ his, quæ a Philíppo dicebántur, unanímiter audiéntes et vidéntes signa, quæ faciébat. Multi enim eórum, qui habébant spíritus immúndos, clamántes voce magna, exíbant. Multi autem paralýtici et claudi curáti sunt. Factum est ergo gáudium magnum in illa civitáte."]}}
+{"id":"tempora-pasc7-4.alleluia","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Graduale"}],"t":{"la":["Allelúja"],"fr":["Alléluia"]}}
+{"id":"tempora-pasc7-4.alleluia.1","type":"para","t":{"la":["Allelúja, allelúja."]}}
+{"id":"tempora-pasc7-4.alleluia.2","type":"rubric","t":{"la":["Ps 103:30"],"fr":["Ps 103:30"]}}
+{"id":"tempora-pasc7-4.alleluia.3","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Emítte Spíritum tuum, et creabúntur, et renovábis fáciem terræ. Allelúja. (Hic genuflectitur)"]}}
+{"id":"tempora-pasc7-4.alleluia.4","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Veni, Sancte Spíritus, reple tuórum corda fidélium: et tui amóris in eis ignem accénde."]}}
+{"id":"tempora-pasc7-4.sequence","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Sequentia"},{"file":"missa/Latin/Tempora/Pasc7-0.txt","section":"Sequentia"}],"t":{"la":["Sequentia"],"fr":["Séquence"]}}
+{"id":"tempora-pasc7-4.sequence.1","type":"stanza","kind":"hymn","t":{"la":["Veni, Sancte Spíritus,",{"br":1},"et emítte cǽlitus",{"br":1},"lucis tuæ rádium."]}}
+{"id":"tempora-pasc7-4.sequence.2","type":"stanza","kind":"hymn","t":{"la":["Veni, pater páuperum;",{"br":1},"veni, dator múnerum;",{"br":1},"veni, lumen córdium."]}}
+{"id":"tempora-pasc7-4.sequence.3","type":"stanza","kind":"hymn","t":{"la":["Consolátor óptime,",{"br":1},"dulcis hospes ánimæ,",{"br":1},"dulce refrigérium."]}}
+{"id":"tempora-pasc7-4.sequence.4","type":"stanza","kind":"hymn","t":{"la":["In labóre réquies,",{"br":1},"in æstu tempéries,",{"br":1},"in fletu solácium."]}}
+{"id":"tempora-pasc7-4.sequence.5","type":"stanza","kind":"hymn","t":{"la":["O lux beatíssima,",{"br":1},"reple cordis íntima",{"br":1},"tuórum fidélium."]}}
+{"id":"tempora-pasc7-4.sequence.6","type":"stanza","kind":"hymn","t":{"la":["Sine tuo númine",{"br":1},"nihil est in hómine,",{"br":1},"nihil est innóxium."]}}
+{"id":"tempora-pasc7-4.sequence.7","type":"stanza","kind":"hymn","t":{"la":["Lava quod est sórdidum,",{"br":1},"riga quod est áridum,",{"br":1},"sana quod est sáucium."]}}
+{"id":"tempora-pasc7-4.sequence.8","type":"stanza","kind":"hymn","t":{"la":["Flecte quod est rígidum,",{"br":1},"fove quod est frígidum,",{"br":1},"rege quod est dévium."]}}
+{"id":"tempora-pasc7-4.sequence.9","type":"stanza","kind":"hymn","t":{"la":["Da tuis fidélibus,",{"br":1},"in te confidéntibus,",{"br":1},"sacrum septenárium."]}}
+{"id":"tempora-pasc7-4.sequence.10","type":"stanza","kind":"hymn","t":{"la":["Da virtútis méritum,",{"br":1},"da salútis éxitum,",{"br":1},"da perénne gáudium.",{"br":1},"Amen. Allelúja."]}}
+{"id":"tempora-pasc7-4.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"tempora-pasc7-4.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Lucam"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Luc"]}}
+{"id":"tempora-pasc7-4.evangile.2","type":"rubric","t":{"la":["Luc 9:1-6"],"fr":["Luc 9:1-6"]}}
+{"id":"tempora-pasc7-4.evangile.3","type":"para","t":{"la":["In illo témpore: Convocátis Jesus duódecim Apóstolis, dedit illis virtútem et potestátem super ómnia dæmónia, et ut languóres curárent. Et misit illos prædicáre regnum Dei et sanáre infírmos. Et ait ad illos: Nihil tuléritis in via, neque virgam, neque peram, neque panem, neque pecúniam, neque duas túnicas habeátis. Et in quamcúmque domum intravéritis, ibi manéte et inde ne exeátis. Et quicúmque non recéperint vos: exeúntes de civitáte illa, étiam púlverem pedum vestrórum excútite in testimónium supra illos. Egréssi autem circuíbant per castélla, evangelizántes et curántes ubíque."]}}
+{"id":"tempora-pasc7-4.credo","type":"rubric","credo":true,"t":{"la":["Credo."],"fr":["On dit le Credo."]}}
+{"id":"tempora-pasc7-4.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"tempora-pasc7-4.offertoire.1","type":"rubric","t":{"la":["Ps 67:29-30"],"fr":["Ps 67:29-30"]}}
+{"id":"tempora-pasc7-4.offertoire.2","type":"para","t":{"la":["Confírma hoc, Deus, quod operátus es in nobis: a templo tuo, quod est in Jerúsalem, tibi ófferent reges múnera, allelúja."]}}
+{"id":"tempora-pasc7-4.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"tempora-pasc7-4.secrete.1","type":"para","t":{"la":["Múnera, quǽsumus, Dómine, oblata sanctífica: et corda nostra Sancti Spíritus illustratióne emúnda. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte ejúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"tempora-pasc7-4.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"tempora-pasc7-4.preface.1","type":"rubric","preface":"spiritu","communicantes":"c-pent1962","hancIgitur":"h-pent","t":{"la":["Præfatio de Spiritu Sancto."],"fr":["Préface du Saint-Esprit (« Et te in hodierna die »)."]}}
+{"id":"tempora-pasc7-4.preface.2","type":"rubric","t":{"fr":["Communicantes et Hanc igitur propres de la Pentecôte (voir aux Préfaces)."]}}
+{"id":"tempora-pasc7-4.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"tempora-pasc7-4.communion.1","type":"rubric","t":{"la":["Acts 2:2 2:4"],"fr":["Acts 2:2 2:4"]}}
+{"id":"tempora-pasc7-4.communion.2","type":"para","t":{"la":["Factus est repénte de cœlo sonus tamquam adveniéntis spíritus veheméntis, ubi erant sedéntes, allelúja: et repléti sunt omnes Spíritu Sancto, loquéntes magnália Dei, allelúja, allelúja."]}}
+{"id":"tempora-pasc7-4.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Tempora/Pasc7-4.txt","section":"Postcommunio"},{"file":"missa/Latin/Tempora/Pasc7-0.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"tempora-pasc7-4.postcommunion.1","type":"para","t":{"la":["Sancti Spíritus, Dómine, corda nostra mundet infúsio: et sui roris íntima aspersióne fecúndet. Per Dóminum nostrum Jesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte ejúsdem Spíritus Sancti Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

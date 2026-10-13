@@ -53,6 +53,20 @@ object Inlines {
         }
     }
 
+    /** L'inverse de [parse] : les inlines en JSON, tels que les paquets les gardent (ADR 003). */
+    fun toJson(text: RichText): JsonArray = JsonArray(text.map(::json))
+
+    private fun json(n: Inline): JsonElement = when (n) {
+        is Inline.Text -> JsonPrimitive(n.value)
+        is Inline.Marked -> JsonObject(mapOf("m" to JsonArray(n.marks.sortedBy { it.ordinal }.map { JsonPrimitive(it.code) }), "c" to toJson(n.children)))
+        is Inline.Lang -> JsonObject(mapOf("lang" to JsonPrimitive(n.lang), "c" to toJson(n.children)))
+        is Inline.Link -> JsonObject(mapOf("link" to JsonPrimitive(n.ref), "c" to toJson(n.children)))
+        is Inline.NoteRef -> JsonObject(listOfNotNull("note" to JsonPrimitive(n.noteId), n.label?.let { "l" to JsonPrimitive(it) }).toMap())
+        is Inline.Sym -> JsonObject(mapOf("sym" to JsonPrimitive(n.symbol.code)))
+        is Inline.Num -> JsonObject(mapOf("num" to JsonPrimitive(n.value)))
+        Inline.Break -> JsonObject(mapOf("br" to JsonPrimitive(1)))
+    }
+
     /** Texte canonique (ADR 004) : sym compte pour son caractère, br pour \n, note et num pour rien. */
     fun plainText(text: RichText): String = buildString { appendPlain(text) }
 
@@ -89,7 +103,7 @@ object Inlines {
                 c == '_' -> {
                     flush()
                     if (italic == null) italic = ArrayList() else {
-                        out.add(Inline.Marked(setOf(Mark.ITALIC), italic!!))
+                        out.add(Inline.Marked(setOf(Mark.ITALIC), italic))
                         italic = null
                     }
                 }

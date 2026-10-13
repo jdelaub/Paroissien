@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Un missel fermé, simplifié : reliure rouge, dos plus sombre, tranche des pages, croix dorée et deux rubans
+     (rouge et vert). Tout tient dans la zone sûre de 66 dp des icônes adaptatives. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Rubans qui dépassent sous le livre -->
+    <path android:fillColor="#A3171C" android:pathData="M55,74h4v12l-2,-2.2l-2,2.2z" />
+    <path android:fillColor="#2E6B3A" android:pathData="M61,74h4v10l-2,-2.2l-2,2.2z" />
+    <!-- Tranche des pages -->
+    <path android:fillColor="#E6DCC0" android:pathData="M40,31h33.5a1.5,1.5 0,0 1,1.5 1.5v44a1.5,1.5 0,0 1,-1.5 1.5h-33.5z" />
+    <path android:fillColor="#00000000" android:strokeColor="#C9BC98" android:strokeWidth="0.6" android:pathData="M42,75.5h31M42,73.5h31M42,71.5h31" />
+    <!-- Couverture -->
+    <path android:fillColor="#7A1E2B" android:pathData="M36,29h33a2,2 0,0 1,2 2v44a2,2 0,0 1,-2 2h-33a2,2 0,0 1,-2,-2v-44a2,2 0,0 1,2,-2z" />
+    <!-- Dos -->
+    <path android:fillColor="#5A1520" android:pathData="M36,29h4v48h-4a2,2 0,0 1,-2,-2v-44a2,2 0,0 1,2,-2z" />
+    <!-- Filet doré -->
+    <path android:fillColor="#00000000" android:strokeColor="#C9A44C" android:strokeWidth="0.8" android:pathData="M43.5,32.5h24v41h-24z" />
+    <!-- Croix -->
+    <path android:fillColor="#D9B45A" android:pathData="M53.5,39h4v29h-4zM47,46h17v4h-17z" />
+</vector>

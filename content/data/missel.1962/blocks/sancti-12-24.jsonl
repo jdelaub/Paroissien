@@ -1,0 +1,39 @@
+{"id":"sancti-12-24.titre","type":"heading","level":1,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Officium"}],"t":{"la":["In Vigilia Nativitatis Domini"],"fr":["Vigile de la Nativité"]}}
+{"id":"sancti-12-24.rang","type":"rubric","t":{"fr":["Iʳᵉ classe — ornements violets. Station à Sainte-Marie-Majeure."]}}
+{"id":"sancti-12-24.introit","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Introitus"}],"t":{"la":["Introitus"],"fr":["Introït"]}}
+{"id":"sancti-12-24.introit.1","type":"rubric","t":{"la":["Exod 16:6; 16:7"],"fr":["Exod 16:6; 16:7"]}}
+{"id":"sancti-12-24.introit.2","type":"para","dropCap":true,"t":{"la":["Hódie sciétis, quia véniet Dóminus et salvábit nos: et mane vidébitis glóriam ejus."]}}
+{"id":"sancti-12-24.introit.3","type":"rubric","t":{"la":["Ps 23:1"],"fr":["Ps 23:1"]}}
+{"id":"sancti-12-24.introit.4","type":"para","t":{"la":["Dómini est terra, et plenitúdo ejus: orbis terrárum, et univérsi, qui hábitant in eo."]}}
+{"id":"sancti-12-24.introit.5","type":"versicle","role":"V","t":{"la":[{"sym":"V"}," ","Glória Patri, et Fílio, et Spirítui Sancto."]}}
+{"id":"sancti-12-24.introit.6","type":"versicle","role":"R","t":{"la":[{"sym":"R"}," ","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen."]}}
+{"id":"sancti-12-24.introit.7","type":"para","t":{"la":["Hódie sciétis, quia véniet Dóminus et salvábit nos: et mane vidébitis glóriam ejus."]}}
+{"id":"sancti-12-24.gloria","type":"rubric","gloria":false,"t":{"fr":["On ne dit pas le Gloria in excelsis."]}}
+{"id":"sancti-12-24.collecte","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Oratio"}],"t":{"la":["Oratio"],"fr":["Collecte"]}}
+{"id":"sancti-12-24.collecte.1","type":"para","t":{"la":["Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, veniéntem quoque Júdicem secúri videámus, Dóminum nostrum Jesum Christum, Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-24.epitre","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Lectio"}],"t":{"la":["Epistola"],"fr":["Épître"]}}
+{"id":"sancti-12-24.epitre.1","type":"para","style":"intro","t":{"la":["Lectio Epístolæ beati Pauli Apostoli ad Romános"],"fr":["Lecture de l’Épître de saint Paul, Apôtre, aux Romains"]}}
+{"id":"sancti-12-24.epitre.2","type":"rubric","t":{"la":["Rom 1:1-6"],"fr":["Rom 1:1-6"]}}
+{"id":"sancti-12-24.epitre.3","type":"para","t":{"la":["Paulus, servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, quod ante promíserat per Prophétas suos in Scriptúris sanctis de Fílio suo, qui factus est ei ex sémine David secúndum carnem: qui prædestinátus est Fílius Dei in virtúte secúndum spíritum sanctificatiónis ex resurrectióne mortuórum Jesu Christi, Dómini nostri: per quem accépimus grátiam, et apostolátum ad obœdiéndum fídei in ómnibus géntibus pro nómine ejus, in quibus estis et vos vocáti Jesu Christi, Dómini nostri."]}}
+{"id":"sancti-12-24.graduel","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Graduale"}],"t":{"la":["Graduale"],"fr":["Graduel"]}}
+{"id":"sancti-12-24.graduel.1","type":"rubric","t":{"la":["Exod 16:6; 16:7"],"fr":["Exod 16:6; 16:7"]}}
+{"id":"sancti-12-24.graduel.2","type":"para","t":{"la":["Hódie sciétis, quia véniet Dóminus et salvábit nos: et mane vidébitis glóriam ejus."]}}
+{"id":"sancti-12-24.graduel.3","type":"rubric","t":{"la":["Ps 79:2-3"],"fr":["Ps 79:2-3"]}}
+{"id":"sancti-12-24.graduel.4","type":"para","t":{"la":["Qui regis Israël, inténde: qui dedúcis, velut ovem, Joseph: qui sedes super Chérubim, appáre coram Ephraim, Bénjamin, et Manásse."]}}
+{"id":"sancti-12-24.evangile","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Evangelium"},{"file":"missa/Latin/Sancti/03-19.txt","section":"Evangelium"}],"t":{"la":["Evangelium"],"fr":["Évangile"]}}
+{"id":"sancti-12-24.evangile.1","type":"para","style":"intro","t":{"la":["Sequéntia ",{"sym":"cross"}," sancti Evangélii secúndum Matthǽum"],"fr":["Suite ",{"sym":"cross"}," du saint Évangile selon saint Matthieu"]}}
+{"id":"sancti-12-24.evangile.2","type":"rubric","t":{"la":["Matt 1:18-21"],"fr":["Matt 1:18-21"]}}
+{"id":"sancti-12-24.evangile.3","type":"para","t":{"la":["Cum esset desponsáta Mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu Sancto. Joseph autem, vir ejus, cum esset justus et nollet eam tradúcere, vóluit occúlte dimíttere eam. Hæc autem eo cogitánte, ecce, Angelus Dómini appáruit in somnis ei, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu Sancto est. Páriet autem fílium, et vocábis nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum."]}}
+{"id":"sancti-12-24.credo","type":"rubric","credo":false,"t":{"fr":["On ne dit pas le Credo."]}}
+{"id":"sancti-12-24.offertoire","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Offertorium"}],"t":{"la":["Offertorium"],"fr":["Offertoire"]}}
+{"id":"sancti-12-24.offertoire.1","type":"rubric","t":{"la":["Ps 23:7"],"fr":["Ps 23:7"]}}
+{"id":"sancti-12-24.offertoire.2","type":"para","t":{"la":["Tóllite portas, principes, vestras: et elevámini, portæ æternáles, et introíbit Rex glóriæ."]}}
+{"id":"sancti-12-24.secrete","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Secreta"}],"t":{"la":["Secreta"],"fr":["Secrète"]}}
+{"id":"sancti-12-24.secrete.1","type":"para","t":{"la":["Da nobis, quǽsumus, omnípotens Deus: ut, sicut adoránda Fílii tui natalítia prævenímus, sic ejus múnera capiámus sempitérna gaudéntes: Qui tecum vivit et regnat in unitáte Spíritus Sancti Deus per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}
+{"id":"sancti-12-24.preface","type":"heading","level":2,"t":{"la":["Præfatio"],"fr":["Préface"]}}
+{"id":"sancti-12-24.preface.1","type":"rubric","preface":"adv","t":{"la":["Præfatio de Adventu."],"fr":["Préface de l’Avent."]}}
+{"id":"sancti-12-24.communion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Communio"}],"t":{"la":["Communio"],"fr":["Communion"]}}
+{"id":"sancti-12-24.communion.1","type":"rubric","t":{"la":["Isa 40:5"],"fr":["Isa 40:5"]}}
+{"id":"sancti-12-24.communion.2","type":"para","t":{"la":["Revelábitur glória Dómini: et vidébit omnis caro salutáre Dei nostri."]}}
+{"id":"sancti-12-24.postcommunion","type":"heading","level":2,"x-source":[{"file":"missa/Latin/Sancti/12-24.txt","section":"Postcommunio"}],"t":{"la":["Postcommunio"],"fr":["Postcommunion"]}}
+{"id":"sancti-12-24.postcommunion.1","type":"para","t":{"la":["Da nobis, quǽsumus, Dómine: unigéniti Fílii tui recensíta nativitáte respiráre; cujus cœlésti mystério páscimur et potámur. Per eúndem Dóminum nostrum Jesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti, Deus, per ómnia sǽcula sæculórum. ",{"sym":"R"}," Amen."]}}

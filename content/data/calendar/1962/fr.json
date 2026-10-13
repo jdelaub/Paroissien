@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "rite": "1962",
+  "calendar": "fr",
+  "sources": [
+    "barroux-ordo-2026@sha256:a04e7515b4209efe5964928514d84d3bbe379ae215d51ca3e2328cc6e0313a40",
+    "barroux-ordo-2025@sha256:06d65998f02dd2edcaf819843ca9f7afae6984794229a38d6ca06f9bf4408080",
+    "ordo.fsspx.org/gallia@2026-10-11",
+    "introibo.fr@wayback-2021",
+    "divinum-officium@b9c100d79ae481c67b2801fdd3622b00dd86bd73"
+  ],
+  "entries": [
+    {
+      "id": "genevieve_of_paris_virgin",
+      "date": "01-03",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Geneviève, vierge",
+        "la": "S. Genovefæ Virginis"
+      }
+    },
+    {
+      "id": "felix_i_pope",
+      "date": "05-30",
+      "remove": true
+    },
+    {
+      "id": "joan_of_arc_virgin",
+      "date": "05-30",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Jeanne d’Arc, vierge, patronne secondaire de la France",
+        "la": "S. Ioannæ de Arc Virginis, Patronæ secundariæ Galliæ"
+      },
+      "proper": "Sancti/05-30f",
+      "commemorations": [
+        {
+          "id": "felix_i_pope",
+          "title": {
+            "fr": "Saint Félix Ier, pape et martyr",
+            "la": "S. Felicis I Papæ et Martyris"
+          },
+          "proper": "Sancti/05-30"
+        }
+      ],
+      "patron": "SECONDARY"
+    },
+    {
+      "id": "assumption_of_the_blessed_virgin_mary",
+      "date": "08-15",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Assomption de la bienheureuse Vierge Marie, patronne principale de la France",
+        "la": "In Assumptione Beatæ Mariæ Virginis"
+      },
+      "proper": "Sancti/08-15",
+      "obligation": true,
+      "patron": "PRINCIPAL"
+    },
+    {
+      "id": "remigius_of_reims_bishop",
+      "date": "10-01",
+      "rank": "III",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Saint Remi, évêque et confesseur",
+        "la": "S. Remigii Episcopi et Confessoris"
+      },
+      "proper": "Sancti/10-01"
+    },
+    {
+      "id": "therese_of_the_child_jesus_and_the_holy_face_of_lisieux_virgin",
+      "date": "10-03",
+      "rank": "II",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Sainte Thérèse de l’Enfant-Jésus, vierge, patronne secondaire de la France",
+        "la": "S. Theresiæ a Jesu Infante Virginis, Patronæ secundariæ Galliæ"
+      },
+      "proper": "Sancti/10-03",
+      "patron": "SECONDARY"
+    },
+    {
+      "id": "all_saints",
+      "date": "11-01",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Toussaint",
+        "la": "Omnium Sanctorum"
+      },
+      "proper": "Sancti/11-01",
+      "obligation": true
+    },
+    {
+      "id": "nativity_of_the_lord",
+      "date": "12-25",
+      "rank": "I",
+      "colors": [
+        "WHITE"
+      ],
+      "title": {
+        "fr": "Nativité de Notre-Seigneur Jésus-Christ",
+        "la": "In Nativitate Domini"
+      },
+      "proper": "Sancti/12-25",
+      "obligation": true
+    }
+  ]
+}
