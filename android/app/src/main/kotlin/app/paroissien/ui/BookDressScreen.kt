@@ -1,5 +1,10 @@
 package app.paroissien.ui
 
+import app.paroissien.library.isFrame
+
+import app.paroissien.core.designsystem.LocalRibbonSet
+import app.paroissien.core.designsystem.of
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -62,6 +67,7 @@ import app.paroissien.core.designsystem.frame.OrnamentalFrameLayer
 import app.paroissien.core.designsystem.frame.OrnamentalFrames
 import app.paroissien.core.liturgy.LiturgicalColor
 import app.paroissien.library.BindingChoice
+import app.paroissien.library.CoverTemplate
 import app.paroissien.library.BookDressChoice
 import app.paroissien.library.BookDresses
 import app.paroissien.library.BookIdentities
@@ -90,7 +96,7 @@ fun BookDressScreen(graph: AppGraph, key: BookDressKey, open: (NavKey) -> Unit, 
     val choice = BookDressChoice.decode(row?.json) ?: BookDressChoice()
     val customRows by remember { graph.database.looks().observeFrames() }.collectAsState(initial = emptyList())
     val custom = remember(customRows) {
-        customRows.filterNot { it.id.startsWith(CustomMotif.PREFIX) }
+        customRows.filter { it.isFrame }
             .mapNotNull { r -> CustomFrameSpec.decode(r.json)?.let { spec -> FrameComposer.build(spec)?.let { spec to it } } }
     }
     val frames = OrnamentalFrames.filter { it.name != "doublure" } + custom.map { it.second }
@@ -102,7 +108,10 @@ fun BookDressScreen(graph: AppGraph, key: BookDressKey, open: (NavKey) -> Unit, 
     }
 
     Screen(stringResource(R.string.dress_title, entry?.title ?: key.publication), onBack = onBack) {
-        item { BindingSection(key.publication, entry, choice.binding ?: BindingChoice()) { save(choice.copy(binding = it.takeUnless { b -> b.isEmpty })) } }
+        item {
+            val templates = customRows.filter { it.id.startsWith(CoverTemplate.PREFIX) }.mapNotNull { CoverTemplate.decode(it.json) }
+            BindingSection(key.publication, entry, choice.binding ?: BindingChoice(), templates) { save(choice.copy(binding = it.takeUnless { b -> b.isEmpty })) }
+        }
         item {
             Section(stringResource(R.string.dress_frames)) {
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -391,7 +400,7 @@ fun FrameThumb(def: OrnamentalFrameDef, width: Dp, selected: Boolean = false, li
  * couverture et de la garde. Chaque retouche s'enregistre aussitôt ; « Reliure d'origine » les efface toutes.
  */
 @Composable
-private fun BindingSection(publication: String, entry: LibraryEntry?, binding: BindingChoice, onChange: (BindingChoice) -> Unit) {
+private fun BindingSection(publication: String, entry: LibraryEntry?, binding: BindingChoice, templates: List<CoverTemplate>, onChange: (BindingChoice) -> Unit) {
     val base = remember(publication, entry) { BookIdentities.of(publication, entry, uniform = false) }
     val identity = base.dressed(binding)
     Section(stringResource(R.string.binding_title)) {
@@ -402,13 +411,25 @@ private fun BindingSection(publication: String, entry: LibraryEntry?, binding: B
                 if (endpaper != null) endpaper() else Box(Modifier.matchParentSize().background(identity.paper.tint))
             }
         }
+        // Les couvertures composées dans l'atelier : un toucher habille le livre de l'une d'elles.
+        if (templates.isNotEmpty()) {
+            Text(stringResource(R.string.binding_templates), style = MaterialTheme.typography.bodyMedium)
+            LazyRow(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                items(templates, key = { it.id }) { t ->
+                    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.clickable { onChange(t.binding.copy(endpaper = binding.endpaper, ribbons = binding.ribbons)) }) {
+                        CoverThumb(t, width = 56.dp)
+                        Text(t.name, style = MaterialTheme.typography.labelSmall, maxLines = 1)
+                    }
+                }
+            }
+        }
         Text(stringResource(R.string.binding_leather), style = MaterialTheme.typography.bodyMedium)
         Swatches(BindingChoice.leathers.map { Color(it) }, selected = binding.leather ?: (base.cover.leather.toArgb().toLong() and 0xFFFFFFFFL)) {
             onChange(binding.copy(leather = it))
         }
         Chips(
             stringResource(R.string.binding_material), identity.cover.material.name,
-            listOf(CoverMaterial.MOROCCO to R.string.binding_morocco, CoverMaterial.CALF to R.string.binding_calf, CoverMaterial.CLOTH to R.string.binding_cloth, CoverMaterial.WRAPPER to R.string.binding_wrapper),
+            MATERIALS,
         ) { onChange(binding.copy(material = it)) }
         Chips(
             stringResource(R.string.binding_tooling), identity.cover.tooling.name,
@@ -433,7 +454,7 @@ private fun BindingSection(publication: String, entry: LibraryEntry?, binding: B
         }
         Text(stringResource(R.string.binding_ribbons), style = MaterialTheme.typography.bodyMedium)
         FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-            RibbonStyle.slots.forEachIndexed { slot, ribbon ->
+            LocalRibbonSet.current.forEachIndexed { slot, ribbon ->
                 val on = slot in identity.ribbons
                 FilterChip(
                     selected = on,

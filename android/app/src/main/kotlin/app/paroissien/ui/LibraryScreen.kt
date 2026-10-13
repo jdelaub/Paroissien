@@ -37,6 +37,11 @@ import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
@@ -75,8 +80,9 @@ import androidx.compose.foundation.layout.Arrangement
 const val DEMO = "demo"
 
 /**
- * Bibliothèque : un rayonnage de couvertures, chaque livre avec sa reliure (ou toutes pareilles, selon le réglage),
- * la reprise de lecture sous chacun, les quatre Évangiles, et les séries (lettres de Clairval) regroupées.
+ * Bibliothèque : un rayonnage de couvertures, des livres seulement (les images pieuses et l'atelier ont leur onglet),
+ * chaque livre avec sa reliure (ou toutes pareilles, selon le réglage), la reprise de lecture sous chacun, les quatre
+ * Évangiles, et les séries (lettres de Clairval) regroupées. En tête : la recherche dans les livres et l'import.
  */
 @Composable
 fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> Unit) {
@@ -88,7 +94,10 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
     val lookRows by remember { graph.database.looks().observeAll() }.collectAsState(initial = emptyList())
     val bindings = remember(lookRows) { lookRows.associate { it.publication to BookDressChoice.decode(it.json)?.binding } }
     fun identityOf(entry: LibraryEntry) = BookIdentities.of(entry.publication.id, entry, uniform).let { if (uniform) it else it.dressed(bindings[entry.publication.id]) }
-    Shelf(stringResource(R.string.tab_library)) {
+    Shelf(stringResource(R.string.tab_library), actions = {
+        IconButton(onClick = { open(SearchKey) }) { Icon(Icons.Filled.Search, contentDescription = stringResource(R.string.tab_search)) }
+        ImportBookButton(graph) { publication -> open(ReaderKey(publication)) }
+    }) {
         val lib = library
         if (lib == null) {
             wide { Note(stringResource(R.string.library_loading)) }
@@ -142,13 +151,6 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
                 ) { open(SeriesKey(id, title)) }
             }
         }
-        // La bibliothèque des images pieuses, à côté des livres : une boîte, ses premières cartes en éventail.
-        item(key = "images") { ImageBoxTile(graph) { open(ImageBoxKey) } }
-        item(key = "atelier") { WorkshopTile { open(WorkshopKey) } }
-        item(key = "importer") { ImportBookTile(graph) { publication -> open(ReaderKey(publication)) } }
-        item(key = DEMO) {
-            CoverTile(BookIdentities.of(DEMO, null, true), stringResource(R.string.demo_book), null, stringResource(R.string.demo_book_detail)) { open(ReaderKey(DEMO)) }
-        }
     }
 }
 
@@ -157,7 +159,7 @@ fun LibraryScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> U
  * habillé comme les autres. Le fichier est lu en entier (200 Mo au plus) puis écrit en paquet dans `files/mes-livres/`.
  */
 @Composable
-private fun ImportBookTile(graph: AppGraph, onImported: (String) -> Unit) {
+private fun ImportBookButton(graph: AppGraph, onImported: (String) -> Unit) {
     val context = LocalContext.current
     val paper = LocalPaperColors.current
     var working by remember { mutableStateOf(false) }
@@ -185,58 +187,9 @@ private fun ImportBookTile(graph: AppGraph, onImported: (String) -> Unit) {
             }
         }
     }
-    Column(
-        Modifier.clickable(enabled = !working) { launcher.launch(arrayOf("text/plain", "application/epub+zip", "application/octet-stream")) },
-        verticalArrangement = Arrangement.spacedBy(6.dp),
-    ) {
-        Box(
-            Modifier.fillMaxWidth().aspectRatio(0.70f).border(1.dp, paper.hairline, RoundedCornerShape(4.dp)).background(paper.surface, RoundedCornerShape(4.dp)),
-            contentAlignment = Alignment.Center,
-        ) {
-            Text(if (working) "…" else "+", style = MaterialTheme.typography.displaySmall, color = paper.inkSecondary)
-        }
-        Text(stringResource(if (working) R.string.library_importing else R.string.library_import), style = MaterialTheme.typography.bodySmall, color = paper.inkSecondary, maxLines = 2)
-    }
-}
-
-/** L'atelier sur le rayon : un cadre en petit, pour composer des cadres et dessiner des motifs sans passer par un livre. */
-@Composable
-private fun WorkshopTile(onClick: () -> Unit) {
-    Column(Modifier.clickable(onClick = onClick), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        Box(Modifier.fillMaxWidth().aspectRatio(0.70f).background(LocalPaperColors.current.background), contentAlignment = Alignment.Center) {
-            app.paroissien.core.designsystem.frame.OrnamentalFrames.firstOrNull { it.name == "matin" }?.let { FrameThumb(it, width = 96.dp) }
-        }
-        Text(stringResource(R.string.library_workshop), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary, maxLines = 2)
-    }
-}
-
-/** La boîte à images sur le rayon : trois cartes en éventail sur un fond de carton, et leur nombre. */
-@Composable
-private fun ImageBoxTile(graph: AppGraph, onClick: () -> Unit) {
-    val images by graph.images.all.collectAsState()
-    val paper = LocalPaperColors.current
-    Column(Modifier.clickable(onClick = onClick), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        Box(
-            Modifier.fillMaxWidth().aspectRatio(0.70f).background(Color(0xFF5B4632), RoundedCornerShape(4.dp)).padding(10.dp),
-            contentAlignment = Alignment.Center,
-        ) {
-            val fan = images.take(3)
-            fan.forEachIndexed { k, image ->
-                graph.images.thumbnail(image.id)?.let {
-                    Image(
-                        it, contentDescription = null, contentScale = ContentScale.Fit,
-                        modifier = Modifier.fillMaxSize(0.78f).rotate((k - (fan.size - 1) / 2f) * 9f)
-                            .offset(x = ((k - (fan.size - 1) / 2f) * 10).dp)
-                            .shadow(3.dp, RoundedCornerShape(4)).clip(RoundedCornerShape(4)),
-                    )
-                }
-            }
-            if (fan.isEmpty()) Text(stringResource(R.string.images_box), color = Color(0xFFF7F0DD), style = MaterialTheme.typography.titleMedium)
-        }
-        Text(
-            if (images.isEmpty()) stringResource(R.string.images_box_empty) else pluralStringResource(R.plurals.images_box_detail, images.size, images.size),
-            style = MaterialTheme.typography.bodySmall, color = paper.inkSecondary, maxLines = 2,
-        )
+    IconButton(enabled = !working, onClick = { launcher.launch(arrayOf("text/plain", "application/epub+zip", "application/octet-stream")) }) {
+        if (working) Text("…", color = paper.inkSecondary)
+        else Icon(Icons.Filled.Add, contentDescription = stringResource(R.string.library_import))
     }
 }
 
@@ -254,14 +207,20 @@ fun SeriesScreen(graph: AppGraph, settings: ReaderSettings, key: SeriesKey, open
     }
 }
 
-/** Un rayonnage : titre, retour éventuel, couvertures en grille ; `wide` occupe toute une rangée. */
+/** Un rayonnage : titre, retour éventuel, actions, couvertures en grille ; `wide` occupe toute une rangée. */
 @Composable
-private fun Shelf(title: String, onBack: (() -> Unit)? = null, content: LazyGridScope.() -> Unit) {
+private fun Shelf(
+    title: String,
+    onBack: (() -> Unit)? = null,
+    actions: @Composable androidx.compose.foundation.layout.RowScope.() -> Unit = {},
+    content: LazyGridScope.() -> Unit,
+) {
     Surface(Modifier.fillMaxSize(), color = LocalPaperColors.current.background) {
         Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
             Row(Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
                 if (onBack != null) TextButton(onClick = onBack) { Text("‹") } else Spacer(Modifier.width(12.dp))
-                Text(title, style = MaterialTheme.typography.headlineSmall)
+                Text(title, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.weight(1f))
+                actions()
             }
             LazyVerticalGrid(
                 columns = GridCells.Adaptive(150.dp),

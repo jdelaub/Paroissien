@@ -49,6 +49,36 @@ class BookCoversScreenshotTest {
         EdgeFinish.PLAIN, listOf(0), importance = 0, pages = 12,
     )
 
+    /** Les textures de l'atelier : chagrin, vélin, velours, toile de lin, papier marbré, et le maroquin pour comparer. */
+    @Test
+    fun texturesDeLAtelier() {
+        fun book(color: Long, material: CoverMaterial, tooling: Tooling = Tooling.GOLD, motif: CoverMotif = CoverMotif.CROSS) = BookIdentity(
+            CoverStyle(Color(color), material, tooling, motif, fillets = 2, corners = true, bands = 4, ink = Color(0xFF5E1519)),
+            PaperStock(Color(0xFFF8F1DF), Color(0xFF241C14), Color(0xFF5A4E40), Color(0xFFA31F1A), PaperWeight.FINE),
+            EdgeFinish.GILT, listOf(0), importance = 2, pages = 500,
+        )
+        val covers = listOf(
+            book(0xFF1E3A2B, CoverMaterial.SHAGREEN) to "Chagrin",
+            book(0xFFEDE3CB, CoverMaterial.VELLUM, Tooling.PRINTED, CoverMotif.CHI_RHO) to "Vélin",
+            book(0xFF5E1519, CoverMaterial.VELVET, motif = CoverMotif.IHS) to "Velours",
+            book(0xFF6B5A3A, CoverMaterial.LINEN, Tooling.BLIND) to "Toile de lin",
+            book(0xFF1C2B40, CoverMaterial.MARBLED, motif = CoverMotif.NONE) to "Papier marbré",
+            book(0xFF241416, CoverMaterial.MOROCCO) to "Maroquin",
+        )
+        compose.setContent {
+            ParoissienTheme(PaperTheme.CLAIR) {
+                Column(Modifier.background(Color(0xFFE9E1D0)).padding(12.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                    covers.chunked(3).forEach { row ->
+                        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                            row.forEach { (identity, title) -> BookCover(identity, title, null, Modifier.size(112.dp, 160.dp)) }
+                        }
+                    }
+                }
+            }
+        }
+        compose.onRoot().captureRoboImage()
+    }
+
     @Test
     fun reliures() {
         compose.setContent {

@@ -1,5 +1,8 @@
 package app.paroissien.ui
 
+import app.paroissien.core.designsystem.LocalRibbonSet
+import app.paroissien.core.designsystem.of
+
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.clickable
@@ -96,7 +99,7 @@ fun BookmarksScreen(graph: AppGraph, open: (NavKey) -> Unit) {
                         RibbonIcon(r.slot)
                         Column {
                             Text(entry?.unitTitle(r.unit) ?: r.unit, style = MaterialTheme.typography.bodyLarge)
-                            Text(RibbonStyle.of(r.slot).label, style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary)
+                            Text(LocalRibbonSet.current.of(r.slot).label, style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary)
                         }
                     }
                 }

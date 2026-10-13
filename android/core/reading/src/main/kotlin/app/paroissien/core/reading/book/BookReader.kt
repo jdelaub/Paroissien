@@ -38,6 +38,8 @@ import app.paroissien.core.designsystem.frame.OrnamentalFrameLayer
 import app.paroissien.core.liturgy.LiturgicalColor
 import androidx.compose.ui.text.style.TextAlign
 import app.paroissien.core.designsystem.LocalRibbonFabric
+import app.paroissien.core.designsystem.LocalRibbonSet
+import app.paroissien.core.designsystem.of
 import app.paroissien.core.designsystem.RibbonFabric
 import kotlin.math.PI
 import kotlin.math.min
@@ -132,7 +134,8 @@ enum class SpreadMode { AUTO, SINGLE, DOUBLE }
  * l'emplacement (le ruban de la messe du jour, à la couleur du jour).
  */
 data class RibbonMark(val slot: Int, val anchor: Anchor?, val elsewhere: Int = 0, val style: RibbonStyle? = null) {
-    val look: RibbonStyle get() = style ?: RibbonStyle.of(slot)
+    /** Le ruban tel qu'on le dessine : son style propre, sinon celui de son emplacement dans le jeu de l'atelier. */
+    fun look(set: List<RibbonStyle>): RibbonStyle = style ?: set.of(slot)
 }
 
 /**
@@ -210,6 +213,7 @@ fun BookReader(
 ) {
     val paper = typography.paper
     val fabric = LocalRibbonFabric.current
+    val ribbonSet = LocalRibbonSet.current
     Box(modifier.fillMaxSize().background(paper.background)) {
         BoxWithConstraints(Modifier.fillMaxSize()) {
             val density = LocalDensity.current
@@ -315,7 +319,7 @@ fun BookReader(
                     val side = sideOf(index, double)
                     val here = remember(ribbons, paged, i, asideRibbons) {
                         ribbons.filter { it.anchor != null && paged.pageOf(it.anchor) == i }
-                            .map { PageRibbon(it.slot, aside = asideRibbons.containsKey(it.slot) && asideRibbons[it.slot] == it.anchor, it.look) }
+                            .map { PageRibbon(it.slot, aside = asideRibbons.containsKey(it.slot) && asideRibbons[it.slot] == it.anchor, it.look(ribbonSet)) }
                     }
                     // Le verso d'une page de droite est la suivante ; celui d'une page de gauche, la précédente.
                     val verso = if (look.showThrough) paged.pages.getOrNull(if (side == PageSide.LEFT) i - 1 else i + 1) else null
@@ -341,8 +345,8 @@ fun BookReader(
             val tailBottom = (if (look.frame != null) margins.frameBottom else margins.bottom) - RibbonBand + (RibbonBand - TailHeight) / 2
             // Ouvrir le livre par la queue d'un ruban : il est de nouveau en travers de la page.
             val openAtRibbon: (Int) -> Unit = { slot -> asideRibbons = asideRibbons - slot; onRibbonTap(slot) }
-            RibbonTails(tails.filter { it.second < 0 }.map { it.first.slot to it.first.look }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
-            RibbonTails(tails.filter { it.second > 0 }.map { it.first.slot to it.first.look }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second < 0 }.map { it.first.slot to it.first.look(ribbonSet) }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomStart).padding(start = margins.horizontal, bottom = tailBottom))
+            RibbonTails(tails.filter { it.second > 0 }.map { it.first.slot to it.first.look(ribbonSet) }, typography.paper.isDark, fabric, openAtRibbon, onRibbonMove, Modifier.align(Alignment.BottomEnd).padding(end = margins.horizontal, bottom = tailBottom))
 
             // Images pieuses de la page ouverte : posées sur elle ou rangées en miniature, au-dessus du livre (leurs gestes
             // ne vont qu'à elles). Celles d'autres pages dépassent par la tête, à gauche ce qui précède, à droite ce qui suit.

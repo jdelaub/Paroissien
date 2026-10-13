@@ -38,7 +38,7 @@ import kotlinx.coroutines.withContext
 
 /** Recherche plein texte dans tous les livres installés (FTS5 plié, sans accents ni casse). */
 @Composable
-fun SearchScreen(graph: AppGraph, open: (NavKey) -> Unit) {
+fun SearchScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: (() -> Unit)? = null) {
     val library by graph.library.collectAsState()
     var query by rememberSaveable { mutableStateOf("") }
     var results by remember { mutableStateOf<List<SearchResult>?>(null) }
@@ -50,7 +50,7 @@ fun SearchScreen(graph: AppGraph, open: (NavKey) -> Unit) {
         results = withContext(Dispatchers.IO) { graph.packs.search(lib, query) }
     }
 
-    Screen(stringResource(R.string.tab_search)) {
+    Screen(stringResource(R.string.tab_search), onBack = onBack) {
         item {
             OutlinedTextField(
                 value = query,

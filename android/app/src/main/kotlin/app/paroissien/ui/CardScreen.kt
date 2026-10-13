@@ -28,6 +28,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
@@ -242,7 +243,7 @@ private fun CardBack(graph: AppGraph, image: PiousImage) {
  */
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) {
+fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: (() -> Unit)? = null) {
     val all by graph.images.all.collectAsState()
     val placements by remember { graph.database.cards().observeAll() }.collectAsState(initial = emptyList())
     val placed = placements.map { it.card }.toSet()
@@ -266,7 +267,7 @@ fun ImageBoxScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
         Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
             Row(Modifier.fillMaxWidth().padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
                 if (selection.isEmpty()) {
-                    TextButton(onClick = onBack) { Text("‹") }
+                    if (onBack != null) TextButton(onClick = onBack) { Text("‹") } else Spacer(Modifier.width(12.dp))
                     Text(stringResource(R.string.images_box), style = MaterialTheme.typography.headlineSmall)
                 } else {
                     TextButton(onClick = { selection = emptySet() }) { Text("✕") }

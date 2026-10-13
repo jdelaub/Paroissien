@@ -6,6 +6,8 @@
     <string name="tab_library">Bibliothèque</string>
     <string name="tab_bookmarks">Signets</string>
     <string name="tab_search">Recherche</string>
+    <string name="tab_images">Images</string>
+    <string name="tab_workshop">Atelier</string>
 
     <string name="library_loading">Installation des livres…</string>
     <string name="library_resume">Reprendre : %1$s</string>
@@ -67,8 +69,7 @@
     <string name="setting_measures_off">Mesures : non</string>
     <string name="setting_ribbons_across_on">Rubans : en travers de la page</string>
     <string name="setting_ribbons_across_off">Rubans : dans le pli</string>
-    <string name="setting_fabric_textured">Rubans : tissu mat</string>
-    <string name="setting_fabric_satin">Rubans : satin</string>
+    <string name="setting_fabric">Rubans : %s</string>
     <string name="setting_frames_on">Cadres : oui</string>
     <string name="setting_frames_off">Cadres : non</string>
     <string name="setting_pinch_on">Pincer : oui</string>
@@ -125,7 +126,7 @@
     <string name="editor_random">Composer au hasard</string>
     <string name="editor_colors">Couleurs</string>
     <string name="editor_colors_source">Des cadres d\'origine</string>
-    <string name="workshop_title">Atelier des cadres</string>
+    <string name="workshop_title">Atelier</string>
     <string name="workshop_no_frames">Pas encore de cadre composé.</string>
     <string name="workshop_motifs">Mes motifs</string>
     <string name="workshop_new_motif">Dessiner un motif…</string>
@@ -202,6 +203,8 @@
     <string name="settings_fabric">Tissu des rubans</string>
     <string name="fabric_textured">Tissu mat, à côtes</string>
     <string name="fabric_satin">Satin</string>
+    <string name="fabric_moire">Moiré</string>
+    <string name="fabric_velvet">Velours</string>
     <string name="settings_frames">Cadres ornementaux du paroissien : un par section des livres de prières, filet rouge pour la Bible</string>
     <string name="settings_vignettes">Vignettes gravées en tête des sections des livres de prières</string>
     <string name="settings_cards_on_page">Images pieuses posées sur leur page (un toucher les met de côté)</string>
@@ -430,4 +433,51 @@
         <item quantity="many">%d signets ou rubans</item>
         <item quantity="other">%d signets ou rubans</item>
     </plurals>
+
+    <!-- Atelier : couleurs, rubans, couvertures (13/10/2026) -->
+    <string name="color_sliders_hint">Teinte, saturation, luminosité</string>
+    <string name="ribbons_editor_title">Rubans</string>
+    <string name="ribbons_editor_slot">Ruban %s</string>
+    <string name="ribbons_editor_name">Nom du ruban</string>
+    <string name="ribbons_editor_color">Couleur</string>
+    <string name="ribbons_editor_liturgical">Couleur liturgique (%s)</string>
+    <string name="ribbons_editor_fabric">Tissu</string>
+    <string name="ribbons_editor_fabric_default">Comme le réglage</string>
+    <string name="ribbons_editor_end">Extrémité</string>
+    <string name="ribbons_editor_emblem">Broderie</string>
+    <string name="ribbons_editor_cross">Croix dorée</string>
+    <string name="ribbons_editor_plain">Aucune</string>
+    <string name="ribbons_editor_reset">Rétablir ce ruban</string>
+    <string name="ribbons_editor_reset_all">Rétablir les six rubans</string>
+    <string name="ribbon_end_bias">En biais</string>
+    <string name="ribbon_end_straight">Droite</string>
+    <string name="ribbon_end_forked">Queue d\'aronde</string>
+    <string name="ribbon_end_ferret">Ferret doré</string>
+    <string name="cover_editor_title">Couverture</string>
+    <string name="cover_editor_default_name">Ma reliure</string>
+    <string name="cover_editor_sample_subtitle">Modèle de l\'atelier</string>
+    <string name="cover_editor_design">Composer la reliure</string>
+    <string name="cover_editor_name">Nom du modèle</string>
+    <string name="cover_editor_fillets">Filets du cadre</string>
+    <string name="cover_editor_corners">Fleurons aux coins</string>
+    <string name="cover_editor_bands">Nerfs au dos</string>
+    <string name="cover_editor_save">Enregistrer</string>
+    <string name="cover_editor_apply">Appliquer à des livres…</string>
+    <string name="cover_editor_delete">Supprimer</string>
+    <string name="cover_editor_apply_title">Relier en « %s »</string>
+    <string name="cover_editor_apply_confirm">Relier</string>
+    <string name="binding_shagreen">Chagrin</string>
+    <string name="binding_vellum">Vélin</string>
+    <string name="binding_velvet">Velours</string>
+    <string name="binding_linen">Toile de lin</string>
+    <string name="binding_marbled">Papier marbré</string>
+    <string name="binding_templates">Couvertures de l\'atelier</string>
+    <string name="workshop_covers">Couvertures</string>
+    <string name="workshop_covers_hint">Des reliures à composer (maroquin, chagrin, vélin, velours, lin, papier marbré…) et à donner ensuite à vos livres.</string>
+    <string name="workshop_new_cover">Nouvelle couverture</string>
+    <string name="workshop_ribbons">Rubans</string>
+    <string name="workshop_edit_ribbons">Retoucher les rubans</string>
+    <string name="workshop_trials">Essais</string>
+    <string name="setting_language_book">Ce livre : %s</string>
+    <string name="language_book_default">comme le réglage</string>
 </resources>

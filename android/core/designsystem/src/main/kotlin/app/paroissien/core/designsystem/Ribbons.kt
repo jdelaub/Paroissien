@@ -21,14 +21,24 @@ import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.graphics.toArgb
 import app.paroissien.core.liturgy.LiturgicalColor
 import kotlin.math.PI
+import kotlin.math.abs
 import kotlin.math.atan2
 import kotlin.math.cos
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sin
 
-/** Le tissu des rubans (réglage) : mat, tissé de fines côtes qui courent dans la longueur, ou satin brillant. */
-enum class RibbonFabric { TEXTURED, SATIN }
+/**
+ * Le tissu des rubans (réglage, ou propre à un ruban dans l'atelier) : mat, tissé de fines côtes qui courent dans la
+ * longueur ; satin brillant ; moiré, satin parcouru d'ondes comme une soie moirée ; velours, profond et sans reflet.
+ */
+enum class RibbonFabric { TEXTURED, SATIN, MOIRE, VELVET }
+
+/** L'extrémité d'un ruban : coupée en biais, droite, en queue d'aronde, ou serrée d'un ferret doré. */
+enum class RibbonEnd { BIAS, STRAIGHT, FORKED, FERRET }
+
+/** Ce qui est brodé près de l'extrémité : une croix dorée, ou rien. */
+enum class RibbonEmblem { CROSS, NONE }
 
 /** Le tissu choisi, fourni à la racine de l'application d'après les réglages. */
 val LocalRibbonFabric = staticCompositionLocalOf { RibbonFabric.TEXTURED }
@@ -39,13 +49,25 @@ val LocalRibbonFabric = staticCompositionLocalOf { RibbonFabric.TEXTURED }
  * ruban. Le nom de la couleur est toujours écrit à côté (panneau des rubans, signets, TalkBack) : la couleur n'est
  * jamais le seul signal.
  */
-data class RibbonStyle(val color: LiturgicalColor, val label: String, val ribs: Int, val ferret: Boolean = false) {
+data class RibbonStyle(
+    val color: LiturgicalColor,
+    val label: String,
+    val ribs: Int,
+    /** Une teinte choisie dans l'atelier, à la place de celle de [color] (qui reste pour les noms et l'accessibilité). */
+    val custom: Color? = null,
+    /** Le tissu de ce ruban ; null : le réglage général. */
+    val fabric: RibbonFabric? = null,
+    val end: RibbonEnd = RibbonEnd.BIAS,
+    val emblem: RibbonEmblem = RibbonEmblem.CROSS,
+) {
+    val ferret: Boolean get() = end == RibbonEnd.FERRET
+
     companion object {
         /** L'emplacement du ruban posé tout seul : la messe du jour, dans le missel (rapport 09, PLAN phase 5). */
         const val MASS_SLOT = 6
 
         /** Le ruban de la messe du jour : à la couleur liturgique du jour, coupé droit et serré d'un ferret doré. */
-        fun mass(color: LiturgicalColor) = RibbonStyle(color, "messe du jour", ribs = 5, ferret = true)
+        fun mass(color: LiturgicalColor) = RibbonStyle(color, "messe du jour", ribs = 5, end = RibbonEnd.FERRET)
 
         val slots = listOf(
             RibbonStyle(LiturgicalColor.RED, "rouge", ribs = 5),
@@ -58,6 +80,26 @@ data class RibbonStyle(val color: LiturgicalColor, val label: String, val ribs: 
 
         fun of(slot: Int) = slots[slot.coerceIn(0, slots.lastIndex)]
     }
+}
+
+/** Les rubans de l'utilisateur (atelier), un par emplacement de [RibbonStyle.slots], fournis à la racine de l'app. */
+val LocalRibbonSet = staticCompositionLocalOf { RibbonStyle.slots }
+
+/** Le ruban d'un emplacement dans un jeu de rubans. */
+fun List<RibbonStyle>.of(slot: Int): RibbonStyle = this[slot.coerceIn(0, lastIndex)]
+
+/** Les couleurs d'un ruban : sa couleur liturgique, ou la teinte libre de l'atelier, éclaircie sur papier sombre. */
+fun ribbonTokens(style: RibbonStyle, dark: Boolean): LiturgicalTokens {
+    val custom = style.custom ?: return liturgicalTokens(style.color, dark)
+    val fabric = if (dark) lerp(custom, Color.White, 0.12f) else custom
+    val luminance = 0.2126f * custom.red + 0.7152f * custom.green + 0.0722f * custom.blue
+    // Un ruban très clair ou très sombre se perd sur le papier : un liseré le détache, comme le blanc et le noir.
+    val trim = when {
+        luminance > 0.82f -> Color(0xFFB8912F)
+        dark && luminance < 0.06f -> Color(0xFF5A5650)
+        else -> null
+    }
+    return LiturgicalTokens(fabric, fabric, trim)
 }
 
 private val GoldDark = Color(0xFF8A6A1C)
@@ -99,7 +141,10 @@ fun DrawScope.drawRibbonAlong(
     fabric: RibbonFabric = RibbonFabric.TEXTURED,
 ) {
     if (spine.size < 2 || width <= 0f) return
-    val satin = fabric == RibbonFabric.SATIN
+    val cloth = style.fabric ?: fabric
+    val satin = cloth == RibbonFabric.SATIN || cloth == RibbonFabric.MOIRE
+    val moire = cloth == RibbonFabric.MOIRE
+    val velvet = cloth == RibbonFabric.VELVET
     // Le tissu mat a un rang de sommets à chaque duite, ou presque : c'est ce qui fait son grain.
     val line = resample(spine, if (satin) (width / 5f).coerceIn(1.5f, 6f) else (width / 12f).coerceIn(1.2f, 2.5f))
     val n = line.size
@@ -123,13 +168,25 @@ fun DrawScope.drawRibbonAlong(
         return p to t
     }
 
-    val tokens = liturgicalTokens(style.color, dark)
+    val tokens = ribbonTokens(style, dark)
+    val waveM = (2 * PI / (width * 1.6f)).toFloat()
     val highlight = when (style.color) { LiturgicalColor.BLACK -> 0.24f; LiturgicalColor.WHITE -> 0.5f; else -> 0.34f }
     fun shade(s: Float, j: Int, r: Int): Color {
         val wave = ripple * (0.62f * cos(s * waveA + phase) + 0.38f * cos(s * waveB + 1.7f + phase * 1.6f))
-        val light = if (satin) {
+        val light = if (velvet) {
+            // Velours : un poil serré qui boit la lumière ; les bords s'enfoncent, le milieu luit à peine.
+            val u = Across[j]
+            -0.3f * (2 * u - 1) * (2 * u - 1) + 0.06f + 0.06f * wave + 0.03f * grain(r * 17 + j)
+        } else if (satin) {
             val relief = SatinLight[j]
-            (if (Sheen[j]) relief * highlight * (0.7f + 0.6f * wave) else relief * (1f - 0.3f * wave)) + 0.13f * wave
+            val base = (if (Sheen[j]) relief * highlight * (0.7f + 0.6f * wave) else relief * (1f - 0.3f * wave)) + 0.13f * wave
+            // Moiré : des ondes de lumière en travers, comme le grain d'eau d'une soie moirée.
+            if (moire) {
+                // Les lignes d'eau : de fines crêtes claires (une sinusoïde élevée à une puissance paire), qui ondulent.
+                val m = sin(s * waveM * 1.6f + Across[j] * 7f + 2.6f * sin(s * waveA * 1.1f + j * 0.8f))
+                val ridge = m * m * m * m
+                base + 0.22f * ridge - 0.06f
+            } else base
         } else {
             // Mat : la lumière diffuse suit à peine les ondulations ; le grain change d'une duite à l'autre.
             MatteLight[j] + 0.09f * wave + 0.035f * grain(r) + 0.025f * grain(r * 31 + j)
@@ -142,7 +199,11 @@ fun DrawScope.drawRibbonAlong(
     // Sous un ferret, le tissu s'arrête à l'intérieur de l'embout : il ne dépasse pas de sa pointe resserrée.
     val ferretLength = if (style.ferret) (width * 1.35f).coerceAtMost(length * 0.3f) else 0f
     val end = length - ferretLength * 0.7f
-    val bias = if (style.ferret) 0f else (width * 0.9f).coerceAtMost(length * 0.4f)
+    val bias = when (style.end) {
+        RibbonEnd.BIAS -> (width * 0.9f).coerceAtMost(length * 0.4f)
+        RibbonEnd.FORKED -> (width * 0.7f).coerceAtMost(length * 0.3f)
+        else -> 0f
+    }
     val cut = end - bias
     val m = Across.size
     val positions = ArrayList<Offset>()
@@ -158,7 +219,8 @@ fun DrawScope.drawRibbonAlong(
     }
     var r = 0
     for (i in 0 until n) if (dist[i] < cut) row(r++) { dist[i] }
-    row(r) { j -> end - bias * Across[j] }
+    // La dernière rangée dessine la coupe : en biais, ou en queue d'aronde (le milieu remonte, les pointes descendent).
+    row(r) { j -> if (style.end == RibbonEnd.FORKED) end - bias * (1f - abs(1f - 2f * Across[j])) else end - bias * Across[j] }
     val rows = positions.size / m
     val indices = ArrayList<Int>((rows - 1) * (m - 1) * 6)
     for (q in 0 until rows - 1) for (j in 0 until m - 1) {
@@ -169,7 +231,8 @@ fun DrawScope.drawRibbonAlong(
     val outline = Path().apply {
         moveTo(positions[0].x, positions[0].y)
         for (q in 1 until rows) lineTo(positions[q * m].x, positions[q * m].y)
-        for (q in rows - 1 downTo 0) lineTo(positions[q * m + m - 1].x, positions[q * m + m - 1].y)
+        for (j in 1 until m) lineTo(positions[(rows - 1) * m + j].x, positions[(rows - 1) * m + j].y)
+        for (q in rows - 2 downTo 0) lineTo(positions[q * m + m - 1].x, positions[q * m + m - 1].y)
         close()
     }
 
@@ -188,7 +251,7 @@ fun DrawScope.drawRibbonAlong(
 
     // Les côtes du tissu mat, en long : un fil de lumière du côté de la lisière gauche, un fil d'ombre de l'autre.
     val ribs = style.ribs
-    if (!satin && width / (ribs + 1) >= 3f) {
+    if (!satin && !velvet && width / (ribs + 1) >= 3f) {
         val rib = (width * 0.022f).coerceIn(0.7f, 1.4f)
         val lit = Color.White.copy(alpha = if (dark) 0.08f else 0.16f)
         val shaded = Color.Black.copy(alpha = if (dark) 0.34f else 0.2f)
@@ -217,7 +280,7 @@ fun DrawScope.drawRibbonAlong(
     tokens.trim?.let { drawPath(outline, it, style = Stroke(width = 1.2f, join = StrokeJoin.Round)) }
 
     val (center, t) = frame(cut - ferretLength * 0.3f - width * 0.62f)
-    rotate(degrees = (atan2(t.y, t.x) * 180 / PI).toFloat() - 90f, pivot = center) { drawCross(center, width) }
+    if (style.emblem == RibbonEmblem.CROSS) rotate(degrees = (atan2(t.y, t.x) * 180 / PI).toFloat() - 90f, pivot = center) { drawCross(center, width) }
     if (style.ferret) {
         val (tip, dir) = frame(length)
         rotate(degrees = (atan2(dir.y, dir.x) * 180 / PI).toFloat() - 90f, pivot = tip) { drawFerret(tip, width, ferretLength) }

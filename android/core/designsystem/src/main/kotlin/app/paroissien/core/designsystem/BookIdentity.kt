@@ -3,8 +3,12 @@ package app.paroissien.core.designsystem
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color
 
-/** Matière de la couverture. */
-enum class CoverMaterial { MOROCCO, CALF, CLOTH, WRAPPER }
+/**
+ * Matière de la couverture : maroquin (grain serré), veau (peau lisse), toile fine, couverture de papier ; et, pour
+ * l'atelier des couvertures (13/10/2026), chagrin (grain de galets), velours (poil écrasé), vélin (parchemin aux fibres
+ * et aux marbrures douces), papier marbré (veines peignées), toile de lin (tissage grossier aux fils inégaux).
+ */
+enum class CoverMaterial { MOROCCO, CALF, CLOTH, WRAPPER, SHAGREEN, VELVET, VELLUM, MARBLED, LINEN }
 
 /** Décor : dorure au fer, ou fer à froid (relief sans or), ou impression (couverture de papier). */
 enum class Tooling { GOLD, BLIND, PRINTED }

@@ -1,5 +1,7 @@
 package app.paroissien.core.designsystem
 
+import androidx.compose.ui.graphics.Color
+
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -51,6 +53,33 @@ class RibbonsScreenshotTest {
     }
 
     /** Couchés en travers d'une page de texte : ondulations légères, ombre douce, extrémité en biais. */
+    @Test fun moire() = capture(PaperTheme.CLAIR, RibbonFabric.MOIRE)
+    @Test fun velours() = capture(PaperTheme.CLAIR, RibbonFabric.VELVET)
+
+    /** L'atelier : teintes libres, chaque tissu, chaque extrémité, sans broderie pour l'un. */
+    @Test
+    fun atelier() {
+        val styles = listOf(
+            RibbonStyle(LiturgicalColor.WHITE, "bleu marial", 5, custom = Color(0xFF2F5D9E), fabric = RibbonFabric.MOIRE, end = RibbonEnd.FORKED),
+            RibbonStyle(LiturgicalColor.RED, "bordeaux", 4, custom = Color(0xFF6E1423), fabric = RibbonFabric.VELVET, end = RibbonEnd.STRAIGHT),
+            RibbonStyle(LiturgicalColor.GOLD, "or", 6, custom = Color(0xFFC9A227), fabric = RibbonFabric.SATIN, end = RibbonEnd.FERRET),
+            RibbonStyle(LiturgicalColor.WHITE, "ivoire", 7, custom = Color(0xFFF1E6C8), fabric = RibbonFabric.TEXTURED, end = RibbonEnd.BIAS, emblem = RibbonEmblem.NONE),
+            RibbonStyle(LiturgicalColor.GREEN, "vert sapin", 3, custom = Color(0xFF1F4D3A), fabric = RibbonFabric.TEXTURED, end = RibbonEnd.FORKED),
+            RibbonStyle(LiturgicalColor.BLACK, "nuit", 3, custom = Color(0xFF0F2A44), fabric = RibbonFabric.MOIRE, end = RibbonEnd.BIAS),
+        )
+        compose.setContent {
+            ParoissienTheme(PaperTheme.SEPIA) {
+                val paper = LocalPaperColors.current
+                Row(Modifier.background(paper.background).padding(24.dp), horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+                    styles.forEach { style ->
+                        Canvas(Modifier.size(width = 34.dp, height = 300.dp)) { drawRibbon(style, paper.isDark, Offset.Zero, size) }
+                    }
+                }
+            }
+        }
+        compose.onRoot().captureRoboImage()
+    }
+
     @Test fun enTravers() = across(RibbonFabric.TEXTURED)
     @Test fun enTraversSatin() = across(RibbonFabric.SATIN)
 

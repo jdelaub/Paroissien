@@ -57,6 +57,8 @@ data class BookDressChoice(
     val colors: String? = null,
     /** Reliure retouchée dans l'atelier ; null garde celle du livre. */
     val binding: BindingChoice? = null,
+    /** La langue de ce livre (« fr », « la », « la-fr ») ; null : le réglage général (demande du 13/10/2026). */
+    val language: String? = null,
 ) {
     companion object {
         private val json = Json { ignoreUnknownKeys = true; encodeDefaults = false }
@@ -81,6 +83,10 @@ data class BindingChoice(
     val endpaper: String? = null,
     /** Les rubans, par emplacement de `RibbonStyle.slots`, dans l'ordre. */
     val ribbons: List<Int>? = null,
+    /** Filets du cadre doré (0 à 3), fleurons aux coins, nerfs au dos (0 à 6) : l'éditeur de couvertures. */
+    val fillets: Int? = null,
+    val corners: Boolean? = null,
+    val bands: Int? = null,
 ) {
     val isEmpty: Boolean get() = this == BindingChoice()
 
@@ -110,11 +116,32 @@ fun BookIdentity.dressed(binding: BindingChoice?): BookIdentity {
             tooling = tooling,
             motifTooling = if (binding.tooling != null) tooling else cover.motifTooling,
             motif = enumOrNull<CoverMotif>(binding.motif) ?: cover.motif,
+            fillets = binding.fillets?.coerceIn(0, 3) ?: cover.fillets,
+            corners = binding.corners ?: cover.corners,
+            bands = binding.bands?.coerceIn(0, 6) ?: cover.bands,
         ),
         edges = enumOrNull<EdgeFinish>(binding.edge) ?: edges,
         ribbons = binding.ribbons?.takeIf { it.isNotEmpty() } ?: ribbons,
     )
 }
+
+/**
+ * Un modèle de couverture de l'atelier (13/10/2026) : une reliure nommée, qu'on applique ensuite à un ou plusieurs
+ * livres. Gardé dans la table custom_frame, comme les motifs, sous le préfixe [PREFIX].
+ */
+@Serializable
+data class CoverTemplate(val id: String, val name: String, val binding: BindingChoice = BindingChoice()) {
+    companion object {
+        const val PREFIX = "couverture-"
+        private val json = Json { ignoreUnknownKeys = true; encodeDefaults = false }
+        fun decode(text: String): CoverTemplate? = runCatching { json.decodeFromString(serializer(), text) }.getOrNull()
+        fun encode(template: CoverTemplate): String = json.encodeToString(serializer(), template)
+    }
+}
+
+/** Une ligne de custom_frame est-elle un cadre composé (ni un motif, ni un modèle de couverture) ? */
+val app.paroissien.core.data.CustomFrameRow.isFrame: Boolean
+    get() = !id.startsWith(CustomMotif.PREFIX) && !id.startsWith(CoverTemplate.PREFIX)
 
 /** Un module d'un cadre de la bibliothèque : [part] = top, side, bottom, topCenter, sideCenter, bottomCenter, corner, bottomCorner. */
 @Serializable

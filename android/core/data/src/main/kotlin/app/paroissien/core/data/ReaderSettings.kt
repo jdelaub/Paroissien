@@ -41,6 +41,8 @@ data class ReaderSettings(
     val vignettes: Boolean = true,
     /** Pincer l'écran à deux doigts change la taille du texte ; désactivé par défaut (Aa). */
     val pinchToZoom: Boolean = false,
+    /** Les rubans retouchés dans l'atelier (JSON, un par emplacement) ; vide : les six rubans liturgiques. */
+    val ribbons: String = "",
     /** Rite du calendrier : "1962" ou "1969". */
     val rite: String = "1962",
     val externalSolemnities: Boolean = true,
@@ -78,6 +80,7 @@ class ReaderSettingsStore(context: Context) {
             p[FRAMES] = next.ornamentalFrames
             p[VIGNETTES] = next.vignettes
             p[PINCH] = next.pinchToZoom
+            p[RIBBONS] = next.ribbons
             p[RITE] = next.rite
             p[EXTERNAL] = next.externalSolemnities
             p[TRADITIONAL] = next.traditionalPenance
@@ -107,6 +110,7 @@ class ReaderSettingsStore(context: Context) {
             ornamentalFrames = p[FRAMES] ?: d.ornamentalFrames,
             vignettes = p[VIGNETTES] ?: d.vignettes,
             pinchToZoom = p[PINCH] ?: d.pinchToZoom,
+            ribbons = p[RIBBONS] ?: d.ribbons,
             rite = p[RITE] ?: d.rite,
             externalSolemnities = p[EXTERNAL] ?: d.externalSolemnities,
             traditionalPenance = p[TRADITIONAL] ?: d.traditionalPenance,
@@ -134,6 +138,7 @@ class ReaderSettingsStore(context: Context) {
         val FRAMES = booleanPreferencesKey("cadres_ornementaux")
         val VIGNETTES = booleanPreferencesKey("vignettes")
         val PINCH = booleanPreferencesKey("pincer_taille")
+        val RIBBONS = stringPreferencesKey("rubans")
         val RITE = stringPreferencesKey("rite")
         val EXTERNAL = booleanPreferencesKey("solennites_exterieures")
         val TRADITIONAL = booleanPreferencesKey("penitence_traditionnelle")

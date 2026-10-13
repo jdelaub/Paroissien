@@ -37,6 +37,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
+import kotlin.math.PI
 import kotlin.math.abs
 import kotlin.math.ln
 import kotlin.random.Random
@@ -166,6 +167,16 @@ private fun DrawScope.drawLeather(board: Rect, cover: CoverStyle, grain: ShaderB
 private fun DrawScope.drawSpine(board: Rect, cover: CoverStyle) {
     if (cover.material == CoverMaterial.WRAPPER) return
     val joint = board.left + board.width * 0.075f
+    if (cover.material == CoverMaterial.MARBLED) {
+        // Demi-reliure : le dos et les coins en basane brune, les plats en papier marbré.
+        val hide = Color(0xFF3B2416)
+        drawRect(hide, topLeft = board.topLeft, size = Size(board.width * 0.16f, board.height))
+        drawLine(Color.Black.copy(alpha = 0.4f), Offset(board.left + board.width * 0.16f, board.top), Offset(board.left + board.width * 0.16f, board.bottom), 1.5f)
+        val c = board.width * 0.14f
+        for ((corner, dy) in listOf(Offset(board.right, board.top) to 1f, Offset(board.right, board.bottom) to -1f)) {
+            drawPath(Path().apply { moveTo(corner.x, corner.y); lineTo(corner.x - c, corner.y); lineTo(corner.x, corner.y + c * dy); close() }, hide)
+        }
+    }
     drawRect(
         Brush.horizontalGradient(listOf(Color.Black.copy(alpha = 0.35f), Color.White.copy(alpha = 0.06f), Color.Black.copy(alpha = 0.10f)), startX = board.left, endX = joint),
         topLeft = board.topLeft, size = Size(joint - board.left, board.height),
@@ -319,7 +330,125 @@ private const val GRAIN = 192
 private fun grainFor(material: CoverMaterial): ImageBitmap? = when (material) {
     CoverMaterial.MOROCCO -> moroccoGrain
     CoverMaterial.CALF -> calfGrain
+    CoverMaterial.SHAGREEN -> shagreenGrain
+    CoverMaterial.VELVET -> velvetPile
+    CoverMaterial.VELLUM -> vellumFibres
+    CoverMaterial.MARBLED -> marbledVeins
+    CoverMaterial.LINEN -> linenWeave
     CoverMaterial.CLOTH, CoverMaterial.WRAPPER -> null
+}
+
+/**
+ * Les textures de l'atelier : de la lumière (blanc translucide) et de l'ombre (noir translucide) posées sur la couleur
+ * de la couverture, qui vaut donc pour toutes les teintes. Toutes se répètent sans couture ([GRAIN] px de côté).
+ */
+private fun texture(pixel: (Int, Int) -> Float, amplitude: Float): ImageBitmap {
+    val pixels = IntArray(GRAIN * GRAIN) { i ->
+        val v = pixel(i % GRAIN, i / GRAIN)
+        val alpha = (abs(v) * amplitude * 255f).toInt().coerceIn(0, 255)
+        (alpha shl 24) or (if (v > 0f) 0xFFFFFF else 0x000000)
+    }
+    return Bitmap.createBitmap(pixels, GRAIN, GRAIN, Bitmap.Config.ARGB_8888).asImageBitmap()
+}
+
+/** Bruit de valeur périodique (période [cells]), entre -1 et 1. */
+private fun valueNoise(seed: Int, cells: Int): (Float, Float) -> Float {
+    val random = Random(seed)
+    val lattice = FloatArray(cells * cells) { random.nextFloat() * 2f - 1f }
+    return { x, y ->
+        val gx = x / GRAIN * cells; val gy = y / GRAIN * cells
+        // floor, pas toInt : un point déplacé hors de la tuile (coordonnée négative) reste sur la bonne maille.
+        val x0 = kotlin.math.floor(gx).toInt(); val y0 = kotlin.math.floor(gy).toInt()
+        val fx = (gx - x0).let { it * it * (3 - 2 * it) }; val fy = (gy - y0).let { it * it * (3 - 2 * it) }
+        fun v(i: Int, j: Int) = lattice[(j.mod(cells)) * cells + i.mod(cells)]
+        val top = v(x0, y0) * (1 - fx) + v(x0 + 1, y0) * fx
+        val bottom = v(x0, y0 + 1) * (1 - fx) + v(x0 + 1, y0 + 1) * fx
+        top * (1 - fy) + bottom * fy
+    }
+}
+
+/** Chagrin : des galets serrés, bombés (éclairés en haut à gauche), séparés de creux sombres. */
+private val shagreenGrain: ImageBitmap by lazy {
+    val cells = 16
+    val random = Random(2026)
+    val px = FloatArray(cells * cells) { random.nextFloat() }
+    val py = FloatArray(cells * cells) { random.nextFloat() }
+    val step = GRAIN.toFloat() / cells
+    texture({ x, y ->
+        val cx = (x / step).toInt(); val cy = (y / step).toInt()
+        var d1 = Float.MAX_VALUE; var d2 = Float.MAX_VALUE; var nx = 0f; var ny = 0f
+        for (j in -1..1) for (i in -1..1) {
+            val k = (cy + j).mod(cells) * cells + (cx + i).mod(cells)
+            val sx = (cx + i + px[k]) * step; val sy = (cy + j + py[k]) * step
+            val d = kotlin.math.hypot(x - sx, y - sy)
+            if (d < d1) { d2 = d1; d1 = d; nx = x - sx; ny = y - sy } else if (d < d2) d2 = d
+        }
+        val crevice = ((d2 - d1) / (step * 0.18f)).coerceIn(0f, 1f)
+        val dome = -(nx + ny) / (step * 1.2f)
+        if (crevice < 1f) -(1f - crevice) else dome.coerceIn(-0.6f, 0.6f)
+    }, amplitude = 0.32f)
+}
+
+/** Velours : un poil serré, couché par petites plages qui prennent la lumière, sans grain de peau. */
+private val velvetPile: ImageBitmap by lazy {
+    val medium = valueNoise(311, 12)
+    val small = valueNoise(312, 32)
+    val fine = valueNoise(313, 96)
+    texture({ x, y ->
+        val fx = x.toFloat(); val fy = y.toFloat()
+        // Les plages couchées : un reflet doux là où le poil s'incline, une ombre là où il se relève.
+        0.55f * medium(fx, fy) + 0.3f * small(fx, fy) + 0.15f * fine(fx, fy)
+    }, amplitude = 0.13f)
+}
+
+/** Vélin : de grandes marbrures douces de la peau, et des fibres fines et claires. */
+private val vellumFibres: ImageBitmap by lazy {
+    val blotch = valueNoise(411, 5)
+    val fibre = valueNoise(412, 64)
+    texture({ x, y ->
+        val b = blotch(x.toFloat(), y.toFloat())
+        val f = fibre(x.toFloat() * 0.25f, y.toFloat() * 3f)
+        0.7f * b + if (f > 0.55f) 0.6f else 0f
+    }, amplitude = 0.12f)
+}
+
+/**
+ * Papier marbré : des veines de couleur que le bain a tordues en volutes. Le dessin est déformé deux fois (on prend
+ * le bruit au point déjà déplacé), ce qui enroule les veines au lieu de les onduler en rayures.
+ */
+private val marbledVeins: ImageBitmap by lazy {
+    val n1 = valueNoise(511, 3)
+    val n2 = valueNoise(512, 3)
+    val n3 = valueNoise(513, 6)
+    val n4 = valueNoise(514, 6)
+    val period = GRAIN / 5f
+    texture({ x, y ->
+        val fx = x.toFloat(); val fy = y.toFloat()
+        val qx = fx + 34f * n1(fx, fy); val qy = fy + 34f * n2(fx, fy)
+        val rx = qx + 22f * n3(qx, qy); val ry = qy + 22f * n4(qx, qy)
+        // Coefficients multiples de 1/5 : le motif fait un nombre entier de tours sur la tuile, sans couture.
+        val v = kotlin.math.sin(2 * PI.toFloat() * (rx * 0.8f + ry * 0.4f) / period)
+        when {
+            v > 0.9f -> 0.9f + (v - 0.9f) * 1f
+            v < -0.94f -> -1f
+            else -> v * 0.18f
+        }
+    }, amplitude = 0.36f)
+}
+
+/** Toile de lin : des fils, chacun un peu plus clair ou plus sombre que son voisin, en travers et en long. */
+private val linenWeave: ImageBitmap by lazy {
+    val threads = 64
+    val random = Random(611)
+    val warp = FloatArray(threads) { random.nextFloat() * 2f - 1f }
+    val weft = FloatArray(threads) { random.nextFloat() * 2f - 1f }
+    val step = GRAIN / threads
+    texture({ x, y ->
+        val over = ((x / step) + (y / step)) % 2 == 0
+        val inThread = if (over) (x % step) / step.toFloat() else (y % step) / step.toFloat()
+        val ridge = 0.5f - abs(inThread - 0.5f)
+        (if (over) warp[x / step] else weft[y / step]) * 0.35f + ridge - 0.25f
+    }, amplitude = 0.2f)
 }
 
 /** Maroquin : un grain serré et marqué. Veau : une peau plus lisse, à peine marbrée. */

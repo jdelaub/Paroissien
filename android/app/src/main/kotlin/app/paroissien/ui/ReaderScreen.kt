@@ -1,5 +1,10 @@
 package app.paroissien.ui
 
+import app.paroissien.library.isFrame
+
+import app.paroissien.core.designsystem.LocalRibbonSet
+import app.paroissien.core.designsystem.of
+
 import java.time.LocalDate
 import androidx.compose.ui.graphics.asImageBitmap
 import android.graphics.BitmapFactory
@@ -96,6 +101,7 @@ import app.paroissien.library.dressed
 import app.paroissien.library.subtitle
 import app.paroissien.library.BookIdentities
 import app.paroissien.library.BookDressChoice
+import app.paroissien.core.data.BookLookRow
 import app.paroissien.library.BookDresses
 import app.paroissien.library.CustomFrameSpec
 import app.paroissien.library.CustomMotif
@@ -116,6 +122,7 @@ import app.paroissien.core.reading.turn.MekuriConfiguration
 import app.paroissien.library.LibraryEntry
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.Locale
@@ -124,6 +131,9 @@ import kotlin.math.sign
 private enum class Panel { CHROME, TOC, RIBBONS, IMAGES, SETTINGS }
 
 private class Loaded(val unit: String?, val language: String, val blocks: List<ReadingBlock>)
+
+/** L'habit du livre, une fois lu (le livre peut n'en avoir aucun : [row] null). */
+private class LookState(val row: BookLookRow?)
 
 /**
  * Le lecteur : ouvre la publication à sa position enregistrée, la garde à jour à chaque page, enchaîne les unités en
@@ -159,15 +169,20 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     val unit = entry?.unit(unitId)
     val units = entry?.units.orEmpty()
     val unitIndex = units.indexOfFirst { it.id == unitId }
-    val language = settings.language
+    // L'habit choisi dans l'atelier (reliure, cadres, langue du livre) ; le texte attend de le connaître, pour ne pas
+    // être composé deux fois quand le livre a sa propre langue.
+    val lookState by remember(publication) { graph.database.looks().observe(publication).map { LookState(it) } }.collectAsState(initial = null)
+    val lookRow = lookState?.row
+    val choice = remember(lookRow) { BookDressChoice.decode(lookRow?.json) }
+    val language = choice?.language ?: settings.language
     // « la-fr » : latin et français en regard, en deux colonnes ; ailleurs (titres, sommaire), le français.
     val facing = language == LANGUAGE_FACING
     val textLanguage = if (facing) "fr" else language
     val withVignette = settings.vignettes && !isDemo
-    val loaded by produceState<Loaded?>(null, entry, unitId, language, resolved, withVignette) {
+    val loaded by produceState<Loaded?>(null, entry, unitId, language, resolved && lookState != null, withVignette) {
         value = when {
             isDemo -> Loaded(null, language, demoBook())
-            !resolved || entry == null || unit == null -> null
+            !resolved || lookState == null || entry == null || unit == null -> null
             else -> withContext(Dispatchers.IO) {
                 // Les images des blocs `image` (gravures, dessins), décodées une fois pour l'unité.
                 val images = HashMap<String, ImageBitmap?>()
@@ -230,9 +245,6 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     BackHandler(enabled = panel != null) { panel = null }
 
     val fonts = rememberBookFonts(settings.bookFace())
-    // L'habit choisi dans l'atelier (reliure, cadres) et les cadres composés par l'utilisateur.
-    val lookRow by remember(publication) { graph.database.looks().observe(publication) }.collectAsState(initial = null)
-    val choice = remember(lookRow) { BookDressChoice.decode(lookRow?.json) }
     // L'identité du livre : son papier en thème clair (les autres thèmes, choisis pour le confort, l'emportent), sa
     // tranche, sa couverture, ses rubans, retouchés dans l'atelier ; un papier fin plie plus volontiers qu'un papier épais.
     val identity = remember(publication, entry, settings.bookIdentity, choice?.binding) {
@@ -278,7 +290,7 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
     }
     val customRows by remember { graph.database.looks().observeFrames() }.collectAsState(initial = emptyList())
     val customFrames = remember(customRows) {
-        customRows.filterNot { it.id.startsWith(CustomMotif.PREFIX) }.mapNotNull { CustomFrameSpec.decode(it.json)?.let(FrameComposer::build) }
+        customRows.filter { it.isFrame }.mapNotNull { CustomFrameSpec.decode(it.json)?.let(FrameComposer::build) }
     }
     val look = BookLook(
         edges = identity.edges,
@@ -415,6 +427,14 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                     settings,
                     onAll = { panel = null; open(SettingsKey) },
                     onDress = if (isDemo || entry == null) null else { { panel = null; open(BookDressKey(publication)) } },
+                    // Un livre latin-français a sa propre langue, en plus du réglage général.
+                    bookLanguage = if (!isDemo && entry != null && entry.publication.languages.containsAll(listOf("la", "fr"))) choice?.language ?: "" else null,
+                    onBookLanguage = { next ->
+                        graph.scope.launch(Dispatchers.IO) {
+                            val current = BookDressChoice.decode(graph.database.looks().all().firstOrNull { it.publication == publication }?.json) ?: BookDressChoice()
+                            graph.database.looks().save(BookLookRow(publication, BookDressChoice.encode(current.copy(language = next)), System.currentTimeMillis()))
+                        }
+                    },
                 ) { transform -> graph.scope.launch { graph.settings.update(transform) } }
             }
             null -> Unit
@@ -621,7 +641,7 @@ private fun RibbonPanel(
                         horizontalAlignment = Alignment.CenterHorizontally,
                     ) {
                         RibbonIcon(slot, Modifier.size(width = 14.dp, height = 34.dp))
-                        Text(RibbonStyle.of(slot).label, style = MaterialTheme.typography.labelSmall)
+                        Text(LocalRibbonSet.current.of(slot).label, style = MaterialTheme.typography.labelSmall)
                         Text(
                             placed?.let { unitTitle(it.unit) } ?: stringResource(R.string.ribbon_free),
                             style = MaterialTheme.typography.labelSmall,

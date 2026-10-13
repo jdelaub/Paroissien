@@ -1,5 +1,7 @@
 package app.paroissien.ui
 
+import app.paroissien.library.isFrame
+
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -53,7 +55,9 @@ import app.paroissien.R
 import app.paroissien.core.data.CustomFrameRow
 import app.paroissien.core.designsystem.LocalPaperColors
 import app.paroissien.library.CustomFrameSpec
+import app.paroissien.library.CoverTemplate
 import app.paroissien.library.CustomMotif
+import app.paroissien.core.designsystem.LocalRibbonSet
 import app.paroissien.library.FrameComposer
 import app.paroissien.library.MotifStroke
 import kotlinx.coroutines.Dispatchers
@@ -63,16 +67,40 @@ import kotlin.math.abs
 import kotlin.math.hypot
 
 /**
- * L'atelier, sans passer par un livre (demande de l'utilisateur, 12/10/2026) : ses cadres composés et ses motifs,
- * composer un cadre (à la main ou au hasard), dessiner un motif. Ouvert depuis les réglages et depuis la bibliothèque.
+ * L'atelier, onglet à lui (demandes du 12 et du 13/10/2026) : les couvertures (modèles de reliure, leurs textures),
+ * les rubans, les cadres composés et les motifs, et le livre d'essai du lecteur.
  */
 @Composable
-fun WorkshopScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) {
+fun WorkshopScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: (() -> Unit)? = null) {
     val rows by remember { graph.database.looks().observeFrames() }.collectAsState(initial = emptyList())
-    val frames = rows.filterNot { it.id.startsWith(CustomMotif.PREFIX) }.mapNotNull { r -> CustomFrameSpec.decode(r.json)?.let { s -> FrameComposer.build(s)?.let { s to it } } }
+    val frames = rows.filter { it.isFrame }.mapNotNull { r -> CustomFrameSpec.decode(r.json)?.let { s -> FrameComposer.build(s)?.let { s to it } } }
     val motifs = rows.filter { it.id.startsWith(CustomMotif.PREFIX) }.mapNotNull { CustomMotif.decode(it.json) }
+    val covers = rows.filter { it.id.startsWith(CoverTemplate.PREFIX) }.mapNotNull { CoverTemplate.decode(it.json) }
+    val ribbons = LocalRibbonSet.current
 
     Screen(stringResource(R.string.workshop_title), onBack = onBack) {
+        item {
+            WorkshopSection(stringResource(R.string.workshop_covers)) {
+                Text(stringResource(R.string.workshop_covers_hint), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary)
+                Button(onClick = { open(CoverEditorKey()) }) { Text(stringResource(R.string.workshop_new_cover)) }
+                LazyRow(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    items(covers, key = { it.id }) { c ->
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.clickable { open(CoverEditorKey(c.id)) }) {
+                            CoverThumb(c)
+                            Text(c.name, style = MaterialTheme.typography.labelSmall, maxLines = 2)
+                        }
+                    }
+                }
+            }
+        }
+        item {
+            WorkshopSection(stringResource(R.string.workshop_ribbons)) {
+                Row(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
+                    ribbons.indices.forEach { RibbonIcon(it, Modifier.size(width = 12.dp, height = 30.dp)) }
+                }
+                OutlinedButton(onClick = { open(RibbonEditorKey) }) { Text(stringResource(R.string.workshop_edit_ribbons)) }
+            }
+        }
         item {
             WorkshopSection(stringResource(R.string.dress_my_frames)) {
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -102,6 +130,13 @@ fun WorkshopScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: () -> Unit) 
                         }
                     }
                 }
+            }
+        }
+        // Le livre d'essai du lecteur (ordinaire, latin, lettrines) : il n'est pas un livre de la bibliothèque.
+        item {
+            WorkshopSection(stringResource(R.string.workshop_trials)) {
+                OutlinedButton(onClick = { open(ReaderKey(DEMO)) }) { Text(stringResource(R.string.demo_book)) }
+                Text(stringResource(R.string.demo_book_detail), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary)
             }
         }
     }
@@ -247,7 +282,7 @@ internal fun Swatches(colors: List<Color>, selected: Long?, onPick: (Long) -> Un
 }
 
 @Composable
-private fun WorkshopSection(title: String, content: @Composable () -> Unit) {
+internal fun WorkshopSection(title: String, content: @Composable () -> Unit) {
     Column(Modifier.fillMaxWidth().padding(horizontal = 20.dp, vertical = 8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(title, style = MaterialTheme.typography.titleMedium, color = LocalPaperColors.current.rubric)
         content()

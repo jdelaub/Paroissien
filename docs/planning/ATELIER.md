@@ -144,6 +144,13 @@ Un écran par livre, ouvert depuis la bibliothèque (appui long sur la couvertur
 - **Dessiner un motif** : on trace du doigt dans une cellule de frise ; chaque trait est simplifié (Douglas-Peucker) puis lissé en courbe (Catmull-Rom), reflété selon la symétrie (gauche-droite, haut-bas), tracé à bouts ronds en trois épaisseurs ; les couleurs se prennent dans l'éventail des encres des cadres (toutes, avec leurs variantes, rangées par teinte). Le motif devient une frise qu'on pose dans un cadre composé.
 - **Reliure** : la couverture, la doublure et le second plat pivotent d'un bloc autour du dos, sans se plier.
 
+**Le 13/10/2026 (0.7.0)** :
+
+- **Navigation** : la bibliothèque ne montre que des livres ; cinq onglets (Aujourd'hui, Bibliothèque, Images, Atelier, Signets) ; la recherche devient une loupe et l'import un « + » en tête de la bibliothèque ; le livre de démonstration passe dans l'atelier (« Essais »).
+- **Éditeur de couvertures** : un modèle de reliure composé à vue (matière, couleur libre, fers, motif, filets, fleurons, nerfs, tranche), enregistré sous un nom (`custom_frame`, préfixe `couverture-`) et appliqué à un ou plusieurs livres ; « Habiller ce livre » propose les modèles de l'atelier. Cinq matières nouvelles, chacune une texture procédurale qui se répète sans couture : chagrin (galets), vélin (fibres, marbrures douces), velours (poil couché par plages), toile de lin (fils inégaux), papier marbré (volutes, demi-reliure de basane au dos et aux coins).
+- **Éditeur de rubans** : les six rubans des livres, retouchés un à un (nom, couleur liturgique ou libre, tissu mat, satin, moiré ou velours, extrémité en biais, droite, en queue d'aronde ou à ferret, croix brodée ou non) ; gardés dans les réglages (`rubans`), donc dans la sauvegarde ; les livres gardent leurs emplacements.
+- **Langue par livre** : un livre latin-français a sa propre langue (Aa, « Ce livre ») en plus du réglage général (`BookDressChoice.language`).
+
 - **Rang** : noble, Bible, simple, sans habit (§4) ; il donne les valeurs de départ des choix suivants.
 - **Couverture** : matière et couleur, décor (modèles de la bibliothèque), motif central, titre doré ou non.
 - **Gardes** : moiré, asanoha, symboles, ou papier uni ; couleur.

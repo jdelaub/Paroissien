@@ -69,9 +69,9 @@ fun SettingsScreen(graph: AppGraph, settings: ReaderSettings, open: (NavKey) -> 
             Group(stringResource(R.string.settings_books)) {
                 SwitchRow(stringResource(R.string.settings_identity), settings.bookIdentity) { v -> update { it.copy(bookIdentity = v) } }
                 SwitchRow(stringResource(R.string.settings_ribbons_across), settings.ribbonsAcross) { v -> update { it.copy(ribbonsAcross = v) } }
-                Choice(stringResource(R.string.settings_fabric), RibbonFabric.entries, settings.ribbonFabric(), {
-                    stringResource(if (it == RibbonFabric.SATIN) R.string.fabric_satin else R.string.fabric_textured)
-                }) { v -> update { it.copy(ribbonFabric = if (v == RibbonFabric.SATIN) "SATIN" else "TISSU") } }
+                Choice(stringResource(R.string.settings_fabric), RibbonFabric.entries, settings.ribbonFabric(), { stringResource(fabricLabel(it)) }) { v ->
+                    update { it.copy(ribbonFabric = v.settingValue()) }
+                }
                 SwitchRow(stringResource(R.string.settings_cards_on_page), settings.cardsOnPage) { v -> update { it.copy(cardsOnPage = v) } }
                 SwitchRow(stringResource(R.string.settings_frames), settings.ornamentalFrames) { v -> update { it.copy(ornamentalFrames = v) } }
                 SwitchRow(stringResource(R.string.settings_vignettes), settings.vignettes) { v -> update { it.copy(vignettes = v) } }
