@@ -232,26 +232,32 @@ class FrameStyle(
      * l'or, de l'argent, du bronze ou du cuivre ; null les garde à plat, dans leur couleur d'origine.
      */
     val metal: Metal? = null,
+    /** Encres toujours en métal, quel que soit [metal] : les traits d'or ou d'argent d'un motif dessiné dans l'atelier. */
+    val metalInks: Map<String, Metal> = emptyMap(),
 ) {
-    fun withMetal(metal: Metal?): FrameStyle = if (metal == this.metal) this else FrameStyle(base, palettes, dimmed, metal)
+    fun withMetal(metal: Metal?): FrameStyle = if (metal == this.metal) this else FrameStyle(base, palettes, dimmed, metal, metalInks)
 
     /** Les encres résolues pour le dessin : couleurs, et reflets des ors quand un métal est choisi. */
     internal fun resolve(liturgicalColor: LiturgicalColor?, paper: PaperColors): Inks {
         val colors = inks(liturgicalColor, paper)
-        val m = metal ?: return Inks(colors)
+        if (metal == null && metalInks.isEmpty()) return Inks(colors)
         val dim = ornamentDim(paper)
         fun tone(c: Color) = if (dim > 0f) mix(c, paper.background, dim) else c
-        val sheen = HashMap<String, Brush>()
-        for (name in colors.keys) {
-            val tones = when (name) {
-                "gold" -> listOf(m.deep, m.bright, m.mid, m.deep)
-                "goldLight" -> listOf(m.mid, m.bright, m.bright, m.mid)
-                "goldDark" -> listOf(m.shadow, m.deep, m.mid, m.shadow)
-                else -> continue
+        fun sheen(tones: List<Color>) = Brush.linearGradient(tones.map(::tone), start = Offset.Zero, end = Offset(SHEEN, SHEEN), tileMode = TileMode.Mirror)
+        val sheens = HashMap<String, Brush>()
+        metal?.let { m ->
+            for (name in colors.keys) {
+                val tones = when (name) {
+                    "gold" -> listOf(m.deep, m.bright, m.mid, m.deep)
+                    "goldLight" -> listOf(m.mid, m.bright, m.bright, m.mid)
+                    "goldDark" -> listOf(m.shadow, m.deep, m.mid, m.shadow)
+                    else -> continue
+                }
+                sheens[name] = sheen(tones)
             }
-            sheen[name] = Brush.linearGradient(tones.map(::tone), start = Offset.Zero, end = Offset(SHEEN, SHEEN), tileMode = TileMode.Mirror)
         }
-        return Inks(colors, sheen)
+        for ((name, m) in metalInks) if (name in colors) sheens[name] = sheen(listOf(m.deep, m.bright, m.mid, m.deep))
+        return Inks(colors, sheens)
     }
 
     fun inks(liturgicalColor: LiturgicalColor?, paper: PaperColors): Map<String, Color> {

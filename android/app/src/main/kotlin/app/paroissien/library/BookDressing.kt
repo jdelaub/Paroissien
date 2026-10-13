@@ -1,5 +1,6 @@
 package app.paroissien.library
 
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import app.paroissien.core.designsystem.BookIdentity
@@ -207,9 +208,27 @@ data class CustomFrameSpec(
     }
 }
 
-/** Un trait d'un motif : ses points en unités de frise (x le long de la bande, y de 0 au bord à 100 côté texte). */
+/**
+ * Un élément d'un motif, en unités de frise (x le long de la bande, y de 0 au bord à 100 côté texte) : un trait à main
+ * levée (ses points), ou, depuis le 13/10/2026, une forme ([shape] : losange, cercle…) ou un motif de la réserve
+ * ([stamp] : fraise, lys…), posés en leur centre (les deux premiers [points]), de demi-taille [sx] × [sy], tournés de
+ * [rotation] degrés, retournés si [flip], pleins ou au trait ([filled]). [metal] : le trait prend le reflet d'un métal.
+ */
 @Serializable
-data class MotifStroke(val points: List<Float>, val width: Float, val color: Long, val dot: Boolean = false)
+data class MotifStroke(
+    val points: List<Float>,
+    val width: Float,
+    val color: Long,
+    val dot: Boolean = false,
+    val shape: String? = null,
+    val stamp: String? = null,
+    val sx: Float = 0f,
+    val sy: Float = 0f,
+    val rotation: Float = 0f,
+    val flip: Boolean = false,
+    val filled: Boolean = true,
+    val metal: String? = null,
+)
 
 /**
  * Un motif dessiné par l'utilisateur : une cellule de frise de [period] × 100 unités, ses traits (lissés en courbes à
@@ -226,6 +245,8 @@ data class CustomMotif(
     val mirrorV: Boolean = false,
     /** Fond de la bande (ARGB), ou papier nu. */
     val ground: Long? = null,
+    /** Fond en métal (or, argent…), à la place de [ground]. */
+    val groundMetal: String? = null,
 ) {
     companion object {
         const val PREFIX = "motif-"
@@ -289,7 +310,7 @@ object FrameComposer {
         if (sources.none { it in library || it in motifs }) return null
         val top = edge(c.top) ?: empty
         val bands = dispositions[c.disposition] ?: FrameBands.Full
-        val ground = c.ground?.let { g -> library[g]?.spec?.ground?.let { ink -> "$g.$ink" } ?: motifs[g]?.ground?.let { "$g.ground" } }
+        val ground = c.ground?.let { g -> library[g]?.spec?.ground?.let { ink -> "$g.$ink" } ?: motifs[g]?.takeIf { it.ground != null || it.groundMetal != null }?.let { "$g.ground" } }
         val rules = when (c.fillets) {
             "cadre" -> c.ground?.let { g -> library[g]?.spec?.rules?.map { Rule(ink(g, it.ink), it.at, it.width, it.over, it.from) } }.orEmpty()
             "rouge" -> listOf(Rule("rubric", 50f, 7f, over = true, from = RuleFrom.OUTER))
@@ -335,50 +356,46 @@ object FrameComposer {
             }.filterValues { it.isNotEmpty() },
             dimmed = used.flatMap { n -> library.getValue(n).style.dimmed.map { "$n.$it" } }.toSet() +
                 sources.mapNotNull { motifs[it] }.flatMap { motifInks(it).keys },
+            metalInks = sources.mapNotNull { motifs[it] }.distinct().flatMap { motifMetals(it).toList() }.toMap(),
         )
         return OrnamentalFrameDef(c.id, c.name, spec, style)
     }
 
-    /** Les encres d'un motif : une par couleur de trait, plus son fond. */
-    private fun motifInks(m: CustomMotif): Map<String, Color> =
-        m.strokes.map { it.color }.distinct().mapIndexed { i, argb -> "${m.id}.c$i" to Color(argb) }.toMap() +
-            (m.ground?.let { mapOf("${m.id}.ground" to Color(it)) } ?: emptyMap())
+    /** L'encre d'un élément : sa couleur, ou son métal. */
+    private fun inkOf(m: CustomMotif, e: MotifStroke): String =
+        e.metal?.let { "${m.id}.m.$it" } ?: "${m.id}.c${m.strokes.filter { it.metal == null }.map { it.color }.distinct().indexOf(e.color)}"
 
-    /** La frise d'un motif : chaque trait lissé (Catmull-Rom), et ses reflets selon la symétrie choisie. */
-    private fun motifEdge(m: CustomMotif): EdgeModule {
-        val colors = m.strokes.map { it.color }.distinct()
-        val ops = m.strokes.flatMap { st ->
-            val ink = "${m.id}.c${colors.indexOf(st.color)}"
-            val xs = st.points.filterIndexed { i, _ -> i % 2 == 0 }
-            val ys = st.points.filterIndexed { i, _ -> i % 2 == 1 }
-            val variants = buildList {
-                add(xs to ys)
-                if (m.mirrorU) add(xs.map { m.period - it } to ys)
-                if (m.mirrorV) add(xs to ys.map { 100f - it })
-                if (m.mirrorU && m.mirrorV) add(xs.map { m.period - it } to ys.map { 100f - it })
-            }
-            variants.map { (vx, vy) -> Op(ink, smoothPath(vx, vy), st.width, round = true) }
-        }
-        return EdgeModule(m.period, 0f, ops, emptyList())
+    /** Les encres d'un motif : une par couleur de trait, une par métal (couleur de repli : le plein du métal), et son fond. */
+    fun motifInks(m: CustomMotif): Map<String, Color> {
+        val colors = m.strokes.filter { it.metal == null }.map { it.color }.distinct().mapIndexed { i, argb -> "${m.id}.c$i" to Color(argb) }
+        val metals = m.strokes.mapNotNull { it.metal }.distinct().mapNotNull { name -> enumOrNull<Metal>(name)?.let { "${m.id}.m.$name" to it.mid } }
+        val ground = enumOrNull<Metal>(m.groundMetal)?.let { mapOf("${m.id}.ground" to it.mid) }
+            ?: m.ground?.let { mapOf("${m.id}.ground" to Color(it)) } ?: emptyMap()
+        return (colors + metals).toMap() + ground
     }
 
-    /** Une courbe lisse qui passe par tous les points (Catmull-Rom en cubiques) ; un point seul fait un rond. */
-    fun smoothPath(xs: List<Float>, ys: List<Float>): String {
-        if (xs.isEmpty()) return ""
-        fun f(v: Float) = "%.1f".format(java.util.Locale.ROOT, v)
-        if (xs.size == 1) return "M${f(xs[0])} ${f(ys[0])}L${f(xs[0])} ${f(ys[0])}"
-        val sb = StringBuilder("M${f(xs[0])} ${f(ys[0])}")
-        val n = xs.size
-        for (i in 0 until n - 1) {
-            val i0 = maxOf(0, i - 1)
-            val i3 = minOf(n - 1, i + 2)
-            val c1x = xs[i] + (xs[i + 1] - xs[i0]) / 6f
-            val c1y = ys[i] + (ys[i + 1] - ys[i0]) / 6f
-            val c2x = xs[i + 1] - (xs[i3] - xs[i]) / 6f
-            val c2y = ys[i + 1] - (ys[i3] - ys[i]) / 6f
-            sb.append("C${f(c1x)} ${f(c1y)} ${f(c2x)} ${f(c2y)} ${f(xs[i + 1])} ${f(ys[i + 1])}")
+    /** Les encres en métal d'un motif : traits d'or ou d'argent, fond doré. */
+    fun motifMetals(m: CustomMotif): Map<String, Metal> =
+        m.strokes.mapNotNull { it.metal }.distinct().mapNotNull { name -> enumOrNull<Metal>(name)?.let { "${m.id}.m.$name" to it } }.toMap() +
+            (enumOrNull<Metal>(m.groundMetal)?.let { mapOf("${m.id}.ground" to it) } ?: emptyMap())
+
+    /** La frise d'un motif : chaque élément (trait lissé, forme, motif de la réserve), et ses reflets selon la symétrie. */
+    private fun motifEdge(m: CustomMotif): EdgeModule {
+        val ops = m.strokes.flatMap { e ->
+            val fig = MotifGeometry.figure(e) ?: return@flatMap emptyList()
+            val line = MotifGeometry.isLine(e)
+            val variants = buildList<(Offset) -> Offset> {
+                add { it }
+                if (m.mirrorU) add { Offset(m.period - it.x, it.y) }
+                if (m.mirrorV) add { Offset(it.x, 100f - it.y) }
+                if (m.mirrorU && m.mirrorV) add { Offset(m.period - it.x, 100f - it.y) }
+            }
+            variants.map { v ->
+                val f = fig.map(v)
+                if (line) Op(inkOf(m, e), f.svg(), e.width, round = true) else Op(inkOf(m, e), f.normalized().svg(), 0f)
+            }
         }
-        return sb.toString()
+        return EdgeModule(m.period, 0f, ops, emptyList())
     }
 
     /**
@@ -439,10 +456,10 @@ object FrameComposer {
             name = m.id, title = m.name, top = edge, side = edge, bottom = edge,
             topCenter = null, sideCenter = null, bottomCenter = null, corner = null, bottomCorner = null, cornerFill = null,
             outerCorner = null, outerBottomCorner = null, outerMid = null, outerBottomMid = null, outerSideMid = null,
-            bars = null, rules = emptyList(), ground = m.ground?.let { "${m.id}.ground" },
+            bars = null, rules = emptyList(), ground = "${m.id}.ground".takeIf { m.ground != null || m.groundMetal != null },
             margin = 12.dp, topDepth = 22.dp, sideDepth = 22.dp, bottomDepth = 22.dp, textPadding = 12.dp,
         )
-        return OrnamentalFrameDef(m.id, m.name, spec, FrameStyle(motifInks(m), emptyMap(), motifInks(m).keys))
+        return OrnamentalFrameDef(m.id, m.name, spec, FrameStyle(motifInks(m), emptyMap(), motifInks(m).keys, metalInks = motifMetals(m)))
     }
 
     /**
