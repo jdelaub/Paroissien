@@ -11,7 +11,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Test
 
 /**
- * Le calendrier de 1969 (France) jour par jour, de 2020 à 2045, dans build/calendrier-1969.jsonl : la chaîne du
+ * Le calendrier de 1969 (France) jour par jour, de 2015 à 2045, dans build/calendrier-1969.jsonl : la chaîne du
  * lectionnaire (dépôt privé, sources/aelf) y lit, pour chaque date, la célébration, le jour du temporal et les cycles,
  * pour ranger les lectures de l'AELF sous les clés que l'application calcule elle-même.
  */
@@ -21,7 +21,7 @@ class CalendarDumpTest {
     fun calendrier1969() {
         val calendars = LiturgicalCalendars.load()
         val config = CalendarConfig(Rite.ROMAN_1969)
-        val lines = generateSequence(LocalDate.of(2020, 1, 1)) { it.plusDays(1) }.takeWhile { it.year <= 2045 }.map { date ->
+        val lines = generateSequence(LocalDate.of(2015, 1, 1)) { it.plusDays(1) }.takeWhile { it.year <= 2045 }.map { date ->
             val day = calendars.day(date, config)
             buildJsonObject {
                 put("date", date.toString())
@@ -41,6 +41,6 @@ class CalendarDumpTest {
         }.toList()
         File("build").mkdirs()
         File("build/calendrier-1969.jsonl").writeText(lines.joinToString("\n", postfix = "\n"))
-        assertEquals(9497, lines.size)
+        assertEquals(11323, lines.size)
     }
 }
