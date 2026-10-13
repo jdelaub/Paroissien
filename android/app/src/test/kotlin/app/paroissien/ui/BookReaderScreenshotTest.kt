@@ -147,6 +147,35 @@ class BookReaderScreenshotTest {
         return bitmap.asImageBitmap()
     }
 
+    /** Un schéma en couleurs comme ceux du servant : fond blanc, marches grises, aube blanche cernée de noir, flèche rouge. */
+    private fun syntheticDiagram(arrowRight: Boolean): ImageBitmap {
+        val bitmap = createBitmap(1120, 696)
+        val canvas = android.graphics.Canvas(bitmap)
+        val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG)
+        canvas.drawColor(0xFFFFFFFF.toInt())
+        paint.color = 0xFFEEEEEE.toInt()
+        canvas.drawRect(80f, 560f, 1040f, 640f, paint)
+        canvas.drawRect(200f, 480f, 920f, 560f, paint)
+        paint.color = 0xFFEADCAE.toInt()
+        canvas.drawRect(480f, 200f, 640f, 470f, paint)
+        paint.color = 0xFFFFFFFF.toInt()
+        canvas.drawRect(300f, 300f, 400f, 470f, paint)
+        paint.style = android.graphics.Paint.Style.STROKE
+        paint.strokeWidth = 4f
+        paint.color = 0xFF222222.toInt()
+        canvas.drawRect(80f, 560f, 1040f, 640f, paint)
+        canvas.drawRect(200f, 480f, 920f, 560f, paint)
+        canvas.drawRect(480f, 200f, 640f, 470f, paint)
+        canvas.drawRect(300f, 300f, 400f, 470f, paint)
+        canvas.drawCircle(350f, 260f, 34f, paint)
+        paint.color = 0xFFC00000.toInt()
+        paint.strokeWidth = 6f
+        val path = android.graphics.Path()
+        if (arrowRight) { path.moveTo(420f, 600f); path.quadTo(620f, 680f, 820f, 520f) } else { path.moveTo(820f, 600f); path.quadTo(620f, 680f, 420f, 520f) }
+        canvas.drawPath(path, paint)
+        return bitmap.asImageBitmap()
+    }
+
     /**
      * Livret de messe : latin et français en regard (deux colonnes, un filet), rubrique sur toute la largeur, encadré
      * « texte de la messe du jour », puis une consigne du servant avec son dessin. Texte de l'Ordinaire du domaine public.
@@ -164,7 +193,17 @@ class BookReaderScreenshotTest {
     @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
     fun livretServant() = capture(Anchor("servant3", 0), BookFace.GARAMOND, PaperTheme.SEPIA, blocks = livret())
 
-    private fun livret(): List<ReadingBlock> {
+    /** Une planche de deux schémas en couleurs : fondus dans le papier sépia, gardés ensemble avec leur texte. */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun livretServantCouleurs() = capture(Anchor("servant3", 0), BookFace.GARAMOND, PaperTheme.SEPIA, blocks = livret(color = true))
+
+    /** Les mêmes sur papier sombre : posés sur une planche claire. */
+    @Test
+    @Config(sdk = [35], qualifiers = "w384dp-h939dp-xxhdpi")
+    fun livretServantCouleursSombre() = capture(Anchor("servant3", 0), BookFace.GARAMOND, PaperTheme.SOMBRE, blocks = livret(color = true))
+
+    private fun livret(color: Boolean = false): List<ReadingBlock> {
         fun rt(s: String) = Inlines.fromMarkup(s)
         fun pair(id: String, la: String, fr: String, versicle: Boolean = false) = ReadingBlock.Facing(
             id,
@@ -183,7 +222,10 @@ class BookReaderScreenshotTest {
             pair("munda", "Munda cor meum, ac lábia mea, omnípotens Deus, qui lábia Isaíæ Prophétæ cálculo mundásti ignito : ita me tua grata miseratióne dignáre mundáre, ut sanctum Evangélium tuum digne váleam nuntiáre.",
                 "Purifiez mon cœur et mes lèvres, Dieu tout-puissant, qui avez purifié avec un charbon ardent les lèvres du prophète Isaïe ; daignez, par votre bonté miséricordieuse, me purifier, afin que je puisse annoncer dignement votre saint Évangile."),
             ReadingBlock.Heading("servant3", rt("Le servant — 3. À la fin de l'Épître"), minor = true),
-            ReadingBlock.Vignette("servant3.image", syntheticEngraving()),
+            *(if (color) arrayOf(
+                ReadingBlock.Vignette("servant3.image", syntheticDiagram(arrowRight = true), color = true),
+                ReadingBlock.Vignette("servant3.imageb", syntheticDiagram(arrowRight = false), color = true),
+            ) else arrayOf(ReadingBlock.Vignette("servant3.image", syntheticEngraving()))),
             ReadingBlock.Paragraph("servant3.1", rt("Le servant se lève à l'Alléluia, fait la génuflexion et se rend du côté de l'Épître."), BlockLang.FR, role = TextRole.SMALL),
         )
     }

@@ -57,8 +57,11 @@ sealed interface ReadingBlock {
     /**
      * Vignette gravée en tête de section : l'encre seule, en masque alpha, que la page teinte de l'encre du thème
      * comme une impression. Elle reste avec le début du bloc suivant.
+     *
+     * [color] : un dessin en couleurs (les schémas du servant), posé tel quel et fondu dans le papier comme une
+     * impression (le blanc prend la teinte du papier).
      */
-    data class Vignette(override val id: String, val image: ImageBitmap) : ReadingBlock
+    data class Vignette(override val id: String, val image: ImageBitmap, val color: Boolean = false) : ReadingBlock
 
     /**
      * Emplacement d'une pièce variable (« Introït — texte de la messe du jour ») : un encadré centré, comme dans les

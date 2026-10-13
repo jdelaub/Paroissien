@@ -37,8 +37,10 @@ sealed interface PageItem {
     /** Un décor posé tel quel : la lettrine. */
     class Glyph(val layout: TextLayoutResult, val x: Float, override val y: Float) : PageItem
 
-    /** Une vignette gravée, masque alpha posé dans le rectangle (x, y, width, height). */
-    class Picture(val image: ImageBitmap, val x: Float, override val y: Float, val width: Float, val height: Float) : PageItem
+    /** Une vignette gravée (masque alpha) ou un dessin en couleurs ([color]), posé dans le rectangle (x, y, width, height). */
+    class Picture(
+        val image: ImageBitmap, val x: Float, override val y: Float, val width: Float, val height: Float, val color: Boolean = false,
+    ) : PageItem
 
     /** L'encadré d'un emplacement (« texte de la messe du jour »). */
     class Frame(val x: Float, override val y: Float, val width: Float, val height: Float) : PageItem
@@ -131,9 +133,14 @@ fun paginate(
                 val keep = if (n.keepWithNext && following != null) n.height + measured(following).let { it.gapBefore + it.minStart } else 0f
                 n.gapBefore + maxOf(n.minStart, keep)
             } ?: 0f
-            if (y > 0f && y + h + gap + after > height) closePage()
+            // En tête d'une planche (des dessins qui se suivent), toute la planche part avec le texte si elle tient sur une page.
+            val board = if (index > 0 && blocks[index - 1] is ReadingBlock.Vignette) 0f else
+                (index + 1 until blocks.size).takeWhile { blocks[it] is ReadingBlock.Vignette }
+                    .sumOf { (vignetteHeight(blocks[it] as ReadingBlock.Vignette) + gap).toDouble() }.toFloat()
+            val rest = if (h + gap + board + after <= height) board else 0f
+            if (y > 0f && y + h + gap + rest + after > height) closePage()
             if (pageHead == null) pageHead = runningHead
-            items += PageItem.Picture(block.image, (width - w) / 2, y, w, h)
+            items += PageItem.Picture(block.image, (width - w) / 2, y, w, h, block.color)
             y += h + gap
             continue
         }

@@ -467,7 +467,7 @@ private fun PageView(
                     overflow = TextOverflow.Ellipsis,
                     modifier = Modifier.fillMaxWidth().height(Header),
                 )
-                PageContent(page, verso, t.paper.inkPrimary, Modifier.size(contentWidth, contentHeight))
+                PageContent(page, verso, t.paper, Modifier.size(contentWidth, contentHeight))
                 BasicText(
                     if (number > 0) number.toString() else "",
                     style = t.folio,
@@ -493,7 +493,7 @@ private fun PageView(
                     )
                 }
             }
-            PageContent(page, verso, t.paper.inkPrimary, Modifier.padding(start = if (outerOnRight) margins.inner else margins.outer, top = margins.top).size(contentWidth, contentHeight))
+            PageContent(page, verso, t.paper, Modifier.padding(start = if (outerOnRight) margins.inner else margins.outer, top = margins.top).size(contentWidth, contentHeight))
         }
         if (pageSize != Size.Zero) {
             // TalkBack : chaque ruban en travers de la page se dit, et s'écarte d'un double toucher.
@@ -594,8 +594,9 @@ private fun near(line: List<Offset>, at: Offset, reach: Float): Boolean = line.z
 }
 
 @Composable
-private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, ink: Color, modifier: Modifier) {
+private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, paper: PaperColors, modifier: Modifier) {
     val density = LocalDensity.current
+    val ink = paper.inkPrimary
     Box(modifier) {
         Canvas(Modifier.fillMaxSize()) {
             // Papier bible : le texte du verso transparaît à peine, en miroir.
@@ -605,7 +606,7 @@ private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, ink: Color, modi
                         when (item) {
                             is PageItem.Lines -> drawLines(item, alpha = SHOW_THROUGH)
                             is PageItem.Glyph -> translate(item.x, item.y) { drawText(item.layout, alpha = SHOW_THROUGH) }
-                            is PageItem.Picture -> drawPicture(item, ink, alpha = SHOW_THROUGH)
+                            is PageItem.Picture -> drawPicture(item, paper, alpha = SHOW_THROUGH)
                             is PageItem.Frame, is PageItem.Rule -> Unit
                         }
                     }
@@ -615,7 +616,7 @@ private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, ink: Color, modi
                 when (item) {
                     is PageItem.Lines -> drawLines(item)
                     is PageItem.Glyph -> translate(item.x, item.y) { drawText(item.layout) }
-                    is PageItem.Picture -> drawPicture(item, ink)
+                    is PageItem.Picture -> drawPicture(item, paper)
                     is PageItem.Frame -> {
                         val r = CornerRadius(3.dp.toPx())
                         drawRoundRect(ink.copy(alpha = 0.05f), Offset(item.x, item.y), Size(item.width, item.height), r)
@@ -638,17 +639,29 @@ private fun PageContent(page: LaidOutPage, verso: LaidOutPage?, ink: Color, modi
     }
 }
 
-/** Vignette gravée : son masque d'encre, teint de l'encre du thème, comme une impression sur le papier. */
-private fun DrawScope.drawPicture(item: PageItem.Picture, ink: Color, alpha: Float = 1f) {
-    drawImage(
-        item.image,
-        dstOffset = IntOffset(item.x.roundToInt(), item.y.roundToInt()),
-        dstSize = IntSize(item.width.roundToInt(), item.height.roundToInt()),
-        alpha = alpha,
-        colorFilter = ColorFilter.tint(ink, BlendMode.SrcIn),
-        filterQuality = FilterQuality.High,
-    )
+/**
+ * Vignette gravée : son masque d'encre, teint de l'encre du thème, comme une impression sur le papier.
+ *
+ * Dessin en couleurs : multiplié avec le papier, comme une encre d'imprimerie (son blanc prend la teinte du papier) ;
+ * sur un papier sombre, il est posé sur une planche claire, sans quoi ses traits noirs disparaîtraient.
+ */
+private fun DrawScope.drawPicture(item: PageItem.Picture, paper: PaperColors, alpha: Float = 1f) {
+    val at = IntOffset(item.x.roundToInt(), item.y.roundToInt())
+    val size = IntSize(item.width.roundToInt(), item.height.roundToInt())
+    if (!item.color) {
+        drawImage(
+            item.image, dstOffset = at, dstSize = size, alpha = alpha,
+            colorFilter = ColorFilter.tint(paper.inkPrimary, BlendMode.SrcIn), filterQuality = FilterQuality.High,
+        )
+        return
+    }
+    // La planche ne déborde pas de l'image : le dessin a ses propres marges blanches, et le titre au-dessus reste lisible.
+    if (paper.isDark) drawRoundRect(ColorPlate.copy(alpha = alpha), Offset(item.x, item.y), Size(item.width, item.height), CornerRadius(3.dp.toPx()))
+    drawImage(item.image, dstOffset = at, dstSize = size, alpha = alpha, blendMode = BlendMode.Multiply, filterQuality = FilterQuality.High)
 }
+
+/** La planche d'un dessin en couleurs sur un papier sombre : un papier clair un peu éteint, pour ne pas éblouir. */
+private val ColorPlate = Color(0xFFD8CFBC)
 
 /** Opacité du verso qui transparaît sur un papier bible. */
 private const val SHOW_THROUGH = 0.055f

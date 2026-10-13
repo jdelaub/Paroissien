@@ -60,7 +60,9 @@ fun packToReadingBlocks(
         when (block.type) {
             "separator" -> ReadingBlock.Ornament(block.id)
             "note" -> null
-            "image" -> block.attrs["href"]?.jsonPrimitive?.contentOrNull?.let(image)?.let { ReadingBlock.Vignette(block.id, it) }
+            "image" -> block.attrs["href"]?.jsonPrimitive?.contentOrNull?.let(image)?.let {
+                ReadingBlock.Vignette(block.id, it, color = block.attrs["kind"]?.jsonPrimitive?.contentOrNull == "color")
+            }
             "slot" -> text?.let {
                 fun ids(key: String) = (block.attrs[key] as? JsonArray)?.mapNotNull { e -> e.jsonPrimitive.contentOrNull }.orEmpty()
                 ReadingBlock.Slot(block.id, it, block.attrs["slot"]?.jsonPrimitive?.contentOrNull, ids("replaces"), ids("omit"))
