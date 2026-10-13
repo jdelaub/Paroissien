@@ -57,6 +57,18 @@ object BookIdentities {
                 PaperStock(Color(0xFFF7EFDA), Color(0xFF1F1A14), Color(0xFF574C3F), Color(0xFFA31F1A), PaperWeight.FINE),
                 EdgeFinish.GILT, ribbons = listOf(0, 3), importance = 2, pages = pages,
             )
+            // Le diurnal monastique : chagrin noir, papier bible, tranche rouge, un ruban par heure.
+            publication.startsWith("diurnal") -> BookIdentity(
+                CoverStyle(Color(0xFF121010), CoverMaterial.MOROCCO, Tooling.GOLD, CoverMotif.CROSS, fillets = 2, corners = true, bands = 4),
+                PaperStock(Color(0xFFF6EEDA), Color(0xFF1C1712), Color(0xFF574C3F), Color(0xFFA31F1A), PaperWeight.BIBLE),
+                EdgeFinish.RED, ribbons = listOf(0, 1, 2, 3, 5), importance = 2, pages = pages,
+            )
+            // La synopse : maroquin vert sombre, un ruban par évangéliste.
+            publication.startsWith("synopse") -> BookIdentity(
+                CoverStyle(Color(0xFF1B2E26), CoverMaterial.MOROCCO, Tooling.GOLD, CoverMotif.CHI_RHO, fillets = 2, corners = true, bands = 5),
+                PaperStock(Color(0xFFF4EAD0), Color(0xFF2A2118), Color(0xFF5E5040), Color(0xFF9E2A1E), PaperWeight.BIBLE),
+                EdgeFinish.GILT, ribbons = listOf(0, 1, 2, 3), importance = 2, pages = pages,
+            )
             publication.startsWith("prieres") -> BookIdentity(
                 CoverStyle(Color(0xFF1E3A2B), CoverMaterial.MOROCCO, Tooling.GOLD, CoverMotif.CROSS, fillets = 2, corners = true, bands = 4),
                 PaperStock(Color(0xFFFAF3E2), Color(0xFF1F1A14), Color(0xFF574C3F), Color(0xFFA31F1A), PaperWeight.FINE),

@@ -111,8 +111,8 @@ android {
         applicationId = "app.paroissien" // figé (ADR 002) : ne plus changer après la première installation
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 27
-        versionName = "0.7.0"
+        versionCode = 28
+        versionName = "0.7.1"
     }
 
     // ADR 001 : seule « domainePublic » est construite par la CI publique ; « personnel » peut embarquer
