@@ -176,6 +176,8 @@ fun ReaderScreen(graph: AppGraph, key: ReaderKey, settings: ReaderSettings, open
                 ) { name -> images.getOrPut(name) { graph.packs.asset(entry, name)?.let { BitmapFactory.decodeByteArray(it, 0, it.size)?.asImageBitmap() } } }
                     // Les emplacements « texte de la messe du jour » d'un livret, remplis avec la messe du jour du missel.
                     .let { DayProper.fill(graph, settings, it, textLanguage, facing) }
+                    // Ceux de l'Ordinaire de 2021, avec les lectures du jour du lectionnaire.
+                    .let { DayReadings.fill(graph, settings, it) }
                 // Livre noble : une vignette gravée en tête de la section, si l'app en contient (saveur personnelle).
                 val vignette = if (withVignette) graph.vignettes.of(publication, entry, unitIndex, unit)?.let(graph.vignettes::image) else null
                 Loaded(unit.id, language, listOfNotNull(vignette?.let { ReadingBlock.Vignette("vignette:${unit.id}", it) }) + text)

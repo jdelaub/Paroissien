@@ -178,6 +178,12 @@ Les durées sont des estimations en semaines de travail effectif pour une person
 
 Reportés en V1 : le français du domaine public pour le paquet public ; les féries renvoyées au dimanche (un tiers du poids, mais leurs rubriques diffèrent) ; une seconde relecture des propres de Jeanne d'Arc et de Geneviève.
 
+**Phase 6, en cours (0.6.8, 13/10/2026)**, saveur `personnel` seulement, dépôt privé :
+- lectionnaire de l'AELF (`sources/aelf`) : les lectures de 2020 à juin 2027 (l'AELF publie environ huit mois à l'avance), rangées sous les clés que l'application calcule avec son calendrier de 1969 (célébration ou férie, année A/B/C ou paire/impaire) : elles valent pour toutes les années (99 % des jours jusqu'en 2045). `LiturgicalDay.temporal` donne la férie sous une mémoire ;
+- Ordinaire de 2021 (`sources/ordinaire-2021`), d'après iBreviary, collationné avec les livrets d'Ajaccio et de Cambrai, avec les prières eucharistiques I à IV ; l'application y insère les lectures du jour ;
+- Aujourd'hui en 1969 : lectures du jour, messe entière, début de l'Évangile ;
+- oraisons de 2021 : aucune source licite et structurée ; encadrés « dans le missel ».
+
 ### 4.1 ADR de la phase 0 (une page chacun, `docs/adr/`)
 1. **001 — Horizon, dépôts et saveurs** : scénario A, B ou C, statuts de droits, et quelle CI construit quoi.
 2. **002 — Appareils et SDK** : téléphone de référence et second appareil, minSdk, `applicationId`, keystore de débogage.

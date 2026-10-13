@@ -104,6 +104,11 @@ data class LiturgicalDay(
      * dire la messe votive de IIᵉ classe de la fête.
      */
     val externalSolemnity: Celebration? = null,
+    /**
+     * 1969 : le jour du temporal sous la célébration (« mercredi de la 28ᵉ semaine du temps ordinaire »), même quand
+     * une fête ou une mémoire l'emporte : un jour de mémoire, on lit d'ordinaire les lectures de la férie.
+     */
+    val temporal: Celebration? = null,
 ) {
     val colors: LiturgicalColors get() = principal.colors
 }

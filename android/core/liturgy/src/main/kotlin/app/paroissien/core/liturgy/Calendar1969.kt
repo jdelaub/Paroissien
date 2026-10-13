@@ -295,7 +295,7 @@ internal class Calendar1969(private val sanctoral: SanctoralData) {
         val flags = b.flags + listOfNotNull(DayFlag.TRANSFERRED.takeIf { principal.transferredFrom != null })
         return LiturgicalDay(
             date = d, rite = Rite.ROMAN_1969, season = season, week = b.week, principal = principal,
-            optional = optional, cycles = cycles, flags = flags,
+            optional = optional, cycles = cycles, flags = flags, temporal = b.celebration,
         )
     }
 

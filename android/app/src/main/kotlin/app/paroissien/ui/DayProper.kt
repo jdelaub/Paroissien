@@ -50,7 +50,7 @@ object DayProper {
 
     /** [blocks] avec la messe du jour ; sans missel ni messe pour ce jour, les encadrés restent avec leur mention. */
     fun fill(graph: AppGraph, settings: ReaderSettings, blocks: List<ReadingBlock>, language: String, facing: Boolean): List<ReadingBlock> {
-        if (blocks.none { it is ReadingBlock.Slot && it.key != null }) return blocks
+        if (blocks.none { it is ReadingBlock.Slot && it.key?.startsWith("proprium.") == true }) return blocks
         return fill(blocks, runCatching { day(graph, settings) }.getOrNull(), language, facing)
     }
 

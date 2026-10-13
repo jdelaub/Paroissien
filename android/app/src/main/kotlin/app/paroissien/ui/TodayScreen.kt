@@ -137,6 +137,14 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
         value = withContext(Dispatchers.IO) { runCatching { gospelOf(graph.packs.blocks(missal, unit), unit.id) }.getOrNull() }
     }
 
+    // Les lectures du jour (1969) : l'unité du lectionnaire que le calendrier désigne, et le début de son Évangile.
+    val readings by produceState<Pair<String, Gospel?>?>(null, library, liturgical) {
+        val d = liturgical?.takeIf { it.rite == Rite.ROMAN_1969 } ?: return@produceState
+        val lectionary = library?.entry(LECTIONARY_BOOK) ?: return@produceState
+        val unit = lectionaryUnits(d).firstNotNullOfOrNull(lectionary::unit) ?: return@produceState
+        value = unit.id to withContext(Dispatchers.IO) { runCatching { lectionaryGospel(graph.packs.blocks(lectionary, unit), unit.id) }.getOrNull() }
+    }
+
     Surface(Modifier.fillMaxSize(), color = LocalPaperColors.current.background) {
         Column(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
             Row(Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -182,16 +190,24 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
                                     open(ReaderKey(ORDINARY_BOOK))
                                 }
                             }
-                            gospel?.let { g ->
-                                Column(
-                                    Modifier.fillMaxWidth().clickable { open(ReaderKey(MISSAL_BOOK, proper, g.block)) }.padding(horizontal = 20.dp, vertical = 10.dp),
-                                    verticalArrangement = Arrangement.spacedBy(4.dp),
-                                ) {
-                                    Text(stringResource(R.string.today_gospel), style = MaterialTheme.typography.labelLarge, color = LocalPaperColors.current.rubric)
-                                    Text(g.incipit, style = MaterialTheme.typography.bodyMedium, color = LocalPaperColors.current.inkSecondary)
-                                    Text(g.opening, style = MaterialTheme.typography.bodyLarge, maxLines = 4, overflow = TextOverflow.Ellipsis)
-                                }
-                            }
+                            gospel?.let { g -> GospelRow(g) { open(ReaderKey(MISSAL_BOOK, proper, g.block)) } }
+                        }
+                    }
+                }
+                // Lectures du jour (1969) : le lectionnaire de l'AELF (paquet privé), ouvert au jour, et le début de l'Évangile.
+                val lectionary = lib?.entry(LECTIONARY_BOOK)
+                val today1969 = readings
+                if (settings.rite == "1969" && lectionary != null && today1969 != null) {
+                    val (unit, g) = today1969
+                    item(key = "readings") {
+                        Section(stringResource(R.string.today_mass))
+                        BookRow(stringResource(R.string.today_readings), lectionary.unitTitle(unit)) { open(ReaderKey(LECTIONARY_BOOK, unit)) }
+                        if (lib?.entry(ORDINARY_2021) != null) {
+                            BookRow(stringResource(R.string.today_mass_whole), stringResource(R.string.today_mass_whole_1969)) { open(ReaderKey(ORDINARY_2021)) }
+                        }
+                        g?.let { GospelRow(it) { open(ReaderKey(LECTIONARY_BOOK, unit, it.block)) } }
+                        lectionaryAlternatives(d).mapNotNull(lectionary::unit).forEach { alt ->
+                            BookRow(stringResource(R.string.today_readings_or), alt.title) { open(ReaderKey(LECTIONARY_BOOK, alt.id)) }
                         }
                     }
                 }
@@ -247,6 +263,19 @@ fun TodayScreen(graph: AppGraph, settings: ReaderSettings, date: LocalDate?, ope
                 item { Spacer(Modifier.height(24.dp)) }
             }
         }
+    }
+}
+
+/** Le début de l'Évangile du jour : son titre, ses premières lignes ; un toucher ouvre le livre à l'Évangile. */
+@Composable
+private fun GospelRow(g: Gospel, onClick: () -> Unit) {
+    Column(
+        Modifier.fillMaxWidth().clickable(onClick = onClick).padding(horizontal = 20.dp, vertical = 10.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+    ) {
+        Text(stringResource(R.string.today_gospel), style = MaterialTheme.typography.labelLarge, color = LocalPaperColors.current.rubric)
+        Text(g.incipit, style = MaterialTheme.typography.bodyMedium, color = LocalPaperColors.current.inkSecondary)
+        Text(g.opening, style = MaterialTheme.typography.bodyLarge, maxLines = 4, overflow = TextOverflow.Ellipsis)
     }
 }
 
