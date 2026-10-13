@@ -182,9 +182,11 @@ fun MotifEditorScreen(graph: AppGraph, key: MotifEditorKey, onBack: () -> Unit) 
         onClear = { commit(motif.copy(strokes = emptyList())); selectedIndex = -1 },
     )
 
+    var preview by remember { mutableStateOf(false) }
+    if (preview) FramePreview(FrameComposer.preview(motif), onClose = { preview = false })
     BackHandler(enabled = full) { full = false }
     if (full) {
-        FullScreenMotif(state, onExit = { full = false })
+        FullScreenMotif(state, onExit = { full = false }, onPreview = { preview = true })
         return
     }
 
@@ -220,7 +222,12 @@ fun MotifEditorScreen(graph: AppGraph, key: MotifEditorKey, onBack: () -> Unit) 
                 }
             }
         }
-        item { WorkshopSection(stringResource(R.string.workshop_preview)) { FrameThumb(FrameComposer.preview(motif), width = 120.dp) } }
+        item {
+            WorkshopSection(stringResource(R.string.workshop_preview)) {
+                Box(Modifier.clickable { preview = true }) { FrameThumb(FrameComposer.preview(motif), width = 120.dp) }
+                PreviewButton { preview = true }
+            }
+        }
         item {
             Column(Modifier.fillMaxWidth().padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 OutlinedTextField(value = motif.name, onValueChange = { replace(motif.copy(name = it)) }, singleLine = true, label = { Text(stringResource(R.string.workshop_motif_name)) }, modifier = Modifier.fillMaxWidth())
@@ -288,7 +295,7 @@ private fun hintOf(tool: MotifTool) = when (tool) {
 // ── Plein écran ─────────────────────────────────────────────────────────────────────────────────────────────────────
 
 @Composable
-private fun FullScreenMotif(state: EditorState, onExit: () -> Unit) {
+private fun FullScreenMotif(state: EditorState, onExit: () -> Unit, onPreview: () -> Unit) {
     val paper = LocalPaperColors.current
     // Les barres du système s'effacent ; un glissement depuis le bord les fait revenir un instant.
     val activity = LocalContext.current as? Activity
@@ -307,6 +314,7 @@ private fun FullScreenMotif(state: EditorState, onExit: () -> Unit) {
             FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(2.dp), itemVerticalAlignment = Alignment.CenterVertically) {
                 TextButton(onClick = onExit) { Text(stringResource(R.string.motif_exit_full)) }
                 TextButton(onClick = state.onUndo, enabled = state.canUndo) { Text(stringResource(R.string.workshop_undo)) }
+                TextButton(onClick = onPreview) { Text(stringResource(R.string.preview_full)) }
                 ToolChips(state)
             }
         }

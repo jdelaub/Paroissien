@@ -1,6 +1,7 @@
 package app.paroissien.ui
 
 import androidx.annotation.StringRes
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -65,6 +66,7 @@ fun CoverEditorScreen(graph: AppGraph, key: CoverEditorKey, onBack: () -> Unit) 
         mutableStateOf(existing ?: CoverTemplate(CoverTemplate.PREFIX + UUID.randomUUID().toString().take(8), defaultName))
     }
     var applying by remember { mutableStateOf(false) }
+    var preview by remember { mutableStateOf(false) }
     val binding = template.binding
     val base = BookIdentity.uniform(400)
     val identity = base.dressed(binding)
@@ -75,8 +77,9 @@ fun CoverEditorScreen(graph: AppGraph, key: CoverEditorKey, onBack: () -> Unit) 
 
     Screen(stringResource(R.string.cover_editor_title), onBack = onBack) {
         item {
-            Box(Modifier.fillMaxWidth().padding(vertical = 12.dp), contentAlignment = Alignment.Center) {
-                BookCover(identity, template.name, stringResource(R.string.cover_editor_sample_subtitle), Modifier.width(210.dp).aspectRatio(0.70f))
+            Column(Modifier.fillMaxWidth().padding(vertical = 12.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+                BookCover(identity, template.name, stringResource(R.string.cover_editor_sample_subtitle), Modifier.width(210.dp).aspectRatio(0.70f).clickable { preview = true })
+                PreviewButton { preview = true }
             }
         }
         item {
@@ -102,6 +105,7 @@ fun CoverEditorScreen(graph: AppGraph, key: CoverEditorKey, onBack: () -> Unit) 
         }
     }
     if (applying) ApplyToBooks(graph, template, onDone = { applying = false })
+    if (preview) CoverPreview(identity, template.name, stringResource(R.string.cover_editor_sample_subtitle), onClose = { preview = false })
 }
 
 /** Appliquer le modèle à des livres de la bibliothèque : leur reliure devient celle du modèle (le reste de l'habit reste). */

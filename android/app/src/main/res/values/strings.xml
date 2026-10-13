@@ -144,6 +144,13 @@
     <string name="workshop_preview">Aperçu</string>
     <string name="workshop_motif_name">Nom du motif</string>
     <string name="motif_full_screen">Plein écran</string>
+    <string name="preview_full">Voir en grand</string>
+    <string name="preview_cover">Couverture</string>
+    <string name="preview_endpaper">Garde</string>
+    <string name="preview_edge">Tranche</string>
+    <string name="preview_recto">Recto</string>
+    <string name="preview_verso">Verso</string>
+    <string name="workshop_long_press_hint">Un appui long sur une couverture, un cadre ou un motif le montre en plein écran ; on pince pour l\'agrandir.</string>
     <string name="motif_exit_full">Fermer</string>
     <string name="motif_tools">Outils</string>
     <string name="motif_tool_draw">Trait</string>

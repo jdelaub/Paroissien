@@ -26,6 +26,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import app.paroissien.library.dressed
+import app.paroissien.core.designsystem.BookIdentity
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
@@ -61,13 +65,16 @@ fun WorkshopScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: (() -> Unit)
     val ribbons = LocalRibbonSet.current
 
     Screen(stringResource(R.string.workshop_title), onBack = onBack) {
+        item { Text(stringResource(R.string.workshop_long_press_hint), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary, modifier = Modifier.padding(horizontal = 20.dp)) }
         item {
             WorkshopSection(stringResource(R.string.workshop_covers)) {
                 Text(stringResource(R.string.workshop_covers_hint), style = MaterialTheme.typography.bodySmall, color = LocalPaperColors.current.inkSecondary)
                 Button(onClick = { open(CoverEditorKey()) }) { Text(stringResource(R.string.workshop_new_cover)) }
                 LazyRow(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     items(covers, key = { it.id }) { c ->
-                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.clickable { open(CoverEditorKey(c.id)) }) {
+                        var preview by remember { mutableStateOf(false) }
+                        if (preview) CoverPreview(BookIdentity.uniform(300).dressed(c.binding), c.name, null, onClose = { preview = false })
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.previewOnLongPress({ preview = true }) { open(CoverEditorKey(c.id)) }) {
                             CoverThumb(c)
                             Text(c.name, style = MaterialTheme.typography.labelSmall, maxLines = 2)
                         }
@@ -92,7 +99,9 @@ fun WorkshopScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: (() -> Unit)
                 if (frames.isEmpty()) Text(stringResource(R.string.workshop_no_frames), style = MaterialTheme.typography.bodyMedium, color = LocalPaperColors.current.inkSecondary)
                 LazyRow(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                     items(frames, key = { it.first.id }) { (spec, def) ->
-                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.clickable { open(FrameEditorKey(spec.id)) }) {
+                        var preview by remember { mutableStateOf(false) }
+                        if (preview) FramePreview(def, onClose = { preview = false })
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.previewOnLongPress({ preview = true }) { open(FrameEditorKey(spec.id)) }) {
                             FrameThumb(def, width = 76.dp)
                             Text(spec.name, style = MaterialTheme.typography.labelSmall, maxLines = 2)
                         }
@@ -106,7 +115,9 @@ fun WorkshopScreen(graph: AppGraph, open: (NavKey) -> Unit, onBack: (() -> Unit)
                 if (motifs.isEmpty()) Text(stringResource(R.string.workshop_no_motifs), style = MaterialTheme.typography.bodyMedium, color = LocalPaperColors.current.inkSecondary)
                 LazyRow(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                     items(motifs, key = { it.id }) { m ->
-                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.clickable { open(MotifEditorKey(m.id)) }) {
+                        var preview by remember { mutableStateOf(false) }
+                        if (preview) FramePreview(FrameComposer.preview(m), onClose = { preview = false })
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.previewOnLongPress({ preview = true }) { open(MotifEditorKey(m.id)) }) {
                             FrameThumb(FrameComposer.preview(m), width = 76.dp)
                             Text(m.name, style = MaterialTheme.typography.labelSmall, maxLines = 2)
                         }

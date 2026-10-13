@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredSize
@@ -176,7 +177,12 @@ fun BookDressScreen(graph: AppGraph, key: BookDressKey, open: (NavKey) -> Unit, 
                 // Aperçu : un cadre de la sélection dans les couleurs et le métal choisis.
                 val sample = frames.firstOrNull { it.name == choice.frame } ?: frames.firstOrNull { it.name == "matin" }
                 val shown = choice.colors?.let { c -> LiturgicalColor.entries.firstOrNull { it.name == c } }
-                sample?.let { FrameThumb(it, width = 90.dp, liturgicalColor = shown, metal = enumOrNull<Metal>(choice.frameMetal)) }
+                var preview by remember { mutableStateOf(false) }
+                sample?.let {
+                    Box(Modifier.clickable { preview = true }) { FrameThumb(it, width = 90.dp, liturgicalColor = shown, metal = enumOrNull<Metal>(choice.frameMetal)) }
+                    PreviewButton { preview = true }
+                    if (preview) FramePreview(it, shown, enumOrNull<Metal>(choice.frameMetal), onClose = { preview = false })
+                }
             }
         }
         item {
@@ -270,8 +276,13 @@ fun FrameEditorScreen(graph: AppGraph, key: FrameEditorKey, onBack: () -> Unit) 
 
     Screen(stringResource(R.string.editor_title), onBack = onBack) {
         item {
-            Box(Modifier.fillMaxWidth().padding(16.dp), contentAlignment = Alignment.Center) {
-                built?.let { FrameThumb(it, width = 200.dp) }
+            var preview by remember { mutableStateOf(false) }
+            Column(Modifier.fillMaxWidth().padding(16.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+                built?.let {
+                    Box(Modifier.clickable { preview = true }) { FrameThumb(it, width = 200.dp) }
+                    PreviewButton { preview = true }
+                    if (preview) FramePreview(it, onClose = { preview = false })
+                }
             }
         }
         item {
@@ -358,7 +369,9 @@ private fun ModulePicker(title: String, modules: List<ModuleRef>, kind: String, 
         LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             items(modules, key = { "${it.frame}/${it.part}" }) { ref ->
                 val sample = remember(ref, kind) { FrameComposer.sample(ref, kind) } ?: return@items
-                Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.width(66.dp).clickable { onPick(ref) }) {
+                var preview by remember { mutableStateOf(false) }
+                if (preview) FramePreview(sample, onClose = { preview = false })
+                Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.width(66.dp).previewOnLongPress({ preview = true }) { onPick(ref) }) {
                     FrameThumb(sample, width = 60.dp, selected = selected == ref)
                     Text(FrameComposer.title(ref.frame), style = MaterialTheme.typography.labelSmall, maxLines = 2, textAlign = TextAlign.Center, overflow = TextOverflow.Ellipsis)
                 }
@@ -375,7 +388,9 @@ private fun FrameGallery(frames: List<OrnamentalFrameDef>, selected: Set<String>
         horizontalArrangement = Arrangement.spacedBy(10.dp),
     ) {
         items(frames, key = { it.name }) { def ->
-            Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.width(76.dp).clickable { onPick(def.name) }) {
+            var preview by remember { mutableStateOf(false) }
+            if (preview) FramePreview(def, onClose = { preview = false })
+            Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.width(76.dp).previewOnLongPress({ preview = true }) { onPick(def.name) }) {
                 FrameThumb(def, width = 70.dp, selected = def.name in selected)
                 Text(def.title, style = MaterialTheme.typography.labelSmall, maxLines = 2, textAlign = TextAlign.Center, overflow = TextOverflow.Ellipsis)
             }
@@ -411,13 +426,16 @@ private fun BindingSection(publication: String, entry: LibraryEntry?, binding: B
     val base = remember(publication, entry) { BookIdentities.of(publication, entry, uniform = false) }
     val identity = base.dressed(binding)
     Section(stringResource(R.string.binding_title)) {
-        Row(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
+        var preview by remember { mutableStateOf(false) }
+        val endpaper = BookDresses.endpaper(publication, entry, binding.endpaper)
+        Row(Modifier.clickable { preview = true }, horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
             BookCover(identity, entry?.title ?: publication, entry?.subtitle(), Modifier.width(110.dp).aspectRatio(0.66f))
-            val endpaper = BookDresses.endpaper(publication, entry, binding.endpaper)
             Box(Modifier.width(80.dp).aspectRatio(0.66f).clipToBounds().border(1.dp, LocalPaperColors.current.hairline)) {
                 if (endpaper != null) endpaper() else Box(Modifier.matchParentSize().background(identity.paper.tint))
             }
         }
+        PreviewButton { preview = true }
+        if (preview) CoverPreview(identity, entry?.title ?: publication, entry?.subtitle(), endpaper = endpaper ?: { Box(Modifier.fillMaxSize().background(identity.paper.tint)) }, onClose = { preview = false })
         // Les couvertures composées dans l'atelier : un toucher habille le livre de l'une d'elles.
         if (templates.isNotEmpty()) {
             Text(stringResource(R.string.binding_templates), style = MaterialTheme.typography.bodyMedium)

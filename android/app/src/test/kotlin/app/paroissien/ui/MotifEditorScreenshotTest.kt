@@ -9,6 +9,7 @@ import app.paroissien.AppGraph
 import app.paroissien.core.designsystem.PaperTheme
 import app.paroissien.core.designsystem.ParoissienTheme
 import com.github.takahirom.roborazzi.captureRoboImage
+import com.github.takahirom.roborazzi.captureScreenRoboImage
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -36,5 +37,15 @@ class MotifEditorScreenshotTest {
         compose.onNodeWithText("Plein écran").performClick()
         compose.waitForIdle()
         compose.onRoot().captureRoboImage("src/test/screenshots/app.paroissien.ui.MotifEditorScreenshotTest.pleinEcran.png")
+    }
+
+    /** L'aperçu en plein écran d'une couverture de l'atelier (une fenêtre par-dessus l'écran). */
+    @Test
+    fun apercuCouverture() {
+        val graph = AppGraph(RuntimeEnvironment.getApplication(), AndroidSQLiteDriver())
+        compose.setContent { ParoissienTheme(PaperTheme.CLAIR) { CoverEditorScreen(graph, CoverEditorKey(), onBack = {}) } }
+        compose.onNodeWithText("Voir en grand").performClick()
+        compose.waitForIdle()
+        captureScreenRoboImage("src/test/screenshots/app.paroissien.ui.MotifEditorScreenshotTest.apercuCouverture.png")
     }
 }
